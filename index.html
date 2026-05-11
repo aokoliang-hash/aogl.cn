@@ -111,7 +111,8 @@
 </script>
     <!-- JSONLD_AUTO_END -->
   <link rel="stylesheet" href="css/style.css" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6958761551797888" crossorigin="anonymous"></script>
+  <!-- AdSense loads from Google; in some regions (e.g. mainland China) the request may fail — page still works without ads. -->
+  <script src="js/adsense.js"></script>
 </head>
 <body class="locale-en">
   <script src="js/i18n.js"></script>
@@ -151,8 +152,8 @@
         </p>
       </section>
 
-      <div class="ad-slot lang-en" aria-hidden="true">Ad slot — replace with your AdSense unit code when ready.</div>
-      <div class="ad-slot lang-zh" aria-hidden="true">广告位 — 在 AdSense 创建展示广告后，替换为官方生成的代码。</div>
+      <!-- 固定展示广告位（DISPLAY_AD_SLOT）；自动广告仍在后台单独开启 -->
+      <div id="ad-display-root" class="ad-slot" aria-label="Advertisement"></div>
 
       <section id="pillars">
         <h2 class="lang-en">What you’ll find here</h2>
