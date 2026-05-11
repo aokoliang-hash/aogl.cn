@@ -530,8 +530,7 @@ footer.site-footer {
   }
 }
 .tool-tile {
-  display: flex;
-  flex-direction: column;
+  display: flex; 
   align-items: center;
   justify-content: flex-start;
   gap: 0.4rem;
@@ -567,8 +566,7 @@ footer.site-footer {
   font-size: 0.78rem;
   font-weight: 600;
   color: #e0e8f0;
-  line-height: 1.2;
-  word-break: break-word;
+  line-height: 1.2; 
 }
 .locale-en .lang-zh {
   display: none !important;
