@@ -264,8 +264,8 @@ async function buildItemsFromDiscovery(config, existingItems, orderedPairs) {
 
 function renderReadingHtml(items) {
   const n = items.length;
-  const introEn = `${n} curated links from OpenAI, Anthropic, and Google DeepMind — primary sources for model releases and product updates.`;
-  const introZh = `下列 ${n} 条来自 OpenAI、Anthropic、Google DeepMind 官网文章链接（外链将离开本站），便于查阅一手信息。`;
+  const introEn = `${n} additional official links (OpenAI, Anthropic, Google DeepMind) — same sources as above, but no URL duplicated from the category news feeds.`;
+  const introZh = `下列 ${n} 条亦为三家官网一手文章，与上方「资讯 / 排行 / 分类 / 技巧」区块中的链接不重复（外链将离开本站）。`;
 
   const liEn = items
     .map(
@@ -286,8 +286,8 @@ function renderReadingHtml(items) {
     .join("\n");
 
   return `      <section id="reading">
-        <h2 class="lang-en">Latest official articles</h2>
-        <h2 class="lang-zh">最新官方文章（外链）</h2>
+        <h2 class="page-section-title lang-en">Latest official articles</h2>
+        <h2 class="page-section-title lang-zh">最新官方文章（外链）</h2>
         <p class="reading-intro lang-en">
           ${escapeHtml(introEn)}
         </p>
