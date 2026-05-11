@@ -52,7 +52,7 @@ ${liZh}
         </section>`;
     })
     .join("\n\n");
-  return `      <div class="cat-feeds-wrap">
+  return `      <div class="cat-feeds-wrap" id="feeds" tabindex="-1">
 ${inner}
       </div>`;
 }

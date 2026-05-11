@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html
   lang="en"
-  data-title-en="aogl.cn — AI Tools, News & Tips"
-  data-title-zh="aogl.cn — AI 工具 · 资讯 · 技巧"
-  data-desc-en="Hand-maintained notes on AI tools and releases — mostly links to primary sources; rankings are personal picks. aogl.cn"
-  data-desc-zh="站长手写整理的 AI 工具与动态备忘，尽量链回官网；榜单是个人偏好，价格和条款请以官方为准。aogl.cn"
+  data-title-en="aogl.cn — Personal generative AI bookmarks & tools"
+  data-title-zh="aogl.cn — 生成式 AI 工具与个人备忘"
+  data-desc-en="Personal page on generative AI and LLMs: tools, release notes, links to official blogs and docs. One maintainer; check vendor pricing and policies yourself. aogl.cn"
+  data-desc-zh="业余维护的生成式 AI 备忘页：大模型与工具动态、官网与文档入口，非商业评测。定价、地区与条款请以各公司页面为准。aogl.cn"
 >
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any" />
-  <meta name="description" content="Hand-maintained notes on AI tools and releases — mostly links to primary sources; rankings are personal picks. aogl.cn" />
-  <title>aogl.cn — AI Tools, News &amp; Tips</title>
+  <meta name="description" content="Personal page on generative AI and LLMs: tools, release notes, links to official blogs and docs. One maintainer; check vendor pricing and policies yourself. aogl.cn" />
+  <title>aogl.cn — Personal generative AI bookmarks &amp; tools</title>
   <link rel="canonical" href="https://aogl.cn/" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="author" content="aogl.cn" />
-  <meta name="keywords" content="AI tools, generative AI, LLM, Claude, ChatGPT, Gemini, OpenAI, Anthropic, DeepMind, AI news, prompt engineering" />
+  <meta name="keywords" content="generative AI, LLM, AI tools, Claude, ChatGPT, Gemini, OpenAI, Anthropic, DeepMind, AI release notes, prompt engineering, aogl.cn" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aogl.cn/" />
-  <meta property="og:title" content="aogl.cn — AI Tools, News &amp; Tips" />
-  <meta property="og:description" content="Personal cheat sheet for AI releases and tools — links to sources; lists are opinionated." />
+  <meta property="og:title" content="aogl.cn — Personal generative AI bookmarks &amp; tools" />
+  <meta property="og:description" content="Generative AI tools, LLM releases, and links to official sources — maintained by one person in spare time. Not affiliated with vendors." />
   <meta property="og:site_name" content="aogl.cn" />
+  <meta property="og:image" content="https://aogl.cn/og-default.png" />
+  <meta property="og:image:secure_url" content="https://aogl.cn/og-default.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1536" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="aogl.cn — personal generative AI bookmarks and LLM tools" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="zh_CN" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="aogl.cn — AI Tools, News &amp; Tips" />
-  <meta name="twitter:description" content="Personal cheat sheet for AI tools and releases — verify pricing yourself." />
+  <meta name="twitter:image" content="https://aogl.cn/og-default.png" />
+  <meta name="twitter:title" content="aogl.cn — Personal generative AI bookmarks &amp; tools" />
+  <meta name="twitter:description" content="Generative AI tools &amp; LLM notes with links to official blogs and docs. Hobby page — verify pricing on vendor sites." />
   <link rel="alternate" hreflang="en" href="https://aogl.cn/" />
   <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/" />
   <link rel="alternate" hreflang="x-default" href="https://aogl.cn/" />
@@ -39,7 +46,9 @@
       "@id": "https://aogl.cn/#website",
       "name": "aogl.cn",
       "url": "https://aogl.cn/",
-      "description": "Hand-maintained notes on AI tools and releases with links to primary sources.",
+      "image": "https://aogl.cn/og-default.png",
+      "logo": "https://aogl.cn/logo.svg",
+      "description": "Personal bookmarks for generative AI tools and LLM releases, with links to official blogs and documentation.",
       "inLanguage": [
         "en",
         "zh-CN"
@@ -122,10 +131,31 @@
   <header>
     <div class="head-row">
       <div class="brand">
-        <h1>aogl.cn</h1>
-        <p class="tagline lang-en">Basically my bookmark file: release notes I actually read, tools I’ve opened at least once, and links straight to the vendor. Lists here are subjective — double-check price and terms.</p>
-        <p class="tagline lang-zh">相当于自用备忘：真正看过的更新日志、动手开过一两次的工具，外加直达官网的链接。下面榜单是个人排序，价格和条款务必自己核对。</p>
+        <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"
+            ><img src="logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async" /></a>
+        </h1>
+        <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"
+            ><img src="logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async" /></a>
+        </h1>
       </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li><a href="#pillars">Sections</a></li>
+          <li><a href="#tools-directory">Tools</a></li>
+          <li><a href="#feeds">Articles</a></li>
+          <li><a href="#reading">Reading</a></li>
+          <li><a href="#intro">About</a></li>
+        </ul>
+        <ul class="site-nav-list lang-zh">
+          <li><a href="#pillars">内容板块</a></li>
+          <li><a href="#tools-directory">工具目录</a></li>
+          <li><a href="#feeds">分类文章</a></li>
+          <li><a href="#reading">官方阅读</a></li>
+          <li><a href="#intro">关于本站</a></li>
+        </ul>
+      </nav>
       <div class="lang-switch" role="group" aria-label="Language">
         <button type="button" id="btn-en" aria-pressed="true">English</button>
         <button type="button" id="btn-zh" aria-pressed="false">中文</button>
@@ -135,9 +165,6 @@
 
   <main>
     <div class="wrap">
-      <!-- 固定展示广告位（DISPLAY_AD_SLOT）；自动广告仍在后台单独开启 -->
-      <div id="ad-display-root" class="ad-slot" aria-label="Advertisement"></div>
-
       <section id="pillars">
         <h2 class="page-section-title lang-en">What you’ll find here</h2>
         <h2 class="page-section-title lang-zh">内容板块</h2>
@@ -780,7 +807,7 @@
       <!-- TOOLS_DIRECTORY_AUTO_END -->
 
       <!-- CAT_FEEDS_AUTO_START -->
-      <div class="cat-feeds-wrap">
+      <div class="cat-feeds-wrap" id="feeds" tabindex="-1">
         <section id="cat-news" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-en">AI news &amp; briefs — latest 6</h2>
           <h2 class="cat-feed-title lang-zh">AI 资讯与短讯 · 最新 6 篇</h2>
@@ -1134,13 +1161,30 @@
     </div>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <span>© <span id="y"></span> aogl.cn</span>
-      <span>
-        <a href="privacy.html" class="lang-en">Privacy</a>
-        <a href="privacy.html" class="lang-zh">隐私政策</a>
-      </span>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang" role="group" aria-label="Language">
+          <button type="button" id="footer-btn-en" class="footer-lang-btn" aria-pressed="true">English</button>
+          <button type="button" id="footer-btn-zh" class="footer-lang-btn" aria-pressed="false">中文</button>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img
+          src="footer-wordmark-outline.svg"
+          width="448"
+          height="92"
+          class="footer-watermark-svg"
+          alt=""
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
+      <div class="footer-legal">
+        <a href="privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
     </div>
   </footer>
 </body>

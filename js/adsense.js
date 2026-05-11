@@ -1,7 +1,7 @@
 /**
  * AdSense：
  * 1) 加载发布商脚本 → 配合后台「自动广告」在版面中自动插入广告；
- * 2) 在 #ad-display-root 挂载「展示广告」单元（固定版位）→ 将 DISPLAY_AD_SLOT 设为后台获得的 data-ad-slot。
+ * 2) 若页面存在 #ad-display-root，可挂载「展示广告」固定单元 → DISPLAY_AD_SLOT 填 data-ad-slot。
  * ads.txt 见站点根目录。
  */
 (function () {

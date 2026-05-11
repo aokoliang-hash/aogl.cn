@@ -6,8 +6,9 @@
     </linearGradient>
   </defs>
   <rect width="32" height="32" rx="8" fill="#0a0e14"/>
-  <path d="M16 10.5 L22.5 21.5 H9.5 Z" fill="none" stroke="url(#g)" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="16" cy="10.5" r="3.25" fill="url(#g)"/>
-  <circle cx="9.5" cy="21.5" r="3.25" fill="url(#g)"/>
-  <circle cx="22.5" cy="21.5" r="3.25" fill="url(#g)"/>
+  <!-- Triangle centroid at tile center (16,16); side 12 -->
+  <path d="M16 9.07 L22 19.46 H10 Z" fill="none" stroke="url(#g)" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="16" cy="9.07" r="3.25" fill="url(#g)"/>
+  <circle cx="10" cy="19.46" r="3.25" fill="url(#g)"/>
+  <circle cx="22" cy="19.46" r="3.25" fill="url(#g)"/>
 </svg>

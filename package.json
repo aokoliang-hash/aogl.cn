@@ -1,0 +1,25 @@
+{
+  "name": "aogl.cn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-logo": "node scripts/regenerate-logo-wordmark.cjs",
+    "build-footer-outline": "node scripts/build-footer-outline-svg.cjs"
+  },
+  "devDependencies": {
+    "opentype.js": "^1.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aokoliang-hash/aogl.cn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aokoliang-hash/aogl.cn/issues"
+  },
+  "homepage": "https://github.com/aokoliang-hash/aogl.cn#readme",
+  "description": ""
+}
