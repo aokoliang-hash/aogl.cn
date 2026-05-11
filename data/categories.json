@@ -1,0 +1,201 @@
+{
+  "updated": "2026-05-11",
+  "sections": [
+    {
+      "id": "cat-news",
+      "heading_en": "AI news & briefs — latest 6",
+      "heading_zh": "AI 资讯与短讯 · 最新 6 篇",
+      "items": [
+        {
+          "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+          "title_en": "Advancing voice intelligence with new models in the API",
+          "title_zh": "API 新语音模型：推进语音智能",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/",
+          "title_en": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+          "title_zh": "GPT-5.5 / GPT-5.5-Cyber 与网络场景可信访问",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt/",
+          "title_en": "Introducing Trusted Contact in ChatGPT",
+          "title_zh": "ChatGPT「可信联系人」功能上线",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://openai.com/index/running-codex-safely/",
+          "title_en": "Running Codex safely at OpenAI",
+          "title_zh": "在 OpenAI 安全运行 Codex",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026/",
+          "title_en": "Introducing ChatGPT Futures: Class of 2026",
+          "title_zh": "ChatGPT Futures：2026 届计划",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "title_en": "Introducing Claude Opus 4.7",
+          "title_zh": "发布 Claude Opus 4.7",
+          "meta_en": "Anthropic",
+          "meta_zh": "Anthropic"
+        }
+      ]
+    },
+    {
+      "id": "cat-rankings",
+      "heading_en": "Tool rankings — latest 6",
+      "heading_zh": "工具排行与精选 · 最新 6 篇",
+      "items": [
+        {
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+          "title_en": "Introducing Claude Design by Anthropic Labs",
+          "title_zh": "Anthropic Labs 推出 Claude Design",
+          "meta_en": "Anthropic",
+          "meta_zh": "Anthropic"
+        },
+        {
+          "url": "https://www.anthropic.com/news/higher-limits-spacex",
+          "title_en": "Higher usage limits for Claude and a compute deal with SpaceX",
+          "title_zh": "Claude 用量上限与 SpaceX 算力合作",
+          "meta_en": "Anthropic",
+          "meta_zh": "Anthropic"
+        },
+        {
+          "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+          "title_en": "Gemma 4: Byte for byte, the most capable open models",
+          "title_zh": "Gemma 4：开源模型能力与体积的平衡",
+          "meta_en": "DeepMind",
+          "meta_zh": "DeepMind"
+        },
+        {
+          "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+          "title_en": "Advancing voice intelligence with new models in the API",
+          "title_zh": "API 新语音模型：推进语音智能",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/",
+          "title_en": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+          "title_zh": "GPT-5.5 / GPT-5.5-Cyber 与网络场景可信访问",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt/",
+          "title_en": "Introducing Trusted Contact in ChatGPT",
+          "title_zh": "ChatGPT「可信联系人」功能上线",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        }
+      ]
+    },
+    {
+      "id": "cat-maps",
+      "heading_en": "Category maps — latest 6",
+      "heading_zh": "AI 工具分类 · 最新 6 篇",
+      "items": [
+        {
+          "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+          "title_en": "Gemma 4: Byte for byte, the most capable open models",
+          "title_zh": "Gemma 4：开源模型能力与体积的平衡",
+          "meta_en": "DeepMind",
+          "meta_zh": "DeepMind"
+        },
+        {
+          "url": "https://openai.com/index/running-codex-safely/",
+          "title_en": "Running Codex safely at OpenAI",
+          "title_zh": "在 OpenAI 安全运行 Codex",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026/",
+          "title_en": "Introducing ChatGPT Futures: Class of 2026",
+          "title_zh": "ChatGPT Futures：2026 届计划",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "title_en": "Introducing Claude Opus 4.7",
+          "title_zh": "发布 Claude Opus 4.7",
+          "meta_en": "Anthropic",
+          "meta_zh": "Anthropic"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+          "title_en": "Introducing Claude Design by Anthropic Labs",
+          "title_zh": "Anthropic Labs 推出 Claude Design",
+          "meta_en": "Anthropic",
+          "meta_zh": "Anthropic"
+        },
+        {
+          "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+          "title_en": "Advancing voice intelligence with new models in the API",
+          "title_zh": "API 新语音模型：推进语音智能",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        }
+      ]
+    },
+    {
+      "id": "cat-tips",
+      "heading_en": "Techniques & tips — latest 6",
+      "heading_zh": "技术技巧 · 最新 6 篇",
+      "items": [
+        {
+          "url": "https://openai.com/index/running-codex-safely/",
+          "title_en": "Running Codex safely at OpenAI",
+          "title_zh": "在 OpenAI 安全运行 Codex",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt/",
+          "title_en": "Introducing Trusted Contact in ChatGPT",
+          "title_zh": "ChatGPT「可信联系人」功能上线",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/",
+          "title_en": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+          "title_zh": "GPT-5.5 / GPT-5.5-Cyber 与网络场景可信访问",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        },
+        {
+          "url": "https://www.anthropic.com/news/higher-limits-spacex",
+          "title_en": "Higher usage limits for Claude and a compute deal with SpaceX",
+          "title_zh": "Claude 用量上限与 SpaceX 算力合作",
+          "meta_en": "Anthropic",
+          "meta_zh": "Anthropic"
+        },
+        {
+          "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+          "title_en": "Gemma 4: Byte for byte, the most capable open models",
+          "title_zh": "Gemma 4：开源模型能力与体积的平衡",
+          "meta_en": "DeepMind",
+          "meta_zh": "DeepMind"
+        },
+        {
+          "url": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026/",
+          "title_en": "Introducing ChatGPT Futures: Class of 2026",
+          "title_zh": "ChatGPT Futures：2026 届计划",
+          "meta_en": "OpenAI",
+          "meta_zh": "OpenAI"
+        }
+      ]
+    }
+  ]
+}
