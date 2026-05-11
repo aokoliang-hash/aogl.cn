@@ -1,0 +1,10 @@
+{
+  "siteUrl": "https://aogl.cn",
+  "githubPagesUrl": "https://aokoliang-hash.github.io/aogl.cn",
+  "readingMaxTotal": 12,
+  "sources": {
+    "openai": { "listUrl": "https://openai.com/news/", "max": 5 },
+    "anthropic": { "listUrl": "https://www.anthropic.com/news", "max": 5 },
+    "deepmind": { "listUrl": "https://deepmind.google/blog/", "max": 4 }
+  }
+}

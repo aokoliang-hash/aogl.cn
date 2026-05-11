@@ -1,0 +1,27 @@
+name: Refresh reading list
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Scrape listings + rebuild HTML + verify links
+        run: node scripts/update-reading.mjs --fetch
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh AI reading list [automated]"
+          file_pattern: "index.html data/articles.json sitemap.xml"
