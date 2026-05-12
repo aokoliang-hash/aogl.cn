@@ -218,6 +218,7 @@
 .hub-hotmix-cards.hub-hotmix-cards--carousel.hub-hotmix-cards--carousel--dragging {
   cursor: grabbing;
   user-select: none;
+  scroll-snap-type: none;
 }
 .hub-hotmix-cards.hub-hotmix-cards--carousel.hub-hotmix-cards--carousel--dragging * {
   user-select: none;
@@ -285,6 +286,10 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+.hub-hotmix-cards.hub-hotmix-cards--carousel .hub-hotmix-card-img {
+  -webkit-user-drag: none;
+  user-select: none;
 }
 .hub-hotmix-card-body {
   padding: 0.55rem 0.65rem 0.65rem;

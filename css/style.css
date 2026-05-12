@@ -315,7 +315,7 @@ p {
 }
 .card p {
   font-size: 0.88rem;
-  margin: 0;
+  margin: 0 0 0.45rem;
   color: var(--muted);
   line-height: 1.45;
 }
@@ -528,6 +528,25 @@ footer.site-footer {
   color: var(--muted);
   margin-bottom: 0.65rem;
 }
+/* 首页 #intro.site-intro — 与 reading-intro 搭配 */
+.site-intro {
+  margin-bottom: 2rem;
+  scroll-margin-top: 1rem;
+}
+.site-intro-title {
+  font-size: clamp(1.12rem, 2vw, 1.28rem);
+  font-weight: 700;
+  margin: 0 0 0.55rem;
+  color: #bae6fd;
+  letter-spacing: -0.02em;
+}
+.site-intro .reading-intro:last-of-type {
+  margin-bottom: 0;
+}
+.cat-feed .cat-feed-lead {
+  margin-top: 0.15rem;
+  margin-bottom: 0.6rem;
+}
 .reading-list {
   list-style: none;
   padding: 0;
@@ -585,6 +604,9 @@ footer.site-footer {
   color: var(--muted);
   margin: 0 0 1.25rem;
   line-height: 1.5;
+}
+.tools-intro + .tools-intro {
+  margin-top: -0.45rem;
 }
 .tools-category {
   margin-bottom: 1.75rem;

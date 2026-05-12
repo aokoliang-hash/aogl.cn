@@ -72,27 +72,45 @@
   </header>
   <main>
     <div class="wrap">
+      <section id="intro" class="site-intro" aria-labelledby="intro-title" tabindex="-1">
+        <h2 id="intro-title" class="site-intro-title lang-zh">关于本站</h2>
+        <p class="reading-intro lang-zh">
+          aogl.cn 是个人维护的生成式 AI 备忘站：聚合官网博文与文档入口，方便自己查阅，也欢迎路过收藏。所列外链均在<strong>新标签页</strong>打开；正文多为摘录或短评，<strong>不是</strong>商业评测机构，定价、地区策略与条款请以各公司页面为准。
+        </p>
+        <p class="reading-intro lang-zh">
+          下方「内容板块」对应页内 RSS 分类；「工具分类导航」按场景手工整理常见产品官网（对话、生图、视频、代码等），省得翻收藏夹。若链接失效、名称变更或希望撤下某站，可在仓库发
+          <a href="https://github.com/aokoliang-hash/aogl.cn/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>
+          说明，有余力时会改。
+        </p>
+        <p class="reading-intro lang-zh">
+          本站<strong>不当新闻站</strong>用：长文若写会单独开坑；列表与短讯会尽量标注时间与出处，便于日后核对。
+        </p>
+      </section>
       <section id="pillars">
         <h2 class="page-section-title lang-zh">内容板块</h2>
         <div class="cards">
           <article class="card">
             <h3 class="lang-zh">AI 资讯与短讯</h3>
-            <p class="lang-zh">模型发布、API 变动、安全政策与巨头动向 — 短讯形式，避免标题党。</p>
+            <p class="lang-zh">模型发布、API 变动、安全政策与巨头动向 — 以短讯为主，避免标题党式转述。</p>
+            <p class="lang-zh">条目优先选自 OpenAI、Anthropic、Google DeepMind 等<strong>一手机构博文</strong>；本站不爬全文，只保留标题与直达链。</p>
             <p class="card-jump lang-zh"><a href="#cat-news">该类别最新 6 篇 ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-zh">工具排行与精选</h3>
-            <p class="lang-zh">按场景更新榜单：写作、编程助手、生图、本地/离线方案与性价比之选。</p>
+            <p class="lang-zh">按写作、编程助手、生图、本地/离线方案等场景更新榜单与阅读线索。</p>
+            <p class="lang-zh">侧重<strong>可复现的选型信息</strong>与性价比讨论，不追求「全网最全」；与纯营销榜单无关。</p>
             <p class="card-jump lang-zh"><a href="#cat-rankings">该类别最新 6 篇 ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-zh">AI 工具分类</h3>
-            <p class="lang-zh">导图式梳理：大模型托管、微调、RAG、智能体与多媒体管线，便于选型。</p>
+            <p class="lang-zh">导图式梳理：大模型托管、微调、RAG、智能体与多媒体管线，便于从架构上选型。</p>
+            <p class="lang-zh">同一品类只保留<strong>常用主站</strong>与少数替代入口；冷门口子、需邀请的闭测产品一般不收，以免链接迅速失效。</p>
             <p class="card-jump lang-zh"><a href="#tools-directory">工具目录 ↓</a> · <a href="#cat-maps">文章精选 ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-zh">技术技巧</h3>
             <p class="lang-zh">提示词模式、评测维度、红队入门、成本控制与真实项目接入经验。</p>
+            <p class="lang-zh">偏<strong>工程实践与边界条件</strong>（上下文长度、延迟、合规），不替代官方文档；动手前请仍以厂商说明为准。</p>
             <p class="card-jump lang-zh"><a href="#cat-tips">该类别最新 6 篇 ↓</a></p>
           </article>
         </div>
@@ -103,7 +121,14 @@
       <!-- TOOLS_DIRECTORY_AUTO_START -->
       <section id="tools-directory" class="tools-directory" tabindex="-1">
         <h2 class="page-section-title lang-zh">AI 工具分类导航</h2>
-        <p class="tools-intro lang-zh">以下为常见 AI 工具官网入口（新标签页打开）。图标来自各站 favicon。</p>
+        <p class="tools-intro lang-zh">
+          以下为常见生成式 AI 与相关基建的<strong>官网入口</strong>（新标签页打开）；图标使用各站 favicon 服务拉取，若某站图标缺失或变形属正常现象。
+        </p>
+        <p class="tools-intro lang-zh">
+          分类顺序大致按「对话 → 生图/视频 → 编程与 Agent → 数据与部署」编排，便于从任务反查工具；<strong>不包含</strong>钓鱼站、纯聚合下载页或明显灰色地带站点。若你认为某入口应下架或补一类常用工具，欢迎通过
+          <a href="https://github.com/aokoliang-hash/aogl.cn/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>
+          指出具体域名与理由。
+        </p>
         <div class="tools-category" id="tools-chat-llm">
           <h3 class="tools-cat-heading lang-zh">对话与大模型</h3>
           <ul class="tools-grid">
@@ -622,6 +647,7 @@
       <div class="cat-feeds-wrap" id="feeds" tabindex="-1">
         <section id="cat-news" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-zh">AI 资讯与短讯 · 最新 6 篇</h2>
+          <p class="reading-intro cat-feed-lead lang-zh">本块为站内 RSS 拉取摘要：偏模型与产品发布、政策与安全通告；更新频率取决于上游 feed，非实时新闻站。</p>
           <ul class="article-list compact lang-zh">
           <li>
             <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" target="_blank" rel="noopener noreferrer">API 新语音模型：推进语音智能</a>
@@ -651,6 +677,7 @@
         </section>
         <section id="cat-rankings" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-zh">工具排行与精选 · 最新 6 篇</h2>
+          <p class="reading-intro cat-feed-lead lang-zh">侧重榜单解读、场景化选型与「够用就好」的性价比讨论；与带货或刷榜无关。</p>
           <ul class="article-list compact lang-zh">
           <li>
             <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank" rel="noopener noreferrer">Anthropic Labs 推出 Claude Design</a>
@@ -680,6 +707,7 @@
         </section>
         <section id="cat-maps" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-zh">AI 工具分类 · 最新 6 篇</h2>
+          <p class="reading-intro cat-feed-lead lang-zh">与上方「工具分类导航」呼应：这里收的是<strong>文章</strong>里谈架构、路线图与对比的内容，便于和纯官网入口对照阅读。</p>
           <ul class="article-list compact lang-zh">
           <li>
             <a href="https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/" target="_blank" rel="noopener noreferrer">Gemma 4：开源模型能力与体积的平衡</a>
@@ -709,6 +737,7 @@
         </section>
         <section id="cat-tips" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-zh">技术技巧 · 最新 6 篇</h2>
+          <p class="reading-intro cat-feed-lead lang-zh">偏实践笔记：提示词、评测、成本、安全与落地踩坑；适合已有基础、准备接 API 或上生产的读者。</p>
           <ul class="article-list compact lang-zh">
           <li>
             <a href="https://openai.com/index/running-codex-safely/" target="_blank" rel="noopener noreferrer">在 OpenAI 安全运行 Codex</a>
@@ -873,15 +902,6 @@
         <p class="lang-zh">
           榜单与推荐均属<strong>主观整理</strong>，采用前请自行核对价格、条款与数据处理方式。
           若投放广告，正文需充足原创，并保留隐私政策链接（见页脚）。
-        </p>
-      </section>
-      <section id="intro">
-        <h2 class="page-section-title lang-zh">关于本站</h2>
-        <p class="lang-zh">
-          和上面说的差不多：<strong>外链为主</strong>，把我常看的实验室 / 文档入口堆在一起；下面<strong>工具格子</strong>按对话、图像、视频、代码、音频、搜索分了类，没黑科技，就是省得翻收藏夹。
-        </p>
-        <p class="lang-zh">
-          长文以后有空再写；目前就当货架用。涉及「新闻」或榜单时尽量<strong>写清时间和出处</strong>，自己也省得将来对不上账。
         </p>
       </section>
     </div>
