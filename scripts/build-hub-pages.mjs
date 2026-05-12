@@ -532,10 +532,15 @@ ${newsBlocks}
         </li>`
     )
     .join("\n");
+  const hotMixCarouselClass = spec.slug === "games" ? " hub-hotmix-cards--carousel" : "";
+  const hotMixUlOpen =
+    spec.slug === "games"
+      ? `<ul class="hub-hotmix-cards${hotMixCarouselClass}" role="list" aria-label="Hot mix — swipe or scroll sideways for more">`
+      : `<ul class="hub-hotmix-cards">`;
   const hotMixSection = showHotMix
     ? `    <section class="hub-screen hub-screen-hotmix" id="hot-mix" aria-labelledby="hub-hotmix-title">
       <h2 id="hub-hotmix-title" class="page-section-title">${inlineTitleSpans(spec, "hotMixTitle")}</h2>
-${hubHotMixLeadSpans(spec)}      <ul class="hub-hotmix-cards">
+${hubHotMixLeadSpans(spec)}      ${hotMixUlOpen}
 ${hotMixLis}
       </ul>
     </section>

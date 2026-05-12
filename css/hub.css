@@ -4,6 +4,16 @@
   z-index: 2;
   padding-bottom: 2.5rem;
 }
+.hub-editorial {
+  padding: 1rem 1.1rem 1.15rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(10, 16, 24, 0.48);
+  -webkit-backdrop-filter: blur(var(--glass-blur, 14px)) saturate(1.12);
+  backdrop-filter: blur(var(--glass-blur, 14px)) saturate(1.12);
+  box-shadow: inset 0 0 0 1px rgba(125, 211, 252, 0.05), 0 6px 24px rgba(0, 0, 0, 0.22);
+}
 .hub-page-title {
   font-size: clamp(1.35rem, 3vw, 1.75rem);
   margin: 0 0 0.35rem;
@@ -56,14 +66,16 @@
   padding: 0.65rem 0.5rem;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: rgba(8, 12, 18, 0.45);
+  background: rgba(8, 12, 18, 0.42);
+  -webkit-backdrop-filter: blur(var(--glass-blur, 14px)) saturate(1.12);
+  backdrop-filter: blur(var(--glass-blur, 14px)) saturate(1.12);
   text-decoration: none;
   color: #e0e8f0;
   transition: border-color 0.15s, background 0.15s;
 }
 .hub-rank-link:hover {
   border-color: rgba(125, 211, 252, 0.35);
-  background: rgba(12, 20, 32, 0.55);
+  background: rgba(12, 20, 32, 0.52);
 }
 .hub-rank-num {
   position: absolute;
@@ -113,7 +125,10 @@
   padding: 0.85rem 1rem;
   border: 1px solid var(--border);
   border-radius: 10px;
-  background: rgba(6, 10, 14, 0.5);
+  background: rgba(6, 10, 14, 0.45);
+  -webkit-backdrop-filter: blur(var(--glass-blur, 14px)) saturate(1.12);
+  backdrop-filter: blur(var(--glass-blur, 14px)) saturate(1.12);
+  box-shadow: inset 0 0 0 1px rgba(125, 211, 252, 0.04);
 }
 .hub-news-group-title {
   margin: 0 0 0.5rem;
@@ -171,6 +186,72 @@
     gap: 1rem;
   }
 }
+/* Games hub: one row, ~4.5 cards visible, swipe / drag horizontally */
+.hub-hotmix-cards.hub-hotmix-cards--carousel {
+  --hm-carousel-gap: 0.85rem;
+  --hm-carousel-visible: 2.35;
+  --hm-carousel-gaps: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: var(--hm-carousel-gap);
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  padding-bottom: 0.35rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  touch-action: pan-x pan-y pinch-zoom;
+  cursor: grab;
+}
+.hub-hotmix-cards.hub-hotmix-cards--carousel::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.hub-hotmix-cards.hub-hotmix-cards--carousel:active {
+  cursor: grabbing;
+}
+.hub-hotmix-cards.hub-hotmix-cards--carousel.hub-hotmix-cards--carousel--dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+.hub-hotmix-cards.hub-hotmix-cards--carousel.hub-hotmix-cards--carousel--dragging * {
+  user-select: none;
+}
+.hub-hotmix-cards.hub-hotmix-cards--carousel .hub-hotmix-card {
+  flex: 0 0
+    calc(
+      (100% - (var(--hm-carousel-gaps) * var(--hm-carousel-gap))) / var(--hm-carousel-visible)
+    );
+  min-width: 0;
+  scroll-snap-align: start;
+}
+@media (min-width: 560px) {
+  .hub-hotmix-cards.hub-hotmix-cards--carousel {
+    --hm-carousel-visible: 2.85;
+    --hm-carousel-gaps: 2;
+  }
+}
+@media (min-width: 720px) {
+  .hub-hotmix-cards.hub-hotmix-cards--carousel {
+    --hm-carousel-visible: 3.35;
+    --hm-carousel-gaps: 3;
+  }
+}
+@media (min-width: 960px) {
+  .hub-hotmix-cards.hub-hotmix-cards--carousel {
+    --hm-carousel-visible: 4.5;
+    --hm-carousel-gaps: 4;
+    --hm-carousel-gap: 1rem;
+  }
+}
+.hub-hotmix-cards.hub-hotmix-cards--carousel .hub-hotmix-card-link:hover {
+  transform: none;
+}
 .hub-hotmix-card {
   margin: 0;
 }
@@ -182,12 +263,15 @@
   color: #e8f0f8;
   border-radius: 12px;
   border: 1px solid rgba(125, 211, 252, 0.15);
-  background: rgba(6, 10, 16, 0.55);
+  background: rgba(6, 10, 16, 0.48);
+  -webkit-backdrop-filter: blur(var(--glass-blur, 14px)) saturate(1.12);
+  backdrop-filter: blur(var(--glass-blur, 14px)) saturate(1.12);
   overflow: hidden;
-  transition: border-color 0.15s, box-shadow 0.15s, transform 0.12s;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.12s, background 0.15s;
 }
 .hub-hotmix-card-link:hover {
   border-color: rgba(125, 211, 252, 0.4);
+  background: rgba(10, 16, 26, 0.58);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
   transform: translateY(-2px);
 }
@@ -245,7 +329,9 @@
 .hub-more-link:hover {
   color: #e0e8f0;
   border-color: var(--border);
-  background: rgba(8, 12, 18, 0.4);
+  background: rgba(8, 12, 18, 0.38);
+  -webkit-backdrop-filter: blur(var(--glass-blur, 14px)) saturate(1.1);
+  backdrop-filter: blur(var(--glass-blur, 14px)) saturate(1.1);
 }
 .hub-favicon-sm {
   flex-shrink: 0;
