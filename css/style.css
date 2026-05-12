@@ -123,8 +123,24 @@ header {
   padding: 0;
 }
 @media (max-width: 720px) {
+  /* Single-row nav pills; swipe/drag horizontally */
+  .site-nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x pinch-zoom;
+    scrollbar-width: thin;
+  }
   .site-nav-list {
+    flex-wrap: nowrap;
     justify-content: flex-start;
+    width: max-content;
+    max-width: none;
+    padding-bottom: 0.15rem;
+  }
+  .site-nav-list li {
+    flex-shrink: 0;
   }
 }
 .site-nav-list a {

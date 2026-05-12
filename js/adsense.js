@@ -3,24 +3,43 @@
  * 1) 加载发布商脚本 → 配合后台「自动广告」在版面中自动插入广告；
  * 2) 若页面存在 #ad-display-root，可挂载「展示广告」固定单元 → DISPLAY_AD_SLOT 填 data-ad-slot。
  * ads.txt 见站点根目录。
+ *
+ * 若控制台出现 GET …/adsbygoogle.js … ERR_CONNECTION_CLOSED / net::ERR_BLOCKED_BY_CLIENT：
+ * 多为网络无法访问 Google 广告域名（地区策略、防火墙）、广告拦截扩展或代理异常；
+ * 站点其余功能不受影响，只是广告脚本不会加载。本地调试可在地址栏加 ?noads=1 或执行：
+ * localStorage.setItem('aogl-disable-ads','1') 后刷新，以跳过请求、减少控制台报错。
  */
 (function () {
   var PUBLISHER_CLIENT = "ca-pub-6958761551797888";
   /** 在 AdSense → 广告 → 按广告单元 → 新建展示广告 → 获取代码里的 data-ad-slot（数字） */
   var DISPLAY_AD_SLOT = "";
 
+  var host = String(location.hostname || "");
+  var qs = String(location.search || "");
+  var skipAds =
+    /(?:^|[?&])noads=1(?:&|$)/.test(qs) ||
+    host === "localhost" ||
+    host === "127.0.0.1" ||
+    (typeof localStorage !== "undefined" && localStorage.getItem("aogl-disable-ads") === "1");
+
   function loadPublisherScript() {
+    if (skipAds) return;
     var s = document.createElement("script");
     s.async = true;
     s.src =
       "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
       encodeURIComponent(PUBLISHER_CLIENT);
     s.crossOrigin = "anonymous";
-    s.onerror = function () {};
+    s.onerror = function () {
+      try {
+        document.documentElement.setAttribute("data-adsense-unavailable", "1");
+      } catch (e) {}
+    };
     document.head.appendChild(s);
   }
 
   function mountManualUnit() {
+    if (skipAds) return;
     var root = document.getElementById("ad-display-root");
     if (!root) return;
 
