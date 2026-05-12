@@ -518,7 +518,7 @@ ${newsBlocks}
   const hotMixLis = hotMixItems
     .map(
       (it) => `        <li class="hub-hotmix-card">
-          <a class="hub-hotmix-card-link" href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">
+          <a class="hub-hotmix-card-link" href="${esc(it.url)}" target="_blank" rel="noopener noreferrer" draggable="false">
             <div class="hub-hotmix-card-media">
               <img class="hub-hotmix-card-img" src="${esc(hotMixItemImageUrl(it))}" width="400" height="225" alt="" loading="lazy" decoding="async" />
             </div>
