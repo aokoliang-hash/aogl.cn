@@ -67,6 +67,13 @@ const EDITORIAL_I18N = {
     ru: "<p>Steam и три консольные семьи лидируют в PC / гостиной; мобильные гиганты уровня Tencent — в «ещё», так как их веб‑хабы иные.</p>",
     ar: "<p>يغلب Steam وعائلات المنصات الثلاث إنفاق الحاسوب والصالة؛ عملاقو الموبايل على غرار Tencent في قسم «المزيد» لأن مراكزهم الويب تختلف.</p>",
   },
+  tools: {
+    ja: "<p>天気・翻訳・電卓などは各サービスの公式ページへリンクしています。利用規約・データの扱いは必ず各サイトで確認してください。</p>",
+    ko: "<p>날씨·번역·계산기 등은 각 서비스 공식 페이지로 연결됩니다. 약관과 데이터 처리는 해당 사이트에서 확인하세요.</p>",
+    fr: "<p>Liens vers les services officiels (météo, traduction, calculatrice, etc.). Vérifiez toujours leurs conditions et leur traitement des données.</p>",
+    ru: "<p>Ссылки ведут на официальные сервисы (погода, перевод, калькулятор и т.д.). Условия и данные — на сторонних сайтах.</p>",
+    ar: "<p>روابط إلى صفحات الخدمات الرسمية (الطقس، الترجمة، الحاسبة، إلخ). راجع شروط كل موقع ومعالجة البيانات هناك.</p>",
+  },
 };
 
 const BRAND_IMG_ALT = {
@@ -160,7 +167,7 @@ function faviconUrl(domain) {
 }
 
 const NAV = [
-  { href: "index.html#tools-directory", file: null, en: "AI tools", zh: "AI 工具", ja: "AIツール", ko: "AI 도구", fr: "Outils IA", ru: "ИИ-инструменты", ar: "أدوات الذكاء الاصطناعي" },
+  { href: "index.html#tools-directory", file: null, en: "AI frontier", zh: "AI 前沿", ja: "AI最前線", ko: "AI 최전선", fr: "IA — veille", ru: "ИИ — новинки", ar: "أحدث الذكاء الاصطناعي" },
   { href: "portal.html", file: "portal.html", en: "Top sites", zh: "全球站点", ja: "主要サイト", ko: "주요 사이트", fr: "Grands sites", ru: "Топ сайтов", ar: "أبرز المواقع" },
   { href: "brands.html", file: "brands.html", en: "Brands", zh: "品牌", ja: "ブランド", ko: "브랜드", fr: "Marques", ru: "Бренды", ar: "العلامات" },
   { href: "shopping.html", file: "shopping.html", en: "Shopping", zh: "购物", ja: "ショッピング", ko: "쇼핑", fr: "Shopping", ru: "Шопинг", ar: "التسوق" },
@@ -168,6 +175,7 @@ const NAV = [
   { href: "social.html", file: "social.html", en: "Social", zh: "社交", ja: "ソーシャル", ko: "소셜", fr: "Social", ru: "Соцсети", ar: "التواصل" },
   { href: "tech.html", file: "tech.html", en: "Tech", zh: "科技", ja: "テック", ko: "테크", fr: "Tech", ru: "Техно", ar: "التقنية" },
   { href: "games.html", file: "games.html", en: "Games", zh: "游戏", ja: "ゲーム", ko: "게임", fr: "Jeux", ru: "Игры", ar: "الألعاب" },
+  { href: "tools.html", file: "tools.html", en: "Utilities", zh: "工具", ja: "実用ツール", ko: "실용 도구", fr: "Utilitaires", ru: "Утилиты", ar: "أدوات مساعدة" },
 ];
 
 function navLabel(n, lang) {
@@ -178,7 +186,8 @@ function navHtml(activeFile) {
   return LOCALES.map(
     (lang) => `        <ul class="site-nav-list lang-${lang}">
 ${NAV.map((n) => {
-          const isActive = n.file != null && n.file === activeFile;
+          const isActive =
+            (n.file != null && n.file === activeFile) || (n.file === null && activeFile === "index.html");
           const cur = isActive ? ' class="is-active"' : "";
           return `          <li${cur}><a href="${esc(n.href)}">${esc(navLabel(n, lang))}</a></li>`;
         }).join("\n")}
@@ -272,7 +281,7 @@ function renderPage(spec, activeFile) {
       inLanguage: ["en", "zh-CN", "ja", "ko", "fr", "ru", "ar"],
       isPartOf: { "@type": "WebSite", "@id": BASE + "/#website", name: "aogl.cn", url: BASE + "/" },
     },
-    jsonLdItemList(`${spec.h1En} — top 10`, top10.map((t) => ({ name: t.nameEn, url: t.url }))),
+    jsonLdItemList(spec.rankTitleEn || spec.h1En, top10.map((t) => ({ name: t.nameEn, url: t.url }))),
   ];
 
   const top10Lis = top10
@@ -311,6 +320,18 @@ ${(g.items || [])
         </section>`
     )
     .join("\n");
+
+  const showNewsScreen = !spec.omitNewsScreen && newsGroups.length > 0;
+  const newsSection = showNewsScreen
+    ? `    <section class="hub-screen hub-screen-news" id="news" aria-labelledby="hub-news-title">
+      <h2 id="hub-news-title" class="page-section-title">${inlineTitleSpans(spec, "newsTitle")}</h2>
+${hubLeadSpans(spec, "newsLead")}      <div class="hub-news-wrap">
+${newsBlocks}
+      </div>
+    </section>
+
+`
+    : "";
 
   const moreLis = more
     .map(
@@ -390,14 +411,7 @@ ${top10Lis}
       </ol>
     </section>
 
-    <section class="hub-screen hub-screen-news" id="news" aria-labelledby="hub-news-title">
-      <h2 id="hub-news-title" class="page-section-title">${inlineTitleSpans(spec, "newsTitle")}</h2>
-${hubLeadSpans(spec, "newsLead")}      <div class="hub-news-wrap">
-${newsBlocks}
-      </div>
-    </section>
-
-    <section class="hub-screen hub-screen-more" id="more" aria-labelledby="hub-more-title">
+${newsSection}    <section class="hub-screen hub-screen-more" id="more" aria-labelledby="hub-more-title">
       <h2 id="hub-more-title" class="page-section-title">${inlineTitleSpans(spec, "moreTitle")}</h2>
 ${hubLeadSpans(spec, "moreLead")}      <ul class="hub-more-grid">
 ${moreLis}

@@ -40,6 +40,7 @@ const PAGES = [
   "social.html",
   "tech.html",
   "games.html",
+  "tools.html",
   "privacy.html",
 ];
 

@@ -20,16 +20,6 @@
     { "hub": "portal", "groupId": "ng-amz", "feeds": ["https://www.aboutamazon.com/news/rss/"] },
     { "hub": "portal", "groupId": "ng-wa", "feeds": ["https://about.fb.com/news/feed/"], "titleFilter": "WhatsApp|WA\\b" },
 
-    { "hub": "social", "groupId": "soc-fb", "feeds": ["https://about.fb.com/news/feed/"] },
-    { "hub": "social", "groupId": "soc-yt", "feeds": ["https://blog.google/products/youtube/rss/"] },
-    { "hub": "social", "groupId": "soc-wa", "feeds": ["https://about.fb.com/news/feed/"], "titleFilter": "WhatsApp" },
-    { "hub": "social", "groupId": "soc-ig", "feeds": ["https://engineering.fb.com/feed/"], "titleFilter": "Instagram|Reels" },
-    { "hub": "social", "groupId": "soc-tt", "feeds": ["https://techcrunch.com/tag/tiktok/feed/"] },
-    { "hub": "social", "groupId": "soc-li", "feeds": ["https://techcrunch.com/tag/linkedin/feed/"] },
-    { "hub": "social", "groupId": "soc-sc", "feeds": ["https://techcrunch.com/tag/snapchat/feed/"] },
-    { "hub": "social", "groupId": "soc-tg", "feeds": ["https://techcrunch.com/tag/telegram/feed/"] },
-    { "hub": "social", "groupId": "soc-dc", "feeds": ["https://techcrunch.com/tag/discord/feed/"] },
-
     { "hub": "tech", "groupId": "tc-nv", "feeds": ["https://blogs.nvidia.com/feed/", "https://developer.nvidia.com/blog/feed/"] },
     { "hub": "tech", "groupId": "tc-amd", "feeds": ["https://ir.amd.com/rss/news-releases.xml"] },
     { "hub": "tech", "groupId": "tc-sam", "feeds": ["https://news.samsung.com/global/feed"] },
@@ -48,17 +38,7 @@
     { "hub": "brands", "groupId": "nb-amz", "feeds": ["https://www.aboutamazon.com/news/rss/"] },
     { "hub": "brands", "groupId": "nb-google", "feeds": ["https://blog.google/technology/ai/rss/"] },
     { "hub": "brands", "groupId": "nb-sam", "feeds": ["https://news.samsung.com/global/feed"] },
-    { "hub": "brands", "groupId": "nb-dis", "feeds": ["https://thewaltdisneycompany.com/feed/"] },
+    { "hub": "brands", "groupId": "nb-dis", "feeds": ["https://thewaltdisneycompany.com/feed/"] }
 
-    { "hub": "life", "groupId": "lf-maps", "feeds": ["https://blog.google/products/maps/rss/"] },
-    { "hub": "life", "groupId": "lf-wa", "feeds": ["https://about.fb.com/news/feed/"], "titleFilter": "WhatsApp" },
-    { "hub": "life", "groupId": "lf-ig", "feeds": ["https://engineering.fb.com/feed/"], "titleFilter": "Instagram|Reels" },
-    { "hub": "life", "groupId": "lf-spotify", "feeds": ["https://newsroom.spotify.com/feed"] },
-    { "hub": "life", "groupId": "lf-nflx", "feeds": ["https://techcrunch.com/tag/netflix/feed/"] },
-    { "hub": "life", "groupId": "lf-abnb", "feeds": ["https://news.airbnb.com/feed"] },
-    { "hub": "life", "groupId": "lf-zoom", "feeds": ["https://techcrunch.com/tag/zoom/feed/"] },
-
-    { "hub": "shopping", "groupId": "sp-amz", "feeds": ["https://www.aboutamazon.com/news/rss/"] },
-    { "hub": "shopping", "groupId": "sp-ebay", "feeds": ["https://www.ebayinc.com/stories/news/rss/"] }
   ]
 }

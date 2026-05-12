@@ -59,26 +59,26 @@
   },
   "shopping": {
     "title": { "ja": "世界のECプラットフォーム｜aogl.cn", "ko": "글로벌 이커머스 | aogl.cn", "fr": "E-commerce mondial — signets | aogl.cn", "ru": "Глобальная электронная коммерция — закладки | aogl.cn", "ar": "التجارة الإلكترونية العالمية — روابط | aogl.cn" },
-    "desc": { "ja": "越境ECで上位に並ぶプラットフォーム10件と、各社IR・ニュース3本。", "ko": "글로벌 GMV·트래픽 상위 이커머스 10곳과 기업별 공식 링크 3개.", "fr": "Dix plateformes e-commerce souvent en tête des classements mondiaux, avec trois liens officiels chacune.", "ru": "Десять крупных платформ электронной коммерции и по три корпоративные ссылки.", "ar": "عشر منصات تجارة إلكترونية غالبًا في المقدمة عالميًا، مع ثلاث روابط رسمية لكل منصة." },
+    "desc": { "ja": "越境ECで上位に並ぶプラットフォーム10件と、各店のベストセラー・セール公式ページ3リンク。", "ko": "글로벌 GMV·트래픽 상위 이커머스 10곳과 플랫폼별 인기상품·딜 공식 페이지 3개.", "fr": "Dix plateformes e-commerce souvent en tête des classements mondiaux, avec trois hubs « best-sellers » ou promotions officiels chacune.", "ru": "Десять крупных платформ e-commerce и по три официальные витрины хитов продаж или акций.", "ar": "عشر منصات تجارة إلكترونية غالبًا في المقدمة عالميًا، مع ثلاث روابط رسمية لكل منصة إلى الأكثر مبيعًا أو العروض." },
     "h1": { "ja": "世界小売・マーケットプレイス上位10", "ko": "글로벌 리테일·마켓플레이스 상위 10", "fr": "Top 10 mondial retail et marketplaces", "ru": "Топ-10 мировой розницы и маркетплейсов", "ar": "أفضل 10 عالميًا للتجزئة والأسواق الإلكترونية" },
     "rankTitle": { "ja": "世界トップ10（EC規模）", "ko": "글로벌 상위 10(이커머스 규모)", "fr": "Top 10 mondial (e-commerce)", "ru": "Глобальный топ-10 (масштаб e-commerce)", "ar": "أفضل 10 عالميًا (حجم التجارة الإلكترونية)" },
-    "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "newsTitle": { "ja": "人気商品とセール", "ko": "인기 상품·딜", "fr": "Produits populaires & promos", "ru": "Хиты продаж и акции", "ar": "أكثر المنتجات طلبًا والعروض" },
     "moreTitle": { "ja": "中国国内とニッチマーケット", "ko": "중국 및 틈새 마켓플레이스", "fr": "Chine et places de marché de niche", "ru": "Китай и нишевые маркетплейсы", "ar": "الصين وأسواق متخصصة" }
   },
   "life": {
     "title": { "ja": "デジタル生活サービス｜aogl.cn", "ko": "글로벌 디지털 라이프 | aogl.cn", "fr": "Vie numérique mondiale — signets | aogl.cn", "ru": "Цифровая жизнь — закладки | aogl.cn", "ar": "الحياة الرقمية العالمية — روابط | aogl.cn" },
-    "desc": { "ja": "MAU・DLチャートで上位のサービス10件と公式ストーリー3本。", "ko": "월간 활성 사용자·다운로드 상위 앱·서비스 10개와 공식 소식 3개.", "fr": "Dix services souvent en tête des classements mondiaux d'utilisateurs actifs, avec trois liens officiels chacun.", "ru": "Десять сервисов из верхних строк глобальных рейтингов MAU и по три официальные ссылки.", "ar": "عشر خدمات غالبًا في مقدمة قوائم المستخدمين النشطين عالميًا، مع ثلاث روابط رسمية لكل خدمة." },
+    "desc": { "ja": "MAU・DLチャートで上位のサービス10件と、各アプリのダウンロード・ヘルプ・主要機能への公式リンク3件。", "ko": "월간 활성 사용자·다운로드 상위 앱·서비스 10개와 앱별 다운로드·도움말·핵심 기능 공식 링크 3개.", "fr": "Dix services souvent en tête des classements mondiaux d'utilisateurs actifs, avec trois liens officiels chacun (téléchargement, aide, fonctionnalités clés).", "ru": "Десять сервисов из верхних строк глобальных рейтингов MAU и по три официальные ссылки на скачивание, справку и ключевые функции.", "ar": "عشر خدمات غالبًا في مقدمة قوائم المستخدمين النشطين عالميًا، مع ثلاث روابط رسمية لكل خدمة للتنزيل والمساعدة والميزات الأساسية." },
     "h1": { "ja": "世界の日常アプリ（MAU上位）", "ko": "글로벌 일상 앱(MAU 상위)", "fr": "Apps du quotidien mondial (leaders MAU)", "ru": "Повседневные приложения мира (лидеры по MAU)", "ar": "تطبيقات يومية عالمية (الأعلى نشاطًا)" },
     "rankTitle": { "ja": "世界トップ10（デジタル生活）", "ko": "글로벌 상위 10(디지털 라이프)", "fr": "Top 10 mondial (vie numérique)", "ru": "Глобальный топ-10 (цифровая жизнь)", "ar": "أفضل 10 عالميًا (الحياة الرقمية)" },
-    "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "newsTitle": { "ja": "アプリの基本リンク", "ko": "앱 필수 링크", "fr": "Liens utiles par appli", "ru": "Полезные ссылки приложений", "ar": "روابط أساسية لكل تطبيق" },
     "moreTitle": { "ja": "中国・アジアの地域アプリ", "ko": "중국·지역 앱", "fr": "Chine et applis régionales", "ru": "Китай и региональные приложения", "ar": "الصين وتطبيقات إقليمية" }
   },
   "social": {
     "title": { "ja": "世界のSNS｜aogl.cn", "ko": "글로벌 소셜 플랫폼 | aogl.cn", "fr": "Réseaux sociaux mondiaux — signets | aogl.cn", "ru": "Глобальные соцсети — закладки | aogl.cn", "ar": "منصات التواصل العالمية — روابط | aogl.cn" },
-    "desc": { "ja": "MAU上位のSNS10件と各公式アップデート3リンク。", "ko": "글로벌 MAU 상위 소셜 10개와 플랫폼별 공식 소식 3개.", "fr": "Dix réseaux sociaux souvent en tête des classements mondiaux d'utilisateurs actifs, avec trois liens officiels chacun.", "ru": "Десять социальных платформ из верхних строк глобальных рейтингов MAU и по три официальные ссылки.", "ar": "عشر شبكات اجتماعية غالبًا في مقدمة قوائم المستخدمين النشطين، مع ثلاث روابط رسمية لكل شبكة." },
+    "desc": { "ja": "MAU上位のSNS10件と、各プラットフォームのトレンド・チャート・クリエイター公式ハブ3リンク。", "ko": "글로벌 MAU 상위 소셜 10개와 플랫폼별 트렌드·차트·크리에이터 공식 허브 링크 3개.", "fr": "Dix réseaux sociaux souvent en tête des classements mondiaux d'utilisateurs actifs, avec trois hubs officiels chacun (tendances, classements, créateurs).", "ru": "Десять соцсетей из верхних строк глобальных рейтингов MAU и по три официальных хаба (тренды, чарты, авторы).", "ar": "عشر شبكات اجتماعية غالبًا في مقدمة قوائم المستخدمين النشطين عالميًا، مع ثلاث روابط رسمية لكل شبكة للترند والتصنيفات والمبدعين." },
     "h1": { "ja": "世界のソーシャル（MAU上位）", "ko": "글로벌 소셜 플랫폼(MAU 상위)", "fr": "Réseaux sociaux mondiaux (leaders MAU)", "ru": "Глобальные соцсети (лидеры по MAU)", "ar": "منصات التواصل العالمية (الأعلى نشاطًا)" },
     "rankTitle": { "ja": "世界トップ10（ソーシャル）", "ko": "글로벌 상위 10(소셜)", "fr": "Top 10 mondial (social)", "ru": "Глобальный топ-10 (соцсети)", "ar": "أفضل 10 عالميًا (التواصل الاجتماعي)" },
-    "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "newsTitle": { "ja": "トレンドとクリエイター", "ko": "트렌드·크리에이터", "fr": "Tendances & créateurs", "ru": "Тренды и авторы", "ar": "الترند والمبدعون" },
     "moreTitle": { "ja": "その他のソーシャル", "ko": "추가 소셜 네트워크", "fr": "Autres réseaux sociaux", "ru": "Другие соцсети", "ar": "شبكات اجتماعية أخرى" }
   },
   "tech": {
@@ -96,5 +96,12 @@
     "rankTitle": { "ja": "世界トップ10（プラットフォーム）", "ko": "글로벌 상위 10(플랫폼)", "fr": "Top 10 mondial (plateformes)", "ru": "Глобальный топ-10 (платформы)", "ar": "أفضل 10 عالميًا (المنصات)" },
     "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
     "moreTitle": { "ja": "その他のスタジオ入口", "ko": "추가 스튜디오 링크", "fr": "Autres studios", "ru": "Другие студии", "ar": "استوديوهات أخرى" }
+  },
+  "tools": {
+    "title": { "ja": "日常Webユーティリティ｜aogl.cn", "ko": "자주 쓰는 웹 도구 | aogl.cn", "fr": "Utilitaires web courants — signets | aogl.cn", "ru": "Полезные веб-сервисы — закладки | aogl.cn", "ar": "أدوات ويب يومية — روابط | aogl.cn" },
+    "desc": { "ja": "天気・翻訳・カレンダー・カウントダウン・市況・QR・変換など主要サービスへのショートカット。", "ko": "날씨·번역·캘린더·카운트다운·금융·QR·파일 변환 등 대표 서비스로의 바로가기.", "fr": "Raccourcis vers météo, traduction, calendriers, comptes à rebours, marchés, QR et conversion de fichiers.", "ru": "Ссылки на погоду, перевод, календари, таймеры, рынки, QR и конвертацию файлов.", "ar": "اختصارات إلى الطقس والترجمة والتقاويم والعد التنازلي والأسواق ورموز QR وتحويل الملفات." },
+    "h1": { "ja": "よく使うWebツール（リンク集）", "ko": "자주 쓰는 웹 도구(바로가기)", "fr": "Outils web utiles (liens rapides)", "ru": "Полезные веб-инструменты (ссылки)", "ar": "أدوات ويب مفيدة (روابط سريعة)" },
+    "rankTitle": { "ja": "主要ショートカット", "ko": "주요 바로가기", "fr": "Raccourcis principaux", "ru": "Основные ссылки", "ar": "اختصارات رئيسية" },
+    "moreTitle": { "ja": "その他のヘルパー", "ko": "추가 도구", "fr": "Autres aides", "ru": "Дополнительно", "ar": "أدوات إضافية" }
   }
 }

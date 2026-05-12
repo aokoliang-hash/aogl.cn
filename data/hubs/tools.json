@@ -1,0 +1,151 @@
+{
+  "slug": "tools",
+  "outFile": "tools.html",
+  "path": "/tools.html",
+  "omitNewsScreen": true,
+  "titleEn": "Everyday web utilities — bookmarks | aogl.cn",
+  "titleZh": "常用在线实用工具｜aogl.cn",
+  "descEn": "Quick links to weather, translation, calendars, countdowns, finance, QR codes, file conversion, and related helpers on the open web.",
+  "descZh": "天气、翻译、日历、生理期推算、倒计时、理财行情、二维码与格式转换等常用网页工具的快捷入口（外链至各站，请以各站条款为准）。",
+  "h1En": "Handy web tools (quick links)",
+  "h1Zh": "常用在线实用工具（快捷入口）",
+  "updated": "2026-05-11",
+  "editorialHtmlEn": "<p>These are outbound links to established services. Privacy, medical accuracy, and terms of use are defined by each provider — not by this page.</p>",
+  "editorialHtmlZh": "<p>以下为各服务商官网或常用工具页的外链。隐私、医疗类推算的准确性及使用条款以各站说明为准，本站不提供站内计算或存储。</p>",
+  "rankTitleEn": "Main shortcuts",
+  "rankTitleZh": "常用入口",
+  "rankLeadEn": "",
+  "rankLeadZh": "",
+  "newsTitleEn": "",
+  "newsTitleZh": "",
+  "newsLeadEn": "",
+  "newsLeadZh": "",
+  "moreTitleEn": "More helpers",
+  "moreTitleZh": "更多辅助工具",
+  "moreLeadEn": "",
+  "moreLeadZh": "",
+  "searchTags": [
+    "weather forecast today",
+    "Google Translate web",
+    "Google Calendar online",
+    "period cycle calculator app",
+    "countdown timer online",
+    "stock market quotes Yahoo Finance",
+    "free QR code generator",
+    "cloud file format converter",
+    "world clock time zones",
+    "unit converter length weight"
+  ],
+  "searchTagsZh": [
+    "天气预报今天",
+    "谷歌翻译网页版",
+    "谷歌日历",
+    "生理期计算器",
+    "在线倒计时",
+    "股市行情",
+    "二维码生成器",
+    "在线格式转换",
+    "世界时钟时区",
+    "单位换算"
+  ],
+  "top10": [
+    {
+      "nameEn": "The Weather Channel",
+      "nameZh": "天气频道",
+      "url": "https://weather.com/",
+      "domain": "weather.com"
+    },
+    {
+      "nameEn": "Google Translate",
+      "nameZh": "谷歌翻译",
+      "url": "https://translate.google.com/",
+      "domain": "translate.google.com"
+    },
+    {
+      "nameEn": "Google Calendar",
+      "nameZh": "谷歌日历",
+      "url": "https://calendar.google.com/",
+      "domain": "calendar.google.com"
+    },
+    {
+      "nameEn": "Clue (cycle & period)",
+      "nameZh": "Clue（经期与周期）",
+      "url": "https://helloclue.com/",
+      "domain": "helloclue.com"
+    },
+    {
+      "nameEn": "timeanddate — counters",
+      "nameZh": "timeanddate 倒计时",
+      "url": "https://www.timeanddate.com/counters/",
+      "domain": "timeanddate.com"
+    },
+    {
+      "nameEn": "Yahoo Finance",
+      "nameZh": "雅虎财经",
+      "url": "https://finance.yahoo.com/",
+      "domain": "finance.yahoo.com"
+    },
+    {
+      "nameEn": "QR Code Generator",
+      "nameZh": "二维码生成",
+      "url": "https://www.qr-code-generator.com/",
+      "domain": "qr-code-generator.com"
+    },
+    {
+      "nameEn": "CloudConvert",
+      "nameZh": "CloudConvert 格式转换",
+      "url": "https://cloudconvert.com/",
+      "domain": "cloudconvert.com"
+    }
+  ],
+  "more": [
+    {
+      "nameEn": "Calculator.net",
+      "nameZh": "Calculator.net 计算器",
+      "url": "https://www.calculator.net/",
+      "domain": "calculator.net"
+    },
+    {
+      "nameEn": "timeanddate — world clock",
+      "nameZh": "世界时钟",
+      "url": "https://www.timeanddate.com/worldclock/",
+      "domain": "timeanddate.com"
+    },
+    {
+      "nameEn": "UnitConverters.net",
+      "nameZh": "单位换算",
+      "url": "https://www.unitconverters.net/",
+      "domain": "unitconverters.net"
+    },
+    {
+      "nameEn": "Smallpdf",
+      "nameZh": "Smallpdf（PDF）",
+      "url": "https://smallpdf.com/",
+      "domain": "smallpdf.com"
+    },
+    {
+      "nameEn": "Wolfram|Alpha",
+      "nameZh": "Wolfram|Alpha",
+      "url": "https://www.wolframalpha.com/",
+      "domain": "wolframalpha.com"
+    },
+    {
+      "nameEn": "XE currency",
+      "nameZh": "XE 汇率",
+      "url": "https://www.xe.com/",
+      "domain": "xe.com"
+    },
+    {
+      "nameEn": "DeepL Translator",
+      "nameZh": "DeepL 翻译",
+      "url": "https://www.deepl.com/translator",
+      "domain": "deepl.com"
+    },
+    {
+      "nameEn": "Outlook Calendar",
+      "nameZh": "Outlook 日历",
+      "url": "https://outlook.live.com/calendar/",
+      "domain": "outlook.live.com"
+    }
+  ]
+}

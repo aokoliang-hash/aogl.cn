@@ -4,8 +4,8 @@
   "path": "/life.html",
   "titleEn": "Global digital life — bookmarks | aogl.cn",
   "titleZh": "全球数字生活服务前十｜aogl.cn",
-  "descEn": "Ten apps and services that dominate global MAU / download charts, plus three official story links each.",
-  "descZh": "常见于全球月活与下载榜前列的十个数字生活服务，每站三条官网或新闻室外链。",
+  "descEn": "Ten apps and services that dominate global MAU / download charts, plus three official product links each (downloads, help, core features).",
+  "descZh": "常见于全球月活与下载榜前列的十个数字生活服务；中段为各应用自身的常用入口（如下载、帮助说明、核心功能页等），非第三方新闻聚合。",
   "h1En": "Global daily apps (MAU leaders)",
   "h1Zh": "全球日活前十（跨国服务）",
   "updated": "2026-05-12",
@@ -15,10 +15,10 @@
   "rankTitleZh": "全球前十（数字生活）",
   "rankLeadEn": "",
   "rankLeadZh": "",
-  "newsTitleEn": "Latest updates",
-  "newsTitleZh": "最新动态",
-  "newsLeadEn": "",
-  "newsLeadZh": "",
+  "newsTitleEn": "App essentials",
+  "newsTitleZh": "应用常用入口",
+  "newsLeadEn": "Download pages, help centers, and flagship features for each service — all on the vendor’s own site.",
+  "newsLeadZh": "以下为各应用官网上的下载、帮助说明、热门功能或场景入口（如地图导航与探索）；请以各站最新页面为准。",
   "moreTitleEn": "China & regional apps",
   "moreTitleZh": "国内与地区常用应用",
   "moreLeadEn": "",
@@ -116,22 +116,22 @@
       "labelZh": "Google 地图",
       "items": [
         {
-          "titleEn": "Check out the new ways to explore Route 66 on Google Maps.",
-          "titleZh": "Check out the new ways to explore Route 66 on Google Maps.",
-          "url": "https://blog.google/products-and-platforms/products/maps/route-66/",
-          "date": "2026-04-30"
+          "titleEn": "Things to do & destinations (Travel)",
+          "titleZh": "热门景点与玩法（Things to do）",
+          "url": "https://www.google.com/travel/things-to-do",
+          "date": "Info"
         },
         {
-          "titleEn": "7 ways to travel smarter this summer, with help from Google",
-          "titleZh": "7 ways to travel smarter this summer, with help from Google",
-          "url": "https://blog.google/products-and-platforms/products/search/summer-travel-tips-google-search-ai/",
-          "date": "2026-04-17"
+          "titleEn": "Get directions",
+          "titleZh": "路线与导航（Directions）",
+          "url": "https://www.google.com/maps/dir/",
+          "date": "Info"
         },
         {
-          "titleEn": "New ways we’re protecting businesses on Maps",
-          "titleZh": "New ways we’re protecting businesses on Maps",
-          "url": "https://blog.google/products-and-platforms/products/maps/new-ways-were-protecting-businesses-on-maps/",
-          "date": "2026-04-16"
+          "titleEn": "Maps help — routes & navigation",
+          "titleZh": "帮助：路线与导航说明",
+          "url": "https://support.google.com/maps/topic/3092445",
+          "date": "Info"
         }
       ]
     },
@@ -141,22 +141,22 @@
       "labelZh": "WhatsApp",
       "items": [
         {
-          "titleEn": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
-          "titleZh": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
-          "url": "https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india/",
-          "date": "2026-04-29"
+          "titleEn": "Download WhatsApp",
+          "titleZh": "客户端下载",
+          "url": "https://www.whatsapp.com/download",
+          "date": "Info"
         },
         {
-          "titleEn": "WhatsApp blog",
-          "titleZh": "WhatsApp 博客",
-          "url": "https://blog.whatsapp.com/",
-          "date": "Rolling"
+          "titleEn": "Help Center (FAQ)",
+          "titleZh": "帮助中心与常见问题",
+          "url": "https://faq.whatsapp.com/",
+          "date": "Info"
         },
         {
-          "titleEn": "Security & privacy",
-          "titleZh": "安全与隐私",
-          "url": "https://www.whatsapp.com/security",
-          "date": "Rolling"
+          "titleEn": "Features & security",
+          "titleZh": "功能与安全说明",
+          "url": "https://www.whatsapp.com/features",
+          "date": "Info"
         }
       ]
     },
@@ -166,22 +166,22 @@
       "labelZh": "Instagram",
       "items": [
         {
-          "titleEn": "Labyrinth 1.1: Making End-to-End Encrypted Backups Even More Reliable",
-          "titleZh": "Labyrinth 1.1: Making End-to-End Encrypted Backups Even More Reliable",
-          "url": "https://engineering.fb.com/2026/05/11/security/labyrinth-1-1-end-to-end-encrypted-e2ee-backups-more-reliable/",
-          "date": "2026-05-11"
+          "titleEn": "Download the app",
+          "titleZh": "应用下载",
+          "url": "https://www.instagram.com/download/",
+          "date": "Info"
         },
         {
-          "titleEn": "How Meta Is Strengthening End-to-End Encrypted Backups",
-          "titleZh": "How Meta Is Strengthening End-to-End Encrypted Backups",
-          "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
-          "date": "2026-05-01"
+          "titleEn": "Help Center",
+          "titleZh": "帮助中心",
+          "url": "https://help.instagram.com/",
+          "date": "Info"
         },
         {
-          "titleEn": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
-          "titleZh": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
-          "url": "https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/",
-          "date": "2026-04-21"
+          "titleEn": "About Instagram & safety",
+          "titleZh": "产品介绍与安全",
+          "url": "https://about.instagram.com/",
+          "date": "Info"
         }
       ]
     },
@@ -191,22 +191,22 @@
       "labelZh": "Uber",
       "items": [
         {
-          "titleEn": "Uber Newsroom",
-          "titleZh": "Uber 新闻室",
-          "url": "https://www.uber.com/newsroom/",
-          "date": "Rolling"
+          "titleEn": "Download the Uber app",
+          "titleZh": "应用下载",
+          "url": "https://www.uber.com/download/",
+          "date": "Info"
         },
         {
-          "titleEn": "Investor relations",
-          "titleZh": "投资者关系",
-          "url": "https://investor.uber.com/",
-          "date": "Rolling"
+          "titleEn": "Help / support",
+          "titleZh": "帮助与支持",
+          "url": "https://help.uber.com/",
+          "date": "Info"
         },
         {
-          "titleEn": "Sustainability report hub",
-          "titleZh": "可持续报告",
-          "url": "https://www.uber.com/newsroom/category/sustainability/",
-          "date": "Rolling"
+          "titleEn": "How rides work",
+          "titleZh": "叫车与行程说明",
+          "url": "https://www.uber.com/go/",
+          "date": "Info"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "Spotify",
       "items": [
         {
-          "titleEn": "Pelo Spotify, artistas brasileiros geraram aproximadamente R$ 2 bilhões em royalties em 2025",
-          "titleZh": "Pelo Spotify, artistas brasileiros geraram aproximadamente R$ 2 bilhões em royalties em 2025",
-          "url": "https://newsroom.spotify.com/2026-05-11/artistas-brasileiros-alto-e-claro/",
-          "date": "2026-05-11"
+          "titleEn": "Download Spotify",
+          "titleZh": "客户端下载",
+          "url": "https://www.spotify.com/download/",
+          "date": "Info"
         },
         {
-          "titleEn": "Eurovision at 70: The Biggest Hits, Artists, and Trends From the Iconic Song Competition",
-          "titleZh": "Eurovision at 70: The Biggest Hits, Artists, and Trends From the Iconic Song Competition",
-          "url": "https://newsroom.spotify.com/2026-05-11/eurovision-top-song-entry-artist-data/",
-          "date": "2026-05-11"
+          "titleEn": "Web player",
+          "titleZh": "网页播放器",
+          "url": "https://open.spotify.com/",
+          "date": "Info"
         },
         {
-          "titleEn": "Spotify Celebrates API Heritage Month With New Music and Artist Spotlights",
-          "titleZh": "Spotify Celebrates API Heritage Month With New Music and Artist Spotlights",
-          "url": "https://newsroom.spotify.com/2026-05-07/api-heritage-month-gold-house-artists/",
-          "date": "2026-05-07"
+          "titleEn": "Support & account help",
+          "titleZh": "支持与账户帮助",
+          "url": "https://support.spotify.com/",
+          "date": "Info"
         }
       ]
     },
@@ -241,22 +241,22 @@
       "labelZh": "Netflix",
       "items": [
         {
-          "titleEn": "Netflix delays Greta Gerwig’s ‘Narnia’ movie for big theatrical push in 2027",
-          "titleZh": "Netflix delays Greta Gerwig’s ‘Narnia’ movie for big theatrical push in 2027",
-          "url": "https://techcrunch.com/2026/05/02/netflix-delays-greta-gerwigs-narnia-movie-for-big-theatrical-push-in-2027/",
-          "date": "2026-05-02"
+          "titleEn": "Plans & sign up",
+          "titleZh": "套餐与注册",
+          "url": "https://www.netflix.com/signup/planform",
+          "date": "Info"
         },
         {
-          "titleEn": "Netflix wants you to watch ‘Clips,’ its TikTok-like vertical video feed",
-          "titleZh": "Netflix wants you to watch ‘Clips,’ its TikTok-like vertical video feed",
-          "url": "https://techcrunch.com/2026/04/30/netflix-wants-you-to-watch-clips-its-tiktok-like-vertical-video-feed/",
-          "date": "2026-04-30"
+          "titleEn": "Help Center",
+          "titleZh": "帮助中心",
+          "url": "https://help.netflix.com/",
+          "date": "Info"
         },
         {
-          "titleEn": "Netflix plans to add a vertical video feed, use AI for recommendations",
-          "titleZh": "Netflix plans to add a vertical video feed, use AI for recommendations",
-          "url": "https://techcrunch.com/2026/04/17/netflix-plans-to-add-a-vertical-video-feed-use-ai-for-recommendations/",
-          "date": "2026-04-17"
+          "titleEn": "Browse TV & movies",
+          "titleZh": "浏览片库",
+          "url": "https://www.netflix.com/browse",
+          "date": "Info"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "Airbnb",
       "items": [
         {
-          "titleEn": "Soccer pitch groundbreaking marks FIFA World Cup 2026™ legacy investment",
-          "titleZh": "Soccer pitch groundbreaking marks FIFA World Cup 2026™ legacy investment",
-          "url": "https://news.airbnb.com/soccer-pitch-groundbreaking-marks-fifa-world-cup-2026-legacy-investment/",
-          "date": "2026-05-08"
+          "titleEn": "How Airbnb works",
+          "titleZh": "预订与体验说明",
+          "url": "https://www.airbnb.com/help/article/4",
+          "date": "Info"
         },
         {
-          "titleEn": "2026 summer travel trends revealed",
-          "titleZh": "2026 summer travel trends revealed",
-          "url": "https://news.airbnb.com/2026-summer-travel-trends-revealed/",
-          "date": "2026-05-08"
+          "titleEn": "Help Center",
+          "titleZh": "帮助中心",
+          "url": "https://www.airbnb.com/help/home",
+          "date": "Info"
         },
         {
-          "titleEn": "FIFA World Cup 2026™ set to be Airbnb’s biggest-ever event",
-          "titleZh": "FIFA World Cup 2026™ set to be Airbnb’s biggest-ever event",
-          "url": "https://news.airbnb.com/fifa-world-cup-2026-set-to-be-airbnbs-biggest-ever-event/",
-          "date": "2026-05-07"
+          "titleEn": "Trust & safety",
+          "titleZh": "信任与安全",
+          "url": "https://www.airbnb.com/trust",
+          "date": "Info"
         }
       ]
     },
@@ -291,22 +291,22 @@
       "labelZh": "Booking",
       "items": [
         {
-          "titleEn": "Booking Holdings news",
-          "titleZh": "Booking 集团新闻",
-          "url": "https://news.booking.com/",
-          "date": "Rolling"
+          "titleEn": "How Booking.com works",
+          "titleZh": "预订流程说明",
+          "url": "https://www.booking.com/content/howitworks.html",
+          "date": "Info"
         },
         {
-          "titleEn": "Sustainability",
-          "titleZh": "可持续旅行",
-          "url": "https://www.booking.com/content/sustainable-travel.html",
-          "date": "Rolling"
+          "titleEn": "Contact & account help",
+          "titleZh": "联系与账户帮助",
+          "url": "https://www.booking.com/content/contact-us.html",
+          "date": "Info"
         },
         {
-          "titleEn": "Investor relations",
-          "titleZh": "投资者关系",
-          "url": "https://www.bookingholdings.com/",
-          "date": "Rolling"
+          "titleEn": "Genius loyalty program",
+          "titleZh": "Genius 会员计划",
+          "url": "https://www.booking.com/genius.html",
+          "date": "Info"
         }
       ]
     },
@@ -316,22 +316,22 @@
       "labelZh": "PayPal",
       "items": [
         {
-          "titleEn": "PayPal Newsroom",
-          "titleZh": "PayPal 新闻室",
-          "url": "https://newsroom.paypal-corp.com/",
-          "date": "Rolling"
+          "titleEn": "How PayPal works",
+          "titleZh": "产品说明",
+          "url": "https://www.paypal.com/us/digital-wallet/how-paypal-works",
+          "date": "Info"
         },
         {
-          "titleEn": "Investor updates",
-          "titleZh": "投资者更新",
-          "url": "https://investor.paypal-corp.com/",
-          "date": "Rolling"
+          "titleEn": "Help & contact",
+          "titleZh": "帮助与联系",
+          "url": "https://www.paypal.com/us/cshelp/personal",
+          "date": "Info"
         },
         {
-          "titleEn": "Developer blog",
-          "titleZh": "开发者博客",
-          "url": "https://developer.paypal.com/community/blog/",
-          "date": "Rolling"
+          "titleEn": "Security hub",
+          "titleZh": "安全中心",
+          "url": "https://www.paypal.com/us/security-and-protections/",
+          "date": "Info"
         }
       ]
     },
@@ -341,22 +341,22 @@
       "labelZh": "Zoom",
       "items": [
         {
-          "titleEn": "Sam Altman’s project World looks to scale its human verification empire. First stop: Tinder.",
-          "titleZh": "Sam Altman’s project World looks to scale its human verification empire. First stop: Tinder.",
-          "url": "https://techcrunch.com/2026/04/17/sam-altmans-project-world-looks-to-scale-its-human-verification-empire-first-stop-tinder/",
-          "date": "2026-04-17"
+          "titleEn": "Download Zoom",
+          "titleZh": "客户端下载",
+          "url": "https://www.zoom.us/download",
+          "date": "Info"
         },
         {
-          "titleEn": "Zoom teams up with World to verify humans in meetings",
-          "titleZh": "Zoom teams up with World to verify humans in meetings",
-          "url": "https://techcrunch.com/2026/04/17/zoom-teams-up-with-world-to-verify-humans-in-meeting/",
-          "date": "2026-04-17"
+          "titleEn": "Join a meeting",
+          "titleZh": "加入会议",
+          "url": "https://www.zoom.us/join",
+          "date": "Info"
         },
         {
-          "titleEn": "Zoom News",
-          "titleZh": "Zoom 新闻",
-          "url": "https://news.zoom.us/",
-          "date": "Rolling"
+          "titleEn": "Support & learning",
+          "titleZh": "支持与使用指南",
+          "url": "https://support.zoom.us/",
+          "date": "Info"
         }
       ]
     }

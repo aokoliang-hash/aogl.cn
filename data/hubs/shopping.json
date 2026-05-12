@@ -4,8 +4,8 @@
   "path": "/shopping.html",
   "titleEn": "Global e-commerce — bookmarks | aogl.cn",
   "titleZh": "全球电商前十｜aogl.cn",
-  "descEn": "Ten cross-border retail platforms that usually lead global GMV / traffic rankings, plus three corporate links each.",
-  "descZh": "常见于全球电商 GMV 与跨境流量榜单前列的十个平台，每站三条集团新闻稿或 IR 外链。",
+  "descEn": "Ten cross-border retail platforms that usually lead global GMV / traffic rankings, plus three official bestsellers / deals hub links each.",
+  "descZh": "常见于全球电商 GMV 与跨境流量榜单前列的十个平台，每站三条官方热销榜或促销频道入口（榜单由各站实时更新）。",
   "h1En": "Global retail & marketplace top 10",
   "h1Zh": "全球电商前十（GMV / 跨境口径）",
   "updated": "2026-05-12",
@@ -15,10 +15,10 @@
   "rankTitleZh": "全球前十（电商规模）",
   "rankLeadEn": "",
   "rankLeadZh": "",
-  "newsTitleEn": "Latest updates",
-  "newsTitleZh": "最新动态",
-  "newsLeadEn": "",
-  "newsLeadZh": "",
+  "newsTitleEn": "Hot products & deals",
+  "newsTitleZh": "最热门的商品",
+  "newsLeadEn": "Official bestseller, deals, or discovery pages on each retailer — rankings refresh on their side.",
+  "newsLeadZh": "以下为各站公开的畅销榜、活动或发现页入口，具体 SKU 与价格以落地页为准。",
   "moreTitleEn": "China & niche marketplaces",
   "moreTitleZh": "国内与其它垂直电商",
   "moreLeadEn": "",
@@ -116,22 +116,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon in the community: Service, community, and commitment at HQ2",
-          "titleZh": "Amazon in the community: Service, community, and commitment at HQ2",
-          "url": "https://www.aboutamazon.com/news/community/amazon-arlington-virginia-news?utm_source=rss",
-          "date": "2026-05-12"
+          "titleEn": "Best Sellers",
+          "titleZh": "畅销榜（Best Sellers）",
+          "url": "https://www.amazon.com/gp/bestsellers/",
+          "date": "Hot"
         },
         {
-          "titleEn": "Everything to know about the 'Fourth Wing' series coming to Prime Video",
-          "titleZh": "Everything to know about the 'Fourth Wing' series coming to Prime Video",
-          "url": "https://www.aboutamazon.com/news/entertainment/fourth-wing-series-prime-video?utm_source=rss",
-          "date": "2026-05-11"
+          "titleEn": "Today’s Deals (Gold Box)",
+          "titleZh": "今日特价（Gold Box）",
+          "url": "https://www.amazon.com/gp/goldbox/",
+          "date": "Hot"
         },
         {
-          "titleEn": "'Jury Duty' renewed for a third season on Prime Video",
-          "titleZh": "'Jury Duty' renewed for a third season on Prime Video",
-          "url": "https://www.aboutamazon.com/news/entertainment/jury-duty-prime-video-how-to-watch?utm_source=rss",
-          "date": "2026-05-11"
+          "titleEn": "Most Wished For",
+          "titleZh": "心愿单热门（Most Wished For）",
+          "url": "https://www.amazon.com/gp/most-wished-for/",
+          "date": "Hot"
         }
       ]
     },
@@ -141,22 +141,22 @@
       "labelZh": "沃尔玛",
       "items": [
         {
-          "titleEn": "2026 annual report & proxy",
-          "titleZh": "2026 年报与委托书",
-          "url": "https://corporate.walmart.com/news/2026/04/23/walmart-releases-2026-annual-report-and-proxy-statement",
-          "date": "2026-04"
+          "titleEn": "Deals hub",
+          "titleZh": "全站优惠 / Deals",
+          "url": "https://www.walmart.com/shop/deals",
+          "date": "Hot"
         },
         {
-          "titleEn": "U.S. store investment plan",
-          "titleZh": "美国门店投资计划",
-          "url": "https://corporate.walmart.com/news/2026/04/16/how-we-are-investing-in-our-stores-to-drive-speed-convenience-and-growth",
-          "date": "2026-04"
+          "titleEn": "Electronics deals",
+          "titleZh": "数码家电优惠",
+          "url": "https://www.walmart.com/shop/deals/electronics",
+          "date": "Hot"
         },
         {
-          "titleEn": "Robinson, Texas milk plant",
-          "titleZh": "得州乳品加工厂投产",
-          "url": "https://corporate.walmart.com/news/2026/04/29/walmart-opens-third-owned-and-operated-milk-processing-facility-in-robinson-texas-creating-more-than-400-new-jobs",
-          "date": "2026-04"
+          "titleEn": "Home & furniture deals",
+          "titleZh": "家居家具优惠",
+          "url": "https://www.walmart.com/shop/deals/home",
+          "date": "Hot"
         }
       ]
     },
@@ -166,22 +166,22 @@
       "labelZh": "eBay",
       "items": [
         {
-          "titleEn": "eBay Confirms Receipt of Unsolicited Proposal from GameStop",
-          "titleZh": "eBay Confirms Receipt of Unsolicited Proposal from GameStop",
-          "url": "https://www.ebayinc.com/stories/news/ebay-confirms-receipt-of-unsolicited-proposal-from-gamestop/",
-          "date": "2026-05-04"
+          "titleEn": "Daily Deals",
+          "titleZh": "每日特价（Daily Deals）",
+          "url": "https://www.ebay.com/deals",
+          "date": "Hot"
         },
         {
-          "titleEn": "eBay Inc. Reports First Quarter 2026 Results",
-          "titleZh": "eBay Inc. Reports First Quarter 2026 Results",
-          "url": "https://www.ebayinc.com/stories/news/ebay-inc-reports-first-quarter-2026-results/",
-          "date": "2026-04-29"
+          "titleEn": "Brand outlet",
+          "titleZh": "品牌折扣店（Brand Outlet）",
+          "url": "https://www.ebay.com/e/fashion/brand-outlet",
+          "date": "Hot"
         },
         {
-          "titleEn": "How is eBay Essential to the Circular Economy and Advancing Environmental Stewardship?",
-          "titleZh": "How is eBay Essential to the Circular Economy and Advancing Environmental Stewardship?",
-          "url": "https://www.ebayinc.com/stories/news/how-is-ebay-essential-to-the-circular-economy-and-advancing-environmental-stewardship/",
-          "date": "2026-04-22"
+          "titleEn": "eBay Refurbished",
+          "titleZh": "官方翻新（Refurbished）",
+          "url": "https://www.ebay.com/b/eBay-Refurbished/bn_7045848930",
+          "date": "Hot"
         }
       ]
     },
@@ -191,22 +191,22 @@
       "labelZh": "Target",
       "items": [
         {
-          "titleEn": "2026 strategic growth plan",
-          "titleZh": "2026 增长战略",
-          "url": "https://corporate.target.com/press/release/2026/03/target-outlines-strategic-plan-for-a-new-chapter-of-growth-in-2026-and-beyond",
-          "date": "2026-03"
+          "titleEn": "Top Deals",
+          "titleZh": "热门优惠（Top Deals）",
+          "url": "https://www.target.com/c/top-deals/-/N-4xw74",
+          "date": "Hot"
         },
         {
-          "titleEn": "Store investment ramp",
-          "titleZh": "门店投资加码",
-          "url": "https://corporate.target.com/press/release/2026/03/target-ramps-up-store-investments-to-fuel-new-chapter-of-growth",
-          "date": "2026-03"
+          "titleEn": "Target Circle offers",
+          "titleZh": "Circle 会员优惠",
+          "url": "https://www.target.com/circle",
+          "date": "Hot"
         },
         {
-          "titleEn": "Q4 & FY2025 earnings",
-          "titleZh": "2025 财年四季报",
-          "url": "https://corporate.target.com/press/release/2026/03/target-corporation-reports-fourth-quarter-and-full-year-2025-earnings",
-          "date": "2026-03"
+          "titleEn": "Clearance",
+          "titleZh": "清仓区（Clearance）",
+          "url": "https://www.target.com/c/clearance/-/N-5q0ga",
+          "date": "Hot"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "百思买",
       "items": [
         {
-          "titleEn": "Corporate newsroom",
-          "titleZh": "公司新闻室",
-          "url": "https://corporate.bestbuy.com/press-releases/",
-          "date": "Rolling"
+          "titleEn": "Top Deals",
+          "titleZh": "Top Deals 优惠汇总",
+          "url": "https://www.bestbuy.com/site/misc/top-deals/pcmcat221800050009.c?id=pcmcat221800050009",
+          "date": "Hot"
         },
         {
-          "titleEn": "Investor relations hub",
-          "titleZh": "投资者关系",
-          "url": "https://investors.bestbuy.com/",
-          "date": "Rolling"
+          "titleEn": "Deal of the Day",
+          "titleZh": "每日特价（Deal of the Day）",
+          "url": "https://www.bestbuy.com/site/misc/deal-of-the-day/pcmcat248000050016.c?id=pcmcat248000050016",
+          "date": "Hot"
         },
         {
-          "titleEn": "Sustainability & impact report",
-          "titleZh": "可持续与社会影响",
-          "url": "https://corporate.bestbuy.com/sustainability",
-          "date": "Rolling"
+          "titleEn": "Outlet & refurbished",
+          "titleZh": "Outlet / 翻新清仓",
+          "url": "https://www.bestbuy.com/site/electronics/outlet-refurbished-clearance/pcmcat142300050026.c?id=pcmcat142300050026",
+          "date": "Hot"
         }
       ]
     },
@@ -241,22 +241,22 @@
       "labelZh": "Shopify",
       "items": [
         {
-          "titleEn": "Q4 2025 results letter",
-          "titleZh": "2025 年 Q4 业绩信",
-          "url": "https://www.shopify.com/news/shopify-q4-2025-financial-results",
-          "date": "2026-02"
+          "titleEn": "Shop app (discover stores)",
+          "titleZh": "Shop 应用（发现店铺与商品）",
+          "url": "https://shop.app/",
+          "date": "Hot"
         },
         {
-          "titleEn": "Agentic commerce platform",
-          "titleZh": "智能体商务平台",
-          "url": "https://www.shopify.com/news/ai-commerce-at-scale",
-          "date": "2026"
+          "titleEn": "Trending products (Shopify blog)",
+          "titleZh": "热销品类参考（Shopify 博客）",
+          "url": "https://www.shopify.com/blog/trending-products",
+          "date": "Hot"
         },
         {
-          "titleEn": "Winter ’26 Edition (merchants)",
-          "titleZh": "Winter ’26 Edition（商家）",
-          "url": "https://www.shopify.com/news/winter-26-edition-merchant",
-          "date": "2026"
+          "titleEn": "Products to sell / demand ideas",
+          "titleZh": "选品与需求洞察（博客）",
+          "url": "https://www.shopify.com/blog/products-to-sell",
+          "date": "Hot"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "Etsy",
       "items": [
         {
-          "titleEn": "Investor news releases",
-          "titleZh": "IR 新闻稿列表",
-          "url": "https://investors.etsy.com/news-releases/",
-          "date": "Rolling"
+          "titleEn": "Trending on Etsy",
+          "titleZh": "站内趋势（Trending）",
+          "url": "https://www.etsy.com/featured/",
+          "date": "Hot"
         },
         {
-          "titleEn": "Impact & annual update",
-          "titleZh": "影响力与年度更新",
-          "url": "https://www.etsy.com/impact",
-          "date": "Rolling"
+          "titleEn": "Popular gifts & merch",
+          "titleZh": "热门礼物与周边",
+          "url": "https://www.etsy.com/featured/gifts_and_merch/trending-now",
+          "date": "Hot"
         },
         {
-          "titleEn": "Etsy Q4 shareholder letter (PDF)",
-          "titleZh": "四季度股东信（IR）",
-          "url": "https://s27.q4cdn.com/949529029/files/doc_financials/2024/q4/Etsy-4Q24-Shareholder-Deck.pdf",
-          "date": "2025-02"
+          "titleEn": "Gift Mode picks",
+          "titleZh": "礼品推荐（Gift Mode）",
+          "url": "https://www.etsy.com/gift-mode",
+          "date": "Hot"
         }
       ]
     },
@@ -291,22 +291,22 @@
       "labelZh": "乐天",
       "items": [
         {
-          "titleEn": "Rakuten AI 3.0 press release",
-          "titleZh": "Rakuten AI 3.0 发布稿",
-          "url": "https://global.rakuten.com/corp/news/press/2026/0317_01.html",
-          "date": "2026-03"
+          "titleEn": "Deals store",
+          "titleZh": "优惠商城（Deals）",
+          "url": "https://www.rakuten.com/deals-store/deals/",
+          "date": "Hot"
         },
         {
-          "titleEn": "Symphony × ABS MoU",
-          "titleZh": "Symphony 与美国船级社备忘录",
-          "url": "https://global.rakuten.com/corp/news/press/2026/0511_01.html",
-          "date": "2026-05"
+          "titleEn": "Cash Back promotions",
+          "titleZh": "返现活动（Promotions）",
+          "url": "https://www.rakuten.com/promotions.htm",
+          "date": "Hot"
         },
         {
-          "titleEn": "Personnel change notice",
-          "titleZh": "人事变动通知",
-          "url": "http://global.rakuten.com/corp/news/press/2026/0327_01.html",
-          "date": "2026-03"
+          "titleEn": "Electronics deals",
+          "titleZh": "数码优惠专区",
+          "url": "https://www.rakuten.com/shop/electronics/",
+          "date": "Hot"
         }
       ]
     },
@@ -316,22 +316,22 @@
       "labelZh": "Mercado Libre",
       "items": [
         {
-          "titleEn": "IR press releases",
-          "titleZh": "IR 新闻稿",
-          "url": "https://investor.mercadolibre.com/news-releases/",
-          "date": "Rolling"
+          "titleEn": "Global deals hub",
+          "titleZh": "全站优惠入口",
+          "url": "https://www.mercadolibre.com/ofertas",
+          "date": "Hot"
         },
         {
-          "titleEn": "Integrated annual report",
-          "titleZh": "年度报告入口",
-          "url": "https://investor.mercadolibre.com/financials/annual-reports/",
-          "date": "Rolling"
+          "titleEn": "Best sellers (Mexico)",
+          "titleZh": "热销榜（墨西哥站示例）",
+          "url": "https://www.mercadolibre.com.mx/mas-vendido",
+          "date": "Hot"
         },
         {
-          "titleEn": "Investor presentations",
-          "titleZh": "投资者演示材料",
-          "url": "https://investor.mercadolibre.com/events-and-presentations/",
-          "date": "Rolling"
+          "titleEn": "Offers (Mexico)",
+          "titleZh": "限时优惠（墨西哥站）",
+          "url": "https://www.mercadolibre.com.mx/ofertas",
+          "date": "Hot"
         }
       ]
     },
@@ -341,22 +341,22 @@
       "labelZh": "Shopee（Sea）",
       "items": [
         {
-          "titleEn": "Sea Limited IR news",
-          "titleZh": "Sea 集团 IR 新闻",
-          "url": "https://investors.sea.com/news-releases/",
-          "date": "Rolling"
+          "titleEn": "Deals / flash sales hub",
+          "titleZh": "限时抢购 / 优惠入口",
+          "url": "https://shopee.com/m/deals",
+          "date": "Hot"
         },
         {
-          "titleEn": "Sea financial information",
-          "titleZh": "Sea 财务信息",
-          "url": "https://investors.sea.com/financial-information/",
-          "date": "Rolling"
+          "titleEn": "Mall & official brands (Singapore)",
+          "titleZh": "品牌馆（新加坡站示例）",
+          "url": "https://shopee.sg/mall",
+          "date": "Hot"
         },
         {
-          "titleEn": "Shopee merchant hub",
-          "titleZh": "Shopee 商家中心",
-          "url": "https://seller.shopee.com/",
-          "date": "Rolling"
+          "titleEn": "Popular picks (Singapore)",
+          "titleZh": "人气精选（新加坡站）",
+          "url": "https://shopee.sg/m/popular",
+          "date": "Hot"
         }
       ]
     }

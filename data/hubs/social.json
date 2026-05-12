@@ -4,8 +4,8 @@
   "path": "/social.html",
   "titleEn": "Global social platforms — bookmarks | aogl.cn",
   "titleZh": "全球社交平台前十｜aogl.cn",
-  "descEn": "Ten social networks that usually lead global MAU charts, three official update links each, plus more social apps.",
-  "descZh": "常见于全球月活榜单前列的十个社交平台，每站三条官方动态或产品博文外链，以及更多社交产品入口。",
+  "descEn": "Ten social networks that usually lead global MAU charts, plus three official discovery links each (trending, charts, creators).",
+  "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
   "updated": "2026-05-12",
@@ -15,10 +15,10 @@
   "rankTitleZh": "全球前十（社交平台）",
   "rankLeadEn": "",
   "rankLeadZh": "",
-  "newsTitleEn": "Latest updates",
-  "newsTitleZh": "最新动态",
-  "newsLeadEn": "",
-  "newsLeadZh": "",
+  "newsTitleEn": "Trending & creators",
+  "newsTitleZh": "热门与人气",
+  "newsLeadEn": "Official hubs for what’s trending, charts, or creator programs — rankings refresh on each platform.",
+  "newsLeadZh": "以下为各站公开的时下流行、榜单或创作者计划入口；具体账号与排行以各站实时页面为准。",
   "moreTitleEn": "More social networks",
   "moreTitleZh": "更多社交平台",
   "moreLeadEn": "",
@@ -116,22 +116,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "Meta at The Cannes Film Festival 2026",
-          "titleZh": "Meta at The Cannes Film Festival 2026",
-          "url": "https://about.fb.com/news/2026/05/meta-at-the-cannes-film-festival-2026/",
-          "date": "2026-05-11"
+          "titleEn": "Facebook Watch (trending video)",
+          "titleZh": "Watch · 热门与推荐视频",
+          "url": "https://www.facebook.com/watch/",
+          "date": "Info"
         },
         {
-          "titleEn": "Which AI Glasses Are Right For You?",
-          "titleZh": "Which AI Glasses Are Right For You?",
-          "url": "https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you/",
-          "date": "2026-05-08"
+          "titleEn": "Reels",
+          "titleZh": "Reels · 短视频热门流",
+          "url": "https://www.facebook.com/reels/",
+          "date": "Info"
         },
         {
-          "titleEn": "Meta’s Position on Canada’s Bill C-22",
-          "titleZh": "Meta’s Position on Canada’s Bill C-22",
-          "url": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22/",
-          "date": "2026-05-07"
+          "titleEn": "Meta for Creators",
+          "titleZh": "创作者计划与名人合作入口",
+          "url": "https://creators.facebook.com/",
+          "date": "Info"
         }
       ]
     },
@@ -141,22 +141,22 @@
       "labelZh": "YouTube",
       "items": [
         {
-          "titleEn": "Enjoy new ways to create, search and stream on Google TV",
-          "titleZh": "Enjoy new ways to create, search and stream on Google TV",
-          "url": "https://blog.google/products-and-platforms/platforms/google-tv/enjoy-new-ways-to-create-search-and-stream-on-google-tv/",
-          "date": "2026-04-29"
+          "titleEn": "Trending on YouTube",
+          "titleZh": "时下流行 · 热门视频",
+          "url": "https://www.youtube.com/feed/trending",
+          "date": "Info"
         },
         {
-          "titleEn": "Convert faster on YouTube with April’s Demand Gen Drop.",
-          "titleZh": "Convert faster on YouTube with April’s Demand Gen Drop.",
-          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-april-2026/",
-          "date": "2026-04-23"
+          "titleEn": "YouTube Culture & Trends",
+          "titleZh": "文化与趋势报告（官方趋势）",
+          "url": "https://www.youtube.com/trends/",
+          "date": "Info"
         },
         {
-          "titleEn": "Here’s how to watch Coachella on YouTube.",
-          "titleZh": "Here’s how to watch Coachella on YouTube.",
-          "url": "https://blog.google/products-and-platforms/products/youtube/watch-coachella-live-on-youtube/",
-          "date": "2026-04-02"
+          "titleEn": "YouTube Charts (music rankings)",
+          "titleZh": "YouTube Charts · 音乐类排行",
+          "url": "https://charts.youtube.com/",
+          "date": "Info"
         }
       ]
     },
@@ -166,22 +166,22 @@
       "labelZh": "WhatsApp",
       "items": [
         {
-          "titleEn": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
-          "titleZh": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
-          "url": "https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india/",
-          "date": "2026-04-29"
+          "titleEn": "Download WhatsApp",
+          "titleZh": "客户端下载",
+          "url": "https://www.whatsapp.com/download",
+          "date": "Info"
         },
         {
-          "titleEn": "WhatsApp blog",
-          "titleZh": "WhatsApp 博客",
-          "url": "https://blog.whatsapp.com/",
-          "date": "Rolling"
+          "titleEn": "Help Center",
+          "titleZh": "帮助与说明",
+          "url": "https://faq.whatsapp.com/",
+          "date": "Info"
         },
         {
-          "titleEn": "Security & privacy",
-          "titleZh": "安全与隐私",
-          "url": "https://www.whatsapp.com/security",
-          "date": "Rolling"
+          "titleEn": "WhatsApp Business",
+          "titleZh": "商业版与商家入口",
+          "url": "https://business.whatsapp.com/",
+          "date": "Info"
         }
       ]
     },
@@ -191,22 +191,22 @@
       "labelZh": "Instagram",
       "items": [
         {
-          "titleEn": "Labyrinth 1.1: Making End-to-End Encrypted Backups Even More Reliable",
-          "titleZh": "Labyrinth 1.1: Making End-to-End Encrypted Backups Even More Reliable",
-          "url": "https://engineering.fb.com/2026/05/11/security/labyrinth-1-1-end-to-end-encrypted-e2ee-backups-more-reliable/",
-          "date": "2026-05-11"
+          "titleEn": "Explore",
+          "titleZh": "探索 · 热门帖子与账号",
+          "url": "https://www.instagram.com/explore/",
+          "date": "Info"
         },
         {
-          "titleEn": "How Meta Is Strengthening End-to-End Encrypted Backups",
-          "titleZh": "How Meta Is Strengthening End-to-End Encrypted Backups",
-          "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
-          "date": "2026-05-01"
+          "titleEn": "Reels",
+          "titleZh": "Reels · 热门短视频",
+          "url": "https://www.instagram.com/reels/",
+          "date": "Info"
         },
         {
-          "titleEn": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
-          "titleZh": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
-          "url": "https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/",
-          "date": "2026-04-21"
+          "titleEn": "Creators on Instagram",
+          "titleZh": "创作者中心",
+          "url": "https://creators.instagram.com/",
+          "date": "Info"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "TikTok",
       "items": [
         {
-          "titleEn": "TikTok launches an ad-free subscription plan in the UK",
-          "titleZh": "TikTok launches an ad-free subscription plan in the UK",
-          "url": "https://techcrunch.com/2026/05/11/tiktok-launches-an-ad-free-subscription-plan-in-the-uk/",
-          "date": "2026-05-11"
+          "titleEn": "Explore (trending)",
+          "titleZh": "发现页 · 热门内容",
+          "url": "https://www.tiktok.com/explore",
+          "date": "Info"
         },
         {
-          "titleEn": "TikTok’s new ‘Campus Hub’ features college group chats and feeds",
-          "titleZh": "TikTok’s new ‘Campus Hub’ features college group chats and feeds",
-          "url": "https://techcrunch.com/2026/04/30/tiktoks-new-campus-hub-features-college-group-chats-and-feeds/",
-          "date": "2026-04-30"
+          "titleEn": "Creative Center — popular hashtags",
+          "titleZh": "创意中心 · 热门话题与排行参考",
+          "url": "https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en",
+          "date": "Info"
         },
         {
-          "titleEn": "Australia forces Big Tech firms to pay for news or face a 2.25% tax",
-          "titleZh": "Australia forces Big Tech firms to pay for news or face a 2.25% tax",
-          "url": "https://techcrunch.com/2026/04/28/australia-forces-big-tech-firms-to-pay-for-news-or-face-a-2-25-tax/",
-          "date": "2026-04-28"
+          "titleEn": "TikTok for Creators",
+          "titleZh": "创作者计划",
+          "url": "https://www.tiktok.com/creators/",
+          "date": "Info"
         }
       ]
     },
@@ -244,19 +244,19 @@
           "titleEn": "WeChat international",
           "titleZh": "微信国际版",
           "url": "https://www.wechat.com/en/",
-          "date": "Rolling"
+          "date": "Info"
         },
         {
           "titleEn": "Weixin official (China)",
           "titleZh": "微信官网（中文）",
           "url": "https://weixin.qq.com/",
-          "date": "Rolling"
+          "date": "Info"
         },
         {
           "titleEn": "Help center",
           "titleZh": "帮助中心",
           "url": "https://help.wechat.com/",
-          "date": "Rolling"
+          "date": "Info"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "领英",
       "items": [
         {
-          "titleEn": "LinkedIn’s CEO is moving on; please hold your tearful video tributes",
-          "titleZh": "LinkedIn’s CEO is moving on; please hold your tearful video tributes",
-          "url": "https://techcrunch.com/2026/04/22/linkedins-ceo-is-moving-on-please-hold-your-tearful-video-tributes/",
-          "date": "2026-04-22"
+          "titleEn": "LinkedIn News (trending stories)",
+          "titleZh": "LinkedIn 新闻 · 站内热门话题",
+          "url": "https://www.linkedin.com/news/",
+          "date": "Info"
         },
         {
-          "titleEn": "LinkedIn data shows AI isn’t to blame for hiring decline… yet",
-          "titleZh": "LinkedIn data shows AI isn’t to blame for hiring decline… yet",
-          "url": "https://techcrunch.com/2026/04/15/linkedin-data-shows-ai-isnt-to-blame-for-hiring-decline-yet/",
-          "date": "2026-04-15"
+          "titleEn": "Creators on LinkedIn",
+          "titleZh": "创作者与影响力计划",
+          "url": "https://www.linkedin.com/creators/",
+          "date": "Info"
         },
         {
-          "titleEn": "LinkedIn Newsroom",
-          "titleZh": "领英新闻室",
-          "url": "https://news.linkedin.com/",
-          "date": "Rolling"
+          "titleEn": "Learning — popular skills",
+          "titleZh": "热门技能课程（Learning）",
+          "url": "https://www.linkedin.com/learning/",
+          "date": "Info"
         }
       ]
     },
@@ -291,22 +291,22 @@
       "labelZh": "Snapchat",
       "items": [
         {
-          "titleEn": "Snap says its $400M deal with Perplexity ‘amicably ended’",
-          "titleZh": "Snap says its $400M deal with Perplexity ‘amicably ended’",
-          "url": "https://techcrunch.com/2026/05/06/snap-says-its-400m-deal-with-perplexity-amicably-ended/",
-          "date": "2026-05-06"
+          "titleEn": "Spotlight (trending Snaps)",
+          "titleZh": "Spotlight · 热门短视频",
+          "url": "https://www.snapchat.com/spotlight",
+          "date": "Info"
         },
         {
-          "titleEn": "Snapchat brings AI-powered conversational advertising to its app",
-          "titleZh": "Snapchat brings AI-powered conversational advertising to its app",
-          "url": "https://techcrunch.com/2026/04/28/snapchat-brings-ai-powered-conversational-advertising-to-its-app/",
-          "date": "2026-04-28"
+          "titleEn": "Public Stories map",
+          "titleZh": "公开故事与地图发现",
+          "url": "https://story.snapchat.com/",
+          "date": "Info"
         },
         {
-          "titleEn": "Snap Map’s new ‘Place Loyalty’ badges will show the spots you visit most often",
-          "titleZh": "Snap Map’s new ‘Place Loyalty’ badges will show the spots you visit most often",
-          "url": "https://techcrunch.com/2026/04/22/snap-maps-new-place-loyalty-badges-will-show-the-spots-you-visit-most-often/",
-          "date": "2026-04-22"
+          "titleEn": "Creators hub",
+          "titleZh": "创作者资源",
+          "url": "https://forbusiness.snapchat.com/creators",
+          "date": "Info"
         }
       ]
     },
@@ -316,22 +316,22 @@
       "labelZh": "Telegram",
       "items": [
         {
-          "titleEn": "FBI says Iranian hackers are using Telegram to steal data in malware attacks",
-          "titleZh": "FBI says Iranian hackers are using Telegram to steal data in malware attacks",
-          "url": "https://techcrunch.com/2026/03/23/fbi-says-iranian-hackers-are-using-telegram-to-steal-data-in-malware-attacks/",
-          "date": "2026-03-23"
+          "titleEn": "Channels & discovery (overview)",
+          "titleZh": "频道与发现功能说明",
+          "url": "https://telegram.org/tour/channels",
+          "date": "Info"
         },
         {
-          "titleEn": "Telegram News",
-          "titleZh": "Telegram 频道（官方公告）",
-          "url": "https://t.me/telegram",
-          "date": "Rolling"
+          "titleEn": "Telegram Tips (official)",
+          "titleZh": "官方技巧与热门功能",
+          "url": "https://t.me/telegramtips",
+          "date": "Info"
         },
         {
           "titleEn": "Telegram blog",
-          "titleZh": "Telegram 博客",
+          "titleZh": "官方博客",
           "url": "https://telegram.org/blog",
-          "date": "Rolling"
+          "date": "Info"
         }
       ]
     },
@@ -341,22 +341,22 @@
       "labelZh": "Discord",
       "items": [
         {
-          "titleEn": "Discord launches Nitro Rewards, giving subscribers access to the base tier of Xbox Game Pass for no extra cost",
-          "titleZh": "Discord launches Nitro Rewards, giving subscribers access to the base tier of Xbox Game Pass for no extra cost",
-          "url": "https://techcrunch.com/2026/05/11/discord-launches-nitro-rewards-giving-subscribers-access-to-the-base-tier-of-xbox-game-pass-for-no-extra-cost/",
-          "date": "2026-05-11"
+          "titleEn": "Server Discovery",
+          "titleZh": "公开服务器发现 · 热门社区",
+          "url": "https://discord.com/servers",
+          "date": "Info"
         },
         {
           "titleEn": "Discord Blog",
-          "titleZh": "Discord 博客",
+          "titleZh": "官方博客与产品动态",
           "url": "https://discord.com/blog",
-          "date": "Rolling"
+          "date": "Info"
         },
         {
-          "titleEn": "Safety Library",
-          "titleZh": "安全资源库",
-          "url": "https://discord.com/safety-library",
-          "date": "Rolling"
+          "titleEn": "Community & safety hub",
+          "titleZh": "社区与安全指南",
+          "url": "https://discord.com/safety",
+          "date": "Info"
         }
       ]
     }
