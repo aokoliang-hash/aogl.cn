@@ -72,27 +72,45 @@
   </header>
   <main>
     <div class="wrap">
+      <section id="intro" class="site-intro" aria-labelledby="intro-title" tabindex="-1">
+        <h2 id="intro-title" class="site-intro-title lang-ja">このサイトについて</h2>
+        <p class="reading-intro lang-ja">
+          aogl.cn は生成AIの個人メモです。公式ブログやドキュメントへの入口をまとめ、リンクは<strong>新しいタブ</strong>で開きます。本文は抜粋や短評が中心で、<strong>商用レビューではありません</strong>。価格・地域・規約は必ず各社公式で確認してください。
+        </p>
+        <p class="reading-intro lang-ja">
+          下の「内容の柱」はページ内 RSS の区分に対応し、「ツール一覧」は会話・画像・動画・コードなど用途別によく使う公式サイトへのショートカットです。リンク切れ・名称変更・掲載取下げは
+          <a href="https://github.com/aokoliang-hash/aogl.cn/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>
+          に URL と理由を書いてください。余裕があれば直します。
+        </p>
+        <p class="reading-intro lang-ja">
+          当サイトは<strong>ニュースサイトではありません</strong>。長文は別の場所で；一覧や短報では日付と出所をできるだけ明示します。
+        </p>
+      </section>
       <section id="pillars">
         <h2 class="page-section-title lang-ja">このサイトにあるもの</h2>
         <div class="cards">
           <article class="card">
             <h3 class="lang-ja">AIニュースと短報</h3>
             <p class="lang-ja">モデル公開、API変更、安全方針、大手の動きをクリックベイトなしで短く整理。</p>
+            <p class="lang-ja">OpenAI、Anthropic、Google DeepMind など<strong>一次情報のブログ</strong>を優先し、全文は転載せずタイトルと直リンクのみです。</p>
             <p class="card-jump lang-ja"><a href="#cat-news">最新記事 6 件 ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-ja">ツールランキング</h3>
             <p class="lang-ja">執筆、コーディング支援、画像生成、ローカル／オフライン、コスパなどシーン別に定期的に更新。</p>
+            <p class="lang-ja"><strong>再現しやすい選定根拠</strong>とコスパの話を重視します。「全网最全」は狙わず、宣伝ランキングとも無関係です。</p>
             <p class="card-jump lang-ja"><a href="#cat-rankings">最新記事 6 件 ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-ja">カテゴリマップ</h3>
             <p class="lang-ja">LLMホスティング、微調整、RAG、エージェント、マルチメディアパイプラインなど、スタック選びの俯瞰図。</p>
+            <p class="lang-ja">各カテゴリは<strong>よく使う公式サイト</strong>と少数の代替に絞ります。マイナー入口や招待制クローズドβは基本載せず、リンク切れを減らします。</p>
             <p class="card-jump lang-ja"><a href="#tools-directory">ツール一覧 ↓</a> · <a href="#cat-maps">記事 ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-ja">テクニックとヒント</h3>
             <p class="lang-ja">プロンプトの型、評価指標、レッドチーム入門、コスト管理、実案件への組み込みのヒント。</p>
+            <p class="lang-ja"><strong>実務と境界条件</strong>（コンテキスト長、遅延、コンプライアンス）寄りで、公式ドキュメントの代わりにはなりません。実装前は各社の説明を優先してください。</p>
             <p class="card-jump lang-ja"><a href="#cat-tips">最新記事 6 件 ↓</a></p>
           </article>
         </div>
@@ -104,6 +122,9 @@
       <section id="tools-directory" class="tools-directory" tabindex="-1">
         <h2 class="page-section-title lang-ja">AIツール一覧</h2>
         <p class="tools-intro lang-ja">各公式サイトへのショートカット（新しいタブ）。アイコンは各ドメインの favicon を使用。</p>
+        <p class="tools-intro lang-ja">並びはだいたい「対話 → 画像/動画 → 開発・エージェント → データと運用」で、タスクから逆引きしやすくしています。<strong>フィッシング</strong>、中身のないミラー、グレー寄りのサイトは載せません。追加・削除は
+          <a href="https://github.com/aokoliang-hash/aogl.cn/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>
+          にドメインと簡単な理由を書いてください。</p>
         <div class="tools-category" id="tools-chat-llm">
           <h3 class="tools-cat-heading lang-ja">チャット・LLM</h3>
           <ul class="tools-grid">
@@ -622,6 +643,7 @@
       <div class="cat-feeds-wrap" id="feeds" tabindex="-1">
         <section id="cat-news" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-ja">AIニュースと短報 — 最新6件</h2>
+          <p class="reading-intro cat-feed-lead lang-ja">ここはサイト内 RSS の要約で、モデル・製品リリース、方針・セキュリティ通知が中心です。更新は上流フィード次第で、ライブニュースサイトではありません。</p>
           <ul class="article-list compact lang-ja">
           <li>
             <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" target="_blank" rel="noopener noreferrer">Advancing voice intelligence with new models in the API</a>
@@ -651,6 +673,7 @@
         </section>
         <section id="cat-rankings" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-ja">ツールランキング — 最新6件</h2>
+          <p class="reading-intro cat-feed-lead lang-ja">ランキングの読み解き、シーン別の選び方、「ちょうどいい」コスパの話。アフィリエイト誇張や金で順位を買う系とは無関係です。</p>
           <ul class="article-list compact lang-ja">
           <li>
             <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank" rel="noopener noreferrer">Introducing Claude Design by Anthropic Labs</a>
@@ -680,6 +703,7 @@
         </section>
         <section id="cat-maps" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-ja">カテゴリマップ — 最新6件</h2>
+          <p class="reading-intro cat-feed-lead lang-ja">上の「ツール一覧」と対になる<strong>記事</strong>枠です。アーキテクチャ、ロードマップ、比較の話を公式リンクだけの一覧と並べて読みやすくします。</p>
           <ul class="article-list compact lang-ja">
           <li>
             <a href="https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/" target="_blank" rel="noopener noreferrer">Gemma 4: Byte for byte, the most capable open models</a>
@@ -709,6 +733,7 @@
         </section>
         <section id="cat-tips" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-ja">テクニックとヒント — 最新6件</h2>
+          <p class="reading-intro cat-feed-lead lang-ja">プロンプト、評価、コスト、セキュリティ、本番の落とし穴など実践メモ。基礎があり、API 接続や本番投入を考えている人向けです。</p>
           <ul class="article-list compact lang-ja">
           <li>
             <a href="https://openai.com/index/running-codex-safely/" target="_blank" rel="noopener noreferrer">Running Codex safely at OpenAI</a>
@@ -873,15 +898,6 @@
         <p class="lang-ja">
           ランキングや推薦は<strong>主観的なまとめ</strong>です。導入前に必ず価格・利用規約・データ取り扱いを各社公式で確認してください。
           広告を出す場合は広告枠付近に十分なオリジナル本文を置き、明確なプライバシーポリシー（フッター）へリンクしてください。
-        </p>
-      </section>
-      <section id="intro">
-        <h2 class="page-section-title lang-ja">このサイトについて</h2>
-        <p class="lang-ja">
-          上と同じく、よく読むラボやドキュメントへの<strong>外部リンク</strong>と、チャット／画像／動画／コード／音声／検索別の<strong>ツールタイル</strong>です。独自ノウハウはなく、ブックマークを掘るより速いだけです。
-        </p>
-        <p class="lang-ja">
-          長文はまた今度；今は棚として使います。ニュースやランキング風の記事では<strong>日付と出所</strong>をできるだけ明示します。
         </p>
       </section>
     </div>

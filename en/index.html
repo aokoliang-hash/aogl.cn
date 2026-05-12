@@ -73,27 +73,45 @@
   </header>
   <main>
     <div class="wrap">
+      <section id="intro" class="site-intro" aria-labelledby="intro-title" tabindex="-1">
+        <h2 id="intro-title" class="site-intro-title lang-en">About this site</h2>
+        <p class="reading-intro lang-en">
+          aogl.cn is a personal bookmark for generative AI: official blog posts and doc entry points in one place. External links open in a <strong>new tab</strong>; blurbs here are excerpts or short notes — <strong>not</strong> a commercial review lab. Pricing, regional rules, and terms always belong on each vendor’s own pages.
+        </p>
+        <p class="reading-intro lang-en">
+          The “content pillars” below map to on-page RSS categories; the tools directory groups common product homepages by scenario so you do not have to dig through bookmarks. If a link breaks, a name changes, or you want something removed, open a
+          <a href="https://github.com/aokoliang-hash/aogl.cn/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>
+          with the URL and reason — I will fix it when I can.
+        </p>
+        <p class="reading-intro lang-en">
+          This is <strong>not</strong> a newsroom: longer essays may live elsewhere; lists and briefs try to show date and source so you can verify later.
+        </p>
+      </section>
       <section id="pillars">
         <h2 class="page-section-title lang-en">What you’ll find here</h2>
         <div class="cards">
           <article class="card">
             <h3 class="lang-en">AI news &amp; briefs</h3>
             <p class="lang-en">Model releases, API changes, safety updates, and MA moves — distilled without clickbait headlines.</p>
+            <p class="lang-en">Items favor first-party posts from OpenAI, Anthropic, Google DeepMind, and similar labs; we do not mirror full articles—only titles and direct links.</p>
             <p class="card-jump lang-en"><a href="#cat-news">Latest 6 articles ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-en">Tool rankings</h3>
             <p class="lang-en">Periodic lists by scenario: writing, coding assistants, image gen, local/offline tools, and price-to-value picks.</p>
+            <p class="lang-en">Emphasis on <strong>reproducible selection signals</strong> and pragmatic value—not “biggest list on the internet,” and not pay-to-rank marketing lists.</p>
             <p class="card-jump lang-en"><a href="#cat-rankings">Latest 6 articles ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-en">Category maps</h3>
             <p class="lang-en">Navigation-style overviews so you can pick a stack: LLM hosts, fine-tuning, RAG, agents, multimedia pipelines.</p>
+            <p class="lang-en">Each category keeps <strong>common official hubs</strong> and a few alternates; niche invites-only betas are usually skipped so links do not rot.</p>
             <p class="card-jump lang-en"><a href="#tools-directory">Tools directory ↓</a> · <a href="#cat-maps">Articles ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-en">Techniques &amp; tips</h3>
             <p class="lang-en">Prompt patterns, eval rubrics, red-teaming basics, cost control, and integrating AI into real projects.</p>
+            <p class="lang-en">Leans on <strong>engineering reality</strong>—context limits, latency, compliance—not a substitute for vendor docs; read official guidance before you ship.</p>
             <p class="card-jump lang-en"><a href="#cat-tips">Latest 6 articles ↓</a></p>
           </article>
         </div>
@@ -105,6 +123,9 @@
       <section id="tools-directory" class="tools-directory" tabindex="-1">
         <h2 class="page-section-title lang-en">AI tools directory</h2>
         <p class="tools-intro lang-en">Quick links to official sites (new tab). Icons use each site’s favicon.</p>
+        <p class="tools-intro lang-en">Sections follow roughly chat → image/video → coding &amp; agents → data &amp; deployment so you can match a task to a tool. We <strong>do not</strong> list phishing domains, pure leech mirrors, or obviously grey-market sites. To add or remove an entry, open a
+          <a href="https://github.com/aokoliang-hash/aogl.cn/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>
+          with the domain and a short reason.</p>
         <div class="tools-category" id="tools-chat-llm">
           <h3 class="tools-cat-heading lang-en">Chat &amp; LLM</h3>
           <ul class="tools-grid">
@@ -623,6 +644,7 @@
       <div class="cat-feeds-wrap" id="feeds" tabindex="-1">
         <section id="cat-news" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-en">AI news &amp; briefs — latest 6</h2>
+          <p class="reading-intro cat-feed-lead lang-en">This block summarizes on-site RSS: model and product launches, policy and security notices; cadence depends on upstream feeds—not a live newsroom.</p>
           <ul class="article-list compact lang-en">
           <li>
             <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" target="_blank" rel="noopener noreferrer">Advancing voice intelligence with new models in the API</a>
@@ -652,6 +674,7 @@
         </section>
         <section id="cat-rankings" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-en">Tool rankings — latest 6</h2>
+          <p class="reading-intro cat-feed-lead lang-en">Reads on listicles, scenario-based picks, and pragmatic value-for-money—not affiliate hype or pay-to-rank lists.</p>
           <ul class="article-list compact lang-en">
           <li>
             <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank" rel="noopener noreferrer">Introducing Claude Design by Anthropic Labs</a>
@@ -681,6 +704,7 @@
         </section>
         <section id="cat-maps" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-en">Category maps — latest 6</h2>
+          <p class="reading-intro cat-feed-lead lang-en">Pairs with the tools directory above: these <strong>articles</strong> cover architecture, roadmaps, and comparisons next to plain official links.</p>
           <ul class="article-list compact lang-en">
           <li>
             <a href="https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/" target="_blank" rel="noopener noreferrer">Gemma 4: Byte for byte, the most capable open models</a>
@@ -710,6 +734,7 @@
         </section>
         <section id="cat-tips" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-en">Techniques &amp; tips — latest 6</h2>
+          <p class="reading-intro cat-feed-lead lang-en">Practical notes on prompts, evals, cost, security, and shipping pitfalls—for readers ready to wire APIs or go to production.</p>
           <ul class="article-list compact lang-en">
           <li>
             <a href="https://openai.com/index/running-codex-safely/" target="_blank" rel="noopener noreferrer">Running Codex safely at OpenAI</a>
@@ -874,15 +899,6 @@
         <p class="lang-en">
           Rankings and recommendations are opinionated summaries — always cross-check pricing, terms, and data handling before adopting a tool.
           If you run ads, keep substantial original copy near ad units and link to a clear privacy policy (see footer).
-        </p>
-      </section>
-      <section id="intro">
-        <h2 class="page-section-title lang-en">About this site</h2>
-        <p class="lang-en">
-          Same idea as up top: <strong>links out</strong> to labs and docs I bother to read, plus <strong>tool tiles</strong> sorted by chat / image / video / code / audio / search — nothing proprietary, just faster than digging through bookmarks.
-        </p>
-        <p class="lang-en">
-          Longer write-ups might appear later; for now this page is the shelf. When something reads like news or a ranking, I try to keep the date and source obvious — fewer headaches for everyone.
         </p>
       </section>
     </div>

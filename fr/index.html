@@ -72,27 +72,45 @@
   </header>
   <main>
     <div class="wrap">
+      <section id="intro" class="site-intro" aria-labelledby="intro-title" tabindex="-1">
+        <h2 id="intro-title" class="site-intro-title lang-fr">À propos de ce site</h2>
+        <p class="reading-intro lang-fr">
+          aogl.cn est un mémo personnel sur l’IA générative : articles officiels et entrées vers la documentation. Les liens s’ouvrent dans un <strong>nouvel onglet</strong> ; le texte reste des extraits ou notes courtes — <strong>pas</strong> un labo d’avis commerciaux. Tarifs, zones et conditions : toujours sur les sites des éditeurs.
+        </p>
+        <p class="reading-intro lang-fr">
+          Les « piliers » ci‑dessous suivent les catégories RSS de la page ; le répertoire d’outils regroupe les sites officiels par cas d’usage. Lien mort, renommage ou retrait : ouvrez une
+          <a href="https://github.com/aokoliang-hash/aogl.cn/issues" target="_blank" rel="noopener noreferrer">issue GitHub</a>
+          avec l’URL et la raison — correction dès que possible.
+        </p>
+        <p class="reading-intro lang-fr">
+          Ce site n’est <strong>pas</strong> une rédaction d’agence : les textes longs ailleurs ; listes et brèves indiquent date et source quand c’est possible.
+        </p>
+      </section>
       <section id="pillars">
         <h2 class="page-section-title lang-fr">Ce que vous trouverez ici</h2>
         <div class="cards">
           <article class="card">
             <h3 class="lang-fr">Brèves et actualités IA</h3>
             <p class="lang-fr">Sorties de modèles, changements d’API, sécurité et M&amp;A — bref, sans titres racoleurs.</p>
+            <p class="lang-fr">Les entrées privilégient les billets <strong>first party</strong> d’OpenAI, Anthropic, Google DeepMind, etc. — pas de copie intégrale, seulement titre et lien.</p>
             <p class="card-jump lang-fr"><a href="#cat-news">6 derniers articles ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-fr">Classements d’outils</h3>
             <p class="lang-fr">Listes par cas d’usage : rédaction, assistants de code, image, local/hors ligne et rapport qualité‑prix.</p>
+            <p class="lang-fr">Mise sur des critères <strong>reproductibles</strong> et le rapport qualité‑prix — pas de course au « plus grand catalogue », ni listes marketing payantes.</p>
             <p class="card-jump lang-fr"><a href="#cat-rankings">6 derniers articles ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-fr">Cartes par catégorie</h3>
             <p class="lang-fr">Vue d’ensemble pour choisir une stack : hébergement LLM, fine‑tuning, RAG, agents, pipelines multimédias.</p>
+            <p class="lang-fr">Par catégorie : <strong>sites officiels courants</strong> et quelques alternatives ; on évite souvent les bêtas fermées sur invitation pour limiter les liens morts.</p>
             <p class="card-jump lang-fr"><a href="#tools-directory">Répertoire d’outils ↓</a> · <a href="#cat-maps">Articles ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-fr">Techniques et astuces</h3>
             <p class="lang-fr">Schémas de prompts, grilles d’évaluation, bases de red teaming, coûts et intégration dans de vrais projets.</p>
+            <p class="lang-fr">Plutôt <strong>pratique d’ingénierie et contraintes</strong> (fenêtre de contexte, latence, conformité) — pas un substitut à la doc éditeur ; vérifiez les sources officielles avant mise en prod.</p>
             <p class="card-jump lang-fr"><a href="#cat-tips">6 derniers articles ↓</a></p>
           </article>
         </div>
@@ -104,6 +122,9 @@
       <section id="tools-directory" class="tools-directory" tabindex="-1">
         <h2 class="page-section-title lang-fr">Répertoire d’outils IA</h2>
         <p class="tools-intro lang-fr">Liens rapides vers les sites officiels (nouvel onglet). Icônes = favicon de chaque domaine.</p>
+        <p class="tools-intro lang-fr">L’ordre suit à peu près chat → image/vidéo → code &amp; agents → données &amp; déploiement pour retrouver un outil par tâche. Pas de <strong>hameçonnage</strong>, miroirs vides ni sites manifestement douteux. Pour ajouter ou retirer une entrée :
+          <a href="https://github.com/aokoliang-hash/aogl.cn/issues" target="_blank" rel="noopener noreferrer">issue GitHub</a>
+          avec le domaine et une courte justification.</p>
         <div class="tools-category" id="tools-chat-llm">
           <h3 class="tools-cat-heading lang-fr">Chat et LLM</h3>
           <ul class="tools-grid">
@@ -622,6 +643,7 @@
       <div class="cat-feeds-wrap" id="feeds" tabindex="-1">
         <section id="cat-news" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-fr">Brèves IA — 6 derniers</h2>
+          <p class="reading-intro cat-feed-lead lang-fr">Bloc issu du flux RSS du site : sorties modèles/produits, politiques et sécurité ; le rythme dépend des flux amont — pas une rédaction temps réel.</p>
           <ul class="article-list compact lang-fr">
           <li>
             <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" target="_blank" rel="noopener noreferrer">Advancing voice intelligence with new models in the API</a>
@@ -651,6 +673,7 @@
         </section>
         <section id="cat-rankings" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-fr">Classements d’outils — 6 derniers</h2>
+          <p class="reading-intro cat-feed-lead lang-fr">Lectures de classements, choix par scénario et rapport qualité‑prix pragmatique — pas de surenchère d’affiliation ni de listes achetées.</p>
           <ul class="article-list compact lang-fr">
           <li>
             <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank" rel="noopener noreferrer">Introducing Claude Design by Anthropic Labs</a>
@@ -680,6 +703,7 @@
         </section>
         <section id="cat-maps" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-fr">Cartes par catégorie — 6 derniers</h2>
+          <p class="reading-intro cat-feed-lead lang-fr">Fait pendant avec le répertoire d’outils : des <strong>articles</strong> sur architecture, feuilles de route et comparaisons, en miroir des liens officiels.</p>
           <ul class="article-list compact lang-fr">
           <li>
             <a href="https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/" target="_blank" rel="noopener noreferrer">Gemma 4: Byte for byte, the most capable open models</a>
@@ -709,6 +733,7 @@
         </section>
         <section id="cat-tips" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-fr">Techniques et astuces — 6 derniers</h2>
+          <p class="reading-intro cat-feed-lead lang-fr">Notes de terrain : prompts, évals, coût, sécurité, pièges de mise en prod — pour lecteurs prêts à brancher des API ou livrer.</p>
           <ul class="article-list compact lang-fr">
           <li>
             <a href="https://openai.com/index/running-codex-safely/" target="_blank" rel="noopener noreferrer">Running Codex safely at OpenAI</a>
@@ -873,15 +898,6 @@
         <p class="lang-fr">
           Les classements et recommandations sont des synthèses subjectives — vérifiez toujours tarifs, conditions et traitement des données avant d’adopter un outil.
           Si vous diffusez des annonces, conservez un texte original substantiel près des emplacements et un lien vers une politique de confidentialité claire (voir le pied de page).
-        </p>
-      </section>
-      <section id="intro">
-        <h2 class="page-section-title lang-fr">À propos de ce site</h2>
-        <p class="lang-fr">
-          Comme ci‑dessus : <strong>liens externes</strong> vers les labos et docs que je lis, plus des <strong>tuiles d’outils</strong> classées chat / image / vidéo / code / audio / recherche — pas de secret, juste plus rapide que mes favoris.
-        </p>
-        <p class="lang-fr">
-          Des articles plus longs peuvent arriver plus tard ; pour l’instant c’est une étagère. Quand ça ressemble à une actu ou un classement, je garde <strong>date et source</strong> visibles.
         </p>
       </section>
     </div>

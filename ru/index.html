@@ -72,27 +72,45 @@
   </header>
   <main>
     <div class="wrap">
+      <section id="intro" class="site-intro" aria-labelledby="intro-title" tabindex="-1">
+        <h2 id="intro-title" class="site-intro-title lang-ru">О сайте</h2>
+        <p class="reading-intro lang-ru">
+          aogl.cn — личная закладка по генеративному ИИ: официальные блоги и входы в документацию. Внешние ссылки открываются в <strong>новой вкладке</strong>; текст — выписки и короткие заметки, <strong>не</strong> коммерческие обзоры. Цены, регионы и условия смотрите только у вендоров.
+        </p>
+        <p class="reading-intro lang-ru">
+          Блоки ниже совпадают с RSS‑категориями на странице; каталог инструментов — официальные сайты по сценариям. Сломанная ссылка, переименование или снятие с публикации — заведите
+          <a href="https://github.com/aokoliang-hash/aogl.cn/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>
+          с URL и причиной; по возможности поправлю.
+        </p>
+        <p class="reading-intro lang-ru">
+          Это <strong>не</strong> новостная редакция: развёрнутые материалы — отдельно; в списках стараюсь указывать дату и источник.
+        </p>
+      </section>
       <section id="pillars">
         <h2 class="page-section-title lang-ru">Что здесь есть</h2>
         <div class="cards">
           <article class="card">
             <h3 class="lang-ru">Новости и заметки об ИИ</h3>
             <p class="lang-ru">Релизы моделей, изменения API, безопасность и M&amp;A — коротко, без кликбейта.</p>
+            <p class="lang-ru">Записи в основном из <strong>официальных блогов</strong> OpenAI, Anthropic, Google DeepMind и т. п.; полные тексты не копируются — только заголовок и ссылка.</p>
             <p class="card-jump lang-ru"><a href="#cat-news">Последние 6 материалов ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-ru">Рейтинги инструментов</h3>
             <p class="lang-ru">Списки по сценариям: текст, код, изображения, локальные/офлайн‑решения и цена/качество.</p>
+            <p class="lang-ru">Упор на <strong>воспроизводимые критерии выбора</strong> и ценность, а не на «самый полный список» и не на платные маркетинговые подборки.</p>
             <p class="card-jump lang-ru"><a href="#cat-rankings">Последние 6 материалов ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-ru">Карты категорий</h3>
             <p class="lang-ru">Обзор для выбора стека: хостинг LLM, дообучение, RAG, агенты, мультимедийные пайплайны.</p>
+            <p class="lang-ru">В каждой категории — <strong>основные официальные сайты</strong> и немного запасных вариантов; узкие закрытые беты обычно не берём, чтобы ссылки не устаревали.</p>
             <p class="card-jump lang-ru"><a href="#tools-directory">Каталог инструментов ↓</a> · <a href="#cat-maps">Материалы ↓</a></p>
           </article>
           <article class="card">
             <h3 class="lang-ru">Техники и советы</h3>
             <p class="lang-ru">Шаблоны промптов, метрики оценки, основы red teaming, затраты и внедрение в реальные проекты.</p>
+            <p class="lang-ru">Уклон в <strong>инженерные ограничения</strong> (контекст, задержка, комплаенс) — не замена официальной документации; перед продом смотрите материалы вендоров.</p>
             <p class="card-jump lang-ru"><a href="#cat-tips">Последние 6 материалов ↓</a></p>
           </article>
         </div>
@@ -104,6 +122,9 @@
       <section id="tools-directory" class="tools-directory" tabindex="-1">
         <h2 class="page-section-title lang-ru">Каталог ИИ-инструментов</h2>
         <p class="tools-intro lang-ru">Быстрые ссылки на официальные сайты (новая вкладка). Иконки — favicon доменов.</p>
+        <p class="tools-intro lang-ru">Порядок блоков: чат → изображение/видео → код и агенты → данные и деплой. <strong>Фишинг</strong>, пустые зеркала и явно сомнительные сайты не включаем. Добавить или убрать запись — в
+          <a href="https://github.com/aokoliang-hash/aogl.cn/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>
+          с доменом и краткой причиной.</p>
         <div class="tools-category" id="tools-chat-llm">
           <h3 class="tools-cat-heading lang-ru">Чат и LLM</h3>
           <ul class="tools-grid">
@@ -622,6 +643,7 @@
       <div class="cat-feeds-wrap" id="feeds" tabindex="-1">
         <section id="cat-news" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-ru">Новости и заметки об ИИ — последние 6</h2>
+          <p class="reading-intro cat-feed-lead lang-ru">Сводка по RSS сайта: релизы моделей и продуктов, политика и безопасность; частота обновлений зависит от внешних лент — не оперативная лента новостей.</p>
           <ul class="article-list compact lang-ru">
           <li>
             <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" target="_blank" rel="noopener noreferrer">Advancing voice intelligence with new models in the API</a>
@@ -651,6 +673,7 @@
         </section>
         <section id="cat-rankings" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-ru">Рейтинги инструментов — последние 6</h2>
+          <p class="reading-intro cat-feed-lead lang-ru">Разбор подборок, выбор по сценарию и здравый ценник — не аффилиатный шум и не купленные рейтинги.</p>
           <ul class="article-list compact lang-ru">
           <li>
             <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank" rel="noopener noreferrer">Introducing Claude Design by Anthropic Labs</a>
@@ -680,6 +703,7 @@
         </section>
         <section id="cat-maps" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-ru">Карты категорий — последние 6</h2>
+          <p class="reading-intro cat-feed-lead lang-ru">Дополняет каталог инструментов выше: здесь <strong>статьи</strong> про архитектуру, дорожные карты и сравнения — рядом с «голыми» официальными ссылками.</p>
           <ul class="article-list compact lang-ru">
           <li>
             <a href="https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/" target="_blank" rel="noopener noreferrer">Gemma 4: Byte for byte, the most capable open models</a>
@@ -709,6 +733,7 @@
         </section>
         <section id="cat-tips" class="cat-feed" tabindex="-1">
           <h2 class="cat-feed-title lang-ru">Техники и советы — последние 6</h2>
+          <p class="reading-intro cat-feed-lead lang-ru">Практика: промпты, оценки, стоимость, безопасность, продакшен‑грабли — тем, кто уже подключает API или выкатывает сервис.</p>
           <ul class="article-list compact lang-ru">
           <li>
             <a href="https://openai.com/index/running-codex-safely/" target="_blank" rel="noopener noreferrer">Running Codex safely at OpenAI</a>
@@ -873,15 +898,6 @@
         <p class="lang-ru">
           Рейтинги и рекомендации — субъективные обзоры: всегда перепроверяйте цены, условия и обработку данных перед выбором инструмента.
           При показе рекламы держите рядом с блоками достаточный оригинальный текст и ссылку на понятную политику конфиденциальности (см. подвал).
-        </p>
-      </section>
-      <section id="intro">
-        <h2 class="page-section-title lang-ru">О сайте</h2>
-        <p class="lang-ru">
-          Та же идея: <strong>внешние ссылки</strong> на лаборатории и доки, которые я читаю, плюс <strong>плитки инструментов</strong> по чату / изображению / видео / коду / аудио / поиску — без «секретов», просто быстрее закладок.
-        </p>
-        <p class="lang-ru">
-          Развёрнутые тексты могут появиться позже; пока это полка. Если похоже на новость или рейтинг, стараюсь явно указывать <strong>дату и источник</strong>.
         </p>
       </section>
     </div>
