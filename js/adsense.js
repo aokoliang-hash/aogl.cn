@@ -6,8 +6,10 @@
  *
  * 若控制台出现 GET …/adsbygoogle.js … ERR_CONNECTION_CLOSED / net::ERR_BLOCKED_BY_CLIENT：
  * 多为网络无法访问 Google 广告域名（地区策略、防火墙）、广告拦截扩展或代理异常；
- * 站点其余功能不受影响，只是广告脚本不会加载。本地调试可在地址栏加 ?noads=1 或执行：
- * localStorage.setItem('aogl-disable-ads','1') 后刷新，以跳过请求、减少控制台报错。
+ * 站点其余功能不受影响，只是广告脚本不会加载。Chrome 仍可能在「网络」面板里记录失败请求，属正常现象。
+ * 本地或不想发起该请求时：地址栏加 ?noads=1，或执行
+ *   localStorage.setItem('aogl-disable-ads','1')
+ * 后刷新。若页面在 adsense.js 之前设置了 window.AOGL_DISABLE_ADSENSE = true，也会跳过加载。
  */
 (function () {
   var PUBLISHER_CLIENT = "ca-pub-6958761551797888";
@@ -20,6 +22,7 @@
     /(?:^|[?&])noads=1(?:&|$)/.test(qs) ||
     host === "localhost" ||
     host === "127.0.0.1" ||
+    (typeof window !== "undefined" && window.AOGL_DISABLE_ADSENSE === true) ||
     (typeof localStorage !== "undefined" && localStorage.getItem("aogl-disable-ads") === "1");
 
   function loadPublisherScript() {

@@ -553,8 +553,8 @@
     {
       "nameEn": "miHoYo",
       "nameZh": "米哈游",
-      "url": "https://www.mihoyo.com/",
-      "domain": "mihoyo.com"
+      "url": "https://www.hoyoverse.com/",
+      "domain": "hoyoverse.com"
     },
     {
       "nameEn": "NetEase Games",
@@ -567,12 +567,6 @@
       "nameZh": "腾讯游戏",
       "url": "https://game.qq.com/",
       "domain": "qq.com"
-    },
-    {
-      "nameEn": "HoYoverse",
-      "nameZh": "HoYoverse",
-      "url": "https://www.hoyoverse.com/",
-      "domain": "hoyoverse.com"
     },
     {
       "nameEn": "itch.io",
