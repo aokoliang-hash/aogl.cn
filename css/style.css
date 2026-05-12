@@ -148,6 +148,11 @@ header {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
+.site-nav-list li.is-active a {
+  color: var(--accent);
+  border-color: rgba(125, 211, 252, 0.55);
+  box-shadow: 0 0 12px rgba(125, 211, 252, 0.2);
+}
 #feeds {
   scroll-margin-top: 1rem;
 }
@@ -202,6 +207,7 @@ main {
 }
 section {
   margin-bottom: 2.5rem;
+  outline: none;
 }
 .page-section-title {
   font-size: clamp(1.45rem, 2.8vw, 2rem);

@@ -1,0 +1,123 @@
+{
+  "slug": "life",
+  "outFile": "life.html",
+  "path": "/life.html",
+  "titleEn": "Global digital life — bookmarks | aogl.cn",
+  "titleZh": "全球数字生活服务前十｜aogl.cn",
+  "descEn": "Ten apps and services that dominate global MAU / download charts, plus three official story links each.",
+  "descZh": "常见于全球月活与下载榜前列的十个数字生活服务，每站三条官网或新闻室外链。",
+  "h1En": "Global daily apps (MAU leaders)",
+  "h1Zh": "全球日活前十（跨国服务）",
+  "updated": "2026-05-11",
+  "editorialHtmlEn": "<p>Ordering follows Data.ai / Sensor Tower style global charts — regional super-apps are listed below.</p>",
+  "editorialHtmlZh": "<p>顺序参考 Data.ai、Sensor Tower 一类「全球用户量」榜单；地区性超级应用放在「更多」里。</p>",
+  "rankTitleEn": "Global top 10 (digital life)",
+  "rankTitleZh": "全球前十（数字生活）",
+  "rankLeadEn": "",
+  "rankLeadZh": "",
+  "newsTitleEn": "Three links each",
+  "newsTitleZh": "每站三条链",
+  "newsLeadEn": "",
+  "newsLeadZh": "",
+  "moreTitleEn": "China & regional apps",
+  "moreTitleZh": "国内与地区常用应用",
+  "moreLeadEn": "",
+  "moreLeadZh": "",
+  "top10": [
+    { "nameEn": "Google Maps", "nameZh": "Google 地图", "url": "https://maps.google.com/", "domain": "google.com" },
+    { "nameEn": "WhatsApp", "nameZh": "WhatsApp", "url": "https://www.whatsapp.com/", "domain": "whatsapp.com" },
+    { "nameEn": "Instagram", "nameZh": "Instagram", "url": "https://www.instagram.com/", "domain": "instagram.com" },
+    { "nameEn": "Uber", "nameZh": "Uber", "url": "https://www.uber.com/", "domain": "uber.com" },
+    { "nameEn": "Spotify", "nameZh": "Spotify", "url": "https://www.spotify.com/", "domain": "spotify.com" },
+    { "nameEn": "Netflix", "nameZh": "Netflix", "url": "https://www.netflix.com/", "domain": "netflix.com" },
+    { "nameEn": "Airbnb", "nameZh": "Airbnb", "url": "https://www.airbnb.com/", "domain": "airbnb.com" },
+    { "nameEn": "Booking.com", "nameZh": "Booking", "url": "https://www.booking.com/", "domain": "booking.com" },
+    { "nameEn": "PayPal", "nameZh": "PayPal", "url": "https://www.paypal.com/", "domain": "paypal.com" },
+    { "nameEn": "Zoom", "nameZh": "Zoom", "url": "https://www.zoom.us/", "domain": "zoom.us" }
+  ],
+  "newsGroups": [
+    { "id": "lf-maps", "labelEn": "Google Maps", "labelZh": "Google 地图", "items": [
+      { "titleEn": "Maps blog — product updates", "titleZh": "地图产品博客", "url": "https://blog.google/products/maps/", "date": "Rolling" },
+      { "titleEn": "Street View & imagery policy", "titleZh": "街景与图像政策", "url": "https://www.google.com/streetview/policy/", "date": "Rolling" },
+      { "titleEn": "Google Maps Platform news", "titleZh": "地图平台开发者资讯", "url": "https://mapsplatform.google.com/resources/blog/", "date": "Rolling" }
+    ]},
+    { "id": "lf-wa", "labelEn": "WhatsApp", "labelZh": "WhatsApp", "items": [
+      { "titleEn": "WhatsApp blog", "titleZh": "WhatsApp 博客", "url": "https://blog.whatsapp.com/", "date": "Rolling" },
+      { "titleEn": "Security & privacy", "titleZh": "安全与隐私", "url": "https://www.whatsapp.com/security", "date": "Rolling" },
+      { "titleEn": "Help Center", "titleZh": "帮助中心", "url": "https://faq.whatsapp.com/", "date": "Rolling" }
+    ]},
+    { "id": "lf-ig", "labelEn": "Instagram", "labelZh": "Instagram", "items": [
+      { "titleEn": "Instagram blog", "titleZh": "Instagram 博客", "url": "https://about.instagram.com/blog", "date": "Rolling" },
+      { "titleEn": "Creators", "titleZh": "创作者", "url": "https://about.instagram.com/creators", "date": "Rolling" },
+      { "titleEn": "Safety hub", "titleZh": "安全中心", "url": "https://about.instagram.com/safety", "date": "Rolling" }
+    ]},
+    { "id": "lf-uber", "labelEn": "Uber", "labelZh": "Uber", "items": [
+      { "titleEn": "Uber Newsroom", "titleZh": "Uber 新闻室", "url": "https://www.uber.com/newsroom/", "date": "Rolling" },
+      { "titleEn": "Investor relations", "titleZh": "投资者关系", "url": "https://investor.uber.com/", "date": "Rolling" },
+      { "titleEn": "Sustainability report hub", "titleZh": "可持续报告", "url": "https://www.uber.com/newsroom/category/sustainability/", "date": "Rolling" }
+    ]},
+    { "id": "lf-spotify", "labelEn": "Spotify", "labelZh": "Spotify", "items": [
+      { "titleEn": "Spotify Newsroom", "titleZh": "Spotify 新闻室", "url": "https://newsroom.spotify.com/", "date": "Rolling" },
+      { "titleEn": "Investors", "titleZh": "投资者", "url": "https://investors.spotify.com/", "date": "Rolling" },
+      { "titleEn": "For Artists blog", "titleZh": "音乐人博客", "url": "https://artists.spotify.com/blog", "date": "Rolling" }
+    ]},
+    { "id": "lf-nflx", "labelEn": "Netflix", "labelZh": "Netflix", "items": [
+      { "titleEn": "Netflix newsroom", "titleZh": "Netflix 新闻室", "url": "https://about.netflix.com/en/newsroom", "date": "Rolling" },
+      { "titleEn": "Investor site", "titleZh": "投资者站点", "url": "https://ir.netflix.net/", "date": "Rolling" },
+      { "titleEn": "Tech blog", "titleZh": "技术博客", "url": "https://netflixtechblog.com/", "date": "Rolling" }
+    ]},
+    { "id": "lf-abnb", "labelEn": "Airbnb", "labelZh": "Airbnb", "items": [
+      { "titleEn": "Airbnb News", "titleZh": "Airbnb 新闻", "url": "https://news.airbnb.com/", "date": "Rolling" },
+      { "titleEn": "Public policy blog", "titleZh": "公共政策", "url": "https://www.airbnb.com/d/policy", "date": "Rolling" },
+      { "titleEn": "Investors overview", "titleZh": "投资者概览", "url": "https://investors.airbnb.com/", "date": "Rolling" }
+    ]},
+    { "id": "lf-bkg", "labelEn": "Booking.com", "labelZh": "Booking", "items": [
+      { "titleEn": "Booking Holdings news", "titleZh": "Booking 集团新闻", "url": "https://news.booking.com/", "date": "Rolling" },
+      { "titleEn": "Sustainability", "titleZh": "可持续旅行", "url": "https://www.booking.com/content/sustainable-travel.html", "date": "Rolling" },
+      { "titleEn": "Investor relations", "titleZh": "投资者关系", "url": "https://www.bookingholdings.com/", "date": "Rolling" }
+    ]},
+    { "id": "lf-pp", "labelEn": "PayPal", "labelZh": "PayPal", "items": [
+      { "titleEn": "PayPal Newsroom", "titleZh": "PayPal 新闻室", "url": "https://newsroom.paypal-corp.com/", "date": "Rolling" },
+      { "titleEn": "Investor updates", "titleZh": "投资者更新", "url": "https://investor.paypal-corp.com/", "date": "Rolling" },
+      { "titleEn": "Developer blog", "titleZh": "开发者博客", "url": "https://developer.paypal.com/community/blog/", "date": "Rolling" }
+    ]},
+    { "id": "lf-zoom", "labelEn": "Zoom", "labelZh": "Zoom", "items": [
+      { "titleEn": "Zoom News", "titleZh": "Zoom 新闻", "url": "https://news.zoom.us/", "date": "Rolling" },
+      { "titleEn": "Trust center", "titleZh": "信任中心", "url": "https://explore.zoom.us/en/trust/", "date": "Rolling" },
+      { "titleEn": "Investor relations", "titleZh": "投资者关系", "url": "https://investors.zoom.us/", "date": "Rolling" }
+    ]}
+  ],
+  "more": [
+    { "nameEn": "Meituan", "nameZh": "美团", "url": "https://www.meituan.com/", "domain": "meituan.com" },
+    { "nameEn": "Didi", "nameZh": "滴滴", "url": "https://www.didiglobal.com/", "domain": "didiglobal.com" },
+    { "nameEn": "Ctrip / Trip.com", "nameZh": "携程", "url": "https://www.trip.com/", "domain": "trip.com" },
+    { "nameEn": "Amap (AutoNavi)", "nameZh": "高德地图", "url": "https://www.amap.com/", "domain": "amap.com" },
+    { "nameEn": "Ele.me", "nameZh": "饿了么", "url": "https://www.ele.me/", "domain": "ele.me" },
+    { "nameEn": "WeChat", "nameZh": "微信", "url": "https://weixin.qq.com/", "domain": "qq.com" },
+    { "nameEn": "Alipay", "nameZh": "支付宝", "url": "https://www.alipay.com/", "domain": "alipay.com" },
+    { "nameEn": "12306 CN Railway", "nameZh": "12306", "url": "https://www.12306.cn/", "domain": "12306.cn" },
+    { "nameEn": "Keep", "nameZh": "Keep", "url": "https://www.gotokeep.com/", "domain": "gotokeep.com" },
+    { "nameEn": "Zhihu", "nameZh": "知乎", "url": "https://www.zhihu.com/", "domain": "zhihu.com" },
+    { "nameEn": "DoorDash", "nameZh": "DoorDash", "url": "https://www.doordash.com/", "domain": "doordash.com" },
+    { "nameEn": "Bilibili", "nameZh": "哔哩哔哩", "url": "https://www.bilibili.com/", "domain": "bilibili.com" },
+    { "nameEn": "Xiaohongshu", "nameZh": "小红书", "url": "https://www.xiaohongshu.com/", "domain": "xiaohongshu.com" },
+    { "nameEn": "Douyin", "nameZh": "抖音", "url": "https://www.douyin.com/", "domain": "douyin.com" },
+    { "nameEn": "Kuaishou", "nameZh": "快手", "url": "https://www.kuaishou.com/", "domain": "kuaishou.com" },
+    { "nameEn": "Mafengwo", "nameZh": "马蜂窝", "url": "https://www.mafengwo.cn/", "domain": "mafengwo.cn" },
+    { "nameEn": "Qunar", "nameZh": "去哪儿", "url": "https://www.qunar.com/", "domain": "qunar.com" },
+    { "nameEn": "Fliggy", "nameZh": "飞猪", "url": "https://www.fliggy.com/", "domain": "fliggy.com" },
+    { "nameEn": "Tongcheng", "nameZh": "同程", "url": "https://www.ly.com/", "domain": "ly.com" },
+    { "nameEn": "HelloBike", "nameZh": "哈啰", "url": "https://www.hellobike.com/", "domain": "hellobike.com" },
+    { "nameEn": "Mobike archive", "nameZh": "摩拜（历史）", "url": "https://www.mobike.com/", "domain": "mobike.com" },
+    { "nameEn": "SF Express", "nameZh": "顺丰", "url": "https://www.sf-express.com/", "domain": "sf-express.com" },
+    { "nameEn": "JD Logistics", "nameZh": "京东物流", "url": "https://www.jdl.com/", "domain": "jdl.com" },
+    { "nameEn": "Cainiao", "nameZh": "菜鸟", "url": "https://www.cainiao.com/", "domain": "cainiao.com" },
+    { "nameEn": "Ping An Good Doctor", "nameZh": "平安好医生", "url": "https://www.jk.cn/", "domain": "jk.cn" },
+    { "nameEn": "DXY.cn", "nameZh": "丁香园", "url": "https://dxy.cn/", "domain": "dxy.cn" },
+    { "nameEn": "Guahao", "nameZh": "微医挂号", "url": "https://www.guahao.com/", "domain": "guahao.com" },
+    { "nameEn": "MYdrivers", "nameZh": "快科技", "url": "https://www.mydrivers.com/", "domain": "mydrivers.com" },
+    { "nameEn": "SMZDM", "nameZh": "什么值得买", "url": "https://www.smzdm.com/", "domain": "smzdm.com" },
+    { "nameEn": "Mtime", "nameZh": "时光网", "url": "http://www.mtime.com/", "domain": "mtime.com" },
+    { "nameEn": "Douban", "nameZh": "豆瓣", "url": "https://www.douban.com/", "domain": "douban.com" }
+  ]
+}

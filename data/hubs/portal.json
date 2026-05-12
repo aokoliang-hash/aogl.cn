@@ -1,0 +1,172 @@
+{
+  "slug": "portal",
+  "outFile": "portal.html",
+  "path": "/portal.html",
+  "titleEn": "Global web fronts — bookmarks | aogl.cn",
+  "titleZh": "全球主流站点书签｜aogl.cn",
+  "descEn": "Ten sites that routinely sit atop global traffic rankings, plus three first-party story links each.",
+  "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
+  "h1En": "Where the world’s traffic piles up",
+  "h1Zh": "全球流量前十站点",
+  "updated": "2026-05-11",
+  "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p>",
+  "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p>",
+  "rankTitleEn": "Global top 10 (traffic)",
+  "rankTitleZh": "全球前十（网站流量）",
+  "rankLeadEn": "",
+  "rankLeadZh": "",
+  "newsTitleEn": "Three links each",
+  "newsTitleZh": "每站三条链",
+  "newsLeadEn": "",
+  "newsLeadZh": "",
+  "moreTitleEn": "Regional & China portals",
+  "moreTitleZh": "中文与其它地区门户",
+  "moreLeadEn": "",
+  "moreLeadZh": "",
+  "top10": [
+    { "nameEn": "Google", "nameZh": "Google", "url": "https://www.google.com/", "domain": "google.com" },
+    { "nameEn": "YouTube", "nameZh": "YouTube", "url": "https://www.youtube.com/", "domain": "youtube.com" },
+    { "nameEn": "Facebook", "nameZh": "Facebook", "url": "https://www.facebook.com/", "domain": "facebook.com" },
+    { "nameEn": "Instagram", "nameZh": "Instagram", "url": "https://www.instagram.com/", "domain": "instagram.com" },
+    { "nameEn": "X", "nameZh": "X", "url": "https://x.com/", "domain": "x.com" },
+    { "nameEn": "Wikipedia", "nameZh": "维基百科", "url": "https://www.wikipedia.org/", "domain": "wikipedia.org" },
+    { "nameEn": "Reddit", "nameZh": "Reddit", "url": "https://www.reddit.com/", "domain": "reddit.com" },
+    { "nameEn": "Amazon", "nameZh": "亚马逊", "url": "https://www.amazon.com/", "domain": "amazon.com" },
+    { "nameEn": "Yahoo", "nameZh": "Yahoo", "url": "https://www.yahoo.com/", "domain": "yahoo.com" },
+    { "nameEn": "WhatsApp", "nameZh": "WhatsApp", "url": "https://www.whatsapp.com/", "domain": "whatsapp.com" }
+  ],
+  "newsGroups": [
+    {
+      "id": "ng-google",
+      "labelEn": "Google",
+      "labelZh": "Google",
+      "items": [
+        { "titleEn": "Google AI updates — March 2026", "titleZh": "Google AI 三月更新", "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-march-2026/", "date": "2026-03" },
+        { "titleEn": "Google Cloud Next 2026 hub", "titleZh": "Google Cloud Next 2026 专题", "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/next-2026/", "date": "2026" },
+        { "titleEn": "2026 Responsible AI progress report", "titleZh": "2026 负责任 AI 进展报告", "url": "https://blog.google/innovation-and-ai/products/responsible-ai-2026-report-ongoing-work/", "date": "2026" }
+      ]
+    },
+    {
+      "id": "ng-youtube",
+      "labelEn": "YouTube",
+      "labelZh": "YouTube",
+      "items": [
+        { "titleEn": "YouTube blog — product & culture", "titleZh": "YouTube 官方博客", "url": "https://blog.youtube/", "date": "Rolling" },
+        { "titleEn": "Inside YouTube — engineering & trust", "titleZh": "YouTube 工程与信任", "url": "https://blog.youtube/news-and-events/", "date": "Rolling" },
+        { "titleEn": "YouTube Official Blog (Google)", "titleZh": "YouTube 新闻与活动", "url": "https://youtube.googleblog.com/", "date": "Rolling" }
+      ]
+    },
+    {
+      "id": "ng-fb",
+      "labelEn": "Facebook",
+      "labelZh": "Facebook",
+      "items": [
+        { "titleEn": "Meta newsroom — company updates", "titleZh": "Meta 新闻室", "url": "https://about.fb.com/news/", "date": "Rolling" },
+        { "titleEn": "Meta Connect and product roadmap", "titleZh": "Meta 产品与活动稿", "url": "https://about.fb.com/news/2024/09/meta-connect-2024/", "date": "2024-09" },
+        { "titleEn": "Transparency reports hub", "titleZh": "透明度报告入口", "url": "https://transparency.meta.com/", "date": "Rolling" }
+      ]
+    },
+    {
+      "id": "ng-ig",
+      "labelEn": "Instagram",
+      "labelZh": "Instagram",
+      "items": [
+        { "titleEn": "Instagram blog — announcements", "titleZh": "Instagram 官方博客", "url": "https://about.instagram.com/blog", "date": "Rolling" },
+        { "titleEn": "Creators — best practices", "titleZh": "创作者指南", "url": "https://about.instagram.com/creators", "date": "Rolling" },
+        { "titleEn": "Safety & teens resources", "titleZh": "安全与青少年", "url": "https://about.instagram.com/safety", "date": "Rolling" }
+      ]
+    },
+    {
+      "id": "ng-x",
+      "labelEn": "X",
+      "labelZh": "X",
+      "items": [
+        { "titleEn": "X company blog", "titleZh": "X 公司博客", "url": "https://blog.x.com/", "date": "Rolling" },
+        { "titleEn": "Safety — rules & enforcement", "titleZh": "安全与规则", "url": "https://help.x.com/rules-and-policies", "date": "Rolling" },
+        { "titleEn": "Developer platform updates", "titleZh": "开发者平台", "url": "https://developer.x.com/en/docs/twitter-api", "date": "Rolling" }
+      ]
+    },
+    {
+      "id": "ng-wiki",
+      "labelEn": "Wikipedia",
+      "labelZh": "维基百科",
+      "items": [
+        { "titleEn": "Wikimedia Foundation news", "titleZh": "维基媒体基金会新闻", "url": "https://wikimediafoundation.org/news/", "date": "Rolling" },
+        { "titleEn": "Annual Report highlights", "titleZh": "年度报告要点", "url": "https://annual.wikimedia.org/", "date": "Rolling" },
+        { "titleEn": "Technology blog (Diff)", "titleZh": "技术博客 Diff", "url": "https://diff.wikimedia.org/", "date": "Rolling" }
+      ]
+    },
+    {
+      "id": "ng-reddit",
+      "labelEn": "Reddit",
+      "labelZh": "Reddit",
+      "items": [
+        { "titleEn": "Reddit Inc. blog", "titleZh": "Reddit 公司博客", "url": "https://redditinc.com/blog", "date": "Rolling" },
+        { "titleEn": "r/reddit — official announcements", "titleZh": "官方子版块公告", "url": "https://www.reddit.com/r/reddit/", "date": "Rolling" },
+        { "titleEn": "Press & media kit", "titleZh": "媒体与品牌资料", "url": "https://redditinc.com/press", "date": "Rolling" }
+      ]
+    },
+    {
+      "id": "ng-amz",
+      "labelEn": "Amazon",
+      "labelZh": "亚马逊",
+      "items": [
+        { "titleEn": "Amazon Spain investment", "titleZh": "亚马逊西班牙投资", "url": "https://www.aboutamazon.com/news/company-news/amazon-spain-investment", "date": "2026" },
+        { "titleEn": "AWS × NEURA Robotics", "titleZh": "AWS 与 NEURA Robotics 合作稿", "url": "https://press.aboutamazon.com/aws/2026/4/neura-robotics-and-aws-enter-strategic-collaboration-to-accelerate-physical-ai-at-scale", "date": "2026-04" },
+        { "titleEn": "Amazon Supply Chain Services", "titleZh": "Amazon Supply Chain Services 新闻稿", "url": "https://press.aboutamazon.com/2026/5/amazon-launches-amazon-supply-chain-services-opening-its-logistics-network-to-all-businesses", "date": "2026-05" }
+      ]
+    },
+    {
+      "id": "ng-yahoo",
+      "labelEn": "Yahoo",
+      "labelZh": "Yahoo",
+      "items": [
+        { "titleEn": "Yahoo Inc. press releases", "titleZh": "Yahoo 公司新闻稿", "url": "https://www.yahooinc.com/press-releases/", "date": "Rolling" },
+        { "titleEn": "Yahoo Mail product blog", "titleZh": "Yahoo Mail 产品动态", "url": "https://www.yahoo.com/tech/", "date": "Rolling" },
+        { "titleEn": "Yahoo Sports — editorial hub", "titleZh": "Yahoo Sports 频道", "url": "https://sports.yahoo.com/", "date": "Rolling" }
+      ]
+    },
+    {
+      "id": "ng-wa",
+      "labelEn": "WhatsApp",
+      "labelZh": "WhatsApp",
+      "items": [
+        { "titleEn": "WhatsApp blog — product updates", "titleZh": "WhatsApp 官方博客", "url": "https://blog.whatsapp.com/", "date": "Rolling" },
+        { "titleEn": "Security & privacy center", "titleZh": "安全与隐私中心", "url": "https://www.whatsapp.com/security", "date": "Rolling" },
+        { "titleEn": "Help Center — calling & messaging", "titleZh": "帮助中心", "url": "https://faq.whatsapp.com/", "date": "Rolling" }
+      ]
+    }
+  ],
+  "more": [
+    { "nameEn": "Sina", "nameZh": "新浪", "url": "https://www.sina.com.cn/", "domain": "sina.com.cn" },
+    { "nameEn": "NetEase", "nameZh": "网易", "url": "https://www.163.com/", "domain": "163.com" },
+    { "nameEn": "Sohu", "nameZh": "搜狐", "url": "https://www.sohu.com/", "domain": "sohu.com" },
+    { "nameEn": "QQ.com", "nameZh": "腾讯网", "url": "https://www.qq.com/", "domain": "qq.com" },
+    { "nameEn": "ifeng", "nameZh": "凤凰网", "url": "https://www.ifeng.com/", "domain": "ifeng.com" },
+    { "nameEn": "People's Daily Online", "nameZh": "人民网", "url": "http://www.people.com.cn/", "domain": "people.com.cn" },
+    { "nameEn": "Xinhuanet", "nameZh": "新华网", "url": "https://www.news.cn/", "domain": "news.cn" },
+    { "nameEn": "CCTV.com", "nameZh": "央视网", "url": "https://www.cctv.com/", "domain": "cctv.com" },
+    { "nameEn": "Baidu", "nameZh": "百度", "url": "https://www.baidu.com/", "domain": "baidu.com" },
+    { "nameEn": "Toutiao", "nameZh": "今日头条", "url": "https://www.toutiao.com/", "domain": "toutiao.com" },
+    { "nameEn": "The Paper", "nameZh": "澎湃新闻", "url": "https://www.thepaper.cn/", "domain": "thepaper.cn" },
+    { "nameEn": "Caixin", "nameZh": "财新网", "url": "https://www.caixin.com/", "domain": "caixin.com" },
+    { "nameEn": "Yicai", "nameZh": "第一财经", "url": "https://www.yicai.com/", "domain": "yicai.com" },
+    { "nameEn": "21jingji", "nameZh": "21财经", "url": "https://www.21jingji.com/", "domain": "21jingji.com" },
+    { "nameEn": "Eastday", "nameZh": "东方网", "url": "https://www.eastday.com/", "domain": "eastday.com" },
+    { "nameEn": "Rednet", "nameZh": "红网", "url": "https://www.rednet.cn/", "domain": "rednet.cn" },
+    { "nameEn": "Hexun", "nameZh": "和讯", "url": "https://www.hexun.com/", "domain": "hexun.com" },
+    { "nameEn": "East Money", "nameZh": "东方财富", "url": "https://www.eastmoney.com/", "domain": "eastmoney.com" },
+    { "nameEn": "36Kr", "nameZh": "36氪", "url": "https://www.36kr.com/", "domain": "36kr.com" },
+    { "nameEn": "Huxiu", "nameZh": "虎嗅", "url": "https://www.huxiu.com/", "domain": "huxiu.com" },
+    { "nameEn": "Guokr", "nameZh": "果壳", "url": "https://www.guokr.com/", "domain": "guokr.com" },
+    { "nameEn": "China News", "nameZh": "中国新闻网", "url": "https://www.chinanews.com.cn/", "domain": "chinanews.com.cn" },
+    { "nameEn": "GMW", "nameZh": "光明网", "url": "https://www.gmw.cn/", "domain": "gmw.cn" },
+    { "nameEn": "CE.cn", "nameZh": "中国经济网", "url": "http://www.ce.cn/", "domain": "ce.cn" },
+    { "nameEn": "CNR", "nameZh": "央广网", "url": "https://www.cnr.cn/", "domain": "cnr.cn" },
+    { "nameEn": "China.com", "nameZh": "中华网", "url": "https://www.china.com/", "domain": "china.com" },
+    { "nameEn": "Tiexue", "nameZh": "铁血网", "url": "https://www.tiexue.net/", "domain": "tiexue.net" },
+    { "nameEn": "Guancha", "nameZh": "观察者网", "url": "https://www.guancha.cn/", "domain": "guancha.cn" },
+    { "nameEn": "Jiemian", "nameZh": "界面新闻", "url": "https://www.jiemian.com/", "domain": "jiemian.com" },
+    { "nameEn": "LatePost", "nameZh": "晚点 LatePost", "url": "https://www.latepost.com/", "domain": "latepost.com" }
+  ]
+}

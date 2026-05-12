@@ -1,0 +1,113 @@
+{
+  "slug": "shopping",
+  "outFile": "shopping.html",
+  "path": "/shopping.html",
+  "titleEn": "Global e-commerce — bookmarks | aogl.cn",
+  "titleZh": "全球电商前十｜aogl.cn",
+  "descEn": "Ten cross-border retail platforms that usually lead global GMV / traffic rankings, plus three corporate links each.",
+  "descZh": "常见于全球电商 GMV 与跨境流量榜单前列的十个平台，每站三条集团新闻稿或 IR 外链。",
+  "h1En": "Global retail & marketplace top 10",
+  "h1Zh": "全球电商前十（GMV / 跨境口径）",
+  "updated": "2026-05-11",
+  "editorialHtmlEn": "<p>Order follows Digital Commerce 360 / Statista style “largest online retailers” tables — China-only malls sit in the “more” list instead.</p>",
+  "editorialHtmlZh": "<p>顺序参考 Digital Commerce 360、Statista 等「全球最大网络零售商」类榜单；纯国内电商放在下面「更多」里。</p>",
+  "rankTitleEn": "Global top 10 (e-commerce)",
+  "rankTitleZh": "全球前十（电商规模）",
+  "rankLeadEn": "",
+  "rankLeadZh": "",
+  "newsTitleEn": "Three links each",
+  "newsTitleZh": "每站三条链",
+  "newsLeadEn": "",
+  "newsLeadZh": "",
+  "moreTitleEn": "China & niche marketplaces",
+  "moreTitleZh": "国内与其它垂直电商",
+  "moreLeadEn": "",
+  "moreLeadZh": "",
+  "top10": [
+    { "nameEn": "Amazon", "nameZh": "亚马逊", "url": "https://www.amazon.com/", "domain": "amazon.com" },
+    { "nameEn": "Walmart", "nameZh": "沃尔玛", "url": "https://www.walmart.com/", "domain": "walmart.com" },
+    { "nameEn": "eBay", "nameZh": "eBay", "url": "https://www.ebay.com/", "domain": "ebay.com" },
+    { "nameEn": "Target", "nameZh": "Target", "url": "https://www.target.com/", "domain": "target.com" },
+    { "nameEn": "Best Buy", "nameZh": "百思买", "url": "https://www.bestbuy.com/", "domain": "bestbuy.com" },
+    { "nameEn": "Shopify", "nameZh": "Shopify", "url": "https://www.shopify.com/", "domain": "shopify.com" },
+    { "nameEn": "Etsy", "nameZh": "Etsy", "url": "https://www.etsy.com/", "domain": "etsy.com" },
+    { "nameEn": "Rakuten", "nameZh": "乐天", "url": "https://www.rakuten.com/", "domain": "rakuten.com" },
+    { "nameEn": "Mercado Libre", "nameZh": "Mercado Libre", "url": "https://www.mercadolibre.com/", "domain": "mercadolibre.com" },
+    { "nameEn": "Shopee", "nameZh": "Shopee", "url": "https://shopee.com/", "domain": "shopee.com" }
+  ],
+  "newsGroups": [
+    { "id": "sp-amz", "labelEn": "Amazon", "labelZh": "亚马逊", "items": [
+      { "titleEn": "Amazon Spain investment", "titleZh": "亚马逊西班牙投资", "url": "https://www.aboutamazon.com/news/company-news/amazon-spain-investment", "date": "2026" },
+      { "titleEn": "AWS × NEURA Robotics", "titleZh": "AWS 与 NEURA Robotics 合作稿", "url": "https://press.aboutamazon.com/aws/2026/4/neura-robotics-and-aws-enter-strategic-collaboration-to-accelerate-physical-ai-at-scale", "date": "2026-04" },
+      { "titleEn": "Amazon Supply Chain Services", "titleZh": "Amazon Supply Chain Services 新闻稿", "url": "https://press.aboutamazon.com/2026/5/amazon-launches-amazon-supply-chain-services-opening-its-logistics-network-to-all-businesses", "date": "2026-05" }
+    ]},
+    { "id": "sp-wmt", "labelEn": "Walmart", "labelZh": "沃尔玛", "items": [
+      { "titleEn": "2026 annual report & proxy", "titleZh": "2026 年报与委托书", "url": "https://corporate.walmart.com/news/2026/04/23/walmart-releases-2026-annual-report-and-proxy-statement", "date": "2026-04" },
+      { "titleEn": "U.S. store investment plan", "titleZh": "美国门店投资计划", "url": "https://corporate.walmart.com/news/2026/04/16/how-we-are-investing-in-our-stores-to-drive-speed-convenience-and-growth", "date": "2026-04" },
+      { "titleEn": "Robinson, Texas milk plant", "titleZh": "得州乳品加工厂投产", "url": "https://corporate.walmart.com/news/2026/04/29/walmart-opens-third-owned-and-operated-milk-processing-facility-in-robinson-texas-creating-more-than-400-new-jobs", "date": "2026-04" }
+    ]},
+    { "id": "sp-ebay", "labelEn": "eBay", "labelZh": "eBay", "items": [
+      { "titleEn": "Q1 2026 results", "titleZh": "2026 年一季度业绩", "url": "https://www.ebayinc.com/stories/news/ebay-inc-reports-first-quarter-2026-results/", "date": "2026" },
+      { "titleEn": "The NYC Edit launch", "titleZh": "The NYC Edit 上线", "url": "https://www.ebayinc.com/stories/news/ebay-launches-the-nyc-edit-revealing-what-new-yorks-most-in-the-know-tastemakers-are-selling-and-buying/", "date": "2026" },
+      { "titleEn": "Pokémon Day auction", "titleZh": "宝可梦日拍卖活动稿", "url": "https://www.ebayinc.com/stories/news/ebay-unveils-pok%C3%A9mon-day-auction-celebrating-30-years-of-iconic-collectibles/", "date": "2026" }
+    ]},
+    { "id": "sp-tgt", "labelEn": "Target", "labelZh": "Target", "items": [
+      { "titleEn": "2026 strategic growth plan", "titleZh": "2026 增长战略", "url": "https://corporate.target.com/press/release/2026/03/target-outlines-strategic-plan-for-a-new-chapter-of-growth-in-2026-and-beyond", "date": "2026-03" },
+      { "titleEn": "Store investment ramp", "titleZh": "门店投资加码", "url": "https://corporate.target.com/press/release/2026/03/target-ramps-up-store-investments-to-fuel-new-chapter-of-growth", "date": "2026-03" },
+      { "titleEn": "Q4 & FY2025 earnings", "titleZh": "2025 财年四季报", "url": "https://corporate.target.com/press/release/2026/03/target-corporation-reports-fourth-quarter-and-full-year-2025-earnings", "date": "2026-03" }
+    ]},
+    { "id": "sp-bby", "labelEn": "Best Buy", "labelZh": "百思买", "items": [
+      { "titleEn": "Corporate newsroom", "titleZh": "公司新闻室", "url": "https://corporate.bestbuy.com/press-releases/", "date": "Rolling" },
+      { "titleEn": "Investor relations hub", "titleZh": "投资者关系", "url": "https://investors.bestbuy.com/", "date": "Rolling" },
+      { "titleEn": "Sustainability & impact report", "titleZh": "可持续与社会影响", "url": "https://corporate.bestbuy.com/sustainability", "date": "Rolling" }
+    ]},
+    { "id": "sp-shfy", "labelEn": "Shopify", "labelZh": "Shopify", "items": [
+      { "titleEn": "Q4 2025 results letter", "titleZh": "2025 年 Q4 业绩信", "url": "https://www.shopify.com/news/shopify-q4-2025-financial-results", "date": "2026-02" },
+      { "titleEn": "Agentic commerce platform", "titleZh": "智能体商务平台", "url": "https://www.shopify.com/news/ai-commerce-at-scale", "date": "2026" },
+      { "titleEn": "Winter ’26 Edition (merchants)", "titleZh": "Winter ’26 Edition（商家）", "url": "https://www.shopify.com/news/winter-26-edition-merchant", "date": "2026" }
+    ]},
+    { "id": "sp-etsy", "labelEn": "Etsy", "labelZh": "Etsy", "items": [
+      { "titleEn": "Investor news releases", "titleZh": "IR 新闻稿列表", "url": "https://investors.etsy.com/news-releases/", "date": "Rolling" },
+      { "titleEn": "Impact & annual update", "titleZh": "影响力与年度更新", "url": "https://www.etsy.com/impact", "date": "Rolling" },
+      { "titleEn": "Etsy Q4 shareholder letter (PDF)", "titleZh": "四季度股东信（IR）", "url": "https://s27.q4cdn.com/949529029/files/doc_financials/2024/q4/Etsy-4Q24-Shareholder-Deck.pdf", "date": "2025-02" }
+    ]},
+    { "id": "sp-rk", "labelEn": "Rakuten", "labelZh": "乐天", "items": [
+      { "titleEn": "Rakuten AI 3.0 press release", "titleZh": "Rakuten AI 3.0 发布稿", "url": "https://global.rakuten.com/corp/news/press/2026/0317_01.html", "date": "2026-03" },
+      { "titleEn": "Symphony × ABS MoU", "titleZh": "Symphony 与美国船级社备忘录", "url": "https://global.rakuten.com/corp/news/press/2026/0511_01.html", "date": "2026-05" },
+      { "titleEn": "Personnel change notice", "titleZh": "人事变动通知", "url": "http://global.rakuten.com/corp/news/press/2026/0327_01.html", "date": "2026-03" }
+    ]},
+    { "id": "sp-meli", "labelEn": "Mercado Libre", "labelZh": "Mercado Libre", "items": [
+      { "titleEn": "IR press releases", "titleZh": "IR 新闻稿", "url": "https://investor.mercadolibre.com/news-releases/", "date": "Rolling" },
+      { "titleEn": "Integrated annual report", "titleZh": "年度报告入口", "url": "https://investor.mercadolibre.com/financials/annual-reports/", "date": "Rolling" },
+      { "titleEn": "Investor presentations", "titleZh": "投资者演示材料", "url": "https://investor.mercadolibre.com/events-and-presentations/", "date": "Rolling" }
+    ]},
+    { "id": "sp-shopee", "labelEn": "Shopee (Sea)", "labelZh": "Shopee（Sea）", "items": [
+      { "titleEn": "Sea Limited IR news", "titleZh": "Sea 集团 IR 新闻", "url": "https://investors.sea.com/news-releases/", "date": "Rolling" },
+      { "titleEn": "Sea financial information", "titleZh": "Sea 财务信息", "url": "https://investors.sea.com/financial-information/", "date": "Rolling" },
+      { "titleEn": "Shopee merchant hub", "titleZh": "Shopee 商家中心", "url": "https://seller.shopee.com/", "date": "Rolling" }
+    ]}
+  ],
+  "more": [
+    { "nameEn": "Taobao", "nameZh": "淘宝", "url": "https://www.taobao.com/", "domain": "taobao.com" },
+    { "nameEn": "JD.com", "nameZh": "京东", "url": "https://www.jd.com/", "domain": "jd.com" },
+    { "nameEn": "Tmall", "nameZh": "天猫", "url": "https://www.tmall.com/", "domain": "tmall.com" },
+    { "nameEn": "Pinduoduo", "nameZh": "拼多多", "url": "https://www.pinduoduo.com/", "domain": "pinduoduo.com" },
+    { "nameEn": "Mercari", "nameZh": "煤炉 Mercari", "url": "https://www.mercari.com/", "domain": "mercari.com" },
+    { "nameEn": "Lazada", "nameZh": "Lazada", "url": "https://www.lazada.com/", "domain": "lazada.com" },
+    { "nameEn": "Otto", "nameZh": "Otto", "url": "https://www.otto.de/", "domain": "otto.de" },
+    { "nameEn": "Zalando", "nameZh": "Zalando", "url": "https://www.zalando.com/", "domain": "zalando.com" },
+    { "nameEn": "Costco", "nameZh": "开市客", "url": "https://www.costco.com/", "domain": "costco.com" },
+    { "nameEn": "Home Depot", "nameZh": "家得宝", "url": "https://www.homedepot.com/", "domain": "homedepot.com" },
+    { "nameEn": "Lowe's", "nameZh": "劳氏", "url": "https://www.lowes.com/", "domain": "lowes.com" },
+    { "nameEn": "IKEA", "nameZh": "宜家", "url": "https://www.ikea.com/", "domain": "ikea.com" },
+    { "nameEn": "Suning", "nameZh": "苏宁易购", "url": "https://www.suning.com/", "domain": "suning.com" },
+    { "nameEn": "Vipshop", "nameZh": "唯品会", "url": "https://www.vip.com/", "domain": "vip.com" },
+    { "nameEn": "GOME", "nameZh": "国美", "url": "https://www.gome.com.cn/", "domain": "gome.com.cn" },
+    { "nameEn": "Dangdang", "nameZh": "当当", "url": "http://www.dangdang.com/", "domain": "dangdang.com" },
+    { "nameEn": "Mogu", "nameZh": "蘑菇街", "url": "https://www.mogu.com/", "domain": "mogu.com" },
+    { "nameEn": "Farfetch", "nameZh": "Farfetch", "url": "https://www.farfetch.com/", "domain": "farfetch.com" },
+    { "nameEn": "Shein", "nameZh": "Shein", "url": "https://www.shein.com/", "domain": "shein.com" },
+    { "nameEn": "Flipkart", "nameZh": "Flipkart", "url": "https://www.flipkart.com/", "domain": "flipkart.com" },
+    { "nameEn": "Coupang", "nameZh": "Coupang", "url": "https://www.coupang.com/", "domain": "coupang.com" }
+  ]
+}

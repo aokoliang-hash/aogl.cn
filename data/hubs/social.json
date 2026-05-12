@@ -1,0 +1,106 @@
+{
+  "slug": "social",
+  "outFile": "social.html",
+  "path": "/social.html",
+  "titleEn": "Global social platforms — bookmarks | aogl.cn",
+  "titleZh": "全球社交平台前十｜aogl.cn",
+  "descEn": "Ten social networks that usually lead global MAU charts, three official update links each, plus more social apps.",
+  "descZh": "常见于全球月活榜单前列的十个社交平台，每站三条官方动态或产品博文外链，以及更多社交产品入口。",
+  "h1En": "Global social platforms (MAU leaders)",
+  "h1Zh": "全球社交平台前十（月活口径）",
+  "updated": "2026-05-11",
+  "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p>",
+  "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p>",
+  "rankTitleEn": "Global top 10 (social)",
+  "rankTitleZh": "全球前十（社交平台）",
+  "rankLeadEn": "",
+  "rankLeadZh": "",
+  "newsTitleEn": "Latest from each platform",
+  "newsTitleZh": "各平台最新资讯",
+  "newsLeadEn": "",
+  "newsLeadZh": "",
+  "moreTitleEn": "More social networks",
+  "moreTitleZh": "更多社交平台",
+  "moreLeadEn": "",
+  "moreLeadZh": "",
+  "top10": [
+    { "nameEn": "Facebook", "nameZh": "Facebook", "url": "https://www.facebook.com/", "domain": "facebook.com" },
+    { "nameEn": "YouTube", "nameZh": "YouTube", "url": "https://www.youtube.com/", "domain": "youtube.com" },
+    { "nameEn": "WhatsApp", "nameZh": "WhatsApp", "url": "https://www.whatsapp.com/", "domain": "whatsapp.com" },
+    { "nameEn": "Instagram", "nameZh": "Instagram", "url": "https://www.instagram.com/", "domain": "instagram.com" },
+    { "nameEn": "TikTok", "nameZh": "TikTok", "url": "https://www.tiktok.com/", "domain": "tiktok.com" },
+    { "nameEn": "WeChat", "nameZh": "微信", "url": "https://www.wechat.com/", "domain": "wechat.com" },
+    { "nameEn": "LinkedIn", "nameZh": "领英", "url": "https://www.linkedin.com/", "domain": "linkedin.com" },
+    { "nameEn": "Snapchat", "nameZh": "Snapchat", "url": "https://www.snapchat.com/", "domain": "snapchat.com" },
+    { "nameEn": "Telegram", "nameZh": "Telegram", "url": "https://telegram.org/", "domain": "telegram.org" },
+    { "nameEn": "Discord", "nameZh": "Discord", "url": "https://discord.com/", "domain": "discord.com" }
+  ],
+  "newsGroups": [
+    { "id": "soc-fb", "labelEn": "Facebook", "labelZh": "Facebook", "items": [
+      { "titleEn": "Meta newsroom — latest", "titleZh": "Meta 新闻室", "url": "https://about.fb.com/news/", "date": "Rolling" },
+      { "titleEn": "Transparency center", "titleZh": "透明度中心", "url": "https://transparency.meta.com/", "date": "Rolling" },
+      { "titleEn": "Community standards", "titleZh": "社群守则", "url": "https://transparency.fb.com/policies/community-standards/", "date": "Rolling" }
+    ]},
+    { "id": "soc-yt", "labelEn": "YouTube", "labelZh": "YouTube", "items": [
+      { "titleEn": "YouTube Official Blog", "titleZh": "YouTube 官方博客", "url": "https://blog.youtube/", "date": "Rolling" },
+      { "titleEn": "YouTube blog — news & events", "titleZh": "新闻与活动", "url": "https://blog.youtube/news-and-events/", "date": "Rolling" },
+      { "titleEn": "Creators blog", "titleZh": "创作者博客", "url": "https://blog.youtube/creator-and-artist/inside-creation/", "date": "Rolling" }
+    ]},
+    { "id": "soc-wa", "labelEn": "WhatsApp", "labelZh": "WhatsApp", "items": [
+      { "titleEn": "WhatsApp blog", "titleZh": "WhatsApp 博客", "url": "https://blog.whatsapp.com/", "date": "Rolling" },
+      { "titleEn": "Security & privacy", "titleZh": "安全与隐私", "url": "https://www.whatsapp.com/security", "date": "Rolling" },
+      { "titleEn": "Feature updates (FAQ)", "titleZh": "功能说明（帮助中心）", "url": "https://faq.whatsapp.com/", "date": "Rolling" }
+    ]},
+    { "id": "soc-ig", "labelEn": "Instagram", "labelZh": "Instagram", "items": [
+      { "titleEn": "Instagram blog", "titleZh": "Instagram 博客", "url": "https://about.instagram.com/blog", "date": "Rolling" },
+      { "titleEn": "Creators", "titleZh": "创作者", "url": "https://about.instagram.com/creators", "date": "Rolling" },
+      { "titleEn": "Safety hub", "titleZh": "安全中心", "url": "https://about.instagram.com/safety", "date": "Rolling" }
+    ]},
+    { "id": "soc-tt", "labelEn": "TikTok", "labelZh": "TikTok", "items": [
+      { "titleEn": "TikTok Newsroom", "titleZh": "TikTok 新闻室", "url": "https://newsroom.tiktok.com/", "date": "Rolling" },
+      { "titleEn": "Transparency center", "titleZh": "透明度中心", "url": "https://www.tiktok.com/transparency/", "date": "Rolling" },
+      { "titleEn": "Safety Center", "titleZh": "安全中心", "url": "https://www.tiktok.com/safety/", "date": "Rolling" }
+    ]},
+    { "id": "soc-wx", "labelEn": "WeChat", "labelZh": "微信", "items": [
+      { "titleEn": "WeChat international", "titleZh": "微信国际版", "url": "https://www.wechat.com/en/", "date": "Rolling" },
+      { "titleEn": "Weixin official (China)", "titleZh": "微信官网（中文）", "url": "https://weixin.qq.com/", "date": "Rolling" },
+      { "titleEn": "Help center", "titleZh": "帮助中心", "url": "https://help.wechat.com/", "date": "Rolling" }
+    ]},
+    { "id": "soc-li", "labelEn": "LinkedIn", "labelZh": "领英", "items": [
+      { "titleEn": "LinkedIn Newsroom", "titleZh": "领英新闻室", "url": "https://news.linkedin.com/", "date": "Rolling" },
+      { "titleEn": "Official Blog", "titleZh": "官方博客", "url": "https://www.linkedin.com/blog/", "date": "Rolling" },
+      { "titleEn": "Transparency reports", "titleZh": "透明度报告", "url": "https://safety.linkedin.com/reports", "date": "Rolling" }
+    ]},
+    { "id": "soc-sc", "labelEn": "Snapchat", "labelZh": "Snapchat", "items": [
+      { "titleEn": "Snap Inc. News", "titleZh": "Snap 公司新闻", "url": "https://news.snap.com/", "date": "Rolling" },
+      { "titleEn": "Snapchat for Business blog", "titleZh": "商业博客", "url": "https://forbusiness.snapchat.com/blog", "date": "Rolling" },
+      { "titleEn": "Safety & well-being", "titleZh": "安全与健康", "url": "https://values.snap.com/privacy/privacy-policy", "date": "Rolling" }
+    ]},
+    { "id": "soc-tg", "labelEn": "Telegram", "labelZh": "Telegram", "items": [
+      { "titleEn": "Telegram News", "titleZh": "Telegram 频道（官方公告）", "url": "https://t.me/telegram", "date": "Rolling" },
+      { "titleEn": "Telegram blog", "titleZh": "Telegram 博客", "url": "https://telegram.org/blog", "date": "Rolling" },
+      { "titleEn": "FAQ & tips", "titleZh": "常见问题", "url": "https://telegram.org/faq", "date": "Rolling" }
+    ]},
+    { "id": "soc-dc", "labelEn": "Discord", "labelZh": "Discord", "items": [
+      { "titleEn": "Discord Blog", "titleZh": "Discord 博客", "url": "https://discord.com/blog", "date": "Rolling" },
+      { "titleEn": "Safety Library", "titleZh": "安全资源库", "url": "https://discord.com/safety-library", "date": "Rolling" },
+      { "titleEn": "Discord Status", "titleZh": "服务状态", "url": "https://discordstatus.com/", "date": "Rolling" }
+    ]}
+  ],
+  "more": [
+    { "nameEn": "X", "nameZh": "X", "url": "https://x.com/", "domain": "x.com" },
+    { "nameEn": "Reddit", "nameZh": "Reddit", "url": "https://www.reddit.com/", "domain": "reddit.com" },
+    { "nameEn": "Pinterest", "nameZh": "Pinterest", "url": "https://www.pinterest.com/", "domain": "pinterest.com" },
+    { "nameEn": "Threads", "nameZh": "Threads", "url": "https://www.threads.net/", "domain": "threads.net" },
+    { "nameEn": "Bluesky", "nameZh": "Bluesky", "url": "https://bsky.app/", "domain": "bsky.app" },
+    { "nameEn": "Mastodon", "nameZh": "Mastodon", "url": "https://joinmastodon.org/", "domain": "joinmastodon.org" },
+    { "nameEn": "LINE", "nameZh": "LINE", "url": "https://line.me/", "domain": "line.me" },
+    { "nameEn": "VK", "nameZh": "VK", "url": "https://vk.com/", "domain": "vk.com" },
+    { "nameEn": "Tumblr", "nameZh": "Tumblr", "url": "https://www.tumblr.com/", "domain": "tumblr.com" },
+    { "nameEn": "Nextdoor", "nameZh": "Nextdoor", "url": "https://nextdoor.com/", "domain": "nextdoor.com" },
+    { "nameEn": "Quora", "nameZh": "Quora", "url": "https://www.quora.com/", "domain": "quora.com" },
+    { "nameEn": "Medium", "nameZh": "Medium", "url": "https://medium.com/", "domain": "medium.com" },
+    { "nameEn": "BeReal", "nameZh": "BeReal", "url": "https://bereal.com/", "domain": "bereal.com" },
+    { "nameEn": "Clubhouse", "nameZh": "Clubhouse", "url": "https://www.clubhouse.com/", "domain": "clubhouse.com" }
+  ]
+}
