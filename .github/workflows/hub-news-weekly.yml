@@ -1,0 +1,34 @@
+name: Weekly hub RSS news
+
+on:
+  schedule:
+    - cron: "0 6 * * 2"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch RSS into data/hubs/*.json
+        run: npm run fetch-hub-news
+
+      - name: Rebuild hub pages and locale outputs
+        run: npm run build-hubs && npm run build-seo-locales
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: weekly hub news from RSS [automated]"
+          file_pattern: "data/hubs/*.json _multilang/*.html *.html sitemap.xml en/**/*.html zh/**/*.html ja/**/*.html ko/**/*.html fr/**/*.html ru/**/*.html ar/**/*.html"

@@ -6,6 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-logo": "node scripts/regenerate-logo-wordmark.cjs",
     "build-hubs": "node scripts/build-hub-pages.mjs",
+    "fetch-hub-news": "node scripts/fetch-hub-news.mjs",
+    "refresh-hub-news": "node scripts/fetch-hub-news.mjs && npm run build-hubs && npm run build-seo-locales",
     "build-index-pills": "node scripts/inject-index-pills.mjs",
     "build-seo-locales": "node scripts/build-seo-locale-pages.mjs",
     "build-site": "npm run build-hubs && npm run build-index-pills && npm run build-seo-locales"
@@ -13,7 +15,8 @@
   "devDependencies": {
     "cheerio": "^1.2.0",
     "opencc-js": "^1.3.1",
-    "opentype.js": "^1.3.4"
+    "opentype.js": "^1.3.4",
+    "rss-parser": "^3.13.0"
   },
   "repository": {
     "type": "git",

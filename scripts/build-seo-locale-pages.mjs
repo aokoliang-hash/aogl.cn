@@ -74,11 +74,108 @@ function stripAlternateLocales($, keep) {
 
 function rootDataAttrsForLocale($, keep) {
   const html = $("html");
-  for (const code of ["en", "zh", "ja", "ko", "fr", "ru", "ar"]) {
+  for (const code of ["en", "zh", "zht", "ja", "ko", "fr", "ru", "ar"]) {
     if (code === keep) continue;
     html.removeAttr(`data-title-${code}`);
     html.removeAttr(`data-desc-${code}`);
   }
+}
+
+/** Directory URL for this locale (e.g. /en/ or /) from the page canonical. */
+function siteHomeFromCanonical(canonicalHref) {
+  const u = new URL(canonicalHref);
+  let p = u.pathname;
+  if (/\.html$/i.test(p)) {
+    p = p.replace(/\/[^/]+$/, "/");
+    if (!p.startsWith("/")) p = "/" + p;
+  }
+  if (!p.endsWith("/")) p += "/";
+  u.pathname = p;
+  return u.href;
+}
+
+function patchJsonLdNode(node, langTag, filename, siteHome, canonicalHref) {
+  const origin = "https://aogl.cn";
+
+  function rewriteStr(s) {
+    if (typeof s !== "string" || !s.startsWith(origin)) return s;
+    const homeNorm = siteHome.endsWith("/") ? siteHome : siteHome + "/";
+    const homeBase = homeNorm.replace(/\/+$/, "");
+    if (s.startsWith(origin + "/#")) {
+      return homeBase + s.slice(origin.length);
+    }
+    if (s === origin + "/") {
+      return homeNorm;
+    }
+    if (filename !== "index.html") {
+      const legacyFile = `${origin}/${filename}`;
+      if (s === legacyFile || s.startsWith(legacyFile + "#")) {
+        const can = canonicalHref.split("#")[0];
+        return can + s.slice(legacyFile.length);
+      }
+    }
+    return s;
+  }
+
+  function walk(n) {
+    if (n === null || n === undefined) return;
+    if (Array.isArray(n)) {
+      for (let i = 0; i < n.length; i++) {
+        const v = n[i];
+        if (typeof v === "string") n[i] = rewriteStr(v);
+        else walk(v);
+      }
+      return;
+    }
+    if (typeof n === "object") {
+      if ("inLanguage" in n) n.inLanguage = langTag;
+      for (const k of Object.keys(n)) {
+        if (k === "inLanguage") continue;
+        const v = n[k];
+        if (typeof v === "string") n[k] = rewriteStr(v);
+        else walk(v);
+      }
+    }
+  }
+
+  walk(node);
+}
+
+function slimJsonLdScripts($, langTag, filename, siteHome, canonicalHref) {
+  $("script[type='application/ld+json']").each((_, el) => {
+    const $el = $(el);
+    const text = $el.html();
+    if (!text || !/\S/.test(text)) return;
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      return;
+    }
+    if (data["@graph"] && Array.isArray(data["@graph"])) {
+      for (const item of data["@graph"]) {
+        patchJsonLdNode(item, langTag, filename, siteHome, canonicalHref);
+      }
+    } else {
+      patchJsonLdNode(data, langTag, filename, siteHome, canonicalHref);
+    }
+    $el.html("\n" + JSON.stringify(data) + "\n");
+  });
+}
+
+/** Single-locale pages: drop alternate og locales, trim keywords, tighten JSON-LD. */
+function slimLocaleHeadExtras($, locale, filename) {
+  $('meta[property="og:locale:alternate"]').remove();
+  if (locale !== "en") $('meta[name="keywords"]').remove();
+  const canonicalHref = $('link[rel="canonical"]').attr("href") || "";
+  let siteHome = canonicalHref;
+  try {
+    siteHome = siteHomeFromCanonical(canonicalHref);
+  } catch {
+    /* keep canonicalHref */
+  }
+  const langTag = HTML_LANG[locale] || locale;
+  slimJsonLdScripts($, langTag, filename, siteHome, canonicalHref);
 }
 
 function absolutizeAssetRefs($) {
@@ -159,6 +256,7 @@ function applyLocaleHead($, locale, filename, canonicalHref, opts) {
   if (opts.seoLocale) html.attr("data-aogl-seo-locale", "1");
   else html.removeAttr("data-aogl-seo-locale");
   replaceHreflangCluster($, filename);
+  slimLocaleHeadExtras($, locale, filename);
 }
 
 function tidySeoHtml(html) {

@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台，每站三条官方动态或产品博文外链，以及更多社交产品入口。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-05-11",
+  "updated": "2026-05-12",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -48,83 +48,403 @@
     "微信与WhatsApp对比"
   ],
   "top10": [
-    { "nameEn": "Facebook", "nameZh": "Facebook", "url": "https://www.facebook.com/", "domain": "facebook.com" },
-    { "nameEn": "YouTube", "nameZh": "YouTube", "url": "https://www.youtube.com/", "domain": "youtube.com" },
-    { "nameEn": "WhatsApp", "nameZh": "WhatsApp", "url": "https://www.whatsapp.com/", "domain": "whatsapp.com" },
-    { "nameEn": "Instagram", "nameZh": "Instagram", "url": "https://www.instagram.com/", "domain": "instagram.com" },
-    { "nameEn": "TikTok", "nameZh": "TikTok", "url": "https://www.tiktok.com/", "domain": "tiktok.com" },
-    { "nameEn": "WeChat", "nameZh": "微信", "url": "https://www.wechat.com/", "domain": "wechat.com" },
-    { "nameEn": "LinkedIn", "nameZh": "领英", "url": "https://www.linkedin.com/", "domain": "linkedin.com" },
-    { "nameEn": "Snapchat", "nameZh": "Snapchat", "url": "https://www.snapchat.com/", "domain": "snapchat.com" },
-    { "nameEn": "Telegram", "nameZh": "Telegram", "url": "https://telegram.org/", "domain": "telegram.org" },
-    { "nameEn": "Discord", "nameZh": "Discord", "url": "https://discord.com/", "domain": "discord.com" }
+    {
+      "nameEn": "Facebook",
+      "nameZh": "Facebook",
+      "url": "https://www.facebook.com/",
+      "domain": "facebook.com"
+    },
+    {
+      "nameEn": "YouTube",
+      "nameZh": "YouTube",
+      "url": "https://www.youtube.com/",
+      "domain": "youtube.com"
+    },
+    {
+      "nameEn": "WhatsApp",
+      "nameZh": "WhatsApp",
+      "url": "https://www.whatsapp.com/",
+      "domain": "whatsapp.com"
+    },
+    {
+      "nameEn": "Instagram",
+      "nameZh": "Instagram",
+      "url": "https://www.instagram.com/",
+      "domain": "instagram.com"
+    },
+    {
+      "nameEn": "TikTok",
+      "nameZh": "TikTok",
+      "url": "https://www.tiktok.com/",
+      "domain": "tiktok.com"
+    },
+    {
+      "nameEn": "WeChat",
+      "nameZh": "微信",
+      "url": "https://www.wechat.com/",
+      "domain": "wechat.com"
+    },
+    {
+      "nameEn": "LinkedIn",
+      "nameZh": "领英",
+      "url": "https://www.linkedin.com/",
+      "domain": "linkedin.com"
+    },
+    {
+      "nameEn": "Snapchat",
+      "nameZh": "Snapchat",
+      "url": "https://www.snapchat.com/",
+      "domain": "snapchat.com"
+    },
+    {
+      "nameEn": "Telegram",
+      "nameZh": "Telegram",
+      "url": "https://telegram.org/",
+      "domain": "telegram.org"
+    },
+    {
+      "nameEn": "Discord",
+      "nameZh": "Discord",
+      "url": "https://discord.com/",
+      "domain": "discord.com"
+    }
   ],
   "newsGroups": [
-    { "id": "soc-fb", "labelEn": "Facebook", "labelZh": "Facebook", "items": [
-      { "titleEn": "Meta newsroom — latest", "titleZh": "Meta 新闻室", "url": "https://about.fb.com/news/", "date": "Rolling" },
-      { "titleEn": "Transparency center", "titleZh": "透明度中心", "url": "https://transparency.meta.com/", "date": "Rolling" },
-      { "titleEn": "Community standards", "titleZh": "社群守则", "url": "https://transparency.fb.com/policies/community-standards/", "date": "Rolling" }
-    ]},
-    { "id": "soc-yt", "labelEn": "YouTube", "labelZh": "YouTube", "items": [
-      { "titleEn": "YouTube Official Blog", "titleZh": "YouTube 官方博客", "url": "https://blog.youtube/", "date": "Rolling" },
-      { "titleEn": "YouTube blog — news & events", "titleZh": "新闻与活动", "url": "https://blog.youtube/news-and-events/", "date": "Rolling" },
-      { "titleEn": "Creators blog", "titleZh": "创作者博客", "url": "https://blog.youtube/creator-and-artist/inside-creation/", "date": "Rolling" }
-    ]},
-    { "id": "soc-wa", "labelEn": "WhatsApp", "labelZh": "WhatsApp", "items": [
-      { "titleEn": "WhatsApp blog", "titleZh": "WhatsApp 博客", "url": "https://blog.whatsapp.com/", "date": "Rolling" },
-      { "titleEn": "Security & privacy", "titleZh": "安全与隐私", "url": "https://www.whatsapp.com/security", "date": "Rolling" },
-      { "titleEn": "Feature updates (FAQ)", "titleZh": "功能说明（帮助中心）", "url": "https://faq.whatsapp.com/", "date": "Rolling" }
-    ]},
-    { "id": "soc-ig", "labelEn": "Instagram", "labelZh": "Instagram", "items": [
-      { "titleEn": "Instagram blog", "titleZh": "Instagram 博客", "url": "https://about.instagram.com/blog", "date": "Rolling" },
-      { "titleEn": "Creators", "titleZh": "创作者", "url": "https://about.instagram.com/creators", "date": "Rolling" },
-      { "titleEn": "Safety hub", "titleZh": "安全中心", "url": "https://about.instagram.com/safety", "date": "Rolling" }
-    ]},
-    { "id": "soc-tt", "labelEn": "TikTok", "labelZh": "TikTok", "items": [
-      { "titleEn": "TikTok Newsroom", "titleZh": "TikTok 新闻室", "url": "https://newsroom.tiktok.com/", "date": "Rolling" },
-      { "titleEn": "Transparency center", "titleZh": "透明度中心", "url": "https://www.tiktok.com/transparency/", "date": "Rolling" },
-      { "titleEn": "Safety Center", "titleZh": "安全中心", "url": "https://www.tiktok.com/safety/", "date": "Rolling" }
-    ]},
-    { "id": "soc-wx", "labelEn": "WeChat", "labelZh": "微信", "items": [
-      { "titleEn": "WeChat international", "titleZh": "微信国际版", "url": "https://www.wechat.com/en/", "date": "Rolling" },
-      { "titleEn": "Weixin official (China)", "titleZh": "微信官网（中文）", "url": "https://weixin.qq.com/", "date": "Rolling" },
-      { "titleEn": "Help center", "titleZh": "帮助中心", "url": "https://help.wechat.com/", "date": "Rolling" }
-    ]},
-    { "id": "soc-li", "labelEn": "LinkedIn", "labelZh": "领英", "items": [
-      { "titleEn": "LinkedIn Newsroom", "titleZh": "领英新闻室", "url": "https://news.linkedin.com/", "date": "Rolling" },
-      { "titleEn": "Official Blog", "titleZh": "官方博客", "url": "https://www.linkedin.com/blog/", "date": "Rolling" },
-      { "titleEn": "Transparency reports", "titleZh": "透明度报告", "url": "https://safety.linkedin.com/reports", "date": "Rolling" }
-    ]},
-    { "id": "soc-sc", "labelEn": "Snapchat", "labelZh": "Snapchat", "items": [
-      { "titleEn": "Snap Inc. News", "titleZh": "Snap 公司新闻", "url": "https://news.snap.com/", "date": "Rolling" },
-      { "titleEn": "Snapchat for Business blog", "titleZh": "商业博客", "url": "https://forbusiness.snapchat.com/blog", "date": "Rolling" },
-      { "titleEn": "Safety & well-being", "titleZh": "安全与健康", "url": "https://values.snap.com/privacy/privacy-policy", "date": "Rolling" }
-    ]},
-    { "id": "soc-tg", "labelEn": "Telegram", "labelZh": "Telegram", "items": [
-      { "titleEn": "Telegram News", "titleZh": "Telegram 频道（官方公告）", "url": "https://t.me/telegram", "date": "Rolling" },
-      { "titleEn": "Telegram blog", "titleZh": "Telegram 博客", "url": "https://telegram.org/blog", "date": "Rolling" },
-      { "titleEn": "FAQ & tips", "titleZh": "常见问题", "url": "https://telegram.org/faq", "date": "Rolling" }
-    ]},
-    { "id": "soc-dc", "labelEn": "Discord", "labelZh": "Discord", "items": [
-      { "titleEn": "Discord Blog", "titleZh": "Discord 博客", "url": "https://discord.com/blog", "date": "Rolling" },
-      { "titleEn": "Safety Library", "titleZh": "安全资源库", "url": "https://discord.com/safety-library", "date": "Rolling" },
-      { "titleEn": "Discord Status", "titleZh": "服务状态", "url": "https://discordstatus.com/", "date": "Rolling" }
-    ]}
+    {
+      "id": "soc-fb",
+      "labelEn": "Facebook",
+      "labelZh": "Facebook",
+      "items": [
+        {
+          "titleEn": "Meta at The Cannes Film Festival 2026",
+          "titleZh": "Meta at The Cannes Film Festival 2026",
+          "url": "https://about.fb.com/news/2026/05/meta-at-the-cannes-film-festival-2026/",
+          "date": "2026-05-11"
+        },
+        {
+          "titleEn": "Which AI Glasses Are Right For You?",
+          "titleZh": "Which AI Glasses Are Right For You?",
+          "url": "https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you/",
+          "date": "2026-05-08"
+        },
+        {
+          "titleEn": "Meta’s Position on Canada’s Bill C-22",
+          "titleZh": "Meta’s Position on Canada’s Bill C-22",
+          "url": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22/",
+          "date": "2026-05-07"
+        }
+      ]
+    },
+    {
+      "id": "soc-yt",
+      "labelEn": "YouTube",
+      "labelZh": "YouTube",
+      "items": [
+        {
+          "titleEn": "Enjoy new ways to create, search and stream on Google TV",
+          "titleZh": "Enjoy new ways to create, search and stream on Google TV",
+          "url": "https://blog.google/products-and-platforms/platforms/google-tv/enjoy-new-ways-to-create-search-and-stream-on-google-tv/",
+          "date": "2026-04-29"
+        },
+        {
+          "titleEn": "Convert faster on YouTube with April’s Demand Gen Drop.",
+          "titleZh": "Convert faster on YouTube with April’s Demand Gen Drop.",
+          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-april-2026/",
+          "date": "2026-04-23"
+        },
+        {
+          "titleEn": "Here’s how to watch Coachella on YouTube.",
+          "titleZh": "Here’s how to watch Coachella on YouTube.",
+          "url": "https://blog.google/products-and-platforms/products/youtube/watch-coachella-live-on-youtube/",
+          "date": "2026-04-02"
+        }
+      ]
+    },
+    {
+      "id": "soc-wa",
+      "labelEn": "WhatsApp",
+      "labelZh": "WhatsApp",
+      "items": [
+        {
+          "titleEn": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
+          "titleZh": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
+          "url": "https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india/",
+          "date": "2026-04-29"
+        },
+        {
+          "titleEn": "WhatsApp blog",
+          "titleZh": "WhatsApp 博客",
+          "url": "https://blog.whatsapp.com/",
+          "date": "Rolling"
+        },
+        {
+          "titleEn": "Security & privacy",
+          "titleZh": "安全与隐私",
+          "url": "https://www.whatsapp.com/security",
+          "date": "Rolling"
+        }
+      ]
+    },
+    {
+      "id": "soc-ig",
+      "labelEn": "Instagram",
+      "labelZh": "Instagram",
+      "items": [
+        {
+          "titleEn": "Labyrinth 1.1: Making End-to-End Encrypted Backups Even More Reliable",
+          "titleZh": "Labyrinth 1.1: Making End-to-End Encrypted Backups Even More Reliable",
+          "url": "https://engineering.fb.com/2026/05/11/security/labyrinth-1-1-end-to-end-encrypted-e2ee-backups-more-reliable/",
+          "date": "2026-05-11"
+        },
+        {
+          "titleEn": "How Meta Is Strengthening End-to-End Encrypted Backups",
+          "titleZh": "How Meta Is Strengthening End-to-End Encrypted Backups",
+          "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
+          "date": "2026-05-01"
+        },
+        {
+          "titleEn": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
+          "titleZh": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
+          "url": "https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/",
+          "date": "2026-04-21"
+        }
+      ]
+    },
+    {
+      "id": "soc-tt",
+      "labelEn": "TikTok",
+      "labelZh": "TikTok",
+      "items": [
+        {
+          "titleEn": "TikTok launches an ad-free subscription plan in the UK",
+          "titleZh": "TikTok launches an ad-free subscription plan in the UK",
+          "url": "https://techcrunch.com/2026/05/11/tiktok-launches-an-ad-free-subscription-plan-in-the-uk/",
+          "date": "2026-05-11"
+        },
+        {
+          "titleEn": "TikTok’s new ‘Campus Hub’ features college group chats and feeds",
+          "titleZh": "TikTok’s new ‘Campus Hub’ features college group chats and feeds",
+          "url": "https://techcrunch.com/2026/04/30/tiktoks-new-campus-hub-features-college-group-chats-and-feeds/",
+          "date": "2026-04-30"
+        },
+        {
+          "titleEn": "Australia forces Big Tech firms to pay for news or face a 2.25% tax",
+          "titleZh": "Australia forces Big Tech firms to pay for news or face a 2.25% tax",
+          "url": "https://techcrunch.com/2026/04/28/australia-forces-big-tech-firms-to-pay-for-news-or-face-a-2-25-tax/",
+          "date": "2026-04-28"
+        }
+      ]
+    },
+    {
+      "id": "soc-wx",
+      "labelEn": "WeChat",
+      "labelZh": "微信",
+      "items": [
+        {
+          "titleEn": "WeChat international",
+          "titleZh": "微信国际版",
+          "url": "https://www.wechat.com/en/",
+          "date": "Rolling"
+        },
+        {
+          "titleEn": "Weixin official (China)",
+          "titleZh": "微信官网（中文）",
+          "url": "https://weixin.qq.com/",
+          "date": "Rolling"
+        },
+        {
+          "titleEn": "Help center",
+          "titleZh": "帮助中心",
+          "url": "https://help.wechat.com/",
+          "date": "Rolling"
+        }
+      ]
+    },
+    {
+      "id": "soc-li",
+      "labelEn": "LinkedIn",
+      "labelZh": "领英",
+      "items": [
+        {
+          "titleEn": "LinkedIn’s CEO is moving on; please hold your tearful video tributes",
+          "titleZh": "LinkedIn’s CEO is moving on; please hold your tearful video tributes",
+          "url": "https://techcrunch.com/2026/04/22/linkedins-ceo-is-moving-on-please-hold-your-tearful-video-tributes/",
+          "date": "2026-04-22"
+        },
+        {
+          "titleEn": "LinkedIn data shows AI isn’t to blame for hiring decline… yet",
+          "titleZh": "LinkedIn data shows AI isn’t to blame for hiring decline… yet",
+          "url": "https://techcrunch.com/2026/04/15/linkedin-data-shows-ai-isnt-to-blame-for-hiring-decline-yet/",
+          "date": "2026-04-15"
+        },
+        {
+          "titleEn": "LinkedIn Newsroom",
+          "titleZh": "领英新闻室",
+          "url": "https://news.linkedin.com/",
+          "date": "Rolling"
+        }
+      ]
+    },
+    {
+      "id": "soc-sc",
+      "labelEn": "Snapchat",
+      "labelZh": "Snapchat",
+      "items": [
+        {
+          "titleEn": "Snap says its $400M deal with Perplexity ‘amicably ended’",
+          "titleZh": "Snap says its $400M deal with Perplexity ‘amicably ended’",
+          "url": "https://techcrunch.com/2026/05/06/snap-says-its-400m-deal-with-perplexity-amicably-ended/",
+          "date": "2026-05-06"
+        },
+        {
+          "titleEn": "Snapchat brings AI-powered conversational advertising to its app",
+          "titleZh": "Snapchat brings AI-powered conversational advertising to its app",
+          "url": "https://techcrunch.com/2026/04/28/snapchat-brings-ai-powered-conversational-advertising-to-its-app/",
+          "date": "2026-04-28"
+        },
+        {
+          "titleEn": "Snap Map’s new ‘Place Loyalty’ badges will show the spots you visit most often",
+          "titleZh": "Snap Map’s new ‘Place Loyalty’ badges will show the spots you visit most often",
+          "url": "https://techcrunch.com/2026/04/22/snap-maps-new-place-loyalty-badges-will-show-the-spots-you-visit-most-often/",
+          "date": "2026-04-22"
+        }
+      ]
+    },
+    {
+      "id": "soc-tg",
+      "labelEn": "Telegram",
+      "labelZh": "Telegram",
+      "items": [
+        {
+          "titleEn": "FBI says Iranian hackers are using Telegram to steal data in malware attacks",
+          "titleZh": "FBI says Iranian hackers are using Telegram to steal data in malware attacks",
+          "url": "https://techcrunch.com/2026/03/23/fbi-says-iranian-hackers-are-using-telegram-to-steal-data-in-malware-attacks/",
+          "date": "2026-03-23"
+        },
+        {
+          "titleEn": "Telegram News",
+          "titleZh": "Telegram 频道（官方公告）",
+          "url": "https://t.me/telegram",
+          "date": "Rolling"
+        },
+        {
+          "titleEn": "Telegram blog",
+          "titleZh": "Telegram 博客",
+          "url": "https://telegram.org/blog",
+          "date": "Rolling"
+        }
+      ]
+    },
+    {
+      "id": "soc-dc",
+      "labelEn": "Discord",
+      "labelZh": "Discord",
+      "items": [
+        {
+          "titleEn": "Discord launches Nitro Rewards, giving subscribers access to the base tier of Xbox Game Pass for no extra cost",
+          "titleZh": "Discord launches Nitro Rewards, giving subscribers access to the base tier of Xbox Game Pass for no extra cost",
+          "url": "https://techcrunch.com/2026/05/11/discord-launches-nitro-rewards-giving-subscribers-access-to-the-base-tier-of-xbox-game-pass-for-no-extra-cost/",
+          "date": "2026-05-11"
+        },
+        {
+          "titleEn": "Discord Blog",
+          "titleZh": "Discord 博客",
+          "url": "https://discord.com/blog",
+          "date": "Rolling"
+        },
+        {
+          "titleEn": "Safety Library",
+          "titleZh": "安全资源库",
+          "url": "https://discord.com/safety-library",
+          "date": "Rolling"
+        }
+      ]
+    }
   ],
   "more": [
-    { "nameEn": "X", "nameZh": "X", "url": "https://x.com/", "domain": "x.com" },
-    { "nameEn": "Reddit", "nameZh": "Reddit", "url": "https://www.reddit.com/", "domain": "reddit.com" },
-    { "nameEn": "Pinterest", "nameZh": "Pinterest", "url": "https://www.pinterest.com/", "domain": "pinterest.com" },
-    { "nameEn": "Threads", "nameZh": "Threads", "url": "https://www.threads.net/", "domain": "threads.net" },
-    { "nameEn": "Bluesky", "nameZh": "Bluesky", "url": "https://bsky.app/", "domain": "bsky.app" },
-    { "nameEn": "Mastodon", "nameZh": "Mastodon", "url": "https://joinmastodon.org/", "domain": "joinmastodon.org" },
-    { "nameEn": "LINE", "nameZh": "LINE", "url": "https://line.me/", "domain": "line.me" },
-    { "nameEn": "VK", "nameZh": "VK", "url": "https://vk.com/", "domain": "vk.com" },
-    { "nameEn": "Tumblr", "nameZh": "Tumblr", "url": "https://www.tumblr.com/", "domain": "tumblr.com" },
-    { "nameEn": "Nextdoor", "nameZh": "Nextdoor", "url": "https://nextdoor.com/", "domain": "nextdoor.com" },
-    { "nameEn": "Quora", "nameZh": "Quora", "url": "https://www.quora.com/", "domain": "quora.com" },
-    { "nameEn": "Medium", "nameZh": "Medium", "url": "https://medium.com/", "domain": "medium.com" },
-    { "nameEn": "BeReal", "nameZh": "BeReal", "url": "https://bereal.com/", "domain": "bereal.com" },
-    { "nameEn": "Clubhouse", "nameZh": "Clubhouse", "url": "https://www.clubhouse.com/", "domain": "clubhouse.com" }
+    {
+      "nameEn": "X",
+      "nameZh": "X",
+      "url": "https://x.com/",
+      "domain": "x.com"
+    },
+    {
+      "nameEn": "Reddit",
+      "nameZh": "Reddit",
+      "url": "https://www.reddit.com/",
+      "domain": "reddit.com"
+    },
+    {
+      "nameEn": "Pinterest",
+      "nameZh": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "domain": "pinterest.com"
+    },
+    {
+      "nameEn": "Threads",
+      "nameZh": "Threads",
+      "url": "https://www.threads.net/",
+      "domain": "threads.net"
+    },
+    {
+      "nameEn": "Bluesky",
+      "nameZh": "Bluesky",
+      "url": "https://bsky.app/",
+      "domain": "bsky.app"
+    },
+    {
+      "nameEn": "Mastodon",
+      "nameZh": "Mastodon",
+      "url": "https://joinmastodon.org/",
+      "domain": "joinmastodon.org"
+    },
+    {
+      "nameEn": "LINE",
+      "nameZh": "LINE",
+      "url": "https://line.me/",
+      "domain": "line.me"
+    },
+    {
+      "nameEn": "VK",
+      "nameZh": "VK",
+      "url": "https://vk.com/",
+      "domain": "vk.com"
+    },
+    {
+      "nameEn": "Tumblr",
+      "nameZh": "Tumblr",
+      "url": "https://www.tumblr.com/",
+      "domain": "tumblr.com"
+    },
+    {
+      "nameEn": "Nextdoor",
+      "nameZh": "Nextdoor",
+      "url": "https://nextdoor.com/",
+      "domain": "nextdoor.com"
+    },
+    {
+      "nameEn": "Quora",
+      "nameZh": "Quora",
+      "url": "https://www.quora.com/",
+      "domain": "quora.com"
+    },
+    {
+      "nameEn": "Medium",
+      "nameZh": "Medium",
+      "url": "https://medium.com/",
+      "domain": "medium.com"
+    },
+    {
+      "nameEn": "BeReal",
+      "nameZh": "BeReal",
+      "url": "https://bereal.com/",
+      "domain": "bereal.com"
+    },
+    {
+      "nameEn": "Clubhouse",
+      "nameZh": "Clubhouse",
+      "url": "https://www.clubhouse.com/",
+      "domain": "clubhouse.com"
+    }
   ]
 }

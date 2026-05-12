@@ -8,7 +8,7 @@
   "descZh": "按 Newzoo 与行业营收常见梯队排序的十个商店与发行商，每站三条官方公告或博文外链。",
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
-  "updated": "2026-05-11",
+  "updated": "2026-05-12",
   "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p>",
   "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
@@ -48,90 +48,445 @@
     "云游戏延迟对比"
   ],
   "top10": [
-    { "nameEn": "Steam", "nameZh": "Steam", "url": "https://store.steampowered.com/", "domain": "steampowered.com" },
-    { "nameEn": "PlayStation", "nameZh": "PlayStation", "url": "https://www.playstation.com/", "domain": "playstation.com" },
-    { "nameEn": "Xbox", "nameZh": "Xbox", "url": "https://www.xbox.com/", "domain": "xbox.com" },
-    { "nameEn": "Nintendo", "nameZh": "任天堂", "url": "https://www.nintendo.com/", "domain": "nintendo.com" },
-    { "nameEn": "Epic Games Store", "nameZh": "Epic 商店", "url": "https://store.epicgames.com/", "domain": "epicgames.com" },
-    { "nameEn": "Battle.net (Blizzard)", "nameZh": "暴雪战网", "url": "https://battle.net/", "domain": "battle.net" },
-    { "nameEn": "EA", "nameZh": "艺电 EA", "url": "https://www.ea.com/", "domain": "ea.com" },
-    { "nameEn": "Ubisoft", "nameZh": "育碧", "url": "https://www.ubisoft.com/", "domain": "ubisoft.com" },
-    { "nameEn": "Riot Games", "nameZh": "拳头游戏", "url": "https://www.riotgames.com/", "domain": "riotgames.com" },
-    { "nameEn": "Rockstar Games", "nameZh": "Rockstar", "url": "https://www.rockstargames.com/", "domain": "rockstargames.com" }
+    {
+      "nameEn": "Steam",
+      "nameZh": "Steam",
+      "url": "https://store.steampowered.com/",
+      "domain": "steampowered.com"
+    },
+    {
+      "nameEn": "PlayStation",
+      "nameZh": "PlayStation",
+      "url": "https://www.playstation.com/",
+      "domain": "playstation.com"
+    },
+    {
+      "nameEn": "Xbox",
+      "nameZh": "Xbox",
+      "url": "https://www.xbox.com/",
+      "domain": "xbox.com"
+    },
+    {
+      "nameEn": "Nintendo",
+      "nameZh": "任天堂",
+      "url": "https://www.nintendo.com/",
+      "domain": "nintendo.com"
+    },
+    {
+      "nameEn": "Epic Games Store",
+      "nameZh": "Epic 商店",
+      "url": "https://store.epicgames.com/",
+      "domain": "epicgames.com"
+    },
+    {
+      "nameEn": "Battle.net (Blizzard)",
+      "nameZh": "暴雪战网",
+      "url": "https://battle.net/",
+      "domain": "battle.net"
+    },
+    {
+      "nameEn": "EA",
+      "nameZh": "艺电 EA",
+      "url": "https://www.ea.com/",
+      "domain": "ea.com"
+    },
+    {
+      "nameEn": "Ubisoft",
+      "nameZh": "育碧",
+      "url": "https://www.ubisoft.com/",
+      "domain": "ubisoft.com"
+    },
+    {
+      "nameEn": "Riot Games",
+      "nameZh": "拳头游戏",
+      "url": "https://www.riotgames.com/",
+      "domain": "riotgames.com"
+    },
+    {
+      "nameEn": "Rockstar Games",
+      "nameZh": "Rockstar",
+      "url": "https://www.rockstargames.com/",
+      "domain": "rockstargames.com"
+    }
   ],
   "newsGroups": [
-    { "id": "gm-steam", "labelEn": "Steam / Valve", "labelZh": "Steam", "items": [
-      { "titleEn": "Steam Mobile App update", "titleZh": "Steam 移动应用更新", "url": "https://store.steampowered.com/news/app/593110/view/3329873512156647585", "date": "Rolling" },
-      { "titleEn": "Steam Client update (Apr 28)", "titleZh": "Steam 客户端更新说明", "url": "https://store.steampowered.com/news/app/593110/view/532129653907784634", "date": "Rolling" },
-      { "titleEn": "Team Fortress 2 update", "titleZh": "《军团要塞 2》更新说明", "url": "https://store.steampowered.com/news/app/440/view/510725595144913034", "date": "Rolling" }
-    ]},
-    { "id": "gm-ps", "labelEn": "PlayStation", "labelZh": "PlayStation", "items": [
-      { "titleEn": "State of Play February 2026 recap", "titleZh": "State of Play 2026 年 2 月汇总", "url": "https://blog.playstation.com/2026/02/12/state-of-play-february-2026-all-announcements-trailers", "date": "2026-02" },
-      { "titleEn": "PS Store April 2026 top downloads", "titleZh": "PS Store 2026 年 4 月下载榜", "url": "https://blog.playstation.com/2026/05/06/playstation-store-april-2026s-top-downloads/", "date": "2026-05" },
-      { "titleEn": "Myst & Riven remakes launch date", "titleZh": "Myst / Riven 重制版上线稿", "url": "https://blog.playstation.com/2026/05/05/myst-and-riven-remakes-launch-on-ps5-and-ps-vr2-may-19/", "date": "2026-05" }
-    ]},
-    { "id": "gm-xbox", "labelEn": "Xbox", "labelZh": "Xbox", "items": [
-      { "titleEn": "Developer_Direct 2026 recap", "titleZh": "Developer_Direct 2026 回顾", "url": "https://news.xbox.com/en-us/2026/01/22/xbox-developer-direct-2026-recap/", "date": "2026-01" },
-      { "titleEn": "Game Pass April 2026 wave 2", "titleZh": "XGP 2026 年 4 月第二批入库", "url": "https://news.xbox.com/en-us/2026/04/20/xbox-game-pass-april-2026-wave-2/", "date": "2026-04" },
-      { "titleEn": "Xbox Mode on Windows 11", "titleZh": "Windows 11 Xbox 模式上线", "url": "https://news.xbox.com/en-us/2026/04/30/xbox-mode-pc-windows-11/", "date": "2026-04" }
-    ]},
-    { "id": "gm-nin", "labelEn": "Nintendo", "labelZh": "任天堂", "items": [
-      { "titleEn": "Switch 2 US price revision", "titleZh": "美区 Switch 2 调价说明", "url": "https://www.nintendo.com/us/whatsnew/price-revision-for-nintendo-switch-2-system/", "date": "2026" },
-      { "titleEn": "Star Fox on Switch 2 (Malaysia)", "titleZh": "Switch 2《星际火狐》上线稿", "url": "https://www.nintendo.com/my/news/article/AyUbs2eACLw09cF8n5xZw", "date": "2026" },
-      { "titleEn": "Upcoming games — May 2026 (UK)", "titleZh": "2026 年 5 月游戏一览（英区）", "url": "https://www.nintendo.com/en-gb/News/2026/April/Upcoming-games-May-2026-3090933.html", "date": "2026-04" }
-    ]},
-    { "id": "gm-epic", "labelEn": "Epic Games", "labelZh": "Epic", "items": [
-      { "titleEn": "Honkai: Star Rail × Fortnite", "titleZh": "崩铁 × 堡垒之夜联动商店稿", "url": "https://store.epicgames.com/en-US/news/epic-games-store-and-hoyoverse-team-up-to-bring-honkai-star-rail-to-fortnite", "date": "2026" },
-      { "titleEn": "Unreal Engine 5.6 availability", "titleZh": "虚幻引擎 5.6 发布说明", "url": "https://www.unrealengine.com/en-US/news/unreal-engine-5-6-is-now-available", "date": "2026" },
-      { "titleEn": "Arm ASR on UE mobile (tech blog)", "titleZh": "UE 手游与 Arm ASR 技术博文", "url": "https://www.unrealengine.com/en-US/tech-blog/bringing-stunning-visuals-to-ue-mobile-games-with-arm-accuracy-super-resolution", "date": "2026-03" }
-    ]},
-    { "id": "gm-blz", "labelEn": "Blizzard / Battle.net", "labelZh": "暴雪", "items": [
-      { "titleEn": "BlizzCon returns in 2026", "titleZh": "BlizzCon 2026 回归", "url": "https://news.blizzard.com/en-us/article/24188065/blizzcon-returns-in-2026", "date": "2026" },
-      { "titleEn": "Blizzard Showcase viewers’ guide", "titleZh": "Blizzard Showcase 观看指南", "url": "https://news.blizzard.com/en-us/article/24250351/blizzard-showcase-viewers-guide", "date": "2026" },
-      { "titleEn": "Burning Crusade Classic: Overlords of Outland", "titleZh": "TBC 周年版「外域霸主」", "url": "https://news.blizzard.com/en-us/article/24276751/bcc-anniversary-edition-overlords-of-outland-arrives-may-14", "date": "2026-05" }
-    ]},
-    { "id": "gm-ea", "labelEn": "Electronic Arts", "labelZh": "EA", "items": [
-      { "titleEn": "Apex Legends Season 29 — Axle", "titleZh": "Apex 第 29 赛季新传奇 Axle", "url": "https://www.ea.com/news/apex-legends-s29-meet-axle", "date": "2026" },
-      { "titleEn": "Battlefield 6 update 1.2.3.5", "titleZh": "《战地 6》1.2.3.5 更新", "url": "https://www.ea.com/games/battlefield/battlefield-6/news/battlefield-6-game-update-1-2-3-5", "date": "2026-05" },
-      { "titleEn": "GEN / EA SPORTS announcement", "titleZh": "GEN / EA SPORTS 企划稿", "url": "https://www.ea.com/news/gen-ea", "date": "2026-04" }
-    ]},
-    { "id": "gm-ubi", "labelEn": "Ubisoft", "labelZh": "育碧", "items": [
-      { "titleEn": "Assassin’s Creed into 2026", "titleZh": "《刺客信条》2026 规划", "url": "https://www.ubisoft.com/en-us/game/assassins-creed/news/3DdTBz0edxZ0mQ7Ub4jv85/assassins-creed-into-2026", "date": "2026" },
-      { "titleEn": "R6 Esports 2026 calendar", "titleZh": "彩虹六号电竞 2026 赛历", "url": "https://www.ubisoft.com/en-gb/esports/rainbow-six/siege/news-updates/2o61ouFqCXB0awFPQFW3oA/r6-esports-in-2026-a-new-era-of-global-competition", "date": "2026" },
-      { "titleEn": "The Crew 2 Hybrid Mode update", "titleZh": "《飙酷车神 2》混合模式更新", "url": "https://www.ubisoft.com/en-us/news/ignt.59687/hybrid-mode-update", "date": "Rolling" }
-    ]},
-    { "id": "gm-riot", "labelEn": "Riot Games", "labelZh": "拳头", "items": [
-      { "titleEn": "2XKO patch notes 1.1.2", "titleZh": "2XKO 1.1.2 补丁说明", "url": "https://2xko.riotgames.com/en-us/news/game-updates/2xko-patch-notes-1-1-2/", "date": "2026-02" },
-      { "titleEn": "2XKO patch notes 1.1.5", "titleZh": "2XKO 1.1.5 补丁说明", "url": "https://2xko.riotgames.com/en-us/news/game-updates/2xko-patch-notes-1-1-5/", "date": "2026-04" },
-      { "titleEn": "2XKO April 2026 hotfix", "titleZh": "2XKO 4 月热修复", "url": "https://2xko.riotgames.com/en-us/news/game-updates/2xko-patch-115-hotfix-april-23-2026/", "date": "2026-04" }
-    ]},
-    { "id": "gm-rstar", "labelEn": "Rockstar Games", "labelZh": "Rockstar", "items": [
-      { "titleEn": "GTA Online: A Safehouse in the Hills", "titleZh": "GTA 在线模式：山间安全屋", "url": "https://www.rockstargames.com/newswire/article/51358a55o2o11o/gta-online-a-safehouse-in-the-hills-coming-december-10", "date": "2025-12" },
-      { "titleEn": "Slide to Success in New Drift Races", "titleZh": "漂移赛双倍奖励活动", "url": "https://www.rockstargames.com/newswire/article/755a12a9ko822o/slide-to-success-in-new-drift-races-with-2x-rewards", "date": "2026-02" },
-      { "titleEn": "Double GTA$ on drag races", "titleZh": "直线加速赛双倍 GTA 币", "url": "https://www.rockstargames.com/newswire/article/755a9oo8448a39/get-double-gta-and-rp-on-drag-races-and-2x-gta-on-auto-shop-client-job", "date": "2026-01" }
-    ]}
+    {
+      "id": "gm-steam",
+      "labelEn": "Steam / Valve",
+      "labelZh": "Steam",
+      "items": [
+        {
+          "titleEn": "Left 4 Dead - Update",
+          "titleZh": "Left 4 Dead - Update",
+          "url": "https://store.steampowered.com/news/270398/",
+          "date": "2026-05-06"
+        },
+        {
+          "titleEn": "Steam Mobile App update",
+          "titleZh": "Steam 移动应用更新",
+          "url": "https://store.steampowered.com/news/app/593110/view/3329873512156647585",
+          "date": "Rolling"
+        },
+        {
+          "titleEn": "Steam Client update (Apr 28)",
+          "titleZh": "Steam 客户端更新说明",
+          "url": "https://store.steampowered.com/news/app/593110/view/532129653907784634",
+          "date": "Rolling"
+        }
+      ]
+    },
+    {
+      "id": "gm-ps",
+      "labelEn": "PlayStation",
+      "labelZh": "PlayStation",
+      "items": [
+        {
+          "titleEn": "(For Southeast Asia) Genshin Impact Version “Luna VII” Introduces Nicole Reeyn, the First Playable Hexenzirkel Member, on May 20!",
+          "titleZh": "(For Southeast Asia) Genshin Impact Version “Luna VII” Introduces Nicole Reeyn, the First Playable Hexenzirkel Member, on May 20!",
+          "url": "https://blog.playstation.com/2026/05/11/20260511-gi/",
+          "date": "2026-05-11"
+        },
+        {
+          "titleEn": "Share of the Week: Celebrate",
+          "titleZh": "Share of the Week: Celebrate",
+          "url": "https://blog.playstation.com/2026/05/08/share-of-the-week-celebrate/",
+          "date": "2026-05-08"
+        },
+        {
+          "titleEn": "(For Southeast Asia) PlayStation Store: April 2026’s top downloads",
+          "titleZh": "(For Southeast Asia) PlayStation Store: April 2026’s top downloads",
+          "url": "https://blog.playstation.com/2026/05/07/20260507-top/",
+          "date": "2026-05-07"
+        }
+      ]
+    },
+    {
+      "id": "gm-xbox",
+      "labelEn": "Xbox",
+      "labelZh": "Xbox",
+      "items": [
+        {
+          "titleEn": "A Breathtaking Rebirth of One of the Greatest Shoot ’em up Sagas Ever Told",
+          "titleZh": "A Breathtaking Rebirth of One of the Greatest Shoot ’em up Sagas Ever Told",
+          "url": "https://news.xbox.com/en-us/2026/05/11/a-breathtaking-rebirth-of-one-of-the-greatest-shoot-em-up-sagas/",
+          "date": "2026-05-11"
+        },
+        {
+          "titleEn": "A Tourist Guide: Top 5 Landmarks to Visit in Outbound, Out Today",
+          "titleZh": "A Tourist Guide: Top 5 Landmarks to Visit in Outbound, Out Today",
+          "url": "https://news.xbox.com/en-us/2026/05/11/outbound-xbox-tourist-guide-landmarks/",
+          "date": "2026-05-11"
+        },
+        {
+          "titleEn": "Xbox Game Pass and Discord: Building on Our Partnership to Bring More Benefits to Players",
+          "titleZh": "Xbox Game Pass and Discord: Building on Our Partnership to Bring More Benefits to Players",
+          "url": "https://news.xbox.com/en-us/2026/05/11/xbox-game-pass-and-discord-partnership-announce/",
+          "date": "2026-05-11"
+        }
+      ]
+    },
+    {
+      "id": "gm-nin",
+      "labelEn": "Nintendo",
+      "labelZh": "任天堂",
+      "items": [
+        {
+          "titleEn": "Switch 2 US price revision",
+          "titleZh": "美区 Switch 2 调价说明",
+          "url": "https://www.nintendo.com/us/whatsnew/price-revision-for-nintendo-switch-2-system/",
+          "date": "2026"
+        },
+        {
+          "titleEn": "Star Fox on Switch 2 (Malaysia)",
+          "titleZh": "Switch 2《星际火狐》上线稿",
+          "url": "https://www.nintendo.com/my/news/article/AyUbs2eACLw09cF8n5xZw",
+          "date": "2026"
+        },
+        {
+          "titleEn": "Upcoming games — May 2026 (UK)",
+          "titleZh": "2026 年 5 月游戏一览（英区）",
+          "url": "https://www.nintendo.com/en-gb/News/2026/April/Upcoming-games-May-2026-3090933.html",
+          "date": "2026-04"
+        }
+      ]
+    },
+    {
+      "id": "gm-epic",
+      "labelEn": "Epic Games",
+      "labelZh": "Epic",
+      "items": [
+        {
+          "titleEn": "Oceanhorn 3 charts a course for RPG success with UE5",
+          "titleZh": "Oceanhorn 3 charts a course for RPG success with UE5",
+          "url": "https://www.unrealengine.com/developer-interviews/oceanhorn-3-charts-a-course-for-rpg-success-with-ue5",
+          "date": "2026-05-06"
+        },
+        {
+          "titleEn": "Crafting stylized digital humans on Daughter of the Inner Stars with MetaHuman and UE5",
+          "titleZh": "Crafting stylized digital humans on Daughter of the Inner Stars with MetaHuman and UE5",
+          "url": "https://www.unrealengine.com/spotlights/crafting-stylized-digital-humans-on-daughter-of-the-inner-stars-with-metahuman-and-ue5",
+          "date": "2026-05-05"
+        },
+        {
+          "titleEn": "April’s Epic learning content: PCG, MetaHuman, mobile development, and more",
+          "titleZh": "April’s Epic learning content: PCG, MetaHuman, mobile development, and more",
+          "url": "https://www.unrealengine.com/learning/aprils-epic-learning-content-pcg-metahuman-mobile-development-and-more",
+          "date": "2026-04-30"
+        }
+      ]
+    },
+    {
+      "id": "gm-blz",
+      "labelEn": "Blizzard / Battle.net",
+      "labelZh": "暴雪",
+      "items": [
+        {
+          "titleEn": "BlizzCon returns in 2026",
+          "titleZh": "BlizzCon 2026 回归",
+          "url": "https://news.blizzard.com/en-us/article/24188065/blizzcon-returns-in-2026",
+          "date": "2026"
+        },
+        {
+          "titleEn": "Blizzard Showcase viewers’ guide",
+          "titleZh": "Blizzard Showcase 观看指南",
+          "url": "https://news.blizzard.com/en-us/article/24250351/blizzard-showcase-viewers-guide",
+          "date": "2026"
+        },
+        {
+          "titleEn": "Burning Crusade Classic: Overlords of Outland",
+          "titleZh": "TBC 周年版「外域霸主」",
+          "url": "https://news.blizzard.com/en-us/article/24276751/bcc-anniversary-edition-overlords-of-outland-arrives-may-14",
+          "date": "2026-05"
+        }
+      ]
+    },
+    {
+      "id": "gm-ea",
+      "labelEn": "Electronic Arts",
+      "labelZh": "EA",
+      "items": [
+        {
+          "titleEn": "Apex Legends Season 29 — Axle",
+          "titleZh": "Apex 第 29 赛季新传奇 Axle",
+          "url": "https://www.ea.com/news/apex-legends-s29-meet-axle",
+          "date": "2026"
+        },
+        {
+          "titleEn": "Battlefield 6 update 1.2.3.5",
+          "titleZh": "《战地 6》1.2.3.5 更新",
+          "url": "https://www.ea.com/games/battlefield/battlefield-6/news/battlefield-6-game-update-1-2-3-5",
+          "date": "2026-05"
+        },
+        {
+          "titleEn": "GEN / EA SPORTS announcement",
+          "titleZh": "GEN / EA SPORTS 企划稿",
+          "url": "https://www.ea.com/news/gen-ea",
+          "date": "2026-04"
+        }
+      ]
+    },
+    {
+      "id": "gm-ubi",
+      "labelEn": "Ubisoft",
+      "labelZh": "育碧",
+      "items": [
+        {
+          "titleEn": "Assassin’s Creed into 2026",
+          "titleZh": "《刺客信条》2026 规划",
+          "url": "https://www.ubisoft.com/en-us/game/assassins-creed/news/3DdTBz0edxZ0mQ7Ub4jv85/assassins-creed-into-2026",
+          "date": "2026"
+        },
+        {
+          "titleEn": "R6 Esports 2026 calendar",
+          "titleZh": "彩虹六号电竞 2026 赛历",
+          "url": "https://www.ubisoft.com/en-gb/esports/rainbow-six/siege/news-updates/2o61ouFqCXB0awFPQFW3oA/r6-esports-in-2026-a-new-era-of-global-competition",
+          "date": "2026"
+        },
+        {
+          "titleEn": "The Crew 2 Hybrid Mode update",
+          "titleZh": "《飙酷车神 2》混合模式更新",
+          "url": "https://www.ubisoft.com/en-us/news/ignt.59687/hybrid-mode-update",
+          "date": "Rolling"
+        }
+      ]
+    },
+    {
+      "id": "gm-riot",
+      "labelEn": "Riot Games",
+      "labelZh": "拳头",
+      "items": [
+        {
+          "titleEn": "2XKO patch notes 1.1.2",
+          "titleZh": "2XKO 1.1.2 补丁说明",
+          "url": "https://2xko.riotgames.com/en-us/news/game-updates/2xko-patch-notes-1-1-2/",
+          "date": "2026-02"
+        },
+        {
+          "titleEn": "2XKO patch notes 1.1.5",
+          "titleZh": "2XKO 1.1.5 补丁说明",
+          "url": "https://2xko.riotgames.com/en-us/news/game-updates/2xko-patch-notes-1-1-5/",
+          "date": "2026-04"
+        },
+        {
+          "titleEn": "2XKO April 2026 hotfix",
+          "titleZh": "2XKO 4 月热修复",
+          "url": "https://2xko.riotgames.com/en-us/news/game-updates/2xko-patch-115-hotfix-april-23-2026/",
+          "date": "2026-04"
+        }
+      ]
+    },
+    {
+      "id": "gm-rstar",
+      "labelEn": "Rockstar Games",
+      "labelZh": "Rockstar",
+      "items": [
+        {
+          "titleEn": "GTA Online: A Safehouse in the Hills",
+          "titleZh": "GTA 在线模式：山间安全屋",
+          "url": "https://www.rockstargames.com/newswire/article/51358a55o2o11o/gta-online-a-safehouse-in-the-hills-coming-december-10",
+          "date": "2025-12"
+        },
+        {
+          "titleEn": "Slide to Success in New Drift Races",
+          "titleZh": "漂移赛双倍奖励活动",
+          "url": "https://www.rockstargames.com/newswire/article/755a12a9ko822o/slide-to-success-in-new-drift-races-with-2x-rewards",
+          "date": "2026-02"
+        },
+        {
+          "titleEn": "Double GTA$ on drag races",
+          "titleZh": "直线加速赛双倍 GTA 币",
+          "url": "https://www.rockstargames.com/newswire/article/755a9oo8448a39/get-double-gta-and-rp-on-drag-races-and-2x-gta-on-auto-shop-client-job",
+          "date": "2026-01"
+        }
+      ]
+    }
   ],
   "more": [
-    { "nameEn": "GOG", "nameZh": "GOG", "url": "https://www.gog.com/", "domain": "gog.com" },
-    { "nameEn": "miHoYo", "nameZh": "米哈游", "url": "https://www.mihoyo.com/", "domain": "mihoyo.com" },
-    { "nameEn": "NetEase Games", "nameZh": "网易游戏", "url": "https://game.163.com/", "domain": "163.com" },
-    { "nameEn": "Tencent Games", "nameZh": "腾讯游戏", "url": "https://game.qq.com/", "domain": "qq.com" },
-    { "nameEn": "HoYoverse", "nameZh": "HoYoverse", "url": "https://www.hoyoverse.com/", "domain": "hoyoverse.com" },
-    { "nameEn": "itch.io", "nameZh": "itch.io", "url": "https://itch.io/", "domain": "itch.io" },
-    { "nameEn": "Humble Bundle", "nameZh": "Humble", "url": "https://www.humblebundle.com/", "domain": "humblebundle.com" },
-    { "nameEn": "Roblox", "nameZh": "Roblox", "url": "https://www.roblox.com/", "domain": "roblox.com" },
-    { "nameEn": "Xbox Game Pass", "nameZh": "XGP", "url": "https://www.xbox.com/xbox-game-pass", "domain": "xbox.com" },
-    { "nameEn": "PlayStation Plus", "nameZh": "PS Plus", "url": "https://www.playstation.com/ps-plus/", "domain": "playstation.com" },
-    { "nameEn": "Nintendo eShop", "nameZh": "任天堂 eShop", "url": "https://www.nintendo.com/store/", "domain": "nintendo.com" },
-    { "nameEn": "Bandai Namco", "nameZh": "万代南梦宫", "url": "https://www.bandainamcoent.com/", "domain": "bandainamcoent.com" },
-    { "nameEn": "Capcom", "nameZh": "卡普空", "url": "https://www.capcom.com/", "domain": "capcom.com" },
-    { "nameEn": "Square Enix", "nameZh": "史克威尔艾尼克斯", "url": "https://www.square-enix.com/", "domain": "square-enix.com" },
-    { "nameEn": "Sega", "nameZh": "世嘉", "url": "https://www.sega.com/", "domain": "sega.com" },
-    { "nameEn": "Bethesda", "nameZh": "B 社", "url": "https://bethesda.net/", "domain": "bethesda.net" },
-    { "nameEn": "CD PROJEKT RED", "nameZh": "CDPR", "url": "https://www.cdprojektred.com/", "domain": "cdprojektred.com" },
-    { "nameEn": "Rockstar Games", "nameZh": "R 星", "url": "https://www.rockstargames.com/", "domain": "rockstargames.com" },
-    { "nameEn": "Paradox Interactive", "nameZh": "P 社", "url": "https://www.paradoxinteractive.com/", "domain": "paradoxinteractive.com" },
-    { "nameEn": "Devolver Digital", "nameZh": "Devolver", "url": "https://www.devolverdigital.com/", "domain": "devolverdigital.com" },
-    { "nameEn": "Annapurna Interactive", "nameZh": "安纳普尔纳", "url": "https://annapurnainteractive.com/", "domain": "annapurnainteractive.com" }
+    {
+      "nameEn": "GOG",
+      "nameZh": "GOG",
+      "url": "https://www.gog.com/",
+      "domain": "gog.com"
+    },
+    {
+      "nameEn": "miHoYo",
+      "nameZh": "米哈游",
+      "url": "https://www.mihoyo.com/",
+      "domain": "mihoyo.com"
+    },
+    {
+      "nameEn": "NetEase Games",
+      "nameZh": "网易游戏",
+      "url": "https://game.163.com/",
+      "domain": "163.com"
+    },
+    {
+      "nameEn": "Tencent Games",
+      "nameZh": "腾讯游戏",
+      "url": "https://game.qq.com/",
+      "domain": "qq.com"
+    },
+    {
+      "nameEn": "HoYoverse",
+      "nameZh": "HoYoverse",
+      "url": "https://www.hoyoverse.com/",
+      "domain": "hoyoverse.com"
+    },
+    {
+      "nameEn": "itch.io",
+      "nameZh": "itch.io",
+      "url": "https://itch.io/",
+      "domain": "itch.io"
+    },
+    {
+      "nameEn": "Humble Bundle",
+      "nameZh": "Humble",
+      "url": "https://www.humblebundle.com/",
+      "domain": "humblebundle.com"
+    },
+    {
+      "nameEn": "Roblox",
+      "nameZh": "Roblox",
+      "url": "https://www.roblox.com/",
+      "domain": "roblox.com"
+    },
+    {
+      "nameEn": "Xbox Game Pass",
+      "nameZh": "XGP",
+      "url": "https://www.xbox.com/xbox-game-pass",
+      "domain": "xbox.com"
+    },
+    {
+      "nameEn": "PlayStation Plus",
+      "nameZh": "PS Plus",
+      "url": "https://www.playstation.com/ps-plus/",
+      "domain": "playstation.com"
+    },
+    {
+      "nameEn": "Nintendo eShop",
+      "nameZh": "任天堂 eShop",
+      "url": "https://www.nintendo.com/store/",
+      "domain": "nintendo.com"
+    },
+    {
+      "nameEn": "Bandai Namco",
+      "nameZh": "万代南梦宫",
+      "url": "https://www.bandainamcoent.com/",
+      "domain": "bandainamcoent.com"
+    },
+    {
+      "nameEn": "Capcom",
+      "nameZh": "卡普空",
+      "url": "https://www.capcom.com/",
+      "domain": "capcom.com"
+    },
+    {
+      "nameEn": "Square Enix",
+      "nameZh": "史克威尔艾尼克斯",
+      "url": "https://www.square-enix.com/",
+      "domain": "square-enix.com"
+    },
+    {
+      "nameEn": "Sega",
+      "nameZh": "世嘉",
+      "url": "https://www.sega.com/",
+      "domain": "sega.com"
+    },
+    {
+      "nameEn": "Bethesda",
+      "nameZh": "B 社",
+      "url": "https://bethesda.net/",
+      "domain": "bethesda.net"
+    },
+    {
+      "nameEn": "CD PROJEKT RED",
+      "nameZh": "CDPR",
+      "url": "https://www.cdprojektred.com/",
+      "domain": "cdprojektred.com"
+    },
+    {
+      "nameEn": "Rockstar Games",
+      "nameZh": "R 星",
+      "url": "https://www.rockstargames.com/",
+      "domain": "rockstargames.com"
+    },
+    {
+      "nameEn": "Paradox Interactive",
+      "nameZh": "P 社",
+      "url": "https://www.paradoxinteractive.com/",
+      "domain": "paradoxinteractive.com"
+    },
+    {
+      "nameEn": "Devolver Digital",
+      "nameZh": "Devolver",
+      "url": "https://www.devolverdigital.com/",
+      "domain": "devolverdigital.com"
+    },
+    {
+      "nameEn": "Annapurna Interactive",
+      "nameZh": "安纳普尔纳",
+      "url": "https://annapurnainteractive.com/",
+      "domain": "annapurnainteractive.com"
+    }
   ]
 }

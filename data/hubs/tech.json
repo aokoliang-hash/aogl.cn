@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-05-11",
+  "updated": "2026-05-12",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -48,89 +48,439 @@
     "数据中心AI加速卡"
   ],
   "top10": [
-    { "nameEn": "NVIDIA", "nameZh": "英伟达", "url": "https://www.nvidia.com/", "domain": "nvidia.com" },
-    { "nameEn": "TSMC", "nameZh": "台积电", "url": "https://www.tsmc.com/", "domain": "tsmc.com" },
-    { "nameEn": "Broadcom", "nameZh": "博通", "url": "https://www.broadcom.com/", "domain": "broadcom.com" },
-    { "nameEn": "AMD", "nameZh": "AMD", "url": "https://www.amd.com/", "domain": "amd.com" },
-    { "nameEn": "Samsung Electronics", "nameZh": "三星电子", "url": "https://www.samsung.com/", "domain": "samsung.com" },
-    { "nameEn": "ASML", "nameZh": "ASML", "url": "https://www.asml.com/", "domain": "asml.com" },
-    { "nameEn": "Intel", "nameZh": "英特尔", "url": "https://www.intel.com/", "domain": "intel.com" },
-    { "nameEn": "Qualcomm", "nameZh": "高通", "url": "https://www.qualcomm.com/", "domain": "qualcomm.com" },
-    { "nameEn": "ARM", "nameZh": "ARM", "url": "https://www.arm.com/", "domain": "arm.com" },
-    { "nameEn": "MediaTek", "nameZh": "联发科", "url": "https://www.mediatek.com/", "domain": "mediatek.com" }
+    {
+      "nameEn": "NVIDIA",
+      "nameZh": "英伟达",
+      "url": "https://www.nvidia.com/",
+      "domain": "nvidia.com"
+    },
+    {
+      "nameEn": "TSMC",
+      "nameZh": "台积电",
+      "url": "https://www.tsmc.com/",
+      "domain": "tsmc.com"
+    },
+    {
+      "nameEn": "Broadcom",
+      "nameZh": "博通",
+      "url": "https://www.broadcom.com/",
+      "domain": "broadcom.com"
+    },
+    {
+      "nameEn": "AMD",
+      "nameZh": "AMD",
+      "url": "https://www.amd.com/",
+      "domain": "amd.com"
+    },
+    {
+      "nameEn": "Samsung Electronics",
+      "nameZh": "三星电子",
+      "url": "https://www.samsung.com/",
+      "domain": "samsung.com"
+    },
+    {
+      "nameEn": "ASML",
+      "nameZh": "ASML",
+      "url": "https://www.asml.com/",
+      "domain": "asml.com"
+    },
+    {
+      "nameEn": "Intel",
+      "nameZh": "英特尔",
+      "url": "https://www.intel.com/",
+      "domain": "intel.com"
+    },
+    {
+      "nameEn": "Qualcomm",
+      "nameZh": "高通",
+      "url": "https://www.qualcomm.com/",
+      "domain": "qualcomm.com"
+    },
+    {
+      "nameEn": "ARM",
+      "nameZh": "ARM",
+      "url": "https://www.arm.com/",
+      "domain": "arm.com"
+    },
+    {
+      "nameEn": "MediaTek",
+      "nameZh": "联发科",
+      "url": "https://www.mediatek.com/",
+      "domain": "mediatek.com"
+    }
   ],
   "newsGroups": [
-    { "id": "tc-nv", "labelEn": "NVIDIA", "labelZh": "英伟达", "items": [
-      { "titleEn": "Rubin platform announcement", "titleZh": "Rubin 平台发布稿", "url": "https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer", "date": "2026-01" },
-      { "titleEn": "FY2026 Q4 results", "titleZh": "2026 财年第四财季业绩", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026", "date": "2026-02" },
-      { "titleEn": "GTC 2026 keynote preview", "titleZh": "GTC 2026 主题演讲预告", "url": "https://nvidianews.nvidia.com/news/nvidia-ceo-jensen-huang-and-global-technology-leaders-to-showcase-age-of-ai-at-gtc-2026", "date": "2026-03" }
-    ]},
-    { "id": "tc-tsm", "labelEn": "TSMC", "labelZh": "台积电", "items": [
-      { "titleEn": "2025 Form 20-F filed", "titleZh": "2025 年度报告 20-F", "url": "https://pr.tsmc.com/english/news/3300", "date": "2026-04" },
-      { "titleEn": "Q1 2026 results & materials", "titleZh": "2026 年一季度业绩专页", "url": "https://investor.tsmc.com/english/quarterly-results/2026/q1", "date": "2026-04" },
-      { "titleEn": "April 2026 revenue (SEC filing)", "titleZh": "2026 年 4 月营收公告", "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000136/tsm-revenue20260410.htm", "date": "2026-04" }
-    ]},
-    { "id": "tc-bcm", "labelEn": "Broadcom", "labelZh": "博通", "items": [
-      { "titleEn": "2026 private cloud predictions", "titleZh": "2026 私有云趋势稿", "url": "https://news.broadcom.com/cloud/2026-private-cloud-predictions-cost-sovereignty-application-stack", "date": "2026" },
-      { "titleEn": "Sovereign cloud predictions", "titleZh": "主权云预测稿", "url": "https://news.broadcom.com/sovereign-cloud/three-predictions-for-sovereign-cloud-in-2026", "date": "2026" },
-      { "titleEn": "Five cyber predictions for 2026", "titleZh": "2026 网络安全五大预测", "url": "https://news.broadcom.com/security/five-cyber-predictions-for-2026", "date": "2026" }
-    ]},
-    { "id": "tc-amd", "labelEn": "AMD", "labelZh": "AMD", "items": [
-      { "titleEn": "Q1 2026 financial results", "titleZh": "2026 年一季度业绩", "url": "https://www.amd.com/en/newsroom/press-releases/2026-5-5-amd-reports-first-quarter-2026-financial-results.html", "date": "2026-05" },
-      { "titleEn": "AMD × France AI collaboration", "titleZh": "AMD 与法国政府 AI 合作", "url": "https://www.amd.com/en/newsroom/press-releases/2026-4-16-amd-and-the-french-government-announce-plans-to-advance.html", "date": "2026-04" },
-      { "titleEn": "Advancing AI 2026 event (IR)", "titleZh": "Advancing AI 2026 活动预告", "url": "https://ir.amd.com/news-events/press-releases/detail/1283/amd-announces-advancing-ai-2026", "date": "2026" }
-    ]},
-    { "id": "tc-sam", "labelEn": "Samsung Electronics", "labelZh": "三星电子", "items": [
-      { "titleEn": "Samsung × NVIDIA at GTC 2026", "titleZh": "三星半导体 × NVIDIA（GTC）", "url": "https://semiconductor.samsung.com/news-events/tech-blog/architecting-the-ai-era-samsung-electronics-and-nvidia-define-the-future-at-gtc-2026/", "date": "2026-03" },
-      { "titleEn": "HBM4 volume shipment", "titleZh": "HBM4 量产出货稿", "url": "https://semiconductor.samsung.com/news-events/news/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing/", "date": "2026" },
-      { "titleEn": "CES 2026 innovation awards", "titleZh": "CES 2026 创新奖报道", "url": "https://semiconductor.samsung.com/news-events/news/samsung-celebrated-for-transformative-tech-by-consumer-technology-association/", "date": "2026-01" }
-    ]},
-    { "id": "tc-asml", "labelEn": "ASML", "labelZh": "ASML", "items": [
-      { "titleEn": "Q1 2026 financial results", "titleZh": "2026 年一季度业绩", "url": "https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results", "date": "2026-04" },
-      { "titleEn": "2026 AGM results", "titleZh": "2026 年度股东大会结果", "url": "https://www.asml.com/en/news/press-releases/2026/asml-discloses-2026-agm-results", "date": "2026-04" },
-      { "titleEn": "Engineering focus statement", "titleZh": "强化工程与创新聚焦", "url": "https://www.asml.com/en/news/press-releases/2026/strengthening-focus-on-engineering-and-innovation", "date": "2026-01" }
-    ]},
-    { "id": "tc-int", "labelEn": "Intel", "labelZh": "英特尔", "items": [
-      { "titleEn": "Q1 2026 financial results", "titleZh": "2026 年一季度业绩", "url": "https://newsroom.intel.com/corporate/intel-reports-first-quarter-2026-financial-results", "date": "2026" },
-      { "titleEn": "Intel at Computex 2026", "titleZh": "Computex 2026 主题演讲稿", "url": "https://newsroom.intel.com/client-computing/intel-at-computex-2026-the-next-era-of-ai-driven-computing", "date": "2026-06" },
-      { "titleEn": "Intel Core Series 3 launch", "titleZh": "Intel Core 3 处理器发布", "url": "https://newsroom.intel.com/client-computing/intel-launches-intel-core-series-3-processors-changing-the-game-for-everyday-computing", "date": "2026-04" }
-    ]},
-    { "id": "tc-qc", "labelEn": "Qualcomm", "labelZh": "高通", "items": [
-      { "titleEn": "Q1 fiscal 2026 results", "titleZh": "2026 财年第一财季业绩", "url": "https://www.qualcomm.com/news/releases/2026/02/qualcomm-announces-first-quarter-fiscal-2026-results", "date": "2026-02" },
-      { "titleEn": "New Snapdragon mobile platforms", "titleZh": "新一代骁龙移动平台", "url": "https://www.qualcomm.com/news/releases/2026/05/qualcomm-unveils-two-new-snapdragon-mobile-platforms--delivering", "date": "2026-05" },
-      { "titleEn": "Dividend increase & buyback", "titleZh": "股息上调与回购授权", "url": "https://www.qualcomm.com/news/releases/2026/03/qualcomm-increases-quarterly-cash-dividend-and-announces-new--20", "date": "2026-03" }
-    ]},
-    { "id": "tc-arm", "labelEn": "ARM", "labelZh": "ARM", "items": [
-      { "titleEn": "Arm AGI CPU launch", "titleZh": "Arm AGI CPU 发布", "url": "https://newsroom.arm.com/news/arm-agi-cpu-launch", "date": "2026-03" },
-      { "titleEn": "Q4 & FYE26 results", "titleZh": "第四财季及全年业绩", "url": "https://newsroom.arm.com/news/arm-holdings-plc-reports-results-for-the-fourth-quarter-and-fiscal-year-ended-2026", "date": "2026" },
-      { "titleEn": "Q4 FYE26 highlights", "titleZh": "第四财季亮点稿", "url": "https://newsroom.arm.com/news/arm-q4-fye26-results", "date": "2026" }
-    ]},
-    { "id": "tc-mtk", "labelEn": "MediaTek", "labelZh": "联发科", "items": [
-      { "titleEn": "Active Intelligent Cockpit", "titleZh": "主动智能座舱方案", "url": "https://www.mediatek.com/press-room/mediatek-showcases-its-active-intelligent-cockpit-solution-ushering-the-industry-into-new-era-of-ai-defined-vehicles", "date": "2026-04" },
-      { "titleEn": "AOC collaboration with Microsoft Research", "titleZh": "与微软研究院的 AOC 合作", "url": "https://www.mediatek.com/press-room/mediatek-develops-active-optical-cable-technology-with-microsoft-research-to-deliver-significant-improvements-in-data-center-efficiency", "date": "2026-03" },
-      { "titleEn": "MWC 2026 leadership showcase", "titleZh": "MWC 2026 展示稿", "url": "https://www.mediatek.com/press-room/mediatek-exemplifies-ai-and-connectivity-leadership-at-mwc-2026", "date": "2026-03" }
-    ]}
+    {
+      "id": "tc-nv",
+      "labelEn": "NVIDIA",
+      "labelZh": "英伟达",
+      "items": [
+        {
+          "titleEn": "Introducing NVIDIA Fleet Intelligence for Real-Time GPU Fleet Visibility and Optimization",
+          "titleZh": "Introducing NVIDIA Fleet Intelligence for Real-Time GPU Fleet Visibility and Optimization",
+          "url": "https://developer.nvidia.com/blog/introducing-nvidia-fleet-intelligence-for-real-time-gpu-fleet-visibility-and-optimization/",
+          "date": "2026-05-11"
+        },
+        {
+          "titleEn": "‘Your Career Starts at the Beginning of the AI Revolution,’ NVIDIA CEO Tells Graduates",
+          "titleZh": "‘Your Career Starts at the Beginning of the AI Revolution,’ NVIDIA CEO Tells Graduates",
+          "url": "https://blogs.nvidia.com/blog/nvidia-ceo-carnegie-mellon-commencement-address/",
+          "date": "2026-05-10"
+        },
+        {
+          "titleEn": "Improving Bash Generation in Small Language Models with Grammar-Constrained Decoding",
+          "titleZh": "Improving Bash Generation in Small Language Models with Grammar-Constrained Decoding",
+          "url": "https://developer.nvidia.com/blog/improving-bash-generation-in-small-language-models-with-grammar-constrained-decoding/",
+          "date": "2026-05-08"
+        }
+      ]
+    },
+    {
+      "id": "tc-tsm",
+      "labelEn": "TSMC",
+      "labelZh": "台积电",
+      "items": [
+        {
+          "titleEn": "2025 Form 20-F filed",
+          "titleZh": "2025 年度报告 20-F",
+          "url": "https://pr.tsmc.com/english/news/3300",
+          "date": "2026-04"
+        },
+        {
+          "titleEn": "Q1 2026 results & materials",
+          "titleZh": "2026 年一季度业绩专页",
+          "url": "https://investor.tsmc.com/english/quarterly-results/2026/q1",
+          "date": "2026-04"
+        },
+        {
+          "titleEn": "April 2026 revenue (SEC filing)",
+          "titleZh": "2026 年 4 月营收公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000136/tsm-revenue20260410.htm",
+          "date": "2026-04"
+        }
+      ]
+    },
+    {
+      "id": "tc-bcm",
+      "labelEn": "Broadcom",
+      "labelZh": "博通",
+      "items": [
+        {
+          "titleEn": "2026 private cloud predictions",
+          "titleZh": "2026 私有云趋势稿",
+          "url": "https://news.broadcom.com/cloud/2026-private-cloud-predictions-cost-sovereignty-application-stack",
+          "date": "2026"
+        },
+        {
+          "titleEn": "Sovereign cloud predictions",
+          "titleZh": "主权云预测稿",
+          "url": "https://news.broadcom.com/sovereign-cloud/three-predictions-for-sovereign-cloud-in-2026",
+          "date": "2026"
+        },
+        {
+          "titleEn": "Five cyber predictions for 2026",
+          "titleZh": "2026 网络安全五大预测",
+          "url": "https://news.broadcom.com/security/five-cyber-predictions-for-2026",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "tc-amd",
+      "labelEn": "AMD",
+      "labelZh": "AMD",
+      "items": [
+        {
+          "titleEn": "AMD to Host Annual Meeting of Stockholders",
+          "titleZh": "AMD to Host Annual Meeting of Stockholders",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1285/amd-to-host-annual-meeting-of-stockholders",
+          "date": "2026-05-07"
+        },
+        {
+          "titleEn": "AMD Reports First Quarter 2026 Financial Results",
+          "titleZh": "AMD Reports First Quarter 2026 Financial Results",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results",
+          "date": "2026-05-05"
+        },
+        {
+          "titleEn": "AMD Announces “Advancing AI 2026”",
+          "titleZh": "AMD Announces “Advancing AI 2026”",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1283/amd-announces-advancing-ai-2026",
+          "date": "2026-04-28"
+        }
+      ]
+    },
+    {
+      "id": "tc-sam",
+      "labelEn": "Samsung Electronics",
+      "labelZh": "三星电子",
+      "items": [
+        {
+          "titleEn": "Samsung Expands AI Capabilities of Bespoke AI Refrigerator Family Hub With Major Updates",
+          "titleZh": "Samsung Expands AI Capabilities of Bespoke AI Refrigerator Family Hub With Major Updates",
+          "url": "https://news.samsung.com/global/samsung-expands-ai-capabilities-of-bespoke-ai-refrigerator-family-hub-with-major-updates",
+          "date": "2026-05-11"
+        },
+        {
+          "titleEn": "[Interview] When a Washer Becomes Furniture: Meet the Designers Behind the Red Dot Design Award 2026",
+          "titleZh": "[Interview] When a Washer Becomes Furniture: Meet the Designers Behind the Red Dot Design Award 2026",
+          "url": "https://news.samsung.com/global/interview-when-a-washer-becomes-furniture-meet-the-designers-behind-the-red-dot-design-award-2026",
+          "date": "2026-05-08"
+        },
+        {
+          "titleEn": "[Video] How Samsung’s Spatial Signage Transforms the Attraction Queue Into an Immersive Safari Experience at Everland",
+          "titleZh": "[Video] How Samsung’s Spatial Signage Transforms the Attraction Queue Into an Immersive Safari Experience at Everland",
+          "url": "https://news.samsung.com/global/video-how-samsungs-spatial-signage-transforms-the-attraction-queue-into-an-immersive-safari-experience-at-everland",
+          "date": "2026-05-08"
+        }
+      ]
+    },
+    {
+      "id": "tc-asml",
+      "labelEn": "ASML",
+      "labelZh": "ASML",
+      "items": [
+        {
+          "titleEn": "Q1 2026 financial results",
+          "titleZh": "2026 年一季度业绩",
+          "url": "https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results",
+          "date": "2026-04"
+        },
+        {
+          "titleEn": "2026 AGM results",
+          "titleZh": "2026 年度股东大会结果",
+          "url": "https://www.asml.com/en/news/press-releases/2026/asml-discloses-2026-agm-results",
+          "date": "2026-04"
+        },
+        {
+          "titleEn": "Engineering focus statement",
+          "titleZh": "强化工程与创新聚焦",
+          "url": "https://www.asml.com/en/news/press-releases/2026/strengthening-focus-on-engineering-and-innovation",
+          "date": "2026-01"
+        }
+      ]
+    },
+    {
+      "id": "tc-int",
+      "labelEn": "Intel",
+      "labelZh": "英特尔",
+      "items": [
+        {
+          "titleEn": "Intel Corporation to Participate in Upcoming Investor Conferences",
+          "titleZh": "Intel Corporation to Participate in Upcoming Investor Conferences",
+          "url": "https://newsroom.intel.com/corporate/intel-corporation-to-participate-in-upcoming-investor-conferences-may-2026",
+          "date": "2026-05-05"
+        },
+        {
+          "titleEn": "Intel at Computex 2026: Advancing the Next Era of AI-Driven Computing",
+          "titleZh": "Intel at Computex 2026: Advancing the Next Era of AI-Driven Computing",
+          "url": "https://newsroom.intel.com/client-computing/intel-at-computex-2026-the-next-era-of-ai-driven-computing",
+          "date": "2026-05-05"
+        },
+        {
+          "titleEn": "Intel Announces Leadership Appointments to Advance Client Computing and Enable Future Innovation",
+          "titleZh": "Intel Announces Leadership Appointments to Advance Client Computing and Enable Future Innovation",
+          "url": "https://newsroom.intel.com/corporate/intel-client-computing-and-innovation-leadership-news-may-2026",
+          "date": "2026-05-04"
+        }
+      ]
+    },
+    {
+      "id": "tc-qc",
+      "labelEn": "Qualcomm",
+      "labelZh": "高通",
+      "items": [
+        {
+          "titleEn": "Q1 fiscal 2026 results",
+          "titleZh": "2026 财年第一财季业绩",
+          "url": "https://www.qualcomm.com/news/releases/2026/02/qualcomm-announces-first-quarter-fiscal-2026-results",
+          "date": "2026-02"
+        },
+        {
+          "titleEn": "New Snapdragon mobile platforms",
+          "titleZh": "新一代骁龙移动平台",
+          "url": "https://www.qualcomm.com/news/releases/2026/05/qualcomm-unveils-two-new-snapdragon-mobile-platforms--delivering",
+          "date": "2026-05"
+        },
+        {
+          "titleEn": "Dividend increase & buyback",
+          "titleZh": "股息上调与回购授权",
+          "url": "https://www.qualcomm.com/news/releases/2026/03/qualcomm-increases-quarterly-cash-dividend-and-announces-new--20",
+          "date": "2026-03"
+        }
+      ]
+    },
+    {
+      "id": "tc-arm",
+      "labelEn": "ARM",
+      "labelZh": "ARM",
+      "items": [
+        {
+          "titleEn": "Scaling Agentic AI: Arm AGI CPU and Red Hat bring production-ready AI stack to empower agentic AI data centers",
+          "titleZh": "Scaling Agentic AI: Arm AGI CPU and Red Hat bring production-ready AI stack to empower agentic AI data centers",
+          "url": "https://newsroom.arm.com/blog/agentic-ai-infrastructure-arm-agi-cpu-red-hat",
+          "date": "2026-05-11"
+        },
+        {
+          "titleEn": "Arm’s vital role in the age of AI from cloud to edge: Five takeaways from the Moor Insights and Strategy report",
+          "titleZh": "Arm’s vital role in the age of AI from cloud to edge: Five takeaways from the Moor Insights and Strategy report",
+          "url": "https://newsroom.arm.com/blog/five-takeaways-from-the-moor-insights-and-strategy-report",
+          "date": "2026-05-07"
+        },
+        {
+          "titleEn": "What Arm-based innovations happened in April 2026?",
+          "titleZh": "What Arm-based innovations happened in April 2026?",
+          "url": "https://newsroom.arm.com/blog/arm-based-innovations-from-april-2026",
+          "date": "2026-05-01"
+        }
+      ]
+    },
+    {
+      "id": "tc-mtk",
+      "labelEn": "MediaTek",
+      "labelZh": "联发科",
+      "items": [
+        {
+          "titleEn": "Active Intelligent Cockpit",
+          "titleZh": "主动智能座舱方案",
+          "url": "https://www.mediatek.com/press-room/mediatek-showcases-its-active-intelligent-cockpit-solution-ushering-the-industry-into-new-era-of-ai-defined-vehicles",
+          "date": "2026-04"
+        },
+        {
+          "titleEn": "AOC collaboration with Microsoft Research",
+          "titleZh": "与微软研究院的 AOC 合作",
+          "url": "https://www.mediatek.com/press-room/mediatek-develops-active-optical-cable-technology-with-microsoft-research-to-deliver-significant-improvements-in-data-center-efficiency",
+          "date": "2026-03"
+        },
+        {
+          "titleEn": "MWC 2026 leadership showcase",
+          "titleZh": "MWC 2026 展示稿",
+          "url": "https://www.mediatek.com/press-room/mediatek-exemplifies-ai-and-connectivity-leadership-at-mwc-2026",
+          "date": "2026-03"
+        }
+      ]
+    }
   ],
   "more": [
-    { "nameEn": "Texas Instruments", "nameZh": "德州仪器", "url": "https://www.ti.com/", "domain": "ti.com" },
-    { "nameEn": "Micron", "nameZh": "美光", "url": "https://www.micron.com/", "domain": "micron.com" },
-    { "nameEn": "Applied Materials", "nameZh": "应用材料", "url": "https://www.appliedmaterials.com/", "domain": "appliedmaterials.com" },
-    { "nameEn": "Lam Research", "nameZh": "泛林", "url": "https://www.lamresearch.com/", "domain": "lamresearch.com" },
-    { "nameEn": "KLA", "nameZh": "科磊", "url": "https://www.kla.com/", "domain": "kla.com" },
-    { "nameEn": "Synopsys", "nameZh": "新思", "url": "https://www.synopsys.com/", "domain": "synopsys.com" },
-    { "nameEn": "Cadence", "nameZh": "楷登", "url": "https://www.cadence.com/", "domain": "cadence.com" },
-    { "nameEn": "GlobalFoundries", "nameZh": "格芯", "url": "https://www.globalfoundries.com/", "domain": "globalfoundries.com" },
-    { "nameEn": "UMC", "nameZh": "联电", "url": "https://www.umc.com/", "domain": "umc.com" },
-    { "nameEn": "SMIC", "nameZh": "中芯国际", "url": "https://www.smics.com/", "domain": "smics.com" },
-    { "nameEn": "Sony Semiconductor", "nameZh": "索尼半导体", "url": "https://www.sony-semicon.co.jp/", "domain": "sony-semicon.co.jp" },
-    { "nameEn": "STMicro", "nameZh": "意法半导体", "url": "https://www.st.com/", "domain": "st.com" },
-    { "nameEn": "NXP", "nameZh": "恩智浦", "url": "https://www.nxp.com/", "domain": "nxp.com" },
-    { "nameEn": "Infineon", "nameZh": "英飞凌", "url": "https://www.infineon.com/", "domain": "infineon.com" },
-    { "nameEn": "Renesas", "nameZh": "瑞萨", "url": "https://www.renesas.com/", "domain": "renesas.com" },
-    { "nameEn": "Western Digital", "nameZh": "西部数据", "url": "https://www.westerndigital.com/", "domain": "westerndigital.com" },
-    { "nameEn": "Seagate", "nameZh": "希捷", "url": "https://www.seagate.com/", "domain": "seagate.com" },
-    { "nameEn": "SK hynix", "nameZh": "SK 海力士", "url": "https://www.skhynix.com/", "domain": "skhynix.com" },
-    { "nameEn": "Foxconn / Hon Hai", "nameZh": "富士康", "url": "https://www.honhai.com/", "domain": "honhai.com" },
-    { "nameEn": "Lenovo", "nameZh": "联想", "url": "https://www.lenovo.com/", "domain": "lenovo.com" }
+    {
+      "nameEn": "Texas Instruments",
+      "nameZh": "德州仪器",
+      "url": "https://www.ti.com/",
+      "domain": "ti.com"
+    },
+    {
+      "nameEn": "Micron",
+      "nameZh": "美光",
+      "url": "https://www.micron.com/",
+      "domain": "micron.com"
+    },
+    {
+      "nameEn": "Applied Materials",
+      "nameZh": "应用材料",
+      "url": "https://www.appliedmaterials.com/",
+      "domain": "appliedmaterials.com"
+    },
+    {
+      "nameEn": "Lam Research",
+      "nameZh": "泛林",
+      "url": "https://www.lamresearch.com/",
+      "domain": "lamresearch.com"
+    },
+    {
+      "nameEn": "KLA",
+      "nameZh": "科磊",
+      "url": "https://www.kla.com/",
+      "domain": "kla.com"
+    },
+    {
+      "nameEn": "Synopsys",
+      "nameZh": "新思",
+      "url": "https://www.synopsys.com/",
+      "domain": "synopsys.com"
+    },
+    {
+      "nameEn": "Cadence",
+      "nameZh": "楷登",
+      "url": "https://www.cadence.com/",
+      "domain": "cadence.com"
+    },
+    {
+      "nameEn": "GlobalFoundries",
+      "nameZh": "格芯",
+      "url": "https://www.globalfoundries.com/",
+      "domain": "globalfoundries.com"
+    },
+    {
+      "nameEn": "UMC",
+      "nameZh": "联电",
+      "url": "https://www.umc.com/",
+      "domain": "umc.com"
+    },
+    {
+      "nameEn": "SMIC",
+      "nameZh": "中芯国际",
+      "url": "https://www.smics.com/",
+      "domain": "smics.com"
+    },
+    {
+      "nameEn": "Sony Semiconductor",
+      "nameZh": "索尼半导体",
+      "url": "https://www.sony-semicon.co.jp/",
+      "domain": "sony-semicon.co.jp"
+    },
+    {
+      "nameEn": "STMicro",
+      "nameZh": "意法半导体",
+      "url": "https://www.st.com/",
+      "domain": "st.com"
+    },
+    {
+      "nameEn": "NXP",
+      "nameZh": "恩智浦",
+      "url": "https://www.nxp.com/",
+      "domain": "nxp.com"
+    },
+    {
+      "nameEn": "Infineon",
+      "nameZh": "英飞凌",
+      "url": "https://www.infineon.com/",
+      "domain": "infineon.com"
+    },
+    {
+      "nameEn": "Renesas",
+      "nameZh": "瑞萨",
+      "url": "https://www.renesas.com/",
+      "domain": "renesas.com"
+    },
+    {
+      "nameEn": "Western Digital",
+      "nameZh": "西部数据",
+      "url": "https://www.westerndigital.com/",
+      "domain": "westerndigital.com"
+    },
+    {
+      "nameEn": "Seagate",
+      "nameZh": "希捷",
+      "url": "https://www.seagate.com/",
+      "domain": "seagate.com"
+    },
+    {
+      "nameEn": "SK hynix",
+      "nameZh": "SK 海力士",
+      "url": "https://www.skhynix.com/",
+      "domain": "skhynix.com"
+    },
+    {
+      "nameEn": "Foxconn / Hon Hai",
+      "nameZh": "富士康",
+      "url": "https://www.honhai.com/",
+      "domain": "honhai.com"
+    },
+    {
+      "nameEn": "Lenovo",
+      "nameZh": "联想",
+      "url": "https://www.lenovo.com/",
+      "domain": "lenovo.com"
+    }
   ]
 }

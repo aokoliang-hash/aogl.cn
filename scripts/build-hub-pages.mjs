@@ -437,7 +437,9 @@ ${footerLegal()}
 }
 
 function loadSpecs() {
-  const files = fs.readdirSync(HUB_DIR).filter((f) => f.endsWith(".json"));
+  const files = fs
+    .readdirSync(HUB_DIR)
+    .filter((f) => f.endsWith(".json") && f !== "news-feeds.json");
   return files.map((f) => {
     const spec = JSON.parse(fs.readFileSync(path.join(HUB_DIR, f), "utf8"));
     if (!spec.slug || !spec.outFile) throw new Error(`Invalid hub spec: ${f}`);
