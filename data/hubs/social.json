@@ -19,6 +19,188 @@
   "newsTitleZh": "热门与人气",
   "newsLeadEn": "Official hubs for what’s trending, charts, or creator programs — rankings refresh on each platform.",
   "newsLeadZh": "以下为各站公开的时下流行、榜单或创作者计划入口；具体账号与排行以各站实时页面为准。",
+  "hotMixTitleEn": "Hot reads — Meta, YouTube, Instagram & trade press (RSS)",
+  "hotMixTitleZh": "热门文章与人气 · 博主与视频线（自动 RSS）",
+  "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
+  "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
+  "hotMixItems": [
+    {
+      "titleEn": "TikTok launches an ad-free subscription plan in the UK",
+      "titleZh": "TikTok launches an ad-free subscription plan in the UK",
+      "url": "https://techcrunch.com/2026/05/11/tiktok-launches-an-ad-free-subscription-plan-in-the-uk/",
+      "date": "2026-05-11",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "Meta at The Cannes Film Festival 2026",
+      "titleZh": "Meta at The Cannes Film Festival 2026",
+      "url": "https://about.fb.com/news/2026/05/meta-at-the-cannes-film-festival-2026/",
+      "date": "2026-05-11",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/2026_CANNES_SIGNATURES_WEB_COULEUR-1_2560x1440.jpg?fit=960%2C540"
+    },
+    {
+      "titleEn": "Which AI Glasses Are Right For You?",
+      "titleZh": "Which AI Glasses Are Right For You?",
+      "url": "https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you/",
+      "date": "2026-05-08",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/Which-AI-Glasses-Are-Right-For-You_Thumbnail-1.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta’s Position on Canada’s Bill C-22",
+      "titleZh": "Meta’s Position on Canada’s Bill C-22",
+      "url": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22/",
+      "date": "2026-05-07",
+      "source": "Facebook / Meta",
+      "image": ""
+    },
+    {
+      "titleEn": "Snap says its $400M deal with Perplexity ‘amicably ended’",
+      "titleZh": "Snap says its $400M deal with Perplexity ‘amicably ended’",
+      "url": "https://techcrunch.com/2026/05/06/snap-says-its-400m-deal-with-perplexity-amicably-ended/",
+      "date": "2026-05-06",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "Meta will use AI to analyze height and bone structure to identify if users are underage",
+      "titleZh": "Meta will use AI to analyze height and bone structure to identify if users are underage",
+      "url": "https://techcrunch.com/2026/05/05/meta-will-use-ai-to-analyze-height-and-bone-structure-to-identify-if-users-are-underage/",
+      "date": "2026-05-05",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "New AI-Powered Age Assurance Measures to Place Teens in Age-Appropriate Experiences",
+      "titleZh": "New AI-Powered Age Assurance Measures to Place Teens in Age-Appropriate Experiences",
+      "url": "https://about.fb.com/news/2026/05/ai-age-assurance-teens/",
+      "date": "2026-05-05",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/AI-Age-Assurance_Thumbnail-1.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "How Meta Is Strengthening End-to-End Encrypted Backups",
+      "titleZh": "How Meta Is Strengthening End-to-End Encrypted Backups",
+      "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
+      "date": "2026-05-01",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/05/Over-the-Air-Fleet-Key-Distribution.png"
+    },
+    {
+      "titleEn": "TikTok’s new ‘Campus Hub’ features college group chats and feeds",
+      "titleZh": "TikTok’s new ‘Campus Hub’ features college group chats and feeds",
+      "url": "https://techcrunch.com/2026/04/30/tiktoks-new-campus-hub-features-college-group-chats-and-feeds/",
+      "date": "2026-04-30",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "Meta says its business AI now facilitates 10 million conversations a week",
+      "titleZh": "Meta says its business AI now facilitates 10 million conversations a week",
+      "url": "https://techcrunch.com/2026/04/30/meta-says-its-business-ai-now-facilitates-10-million-conversations-a-week/",
+      "date": "2026-04-30",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "Instagram cracks down on content aggregators",
+      "titleZh": "Instagram cracks down on content aggregators",
+      "url": "https://techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown/",
+      "date": "2026-04-30",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "Google gains 25M subscriptions in Q1, driven by YouTube and Google One",
+      "titleZh": "Google gains 25M subscriptions in Q1, driven by YouTube and Google One",
+      "url": "https://techcrunch.com/2026/04/29/google-gains-25m-subscriptions-in-q1-driven-by-youtube-and-google-one/",
+      "date": "2026-04-29",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "Enjoy new ways to create, search and stream on Google TV",
+      "titleZh": "Enjoy new ways to create, search and stream on Google TV",
+      "url": "https://blog.google/products-and-platforms/platforms/google-tv/enjoy-new-ways-to-create-search-and-stream-on-google-tv/",
+      "date": "2026-04-29",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Keyword_hero_image_-_dynamic_sl.max-600x600.format-webp.webp"
+    },
+    {
+      "titleEn": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
+      "titleZh": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
+      "url": "https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india/",
+      "date": "2026-04-29",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/04/Mobile-recharge-1.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Infrastructure Explained: Data Centers",
+      "titleZh": "Infrastructure Explained: Data Centers",
+      "url": "https://about.fb.com/news/2026/04/infrastructure-explained-meta-data-centers/",
+      "date": "2026-04-28",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/04/Infrastructure-Explained-Data-Centers_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Australia forces Big Tech firms to pay for news or face a 2.25% tax",
+      "titleZh": "Australia forces Big Tech firms to pay for news or face a 2.25% tax",
+      "url": "https://techcrunch.com/2026/04/28/australia-forces-big-tech-firms-to-pay-for-news-or-face-a-2-25-tax/",
+      "date": "2026-04-28",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "Snapchat brings AI-powered conversational advertising to its app",
+      "titleZh": "Snapchat brings AI-powered conversational advertising to its app",
+      "url": "https://techcrunch.com/2026/04/28/snapchat-brings-ai-powered-conversational-advertising-to-its-app/",
+      "date": "2026-04-28",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "YouTube is testing an AI-powered search feature that shows guided answers",
+      "titleZh": "YouTube is testing an AI-powered search feature that shows guided answers",
+      "url": "https://techcrunch.com/2026/04/28/youtube-is-testing-an-ai-powered-search-feature-that-shows-guided-answers/",
+      "date": "2026-04-28",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "Consumers lost $2.1B to social media scams in 2025, FTC reports",
+      "titleZh": "Consumers lost $2.1B to social media scams in 2025, FTC reports",
+      "url": "https://techcrunch.com/2026/04/27/consumers-lost-2-1-billion-to-social-media-scams-in-2025-ftc-reports/",
+      "date": "2026-04-27",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "Powering AI, Strengthening the Grid: Innovation in Space Solar Energy and Long-Duration Storage",
+      "titleZh": "Powering AI, Strengthening the Grid: Innovation in Space Solar Energy and Long-Duration Storage",
+      "url": "https://about.fb.com/news/2026/04/powering-ai-strengthening-the-grid-space-solar-energy-and-long-duration-storage/",
+      "date": "2026-04-27",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/04/Innovative-Energy-Solutions_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta Partners With AWS on Graviton Chips to Power Agentic AI",
+      "titleZh": "Meta Partners With AWS on Graviton Chips to Power Agentic AI",
+      "url": "https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-agentic-ai/",
+      "date": "2026-04-24",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/04/Partnership-Announcement_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Instagram tests a new ‘Instants’ app for sharing disappearing photos",
+      "titleZh": "Instagram tests a new ‘Instants’ app for sharing disappearing photos",
+      "url": "https://techcrunch.com/2026/04/23/instagram-tests-a-new-instants-app-for-sharing-disappearing-photos/",
+      "date": "2026-04-23",
+      "source": "TechCrunch",
+      "image": ""
+    }
+  ],
   "moreTitleEn": "More social networks",
   "moreTitleZh": "更多社交平台",
   "moreLeadEn": "",

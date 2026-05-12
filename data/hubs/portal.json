@@ -19,8 +19,8 @@
   "newsTitleZh": "最新动态",
   "newsLeadEn": "",
   "newsLeadZh": "",
-  "moreTitleEn": "Regional & China portals",
-  "moreTitleZh": "中文与其它地区门户",
+  "moreTitleEn": "Global regional portals",
+  "moreTitleZh": "全球地区门户",
   "moreLeadEn": "",
   "moreLeadZh": "",
   "searchTags": [
@@ -133,6 +133,58 @@
           "url": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
           "date": "2026-05-06"
         }
+      ],
+      "hotSearchPills": [
+        {
+          "q": "ChatGPT 使用教程",
+          "labelEn": "ChatGPT tutorial",
+          "labelZh": "ChatGPT 使用教程"
+        },
+        {
+          "q": "Claude 大模型 API",
+          "labelEn": "Claude API docs",
+          "labelZh": "Claude 大模型"
+        },
+        {
+          "q": "Google Gemini 多模态",
+          "labelEn": "Google Gemini multimodal",
+          "labelZh": "谷歌 Gemini 多模态"
+        },
+        {
+          "q": "OpenAI API 文档",
+          "labelEn": "OpenAI API documentation",
+          "labelZh": "OpenAI API 文档"
+        },
+        {
+          "q": "Cursor AI 编程",
+          "labelEn": "Cursor AI editor",
+          "labelZh": "Cursor AI 编程"
+        },
+        {
+          "q": "Midjourney 订阅",
+          "labelEn": "Midjourney subscription",
+          "labelZh": "Midjourney 订阅"
+        },
+        {
+          "q": "大模型微调 LoRA",
+          "labelEn": "LLM fine-tuning LoRA",
+          "labelZh": "大模型微调 LoRA"
+        },
+        {
+          "q": "向量数据库 RAG",
+          "labelEn": "vector database RAG",
+          "labelZh": "向量数据库 RAG"
+        },
+        {
+          "q": "Similarweb 网站排名",
+          "labelEn": "Similarweb website ranking",
+          "labelZh": "Similarweb 网站排名"
+        },
+        {
+          "q": "Cloudflare Radar 全球流量",
+          "labelEn": "Cloudflare Radar traffic",
+          "labelZh": "Cloudflare Radar 流量"
+        }
       ]
     },
     {
@@ -157,6 +209,78 @@
           "titleZh": "Here’s how to watch Coachella on YouTube.",
           "url": "https://blog.google/products-and-platforms/products/youtube/watch-coachella-live-on-youtube/",
           "date": "2026-04-02"
+        }
+      ],
+      "hotSearchPills": [
+        {
+          "searchEngine": "youtube",
+          "q": "MrBeast latest video",
+          "labelEn": "MrBeast",
+          "labelZh": "MrBeast 最新"
+        },
+        {
+          "searchEngine": "youtube",
+          "q": "MKBHD review",
+          "labelEn": "MKBHD",
+          "labelZh": "MKBHD 评测"
+        },
+        {
+          "searchEngine": "youtube",
+          "q": "TED Talk 2026",
+          "labelEn": "TED Talks",
+          "labelZh": "TED 演讲"
+        },
+        {
+          "searchEngine": "youtube",
+          "q": "lofi hip hop live stream",
+          "labelEn": "Lo-fi study live",
+          "labelZh": "Lo-fi 自习直播"
+        },
+        {
+          "searchEngine": "youtube",
+          "q": "Champions League highlights",
+          "labelEn": "UCL highlights",
+          "labelZh": "欧冠集锦"
+        },
+        {
+          "searchEngine": "youtube",
+          "q": "iPhone review",
+          "labelEn": "iPhone reviews",
+          "labelZh": "iPhone 测评"
+        },
+        {
+          "searchEngine": "youtube",
+          "q": "Google I/O keynote",
+          "labelEn": "Google I/O",
+          "labelZh": "Google I/O 主题演讲"
+        },
+        {
+          "searchEngine": "youtube",
+          "q": "OpenAI DevDay",
+          "labelEn": "OpenAI DevDay",
+          "labelZh": "OpenAI DevDay"
+        },
+        {
+          "searchEngine": "youtube",
+          "q": "ASMR sleep",
+          "labelEn": "ASMR sleep",
+          "labelZh": "ASMR 助眠"
+        },
+        {
+          "searchEngine": "youtube",
+          "q": "K-pop MV trending",
+          "labelEn": "K-pop MV",
+          "labelZh": "K-pop 热门 MV"
+        },
+        {
+          "url": "https://www.youtube.com/feed/trending",
+          "labelEn": "Trending (high views)",
+          "labelZh": "时下流行 · 高播放视频"
+        },
+        {
+          "url": "https://www.youtube.com/trends/",
+          "labelEn": "YouTube Trends & creators",
+          "labelZh": "官方趋势 · 热门创作者"
         }
       ]
     },
@@ -183,6 +307,78 @@
           "url": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22/",
           "date": "2026-05-07"
         }
+      ],
+      "hotSearchPills": [
+        {
+          "searchEngine": "facebook",
+          "q": "Meta AI",
+          "labelEn": "Meta AI",
+          "labelZh": "Meta AI"
+        },
+        {
+          "searchEngine": "facebook",
+          "q": "Ray-Ban Meta glasses",
+          "labelEn": "Ray-Ban Meta",
+          "labelZh": "Ray-Ban Meta 眼镜"
+        },
+        {
+          "searchEngine": "facebook",
+          "q": "Instagram Reels",
+          "labelEn": "Instagram Reels",
+          "labelZh": "Instagram Reels"
+        },
+        {
+          "searchEngine": "facebook",
+          "q": "Threads app",
+          "labelEn": "Threads",
+          "labelZh": "Threads"
+        },
+        {
+          "searchEngine": "facebook",
+          "q": "Meta Quest VR",
+          "labelEn": "Meta Quest",
+          "labelZh": "Meta Quest VR"
+        },
+        {
+          "searchEngine": "facebook",
+          "q": "WhatsApp Channels",
+          "labelEn": "WhatsApp Channels",
+          "labelZh": "WhatsApp 频道"
+        },
+        {
+          "searchEngine": "facebook",
+          "q": "Facebook Marketplace",
+          "labelEn": "Marketplace",
+          "labelZh": "Facebook Marketplace"
+        },
+        {
+          "searchEngine": "facebook",
+          "q": "Meta Connect",
+          "labelEn": "Meta Connect",
+          "labelZh": "Meta Connect"
+        },
+        {
+          "searchEngine": "facebook",
+          "q": "Llama open source AI",
+          "labelEn": "Llama AI",
+          "labelZh": "Llama 开源大模型"
+        },
+        {
+          "searchEngine": "facebook",
+          "q": "Meta transparency report",
+          "labelEn": "Transparency",
+          "labelZh": "透明度报告"
+        },
+        {
+          "url": "https://about.fb.com/news/",
+          "labelEn": "Newsroom — latest posts",
+          "labelZh": "官方新闻 · 近期热门博文"
+        },
+        {
+          "url": "https://engineering.fb.com/",
+          "labelEn": "Engineering blog",
+          "labelZh": "工程博客 · 技术热文"
+        }
       ]
     },
     {
@@ -207,6 +403,73 @@
           "titleZh": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
           "url": "https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/",
           "date": "2026-04-21"
+        }
+      ],
+      "hotSearchPills": [
+        {
+          "url": "https://www.instagram.com/instagram/",
+          "labelEn": "@instagram",
+          "labelZh": "官方 @instagram"
+        },
+        {
+          "url": "https://www.instagram.com/cristiano/",
+          "labelEn": "@cristiano",
+          "labelZh": "C 罗"
+        },
+        {
+          "url": "https://www.instagram.com/leomessi/",
+          "labelEn": "@leomessi",
+          "labelZh": "梅西"
+        },
+        {
+          "url": "https://www.instagram.com/selenagomez/",
+          "labelEn": "@selenagomez",
+          "labelZh": "Selena Gomez"
+        },
+        {
+          "url": "https://www.instagram.com/kyliejenner/",
+          "labelEn": "@kyliejenner",
+          "labelZh": "Kylie Jenner"
+        },
+        {
+          "url": "https://www.instagram.com/therock/",
+          "labelEn": "@therock",
+          "labelZh": "巨石强森"
+        },
+        {
+          "url": "https://www.instagram.com/natgeo/",
+          "labelEn": "@natgeo",
+          "labelZh": "国家地理"
+        },
+        {
+          "url": "https://www.instagram.com/nike/",
+          "labelEn": "@nike",
+          "labelZh": "Nike"
+        },
+        {
+          "url": "https://www.instagram.com/kimkardashian/",
+          "labelEn": "@kimkardashian",
+          "labelZh": "Kim Kardashian"
+        },
+        {
+          "url": "https://www.instagram.com/beyonce/",
+          "labelEn": "@beyonce",
+          "labelZh": "Beyoncé"
+        },
+        {
+          "url": "https://about.instagram.com/blog/",
+          "labelEn": "Instagram Blog — latest",
+          "labelZh": "官方博客 · 近期文章"
+        },
+        {
+          "url": "https://www.instagram.com/popular/",
+          "labelEn": "Popular — trending posts",
+          "labelZh": "Popular · 站内热门内容"
+        },
+        {
+          "url": "https://www.instagram.com/reels/",
+          "labelEn": "Reels — trending clips",
+          "labelZh": "Reels · 热门短视频"
         }
       ]
     },
@@ -233,6 +496,68 @@
           "url": "https://techcrunch.com/2026/04/09/x-brings-back-voice-notes-to-x-chat/",
           "date": "2026-04-09"
         }
+      ],
+      "hotSearchPills": [
+        {
+          "url": "https://x.com/X",
+          "labelEn": "@X",
+          "labelZh": "官方 @X"
+        },
+        {
+          "url": "https://x.com/elonmusk",
+          "labelEn": "@elonmusk",
+          "labelZh": "Elon Musk"
+        },
+        {
+          "url": "https://x.com/NASA",
+          "labelEn": "@NASA",
+          "labelZh": "NASA"
+        },
+        {
+          "url": "https://x.com/WhiteHouse",
+          "labelEn": "@WhiteHouse",
+          "labelZh": "白宫"
+        },
+        {
+          "url": "https://x.com/BBCBreaking",
+          "labelEn": "@BBCBreaking",
+          "labelZh": "BBC Breaking"
+        },
+        {
+          "url": "https://x.com/Reuters",
+          "labelEn": "@Reuters",
+          "labelZh": "路透社"
+        },
+        {
+          "url": "https://x.com/OpenAI",
+          "labelEn": "@OpenAI",
+          "labelZh": "OpenAI"
+        },
+        {
+          "url": "https://x.com/Google",
+          "labelEn": "@Google",
+          "labelZh": "Google"
+        },
+        {
+          "url": "https://x.com/nytimes",
+          "labelEn": "@nytimes",
+          "labelZh": "纽约时报"
+        },
+        {
+          "url": "https://x.com/ESPN",
+          "labelEn": "@ESPN",
+          "labelZh": "ESPN"
+        },
+        {
+          "url": "https://x.com/explore",
+          "labelEn": "Explore — trends & topics",
+          "labelZh": "发现 · 热门趋势与话题"
+        },
+        {
+          "url": "https://developer.x.com/en/blog",
+          "labelEn": "Developer blog — product news",
+          "labelZh": "官方博客 · 产品与平台动态"
+        }
       ]
     },
     {
@@ -257,6 +582,78 @@
           "titleZh": "Technical tinkering for CommonsDB at the Wikimedia Hackathon",
           "url": "https://diff.wikimedia.org/2026/05/11/technical-tinkering-for-commonsdb-at-the-wikimedia-hackathon/",
           "date": "2026-05-11"
+        }
+      ],
+      "hotSearchPills": [
+        {
+          "searchEngine": "wikipedia",
+          "q": "Artificial intelligence",
+          "labelEn": "Artificial intelligence",
+          "labelZh": "人工智能"
+        },
+        {
+          "searchEngine": "wikipedia",
+          "q": "Climate change",
+          "labelEn": "Climate change",
+          "labelZh": "气候变化"
+        },
+        {
+          "searchEngine": "wikipedia",
+          "q": "World War II",
+          "labelEn": "World War II",
+          "labelZh": "第二次世界大战"
+        },
+        {
+          "searchEngine": "wikipedia",
+          "q": "COVID-19 pandemic",
+          "labelEn": "COVID-19 pandemic",
+          "labelZh": "2019冠状病毒病疫情"
+        },
+        {
+          "searchEngine": "wikipedia",
+          "q": "Python (programming language)",
+          "labelEn": "Python (programming)",
+          "labelZh": "Python 编程语言"
+        },
+        {
+          "searchEngine": "wikipedia",
+          "q": "Taylor Swift",
+          "labelEn": "Taylor Swift",
+          "labelZh": "泰勒·斯威夫特"
+        },
+        {
+          "searchEngine": "wikipedia",
+          "q": "Elon Musk",
+          "labelEn": "Elon Musk",
+          "labelZh": "埃隆·马斯克"
+        },
+        {
+          "searchEngine": "wikipedia",
+          "q": "Quantum computing",
+          "labelEn": "Quantum computing",
+          "labelZh": "量子计算"
+        },
+        {
+          "searchEngine": "wikipedia",
+          "q": "Large language model",
+          "labelEn": "Large language model",
+          "labelZh": "大语言模型"
+        },
+        {
+          "searchEngine": "wikipedia",
+          "q": "Olympic Games",
+          "labelEn": "Olympic Games",
+          "labelZh": "奥林匹克运动会"
+        },
+        {
+          "url": "https://pageviews.wmcloud.org/top/?project=en.wikipedia.org",
+          "labelEn": "Most-read (en) — Pageviews",
+          "labelZh": "英文维基 · 近期浏览量排行"
+        },
+        {
+          "url": "https://pageviews.wmcloud.org/top/?project=zh.wikipedia.org",
+          "labelEn": "Most-read (zh) — Pageviews",
+          "labelZh": "中文维基 · 近期浏览量排行"
         }
       ]
     },
@@ -283,6 +680,68 @@
           "url": "https://techcrunch.com/2026/03/25/reddit-bots-new-human-verification-requirements/",
           "date": "2026-03-25"
         }
+      ],
+      "hotSearchPills": [
+        {
+          "searchEngine": "reddit",
+          "q": "AskReddit",
+          "labelEn": "AskReddit",
+          "labelZh": "AskReddit"
+        },
+        {
+          "searchEngine": "reddit",
+          "q": "technology",
+          "labelEn": "r/technology",
+          "labelZh": "科技 technology"
+        },
+        {
+          "searchEngine": "reddit",
+          "q": "worldnews",
+          "labelEn": "r/worldnews",
+          "labelZh": "国际新闻"
+        },
+        {
+          "searchEngine": "reddit",
+          "q": "gaming",
+          "labelEn": "r/gaming",
+          "labelZh": "游戏 gaming"
+        },
+        {
+          "searchEngine": "reddit",
+          "q": "todayilearned",
+          "labelEn": "Today I Learned",
+          "labelZh": "TIL 冷知识"
+        },
+        {
+          "searchEngine": "reddit",
+          "q": "movies",
+          "labelEn": "r/movies",
+          "labelZh": "电影"
+        },
+        {
+          "searchEngine": "reddit",
+          "q": "science",
+          "labelEn": "r/science",
+          "labelZh": "科学"
+        },
+        {
+          "searchEngine": "reddit",
+          "q": "programming",
+          "labelEn": "r/programming",
+          "labelZh": "编程"
+        },
+        {
+          "searchEngine": "reddit",
+          "q": "explainlikeimfive",
+          "labelEn": "ELI5",
+          "labelZh": "通俗解释 ELI5"
+        },
+        {
+          "searchEngine": "reddit",
+          "q": "sports",
+          "labelEn": "r/sports",
+          "labelZh": "体育"
+        }
       ]
     },
     {
@@ -291,22 +750,94 @@
       "labelZh": "亚马逊",
       "items": [
         {
+          "titleEn": "5 ways to get fresh groceries delivered from Amazon",
+          "titleZh": "5 ways to get fresh groceries delivered from Amazon",
+          "url": "https://www.aboutamazon.com/news/retail/how-to-order-groceries-amazon?utm_source=rss",
+          "date": "2026-05-12"
+        },
+        {
+          "titleEn": "Amazon rolls out 30-minute delivery on thousands of groceries and essentials",
+          "titleZh": "Amazon rolls out 30-minute delivery on thousands of groceries and essentials",
+          "url": "https://www.aboutamazon.com/news/retail/amazon-now-30-minute-delivery?utm_source=rss",
+          "date": "2026-05-12"
+        },
+        {
           "titleEn": "Amazon in the community: Service, community, and commitment at HQ2",
           "titleZh": "Amazon in the community: Service, community, and commitment at HQ2",
           "url": "https://www.aboutamazon.com/news/community/amazon-arlington-virginia-news?utm_source=rss",
           "date": "2026-05-12"
+        }
+      ],
+      "hotSearchPills": [
+        {
+          "searchEngine": "amazon",
+          "q": "AirPods Pro",
+          "labelEn": "AirPods Pro",
+          "labelZh": "AirPods Pro"
         },
         {
-          "titleEn": "Everything to know about the 'Fourth Wing' series coming to Prime Video",
-          "titleZh": "Everything to know about the 'Fourth Wing' series coming to Prime Video",
-          "url": "https://www.aboutamazon.com/news/entertainment/fourth-wing-series-prime-video?utm_source=rss",
-          "date": "2026-05-11"
+          "searchEngine": "amazon",
+          "q": "Nintendo Switch 2",
+          "labelEn": "Nintendo Switch 2",
+          "labelZh": "任天堂 Switch 2"
         },
         {
-          "titleEn": "'Jury Duty' renewed for a third season on Prime Video",
-          "titleZh": "'Jury Duty' renewed for a third season on Prime Video",
-          "url": "https://www.aboutamazon.com/news/entertainment/jury-duty-prime-video-how-to-watch?utm_source=rss",
-          "date": "2026-05-11"
+          "searchEngine": "amazon",
+          "q": "Kindle Paperwhite",
+          "labelEn": "Kindle Paperwhite",
+          "labelZh": "Kindle Paperwhite"
+        },
+        {
+          "searchEngine": "amazon",
+          "q": "Instant Pot",
+          "labelEn": "Instant Pot",
+          "labelZh": "Instant Pot 电压力锅"
+        },
+        {
+          "searchEngine": "amazon",
+          "q": "robot vacuum",
+          "labelEn": "Robot vacuum",
+          "labelZh": "扫地机器人"
+        },
+        {
+          "searchEngine": "amazon",
+          "q": "USB-C hub",
+          "labelEn": "USB-C hub",
+          "labelZh": "USB-C 扩展坞"
+        },
+        {
+          "searchEngine": "amazon",
+          "q": "standing desk",
+          "labelEn": "Standing desk",
+          "labelZh": "升降桌"
+        },
+        {
+          "searchEngine": "amazon",
+          "q": "wireless earbuds",
+          "labelEn": "Wireless earbuds",
+          "labelZh": "无线耳机"
+        },
+        {
+          "searchEngine": "amazon",
+          "q": "laptop stand",
+          "labelEn": "Laptop stand",
+          "labelZh": "笔记本支架"
+        },
+        {
+          "searchEngine": "amazon",
+          "q": "portable charger",
+          "labelEn": "Portable charger",
+          "labelZh": "移动电源"
+        },
+        {
+          "url": "https://www.amazon.com/gp/bestsellers/",
+          "labelEn": "Best Sellers",
+          "labelZh": "畅销榜 · 高搜索品类"
+        },
+        {
+          "url": "https://www.amazon.com/gp/movers-and-shakers/",
+          "labelEn": "Movers & Shakers",
+          "labelZh": "飙升榜 · 近期热度上升"
         }
       ]
     },
@@ -333,6 +864,68 @@
           "url": "https://sports.yahoo.com/",
           "date": "Rolling"
         }
+      ],
+      "hotSearchPills": [
+        {
+          "searchEngine": "yahoo",
+          "q": "Yahoo Finance stock market",
+          "labelEn": "Yahoo Finance",
+          "labelZh": "Yahoo 财经"
+        },
+        {
+          "searchEngine": "yahoo",
+          "q": "Yahoo Mail sign in",
+          "labelEn": "Yahoo Mail",
+          "labelZh": "Yahoo 邮箱"
+        },
+        {
+          "searchEngine": "yahoo",
+          "q": "Yahoo Sports NFL",
+          "labelEn": "NFL on Yahoo Sports",
+          "labelZh": "NFL 赛况"
+        },
+        {
+          "searchEngine": "yahoo",
+          "q": "Yahoo Weather forecast",
+          "labelEn": "Yahoo Weather",
+          "labelZh": "天气预报"
+        },
+        {
+          "searchEngine": "yahoo",
+          "q": "Yahoo Fantasy Football",
+          "labelEn": "Fantasy Football",
+          "labelZh": "范特西橄榄球"
+        },
+        {
+          "searchEngine": "yahoo",
+          "q": "Yahoo News breaking",
+          "labelEn": "Breaking news",
+          "labelZh": "突发新闻"
+        },
+        {
+          "searchEngine": "yahoo",
+          "q": "Yahoo Finance cryptocurrency",
+          "labelEn": "Crypto markets",
+          "labelZh": "加密货币行情"
+        },
+        {
+          "searchEngine": "yahoo",
+          "q": "Yahoo Sports NBA",
+          "labelEn": "NBA scores",
+          "labelZh": "NBA 比分"
+        },
+        {
+          "searchEngine": "yahoo",
+          "q": "Yahoo Shopping deals",
+          "labelEn": "Shopping deals",
+          "labelZh": "购物优惠"
+        },
+        {
+          "searchEngine": "yahoo",
+          "q": "Yahoo Entertainment",
+          "labelEn": "Entertainment",
+          "labelZh": "娱乐资讯"
+        }
       ]
     },
     {
@@ -358,189 +951,257 @@
           "url": "https://www.whatsapp.com/security",
           "date": "Rolling"
         }
+      ],
+      "hotSearchPills": [
+        {
+          "searchEngine": "whatsapp",
+          "q": "Channels how to",
+          "labelEn": "Channels",
+          "labelZh": "频道 Channels"
+        },
+        {
+          "searchEngine": "whatsapp",
+          "q": "chat backup restore",
+          "labelEn": "Chat backup",
+          "labelZh": "聊天记录备份"
+        },
+        {
+          "searchEngine": "whatsapp",
+          "q": "end-to-end encryption",
+          "labelEn": "Encryption",
+          "labelZh": "端到端加密"
+        },
+        {
+          "searchEngine": "whatsapp",
+          "q": "Business API",
+          "labelEn": "WhatsApp Business",
+          "labelZh": "商业版 / API"
+        },
+        {
+          "searchEngine": "whatsapp",
+          "q": "Web desktop QR code",
+          "labelEn": "WhatsApp Web",
+          "labelZh": "网页版 / 扫码登录"
+        },
+        {
+          "searchEngine": "whatsapp",
+          "q": "disappearing messages",
+          "labelEn": "Disappearing messages",
+          "labelZh": "限时消息"
+        },
+        {
+          "searchEngine": "whatsapp",
+          "q": "voice and video call",
+          "labelEn": "Voice & video calls",
+          "labelZh": "语音与视频通话"
+        },
+        {
+          "searchEngine": "whatsapp",
+          "q": "two-step verification",
+          "labelEn": "Two-step verification",
+          "labelZh": "两步验证"
+        },
+        {
+          "searchEngine": "whatsapp",
+          "q": "group admin settings",
+          "labelEn": "Group admin",
+          "labelZh": "群管理员设置"
+        },
+        {
+          "searchEngine": "whatsapp",
+          "q": "privacy settings blocked",
+          "labelEn": "Privacy & block",
+          "labelZh": "隐私与拉黑"
+        }
       ]
     }
   ],
   "more": [
     {
-      "nameEn": "Sina",
-      "nameZh": "新浪",
-      "url": "https://www.sina.com.cn/",
-      "domain": "sina.com.cn"
+      "nameEn": "BBC News",
+      "nameZh": "BBC 新闻",
+      "url": "https://www.bbc.com/news",
+      "domain": "bbc.com"
     },
     {
-      "nameEn": "NetEase",
-      "nameZh": "网易",
-      "url": "https://www.163.com/",
-      "domain": "163.com"
+      "nameEn": "CNN",
+      "nameZh": "CNN",
+      "url": "https://www.cnn.com/",
+      "domain": "cnn.com"
     },
     {
-      "nameEn": "Sohu",
-      "nameZh": "搜狐",
-      "url": "https://www.sohu.com/",
-      "domain": "sohu.com"
+      "nameEn": "The New York Times",
+      "nameZh": "纽约时报",
+      "url": "https://www.nytimes.com/",
+      "domain": "nytimes.com"
     },
     {
-      "nameEn": "QQ.com",
-      "nameZh": "腾讯网",
-      "url": "https://www.qq.com/",
-      "domain": "qq.com"
+      "nameEn": "Reuters",
+      "nameZh": "路透社",
+      "url": "https://www.reuters.com/",
+      "domain": "reuters.com"
     },
     {
-      "nameEn": "ifeng",
-      "nameZh": "凤凰网",
-      "url": "https://www.ifeng.com/",
-      "domain": "ifeng.com"
+      "nameEn": "AP News",
+      "nameZh": "美联社",
+      "url": "https://apnews.com/",
+      "domain": "apnews.com"
     },
     {
-      "nameEn": "People's Daily Online",
-      "nameZh": "人民网",
-      "url": "http://www.people.com.cn/",
-      "domain": "people.com.cn"
+      "nameEn": "The Guardian",
+      "nameZh": "卫报",
+      "url": "https://www.theguardian.com/",
+      "domain": "theguardian.com"
     },
     {
-      "nameEn": "Xinhuanet",
-      "nameZh": "新华网",
-      "url": "https://www.news.cn/",
-      "domain": "news.cn"
+      "nameEn": "The Washington Post",
+      "nameZh": "华盛顿邮报",
+      "url": "https://www.washingtonpost.com/",
+      "domain": "washingtonpost.com"
     },
     {
-      "nameEn": "CCTV.com",
-      "nameZh": "央视网",
-      "url": "https://www.cctv.com/",
-      "domain": "cctv.com"
+      "nameEn": "Bloomberg",
+      "nameZh": "彭博",
+      "url": "https://www.bloomberg.com/",
+      "domain": "bloomberg.com"
     },
     {
-      "nameEn": "Baidu",
-      "nameZh": "百度",
-      "url": "https://www.baidu.com/",
-      "domain": "baidu.com"
+      "nameEn": "NPR",
+      "nameZh": "美国国家公共电台",
+      "url": "https://www.npr.org/",
+      "domain": "npr.org"
     },
     {
-      "nameEn": "Toutiao",
-      "nameZh": "今日头条",
-      "url": "https://www.toutiao.com/",
-      "domain": "toutiao.com"
+      "nameEn": "Al Jazeera",
+      "nameZh": "半岛电视台",
+      "url": "https://www.aljazeera.com/",
+      "domain": "aljazeera.com"
     },
     {
-      "nameEn": "The Paper",
-      "nameZh": "澎湃新闻",
-      "url": "https://www.thepaper.cn/",
-      "domain": "thepaper.cn"
+      "nameEn": "France 24",
+      "nameZh": "法兰西24",
+      "url": "https://www.france24.com/en/",
+      "domain": "france24.com"
     },
     {
-      "nameEn": "Caixin",
-      "nameZh": "财新网",
-      "url": "https://www.caixin.com/",
-      "domain": "caixin.com"
+      "nameEn": "Deutsche Welle",
+      "nameZh": "德国之声",
+      "url": "https://www.dw.com/en/",
+      "domain": "dw.com"
     },
     {
-      "nameEn": "Yicai",
-      "nameZh": "第一财经",
-      "url": "https://www.yicai.com/",
-      "domain": "yicai.com"
+      "nameEn": "Nikkei Asia",
+      "nameZh": "日经亚洲",
+      "url": "https://asia.nikkei.com/",
+      "domain": "nikkei.com"
     },
     {
-      "nameEn": "21jingji",
-      "nameZh": "21财经",
-      "url": "https://www.21jingji.com/",
-      "domain": "21jingji.com"
+      "nameEn": "The Japan Times",
+      "nameZh": "日本时报",
+      "url": "https://www.japantimes.co.jp/",
+      "domain": "japantimes.co.jp"
     },
     {
-      "nameEn": "Eastday",
-      "nameZh": "东方网",
-      "url": "https://www.eastday.com/",
-      "domain": "eastday.com"
+      "nameEn": "South China Morning Post",
+      "nameZh": "南华早报",
+      "url": "https://www.scmp.com/",
+      "domain": "scmp.com"
     },
     {
-      "nameEn": "Rednet",
-      "nameZh": "红网",
-      "url": "https://www.rednet.cn/",
-      "domain": "rednet.cn"
+      "nameEn": "The Straits Times",
+      "nameZh": "海峡时报",
+      "url": "https://www.straitstimes.com/",
+      "domain": "straitstimes.com"
     },
     {
-      "nameEn": "Hexun",
-      "nameZh": "和讯",
-      "url": "https://www.hexun.com/",
-      "domain": "hexun.com"
+      "nameEn": "ABC News (Australia)",
+      "nameZh": "澳大利亚广播公司新闻",
+      "url": "https://www.abc.net.au/news",
+      "domain": "abc.net.au"
     },
     {
-      "nameEn": "East Money",
-      "nameZh": "东方财富",
-      "url": "https://www.eastmoney.com/",
-      "domain": "eastmoney.com"
+      "nameEn": "CBC News",
+      "nameZh": "加拿大广播公司新闻",
+      "url": "https://www.cbc.ca/news",
+      "domain": "cbc.ca"
     },
     {
-      "nameEn": "36Kr",
-      "nameZh": "36氪",
-      "url": "https://www.36kr.com/",
-      "domain": "36kr.com"
+      "nameEn": "The Economist",
+      "nameZh": "经济学人",
+      "url": "https://www.economist.com/",
+      "domain": "economist.com"
     },
     {
-      "nameEn": "Huxiu",
-      "nameZh": "虎嗅",
-      "url": "https://www.huxiu.com/",
-      "domain": "huxiu.com"
+      "nameEn": "Politico",
+      "nameZh": "Politico",
+      "url": "https://www.politico.com/",
+      "domain": "politico.com"
     },
     {
-      "nameEn": "Guokr",
-      "nameZh": "果壳",
-      "url": "https://www.guokr.com/",
-      "domain": "guokr.com"
+      "nameEn": "Axios",
+      "nameZh": "Axios",
+      "url": "https://www.axios.com/",
+      "domain": "axios.com"
     },
     {
-      "nameEn": "China News",
-      "nameZh": "中国新闻网",
-      "url": "https://www.chinanews.com.cn/",
-      "domain": "chinanews.com.cn"
+      "nameEn": "The Times of India",
+      "nameZh": "印度时报",
+      "url": "https://timesofindia.indiatimes.com/",
+      "domain": "indiatimes.com"
     },
     {
-      "nameEn": "GMW",
-      "nameZh": "光明网",
-      "url": "https://www.gmw.cn/",
-      "domain": "gmw.cn"
+      "nameEn": "Yonhap News Agency",
+      "nameZh": "韩联社",
+      "url": "https://en.yna.co.kr/",
+      "domain": "yna.co.kr"
     },
     {
-      "nameEn": "CE.cn",
-      "nameZh": "中国经济网",
-      "url": "http://www.ce.cn/",
-      "domain": "ce.cn"
+      "nameEn": "CNA",
+      "nameZh": "亚洲新闻台",
+      "url": "https://www.channelnewsasia.com/",
+      "domain": "channelnewsasia.com"
     },
     {
-      "nameEn": "CNR",
-      "nameZh": "央广网",
-      "url": "https://www.cnr.cn/",
-      "domain": "cnr.cn"
+      "nameEn": "El País (English)",
+      "nameZh": "国家报（英文）",
+      "url": "https://english.elpais.com/",
+      "domain": "elpais.com"
     },
     {
-      "nameEn": "China.com",
-      "nameZh": "中华网",
-      "url": "https://www.china.com/",
-      "domain": "china.com"
+      "nameEn": "DER SPIEGEL (English)",
+      "nameZh": "明镜周刊（英文）",
+      "url": "https://www.spiegel.de/international/",
+      "domain": "spiegel.de"
     },
     {
-      "nameEn": "Tiexue",
-      "nameZh": "铁血网",
-      "url": "https://www.tiexue.net/",
-      "domain": "tiexue.net"
+      "nameEn": "UN News",
+      "nameZh": "联合国新闻",
+      "url": "https://news.un.org/en",
+      "domain": "un.org"
     },
     {
-      "nameEn": "Guancha",
-      "nameZh": "观察者网",
-      "url": "https://www.guancha.cn/",
-      "domain": "guancha.cn"
+      "nameEn": "AllAfrica",
+      "nameZh": "全非新闻网",
+      "url": "https://allafrica.com/",
+      "domain": "allafrica.com"
     },
     {
-      "nameEn": "Jiemian",
-      "nameZh": "界面新闻",
-      "url": "https://www.jiemian.com/",
-      "domain": "jiemian.com"
+      "nameEn": "Le Monde (English)",
+      "nameZh": "世界报（英文）",
+      "url": "https://www.lemonde.fr/en/",
+      "domain": "lemonde.fr"
     },
     {
-      "nameEn": "LatePost",
-      "nameZh": "晚点 LatePost",
-      "url": "https://www.latepost.com/",
-      "domain": "latepost.com"
+      "nameEn": "CGTN",
+      "nameZh": "中国国际电视台",
+      "url": "https://www.cgtn.com/",
+      "domain": "cgtn.com"
+    },
+    {
+      "nameEn": "Euronews",
+      "nameZh": "欧洲新闻台",
+      "url": "https://www.euronews.com/",
+      "domain": "euronews.com"
     }
   ]
 }

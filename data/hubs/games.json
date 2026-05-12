@@ -19,6 +19,188 @@
   "newsTitleZh": "最新动态",
   "newsLeadEn": "",
   "newsLeadZh": "",
+  "hotMixTitleEn": "Hot games & industry news (PC, console, mobile) — RSS",
+  "hotMixTitleZh": "热门游戏与资讯（网游、主机、手游等 · 自动 RSS）",
+  "hotMixLeadEn": "Merged from public RSS when you run npm run fetch-hub-news: Steam news, PlayStation & Xbox blogs, Epic/Unreal feed, and TechCrunch tags (gaming, Nintendo, Steam, esports, mobile games, etc.). Titles are often English.",
+  "hotMixLeadZh": "运行 npm run fetch-hub-news 时合并：Steam 新闻、PlayStation / Xbox 官方博客、Epic/Unreal RSS，以及 TechCrunch 游戏、主机、电竞、手游等标签。标题多为英文。",
+  "hotMixItems": [
+    {
+      "titleEn": "(For Southeast Asia) Genshin Impact Version “Luna VII” Introduces Nicole Reeyn, the First Playable Hexenzirkel Member, on May 20!",
+      "titleZh": "(For Southeast Asia) Genshin Impact Version “Luna VII” Introduces Nicole Reeyn, the First Playable Hexenzirkel Member, on May 20!",
+      "url": "https://blog.playstation.com/2026/05/11/20260511-gi/",
+      "date": "2026-05-11",
+      "source": "PlayStation",
+      "image": "https://blog.ja.playstation.com/uploads/sites/7/2026/05/970ef3790a77457a9c5b3bbca53bed2a971c4ca1-scaled.jpg"
+    },
+    {
+      "titleEn": "A Breathtaking Rebirth of One of the Greatest Shoot ’Em Up Sagas Ever Told",
+      "titleZh": "A Breathtaking Rebirth of One of the Greatest Shoot ’Em Up Sagas Ever Told",
+      "url": "https://news.xbox.com/en-us/2026/05/11/a-breathtaking-rebirth-of-one-of-the-greatest-shoot-em-up-sagas/",
+      "date": "2026-05-11",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/RD3_Hero_Image_1920x1080-41ea1b4855f65c211b69.jpg"
+    },
+    {
+      "titleEn": "NYT’s Wordle to become a TV game show",
+      "titleZh": "NYT’s Wordle to become a TV game show",
+      "url": "https://techcrunch.com/2026/05/11/nyts-wordle-to-become-a-tv-game-show/",
+      "date": "2026-05-11",
+      "source": "TechCrunch · Mobile games",
+      "image": ""
+    },
+    {
+      "titleEn": "A Tourist Guide: Top 5 Landmarks to Visit in Outbound, Out Today",
+      "titleZh": "A Tourist Guide: Top 5 Landmarks to Visit in Outbound, Out Today",
+      "url": "https://news.xbox.com/en-us/2026/05/11/outbound-xbox-tourist-guide-landmarks/",
+      "date": "2026-05-11",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2025/02/Outbound-2c9c7e6fa69fb8aad904-1024x576.jpg"
+    },
+    {
+      "titleEn": "Xbox Game Pass and Discord: Building on Our Partnership to Bring More Benefits to Players",
+      "titleZh": "Xbox Game Pass and Discord: Building on Our Partnership to Bring More Benefits to Players",
+      "url": "https://news.xbox.com/en-us/2026/05/11/xbox-game-pass-and-discord-partnership-announce/",
+      "date": "2026-05-11",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Xbox-Game-Pass_Discord-Nitro_FINAL_5_11-ff69e5bb4ba1fe856123-1024x576.jpg"
+    },
+    {
+      "titleEn": "Share of the Week: Celebrate",
+      "titleZh": "Share of the Week: Celebrate",
+      "url": "https://blog.playstation.com/2026/05/08/share-of-the-week-celebrate/",
+      "date": "2026-05-08",
+      "source": "PlayStation",
+      "image": "https://live.staticflickr.com/65535/55254821055_df6a53c48f_o.png"
+    },
+    {
+      "titleEn": "Control Resonant: Remedy on the Exciting Sequel, Xbox Play Anywhere, and Self-Publishing",
+      "titleZh": "Control Resonant: Remedy on the Exciting Sequel, Xbox Play Anywhere, and Self-Publishing",
+      "url": "https://news.xbox.com/en-us/2026/05/08/control-resonant-remedy-exciting-sequel-xbox-play-anywhere-self-publishing/",
+      "date": "2026-05-08",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/control_r_09-082c42552f8e2a8713f4.jpg"
+    },
+    {
+      "titleEn": "Arty-Facts: Why Two Point Museum’s New DLC is the Most Creative One Yet",
+      "titleZh": "Arty-Facts: Why Two Point Museum’s New DLC is the Most Creative One Yet",
+      "url": "https://news.xbox.com/en-us/2026/05/08/two-point-museum-arty-facts-dlc-launch/",
+      "date": "2026-05-08",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/TPM_ARTY_FACTS_HERO_IMAGE-ec7514c747c9a11cef1e-1024x576.jpg"
+    },
+    {
+      "titleEn": "Next Week on Xbox: New Games for May 11 to 15",
+      "titleZh": "Next Week on Xbox: New Games for May 11 to 15",
+      "url": "https://news.xbox.com/en-us/2026/05/08/next-week-on-xbox-new-games-for-may-11-to-15/",
+      "date": "2026-05-08",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/nwox-hero-c54bec6403865ed37107-1900x1080.jpg"
+    },
+    {
+      "titleEn": "Five Tips for Glory in Rival Stars Horse Racing",
+      "titleZh": "Five Tips for Glory in Rival Stars Horse Racing",
+      "url": "https://news.xbox.com/en-us/2026/05/07/five-tips-for-glory-in-rival-stars-horse-racing/",
+      "date": "2026-05-07",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/RivalStarsHorseRacing_1920x1080_02-8be1ed63f467b503515c.jpg"
+    },
+    {
+      "titleEn": "Vampires, Werewolves, and Hunters Take the Stage at Nacon Connect 2026",
+      "titleZh": "Vampires, Werewolves, and Hunters Take the Stage at Nacon Connect 2026",
+      "url": "https://news.xbox.com/en-us/2026/05/07/nacon-connect-recap-2026/",
+      "date": "2026-05-07",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/NC_MAI26_Recap_C_Wrap-a9faf8e4b6e96291ff6e.jpg"
+    },
+    {
+      "titleEn": "Age of Empires IV: Yue Fei’s Legacy – Available Now!",
+      "titleZh": "Age of Empires IV: Yue Fei’s Legacy – Available Now!",
+      "url": "https://www.ageofempires.com/news/age-of-empires-iv-yue-feis-legacy-available-now/#new_tab",
+      "date": "2026-05-07",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/RD3_Hero_Image_1920x1080-41ea1b4855f65c211b69.jpg"
+    },
+    {
+      "titleEn": "Free Play Days – Catan and Deadside",
+      "titleZh": "Free Play Days – Catan and Deadside",
+      "url": "https://news.xbox.com/en-us/2026/05/07/free-play-days-05-07-2026/",
+      "date": "2026-05-07",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/FY26-Social-FPD_05-07-2026_1920x1080-2shot-22dd3ad271bf34e4d9a0-1024x576.jpg"
+    },
+    {
+      "titleEn": "(For Southeast Asia) PlayStation Store: April 2026’s top downloads",
+      "titleZh": "(For Southeast Asia) PlayStation Store: April 2026’s top downloads",
+      "url": "https://blog.playstation.com/2026/05/07/20260507-top/",
+      "date": "2026-05-07",
+      "source": "PlayStation",
+      "image": ""
+    },
+    {
+      "titleEn": "PlayStation Store: April 2026’s top downloads",
+      "titleZh": "PlayStation Store: April 2026’s top downloads",
+      "url": "https://blog.playstation.com/2026/05/06/playstation-store-april-2026s-top-downloads/",
+      "date": "2026-05-06",
+      "source": "PlayStation",
+      "image": ""
+    },
+    {
+      "titleEn": "Oceanhorn 3 charts a course for RPG success with UE5",
+      "titleZh": "Oceanhorn 3 charts a course for RPG success with UE5",
+      "url": "https://www.unrealengine.com/developer-interviews/oceanhorn-3-charts-a-course-for-rpg-success-with-ue5",
+      "date": "2026-05-06",
+      "source": "Epic / Unreal",
+      "image": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmobp4r7qd8x307one007pt2n"
+    },
+    {
+      "titleEn": "Myst and Riven Remakes launch on PS5 and PS VR2 May 19",
+      "titleZh": "Myst and Riven Remakes launch on PS5 and PS VR2 May 19",
+      "url": "https://blog.playstation.com/2026/05/05/myst-and-riven-remakes-launch-on-ps5-and-ps-vr2-may-19/",
+      "date": "2026-05-05",
+      "source": "PlayStation",
+      "image": "https://live.staticflickr.com/65535/55240727904_ff9398eb94_o.png"
+    },
+    {
+      "titleEn": "LEGO Batman: Legacy of the Dark Knight hands-on report",
+      "titleZh": "LEGO Batman: Legacy of the Dark Knight hands-on report",
+      "url": "https://blog.playstation.com/2026/05/05/lego-batman-legacy-of-the-dark-knight-hands-on-report/",
+      "date": "2026-05-05",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/tachyon/2026/05/660c1487ea6854d993fdbad1ea449bc8d609bb1d.jpg"
+    },
+    {
+      "titleEn": "Horizon Hunters Gathering: Second Playtest, new Hunters, Episode, region revealed",
+      "titleZh": "Horizon Hunters Gathering: Second Playtest, new Hunters, Episode, region revealed",
+      "url": "https://blog.playstation.com/2026/05/05/horizon-hunters-gathering-second-playtest-new-hunters-episode-region-revealed/",
+      "date": "2026-05-05",
+      "source": "PlayStation",
+      "image": "https://live.staticflickr.com/65535/55243187498_befdfef09a_h.jpg"
+    },
+    {
+      "titleEn": "Crafting stylized digital humans on Daughter of the Inner Stars with MetaHuman and UE5",
+      "titleZh": "Crafting stylized digital humans on Daughter of the Inner Stars with MetaHuman and UE5",
+      "url": "https://www.unrealengine.com/spotlights/crafting-stylized-digital-humans-on-daughter-of-the-inner-stars-with-metahuman-and-ue5",
+      "date": "2026-05-05",
+      "source": "Epic / Unreal",
+      "image": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmo938x624cd108ok1ufgbq7h"
+    },
+    {
+      "titleEn": "Players’ Choice: Vote for April 2026’s best new game",
+      "titleZh": "Players’ Choice: Vote for April 2026’s best new game",
+      "url": "https://blog.playstation.com/2026/05/04/players-choice-vote-for-april-2026s-best-new-game/",
+      "date": "2026-05-04",
+      "source": "PlayStation",
+      "image": ""
+    },
+    {
+      "titleEn": "Hulk and Black Panther join the fight for MARVEL Tōkon: Fighting Souls",
+      "titleZh": "Hulk and Black Panther join the fight for MARVEL Tōkon: Fighting Souls",
+      "url": "https://blog.playstation.com/2026/05/02/hulk-and-black-panther-join-the-fight-for-marvel-tokon-fighting-souls/",
+      "date": "2026-05-03",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
+    }
+  ],
   "moreTitleEn": "More studios",
   "moreTitleZh": "其它厂牌入口",
   "moreLeadEn": "",
@@ -166,8 +348,8 @@
       "labelZh": "Xbox",
       "items": [
         {
-          "titleEn": "A Breathtaking Rebirth of One of the Greatest Shoot ’em up Sagas Ever Told",
-          "titleZh": "A Breathtaking Rebirth of One of the Greatest Shoot ’em up Sagas Ever Told",
+          "titleEn": "A Breathtaking Rebirth of One of the Greatest Shoot ’Em Up Sagas Ever Told",
+          "titleZh": "A Breathtaking Rebirth of One of the Greatest Shoot ’Em Up Sagas Ever Told",
           "url": "https://news.xbox.com/en-us/2026/05/11/a-breathtaking-rebirth-of-one-of-the-greatest-shoot-em-up-sagas/",
           "date": "2026-05-11"
         },

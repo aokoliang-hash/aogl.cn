@@ -47,7 +47,7 @@
     "h1": { "ja": "世界のトラフィックが集まる場所", "ko": "전 세계 트래픽이 몰리는 곳", "fr": "Là où s'accumule le trafic mondial", "ru": "Где сходится мировой трафик", "ar": "حيث تتكدس زيارات الويب العالمية" },
     "rankTitle": { "ja": "世界トップ10（サイトトラフィック）", "ko": "글로벌 상위 10(웹사이트 트래픽)", "fr": "Top 10 mondial (trafic web)", "ru": "Глобальный топ-10 (трафик сайтов)", "ar": "أفضل 10 عالميًا (حركة الموقع)" },
     "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
-    "moreTitle": { "ja": "中国語ポータルと地域別入口", "ko": "중국어 및 지역 포털", "fr": "Portails chinois et régionaux", "ru": "Китайские и региональные порталы", "ar": "بوابات بالصينية وإقليمية" }
+    "moreTitle": { "ja": "世界の地域ポータル", "ko": "전 세계 지역 포털", "fr": "Portails régionaux dans le monde", "ru": "Региональные порталы по миру", "ar": "بوابات إقليمية عالمية" }
   },
   "brands": {
     "title": { "ja": "グローバルブランド価値｜aogl.cn", "ko": "글로벌 브랜드 가치 | aogl.cn", "fr": "Marques mondiales — signets | aogl.cn", "ru": "Глобальные бренды — закладки | aogl.cn", "ar": "العلامات العالمية — روابط | aogl.cn" },
@@ -79,6 +79,14 @@
     "h1": { "ja": "世界のソーシャル（MAU上位）", "ko": "글로벌 소셜 플랫폼(MAU 상위)", "fr": "Réseaux sociaux mondiaux (leaders MAU)", "ru": "Глобальные соцсети (лидеры по MAU)", "ar": "منصات التواصل العالمية (الأعلى نشاطًا)" },
     "rankTitle": { "ja": "世界トップ10（ソーシャル）", "ko": "글로벌 상위 10(소셜)", "fr": "Top 10 mondial (social)", "ru": "Глобальный топ-10 (соцсети)", "ar": "أفضل 10 عالميًا (التواصل الاجتماعي)" },
     "newsTitle": { "ja": "トレンドとクリエイター", "ko": "트렌드·크리에이터", "fr": "Tendances & créateurs", "ru": "Тренды и авторы", "ar": "الترند والمبدعون" },
+    "hotMixTitle": { "ja": "注目記事・人気（RSS）", "ko": "인기 기사·크리에이터(RSS)", "fr": "Articles populaires & créateurs (RSS)", "ru": "Популярные статьи и авторы (RSS)", "ar": "مقالات ورُوّاد (RSS)" },
+    "hotMixLead": {
+      "ja": "npm run fetch-hub-news で公開 RSS を取得して更新します（Meta、YouTube、Instagram 関連、TechCrunch など）。",
+      "ko": "npm run fetch-hub-news 로 공개 RSS를 가져와 갱신합니다(Meta·YouTube·Instagram·TechCrunch 등).",
+      "fr": "Exécutez npm run fetch-hub-news pour actualiser depuis les flux RSS publics (Meta, YouTube, Instagram, TechCrunch, etc.).",
+      "ru": "Запустите npm run fetch-hub-news, чтобы обновить из открытых RSS (Meta, YouTube, Instagram, TechCrunch и т. д.).",
+      "ar": "شغّل npm run fetch-hub-news لتحديث القائمة من تغذيات RSS العامة (Meta وYouTube وInstagram وTechCrunch وغيرها)."
+    },
     "moreTitle": { "ja": "その他のソーシャル", "ko": "추가 소셜 네트워크", "fr": "Autres réseaux sociaux", "ru": "Другие соцсети", "ar": "شبكات اجتماعية أخرى" }
   },
   "tech": {
@@ -95,6 +103,14 @@
     "h1": { "ja": "世界のストア・出版社トップ10", "ko": "글로벌 스토어·퍼블리셔 상위 10", "fr": "Top 10 mondial magasins et éditeurs", "ru": "Топ-10 магазинов и издателей", "ar": "أفضل 10 عالميًا للمتاجر والناشرين" },
     "rankTitle": { "ja": "世界トップ10（プラットフォーム）", "ko": "글로벌 상위 10(플랫폼)", "fr": "Top 10 mondial (plateformes)", "ru": "Глобальный топ-10 (платформы)", "ar": "أفضل 10 عالميًا (المنصات)" },
     "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "hotMixTitle": { "ja": "注目ゲーム・ニュース（RSS）", "ko": "인기 게임·뉴스(RSS)", "fr": "Jeux populaires & actus (RSS)", "ru": "Популярные игры и новости (RSS)", "ar": "ألعاب شائعة وأخبار (RSS)" },
+    "hotMixLead": {
+      "ja": "npm run fetch-hub-news で Steam・PlayStation・Xbox・Epic/Unreal と TechCrunch のゲーム系タグを取得して更新します。",
+      "ko": "npm run fetch-hub-news 로 Steam·PlayStation·Xbox·Epic/Unreal 및 TechCrunch 게임 태그를 가져와 갱신합니다.",
+      "fr": "Lancez npm run fetch-hub-news pour fusionner Steam, PlayStation, Xbox, Epic/Unreal et les tags jeux TechCrunch.",
+      "ru": "Запустите npm run fetch-hub-news для объединения Steam, PlayStation, Xbox, Epic/Unreal и тегов TechCrunch по играм.",
+      "ar": "شغّل npm run fetch-hub-news لدمج Steam وPlayStation وXbox وEpic/Unreal ووسوم الألعاب في TechCrunch."
+    },
     "moreTitle": { "ja": "その他のスタジオ入口", "ko": "추가 스튜디오 링크", "fr": "Autres studios", "ru": "Другие студии", "ar": "استوديوهات أخرى" }
   },
   "tools": {

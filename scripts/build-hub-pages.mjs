@@ -132,6 +132,18 @@ function hubLeadSpans(spec, base) {
   return `      <p class="hub-screen-lead">${inner}</p>\n`;
 }
 
+/** Lead for social hot-mix strip (uses T() for ja/ko/fr/ru/ar when hub-ui keys exist). */
+function hubHotMixLeadSpans(spec) {
+  const en = String(spec.hotMixLeadEn ?? "").trim();
+  const zh = String(spec.hotMixLeadZh ?? "").trim();
+  if (!en && !zh) return "";
+  const inner = LOCALES.map((code) => {
+    const text = code === "en" ? en : code === "zh" ? zh || en : T(spec, "hotMixLead", code);
+    return `<span class="lang-${code}">${esc(text)}</span>`;
+  }).join("");
+  return `      <p class="hub-screen-lead">${inner}</p>\n`;
+}
+
 function editorialBlocks7(spec) {
   let out = "";
   for (const code of LOCALES) {
@@ -161,9 +173,29 @@ function updatedSpans(spec) {
   }).join("");
 }
 
-function faviconUrl(domain) {
+function faviconUrl(domain, sz = 64) {
   const d = String(domain || "").replace(/^www\./, "");
-  return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(d)}&sz=64`;
+  return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(d)}&sz=${sz}`;
+}
+
+function hotMixThumbDomain(source) {
+  const s = String(source || "").toLowerCase();
+  if (s.includes("steam")) return "steampowered.com";
+  if (s.includes("playstation")) return "playstation.com";
+  if (s.includes("xbox")) return "xbox.com";
+  if (s.includes("unreal") || s.includes("epic")) return "unrealengine.com";
+  if (s.includes("techcrunch")) return "techcrunch.com";
+  if (s.includes("linkedin")) return "linkedin.com";
+  if (s.includes("facebook") || s.includes("meta")) return "meta.com";
+  if (s.includes("youtube")) return "youtube.com";
+  if (s.includes("instagram")) return "instagram.com";
+  return "steampowered.com";
+}
+
+function hotMixItemImageUrl(it) {
+  const u = String(it.image || "").trim();
+  if (u && /^https?:\/\//i.test(u)) return u;
+  return faviconUrl(hotMixThumbDomain(it.source), 128);
 }
 
 const NAV = [
@@ -234,6 +266,154 @@ function tenSearchTagsZh(spec) {
   const arr = Array.isArray(spec.searchTagsZh) ? spec.searchTagsZh.map(String).filter(Boolean) : [];
   if (arr.length >= 10) return arr.slice(0, 10);
   return tenSearchTagsEn(spec);
+}
+
+function hubNewsGroupHotSearchPills(g) {
+  const pills = Array.isArray(g.hotSearchPills) ? g.hotSearchPills.slice(0, 20) : [];
+  if (!pills.length) return "";
+  const isYouTube = g.id === "ng-youtube";
+  const isFb = g.id === "ng-fb";
+  const isIg = g.id === "ng-ig";
+  const isX = g.id === "ng-x";
+  const aria = isYouTube
+    ? {
+        en: "Hot YouTube searches & trending",
+        zh: "YouTube 热门搜索与趋势",
+        ja: "YouTube 人気検索・トレンド",
+        ko: "YouTube 인기 검색·트렌드",
+        fr: "Recherches et tendances YouTube",
+        ru: "Популярные запросы и тренды YouTube",
+        ar: "عمليات بحث وترند YouTube",
+      }
+    : isFb
+      ? {
+          en: "Facebook & Meta news — hot topics and search",
+          zh: "Facebook / Meta 热门博文与站内搜索",
+          ja: "Facebook / Meta ニュース・人気トピック検索",
+          ko: "Facebook·Meta 뉴스·인기 주제 검색",
+          fr: "Facebook / Meta — actualités et recherche",
+          ru: "Facebook / Meta — новости и популярные темы",
+          ar: "Facebook وMeta — أخبار وبحث شائع",
+        }
+      : isIg
+        ? {
+            en: "Popular Instagram accounts, Popular feed, Reels & news",
+            zh: "Instagram 热门账号、Popular 热门流、Reels 与官方动态",
+            ja: "Instagram 人気アカウント・Popular・Reels・ニュース",
+            ko: "Instagram 인기 계정·Popular·릴스·공식 소식",
+            fr: "Comptes Instagram populaires, fil Popular, Reels et actus",
+            ru: "Популярные аккаунты Instagram, лента Popular, Reels и новости",
+            ar: "حسابات Instagram الشائعة وPopular وReels والأخبار",
+          }
+        : isX
+          ? {
+              en: "Popular X accounts, Explore & official updates",
+              zh: "X 热门账号与发现页 / 官方动态",
+              ja: "X 人気アカウント・探索・公式",
+              ko: "X 인기 계정·탐색·공식 소식",
+              fr: "Comptes X populaires, Explorer et actus officielles",
+              ru: "Популярные аккаунты X, раздел «Обзор» и новости",
+              ar: "حسابات X الشائعة واستكشاف والأخبار الرسمية",
+            }
+          : g.id === "ng-wiki"
+            ? {
+                en: "Popular Wikipedia searches & most-read pages",
+                zh: "维基百科热门搜索与近期高浏览条目",
+                ja: "Wikipedia 人気検索・高閲覧ページ",
+                ko: "위키백과 인기 검색·조회수 상위",
+                fr: "Recherches Wikipedia et pages les plus lues",
+                ru: "Популярные запросы в Wikipedia и самые читаемые статьи",
+                ar: "بحث Wikipedia الشائع والصفحات الأكثر قراءة",
+              }
+            : g.id === "ng-amz"
+              ? {
+                  en: "Popular Amazon searches & trending lists",
+                  zh: "亚马逊热门搜索与榜单（畅销 / 飙升）",
+                  ja: "Amazon 人気検索・ランキング",
+                  ko: "Amazon 인기 검색·베스트셀러",
+                  fr: "Recherches Amazon et listes tendance",
+                  ru: "Популярные запросы Amazon и трендовые списки",
+                  ar: "بحث Amazon الشائع وقوائم الأكثر مبيعًا",
+                }
+              : g.id === "ng-reddit"
+                ? {
+                    en: "Hot Reddit searches & communities",
+                    zh: "Reddit 热门搜索与版块",
+                    ja: "Reddit 人気検索・コミュニティ",
+                    ko: "Reddit 인기 검색·커뮤니티",
+                    fr: "Recherches et communautés Reddit populaires",
+                    ru: "Популярные запросы и разделы Reddit",
+                    ar: "بحث Reddit والمجتمعات الشائعة",
+                  }
+                : g.id === "ng-yahoo"
+                  ? {
+                      en: "Hot Yahoo searches",
+                      zh: "Yahoo 热门搜索",
+                      ja: "Yahoo 人気検索",
+                      ko: "Yahoo 인기 검색",
+                      fr: "Recherches Yahoo populaires",
+                      ru: "Популярные запросы Yahoo",
+                      ar: "بحث Yahoo الشائع",
+                    }
+                  : g.id === "ng-wa"
+                    ? {
+                        en: "WhatsApp features & help (web search)",
+                        zh: "WhatsApp 功能与帮助（网页搜索）",
+                        ja: "WhatsApp 機能・ヘルプ（ウェブ検索）",
+                        ko: "WhatsApp 기능·도움말(웹 검색)",
+                        fr: "Fonctions et aide WhatsApp (recherche web)",
+                        ru: "Функции и справка WhatsApp (веб-поиск)",
+                        ar: "ميزات ومساعدة WhatsApp (بحث ويب)",
+                      }
+                    : {
+                        en: "Hot Google searches",
+                        zh: "热门 Google 搜索",
+                        ja: "Google 人気検索",
+                        ko: "Google 인기 검색",
+                        fr: "Recherches Google populaires",
+                        ru: "Популярные запросы в Google",
+                        ar: "عمليات بحث Google الشائعة",
+                      };
+  return LOCALES.map((lang) => {
+    const links = pills
+      .map((p) => {
+        const urlExplicit = String(p.url || "").trim();
+        let href;
+        if (urlExplicit) {
+          href = urlExplicit;
+        } else {
+          const q = String(p.q || p.labelZh || p.labelEn || "").trim();
+          if (!q) return "";
+          const eng = p.searchEngine || p.engine;
+          if (eng === "youtube") {
+            href = "https://www.youtube.com/results?search_query=" + encodeURIComponent(q);
+          } else if (eng === "facebook") {
+            href = "https://www.facebook.com/search/top?q=" + encodeURIComponent(q);
+          } else if (eng === "wikipedia") {
+            href = "https://en.wikipedia.org/wiki/Special:Search?search=" + encodeURIComponent(q);
+          } else if (eng === "amazon") {
+            href = "https://www.amazon.com/s?k=" + encodeURIComponent(q);
+          } else if (eng === "reddit") {
+            href = "https://www.reddit.com/search/?q=" + encodeURIComponent(q);
+          } else if (eng === "yahoo") {
+            href = "https://search.yahoo.com/search?p=" + encodeURIComponent(q);
+          } else if (eng === "whatsapp") {
+            href = "https://www.google.com/search?q=" + encodeURIComponent("WhatsApp " + q);
+          } else {
+            href = "https://www.google.com/search?q=" + encodeURIComponent(q);
+          }
+        }
+        let label;
+        if (lang === "en") label = String(p.labelEn || p.labelZh || p.q || "").trim();
+        else if (lang === "zh") label = String(p.labelZh || p.labelEn || p.q || "").trim();
+        else label = String(p.labelEn || p.labelZh || p.q || "").trim();
+        if (!label) return "";
+        return `<a class="pill" href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`;
+      })
+      .filter(Boolean)
+      .join("");
+    return `          <div class="pill-row hub-pill-row hub-news-pill-row lang-${lang}" aria-label="${esc(aria[lang] || aria.en)}">${links}</div>`;
+  }).join("\n");
 }
 
 function hubSearchPillRows(spec) {
@@ -317,7 +497,7 @@ ${(g.items || [])
   )
   .join("\n")}
           </ul>
-        </section>`
+${hubNewsGroupHotSearchPills(g)}        </section>`
     )
     .join("\n");
 
@@ -328,6 +508,36 @@ ${(g.items || [])
 ${hubLeadSpans(spec, "newsLead")}      <div class="hub-news-wrap">
 ${newsBlocks}
       </div>
+    </section>
+
+`
+    : "";
+
+  const hotMixItems = Array.isArray(spec.hotMixItems) ? spec.hotMixItems : [];
+  const showHotMix = hotMixItems.length > 0;
+  const hotMixLis = hotMixItems
+    .map(
+      (it) => `        <li class="hub-hotmix-card">
+          <a class="hub-hotmix-card-link" href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">
+            <div class="hub-hotmix-card-media">
+              <img class="hub-hotmix-card-img" src="${esc(hotMixItemImageUrl(it))}" width="400" height="225" alt="" loading="lazy" decoding="async" />
+            </div>
+            <div class="hub-hotmix-card-body">
+              <div class="hub-hotmix-card-titles">${LOCALES.map(
+                (code) => `<span class="lang-${code}">${esc(newsTitle(it, code))}</span>`
+              ).join("")}</div>
+              <div class="hub-hotmix-card-meta">${esc(it.date || "")}${it.source ? ` · ${esc(it.source)}` : ""}</div>
+            </div>
+          </a>
+        </li>`
+    )
+    .join("\n");
+  const hotMixSection = showHotMix
+    ? `    <section class="hub-screen hub-screen-hotmix" id="hot-mix" aria-labelledby="hub-hotmix-title">
+      <h2 id="hub-hotmix-title" class="page-section-title">${inlineTitleSpans(spec, "hotMixTitle")}</h2>
+${hubHotMixLeadSpans(spec)}      <ul class="hub-hotmix-cards">
+${hotMixLis}
+      </ul>
     </section>
 
 `
@@ -411,7 +621,7 @@ ${top10Lis}
       </ol>
     </section>
 
-${newsSection}    <section class="hub-screen hub-screen-more" id="more" aria-labelledby="hub-more-title">
+${hotMixSection}${newsSection}    <section class="hub-screen hub-screen-more" id="more" aria-labelledby="hub-more-title">
       <h2 id="hub-more-title" class="page-section-title">${inlineTitleSpans(spec, "moreTitle")}</h2>
 ${hubLeadSpans(spec, "moreLead")}      <ul class="hub-more-grid">
 ${moreLis}

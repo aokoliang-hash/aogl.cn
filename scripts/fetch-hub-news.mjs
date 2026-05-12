@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Refreshes hub newsGroups in data/hubs/*.json from RSS/Atom URLs in data/hubs/news-feeds.json.
+ * Refreshes hub newsGroups in data/hubs/*.json from RSS/Atom URLs in data/hubs/news-feeds.json,
+ * and optional hotMixLists (e.g. social hot-mix strip) merged from multiple vendor / trade-press feeds.
  * Strategy (unified): fetch → merge → dedupe by URL → filter by age → sort by pubDate → take perGroup
  * → pad with existing items if fewer than perGroup. Groups with no feeds or zero parsed items are left unchanged.
  *
@@ -10,6 +11,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { load as cheerioLoad } from "cheerio";
 import Parser from "rss-parser";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -22,6 +24,37 @@ function stripHtml(s) {
     .replace(/<[^>]*>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+/** First usable hero image from RSS item (iTunes art, enclosure image, or first img in HTML body). */
+function rssHeroImageFromItem(it) {
+  if (it.itunes?.image) {
+    const u = String(it.itunes.image).trim();
+    if (/^https?:\/\//i.test(u)) return u.slice(0, 900);
+  }
+  const enc = it.enclosure;
+  if (enc && enc.url && /image\//i.test(String(enc.type || ""))) {
+    const u = String(enc.url).trim();
+    if (/^https?:\/\//i.test(u)) return u.slice(0, 900);
+  }
+  const rawParts = [];
+  if (typeof it.content === "string") rawParts.push(it.content);
+  else if (it.content && typeof it.content === "object" && it.content.encoded) rawParts.push(String(it.content.encoded));
+  if (it["content:encoded"]) rawParts.push(String(it["content:encoded"]));
+  const raw = rawParts.join("\n");
+  if (!raw.trim()) return "";
+  try {
+    const $ = cheerioLoad(raw, { xml: false });
+    const $img = $("img").first();
+    let u = $img.attr("src") || $img.attr("data-src") || $img.attr("data-lazy-src") || $img.attr("data-original");
+    if (!u) return "";
+    u = u.trim();
+    if (u.startsWith("//")) u = "https:" + u;
+    if (!/^https?:\/\//i.test(u)) return "";
+    return u.slice(0, 900);
+  } catch {
+    return "";
+  }
 }
 
 function normUrl(href) {
@@ -107,7 +140,8 @@ function loadFeedConfig() {
     feedDelayMs: raw.options?.feedDelayMs ?? 350,
   };
   const groups = Array.isArray(raw.groups) ? raw.groups : [];
-  return { options, groups };
+  const hotMixLists = Array.isArray(raw.hotMixLists) ? raw.hotMixLists : [];
+  return { options, groups, hotMixLists };
 }
 
 function feedsByHub(groups) {
@@ -186,6 +220,67 @@ async function collectItemsForGroup(groupCfg, parser, opts) {
   return out.slice(0, opts.perGroup);
 }
 
+async function collectHotMixItems(listCfg, parser, opts) {
+  const limit = Number(listCfg.limit) || 20;
+  const maxAgeDays = Number(listCfg.maxAgeDays ?? opts.maxAgeDays);
+  const feedEntries = Array.isArray(listCfg.feeds) ? listCfg.feeds : [];
+  const merged = [];
+  const seen = new Set();
+
+  for (const fe of feedEntries) {
+    const url = typeof fe === "string" ? fe.trim() : String(fe?.url || "").trim();
+    if (!url) continue;
+    const source = (typeof fe === "object" && fe?.source) || "RSS";
+    const titleFilter = typeof fe === "object" ? fe.titleFilter : undefined;
+    try {
+      const feed = await parseFeedUrl(parser, url, opts);
+      let items = (feed.items || [])
+        .map((it) => {
+          const link = itemLink(it);
+          const title = stripHtml(it.title || "").slice(0, 220);
+          const image = rssHeroImageFromItem(it);
+          return { title, link, pubMs: itemPubDate(it), source, image };
+        })
+        .filter((x) => x.title && x.link);
+
+      if (titleFilter) {
+        const filtered = filterByTitle(items, titleFilter);
+        if (filtered.length === 0) {
+          console.warn(`  [hotMix-feed] ${url}: titleFilter matched nothing — skip`);
+          await new Promise((r) => setTimeout(r, opts.feedDelayMs));
+          continue;
+        }
+        items = filtered;
+      }
+
+      for (const x of items) {
+        const nu = normUrl(x.link);
+        if (seen.has(nu)) continue;
+        seen.add(nu);
+        merged.push(x);
+      }
+    } catch (e) {
+      console.warn(`  [hotMix] ← ${url}: ${e.message || e}`);
+    }
+    await new Promise((r) => setTimeout(r, opts.feedDelayMs));
+  }
+
+  let out = merged.filter((x) => withinMaxAge(x.pubMs, maxAgeDays));
+  out.sort((a, b) => b.pubMs - a.pubMs);
+  return out.slice(0, limit);
+}
+
+function hotMixRowsToSpecItems(rows) {
+  return rows.map((x) => ({
+    titleEn: x.title,
+    titleZh: x.title,
+    url: x.link,
+    date: formatDateLabel(x.pubMs) || todayYmd(),
+    source: x.source || "",
+    image: x.image || "",
+  }));
+}
+
 function rssItemsToHubItems(rssItems) {
   return rssItems.map((x) => ({
     titleEn: x.title,
@@ -218,7 +313,7 @@ function todayYmd() {
 }
 
 async function main() {
-  const { options, groups } = loadFeedConfig();
+  const { options, groups, hotMixLists } = loadFeedConfig();
   const byHub = feedsByHub(groups);
   const parser = new Parser({ timeout: options.requestTimeoutMs });
 
@@ -267,8 +362,33 @@ async function main() {
     }
   }
 
+  let hotMixUpdated = 0;
+  for (const listCfg of hotMixLists) {
+    const hubSlug = listCfg.hub;
+    const jsonKey = listCfg.jsonKey || "hotMixItems";
+    if (!hubSlug) continue;
+    const hubPath = path.join(HUB_DIR, `${hubSlug}.json`);
+    if (!fs.existsSync(hubPath)) {
+      console.warn("Skip hotMix unknown hub:", hubSlug);
+      continue;
+    }
+    if (!Array.isArray(listCfg.feeds) || listCfg.feeds.length === 0) continue;
+
+    const rows = await collectHotMixItems(listCfg, parser, options);
+    if (rows.length === 0) {
+      console.warn(`  [hotMix] ${hubSlug}.${jsonKey}: no items`);
+      continue;
+    }
+    const spec = JSON.parse(fs.readFileSync(hubPath, "utf8"));
+    spec[jsonKey] = hotMixRowsToSpecItems(rows);
+    spec.updated = todayYmd();
+    fs.writeFileSync(hubPath, JSON.stringify(spec, null, 2) + "\n", "utf8");
+    hotMixUpdated++;
+    console.log(`  hotMix ${hubSlug}.${jsonKey}: ${rows.length} items`);
+  }
+
   console.log(
-    `fetch-hub-news: updated ${groupsUpdated} groups across ${hubsTouched} hub JSON files; skipped ${groupsSkipped} group slots (no feeds or empty fetch).`
+    `fetch-hub-news: updated ${groupsUpdated} groups across ${hubsTouched} hub JSON files; skipped ${groupsSkipped} group slots; hotMix lists updated: ${hotMixUpdated}.`
   );
 }
 

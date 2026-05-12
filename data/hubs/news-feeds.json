@@ -40,5 +40,45 @@
     { "hub": "brands", "groupId": "nb-sam", "feeds": ["https://news.samsung.com/global/feed"] },
     { "hub": "brands", "groupId": "nb-dis", "feeds": ["https://thewaltdisneycompany.com/feed/"] }
 
+  ],
+  "hotMixLists": [
+    {
+      "hub": "social",
+      "jsonKey": "hotMixItems",
+      "limit": 22,
+      "maxAgeDays": 56,
+      "feeds": [
+        { "url": "https://about.fb.com/news/feed/", "source": "Facebook / Meta" },
+        { "url": "https://blog.google/products/youtube/rss/", "source": "YouTube" },
+        { "url": "https://engineering.fb.com/feed/", "source": "Meta Engineering", "titleFilter": "Instagram|Reels|Threads|WhatsApp|Messenger|Facebook|Meta\\b|Communities" },
+        { "url": "https://techcrunch.com/tag/instagram/feed/", "source": "TechCrunch" },
+        { "url": "https://techcrunch.com/tag/facebook/feed/", "source": "TechCrunch" },
+        { "url": "https://techcrunch.com/tag/youtube/feed/", "source": "TechCrunch" },
+        { "url": "https://techcrunch.com/tag/tiktok/feed/", "source": "TechCrunch" },
+        { "url": "https://techcrunch.com/tag/snapchat/feed/", "source": "TechCrunch" },
+        { "url": "https://techcrunch.com/tag/linkedin/feed/", "source": "LinkedIn · TechCrunch" }
+      ]
+    },
+    {
+      "hub": "games",
+      "jsonKey": "hotMixItems",
+      "limit": 22,
+      "maxAgeDays": 56,
+      "feeds": [
+        { "url": "https://store.steampowered.com/feeds/news.xml?l=english&count=25", "source": "Steam" },
+        { "url": "https://blog.playstation.com/feed/", "source": "PlayStation" },
+        { "url": "https://news.xbox.com/feed/", "source": "Xbox" },
+        { "url": "https://www.unrealengine.com/en-US/rss", "source": "Epic / Unreal" },
+        { "url": "https://techcrunch.com/tag/gaming/feed/", "source": "TechCrunch · Gaming" },
+        { "url": "https://techcrunch.com/tag/nintendo/feed/", "source": "TechCrunch · Nintendo" },
+        { "url": "https://techcrunch.com/tag/steam/feed/", "source": "TechCrunch · Steam" },
+        { "url": "https://techcrunch.com/tag/playstation/feed/", "source": "TechCrunch · PlayStation" },
+        { "url": "https://techcrunch.com/tag/xbox/feed/", "source": "TechCrunch · Xbox" },
+        { "url": "https://techcrunch.com/tag/esports/feed/", "source": "TechCrunch · Esports" },
+        { "url": "https://techcrunch.com/tag/mobile-games/feed/", "source": "TechCrunch · Mobile games" },
+        { "url": "https://techcrunch.com/tag/epic-games/feed/", "source": "TechCrunch · Epic" },
+        { "url": "https://techcrunch.com/tag/riot-games/feed/", "source": "TechCrunch · Riot" }
+      ]
+    }
   ]
 }
