@@ -8,6 +8,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
+const MULTILANG_DIR = path.join(ROOT, "_multilang");
 const HUB_DIR = path.join(ROOT, "data", "hubs");
 const SITE = JSON.parse(fs.readFileSync(path.join(ROOT, "site.config.json"), "utf8"));
 const BASE = String(SITE.siteUrl || "https://aogl.cn").replace(/\/$/, "");
@@ -214,6 +215,31 @@ function brandHeadings() {
   }).join("\n")}`;
 }
 
+function tenSearchTagsEn(spec) {
+  const arr = Array.isArray(spec.searchTags) ? spec.searchTags.map(String).filter(Boolean) : [];
+  while (arr.length < 10) arr.push(`${spec.slug} generative AI`);
+  return arr.slice(0, 10);
+}
+
+function tenSearchTagsZh(spec) {
+  const arr = Array.isArray(spec.searchTagsZh) ? spec.searchTagsZh.map(String).filter(Boolean) : [];
+  if (arr.length >= 10) return arr.slice(0, 10);
+  return tenSearchTagsEn(spec);
+}
+
+function hubSearchPillRows(spec) {
+  return LOCALES.map((lang) => {
+    const tags = lang === "zh" ? tenSearchTagsZh(spec) : tenSearchTagsEn(spec);
+    const pills = tags
+      .map((t) => {
+        const q = encodeURIComponent(t);
+        return `<a class="pill" href="https://www.google.com/search?q=${q}" target="_blank" rel="noopener noreferrer">${esc(t)}</a>`;
+      })
+      .join("");
+    return `      <div class="pill-row hub-pill-row lang-${lang}" aria-label="Related searches">${pills}</div>\n`;
+  }).join("");
+}
+
 function footerLegal() {
   const about = LOCALES.map(
     (code) =>
@@ -354,7 +380,8 @@ ${navHtml(activeFile)}
     <article class="hub-editorial prose-block">
       <h1 class="hub-page-title">${inlineTitleSpans(spec, "h1")}</h1>
       <p class="hub-updated">${updatedSpans(spec)}</p>
-${editorialBlocks7(spec)}    </article>
+${editorialBlocks7(spec)}${hubSearchPillRows(spec)}
+    </article>
 
     <section class="hub-screen hub-screen-rank" id="rank" aria-labelledby="hub-rank-title">
       <h2 id="hub-rank-title" class="page-section-title">${inlineTitleSpans(spec, "rankTitle")}</h2>
@@ -420,11 +447,12 @@ function loadSpecs() {
 
 function main() {
   if (!fs.existsSync(HUB_DIR)) fs.mkdirSync(HUB_DIR, { recursive: true });
+  fs.mkdirSync(MULTILANG_DIR, { recursive: true });
   const specs = loadSpecs();
   for (const spec of specs) {
     const html = renderPage(spec, spec.outFile);
-    fs.writeFileSync(path.join(ROOT, spec.outFile), html, "utf8");
-    console.log("Wrote", spec.outFile);
+    fs.writeFileSync(path.join(MULTILANG_DIR, spec.outFile), html, "utf8");
+    console.log("Wrote _multilang/" + spec.outFile);
   }
 }
 

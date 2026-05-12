@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Merge listing-page discovery + curated data/articles.json, verify HTTP status,
- * inject reading section + JSON-LD into index.html, refresh sitemap lastmod.
+ * inject reading section + JSON-LD into _multilang/index.html, refresh sitemap lastmod.
  *
  * Usage:
  *   node scripts/update-reading.mjs              # rebuild HTML + verify (no scrape)
@@ -17,7 +17,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.join(__dirname, "..");
 
-const INDEX_PATH = path.join(ROOT, "index.html");
+const INDEX_PATH = path.join(ROOT, "_multilang", "index.html");
 const ARTICLES_PATH = path.join(ROOT, "data", "articles.json");
 const CONFIG_PATH = path.join(ROOT, "site.config.json");
 const SITEMAP_PATH = path.join(ROOT, "sitemap.xml");
@@ -436,7 +436,7 @@ async function main() {
 
   const iso = new Date().toISOString().slice(0, 10);
   writeSitemap(config.siteUrl, iso);
-  console.log("Updated index.html reading section, JSON-LD, and sitemap.xml");
+  console.log("Updated _multilang/index.html reading section, JSON-LD, and sitemap.xml");
 
   if (bad.length) process.exitCode = 1;
 }

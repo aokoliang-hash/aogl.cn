@@ -8,7 +8,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
-const INDEX = path.join(ROOT, "index.html");
+const INDEX = path.join(ROOT, "_multilang", "index.html");
 const DATA = path.join(ROOT, "data", "tools-directory.json");
 const I18N = path.join(ROOT, "data", "i18n", "site-tools-i18n.json");
 

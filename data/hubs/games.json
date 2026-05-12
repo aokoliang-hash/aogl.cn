@@ -23,6 +23,30 @@
   "moreTitleZh": "其它厂牌入口",
   "moreLeadEn": "",
   "moreLeadZh": "",
+  "searchTags": [
+    "Steam concurrent players record",
+    "PlayStation exclusives 2026",
+    "Xbox Game Pass new games",
+    "Nintendo Switch 2 rumors",
+    "Epic Games Store free weekly",
+    "Riot Games esports schedule",
+    "Ubisoft open world roadmap",
+    "EA Sports FC Ultimate Team",
+    "gaming industry revenue Newzoo",
+    "cloud gaming latency comparison"
+  ],
+  "searchTagsZh": [
+    "Steam在线人数纪录",
+    "PlayStation独占游戏",
+    "Xbox Game Pass新游",
+    "任天堂Switch新机传闻",
+    "Epic每周免费游戏",
+    "拳头游戏电竞赛程",
+    "育碧开放世界新作",
+    "EA FC Ultimate Team",
+    "全球游戏市场规模",
+    "云游戏延迟对比"
+  ],
   "top10": [
     { "nameEn": "Steam", "nameZh": "Steam", "url": "https://store.steampowered.com/", "domain": "steampowered.com" },
     { "nameEn": "PlayStation", "nameZh": "PlayStation", "url": "https://www.playstation.com/", "domain": "playstation.com" },

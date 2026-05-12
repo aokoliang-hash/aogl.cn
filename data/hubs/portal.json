@@ -23,6 +23,30 @@
   "moreTitleZh": "中文与其它地区门户",
   "moreLeadEn": "",
   "moreLeadZh": "",
+  "searchTags": [
+    "Similarweb top websites",
+    "Cloudflare Radar global traffic",
+    "most visited websites 2026",
+    "web traffic ranking worldwide",
+    "internet statistics report",
+    "global digital audience trends",
+    "online traffic analytics",
+    "website popularity index",
+    "top billion sites ranking",
+    "Similarweb vs Alexa traffic"
+  ],
+  "searchTagsZh": [
+    "全球网站流量排名",
+    "Similarweb 网站榜单",
+    "Cloudflare Radar 流量",
+    "访问量最大网站",
+    "互联网统计数据",
+    "全球数字用户趋势",
+    "网站热度分析",
+    "搜索引擎市场份额",
+    "出海流量研究",
+    "顶级域名访问量"
+  ],
   "top10": [
     { "nameEn": "Google", "nameZh": "Google", "url": "https://www.google.com/", "domain": "google.com" },
     { "nameEn": "YouTube", "nameZh": "YouTube", "url": "https://www.youtube.com/", "domain": "youtube.com" },

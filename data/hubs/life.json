@@ -23,6 +23,30 @@
   "moreTitleZh": "国内与地区常用应用",
   "moreLeadEn": "",
   "moreLeadZh": "",
+  "searchTags": [
+    "super app MAU ranking",
+    "Uber app feature updates",
+    "Spotify streaming statistics",
+    "Netflix subscriber trends",
+    "digital wallet adoption 2026",
+    "food delivery app comparison",
+    "Airbnb travel booking trends",
+    "Google Maps live features",
+    "Zoom video meeting updates",
+    "creator economy platform news"
+  ],
+  "searchTagsZh": [
+    "超级应用月活排名",
+    "Uber打车功能更新",
+    "Spotify流媒体数据",
+    "Netflix订阅用户趋势",
+    "数字钱包普及率",
+    "外卖平台对比",
+    "Airbnb民宿预订",
+    "谷歌地图新功能",
+    "Zoom视频会议更新",
+    "创作者经济平台"
+  ],
   "top10": [
     { "nameEn": "Google Maps", "nameZh": "Google 地图", "url": "https://maps.google.com/", "domain": "google.com" },
     { "nameEn": "WhatsApp", "nameZh": "WhatsApp", "url": "https://www.whatsapp.com/", "domain": "whatsapp.com" },

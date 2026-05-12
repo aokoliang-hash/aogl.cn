@@ -46,7 +46,7 @@ a {
 body:not(.locale-en) .lang-en {
   display: none !important;
 }
-body:not(.locale-zh) .lang-zh {
+body:not(.locale-zh):not(.locale-zht) .lang-zh {
   display: none !important;
 }
 body:not(.locale-ja) .lang-ja {

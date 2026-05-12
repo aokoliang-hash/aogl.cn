@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Reads data/categories.json + data/i18n/category-headings.json
- * and replaces <!-- CAT_FEEDS_AUTO_START --> ... END in index.html
+ * and replaces <!-- CAT_FEEDS_AUTO_START --> ... END in _multilang/index.html
  */
 import fs from "fs";
 import path from "path";
@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
-const INDEX = path.join(ROOT, "index.html");
+const INDEX = path.join(ROOT, "_multilang", "index.html");
 const DATA = path.join(ROOT, "data", "categories.json");
 const HEAD = path.join(ROOT, "data", "i18n", "category-headings.json");
 
@@ -82,7 +82,7 @@ ${inner}
 function replaceMarker(html, inner) {
   const i0 = html.indexOf(START);
   const i1 = html.indexOf(END);
-  if (i0 === -1 || i1 === -1 || i1 <= i0) throw new Error("Category markers missing in index.html");
+  if (i0 === -1 || i1 === -1 || i1 <= i0) throw new Error("Category markers missing in _multilang/index.html");
   return html.slice(0, i0 + START.length) + "\n" + inner + "\n      " + html.slice(i1);
 }
 

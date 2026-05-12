@@ -23,6 +23,30 @@
   "moreTitleZh": "国内与其它垂直电商",
   "moreLeadEn": "",
   "moreLeadZh": "",
+  "searchTags": [
+    "global ecommerce GMV ranking",
+    "Amazon marketplace seller news",
+    "Shopify merchant trends 2026",
+    "cross border ecommerce China",
+    "online retail statistics Statista",
+    "digital shopping behavior study",
+    "marketplace logistics trends",
+    "Walmart ecommerce growth",
+    "Etsy handmade seller tools",
+    "retail media network advertising"
+  ],
+  "searchTagsZh": [
+    "全球电商GMV排名",
+    "亚马逊跨境电商新闻",
+    "Shopify独立站趋势",
+    "中国跨境电商政策",
+    "网络零售统计数据",
+    "数字购物行为研究",
+    "电商物流科技",
+    "沃尔玛电商增长",
+    "Etsy手工艺品出海",
+    "零售媒体广告"
+  ],
   "top10": [
     { "nameEn": "Amazon", "nameZh": "亚马逊", "url": "https://www.amazon.com/", "domain": "amazon.com" },
     { "nameEn": "Walmart", "nameZh": "沃尔玛", "url": "https://www.walmart.com/", "domain": "walmart.com" },

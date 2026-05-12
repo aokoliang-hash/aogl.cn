@@ -23,6 +23,30 @@
   "moreTitleZh": "产业链上其它站",
   "moreLeadEn": "",
   "moreLeadZh": "",
+  "searchTags": [
+    "NVIDIA market cap news",
+    "TSMC chip manufacturing capacity",
+    "semiconductor industry outlook 2026",
+    "AMD vs Intel data center",
+    "AI GPU demand forecast",
+    "ASML EUV lithography",
+    "Broadcom VMware integration",
+    "Qualcomm Snapdragon launch",
+    "ARM ecosystem licensing",
+    "datacenter AI accelerator trends"
+  ],
+  "searchTagsZh": [
+    "英伟达市值新闻",
+    "台积电产能与先进制程",
+    "半导体行业展望2026",
+    "AMD英特尔数据中心对比",
+    "AI算力GPU需求预测",
+    "ASML光刻机EUV",
+    "博通收购VMware进展",
+    "高通骁龙新品发布",
+    "ARM架构授权生态",
+    "数据中心AI加速卡"
+  ],
   "top10": [
     { "nameEn": "NVIDIA", "nameZh": "英伟达", "url": "https://www.nvidia.com/", "domain": "nvidia.com" },
     { "nameEn": "TSMC", "nameZh": "台积电", "url": "https://www.tsmc.com/", "domain": "tsmc.com" },

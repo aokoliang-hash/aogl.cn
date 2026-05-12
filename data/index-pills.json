@@ -1,0 +1,86 @@
+{
+  "en": [
+    "ChatGPT",
+    "Claude AI assistant",
+    "Google Gemini API",
+    "OpenAI API documentation",
+    "Cursor IDE AI coding",
+    "Midjourney AI image",
+    "Stable Diffusion XL",
+    "LLM fine-tuning LoRA",
+    "vector database RAG",
+    "MCP Model Context Protocol"
+  ],
+  "zh": [
+    "ChatGPT 使用教程",
+    "Claude 大模型",
+    "谷歌 Gemini 多模态",
+    "OpenAI API 文档",
+    "Cursor AI 编程",
+    "Midjourney 生图",
+    "Stable Diffusion 本地部署",
+    "大模型微调 LoRA",
+    "向量数据库 RAG",
+    "模型上下文协议 MCP"
+  ],
+  "ja": [
+    "ChatGPT 使い方",
+    "Claude AI",
+    "Google Gemini API",
+    "OpenAI API ドキュメント",
+    "Cursor エディタ AI",
+    "Midjourney 画像生成",
+    "Stable Diffusion",
+    "LLM ファインチューニング",
+    "ベクトルDB RAG",
+    "MCP プロトコル"
+  ],
+  "ko": [
+    "ChatGPT 활용",
+    "Claude AI",
+    "Google Gemini API",
+    "OpenAI API 문서",
+    "Cursor AI 코딩",
+    "Midjourney 이미지",
+    "Stable Diffusion",
+    "LLM 파인튜닝",
+    "벡터 DB RAG",
+    "MCP 프로토콜"
+  ],
+  "fr": [
+    "ChatGPT",
+    "assistant Claude IA",
+    "Google Gemini API",
+    "documentation OpenAI API",
+    "Cursor éditeur IA",
+    "Midjourney image IA",
+    "Stable Diffusion",
+    "fine-tuning LLM LoRA",
+    "base vectorielle RAG",
+    "protocole MCP IA"
+  ],
+  "ru": [
+    "ChatGPT",
+    "Claude AI ассистент",
+    "Google Gemini API",
+    "OpenAI API документация",
+    "Cursor IDE нейрокодинг",
+    "Midjourney генерация изображений",
+    "Stable Diffusion",
+    "дообучение LLM LoRA",
+    "векторная база RAG",
+    "протокол MCP ИИ"
+  ],
+  "ar": [
+    "ChatGPT",
+    "مساعد Claude الذكاء الاصطناعي",
+    "Google Gemini API",
+    "وثائق OpenAI API",
+    "Cursor برمجة بالذكاء الاصطناعي",
+    "Midjourney توليد صور",
+    "Stable Diffusion",
+    "ضبط نماذج لغوية كبيرة LoRA",
+    "قاعدة بيانات متجهة RAG",
+    "بروتوكول MCP للذكاء الاصطناعي"
+  ]
+}

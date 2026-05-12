@@ -23,6 +23,30 @@
   "moreTitleZh": "其它品牌入口",
   "moreLeadEn": "",
   "moreLeadZh": "",
+  "searchTags": [
+    "Interbrand best global brands",
+    "brand valuation methodology 2026",
+    "Apple brand strategy news",
+    "Nike marketing campaigns",
+    "luxury brand ranking LVMH",
+    "Coca-Cola brand heritage",
+    "global trademark trends",
+    "brand finance league table",
+    "consumer brand awareness study",
+    "Disney brand portfolio news"
+  ],
+  "searchTagsZh": [
+    "Interbrand 全球最佳品牌",
+    "品牌价值评估方法",
+    "苹果品牌战略",
+    "耐克营销案例",
+    "奢侈品集团排名",
+    "可口可乐品牌历史",
+    "全球商标趋势",
+    "品牌金融500强",
+    "消费者品牌认知调研",
+    "迪士尼IP授权动态"
+  ],
   "top10": [
     { "nameEn": "Apple", "nameZh": "苹果", "url": "https://www.apple.com/", "domain": "apple.com" },
     { "nameEn": "Microsoft", "nameZh": "微软", "url": "https://www.microsoft.com/", "domain": "microsoft.com" },

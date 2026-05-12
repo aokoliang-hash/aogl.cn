@@ -78,7 +78,7 @@ fs.writeFileSync(path.join(__dirname, "_reading-jsonld-items.tmp.json"), JSON.st
 
 console.log("Wrote tmp files, items:", n);
 
-const INDEX_PATH = path.join(ROOT, "index.html");
+const INDEX_PATH = path.join(ROOT, "_multilang", "index.html");
 const READING_START = "<!-- READING_SECTION_AUTO_START -->";
 const READING_END = "<!-- READING_SECTION_AUTO_END -->";
 let indexHtml = fs.readFileSync(INDEX_PATH, "utf8");
@@ -92,7 +92,7 @@ indexHtml =
   "\n    " +
   indexHtml.slice(i1);
 fs.writeFileSync(INDEX_PATH, indexHtml, "utf8");
-console.log("Patched index.html reading section");
+console.log("Patched _multilang/index.html reading section");
 
 function patchJsonLd(htmlStr) {
   const JSONLD_START = "<!-- JSONLD_AUTO_START -->";
@@ -117,4 +117,4 @@ function patchJsonLd(htmlStr) {
 
 const htmlPatched = patchJsonLd(fs.readFileSync(INDEX_PATH, "utf8"));
 fs.writeFileSync(INDEX_PATH, htmlPatched, "utf8");
-console.log("Patched index.html JSON-LD ItemList");
+console.log("Patched _multilang/index.html JSON-LD ItemList");

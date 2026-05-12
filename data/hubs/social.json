@@ -23,6 +23,30 @@
   "moreTitleZh": "更多社交平台",
   "moreLeadEn": "",
   "moreLeadZh": "",
+  "searchTags": [
+    "social network MAU 2026",
+    "TikTok algorithm policy news",
+    "Meta Threads monthly active users",
+    "LinkedIn B2B marketing tips",
+    "Discord server communities",
+    "Telegram security updates",
+    "short video platform trends",
+    "influencer marketing ROI",
+    "social media privacy settings",
+    "WeChat vs WhatsApp comparison"
+  ],
+  "searchTagsZh": [
+    "社交网络月活排名",
+    "TikTok算法与政策",
+    "Meta Threads用户量",
+    "领英B2B营销",
+    "Discord社区运营",
+    "Telegram安全更新",
+    "短视频平台趋势",
+    "网红营销ROI",
+    "社交媒体隐私设置",
+    "微信与WhatsApp对比"
+  ],
   "top10": [
     { "nameEn": "Facebook", "nameZh": "Facebook", "url": "https://www.facebook.com/", "domain": "facebook.com" },
     { "nameEn": "YouTube", "nameZh": "YouTube", "url": "https://www.youtube.com/", "domain": "youtube.com" },

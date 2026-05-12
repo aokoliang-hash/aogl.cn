@@ -245,7 +245,7 @@ p {
   margin: 0 0 1rem;
   color: #c5d0dc;
 }
-.locale-zh p {
+.locale-zht p {
   letter-spacing: 0.02em;
 }
 .cards {
@@ -369,6 +369,16 @@ p {
   background: rgba(167, 139, 250, 0.12);
   color: #c4b5fd;
   border: 1px solid rgba(167, 139, 250, 0.25);
+}
+a.pill {
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+a.pill:hover {
+  color: var(--accent);
+  border-color: rgba(125, 211, 252, 0.45);
+  background: rgba(125, 211, 252, 0.12);
 }
 .ad-slot {
   background: rgba(18, 25, 34, 0.75);
@@ -611,7 +621,7 @@ footer.site-footer {
 body:not(.locale-en) .lang-en {
   display: none !important;
 }
-body:not(.locale-zh) .lang-zh {
+body:not(.locale-zh):not(.locale-zht) .lang-zh {
   display: none !important;
 }
 body:not(.locale-ja) .lang-ja {
