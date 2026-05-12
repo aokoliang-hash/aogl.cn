@@ -1,9 +1,6 @@
 /**
- * Static hub pages (门户 / 品牌 / …) from data/hubs/*.json
- *
- * SEO: generated HTML contains all outbound links and copy in the DOM (no empty shells).
- * "自动资讯": maintain news in JSON; optional future step — node fetch RSS in a separate
- * script and merge into these JSON files, then re-run: npm run build-hubs
+ * Static hub pages from data/hubs/*.json
+ * Extra locales (ja, ko, fr, ru, ar): copy in data/i18n/hub-ui.json + EDITORIAL_I18N below.
  */
 import fs from "fs";
 import path from "path";
@@ -14,6 +11,73 @@ const ROOT = path.join(__dirname, "..");
 const HUB_DIR = path.join(ROOT, "data", "hubs");
 const SITE = JSON.parse(fs.readFileSync(path.join(ROOT, "site.config.json"), "utf8"));
 const BASE = String(SITE.siteUrl || "https://aogl.cn").replace(/\/$/, "");
+const hubUi = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "i18n", "hub-ui.json"), "utf8"));
+
+const LOCALES = ["en", "zh", "ja", "ko", "fr", "ru", "ar"];
+
+/** Short editorial HTML for locales without zh; falls back to English in spec. */
+const EDITORIAL_I18N = {
+  portal: {
+    ja: "<p>順序は Similarweb や Cloudflare Radar などの公開トラフィックランキングに沿っています。私個人のクリックログではありません。</p>",
+    ko: "<p>순서는 Similarweb·Cloudflare Radar 등 공개 글로벌 트래픽 순위를 참고했으며 개인 클릭 통계가 아닙니다.</p>",
+    fr: "<p>L’ordre suit les classements publics de trafic (Similarweb, Cloudflare Radar, etc.) — pas mon journal de clics privé.</p>",
+    ru: "<p>Порядок ориентирован на открытые рейтинги трафика (Similarweb, Cloudflare Radar и т.п.) — не на мою личную статистику кликов.</p>",
+    ar: "<p>يستند الترتيب إلى تصنيفات الزيارات العلنية (Similarweb وCloudflare Radar وغيرها) — وليس إلى سجل نقراتي الشخصي.</p>",
+  },
+  brands: {
+    ja: "<p>Interbrand「世界のベストブランド」価値ランキングに近い並びです。年次更新後に順位は変わる場合があります。</p>",
+    ko: "<p>Interbrand식 글로벌 브랜드 가치 상위권과 유사한 순서이며, 연간 발표 후 순위가 바뀔 수 있습니다.</p>",
+    fr: "<p>Ordre proche du classement Interbrand « Best Global Brands » ; il peut bouger quand ils publient le tableau annuel.</p>",
+    ru: "<p>Порядок близок к рейтингу Interbrand «Best Global Brands»; после ежегодной публикации он может меняться.</p>",
+    ar: "<p>يقترب الترتيب من ترتيب Interbrand لأفضل العلامات العالمية؛ وقد يتغير عند نشر الجدول السنوي.</p>",
+  },
+  shopping: {
+    ja: "<p>Digital Commerce 360 や Statista 系の「最大手ネット小売」表に近い順序です。中国国内モールは下の「もっと見る」にまとめています。</p>",
+    ko: "<p>Digital Commerce 360·Statista 등 ‘최대 온라인 소매’ 순위와 유사합니다. 중국 전용 몰은 아래 ‘더보기’에 있습니다.</p>",
+    fr: "<p>Ordre proche des tableaux « plus grands détaillants en ligne » (Digital Commerce 360, Statista, etc.) — les malls chinois sont dans « plus ».</p>",
+    ru: "<p>Порядок близок к таблицам «крупнейшие онлайн‑ритейлеры» (Digital Commerce 360, Statista и т.п.) — китайские площадки внизу в «ещё».</p>",
+    ar: "<p>يقترب الترتيب من جداول «أكبر تجار التجزئة عبر الإنترنت» (Digital Commerce 360 وStatista وغيرهما) — والمراكز الصينية في قسم «المزيد».</p>",
+  },
+  life: {
+    ja: "<p>Data.ai / Sensor Tower 系のグローバルMAUチャートに沿った順序です。地域スーパーアプリは下にあります。</p>",
+    ko: "<p>Data.ai·Sensor Tower 등 글로벌 MAU 차트를 참고했습니다. 지역 슈퍼앱은 아래에 있습니다.</p>",
+    fr: "<p>Ordre aligné sur les classements mondiaux de MAU (Data.ai, Sensor Tower, etc.) — les super‑apps régionales sont listées plus bas.</p>",
+    ru: "<p>Порядок по глобальным рейтингам MAU (Data.ai, Sensor Tower и т.п.) — региональные супер‑приложения ниже.</p>",
+    ar: "<p>يستند الترتيب إلى تصنيفات المستخدمين النشطين عالميًا (Data.ai وSensor Tower وغيرهما) — والتطبيقات الإقليمية الكبرى في الأسفل.</p>",
+  },
+  social: {
+    ja: "<p>Data.ai / We Are Social 系のグローバルSNS MAUランキングに近い順序です。いずれの製品政策を推奨するものではありません。</p>",
+    ko: "<p>Data.ai·We Are Social 등 글로벌 소셜 MAU 순위와 유사합니다. 특정 정책을 지지하는 뜻은 아닙니다.</p>",
+    fr: "<p>Ordre proche des classements mondiaux d’apps sociales (Data.ai, We Are Social, etc.) — sans endosser les politiques produit.</p>",
+    ru: "<p>Порядок близок к глобальным рейтингам соцприложений (Data.ai, We Are Social и т.д.) — без одобрения политик продуктов.</p>",
+    ar: "<p>يقترب الترتيب من تصنيفات تطبيقات التواصل العالمية (Data.ai وWe Are Social وغيرهما) — دون تأييد سياسات أي منتج.</p>",
+  },
+  tech: {
+    ja: "<p>NVIDIA・TSMC・Broadcom など公開の時価ランキングに近い並びです。投資推奨ではありません。</p>",
+    ko: "<p>NVIDIA·TSMC·Broadcom 등 공개 시가총액 순위와 유사합니다. 매수 권유가 아닙니다.</p>",
+    fr: "<p>Ordre proche des tableaux de capitalisation (NVIDIA, TSMC, Broadcom, etc.) — pas une liste d’achat.</p>",
+    ru: "<p>Порядок близок к таблицам капитализации (NVIDIA, TSMC, Broadcom и т.д.) — не список для покупки.</p>",
+    ar: "<p>يقترب الترتيب من جداول القيمة السوقية (NVIDIA وTSMC وBroadcom وغيرها) — وليس قائمة شراء.</p>",
+  },
+  games: {
+    ja: "<p>PC・リビング支出では Steam と御三家が先行。Tencent 級のモバイル巨人は主站の形が違うため「もっと見る」に置いています。</p>",
+    ko: "<p>PC·거실 지출은 Steam과 콘솔 3사가 앞섭니다. 텐센트급 모바일 거인은 웹 허브 형태가 달라 ‘더보기’에 두었습니다.</p>",
+    fr: "<p>Steam et les trois familles de consoles dominent PC / salon ; les géants mobiles type Tencent sont dans « plus » car leurs hubs web diffèrent.</p>",
+    ru: "<p>Steam и три консольные семьи лидируют в PC / гостиной; мобильные гиганты уровня Tencent — в «ещё», так как их веб‑хабы иные.</p>",
+    ar: "<p>يغلب Steam وعائلات المنصات الثلاث إنفاق الحاسوب والصالة؛ عملاقو الموبايل على غرار Tencent في قسم «المزيد» لأن مراكزهم الويب تختلف.</p>",
+  },
+};
+
+const BRAND_IMG_ALT = {
+  ja: "aogl.cn — 生成AIツールの個人用ブックマーク",
+  ko: "aogl.cn — 생성형 AI 도구 개인 북마크",
+  fr: "aogl.cn — signets personnels pour outils d’IA générative",
+  ru: "aogl.cn — личные закладки по инструментам генеративного ИИ",
+  ar: "aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي",
+};
+
+const FOOTER_ABOUT = { ja: "概要", ko: "소개", fr: "À propos", ru: "О сайте", ar: "حول الموقع" };
+const FOOTER_PRIVACY = { ja: "プライバシー", ko: "개인정보", fr: "Confidentialité", ru: "Конфиденциальность", ar: "الخصوصية" };
 
 function esc(s) {
   return String(s)
@@ -23,23 +87,70 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-/** Omit empty lead paragraphs so pages stay minimal. */
-function hubLeadBlock(en, zh) {
-  const e = String(en ?? "").trim();
-  const z = String(zh ?? "").trim();
-  if (!e && !z) return "";
-  return `      <p class="hub-screen-lead"><span class="lang-en">${esc(e)}</span><span class="lang-zh">${esc(z)}</span></p>
-`;
+function T(spec, key, lang) {
+  const en = spec[key + "En"] ?? "";
+  const zh = spec[key + "Zh"] ?? "";
+  if (lang === "en") return en;
+  if (lang === "zh") return zh || en;
+  const pack = hubUi[spec.slug]?.[key]?.[lang];
+  return pack != null && String(pack).length ? pack : en;
 }
 
-function editorialBlocks(htmlEn, htmlZh) {
-  const e = String(htmlEn ?? "").trim();
-  const z = String(htmlZh ?? "").trim();
-  if (!e && !z) return "";
+function entityName(nameEn, lang) {
+  if (lang === "en" || lang === "zh") return null;
+  return hubUi.entityNames?.[nameEn]?.[lang];
+}
+
+function displayName(t, lang) {
+  if (lang === "en") return t.nameEn;
+  if (lang === "zh") return t.nameZh;
+  return entityName(t.nameEn, lang) || t.nameEn;
+}
+
+function newsTitle(it, lang) {
+  if (lang === "en") return it.titleEn;
+  if (lang === "zh") return it.titleZh;
+  return it.titleEn;
+}
+
+function hubLeadSpans(spec, base) {
+  const en = String(spec[base + "En"] ?? "").trim();
+  const zh = String(spec[base + "Zh"] ?? "").trim();
+  if (!en && !zh) return "";
+  const inner = LOCALES.map((code) => {
+    const text = code === "en" ? en : code === "zh" ? zh || en : en;
+    return `<span class="lang-${code}">${esc(text)}</span>`;
+  }).join("");
+  return `      <p class="hub-screen-lead">${inner}</p>\n`;
+}
+
+function editorialBlocks7(spec) {
   let out = "";
-  if (e) out += `      <div class="lang-en hub-prose">${htmlEn}</div>\n`;
-  if (z) out += `      <div class="lang-zh hub-prose">${htmlZh}</div>\n`;
+  for (const code of LOCALES) {
+    let html;
+    if (code === "en") html = spec.editorialHtmlEn || "";
+    else if (code === "zh") html = spec.editorialHtmlZh || spec.editorialHtmlEn || "";
+    else html = EDITORIAL_I18N[spec.slug]?.[code] || spec.editorialHtmlEn || "";
+    if (!String(html).trim()) continue;
+    out += `      <div class="lang-${code} hub-prose">${html}</div>\n`;
+  }
   return out;
+}
+
+function inlineTitleSpans(spec, key) {
+  return LOCALES.map((code) => `<span class="lang-${code}">${esc(T(spec, key, code))}</span>`).join("");
+}
+
+function updatedSpans(spec) {
+  const u = esc(spec.updated);
+  const pfx = hubUi.global?.updatedPrefix || {};
+  return LOCALES.map((code) => {
+    let line;
+    if (code === "en") line = `Updated ${u}`;
+    else if (code === "zh") line = `更新 ${u}`;
+    else line = `${pfx[code] || "Updated"} ${u}`;
+    return `<span class="lang-${code}">${esc(line)}</span>`;
+  }).join("");
 }
 
 function faviconUrl(domain) {
@@ -48,31 +159,30 @@ function faviconUrl(domain) {
 }
 
 const NAV = [
-  { href: "index.html#tools-directory", file: null, en: "AI tools", zh: "AI 工具" },
-  { href: "portal.html", file: "portal.html", en: "Top sites", zh: "全球站点" },
-  { href: "brands.html", file: "brands.html", en: "Brands", zh: "品牌" },
-  { href: "shopping.html", file: "shopping.html", en: "Shopping", zh: "购物" },
-  { href: "life.html", file: "life.html", en: "Life", zh: "生活" },
-  { href: "social.html", file: "social.html", en: "Social", zh: "社交" },
-  { href: "tech.html", file: "tech.html", en: "Tech", zh: "科技" },
-  { href: "games.html", file: "games.html", en: "Games", zh: "游戏" },
+  { href: "index.html#tools-directory", file: null, en: "AI tools", zh: "AI 工具", ja: "AIツール", ko: "AI 도구", fr: "Outils IA", ru: "ИИ-инструменты", ar: "أدوات الذكاء الاصطناعي" },
+  { href: "portal.html", file: "portal.html", en: "Top sites", zh: "全球站点", ja: "主要サイト", ko: "주요 사이트", fr: "Grands sites", ru: "Топ сайтов", ar: "أبرز المواقع" },
+  { href: "brands.html", file: "brands.html", en: "Brands", zh: "品牌", ja: "ブランド", ko: "브랜드", fr: "Marques", ru: "Бренды", ar: "العلامات" },
+  { href: "shopping.html", file: "shopping.html", en: "Shopping", zh: "购物", ja: "ショッピング", ko: "쇼핑", fr: "Shopping", ru: "Шопинг", ar: "التسوق" },
+  { href: "life.html", file: "life.html", en: "Life", zh: "生活", ja: "ライフ", ko: "라이프", fr: "Vie", ru: "Сервисы", ar: "الحياة الرقمية" },
+  { href: "social.html", file: "social.html", en: "Social", zh: "社交", ja: "ソーシャル", ko: "소셜", fr: "Social", ru: "Соцсети", ar: "التواصل" },
+  { href: "tech.html", file: "tech.html", en: "Tech", zh: "科技", ja: "テック", ko: "테크", fr: "Tech", ru: "Техно", ar: "التقنية" },
+  { href: "games.html", file: "games.html", en: "Games", zh: "游戏", ja: "ゲーム", ko: "게임", fr: "Jeux", ru: "Игры", ar: "الألعاب" },
 ];
 
+function navLabel(n, lang) {
+  return n[lang] || n.en;
+}
+
 function navHtml(activeFile) {
-  function lisForLang(lang) {
-    return NAV.map((n) => {
-      const isActive = n.file != null && n.file === activeFile;
-      const cur = isActive ? ' class="is-active"' : "";
-      const label = lang === "en" ? n.en : n.zh;
-      return `          <li${cur}><a href="${esc(n.href)}">${esc(label)}</a></li>`;
-    }).join("\n");
-  }
-  return `        <ul class="site-nav-list lang-en">
-${lisForLang("en")}
-        </ul>
-        <ul class="site-nav-list lang-zh">
-${lisForLang("zh")}
-        </ul>`;
+  return LOCALES.map(
+    (lang) => `        <ul class="site-nav-list lang-${lang}">
+${NAV.map((n) => {
+          const isActive = n.file != null && n.file === activeFile;
+          const cur = isActive ? ' class="is-active"' : "";
+          return `          <li${cur}><a href="${esc(n.href)}">${esc(navLabel(n, lang))}</a></li>`;
+        }).join("\n")}
+        </ul>`
+  ).join("\n");
 }
 
 function jsonLdItemList(name, items) {
@@ -89,6 +199,37 @@ function jsonLdItemList(name, items) {
   };
 }
 
+function brandHeadings() {
+  return `${LOCALES.map((code) => {
+    const alt =
+      code === "en"
+        ? "aogl.cn — personal bookmarks for generative AI tools and LLM releases"
+        : code === "zh"
+          ? "aogl.cn — 生成式 AI 工具与大模型动态（个人书签）"
+          : BRAND_IMG_ALT[code] || BRAND_IMG_ALT.ja;
+    return `        <h1 class="lang-${code} brand-logo-heading">
+          <a href="${esc(BASE)}/" class="brand-logo-link"
+            ><img src="logo.svg" width="336" height="56" class="brand-logo-img" alt="${esc(alt)}" decoding="async" /></a>
+        </h1>`;
+  }).join("\n")}`;
+}
+
+function footerLegal() {
+  const about = LOCALES.map(
+    (code) =>
+      `        <a href="index.html#intro" class="footer-legal-link lang-${code}">${esc(
+        code === "en" ? "About" : code === "zh" ? "关于" : FOOTER_ABOUT[code]
+      )}</a>`
+  ).join("\n");
+  const priv = LOCALES.map(
+    (code) =>
+      `        <a href="privacy.html" class="footer-legal-link lang-${code}">${esc(
+        code === "en" ? "Privacy" : code === "zh" ? "隐私政策" : FOOTER_PRIVACY[code]
+      )}</a>`
+  ).join("\n");
+  return about + "\n" + priv;
+}
+
 function renderPage(spec, activeFile) {
   const top10 = spec.top10 || [];
   const newsGroups = spec.newsGroups || [];
@@ -102,7 +243,7 @@ function renderPage(spec, activeFile) {
       url: canonical,
       name: spec.titleEn,
       description: spec.descEn,
-      inLanguage: ["en", "zh-CN"],
+      inLanguage: ["en", "zh-CN", "ja", "ko", "fr", "ru", "ar"],
       isPartOf: { "@type": "WebSite", "@id": BASE + "/#website", name: "aogl.cn", url: BASE + "/" },
     },
     jsonLdItemList(`${spec.h1En} — top 10`, top10.map((t) => ({ name: t.nameEn, url: t.url }))),
@@ -114,7 +255,7 @@ function renderPage(spec, activeFile) {
             <a class="hub-rank-link" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">
               <span class="hub-rank-num">${i + 1}</span>
               <img class="hub-favicon" src="${esc(faviconUrl(t.domain))}" width="40" height="40" alt="" loading="lazy" decoding="async" data-domain="${esc(t.domain)}" />
-              <span class="hub-rank-text"><span class="lang-en">${esc(t.nameEn)}</span><span class="lang-zh">${esc(t.nameZh)}</span></span>
+              <span class="hub-rank-text">${LOCALES.map((code) => `<span class="lang-${code}">${esc(displayName(t, code))}</span>`).join("")}</span>
             </a>
           </li>`
     )
@@ -123,12 +264,19 @@ function renderPage(spec, activeFile) {
   const newsBlocks = newsGroups
     .map(
       (g) => `        <section class="hub-news-group" aria-labelledby="${esc(g.id)}">
-          <h3 id="${esc(g.id)}" class="hub-news-group-title"><span class="lang-en">${esc(g.labelEn)}</span><span class="lang-zh">${esc(g.labelZh)}</span></h3>
+          <h3 id="${esc(g.id)}" class="hub-news-group-title">${LOCALES.map(
+            (code) =>
+              `<span class="lang-${code}">${esc(
+                code === "en" ? g.labelEn : code === "zh" ? g.labelZh : entityName(g.labelEn, code) || g.labelEn
+              )}</span>`
+          ).join("")}</h3>
           <ul class="hub-news-list">
 ${(g.items || [])
   .map(
     (it) => `            <li>
-              <a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer"><span class="lang-en">${esc(it.titleEn)}</span><span class="lang-zh">${esc(it.titleZh)}</span></a>
+              <a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${LOCALES.map(
+                (code) => `<span class="lang-${code}">${esc(newsTitle(it, code))}</span>`
+              ).join("")}</a>
               <span class="hub-news-meta">${esc(it.date || "")}</span>
             </li>`
   )
@@ -143,7 +291,7 @@ ${(g.items || [])
       (t) => `          <li class="hub-more-item">
             <a class="hub-more-link" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">
               <img class="hub-favicon hub-favicon-sm" src="${esc(faviconUrl(t.domain))}" width="28" height="28" alt="" loading="lazy" decoding="async" />
-              <span class="lang-en">${esc(t.nameEn)}</span><span class="lang-zh">${esc(t.nameZh)}</span>
+              ${LOCALES.map((code) => `<span class="lang-${code}">${esc(displayName(t, code))}</span>`).join("")}
             </a>
           </li>`
     )
@@ -151,13 +299,14 @@ ${(g.items || [])
 
   const pageJs = spec.pageScript || `js/pages/${spec.slug}.js`;
 
+  const dataTitles = LOCALES.map((code) => `  data-title-${code}="${esc(T(spec, "title", code))}"`).join("\n");
+  const dataDescs = LOCALES.map((code) => `  data-desc-${code}="${esc(T(spec, "desc", code))}"`).join("\n");
+
   return `<!DOCTYPE html>
 <html
   lang="en"
-  data-title-en="${esc(spec.titleEn)}"
-  data-title-zh="${esc(spec.titleZh)}"
-  data-desc-en="${esc(spec.descEn)}"
-  data-desc-zh="${esc(spec.descZh)}"
+${dataTitles}
+${dataDescs}
 >
 <head>
   <meta charset="utf-8" />
@@ -190,48 +339,40 @@ ${JSON.stringify({ "@context": "https://schema.org", "@graph": graph }, null, 2)
   <header>
     <div class="head-row">
       <div class="brand">
-        <h1 class="lang-en brand-logo-heading">
-          <a href="${esc(BASE)}/" class="brand-logo-link"
-            ><img src="logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async" /></a>
-        </h1>
-        <h1 class="lang-zh brand-logo-heading">
-          <a href="${esc(BASE)}/" class="brand-logo-link"
-            ><img src="logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async" /></a>
-        </h1>
+${brandHeadings()}
       </div>
       <nav class="site-nav" aria-label="Primary">
 ${navHtml(activeFile)}
       </nav>
-      <div class="lang-switch" role="group" aria-label="Language">
-        <button type="button" id="btn-en" aria-pressed="true">English</button>
-        <button type="button" id="btn-zh" aria-pressed="false">中文</button>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
       </div>
     </div>
   </header>
 
   <main class="hub-main wrap" id="main">
     <article class="hub-editorial prose-block">
-      <h1 class="hub-page-title"><span class="lang-en">${esc(spec.h1En)}</span><span class="lang-zh">${esc(spec.h1Zh)}</span></h1>
-      <p class="hub-updated"><span class="lang-en">Updated ${esc(spec.updated)}</span><span class="lang-zh">更新 ${esc(spec.updated)}</span></p>
-${editorialBlocks(spec.editorialHtmlEn, spec.editorialHtmlZh)}    </article>
+      <h1 class="hub-page-title">${inlineTitleSpans(spec, "h1")}</h1>
+      <p class="hub-updated">${updatedSpans(spec)}</p>
+${editorialBlocks7(spec)}    </article>
 
     <section class="hub-screen hub-screen-rank" id="rank" aria-labelledby="hub-rank-title">
-      <h2 id="hub-rank-title" class="page-section-title"><span class="lang-en">${esc(spec.rankTitleEn)}</span><span class="lang-zh">${esc(spec.rankTitleZh)}</span></h2>
-${hubLeadBlock(spec.rankLeadEn, spec.rankLeadZh)}      <ol class="hub-rank-grid">
+      <h2 id="hub-rank-title" class="page-section-title">${inlineTitleSpans(spec, "rankTitle")}</h2>
+${hubLeadSpans(spec, "rankLead")}      <ol class="hub-rank-grid">
 ${top10Lis}
       </ol>
     </section>
 
     <section class="hub-screen hub-screen-news" id="news" aria-labelledby="hub-news-title">
-      <h2 id="hub-news-title" class="page-section-title"><span class="lang-en">${esc(spec.newsTitleEn)}</span><span class="lang-zh">${esc(spec.newsTitleZh)}</span></h2>
-${hubLeadBlock(spec.newsLeadEn, spec.newsLeadZh)}      <div class="hub-news-wrap">
+      <h2 id="hub-news-title" class="page-section-title">${inlineTitleSpans(spec, "newsTitle")}</h2>
+${hubLeadSpans(spec, "newsLead")}      <div class="hub-news-wrap">
 ${newsBlocks}
       </div>
     </section>
 
     <section class="hub-screen hub-screen-more" id="more" aria-labelledby="hub-more-title">
-      <h2 id="hub-more-title" class="page-section-title"><span class="lang-en">${esc(spec.moreTitleEn)}</span><span class="lang-zh">${esc(spec.moreTitleZh)}</span></h2>
-${hubLeadBlock(spec.moreLeadEn, spec.moreLeadZh)}      <ul class="hub-more-grid">
+      <h2 id="hub-more-title" class="page-section-title">${inlineTitleSpans(spec, "moreTitle")}</h2>
+${hubLeadSpans(spec, "moreLead")}      <ul class="hub-more-grid">
 ${moreLis}
       </ul>
     </section>
@@ -240,9 +381,8 @@ ${moreLis}
   <footer class="site-footer">
     <div class="wrap footer-wrap">
       <div class="footer-top">
-        <div class="footer-lang" role="group" aria-label="Language">
-          <button type="button" id="footer-btn-en" class="footer-lang-btn" aria-pressed="true">English</button>
-          <button type="button" id="footer-btn-zh" class="footer-lang-btn" aria-pressed="false">中文</button>
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
         </div>
       </div>
       <div class="footer-watermark" aria-hidden="true">
@@ -257,10 +397,7 @@ ${moreLis}
         />
       </div>
       <div class="footer-legal">
-        <a href="index.html#intro" class="footer-legal-link lang-en">About</a>
-        <a href="index.html#intro" class="footer-legal-link lang-zh">关于</a>
-        <a href="privacy.html" class="footer-legal-link lang-en">Privacy</a>
-        <a href="privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+${footerLegal()}
         <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
       </div>
     </div>

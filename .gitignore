@@ -2,5 +2,7 @@
 Thumbs.db
 *.log
 node_modules/
+scripts/_*.tmp.*
+scripts/_*.tmp.json
 .env
 .env.*

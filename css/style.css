@@ -195,6 +195,21 @@ header {
 .lang-switch button:hover {
   color: var(--text);
 }
+.aogl-lang-select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+  min-width: 7.5rem;
+}
+.aogl-lang-select:hover,
+.aogl-lang-select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
 .wrap {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -415,22 +430,21 @@ footer.site-footer {
   align-items: center;
   gap: 0.35rem;
 }
-.footer-lang-btn {
-  background: transparent;
-  border: none;
-  padding: 0.2rem 0.35rem;
+.footer-lang .aogl-lang-select {
+  background: rgba(18, 25, 34, 0.55);
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.5rem;
   font: inherit;
   font-size: 0.82rem;
-  color: var(--muted);
-  cursor: pointer;
-  border-radius: 4px;
-}
-.footer-lang-btn:hover {
   color: var(--text);
+  cursor: pointer;
+  border-radius: 6px;
+  min-width: 6.5rem;
 }
-.footer-lang-btn[aria-pressed="true"] {
-  color: var(--accent);
-  font-weight: 600;
+.footer-lang .aogl-lang-select:hover,
+.footer-lang .aogl-lang-select:focus {
+  border-color: var(--accent);
+  outline: none;
 }
 .footer-watermark {
   width: 100%; 
@@ -593,9 +607,29 @@ footer.site-footer {
   color: #e0e8f0;
   line-height: 1.2; 
 }
-.locale-en .lang-zh {
+/* One visible .lang-XX per body.locale-XX (partial locales keep body on en/zh). */
+body:not(.locale-en) .lang-en {
   display: none !important;
 }
-.locale-zh .lang-en {
+body:not(.locale-zh) .lang-zh {
   display: none !important;
+}
+body:not(.locale-ja) .lang-ja {
+  display: none !important;
+}
+body:not(.locale-ko) .lang-ko {
+  display: none !important;
+}
+body:not(.locale-fr) .lang-fr {
+  display: none !important;
+}
+body:not(.locale-ru) .lang-ru {
+  display: none !important;
+}
+body:not(.locale-ar) .lang-ar {
+  display: none !important;
+}
+.lang-ar {
+  direction: rtl;
+  unicode-bidi: isolate;
 }

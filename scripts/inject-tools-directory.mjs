@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Injects AI tools directory from data/tools-directory.html into index.html
+ * Injects AI tools directory from data/tools-directory.json + data/i18n/site-tools-i18n.json
  */
 import fs from "fs";
 import path from "path";
@@ -10,9 +10,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const INDEX = path.join(ROOT, "index.html");
 const DATA = path.join(ROOT, "data", "tools-directory.json");
+const I18N = path.join(ROOT, "data", "i18n", "site-tools-i18n.json");
 
 const START = "<!-- TOOLS_DIRECTORY_AUTO_START -->";
 const END = "<!-- TOOLS_DIRECTORY_AUTO_END -->";
+
+const LOCALES = ["en", "zh", "ja", "ko", "fr", "ru", "ar"];
+
+const pack = JSON.parse(fs.readFileSync(I18N, "utf8"));
 
 function escapeHtml(s) {
   return String(s)
@@ -26,26 +31,62 @@ function faviconUrl(domain) {
   return "https://www.google.com/s2/favicons?domain=" + encodeURIComponent(domain) + "&sz=48";
 }
 
+function toolName(t, lang) {
+  if (lang === "en") return t.name_en;
+  if (lang === "zh") return t.name_zh;
+  const o = pack.toolDomains?.[t.domain]?.name?.[lang];
+  return o != null && o !== "" ? o : t.name_en;
+}
+
 function renderTool(t) {
   const icon = faviconUrl(t.domain);
+  const names = LOCALES.map(
+    (lang) => `                <span class="tool-tile-name lang-${lang}">${escapeHtml(toolName(t, lang))}</span>`
+  ).join("\n");
   return `            <li>
               <a class="tool-tile" href="${escapeHtml(t.url)}" target="_blank" rel="noopener noreferrer">
                 <span class="tool-tile-icon-wrap">
                   <img class="tool-tile-icon" src="${icon}" width="36" height="36" alt="" loading="lazy" decoding="async" />
                 </span>
-                <span class="tool-tile-name lang-en">${escapeHtml(t.name_en)}</span>
-                <span class="tool-tile-name lang-zh">${escapeHtml(t.name_zh)}</span>
+${names}
               </a>
             </li>`;
 }
 
+function catTitle(cat, lang) {
+  if (lang === "en") return cat.title_en;
+  if (lang === "zh") return cat.title_zh;
+  return pack.categories?.[cat.id]?.title?.[lang] || cat.title_en;
+}
+
+function pageHeading(data, lang) {
+  if (lang === "en") return data.heading_en;
+  if (lang === "zh") return data.heading_zh;
+  return pack.heading?.[lang] || data.heading_en;
+}
+
+function pageIntro(data, lang) {
+  if (lang === "en") return data.intro_en;
+  if (lang === "zh") return data.intro_zh;
+  return pack.intro?.[lang] || data.intro_en;
+}
+
 function render(data) {
+  const headingLines = LOCALES.map(
+    (lang) => `        <h2 class="page-section-title lang-${lang}">${escapeHtml(pageHeading(data, lang))}</h2>`
+  ).join("\n");
+  const introLines = LOCALES.map(
+    (lang) => `        <p class="tools-intro lang-${lang}">${escapeHtml(pageIntro(data, lang))}</p>`
+  ).join("\n");
+
   const cats = data.categories
     .map((cat) => {
       const items = cat.tools.map(renderTool).join("\n");
+      const catHeads = LOCALES.map(
+        (lang) => `          <h3 class="tools-cat-heading lang-${lang}">${escapeHtml(catTitle(cat, lang))}</h3>`
+      ).join("\n");
       return `        <div class="tools-category" id="tools-${escapeHtml(cat.id)}">
-          <h3 class="tools-cat-heading lang-en">${escapeHtml(cat.title_en)}</h3>
-          <h3 class="tools-cat-heading lang-zh">${escapeHtml(cat.title_zh)}</h3>
+${catHeads}
           <ul class="tools-grid">
 ${items}
           </ul>
@@ -54,10 +95,8 @@ ${items}
     .join("\n\n");
 
   return `      <section id="tools-directory" class="tools-directory" tabindex="-1">
-        <h2 class="page-section-title lang-en">${escapeHtml(data.heading_en)}</h2>
-        <h2 class="page-section-title lang-zh">${escapeHtml(data.heading_zh)}</h2>
-        <p class="tools-intro lang-en">${escapeHtml(data.intro_en)}</p>
-        <p class="tools-intro lang-zh">${escapeHtml(data.intro_zh)}</p>
+${headingLines}
+${introLines}
 ${cats}
       </section>`;
 }
@@ -73,4 +112,4 @@ const data = JSON.parse(fs.readFileSync(DATA, "utf8"));
 let html = fs.readFileSync(INDEX, "utf8");
 html = replaceMarker(html, render(data));
 fs.writeFileSync(INDEX, html, "utf8");
-console.log("Injected tools directory from data/tools-directory.json");
+console.log("Injected tools directory (7 locales)");

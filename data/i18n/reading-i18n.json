@@ -1,0 +1,16 @@
+{
+  "pageTitle": {
+    "ja": "最新の公式記事（外部リンク）",
+    "ko": "최신 공식 기사(외부 링크)",
+    "fr": "Derniers articles officiels (liens externes)",
+    "ru": "Последние официальные статьи (внешние ссылки)",
+    "ar": "أحدث المقالات الرسمية (روابط خارجية)"
+  },
+  "intro": {
+    "ja": "{{count}} 件の OpenAI・Anthropic・Google DeepMind 公式記事リンクです。上のカテゴリフィードと URL は重複しません（別タブ）。",
+    "ko": "OpenAI·Anthropic·Google DeepMind 공식 글 {{count}}개 추가 링크입니다. 위 카테고리 피드와 URL이 겹치지 않으며 새 탭으로 열립니다.",
+    "fr": "{{count}} liens supplémentaires vers des articles officiels (OpenAI, Anthropic, Google DeepMind) — aucune URL dupliquée avec les flux ci‑dessus (nouvel onglet).",
+    "ru": "Ещё {{count}} ссылок на официальные материалы (OpenAI, Anthropic, Google DeepMind) — без дублирования URL с блоками выше (новая вкладка).",
+    "ar": "{{count}} روابط إضافية إلى مقالات رسمية (OpenAI وAnthropic وGoogle DeepMind) — دون تكرار الروابط مع الأقسام أعلاه (تبويب جديد)."
+  }
+}

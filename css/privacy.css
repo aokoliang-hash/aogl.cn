@@ -29,9 +29,42 @@ a {
   background: #e0f2fe;
   border-color: #0369a1;
 }
-.locale-en .lang-zh {
+.aogl-lang-select {
+  background: #f4f4f5;
+  border: 1px solid #d4d4d8;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  min-width: 7.5rem;
+}
+.aogl-lang-select:hover,
+.aogl-lang-select:focus {
+  border-color: #0369a1;
+  outline: none;
+}
+body:not(.locale-en) .lang-en {
   display: none !important;
 }
-.locale-zh .lang-en {
+body:not(.locale-zh) .lang-zh {
   display: none !important;
+}
+body:not(.locale-ja) .lang-ja {
+  display: none !important;
+}
+body:not(.locale-ko) .lang-ko {
+  display: none !important;
+}
+body:not(.locale-fr) .lang-fr {
+  display: none !important;
+}
+body:not(.locale-ru) .lang-ru {
+  display: none !important;
+}
+body:not(.locale-ar) .lang-ar {
+  display: none !important;
+}
+.lang-ar {
+  direction: rtl;
+  unicode-bidi: isolate;
 }

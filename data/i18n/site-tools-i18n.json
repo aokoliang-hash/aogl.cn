@@ -1,0 +1,53 @@
+{
+  "heading": {
+    "ja": "AIツール一覧",
+    "ko": "AI 도구 디렉터리",
+    "fr": "Répertoire d’outils IA",
+    "ru": "Каталог ИИ-инструментов",
+    "ar": "دليل أدوات الذكاء الاصطناعي"
+  },
+  "intro": {
+    "ja": "各公式サイトへのショートカット（新しいタブ）。アイコンは各ドメインの favicon を使用。",
+    "ko": "각 도구 공식 사이트로 바로가기(새 탭). 아이콘은 해당 도메인 파비콘입니다.",
+    "fr": "Liens rapides vers les sites officiels (nouvel onglet). Icônes = favicon de chaque domaine.",
+    "ru": "Быстрые ссылки на официальные сайты (новая вкладка). Иконки — favicon доменов.",
+    "ar": "روابط سريعة إلى المواقع الرسمية (تبويب جديد). الأيقونات من أيقونة الموقع المفضلة لكل نطاق."
+  },
+  "categories": {
+    "chat-llm": {
+      "title": { "ja": "チャット・LLM", "ko": "채팅·LLM", "fr": "Chat et LLM", "ru": "Чат и LLM", "ar": "الدردشة والنماذج اللغوية الكبيرة" }
+    },
+    "image": {
+      "title": { "ja": "画像生成", "ko": "이미지 생성", "fr": "Génération d’images", "ru": "Генерация изображений", "ar": "توليد الصور" }
+    },
+    "video": {
+      "title": { "ja": "動画生成", "ko": "영상 생성", "fr": "Vidéo", "ru": "Видео", "ar": "الفيديو" }
+    },
+    "coding": {
+      "title": { "ja": "コーディング・IDE", "ko": "코딩·IDE", "fr": "Code et IDE", "ru": "Код и IDE", "ar": "البرمجة وبيئات التطوير" }
+    },
+    "audio": {
+      "title": { "ja": "音声・音楽", "ko": "오디오·음악", "fr": "Audio et musique", "ru": "Аудио и музыка", "ar": "الصوت والموسيقى" }
+    },
+    "search": {
+      "title": { "ja": "検索・リサーチ", "ko": "검색·리서치", "fr": "Recherche", "ru": "Поиск и исследования", "ar": "البحث والاستقصاء" }
+    },
+    "writing": {
+      "title": { "ja": "執筆・生産性", "ko": "글쓰기·생산성", "fr": "Rédaction et productivité", "ru": "Письмо и продуктивность", "ar": "الكتابة والإنتاجية" }
+    },
+    "platform-api": {
+      "title": { "ja": "プラットフォーム・API", "ko": "플랫폼·API", "fr": "Plateformes et API", "ru": "Платформы и API", "ar": "المنصات وواجهات البرمجة" }
+    }
+  },
+  "toolDomains": {
+    "klingai.com": {
+      "name": { "ja": "Kling AI", "ko": "Kling AI", "fr": "Kling IA", "ru": "Kling AI", "ar": "Kling AI" }
+    },
+    "capcut.com": {
+      "name": { "ja": "CapCut（ウェブ）", "ko": "CapCut 웹", "fr": "CapCut Web", "ru": "CapCut (веб)", "ar": "CapCut ويب" }
+    },
+    "lumalabs.ai": {
+      "name": { "ja": "Luma Dream Machine", "ko": "Luma Dream Machine", "fr": "Luma Dream Machine", "ru": "Luma Dream Machine", "ar": "Luma Dream Machine" }
+    }
+  }
+}

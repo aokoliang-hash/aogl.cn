@@ -129,6 +129,8 @@
   margin-bottom: 0.45rem;
   font-size: 0.86rem;
   line-height: 1.35;
+  display: flex;
+  justify-content: space-between;
 }
 .hub-news-list a {
   color: #e0e8f0;

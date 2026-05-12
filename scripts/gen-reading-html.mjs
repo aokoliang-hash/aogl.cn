@@ -5,6 +5,9 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, "data/articles.json"), "utf8"));
+const pack = JSON.parse(fs.readFileSync(path.join(ROOT, "data/i18n/reading-i18n.json"), "utf8"));
+
+const LOCALES = ["en", "zh", "ja", "ko", "fr", "ru", "ar"];
 
 function esc(s) {
   return String(s)
@@ -18,41 +21,48 @@ const n = data.items.length;
 const introEn = `${n} additional official links (OpenAI, Anthropic, Google DeepMind) — same sources as above, but no URL duplicated from the category news feeds.`;
 const introZh = `下列 ${n} 条亦为三家官网一手文章，与上方「资讯 / 排行 / 分类 / 技巧」区块中的链接不重复（外链将离开本站）。`;
 
-const liEn = data.items
-  .map(
-    (it) => `          <li>
-            <a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${esc(it.title_en)}</a>
-            <span class="reading-meta">${esc(it.meta_en)}</span>
-          </li>`
-  )
-  .join("\n");
+function introFor(lang) {
+  if (lang === "en") return introEn;
+  if (lang === "zh") return introZh;
+  return String(pack.intro[lang] || introEn).replace(/\{\{count\}\}/g, String(n));
+}
 
-const liZh = data.items
-  .map(
-    (it) => `          <li>
-            <a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${esc(it.title_zh)}</a>
-            <span class="reading-meta">${esc(it.meta_zh)}</span>
-          </li>`
-  )
-  .join("\n");
+function titleFor(lang) {
+  if (lang === "en") return "Latest official articles";
+  if (lang === "zh") return "最新官方文章（外链）";
+  return pack.pageTitle[lang] || "Latest official articles";
+}
+
+function renderList(lang) {
+  return data.items
+    .map((it) => {
+      const title = lang === "zh" ? it.title_zh : it.title_en;
+      const meta = lang === "zh" ? it.meta_zh : it.meta_en;
+      return `          <li>
+            <a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${esc(title)}</a>
+            <span class="reading-meta">${esc(meta)}</span>
+          </li>`;
+    })
+    .join("\n");
+}
+
+const h2s = LOCALES.map((lang) => `        <h2 class="page-section-title lang-${lang}">${esc(titleFor(lang))}</h2>`).join("\n");
+const intros = LOCALES.map(
+  (lang) => `        <p class="reading-intro lang-${lang}">
+          ${esc(introFor(lang))}
+        </p>`
+).join("\n");
+const uls = LOCALES.map(
+  (lang) => `        <ul class="reading-list lang-${lang}">
+${renderList(lang)}
+        </ul>`
+).join("\n\n");
 
 const section = `      <section id="reading">
-        <h2 class="page-section-title lang-en">Latest official articles</h2>
-        <h2 class="page-section-title lang-zh">最新官方文章（外链）</h2>
-        <p class="reading-intro lang-en">
-          ${esc(introEn)}
-        </p>
-        <p class="reading-intro lang-zh">
-          ${esc(introZh)}
-        </p>
+${h2s}
+${intros}
 
-        <ul class="reading-list lang-en">
-${liEn}
-        </ul>
-
-        <ul class="reading-list lang-zh">
-${liZh}
-        </ul>
+${uls}
       </section>`;
 
 fs.writeFileSync(path.join(__dirname, "_reading-section.tmp.html"), section, "utf8");

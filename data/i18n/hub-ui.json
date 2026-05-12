@@ -1,0 +1,100 @@
+{
+  "global": {
+    "updatedPrefix": {
+      "ja": "更新",
+      "ko": "업데이트",
+      "fr": "Mis à jour le",
+      "ru": "Обновлено",
+      "ar": "آخر تحديث:"
+    }
+  },
+  "entityNames": {
+    "Apple": { "ja": "アップル", "ko": "애플", "fr": "Apple", "ru": "Apple", "ar": "آبل" },
+    "Microsoft": { "ja": "マイクロソフト", "ko": "마이크로소프트", "fr": "Microsoft", "ru": "Microsoft", "ar": "مايكروسوفت" },
+    "Amazon": { "ja": "アマゾン", "ko": "아마존", "fr": "Amazon", "ru": "Amazon", "ar": "أمازون" },
+    "Google": { "ja": "グーグル", "ko": "구글", "fr": "Google", "ru": "Google", "ar": "غوغل" },
+    "Samsung": { "ja": "サムスン", "ko": "삼성", "fr": "Samsung", "ru": "Samsung", "ar": "سامسونغ" },
+    "Toyota": { "ja": "トヨタ", "ko": "도요타", "fr": "Toyota", "ru": "Toyota", "ar": "تويوتا" },
+    "Coca-Cola": { "ja": "コカ・コーラ", "ko": "코카콜라", "fr": "Coca-Cola", "ru": "Coca-Cola", "ar": "كوكا كولا" },
+    "Nike": { "ja": "ナイキ", "ko": "나이키", "fr": "Nike", "ru": "Nike", "ar": "نايكي" },
+    "McDonald's": { "ja": "マクドナルド", "ko": "맥도날드", "fr": "McDonald’s", "ru": "McDonald’s", "ar": "ماكدونالدز" },
+    "Disney": { "ja": "ディズニー", "ko": "디즈니", "fr": "Disney", "ru": "Disney", "ar": "ديزني" },
+    "Wikipedia": { "ja": "ウィキペディア", "ko": "위키백과", "fr": "Wikipédia", "ru": "Википедия", "ar": "ويكيبيديا" },
+    "WeChat": { "ja": "WeChat（微信）", "ko": "위챗", "fr": "WeChat", "ru": "WeChat", "ar": "وي تشات" },
+    "LinkedIn": { "ja": "LinkedIn", "ko": "링크드인", "fr": "LinkedIn", "ru": "LinkedIn", "ar": "لينكدإن" },
+    "NVIDIA": { "ja": "エヌビディア", "ko": "엔비디아", "fr": "NVIDIA", "ru": "NVIDIA", "ar": "إنفيديا" },
+    "TSMC": { "ja": "TSMC", "ko": "TSMC", "fr": "TSMC", "ru": "TSMC", "ar": "تي إس إم سي" },
+    "Broadcom": { "ja": "ブロードコム", "ko": "브로드컴", "fr": "Broadcom", "ru": "Broadcom", "ar": "برودكوم" },
+    "Samsung Electronics": { "ja": "サムスン電子", "ko": "삼성전자", "fr": "Samsung Electronics", "ru": "Samsung Electronics", "ar": "سامسونغ للإلكترونيات" },
+    "Intel": { "ja": "インテル", "ko": "인텔", "fr": "Intel", "ru": "Intel", "ar": "إنتل" },
+    "Qualcomm": { "ja": "クアルコム", "ko": "퀄컴", "fr": "Qualcomm", "ru": "Qualcomm", "ar": "كوالكوم" },
+    "Nintendo": { "ja": "任天堂", "ko": "닌텐도", "fr": "Nintendo", "ru": "Nintendo", "ar": "نينتندو" },
+    "Epic Games Store": { "ja": "Epic Games ストア", "ko": "에픽 게임즈 스토어", "fr": "Epic Games Store", "ru": "Epic Games Store", "ar": "متجر Epic Games" },
+    "Battle.net (Blizzard)": { "ja": "Battle.net（Blizzard）", "ko": "배틀넷(블리자드)", "fr": "Battle.net (Blizzard)", "ru": "Battle.net (Blizzard)", "ar": "Battle.net (بليزارد)" },
+    "Ubisoft": { "ja": "ユービーアイソフト", "ko": "유비소프트", "fr": "Ubisoft", "ru": "Ubisoft", "ar": "يوبيسوفت" },
+    "Riot Games": { "ja": "ライアットゲームズ", "ko": "라이엇 게임즈", "fr": "Riot Games", "ru": "Riot Games", "ar": "رايوت غيمز" },
+    "Google Maps": { "ja": "Google マップ", "ko": "Google 지도", "fr": "Google Maps", "ru": "Google Карты", "ar": "خرائط Google" },
+    "Meituan": { "ja": "美団（Meituan）", "ko": "메이투안", "fr": "Meituan", "ru": "Meituan", "ar": "ميتوان" },
+    "Didi": { "ja": "滴滴（DiDi）", "ko": "디디추싱", "fr": "DiDi", "ru": "DiDi", "ar": "ديدي" },
+    "Ctrip / Trip.com": { "ja": "Trip.com", "ko": "Trip.com", "fr": "Trip.com", "ru": "Trip.com", "ar": "Trip.com" },
+    "Sina": { "ja": "新浪（シナ）", "ko": "시나", "fr": "Sina", "ru": "Sina", "ar": "سينا" },
+    "NetEase": { "ja": "網易", "ko": "넷이즈", "fr": "NetEase", "ru": "NetEase", "ar": "نت إيس" },
+    "Baidu": { "ja": "百度", "ko": "바이두", "fr": "Baidu", "ru": "Baidu", "ar": "بايدو" }
+  },
+  "portal": {
+    "title": { "ja": "グローバル主要サイト｜aogl.cn", "ko": "글로벌 주요 사이트 북마크 | aogl.cn", "fr": "Grands sites mondiaux — signets | aogl.cn", "ru": "Глобальные веб-фронты — закладки | aogl.cn", "ar": "مواقع الويب العالمية — روابط | aogl.cn" },
+    "desc": { "ja": "Similarweb 等で上位に並ぶサイト10件と、各公式ストーリー3リンク。", "ko": "글로벌 트래픽 상위 10개 사이트와 각 사이트 공식 기사 3개.", "fr": "Dix sites souvent en tête des classements mondiaux de trafic, avec trois liens officiels chacun.", "ru": "Десять сайтов из верхних строк глобальных рейтингов трафика и по три официальные ссылки на каждый.", "ar": "عشرة مواقع غالبًا في مقدمة تصنيفات الزيارات العالمية، مع ثلاث روابط رسمية لكل موقع." },
+    "h1": { "ja": "世界のトラフィックが集まる場所", "ko": "전 세계 트래픽이 몰리는 곳", "fr": "Là où s'accumule le trafic mondial", "ru": "Где сходится мировой трафик", "ar": "حيث تتكدس زيارات الويب العالمية" },
+    "rankTitle": { "ja": "世界トップ10（サイトトラフィック）", "ko": "글로벌 상위 10(웹사이트 트래픽)", "fr": "Top 10 mondial (trafic web)", "ru": "Глобальный топ-10 (трафик сайтов)", "ar": "أفضل 10 عالميًا (حركة الموقع)" },
+    "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "moreTitle": { "ja": "中国語ポータルと地域別入口", "ko": "중국어 및 지역 포털", "fr": "Portails chinois et régionaux", "ru": "Китайские и региональные порталы", "ar": "بوابات بالصينية وإقليمية" }
+  },
+  "brands": {
+    "title": { "ja": "グローバルブランド価値｜aogl.cn", "ko": "글로벌 브랜드 가치 | aogl.cn", "fr": "Marques mondiales — signets | aogl.cn", "ru": "Глобальные бренды — закладки | aogl.cn", "ar": "العلامات العالمية — روابط | aogl.cn" },
+    "desc": { "ja": "Interbrand 型の世界ブランド価値トップ10と、各ブランド公式ニュース3本。", "ko": "Interbrand식 글로벌 브랜드 가치 상위 10곳과 브랜드별 공식 보도자료 3개.", "fr": "Dix grandes marques mondiales (style Interbrand) et trois communiqués officiels par marque.", "ru": "Десять ведущих мировых брендов (в духе Interbrand) и по три официальных пресс-ссылки.", "ar": "أفضل عشر علامات عالمية (منهج يشبه Interbrand) مع ثلاث روابط رسمية لكل علامة." },
+    "h1": { "ja": "Interbrand 世界ブランド価値トップ10", "ko": "Interbrand 글로벌 브랜드 가치 상위 10", "fr": "Top 10 Interbrand (valeur de marque mondiale)", "ru": "Топ-10 Interbrand (стоимость глобальных брендов)", "ar": "أفضل 10 علامات عالمية (منهج Interbrand)" },
+    "rankTitle": { "ja": "世界トップ10（ブランド価値）", "ko": "글로벌 상위 10(브랜드 가치)", "fr": "Top 10 mondial (valeur de marque)", "ru": "Глобальный топ-10 (стоимость бренда)", "ar": "أفضل 10 عالميًا (قيمة العلامة)" },
+    "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "moreTitle": { "ja": "その他のブランド入口", "ko": "추가 브랜드 링크", "fr": "Autres marques", "ru": "Другие бренды", "ar": "علامات أخرى" }
+  },
+  "shopping": {
+    "title": { "ja": "世界のECプラットフォーム｜aogl.cn", "ko": "글로벌 이커머스 | aogl.cn", "fr": "E-commerce mondial — signets | aogl.cn", "ru": "Глобальная электронная коммерция — закладки | aogl.cn", "ar": "التجارة الإلكترونية العالمية — روابط | aogl.cn" },
+    "desc": { "ja": "越境ECで上位に並ぶプラットフォーム10件と、各社IR・ニュース3本。", "ko": "글로벌 GMV·트래픽 상위 이커머스 10곳과 기업별 공식 링크 3개.", "fr": "Dix plateformes e-commerce souvent en tête des classements mondiaux, avec trois liens officiels chacune.", "ru": "Десять крупных платформ электронной коммерции и по три корпоративные ссылки.", "ar": "عشر منصات تجارة إلكترونية غالبًا في المقدمة عالميًا، مع ثلاث روابط رسمية لكل منصة." },
+    "h1": { "ja": "世界小売・マーケットプレイス上位10", "ko": "글로벌 리테일·마켓플레이스 상위 10", "fr": "Top 10 mondial retail et marketplaces", "ru": "Топ-10 мировой розницы и маркетплейсов", "ar": "أفضل 10 عالميًا للتجزئة والأسواق الإلكترونية" },
+    "rankTitle": { "ja": "世界トップ10（EC規模）", "ko": "글로벌 상위 10(이커머스 규모)", "fr": "Top 10 mondial (e-commerce)", "ru": "Глобальный топ-10 (масштаб e-commerce)", "ar": "أفضل 10 عالميًا (حجم التجارة الإلكترونية)" },
+    "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "moreTitle": { "ja": "中国国内とニッチマーケット", "ko": "중국 및 틈새 마켓플레이스", "fr": "Chine et places de marché de niche", "ru": "Китай и нишевые маркетплейсы", "ar": "الصين وأسواق متخصصة" }
+  },
+  "life": {
+    "title": { "ja": "デジタル生活サービス｜aogl.cn", "ko": "글로벌 디지털 라이프 | aogl.cn", "fr": "Vie numérique mondiale — signets | aogl.cn", "ru": "Цифровая жизнь — закладки | aogl.cn", "ar": "الحياة الرقمية العالمية — روابط | aogl.cn" },
+    "desc": { "ja": "MAU・DLチャートで上位のサービス10件と公式ストーリー3本。", "ko": "월간 활성 사용자·다운로드 상위 앱·서비스 10개와 공식 소식 3개.", "fr": "Dix services souvent en tête des classements mondiaux d'utilisateurs actifs, avec trois liens officiels chacun.", "ru": "Десять сервисов из верхних строк глобальных рейтингов MAU и по три официальные ссылки.", "ar": "عشر خدمات غالبًا في مقدمة قوائم المستخدمين النشطين عالميًا، مع ثلاث روابط رسمية لكل خدمة." },
+    "h1": { "ja": "世界の日常アプリ（MAU上位）", "ko": "글로벌 일상 앱(MAU 상위)", "fr": "Apps du quotidien mondial (leaders MAU)", "ru": "Повседневные приложения мира (лидеры по MAU)", "ar": "تطبيقات يومية عالمية (الأعلى نشاطًا)" },
+    "rankTitle": { "ja": "世界トップ10（デジタル生活）", "ko": "글로벌 상위 10(디지털 라이프)", "fr": "Top 10 mondial (vie numérique)", "ru": "Глобальный топ-10 (цифровая жизнь)", "ar": "أفضل 10 عالميًا (الحياة الرقمية)" },
+    "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "moreTitle": { "ja": "中国・アジアの地域アプリ", "ko": "중국·지역 앱", "fr": "Chine et applis régionales", "ru": "Китай и региональные приложения", "ar": "الصين وتطبيقات إقليمية" }
+  },
+  "social": {
+    "title": { "ja": "世界のSNS｜aogl.cn", "ko": "글로벌 소셜 플랫폼 | aogl.cn", "fr": "Réseaux sociaux mondiaux — signets | aogl.cn", "ru": "Глобальные соцсети — закладки | aogl.cn", "ar": "منصات التواصل العالمية — روابط | aogl.cn" },
+    "desc": { "ja": "MAU上位のSNS10件と各公式アップデート3リンク。", "ko": "글로벌 MAU 상위 소셜 10개와 플랫폼별 공식 소식 3개.", "fr": "Dix réseaux sociaux souvent en tête des classements mondiaux d'utilisateurs actifs, avec trois liens officiels chacun.", "ru": "Десять социальных платформ из верхних строк глобальных рейтингов MAU и по три официальные ссылки.", "ar": "عشر شبكات اجتماعية غالبًا في مقدمة قوائم المستخدمين النشطين، مع ثلاث روابط رسمية لكل شبكة." },
+    "h1": { "ja": "世界のソーシャル（MAU上位）", "ko": "글로벌 소셜 플랫폼(MAU 상위)", "fr": "Réseaux sociaux mondiaux (leaders MAU)", "ru": "Глобальные соцсети (лидеры по MAU)", "ar": "منصات التواصل العالمية (الأعلى نشاطًا)" },
+    "rankTitle": { "ja": "世界トップ10（ソーシャル）", "ko": "글로벌 상위 10(소셜)", "fr": "Top 10 mondial (social)", "ru": "Глобальный топ-10 (соцсети)", "ar": "أفضل 10 عالميًا (التواصل الاجتماعي)" },
+    "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "moreTitle": { "ja": "その他のソーシャル", "ko": "추가 소셜 네트워크", "fr": "Autres réseaux sociaux", "ru": "Другие соцсети", "ar": "شبكات اجتماعية أخرى" }
+  },
+  "tech": {
+    "title": { "ja": "半導体・プラットフォーム企業｜aogl.cn", "ko": "반도체·플랫폼 기업 | aogl.cn", "fr": "Semi-conducteurs et plateformes — signets | aogl.cn", "ru": "Полупроводники и платформы — закладки | aogl.cn", "ar": "أشباه الموصلات والمنصات — روابط | aogl.cn" },
+    "desc": { "ja": "時価総額ランキングに近い並びのチップ・プラットフォーム10社と公式プレス3本。", "ko": "글로벌 시가총액 상위 반도체·플랫폼 10곳과 보도자료 3개.", "fr": "Dix leaders semi-conducteurs et plateformes (ordre proche des capitalisations boursières mondiales), avec trois liens officiels chacun.", "ru": "Десять лидеров в области чипов и платформ (порядок близок к глобальной капитализации) и по три официальные ссылки.", "ar": "عشر شركات رائدة في الرقائق والمنصات (ترتيب يشبه القيمة السوقية العالمية) مع ثلاث روابط رسمية لكل شركة." },
+    "h1": { "ja": "世界のチップ・プラットフォーム大手（時価順）", "ko": "글로벌 칩·플랫폼 기업(시총 기준)", "fr": "Leaders mondiaux puces et plateformes (ordre capitalisation)", "ru": "Мировые лидеры чипов и платформ (по капитализации)", "ar": "شركات الرقائق والمنصات العالمية (حسب القيمة السوقية)" },
+    "rankTitle": { "ja": "世界トップ10（時価トレンド）", "ko": "글로벌 상위 10(시가총액)", "fr": "Top 10 mondial (capitalisation)", "ru": "Глобальный топ-10 (рыночная капитализация)", "ar": "أفضل 10 عالميًا (القيمة السوقية)" },
+    "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "moreTitle": { "ja": "チェーン上のその他サイト", "ko": "산업 체인 기타 사이트", "fr": "Autres acteurs de la chaîne", "ru": "Другие участники цепочки", "ar": "مواقع أخرى في السلسلة" }
+  },
+  "games": {
+    "title": { "ja": "世界のゲームプラットフォーム｜aogl.cn", "ko": "글로벌 게임 플랫폼 | aogl.cn", "fr": "Plateformes de jeux mondiales — signets | aogl.cn", "ru": "Игровые платформы мира — закладки | aogl.cn", "ar": "منصات الألعاب العالمية — روابط | aogl.cn" },
+    "desc": { "ja": "売上・装机で上位のストア・出版社10件と公式告知3本。", "ko": "업계 매출 순위에 가까운 스토어·퍼블리셔 10곳과 공지 3개.", "fr": "Dix plateformes et éditeurs classés comme dans les palmarès mondiaux de revenus, avec trois liens officiels chacun.", "ru": "Десять магазинов и издателей в духе мировых рейтингов доходов и по три официальные ссылки.", "ar": "عشر منصات وناشرين بترتيب يشبه جداول الإيرادات العالمية، مع ثلاث روابط رسمية لكل منها." },
+    "h1": { "ja": "世界のストア・出版社トップ10", "ko": "글로벌 스토어·퍼블리셔 상위 10", "fr": "Top 10 mondial magasins et éditeurs", "ru": "Топ-10 магазинов и издателей", "ar": "أفضل 10 عالميًا للمتاجر والناشرين" },
+    "rankTitle": { "ja": "世界トップ10（プラットフォーム）", "ko": "글로벌 상위 10(플랫폼)", "fr": "Top 10 mondial (plateformes)", "ru": "Глобальный топ-10 (платформы)", "ar": "أفضل 10 عالميًا (المنصات)" },
+    "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "moreTitle": { "ja": "その他のスタジオ入口", "ko": "추가 스튜디오 링크", "fr": "Autres studios", "ru": "Другие студии", "ar": "استوديوهات أخرى" }
+  }
+}
