@@ -1,0 +1,429 @@
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #04060e;
+  overflow: hidden;
+  font-family: 'Courier New', monospace;
+}
+canvas#gl { display:block; width:100%; height:100%; }
+.hud-tl {
+  position:absolute; top:18px; left:18px;
+  font-size:9px; color:#4a9eff99; line-height:2;
+  text-transform:uppercase; letter-spacing:1px;
+}
+.hud-tr {
+  position:absolute; top:18px; right:18px;
+  text-align:right; line-height:1.7;
+}
+.pname { font-size:22px; font-weight:700; color:#fff; letter-spacing:4px; }
+.pstat { font-size:9px; color:#4a9effaa; letter-spacing:1px; }
+.badge {
+  display:inline-block; padding:2px 8px; border-radius:10px;
+  font-size:8px; letter-spacing:1px;
+  border:1px solid rgba(74,158,255,0.3);
+  background:rgba(74,158,255,0.08); color:#4a9effcc;
+  margin-top:2px;
+}
+.badge.hot { border-color:rgba(255,120,60,0.3); background:rgba(255,120,60,0.08); color:#ff7c3ccc; }
+.label-pin {
+  position:absolute; top:130px; left:50%; transform:translateX(30px);
+  display:flex; gap:6px; pointer-events:none;
+}
+.pin-line { width:1px; height:44px; background:linear-gradient(to bottom,#ffffffcc,transparent); margin-top:3px; }
+.pin-txt { font-size:11px; color:#ffffffcc; line-height:1.5; }
+.pin-dot { width:5px; height:5px; border-radius:50%; background:#fff; margin-top:4px; flex-shrink:0; box-shadow:0 0 6px #fff; }
+.btns {
+  position:absolute; bottom:0; left:0; right:0;
+  display:flex; justify-content:center; gap:8px; padding:14px;
+  background:linear-gradient(to top,rgba(0,0,0,0.85),transparent);
+}
+.btn {
+  padding:7px 18px; border-radius:20px; border:1px solid rgba(255,255,255,0.15);
+  background:rgba(255,255,255,0.05); color:#ffffffaa;
+  font-family:'Courier New',monospace; font-size:9px; letter-spacing:2px;
+  text-transform:uppercase; cursor:pointer; transition:all 0.2s;
+}
+.btn:hover { background:rgba(255,255,255,0.12); color:#fff; }
+.btn.active { background:rgba(74,158,255,0.18); border-color:#4a9eff66; color:#4a9effee; }
+.drag-hint {
+  position:absolute; bottom:56px; left:50%; transform:translateX(-50%);
+  font-size:9px; color:#ffffff33; letter-spacing:2px; text-transform:uppercase;
+  pointer-events:none;
+}
+</style>
+
+<div class="wrap">
+  <canvas id="gl"></canvas>
+
+  <div class="hud-tl">
+    <div>◈ TRACE ACTIVE</div>
+    <div><span class="badge hot">⊕ +280°C</span></div>
+    <div><span class="badge">◯ 2 MOONS</span></div>
+    <div style="margin-top:8px;color:#ffffff33;font-size:8px">CLASS III GAS GIANT</div>
+    <div style="color:#ffffff33;font-size:8px">TIDALLY LOCKED</div>
+  </div>
+
+  <div class="hud-tr">
+    <div class="pname">Velmora</div>
+    <div class="pstat">ORBIT  2.30 units</div>
+    <div class="pstat">PERIOD  14.0d</div>
+  </div>
+
+  <div class="label-pin">
+    <div class="pin-dot"></div>
+    <div class="pin-line"></div>
+    <div class="pin-txt">
+      <div style="font-weight:600;color:#fff;font-size:12px">Thalum</div>
+      <div style="color:#ffffff77;font-size:10px">Storm Vortex</div>
+      <div style="color:#4a9effaa;font-size:9px">r = 1.4k km</div>
+    </div>
+  </div>
+
+  <div class="drag-hint">drag to rotate</div>
+
+  <div class="btns">
+    <button class="btn" onclick="sendPrompt('Compare Velmora to other gas giants')">◎ Compare</button>
+    <button class="btn active">⬡ Explore</button>
+    <button class="btn" onclick="sendPrompt('Show orbital route for the Velmora system')">⟁ Route</button>
+  </div>
+</div>
+
+<script>
+const canvas = document.getElementById('gl');
+const wrap = canvas.parentElement;
+
+function resize() {
+  canvas.width = wrap.clientWidth;
+  canvas.height = wrap.clientHeight;
+}
+resize();
+
+const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+
+const VS = `
+attribute vec3 aPos;
+attribute vec2 aUV;
+attribute vec3 aNorm;
+uniform mat4 uMVP;
+uniform mat4 uModel;
+varying vec2 vUV;
+varying vec3 vNorm;
+varying vec3 vWorldPos;
+void main(){
+  vUV = aUV;
+  vNorm = normalize((uModel * vec4(aNorm,0.0)).xyz);
+  vWorldPos = (uModel * vec4(aPos,1.0)).xyz;
+  gl_Position = uMVP * vec4(aPos,1.0);
+}`;
+
+const FS = `
+precision highp float;
+varying vec2 vUV;
+varying vec3 vNorm;
+varying vec3 vWorldPos;
+uniform float uTime;
+
+float hash(vec2 p){ return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453); }
+float noise(vec2 p){
+  vec2 i=floor(p), f=fract(p);
+  f=f*f*(3.0-2.0*f);
+  return mix(mix(hash(i),hash(i+vec2(1,0)),f.x),
+             mix(hash(i+vec2(0,1)),hash(i+vec2(1,1)),f.x),f.y);
+}
+float fbm(vec2 p){
+  float v=0.0,a=0.5;
+  for(int i=0;i<5;i++){ v+=a*noise(p); p*=2.1; a*=0.5; }
+  return v;
+}
+
+vec3 bandColor(float y, float u){
+  float band = y * 7.0 + uTime * 0.02;
+  float turbU = u + fbm(vec2(u*4.0 + uTime*0.05, y*6.0))*0.08;
+  float wave = sin(turbU*40.0 + sin(y*12.0)*2.0 + uTime*0.3) * 0.04;
+  float bv = fract(band + wave);
+
+  // Color palette: rust orange, teal, cream, deep red, aqua
+  vec3 c;
+  if(bv < 0.14)       c = mix(vec3(0.90,0.58,0.38), vec3(0.82,0.48,0.28), fbm(vec2(turbU*3.0,y*5.0)));
+  else if(bv < 0.26)  c = mix(vec3(0.42,0.78,0.68), vec3(0.30,0.66,0.58), fbm(vec2(turbU*4.0,y*4.0)));
+  else if(bv < 0.40)  c = mix(vec3(0.88,0.62,0.44), vec3(0.76,0.52,0.34), fbm(vec2(turbU*3.5,y*6.0)));
+  else if(bv < 0.50)  c = mix(vec3(0.50,0.82,0.72), vec3(0.36,0.70,0.62), fbm(vec2(turbU*5.0,y*3.0)));
+  else if(bv < 0.64)  c = mix(vec3(0.78,0.44,0.28), vec3(0.68,0.36,0.20), fbm(vec2(turbU*4.0,y*5.0)));
+  else if(bv < 0.76)  c = mix(vec3(0.60,0.86,0.76), vec3(0.44,0.74,0.64), fbm(vec2(turbU*3.0,y*4.0)));
+  else                c = mix(vec3(0.86,0.56,0.36), vec3(0.72,0.44,0.26), fbm(vec2(turbU*3.5,y*5.5)));
+  return c;
+}
+
+void main(){
+  float u = vUV.x;
+  float v = vUV.y;
+  vec3 col = bandColor(v, u);
+
+  // Storm vortex (Thalum)
+  float stormU = fract(u - uTime * 0.012);
+  float stormV = v;
+  float dx = (stormU - 0.28)*3.2;
+  float dy = (stormV - 0.54)*2.2;
+  float dist = sqrt(dx*dx + dy*dy);
+  if(dist < 0.22){
+    float angle = atan(dy, dx) + uTime * 0.8;
+    float swirl = sin(angle * 3.0 - dist * 18.0 + uTime) * 0.5 + 0.5;
+    float eyeBlend = smoothstep(0.22, 0.06, dist);
+    float armBlend = smoothstep(0.22, 0.10, dist) * swirl;
+    vec3 eyeCol = mix(vec3(0.30,0.72,0.62), vec3(0.54,0.88,0.80), eyeBlend);
+    col = mix(col, eyeCol, eyeBlend * 0.85 + armBlend * 0.4);
+    col += vec3(0.08,0.14,0.12) * eyeBlend;
+  }
+
+  // Small secondary storms
+  vec2 storms[3];
+  storms[0] = vec2(0.65, 0.28);
+  storms[1] = vec2(0.12, 0.72);
+  storms[2] = vec2(0.80, 0.65);
+  for(int i=0;i<3;i++){
+    float su = fract(storms[i].x - uTime * 0.012);
+    float ddx = (fract(u - uTime*0.012) - su)*3.2;
+    float ddy = (v - storms[i].y)*2.2;
+    float d2 = sqrt(ddx*ddx + ddy*ddy);
+    if(d2 < 0.07){
+      float eb = smoothstep(0.07,0.01,d2);
+      col = mix(col, vec3(0.7,0.92,0.85), eb*0.5);
+    }
+  }
+
+  // Turbulent edge streaks
+  float streak = fbm(vec2(u*6.0+uTime*0.04, v*20.0)) * 0.12;
+  col += vec3(0.6,0.4,0.3) * streak * 0.3;
+
+  // Lighting — sun from upper-left
+  vec3 lightDir = normalize(vec3(1.2, 1.0, 2.0));
+  float diff = max(dot(vNorm, lightDir), 0.0);
+  float ambient = 0.10;
+  float spec = pow(max(dot(reflect(-lightDir, vNorm), normalize(vec3(0,0,1))), 0.0), 18.0) * 0.15;
+
+  col = col * (ambient + diff * 0.9) + spec;
+
+  // Limb darkening
+  float limb = dot(vNorm, normalize(vec3(0,0,1)));
+  col *= 0.3 + 0.7 * pow(max(limb,0.0), 0.4);
+
+  // Atmosphere fringe
+  float rim = 1.0 - clamp(limb, 0.0, 1.0);
+  rim = pow(rim, 3.0);
+  col += vec3(0.55, 0.72, 0.90) * rim * 0.35;
+
+  gl_FragColor = vec4(col, 1.0);
+}`;
+
+const MS = `
+attribute vec3 aPos;
+uniform mat4 uMVP;
+void main(){ gl_Position = uMVP * vec4(aPos,1.0); }`;
+
+const MF = `
+precision mediump float;
+uniform vec3 uCol;
+void main(){ gl_FragColor = vec4(uCol,1.0); }`;
+
+function compile(src, type) {
+  const s = gl.createShader(type);
+  gl.shaderSource(s, src); gl.compileShader(s);
+  return s;
+}
+function program(vs, fs) {
+  const p = gl.createProgram();
+  gl.attachShader(p, compile(vs, gl.VERTEX_SHADER));
+  gl.attachShader(p, compile(fs, gl.FRAGMENT_SHADER));
+  gl.linkProgram(p); return p;
+}
+
+const prog = program(VS, FS);
+const mprog = program(MS, MF);
+
+// Build sphere
+function sphere(lat, lon) {
+  const pos=[], uv=[], norm=[], idx=[];
+  for(let i=0;i<=lat;i++){
+    const theta = i/lat*Math.PI;
+    for(let j=0;j<=lon;j++){
+      const phi = j/lon*2*Math.PI;
+      const x=Math.sin(theta)*Math.cos(phi);
+      const y=Math.cos(theta);
+      const z=Math.sin(theta)*Math.sin(phi);
+      pos.push(x,y,z); norm.push(x,y,z);
+      uv.push(j/lon, i/lat);
+    }
+  }
+  for(let i=0;i<lat;i++) for(let j=0;j<lon;j++){
+    const a=i*(lon+1)+j, b=a+lon+1;
+    idx.push(a,b,a+1,b,b+1,a+1);
+  }
+  return {pos:new Float32Array(pos),uv:new Float32Array(uv),norm:new Float32Array(norm),idx:new Uint16Array(idx)};
+}
+
+const sp = sphere(80, 80);
+function buf(data, type=gl.ARRAY_BUFFER) {
+  const b=gl.createBuffer(); gl.bindBuffer(type,b); gl.bufferData(type,data,gl.STATIC_DRAW); return b;
+}
+const bPos=buf(sp.pos), bUV=buf(sp.uv), bNorm=buf(sp.norm), bIdx=buf(sp.idx,gl.ELEMENT_ARRAY_BUFFER);
+
+// Moon sphere (small)
+const msp = sphere(20,20);
+const mbPos=buf(msp.pos), mbIdx=buf(msp.idx,gl.ELEMENT_ARRAY_BUFFER);
+
+// Stars buffer
+const starVerts = [];
+for(let i=0;i<300;i++){
+  const theta=Math.random()*Math.PI*2, phi=Math.acos(2*Math.random()-1);
+  const r=18;
+  starVerts.push(r*Math.sin(phi)*Math.cos(theta), r*Math.cos(phi), r*Math.sin(phi)*Math.sin(theta));
+}
+const starBuf = buf(new Float32Array(starVerts));
+
+// Orbit ring
+const orbitVerts = [];
+for(let i=0;i<=200;i++){
+  const a=i/200*Math.PI*2;
+  orbitVerts.push(Math.cos(a)*1.7, -0.35, Math.sin(a)*1.7);
+}
+const orbitBuf = buf(new Float32Array(orbitVerts));
+
+// Matrix helpers
+function mat4() { return new Float32Array(16); }
+function identity(m) { for(let i=0;i<16;i++) m[i]=i%5===0?1:0; return m; }
+function multiply(out, a, b) {
+  for(let i=0;i<4;i++) for(let j=0;j<4;j++) {
+    out[j*4+i]=0;
+    for(let k=0;k<4;k++) out[j*4+i]+=a[k*4+i]*b[j*4+k];
+  } return out;
+}
+function perspective(m, fov, asp, near, far) {
+  const f=1/Math.tan(fov/2), nf=1/(near-far);
+  identity(m);
+  m[0]=f/asp; m[5]=f; m[10]=(far+near)*nf; m[11]=-1; m[14]=2*far*near*nf; m[15]=0;
+  return m;
+}
+function rotX(m, a) {
+  identity(m); const c=Math.cos(a),s=Math.sin(a);
+  m[5]=c; m[6]=s; m[9]=-s; m[10]=c; return m;
+}
+function rotY(m, a) {
+  identity(m); const c=Math.cos(a),s=Math.sin(a);
+  m[0]=c; m[2]=-s; m[8]=s; m[10]=c; return m;
+}
+function scale(m, sx, sy, sz) {
+  identity(m); m[0]=sx; m[5]=sy; m[10]=sz; return m;
+}
+function translate(m, tx, ty, tz) {
+  identity(m); m[12]=tx; m[13]=ty; m[14]=tz; return m;
+}
+
+let rotYaw = 0.3, rotPitch = 0.2;
+let dragging=false, lastX=0, lastY=0;
+canvas.addEventListener('mousedown', e=>{ dragging=true; lastX=e.clientX; lastY=e.clientY; });
+canvas.addEventListener('touchstart', e=>{ dragging=true; lastX=e.touches[0].clientX; lastY=e.touches[0].clientY; });
+window.addEventListener('mouseup', ()=>dragging=false);
+window.addEventListener('touchend', ()=>dragging=false);
+window.addEventListener('mousemove', e=>{
+  if(!dragging) return;
+  rotYaw += (e.clientX-lastX)*0.005;
+  rotPitch += (e.clientY-lastY)*0.005;
+  rotPitch = Math.max(-1.2, Math.min(1.2, rotPitch));
+  lastX=e.clientX; lastY=e.clientY;
+});
+window.addEventListener('touchmove', e=>{
+  if(!dragging) return;
+  rotYaw += (e.touches[0].clientX-lastX)*0.005;
+  rotPitch += (e.touches[0].clientY-lastY)*0.005;
+  rotPitch = Math.max(-1.2, Math.min(1.2, rotPitch));
+  lastX=e.touches[0].clientX; lastY=e.touches[0].clientY;
+});
+
+const proj=mat4(), rx=mat4(), ry=mat4(), sc=mat4(), tr=mat4();
+const tmp=mat4(), mvp=mat4(), model=mat4();
+
+function setAttrib(prog, name, buf, size) {
+  const loc=gl.getAttribLocation(prog,name);
+  if(loc<0) return;
+  gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+  gl.enableVertexAttribArray(loc);
+  gl.vertexAttribPointer(loc,size,gl.FLOAT,false,0,0);
+}
+
+let t=0;
+function frame() {
+  resize();
+  gl.viewport(0,0,canvas.width,canvas.height);
+  gl.clearColor(0.016,0.024,0.055,1);
+  gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
+  gl.enable(gl.DEPTH_TEST);
+
+  const asp = canvas.width/canvas.height;
+  perspective(proj, 0.75, asp, 0.1, 100);
+
+  // Stars
+  gl.useProgram(mprog);
+  identity(tmp); tmp[14]=-5;
+  multiply(mvp, proj, tmp);
+  gl.uniformMatrix4fv(gl.getUniformLocation(mprog,'uMVP'),false,mvp);
+  gl.uniform3fv(gl.getUniformLocation(mprog,'uCol'),new Float32Array([1,1,1]));
+  gl.bindBuffer(gl.ARRAY_BUFFER, starBuf);
+  const sLoc=gl.getAttribLocation(mprog,'aPos');
+  gl.enableVertexAttribArray(sLoc);
+  gl.vertexAttribPointer(sLoc,3,gl.FLOAT,false,0,0);
+  gl.drawArrays(gl.POINTS, 0, 300);
+
+  // Planet
+  gl.useProgram(prog);
+  rotX(rx, rotPitch);
+  rotY(ry, rotYaw + t*0.004);
+  multiply(model, ry, rx);
+  model[14] = -4.5;
+  multiply(mvp, proj, model);
+  gl.uniformMatrix4fv(gl.getUniformLocation(prog,'uMVP'),false,mvp);
+  gl.uniformMatrix4fv(gl.getUniformLocation(prog,'uModel'),false,model);
+  gl.uniform1f(gl.getUniformLocation(prog,'uTime'),t*0.01);
+
+  setAttrib(prog,'aPos',bPos,3);
+  setAttrib(prog,'aUV',bUV,2);
+  setAttrib(prog,'aNorm',bNorm,3);
+  gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,bIdx);
+  gl.drawElements(gl.TRIANGLES,sp.idx.length,gl.UNSIGNED_SHORT,0);
+
+  // Orbit ring
+  gl.useProgram(mprog);
+  const orbitM = mat4(); identity(orbitM); orbitM[14]=-4.5;
+  multiply(mvp, proj, orbitM);
+  gl.uniformMatrix4fv(gl.getUniformLocation(mprog,'uMVP'),false,mvp);
+  gl.uniform3fv(gl.getUniformLocation(mprog,'uCol'),new Float32Array([0.8,0.65,0.3]));
+  gl.bindBuffer(gl.ARRAY_BUFFER,orbitBuf);
+  const oLoc=gl.getAttribLocation(mprog,'aPos');
+  gl.enableVertexAttribArray(oLoc);
+  gl.vertexAttribPointer(oLoc,3,gl.FLOAT,false,0,0);
+  gl.drawArrays(gl.LINE_LOOP,0,201);
+
+  // Moon
+  const moonAngle = t * 0.018;
+  const mx=Math.cos(moonAngle)*1.7, mz=Math.sin(moonAngle)*1.7;
+  scale(sc,0.13,0.13,0.13);
+  translate(tr,mx,-0.35+Math.sin(moonAngle*0.5)*0.1,mz-4.5);
+  multiply(model,tr,sc);
+  multiply(mvp,proj,model);
+  gl.uniformMatrix4fv(gl.getUniformLocation(mprog,'uMVP'),false,mvp);
+  gl.uniform3fv(gl.getUniformLocation(mprog,'uCol'),new Float32Array([0.72,0.68,0.62]));
+  const mLoc=gl.getAttribLocation(mprog,'aPos');
+  gl.bindBuffer(gl.ARRAY_BUFFER,mbPos);
+  gl.enableVertexAttribArray(mLoc);
+  gl.vertexAttribPointer(mLoc,3,gl.FLOAT,false,0,0);
+  gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,mbIdx);
+  gl.drawElements(gl.TRIANGLES,msp.idx.length,gl.UNSIGNED_SHORT,0);
+
+  t++;
+  requestAnimationFrame(frame);
+}
+frame();
+</script>

@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="ko" data-title-ko="Velmora — 3D 태양계 뷰어 — aogl.cn" data-desc-ko="오리지널 설정: III류 가스 행성 Velmora의 대기·Thalum 폭풍·위성 Keth/Soru와 WebGL 뷰." data-aogl-lang="ko" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="오리지널 설정: III류 가스 행성 Velmora의 대기·Thalum 폭풍·위성 Keth/Soru와 WebGL 뷰.">
+  <title>Velmora — 3D 태양계 뷰어 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/ko/articles/velmora.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/velmora.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/velmora.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/velmora.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/velmora.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/velmora.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/velmora.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/velmora.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/velmora.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/velmora.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/ko/articles/velmora.html">
+  <meta property="og:title" content="Velmora — 3D 태양계 뷰어 — aogl.cn">
+  <meta property="og:description" content="오리지널 설정: III류 가스 행성 Velmora의 대기·Thalum 폭풍·위성 Keth/Soru와 WebGL 뷰.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="https://aogl.cn/original/Gemini_Generated_Image_f7vc2cf7vc2cf7vc.png">
+  <meta property="og:image:alt" content="Velmora planetary concept">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/Gemini_Generated_Image_f7vc2cf7vc2cf7vc.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <script src="../../js/adsense.js"></script>
+  <style>
+    .article-shell {
+      position: relative;
+      z-index: 1;
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: clamp(1rem, 4vw, 2.25rem) clamp(1rem, 3vw, 1.75rem) 3rem;
+    }
+    .article-shell__top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem 1rem;
+      margin-bottom: 1.75rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-shell__top a {
+      font-size: 0.95rem;
+    }
+    .article-shell__header h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.35rem, 4vw, 1.85rem);
+      line-height: 1.25;
+      font-weight: 650;
+    }
+    .article-shell__sub {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+    .article-shell__meta {
+      margin: 0 0 1.5rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .article-shell__body {
+      color: var(--text);
+    }
+    .article-shell__body h2 {
+      margin: 2rem 0 0.75rem;
+      font-size: 1.2rem;
+      font-weight: 650;
+      color: var(--accent);
+      border-bottom: 1px solid rgba(125, 211, 252, 0.2);
+      padding-bottom: 0.35rem;
+    }
+    .article-shell__body h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+    .article-shell__body h3 {
+      margin: 1.35rem 0 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .article-shell__body p {
+      margin: 0.65rem 0;
+      max-width: 48rem;
+    }
+    .article-shell__body ul {
+      margin: 0.5rem 0 0.75rem;
+      padding-left: 1.25rem;
+      color: var(--muted);
+    }
+    .article-shell__body ul li {
+      margin: 0.35rem 0;
+    }
+    .article-shell__body ul strong {
+      color: var(--text);
+    }
+    .article-embed {
+      margin: 1.25rem 0 1.5rem;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    }
+    .article-embed iframe {
+      display: block;
+      width: 100%;
+      height: min(70vh, 560px);
+      border: none;
+      vertical-align: middle;
+    }
+    .article-embed figcaption {
+      padding: 0.5rem 0.85rem 0.65rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: rgba(18, 25, 34, 0.65);
+    }
+    .article-table-wrap {
+      margin: 1rem 0 1.25rem;
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+    .article-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    .article-table th,
+    .article-table td {
+      padding: 0.65rem 0.85rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-table th {
+      background: rgba(125, 211, 252, 0.08);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .article-table tr:last-child td {
+      border-bottom: none;
+    }
+    .article-table tbody tr:hover td {
+      background: rgba(125, 211, 252, 0.04);
+    }
+
+  </style>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Velmora — Planetary Codex","alternativeHeadline":"3D太阳系高清探索器","datePublished":"2026-05-11","dateModified":"2026-05-11","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ko/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/velmora.html"},"url":"https://aogl.cn/en/articles/velmora.html","inLanguage":"ko","description":"Original aogl.cn codex: fictional Class III gas giant Velmora — atmosphere, Thalum storm, moons Keth & Soru, embedded WebGL view.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-ko">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-ko">
+          <li><a href="../../index.html#tools-directory">AI 최전선</a></li>
+          <li><a href="../../portal.html">주요 사이트</a></li>
+          <li><a href="../../brands.html">브랜드</a></li>
+          <li><a href="../../shopping.html">쇼핑</a></li>
+          <li><a href="../../life.html">라이프</a></li>
+          <li><a href="../../social.html">소셜</a></li>
+          <li><a href="../../tech.html">테크</a></li>
+          <li><a href="../../games.html">게임</a></li>
+          <li><a href="../../tools.html">실용 도구</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Velmora — 3D 태양계 뷰어</h1>
+        <p class="article-shell__sub">Velmora — 행성 코덱스</p>
+        <p class="article-shell__meta"><time datetime="2026-05-11">2026-05-11</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p>Velmora는 III류 가스 행성으로 모항성에서 약 2.30 AU 떨어진 궤도를 돌며 공전 주기는 불과 약 14일입니다. 서리선이 유난히 안쪽에 있는 촘촘하고 뜨거운 계를 시사합니다.</p>
+<h2>대기와 띠 구조</h2>
+<figure class="article-embed">
+  <iframe src="../../original/velmora_3d_webgl.html" title="Velmora WebGL 인터랙티브 뷰" loading="lazy" decoding="async"></iframe>
+  <figcaption>WebGL: 드래그로 회전, 스크롤로 확대·축소. 아래 본문과 함께 보세요.</figcaption>
+</figure>
+<p>Velmora의 가시 표면은 강한 내부열에 의해 역방향으로 도는 대기 띠가 지배합니다. 녹슨 오렌지와 청록색 띠는 화학적으로 다른 두 기단의 결과입니다.</p>
+<ul>
+  <li><strong>페리크 구역</strong>(주황–붉은 띠) — 깊은 대류 기둥에서 올려진 산화철 에어로졸과 황 화합물이 행성의 따뜻한 색조를 만듭니다.</li>
+  <li><strong>크라이오젠 띠</strong>(청록 띠) — 더 뜨거운 구역 위에 얹힌 차갑고 메탄이 풍부한 층. 극적인 전단 경계와 난류를 만듭니다.</li>
+</ul>
+<p>인접 띠 사이 온도차는 최대 약 400°C에 이르러 Velmora 대기는 같은 등급 가운데 가장 격동적인 편에 속합니다.</p>
+<h3>탈룸 소용돌이</h3>
+<p>Velmora를 대표하는 것은 탈룸 — 북반구 중위도에 고정된 영구 반사이클론입니다. 반경 약 1,400 km로 가스 행성 폭풍치고는 작지만 크기 대신 수명과 강도로 보상합니다.</p>
+<p>목성의 대적점이 느리게 줄어드는 것과 달리 탈룸은 스스로 유지되는 듯합니다 — Velmora의 뜨거운 금속성 수소 내부에서 열을 위로 밀어 올리는 깊은 대류 기둥에 의해 공급됩니다. 소용돌이벽 풍속은 약 620 m/s로 추정되며 눈은 주변 구름층보다 대략 40 km 위에 있습니다.</p>
+<p>장노출 영상에서 보이는 세 갈래 나선팔은 잔해류 — 수 주에 걸쳐 폭풍 회전에 감기는 포획된 구름 물질입니다.</p>
+<h3>위성</h3>
+<p>Velmora에는 확인된 위성이 두 개 있습니다.</p>
+<div class="article-table-wrap">
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th scope="col">위성</th>
+        <th scope="col">유형</th>
+        <th scope="col">비고</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Keth</td>
+        <td>암석, 조석 고정</td>
+        <td>크레이터가 많고 철빛 회색 표면</td>
+      </tr>
+      <tr>
+        <td>Soru</td>
+        <td>얼음 맨틀</td>
+        <td>지하 액체층 의심; 미약한 플룸 활동</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>특히 Soru는 Velmora의 조석 굴곡이 얼음 껍질 아래 액체수를 유지하기에 충분할 수 있어 우선 관측 후보로 여겨집니다.</p>
+<h3>조석 고정과 기후</h3>
+<p>Velmora 자체도 별과의 이차 중력 공명으로 조석 고정되어 있어 자전 주기는 공전과 3:2 공명입니다 — 수성과 비슷합니다. 항성 조사가 집중되는 영구적인 “핫 폴” 영역을 만들어 탈룸 같은 폭풍을 일으키는 거대 대기 순환을 구동합니다.</p>
+<p>표면(정확히는 1기압면)은 주간 반구에서 평균 약 +280°C이며 명암 경계로 급격히 떨어집니다 — 끊임없이 격렬한 날씨의 경계입니다.</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../index.html#intro" class="footer-legal-link lang-ko">소개</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</body></html>

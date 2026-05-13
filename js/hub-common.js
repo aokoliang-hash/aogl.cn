@@ -10,10 +10,10 @@
   }
 
   /**
-   * PC: pointer + setPointerCapture so pointerup/cancel always ends the gesture
-   * (document mouseup is missed when releasing outside the window or over iframes).
+   * PC: horizontal drag scroll on the carousel strip (rAF-batched).
+   * We do not use setPointerCapture on the list: capture retargets pointerup/click to the
+   * list root, so clicks on wrapped hub-hotmix-card-link anchors would never open the URL.
    * Touch keeps native overflow-x pan.
-   * rAF-batched scroll; scroll-snap off while dragging (hub.css); optional inertia on release.
    */
   function bindHotmixCarouselDrag(root) {
     if (!root || root.dataset.aoglHotmixDrag === "1") return;
@@ -29,6 +29,7 @@
     let pendingDx = 0;
     let moveRaf = 0;
     let glideRaf = 0;
+    const DRAG_GLIDE_THRESHOLD_PX = 5;
 
     function cancelGlide() {
       if (glideRaf) {
@@ -86,7 +87,7 @@
       vx = vx * 0.55 + inst * 0.45;
       pendingDx += dx;
       dragDist += Math.abs(dx);
-      if (dragDist > 5) dragMoved = true;
+      if (dragDist > DRAG_GLIDE_THRESHOLD_PX) dragMoved = true;
       if (!moveRaf) {
         moveRaf = requestAnimationFrame(flushPendingScroll);
       }
@@ -95,21 +96,9 @@
     function onPointerUp(e) {
       if (!isDown || e.pointerId !== activePid) return;
       endDrag(true);
-      try {
-        root.releasePointerCapture(e.pointerId);
-      } catch (_) {}
     }
 
     function onPointerCancel(e) {
-      if (!isDown || e.pointerId !== activePid) return;
-      vx = 0;
-      endDrag(false);
-      try {
-        root.releasePointerCapture(e.pointerId);
-      } catch (_) {}
-    }
-
-    function onLostPointerCapture(e) {
       if (!isDown || e.pointerId !== activePid) return;
       vx = 0;
       endDrag(false);
@@ -125,7 +114,6 @@
     root.addEventListener("pointermove", onPointerMove);
     root.addEventListener("pointerup", onPointerUp);
     root.addEventListener("pointercancel", onPointerCancel);
-    root.addEventListener("lostpointercapture", onLostPointerCapture);
     window.addEventListener("blur", onWindowBlur);
 
     root.addEventListener(
@@ -142,9 +130,6 @@
         if (e.pointerType === "touch") return;
         if (e.button !== 0) return;
         if (e.target.closest("button, input, select, textarea")) return;
-        if (e.target.closest(".hub-hotmix-card-media")) {
-          e.preventDefault();
-        }
         cancelGlide();
         isDown = true;
         activePid = e.pointerId;
@@ -155,27 +140,16 @@
         lastX = e.clientX;
         lastT = performance.now();
         root.classList.add("hub-hotmix-cards--carousel--dragging");
-        try {
-          root.setPointerCapture(e.pointerId);
-        } catch (_) {}
       },
       { capture: true, passive: false }
-    );
-
-    root.addEventListener(
-      "click",
-      (e) => {
-        if (!dragMoved) return;
-        e.preventDefault();
-        e.stopPropagation();
-        dragMoved = false;
-      },
-      true
     );
   }
 
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("img.hub-favicon").forEach(favFallback);
-    document.querySelectorAll(".hub-hotmix-cards--carousel").forEach(bindHotmixCarouselDrag);
+    document.querySelectorAll(".hub-hotmix-cards--carousel").forEach(function (root) {
+      if (root.classList.contains("site-originals-hotmix")) return;
+      bindHotmixCarouselDrag(root);
+    });
   });
 })();

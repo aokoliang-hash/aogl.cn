@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="zh-CN" data-title-zh="3D太阳系高清探索器 — aogl.cn" data-desc-zh="本站原创设定：III 类气态巨行星 Velmora 的轨道与大气带、Thalum 反气旋风暴、卫星 Keth 与 Soru，以及内嵌 WebGL 互动视角。" data-aogl-lang="zh"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="本站原创设定：III 类气态巨行星 Velmora 的轨道与大气带、Thalum 反气旋风暴、卫星 Keth 与 Soru，以及内嵌 WebGL 互动视角。">
+  <title>3D太阳系高清探索器 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/articles/velmora.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/velmora.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/velmora.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/velmora.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/velmora.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/velmora.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/velmora.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/velmora.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/velmora.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/velmora.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/articles/velmora.html">
+  <meta property="og:title" content="3D太阳系高清探索器 — aogl.cn">
+  <meta property="og:description" content="本站原创设定：III 类气态巨行星 Velmora 的轨道与大气带、Thalum 反气旋风暴、卫星 Keth 与 Soru，以及内嵌 WebGL 互动视角。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:image" content="https://aogl.cn/original/Gemini_Generated_Image_f7vc2cf7vc2cf7vc.png">
+  <meta property="og:image:alt" content="Velmora planetary concept">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/Gemini_Generated_Image_f7vc2cf7vc2cf7vc.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/hub.css">
+  <script src="../js/adsense.js"></script>
+  <style>
+    .article-shell {
+      position: relative;
+      z-index: 1;
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: clamp(1rem, 4vw, 2.25rem) clamp(1rem, 3vw, 1.75rem) 3rem;
+    }
+    .article-shell__top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem 1rem;
+      margin-bottom: 1.75rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-shell__top a {
+      font-size: 0.95rem;
+    }
+    .article-shell__header h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.35rem, 4vw, 1.85rem);
+      line-height: 1.25;
+      font-weight: 650;
+    }
+    .article-shell__sub {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+    .article-shell__meta {
+      margin: 0 0 1.5rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .article-shell__body {
+      color: var(--text);
+    }
+    .article-shell__body h2 {
+      margin: 2rem 0 0.75rem;
+      font-size: 1.2rem;
+      font-weight: 650;
+      color: var(--accent);
+      border-bottom: 1px solid rgba(125, 211, 252, 0.2);
+      padding-bottom: 0.35rem;
+    }
+    .article-shell__body h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+    .article-shell__body h3 {
+      margin: 1.35rem 0 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .article-shell__body p {
+      margin: 0.65rem 0;
+      max-width: 48rem;
+    }
+    .article-shell__body ul {
+      margin: 0.5rem 0 0.75rem;
+      padding-left: 1.25rem;
+      color: var(--muted);
+    }
+    .article-shell__body ul li {
+      margin: 0.35rem 0;
+    }
+    .article-shell__body ul strong {
+      color: var(--text);
+    }
+    .article-embed {
+      margin: 1.25rem 0 1.5rem;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    }
+    .article-embed iframe {
+      display: block;
+      width: 100%;
+      height: min(70vh, 560px);
+      border: none;
+      vertical-align: middle;
+    }
+    .article-embed figcaption {
+      padding: 0.5rem 0.85rem 0.65rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: rgba(18, 25, 34, 0.65);
+    }
+    .article-table-wrap {
+      margin: 1rem 0 1.25rem;
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+    .article-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    .article-table th,
+    .article-table td {
+      padding: 0.65rem 0.85rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-table th {
+      background: rgba(125, 211, 252, 0.08);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .article-table tr:last-child td {
+      border-bottom: none;
+    }
+    .article-table tbody tr:hover td {
+      background: rgba(125, 211, 252, 0.04);
+    }
+
+  </style>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Velmora — Planetary Codex","alternativeHeadline":"3D太阳系高清探索器","datePublished":"2026-05-11","dateModified":"2026-05-11","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/velmora.html"},"url":"https://aogl.cn/en/articles/velmora.html","inLanguage":"zh-CN","description":"Original aogl.cn codex: fictional Class III gas giant Velmora — atmosphere, Thalum storm, moons Keth & Soru, embedded WebGL view.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-zh">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../js/bg-canvas.js"></script>
+  <script src="../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-zh">
+          <li><a href="../index.html#tools-directory">AI 前沿</a></li>
+          <li><a href="../portal.html">全球站点</a></li>
+          <li><a href="../brands.html">品牌</a></li>
+          <li><a href="../shopping.html">购物</a></li>
+          <li><a href="../life.html">生活</a></li>
+          <li><a href="../social.html">社交</a></li>
+          <li><a href="../tech.html">科技</a></li>
+          <li><a href="../games.html">游戏</a></li>
+          <li><a href="../tools.html">工具</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>3D太阳系高清探索器</h1>
+        <p class="article-shell__sub">Velmora — 行星档案</p>
+        <p class="article-shell__meta"><time datetime="2026-05-11">2026-05-11</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>Velmora 是一颗 III 类气态巨行星，绕母星约 2.30 AU，公转周期仅约 14 天，暗示系统紧凑、霜线靠内。</p>
+<h2>大气与条带</h2>
+<figure class="article-embed">
+  <iframe src="../original/velmora_3d_webgl.html" title="Velmora WebGL 互动视图" loading="lazy" decoding="async"></iframe>
+  <figcaption>WebGL 嵌入视图：拖拽旋转、滚轮缩放；可与正文对照阅读。</figcaption>
+</figure>
+<p>Velmora's visible surface is dominated by counter-rotating atmospheric bands driven by intense internal heat. The alternating rust-orange and teal-green belts are the result of two chemically distinct air masses:</p>
+<ul>
+  <li><strong>Ferric zones</strong> (orange-red bands) — iron oxide aerosols and sulfur compounds lofted from deep convective columns, giving the planet its signature warm coloring.</li>
+  <li><strong>Cryogen belts</strong> (teal-green bands) — cooler, methane-rich layers sitting above the warmer zones, creating dramatic shear boundaries where turbulence is highest.</li>
+</ul>
+<p>The temperature differential between adjacent bands can reach 400°C, making Velmora's atmosphere one of the most dynamically violent of its class.</p>
+<h3>The Thalum vortex</h3>
+<p>The most defining feature of Velmora is Thalum — a permanent anticyclonic storm system locked in the planet's northern mid-latitudes. With a radius of approximately 1,400 km, Thalum is modest by gas giant standards, but what it lacks in size it makes up for in longevity and intensity.</p>
+<p>Unlike Jupiter's Great Red Spot, which is slowly shrinking, Thalum appears to be self-sustaining — fed by a deep convective plume that punches heat upward from Velmora's hot metallic hydrogen interior. Wind speeds at the vortex wall are estimated at 620 m/s, and the eye sits roughly 40 km above the surrounding cloud deck.</p>
+<p>The three spiral arms visible in long-exposure imaging are debris streams — captured cloud material being shredded and wound into the storm's rotation over periods of weeks.</p>
+<h3>Moons</h3>
+<p>Velmora hosts two confirmed moons:</p>
+<div class="article-table-wrap">
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th scope="col">Moon</th>
+        <th scope="col">Type</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Keth</td>
+        <td>Rocky, tidally locked</td>
+        <td>Heavily cratered, iron-grey surface</td>
+      </tr>
+      <tr>
+        <td>Soru</td>
+        <td>Ice-mantled</td>
+        <td>Subsurface liquid layer suspected; faint plume activity</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Soru in particular is considered a high-priority candidate for further study, given that tidal flexing from Velmora's gravity may be sufficient to maintain liquid water beneath its ice shell.</p>
+<h3>Tidal locking &amp; climate</h3>
+<p>Velmora itself is tidally locked to a secondary gravitational resonance with its star, meaning its rotation period is in a 3:2 resonance with its orbit — similar to Mercury. This creates a permanent "hot pole" region where stellar irradiation is concentrated, driving the massive atmospheric circulation patterns that power storms like Thalum.</p>
+<p>The surface (or rather, the 1-bar pressure level) averages around +280°C on the day-facing hemisphere and drops sharply toward the terminator zone — a boundary of constant violent weather.</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../index.html#intro" class="footer-legal-link lang-zh">关于</a>
+        <a href="../changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="../privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/hub-common.js" defer=""></script>
+</body></html>

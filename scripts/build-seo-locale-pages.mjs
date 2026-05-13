@@ -31,7 +31,7 @@ const HTML_LANG = {
   ar: "ar",
 };
 
-const PAGES = [
+const STATIC_PAGES = [
   "index.html",
   "portal.html",
   "brands.html",
@@ -42,7 +42,22 @@ const PAGES = [
   "games.html",
   "tools.html",
   "privacy.html",
+  "changelog.html",
 ];
+
+function multilangArticlePages() {
+  const dir = path.join(MULTILANG_DIR, "articles");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".html"))
+    .sort()
+    .map((f) => `articles/${f}`);
+}
+
+function getAllPages() {
+  return [...STATIC_PAGES, ...multilangArticlePages()];
+}
 
 const toTraditional = OpenCC.Converter({ from: "cn", to: "tw" });
 
@@ -89,6 +104,9 @@ function siteHomeFromCanonical(canonicalHref) {
   if (/\.html$/i.test(p)) {
     p = p.replace(/\/[^/]+$/, "/");
     if (!p.startsWith("/")) p = "/" + p;
+  }
+  if (/\/articles\/$/i.test(p)) {
+    p = p.replace(/\/articles\/$/i, "/");
   }
   if (!p.endsWith("/")) p += "/";
   u.pathname = p;
@@ -189,9 +207,39 @@ function absolutizeAssetRefs($) {
       if (v == null || v === "") continue;
       if (v.startsWith("http:") || v.startsWith("https:") || v.startsWith("mailto:") || v.startsWith("#") || v.startsWith("/"))
         continue;
+      if (v.startsWith("../") || v.startsWith("./")) continue;
       if (a === "href" && (v.startsWith("javascript:") || v === "#")) continue;
       if (a === "href" && sameDirHtml.test(v)) continue;
       $el.attr(a, "/" + v.replace(/^\.?\//, ""));
+    }
+  });
+}
+
+/**
+ * Article templates use one "../" from _multilang/articles/; output may be
+ * articles/foo.html or en/articles/foo.html. Pass outDirSegment ("en", "zh", "ja", …) or "" for root zh.
+ */
+function rewriteArticleAssetDepth($, filename, outDirSegment = "") {
+  if (!filename || !filename.includes("articles/") || !filename.endsWith(".html")) return;
+  const rel = outDirSegment ? `${outDirSegment}/${filename}` : filename;
+  const depth = rel.split("/").filter(Boolean).length - 1;
+  const prefix = depth <= 0 ? "" : "../".repeat(depth);
+  const sel = "link[href], script[src], img[src], a[href], iframe[src], source[src]";
+  $(sel).each((_, el) => {
+    const $el = $(el);
+    for (const a of ["href", "src"]) {
+      const v = $el.attr(a);
+      if (v == null || v === "") continue;
+      if (v.startsWith("http:") || v.startsWith("https:") || v.startsWith("mailto:") || v.startsWith("#") || v.startsWith("data:"))
+        continue;
+      if (v.startsWith("./")) {
+        const rest = v.replace(/^\.\/+/, "");
+        $el.attr(a, prefix + rest);
+        continue;
+      }
+      if (!v.startsWith("../")) continue;
+      const rest = v.replace(/^\.\.\/+/, "");
+      $el.attr(a, prefix + rest);
     }
   });
 }
@@ -295,11 +343,12 @@ function toTraditionalOutsideScripts(html) {
   return parts.join("");
 }
 
-function transformSubfolderLocale(html, locale, filename) {
+function transformSubfolderLocale(html, locale, filename, outDirSegment) {
   const $ = cheerio.load(html, { decodeEntities: false });
   stripAlternateLocales($, locale);
   rootDataAttrsForLocale($, locale);
   absolutizeAssetRefs($);
+  rewriteArticleAssetDepth($, filename, outDirSegment ?? locale);
   const can = urlLocale(locale, filename);
   applyLocaleHead($, locale, filename, can, { bodyClass: `locale-${locale}`, dataLang: locale, seoLocale: true });
   return tidySeoHtml($.root().html());
@@ -310,6 +359,7 @@ function transformZhTraditional(html, filename) {
   stripAlternateLocales($, "zh");
   rootDataAttrsForLocale($, "zh");
   absolutizeAssetRefs($);
+  rewriteArticleAssetDepth($, filename, "zh");
   applyLocaleHead($, "zht", filename, urlZhHant(filename), {
     bodyClass: "locale-zht",
     dataLang: "zht",
@@ -324,6 +374,7 @@ function transformRootSimplifiedZh(html, filename) {
   const $ = cheerio.load(html, { decodeEntities: false });
   stripAlternateLocales($, "zh");
   rootDataAttrsForLocale($, "zh");
+  rewriteArticleAssetDepth($, filename, "");
   applyLocaleHead($, "zh", filename, urlZhCn(filename), {
     bodyClass: "locale-zh",
     dataLang: "zh",
@@ -333,7 +384,7 @@ function transformRootSimplifiedZh(html, filename) {
 }
 
 function transformEn(html, filename) {
-  return transformSubfolderLocale(html, "en", filename);
+  return transformSubfolderLocale(html, "en", filename, "en");
 }
 
 function isMultilingualSource(s) {
@@ -364,18 +415,33 @@ function readMultilang(filename) {
   return fs.readFileSync(p, "utf8");
 }
 
+function isArticlePage(file) {
+  return typeof file === "string" && file.startsWith("articles/");
+}
+
 function writeSitemap() {
   const lastmod = new Date().toISOString().slice(0, 10);
+  const pages = getAllPages();
   const urls = [];
-  for (const file of PAGES) {
-    urls.push({ loc: urlZhCn(file), pr: file === "index.html" ? "1" : file === "privacy.html" ? "0.42" : "0.88" });
-    urls.push({ loc: urlZhHant(file), pr: file === "index.html" ? "0.96" : file === "privacy.html" ? "0.36" : "0.82" });
-    urls.push({ loc: urlEn(file), pr: file === "index.html" ? "0.98" : file === "privacy.html" ? "0.4" : "0.86" });
+  for (const file of pages) {
+    const art = isArticlePage(file);
+    urls.push({
+      loc: urlZhCn(file),
+      pr: file === "index.html" ? "1" : file === "privacy.html" || file === "changelog.html" ? "0.42" : art ? "0.65" : "0.88",
+    });
+    urls.push({
+      loc: urlZhHant(file),
+      pr: file === "index.html" ? "0.96" : file === "privacy.html" || file === "changelog.html" ? "0.36" : art ? "0.6" : "0.82",
+    });
+    urls.push({
+      loc: urlEn(file),
+      pr: file === "index.html" ? "0.98" : file === "privacy.html" || file === "changelog.html" ? "0.4" : art ? "0.64" : "0.86",
+    });
     for (const loc of SUBLOCALES) {
       if (loc === "en") continue;
       urls.push({
         loc: urlLocale(loc, file),
-        pr: file === "index.html" ? "0.95" : file === "privacy.html" ? "0.35" : "0.8",
+        pr: file === "index.html" ? "0.95" : file === "privacy.html" || file === "changelog.html" ? "0.35" : art ? "0.58" : "0.8",
       });
     }
   }
@@ -384,7 +450,15 @@ function writeSitemap() {
       (u) => `  <url>
     <loc>${u.loc}</loc>
     <lastmod>${lastmod}</lastmod>
-    <changefreq>${u.pr === "0.35" || u.pr === "0.36" || u.pr === "0.4" || u.pr === "0.42" ? "yearly" : "weekly"}</changefreq>
+    <changefreq>${
+      u.loc.includes("/articles/") && /\.html(\?|$)/.test(u.loc)
+        ? "monthly"
+        : u.pr === "0.35" || u.pr === "0.36" || u.pr === "0.4" || u.pr === "0.42"
+          ? u.loc.includes("changelog")
+            ? "monthly"
+            : "yearly"
+          : "weekly"
+    }</changefreq>
     <priority>${u.pr}</priority>
   </url>`
     )
@@ -401,30 +475,35 @@ ${body}
 }
 
 function main() {
-  for (const f of PAGES) bootstrapMultilangIfNeeded(f);
+  const pages = getAllPages();
+  for (const f of pages) bootstrapMultilangIfNeeded(f);
 
   for (const loc of ["en", "zh", "ja", "ko", "fr", "ru", "ar"]) {
     fs.mkdirSync(path.join(ROOT, loc), { recursive: true });
   }
 
-  for (const file of PAGES) {
+  for (const file of pages) {
     const html = readMultilang(file);
-    fs.writeFileSync(path.join(ROOT, "en", file), transformEn(html, file), "utf8");
-    fs.writeFileSync(path.join(ROOT, "zh", file), transformZhTraditional(html, file), "utf8");
+    const writeOut = (absPath, content) => {
+      fs.mkdirSync(path.dirname(absPath), { recursive: true });
+      fs.writeFileSync(absPath, content, "utf8");
+    };
+    writeOut(path.join(ROOT, "en", file), transformEn(html, file));
+    writeOut(path.join(ROOT, "zh", file), transformZhTraditional(html, file));
     for (const loc of SUBLOCALES) {
       if (loc === "en") continue;
-      fs.writeFileSync(path.join(ROOT, loc, file), transformSubfolderLocale(html, loc, file), "utf8");
+      writeOut(path.join(ROOT, loc, file), transformSubfolderLocale(html, loc, file, loc));
     }
-    fs.writeFileSync(path.join(ROOT, file), transformRootSimplifiedZh(html, file), "utf8");
+    writeOut(path.join(ROOT, file), transformRootSimplifiedZh(html, file));
   }
 
   writeSitemap();
   console.log(
     "SEO: root=简体 zh, /zh/=繁体, /en/…=其他语种; sources=_multilang/*.html; wrote",
-    PAGES.length,
+    pages.length,
     "root +",
-    7 * PAGES.length,
-    "locale files + sitemap.xml"
+    8 * pages.length,
+    "locale outputs (en/zh/ja/ko/fr/ru/ar + root) + sitemap.xml"
   );
 }
 

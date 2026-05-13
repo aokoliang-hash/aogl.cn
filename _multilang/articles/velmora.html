@@ -1,0 +1,722 @@
+<!DOCTYPE html><html lang="en" data-title-en="Velmora — 3D solar system explorer — aogl.cn" data-desc-en="Original aogl.cn codex: fictional Class III gas giant Velmora — atmosphere, Thalum storm, moons Keth &amp; Soru, embedded WebGL view." data-title-zh="3D太阳系高清探索器 — aogl.cn" data-desc-zh="本站原创设定：III 类气态巨行星 Velmora 的轨道与大气带、Thalum 反气旋风暴、卫星 Keth 与 Soru，以及内嵌 WebGL 互动视角。" data-title-ja="Velmora — 3D太陽系ビューア — aogl.cn" data-desc-ja="オリジナル設定：III級ガス巨星Velmoraの大気・Thalum嵐・衛星Keth/SoruとWebGLビュー。" data-title-ko="Velmora — 3D 태양계 뷰어 — aogl.cn" data-desc-ko="오리지널 설정: III류 가스 행성 Velmora의 대기·Thalum 폭풍·위성 Keth/Soru와 WebGL 뷰." data-title-fr="Velmora — explorateur 3D du système solaire — aogl.cn" data-desc-fr="Codex original : géante gazeuse de classe III Velmora — atmosphère, tempête Thalum, lunes Keth &amp; Soru, vue WebGL." data-title-ru="Velmora — 3D-обзор солнечной системы — aogl.cn" data-desc-ru="Оригинальный кодекс: газовый гигант Velmora III класса — атмосфера, шторм Талум, спутники Keth и Soru, WebGL." data-title-ar="Velmora — مستكشف النظام الشمسي ثلاثي الأبعاد — aogl.cn" data-desc-ar="أصلي: عملاق غازي من الدرجة III — الغلاف وعاصفة ثالوم وأقمار كيث وسورو وعرض WebGL."><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Original aogl.cn codex: fictional Class III gas giant Velmora — atmosphere, Thalum storm, moons Keth &amp; Soru, embedded WebGL view.">
+  <title>Velmora — 3D solar system explorer — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/velmora.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/velmora.html">
+  <meta property="og:title" content="Velmora — 3D solar system explorer — aogl.cn">
+  <meta property="og:description" content="Original aogl.cn codex: fictional Class III gas giant Velmora — atmosphere, Thalum storm, moons Keth &amp; Soru, embedded WebGL view.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/original/Gemini_Generated_Image_f7vc2cf7vc2cf7vc.png">
+  <meta property="og:image:alt" content="Velmora planetary concept">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/Gemini_Generated_Image_f7vc2cf7vc2cf7vc.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/hub.css">
+  <script src="../js/adsense.js"></script>
+  <style>
+    .article-shell {
+      position: relative;
+      z-index: 1;
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: clamp(1rem, 4vw, 2.25rem) clamp(1rem, 3vw, 1.75rem) 3rem;
+    }
+    .article-shell__top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem 1rem;
+      margin-bottom: 1.75rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-shell__top a {
+      font-size: 0.95rem;
+    }
+    .article-shell__header h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.35rem, 4vw, 1.85rem);
+      line-height: 1.25;
+      font-weight: 650;
+    }
+    .article-shell__sub {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+    .article-shell__meta {
+      margin: 0 0 1.5rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .article-shell__body {
+      color: var(--text);
+    }
+    .article-shell__body h2 {
+      margin: 2rem 0 0.75rem;
+      font-size: 1.2rem;
+      font-weight: 650;
+      color: var(--accent);
+      border-bottom: 1px solid rgba(125, 211, 252, 0.2);
+      padding-bottom: 0.35rem;
+    }
+    .article-shell__body h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+    .article-shell__body h3 {
+      margin: 1.35rem 0 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .article-shell__body p {
+      margin: 0.65rem 0;
+      max-width: 48rem;
+    }
+    .article-shell__body ul {
+      margin: 0.5rem 0 0.75rem;
+      padding-left: 1.25rem;
+      color: var(--muted);
+    }
+    .article-shell__body ul li {
+      margin: 0.35rem 0;
+    }
+    .article-shell__body ul strong {
+      color: var(--text);
+    }
+    .article-embed {
+      margin: 1.25rem 0 1.5rem;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    }
+    .article-embed iframe {
+      display: block;
+      width: 100%;
+      height: min(70vh, 560px);
+      border: none;
+      vertical-align: middle;
+    }
+    .article-embed figcaption {
+      padding: 0.5rem 0.85rem 0.65rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: rgba(18, 25, 34, 0.65);
+    }
+    .article-table-wrap {
+      margin: 1rem 0 1.25rem;
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+    .article-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    .article-table th,
+    .article-table td {
+      padding: 0.65rem 0.85rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-table th {
+      background: rgba(125, 211, 252, 0.08);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .article-table tr:last-child td {
+      border-bottom: none;
+    }
+    .article-table tbody tr:hover td {
+      background: rgba(125, 211, 252, 0.04);
+    }
+
+  </style>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Velmora — Planetary Codex","alternativeHeadline":"3D太阳系高清探索器","datePublished":"2026-05-11","dateModified":"2026-05-11","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/velmora.html"},"url":"https://aogl.cn/en/articles/velmora.html","inLanguage":"mul","description":"Original aogl.cn codex: fictional Class III gas giant Velmora — atmosphere, Thalum storm, moons Keth & Soru, embedded WebGL view.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../js/bg-canvas.js"></script>
+  <script src="../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ru brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ar brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li><a href="../index.html#tools-directory">AI frontier</a></li>
+          <li><a href="../portal.html">Top sites</a></li>
+          <li><a href="../brands.html">Brands</a></li>
+          <li><a href="../shopping.html">Shopping</a></li>
+          <li><a href="../life.html">Life</a></li>
+          <li><a href="../social.html">Social</a></li>
+          <li><a href="../tech.html">Tech</a></li>
+          <li><a href="../games.html">Games</a></li>
+          <li><a href="../tools.html">Utilities</a></li>
+        </ul>
+        <ul class="site-nav-list lang-zh">
+          <li><a href="../index.html#tools-directory">AI 前沿</a></li>
+          <li><a href="../portal.html">全球站点</a></li>
+          <li><a href="../brands.html">品牌</a></li>
+          <li><a href="../shopping.html">购物</a></li>
+          <li><a href="../life.html">生活</a></li>
+          <li><a href="../social.html">社交</a></li>
+          <li><a href="../tech.html">科技</a></li>
+          <li><a href="../games.html">游戏</a></li>
+          <li><a href="../tools.html">工具</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ja">
+          <li><a href="../index.html#tools-directory">AI最前線</a></li>
+          <li><a href="../portal.html">主要サイト</a></li>
+          <li><a href="../brands.html">ブランド</a></li>
+          <li><a href="../shopping.html">ショッピング</a></li>
+          <li><a href="../life.html">ライフ</a></li>
+          <li><a href="../social.html">ソーシャル</a></li>
+          <li><a href="../tech.html">テック</a></li>
+          <li><a href="../games.html">ゲーム</a></li>
+          <li><a href="../tools.html">実用ツール</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ko">
+          <li><a href="../index.html#tools-directory">AI 최전선</a></li>
+          <li><a href="../portal.html">주요 사이트</a></li>
+          <li><a href="../brands.html">브랜드</a></li>
+          <li><a href="../shopping.html">쇼핑</a></li>
+          <li><a href="../life.html">라이프</a></li>
+          <li><a href="../social.html">소셜</a></li>
+          <li><a href="../tech.html">테크</a></li>
+          <li><a href="../games.html">게임</a></li>
+          <li><a href="../tools.html">실용 도구</a></li>
+        </ul>
+        <ul class="site-nav-list lang-fr">
+          <li><a href="../index.html#tools-directory">IA — veille</a></li>
+          <li><a href="../portal.html">Grands sites</a></li>
+          <li><a href="../brands.html">Marques</a></li>
+          <li><a href="../shopping.html">Shopping</a></li>
+          <li><a href="../life.html">Vie</a></li>
+          <li><a href="../social.html">Social</a></li>
+          <li><a href="../tech.html">Tech</a></li>
+          <li><a href="../games.html">Jeux</a></li>
+          <li><a href="../tools.html">Utilitaires</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ru">
+          <li><a href="../index.html#tools-directory">ИИ — новинки</a></li>
+          <li><a href="../portal.html">Топ сайтов</a></li>
+          <li><a href="../brands.html">Бренды</a></li>
+          <li><a href="../shopping.html">Шопинг</a></li>
+          <li><a href="../life.html">Сервисы</a></li>
+          <li><a href="../social.html">Соцсети</a></li>
+          <li><a href="../tech.html">Техно</a></li>
+          <li><a href="../games.html">Игры</a></li>
+          <li><a href="../tools.html">Утилиты</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ar">
+          <li><a href="../index.html#tools-directory">أحدث الذكاء الاصطناعي</a></li>
+          <li><a href="../portal.html">أبرز المواقع</a></li>
+          <li><a href="../brands.html">العلامات</a></li>
+          <li><a href="../shopping.html">التسوق</a></li>
+          <li><a href="../life.html">الحياة الرقمية</a></li>
+          <li><a href="../social.html">التواصل</a></li>
+          <li><a href="../tech.html">التقنية</a></li>
+          <li><a href="../games.html">الألعاب</a></li>
+          <li><a href="../tools.html">أدوات مساعدة</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Velmora — 3D solar system explorer</h1>
+        <p class="article-shell__sub">Velmora — Planetary Codex</p>
+        <p class="article-shell__meta"><time datetime="2026-05-11">2026-05-11</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>Velmora is a Class III gas giant orbiting at 2.30 astronomical units from its parent star, with a rapid orbital period of just 14 days — suggesting a compact, warm solar system where the frost line sits unusually close in.</p>
+
+<h2>Atmosphere &amp; banding</h2>
+<figure class="article-embed">
+  <iframe src="../original/velmora_3d_webgl.html" title="Velmora WebGL interactive view" loading="lazy" decoding="async"></iframe>
+  <figcaption>WebGL view: drag to rotate, scroll to zoom; read alongside the text below.</figcaption>
+</figure>
+
+<p>Velmora's visible surface is dominated by counter-rotating atmospheric bands driven by intense internal heat. The alternating rust-orange and teal-green belts are the result of two chemically distinct air masses:</p>
+<ul>
+  <li><strong>Ferric zones</strong> (orange-red bands) — iron oxide aerosols and sulfur compounds lofted from deep convective columns, giving the planet its signature warm coloring.</li>
+  <li><strong>Cryogen belts</strong> (teal-green bands) — cooler, methane-rich layers sitting above the warmer zones, creating dramatic shear boundaries where turbulence is highest.</li>
+</ul>
+<p>The temperature differential between adjacent bands can reach 400°C, making Velmora's atmosphere one of the most dynamically violent of its class.</p>
+
+<h3>The Thalum vortex</h3>
+<p>The most defining feature of Velmora is Thalum — a permanent anticyclonic storm system locked in the planet's northern mid-latitudes. With a radius of approximately 1,400 km, Thalum is modest by gas giant standards, but what it lacks in size it makes up for in longevity and intensity.</p>
+<p>Unlike Jupiter's Great Red Spot, which is slowly shrinking, Thalum appears to be self-sustaining — fed by a deep convective plume that punches heat upward from Velmora's hot metallic hydrogen interior. Wind speeds at the vortex wall are estimated at 620 m/s, and the eye sits roughly 40 km above the surrounding cloud deck.</p>
+<p>The three spiral arms visible in long-exposure imaging are debris streams — captured cloud material being shredded and wound into the storm's rotation over periods of weeks.</p>
+
+<h3>Moons</h3>
+<p>Velmora hosts two confirmed moons:</p>
+<div class="article-table-wrap">
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th scope="col">Moon</th>
+        <th scope="col">Type</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Keth</td>
+        <td>Rocky, tidally locked</td>
+        <td>Heavily cratered, iron-grey surface</td>
+      </tr>
+      <tr>
+        <td>Soru</td>
+        <td>Ice-mantled</td>
+        <td>Subsurface liquid layer suspected; faint plume activity</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Soru in particular is considered a high-priority candidate for further study, given that tidal flexing from Velmora's gravity may be sufficient to maintain liquid water beneath its ice shell.</p>
+
+<h3>Tidal locking &amp; climate</h3>
+<p>Velmora itself is tidally locked to a secondary gravitational resonance with its star, meaning its rotation period is in a 3:2 resonance with its orbit — similar to Mercury. This creates a permanent "hot pole" region where stellar irradiation is concentrated, driving the massive atmospheric circulation patterns that power storms like Thalum.</p>
+<p>The surface (or rather, the 1-bar pressure level) averages around +280°C on the day-facing hemisphere and drops sharply toward the terminator zone — a boundary of constant violent weather.</p></article>
+    </div>
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>3D太阳系高清探索器</h1>
+        <p class="article-shell__sub">Velmora — 行星档案</p>
+        <p class="article-shell__meta"><time datetime="2026-05-11">2026-05-11</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>Velmora 是一颗 III 类气态巨行星，绕母星约 2.30 AU，公转周期仅约 14 天，暗示系统紧凑、霜线靠内。</p>
+
+<h2>大气与条带</h2>
+<figure class="article-embed">
+  <iframe src="../original/velmora_3d_webgl.html" title="Velmora WebGL 互动视图" loading="lazy" decoding="async"></iframe>
+  <figcaption>WebGL 嵌入视图：拖拽旋转、滚轮缩放；可与正文对照阅读。</figcaption>
+</figure>
+
+<p>Velmora's visible surface is dominated by counter-rotating atmospheric bands driven by intense internal heat. The alternating rust-orange and teal-green belts are the result of two chemically distinct air masses:</p>
+<ul>
+  <li><strong>Ferric zones</strong> (orange-red bands) — iron oxide aerosols and sulfur compounds lofted from deep convective columns, giving the planet its signature warm coloring.</li>
+  <li><strong>Cryogen belts</strong> (teal-green bands) — cooler, methane-rich layers sitting above the warmer zones, creating dramatic shear boundaries where turbulence is highest.</li>
+</ul>
+<p>The temperature differential between adjacent bands can reach 400°C, making Velmora's atmosphere one of the most dynamically violent of its class.</p>
+
+<h3>The Thalum vortex</h3>
+<p>The most defining feature of Velmora is Thalum — a permanent anticyclonic storm system locked in the planet's northern mid-latitudes. With a radius of approximately 1,400 km, Thalum is modest by gas giant standards, but what it lacks in size it makes up for in longevity and intensity.</p>
+<p>Unlike Jupiter's Great Red Spot, which is slowly shrinking, Thalum appears to be self-sustaining — fed by a deep convective plume that punches heat upward from Velmora's hot metallic hydrogen interior. Wind speeds at the vortex wall are estimated at 620 m/s, and the eye sits roughly 40 km above the surrounding cloud deck.</p>
+<p>The three spiral arms visible in long-exposure imaging are debris streams — captured cloud material being shredded and wound into the storm's rotation over periods of weeks.</p>
+
+<h3>Moons</h3>
+<p>Velmora hosts two confirmed moons:</p>
+<div class="article-table-wrap">
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th scope="col">Moon</th>
+        <th scope="col">Type</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Keth</td>
+        <td>Rocky, tidally locked</td>
+        <td>Heavily cratered, iron-grey surface</td>
+      </tr>
+      <tr>
+        <td>Soru</td>
+        <td>Ice-mantled</td>
+        <td>Subsurface liquid layer suspected; faint plume activity</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Soru in particular is considered a high-priority candidate for further study, given that tidal flexing from Velmora's gravity may be sufficient to maintain liquid water beneath its ice shell.</p>
+
+<h3>Tidal locking &amp; climate</h3>
+<p>Velmora itself is tidally locked to a secondary gravitational resonance with its star, meaning its rotation period is in a 3:2 resonance with its orbit — similar to Mercury. This creates a permanent "hot pole" region where stellar irradiation is concentrated, driving the massive atmospheric circulation patterns that power storms like Thalum.</p>
+<p>The surface (or rather, the 1-bar pressure level) averages around +280°C on the day-facing hemisphere and drops sharply toward the terminator zone — a boundary of constant violent weather.</p></article>
+    </div>
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Velmora — 3D太陽系ビューア</h1>
+        <p class="article-shell__sub">Velmora — 惑星コーデックス</p>
+        <p class="article-shell__meta"><time datetime="2026-05-11">2026-05-11</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p>Velmora は III 級のガス巨星で、母星から約 2.30 AU の軌道上にあり、公転周期はわずか約 14 日です。霜線が異常に内側にある、高温でコンパクトな星系を示唆します。</p>
+
+<h2>大気と帯状構造</h2>
+<figure class="article-embed">
+  <iframe src="../original/velmora_3d_webgl.html" title="Velmora WebGL インタラクティブ表示" loading="lazy" decoding="async"></iframe>
+  <figcaption>WebGL：ドラッグで回転、ホイールでズーム。本文とあわせてご覧ください。</figcaption>
+</figure>
+
+<p>Velmora の可視面は、強い内部熱に駆動した逆方向の大気帯に支配されています。錆色のオレンジと青緑の帯は、化学的に異なる二つの気団の結果です。</p>
+<ul>
+  <li><strong>フェリック帯</strong>（橙赤の帯）— 深い対流柱から持ち上げられた酸化鉄エアロゾルと硫黄化合物が、惑星の暖色の特徴を与えます。</li>
+  <li><strong>クライオジェン帯</strong>（青緑の帯）— より高温の帯の上に乗った、低温でメタンに富んだ層。激しい剪断境界と乱流を生みます。</li>
+</ul>
+<p>隣接する帯の温度差は最大約 400°C に達し、Velmora の大気は同級の中でも最もダイナミックに激しい部類に入ります。</p>
+
+<h3>タルム渦</h3>
+<p>Velmora を象徴するのはタルム — 北半球中緯度に固定された永続的反サイクロンです。半径約 1,400 km とガス巨星の嵐としては控えめですが、規模の代わりに寿命と強度があります。</p>
+<p>木星の大赤斑がゆっくり縮むのに対し、タルムは自立的に維持されているように見えます — Velmora の高温な金属水素の内部から熱を突き上げる深い対流プルームに支えられています。渦壁の風速は約 620 m/s と推定され、目は周辺の雲頂よりおおよそ 40 km 高い位置にあります。</p>
+<p>長時間露光で見える三本の螺旋腕はデブリストリーム — 数週間にわたり嵐の回転へ巻き込まれる、捕獲された雲物質です。</p>
+
+<h3>衛星</h3>
+<p>Velmora には確認済みの衛星が 2 つあります。</p>
+<div class="article-table-wrap">
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th scope="col">衛星</th>
+        <th scope="col">タイプ</th>
+        <th scope="col">備考</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Keth</td>
+        <td>岩石、潮汐固定</td>
+        <td>クレーターが多く、鉄灰色の表面</td>
+      </tr>
+      <tr>
+        <td>Soru</td>
+        <td>氷マントル</td>
+        <td>地下液体層の疑い；微弱なプルーム活動</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>特に Soru は、Velmora の潮汐たわみが氷殻下の液体水を維持するのに十分かもしれないため、優先的な観測候補と考えられています。</p>
+
+<h3>潮汐固定と気候</h3>
+<p>Velmora 自体は恒星との二次的重力共鳴により潮汐固定されており、自転周期は公転と 3:2 の共鳴にあります — 水星に似ています。恒星照射が集中する恒久的な「ホット極」領域を生み、タルムのような嵐を駆動する大規模な大気循環を引き起こします。</p>
+<p>表面（というより 1 気圧面）は昼半球で平均約 +280°C に達し、明暗境界帯へ急峻に低下します — 常に激しい天候の境界です。</p></article>
+    </div>
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Velmora — 3D 태양계 뷰어</h1>
+        <p class="article-shell__sub">Velmora — 행성 코덱스</p>
+        <p class="article-shell__meta"><time datetime="2026-05-11">2026-05-11</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p>Velmora는 III류 가스 행성으로 모항성에서 약 2.30 AU 떨어진 궤도를 돌며 공전 주기는 불과 약 14일입니다. 서리선이 유난히 안쪽에 있는 촘촘하고 뜨거운 계를 시사합니다.</p>
+
+<h2>대기와 띠 구조</h2>
+<figure class="article-embed">
+  <iframe src="../original/velmora_3d_webgl.html" title="Velmora WebGL 인터랙티브 뷰" loading="lazy" decoding="async"></iframe>
+  <figcaption>WebGL: 드래그로 회전, 스크롤로 확대·축소. 아래 본문과 함께 보세요.</figcaption>
+</figure>
+
+<p>Velmora의 가시 표면은 강한 내부열에 의해 역방향으로 도는 대기 띠가 지배합니다. 녹슨 오렌지와 청록색 띠는 화학적으로 다른 두 기단의 결과입니다.</p>
+<ul>
+  <li><strong>페리크 구역</strong>(주황–붉은 띠) — 깊은 대류 기둥에서 올려진 산화철 에어로졸과 황 화합물이 행성의 따뜻한 색조를 만듭니다.</li>
+  <li><strong>크라이오젠 띠</strong>(청록 띠) — 더 뜨거운 구역 위에 얹힌 차갑고 메탄이 풍부한 층. 극적인 전단 경계와 난류를 만듭니다.</li>
+</ul>
+<p>인접 띠 사이 온도차는 최대 약 400°C에 이르러 Velmora 대기는 같은 등급 가운데 가장 격동적인 편에 속합니다.</p>
+
+<h3>탈룸 소용돌이</h3>
+<p>Velmora를 대표하는 것은 탈룸 — 북반구 중위도에 고정된 영구 반사이클론입니다. 반경 약 1,400 km로 가스 행성 폭풍치고는 작지만 크기 대신 수명과 강도로 보상합니다.</p>
+<p>목성의 대적점이 느리게 줄어드는 것과 달리 탈룸은 스스로 유지되는 듯합니다 — Velmora의 뜨거운 금속성 수소 내부에서 열을 위로 밀어 올리는 깊은 대류 기둥에 의해 공급됩니다. 소용돌이벽 풍속은 약 620 m/s로 추정되며 눈은 주변 구름층보다 대략 40 km 위에 있습니다.</p>
+<p>장노출 영상에서 보이는 세 갈래 나선팔은 잔해류 — 수 주에 걸쳐 폭풍 회전에 감기는 포획된 구름 물질입니다.</p>
+
+<h3>위성</h3>
+<p>Velmora에는 확인된 위성이 두 개 있습니다.</p>
+<div class="article-table-wrap">
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th scope="col">위성</th>
+        <th scope="col">유형</th>
+        <th scope="col">비고</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Keth</td>
+        <td>암석, 조석 고정</td>
+        <td>크레이터가 많고 철빛 회색 표면</td>
+      </tr>
+      <tr>
+        <td>Soru</td>
+        <td>얼음 맨틀</td>
+        <td>지하 액체층 의심; 미약한 플룸 활동</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>특히 Soru는 Velmora의 조석 굴곡이 얼음 껍질 아래 액체수를 유지하기에 충분할 수 있어 우선 관측 후보로 여겨집니다.</p>
+
+<h3>조석 고정과 기후</h3>
+<p>Velmora 자체도 별과의 이차 중력 공명으로 조석 고정되어 있어 자전 주기는 공전과 3:2 공명입니다 — 수성과 비슷합니다. 항성 조사가 집중되는 영구적인 “핫 폴” 영역을 만들어 탈룸 같은 폭풍을 일으키는 거대 대기 순환을 구동합니다.</p>
+<p>표면(정확히는 1기압면)은 주간 반구에서 평균 약 +280°C이며 명암 경계로 급격히 떨어집니다 — 끊임없이 격렬한 날씨의 경계입니다.</p></article>
+    </div>
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Velmora — explorateur 3D du système solaire</h1>
+        <p class="article-shell__sub">Velmora — codex planétaire</p>
+        <p class="article-shell__meta"><time datetime="2026-05-11">2026-05-11</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p>Velmora est une géante gazeuse de classe III sur une orbite à 2,30 ua de son étoile mère, avec une période de révolution d’environ 14 jours seulement — ce qui suggère un système compact et chaud où la ligne des glaces est anormalement proche.</p>
+
+<h2>Atmosphère et ceintures</h2>
+<figure class="article-embed">
+  <iframe src="../original/velmora_3d_webgl.html" title="Vue WebGL interactive de Velmora" loading="lazy" decoding="async"></iframe>
+  <figcaption>WebGL : faites glisser pour faire tourner, molette pour zoomer ; lisez avec le texte ci-dessous.</figcaption>
+</figure>
+
+<p>La surface visible de Velmora est dominée par des bandes atmosphériques contrarotatives portées par une intense chaleur interne. Les ceintures rouille-orange et vert bleuté résultent de deux masses d’air chimiquement distinctes :</p>
+<ul>
+  <li><strong>Zones ferriques</strong> (bandes orange-rouge) — aérosols d’oxyde de fer et composés soufrés remontés depuis de profondes colonnes convectives, donnant la teinte chaude caractéristique.</li>
+  <li><strong>Ceintures cryogènes</strong> (bandes vert bleuté) — couches plus froides riches en méthane au-dessus des zones plus chaudes, créant des cisaillements et une forte turbulence.</li>
+</ul>
+<p>L’écart de température entre bandes adjacentes peut atteindre 400 °C, ce qui place l’atmosphère de Velmora parmi les plus violentes de sa catégorie.</p>
+
+<h3>Le vortex Thalum</h3>
+<p>Le trait le plus marquant de Velmora est Thalum — un anticyclone permanent verrouillé aux moyennes latitudes nord. D’un rayon d’environ 1 400 km, Thalum est modeste pour une géante gazeuse, mais compense par longévité et intensité.</p>
+<p>Contrairement à la Grande tache rouge de Jupiter, qui rétrécit, Thalum semble auto-entretenu — alimenté par un panache convectif profond qui remonte la chaleur depuis l’intérieur d’hydrogène métallique chaud. Les vents au mur du vortex sont estimés à 620 m/s et l’œil se situe environ 40 km au-dessus du tapis nuageux.</p>
+<p>Les trois bras spiraux visibles en pose longue sont des traînées de débris — nuages captés, déchiquetés et enroulés dans la rotation de la tempête sur des semaines.</p>
+
+<h3>Lunes</h3>
+<p>Velmora compte deux lunes confirmées :</p>
+<div class="article-table-wrap">
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th scope="col">Lune</th>
+        <th scope="col">Type</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Keth</td>
+        <td>Rocheuse, verrouillée par marées</td>
+        <td>Fortement cratérisée, surface gris fer</td>
+      </tr>
+      <tr>
+        <td>Soru</td>
+        <td>Manteau de glace</td>
+        <td>Couche liquide subsurfacique suspectée ; activité de panache faible</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Soru est en particulier une cible prioritaire : le flexage tidal dû à Velmora pourrait suffire à maintenir de l’eau liquide sous la croûte de glace.</p>
+
+<h3>Verrouillage tidal et climat</h3>
+<p>Velmora est verrouillée par marées dans une résonance gravitationnelle secondaire avec son étoile : la période de rotation est en résonance 3:2 avec l’orbite — comme Mercure. Cela crée un « pôle chaud » permanent où l’irradiation stellaire se concentre, entraînant la circulation massive qui alimente des tempêtes comme Thalum.</p>
+<p>La surface (ou plutôt le niveau 1 bar) avoisine +280 °C sur l’hémisphère jour et chute fortement vers la zone du terminateur — une frontière de temps violents permanents.</p></article>
+    </div>
+    <div class="lang-ru">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← На главную · оригиналы</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Velmora — 3D-обзор солнечной системы</h1>
+        <p class="article-shell__sub">Velmora — планетный кодекс</p>
+        <p class="article-shell__meta"><time datetime="2026-05-11">2026-05-11</time> · Оригинал aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="ru"><p>Velmora — газовый гигант III класса на орбите 2,30 а.е. от родительской звезды с периодом обращения всего около 14 суток, что указывает на компактную тёплую систему с необычно близкой линией инея.</p>
+
+<h2>Атмосфера и пояса</h2>
+<figure class="article-embed">
+  <iframe src="../original/velmora_3d_webgl.html" title="Интерактивный WebGL-вид Velmora" loading="lazy" decoding="async"></iframe>
+  <figcaption>WebGL: перетаскивание — вращение, колёсико — масштаб; читайте вместе с текстом ниже.</figcaption>
+</figure>
+
+<p>Видимая поверхность Velmora доминируется контрвращающимися атмосферными поясами, поддерживаемыми сильным внутренним теплом. Чередование ржаво-оранжевых и сине-зелёных поясов — результат двух химически различных воздушных масс:</p>
+<ul>
+  <li><strong>Феррические зоны</strong> (оранжево-красные пояса) — аэрозоли оксида железа и серные соединения, поднятые из глубоких конвективных столбов, задающие тёплую окраску.</li>
+  <li><strong>Криогенные пояса</strong> (сине-зелёные) — более холодные, богатые метаном слои над более тёплыми зонами, с резкими границами сдвига и высокой турбулентностью.</li>
+</ul>
+<p>Разница температур между соседними поясами может достигать 400 °C, из-за чего атмосфера Velmora — одна из самых динамично бурных в своём классе.</p>
+
+<h3>Вихрь Талум</h3>
+<p>Главная особенность Velmora — Талум — постоянная антициклоническая система в северных средних широтах. Радиус около 1400 км скромен для гиганта, но компенсируется долговечностью и интенсивностью.</p>
+<p>В отличие от Большого красного пятна Юпитера, которое медленно сжимается, Талум, похоже, самоподдерживается — за счёт глубокого конвективного столба, поднимающего тепло из горячего металлического водородного ядра. Скорость ветра у стенки вихря оценивается в 620 м/с, «глаз» примерно на 40 км выше окружающей облачной палубы.</p>
+<p>Три спиральных рукава на длинных экспозициях — потоки обломков: захваченный облачный материал рвётся и наматывается в вращение бури за недели.</p>
+
+<h3>Спутники</h3>
+<p>У Velmora подтверждены два спутника:</p>
+<div class="article-table-wrap">
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th scope="col">Спутник</th>
+        <th scope="col">Тип</th>
+        <th scope="col">Примечания</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Keth</td>
+        <td>Скалистый, приливно захваченный</td>
+        <td>Сильно кратерированная железисто-серая поверхность</td>
+      </tr>
+      <tr>
+        <td>Soru</td>
+        <td>Под ледяной мантией</td>
+        <td>Подозревается подповерхностный слой жидкости; слабая плюмовая активность</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Soru в особенности — приоритетный объект: приливные деформации от гравитации Velmora могут поддерживать жидкую воду под ледяной оболочкой.</p>
+
+<h3>Приливный захват и климат</h3>
+<p>Сама Velmora приливно связана со звездой во вторичном гравитационном резонансе: период вращения в резонансе 3:2 с орбитой — как у Меркурия. Это создаёт постоянный «горячий полюс», где концентрируется звёздное излучение, и масштабную циркуляцию, питающую бури вроде Талума.</p>
+<p>«Поверхность» (уровень 1 бар) на дневном полушарии в среднем около +280 °C и резко падает к зоне терминатора — границе постоянной бурной погоды.</p></article>
+    </div>
+    <div class="lang-ar">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← الرئيسية · محتوى أصلي</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Velmora — مستكشف النظام الشمسي ثلاثي الأبعاد</h1>
+        <p class="article-shell__sub">Velmora — دليل كوكبي</p>
+        <p class="article-shell__meta"><time datetime="2026-05-11">2026-05-11</time> · محتوى أصلي</p>
+      </div>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p>Velmora عملاق غازي من الدرجة الثالثة يدور على بعد 2.30 وحدة فلكية عن نجمه الأم، بفترة مدارية لا تتجاوز نحو 14 يومًا — ما يوحي بنظام دافئ ومضغوط حيث خط الصقيع أقرب من المعتاد.</p>
+
+<h2>الغلاف الجوي والأحزمة</h2>
+<figure class="article-embed">
+  <iframe src="../original/velmora_3d_webgl.html" title="عرض Velmora التفاعلي WebGL" loading="lazy" decoding="async"></iframe>
+  <figcaption>WebGL: اسحب للدوران ومرّر العجلة للتكبير؛ اقرأ مع النص أدناه.</figcaption>
+</figure>
+
+<p>يهيمن على سطح Velmora المرئي أحزمة غلاف جوي متعاكسة الدوران تدفعها حرارة داخلية شديدة. الأحزمة البرتقالية الصدئة والزرقاء المخضّرة ناتجة عن كتلتين هوائيتين مختلفتين كيميائيًا:</p>
+<ul>
+  <li><strong>مناطق حديدية</strong> (أحزمة برتقالية–حمراء) — جزيئات معلقة من أكسيد الحديد ومركبات كبريتية تُرفع من أعمدة حمل حراري عميقة، فتمنح الكوكب لونه الدافئ المميز.</li>
+  <li><strong>أحزمة كريوجينية</strong> (زرقاء مخضّرة) — طبقات أبرد غنية بالميثان فوق المناطق الأدفأ، مع حدود قصّ دراماتيكية وأقصى اضطراب.</li>
+</ul>
+<p>قد يصل فرق الحرارة بين حزمتين متجاورتين إلى 400 درجة مئوية، ما يجعل غلاف Velmora الجوي من أكثر الأغلف عنفًا في فئته.</p>
+
+<h3>دوامة Thalum</h3>
+<p>أبرز ما يميز Velmora هو Thalum — نظام عاصفة دائم مضاد للدوران في وسط العرض شمالًا. بنصف قطر نحو 1400 كم، فهو متواضع لمعايير العمالقة الغازية، لكنه يعوض بالعمر والشدة.</p>
+<p>على عكس البقعة الحمراء العظمى لكوكب المشتري التي تنكمش، يبدو أن Thalum يُغذى ذاتيًا — عمودًا حمليًا عميقًا يدفع الحرارة من داخل هيدروجين معدني ساخن. تُقدّر سرعات الرياح عند جدار الدوامة بنحو 620 م/ث، والعين أعلى سطح الغيوم بحوالي 40 كم.</p>
+<p>الذراعات الحلزونية الثلاثة المرئية في التصوير الطويل هي تيارات حطام — مادة سحابية مأسورة تُمزّق وتلتف في دوران العاصفة على مدى أسابيع.</p>
+
+<h3>الأقمار</h3>
+<p>يثبت وجود قمرين لـ Velmora:</p>
+<div class="article-table-wrap">
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th scope="col">القمر</th>
+        <th scope="col">النوع</th>
+        <th scope="col">ملاحظات</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Keth</td>
+        <td>صخري، مقيد مديًا</td>
+        <td>سطح محفور بكثافة، رمادي مائل للحديد</td>
+      </tr>
+      <tr>
+        <td>Soru</td>
+        <td>تحت غطاء جليدي</td>
+        <td>يُشتبه بطبقة سائلة تحت السطح؛ نشاط نافورة خافت</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>يُعد Soru مرشحًا ذا أولوية للدراسة، إذ قد يكفي انثناء المدّ من جاذبية Velmora للحفاظ على ماء سائل تحت الغطاء الجليدي.</p>
+
+<h3>التقيد المدي والمناخ</h3>
+<p>Velmora نفسه في رنين جاذبي ثانوي مع نجمه، أي أن دورة دورانه في رنين 3:2 مع المدار — شبيه بعطارد. يخلق ذلك «قطبًا ساخنًا» دائمًا حيث يتركز الإشعاع النجمي، ما يشغّل أنماط الدوران الجوي الضخمة التي تغذي عواصف مثل Thalum.</p>
+<p>«السطح» (أو مستوى ضغط 1 بار) يبلغ في المتوسط نحو +280°م على نصف الكرة المضيء ويهبط حادًا نحو منطقة الفاصل — حدّ لطقس عنيف دائم.</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../index.html#intro" class="footer-legal-link lang-en">About</a>
+        <a href="../changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="../privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="../index.html#intro" class="footer-legal-link lang-zh">关于</a>
+        <a href="../changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="../privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="../index.html#intro" class="footer-legal-link lang-ja">概要</a>
+        <a href="../changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="../privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="../index.html#intro" class="footer-legal-link lang-ko">소개</a>
+        <a href="../changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="../privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="../index.html#intro" class="footer-legal-link lang-fr">À propos</a>
+        <a href="../changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="../privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="../index.html#intro" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="../changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="../privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="../index.html#intro" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="../changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="../privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/hub-common.js" defer></script>
+</body></html>

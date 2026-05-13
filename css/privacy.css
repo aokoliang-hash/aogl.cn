@@ -68,3 +68,19 @@ body:not(.locale-ar) .lang-ar {
   direction: rtl;
   unicode-bidi: isolate;
 }
+.article-lead {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0.5rem 0 1rem;
+}
+.article-dates {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 0.75rem;
+}
+.article-body p {
+  margin: 0.65rem 0;
+}
+.article-body p:first-child {
+  margin-top: 0;
+}

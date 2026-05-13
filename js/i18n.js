@@ -52,7 +52,11 @@
     if (p === "/" || p === "/index.html") return "index.html";
     var parts = p.split("/").filter(Boolean);
     var last = parts[parts.length - 1];
-    if (last && last.indexOf(".html") !== -1) return last;
+    if (last && last.indexOf(".html") !== -1) {
+      var ai = parts.indexOf("articles");
+      if (ai !== -1 && ai < parts.length - 1) return "articles/" + last;
+      return last;
+    }
     return "index.html";
   }
 

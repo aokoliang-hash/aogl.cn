@@ -543,6 +543,28 @@ footer.site-footer {
 .site-intro .reading-intro:last-of-type {
   margin-bottom: 0;
 }
+.site-originals {
+  margin-bottom: 2rem;
+  scroll-margin-top: 1rem;
+}
+.site-originals .hub-hotmix-cards {
+  margin-top: 0.35rem;
+}
+.site-originals .originals-card-excerpt {
+  font-size: 0.74rem;
+  line-height: 1.38;
+  color: var(--muted);
+  margin: 0;
+  flex: 1;
+  min-height: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.site-originals .hub-hotmix-card-body {
+  gap: 0.3rem;
+}
 .cat-feed .cat-feed-lead {
   margin-top: 0.15rem;
   margin-bottom: 0.6rem;
