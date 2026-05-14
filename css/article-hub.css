@@ -85,6 +85,20 @@
   border: none;
   vertical-align: middle;
 }
+.article-embed video {
+  display: block;
+  width: 100%;
+  max-height: min(70vh, 560px);
+  height: auto;
+  vertical-align: middle;
+  background: #0a0f14;
+}
+.article-embed > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
 .article-embed figcaption {
   padding: 0.5rem 0.85rem 0.65rem;
   font-size: 0.82rem;
@@ -125,4 +139,20 @@
 .article-shell__body[dir="rtl"] ul {
   padding-left: 0;
   padding-right: 1.25rem;
+}
+
+/* Still grids (e.g. storyboard strips) */
+.article-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.65rem;
+  margin: 1rem 0 1.25rem;
+}
+.article-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  vertical-align: middle;
 }
