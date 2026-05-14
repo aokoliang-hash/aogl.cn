@@ -23,12 +23,17 @@
     "type": "git",
     "url": "git+https://github.com/aokoliang-hash/aogl.cn.git"
   },
-  "keywords": [],
+  "keywords": [
+    "generative-ai",
+    "llm",
+    "bookmarks",
+    "static-site"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aokoliang-hash/aogl.cn/issues"
   },
-  "homepage": "https://github.com/aokoliang-hash/aogl.cn#readme",
-  "description": ""
+  "homepage": "https://aogl.cn/",
+  "description": "Source for aogl.cn — personal generative AI bookmarks (static HTML, multi-language)."
 }

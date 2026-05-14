@@ -1,0 +1,36 @@
+name: Site feedback or question
+description: Typo, accessibility, i18n, build/docs — anything that is not only a single broken outbound link.
+title: "[feedback] "
+labels: []
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Typo / copy
+        - Accessibility
+        - Language or translation
+        - Layout / CSS
+        - Build or scripts
+        - Security concern
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened vs what you expected?
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page URL (if relevant)
+      placeholder: https://aogl.cn/...
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce (optional)
+      description: For bugs only — browser, OS, and steps.

@@ -1,0 +1,37 @@
+name: Broken or outdated link
+description: Report a dead link, wrong product name, or outdated URL on the site.
+title: "[link] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the directory accurate. Please include the **page URL** on aogl.cn and the **tool or section** affected.
+  - type: input
+    id: aogl_page
+    attributes:
+      label: Page on aogl.cn
+      description: Paste the full URL of the page where you saw the problem (e.g. https://aogl.cn/tools.html).
+      placeholder: https://aogl.cn/...
+    validations:
+      required: true
+  - type: input
+    id: tool_or_section
+    attributes:
+      label: Tool name or section
+      description: Which tile, list item, or heading is wrong?
+      placeholder: e.g. ChatGPT / AI 前沿 / portal
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should it be?
+      description: Correct URL, new official name, or “please remove this entry” — with a source if possible (vendor blog, docs, or app store).
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Notes (optional)
+      description: Browser, locale (language), screenshot description, etc.
