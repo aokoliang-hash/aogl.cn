@@ -1,0 +1,21 @@
+<p>Cette <strong>Terre 3D interactive</strong> est une démonstration WebGL originale basée sur <strong>Three.js</strong> (r128). Elle assemble des textures « <em>blue marble</em> », un <strong>relief bump</strong>, des <strong>reflets spéculaires</strong> sur les océans, une couche de <strong>nuages</strong> animée et un <strong>shader de halo atmosphérique</strong> sur un second sphère—idéal pour la vulgarisation scientifique, la géographie ou une section héro d’un site portfolio.</p>
+
+<h2>Manipulez le globe en direct</h2>
+<p><strong>Glissez</strong> pour orbiter autour du globe ; la <strong>molette</strong> zoome. Tout s’exécute dans le navigateur, sans plugin.</p>
+
+<figure class="article-embed">
+  <iframe src="../original/interactive-3d-earth.html" title="Terre 3D interactive — démo WebGL" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <figcaption>Visionneuse WebGL intégrée : globe Three.js, nuages et halo atmosphérique.</figcaption>
+</figure>
+
+<h2>Pourquoi c’est pertinent pour le SEO</h2>
+<ul>
+  <li><strong>Balises sémantiques</strong> (titres, figure, légende) qui nomment clairement le sujet : Terre, WebGL, Three.js, nuages, atmosphère.</li>
+  <li>Du <strong>texte éditorial</strong> avant et après l’iframe pour que les moteurs indexent un contenu substantiel.</li>
+  <li><code>loading="lazy"</code> sur l’iframe pour préserver les <strong>Core Web Vitals</strong> depuis les pages de liste.</li>
+</ul>
+
+<h3>Stack technique (développeurs)</h3>
+<p>Un <code>WebGLRenderer</code> avec lumière directionnelle et ambiante, <code>OrbitControls</code> pour la caméra. L’atmosphère est une sphère légèrement plus grande avec un fragment shader mélangeant un rim façon Fresnel et une teinte bleu pâle.</p>
+
+<p>Pour un site multilingue, dupliquez titres et extraits par langue tout en partageant la même ressource interactive—bon compromis entre couverture sémantique et maintenance.</p>

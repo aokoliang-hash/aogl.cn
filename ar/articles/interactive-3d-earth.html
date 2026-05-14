@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="ar" data-title-ar="الأرض ثلاثية الأبعاد التفاعلية — عارض WebGL — aogl.cn" data-desc-ar="عرض WebGL أصلي: أرض ثلاثية الأبعاد بوقت حقيقي عبر Three.js مع نسيج ورسم طبوغرافي ومياه لامعة وسحب وهالة غلاف جوي؛ سحب للدوران وتمرير للتكبير." data-aogl-lang="ar" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="عرض WebGL أصلي: أرض ثلاثية الأبعاد بوقت حقيقي عبر Three.js مع نسيج ورسم طبوغرافي ومياه لامعة وسحب وهالة غلاف جوي؛ سحب للدوران وتمرير للتكبير.">
+  <title>الأرض ثلاثية الأبعاد التفاعلية — عارض WebGL — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/ar/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/ar/articles/interactive-3d-earth.html">
+  <meta property="og:title" content="الأرض ثلاثية الأبعاد التفاعلية — عارض WebGL — aogl.cn">
+  <meta property="og:description" content="عرض WebGL أصلي: أرض ثلاثية الأبعاد بوقت حقيقي عبر Three.js مع نسيج ورسم طبوغرافي ومياه لامعة وسحب وهالة غلاف جوي؛ سحب للدوران وتمرير للتكبير.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:image" content="https://aogl.cn/original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png">
+  <meta property="og:image:alt" content="Interactive 3D Earth — WebGL globe with clouds and atmospheric glow">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-05-13","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ar/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/en/articles/interactive-3d-earth.html","inLanguage":"ar","description":"Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-ar">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-ar brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-ar">
+          <li><a href="../../index.html#tools-directory">أحدث الذكاء الاصطناعي</a></li>
+          <li><a href="../../portal.html">أبرز المواقع</a></li>
+          <li><a href="../../brands.html">العلامات</a></li>
+          <li><a href="../../shopping.html">التسوق</a></li>
+          <li><a href="../../life.html">الحياة الرقمية</a></li>
+          <li><a href="../../social.html">التواصل</a></li>
+          <li><a href="../../tech.html">التقنية</a></li>
+          <li><a href="../../games.html">الألعاب</a></li>
+          <li><a href="../../tools.html">أدوات مساعدة</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-ar">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← الرئيسية · محتوى أصلي</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>الأرض ثلاثية الأبعاد التفاعلية — عارض WebGL</h1>
+        <p class="article-shell__sub">Three.js · السحب وهالة الغلاف · تحكم مداري</p>
+        <p class="article-shell__meta"><time datetime="2026-05-13">2026-05-13</time> · محتوى أصلي</p>
+      </div>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p>هذه <strong>الأرض ثلاثية الأبعاد التفاعلية</strong> عرض <strong>WebGL</strong> أصلي مبني على <strong>Three.js</strong> (r128). تجمع صورًا أرضية بأسلوب «الرخامة الزرقاء»، و<strong>ارتفاعًا تقريبيًا (bump)</strong>، و<strong>لممعًا للمحيطات</strong>، وطبقة <strong>سحب</strong> منفصلة، و<strong>ظلال هالة غلاف جوي</strong> مخصصًا على كرة خارجية أكبر قليلًا—مناسب للتعليم الجغرافي والتوعية العلمية ومقاطع البطل في المواقع.</p>
+<h2>جرّب الكرة الأرضية مباشرة</h2>
+<p><strong>اسحب</strong> بالفأرة لدوران الكاميرا، و<strong>مرّر العجلة</strong> للتكبير والتصغير. يعمل كله داخل المتصفح دون إضافات.</p>
+<figure class="article-embed">
+  <iframe src="../../original/interactive-3d-earth.html" title="الأرض ثلاثية الأبعاد التفاعلية — عرض WebGL" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+  <figcaption>عارض WebGL مضمّن: كرة Three.js مع سحب وهالة جوية.</figcaption>
+</figure>
+<h2>لماذا يساعد ذلك في تحسين محركات البحث</h2>
+<ul>
+  <li><strong>عناوين وبنية دلالية</strong> (figure، figcaption) توضح الموضوع: الأرض، WebGL، Three.js، السحب، الغلاف الجوي.</li>
+  <li>نص <strong>فريد قبل وبعد</strong> الإطار المضمّن ليُفهرس المحتوى حتى عندما يكون اللوح داخل iframe.</li>
+  <li><code>loading="lazy"</code> يخفف ضغط <strong>أداء الصفحة الأولى</strong> عند الوصول من قوائم المقالات.</li>
+</ul>
+<h3>المكدس التقني (للمطورين)</h3>
+<p>يستخدم <code>WebGLRenderer</code> مع إضاءة اتجاهية ومحيطية، و<code>OrbitControls</code> للتفاعل. طبقة الغلاف كرة أكبر قليلًا مع ظلال جزئي يمزج حافة فرينل بلون أزرق فاتح.</p>
+<p>للمواقع متعددة اللغات، خصص عناوين ومقتطفات لكل لغة مع مشاركة نفس الأصل التفاعلي—توازن بين تغطية الاستعلامات وسهولة الصيانة.</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../index.html#intro" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</body></html>

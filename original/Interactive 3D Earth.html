@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Earth</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Load Phosphor Icons for UI elements -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Configure Tailwind theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#1e1f26',
+                        panelBg: 'rgba(40, 42, 54, 0.6)',
+                        panelBorder: 'rgba(255, 255, 255, 0.1)',
+                        accent: '#4ade80', // Greenish accent
+                        brandBlue: '#5b6cf9'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling, canvas fills screen */
+            background-color: #1a1a24; /* Deep dark background */
+            background-image: radial-gradient(circle at 50% 50%, #2a2a38 0%, #1a1a24 100%);
+            color: #ffffff;
+        }
+
+        #canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Behind UI */
+        }
+
+        /* Glassmorphism utility classes */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 9999px; /* Fully rounded like pills */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .glass-panel-rect {
+             background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+        }
+
+        /* Ensure UI stays on top */
+        .ui-layer {
+            position: relative;
+            z-index: 10;
+            pointer-events: none; /* Let clicks pass through to canvas by default... */
+        }
+        
+        /* ...but re-enable clicks on interactive elements */
+        .interactive {
+            pointer-events: auto;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .interactive:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-1px);
+        }
+        
+        .nav-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            color: #a0aec0;
+            transition: all 0.2s;
+        }
+        .nav-btn.active {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+        .nav-btn:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+        }
+
+        /* Hide scrollbar for the nav list on small screens */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="antialiased text-white font-sans h-screen w-screen flex flex-col justify-between">
+
+    <div id="canvas-container"></div>
+
+    <div class="ui-layer p-6 w-full flex flex-col md:flex-row justify-between items-start gap-6 max-w-7xl mx-auto">
+        
+        <!-- Left Side: System Status & Stats -->
+        <div class="flex flex-col gap-4">
+            <!-- Status Pill -->
+            <div class="glass-panel px-4 py-3 flex items-center gap-3 interactive w-max">
+                <div class="w-4 h-4 rounded-full bg-gradient-to-r from-green-400 to-blue-500 shadow-[0_0_10px_rgba(74,222,128,0.5)]"></div>
+                <span class="text-sm font-medium tracking-wide">System Scan Active</span>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="flex gap-3 mt-2">
+                <div class="glass-panel px-4 py-2 flex flex-col interactive min-w-[120px]">
+                    <span class="text-xs text-gray-400 uppercase tracking-wider">Stat-Tempr</span>
+                    <div class="flex justify-between items-baseline mt-1">
+                        <span class="text-xs text-gray-500">STAT-type</span>
+                        <span class="text-sm font-semibold">14.6°C</span>
+                    </div>
+                </div>
+                <div class="glass-panel px-4 py-2 flex flex-col interactive min-w-[120px]">
+                    <span class="text-xs text-gray-400 uppercase tracking-wider">Stat-Moons</span>
+                    <div class="flex justify-between items-baseline mt-1">
+                        <span class="text-xs text-gray-500">NATURAL</span>
+                        <span class="text-sm font-semibold">1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Title Info -->
+        <div class="flex flex-col md:items-start text-left interactive glass-panel-rect p-5">
+            <h1 class="text-5xl font-bold tracking-tight mb-1" id="planet-name">Earth</h1>
+            <p class="text-gray-400 text-sm mb-0.5">Distance: 1.00 AU</p>
+            <p class="text-gray-400 text-sm mb-3">Radius: 6,371 km</p>
+            <div class="bg-[#2dd4bf] text-black px-4 py-1.5 rounded-full text-sm font-semibold inline-block shadow-[0_0_15px_rgba(45,212,191,0.3)]">
+                Cycle: 1.00 Earth Years
+            </div>
+        </div>
+    </div>
+
+    <div class="ui-layer w-full px-4 flex justify-center mt-auto mb-auto pointer-events-auto">
+        <div class="glass-panel p-1.5 flex gap-1 overflow-x-auto no-scrollbar max-w-full">
+            <button class="nav-btn interactive">Mercury</button>
+            <button class="nav-btn interactive">Venus</button>
+            <button class="nav-btn active interactive">Earth</button>
+            <button class="nav-btn interactive">Mars</button>
+            <button class="nav-btn interactive">Jupiter</button>
+            <button class="nav-btn interactive">Saturn</button>
+            <button class="nav-btn interactive">Uranus</button>
+            <button class="nav-btn interactive">Neptune</button>
+        </div>
+    </div>
+
+    <div class="ui-layer p-6 w-full flex justify-center gap-3 pb-8 flex-wrap">
+        <button class="glass-panel px-6 py-3 interactive text-sm font-medium">Compare</button>
+        <button class="glass-panel px-6 py-3 interactive text-sm font-medium">PX 12 PY 3.3.5</button>
+        
+        <!-- Primary Action Button -->
+        <button class="bg-brandBlue hover:bg-blue-600 text-white px-8 py-3 rounded-full flex items-center gap-2 interactive transition-colors shadow-[0_0_20px_rgba(91,108,249,0.4)]">
+            <i class="ph ph-x-square text-lg"></i>
+            <span class="font-semibold">Explore</span>
+        </button>
+        
+        <button class="glass-panel px-6 py-3 interactive text-sm font-medium">HoverBag 10.3.48</button>
+        <button class="glass-panel px-6 py-3 interactive text-sm font-medium">Route</button>
+    </div>
+
+    <!-- Load Three.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Load OrbitControls from a specific unpkg URL for r128 to match the three.js version -->
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <script>
+        // --- 1. Basic Setup ---
+        const container = document.getElementById('canvas-container');
+        
+        // Scene
+        const scene = new THREE.Scene();
+        // Slightly tinted fog to blend with the background CSS gradient
+        scene.fog = new THREE.FogExp2(0x1a1a24, 0.02);
+
+        // Camera
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, 0, 5); // Pull camera back to see the earth
+
+        // Renderer
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        // Important: Tone mapping for better realistic lighting
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.0;
+        container.appendChild(renderer.domElement);
+
+        // --- 2. Lighting ---
+        // Ambient light for base visibility
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
+        scene.add(ambientLight);
+
+        // Main directional light (Sun)
+        const sunLight = new THREE.DirectionalLight(0xffffff, 2.5);
+        sunLight.position.set(5, 3, 5); // Coming from top right front
+        scene.add(sunLight);
+
+        // Add a subtle blue rim light from the opposite side
+        const rimLight = new THREE.DirectionalLight(0x5b6cf9, 0.8);
+        rimLight.position.set(-5, -3, -5);
+        scene.add(rimLight);
+
+        // --- 3. Creating the Earth ---
+        
+        // Group to hold Earth and clouds so they can rotate together or independently
+        const earthGroup = new THREE.Group();
+        // Tilt the earth slightly (approx 23.5 degrees)
+        earthGroup.rotation.z = 23.5 * Math.PI / 180; 
+        scene.add(earthGroup);
+
+        // Texture Loader
+        const textureLoader = new THREE.TextureLoader();
+
+        // High-res public domain textures for Earth
+        // Using unpkg or cors-friendly urls for textures
+        const earthMap = textureLoader.load('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg');
+        const earthBumpMap = textureLoader.load('https://unpkg.com/three-globe/example/img/earth-topology.png');
+        const earthSpecularMap = textureLoader.load('https://unpkg.com/three-globe/example/img/earth-water.png');
+        const cloudsMap = textureLoader.load('https://unpkg.com/three-globe/example/img/earth-clouds10k.png');
+
+        // Geometry (Sphere)
+        const detail = 64; // High segment count for smooth sphere
+        const geometry = new THREE.SphereGeometry(1.5, detail, detail);
+
+        // Material (MeshPhongMaterial is good for specular highlights on water)
+        const material = new THREE.MeshPhongMaterial({
+            map: earthMap,
+            bumpMap: earthBumpMap,
+            bumpScale: 0.015,
+            specularMap: earthSpecularMap,
+            specular: new THREE.Color('grey'), // Color of reflections
+            shininess: 35
+        });
+
+        // The Earth Mesh
+        const earthMesh = new THREE.Mesh(geometry, material);
+        earthGroup.add(earthMesh);
+
+        // --- 4. Adding Clouds ---
+        // Slightly larger sphere for clouds
+        const cloudGeometry = new THREE.SphereGeometry(1.515, detail, detail);
+        const cloudMaterial = new THREE.MeshPhongMaterial({
+            map: cloudsMap,
+            transparent: true,
+            opacity: 0.8,
+            blending: THREE.AdditiveBlending, // Makes clouds bright
+            side: THREE.DoubleSide,
+            depthWrite: false // Prevents sorting issues
+        });
+        const cloudMesh = new THREE.Mesh(cloudGeometry, cloudMaterial);
+        earthGroup.add(cloudMesh);
+        
+        // --- 5. Atmospheric Glow (Optional but adds polish) ---
+        // Create a custom shader material for the atmospheric halo
+        const vertexShader = `
+            varying vec3 vNormal;
+            void main() {
+                vNormal = normalize(normalMatrix * normal);
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+        `;
+        
+        const fragmentShader = `
+            varying vec3 vNormal;
+            void main() {
+                float intensity = pow(0.6 - dot(vNormal, vec3(0, 0, 1.0)), 4.0);
+                gl_FragColor = vec4(0.3, 0.6, 1.0, 1.0) * intensity;
+            }
+        `;
+
+        const atmosphereGeometry = new THREE.SphereGeometry(1.65, detail, detail);
+        const atmosphereMaterial = new THREE.ShaderMaterial({
+            vertexShader: vertexShader,
+            fragmentShader: fragmentShader,
+            blending: THREE.AdditiveBlending,
+            side: THREE.BackSide, // Render on the inside of the larger sphere
+            transparent: true
+        });
+
+        const atmosphere = new THREE.Mesh(atmosphereGeometry, atmosphereMaterial);
+        scene.add(atmosphere);
+
+        // --- 6. Interaction (Controls) ---
+        // Initialize OrbitControls to allow drag-to-rotate and scroll-to-zoom
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true; // Smooth deceleration
+        controls.dampingFactor = 0.05;
+        controls.enablePan = false; // Disable panning (right click drag)
+        controls.minDistance = 2.5; // Min zoom in
+        controls.maxDistance = 10;  // Max zoom out
+        // Restrict vertical rotation slightly so user doesn't get lost
+        controls.minPolarAngle = Math.PI / 4; 
+        controls.maxPolarAngle = Math.PI - (Math.PI / 4);
+
+        // --- 7. Animation Loop ---
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Auto-rotation
+            // Earth rotates slowly
+            earthMesh.rotation.y += 0.001;
+            // Clouds rotate slightly faster to simulate weather movement
+            cloudMesh.rotation.y += 0.0012;
+
+            // Update controls for damping effect
+            controls.update();
+
+            renderer.render(scene, camera);
+        }
+
+        // --- 8. Handle Window Resize ---
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // --- 9. Start Application ---
+        // Start animation loop after window loads to ensure resources are ready
+        window.onload = () => {
+            // Add a small initial animation entering the scene
+            earthGroup.scale.set(0.1, 0.1, 0.1);
+            let scale = 0.1;
+            
+            // Simple animation to grow earth on load
+            const introAnim = setInterval(() => {
+                scale += (1 - scale) * 0.1; // Easing
+                earthGroup.scale.set(scale, scale, scale);
+                atmosphere.scale.set(scale, scale, scale);
+                
+                if (scale > 0.99) {
+                    earthGroup.scale.set(1, 1, 1);
+                    atmosphere.scale.set(1, 1, 1);
+                    clearInterval(introAnim);
+                }
+            }, 16);
+
+            animate();
+        };
+
+        // --- 10. UI Interactivity (Dummy functionality) ---
+        const navBtns = document.querySelectorAll('.nav-btn');
+        const planetTitle = document.getElementById('planet-name');
+        
+        navBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Remove active class from all
+                navBtns.forEach(b => b.classList.remove('active'));
+                // Add to clicked
+                e.target.classList.add('active');
+                
+                // Update title
+                planetTitle.innerText = e.target.innerText;
+                
+                // In a real app, you would load different textures here based on the planet clicked
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<p>这是一篇本站原创的<strong>交互式 3D 地球</strong>技术展示，底层使用 <strong>WebGL</strong> 与 <strong>Three.js</strong>（r128）。贴图组合包含类 NASA「蓝大理石」地表、<strong>凹凸（bump）</strong>地形、海洋<strong>高光（specular）</strong>、独立<strong>云层</strong>球体，以及自定义<strong>大气边缘光（rim）</strong>着色器，在深色背景上层次清晰，适合地理科普、科技品牌落地页或作品集「视觉锚点」。</p>
+
+<h2>在线体验 3D 地球</h2>
+<p>按住鼠标<strong>拖拽</strong>可环绕观察；<strong>滚轮</strong>缩放。全程在浏览器内运行，无需安装插件。</p>
+
+<figure class="article-embed">
+  <iframe src="../original/interactive-3d-earth.html" title="交互式 3D 地球 — WebGL 演示" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <figcaption>嵌入的 WebGL 场景：Three.js 地球、云层与大气光晕。</figcaption>
+</figure>
+
+<h2>为何利于 SEO</h2>
+<ul>
+  <li>使用 <strong>语义化标题与段落</strong>（h2、h3、figure、figcaption），明确主题词：<em>3D 地球、WebGL、Three.js、云层、大气</em>。</li>
+  <li>iframe 前后均有<strong>原创说明文字</strong>，即使画布在 iframe 内，页面仍有可被索引的正文。</li>
+  <li>iframe 使用 <code>loading="lazy"</code>，从列表页进入时对<strong>首屏性能</strong>更友好。</li>
+</ul>
+
+<h3>实现要点（给开发者）</h3>
+<p>渲染管线采用 <code>WebGLRenderer</code>，主方向光模拟太阳、辅以环境光；相机交互为 <code>OrbitControls</code>。大气层为略大于地表的透明球体，片元着色器按视角与法线夹角混合边缘高亮与淡蓝色调，呈现经典「暗淡蓝点」观感，而无需复杂后处理。</p>
+
+<p>若站点做多语言，可为每种语言配置独立标题与摘要（本站做法），共享同一份交互资源，兼顾<strong>长尾关键词覆盖</strong>与维护成本。</p>

@@ -529,6 +529,54 @@
     <priority>0.35</priority>
   </url>
   <url>
+    <loc>https://aogl.cn/articles/interactive-3d-earth.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://aogl.cn/zh/articles/interactive-3d-earth.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aogl.cn/en/articles/interactive-3d-earth.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aogl.cn/ja/articles/interactive-3d-earth.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.58</priority>
+  </url>
+  <url>
+    <loc>https://aogl.cn/ko/articles/interactive-3d-earth.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.58</priority>
+  </url>
+  <url>
+    <loc>https://aogl.cn/fr/articles/interactive-3d-earth.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.58</priority>
+  </url>
+  <url>
+    <loc>https://aogl.cn/ru/articles/interactive-3d-earth.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.58</priority>
+  </url>
+  <url>
+    <loc>https://aogl.cn/ar/articles/interactive-3d-earth.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.58</priority>
+  </url>
+  <url>
     <loc>https://aogl.cn/articles/velmora.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>

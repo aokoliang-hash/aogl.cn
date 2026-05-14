@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="ja" data-title-ja="インタラクティブ3D地球ビューア — aogl.cn" data-desc-ja="当サイトオリジナルWebGL：Three.jsによるリアルタイム3D地球。ブルーマーブル地形・凹凸・水鏡・雲レイヤーと大気リムシェーダー。ドラッグ回転・ホイールズーム。地理・科普向け。" data-aogl-lang="ja" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="当サイトオリジナルWebGL：Three.jsによるリアルタイム3D地球。ブルーマーブル地形・凹凸・水鏡・雲レイヤーと大気リムシェーダー。ドラッグ回転・ホイールズーム。地理・科普向け。">
+  <title>インタラクティブ3D地球ビューア — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/ja/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/ja/articles/interactive-3d-earth.html">
+  <meta property="og:title" content="インタラクティブ3D地球ビューア — aogl.cn">
+  <meta property="og:description" content="当サイトオリジナルWebGL：Three.jsによるリアルタイム3D地球。ブルーマーブル地形・凹凸・水鏡・雲レイヤーと大気リムシェーダー。ドラッグ回転・ホイールズーム。地理・科普向け。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://aogl.cn/original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png">
+  <meta property="og:image:alt" content="Interactive 3D Earth — WebGL globe with clouds and atmospheric glow">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-05-13","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ja/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/en/articles/interactive-3d-earth.html","inLanguage":"ja","description":"Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-ja">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-ja">
+          <li><a href="../../index.html#tools-directory">AI最前線</a></li>
+          <li><a href="../../portal.html">主要サイト</a></li>
+          <li><a href="../../brands.html">ブランド</a></li>
+          <li><a href="../../shopping.html">ショッピング</a></li>
+          <li><a href="../../life.html">ライフ</a></li>
+          <li><a href="../../social.html">ソーシャル</a></li>
+          <li><a href="../../tech.html">テック</a></li>
+          <li><a href="../../games.html">ゲーム</a></li>
+          <li><a href="../../tools.html">実用ツール</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>インタラクティブ3D地球ビューア</h1>
+        <p class="article-shell__sub">Three.js・雲と大気のグロー・軌道操作</p>
+        <p class="article-shell__meta"><time datetime="2026-05-13">2026-05-13</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p>本記事は当サイトオリジナルの<strong>インタラクティブ3D地球</strong>です。<strong>WebGL</strong> と <strong>Three.js</strong>（r128）で、NASA系の<strong>ブルーマーブル</strong>地表、<strong>バンプ</strong>による起伏、海の<strong>スペキュラー</strong>、別レイヤーの<strong>雲</strong>、そしてカスタムの<strong>大気リム（リムライト）</strong>シェーダーを組み合わせ、暗背景でも地球が際立ちます。地理教育・科学コミュニケーション・ポートフォリオのビジュアルに適します。</p>
+<h2>ライブ地球を操作</h2>
+<p>マウス<strong>ドラッグ</strong>で周回、<strong>ホイール</strong>でズーム。ブラウザ内完結でプラグイン不要です。</p>
+<figure class="article-embed">
+  <iframe src="../../original/interactive-3d-earth.html" title="インタラクティブ3D地球 — WebGLデモ" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+  <figcaption>埋め込みWebGLビューア：Three.jsの地球・雲・大気のグロー。</figcaption>
+</figure>
+<h2>SEO観点のポイント</h2>
+<ul>
+  <li><strong>見出し・図表キャプション</strong>で主題（地球／WebGL／Three.js／雲／大気）を明示。</li>
+  <li>iframe の前後に<strong>説明文</strong>を置き、クローラが本文として評価しやすい構成。</li>
+  <li><code>loading="lazy"</code> で一覧からの遷移時の<strong>初期表示</strong>を軽量化。</li>
+</ul>
+<h3>技術スタック（開発者向け）</h3>
+<p><code>WebGLRenderer</code> に指向性ライトと環境光、操作は <code>OrbitControls</code>。大気は地球よりわずかに大きな球体にフラグメントシェーダーを適用し、フレネル風の縁取りと淡い青で「淡い青い点」の印象を再現します。</p>
+<p>多言語サイトでは言語ごとにタイトル・抜粋を用意し（当サイトと同様）、同一インタラクティブ資産を共有すると運用効率と検索の両立がしやすくなります。</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../index.html#intro" class="footer-legal-link lang-ja">概要</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</body></html>

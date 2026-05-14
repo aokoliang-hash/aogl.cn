@@ -1,0 +1,21 @@
+<p>This <strong>interactive 3D Earth</strong> is an original <strong>WebGL</strong> experience built with <strong>Three.js</strong> (r128). It combines NASA-style <em>blue marble</em> imagery, elevation <strong>bump mapping</strong>, ocean <strong>specular highlights</strong>, a separate <strong>cloud layer</strong>, and a custom <strong>atmospheric rim shader</strong> so the globe reads clearly on dark backgrounds—useful for geography education, science outreach, and portfolio pages that need a memorable hero.</p>
+
+<h2>Try the live globe</h2>
+<p>Drag with the mouse to <strong>orbit</strong>; use the scroll wheel to <strong>zoom</strong>. The demo runs entirely in the browser—no plugins required.</p>
+
+<figure class="article-embed">
+  <iframe src="../original/interactive-3d-earth.html" title="Interactive 3D Earth — WebGL demo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <figcaption>Embedded WebGL viewer: Three.js globe with clouds and atmospheric glow.</figcaption>
+</figure>
+
+<h2>What makes this implementation SEO-friendly</h2>
+<ul>
+  <li><strong>Semantic HTML</strong> around the embed (figure, figcaption, headings) so crawlers understand the topic: Earth, WebGL, Three.js.</li>
+  <li><strong>Self-contained article page</strong> with descriptive text above and below the iframe—search engines still index meaningful copy even when the canvas is inside an iframe.</li>
+  <li><strong>Lazy loading</strong> on the iframe to protect Core Web Vitals on listing pages that link here.</li>
+</ul>
+
+<h3>Technical stack (for developers)</h3>
+<p>Rendering uses a <code>WebGLRenderer</code> with physically based lighting cues (directional “sun” + ambient fill), <code>OrbitControls</code> for camera interaction, and textures loaded from a CDN. The atmosphere is a second sphere with a fragment shader that mixes Fresnel-style rim lighting with a subtle blue tint—classic “pale blue dot” presentation without heavy post-processing.</p>
+
+<p>If you are building a multilingual site, pair this hub layout with localized titles and excerpts (as on aogl.cn) so each language URL can rank for its own queries while sharing one canonical interactive asset.</p>

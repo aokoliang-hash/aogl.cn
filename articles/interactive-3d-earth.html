@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="zh-CN" data-title-zh="交互式 3D 地球浏览器 — aogl.cn" data-desc-zh="本站原创 WebGL 演示：基于 Three.js 的实时 3D 地球，含蓝大理石贴图、地形凹凸、水体高光、云层与自定义大气着色器；支持拖拽旋转与滚轮缩放，利于地理与科普场景展示。" data-aogl-lang="zh"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="本站原创 WebGL 演示：基于 Three.js 的实时 3D 地球，含蓝大理石贴图、地形凹凸、水体高光、云层与自定义大气着色器；支持拖拽旋转与滚轮缩放，利于地理与科普场景展示。">
+  <title>交互式 3D 地球浏览器 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/articles/interactive-3d-earth.html">
+  <meta property="og:title" content="交互式 3D 地球浏览器 — aogl.cn">
+  <meta property="og:description" content="本站原创 WebGL 演示：基于 Three.js 的实时 3D 地球，含蓝大理石贴图、地形凹凸、水体高光、云层与自定义大气着色器；支持拖拽旋转与滚轮缩放，利于地理与科普场景展示。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:image" content="https://aogl.cn/original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png">
+  <meta property="og:image:alt" content="Interactive 3D Earth — WebGL globe with clouds and atmospheric glow">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/hub.css">
+  <link rel="stylesheet" href="../css/article-hub.css">
+  <script src="../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-05-13","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/en/articles/interactive-3d-earth.html","inLanguage":"zh-CN","description":"Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-zh">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../js/bg-canvas.js"></script>
+  <script src="../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-zh">
+          <li><a href="../index.html#tools-directory">AI 前沿</a></li>
+          <li><a href="../portal.html">全球站点</a></li>
+          <li><a href="../brands.html">品牌</a></li>
+          <li><a href="../shopping.html">购物</a></li>
+          <li><a href="../life.html">生活</a></li>
+          <li><a href="../social.html">社交</a></li>
+          <li><a href="../tech.html">科技</a></li>
+          <li><a href="../games.html">游戏</a></li>
+          <li><a href="../tools.html">工具</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>交互式 3D 地球浏览器</h1>
+        <p class="article-shell__sub">Three.js · 云层与大气光晕 · 轨道控制</p>
+        <p class="article-shell__meta"><time datetime="2026-05-13">2026-05-13</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>这是一篇本站原创的<strong>交互式 3D 地球</strong>技术展示，底层使用 <strong>WebGL</strong> 与 <strong>Three.js</strong>（r128）。贴图组合包含类 NASA「蓝大理石」地表、<strong>凹凸（bump）</strong>地形、海洋<strong>高光（specular）</strong>、独立<strong>云层</strong>球体，以及自定义<strong>大气边缘光（rim）</strong>着色器，在深色背景上层次清晰，适合地理科普、科技品牌落地页或作品集「视觉锚点」。</p>
+<h2>在线体验 3D 地球</h2>
+<p>按住鼠标<strong>拖拽</strong>可环绕观察；<strong>滚轮</strong>缩放。全程在浏览器内运行，无需安装插件。</p>
+<figure class="article-embed">
+  <iframe src="../original/interactive-3d-earth.html" title="交互式 3D 地球 — WebGL 演示" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+  <figcaption>嵌入的 WebGL 场景：Three.js 地球、云层与大气光晕。</figcaption>
+</figure>
+<h2>为何利于 SEO</h2>
+<ul>
+  <li>使用 <strong>语义化标题与段落</strong>（h2、h3、figure、figcaption），明确主题词：<em>3D 地球、WebGL、Three.js、云层、大气</em>。</li>
+  <li>iframe 前后均有<strong>原创说明文字</strong>，即使画布在 iframe 内，页面仍有可被索引的正文。</li>
+  <li>iframe 使用 <code>loading="lazy"</code>，从列表页进入时对<strong>首屏性能</strong>更友好。</li>
+</ul>
+<h3>实现要点（给开发者）</h3>
+<p>渲染管线采用 <code>WebGLRenderer</code>，主方向光模拟太阳、辅以环境光；相机交互为 <code>OrbitControls</code>。大气层为略大于地表的透明球体，片元着色器按视角与法线夹角混合边缘高亮与淡蓝色调，呈现经典「暗淡蓝点」观感，而无需复杂后处理。</p>
+<p>若站点做多语言，可为每种语言配置独立标题与摘要（本站做法），共享同一份交互资源，兼顾<strong>长尾关键词覆盖</strong>与维护成本。</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../index.html#intro" class="footer-legal-link lang-zh">关于</a>
+        <a href="../changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="../privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/hub-common.js" defer=""></script>
+</body></html>

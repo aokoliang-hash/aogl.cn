@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="fr" data-title-fr="Terre 3D interactive — globe WebGL — aogl.cn" data-desc-fr="Démo WebGL originale : Terre 3D temps réel (Three.js) avec textures « blue marble », relief, eau spéculaire, nuages et halo atmosphérique ; rotation au drag et zoom à la molette." data-aogl-lang="fr" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Démo WebGL originale : Terre 3D temps réel (Three.js) avec textures « blue marble », relief, eau spéculaire, nuages et halo atmosphérique ; rotation au drag et zoom à la molette.">
+  <title>Terre 3D interactive — globe WebGL — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/fr/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/interactive-3d-earth.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/fr/articles/interactive-3d-earth.html">
+  <meta property="og:title" content="Terre 3D interactive — globe WebGL — aogl.cn">
+  <meta property="og:description" content="Démo WebGL originale : Terre 3D temps réel (Three.js) avec textures « blue marble », relief, eau spéculaire, nuages et halo atmosphérique ; rotation au drag et zoom à la molette.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="https://aogl.cn/original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png">
+  <meta property="og:image:alt" content="Interactive 3D Earth — WebGL globe with clouds and atmospheric glow">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-05-13","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/fr/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/en/articles/interactive-3d-earth.html","inLanguage":"fr","description":"Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-fr">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-fr">
+          <li><a href="../../index.html#tools-directory">IA — veille</a></li>
+          <li><a href="../../portal.html">Grands sites</a></li>
+          <li><a href="../../brands.html">Marques</a></li>
+          <li><a href="../../shopping.html">Shopping</a></li>
+          <li><a href="../../life.html">Vie</a></li>
+          <li><a href="../../social.html">Social</a></li>
+          <li><a href="../../tech.html">Tech</a></li>
+          <li><a href="../../games.html">Jeux</a></li>
+          <li><a href="../../tools.html">Utilitaires</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Terre 3D interactive — globe WebGL</h1>
+        <p class="article-shell__sub">Three.js · nuages et halo atmosphérique · contrôles orbitaux</p>
+        <p class="article-shell__meta"><time datetime="2026-05-13">2026-05-13</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p>Cette <strong>Terre 3D interactive</strong> est une démonstration WebGL originale basée sur <strong>Three.js</strong> (r128). Elle assemble des textures « <em>blue marble</em> », un <strong>relief bump</strong>, des <strong>reflets spéculaires</strong> sur les océans, une couche de <strong>nuages</strong> animée et un <strong>shader de halo atmosphérique</strong> sur un second sphère—idéal pour la vulgarisation scientifique, la géographie ou une section héro d’un site portfolio.</p>
+<h2>Manipulez le globe en direct</h2>
+<p><strong>Glissez</strong> pour orbiter autour du globe ; la <strong>molette</strong> zoome. Tout s’exécute dans le navigateur, sans plugin.</p>
+<figure class="article-embed">
+  <iframe src="../../original/interactive-3d-earth.html" title="Terre 3D interactive — démo WebGL" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+  <figcaption>Visionneuse WebGL intégrée : globe Three.js, nuages et halo atmosphérique.</figcaption>
+</figure>
+<h2>Pourquoi c’est pertinent pour le SEO</h2>
+<ul>
+  <li><strong>Balises sémantiques</strong> (titres, figure, légende) qui nomment clairement le sujet : Terre, WebGL, Three.js, nuages, atmosphère.</li>
+  <li>Du <strong>texte éditorial</strong> avant et après l’iframe pour que les moteurs indexent un contenu substantiel.</li>
+  <li><code>loading="lazy"</code> sur l’iframe pour préserver les <strong>Core Web Vitals</strong> depuis les pages de liste.</li>
+</ul>
+<h3>Stack technique (développeurs)</h3>
+<p>Un <code>WebGLRenderer</code> avec lumière directionnelle et ambiante, <code>OrbitControls</code> pour la caméra. L’atmosphère est une sphère légèrement plus grande avec un fragment shader mélangeant un rim façon Fresnel et une teinte bleu pâle.</p>
+<p>Pour un site multilingue, dupliquez titres et extraits par langue tout en partageant la même ressource interactive—bon compromis entre couverture sémantique et maintenance.</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../index.html#intro" class="footer-legal-link lang-fr">À propos</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</body></html>
