@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="en" data-title-en="Character design notes — turnaround, walk cycle &amp; motion demos — aogl.cn" data-desc-en="Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery." data-aogl-lang="en" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery.">
+  <title>Character design notes — turnaround, walk cycle &amp; motion demos — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/character-turnaround-walk.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/character-turnaround-walk.html">
+  <meta property="og:title" content="Character design notes — turnaround, walk cycle &amp; motion demos — aogl.cn">
+  <meta property="og:description" content="Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/original/character/Gemini_Generated_Image_h75mjuh75mjuh75m.png">
+  <meta property="og:image:alt" content="Original character design — turnaround, walk cycle, and motion studies (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/character/Gemini_Generated_Image_h75mjuh75mjuh75m.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"orthographic views · walk1–9 · embedded walk.html · MP4 clips","alternativeHeadline":"角色设计手记：四视图、行走循环与动态演示","datePublished":"2026-05-16","dateModified":"2026-05-16","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/character-turnaround-walk.html"},"url":"https://aogl.cn/en/articles/character-turnaround-walk.html","inLanguage":"en","description":"Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li><a href="../../index.html#tools-directory">AI frontier</a></li>
+          <li><a href="../../portal.html">Top sites</a></li>
+          <li><a href="../../brands.html">Brands</a></li>
+          <li><a href="../../shopping.html">Shopping</a></li>
+          <li><a href="../../life.html">Life</a></li>
+          <li><a href="../../social.html">Social</a></li>
+          <li><a href="../../tech.html">Tech</a></li>
+          <li><a href="../../games.html">Games</a></li>
+          <li><a href="../../tools.html">Utilities</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Character design notes — turnaround, walk cycle &amp; motion demos</h1>
+        <p class="article-shell__sub">orthographic views · walk1–9 · embedded walk.html · MP4 clips</p>
+        <p class="article-shell__meta"><time datetime="2026-05-16">2026-05-16</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This <strong>character design archive</strong> on aogl.cn documents one pipeline I actually iterate on: <strong>orthographic turnaround</strong> (front / left / back / right), numbered <strong>exploration sheets</strong>, a full <strong>walk-cycle strip</strong>, an <strong>interactive walk controller</strong> in the browser, and several <strong>MP4 motion tests</strong>. I also keep two <strong>generative anchor frames</strong> in the same folder so image search and social previews can still find a coherent visual identity.</p>
+<h2>Orthographic turnaround (four views)</h2>
+<p>Four PNGs lock silhouette and costume reads without perspective drift—useful keywords for SEO include <em>character turnaround, orthographic sheet, model sheet</em>.</p>
+<div class="article-gallery">
+  <img src="../../original/character/正面1.png" width="512" height="512" loading="lazy" decoding="async" alt="Character turnaround — front orthographic view">
+  <img src="../../original/character/左面2.png" width="512" height="512" loading="lazy" decoding="async" alt="Character turnaround — left profile orthographic view">
+  <img src="../../original/character/背面3.png" width="512" height="512" loading="lazy" decoding="async" alt="Character turnaround — back orthographic view">
+  <img src="../../original/character/右面4.png" width="512" height="512" loading="lazy" decoding="async" alt="Character turnaround — right profile orthographic view">
+</div>
+<h2>Exploration sheets (character0–6)</h2>
+<p>These seven stills are pose and proportion checkpoints before committing to animation. Naming them <code>character0.png</code> … <code>character6.png</code> keeps filenames stable for CDNs and git diffs.</p>
+<div class="article-gallery">
+  <img src="../../original/character/character0.png" width="400" height="400" loading="lazy" decoding="async" alt="Character exploration sheet 0">
+  <img src="../../original/character/character1.png" width="400" height="400" loading="lazy" decoding="async" alt="Character exploration sheet 1">
+  <img src="../../original/character/character2.png" width="400" height="400" loading="lazy" decoding="async" alt="Character exploration sheet 2">
+  <img src="../../original/character/character3.png" width="400" height="400" loading="lazy" decoding="async" alt="Character exploration sheet 3">
+  <img src="../../original/character/character4.png" width="400" height="400" loading="lazy" decoding="async" alt="Character exploration sheet 4">
+  <img src="../../original/character/character5.png" width="400" height="400" loading="lazy" decoding="async" alt="Character exploration sheet 5">
+  <img src="../../original/character/character6.png" width="400" height="400" loading="lazy" decoding="async" alt="Character exploration sheet 6">
+</div>
+<h2>Interactive walk demo (walk.html)</h2>
+<p>Below is an embedded page that plays the walk clip on a canvas and maps <kbd>←</kbd> <kbd>→</kbd> / <kbd>A</kbd> <kbd>D</kbd> to direction—good for portfolios and for crawlers when paired with this explanatory copy.</p>
+<figure class="article-embed">
+  <iframe src="../../original/character/walk.html" title="Interactive character walk control" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Embedded demo: <code>original/character/walk.html</code> (uses <code>walk-video.mp4</code> as source).</figcaption>
+</figure>
+<h2>Walk-cycle stills (walk1–walk9)</h2>
+<p>Nine frames read as a classic contact / pass / stride breakdown. Alt text uses the frame index to support accessibility and long-tail queries like “walk cycle frame 5 character”.</p>
+<div class="article-gallery">
+  <img src="../../original/character/walk1.png" width="320" height="320" loading="lazy" decoding="async" alt="Walk cycle frame 1">
+  <img src="../../original/character/walk2.png" width="320" height="320" loading="lazy" decoding="async" alt="Walk cycle frame 2">
+  <img src="../../original/character/walk3.png" width="320" height="320" loading="lazy" decoding="async" alt="Walk cycle frame 3">
+  <img src="../../original/character/walk4.png" width="320" height="320" loading="lazy" decoding="async" alt="Walk cycle frame 4">
+  <img src="../../original/character/walk5.png" width="320" height="320" loading="lazy" decoding="async" alt="Walk cycle frame 5">
+  <img src="../../original/character/walk6.png" width="320" height="320" loading="lazy" decoding="async" alt="Walk cycle frame 6">
+  <img src="../../original/character/walk7.png" width="320" height="320" loading="lazy" decoding="async" alt="Walk cycle frame 7">
+  <img src="../../original/character/walk8.png" width="320" height="320" loading="lazy" decoding="async" alt="Walk cycle frame 8">
+  <img src="../../original/character/walk9.png" width="320" height="320" loading="lazy" decoding="async" alt="Walk cycle frame 9">
+</div>
+<h2>Turnaround motion clips</h2>
+<p>MP4 masters in <code>original/character/</code> cover a 3D-style spin read and extra character motion passes. H.264 playback depends on the browser; download locally if needed.</p>
+<figure class="article-embed">
+  <video controls="" playsinline="" preload="metadata" poster="../original/character/turn_around1.png" aria-label="Turnaround motion clip">
+    <source src="../../original/character/turn_around-v.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>turn_around-v.mp4</code> — rotation / presentation pass.</figcaption>
+</figure>
+<figure class="article-embed">
+  <video controls="" playsinline="" preload="metadata" poster="../original/character/walk1.png" aria-label="Walk motion reference clip">
+    <source src="../../original/character/walk-video.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>walk-video.mp4</code> — reference for the canvas demo above.</figcaption>
+</figure>
+<figure class="article-embed">
+  <video controls="" playsinline="" preload="metadata" poster="../original/character/character1.png" aria-label="Character motion clip 1">
+    <source src="../../original/character/character-video1.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>character-video1.mp4</code> — additional motion study.</figcaption>
+</figure>
+<h3>Generative anchor frames</h3>
+<p>Two Gemini exports sit beside the hand-authored sheets as look-dev anchors; they help external search map this page to queries around <em>AI character design</em> without replacing the authored turnaround.</p>
+<div class="article-gallery">
+  <img src="../../original/character/Gemini_Generated_Image_h75mjuh75mjuh75m.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative anchor frame — character lighting and costume read">
+  <img src="../../original/character/Gemini_Generated_Image_j2zyeoj2zyeoj2zy.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative anchor frame — alternate style pass">
+</div>
+<h3>Extra passes on disk</h3>
+<p>Additional PNG passes (e.g. <code>turn_around3.png</code>, <code>turn_around4.png</code>, <code>character-video2.mp4</code> / <code>character-video3.mp4</code>, and numbered “生成图片” exports) live in the same directory for offline review; this article focuses on the clearest teaching path for humans and search engines.</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../index.html#intro" class="footer-legal-link lang-en">About</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</body></html>

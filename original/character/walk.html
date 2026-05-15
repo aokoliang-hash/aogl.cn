@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频人物行走控制 (修复初始显示)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333333;
+            font-family: system-ui, -apple-system, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            overflow: hidden;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        canvas {
+            display: block;
+            height: 100%;
+            width: auto;
+            cursor: pointer;
+        }
+        .ui-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255,255,255,0.85);
+            padding: 8px 16px;
+            border-radius: 30px;
+            backdrop-filter: blur(5px);
+            pointer-events: none;
+            white-space: nowrap;
+            font-size: 0.875rem;
+            z-index: 10;
+            border: 1px solid rgba(0,0,0,0.05);
+            color: #333;
+            transition: opacity 0.5s ease;
+        }
+        kbd {
+            background: #f3f4f6;
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #059669;
+            border: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mb-4 text-center">
+        <h1 class="text-xl font-bold text-gray-800">交互式行走控制</h1>
+    </div>
+
+    <div class="container" id="container">
+        <video id="videoSource" loop muted playsinline preload="auto" style="display:none">
+            <source src="walk-video.mp4" type="video/mp4">
+        </video>
+        
+        <canvas id="walkCanvas"></canvas>
+
+        <div class="ui-overlay" id="overlay">
+            使用 <kbd>←</kbd> <kbd>→</kbd> 或 <kbd>A</kbd> <kbd>D</kbd> 控制行走
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('walkCanvas');
+        const ctx = canvas.getContext('2d');
+        const video = document.getElementById('videoSource');
+        const container = document.getElementById('container');
+        
+        let state = {
+            direction: -1, 
+            isMoving: false,
+            videoLoaded: false,
+            initialFrameDrawn: false
+        };
+
+        let isPlaying = false;
+        let pendingAction = null;
+
+        const applyAction = async (action) => {
+            if (action === 'play') {
+                if (video.paused) {
+                    try {
+                        isPlaying = true;
+                        await video.play();
+                        if (pendingAction === 'pause') {
+                            pendingAction = null;
+                            applyAction('pause');
+                        }
+                    } catch (err) {
+                        isPlaying = false;
+                        if (err.name !== 'AbortError') console.error(err);
+                    }
+                }
+            } else if (action === 'pause') {
+                if (isPlaying) {
+                    pendingAction = 'pause';
+                    video.pause();
+                    isPlaying = false;
+                    pendingAction = null;
+                } else {
+                    video.pause();
+                }
+            }
+        };
+
+        const keys = {};
+        window.addEventListener('keydown', (e) => {
+            if (keys[e.code]) return;
+            keys[e.code] = true;
+            if (e.code === 'KeyD' || e.code === 'ArrowRight') startMoving(1);
+            else if (e.code === 'KeyA' || e.code === 'ArrowLeft') startMoving(-1);
+        });
+
+        window.addEventListener('keyup', (e) => {
+            keys[e.code] = false;
+            if (!keys['KeyD'] && !keys['ArrowRight'] && !keys['KeyA'] && !keys['ArrowLeft']) stopMoving();
+        });
+
+        const startMoving = (dir) => {
+            state.direction = dir;
+            state.isMoving = true;
+            pendingAction = 'play';
+            applyAction('play');
+        };
+
+        const stopMoving = () => {
+            state.isMoving = false;
+            applyAction('pause');
+        };
+
+        // 核心修复：强制跳转到第一帧并反复尝试绘制
+        video.addEventListener('loadedmetadata', () => {
+            const vWidth = video.videoWidth;
+            const vHeight = video.videoHeight;
+            canvas.width = vWidth;
+            canvas.height = vHeight;
+            container.style.aspectRatio = `${vWidth} / ${vHeight}`;
+            state.videoLoaded = true;
+            
+            // 跳转到极小的偏移值，触发视频帧准备
+            video.currentTime = 0.1;
+        });
+
+        // 监听 seeked 事件，确保跳转完成后立即绘制
+        video.addEventListener('seeked', () => {
+            drawOnce();
+        });
+
+        function drawOnce() {
+            if (!state.videoLoaded) return;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.save();
+            if (state.direction === 1) {
+                ctx.translate(canvas.width, 0);
+                ctx.scale(-1, 1);
+            }
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            ctx.restore();
+        }
+
+        function mainLoop() {
+            // 如果正在移动或者初始帧还没画出来，就持续刷新
+            if (state.isMoving || !state.initialFrameDrawn) {
+                drawOnce();
+                // 检查是否已经画出了有效内容（非纯黑/纯透明）
+                if (!state.isMoving && state.videoLoaded) {
+                    // 这里简单处理：只要画过一次加载后的帧就标记
+                    state.initialFrameDrawn = true;
+                }
+            }
+            requestAnimationFrame(mainLoop);
+        }
+
+        // 启动循环
+        requestAnimationFrame(mainLoop);
+
+        // 处理点击激活
+        container.addEventListener('click', () => {
+            // 点击时尝试播放并立即暂停，这能强制浏览器渲染视频帧
+            video.play().then(() => {
+                video.pause();
+                document.getElementById('overlay').style.opacity = "0.5";
+            });
+        });
+
+        // 兼容处理
+        if (video.readyState >= 2) {
+            video.dispatchEvent(new Event('loadedmetadata'));
+        }
+    </script>
+</body>
+</html>

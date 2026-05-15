@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="zh-Hant" data-title-zh="角色設計手記：四視圖、行走循環與動態演示 — aogl.cn" data-desc-zh="本站原創歸檔：同一角色的四視圖 turnaround、角色表 character0–6、行走關鍵幀 walk1–9、瀏覽器內行走控制演示 walk.html，以及 walk / turnaround / character 等多段 MP4；附生成式風格錨點圖，便於檢索與分享。" data-aogl-lang="zht" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="本站原創歸檔：同一角色的四視圖 turnaround、角色表 character0–6、行走關鍵幀 walk1–9、瀏覽器內行走控制演示 walk.html，以及 walk / turnaround / character 等多段 MP4；附生成式風格錨點圖，便於檢索與分享。">
+  <title>角色設計手記：四視圖、行走循環與動態演示 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/zh/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/character-turnaround-walk.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/character-turnaround-walk.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/zh/articles/character-turnaround-walk.html">
+  <meta property="og:title" content="角色設計手記：四視圖、行走循環與動態演示 — aogl.cn">
+  <meta property="og:description" content="本站原創歸檔：同一角色的四視圖 turnaround、角色表 character0–6、行走關鍵幀 walk1–9、瀏覽器內行走控制演示 walk.html，以及 walk / turnaround / character 等多段 MP4；附生成式風格錨點圖，便於檢索與分享。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="https://aogl.cn/original/character/Gemini_Generated_Image_h75mjuh75mjuh75m.png">
+  <meta property="og:image:alt" content="Original character design — turnaround, walk cycle, and motion studies (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/character/Gemini_Generated_Image_h75mjuh75mjuh75m.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"orthographic views · walk1–9 · embedded walk.html · MP4 clips","alternativeHeadline":"角色设计手记：四视图、行走循环与动态演示","datePublished":"2026-05-16","dateModified":"2026-05-16","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/character-turnaround-walk.html"},"url":"https://aogl.cn/en/articles/character-turnaround-walk.html","inLanguage":"zh-Hant","description":"Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-zht">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具與大模型動態（個人書籤）" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-zh">
+          <li><a href="../../index.html#tools-directory">AI 前沿</a></li>
+          <li><a href="../../portal.html">全球站點</a></li>
+          <li><a href="../../brands.html">品牌</a></li>
+          <li><a href="../../shopping.html">購物</a></li>
+          <li><a href="../../life.html">生活</a></li>
+          <li><a href="../../social.html">社交</a></li>
+          <li><a href="../../tech.html">科技</a></li>
+          <li><a href="../../games.html">遊戲</a></li>
+          <li><a href="../../tools.html">工具</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← 返回首頁 · 本站原創</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>角色設計手記：四視圖、行走循環與動態演示</h1>
+        <p class="article-shell__sub">正側背視 · walk1–9 · 嵌入 walk.html · MP4 動態</p>
+        <p class="article-shell__meta"><time datetime="2026-05-16">2026-05-16</time> · 本站原創</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>這是 aogl.cn 上的一篇<strong>角色設計歸檔</strong>，記錄我真實在用的同一套流程：<strong>四視圖 turnaround</strong>（正、左、背、右）、編號<strong>角色探索稿 character0–6</strong>、完整<strong>行走關鍵幀 walk1–9</strong>、可在瀏覽器裡操作的<strong>walk.html 行走演示</strong>，以及多段 <strong>MP4</strong> 動態測試。文件夾裡還保留兩張<strong>生成式錨點圖</strong>，方便外部分發與圖像檢索仍能對上同一視覺身份。</p>
+<h2>四視圖 turnaround（正側背右）</h2>
+<p>四張 PNG 在無透視漂移的前提下鎖定剪影與服裝閱讀；利於 SEO 的關鍵詞包括 <em>角色四視圖、orthographic、設定表</em>。</p>
+<div class="article-gallery">
+  <img src="../../original/character/正面1.png" width="512" height="512" loading="lazy" decoding="async" alt="角色四視圖 — 正面">
+  <img src="../../original/character/左面2.png" width="512" height="512" loading="lazy" decoding="async" alt="角色四視圖 — 左面">
+  <img src="../../original/character/背面3.png" width="512" height="512" loading="lazy" decoding="async" alt="角色四視圖 — 背面">
+  <img src="../../original/character/右面4.png" width="512" height="512" loading="lazy" decoding="async" alt="角色四視圖 — 右面">
+</div>
+<h2>探索稿 character0–6</h2>
+<p>七張靜幀作為進入動畫前的姿態與比例檢查點；文件名 <code>character0.png</code> … <code>character6.png</code> 便於 CDN 與版本對比。</p>
+<div class="article-gallery">
+  <img src="../../original/character/character0.png" width="400" height="400" loading="lazy" decoding="async" alt="角色探索稿 0">
+  <img src="../../original/character/character1.png" width="400" height="400" loading="lazy" decoding="async" alt="角色探索稿 1">
+  <img src="../../original/character/character2.png" width="400" height="400" loading="lazy" decoding="async" alt="角色探索稿 2">
+  <img src="../../original/character/character3.png" width="400" height="400" loading="lazy" decoding="async" alt="角色探索稿 3">
+  <img src="../../original/character/character4.png" width="400" height="400" loading="lazy" decoding="async" alt="角色探索稿 4">
+  <img src="../../original/character/character5.png" width="400" height="400" loading="lazy" decoding="async" alt="角色探索稿 5">
+  <img src="../../original/character/character6.png" width="400" height="400" loading="lazy" decoding="async" alt="角色探索稿 6">
+</div>
+<h2>交互式行走演示（walk.html）</h2>
+<p>下方嵌入頁在畫布上播放行走素材，並用 <kbd>←</kbd> <kbd>→</kbd> / <kbd>A</kbd> <kbd>D</kbd> 控制方向；配合本段文字，有利於作品集展示與檢索理解頁面主題。</p>
+<figure class="article-embed">
+  <iframe src="../../original/character/walk.html" title="交互式角色行走控制" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>嵌入：<code>original/character/walk.html</code>（源視頻 <code>walk-video.mp4</code>）。</figcaption>
+</figure>
+<h2>行走循環靜幀 walk1–walk9</h2>
+<p>九幀對應經典步態分解；替代文本寫明幀號，兼顧無障礙與「行走循環 第 N 幀」類長尾檢索。</p>
+<div class="article-gallery">
+  <img src="../../original/character/walk1.png" width="320" height="320" loading="lazy" decoding="async" alt="行走循環 幀 1">
+  <img src="../../original/character/walk2.png" width="320" height="320" loading="lazy" decoding="async" alt="行走循環 幀 2">
+  <img src="../../original/character/walk3.png" width="320" height="320" loading="lazy" decoding="async" alt="行走循環 幀 3">
+  <img src="../../original/character/walk4.png" width="320" height="320" loading="lazy" decoding="async" alt="行走循環 幀 4">
+  <img src="../../original/character/walk5.png" width="320" height="320" loading="lazy" decoding="async" alt="行走循環 幀 5">
+  <img src="../../original/character/walk6.png" width="320" height="320" loading="lazy" decoding="async" alt="行走循環 幀 6">
+  <img src="../../original/character/walk7.png" width="320" height="320" loading="lazy" decoding="async" alt="行走循環 幀 7">
+  <img src="../../original/character/walk8.png" width="320" height="320" loading="lazy" decoding="async" alt="行走循環 幀 8">
+  <img src="../../original/character/walk9.png" width="320" height="320" loading="lazy" decoding="async" alt="行走循環 幀 9">
+</div>
+<h2>旋轉與行走動態（MP4）</h2>
+<p>以下視頻位於 <code>original/character/</code>；需瀏覽器支持 H.264，無法播放時可下載本地查看。</p>
+<figure class="article-embed">
+  <video controls="" playsinline="" preload="metadata" poster="../original/character/turn_around1.png" aria-label="旋轉展示視頻">
+    <source src="../../original/character/turn_around-v.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>turn_around-v.mp4</code> — 旋轉 / 展示向動態。</figcaption>
+</figure>
+<figure class="article-embed">
+  <video controls="" playsinline="" preload="metadata" poster="../original/character/walk1.png" aria-label="行走參考視頻">
+    <source src="../../original/character/walk-video.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>walk-video.mp4</code> — 與上方畫布演示同源參考。</figcaption>
+</figure>
+<figure class="article-embed">
+  <video controls="" playsinline="" preload="metadata" poster="../original/character/character1.png" aria-label="角色動態片段 1">
+    <source src="../../original/character/character-video1.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>character-video1.mp4</code> — 追加動態研究。</figcaption>
+</figure>
+<h3>生成式錨點圖</h3>
+<p>兩張 Gemini 導出與手繪表並列，作為氛圍錨點；不替代四視圖正文，但有助於覆蓋「AI 角色設計」等相關檢索。</p>
+<div class="article-gallery">
+  <img src="../../original/character/Gemini_Generated_Image_h75mjuh75mjuh75m.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式錨點 — 光影與服裝閱讀">
+  <img src="../../original/character/Gemini_Generated_Image_j2zyeoj2zyeoj2zy.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式錨點 — 備選風格">
+</div>
+<h3>目錄內其它素材</h3>
+<p><code>turn_around3.png</code>、<code>turn_around4.png</code>、<code>character-video2.mp4</code> / <code>character-video3.mp4</code> 及「生成圖片」系列等仍在同目錄，供線下審片；本文選取最清晰的教學路徑呈現給人與搜索引擎。</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../index.html#intro" class="footer-legal-link lang-zh">關於</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-zh">更新記錄</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-zh">隱私政策</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</body></html>
