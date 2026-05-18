@@ -1,40 +1,40 @@
-﻿<p>This <strong>monkey sprite head-tracking</strong> page documents a personal pipeline on aogl.cn: turn a short <strong>head-turn video</strong> into a <strong>sprite sheet</strong>, calibrate <strong>angle �?frame index</strong> (not a naive <code>angle/360×frames</code> linear map), and ship a <strong>mouse-driven HTML demo</strong> with a custom <strong>peach cursor</strong>. Keywords that match real searches include <em>sprite sheet head turn, CSS background-position animation, interactive character follow mouse, chroma key to WebP</em>.</p>
+<p>This <strong>monkey sprite head-tracking</strong> page documents a personal pipeline on aogl.cn: turn a short <strong>head-turn video</strong> into a <strong>sprite sheet</strong>, calibrate <strong>angle-to-frame mapping</strong> (not a naive <code>angle/360*frames</code> linear map), and ship a <strong>mouse-driven HTML demo</strong> with a custom <strong>peach cursor</strong>. Keywords that match real searches include <em>sprite sheet head turn, CSS background-position animation, interactive character follow mouse, chroma key to WebP</em>.</p>
 
 <h2>Pipeline in one sentence</h2>
-<p>Extract frames �?build a <strong>contact / calibration sheet</strong> to read true facing directions �?map compass angles to frame numbers �?pack a <strong>10×12 grid (120 frames)</strong> into <code>sprite_hd_120.webp</code> �?validate up / right / down / left / diagonals / center in the browser.</p>
+<p>Extract frames, build a <strong>contact / calibration sheet</strong> to read true facing directions, map compass angles to frame numbers, pack a <strong>10x12 grid (120 frames)</strong> into <code>sprite_hd_120.webp</code>, and validate up / right / down / left / diagonals / center in the browser.</p>
 
 <figure class="article-embed">
   <img src="../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Angle-to-frame calibration contact sheet for monkey head-turn sprite">
-  <figcaption><code>calibration_sheet.jpg</code> �?contact sheet used to build the angle→frame lookup.</figcaption>
+  <figcaption><code>calibration_sheet.jpg</code>: contact sheet used to build the angle-to-frame lookup.</figcaption>
 </figure>
 
 <h2>Front reference frame</h2>
-<p>The neutral “camera-facing�?still is exported as <code>frame_front.webp</code> for thumbnails and as a sanity check before packing the grid.</p>
+<p>The neutral camera-facing still is exported as <code>frame_front.webp</code> for thumbnails and as a sanity check before packing the grid.</p>
 
 <figure class="article-embed">
   <img src="../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Monkey character front-facing reference frame">
-  <figcaption><code>frame_front.webp</code> �?front pose reference.</figcaption>
+  <figcaption><code>frame_front.webp</code>: front pose reference.</figcaption>
 </figure>
 
 <h2>Live demo: 120-frame HD + peach cursor</h2>
-<p>Move the mouse around the character: the viewer steps through <strong>120 background positions</strong> on <code>sprite_hd_120.webp</code> (10 columns × 12 rows). A peach image follows the pointer with <code>pointer-events: none</code> so clicks still reach the page.</p>
+<p>Move the mouse around the character: the viewer steps through <strong>120 background positions</strong> on <code>sprite_hd_120.webp</code> (10 columns x 12 rows). A peach image follows the pointer with <code>pointer-events: none</code> so clicks still reach the page.</p>
 
 <figure class="article-embed">
-  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="Monkey head tracking �?120-frame sprite demo with peach cursor" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <figcaption>Embedded: <code>original/monkey2/gemini-code-1778834915677.html</code> �?uses <code>sprite_hd_120.webp</code> and <code>cursor.png</code>.</figcaption>
+  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="Monkey head tracking 120-frame sprite demo with peach cursor" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Embedded: <code>original/monkey2/gemini-code-1778834915677.html</code> uses <code>sprite_hd_120.webp</code> and <code>cursor.png</code>.</figcaption>
 </figure>
 
 <h2>Sprite sheet assets</h2>
 <p>Three WebP masters document the iteration: standard density, HD, and the final <strong>120-frame</strong> grid used in production.</p>
 
 <div class="article-gallery">
-  <img src="../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet �?standard resolution WebP">
-  <img src="../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet �?HD WebP">
-  <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet �?120 frames 10 by 12 grid WebP">
+  <img src="../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet standard resolution WebP">
+  <img src="../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet HD WebP">
+  <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet 120 frames 10 by 12 grid WebP">
 </div>
 
-<h2>Source stills (turn_head_1�?0)</h2>
-<p>Ten numbered PNGs sample the rotation arc before packing the full grid—useful for QA and for alt-text-rich galleries.</p>
+<h2>Source stills (turn_head_1-10)</h2>
+<p>Ten numbered PNGs sample the rotation arc before packing the full grid, useful for QA and for alt-text-rich galleries.</p>
 
 <div class="article-gallery">
   <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 1">
@@ -67,11 +67,11 @@
 </figure>
 
 <h3>Generative style anchors</h3>
-<p>Two Gemini exports in <code>original/monkey2/</code> sit beside the technical assets for social previews and image search—not replacements for the calibrated sprite.</p>
+<p>Two Gemini exports in <code>original/monkey2/</code> sit beside the technical assets for social previews and image search, not replacements for the calibrated sprite.</p>
 
 <div class="article-gallery">
-  <img src="../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative monkey character anchor �?lighting and costume">
-  <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative monkey character anchor �?alternate style pass">
+  <img src="../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative monkey character anchor lighting and costume">
+  <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative monkey character anchor alternate style pass">
 </div>
 
 <h3>Offline tooling</h3>

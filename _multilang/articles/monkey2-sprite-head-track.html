@@ -147,43 +147,43 @@
         <p class="article-shell__sub">sprite_hd_120 · angle calibration · embedded HTML · source MP4</p>
         <p class="article-shell__meta"><time datetime="2026-05-18">2026-05-18</time> · aogl.cn original</p>
       </div>
-      <article class="article-shell__body" lang="en"><p>This <strong>monkey sprite head-tracking</strong> page documents a personal pipeline on aogl.cn: turn a short <strong>head-turn video</strong> into a <strong>sprite sheet</strong>, calibrate <strong>angle �?frame index</strong> (not a naive <code>angle/360×frames</code> linear map), and ship a <strong>mouse-driven HTML demo</strong> with a custom <strong>peach cursor</strong>. Keywords that match real searches include <em>sprite sheet head turn, CSS background-position animation, interactive character follow mouse, chroma key to WebP</em>.</p>
+      <article class="article-shell__body" lang="en"><p>This <strong>monkey sprite head-tracking</strong> page documents a personal pipeline on aogl.cn: turn a short <strong>head-turn video</strong> into a <strong>sprite sheet</strong>, calibrate <strong>angle-to-frame mapping</strong> (not a naive <code>angle/360*frames</code> linear map), and ship a <strong>mouse-driven HTML demo</strong> with a custom <strong>peach cursor</strong>. Keywords that match real searches include <em>sprite sheet head turn, CSS background-position animation, interactive character follow mouse, chroma key to WebP</em>.</p>
 
 <h2>Pipeline in one sentence</h2>
-<p>Extract frames �?build a <strong>contact / calibration sheet</strong> to read true facing directions �?map compass angles to frame numbers �?pack a <strong>10×12 grid (120 frames)</strong> into <code>sprite_hd_120.webp</code> �?validate up / right / down / left / diagonals / center in the browser.</p>
+<p>Extract frames, build a <strong>contact / calibration sheet</strong> to read true facing directions, map compass angles to frame numbers, pack a <strong>10x12 grid (120 frames)</strong> into <code>sprite_hd_120.webp</code>, and validate up / right / down / left / diagonals / center in the browser.</p>
 
 <figure class="article-embed">
   <img src="../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Angle-to-frame calibration contact sheet for monkey head-turn sprite">
-  <figcaption><code>calibration_sheet.jpg</code> �?contact sheet used to build the angle→frame lookup.</figcaption>
+  <figcaption><code>calibration_sheet.jpg</code>: contact sheet used to build the angle-to-frame lookup.</figcaption>
 </figure>
 
 <h2>Front reference frame</h2>
-<p>The neutral “camera-facing�?still is exported as <code>frame_front.webp</code> for thumbnails and as a sanity check before packing the grid.</p>
+<p>The neutral camera-facing still is exported as <code>frame_front.webp</code> for thumbnails and as a sanity check before packing the grid.</p>
 
 <figure class="article-embed">
   <img src="../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Monkey character front-facing reference frame">
-  <figcaption><code>frame_front.webp</code> �?front pose reference.</figcaption>
+  <figcaption><code>frame_front.webp</code>: front pose reference.</figcaption>
 </figure>
 
 <h2>Live demo: 120-frame HD + peach cursor</h2>
-<p>Move the mouse around the character: the viewer steps through <strong>120 background positions</strong> on <code>sprite_hd_120.webp</code> (10 columns × 12 rows). A peach image follows the pointer with <code>pointer-events: none</code> so clicks still reach the page.</p>
+<p>Move the mouse around the character: the viewer steps through <strong>120 background positions</strong> on <code>sprite_hd_120.webp</code> (10 columns x 12 rows). A peach image follows the pointer with <code>pointer-events: none</code> so clicks still reach the page.</p>
 
 <figure class="article-embed">
-  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="Monkey head tracking �?120-frame sprite demo with peach cursor" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <figcaption>Embedded: <code>original/monkey2/gemini-code-1778834915677.html</code> �?uses <code>sprite_hd_120.webp</code> and <code>cursor.png</code>.</figcaption>
+  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="Monkey head tracking 120-frame sprite demo with peach cursor" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Embedded: <code>original/monkey2/gemini-code-1778834915677.html</code> uses <code>sprite_hd_120.webp</code> and <code>cursor.png</code>.</figcaption>
 </figure>
 
 <h2>Sprite sheet assets</h2>
 <p>Three WebP masters document the iteration: standard density, HD, and the final <strong>120-frame</strong> grid used in production.</p>
 
 <div class="article-gallery">
-  <img src="../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet �?standard resolution WebP">
-  <img src="../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet �?HD WebP">
-  <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet �?120 frames 10 by 12 grid WebP">
+  <img src="../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet standard resolution WebP">
+  <img src="../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet HD WebP">
+  <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet 120 frames 10 by 12 grid WebP">
 </div>
 
-<h2>Source stills (turn_head_1�?0)</h2>
-<p>Ten numbered PNGs sample the rotation arc before packing the full grid—useful for QA and for alt-text-rich galleries.</p>
+<h2>Source stills (turn_head_1-10)</h2>
+<p>Ten numbered PNGs sample the rotation arc before packing the full grid, useful for QA and for alt-text-rich galleries.</p>
 
 <div class="article-gallery">
   <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 1">
@@ -216,11 +216,11 @@
 </figure>
 
 <h3>Generative style anchors</h3>
-<p>Two Gemini exports in <code>original/monkey2/</code> sit beside the technical assets for social previews and image search—not replacements for the calibrated sprite.</p>
+<p>Two Gemini exports in <code>original/monkey2/</code> sit beside the technical assets for social previews and image search, not replacements for the calibrated sprite.</p>
 
 <div class="article-gallery">
-  <img src="../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative monkey character anchor �?lighting and costume">
-  <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative monkey character anchor �?alternate style pass">
+  <img src="../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative monkey character anchor lighting and costume">
+  <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative monkey character anchor alternate style pass">
 </div>
 
 <h3>Offline tooling</h3>
@@ -235,43 +235,43 @@
         <p class="article-shell__sub">sprite_hd_120 · 角度校准 · 嵌入 HTML · MP4 源片</p>
         <p class="article-shell__meta"><time datetime="2026-05-18">2026-05-18</time> · 本站原创</p>
       </div>
-      <article class="article-shell__body" lang="zh-Hans"><p>这是 aogl.cn 的一�?strong>猴子精灵图转�?/strong>个人原创手记：把�?strong>转头视频</strong>抽成<strong>雪碧图（sprite sheet�?/strong>，用 contact sheet �?strong>角度→帧号校�?/strong>（禁止简单用 <code>angle/360×总帧�?/code> 线性映射），再在浏览器里用<strong>鼠标位置</strong>驱动 <code>background-position</code> 切换帧，并配�?strong>桃子自定义光�?/strong>。利于检索的词包括：<em>精灵图转头、CSS 雪碧图、鼠标跟随角色、绿幕抠�?WebP</em>�?/p>
+      <article class="article-shell__body" lang="zh-Hans"><p>这是 aogl.cn 的一篇<strong>猴子精灵图转头</strong>个人原创手记：把短<strong>转头视频</strong>抽成<strong>雪碧图（sprite sheet）</strong>，用 contact sheet 做<strong>角度到帧号校准</strong>（禁止简单用 <code>angle/360*总帧数</code> 线性映射），再在浏览器里用<strong>鼠标位置</strong>驱动 <code>background-position</code> 切换帧，并配上<strong>桃子自定义光标</strong>。利于检索的词包括：<em>精灵图转头、CSS 雪碧图、鼠标跟随角色、绿幕抠图 WebP</em>。</p>
 
 <h2>流程概览</h2>
-<p>抽帧 �?制作<strong>校准总表</strong>确认真实朝向 �?建立角度键位�?�?打包 <strong>10×12 �?120 �?/strong> �?<code>sprite_hd_120.webp</code> �?在本地浏览器验证上、右、下、左、斜向与正中�?/p>
+<p>抽帧，制作<strong>校准总表</strong>确认真实朝向，建立角度键位表，打包 <strong>10x12 共 120 帧</strong> 到 <code>sprite_hd_120.webp</code>，在本地浏览器验证上、右、下、左、斜向与正中。</p>
 
 <figure class="article-embed">
-  <img src="../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="猴子转头精灵�?�?角度与帧号校�?contact sheet">
-  <figcaption><code>calibration_sheet.jpg</code> �?角度—帧号对照用总表�?/figcaption>
+  <img src="../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="猴子转头精灵图角度与帧号校准 contact sheet">
+  <figcaption><code>calibration_sheet.jpg</code>：角度与帧号对照用总表。</figcaption>
 </figure>
 
 <h2>正面参考帧</h2>
-<p>中性「朝镜头」单帧导出为 <code>frame_front.webp</code>，用于缩略图与打包前检查�?/p>
+<p>中性「朝镜头」单帧导出为 <code>frame_front.webp</code>，用于缩略图与打包前检查。</p>
 
 <figure class="article-embed">
   <img src="../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="猴子角色正面参考帧">
-  <figcaption><code>frame_front.webp</code> �?正面姿态参考�?/figcaption>
+  <figcaption><code>frame_front.webp</code>：正面姿态参考。</figcaption>
 </figure>
 
-<h2>在线演示�?20 帧高�?+ 桃子光标</h2>
-<p>移动鼠标：角色在 <code>sprite_hd_120.webp</code> 上切�?<strong>120 个背景位�?/strong>�?0 �?× 12 行）；桃子图跟随指针�?code>pointer-events: none</code> 避免挡住点击�?/p>
+<h2>在线演示：120 帧高清 + 桃子光标</h2>
+<p>移动鼠标：角色在 <code>sprite_hd_120.webp</code> 上切换 <strong>120 个背景位置</strong>（10 列 x 12 行）；桃子图跟随指针，<code>pointer-events: none</code> 避免挡住点击。</p>
 
 <figure class="article-embed">
-  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="猴子转头 �?120 帧精灵图与桃子光标演�? loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <figcaption>嵌入�?code>original/monkey2/gemini-code-1778834915677.html</code>�?code>sprite_hd_120.webp</code>�?code>cursor.png</code>）�?/figcaption>
+  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="猴子转头 120 帧精灵图与桃子光标演示" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>嵌入：<code>original/monkey2/gemini-code-1778834915677.html</code>（<code>sprite_hd_120.webp</code>、<code>cursor.png</code>）。</figcaption>
 </figure>
 
-<h2>雪碧图资�?/h2>
-<p>三份 WebP 记录迭代：标准密度、高清版、最�?<strong>120 �?/strong> 生产用网格�?/p>
+<h2>雪碧图资源</h2>
+<p>三份 WebP 记录迭代：标准密度、高清版、最终 <strong>120 帧</strong> 生产用网格。</p>
 
 <div class="article-gallery">
-  <img src="../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵�?�?标准分辨�?WebP">
-  <img src="../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵�?�?高清 WebP">
-  <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵�?�?120 �?10×12 网格 WebP">
+  <img src="../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图标准分辨率 WebP">
+  <img src="../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图高清 WebP">
+  <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图 120 帧 10x12 网格 WebP">
 </div>
 
-<h2>源片静帧 turn_head_1�?0</h2>
-<p>十张编号 PNG 在打包全网格前抽样旋转弧线，便于质检与图�?alt 覆盖�?/p>
+<h2>源片静帧 turn_head_1-10</h2>
+<p>十张编号 PNG 在打包全网格前抽样旋转弧线，便于质检与图库 alt 覆盖。</p>
 
 <div class="article-gallery">
   <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 1">
@@ -286,33 +286,33 @@
   <img src="../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 10">
 </div>
 
-<h2>源视频（MP4�?/h2>
-<p>两版导出记录早期�?refined 转头；抠绿前保留主体、避免误抠白/灰区域�?/p>
+<h2>源视频（MP4）</h2>
+<p>两版导出记录早期与 refined 转头；抠绿前保留主体、避免误抠白/灰区域。</p>
 
 <figure class="article-embed">
-  <video controls playsinline preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="转头源视�?v1">
+  <video controls playsinline preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="转头源视频 v1">
     <source src="../original/monkey2/turn_head_v1.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_head_v1.mp4</code></figcaption>
 </figure>
 
 <figure class="article-embed">
-  <video controls playsinline preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="转头源视�?v2">
+  <video controls playsinline preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="转头源视频 v2">
     <source src="../original/monkey2/turn_head_v2.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_head_v2.mp4</code></figcaption>
 </figure>
 
-<h3>生成式风格锚�?/h3>
-<p>两张 Gemini 图与工程资产并列，用于分享预览与图像检索，不替代校准后的精灵图�?/p>
+<h3>生成式风格锚点</h3>
+<p>两张 Gemini 图与工程资产并列，用于分享预览与图像检索，不替代校准后的精灵图。</p>
 
 <div class="article-gallery">
-  <img src="../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚�?�?光影与造型">
-  <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚�?�?备选风�?>
+  <img src="../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚点光影与造型">
+  <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚点备选风格">
 </div>
 
 <h3>离线脚本</h3>
-<p><code>gemini-code-*.py</code> �?<code>txt.txt</code> 记录抽帧与抠像规则。本文固定公开 HTML、图片与视频路径，便�?SEO 与长期引用�?/p></article>
+<p><code>gemini-code-*.py</code> 与 <code>txt.txt</code> 记录抽帧与抠像规则。本文固定公开 HTML、图片与视频路径，便于 SEO 与长期引用。</p></article>
     </div>
     <div class="lang-ja">
       <div class="article-shell__top">
@@ -323,14 +323,13 @@
         <p class="article-shell__sub">sprite_hd_120・角度校正・HTML埋め込み・MP4</p>
         <p class="article-shell__meta"><time datetime="2026-05-18">2026-05-18</time> · 当サイトオリジナル</p>
       </div>
-      <article class="article-shell__body" lang="ja"><p>aogl.cn �?strong>サル首振りスプライト</strong>個人メモ：短�?strong>转头動画</strong>から<strong>スプライトシート</strong>を生成し、contact sheet �?strong>角度→フレー�?/strong>を校正（単純�?<code>angle/360×frames</code> 禁止）、マウス�?<code>background-position</code> を切り替え�?strong>桃カーソ�?/strong>付き HTML デモを公開します�?/p>
+      <article class="article-shell__body" lang="ja"><p>aogl.cn の<strong>サル首振りスプライト</strong>個人メモ：短い<strong>转头動画</strong>から<strong>スプライトシート</strong>を生成し、contact sheet で<strong>角度からフレーム</strong>を校正（単純な <code>angle/360*frames</code> 禁止）、マウスで <code>background-position</code> を切り替え、<strong>桃カーソル</strong>付き HTML デモを公開します。</p>
 
 <h2>パイプライン</h2>
 <figure class="article-embed">
-  <img src="../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="首振りスプライト校正シー�?>
+  <img src="../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="首振りスプライト校正シート">
   <figcaption><code>calibration_sheet.jpg</code></figcaption>
 </figure>
-
 <figure class="article-embed">
   <img src="../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="正面リファレンス frame_front">
   <figcaption><code>frame_front.webp</code></figcaption>
@@ -338,29 +337,29 @@
 
 <h2>120フレームデモ</h2>
 <figure class="article-embed">
-  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="120フレーム首振り・桃カーソ�? loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <figcaption><code>sprite_hd_120.webp</code>�?0×12�?/figcaption>
+  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="120フレーム首振り桃カーソルデモ" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption><code>sprite_hd_120.webp</code> (10x12)</figcaption>
 </figure>
 
-<h2>スプライ�?WebP</h2>
+<h2>スプライト WebP</h2>
 <div class="article-gallery">
-  <img src="../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="スプライト標�?>
+  <img src="../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="スプライト標準">
   <img src="../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="スプライトHD">
-  <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="スプライ�?20フレーム">
+  <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="スプライト120フレーム">
 </div>
 
-<h2>turn_head_1�?0</h2>
+<h2>turn_head_1-10</h2>
 <div class="article-gallery">
-  <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?0">
+  <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="首振り1">
+  <img src="../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="首振り2">
+  <img src="../original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="首振り3">
+  <img src="../original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="首振り4">
+  <img src="../original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="首振り5">
+  <img src="../original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="首振り6">
+  <img src="../original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="首振り7">
+  <img src="../original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="首振り8">
+  <img src="../original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="首振り9">
+  <img src="../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="首振り10">
 </div>
 
 <h2>MP4</h2>
@@ -383,7 +382,7 @@
   <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="生成アンカー2">
 </div>
 
-<p><code>gemini-code-*.py</code> �?<code>txt.txt</code> に抽帧・クロマルールを記録�?/p></article>
+<p><code>gemini-code-*.py</code> と <code>txt.txt</code> に抽帧・クロマルールを記録。</p></article>
     </div>
     <div class="lang-ko">
       <div class="article-shell__top">
@@ -394,7 +393,7 @@
         <p class="article-shell__sub">sprite_hd_120·각도 보정·HTML·MP4</p>
         <p class="article-shell__meta"><time datetime="2026-05-18">2026-05-18</time> · 사이트 오리지널</p>
       </div>
-      <article class="article-shell__body" lang="ko"><p>aogl.cn <strong>원숭이 스프라이트 머리 추적</strong> 개인 아카이브: <strong>转头 영상</strong>에서 <strong>스프라이트 시트</strong> 생성, contact sheet로 <strong>각도→프레임</strong> 보정(단순 선형 매핑 금지), 마우스로 <code>background-position</code> 전환, <strong>복숭아 커서</strong> HTML 데모.</p>
+      <article class="article-shell__body" lang="ko"><p>aogl.cn <strong>원숭이 스프라이트 머리 추적</strong> 개인 아카이브: <strong>转头 영상</strong>에서 <strong>스프라이트 시트</strong> 생성, contact sheet로 <strong>각도-프레임</strong> 보정(단순 선형 매핑 금지), 마우스로 <code>background-position</code> 전환, <strong>복숭아 커서</strong> HTML 데모.</p>
 
 <h2>보정·정면</h2>
 <figure class="article-embed">
@@ -408,8 +407,8 @@
 
 <h2>120프레임 데모</h2>
 <figure class="article-embed">
-  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="120프레임 머리 추적·복숭아 커서" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <figcaption><code>sprite_hd_120.webp</code> (10×12)</figcaption>
+  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="120프레임 머리 추적 복숭아 커서" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption><code>sprite_hd_120.webp</code> (10x12)</figcaption>
 </figure>
 
 <h2>스프라이트 WebP</h2>
@@ -419,7 +418,7 @@
   <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="스프라이트 120프레임">
 </div>
 
-<h2>turn_head_1–10</h2>
+<h2>turn_head_1-10</h2>
 <div class="article-gallery">
   <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="머리 회전 1">
   <img src="../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="머리 회전 2">
@@ -464,7 +463,7 @@
         <p class="article-shell__sub">sprite_hd_120 · calibration · HTML · MP4</p>
         <p class="article-shell__meta"><time datetime="2026-05-18">2026-05-18</time> · Original aogl.cn</p>
       </div>
-      <article class="article-shell__body" lang="fr"><p>Archive <strong>sprite singe �?suivi de tête</strong> sur aogl.cn : vidéo courte �?<strong>sprite sheet</strong>, calibration <strong>angle→image</strong> (pas de mapping linéaire naïf), démo HTML à la souris et <strong>curseur pêche</strong>.</p>
+      <article class="article-shell__body" lang="fr"><p>Archive <strong>sprite singe suivi de tete</strong> sur aogl.cn : video courte, <strong>sprite sheet</strong>, calibration <strong>angle vers image</strong> (pas de mapping lineaire naif), demo HTML a la souris et <strong>curseur peche</strong>.</p>
 
 <h2>Calibration et face</h2>
 <figure class="article-embed">
@@ -472,14 +471,14 @@
   <figcaption><code>calibration_sheet.jpg</code></figcaption>
 </figure>
 <figure class="article-embed">
-  <img src="../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Référence de face frame_front">
+  <img src="../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Reference de face frame_front">
   <figcaption><code>frame_front.webp</code></figcaption>
 </figure>
 
-<h2>Démo 120 images</h2>
+<h2>Demo 120 images</h2>
 <figure class="article-embed">
-  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="Suivi de tête 120 images �?curseur pêche" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <figcaption><code>sprite_hd_120.webp</code> (10×12)</figcaption>
+  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="Suivi de tete 120 images curseur peche" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption><code>sprite_hd_120.webp</code> (10x12)</figcaption>
 </figure>
 
 <h2>Feuilles WebP</h2>
@@ -489,38 +488,38 @@
   <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="Sprite 120 images">
 </div>
 
-<h2>turn_head_1�?0</h2>
+<h2>turn_head_1-10</h2>
 <div class="article-gallery">
-  <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tête 1">
-  <img src="../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tête 2">
-  <img src="../original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tête 3">
-  <img src="../original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tête 4">
-  <img src="../original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tête 5">
-  <img src="../original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tête 6">
-  <img src="../original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tête 7">
-  <img src="../original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tête 8">
-  <img src="../original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tête 9">
-  <img src="../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tête 10">
+  <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tete 1">
+  <img src="../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tete 2">
+  <img src="../original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tete 3">
+  <img src="../original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tete 4">
+  <img src="../original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tete 5">
+  <img src="../original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tete 6">
+  <img src="../original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tete 7">
+  <img src="../original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tete 8">
+  <img src="../original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tete 9">
+  <img src="../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="Rotation tete 10">
 </div>
 
 <h2>MP4</h2>
 <figure class="article-embed">
-  <video controls playsinline preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="Vidéo rotation v1">
+  <video controls playsinline preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="Video rotation v1">
     <source src="../original/monkey2/turn_head_v1.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_head_v1.mp4</code></figcaption>
 </figure>
 <figure class="article-embed">
-  <video controls playsinline preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="Vidéo rotation v2">
+  <video controls playsinline preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="Video rotation v2">
     <source src="../original/monkey2/turn_head_v2.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_head_v2.mp4</code></figcaption>
 </figure>
 
-<h3>Ancres génératrices</h3>
+<h3>Ancres generatives</h3>
 <div class="article-gallery">
-  <img src="../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="Ancre générative 1">
-  <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="Ancre générative 2">
+  <img src="../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="Ancre generative 1">
+  <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="Ancre generative 2">
 </div>
 
 <p>Scripts <code>gemini-code-*.py</code> et <code>txt.txt</code> dans <code>original/monkey2/</code>.</p></article>
@@ -534,7 +533,7 @@
         <p class="article-shell__sub">sprite_hd_120 · калибровка · HTML · MP4</p>
         <p class="article-shell__meta"><time datetime="2026-05-18">2026-05-18</time> · Оригинал aogl.cn</p>
       </div>
-      <article class="article-shell__body" lang="ru"><p><strong>Архив спрайта обезьяны</strong> на aogl.cn: из короткого <strong>видео поворота головы</strong> �?<strong>sprite sheet</strong>, калибровка <strong>угол→кадр</strong> (не линейный <code>angle/360×frames</code>), HTML-демо с мышью и <strong>курсором-персиком</strong>.</p>
+      <article class="article-shell__body" lang="ru"><p><strong>Архив спрайта обезьяны</strong> на aogl.cn: короткое <strong>видео поворота головы</strong>, <strong>sprite sheet</strong>, калибровка <strong>угол-кадр</strong> (не линейный <code>angle/360*frames</code>), HTML-демо с мышью и <strong>курсором-персиком</strong>.</p>
 
 <h2>Калибровка и фронт</h2>
 <figure class="article-embed">
@@ -548,8 +547,8 @@
 
 <h2>Демо 120 кадров</h2>
 <figure class="article-embed">
-  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="Поворот головы 120 кадров �?курсор-персик" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <figcaption><code>sprite_hd_120.webp</code> (10×12)</figcaption>
+  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="Поворот головы 120 кадров курсор-персик" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption><code>sprite_hd_120.webp</code> (10x12)</figcaption>
 </figure>
 
 <h2>WebP-листы</h2>
@@ -559,7 +558,7 @@
   <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="Спрайт 120 кадров">
 </div>
 
-<h2>turn_head_1�?0</h2>
+<h2>turn_head_1-10</h2>
 <div class="article-gallery">
   <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 1">
   <img src="../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 2">
@@ -604,7 +603,7 @@
         <p class="article-shell__sub">sprite_hd_120 · معايرة · HTML · MP4</p>
         <p class="article-shell__meta"><time datetime="2026-05-18">2026-05-18</time> · محتوى أصلي</p>
       </div>
-      <article class="article-shell__body" lang="ar" dir="rtl"><p><strong>أرشيف سبرايت قرد</strong> على aogl.cn: من <strong>فيديو قصير لدوران الرأس</strong> إلى <strong>ورقة سبرايت</strong>، معايرة <strong>زاوية→إطا�?/strong> (لا تعيين خطي بسيط)، عرض HTML يتبع الفأرة و<strong>مؤشر خوخ</strong>.</p>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p><strong>أرشيف سبرايت قرد</strong> على aogl.cn: من <strong>فيديو قصير لدوران الرأس</strong> إلى <strong>ورقة سبرايت</strong>، معايرة <strong>زاوية-إطار</strong> (لا تعيين خطي بسيط)، عرض HTML يتبع الفأرة و<strong>مؤشر خوخ</strong>.</p>
 
 <h2>المعايرة والواجهة</h2>
 <figure class="article-embed">
@@ -618,8 +617,8 @@
 
 <h2>عرض 120 إطار</h2>
 <figure class="article-embed">
-  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="تتبع رأس 120 إطار �?مؤشر خوخ" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <figcaption><code dir="ltr">sprite_hd_120.webp</code> (10×12)</figcaption>
+  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="تتبع رأس 120 إطار مؤشر خوخ" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption><code dir="ltr">sprite_hd_120.webp</code> (10x12)</figcaption>
 </figure>
 
 <h2>صفائح WebP</h2>
@@ -629,7 +628,7 @@
   <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="سبرايت 120 إطار">
 </div>
 
-<h2>turn_head_1�?0</h2>
+<h2>turn_head_1-10</h2>
 <div class="article-gallery">
   <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="دوران 1">
   <img src="../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="دوران 2">

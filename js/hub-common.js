@@ -147,9 +147,6 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("img.hub-favicon").forEach(favFallback);
-    document.querySelectorAll(".hub-hotmix-cards--carousel").forEach(function (root) {
-      if (root.classList.contains("site-originals-hotmix")) return;
-      bindHotmixCarouselDrag(root);
-    });
+    document.querySelectorAll(".hub-hotmix-cards--carousel").forEach(bindHotmixCarouselDrag);
   });
 })();

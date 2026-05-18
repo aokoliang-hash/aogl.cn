@@ -72,35 +72,35 @@
         <p class="article-shell__sub">sprite_hd_120 · 角度校準 · 嵌入 HTML · MP4 源片</p>
         <p class="article-shell__meta"><time datetime="2026-05-18">2026-05-18</time> · 本站原創</p>
       </div>
-      <article class="article-shell__body" lang="zh-Hans"><p>這是 aogl.cn 的一�?strong&gt;猴子精靈圖轉�?/strong&gt;個人原創手記：把�?strong&gt;轉頭視頻抽成<strong>雪碧圖（sprite sheet�?/strong&gt;，用 contact sheet �?strong&gt;角度→幀號校�?/strong&gt;（禁止簡單用 <code>angle/360×總幀�?/code&gt; 線性映射），再在瀏覽器裡用<strong>鼠標位置</strong>驅動 <code>background-position</code> 切換幀，並配�?strong&gt;桃子自定義光�?/strong&gt;。利於檢索的詞包括：<em>精靈圖轉頭、CSS 雪碧圖、鼠標跟隨角色、綠幕摳�?WebP</em>�?/p&gt;
-</code></strong></p><h2><strong><code>流程概覽</code></strong></h2><strong><code>
-<p>抽幀 �?製作<strong>校準總表</strong>確認真實朝向 �?建立角度鍵位�?�?打包 <strong>10×12 �?120 �?/strong&gt; �?<code>sprite_hd_120.webp</code> �?在本地瀏覽器驗證上、右、下、左、斜向與正中�?/p&gt;
-</strong></p><figure class="article-embed"><strong>
-  <img src="../../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="猴子轉頭精靈�?�?角度與幀號校�?contact sheet">
-  <figcaption><code>calibration_sheet.jpg</code> �?角度—幀號對照用總表�?/figcaption&gt;
-</figcaption></strong></figure><strong>
+      <article class="article-shell__body" lang="zh-Hans"><p>這是 aogl.cn 的一篇<strong>猴子精靈圖轉頭</strong>個人原創手記：把短<strong>轉頭視頻</strong>抽成<strong>雪碧圖（sprite sheet）</strong>，用 contact sheet 做<strong>角度到幀號校準</strong>（禁止簡單用 <code>angle/360*總幀數</code> 線性映射），再在瀏覽器裡用<strong>鼠標位置</strong>驅動 <code>background-position</code> 切換幀，並配上<strong>桃子自定義光標</strong>。利於檢索的詞包括：<em>精靈圖轉頭、CSS 雪碧圖、鼠標跟隨角色、綠幕摳圖 WebP</em>。</p>
+<h2>流程概覽</h2>
+<p>抽幀，製作<strong>校準總表</strong>確認真實朝向，建立角度鍵位表，打包 <strong>10x12 共 120 幀</strong> 到 <code>sprite_hd_120.webp</code>，在本地瀏覽器驗證上、右、下、左、斜向與正中。</p>
+<figure class="article-embed">
+  <img src="../../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="猴子轉頭精靈圖角度與幀號校準 contact sheet">
+  <figcaption><code>calibration_sheet.jpg</code>：角度與幀號對照用總表。</figcaption>
+</figure>
 <h2>正面參考幀</h2>
-<p>中性「朝鏡頭」單幀導出為 <code>frame_front.webp</code>，用於縮略圖與打包前檢查�?/p&gt;
-</p><figure class="article-embed">
+<p>中性「朝鏡頭」單幀導出為 <code>frame_front.webp</code>，用於縮略圖與打包前檢查。</p>
+<figure class="article-embed">
   <img src="../../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="猴子角色正面參考幀">
-  <figcaption><code>frame_front.webp</code> �?正面姿態參考�?/figcaption&gt;
-</figcaption></figure>
-<h2>在線演示�?20 幀高�?+ 桃子光標</h2>
-</strong></code><strong><p><code>移動鼠標：角色在 <code>sprite_hd_120.webp</code> 上切�?<strong>120 個背景位�?/strong&gt;�?0 �?× 12 行）；桃子圖跟隨指針�?code&gt;pointer-events: none</strong></code><strong> 避免擋住點擊�?/p&gt;
-</strong></p><figure class="article-embed"><strong>
-  <iframe src="../../original/monkey2/gemini-code-1778834915677.html" title="猴子轉頭 �?120 幀精靈圖與桃子光標演�? loading=" lazy"="" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <figcaption>嵌入�?code&gt;original/monkey2/gemini-code-1778834915677.html�?code&gt;sprite_hd_120.webp�?code&gt;cursor.png）�?/figcaption&gt;
-</figcaption></strong></figure><strong>
-</strong><h2><strong>雪碧圖資�?/h2&gt;
-<p>三份 WebP 記錄迭代：標準密度、高清版、最�?<strong>120 �?/strong&gt; 生產用網格�?/p&gt;
-</strong></p><div class="article-gallery"><strong>
-  <img src="../../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子轉頭精靈�?�?標準分辨�?WebP">
-  <img src="../../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子轉頭精靈�?�?高清 WebP">
-  <img src="../../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子轉頭精靈�?�?120 �?10×12 網格 WebP">
-</strong></div><strong>
-<h2>源片靜幀 turn_head_1�?0</h2>
-<p>十張編號 PNG 在打包全網格前抽樣旋轉弧線，便於質檢與圖�?alt 覆蓋�?/p&gt;
-</p><div class="article-gallery">
+  <figcaption><code>frame_front.webp</code>：正面姿態參考。</figcaption>
+</figure>
+<h2>在線演示：120 幀高清 + 桃子光標</h2>
+<p>移動鼠標：角色在 <code>sprite_hd_120.webp</code> 上切換 <strong>120 個背景位置</strong>（10 列 x 12 行）；桃子圖跟隨指針，<code>pointer-events: none</code> 避免擋住點擊。</p>
+<figure class="article-embed">
+  <iframe src="../../original/monkey2/gemini-code-1778834915677.html" title="猴子轉頭 120 幀精靈圖與桃子光標演示" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>嵌入：<code>original/monkey2/gemini-code-1778834915677.html</code>（<code>sprite_hd_120.webp</code>、<code>cursor.png</code>）。</figcaption>
+</figure>
+<h2>雪碧圖資源</h2>
+<p>三份 WebP 記錄迭代：標準密度、高清版、最終 <strong>120 幀</strong> 生產用網格。</p>
+<div class="article-gallery">
+  <img src="../../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子轉頭精靈圖標準分辨率 WebP">
+  <img src="../../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子轉頭精靈圖高清 WebP">
+  <img src="../../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子轉頭精靈圖 120 幀 10x12 網格 WebP">
+</div>
+<h2>源片靜幀 turn_head_1-10</h2>
+<p>十張編號 PNG 在打包全網格前抽樣旋轉弧線，便於質檢與圖庫 alt 覆蓋。</p>
+<div class="article-gallery">
   <img src="../../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="轉頭靜幀 1">
   <img src="../../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="轉頭靜幀 2">
   <img src="../../original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="轉頭靜幀 3">
@@ -112,94 +112,30 @@
   <img src="../../original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="轉頭靜幀 9">
   <img src="../../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="轉頭靜幀 10">
 </div>
-<h2>源視頻（MP4�?/h2&gt;
-<p>兩版導出記錄早期�?refined 轉頭；摳綠前保留主體、避免誤摳白/灰區域�?/p&gt;
-</p><figure class="article-embed">
-  <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="轉頭源視�?v1">
+<h2>源視頻（MP4）</h2>
+<p>兩版導出記錄早期與 refined 轉頭；摳綠前保留主體、避免誤摳白/灰區域。</p>
+<figure class="article-embed">
+  <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="轉頭源視頻 v1">
     <source src="../../original/monkey2/turn_head_v1.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_head_v1.mp4</code></figcaption>
 </figure>
 <figure class="article-embed">
-  <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="轉頭源視�?v2">
+  <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="轉頭源視頻 v2">
     <source src="../../original/monkey2/turn_head_v2.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_head_v2.mp4</code></figcaption>
 </figure>
-</h2></strong></strong><h3><strong><strong>生成式風格錨�?/h3&gt;
-<p>兩張 Gemini 圖與工程資產並列，用於分享預覽與圖像檢索，不替代校準後的精靈圖�?/p&gt;
-</p></strong></strong><div class="article-gallery"><strong><strong>
-  <img src="../../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色錨�?�?光影與造型">
-  <img src="../../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色錨�?�?備選風�?>
+<h3>生成式風格錨點</h3>
+<p>兩張 Gemini 圖與工程資產並列，用於分享預覽與圖像檢索，不替代校準後的精靈圖。</p>
+<div class="article-gallery">
+  <img src="../../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色錨點光影與造型">
+  <img src="../../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色錨點備選風格">
 </div>
 <h3>離線腳本</h3>
-<p><code>gemini-code-*.py</code> �?<code>txt.txt</code> 記錄抽幀與摳像規則。本文固定公開 HTML、圖片與視頻路徑，便�?SEO 與長期引用�?/p></article>
+<p><code>gemini-code-*.py</code> 與 <code>txt.txt</code> 記錄抽幀與摳像規則。本文固定公開 HTML、圖片與視頻路徑，便於 SEO 與長期引用。</p></article>
     </div>
-    <div class=" lang-ja"="">
-      <div class="article-shell__top">
-        <a href="../../index.html#originals">← ホームへ · オリジナル</a>
-      </div>
-      <div class="article-shell__header">
-        <h1>サルスプライト首振り：120フレーム・桃カーソルデモ</h1>
-        <p class="article-shell__sub">sprite_hd_120・角度校正・HTML埋め込み・MP4</p>
-        <p class="article-shell__meta"><time datetime="2026-05-18">2026-05-18</time> · 當サイトオリジナル</p>
-      </div>
-      </strong></strong><article class="article-shell__body" lang="ja"><strong><strong></strong></strong><p><strong><strong>aogl.cn �?strong&gt;サル首振りスプライト</strong>個人メモ：短�?strong&gt;轉頭動畫</strong>から<strong>スプライトシート</strong>を生成し、contact sheet �?strong&gt;角度→フレー�?/strong&gt;を校正（単純�?<code>angle/360×frames</code> 禁止）、マウス�?<code>background-position</code> を切り替え�?strong&gt;桃カーソ�?/strong&gt;付き HTML デモを公開します�?/p&gt;
-</p><h2>パイプライン</h2>
-<figure class="article-embed">
-  <img src="../../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="首振りスプライト校正シー�?>
-  <figcaption><code>calibration_sheet.jpg</code></figcaption>
-</figure>
-<figure class=" article-embed"="">
-  <img src="../../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="正面リファレンス frame_front">
-  <figcaption><code>frame_front.webp</code></figcaption>
-</figure>
-<h2>120フレームデモ</h2>
-<figure class="article-embed">
-  <iframe src="../../original/monkey2/gemini-code-1778834915677.html" title="120フレーム首振り・桃カーソ�? loading=" lazy"="" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <figcaption><code>sprite_hd_120.webp</code>�?0×12�?/figcaption&gt;
-</figcaption></figure>
-<h2>スプライ�?WebP</h2>
-<div class="article-gallery">
-  <img src="../../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="スプライト標�?>
-  <img src=" ..="" original="" monkey2="" sprite_hd.webp"="">
-  <img src="../../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="スプライ�?20フレーム">
-</div>
-<h2>turn_head_1�?0</h2>
-<div class="article-gallery">
-  <img src="../../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../../original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../../original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../../original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../../original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../../original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../../original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../../original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?">
-  <img src="../../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="首振�?0">
-</div>
-<h2>MP4</h2>
-<figure class="article-embed">
-  <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="首振りv1">
-    <source src="../../original/monkey2/turn_head_v1.mp4" type="video/mp4">
-  </video>
-  <figcaption><code>turn_head_v1.mp4</code></figcaption>
-</figure>
-<figure class="article-embed">
-  <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="首振りv2">
-    <source src="../../original/monkey2/turn_head_v2.mp4" type="video/mp4">
-  </video>
-  <figcaption><code>turn_head_v2.mp4</code></figcaption>
-</figure>
-<h3>生成アンカー</h3>
-<div class="article-gallery">
-  <img src="../../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="生成アンカー1">
-  <img src="../../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="生成アンカー2">
-</div>
-<p><code>gemini-code-*.py</code> �?<code>txt.txt</code> に抽幀・クロマルールを記録�?/p&gt;</p></article>
-    </div>
-    <strong>
-  </strong></h3></h2></strong></strong></article></div></main><strong><strong>
+  </main>
   <footer class="site-footer">
     <div class="wrap footer-wrap">
       <div class="footer-top">
@@ -219,4 +155,4 @@
     </div>
   </footer>
   <script src="../../js/hub-common.js" defer=""></script>
-</strong></strong></body></html>
+</body></html>
