@@ -1,0 +1,78 @@
+﻿<p>这是 aogl.cn 的一�?strong>猴子精灵图转�?/strong>个人原创手记：把�?strong>转头视频</strong>抽成<strong>雪碧图（sprite sheet�?/strong>，用 contact sheet �?strong>角度→帧号校�?/strong>（禁止简单用 <code>angle/360×总帧�?/code> 线性映射），再在浏览器里用<strong>鼠标位置</strong>驱动 <code>background-position</code> 切换帧，并配�?strong>桃子自定义光�?/strong>。利于检索的词包括：<em>精灵图转头、CSS 雪碧图、鼠标跟随角色、绿幕抠�?WebP</em>�?/p>
+
+<h2>流程概览</h2>
+<p>抽帧 �?制作<strong>校准总表</strong>确认真实朝向 �?建立角度键位�?�?打包 <strong>10×12 �?120 �?/strong> �?<code>sprite_hd_120.webp</code> �?在本地浏览器验证上、右、下、左、斜向与正中�?/p>
+
+<figure class="article-embed">
+  <img src="../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="猴子转头精灵�?�?角度与帧号校�?contact sheet">
+  <figcaption><code>calibration_sheet.jpg</code> �?角度—帧号对照用总表�?/figcaption>
+</figure>
+
+<h2>正面参考帧</h2>
+<p>中性「朝镜头」单帧导出为 <code>frame_front.webp</code>，用于缩略图与打包前检查�?/p>
+
+<figure class="article-embed">
+  <img src="../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="猴子角色正面参考帧">
+  <figcaption><code>frame_front.webp</code> �?正面姿态参考�?/figcaption>
+</figure>
+
+<h2>在线演示�?20 帧高�?+ 桃子光标</h2>
+<p>移动鼠标：角色在 <code>sprite_hd_120.webp</code> 上切�?<strong>120 个背景位�?/strong>�?0 �?× 12 行）；桃子图跟随指针�?code>pointer-events: none</code> 避免挡住点击�?/p>
+
+<figure class="article-embed">
+  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="猴子转头 �?120 帧精灵图与桃子光标演�? loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>嵌入�?code>original/monkey2/gemini-code-1778834915677.html</code>�?code>sprite_hd_120.webp</code>�?code>cursor.png</code>）�?/figcaption>
+</figure>
+
+<h2>雪碧图资�?/h2>
+<p>三份 WebP 记录迭代：标准密度、高清版、最�?<strong>120 �?/strong> 生产用网格�?/p>
+
+<div class="article-gallery">
+  <img src="../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵�?�?标准分辨�?WebP">
+  <img src="../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵�?�?高清 WebP">
+  <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵�?�?120 �?10×12 网格 WebP">
+</div>
+
+<h2>源片静帧 turn_head_1�?0</h2>
+<p>十张编号 PNG 在打包全网格前抽样旋转弧线，便于质检与图�?alt 覆盖�?/p>
+
+<div class="article-gallery">
+  <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 1">
+  <img src="../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 2">
+  <img src="../original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 3">
+  <img src="../original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 4">
+  <img src="../original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 5">
+  <img src="../original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 6">
+  <img src="../original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 7">
+  <img src="../original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 8">
+  <img src="../original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 9">
+  <img src="../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 10">
+</div>
+
+<h2>源视频（MP4�?/h2>
+<p>两版导出记录早期�?refined 转头；抠绿前保留主体、避免误抠白/灰区域�?/p>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="转头源视�?v1">
+    <source src="../original/monkey2/turn_head_v1.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>turn_head_v1.mp4</code></figcaption>
+</figure>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="转头源视�?v2">
+    <source src="../original/monkey2/turn_head_v2.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>turn_head_v2.mp4</code></figcaption>
+</figure>
+
+<h3>生成式风格锚�?/h3>
+<p>两张 Gemini 图与工程资产并列，用于分享预览与图像检索，不替代校准后的精灵图�?/p>
+
+<div class="article-gallery">
+  <img src="../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚�?�?光影与造型">
+  <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚�?�?备选风�?>
+</div>
+
+<h3>离线脚本</h3>
+<p><code>gemini-code-*.py</code> �?<code>txt.txt</code> 记录抽帧与抠像规则。本文固定公开 HTML、图片与视频路径，便�?SEO 与长期引用�?/p>

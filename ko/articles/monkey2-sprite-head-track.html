@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="ko" data-title-ko="원숭이 스프라이트 머리 추적 — 120프레임·복숭아 커서 — aogl.cn" data-desc-ko="크로마키 영상에서 120프레임(10×12) 머리 회전 스프라이트 생성, 각도-프레임 보정 후 마우스 추적. HD 시트·보정판·복숭아 커서·HTML·MP4." data-aogl-lang="ko" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="크로마키 영상에서 120프레임(10×12) 머리 회전 스프라이트 생성, 각도-프레임 보정 후 마우스 추적. HD 시트·보정판·복숭아 커서·HTML·MP4.">
+  <title>원숭이 스프라이트 머리 추적 — 120프레임·복숭아 커서 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/ko/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/monkey2-sprite-head-track.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/ko/articles/monkey2-sprite-head-track.html">
+  <meta property="og:title" content="원숭이 스프라이트 머리 추적 — 120프레임·복숭아 커서 — aogl.cn">
+  <meta property="og:description" content="크로마키 영상에서 120프레임(10×12) 머리 회전 스프라이트 생성, 각도-프레임 보정 후 마우스 추적. HD 시트·보정판·복숭아 커서·HTML·MP4.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="https://aogl.cn/original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png">
+  <meta property="og:image:alt" content="Monkey sprite head tracking — 120-frame sheet and mouse-driven demo (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"sprite_hd_120 · angle calibration · embedded HTML · source MP4","alternativeHeadline":"猴子精灵图转头：120 帧雪碧图与桃子光标互动","datePublished":"2026-05-18","dateModified":"2026-05-18","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ko/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/monkey2-sprite-head-track.html"},"url":"https://aogl.cn/en/articles/monkey2-sprite-head-track.html","inLanguage":"ko","description":"Original aogl.cn notes: extract a 120-frame monkey head-turn sprite (10×12 grid) from keyed video, calibrate angle-to-frame (not naive linear mapping), and drive frames with the mouse—plus HD sprite sheets, calibration board, front frame, peach cursor, embeddable HTML demo, stills, and MP4 sources.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-ko">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-ko">
+          <li><a href="../../index.html#tools-directory">AI 최전선</a></li>
+          <li><a href="../../portal.html">주요 사이트</a></li>
+          <li><a href="../../brands.html">브랜드</a></li>
+          <li><a href="../../shopping.html">쇼핑</a></li>
+          <li><a href="../../life.html">라이프</a></li>
+          <li><a href="../../social.html">소셜</a></li>
+          <li><a href="../../tech.html">테크</a></li>
+          <li><a href="../../games.html">게임</a></li>
+          <li><a href="../../tools.html">실용 도구</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    </main><strong><strong>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../index.html#intro" class="footer-legal-link lang-ko">소개</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</strong></strong></body></html>

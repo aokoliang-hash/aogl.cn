@@ -1,0 +1,1 @@
+请帮我实现一个静态HTML:用提供的视频生成sprite.webp，让角色根据鼠标方向转头。必须先抽帧生成contact sheet并查看实际朝向，然后建立ANGLE_KEYS角度到帧号校准表，禁止只用angle/360*frames的线性映射。绿幕/纯色背景要自动抠成透明，保住主体，不要误抠白色/灰色区域。最终生成index.html、sprite.webp、frame_front.webp，并用本地浏览器验证上、右、下、左、左上、左下、中心都正常。

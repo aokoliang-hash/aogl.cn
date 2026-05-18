@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="en" data-title-en="Monkey sprite head tracking — 120-frame sheet &amp; peach cursor demo — aogl.cn" data-desc-en="Original aogl.cn notes: extract a 120-frame monkey head-turn sprite (10×12 grid) from keyed video, calibrate angle-to-frame (not naive linear mapping), and drive frames with the mouse—plus HD sprite sheets, calibration board, front frame, peach cursor, embeddable HTML demo, stills, and MP4 sources." data-aogl-lang="en" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Original aogl.cn notes: extract a 120-frame monkey head-turn sprite (10×12 grid) from keyed video, calibrate angle-to-frame (not naive linear mapping), and drive frames with the mouse—plus HD sprite sheets, calibration board, front frame, peach cursor, embeddable HTML demo, stills, and MP4 sources.">
+  <title>Monkey sprite head tracking — 120-frame sheet &amp; peach cursor demo — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/monkey2-sprite-head-track.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/monkey2-sprite-head-track.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/monkey2-sprite-head-track.html">
+  <meta property="og:title" content="Monkey sprite head tracking — 120-frame sheet &amp; peach cursor demo — aogl.cn">
+  <meta property="og:description" content="Original aogl.cn notes: extract a 120-frame monkey head-turn sprite (10×12 grid) from keyed video, calibrate angle-to-frame (not naive linear mapping), and drive frames with the mouse—plus HD sprite sheets, calibration board, front frame, peach cursor, embeddable HTML demo, stills, and MP4 sources.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png">
+  <meta property="og:image:alt" content="Monkey sprite head tracking — 120-frame sheet and mouse-driven demo (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"sprite_hd_120 · angle calibration · embedded HTML · source MP4","alternativeHeadline":"猴子精灵图转头：120 帧雪碧图与桃子光标互动","datePublished":"2026-05-18","dateModified":"2026-05-18","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/monkey2-sprite-head-track.html"},"url":"https://aogl.cn/en/articles/monkey2-sprite-head-track.html","inLanguage":"en","description":"Original aogl.cn notes: extract a 120-frame monkey head-turn sprite (10×12 grid) from keyed video, calibrate angle-to-frame (not naive linear mapping), and drive frames with the mouse—plus HD sprite sheets, calibration board, front frame, peach cursor, embeddable HTML demo, stills, and MP4 sources.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li><a href="../../index.html#tools-directory">AI frontier</a></li>
+          <li><a href="../../portal.html">Top sites</a></li>
+          <li><a href="../../brands.html">Brands</a></li>
+          <li><a href="../../shopping.html">Shopping</a></li>
+          <li><a href="../../life.html">Life</a></li>
+          <li><a href="../../social.html">Social</a></li>
+          <li><a href="../../tech.html">Tech</a></li>
+          <li><a href="../../games.html">Games</a></li>
+          <li><a href="../../tools.html">Utilities</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Monkey sprite head tracking — 120-frame sheet &amp; peach cursor demo</h1>
+        <p class="article-shell__sub">sprite_hd_120 · angle calibration · embedded HTML · source MP4</p>
+        <p class="article-shell__meta"><time datetime="2026-05-18">2026-05-18</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This <strong>monkey sprite head-tracking</strong> page documents a personal pipeline on aogl.cn: turn a short <strong>head-turn video</strong> into a <strong>sprite sheet</strong>, calibrate <strong>angle �?frame index</strong> (not a naive <code>angle/360×frames</code> linear map), and ship a <strong>mouse-driven HTML demo</strong> with a custom <strong>peach cursor</strong>. Keywords that match real searches include <em>sprite sheet head turn, CSS background-position animation, interactive character follow mouse, chroma key to WebP</em>.</p>
+<h2>Pipeline in one sentence</h2>
+<p>Extract frames �?build a <strong>contact / calibration sheet</strong> to read true facing directions �?map compass angles to frame numbers �?pack a <strong>10×12 grid (120 frames)</strong> into <code>sprite_hd_120.webp</code> �?validate up / right / down / left / diagonals / center in the browser.</p>
+<figure class="article-embed">
+  <img src="../../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Angle-to-frame calibration contact sheet for monkey head-turn sprite">
+  <figcaption><code>calibration_sheet.jpg</code> �?contact sheet used to build the angle→frame lookup.</figcaption>
+</figure>
+<h2>Front reference frame</h2>
+<p>The neutral “camera-facing�?still is exported as <code>frame_front.webp</code> for thumbnails and as a sanity check before packing the grid.</p>
+<figure class="article-embed">
+  <img src="../../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Monkey character front-facing reference frame">
+  <figcaption><code>frame_front.webp</code> �?front pose reference.</figcaption>
+</figure>
+<h2>Live demo: 120-frame HD + peach cursor</h2>
+<p>Move the mouse around the character: the viewer steps through <strong>120 background positions</strong> on <code>sprite_hd_120.webp</code> (10 columns × 12 rows). A peach image follows the pointer with <code>pointer-events: none</code> so clicks still reach the page.</p>
+<figure class="article-embed">
+  <iframe src="../../original/monkey2/gemini-code-1778834915677.html" title="Monkey head tracking �?120-frame sprite demo with peach cursor" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Embedded: <code>original/monkey2/gemini-code-1778834915677.html</code> �?uses <code>sprite_hd_120.webp</code> and <code>cursor.png</code>.</figcaption>
+</figure>
+<h2>Sprite sheet assets</h2>
+<p>Three WebP masters document the iteration: standard density, HD, and the final <strong>120-frame</strong> grid used in production.</p>
+<div class="article-gallery">
+  <img src="../../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet �?standard resolution WebP">
+  <img src="../../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet �?HD WebP">
+  <img src="../../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="Monkey head-turn sprite sheet �?120 frames 10 by 12 grid WebP">
+</div>
+<h2>Source stills (turn_head_1�?0)</h2>
+<p>Ten numbered PNGs sample the rotation arc before packing the full grid—useful for QA and for alt-text-rich galleries.</p>
+<div class="article-gallery">
+  <img src="../../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 1">
+  <img src="../../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 2">
+  <img src="../../original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 3">
+  <img src="../../original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 4">
+  <img src="../../original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 5">
+  <img src="../../original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 6">
+  <img src="../../original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 7">
+  <img src="../../original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 8">
+  <img src="../../original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 9">
+  <img src="../../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="Head turn still 10">
+</div>
+<h2>Source video (MP4)</h2>
+<p>Two exports document early and refined head-turn passes; chroma was keyed to transparency before sprite packing.</p>
+<figure class="article-embed">
+  <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="Head turn source video version 1">
+    <source src="../../original/monkey2/turn_head_v1.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>turn_head_v1.mp4</code></figcaption>
+</figure>
+<figure class="article-embed">
+  <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="Head turn source video version 2">
+    <source src="../../original/monkey2/turn_head_v2.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>turn_head_v2.mp4</code></figcaption>
+</figure>
+<h3>Generative style anchors</h3>
+<p>Two Gemini exports in <code>original/monkey2/</code> sit beside the technical assets for social previews and image search—not replacements for the calibrated sprite.</p>
+<div class="article-gallery">
+  <img src="../../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative monkey character anchor �?lighting and costume">
+  <img src="../../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="Generative monkey character anchor �?alternate style pass">
+</div>
+<h3>Offline tooling</h3>
+<p>Python helpers (<code>gemini-code-1778834954429.py</code>, <code>gemini-code-1778835935559.py</code>, <code>gemini-code-1778835961926.py</code>) and notes in <code>txt.txt</code> record the extraction and chroma rules (preserve subject, avoid eating white/grey). This article keeps the public-facing HTML, images, and video paths stable for SEO.</p></article>
+    </div>
+    </main><strong><strong>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../index.html#intro" class="footer-legal-link lang-en">About</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</strong></strong></body></html>

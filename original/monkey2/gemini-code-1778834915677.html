@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>桃子追踪-120帧高清版</title>
+    <style>
+        body { 
+            margin: 0; 
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            background: #fff; 
+            overflow: hidden;
+            /* 隐藏原始鼠标指针 */
+            cursor: none; 
+        }
+
+        .box { 
+            width: 720px; 
+            height: 1280px; 
+            position: relative; 
+            overflow: hidden;
+        }
+
+        #viewer {
+            width: 100%; 
+            height: 100%;
+            background-image: url('sprite_hd_120.webp');
+            background-repeat: no-repeat;
+            background-size: 1000% 1200%; /* 10列 12行 */
+            background-position: 0% 0%;
+            transition: background-position 0;
+            will-change: background-position;
+        }
+
+        /* 桃子鼠标样式 */
+        #peach-cursor {
+            position: fixed;
+            width: 150px;  /* 桃子大小 */
+            height: 150px;
+            background-image: url('cursor.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            pointer-events: none; /* 极其重要：让鼠标点击穿透桃子，否则点不到东西 */
+            z-index: 9999;
+            /* 居中偏移：如果图片大小是50，偏移-25能让桃子中心对准鼠标尖 */
+            transform: translate(-25px, -25px); 
+            will-change: top, left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="peach-cursor"></div>
+
+    <div class="box">
+        <div id="viewer"></div>
+    </div>
+
+    <script>
+        const viewer = document.getElementById('viewer');
+        const peach = document.getElementById('peach-cursor');
+        
+        const COLS = 10;
+        const ROWS = 12;
+        const TOTAL_FRAMES = 120;
+
+        window.addEventListener('mousemove', (e) => {
+            // 1. 实现桃子跟随鼠标
+            peach.style.left = e.clientX + 'px';
+            peach.style.top = e.clientY + 'px';
+
+            // 2. 猴子转头逻辑
+            const rect = viewer.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+
+            const dx = e.clientX - centerX;
+            const dy = e.clientY - centerY;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist > 30) {
+                // 这里的 -dy 和 -dx 已经为你修正了上下左右反向的问题
+                let angle = Math.atan2(-dy, -dx) * 180 / Math.PI; 
+                let normalizedAngle = (angle + 360) % 360;
+
+                let frameIdx = Math.round((normalizedAngle / 360) * (TOTAL_FRAMES - 1));
+                frameIdx = Math.max(0, Math.min(TOTAL_FRAMES - 1, frameIdx));
+
+                const xPercent = (frameIdx % COLS) / (COLS - 1) * 100;
+                const yPercent = Math.floor(frameIdx / COLS) / (ROWS - 1) * 100;
+
+                viewer.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
+            }
+        });
+
+        // 鼠标离开窗口隐藏桃子
+        document.addEventListener('mouseleave', () => {
+            peach.style.display = 'none';
+        });
+        document.addEventListener('mouseenter', () => {
+            peach.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
