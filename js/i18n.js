@@ -40,11 +40,16 @@
    */
   var FULL_UI_LOCALES = ["en", "zh", "zht", "ja", "ko", "fr", "ru", "ar"];
 
-  /** URL: /zh/… → 繁體；/en/、/ja/… → 对应语种；根路径为简体（见 build-seo-locale-pages）。 */
+  /**
+   * URL → locale for built single-language pages (see build-seo-locale-pages).
+   * /zh/… → 繁體；/en/、/ja/… → 对应语种；根路径及 /tools.html、/articles/… 等 → 简体 zh。
+   * Must not return null on root: localStorage from a prior /en/ visit would hide all .lang-zh markup.
+   */
   function localeFromPath() {
     if (/^\/zh(?:\/|$)/.test(location.pathname)) return "zht";
     var m = location.pathname.match(/^\/(en|ja|ko|fr|ru|ar)(?:\/|$)/);
-    return m ? m[1] : null;
+    if (m) return m[1];
+    return "zh";
   }
 
   function currentHtmlFilename() {
