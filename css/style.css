@@ -547,8 +547,11 @@ footer.site-footer {
   margin-bottom: 2rem;
   scroll-margin-top: 1rem;
 }
-.site-originals .hub-hotmix-cards {
+.site-originals .hub-carousel-wrap {
   margin-top: 0.35rem;
+}
+.site-originals .hub-hotmix-cards {
+  margin-top: 0;
 }
 .site-originals .originals-card-excerpt {
   font-size: 0.74rem;

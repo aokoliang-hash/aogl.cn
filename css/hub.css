@@ -304,6 +304,78 @@
   line-height: 1.35;
   flex: 1;
 }
+/* Carousel: full-width strip + overlay prev/next (home originals) */
+.hub-carousel-wrap {
+  position: relative;
+  width: 100%;
+  margin-top: 0.35rem;
+}
+.hub-carousel-wrap .hub-hotmix-cards--carousel {
+  width: 100%;
+  margin-top: 0;
+}
+.hub-carousel-nav {
+  position: absolute;
+  top: 40%;
+  z-index: 4;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.88);
+  color: #e2e8f0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+  transform: translateY(-50%);
+  pointer-events: auto;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    opacity 0.15s ease,
+    transform 0.12s ease;
+}
+.hub-carousel-nav--prev {
+  left: 0.4rem;
+}
+.hub-carousel-nav--next {
+  right: 0.4rem;
+}
+.hub-carousel-nav:hover:not(.is-at-edge) {
+  background: rgba(30, 41, 59, 0.96);
+  border-color: rgba(186, 230, 253, 0.5);
+  color: #f8fafc;
+}
+.hub-carousel-nav:active:not(.is-at-edge) {
+  transform: translateY(-50%) scale(0.94);
+}
+.hub-carousel-nav.is-at-edge {
+  opacity: 0.28;
+  cursor: default;
+  pointer-events: none;
+  box-shadow: none;
+}
+.hub-carousel-nav-icon {
+  display: block;
+  pointer-events: none;
+}
+@media (max-width: 420px) {
+  .hub-carousel-nav {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+  .hub-carousel-nav--prev {
+    left: 0.25rem;
+  }
+  .hub-carousel-nav--next {
+    right: 0.25rem;
+  }
+}
+
 .hub-hotmix-card-meta {
   font-size: 0.72rem;
   color: var(--muted);

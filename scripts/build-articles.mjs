@@ -239,8 +239,24 @@ function loadArticles() {
     }
     list.push(raw);
   }
-  list.sort((a, b) => String(b.datePublished || "").localeCompare(String(a.datePublished || "")));
+  list.sort(compareArticlesForIndex);
   return list;
+}
+
+/** Default og image — hub workflow notes; deprioritize on home carousel vs demos with real hero art. */
+function isDefaultHero(article) {
+  const h = (article.heroImage || "").trim();
+  return !h || h === "og-default.png";
+}
+
+/** Newest first; same day → custom hero before generic; then slug for stable order. */
+function compareArticlesForIndex(a, b) {
+  const byDate = String(b.datePublished || "").localeCompare(String(a.datePublished || ""));
+  if (byDate !== 0) return byDate;
+  const aGeneric = isDefaultHero(a) ? 1 : 0;
+  const bGeneric = isDefaultHero(b) ? 1 : 0;
+  if (aGeneric !== bGeneric) return aGeneric - bGeneric;
+  return String(a.slug).localeCompare(String(b.slug));
 }
 
 function buildJsonLd(article, titleEn, descEn) {
@@ -609,15 +625,28 @@ function buildOriginalsCards(slice) {
     .join("\n");
 }
 
+const CAROUSEL_CHEVRON_L =
+  '<svg class="hub-carousel-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>';
+const CAROUSEL_CHEVRON_R =
+  '<svg class="hub-carousel-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>';
+
 function originalsCarouselUl(slice) {
   const items = buildOriginalsCards(slice);
-  return `        <ul class="hub-hotmix-cards hub-hotmix-cards--carousel site-originals-hotmix" role="list" aria-label="${escAttr(ORIGINALS_ARIA.en)}">
+  return `        <div class="hub-carousel-wrap site-originals-carousel-wrap">
+        <ul class="hub-hotmix-cards hub-hotmix-cards--carousel site-originals-hotmix" role="list" aria-label="${escAttr(ORIGINALS_ARIA.en)}">
 ${items}
-        </ul>`;
+        </ul>
+          <button type="button" class="hub-carousel-nav hub-carousel-nav--prev" data-carousel-dir="prev">
+            ${CAROUSEL_CHEVRON_L}
+          </button>
+          <button type="button" class="hub-carousel-nav hub-carousel-nav--next" data-carousel-dir="next">
+            ${CAROUSEL_CHEVRON_R}
+          </button>
+        </div>`;
 }
 
-function buildIndexBlock(articles, max = 5) {
-  const slice = articles.slice(0, max);
+function buildIndexBlock(articles) {
+  const slice = articles;
   if (slice.length === 0) {
     return `${INDEX_START}
       <section id="originals" class="site-originals" aria-labelledby="originals-title">
