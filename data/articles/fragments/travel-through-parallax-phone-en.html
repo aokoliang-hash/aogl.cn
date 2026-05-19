@@ -1,0 +1,50 @@
+<p>This page documents an original <strong>front-end parallax study</strong> I keep under <code>original/travel-through/</code> on aogl.cn. The goal is a compact “hero” block that feels like a phone mockup with a character stepping <em>through</em> the glass—achieved with <strong>three stacked PNG layers</strong> and <strong>mouse-driven translation</strong>, not WebGL or a game engine. Everything runs in the DOM: <code>transform-style: preserve-3d</code> on a scene root, per-layer <code>data-depth</code> multipliers, and a small <code>requestAnimationFrame</code> loop that eases pointer input so motion feels weighted rather than jittery.</p>
+
+<h2>Try the live scene</h2>
+<p>Move your pointer inside the frame below (desktop). Each layer shifts by a different amount; a custom dot cursor follows the pointer while you are inside the box. On touch-only devices the scene still renders, but parallax is intentionally mouse-first for this prototype.</p>
+
+<figure class="article-embed">
+  <iframe src="../original/travel-through/parallax_phone_scene.html" title="Travel-through parallax phone scene — live demo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <figcaption>Embedded demo: <code>parallax_phone_scene.html</code> — three PNG layers, smoothed mouse parallax.</figcaption>
+</figure>
+
+<h2>Layer stack (back to front)</h2>
+<p>I export art as separate PNGs so depth can be tuned in code without re-painting. The depth values below are the <code>data-depth</code> attributes in the demo; larger numbers move more for the same pointer delta.</p>
+
+<figure class="article-embed">
+  <img src="../original/travel-through/Mobile-phone-background.png" width="1200" height="800" loading="lazy" decoding="async" alt="Phone chassis and environment — rearmost parallax layer">
+  <figcaption><strong>Layer 1 · depth 0.15</strong> — <code>Mobile-phone-background.png</code>: full-frame phone / environment plate (moves subtly).</figcaption>
+</figure>
+
+<figure class="article-embed">
+  <img src="../original/travel-through/Glass-cover.png" width="1200" height="800" loading="lazy" decoding="async" alt="Glass cover overlay with screen blend — mid parallax layer">
+  <figcaption><strong>Layer 2 · depth 0.38</strong> — <code>Glass-cover.png</code>: glass sheet using <code>mix-blend-mode: screen</code> so highlights add on top of the back plate.</figcaption>
+</figure>
+
+<figure class="article-embed">
+  <img src="../original/travel-through/Penetrating-characters.png" width="960" height="900" loading="lazy" decoding="async" alt="Foreground character overlapping the phone — strongest parallax layer">
+  <figcaption><strong>Layer 3 · depth 0.70</strong> — <code>Penetrating-characters.png</code>: character anchored to the bottom center (~80% width) so the “break the glass” read stays consistent.</figcaption>
+</figure>
+
+<h2>How the motion is calculated</h2>
+<p>On <code>mousemove</code>, the script normalizes pointer position to roughly −1…1 relative to the container center. Each frame it lerps the current offset toward the target (<code>cx += (mx - cx) * 0.07</code>) and applies <code>translate(tx, ty)</code> where <code>tx = cx * amplitude * depth</code>. With <code>amplitude = 28</code> pixels at the container scale, the foreground character can travel about twice as far as the background plate—enough for a clear depth read without sliding off-canvas.</p>
+
+<ul>
+  <li><strong>No scroll hijacking</strong> — only layers inside the demo box react; the article page scrolls normally.</li>
+  <li><strong>Pointer-events: none</strong> on images so hit-testing stays on the container.</li>
+  <li><strong>Custom cursor hidden on leave</strong> — avoids leaving a stray dot when the pointer exits.</li>
+</ul>
+
+<h2>Source assets in the folder</h2>
+<p>Besides the three layers used in the embed, <code>original/travel-through/</code> also keeps alternate plates (<code>phone.png</code>, <code>glass.png</code>, <code>person-bak.png</code>, <code>ren1.png</code>) and a generative mood frame (<code>Gemini_Generated_Image_khh2pdkhh2pdkhh2.png</code>) from look-dev. I treat the repo folder as a small archive: filenames stay stable so this article, the iframe, and future edits all reference the same paths.</p>
+
+<div class="article-gallery">
+  <img src="../original/travel-through/Gemini_Generated_Image_khh2pdkhh2pdkhh2.png" width="512" height="288" loading="lazy" decoding="async" alt="Generative look-dev frame for travel-through phone scene">
+  <img src="../original/travel-through/ren1.png" width="512" height="288" loading="lazy" decoding="async" alt="Alternate character render — travel-through look development">
+</div>
+
+<h2>Why publish it as an article</h2>
+<p>Social posts lose context; a canonical URL with headings, alt text, and an embed gives crawlers and humans a single place to understand <em>CSS parallax</em>, <em>layered PNG UI</em>, and <em>mouse smoothing</em>. If you reuse the pattern, keep substantive copy outside the iframe (as here), lazy-load the embed, and document depth values so the next edit does not become guesswork.</p>
+
+<h3>Limits of this prototype</h3>
+<p>There is no reduced-motion fallback yet—consider <code>prefers-reduced-motion: reduce</code> to freeze layers. The scene is also not responsive-tested for very narrow viewports; for production you would likely swap to a static poster image under a breakpoint. This page records what shipped today, not a finished product microsite.</p>

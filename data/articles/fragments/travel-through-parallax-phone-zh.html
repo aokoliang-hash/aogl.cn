@@ -1,0 +1,50 @@
+<p>本文记录本站存放在 <code>original/travel-through/</code> 下的一个<strong>原创前端视差小实验</strong>：用<strong>三张分层 PNG</strong>（手机底图、玻璃盖板、前景角色）叠成「角色穿透屏幕」的读法，再通过<strong>鼠标位移</strong>驱动各层以不同幅度平移——全程在 DOM 内完成，使用 <code>transform-style: preserve-3d</code>、每层 <code>data-depth</code> 系数，以及 <code>requestAnimationFrame</code> 对指针输入做缓动，<strong>不依赖 WebGL</strong> 或游戏引擎。</p>
+
+<h2>在线体验</h2>
+<p>在下方嵌入框内移动鼠标（建议桌面端）。三层位移幅度不同；指针进入区域时会显示跟随的小白点光标，离开区域后隐藏。触屏设备仍可看到静态合成，但本原型以鼠标交互为主。</p>
+
+<figure class="article-embed">
+  <iframe src="../original/travel-through/parallax_phone_scene.html" title="穿越视差手机场景 — 在线演示" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <figcaption>嵌入演示：<code>parallax_phone_scene.html</code> — 三层 PNG + 平滑鼠标视差。</figcaption>
+</figure>
+
+<h2>分层结构（由后到前）</h2>
+<p>美术拆成独立 PNG，便于在代码里改深度而无需重绘整张合成图。下列深度对应演示中的 <code>data-depth</code>；数值越大，同样鼠标偏移下移动越远。</p>
+
+<figure class="article-embed">
+  <img src="../original/travel-through/Mobile-phone-background.png" width="1200" height="800" loading="lazy" decoding="async" alt="手机机身与环境底图 — 最后景视差层">
+  <figcaption><strong>第 1 层 · depth 0.15</strong> — <code>Mobile-phone-background.png</code>：全幅手机/环境底板（位移最 subtle）。</figcaption>
+</figure>
+
+<figure class="article-embed">
+  <img src="../original/travel-through/Glass-cover.png" width="1200" height="800" loading="lazy" decoding="async" alt="玻璃盖板叠加层 — 中层视差">
+  <figcaption><strong>第 2 层 · depth 0.38</strong> — <code>Glass-cover.png</code>：玻璃层使用 <code>mix-blend-mode: screen</code>，高光叠在底图上。</figcaption>
+</figure>
+
+<figure class="article-embed">
+  <img src="../original/travel-through/Penetrating-characters.png" width="960" height="900" loading="lazy" decoding="async" alt="前景穿透角色 — 最强视差层">
+  <figcaption><strong>第 3 层 · depth 0.70</strong> — <code>Penetrating-characters.png</code>：角色约 80% 宽、底对齐，保持「破屏而出」构图。</figcaption>
+</figure>
+
+<h2>运动怎么算</h2>
+<p><code>mousemove</code> 时将指针相对容器中心归一化到约 −1…1。每帧用 <code>cx += (mx - cx) * 0.07</code> 向目标缓动，再对每层执行 <code>translate(tx, ty)</code>，其中 <code>tx = cx * amplitude * depth</code>。在 <code>amplitude = 28</code> 像素量级下，前景大约可比后景多移动一倍左右，层次清晰又不易滑出画框。</p>
+
+<ul>
+  <li><strong>不劫持页面滚动</strong> — 仅演示框内图层响应，正文照常滚动。</li>
+  <li>图片设 <strong>pointer-events: none</strong>，事件落在容器上。</li>
+  <li>指针离开容器时<strong>隐藏自定义光标</strong>，避免残留圆点。</li>
+</ul>
+
+<h2>文件夹里的其它素材</h2>
+<p>除嵌入用的三层外，<code>original/travel-through/</code> 还保留备用板（<code>phone.png</code>、<code>glass.png</code>、<code>person-bak.png</code>、<code>ren1.png</code>）以及一张生成式氛围图（<code>Gemini_Generated_Image_khh2pdkhh2pdkhh2.png</code>）。文件名固定，方便本文、iframe 与后续修改共用路径。</p>
+
+<div class="article-gallery">
+  <img src="../original/travel-through/Gemini_Generated_Image_khh2pdkhh2pdkhh2.png" width="512" height="288" loading="lazy" decoding="async" alt="穿越视差场景生成式氛围稿">
+  <img src="../original/travel-through/ren1.png" width="512" height="288" loading="lazy" decoding="async" alt="角色备用渲染 — 造型开发">
+</div>
+
+<h2>为什么写成独立文章</h2>
+<p>社交平台难以保留制作过程；用带标题、alt 与嵌入的<strong>稳定 URL</strong>，便于搜索与引用「CSS 视差」「分层 PNG UI」「鼠标缓动」等主题。若你复用此模式，请在 iframe 外保留足够正文（如下），并对嵌入使用 <code>loading="lazy"</code>，同时记录 depth 数值，避免下次改版靠猜。</p>
+
+<h3>原型局限</h3>
+<p>尚未做 <code>prefers-reduced-motion</code> 降级；生产环境建议在「减少动态」时冻结图层。极窄视口也未专门适配，上线时可能在窄屏改为静态海报。本文记录的是当前实现，而非成品级营销微站。</p>

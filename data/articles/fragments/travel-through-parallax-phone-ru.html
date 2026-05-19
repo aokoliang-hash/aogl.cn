@@ -1,0 +1,16 @@
+<p>Эта страница описывает <strong>оригинальный параллакс-эксперимент</strong> в <code>original/travel-through/</code>: <strong>три PNG-слоя</strong> (корпус телефона, стекло, персонаж спереди) сдвигаются на разную величину при движении мыши. Без WebGL — только CSS-<code>transform</code> и сглаживание в <code>requestAnimationFrame</code>.</p>
+
+<h2>Живая демонстрация</h2>
+<figure class="article-embed">
+  <iframe src="../original/travel-through/parallax_phone_scene.html" title="Параллакс travel-through — сцена с телефоном" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <figcaption><code>parallax_phone_scene.html</code> — три слоя, сглаженный параллакс мыши.</figcaption>
+</figure>
+
+<h2>Слои (сзади вперёд)</h2>
+<ul>
+  <li><strong>0.15</strong> — <code>Mobile-phone-background.png</code></li>
+  <li><strong>0.38</strong> — <code>Glass-cover.png</code> (<code>mix-blend-mode: screen</code>)</li>
+  <li><strong>0.70</strong> — <code>Penetrating-characters.png</code></li>
+</ul>
+
+<p>Координаты указателя нормализуются; <code>cx += (mx - cx) * 0.07</code>, <code>amplitude = 28</code> px. Текст вокруг iframe помогает поисковикам понять тему: <em>CSS-параллакс</em>, <em>слои PNG</em>.</p>

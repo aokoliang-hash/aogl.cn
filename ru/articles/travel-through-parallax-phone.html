@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="ru" data-title-ru="Параллакс travel-through — слоистая сцена с телефоном — aogl.cn" data-desc-ru="Оригинальный фронтенд-эксперимент: три PNG-слоя (телефон, стекло, персонаж) с параллаксом по глубине — CSS transform и rAF, без WebGL." data-aogl-lang="ru" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Оригинальный фронтенд-эксперимент: три PNG-слоя (телефон, стекло, персонаж) с параллаксом по глубине — CSS transform и rAF, без WebGL.">
+  <title>Параллакс travel-through — слоистая сцена с телефоном — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/ru/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/travel-through-parallax-phone.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/ru/articles/travel-through-parallax-phone.html">
+  <meta property="og:title" content="Параллакс travel-through — слоистая сцена с телефоном — aogl.cn">
+  <meta property="og:description" content="Оригинальный фронтенд-эксперимент: три PNG-слоя (телефон, стекло, персонаж) с параллаксом по глубине — CSS transform и rAF, без WebGL.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="https://aogl.cn/original/travel-through/ren1.png">
+  <meta property="og:image:alt" content="Travel-through parallax demo — character look-dev render (ren1)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/travel-through/ren1.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"CSS 3D · stacked PNGs · smoothed mouse parallax","alternativeHeadline":"穿越视差：手机场景分层与鼠标视差","datePublished":"2026-05-19","dateModified":"2026-05-19","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/travel-through-parallax-phone.html"},"url":"https://aogl.cn/en/articles/travel-through-parallax-phone.html","inLanguage":"ru","description":"Original aogl.cn front-end study: three PNG layers (phone backplate, glass cover, foreground character) move at different depths on mouse move—CSS transforms + rAF smoothing, no WebGL. Includes live embed and asset notes.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-ru">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-ru brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-ru">
+          <li><a href="../../index.html#tools-directory">ИИ — новинки</a></li>
+          <li><a href="../../portal.html">Топ сайтов</a></li>
+          <li><a href="../../brands.html">Бренды</a></li>
+          <li><a href="../../shopping.html">Шопинг</a></li>
+          <li><a href="../../life.html">Сервисы</a></li>
+          <li><a href="../../social.html">Соцсети</a></li>
+          <li><a href="../../tech.html">Техно</a></li>
+          <li><a href="../../games.html">Игры</a></li>
+          <li><a href="../../tools.html">Утилиты</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-ru">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← На главную · оригиналы</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Параллакс travel-through — слоистая сцена с телефоном</h1>
+        <p class="article-shell__sub">CSS 3D · слои PNG · сглаженный параллакс</p>
+        <p class="article-shell__meta"><time datetime="2026-05-19">2026-05-19</time> · Оригинал aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="ru"><p>Эта страница описывает <strong>оригинальный параллакс-эксперимент</strong> в <code>original/travel-through/</code>: <strong>три PNG-слоя</strong> (корпус телефона, стекло, персонаж спереди) сдвигаются на разную величину при движении мыши. Без WebGL — только CSS-<code>transform</code> и сглаживание в <code>requestAnimationFrame</code>.</p>
+<h2>Живая демонстрация</h2>
+<figure class="article-embed">
+  <iframe src="../../original/travel-through/parallax_phone_scene.html" title="Параллакс travel-through — сцена с телефоном" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+  <figcaption><code>parallax_phone_scene.html</code> — три слоя, сглаженный параллакс мыши.</figcaption>
+</figure>
+<h2>Слои (сзади вперёд)</h2>
+<ul>
+  <li><strong>0.15</strong> — <code>Mobile-phone-background.png</code></li>
+  <li><strong>0.38</strong> — <code>Glass-cover.png</code> (<code>mix-blend-mode: screen</code>)</li>
+  <li><strong>0.70</strong> — <code>Penetrating-characters.png</code></li>
+</ul>
+<p>Координаты указателя нормализуются; <code>cx += (mx - cx) * 0.07</code>, <code>amplitude = 28</code> px. Текст вокруг iframe помогает поисковикам понять тему: <em>CSS-параллакс</em>, <em>слои PNG</em>.</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</body></html>

@@ -1,0 +1,16 @@
+<p>이 글은 <code>original/travel-through/</code>의 <strong>오리지널 시차(패럴랙스) 실험</strong>입니다. <strong>PNG 3레이어</strong>(폰 배경·유리·전경 캐릭터)를 겹치고 마우스로 깊이별 이동량을 다르게 줍니다. WebGL 없이 <code>data-depth</code>와 <code>requestAnimationFrame</code> 스무딩만 사용합니다.</p>
+
+<h2>라이브 데모</h2>
+<figure class="article-embed">
+  <iframe src="../original/travel-through/parallax_phone_scene.html" title="트래블스루 시차 — 스마트폰 장면" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <figcaption><code>parallax_phone_scene.html</code> — 3레이어·마우스 시차.</figcaption>
+</figure>
+
+<h2>레이어</h2>
+<ul>
+  <li><strong>0.15</strong> — <code>Mobile-phone-background.png</code></li>
+  <li><strong>0.38</strong> — <code>Glass-cover.png</code> (<code>mix-blend-mode: screen</code>)</li>
+  <li><strong>0.70</strong> — <code>Penetrating-characters.png</code></li>
+</ul>
+
+<p>포인터를 정규화한 뒤 <code>cx += (mx - cx) * 0.07</code>로 이징하고, <code>amplitude = 28</code>px로 이동합니다. iframe 밖에 설명 문단을 두면 SEO·접근성 모두에 유리합니다.</p>

@@ -1,0 +1,19 @@
+<p>本記事は <code>original/travel-through/</code> の<strong>オリジナル視差デモ</strong>です。<strong>3枚のPNG</strong>（スマホ背面・ガラス・手前のキャラ）を重ね、マウスで深度ごとに異なる移動量を与えます。WebGLは使わず、<code>data-depth</code> と <code>requestAnimationFrame</code> による平滑化だけです。</p>
+
+<h2>ライブデモ</h2>
+<p>下の枠内でマウスを動かしてください（デスクトップ向け）。</p>
+
+<figure class="article-embed">
+  <iframe src="../original/travel-through/parallax_phone_scene.html" title="トラベルスルー視差 — スマホシーン" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <figcaption><code>parallax_phone_scene.html</code> — 3レイヤー・マウス視差。</figcaption>
+</figure>
+
+<h2>レイヤー構成</h2>
+<ul>
+  <li><strong>0.15</strong> — <code>Mobile-phone-background.png</code>（最奥）</li>
+  <li><strong>0.38</strong> — <code>Glass-cover.png</code>（<code>mix-blend-mode: screen</code>）</li>
+  <li><strong>0.70</strong> — <code>Penetrating-characters.png</code>（手前・最も大きく動く）</li>
+</ul>
+
+<h3>技術メモ</h3>
+<p>ポインタを中心基準で正規化し、<code>cx += (mx - cx) * 0.07</code> でイージング。<code>amplitude = 28</code> px。画像は <code>pointer-events: none</code>。iframe の前後に説明文を置くことで、クローラが主題（CSS視差・レイヤーUI）を把握しやすくなります。</p>

@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="ko" data-title-ko="트래블스루 시차 — 스마트폰 레이어 장면 — aogl.cn" data-desc-ko="오리지널 프론트엔드 실험: PNG 3레이어(폰 배경·유리·캐릭터)가 마우스에 따라 다른 깊이로 시차 이동. CSS transform+rAF, WebGL 없음." data-aogl-lang="ko" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="오리지널 프론트엔드 실험: PNG 3레이어(폰 배경·유리·캐릭터)가 마우스에 따라 다른 깊이로 시차 이동. CSS transform+rAF, WebGL 없음.">
+  <title>트래블스루 시차 — 스마트폰 레이어 장면 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/ko/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/travel-through-parallax-phone.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/ko/articles/travel-through-parallax-phone.html">
+  <meta property="og:title" content="트래블스루 시차 — 스마트폰 레이어 장면 — aogl.cn">
+  <meta property="og:description" content="오리지널 프론트엔드 실험: PNG 3레이어(폰 배경·유리·캐릭터)가 마우스에 따라 다른 깊이로 시차 이동. CSS transform+rAF, WebGL 없음.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="https://aogl.cn/original/travel-through/ren1.png">
+  <meta property="og:image:alt" content="Travel-through parallax demo — character look-dev render (ren1)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/travel-through/ren1.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"CSS 3D · stacked PNGs · smoothed mouse parallax","alternativeHeadline":"穿越视差：手机场景分层与鼠标视差","datePublished":"2026-05-19","dateModified":"2026-05-19","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ko/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/travel-through-parallax-phone.html"},"url":"https://aogl.cn/en/articles/travel-through-parallax-phone.html","inLanguage":"ko","description":"Original aogl.cn front-end study: three PNG layers (phone backplate, glass cover, foreground character) move at different depths on mouse move—CSS transforms + rAF smoothing, no WebGL. Includes live embed and asset notes.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-ko">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-ko">
+          <li><a href="../../index.html#tools-directory">AI 최전선</a></li>
+          <li><a href="../../portal.html">주요 사이트</a></li>
+          <li><a href="../../brands.html">브랜드</a></li>
+          <li><a href="../../shopping.html">쇼핑</a></li>
+          <li><a href="../../life.html">라이프</a></li>
+          <li><a href="../../social.html">소셜</a></li>
+          <li><a href="../../tech.html">테크</a></li>
+          <li><a href="../../games.html">게임</a></li>
+          <li><a href="../../tools.html">실용 도구</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>트래블스루 시차 — 스마트폰 레이어 장면</h1>
+        <p class="article-shell__sub">CSS 3D·PNG 레이어·마우스 시차</p>
+        <p class="article-shell__meta"><time datetime="2026-05-19">2026-05-19</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p>이 글은 <code>original/travel-through/</code>의 <strong>오리지널 시차(패럴랙스) 실험</strong>입니다. <strong>PNG 3레이어</strong>(폰 배경·유리·전경 캐릭터)를 겹치고 마우스로 깊이별 이동량을 다르게 줍니다. WebGL 없이 <code>data-depth</code>와 <code>requestAnimationFrame</code> 스무딩만 사용합니다.</p>
+<h2>라이브 데모</h2>
+<figure class="article-embed">
+  <iframe src="../../original/travel-through/parallax_phone_scene.html" title="트래블스루 시차 — 스마트폰 장면" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+  <figcaption><code>parallax_phone_scene.html</code> — 3레이어·마우스 시차.</figcaption>
+</figure>
+<h2>레이어</h2>
+<ul>
+  <li><strong>0.15</strong> — <code>Mobile-phone-background.png</code></li>
+  <li><strong>0.38</strong> — <code>Glass-cover.png</code> (<code>mix-blend-mode: screen</code>)</li>
+  <li><strong>0.70</strong> — <code>Penetrating-characters.png</code></li>
+</ul>
+<p>포인터를 정규화한 뒤 <code>cx += (mx - cx) * 0.07</code>로 이징하고, <code>amplitude = 28</code>px로 이동합니다. iframe 밖에 설명 문단을 두면 SEO·접근성 모두에 유리합니다.</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</body></html>

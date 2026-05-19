@@ -1,0 +1,65 @@
+
+<div style="width:100%;height:100%;position:relative;overflow:hidden;background:#1a1a1f;border-radius:var(--border-radius-lg);cursor:none;">
+  <div id="scene" style="position:absolute;inset:0;transform-style:preserve-3d;">
+
+    <div class="layer" data-depth="0.15" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+      <img src="Mobile-phone-background.png" style="width:100%;height:100%;object-fit:contain;object-position:center;pointer-events:none;user-select:none;" draggable="false"/>
+    </div>
+
+    <div class="layer" data-depth="0.38" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+      <img src="Glass-cover.png" style="width:100%;height:100%;object-fit:contain;object-position:center;pointer-events:none;user-select:none;mix-blend-mode:screen;" draggable="false"/>
+    </div>
+
+    <div class="layer" data-depth="0.7" style="position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:0;">
+      <img src="Penetrating-characters.png" style="width:80%;height:90%;object-fit:contain;object-position:bottom center;pointer-events:none;user-select:none;" draggable="false"/>
+    </div>
+
+  </div>
+
+  <div id="cursor" style="position:absolute;width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,0.85);pointer-events:none;transform:translate(-50%,-50%);transition:transform 0.08s;z-index:99;display:none;"></div>
+
+  <div style="position:absolute;bottom:14px;left:50%;transform:translateX(-50%);font-size:12px;color:rgba(255,255,255,0.35);pointer-events:none;letter-spacing:0.08em;">移动鼠标感受视差</div>
+</div>
+
+<script>
+(function(){
+  const scene = document.getElementById('scene');
+  const cursor = document.getElementById('cursor');
+  const layers = Array.from(document.querySelectorAll('.layer'));
+  const container = scene.parentElement;
+
+  let mx = 0, my = 0;
+  let cx = 0, cy = 0;
+
+  container.addEventListener('mousemove', e => {
+    const r = container.getBoundingClientRect();
+    mx = (e.clientX - r.left - r.width / 2) / (r.width / 2);
+    my = (e.clientY - r.top - r.height / 2) / (r.height / 2);
+    cursor.style.display = 'block';
+    cursor.style.left = (e.clientX - r.left) + 'px';
+    cursor.style.top = (e.clientY - r.top) + 'px';
+  });
+
+  container.addEventListener('mouseleave', () => {
+    cursor.style.display = 'none';
+    mx = 0; my = 0;
+  });
+
+  const amp = 28;
+
+  function tick() {
+    cx += (mx - cx) * 0.07;
+    cy += (my - cy) * 0.07;
+
+    layers.forEach(layer => {
+      const d = parseFloat(layer.dataset.depth);
+      const tx = cx * amp * d;
+      const ty = cy * amp * d;
+      layer.style.transform = `translate(${tx}px,${ty}px)`;
+    });
+
+    requestAnimationFrame(tick);
+  }
+  tick();
+})();
+</script>

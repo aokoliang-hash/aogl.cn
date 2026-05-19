@@ -43,6 +43,7 @@ const STATIC_PAGES = [
   "tools.html",
   "privacy.html",
   "changelog.html",
+  "about.html",
 ];
 
 function multilangArticlePages() {
@@ -427,21 +428,21 @@ function writeSitemap() {
     const art = isArticlePage(file);
     urls.push({
       loc: urlZhCn(file),
-      pr: file === "index.html" ? "1" : file === "privacy.html" || file === "changelog.html" ? "0.42" : art ? "0.65" : "0.88",
+      pr: file === "index.html" ? "1" : file === "privacy.html" || file === "changelog.html" || file === "about.html" ? "0.42" : art ? "0.65" : "0.88",
     });
     urls.push({
       loc: urlZhHant(file),
-      pr: file === "index.html" ? "0.96" : file === "privacy.html" || file === "changelog.html" ? "0.36" : art ? "0.6" : "0.82",
+      pr: file === "index.html" ? "0.96" : file === "privacy.html" || file === "changelog.html" || file === "about.html" ? "0.36" : art ? "0.6" : "0.82",
     });
     urls.push({
       loc: urlEn(file),
-      pr: file === "index.html" ? "0.98" : file === "privacy.html" || file === "changelog.html" ? "0.4" : art ? "0.64" : "0.86",
+      pr: file === "index.html" ? "0.98" : file === "privacy.html" || file === "changelog.html" || file === "about.html" ? "0.4" : art ? "0.64" : "0.86",
     });
     for (const loc of SUBLOCALES) {
       if (loc === "en") continue;
       urls.push({
         loc: urlLocale(loc, file),
-        pr: file === "index.html" ? "0.95" : file === "privacy.html" || file === "changelog.html" ? "0.35" : art ? "0.58" : "0.8",
+        pr: file === "index.html" ? "0.95" : file === "privacy.html" || file === "changelog.html" || file === "about.html" ? "0.35" : art ? "0.58" : "0.8",
       });
     }
   }

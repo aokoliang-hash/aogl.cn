@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang="zh-Hant" data-title-zh="穿越視差：手機場景分層與鼠標視差 — aogl.cn" data-desc-zh="本站原創前端小實驗：三層 PNG（手機底圖、玻璃蓋板、穿透角色）隨鼠標產生不同幅度視差，純 CSS transform 與 requestAnimationFrame，無 WebGL。含可嵌入演示與素材說明。" data-aogl-lang="zht" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="本站原創前端小實驗：三層 PNG（手機底圖、玻璃蓋板、穿透角色）隨鼠標產生不同幅度視差，純 CSS transform 與 requestAnimationFrame，無 WebGL。含可嵌入演示與素材說明。">
+  <title>穿越視差：手機場景分層與鼠標視差 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/zh/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/travel-through-parallax-phone.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/travel-through-parallax-phone.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/zh/articles/travel-through-parallax-phone.html">
+  <meta property="og:title" content="穿越視差：手機場景分層與鼠標視差 — aogl.cn">
+  <meta property="og:description" content="本站原創前端小實驗：三層 PNG（手機底圖、玻璃蓋板、穿透角色）隨鼠標產生不同幅度視差，純 CSS transform 與 requestAnimationFrame，無 WebGL。含可嵌入演示與素材說明。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="https://aogl.cn/original/travel-through/ren1.png">
+  <meta property="og:image:alt" content="Travel-through parallax demo — character look-dev render (ren1)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/travel-through/ren1.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"CSS 3D · stacked PNGs · smoothed mouse parallax","alternativeHeadline":"穿越视差：手机场景分层与鼠标视差","datePublished":"2026-05-19","dateModified":"2026-05-19","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/travel-through-parallax-phone.html"},"url":"https://aogl.cn/en/articles/travel-through-parallax-phone.html","inLanguage":"zh-Hant","description":"Original aogl.cn front-end study: three PNG layers (phone backplate, glass cover, foreground character) move at different depths on mouse move—CSS transforms + rAF smoothing, no WebGL. Includes live embed and asset notes.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-zht">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具與大模型動態（個人書籤）" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-zh">
+          <li><a href="../../index.html#tools-directory">AI 前沿</a></li>
+          <li><a href="../../portal.html">全球站點</a></li>
+          <li><a href="../../brands.html">品牌</a></li>
+          <li><a href="../../shopping.html">購物</a></li>
+          <li><a href="../../life.html">生活</a></li>
+          <li><a href="../../social.html">社交</a></li>
+          <li><a href="../../tech.html">科技</a></li>
+          <li><a href="../../games.html">遊戲</a></li>
+          <li><a href="../../tools.html">工具</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← 返回首頁 · 本站原創</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>穿越視差：手機場景分層與鼠標視差</h1>
+        <p class="article-shell__sub">CSS 3D · 分層 PNG · 鼠標平滑視差</p>
+        <p class="article-shell__meta"><time datetime="2026-05-19">2026-05-19</time> · 本站原創</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>本文記錄本站存放在 <code>original/travel-through/</code> 下的一個<strong>原創前端視差小實驗</strong>：用<strong>三張分層 PNG</strong>（手機底圖、玻璃蓋板、前景角色）疊成「角色穿透屏幕」的讀法，再通過<strong>鼠標位移</strong>驅動各層以不同幅度平移——全程在 DOM 內完成，使用 <code>transform-style: preserve-3d</code>、每層 <code>data-depth</code> 係數，以及 <code>requestAnimationFrame</code> 對指針輸入做緩動，<strong>不依賴 WebGL</strong> 或遊戲引擎。</p>
+<h2>在線體驗</h2>
+<p>在下方嵌入框內移動鼠標（建議桌面端）。三層位移幅度不同；指針進入區域時會顯示跟隨的小白點光標，離開區域後隱藏。觸屏設備仍可看到靜態合成，但本原型以鼠標交互為主。</p>
+<figure class="article-embed">
+  <iframe src="../../original/travel-through/parallax_phone_scene.html" title="穿越視差手機場景 — 在線演示" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+  <figcaption>嵌入演示：<code>parallax_phone_scene.html</code> — 三層 PNG + 平滑鼠標視差。</figcaption>
+</figure>
+<h2>分層結構（由後到前）</h2>
+<p>美術拆成獨立 PNG，便於在代碼裡改深度而無需重繪整張合成圖。下列深度對應演示中的 <code>data-depth</code>；數值越大，同樣鼠標偏移下移動越遠。</p>
+<figure class="article-embed">
+  <img src="../../original/travel-through/Mobile-phone-background.png" width="1200" height="800" loading="lazy" decoding="async" alt="手機機身與環境底圖 — 最後景視差層">
+  <figcaption><strong>第 1 層 · depth 0.15</strong> — <code>Mobile-phone-background.png</code>：全幅手機/環境底板（位移最 subtle）。</figcaption>
+</figure>
+<figure class="article-embed">
+  <img src="../../original/travel-through/Glass-cover.png" width="1200" height="800" loading="lazy" decoding="async" alt="玻璃蓋板疊加層 — 中層視差">
+  <figcaption><strong>第 2 層 · depth 0.38</strong> — <code>Glass-cover.png</code>：玻璃層使用 <code>mix-blend-mode: screen</code>，高光疊在底圖上。</figcaption>
+</figure>
+<figure class="article-embed">
+  <img src="../../original/travel-through/Penetrating-characters.png" width="960" height="900" loading="lazy" decoding="async" alt="前景穿透角色 — 最強視差層">
+  <figcaption><strong>第 3 層 · depth 0.70</strong> — <code>Penetrating-characters.png</code>：角色約 80% 寬、底對齊，保持「破屏而出」構圖。</figcaption>
+</figure>
+<h2>運動怎麼算</h2>
+<p><code>mousemove</code> 時將指針相對容器中心歸一化到約 −1…1。每幀用 <code>cx += (mx - cx) * 0.07</code> 向目標緩動，再對每層執行 <code>translate(tx, ty)</code>，其中 <code>tx = cx * amplitude * depth</code>。在 <code>amplitude = 28</code> 像素量級下，前景大約可比後景多移動一倍左右，層次清晰又不易滑出畫框。</p>
+<ul>
+  <li><strong>不劫持頁面滾動</strong> — 僅演示框內圖層響應，正文照常滾動。</li>
+  <li>圖片設 <strong>pointer-events: none</strong>，事件落在容器上。</li>
+  <li>指針離開容器時<strong>隱藏自定義光標</strong>，避免殘留圓點。</li>
+</ul>
+<h2>文件夾裡的其它素材</h2>
+<p>除嵌入用的三層外，<code>original/travel-through/</code> 還保留備用板（<code>phone.png</code>、<code>glass.png</code>、<code>person-bak.png</code>、<code>ren1.png</code>）以及一張生成式氛圍圖（<code>Gemini_Generated_Image_khh2pdkhh2pdkhh2.png</code>）。文件名固定，方便本文、iframe 與後續修改共用路徑。</p>
+<div class="article-gallery">
+  <img src="../../original/travel-through/Gemini_Generated_Image_khh2pdkhh2pdkhh2.png" width="512" height="288" loading="lazy" decoding="async" alt="穿越視差場景生成式氛圍稿">
+  <img src="../../original/travel-through/ren1.png" width="512" height="288" loading="lazy" decoding="async" alt="角色備用渲染 — 造型開發">
+</div>
+<h2>為什麼寫成獨立文章</h2>
+<p>社交平臺難以保留製作過程；用帶標題、alt 與嵌入的<strong>穩定 URL</strong>，便於搜索與引用「CSS 視差」「分層 PNG UI」「鼠標緩動」等主題。若你複用此模式，請在 iframe 外保留足夠正文（如下），並對嵌入使用 <code>loading="lazy"</code>，同時記錄 depth 數值，避免下次改版靠猜。</p>
+<h3>原型侷限</h3>
+<p>尚未做 <code>prefers-reduced-motion</code> 降級；生產環境建議在「減少動態」時凍結圖層。極窄視口也未專門適配，上線時可能在窄屏改為靜態海報。本文記錄的是當前實現，而非成品級營銷微站。</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../about.html" class="footer-legal-link lang-zh">關於</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-zh">更新記錄</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-zh">隱私政策</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</body></html>
