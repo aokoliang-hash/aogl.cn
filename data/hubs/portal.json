@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-05-12",
+  "updated": "2026-05-19",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -193,6 +193,12 @@
       "labelZh": "YouTube",
       "items": [
         {
+          "titleEn": "Check out the latest news from YouTube’s Brandcast 2026.",
+          "titleZh": "Check out the latest news from YouTube’s Brandcast 2026.",
+          "url": "https://blog.google/products-and-platforms/products/youtube/youtube-brandcast-2026-advertiser-updates/",
+          "date": "2026-05-13"
+        },
+        {
           "titleEn": "Enjoy new ways to create, search and stream on Google TV",
           "titleZh": "Enjoy new ways to create, search and stream on Google TV",
           "url": "https://blog.google/products-and-platforms/platforms/google-tv/enjoy-new-ways-to-create-search-and-stream-on-google-tv/",
@@ -203,12 +209,6 @@
           "titleZh": "Convert faster on YouTube with April’s Demand Gen Drop.",
           "url": "https://blog.google/products/ads-commerce/demand-gen-drop-april-2026/",
           "date": "2026-04-23"
-        },
-        {
-          "titleEn": "Here’s how to watch Coachella on YouTube.",
-          "titleZh": "Here’s how to watch Coachella on YouTube.",
-          "url": "https://blog.google/products-and-platforms/products/youtube/watch-coachella-live-on-youtube/",
-          "date": "2026-04-02"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "Meta at The Cannes Film Festival 2026",
-          "titleZh": "Meta at The Cannes Film Festival 2026",
-          "url": "https://about.fb.com/news/2026/05/meta-at-the-cannes-film-festival-2026/",
-          "date": "2026-05-11"
+          "titleEn": "Our AI Wearables Are “Changing the Game” for Disabled People",
+          "titleZh": "Our AI Wearables Are “Changing the Game” for Disabled People",
+          "url": "https://about.fb.com/news/2026/05/meta-ai-wearables-changing-the-game-for-disabled-people/",
+          "date": "2026-05-18"
         },
         {
-          "titleEn": "Which AI Glasses Are Right For You?",
-          "titleZh": "Which AI Glasses Are Right For You?",
-          "url": "https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you/",
-          "date": "2026-05-08"
+          "titleEn": "Introducing Business AI on WhatsApp for Small Businesses in India",
+          "titleZh": "Introducing Business AI on WhatsApp for Small Businesses in India",
+          "url": "https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses-in-india/",
+          "date": "2026-05-15"
         },
         {
-          "titleEn": "Meta’s Position on Canada’s Bill C-22",
-          "titleZh": "Meta’s Position on Canada’s Bill C-22",
-          "url": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22/",
-          "date": "2026-05-07"
+          "titleEn": "From Scroll to Chat to Cart: Trends Reshaping How India Shops",
+          "titleZh": "From Scroll to Chat to Cart: Trends Reshaping How India Shops",
+          "url": "https://about.fb.com/news/2026/05/from-scroll-to-chat-to-cart-trends-reshaping-how-india-shops/",
+          "date": "2026-05-14"
         }
       ],
       "hotSearchPills": [
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "Reel Friends: Building Social Discovery that Scales to Billions",
+          "titleZh": "Reel Friends: Building Social Discovery that Scales to Billions",
+          "url": "https://engineering.fb.com/2026/05/13/ml-applications/reel-friends-building-social-discovery-that-scales-to-billions/",
+          "date": "2026-05-13"
+        },
+        {
+          "titleEn": "Migrating Data Ingestion Systems at Meta Scale",
+          "titleZh": "Migrating Data Ingestion Systems at Meta Scale",
+          "url": "https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale/",
+          "date": "2026-05-12"
+        },
+        {
           "titleEn": "Labyrinth 1.1: Making End-to-End Encrypted Backups Even More Reliable",
           "titleZh": "Labyrinth 1.1: Making End-to-End Encrypted Backups Even More Reliable",
           "url": "https://engineering.fb.com/2026/05/11/security/labyrinth-1-1-end-to-end-encrypted-e2ee-backups-more-reliable/",
           "date": "2026-05-11"
-        },
-        {
-          "titleEn": "How Meta Is Strengthening End-to-End Encrypted Backups",
-          "titleZh": "How Meta Is Strengthening End-to-End Encrypted Backups",
-          "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
-          "date": "2026-05-01"
-        },
-        {
-          "titleEn": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
-          "titleZh": "Modernizing the Facebook Groups Search to Unlock the Power of Community Knowledge",
-          "url": "https://engineering.fb.com/2026/04/21/ml-applications/modernizing-the-facebook-groups-search-to-unlock-the-power-of-community-knowledge/",
-          "date": "2026-04-21"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Tech News 2026 – Issue 20",
-          "titleZh": "Tech News 2026 – Issue 20",
-          "url": "https://diff.wikimedia.org/2026/05/11/tech-news-2026-issue-20/",
-          "date": "2026-05-11"
+          "titleEn": "International Roma Day Edit-a-thon 2026",
+          "titleZh": "International Roma Day Edit-a-thon 2026",
+          "url": "https://diff.wikimedia.org/2026/05/19/international-roma-day-edit-a-thon-2026/",
+          "date": "2026-05-19"
         },
         {
-          "titleEn": "What I learned building WikiVisage for Wikimedia Commons",
-          "titleZh": "What I learned building WikiVisage for Wikimedia Commons",
-          "url": "https://diff.wikimedia.org/2026/05/11/what-i-learned-building-wikivisage-for-wikimedia-commons/",
-          "date": "2026-05-11"
+          "titleEn": "Mengikuti WikiNusantara Untuk Pertama Kalinya",
+          "titleZh": "Mengikuti WikiNusantara Untuk Pertama Kalinya",
+          "url": "https://diff.wikimedia.org/2026/05/19/mengikuti-wikinusantara-untuk-pertama-kalinya/",
+          "date": "2026-05-19"
         },
         {
-          "titleEn": "Technical tinkering for CommonsDB at the Wikimedia Hackathon",
-          "titleZh": "Technical tinkering for CommonsDB at the Wikimedia Hackathon",
-          "url": "https://diff.wikimedia.org/2026/05/11/technical-tinkering-for-commonsdb-at-the-wikimedia-hackathon/",
-          "date": "2026-05-11"
+          "titleEn": "Tech News 2026 – Issue 21",
+          "titleZh": "Tech News 2026 – Issue 21",
+          "url": "https://diff.wikimedia.org/2026/05/18/tech-news-2026-issue-21/",
+          "date": "2026-05-18"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "5 ways to get fresh groceries delivered from Amazon",
-          "titleZh": "5 ways to get fresh groceries delivered from Amazon",
-          "url": "https://www.aboutamazon.com/news/retail/how-to-order-groceries-amazon?utm_source=rss",
-          "date": "2026-05-12"
+          "titleEn": "Alexa+ now generates podcast episodes on demand",
+          "titleZh": "Alexa+ now generates podcast episodes on demand",
+          "url": "https://www.aboutamazon.com/news/devices/alexa-podcasts-ai-generated-audio-episodes?utm_source=rss",
+          "date": "2026-05-18"
         },
         {
-          "titleEn": "Amazon rolls out 30-minute delivery on thousands of groceries and essentials",
-          "titleZh": "Amazon rolls out 30-minute delivery on thousands of groceries and essentials",
-          "url": "https://www.aboutamazon.com/news/retail/amazon-now-30-minute-delivery?utm_source=rss",
-          "date": "2026-05-12"
+          "titleEn": "An update on the search for the next James Bond",
+          "titleZh": "An update on the search for the next James Bond",
+          "url": "https://www.aboutamazon.com/news/entertainment/next-james-bond-movie-latest-updates?utm_source=rss",
+          "date": "2026-05-14"
         },
         {
-          "titleEn": "Amazon in the community: Service, community, and commitment at HQ2",
-          "titleZh": "Amazon in the community: Service, community, and commitment at HQ2",
-          "url": "https://www.aboutamazon.com/news/community/amazon-arlington-virginia-news?utm_source=rss",
-          "date": "2026-05-12"
+          "titleEn": "Everything to know about Audible",
+          "titleZh": "Everything to know about Audible",
+          "url": "https://www.aboutamazon.com/news/entertainment/everything-to-know-about-audible?utm_source=rss",
+          "date": "2026-05-13"
         }
       ],
       "hotSearchPills": [
@@ -934,22 +934,22 @@
       "labelZh": "WhatsApp",
       "items": [
         {
+          "titleEn": "Introducing Business AI on WhatsApp for Small Businesses in India",
+          "titleZh": "Introducing Business AI on WhatsApp for Small Businesses in India",
+          "url": "https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses-in-india/",
+          "date": "2026-05-15"
+        },
+        {
+          "titleEn": "Introducing a Completely Private Way to Chat With AI",
+          "titleZh": "Introducing a Completely Private Way to Chat With AI",
+          "url": "https://about.fb.com/news/2026/05/incognito-chat-whatsapp-meta-ai/",
+          "date": "2026-05-13"
+        },
+        {
           "titleEn": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
           "titleZh": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
           "url": "https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india/",
           "date": "2026-04-29"
-        },
-        {
-          "titleEn": "WhatsApp blog — product updates",
-          "titleZh": "WhatsApp 官方博客",
-          "url": "https://blog.whatsapp.com/",
-          "date": "Rolling"
-        },
-        {
-          "titleEn": "Security & privacy center",
-          "titleZh": "安全与隐私中心",
-          "url": "https://www.whatsapp.com/security",
-          "date": "Rolling"
         }
       ],
       "hotSearchPills": [

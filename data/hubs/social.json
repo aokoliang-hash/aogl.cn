@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-05-12",
+  "updated": "2026-05-19",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,102 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Our AI Wearables Are “Changing the Game” for Disabled People",
+      "titleZh": "Our AI Wearables Are “Changing the Game” for Disabled People",
+      "url": "https://about.fb.com/news/2026/05/meta-ai-wearables-changing-the-game-for-disabled-people/",
+      "date": "2026-05-18",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/Our-AI-Wearables-are-Changing-the-Game-for-Disabled-People_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Introducing Business AI on WhatsApp for Small Businesses in India",
+      "titleZh": "Introducing Business AI on WhatsApp for Small Businesses in India",
+      "url": "https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses-in-india/",
+      "date": "2026-05-15",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/English-US-WA-Biz-AI-Onboarding-key-steps.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "How to turn off Instagram’s new Instants feature and retract photos you accidentally shared",
+      "titleZh": "How to turn off Instagram’s new Instants feature and retract photos you accidentally shared",
+      "url": "https://techcrunch.com/2026/05/14/how-to-turn-of-instagrams-new-instants-feature-and-retract-photos-you-accidentally-shared/",
+      "date": "2026-05-14",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "From Scroll to Chat to Cart: Trends Reshaping How India Shops",
+      "titleZh": "From Scroll to Chat to Cart: Trends Reshaping How India Shops",
+      "url": "https://about.fb.com/news/2026/05/from-scroll-to-chat-to-cart-trends-reshaping-how-india-shops/",
+      "date": "2026-05-14",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/NRP-2.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "Check out the latest news from YouTube’s Brandcast 2026.",
+      "titleZh": "Check out the latest news from YouTube’s Brandcast 2026.",
+      "url": "https://blog.google/products-and-platforms/products/youtube/youtube-brandcast-2026-advertiser-updates/",
+      "date": "2026-05-13",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_Brandcast_social.max-600x600.format-webp.webp"
+    },
+    {
+      "titleEn": "Instagram’s new ‘Instants’ feature combines elements from Snapchat and BeReal",
+      "titleZh": "Instagram’s new ‘Instants’ feature combines elements from Snapchat and BeReal",
+      "url": "https://techcrunch.com/2026/05/13/instagrams-new-instants-feature-combines-elements-from-snapchat-and-bereal/",
+      "date": "2026-05-13",
+      "source": "TechCrunch",
+      "image": ""
+    },
+    {
+      "titleEn": "Introducing Instants: A New Way to Share in the Moment",
+      "titleZh": "Introducing Instants: A New Way to Share in the Moment",
+      "url": "https://about.fb.com/news/2026/05/instants-share-in-the-moment/",
+      "date": "2026-05-13",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/IG_Instants_A-New-Way-to-Share-in-the-Moment_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Introducing a Completely Private Way to Chat With AI",
+      "titleZh": "Introducing a Completely Private Way to Chat With AI",
+      "url": "https://about.fb.com/news/2026/05/incognito-chat-whatsapp-meta-ai/",
+      "date": "2026-05-13",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/Incognito-Chat-with-Meta-AI_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Celebrating African Cinema With the ‘Made by Africa, Loved by the World’ 2026 Campaign",
+      "titleZh": "Celebrating African Cinema With the ‘Made by Africa, Loved by the World’ 2026 Campaign",
+      "url": "https://about.fb.com/news/2026/05/celebrating-african-cinema-with-the-made-by-africa-loved-by-the-world-2026-campaign/",
+      "date": "2026-05-13",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/Nigeria-Banner.jpg?fit=960%2C366"
+    },
+    {
+      "titleEn": "Migrating Data Ingestion Systems at Meta Scale",
+      "titleZh": "Migrating Data Ingestion Systems at Meta Scale",
+      "url": "https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale/",
+      "date": "2026-05-12",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/05/Migrating-Data-Ingestion-Systems-at-Meta-Scale-image-1-e1778517437665.png"
+    },
+    {
+      "titleEn": "New Supervision Tools Give Parents Insights Into Their Teen’s Algorithm and More",
+      "titleZh": "New Supervision Tools Give Parents Insights Into Their Teen’s Algorithm and More",
+      "url": "https://about.fb.com/news/2026/05/new-supervision-tools-parents-insights-teens-algorithm/",
+      "date": "2026-05-12",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/Boosting-Parental-Supervision-Across-Our-Apps-With-Family-Center_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "TikTok now wants to be the place you book the trip you just saw on TikTok",
+      "titleZh": "TikTok now wants to be the place you book the trip you just saw on TikTok",
+      "url": "https://techcrunch.com/2026/05/12/tiktok-now-wants-to-be-the-place-you-book-the-trip-you-just-saw-on-tiktok/",
+      "date": "2026-05-12",
+      "source": "TechCrunch",
+      "image": ""
+    },
     {
       "titleEn": "TikTok launches an ad-free subscription plan in the UK",
       "titleZh": "TikTok launches an ad-free subscription plan in the UK",
@@ -73,14 +169,6 @@
       "image": ""
     },
     {
-      "titleEn": "New AI-Powered Age Assurance Measures to Place Teens in Age-Appropriate Experiences",
-      "titleZh": "New AI-Powered Age Assurance Measures to Place Teens in Age-Appropriate Experiences",
-      "url": "https://about.fb.com/news/2026/05/ai-age-assurance-teens/",
-      "date": "2026-05-05",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/05/AI-Age-Assurance_Thumbnail-1.jpg?fit=890%2C501"
-    },
-    {
       "titleEn": "How Meta Is Strengthening End-to-End Encrypted Backups",
       "titleZh": "How Meta Is Strengthening End-to-End Encrypted Backups",
       "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
@@ -109,94 +197,6 @@
       "titleZh": "Instagram cracks down on content aggregators",
       "url": "https://techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown/",
       "date": "2026-04-30",
-      "source": "TechCrunch",
-      "image": ""
-    },
-    {
-      "titleEn": "Google gains 25M subscriptions in Q1, driven by YouTube and Google One",
-      "titleZh": "Google gains 25M subscriptions in Q1, driven by YouTube and Google One",
-      "url": "https://techcrunch.com/2026/04/29/google-gains-25m-subscriptions-in-q1-driven-by-youtube-and-google-one/",
-      "date": "2026-04-29",
-      "source": "TechCrunch",
-      "image": ""
-    },
-    {
-      "titleEn": "Enjoy new ways to create, search and stream on Google TV",
-      "titleZh": "Enjoy new ways to create, search and stream on Google TV",
-      "url": "https://blog.google/products-and-platforms/platforms/google-tv/enjoy-new-ways-to-create-search-and-stream-on-google-tv/",
-      "date": "2026-04-29",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Keyword_hero_image_-_dynamic_sl.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
-      "titleZh": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
-      "url": "https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india/",
-      "date": "2026-04-29",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/04/Mobile-recharge-1.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Infrastructure Explained: Data Centers",
-      "titleZh": "Infrastructure Explained: Data Centers",
-      "url": "https://about.fb.com/news/2026/04/infrastructure-explained-meta-data-centers/",
-      "date": "2026-04-28",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/04/Infrastructure-Explained-Data-Centers_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Australia forces Big Tech firms to pay for news or face a 2.25% tax",
-      "titleZh": "Australia forces Big Tech firms to pay for news or face a 2.25% tax",
-      "url": "https://techcrunch.com/2026/04/28/australia-forces-big-tech-firms-to-pay-for-news-or-face-a-2-25-tax/",
-      "date": "2026-04-28",
-      "source": "TechCrunch",
-      "image": ""
-    },
-    {
-      "titleEn": "Snapchat brings AI-powered conversational advertising to its app",
-      "titleZh": "Snapchat brings AI-powered conversational advertising to its app",
-      "url": "https://techcrunch.com/2026/04/28/snapchat-brings-ai-powered-conversational-advertising-to-its-app/",
-      "date": "2026-04-28",
-      "source": "TechCrunch",
-      "image": ""
-    },
-    {
-      "titleEn": "YouTube is testing an AI-powered search feature that shows guided answers",
-      "titleZh": "YouTube is testing an AI-powered search feature that shows guided answers",
-      "url": "https://techcrunch.com/2026/04/28/youtube-is-testing-an-ai-powered-search-feature-that-shows-guided-answers/",
-      "date": "2026-04-28",
-      "source": "TechCrunch",
-      "image": ""
-    },
-    {
-      "titleEn": "Consumers lost $2.1B to social media scams in 2025, FTC reports",
-      "titleZh": "Consumers lost $2.1B to social media scams in 2025, FTC reports",
-      "url": "https://techcrunch.com/2026/04/27/consumers-lost-2-1-billion-to-social-media-scams-in-2025-ftc-reports/",
-      "date": "2026-04-27",
-      "source": "TechCrunch",
-      "image": ""
-    },
-    {
-      "titleEn": "Powering AI, Strengthening the Grid: Innovation in Space Solar Energy and Long-Duration Storage",
-      "titleZh": "Powering AI, Strengthening the Grid: Innovation in Space Solar Energy and Long-Duration Storage",
-      "url": "https://about.fb.com/news/2026/04/powering-ai-strengthening-the-grid-space-solar-energy-and-long-duration-storage/",
-      "date": "2026-04-27",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/04/Innovative-Energy-Solutions_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Meta Partners With AWS on Graviton Chips to Power Agentic AI",
-      "titleZh": "Meta Partners With AWS on Graviton Chips to Power Agentic AI",
-      "url": "https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-agentic-ai/",
-      "date": "2026-04-24",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/04/Partnership-Announcement_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Instagram tests a new ‘Instants’ app for sharing disappearing photos",
-      "titleZh": "Instagram tests a new ‘Instants’ app for sharing disappearing photos",
-      "url": "https://techcrunch.com/2026/04/23/instagram-tests-a-new-instants-app-for-sharing-disappearing-photos/",
-      "date": "2026-04-23",
       "source": "TechCrunch",
       "image": ""
     }
