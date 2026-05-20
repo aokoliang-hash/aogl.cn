@@ -6,6 +6,19 @@
 
 ---
 
+## 0. 进度总览（2026-05-19 核对）
+
+| 类别 | 状态 | 说明 |
+|------|------|------|
+| About / 隐私 / changelog | ✅ 已落地 | 各语言页 + 页脚 + sitemap |
+| 8 个 Hub 编辑说明 | ✅ **4 段/页** | `data/hubs/*.json` + `EDITORIAL_I18N` |
+| 首页 intro / 工具区 / 四卡 / `#cat-*` lead | ✅ 已落地 | 见 §2.4 |
+| 原创文章 | ⚠️ **7/8～10** | 还差 1～3 篇本人长文（见 §2.1） |
+| changelog 每周一条 | ⚠️ 待持续 | 有页面，需过审前补 2～4 周短讯 |
+| 广告位策略 / 英文抽测 / 等 3～7 天再申 | ⏳ 运营项 | 见 §2.5、§3、§5 |
+
+---
+
 ## 1. Google 在看什么（简化）
 
 | 通过倾向 | 容易被拒 |
@@ -15,56 +28,73 @@
 | About / 隐私 / 更新记录 / 可联系纠错 | 像「空壳导航站」、找不到谁在维护 |
 | 英文（及主语言）段落完整、非机翻堆砌 | 7 语 × 大量 hub = 海量相似薄页 |
 
-你站 **已做**：首页 `#intro`、hub 的 `editorialHtml*`（**8 个 hub 均已 4 段**，2026-05-19）、`changelog.html`、**6 篇** Demo/手记类 `articles/`。  
-**仍不足**：原创文章可继续由你本人增补；AdSense 抽样仍以 **en/zh 长文 Demo** 为主，勿再堆 Hub 工作流说明文。
+**已做**：首页 `#intro`；hub 的 `editorialHtml*`（**8 个 hub 均已 4 段**）；`changelog.html`；`about.html` / `privacy.html`；首页 `tools-directory` 双段导语、四张 `.card` 扩写、四个 `#cat-*` 的 `cat-feed-lead`；**6 篇** Demo/手记 `articles/`（见下）。
+
+**仍不足**：原创文章 **未满 8 篇**（当前 **7 篇**）；changelog **未形成每周一条**；过审前可再补 **1～3 篇** 本人长文（中英其一 800 字+），且勿再堆 Hub 工作流类 AI 说明文。AdSense 抽样仍以 **en/zh 长文 Demo** 为主。
+
+**当前 7 篇文章**（`data/articles/`）：
+
+1. `role-girl-card-visual-study` — 角色卡牌视觉（白裙三视图 + 十二张定稿）  
+2. `travel-through-parallax-phone` — 穿越视差手机场景  
+3. `monkey2-sprite-head-track` — 猴子精灵图转头  
+4. `character-turnaround-walk` — 角色四视图 / 行走循环  
+5. `monkey-short-bts` — 猴子短片手记  
+6. `interactive-3d-earth` — 3D 地球  
+7. `velmora` — 太阳系探索器  
 
 ---
 
 ## 2. 必做（建议过审前全部完成）
 
-### 2.1 增加「主内容页」数量与厚度
+### 2.1 增加「主内容页」数量与厚度 — ⚠️ 未完成
 
-| 动作 | 目标 | 落地 |
+| 动作 | 目标 | 当前 |
 |------|------|------|
-| **原创文章** | 至少 **8～10 篇**，每篇 **800 字以上**（中英至少一种完整正文） | `data/articles/*.json` + `fragments/*.html` → `npm run build-articles` |
-| **选题** | 个人实验、工作流、Demo 说明（你已有 3D 地球、短片手记类方向） | 避免纯「某某工具官网汇总」单篇 |
-| **首页** | 保留摘要卡片，**全文只在 `/articles/<slug>.html`** | 见 `docs/首页原创文章与SEO实施说明.md` |
+| **原创文章** | 至少 **8～10 篇**，每篇 **800 字以上**（中英至少一种完整正文） | **7 篇**（差 **1～3 篇**） |
+| **选题** | 个人实验、Demo 说明（3D、短片、视差等） | 避免纯「工具官网汇总」单篇 |
+| **首页** | 摘要卡片 + 全文在 `/articles/<slug>.html` | ✅ 已按 `docs/首页原创文章与SEO实施说明.md` 构建 |
 
-### 2.2 新增「关于本站」独立页
+```bash
+# 新增文章后
+npm run build-articles && npm run build-seo-locales
+```
 
-> **已落地（2026-05-19）**：`_multilang/about.html` → 各语言 `about.html`，页脚链至该页，`sitemap.xml` 已收录。
+### 2.2 新增「关于本站」独立页 — ✅ 已落地
 
-AdSense 常看 **About / Contact**。
+> **2026-05-19**：`_multilang/about.html` → 各语言 `about.html`；页脚「关于」指向该页；`sitemap.xml` 已收录。
 
-| 字段 | 建议写入 |
-|------|----------|
-| 谁维护 | 个人站、非公司、非商业评测 |
-| 做什么 | AI 备忘 + 少量原创 + 外链目录边界 |
-| 不做什么 | 不代售、不保证价格/地区、不提供医疗/投资建议 |
-| 如何联系 | GitHub Issues 链接（已有）+ 可选邮箱 |
-| 广告 | 使用 Google AdSense；外链与各站无隶属 |
+| 字段 | 状态 |
+|------|------|
+| 谁维护 | ✅ 个人站、非商业评测 |
+| 做什么 | ✅ AI 备忘 + 原创 + 外链边界 |
+| 不做什么 | ✅ 不代售 / 非医疗投资建议等 |
+| 如何联系 | ✅ GitHub Issues；**可选公开邮箱未加**（非必须） |
+| 广告 | ✅ AdSense + 与外链无隶属；链至 privacy |
 
-**实施**：新增 `_multilang/about.html`（与 `privacy.html` 同模式）→ `npm run build-seo-locales`；首页与页脚链到 `about.html`；`sitemap.xml` 加入 URL。
+### 2.3 Hub 页编辑说明 — ✅ 已落地（4 段）
 
-### 2.3 Hub 页再加厚一层（每页独有）
+> **2026-05-19**：8 个 `data/hubs/*.json` 中英各 **4 段** `editorialHtml`；`scripts/build-hub-pages.mjs` 中 `EDITORIAL_I18N` 的 ja/ko/fr/ru/ar 同步第 4 段。已 `npm run build-hubs && npm run build-seo-locales`。
 
-> **已落地（2026-05-19）**：8 个 `data/hubs/*.json` 中英各加第 3 段；`EDITORIAL_I18N` 中 ja/ko/fr/ru/ar 同步；已 `npm run build-hubs && npm run build-seo-locales`。
-
-现有 `editorialHtml` 约 2 段，对 AdSense 仍偏短。每个 `data/hubs/<slug>.json` 再增加 **第 3 段**（仅该 hub 独有），建议包含：
-
-- **入选标准**（什么会进前十 / 什么放进 more）
-- **上次人工核对日期**（如 `updated` 字段已有，文中写一句）
-- **明确排除**（例如 tools：不做医疗诊断；brands：非荐股）
+每段建议仍包含：入选标准、核对日期（如 **2026-05-19**）、明确排除项（tools 非医疗、brands 非荐股等）。
 
 ```bash
 npm run build-hubs && npm run build-seo-locales
 ```
 
-### 2.4 首页 `#tools-directory` 与四张 `.card`
+### 2.4 首页 `#tools-directory` 与四张 `.card` — ✅ 已落地
 
-按 `docs/站点原创内容与实施节奏.md` 检查是否已扩写；若某 `#cat-*` 仍只有 RSS 列表无 **cat-feed-lead**，补 **2～3 句** 编辑说明。
+> **2026-05-19 核对**：母版 `_multilang/index.html` 已具备下列内容（构建后同步各语言首页）。
 
-### 2.5 过审前广告展示策略
+| 区块 | 状态 |
+|------|------|
+| `#intro` 关于本站 | ✅ 多段 `reading-intro` |
+| `#tools-directory` | ✅ 双段 `tools-intro`（入口说明 + 收录/排除边界） |
+| 四张 `.card` | ✅ 各卡多段说明 + `card-jump` |
+| `#cat-news` / `#cat-rankings` / `#cat-maps` / `#cat-tips` | ✅ 均有 `cat-feed-lead`（7 语） |
+
+细则仍可对照 `docs/站点原创内容与实施节奏.md` 做后续微调，**不作为过审阻塞项**。
+
+### 2.5 过审前广告展示策略 — ⏳ 需你自查
 
 | 建议 | 原因 |
 |------|------|
@@ -75,21 +105,21 @@ npm run build-hubs && npm run build-seo-locales
 
 ## 3. 建议做（提高通过率）
 
-### 3.1 英文优先给审核员看
+### 3.1 英文优先给审核员看 — ⏳ 提交前抽测
 
-- 打开 `https://aogl.cn/en/`、`/en/articles/...`、`/en/about.html`（about 建好后）应 **段落完整**。  
-- 勿让英文页只剩链接而中文很长（或反之）。
+- 打开 `https://aogl.cn/en/`、`/en/articles/...`、`/en/about.html` 应 **段落完整**。  
+- 勿让英文页只剩链接而中文很长（或反之）。部分文章 ja/ko 等 fragment 较短，审核若只看非中英仍可能偏薄。
 
-### 3.2 控制「薄页」印象（不删多语，但加重主 URL）
+### 3.2 控制「薄页」印象（不删多语，但加重主 URL） — ⏳ 持续
 
-- **sitemap** 里保证 **文章、about、changelog、privacy** 的 `lastmod` 及时。  
-- 社区分享、GitHub README 多链 **文章与 about**，少只链 `games.html` 这类纯目录。
+- **sitemap**：`build-seo-locales` 会生成；重大更新后重新构建即可。  
+- GitHub README / 分享多链 **文章与 about**，少只链 `games.html` 等纯目录。
 
-### 3.3 每周一条 `changelog`
+### 3.3 每周一条 `changelog` — ⚠️ 待持续
 
-人类可读的更新记录（非纯 commit），证明有人在维护。已有 `changelog.html` 则 **持续追加**。
+已有 `changelog.html`（2026-05-11～05-19 有批次记录），过审前建议再补 **2～4 条** 人类可读短讯（非纯 commit）。
 
-### 3.4 禁止项自查
+### 3.4 禁止项自查 — ⏳ 提交前勾选
 
 - 无版权全文转载、无误导标题、无「点此下载」壳页、无成人/赌博等违规邻域链接堆砌。
 
@@ -97,35 +127,38 @@ npm run build-hubs && npm run build-seo-locales
 
 ## 4. 不建议做
 
-- **未改内容就点「申请审核」** → 极易再次「低价值内容」。  
+- **未改内容就点「申请审核」** → 极易再次「低价值内容」（当前仍缺 2～4 篇文章）。  
 - **用 AI 批量生成上千字灌水** → 质量指南风险。  
 - **为过审删掉多语言** → 不必；应 **加厚** 而非砍语言。  
-- **买流量冲 AdSense** → 与政策无关且无益。
+- **买流量冲 AdSense** → 与政策无关且无益。  
+- **Hub 工作流类长文**（如 RSS 合并说明单篇）→ 已移除；勿再以同类文体凑篇数。
 
 ---
 
 ## 5. 推荐执行顺序（约 3～4 周）
 
-| 周 | 任务 |
-|----|------|
-| **1** | 新建 `about.html` + 页脚链接 + sitemap；2 篇新文章（每篇 800+ 字） |
-| **2** | 8 个 hub JSON 各加第 3 段 `editorialHtml*`；首页薄弱 `#cat-*` 补 lead |
-| **3** | 再 2～3 篇文章；changelog 补 4 周记录 |
-| **4** | 全站自测：`/en/`、2 篇文章、1 个 hub、about、privacy；确认无软 404 后 **勾选已修复 → 申请审核** |
+| 周 | 任务 | 进度 |
+|----|------|------|
+| **1** | `about.html` + 页脚 + sitemap；2 篇新文章 | about ✅；文章 ⚠️ 仅部分（现 6 篇） |
+| **2** | 8 hub 加编辑段；首页 `#cat-*` lead | ✅ 已完成（hub 为 **4 段**） |
+| **3** | 再 2～3 篇文章；changelog 补 4 周 | **当前重点** |
+| **4** | 自测 `/en/`、文章、hub、about、privacy；**等 3～7 天** → 申请审核 | 待做 |
 
-**复审前等待**：重大改动上线后 **至少 3～7 天** 再提交，便于 Google 重新抓取。
+**复审前等待**：重大改动（尤其新文章）上线后 **至少 3～7 天** 再提交。
 
 ---
 
 ## 6. 验收自检（提交审核前勾选）
 
-- [ ] 至少 **8 篇** 可独立阅读的文章 URL，正文在首屏 HTML  
-- [x] 有 **about**（或等价）说明维护者与站点边界  
-- [ ] **privacy** 可访问且含第三方/广告说明  
-- [ ] 每个 hub 有 **3 段及以上** 站长视角说明（中或英）  
-- [ ] 首页有 **关于本站** + 非纯链接的工具/分类说明  
-- [ ] **ads.txt** 仍为已授权（保持即可）  
-- [ ] 未在几乎无正文的页面上堆满广告  
+- [ ] 至少 **8 篇** 可独立阅读的文章 URL，正文在首屏 HTML（**当前 7 篇**）  
+- [x] 有 **about** 说明维护者与站点边界  
+- [x] **privacy** 可访问且含第三方/广告无隶属说明  
+- [x] 每个 hub 有 **3 段及以上** 站长说明（中或英）（**已为 4 段**）  
+- [x] 首页有 **关于本站**（`#intro`）+ 非纯链接的工具/分类说明（`tools-directory`、`.card`、`cat-feed-lead`）  
+- [x] **ads.txt** 仍为已授权（保持即可）  
+- [ ] 未在几乎无正文的页面上堆满广告（AdSense 后台 / 自动广告范围 **需自查**）  
+- [ ] **changelog** 近几周有持续人类可读更新（**待补**）  
+- [ ] 抽测 **`/en/`** 与至少 2 篇 **`/en/articles/`** 段落完整（**提交前做**）  
 
 ---
 
@@ -139,4 +172,4 @@ npm run build-hubs && npm run build-seo-locales
 
 ---
 
-*版本：2026-05-19 · 过审无保证，以 Google 审核结果为准。*
+*版本：2026-05-19（进度与 §6 勾选已按仓库现状更新）· 过审无保证，以 Google 审核结果为准。*
