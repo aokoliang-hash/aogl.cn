@@ -14,8 +14,8 @@
 | 8 个 Hub 编辑说明 | ✅ **4 段/页** | `data/hubs/*.json` + `EDITORIAL_I18N` |
 | 首页 intro / 工具区 / 四卡 / `#cat-*` lead | ✅ 已落地 | 见 §2.4 |
 | 原创文章 | ⚠️ **7/8～10** | 还差 1～3 篇本人长文（见 §2.1） |
-| changelog 每周一条 | ⚠️ 待持续 | 有页面，需过审前补 2～4 周短讯 |
-| 广告位策略 / 英文抽测 / 等 3～7 天再申 | ⏳ 运营项 | 见 §2.5、§3、§5 |
+| changelog 每周一条 | ✅ 已补 | 2026-05-13～05-20 每周短讯（见 changelog.html） |
+| 广告位策略 / 等 3～7 天再申 | ⏳ 运营项 | 见 §2.5、§5；英文抽测见 `docs/AdSense英文抽测记录.md` ✅ |
 
 ---
 
@@ -105,19 +105,19 @@ npm run build-hubs && npm run build-seo-locales
 
 ## 3. 建议做（提高通过率）
 
-### 3.1 英文优先给审核员看 — ⏳ 提交前抽测
+### 3.1 英文优先给审核员看 — ✅ 已抽测（2026-05-20）
 
-- 打开 `https://aogl.cn/en/`、`/en/articles/...`、`/en/about.html` 应 **段落完整**。  
-- 勿让英文页只剩链接而中文很长（或反之）。部分文章 ja/ko 等 fragment 较短，审核若只看非中英仍可能偏薄。
+- 记录见 **`docs/AdSense英文抽测记录.md`**：`/en/`、about、changelog 通过；推荐送审样本 **`role-girl-card-visual-study`**、**`travel-through-parallax-phone`**。  
+- 部分文章英文 **&lt;400 词**（如 `interactive-3d-earth`）结构完整但偏短，勿单独作为唯一长文样本。ja/ko 等 fragment 更短，审核若只看非中英仍可能偏薄。
 
 ### 3.2 控制「薄页」印象（不删多语，但加重主 URL） — ⏳ 持续
 
 - **sitemap**：`build-seo-locales` 会生成；重大更新后重新构建即可。  
 - GitHub README / 分享多链 **文章与 about**，少只链 `games.html` 等纯目录。
 
-### 3.3 每周一条 `changelog` — ⚠️ 待持续
+### 3.3 每周一条 `changelog` — ✅ 已补（2026-05-20）
 
-已有 `changelog.html`（2026-05-11～05-19 有批次记录），过审前建议再补 **2～4 条** 人类可读短讯（非纯 commit）。
+`_multilang/changelog.html` 已含 **2026-05-13～05-20** 每周人类可读短讯（原创文章上线、About、轮播等）；构建后同步各语言 `changelog.html`。
 
 ### 3.4 禁止项自查 — ⏳ 提交前勾选
 
@@ -141,8 +141,8 @@ npm run build-hubs && npm run build-seo-locales
 |----|------|------|
 | **1** | `about.html` + 页脚 + sitemap；2 篇新文章 | about ✅；文章 ⚠️ 仅部分（现 6 篇） |
 | **2** | 8 hub 加编辑段；首页 `#cat-*` lead | ✅ 已完成（hub 为 **4 段**） |
-| **3** | 再 2～3 篇文章；changelog 补 4 周 | **当前重点** |
-| **4** | 自测 `/en/`、文章、hub、about、privacy；**等 3～7 天** → 申请审核 | 待做 |
+| **3** | 再 2～3 篇文章；changelog 补 4 周 | changelog ✅；还差 **1 篇** 文章 |
+| **4** | 自测 `/en/`、文章、hub、about、privacy；**等 3～7 天** → 申请审核 | 英文抽测 ✅；广告自查 + 等 3～7 天 |
 
 **复审前等待**：重大改动（尤其新文章）上线后 **至少 3～7 天** 再提交。
 
@@ -157,8 +157,8 @@ npm run build-hubs && npm run build-seo-locales
 - [x] 首页有 **关于本站**（`#intro`）+ 非纯链接的工具/分类说明（`tools-directory`、`.card`、`cat-feed-lead`）  
 - [x] **ads.txt** 仍为已授权（保持即可）  
 - [ ] 未在几乎无正文的页面上堆满广告（AdSense 后台 / 自动广告范围 **需自查**）  
-- [ ] **changelog** 近几周有持续人类可读更新（**待补**）  
-- [ ] 抽测 **`/en/`** 与至少 2 篇 **`/en/articles/`** 段落完整（**提交前做**）  
+- [x] **changelog** 近几周有持续人类可读更新（**2026-05-13～05-20 每周一条**）  
+- [x] 抽测 **`/en/`** 与至少 2 篇 **`/en/articles/`** 段落完整（见 `docs/AdSense英文抽测记录.md`）  
 
 ---
 
@@ -169,6 +169,7 @@ npm run build-hubs && npm run build-seo-locales
 | `docs/站点原创内容与实施节奏.md` | 首页与 hub 导语扩写细则 |
 | `docs/首页原创文章与SEO实施说明.md` | 文章构建与 SEO |
 | `docs/站点曝光与增长实施方案.md` | 自然搜索（GSC）；与 AdSense **分开** |
+| `docs/AdSense英文抽测记录.md` | §6 英文 URL 抽测结果与送审样本建议 |
 
 ---
 
