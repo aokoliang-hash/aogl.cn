@@ -6,14 +6,14 @@
 
 ---
 
-## 0. 进度总览（2026-05-19 核对）
+## 0. 进度总览（2026-05-20 核对）
 
 | 类别 | 状态 | 说明 |
 |------|------|------|
 | About / 隐私 / changelog | ✅ 已落地 | 各语言页 + 页脚 + sitemap |
 | 8 个 Hub 编辑说明 | ✅ **4 段/页** | `data/hubs/*.json` + `EDITORIAL_I18N` |
 | 首页 intro / 工具区 / 四卡 / `#cat-*` lead | ✅ 已落地 | 见 §2.4 |
-| 原创文章 | ⚠️ **7/8～10** | 还差 1～3 篇本人长文（见 §2.1） |
+| 原创文章 | ✅ **8/8 底线** | 第 8 篇 `girl1-knit-contact-sheet-study`（2026-05-20）；可选再补 1～2 篇加厚 |
 | changelog 每周一条 | ✅ 已补 | 2026-05-13～05-20 每周短讯（见 changelog.html） |
 | 广告位策略 / 等 3～7 天再申 | ⏳ 运营项 | 见 §2.5、§5；英文抽测见 `docs/AdSense英文抽测记录.md` ✅ |
 
@@ -28,29 +28,30 @@
 | About / 隐私 / 更新记录 / 可联系纠错 | 像「空壳导航站」、找不到谁在维护 |
 | 英文（及主语言）段落完整、非机翻堆砌 | 7 语 × 大量 hub = 海量相似薄页 |
 
-**已做**：首页 `#intro`；hub 的 `editorialHtml*`（**8 个 hub 均已 4 段**）；`changelog.html`；`about.html` / `privacy.html`；首页 `tools-directory` 双段导语、四张 `.card` 扩写、四个 `#cat-*` 的 `cat-feed-lead`；**6 篇** Demo/手记 `articles/`（见下）。
+**已做**：首页 `#intro`；hub 的 `editorialHtml*`（**8 个 hub 均已 4 段**）；`changelog.html`；`about.html` / `privacy.html`；首页 `tools-directory` 双段导语、四张 `.card` 扩写、四个 `#cat-*` 的 `cat-feed-lead`；**8 篇** Demo/手记 `articles/`（见下）。
 
-**仍不足**：原创文章 **未满 8 篇**（当前 **7 篇**）；changelog **未形成每周一条**；过审前可再补 **1～3 篇** 本人长文（中英其一 800 字+），且勿再堆 Hub 工作流类 AI 说明文。AdSense 抽样仍以 **en/zh 长文 Demo** 为主。
+**仍不足（可选）**：部分英文文章 **&lt;400 词**，可再补 1～2 篇或扩写；**广告位自查**；上线后 **等 3～7 天** 再申。勿再堆 Hub 工作流类 AI 说明文。AdSense 抽样仍以 **en/zh 长文 Demo** 为主。
 
-**当前 7 篇文章**（`data/articles/`）：
+**当前 8 篇文章**（`data/articles/`）：
 
-1. `role-girl-card-visual-study` — 角色卡牌视觉（白裙三视图 + 十二张定稿）  
-2. `travel-through-parallax-phone` — 穿越视差手机场景  
-3. `monkey2-sprite-head-track` — 猴子精灵图转头  
-4. `character-turnaround-walk` — 角色四视图 / 行走循环  
-5. `monkey-short-bts` — 猴子短片手记  
-6. `interactive-3d-earth` — 3D 地球  
-7. `velmora` — 太阳系探索器  
+1. `girl1-knit-contact-sheet-study` — 城市窗边米色针织（girl1 九格 + juese1–9）  
+2. `role-girl-card-visual-study` — 角色卡牌视觉（白裙三视图 + 十二张定稿）  
+3. `travel-through-parallax-phone` — 穿越视差手机场景  
+4. `monkey2-sprite-head-track` — 猴子精灵图转头  
+5. `character-turnaround-walk` — 角色四视图 / 行走循环  
+6. `monkey-short-bts` — 猴子短片手记  
+7. `interactive-3d-earth` — 3D 地球  
+8. `velmora` — 太阳系探索器  
 
 ---
 
 ## 2. 必做（建议过审前全部完成）
 
-### 2.1 增加「主内容页」数量与厚度 — ⚠️ 未完成
+### 2.1 增加「主内容页」数量与厚度 — ✅ 底线已达标（8 篇）
 
 | 动作 | 目标 | 当前 |
 |------|------|------|
-| **原创文章** | 至少 **8～10 篇**，每篇 **800 字以上**（中英至少一种完整正文） | **7 篇**（差 **1～3 篇**） |
+| **原创文章** | 至少 **8～10 篇**，每篇 **800 字以上**（中英至少一种完整正文） | **8 篇**（`girl1-knit-contact-sheet-study` 中英 800+；可选再 +1～2 篇） |
 | **选题** | 个人实验、Demo 说明（3D、短片、视差等） | 避免纯「工具官网汇总」单篇 |
 | **首页** | 摘要卡片 + 全文在 `/articles/<slug>.html` | ✅ 已按 `docs/首页原创文章与SEO实施说明.md` 构建 |
 
@@ -141,7 +142,7 @@ npm run build-hubs && npm run build-seo-locales
 |----|------|------|
 | **1** | `about.html` + 页脚 + sitemap；2 篇新文章 | about ✅；文章 ⚠️ 仅部分（现 6 篇） |
 | **2** | 8 hub 加编辑段；首页 `#cat-*` lead | ✅ 已完成（hub 为 **4 段**） |
-| **3** | 再 2～3 篇文章；changelog 补 4 周 | changelog ✅；还差 **1 篇** 文章 |
+| **3** | 再 2～3 篇文章；changelog 补 4 周 | **8 篇** + changelog ✅ |
 | **4** | 自测 `/en/`、文章、hub、about、privacy；**等 3～7 天** → 申请审核 | 英文抽测 ✅；广告自查 + 等 3～7 天 |
 
 **复审前等待**：重大改动（尤其新文章）上线后 **至少 3～7 天** 再提交。
@@ -150,7 +151,7 @@ npm run build-hubs && npm run build-seo-locales
 
 ## 6. 验收自检（提交审核前勾选）
 
-- [ ] 至少 **8 篇** 可独立阅读的文章 URL，正文在首屏 HTML（**当前 7 篇**）  
+- [x] 至少 **8 篇** 可独立阅读的文章 URL，正文在首屏 HTML（**当前 8 篇**，含 `girl1-knit-contact-sheet-study`）  
 - [x] 有 **about** 说明维护者与站点边界  
 - [x] **privacy** 可访问且含第三方/广告无隶属说明  
 - [x] 每个 hub 有 **3 段及以上** 站长说明（中或英）（**已为 4 段**）  
@@ -173,4 +174,4 @@ npm run build-hubs && npm run build-seo-locales
 
 ---
 
-*版本：2026-05-19（进度与 §6 勾选已按仓库现状更新）· 过审无保证，以 Google 审核结果为准。*
+*版本：2026-05-20（第 8 篇 girl1 上线，§6 文章项已勾选）· 过审无保证，以 Google 审核结果为准。*

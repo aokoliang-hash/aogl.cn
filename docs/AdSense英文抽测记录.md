@@ -30,10 +30,11 @@
 
 ---
 
-## 3. 文章 `/en/articles/`（7 篇英文字数粗算）
+## 3. 文章 `/en/articles/`（8 篇英文字数粗算）
 
 | Slug | 英文字数* | 段落/嵌入 | 抽测结论 |
 |------|-----------|-----------|----------|
+| `girl1-knit-contact-sheet-study` | ~810 | 多段 + 3× 九格 + 图库 | ✅ **推荐送审样本**（第 8 篇） |
 | `role-girl-card-visual-study` | ~680 | 多段 + 图集 + 3× MP4 | ✅ **推荐送审样本** |
 | `travel-through-parallax-phone` | ~536 | 多段 + 嵌入演示 | ✅ **推荐送审样本** |
 | `velmora` | ~414 | 多段 + 嵌入 | ✅ 通过 |
@@ -52,8 +53,9 @@
 
 1. https://aogl.cn/en/  
 2. https://aogl.cn/en/about.html  
-3. https://aogl.cn/en/articles/role-girl-card-visual-study.html  
-4. https://aogl.cn/en/articles/travel-through-parallax-phone.html  
+3. https://aogl.cn/en/articles/girl1-knit-contact-sheet-study.html  
+4. https://aogl.cn/en/articles/role-girl-card-visual-study.html  
+5. https://aogl.cn/en/articles/travel-through-parallax-phone.html  
 
 可选备查：https://aogl.cn/en/changelog.html  
 
@@ -61,7 +63,7 @@
 
 ## 5. 遗留（不阻塞本次抽测勾选）
 
-- 全站仍 **7/8 篇** 原创文章（§6 另一项未勾选）。  
+- 全站已达 **8/8 篇** 原创文章底线（2026-05-20 新增 girl1）。  
 - 4 篇英文 **&lt;400 词**，过审前若时间允许可各补 1～2 段「个人实验」说明（非必须才能通过抽测）。  
 - 广告位密度需在 AdSense 后台 **另自查**（§6 独立项）。
 
