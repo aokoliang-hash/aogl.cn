@@ -10,8 +10,9 @@
     "refresh-hub-news": "node scripts/fetch-hub-news.mjs && npm run build-hubs && npm run build-seo-locales",
     "build-articles": "node scripts/build-articles.mjs",
     "build-index-pills": "node scripts/inject-index-pills.mjs",
+    "build-contact": "node scripts/build-contact-page.mjs",
     "build-seo-locales": "node scripts/build-seo-locale-pages.mjs",
-    "build-site": "npm run build-hubs && npm run build-articles && npm run build-index-pills && npm run build-seo-locales"
+    "build-site": "npm run build-hubs && npm run build-articles && npm run build-index-pills && npm run build-contact && npm run build-seo-locales"
   },
   "devDependencies": {
     "cheerio": "^1.2.0",

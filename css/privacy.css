@@ -84,3 +84,41 @@ body:not(.locale-ar) .lang-ar {
 .article-body p:first-child {
   margin-top: 0;
 }
+.contact-lead {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0.5rem 0 1rem;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+}
+.contact-item {
+  margin: 0.65rem 0;
+  padding: 0.85rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+.contact-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.contact-value {
+  display: block;
+  word-break: break-word;
+}
+.contact-value a {
+  font-weight: 500;
+}
+.contact-note {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 1rem;
+}

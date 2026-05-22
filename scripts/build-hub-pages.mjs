@@ -93,6 +93,13 @@ const FOOTER_CHANGELOG = {
   ru: "Обновления",
   ar: "التحديثات",
 };
+const FOOTER_CONTACT = {
+  ja: "お問い合わせ",
+  ko: "문의",
+  fr: "Contact",
+  ru: "Контакты",
+  ar: "اتصل بنا",
+};
 
 function esc(s) {
   return String(s)
@@ -443,6 +450,12 @@ function footerLegal() {
         code === "en" ? "About" : code === "zh" ? "关于" : FOOTER_ABOUT[code]
       )}</a>`
   ).join("\n");
+  const contact = LOCALES.map(
+    (code) =>
+      `        <a href="contact.html" class="footer-legal-link lang-${code}">${esc(
+        code === "en" ? "Contact" : code === "zh" ? "联系我们" : FOOTER_CONTACT[code]
+      )}</a>`
+  ).join("\n");
   const log = LOCALES.map(
     (code) =>
       `        <a href="changelog.html" class="footer-legal-link lang-${code}">${esc(
@@ -455,7 +468,7 @@ function footerLegal() {
         code === "en" ? "Privacy" : code === "zh" ? "隐私政策" : FOOTER_PRIVACY[code]
       )}</a>`
   ).join("\n");
-  return about + "\n" + log + "\n" + priv;
+  return about + "\n" + contact + "\n" + log + "\n" + priv;
 }
 
 function renderPage(spec, activeFile) {

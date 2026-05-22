@@ -328,36 +328,43 @@ function buildHubNavBlock(prefix) {
 const FOOTER_LEGAL = {
   en: [
     ["about.html", "About"],
+    ["contact.html", "Contact"],
     ["changelog.html", "Changelog"],
     ["privacy.html", "Privacy"],
   ],
   zh: [
     ["about.html", "关于"],
+    ["contact.html", "联系我们"],
     ["changelog.html", "更新记录"],
     ["privacy.html", "隐私政策"],
   ],
   ja: [
     ["about.html", "概要"],
+    ["contact.html", "お問い合わせ"],
     ["changelog.html", "更新履歴"],
     ["privacy.html", "プライバシー"],
   ],
   ko: [
     ["about.html", "소개"],
+    ["contact.html", "문의"],
     ["changelog.html", "변경 기록"],
     ["privacy.html", "개인정보"],
   ],
   fr: [
     ["about.html", "À propos"],
+    ["contact.html", "Contact"],
     ["changelog.html", "Mises à jour"],
     ["privacy.html", "Confidentialité"],
   ],
   ru: [
     ["about.html", "О сайте"],
+    ["contact.html", "Контакты"],
     ["changelog.html", "Обновления"],
     ["privacy.html", "Конфиденциальность"],
   ],
   ar: [
     ["about.html", "حول الموقع"],
+    ["contact.html", "اتصل بنا"],
     ["changelog.html", "التحديثات"],
     ["privacy.html", "الخصوصية"],
   ],
