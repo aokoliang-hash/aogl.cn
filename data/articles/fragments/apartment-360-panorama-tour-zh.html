@@ -1,4 +1,4 @@
-<p>这篇是 aogl.cn 归档的<strong>第 9 篇原创手记</strong>，素材在 <code>original/360-degree-panorama/</code>。我做的是一套可嵌入的<strong>公寓内景 360° 漫游</strong>：四张 2:1 等距柱状全景图、一个 <code>panorama-viewer.html</code> 页面，用 Three.js 把贴图铺在「内翻」球面上，再用热点在客厅、餐厅、厨房、主卧之间跳转。不是房产中介落地页，也不教你怎么买某款 SaaS；只记我这次 Demo 的结构和取舍。</p>
+<p>这篇是 aogl.cn 归档的<strong>第 9 篇原创手记</strong>，素材在 <code>original/360-degree-panorama/</code>。文件夹里是一套<strong>公寓内景 360° 素材</strong>：四张 2:1 等距柱状全景图，外加一段把客厅→餐厅→厨房→主卧串起来的 <code>v360.mp4</code> 录屏。不是房产中介落地页，也不教你怎么买某款 SaaS；只记这次导出、命名和上线时的取舍。</p>
 
 <h2>文件夹里有什么</h2>
 <ul>
@@ -6,27 +6,16 @@
   <li><code>dining-room.png</code> — 法式餐厅，水晶吊灯与长桌</li>
   <li><code>kitchen.png</code> — 岛台厨房，大理石台面与铜锅陈列</li>
   <li><code>master-bedroom.png</code> — 主卧，城市天际线落地窗</li>
-  <li><code>panorama-viewer.html</code> — 可全屏操作的漫游壳页</li>
+  <li><code>v360.mp4</code> — 四房间连贯漫游录屏（文章内嵌播放）</li>
 </ul>
 <p>四张图都是<strong>完整一圈</strong>的室内全景：宽高比约 2:1，适合直接当 equirectangular 贴图。若比例不对，球体接缝会有一条竖线或天空/地面被拉扁——我导出前会先看一眼左右边缘能否无缝衔接。</p>
 
-<h2>为什么用内翻球体而不是「普通」球</h2>
-<p>Three.js 里常见写法是 <code>SphereGeometry</code> 再 <code>scale(-1, 1, 1)</code>，把相机放在球心，人看向内壁。外表面贴图时，你从外面看会像在看一颗行星；内景漫游必须「站在房间中间转头」。相机几乎固定在原点，<code>lookAt</code> 根据 yaw / pitch 转；拖拽改的是观察方向，不是绕物体公转。</p>
-<p>这和本站 <a href="interactive-3d-earth.html">交互 3D 地球</a> 同属 WebGL 球体，但地球是外观测、带光照与大气；全景漫游只要 <code>MeshBasicMaterial</code> 贴一张图，省算力，也避免室内全景被平行光「洗平」细节。</p>
-
-<h2>四场景与热点：我怎么定义跳转</h2>
-<p><code>panorama-viewer.html</code> 顶部用 <code>SCENES</code> 数组配置场景。每个场景有 <code>id</code>、中文名、描述、<code>image</code> 文件名、初始 <code>initYaw</code> / <code>initPitch</code>，以及 <code>hotspots</code> 列表。</p>
-<p>热点分四类（页面上颜色不同）：</p>
-<ul>
-  <li><strong>entry</strong> — 进入另一个房间（例如客厅里「前往餐厅」）</li>
-  <li><strong>exit</strong> — 返回上一个空间</li>
-  <li><strong>info</strong> — 弹窗说明（落地窗、吊灯、城市景观等）</li>
-  <li><strong>poi</strong> — 软装或物件兴趣点（沙发、岛台、衣帽间）</li>
-</ul>
-<p>每个热点存 <code>yaw</code>、<code>pitch</code>（度），以及 <code>targetScene</code> 或 <code>info</code> 文案。屏幕上的圆钮位置由当前相机方向投影到 2D 算出来；背对观众的热点会隐藏，避免满屏按钮。</p>
+<h2>等距柱状图与「内翻球」思路</h2>
+<p>若用 Three.js 做可拖拽漫游，常见写法是 <code>SphereGeometry</code> 再 <code>scale(-1, 1, 1)</code>，相机在球心、贴图朝内——人站在房间中间转头，而不是绕物体公转。这和本站 <a href="interactive-3d-earth.html">交互 3D 地球</a> 同属 WebGL 球体，但地球是外观测、带光照；室内全景往往只要 <code>MeshBasicMaterial</code> 单张贴图，避免平行光把烘焙细节洗平。</p>
+<p>本站现已<strong>只保留静帧与录屏</strong>，不再托管交互壳页；下面视频里仍能看到房间之间的转场节奏，四张 PNG 则方便对照单帧构图与文件名。</p>
 
 <h2>漫游录屏（v360.mp4）</h2>
-<p>下面是一段四房间连贯漫游的 MP4 录屏，首屏加载比 WebGL 壳页更轻。若要自己拖拽视角、点击热点在房间之间跳转，请在新标签页打开 <a href="../original/360-degree-panorama/panorama-viewer.html" target="_blank" rel="noopener noreferrer">panorama-viewer.html</a>（拖拽旋转、滚轮缩放 FOV、场景列表与自动轮播）。</p>
+<p>录屏覆盖四个空间，首屏比加载 WebGL 更轻，适合文章页直接嵌入。可用播放器暂停、逐帧看接缝与曝光是否一致。</p>
 
 <figure class="article-embed">
   <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="公寓 360° 全景漫游录屏 v360">
@@ -45,20 +34,16 @@
   <img src="../original/360-degree-panorama/master-bedroom.png" width="800" height="400" loading="lazy" decoding="async" alt="360° 全景 — 主卧 master-bedroom">
 </div>
 
-<h2>界面里还有哪些值得写进文章</h2>
-<p>顶栏显示当前场景名；左侧可折叠「漫游导航」用四张 16:9 缩略图切换。右下角罗盘指针随 yaw 旋转，和拖拽方向一致。底部显示 FOV 角度、上一景/下一景，以及自动轮播（默认约 9 秒）和慢速自转。键盘方向键可微调视角，<code>+</code> / <code>-</code> 缩放，<code>r</code> 回到该场景的初始 yaw/pitch。贴图加载失败时会用带房间名的渐变画布占位，方便本地调试热点位置。</p>
-
-<h2>过渡、加载与「假数据」边界</h2>
-<p>切换场景时有黑色淡入淡出，避免贴图还没换完就露馅。首屏有加载条——四张图从同目录相对路径加载，部署时要保证 PNG 与 HTML 同路径关系不变。</p>
-<p>热点里的文案（胡桃木餐桌、红酒柜、埃及长绒棉床品等）是<strong>配合画面写的示意说明</strong>，不是真实楼盘资料。若你 fork 去做真实房源，应整段替换 <code>SCENES</code> 与弹窗文字，并换上自己的测绘全景。</p>
+<h2>示意文案的边界</h2>
+<p>画面里的软装、景观描述（吊灯、天际线、岛台陈列等）是<strong>配合 AI/渲染画面写的示意</strong>，不是真实楼盘资料。若你 fork 去做真实房源，应换上测绘全景并替换所有营销文案。</p>
 
 <h2>和本站其他 Demo 的关系</h2>
-<p><a href="travel-through-parallax-phone.html">穿越视差手机</a> 是分层 2D 视差；<a href="interactive-3d-earth.html">3D 地球</a> 是外观测球体加光照。本篇是<strong>室内 equirectangular + 多场景图切换</strong>，更接近虚拟样板间技术验证。三条线并列放在首页轮播，避免混成「一个地球里有一套公寓」这种误解。</p>
+<p><a href="travel-through-parallax-phone.html">穿越视差手机</a> 是分层 2D 视差；<a href="interactive-3d-earth.html">3D 地球</a> 是外观测球体加光照。本篇是<strong>室内 equirectangular 静帧 + 录屏归档</strong>，更接近虚拟样板间素材包。三条线并列放在首页轮播，避免混成「一个地球里有一套公寓」这种误解。</p>
 
-<h2>若你要复用这套壳</h2>
+<h2>若你要复用这批素材</h2>
 <ol>
   <li>每张全景保持 2:1（常见 4096×2048 或 2048×1024），左右边缘对齐。</li>
-  <li>在 <code>SCENES</code> 里增删房间，热点 <code>yaw/pitch</code> 在浏览器里试调——我习惯先放一个 info 热点对位置，再复制改 targetScene。</li>
-  <li>文章页用录屏 + 上文说明，交互演示链到新标签页，利于搜索理解「360 全景 / virtual tour / Three.js」。</li>
+  <li>四张图用稳定文件名（如 <code>Living-room.png</code>），方便 CMS 或自建 viewer 引用。</li>
+  <li>文章页用录屏 + 静帧图库 + 上文说明，利于搜索理解「360 全景 / virtual tour / equirectangular interior」。</li>
 </ol>
-<p>我不在这里列「十大全景插件」对比表：插件换得快，把<strong>你自己的场景图 + 热点逻辑</strong>写清楚，比堆外链更有维护价值。</p>
+<p>我不在这里列「十大全景插件」对比表：插件换得快，把<strong>你自己的场景图 + 命名约定</strong>写清楚，比堆外链更有维护价值。</p>

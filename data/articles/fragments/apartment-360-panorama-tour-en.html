@@ -1,4 +1,4 @@
-<p>This is the <strong>ninth original article</strong> on aogl.cn, sourced from <code>original/360-degree-panorama/</code>. I built an embeddable <strong>apartment interior 360° tour</strong>: four 2:1 equirectangular panoramas, one <code>panorama-viewer.html</code> shell, and a Three.js sphere with inverted normals so the camera sits inside the room. Hotspots jump between living room, dining room, kitchen, and master bedroom. It is not a brokerage landing page and not a vendor tutorial—only how this demo is wired and what I would change next time.</p>
+<p>This is the <strong>ninth original article</strong> on aogl.cn, sourced from <code>original/360-degree-panorama/</code>. The folder is an <strong>apartment interior 360° asset pack</strong>: four 2:1 equirectangular panoramas plus <code>v360.mp4</code>, a screen recording that walks living room → dining → kitchen → master bedroom. It is not a brokerage landing page and not a vendor tutorial—only how these files are named, exported, and published here.</p>
 
 <h2>What is in the folder</h2>
 <ul>
@@ -6,27 +6,16 @@
   <li><code>dining-room.png</code> — formal dining space with chandelier and long table</li>
   <li><code>kitchen.png</code> — island kitchen, marble counter, copper cookware on display</li>
   <li><code>master-bedroom.png</code> — bedroom suite with city skyline glazing</li>
-  <li><code>panorama-viewer.html</code> — full-screen tour UI (drag, zoom, scene list)</li>
+  <li><code>v360.mp4</code> — four-room walkthrough recording (embedded below)</li>
 </ul>
 <p>Each image is a <strong>full 360° horizontal sweep</strong> at roughly 2:1 width-to-height—the usual equirectangular layout for panorama textures. If the ratio drifts, you get a visible seam or stretched floor/ceiling bands. I sanity-check left and right edges before committing a file to the repo.</p>
 
-<h2>Why an inverted sphere</h2>
-<p>The common Three.js pattern is <code>SphereGeometry</code> plus <code>scale(-1, 1, 1)</code>, camera near the origin, and <code>lookAt</code> driven by yaw and pitch. You are not orbiting furniture from outside; you are standing in the room and turning your head. Drag updates view direction; the sphere mesh stays put.</p>
-<p>That rhymes with the site’s <a href="interactive-3d-earth.html">interactive 3D Earth</a> (also WebGL + Three.js r128) but the earth looks from outside with lights and atmosphere. Interior tours only need <code>MeshBasicMaterial</code> and one texture map—cheaper and avoids flattening baked lighting in the panorama.</p>
-
-<h2>Four scenes and hotspot types</h2>
-<p>Configuration lives in a <code>SCENES</code> array inside <code>panorama-viewer.html</code>. Per scene: <code>id</code>, display name, short description, image filename, optional <code>initYaw</code> / <code>initPitch</code>, and a <code>hotspots</code> list.</p>
-<p>Hotspots are grouped by role (color-coded in the UI):</p>
-<ul>
-  <li><strong>entry</strong> — jump to another room (e.g. living room → dining room)</li>
-  <li><strong>exit</strong> — go back to the previous space</li>
-  <li><strong>info</strong> — modal copy about architecture or views (windows, chandelier, skyline)</li>
-  <li><strong>poi</strong> — furniture or fixture notes (sofa, island, wardrobe)</li>
-</ul>
-<p>Each hotspot stores <code>yaw</code> and <code>pitch</code> in degrees, plus either <code>targetScene</code> or an <code>info</code> string. On screen, positions are projected from sphere coordinates; markers behind the viewer hide so the frame does not fill with buttons.</p>
+<h2>Equirectangular layout and inverted-sphere tours</h2>
+<p>If you build a draggable WebGL tour, the common Three.js pattern is <code>SphereGeometry</code> plus <code>scale(-1, 1, 1)</code> with the camera at the origin— you stand inside the room and turn your head, not orbit furniture from outside. That rhymes with the site’s <a href="interactive-3d-earth.html">interactive 3D Earth</a> (also WebGL + Three.js r128) but the earth is viewed from outside with lights; interior panoramas often use <code>MeshBasicMaterial</code> and one texture map so baked lighting in the photo is not washed out.</p>
+<p>aogl.cn now ships <strong>stills plus the MP4 only</strong>—no hosted interactive shell. The video still shows how the spaces connect; the PNGs are there when you need a frozen frame or filename reference.</p>
 
 <h2>Tour recording (v360.mp4)</h2>
-<p>The clip below is a straight MP4 walkthrough across all four rooms—lighter on first paint than loading the WebGL shell. To drag the view yourself and click hotspots between spaces, open <a href="../original/360-degree-panorama/panorama-viewer.html" target="_blank" rel="noopener noreferrer">panorama-viewer.html</a> in a new tab (FOV zoom, scene rail, autoplay).</p>
+<p>The clip is lighter on first paint than booting a WebGL viewer—good for article embeds. Pause and scrub when you want to check exposure or seam alignment room by room.</p>
 
 <figure class="article-embed">
   <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="Apartment 360° panorama tour recording v360">
@@ -45,22 +34,16 @@
   <img src="../original/360-degree-panorama/master-bedroom.png" width="800" height="400" loading="lazy" decoding="async" alt="360° equirectangular — master bedroom">
 </div>
 
-<h2>UI pieces worth naming for SEO</h2>
-<p>The top bar shows the active scene title; a collapsible left rail lists all four spaces with 16:9 thumbs from the same PNGs. A compass widget rotates with yaw so “north” in the UI is not magic—it is tied to <code>-yaw</code> on the needle. Bottom controls expose FOV in degrees (roughly 35°–115°), previous/next scene, and toggles for autoplay (nine-second interval by default) and slow auto-rotate while you are not dragging.</p>
-<p>Keyboard arrows nudge view direction; <code>+</code> / <code>-</code> zoom; <code>r</code> resets to each scene’s <code>initYaw</code>. If a texture fails to load, the viewer falls back to a labeled gradient canvas so the hotspot graph still makes sense during debugging.</p>
-
-<h2>Transitions, loading, and copy boundaries</h2>
-<p>Scene changes fade through black so a half-loaded texture is less obvious. A short loading screen runs on first open; textures load from relative paths next to the HTML—keep that folder structure when you deploy.</p>
-<p>Modal text (walnut table, wine fridge, hotel-grade bedding, etc.) is <strong>staging copy written to match the pictures</strong>, not a real listing. For production real-estate use, replace every <code>info</code> block and hotspot label, and swap in legally cleared panoramas.</p>
+<h2>Staging copy boundaries</h2>
+<p>Descriptions in the imagery (chandelier, skyline, island styling, etc.) are <strong>staging copy written to match the renders</strong>, not a real listing. For production real-estate use, swap in legally cleared panoramas and replace every marketing line.</p>
 
 <h2>How this sits beside other demos</h2>
-<p><a href="travel-through-parallax-phone.html">Travel-through parallax phone</a> stacks 2D layers. <a href="interactive-3d-earth.html">3D Earth</a> is exterior observation with shaders. This article is <strong>interior equirectangular + multi-scene texture swap</strong>—closer to a virtual walkthrough tech spike. All three stay separate on the home carousel so visitors do not merge them into one fictional product.</p>
+<p><a href="travel-through-parallax-phone.html">Travel-through parallax phone</a> stacks 2D layers. <a href="interactive-3d-earth.html">3D Earth</a> is exterior observation with shaders. This article is <strong>interior equirectangular stills + a walkthrough recording</strong>—a virtual-tour asset archive, not a second globe demo. All three stay separate on the home carousel so visitors do not merge them into one fictional product.</p>
 
 <h2>Reuse checklist</h2>
 <ol>
   <li>Export panoramas at 2:1; align the seam at ±180°.</li>
-  <li>Edit <code>SCENES</code>—tune <code>yaw/pitch</code> live in the browser; I often place one <code>info</code> hotspot first to anchor direction, then clone for <code>entry</code> links.</li>
-  <li>Publish with semantic headings, figure/figcaption around the recording (and a link to the interactive viewer), and honest scope in the lead paragraph—helps queries like <em>360 panorama viewer</em>, <em>Three.js virtual tour</em>, <em>equirectangular interior</em>.</li>
+  <li>Keep stable filenames so your CMS or custom viewer can reference them.</li>
+  <li>Publish with semantic headings, figure/figcaption around the recording, and honest scope in the lead paragraph—helps queries like <em>360 panorama</em>, <em>equirectangular interior</em>, <em>virtual tour recording</em>.</li>
 </ol>
-<p>I skip a “top ten panorama plugins” roundup here. Plugins churn; documenting <strong>your scenes, hotspot graph, and deployment path</strong> ages better and reads as maintainer-written, which is what I want this archive to look like.</p>
-<p>If you ship this on aogl.cn or your own domain, submit the article URL and the interactive viewer URL separately in Search Console—static HTML around the video and prose is what explains the tour to crawlers; the canvas alone is thin.</p>
+<p>I skip a “top ten panorama plugins” roundup here. Plugins churn; documenting <strong>your scene files and naming</strong> ages better and reads as maintainer-written, which is what I want this archive to look like.</p>

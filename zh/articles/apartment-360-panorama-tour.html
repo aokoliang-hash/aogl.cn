@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="zh-Hant" data-title-zh="公寓 360° 全景漫遊：四房間熱點跳轉與 Three.js 內景球 — aogl.cn" data-desc-zh="本站原創手記：original/360-degree-panorama 裡一套可嵌入的公寓內景漫遊——四張 2:1 等距柱狀全景、Three.js 內翻球體、熱點跳轉與 POI 說明，非房產營銷頁。" data-aogl-lang="zht" data-aogl-seo-locale="1"><head>
+<!DOCTYPE html><html lang="zh-Hant" data-title-zh="公寓 360° 全景：四房間等距柱狀圖與漫遊錄屏 — aogl.cn" data-desc-zh="本站原創手記：original/360-degree-panorama 四張 2:1 公寓內景全景與 v360.mp4 錄屏，附靜幀對照，非房產營銷頁。" data-aogl-lang="zht" data-aogl-seo-locale="1"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
-  <meta name="description" content="本站原創手記：original/360-degree-panorama 裡一套可嵌入的公寓內景漫遊——四張 2:1 等距柱狀全景、Three.js 內翻球體、熱點跳轉與 POI 說明，非房產營銷頁。">
-  <title>公寓 360° 全景漫遊：四房間熱點跳轉與 Three.js 內景球 — aogl.cn</title>
+  <meta name="description" content="本站原創手記：original/360-degree-panorama 四張 2:1 公寓內景全景與 v360.mp4 錄屏，附靜幀對照，非房產營銷頁。">
+  <title>公寓 360° 全景：四房間等距柱狀圖與漫遊錄屏 — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/zh/articles/apartment-360-panorama-tour.html">
   <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/apartment-360-panorama-tour.html">
   <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/apartment-360-panorama-tour.html">
@@ -18,8 +18,8 @@
   <meta name="author" content="aogl.cn">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://aogl.cn/zh/articles/apartment-360-panorama-tour.html">
-  <meta property="og:title" content="公寓 360° 全景漫遊：四房間熱點跳轉與 Three.js 內景球 — aogl.cn">
-  <meta property="og:description" content="本站原創手記：original/360-degree-panorama 裡一套可嵌入的公寓內景漫遊——四張 2:1 等距柱狀全景、Three.js 內翻球體、熱點跳轉與 POI 說明，非房產營銷頁。">
+  <meta property="og:title" content="公寓 360° 全景：四房間等距柱狀圖與漫遊錄屏 — aogl.cn">
+  <meta property="og:description" content="本站原創手記：original/360-degree-panorama 四張 2:1 公寓內景全景與 v360.mp4 錄屏，附靜幀對照，非房產營銷頁。">
   <meta property="og:site_name" content="aogl.cn">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:image" content="https://aogl.cn/original/360-degree-panorama/Living-room.png">
@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="../../css/article-hub.css">
   <script src="../../js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Living-room · dining · kitchen · master-bedroom · panorama-viewer.html","alternativeHeadline":"公寓 360° 全景漫游：四房间热点跳转与 Three.js 内景球","datePublished":"2026-05-21","dateModified":"2026-05-21","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html"},"url":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html","inLanguage":"zh-Hant","description":"Original aogl.cn notes on original/360-degree-panorama: an embeddable apartment virtual tour—four 2:1 equirectangular rooms, inverted Three.js sphere, hotspot navigation and POI modals—not a real-estate listing.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Living-room · dining · kitchen · master-bedroom · v360.mp4","alternativeHeadline":"公寓 360° 全景：四房间等距柱状图与漫游录屏","datePublished":"2026-05-21","dateModified":"2026-05-21","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html"},"url":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html","inLanguage":"zh-Hant","description":"Original aogl.cn notes on original/360-degree-panorama: four 2:1 equirectangular apartment rooms, v360.mp4 walkthrough, and still frames—not a real-estate listing.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zht">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -68,35 +68,25 @@
         <a href="../../index.html#originals">← 返回首頁 · 本站原創</a>
       </div>
       <div class="article-shell__header">
-        <h1>公寓 360° 全景漫遊：四房間熱點跳轉與 Three.js 內景球</h1>
-        <p class="article-shell__sub">Living-room · dining · kitchen · master-bedroom · panorama-viewer.html</p>
+        <h1>公寓 360° 全景：四房間等距柱狀圖與漫遊錄屏</h1>
+        <p class="article-shell__sub">Living-room · dining · kitchen · master-bedroom · v360.mp4</p>
         <p class="article-shell__meta"><time datetime="2026-05-21">2026-05-21</time> · 本站原創</p>
       </div>
-      <article class="article-shell__body" lang="zh-Hans"><p>這篇是 aogl.cn 歸檔的<strong>第 9 篇原創手記</strong>，素材在 <code>original/360-degree-panorama/</code>。我做的是一套可嵌入的<strong>公寓內景 360° 漫遊</strong>：四張 2:1 等距柱狀全景圖、一個 <code>panorama-viewer.html</code> 頁面，用 Three.js 把貼圖鋪在「內翻」球面上，再用熱點在客廳、餐廳、廚房、主臥之間跳轉。不是房產中介落地頁，也不教你怎麼買某款 SaaS；只記我這次 Demo 的結構和取捨。</p>
+      <article class="article-shell__body" lang="zh-Hans"><p>這篇是 aogl.cn 歸檔的<strong>第 9 篇原創手記</strong>，素材在 <code>original/360-degree-panorama/</code>。文件夾裡是一套<strong>公寓內景 360° 素材</strong>：四張 2:1 等距柱狀全景圖，外加一段把客廳→餐廳→廚房→主臥串起來的 <code>v360.mp4</code> 錄屏。不是房產中介落地頁，也不教你怎麼買某款 SaaS；只記這次導出、命名和上線時的取捨。</p>
 <h2>文件夾裡有什麼</h2>
 <ul>
   <li><code>Living-room.png</code> — 北歐風客廳，落地窗對公園</li>
   <li><code>dining-room.png</code> — 法式餐廳，水晶吊燈與長桌</li>
   <li><code>kitchen.png</code> — 島臺廚房，大理石臺面與銅鍋陳列</li>
   <li><code>master-bedroom.png</code> — 主臥，城市天際線落地窗</li>
-  <li><code>panorama-viewer.html</code> — 可全屏操作的漫遊殼頁</li>
+  <li><code>v360.mp4</code> — 四房間連貫漫遊錄屏（文章內嵌播放）</li>
 </ul>
 <p>四張圖都是<strong>完整一圈</strong>的室內全景：寬高比約 2:1，適合直接當 equirectangular 貼圖。若比例不對，球體接縫會有一條豎線或天空/地面被拉扁——我導出前會先看一眼左右邊緣能否無縫銜接。</p>
-<h2>為什麼用內翻球體而不是「普通」球</h2>
-<p>Three.js 裡常見寫法是 <code>SphereGeometry</code> 再 <code>scale(-1, 1, 1)</code>，把相機放在球心，人看向內壁。外表面貼圖時，你從外面看會像在看一顆行星；內景漫遊必須「站在房間中間轉頭」。相機幾乎固定在原點，<code>lookAt</code> 根據 yaw / pitch 轉；拖拽改的是觀察方向，不是繞物體公轉。</p>
-<p>這和本站 <a href="interactive-3d-earth.html">交互 3D 地球</a> 同屬 WebGL 球體，但地球是外觀測、帶光照與大氣；全景漫遊只要 <code>MeshBasicMaterial</code> 貼一張圖，省算力，也避免室內全景被平行光「洗平」細節。</p>
-<h2>四場景與熱點：我怎麼定義跳轉</h2>
-<p><code>panorama-viewer.html</code> 頂部用 <code>SCENES</code> 數組配置場景。每個場景有 <code>id</code>、中文名、描述、<code>image</code> 文件名、初始 <code>initYaw</code> / <code>initPitch</code>，以及 <code>hotspots</code> 列表。</p>
-<p>熱點分四類（頁面上顏色不同）：</p>
-<ul>
-  <li><strong>entry</strong> — 進入另一個房間（例如客廳裡「前往餐廳」）</li>
-  <li><strong>exit</strong> — 返回上一個空間</li>
-  <li><strong>info</strong> — 彈窗說明（落地窗、吊燈、城市景觀等）</li>
-  <li><strong>poi</strong> — 軟裝或物件興趣點（沙發、島臺、衣帽間）</li>
-</ul>
-<p>每個熱點存 <code>yaw</code>、<code>pitch</code>（度），以及 <code>targetScene</code> 或 <code>info</code> 文案。屏幕上的圓鈕位置由當前相機方向投影到 2D 算出來；背對觀眾的熱點會隱藏，避免滿屏按鈕。</p>
+<h2>等距柱狀圖與「內翻球」思路</h2>
+<p>若用 Three.js 做可拖拽漫遊，常見寫法是 <code>SphereGeometry</code> 再 <code>scale(-1, 1, 1)</code>，相機在球心、貼圖朝內——人站在房間中間轉頭，而不是繞物體公轉。這和本站 <a href="interactive-3d-earth.html">交互 3D 地球</a> 同屬 WebGL 球體，但地球是外觀測、帶光照；室內全景往往只要 <code>MeshBasicMaterial</code> 單張貼圖，避免平行光把烘焙細節洗平。</p>
+<p>本站現已<strong>只保留靜幀與錄屏</strong>，不再託管交互殼頁；下面視頻裡仍能看到房間之間的轉場節奏，四張 PNG 則方便對照單幀構圖與文件名。</p>
 <h2>漫遊錄屏（v360.mp4）</h2>
-<p>下面是一段四房間連貫漫遊的 MP4 錄屏，首屏加載比 WebGL 殼頁更輕。若要自己拖拽視角、點擊熱點在房間之間跳轉，請在新標籤頁打開 <a href="../../original/360-degree-panorama/panorama-viewer.html" target="_blank" rel="noopener noreferrer">panorama-viewer.html</a>（拖拽旋轉、滾輪縮放 FOV、場景列表與自動輪播）。</p>
+<p>錄屏覆蓋四個空間，首屏比加載 WebGL 更輕，適合文章頁直接嵌入。可用播放器暫停、逐幀看接縫與曝光是否一致。</p>
 <figure class="article-embed">
   <video controls="" playsinline="" preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="公寓 360° 全景漫遊錄屏 v360">
     <source src="../../original/360-degree-panorama/v360.mp4" type="video/mp4">
@@ -111,20 +101,17 @@
   <img src="../../original/360-degree-panorama/kitchen.png" width="800" height="400" loading="lazy" decoding="async" alt="360° 全景 — 廚房 kitchen">
   <img src="../../original/360-degree-panorama/master-bedroom.png" width="800" height="400" loading="lazy" decoding="async" alt="360° 全景 — 主臥 master-bedroom">
 </div>
-<h2>界面裡還有哪些值得寫進文章</h2>
-<p>頂欄顯示當前場景名；左側可摺疊「漫遊導航」用四張 16:9 縮略圖切換。右下角羅盤指針隨 yaw 旋轉，和拖拽方向一致。底部顯示 FOV 角度、上一景/下一景，以及自動輪播（默認約 9 秒）和慢速自轉。鍵盤方向鍵可微調視角，<code>+</code> / <code>-</code> 縮放，<code>r</code> 回到該場景的初始 yaw/pitch。貼圖加載失敗時會用帶房間名的漸變畫布佔位，方便本地調試熱點位置。</p>
-<h2>過渡、加載與「假數據」邊界</h2>
-<p>切換場景時有黑色淡入淡出，避免貼圖還沒換完就露餡。首屏有加載條——四張圖從同目錄相對路徑加載，部署時要保證 PNG 與 HTML 同路徑關係不變。</p>
-<p>熱點裡的文案（胡桃木餐桌、紅酒櫃、埃及長絨棉床品等）是<strong>配合畫面寫的示意說明</strong>，不是真實樓盤資料。若你 fork 去做真實房源，應整段替換 <code>SCENES</code> 與彈窗文字，並換上自己的測繪全景。</p>
+<h2>示意文案的邊界</h2>
+<p>畫面裡的軟裝、景觀描述（吊燈、天際線、島臺陳列等）是<strong>配合 AI/渲染畫面寫的示意</strong>，不是真實樓盤資料。若你 fork 去做真實房源，應換上測繪全景並替換所有營銷文案。</p>
 <h2>和本站其他 Demo 的關係</h2>
-<p><a href="travel-through-parallax-phone.html">穿越視差手機</a> 是分層 2D 視差；<a href="interactive-3d-earth.html">3D 地球</a> 是外觀測球體加光照。本篇是<strong>室內 equirectangular + 多場景圖切換</strong>，更接近虛擬樣板間技術驗證。三條線並列放在首頁輪播，避免混成「一個地球裡有一套公寓」這種誤解。</p>
-<h2>若你要複用這套殼</h2>
+<p><a href="travel-through-parallax-phone.html">穿越視差手機</a> 是分層 2D 視差；<a href="interactive-3d-earth.html">3D 地球</a> 是外觀測球體加光照。本篇是<strong>室內 equirectangular 靜幀 + 錄屏歸檔</strong>，更接近虛擬樣板間素材包。三條線並列放在首頁輪播，避免混成「一個地球裡有一套公寓」這種誤解。</p>
+<h2>若你要複用這批素材</h2>
 <ol>
   <li>每張全景保持 2:1（常見 4096×2048 或 2048×1024），左右邊緣對齊。</li>
-  <li>在 <code>SCENES</code> 裡增刪房間，熱點 <code>yaw/pitch</code> 在瀏覽器裡試調——我習慣先放一個 info 熱點對位置，再複製改 targetScene。</li>
-  <li>文章頁用錄屏 + 上文說明，交互演示鏈到新標籤頁，利於搜索理解「360 全景 / virtual tour / Three.js」。</li>
+  <li>四張圖用穩定文件名（如 <code>Living-room.png</code>），方便 CMS 或自建 viewer 引用。</li>
+  <li>文章頁用錄屏 + 靜幀圖庫 + 上文說明，利於搜索理解「360 全景 / virtual tour / equirectangular interior」。</li>
 </ol>
-<p>我不在這裡列「十大全景插件」對比表：插件換得快，把<strong>你自己的場景圖 + 熱點邏輯</strong>寫清楚，比堆外鏈更有維護價值。</p></article>
+<p>我不在這裡列「十大全景插件」對比表：插件換得快，把<strong>你自己的場景圖 + 命名約定</strong>寫清楚，比堆外鏈更有維護價值。</p></article>
     </div>
   </main>
   <footer class="site-footer">
