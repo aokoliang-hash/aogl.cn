@@ -174,16 +174,18 @@
 </ul>
 <p>Each hotspot stores <code>yaw</code> and <code>pitch</code> in degrees, plus either <code>targetScene</code> or an <code>info</code> string. On screen, positions are projected from sphere coordinates; markers behind the viewer hide so the frame does not fill with buttons.</p>
 
-<h2>Try the embedded tour</h2>
-<p>Mouse: drag to look, wheel to change field of view, double-click to reset. Left rail: thumbnail cards per room. Bottom bar: previous/next scene, autoplay slideshow, optional slow auto-rotate. Touch: one-finger drag, pinch zoom.</p>
+<h2>Tour recording (v360.mp4)</h2>
+<p>The clip below is a straight MP4 walkthrough across all four rooms—lighter on first paint than loading the WebGL shell. To drag the view yourself and click hotspots between spaces, open <a href="../original/360-degree-panorama/panorama-viewer.html" target="_blank" rel="noopener noreferrer">panorama-viewer.html</a> in a new tab (FOV zoom, scene rail, autoplay).</p>
 
 <figure class="article-embed">
-  <iframe src="../original/360-degree-panorama/panorama-viewer.html" title="Apartment 360° panorama tour — Three.js" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-  <figcaption>Embedded <code>panorama-viewer.html</code> — four rooms with hotspot navigation.</figcaption>
+  <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="Apartment 360° panorama tour recording v360">
+    <source src="../original/360-degree-panorama/v360.mp4" type="video/mp4">
+  </video>
+  <figcaption>Recording: <code>v360.mp4</code> — living, dining, kitchen, master bedroom preview.</figcaption>
 </figure>
 
 <h2>Still frames for comparison</h2>
-<p>If the iframe is heavy on mobile, the flat panoramas still show composition per room. Filenames match scene ids.</p>
+<p>Flat equirectangular stills below match each scene id when you need a frozen frame.</p>
 
 <div class="article-gallery">
   <img src="../original/360-degree-panorama/Living-room.png" width="800" height="400" loading="lazy" decoding="async" alt="360° equirectangular — living room">
@@ -207,9 +209,10 @@
 <ol>
   <li>Export panoramas at 2:1; align the seam at ±180°.</li>
   <li>Edit <code>SCENES</code>—tune <code>yaw/pitch</code> live in the browser; I often place one <code>info</code> hotspot first to anchor direction, then clone for <code>entry</code> links.</li>
-  <li>Publish with semantic headings, figure/figcaption around the iframe, and honest scope in the lead paragraph—helps queries like <em>360 panorama viewer</em>, <em>Three.js virtual tour</em>, <em>equirectangular interior</em>.</li>
+  <li>Publish with semantic headings, figure/figcaption around the recording (and a link to the interactive viewer), and honest scope in the lead paragraph—helps queries like <em>360 panorama viewer</em>, <em>Three.js virtual tour</em>, <em>equirectangular interior</em>.</li>
 </ol>
-<p>I skip a “top ten panorama plugins” roundup here. Plugins churn; documenting <strong>your scenes, hotspot graph, and deployment path</strong> ages better and reads as maintainer-written, which is what I want this archive to look like.</p></article>
+<p>I skip a “top ten panorama plugins” roundup here. Plugins churn; documenting <strong>your scenes, hotspot graph, and deployment path</strong> ages better and reads as maintainer-written, which is what I want this archive to look like.</p>
+<p>If you ship this on aogl.cn or your own domain, submit the article URL and the interactive viewer URL separately in Search Console—static HTML around the video and prose is what explains the tour to crawlers; the canvas alone is thin.</p></article>
     </div>
     <div class="lang-zh">
       <div class="article-shell__top">
@@ -247,16 +250,18 @@
 </ul>
 <p>每个热点存 <code>yaw</code>、<code>pitch</code>（度），以及 <code>targetScene</code> 或 <code>info</code> 文案。屏幕上的圆钮位置由当前相机方向投影到 2D 算出来；背对观众的热点会隐藏，避免满屏按钮。</p>
 
-<h2>在线试玩（嵌入）</h2>
-<p>拖拽旋转、滚轮改 FOV、双击重置；左侧场景卡片可点；底部可上一景/下一景、开关自动轮播与缓慢自转。手机端支持单指拖、双指缩放。</p>
+<h2>漫游录屏（v360.mp4）</h2>
+<p>下面是一段四房间连贯漫游的 MP4 录屏，首屏加载比 WebGL 壳页更轻。若要自己拖拽视角、点击热点在房间之间跳转，请在新标签页打开 <a href="../original/360-degree-panorama/panorama-viewer.html" target="_blank" rel="noopener noreferrer">panorama-viewer.html</a>（拖拽旋转、滚轮缩放 FOV、场景列表与自动轮播）。</p>
 
 <figure class="article-embed">
-  <iframe src="../original/360-degree-panorama/panorama-viewer.html" title="公寓 360° 全景漫游 — Three.js" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-  <figcaption>嵌入：<code>panorama-viewer.html</code> — 四房间热点跳转。</figcaption>
+  <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="公寓 360° 全景漫游录屏 v360">
+    <source src="../original/360-degree-panorama/v360.mp4" type="video/mp4">
+  </video>
+  <figcaption>录屏：<code>v360.mp4</code> — 客厅、餐厅、厨房、主卧连贯预览。</figcaption>
 </figure>
 
 <h2>四张全景静帧（对照用）</h2>
-<p>若嵌入页加载慢，仍可先看单张图理解每个空间的构图。文件名与场景 id 一一对应。</p>
+<p>需要对照单帧构图时，可看下面四张 equirectangular 静图；文件名与场景 id 一一对应。</p>
 
 <div class="article-gallery">
   <img src="../original/360-degree-panorama/Living-room.png" width="800" height="400" loading="lazy" decoding="async" alt="360° 全景 — 客厅 Living-room">
@@ -279,7 +284,7 @@
 <ol>
   <li>每张全景保持 2:1（常见 4096×2048 或 2048×1024），左右边缘对齐。</li>
   <li>在 <code>SCENES</code> 里增删房间，热点 <code>yaw/pitch</code> 在浏览器里试调——我习惯先放一个 info 热点对位置，再复制改 targetScene。</li>
-  <li>文章页用 iframe 嵌入 + 上文说明，利于搜索理解「360 全景 / virtual tour / Three.js」。</li>
+  <li>文章页用录屏 + 上文说明，交互演示链到新标签页，利于搜索理解「360 全景 / virtual tour / Three.js」。</li>
 </ol>
 <p>我不在这里列「十大全景插件」对比表：插件换得快，把<strong>你自己的场景图 + 热点逻辑</strong>写清楚，比堆外链更有维护价值。</p></article>
     </div>
@@ -294,7 +299,9 @@
       </div>
       <article class="article-shell__body" lang="ja"><p>aogl.cn の<strong>オリジナル第9弾</strong>。<code>original/360-degree-panorama/</code> に四部屋の 2:1 パノラマと <code>panorama-viewer.html</code>（Three.js 内側球＋ホットスポット遷移）があります。英語・中国語に全文があります。</p>
 <figure class="article-embed">
-  <iframe src="../original/360-degree-panorama/panorama-viewer.html" title="360° apartment tour" loading="lazy" allowfullscreen></iframe>
+  <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="360° tour v360">
+    <source src="../original/360-degree-panorama/v360.mp4" type="video/mp4">
+  </video>
 </figure>
 <p>関連：<a href="interactive-3d-earth.html">3D Earth</a> · <a href="travel-through-parallax-phone.html">parallax phone</a></p></article>
     </div>
@@ -309,7 +316,9 @@
       </div>
       <article class="article-shell__body" lang="ko"><p>aogl.cn <strong>아홉 번째 오리지널</strong>. <code>original/360-degree-panorama/</code> — 네 공간 360° 파노라마와 Three.js 뷰어, 핫스팟 이동. 전문은 영문·중문.</p>
 <figure class="article-embed">
-  <iframe src="../original/360-degree-panorama/panorama-viewer.html" title="360° apartment tour" loading="lazy" allowfullscreen></iframe>
+  <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="360° tour v360">
+    <source src="../original/360-degree-panorama/v360.mp4" type="video/mp4">
+  </video>
 </figure></article>
     </div>
     <div class="lang-fr">
@@ -323,7 +332,9 @@
       </div>
       <article class="article-shell__body" lang="fr"><p><strong>9<sup>e</sup> note originale</strong> — dossier <code>original/360-degree-panorama/</code> : visite 360° de quatre pièces, sphère Three.js inversée, hotspots. Texte intégral en anglais et chinois.</p>
 <figure class="article-embed">
-  <iframe src="../original/360-degree-panorama/panorama-viewer.html" title="Visite 360°" loading="lazy" allowfullscreen></iframe>
+  <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="Visite 360° v360">
+    <source src="../original/360-degree-panorama/v360.mp4" type="video/mp4">
+  </video>
 </figure></article>
     </div>
     <div class="lang-ru">
@@ -337,7 +348,9 @@
       </div>
       <article class="article-shell__body" lang="ru"><p><strong>Девятая оригинальная</strong> заметка: <code>original/360-degree-panorama/</code> — 360° тур по четырём комнатам, Three.js, hotspots. Полный текст на английском и китайском.</p>
 <figure class="article-embed">
-  <iframe src="../original/360-degree-panorama/panorama-viewer.html" title="360° tour" loading="lazy" allowfullscreen></iframe>
+  <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="360° tour v360">
+    <source src="../original/360-degree-panorama/v360.mp4" type="video/mp4">
+  </video>
 </figure></article>
     </div>
     <div class="lang-ar">
@@ -351,7 +364,9 @@
       </div>
       <article class="article-shell__body" lang="ar" dir="rtl"><p><strong>المقال الأصلي التاسع</strong>: مجلد <code>original/360-degree-panorama/</code> — جولة 360° لأربع غرف ونقاط تفاعل Three.js. النص الكامل بالإنجليزية والصينية.</p>
 <figure class="article-embed">
-  <iframe src="../original/360-degree-panorama/panorama-viewer.html" title="جولة 360°" loading="lazy" allowfullscreen></iframe>
+  <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="جولة 360° v360">
+    <source src="../original/360-degree-panorama/v360.mp4" type="video/mp4">
+  </video>
 </figure></article>
     </div>
   </main>

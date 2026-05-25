@@ -25,16 +25,18 @@
 </ul>
 <p>Each hotspot stores <code>yaw</code> and <code>pitch</code> in degrees, plus either <code>targetScene</code> or an <code>info</code> string. On screen, positions are projected from sphere coordinates; markers behind the viewer hide so the frame does not fill with buttons.</p>
 
-<h2>Try the embedded tour</h2>
-<p>Mouse: drag to look, wheel to change field of view, double-click to reset. Left rail: thumbnail cards per room. Bottom bar: previous/next scene, autoplay slideshow, optional slow auto-rotate. Touch: one-finger drag, pinch zoom.</p>
+<h2>Tour recording (v360.mp4)</h2>
+<p>The clip below is a straight MP4 walkthrough across all four rooms—lighter on first paint than loading the WebGL shell. To drag the view yourself and click hotspots between spaces, open <a href="../original/360-degree-panorama/panorama-viewer.html" target="_blank" rel="noopener noreferrer">panorama-viewer.html</a> in a new tab (FOV zoom, scene rail, autoplay).</p>
 
 <figure class="article-embed">
-  <iframe src="../original/360-degree-panorama/panorama-viewer.html" title="Apartment 360° panorama tour — Three.js" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-  <figcaption>Embedded <code>panorama-viewer.html</code> — four rooms with hotspot navigation.</figcaption>
+  <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="Apartment 360° panorama tour recording v360">
+    <source src="../original/360-degree-panorama/v360.mp4" type="video/mp4">
+  </video>
+  <figcaption>Recording: <code>v360.mp4</code> — living, dining, kitchen, master bedroom preview.</figcaption>
 </figure>
 
 <h2>Still frames for comparison</h2>
-<p>If the iframe is heavy on mobile, the flat panoramas still show composition per room. Filenames match scene ids.</p>
+<p>Flat equirectangular stills below match each scene id when you need a frozen frame.</p>
 
 <div class="article-gallery">
   <img src="../original/360-degree-panorama/Living-room.png" width="800" height="400" loading="lazy" decoding="async" alt="360° equirectangular — living room">
@@ -58,7 +60,7 @@
 <ol>
   <li>Export panoramas at 2:1; align the seam at ±180°.</li>
   <li>Edit <code>SCENES</code>—tune <code>yaw/pitch</code> live in the browser; I often place one <code>info</code> hotspot first to anchor direction, then clone for <code>entry</code> links.</li>
-  <li>Publish with semantic headings, figure/figcaption around the iframe, and honest scope in the lead paragraph—helps queries like <em>360 panorama viewer</em>, <em>Three.js virtual tour</em>, <em>equirectangular interior</em>.</li>
+  <li>Publish with semantic headings, figure/figcaption around the recording (and a link to the interactive viewer), and honest scope in the lead paragraph—helps queries like <em>360 panorama viewer</em>, <em>Three.js virtual tour</em>, <em>equirectangular interior</em>.</li>
 </ol>
 <p>I skip a “top ten panorama plugins” roundup here. Plugins churn; documenting <strong>your scenes, hotspot graph, and deployment path</strong> ages better and reads as maintainer-written, which is what I want this archive to look like.</p>
-<p>If you ship this on aogl.cn or your own domain, submit the article URL and the embed URL separately in Search Console—static HTML around the iframe is what explains the tour to crawlers; the canvas alone is thin.</p>
+<p>If you ship this on aogl.cn or your own domain, submit the article URL and the interactive viewer URL separately in Search Console—static HTML around the video and prose is what explains the tour to crawlers; the canvas alone is thin.</p>

@@ -25,16 +25,18 @@
 </ul>
 <p>每个热点存 <code>yaw</code>、<code>pitch</code>（度），以及 <code>targetScene</code> 或 <code>info</code> 文案。屏幕上的圆钮位置由当前相机方向投影到 2D 算出来；背对观众的热点会隐藏，避免满屏按钮。</p>
 
-<h2>在线试玩（嵌入）</h2>
-<p>拖拽旋转、滚轮改 FOV、双击重置；左侧场景卡片可点；底部可上一景/下一景、开关自动轮播与缓慢自转。手机端支持单指拖、双指缩放。</p>
+<h2>漫游录屏（v360.mp4）</h2>
+<p>下面是一段四房间连贯漫游的 MP4 录屏，首屏加载比 WebGL 壳页更轻。若要自己拖拽视角、点击热点在房间之间跳转，请在新标签页打开 <a href="../original/360-degree-panorama/panorama-viewer.html" target="_blank" rel="noopener noreferrer">panorama-viewer.html</a>（拖拽旋转、滚轮缩放 FOV、场景列表与自动轮播）。</p>
 
 <figure class="article-embed">
-  <iframe src="../original/360-degree-panorama/panorama-viewer.html" title="公寓 360° 全景漫游 — Three.js" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-  <figcaption>嵌入：<code>panorama-viewer.html</code> — 四房间热点跳转。</figcaption>
+  <video controls playsinline preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="公寓 360° 全景漫游录屏 v360">
+    <source src="../original/360-degree-panorama/v360.mp4" type="video/mp4">
+  </video>
+  <figcaption>录屏：<code>v360.mp4</code> — 客厅、餐厅、厨房、主卧连贯预览。</figcaption>
 </figure>
 
 <h2>四张全景静帧（对照用）</h2>
-<p>若嵌入页加载慢，仍可先看单张图理解每个空间的构图。文件名与场景 id 一一对应。</p>
+<p>需要对照单帧构图时，可看下面四张 equirectangular 静图；文件名与场景 id 一一对应。</p>
 
 <div class="article-gallery">
   <img src="../original/360-degree-panorama/Living-room.png" width="800" height="400" loading="lazy" decoding="async" alt="360° 全景 — 客厅 Living-room">
@@ -57,6 +59,6 @@
 <ol>
   <li>每张全景保持 2:1（常见 4096×2048 或 2048×1024），左右边缘对齐。</li>
   <li>在 <code>SCENES</code> 里增删房间，热点 <code>yaw/pitch</code> 在浏览器里试调——我习惯先放一个 info 热点对位置，再复制改 targetScene。</li>
-  <li>文章页用 iframe 嵌入 + 上文说明，利于搜索理解「360 全景 / virtual tour / Three.js」。</li>
+  <li>文章页用录屏 + 上文说明，交互演示链到新标签页，利于搜索理解「360 全景 / virtual tour / Three.js」。</li>
 </ol>
 <p>我不在这里列「十大全景插件」对比表：插件换得快，把<strong>你自己的场景图 + 热点逻辑</strong>写清楚，比堆外链更有维护价值。</p>

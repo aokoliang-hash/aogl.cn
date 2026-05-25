@@ -95,14 +95,16 @@
   <li><strong>poi</strong> — 軟裝或物件興趣點（沙發、島臺、衣帽間）</li>
 </ul>
 <p>每個熱點存 <code>yaw</code>、<code>pitch</code>（度），以及 <code>targetScene</code> 或 <code>info</code> 文案。屏幕上的圓鈕位置由當前相機方向投影到 2D 算出來；背對觀眾的熱點會隱藏，避免滿屏按鈕。</p>
-<h2>在線試玩（嵌入）</h2>
-<p>拖拽旋轉、滾輪改 FOV、雙擊重置；左側場景卡片可點；底部可上一景/下一景、開關自動輪播與緩慢自轉。手機端支持單指拖、雙指縮放。</p>
+<h2>漫遊錄屏（v360.mp4）</h2>
+<p>下面是一段四房間連貫漫遊的 MP4 錄屏，首屏加載比 WebGL 殼頁更輕。若要自己拖拽視角、點擊熱點在房間之間跳轉，請在新標籤頁打開 <a href="../../original/360-degree-panorama/panorama-viewer.html" target="_blank" rel="noopener noreferrer">panorama-viewer.html</a>（拖拽旋轉、滾輪縮放 FOV、場景列表與自動輪播）。</p>
 <figure class="article-embed">
-  <iframe src="../../original/360-degree-panorama/panorama-viewer.html" title="公寓 360° 全景漫遊 — Three.js" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
-  <figcaption>嵌入：<code>panorama-viewer.html</code> — 四房間熱點跳轉。</figcaption>
+  <video controls="" playsinline="" preload="metadata" poster="../original/360-degree-panorama/Living-room.png" aria-label="公寓 360° 全景漫遊錄屏 v360">
+    <source src="../../original/360-degree-panorama/v360.mp4" type="video/mp4">
+  </video>
+  <figcaption>錄屏：<code>v360.mp4</code> — 客廳、餐廳、廚房、主臥連貫預覽。</figcaption>
 </figure>
 <h2>四張全景靜幀（對照用）</h2>
-<p>若嵌入頁加載慢，仍可先看單張圖理解每個空間的構圖。文件名與場景 id 一一對應。</p>
+<p>需要對照單幀構圖時，可看下面四張 equirectangular 靜圖；文件名與場景 id 一一對應。</p>
 <div class="article-gallery">
   <img src="../../original/360-degree-panorama/Living-room.png" width="800" height="400" loading="lazy" decoding="async" alt="360° 全景 — 客廳 Living-room">
   <img src="../../original/360-degree-panorama/dining-room.png" width="800" height="400" loading="lazy" decoding="async" alt="360° 全景 — 餐廳 dining-room">
@@ -120,7 +122,7 @@
 <ol>
   <li>每張全景保持 2:1（常見 4096×2048 或 2048×1024），左右邊緣對齊。</li>
   <li>在 <code>SCENES</code> 裡增刪房間，熱點 <code>yaw/pitch</code> 在瀏覽器裡試調——我習慣先放一個 info 熱點對位置，再複製改 targetScene。</li>
-  <li>文章頁用 iframe 嵌入 + 上文說明，利於搜索理解「360 全景 / virtual tour / Three.js」。</li>
+  <li>文章頁用錄屏 + 上文說明，交互演示鏈到新標籤頁，利於搜索理解「360 全景 / virtual tour / Three.js」。</li>
 </ol>
 <p>我不在這裡列「十大全景插件」對比表：插件換得快，把<strong>你自己的場景圖 + 熱點邏輯</strong>寫清楚，比堆外鏈更有維護價值。</p></article>
     </div>
