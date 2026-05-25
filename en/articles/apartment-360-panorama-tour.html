@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="en" data-title-en="Apartment 360° tour — four-room hotspots &amp; Three.js panorama sphere — aogl.cn" data-desc-en="Original aogl.cn notes on original/360-degree-panorama: an embeddable apartment virtual tour—four 2:1 equirectangular rooms, inverted Three.js sphere, hotspot navigation and POI modals—not a real-estate listing." data-aogl-lang="en" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Original aogl.cn notes on original/360-degree-panorama: an embeddable apartment virtual tour—four 2:1 equirectangular rooms, inverted Three.js sphere, hotspot navigation and POI modals—not a real-estate listing.">
+  <title>Apartment 360° tour — four-room hotspots &amp; Three.js panorama sphere — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/apartment-360-panorama-tour.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/apartment-360-panorama-tour.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/apartment-360-panorama-tour.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/apartment-360-panorama-tour.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/apartment-360-panorama-tour.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/apartment-360-panorama-tour.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/apartment-360-panorama-tour.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/apartment-360-panorama-tour.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/apartment-360-panorama-tour.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/apartment-360-panorama-tour.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/apartment-360-panorama-tour.html">
+  <meta property="og:title" content="Apartment 360° tour — four-room hotspots &amp; Three.js panorama sphere — aogl.cn">
+  <meta property="og:description" content="Original aogl.cn notes on original/360-degree-panorama: an embeddable apartment virtual tour—four 2:1 equirectangular rooms, inverted Three.js sphere, hotspot navigation and POI modals—not a real-estate listing.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/original/360-degree-panorama/Living-room.png">
+  <meta property="og:image:alt" content="360° apartment panorama — Nordic living room equirectangular (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/360-degree-panorama/Living-room.png">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/hub.css">
+  <link rel="stylesheet" href="../../css/article-hub.css">
+  <script src="../../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Living-room · dining · kitchen · master-bedroom · panorama-viewer.html","alternativeHeadline":"公寓 360° 全景漫游：四房间热点跳转与 Three.js 内景球","datePublished":"2026-05-21","dateModified":"2026-05-21","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html"},"url":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html","inLanguage":"en","description":"Original aogl.cn notes on original/360-degree-panorama: an embeddable apartment virtual tour—four 2:1 equirectangular rooms, inverted Three.js sphere, hotspot navigation and POI modals—not a real-estate listing.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../../js/bg-canvas.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li><a href="../../index.html#tools-directory">AI frontier</a></li>
+          <li><a href="../../portal.html">Top sites</a></li>
+          <li><a href="../../brands.html">Brands</a></li>
+          <li><a href="../../shopping.html">Shopping</a></li>
+          <li><a href="../../life.html">Life</a></li>
+          <li><a href="../../social.html">Social</a></li>
+          <li><a href="../../tech.html">Tech</a></li>
+          <li><a href="../../games.html">Games</a></li>
+          <li><a href="../../tools.html">Utilities</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="../../index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Apartment 360° tour — four-room hotspots &amp; Three.js panorama sphere</h1>
+        <p class="article-shell__sub">Living-room · dining · kitchen · master-bedroom · panorama-viewer.html</p>
+        <p class="article-shell__meta"><time datetime="2026-05-21">2026-05-21</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This is the <strong>ninth original article</strong> on aogl.cn, sourced from <code>original/360-degree-panorama/</code>. I built an embeddable <strong>apartment interior 360° tour</strong>: four 2:1 equirectangular panoramas, one <code>panorama-viewer.html</code> shell, and a Three.js sphere with inverted normals so the camera sits inside the room. Hotspots jump between living room, dining room, kitchen, and master bedroom. It is not a brokerage landing page and not a vendor tutorial—only how this demo is wired and what I would change next time.</p>
+<h2>What is in the folder</h2>
+<ul>
+  <li><code>Living-room.png</code> — Nordic-style living room, park view through tall windows</li>
+  <li><code>dining-room.png</code> — formal dining space with chandelier and long table</li>
+  <li><code>kitchen.png</code> — island kitchen, marble counter, copper cookware on display</li>
+  <li><code>master-bedroom.png</code> — bedroom suite with city skyline glazing</li>
+  <li><code>panorama-viewer.html</code> — full-screen tour UI (drag, zoom, scene list)</li>
+</ul>
+<p>Each image is a <strong>full 360° horizontal sweep</strong> at roughly 2:1 width-to-height—the usual equirectangular layout for panorama textures. If the ratio drifts, you get a visible seam or stretched floor/ceiling bands. I sanity-check left and right edges before committing a file to the repo.</p>
+<h2>Why an inverted sphere</h2>
+<p>The common Three.js pattern is <code>SphereGeometry</code> plus <code>scale(-1, 1, 1)</code>, camera near the origin, and <code>lookAt</code> driven by yaw and pitch. You are not orbiting furniture from outside; you are standing in the room and turning your head. Drag updates view direction; the sphere mesh stays put.</p>
+<p>That rhymes with the site’s <a href="interactive-3d-earth.html">interactive 3D Earth</a> (also WebGL + Three.js r128) but the earth looks from outside with lights and atmosphere. Interior tours only need <code>MeshBasicMaterial</code> and one texture map—cheaper and avoids flattening baked lighting in the panorama.</p>
+<h2>Four scenes and hotspot types</h2>
+<p>Configuration lives in a <code>SCENES</code> array inside <code>panorama-viewer.html</code>. Per scene: <code>id</code>, display name, short description, image filename, optional <code>initYaw</code> / <code>initPitch</code>, and a <code>hotspots</code> list.</p>
+<p>Hotspots are grouped by role (color-coded in the UI):</p>
+<ul>
+  <li><strong>entry</strong> — jump to another room (e.g. living room → dining room)</li>
+  <li><strong>exit</strong> — go back to the previous space</li>
+  <li><strong>info</strong> — modal copy about architecture or views (windows, chandelier, skyline)</li>
+  <li><strong>poi</strong> — furniture or fixture notes (sofa, island, wardrobe)</li>
+</ul>
+<p>Each hotspot stores <code>yaw</code> and <code>pitch</code> in degrees, plus either <code>targetScene</code> or an <code>info</code> string. On screen, positions are projected from sphere coordinates; markers behind the viewer hide so the frame does not fill with buttons.</p>
+<h2>Try the embedded tour</h2>
+<p>Mouse: drag to look, wheel to change field of view, double-click to reset. Left rail: thumbnail cards per room. Bottom bar: previous/next scene, autoplay slideshow, optional slow auto-rotate. Touch: one-finger drag, pinch zoom.</p>
+<figure class="article-embed">
+  <iframe src="../../original/360-degree-panorama/panorama-viewer.html" title="Apartment 360° panorama tour — Three.js" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+  <figcaption>Embedded <code>panorama-viewer.html</code> — four rooms with hotspot navigation.</figcaption>
+</figure>
+<h2>Still frames for comparison</h2>
+<p>If the iframe is heavy on mobile, the flat panoramas still show composition per room. Filenames match scene ids.</p>
+<div class="article-gallery">
+  <img src="../../original/360-degree-panorama/Living-room.png" width="800" height="400" loading="lazy" decoding="async" alt="360° equirectangular — living room">
+  <img src="../../original/360-degree-panorama/dining-room.png" width="800" height="400" loading="lazy" decoding="async" alt="360° equirectangular — dining room">
+  <img src="../../original/360-degree-panorama/kitchen.png" width="800" height="400" loading="lazy" decoding="async" alt="360° equirectangular — kitchen">
+  <img src="../../original/360-degree-panorama/master-bedroom.png" width="800" height="400" loading="lazy" decoding="async" alt="360° equirectangular — master bedroom">
+</div>
+<h2>UI pieces worth naming for SEO</h2>
+<p>The top bar shows the active scene title; a collapsible left rail lists all four spaces with 16:9 thumbs from the same PNGs. A compass widget rotates with yaw so “north” in the UI is not magic—it is tied to <code>-yaw</code> on the needle. Bottom controls expose FOV in degrees (roughly 35°–115°), previous/next scene, and toggles for autoplay (nine-second interval by default) and slow auto-rotate while you are not dragging.</p>
+<p>Keyboard arrows nudge view direction; <code>+</code> / <code>-</code> zoom; <code>r</code> resets to each scene’s <code>initYaw</code>. If a texture fails to load, the viewer falls back to a labeled gradient canvas so the hotspot graph still makes sense during debugging.</p>
+<h2>Transitions, loading, and copy boundaries</h2>
+<p>Scene changes fade through black so a half-loaded texture is less obvious. A short loading screen runs on first open; textures load from relative paths next to the HTML—keep that folder structure when you deploy.</p>
+<p>Modal text (walnut table, wine fridge, hotel-grade bedding, etc.) is <strong>staging copy written to match the pictures</strong>, not a real listing. For production real-estate use, replace every <code>info</code> block and hotspot label, and swap in legally cleared panoramas.</p>
+<h2>How this sits beside other demos</h2>
+<p><a href="travel-through-parallax-phone.html">Travel-through parallax phone</a> stacks 2D layers. <a href="interactive-3d-earth.html">3D Earth</a> is exterior observation with shaders. This article is <strong>interior equirectangular + multi-scene texture swap</strong>—closer to a virtual walkthrough tech spike. All three stay separate on the home carousel so visitors do not merge them into one fictional product.</p>
+<h2>Reuse checklist</h2>
+<ol>
+  <li>Export panoramas at 2:1; align the seam at ±180°.</li>
+  <li>Edit <code>SCENES</code>—tune <code>yaw/pitch</code> live in the browser; I often place one <code>info</code> hotspot first to anchor direction, then clone for <code>entry</code> links.</li>
+  <li>Publish with semantic headings, figure/figcaption around the iframe, and honest scope in the lead paragraph—helps queries like <em>360 panorama viewer</em>, <em>Three.js virtual tour</em>, <em>equirectangular interior</em>.</li>
+</ol>
+<p>I skip a “top ten panorama plugins” roundup here. Plugins churn; documenting <strong>your scenes, hotspot graph, and deployment path</strong> ages better and reads as maintainer-written, which is what I want this archive to look like.</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../../about.html" class="footer-legal-link lang-en">About</a>
+        <a href="../../contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="../../changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="../../privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/hub-common.js" defer=""></script>
+</body></html>

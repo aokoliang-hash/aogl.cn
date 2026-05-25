@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>360° 公寓全景漫游</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<style>
+  :root {
+    --bg: #0e0c0a;
+    --panel-bg: rgba(14,12,10,0.90);
+    --border: rgba(255,245,235,0.12);
+    --accent: #c8a97e;
+    --accent2: #8fa89c;
+    --text: #f0ece6;
+    --text-muted: rgba(240,236,230,0.5);
+    --hotspot-entry: #7db88a;
+    --hotspot-exit:  #c47c72;
+    --hotspot-info:  #7a9fc4;
+    --hotspot-poi:   #c4aa72;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif;
+    overflow: hidden; width:100vw; height:100vh;
+    user-select: none;
+  }
+  #canvas-container { position:fixed; inset:0; cursor:grab; }
+  #canvas-container.dragging { cursor:grabbing; }
+  #canvas-container canvas { display:block; }
+
+  /* ── 顶部栏 ── */
+  #topbar {
+    position:fixed; top:0; left:0; right:0; height:52px;
+    background: var(--panel-bg);
+    border-bottom:1px solid var(--border);
+    backdrop-filter: blur(16px);
+    display:flex; align-items:center; padding:0 20px; gap:16px;
+    z-index:100;
+  }
+  #topbar .logo {
+    font-size:14px; font-weight:600; letter-spacing:0.12em;
+    color: var(--accent); white-space:nowrap;
+    display:flex; align-items:center; gap:8px;
+  }
+  #topbar .logo span { font-size:18px; }
+  #topbar .sep { color: var(--border); }
+  #topbar .scene-title { font-size:13px; color:var(--text-muted); }
+  #topbar .spacer { flex:1; }
+  #topbar .tip { font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:6px; }
+  #topbar .tip kbd {
+    background:rgba(255,255,255,0.07); border:1px solid var(--border);
+    border-radius:4px; padding:1px 6px; font-size:10px; font-family:inherit;
+  }
+
+  /* ── 场景面板 ── */
+  #scene-panel {
+    position:fixed; left:0; top:52px; bottom:0; width:210px;
+    background: var(--panel-bg);
+    border-right:1px solid var(--border);
+    backdrop-filter: blur(16px);
+    display:flex; flex-direction:column;
+    z-index:100;
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+  }
+  #scene-panel.collapsed { transform:translateX(-210px); }
+  #scene-panel .panel-header {
+    padding:14px 16px 10px;
+    font-size:10px; font-weight:600; letter-spacing:0.1em;
+    color:var(--accent); text-transform:uppercase;
+    border-bottom:1px solid var(--border);
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  #scene-list { flex:1; overflow-y:auto; padding:10px 8px; }
+  #scene-list::-webkit-scrollbar { width:3px; }
+  #scene-list::-webkit-scrollbar-thumb { background:rgba(200,169,126,0.3); border-radius:2px; }
+
+  .scene-card {
+    border-radius:10px; overflow:hidden; margin-bottom:8px;
+    border:1.5px solid transparent; cursor:pointer;
+    transition:border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+    background:rgba(255,245,235,0.04);
+  }
+  .scene-card:hover { transform:translateX(3px); border-color:rgba(200,169,126,0.35); }
+  .scene-card.active { border-color:var(--accent); box-shadow:0 0 12px rgba(200,169,126,0.18); }
+  .scene-thumb {
+    width:100%; aspect-ratio:16/9;
+    background:#1a1610; overflow:hidden; position:relative;
+  }
+  .scene-thumb img { width:100%; height:100%; object-fit:cover; opacity:0.82; display:block; }
+  .scene-num {
+    position:absolute; top:5px; left:7px;
+    font-size:10px; color:var(--accent); font-weight:600; letter-spacing:0.06em;
+    background:rgba(0,0,0,0.55); padding:2px 6px; border-radius:4px;
+  }
+  .scene-card-info { padding:8px 10px 10px; }
+  .scene-card-name { font-size:13px; font-weight:500; }
+  .scene-card-desc { font-size:11px; color:var(--text-muted); margin-top:2px; }
+
+  /* ── 面板开关 ── */
+  #toggle-panel {
+    position:fixed; left:210px; top:68px;
+    width:22px; height:52px;
+    background:var(--panel-bg); border:1px solid var(--border); border-left:none;
+    border-radius:0 8px 8px 0;
+    cursor:pointer; display:flex; align-items:center; justify-content:center;
+    z-index:101; transition:left 0.3s cubic-bezier(.4,0,.2,1);
+    backdrop-filter:blur(16px); color:var(--text-muted); font-size:11px;
+  }
+  #toggle-panel.collapsed { left:0; }
+
+  /* ── 底部控制 ── */
+  #controls {
+    position:fixed; bottom:22px;
+    left:50%; transform:translateX(-50%);
+    display:flex; align-items:center; gap:6px;
+    background:var(--panel-bg); border:1px solid var(--border);
+    backdrop-filter:blur(16px); border-radius:40px;
+    padding:7px 14px; z-index:100;
+  }
+  .ctrl-btn {
+    width:34px; height:34px; background:transparent;
+    border:1px solid var(--border); border-radius:50%;
+    color:var(--text); cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    font-size:15px;
+    transition:background 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .ctrl-btn:hover { background:rgba(200,169,126,0.12); border-color:var(--accent); color:var(--accent); }
+  .ctrl-btn.active { color:var(--accent); border-color:var(--accent); }
+  .ctrl-divider { width:1px; height:22px; background:var(--border); margin:0 3px; }
+  #fov-display { font-size:11px; color:var(--text-muted); min-width:36px; text-align:center; }
+
+  /* ── 右下角按钮组 ── */
+  #bottom-right-btns {
+    position:fixed; bottom:22px; right:20px;
+    display:flex; flex-direction:column; align-items:flex-end; gap:8px;
+    z-index:100;
+  }
+  /* ── 自动播放 ── */
+  #autoplay-indicator, #rotate-indicator {
+    position:relative; bottom:22px; right:20px;
+    background:var(--panel-bg); border:1px solid var(--border);
+    backdrop-filter:blur(16px); border-radius:24px;
+    padding:7px 14px; font-size:11px; color:var(--text-muted);
+    display:flex; align-items:center; gap:7px; z-index:100; cursor:pointer;
+    transition:opacity 0.3s;
+  }
+  .ap-dot {
+    width:7px; height:7px; border-radius:50%; background:var(--accent);
+    animation:ap-pulse 1.8s infinite;
+  }
+  #autoplay-indicator.paused .ap-dot, #rotate-indicator.paused .ap-dot { animation:none; background:var(--text-muted); }
+  @keyframes ap-pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.75)} }
+
+  /* ── 热点 ── */
+  .hotspot {
+    position:fixed; transform:translate(-50%,-50%);
+    z-index:50; cursor:pointer; pointer-events:auto;
+  }
+  .hotspot-btn {
+    width:38px; height:38px; border-radius:50%; border:2.5px solid;
+    display:flex; align-items:center; justify-content:center;
+    font-size:16px; backdrop-filter:blur(8px);
+    transition:transform 0.2s, box-shadow 0.2s;
+    animation:hp-float 2.5s ease-in-out infinite;
+  }
+  .hotspot-btn:hover { animation:none; transform:scale(1.25); }
+  .hotspot:hover .hotspot-tooltip { opacity:1; transform:translateX(-50%) translateY(-8px); }
+
+  .hotspot-entry .hotspot-btn { background:rgba(125,184,138,0.18); border-color:var(--hotspot-entry); color:var(--hotspot-entry); box-shadow:0 0 14px rgba(125,184,138,0.35); }
+  .hotspot-exit  .hotspot-btn { background:rgba(196,124,114,0.18); border-color:var(--hotspot-exit);  color:var(--hotspot-exit);  box-shadow:0 0 14px rgba(196,124,114,0.35); }
+  .hotspot-info  .hotspot-btn { background:rgba(122,159,196,0.18); border-color:var(--hotspot-info);  color:var(--hotspot-info);  box-shadow:0 0 14px rgba(122,159,196,0.35); }
+  .hotspot-poi   .hotspot-btn { background:rgba(196,170,114,0.18); border-color:var(--hotspot-poi);   color:var(--hotspot-poi);   box-shadow:0 0 14px rgba(196,170,114,0.35); }
+  @keyframes hp-float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+
+  .hotspot-tooltip {
+    position:absolute; bottom:calc(100% + 10px);
+    left:50%; transform:translateX(-50%) translateY(0);
+    background:rgba(14,12,10,0.96); border:1px solid var(--border);
+    border-radius:10px; padding:10px 14px; min-width:140px; max-width:210px;
+    text-align:center; opacity:0; pointer-events:none;
+    transition:opacity 0.2s, transform 0.2s;
+    backdrop-filter:blur(16px); white-space:nowrap;
+  }
+  .hotspot-tooltip::after {
+    content:''; position:absolute; top:100%; left:50%; transform:translateX(-50%);
+    border:6px solid transparent; border-top-color:rgba(14,12,10,0.96);
+  }
+  .tt-title { font-size:12px; font-weight:600; margin-bottom:3px; }
+  .tt-desc  { font-size:11px; color:var(--text-muted); }
+  .tt-action { margin-top:5px; font-size:10px; color:var(--accent); }
+
+  /* ── 过渡 / 加载 ── */
+  #transition-overlay {
+    position:fixed; inset:0; background:#000; z-index:200;
+    opacity:0; pointer-events:none; transition:opacity 0.38s ease;
+  }
+  #transition-overlay.active { opacity:1; pointer-events:all; }
+
+  #loading-screen {
+    position:fixed; inset:0; background:var(--bg); z-index:300;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px;
+  }
+  #loading-screen .ld-logo {
+    font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent);
+  }
+  #loading-screen h1 { font-size:22px; font-weight:300; color:var(--text); letter-spacing:0.06em; }
+  .ld-bar-track { width:200px; height:2px; background:rgba(255,255,255,0.1); border-radius:1px; overflow:hidden; }
+  .ld-bar-fill  { height:100%; background:var(--accent); animation:ld-anim 1.6s ease-in-out infinite; }
+  @keyframes ld-anim { 0%{width:0;margin-left:0} 50%{width:55%;margin-left:0} 100%{width:0;margin-left:100%} }
+  #loading-screen .ld-tip { font-size:12px; color:var(--text-muted); }
+
+  /* ── 信息弹窗 ── */
+  #info-modal {
+    position:fixed; inset:0; z-index:150;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(0,0,0,0.55); opacity:0; pointer-events:none;
+    transition:opacity 0.25s; backdrop-filter:blur(6px);
+  }
+  #info-modal.active { opacity:1; pointer-events:all; }
+  .modal-box {
+    background:rgba(20,18,15,0.98); border:1px solid var(--border);
+    border-radius:16px; padding:28px 30px; max-width:370px; width:90%;
+    backdrop-filter:blur(24px); animation:modal-in 0.25s ease;
+  }
+  @keyframes modal-in { from{transform:scale(0.94) translateY(10px);opacity:0} to{transform:scale(1) translateY(0);opacity:1} }
+  .modal-box h3 { font-size:16px; font-weight:600; margin-bottom:10px; color:var(--accent); }
+  .modal-box p  { font-size:13px; color:var(--text-muted); line-height:1.7; }
+  .modal-close {
+    margin-top:20px; width:100%; padding:9px;
+    background:rgba(200,169,126,0.1); border:1px solid rgba(200,169,126,0.3);
+    border-radius:8px; color:var(--accent); cursor:pointer;
+    font-size:13px; font-family:inherit; transition:background 0.15s;
+  }
+  .modal-close:hover { background:rgba(200,169,126,0.2); }
+
+  /* ── 罗盘 ── */
+  #compass {
+    position:fixed; top:66px; right:14px;
+    width:48px; height:48px; z-index:100; opacity:0.75;
+  }
+  #compass svg { width:100%; height:100%; }
+  #compass-needle { transform-origin:25px 25px; }
+</style>
+</head>
+<body>
+
+<script>
+/* ══════════════════════════════════════
+   场景配置 — 修改此处来增删场景和热点
+   ══════════════════════════════════════ */
+const SCENES = [
+  {
+    id: 'living-room',
+    name: '客厅',
+    desc: '宽敞明亮的北欧风客厅',
+    image: 'Living-room.png',
+    thumb: 'Living-room.png',
+    thumbIcon: '🛋️',
+    initYaw: 0,
+    initPitch: 0,
+    hotspots: [
+      {
+        type: 'entry',
+        title: '前往餐厅',
+        desc: '通往用餐区',
+        yaw: 80,
+        pitch: -8,
+        targetScene: 'dining-room'
+      },
+      {
+        type: 'entry',
+        title: '前往厨房',
+        desc: '通往开放式厨房',
+        yaw: 110,
+        pitch: -8,
+        targetScene: 'kitchen'
+      },
+      {
+        type: 'entry',
+        title: '前往主卧',
+        desc: '通往主卧室',
+        yaw: -140,
+        pitch: -10,
+        targetScene: 'master-bedroom'
+      },
+      {
+        type: 'info',
+        title: '落地窗景',
+        desc: '俯瞰城市公园全景',
+        yaw: 10,
+        pitch: 0,
+        info: '超大落地窗面朝城市中心绿地公园，将室外自然景致引入室内。窗帘采用定制遮光棉麻材质，光线柔和而不刺眼。'
+      },
+      {
+        type: 'poi',
+        title: '北欧风沙发',
+        desc: '进口亚麻布艺沙发组合',
+        yaw: -10,
+        pitch: -12,
+        info: '主沙发为丹麦设计师品牌定制款，采用天然亚麻面料搭配实木脚，舒适耐用。搭配手织羊毛抱毯，营造温暖的北欧家居氛围。'
+      },
+      {
+        type: 'poi',
+        title: '书架陈列区',
+        desc: '白色开放式书架',
+        yaw: 100,
+        pitch: -5,
+        info: '定制白色开放式书架系统，可灵活调整隔板高度。兼顾收纳与展示功能，摆放书籍、绿植与艺术品，打造有品质的生活角落。'
+      }
+    ]
+  },
+  {
+    id: 'dining-room',
+    name: '餐厅',
+    desc: '优雅正式的法式餐厅',
+    image: 'dining-room.png',
+    thumb: 'dining-room.png',
+    thumbIcon: '🍽️',
+    initYaw: 0,
+    initPitch: 0,
+    hotspots: [
+      {
+        type: 'exit',
+        title: '返回客厅',
+        desc: '通往客厅',
+        yaw: -120,
+        pitch: -8,
+        targetScene: 'living-room'
+      },
+      {
+        type: 'entry',
+        title: '前往厨房',
+        desc: '通往开放式厨房',
+        yaw: 130,
+        pitch: -8,
+        targetScene: 'kitchen'
+      },
+      {
+        type: 'info',
+        title: '水晶吊灯',
+        desc: '法式古典水晶枝形吊灯',
+        yaw: 5,
+        pitch: 25,
+        info: '餐厅主灯为手工制作的法式古典水晶枝形吊灯，共48个灯头，点亮后璀璨夺目。灯具高度可调节，适配不同就餐氛围需求。'
+      },
+      {
+        type: 'poi',
+        title: '实木餐桌',
+        desc: '可延伸胡桃木餐桌，最多容纳10人',
+        yaw: -5,
+        pitch: -15,
+        info: '餐桌采用美国黑胡桃实木制作，标准尺寸可容纳8人就座，通过延伸板最多可扩展至10人。桌面经过多道工序精细打磨，纹理清晰自然。'
+      },
+      {
+        type: 'poi',
+        title: '鲜花摆设',
+        desc: '每周更换的进口玫瑰',
+        yaw: 15,
+        pitch: -8,
+        info: '餐桌中央摆放奶油色进口玫瑰花束，搭配水晶花瓶，为正式餐宴增添浪漫气息。此为软装搭配示意，可根据季节和个人喜好更换花艺。'
+      }
+    ]
+  },
+  {
+    id: 'kitchen',
+    name: '厨房',
+    desc: '岛台式现代开放厨房',
+    image: 'kitchen.png',
+    thumb: 'kitchen.png',
+    thumbIcon: '🍳',
+    initYaw: 0,
+    initPitch: 0,
+    hotspots: [
+      {
+        type: 'exit',
+        title: '返回客厅',
+        desc: '通往客厅',
+        yaw: -90,
+        pitch: -8,
+        targetScene: 'living-room'
+      },
+      {
+        type: 'exit',
+        title: '返回餐厅',
+        desc: '通往餐厅',
+        yaw: -60,
+        pitch: -8,
+        targetScene: 'dining-room'
+      },
+      {
+        type: 'info',
+        title: '大理石岛台',
+        desc: '卡拉拉白大理石台面',
+        yaw: -5,
+        pitch: -15,
+        info: '中央岛台台面采用意大利卡拉拉白大理石，天然纹理独一无二。岛台内置电磁感应炉，下方设有多层开放式置物架，实用与美观兼备。'
+      },
+      {
+        type: 'poi',
+        title: '铜制厨具',
+        desc: '进口铜锅套装',
+        yaw: 15,
+        pitch: -10,
+        info: '展示的铜制锅具套装均为法国原装进口，铜芯不锈钢内壁设计，导热均匀，是专业级的厨房必备。铜制外壁随时间氧化会形成独特包浆。'
+      },
+      {
+        type: 'poi',
+        title: '悬挂刀架',
+        desc: '磁吸式德国厨刀套装',
+        yaw: -20,
+        pitch: -5,
+        info: '厨房配备德国双立人专业厨刀7件套，搭配实木磁吸刀架固定，取用方便且安全卫生。刀具定期由专业磨刀师上门保养。'
+      },
+      {
+        type: 'poi',
+        title: '红酒柜',
+        desc: '恒温红酒储藏柜',
+        yaw: -155,
+        pitch: -12,
+        info: '嵌入式恒温红酒柜，独立控温区间可分别存放红葡萄酒（14-18°C）和白葡萄酒（8-12°C），容量约45瓶，玻璃门配防紫外线涂层。'
+      }
+    ]
+  },
+  {
+    id: 'master-bedroom',
+    name: '主卧',
+    desc: '带城市景观的豪华套间',
+    image: 'master-bedroom.png',
+    thumb: 'master-bedroom.png',
+    thumbIcon: '🛏️',
+    initYaw: 0,
+    initPitch: 0,
+    hotspots: [
+      {
+        type: 'exit',
+        title: '返回客厅',
+        desc: '通往客厅',
+        yaw: 170,
+        pitch: -10,
+        targetScene: 'living-room'
+      },
+      {
+        type: 'info',
+        title: '城市天际线',
+        desc: '270°落地窗，俯瞰城市全貌',
+        yaw: 10,
+        pitch: 5,
+        info: '主卧三面环绕落地玻璃幕墙，可欣赏城市CBD核心区天际线。窗户采用三层中空Low-E玻璃，隔热隔音效果卓越，夜晚灯光璀璨如星。'
+      },
+      {
+        type: 'poi',
+        title: '步入式衣帽间',
+        desc: '定制收纳系统',
+        yaw: -150,
+        pitch: -8,
+        info: '步入式衣帽间采用意大利进口定制收纳系统，设有男女分区，含西装区、折叠区、抽屉柜及全身镜。内置感应灯带，开门自动亮起。'
+      },
+      {
+        type: 'poi',
+        title: '卫浴套间',
+        desc: '大理石独立浴缸',
+        yaw: 145,
+        pitch: -8,
+        info: '主卧附属卫浴面积约15㎡，配备意大利进口独立式浴缸、双台盆大理石洗手台及独立淋浴房。地热系统确保地面冬季温暖舒适。'
+      },
+      {
+        type: 'info',
+        title: '床品配置',
+        desc: '五星酒店级床品套装',
+        yaw: -10,
+        pitch: -12,
+        info: '床垫为瑞士进口独立弹簧乳胶混合床垫，厚度30cm，软硬适中。床品套装采用埃及长绒棉，支数800，触感丝滑，每周专业洗涤更换。'
+      }
+    ]
+  }
+];
+
+const SETTINGS = {
+  autoPlay: true,
+  autoPlayDelay: 9000,
+  autoRotate: false,
+  autoRotateSpeed: 0.06,
+  defaultFov: 90,
+  minFov: 35,
+  maxFov: 115
+};
+</script>
+
+<!-- UI -->
+<div id="loading-screen">
+  <div class="ld-logo">Virtual Tour</div>
+  <h1>公寓全景漫游</h1>
+  <div class="ld-bar-track"><div class="ld-bar-fill"></div></div>
+  <p class="ld-tip">正在加载全景场景...</p>
+</div>
+
+<div id="transition-overlay"></div>
+<div id="canvas-container"></div>
+
+<div id="topbar">
+  <div class="logo"><span>◈</span> PANORAMA TOUR</div>
+  <div class="sep">|</div>
+  <div class="scene-title" id="scene-title-bar">加载中...</div>
+  <div class="spacer"></div>
+  <div class="tip">
+    <kbd>拖拽</kbd>旋转
+    <kbd>滚轮</kbd>缩放
+    <kbd>双击</kbd>重置
+  </div>
+</div>
+
+<div id="scene-panel">
+  <div class="panel-header">
+    <span>漫游导航</span>
+    <span id="scene-count" style="font-size:10px;color:var(--text-muted)"></span>
+  </div>
+  <div id="scene-list"></div>
+</div>
+<div id="toggle-panel" onclick="togglePanel()">◀</div>
+
+<div id="hotspot-container"></div>
+
+<div id="controls">
+  <button class="ctrl-btn" onclick="zoomIn()"  title="放大">＋</button>
+  <button class="ctrl-btn" onclick="zoomOut()" title="缩小">－</button>
+  <div class="ctrl-divider"></div>
+  <span id="fov-display">90°</span>
+  <div class="ctrl-divider"></div>
+  <button class="ctrl-btn" onclick="resetView()" title="重置视角">⟳</button>
+  <div class="ctrl-divider"></div>
+  <button class="ctrl-btn" onclick="prevScene()" title="上一场景">◁</button>
+  <button class="ctrl-btn" onclick="nextScene()" title="下一场景">▷</button>
+</div>
+
+<div id="bottom-right-btns">
+  <div id="rotate-indicator" onclick="toggleAutoRotate()">
+    <div class="ap-dot" id="rotate-dot"></div>
+    <span id="rotate-text">自动旋转</span>
+  </div>
+  <div id="autoplay-indicator" onclick="toggleAutoPlay()">
+    <div class="ap-dot"></div>
+    <span id="autoplay-text">自动轮播</span>
+  </div>
+</div>
+
+<div id="info-modal">
+  <div class="modal-box">
+    <h3 id="modal-title"></h3>
+    <p  id="modal-body"></p>
+    <button class="modal-close" onclick="closeModal()">关闭</button>
+  </div>
+</div>
+
+<div id="compass">
+  <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="25" cy="25" r="23" fill="rgba(14,12,10,0.75)" stroke="rgba(200,169,126,0.2)" stroke-width="1"/>
+    <text x="25" y="10"  text-anchor="middle" fill="rgba(200,169,126,0.9)" font-size="7" font-family="sans-serif" font-weight="bold">N</text>
+    <text x="25" y="44"  text-anchor="middle" fill="rgba(200,169,126,0.45)" font-size="6" font-family="sans-serif">S</text>
+    <text x="9"  y="28"  text-anchor="middle" fill="rgba(200,169,126,0.45)" font-size="6" font-family="sans-serif">W</text>
+    <text x="41" y="28"  text-anchor="middle" fill="rgba(200,169,126,0.45)" font-size="6" font-family="sans-serif">E</text>
+    <g id="compass-needle">
+      <polygon points="25,12 22.5,25 25,23 27.5,25" fill="rgba(200,100,90,0.9)"/>
+      <polygon points="25,38 22.5,25 25,27 27.5,25" fill="rgba(200,169,126,0.45)"/>
+    </g>
+  </svg>
+</div>
+
+<script>
+let renderer, scene3d, camera, sphere;
+let isDragging=false, prevMouse={x:0,y:0};
+let yaw=0, pitch=0, targetYaw=0, targetPitch=0;
+let currentFov=SETTINGS.defaultFov, targetFov=SETTINGS.defaultFov;
+let currentSceneIndex=0;
+let panelCollapsed=false;
+let autoPlayTimer=null;
+let isAutoRotating=SETTINGS.autoRotate;
+let isAutoPlaying=SETTINGS.autoPlay;
+
+function init(){
+  const cont=document.getElementById('canvas-container');
+  renderer=new THREE.WebGLRenderer({antialias:true});
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth,window.innerHeight);
+  cont.appendChild(renderer.domElement);
+  scene3d=new THREE.Scene();
+  camera=new THREE.PerspectiveCamera(SETTINGS.defaultFov,window.innerWidth/window.innerHeight,0.1,1000);
+  camera.position.set(0,0,0.001);
+  const geo=new THREE.SphereGeometry(500,64,32);
+  geo.scale(-1,1,1);
+  sphere=new THREE.Mesh(geo,new THREE.MeshBasicMaterial({map:null}));
+  scene3d.add(sphere);
+  buildSceneList();
+  loadScene(0,false);
+  setupEvents(cont);
+  animate();
+  setTimeout(()=>{
+    const ls=document.getElementById('loading-screen');
+    ls.style.transition='opacity 0.6s';
+    ls.style.opacity='0';
+    setTimeout(()=>ls.style.display='none',650);
+  },1500);
+  if(isAutoPlaying) startAutoPlay();
+  updateAutoPlayUI();
+  updateRotateUI();
+}
+
+function loadScene(index,withTransition=true){
+  const sc=SCENES[index];
+  if(!sc)return;
+  function doLoad(){
+    currentSceneIndex=index;
+    targetYaw=sc.initYaw||0; targetPitch=sc.initPitch||0;
+    yaw=targetYaw; pitch=targetPitch;
+    const loader=new THREE.TextureLoader();
+    loader.load(sc.image,
+      tex=>{ sphere.material.map=tex; sphere.material.needsUpdate=true; buildHotspots(sc.hotspots); if(withTransition)endTransition(); },
+      undefined,
+      ()=>{ sphere.material.map=makeFallback(index); sphere.material.needsUpdate=true; buildHotspots(sc.hotspots); if(withTransition)endTransition(); }
+    );
+    updateSceneListUI(index);
+    document.getElementById('scene-title-bar').textContent=sc.name+(sc.desc?' — '+sc.desc:'');
+  }
+  if(withTransition){ startTransition(doLoad); }
+  else { doLoad(); }
+}
+
+function makeFallback(i){
+  const cs=[['#1a1812','#2a2216','#181410'],['#121a14','#182216','#101810'],['#1a1210','#221610','#181210'],['#101418','#141c22','#101218']];
+  const cvs=document.createElement('canvas'); cvs.width=2048; cvs.height=1024;
+  const ctx=cvs.getContext('2d');
+  const g=ctx.createLinearGradient(0,0,2048,1024);
+  const c=cs[i%cs.length]; g.addColorStop(0,c[0]); g.addColorStop(0.5,c[1]); g.addColorStop(1,c[2]);
+  ctx.fillStyle=g; ctx.fillRect(0,0,2048,1024);
+  ctx.strokeStyle='rgba(255,245,235,0.03)'; ctx.lineWidth=1;
+  for(let x=0;x<2048;x+=80){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,1024);ctx.stroke();}
+  for(let y=0;y<1024;y+=80){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(2048,y);ctx.stroke();}
+  ctx.fillStyle='rgba(200,169,126,0.06)';
+  ctx.font='bold 48px sans-serif'; ctx.textAlign='center';
+  ctx.fillText(SCENES[i].name,1024,512);
+  return new THREE.CanvasTexture(cvs);
+}
+
+function startTransition(cb){
+  const ov=document.getElementById('transition-overlay');
+  ov.classList.add('active');
+  setTimeout(()=>cb(),400);
+}
+function endTransition(){
+  setTimeout(()=>document.getElementById('transition-overlay').classList.remove('active'),180);
+}
+
+function buildSceneList(){
+  const list=document.getElementById('scene-list');
+  document.getElementById('scene-count').textContent=SCENES.length+' 个空间';
+  list.innerHTML='';
+  SCENES.forEach((sc,i)=>{
+    const card=document.createElement('div');
+    card.className='scene-card'+(i===0?' active':'');
+    card.id='sc-card-'+i;
+    card.onclick=()=>switchScene(i);
+    card.innerHTML=`
+      <div class="scene-thumb">
+        <img src="${sc.image}" alt="${sc.name}" loading="lazy" onerror="this.style.display='none'">
+        <div class="scene-num">0${i+1}</div>
+      </div>
+      <div class="scene-card-info">
+        <div class="scene-card-name">${sc.thumbIcon||''} ${sc.name}</div>
+        <div class="scene-card-desc">${sc.desc||''}</div>
+      </div>`;
+    list.appendChild(card);
+  });
+}
+
+function updateSceneListUI(idx){
+  document.querySelectorAll('.scene-card').forEach((c,i)=>c.classList.toggle('active',i===idx));
+}
+
+function buildHotspots(hotspots){
+  const cont=document.getElementById('hotspot-container');
+  cont.innerHTML='';
+  if(!hotspots)return;
+  const icons={entry:'→',exit:'←',info:'ℹ',poi:'★'};
+  const actions={entry:'进入空间',exit:'返回',info:'查看详情',poi:'了解更多'};
+  hotspots.forEach((hp,i)=>{
+    const el=document.createElement('div');
+    el.className='hotspot hotspot-'+hp.type;
+    el.id='hp-'+i;
+    el.dataset.yaw=hp.yaw; el.dataset.pitch=hp.pitch;
+    el.innerHTML=`
+      <div class="hotspot-btn">${icons[hp.type]||'●'}</div>
+      <div class="hotspot-tooltip">
+        <div class="tt-title">${hp.title}</div>
+        <div class="tt-desc">${hp.desc}</div>
+        <div class="tt-action">${actions[hp.type]||'点击'}</div>
+      </div>`;
+    el.addEventListener('click',()=>onHotspotClick(hp));
+    cont.appendChild(el);
+  });
+}
+
+function onHotspotClick(hp){
+  if(hp.targetScene){ const idx=SCENES.findIndex(s=>s.id===hp.targetScene); if(idx>=0){switchScene(idx);return;} }
+  if(hp.info){
+    document.getElementById('modal-title').textContent=hp.title;
+    document.getElementById('modal-body').textContent=hp.info;
+    document.getElementById('info-modal').classList.add('active');
+  }
+}
+function closeModal(){ document.getElementById('info-modal').classList.remove('active'); }
+document.getElementById('info-modal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+
+function updateHotspotPositions(){
+  const sc=SCENES[currentSceneIndex];
+  if(!sc||!sc.hotspots)return;
+  document.querySelectorAll('.hotspot').forEach((el,i)=>{
+    const hp=sc.hotspots[i]; if(!hp){el.style.display='none';return;}
+    const pos=sphereToScreen(hp.yaw,hp.pitch);
+    if(!pos){el.style.display='none';}
+    else{el.style.display='block';el.style.left=pos.x+'px';el.style.top=pos.y+'px';}
+  });
+}
+
+function sphereToScreen(hpYaw,hpPitch){
+  const yr=THREE.MathUtils.degToRad(hpYaw), pr=THREE.MathUtils.degToRad(hpPitch);
+  const vec=new THREE.Vector3(Math.cos(pr)*Math.sin(yr),Math.sin(pr),Math.cos(pr)*Math.cos(yr));
+  const camDir=new THREE.Vector3(); camera.getWorldDirection(camDir);
+  if(vec.dot(camDir)<0.12)return null;
+  const proj=vec.clone().project(camera);
+  const px=(proj.x+1)/2*window.innerWidth, py=(-proj.y+1)/2*window.innerHeight;
+  if(px<-50||px>window.innerWidth+50||py<-50||py>window.innerHeight+50)return null;
+  return{x:px,y:py};
+}
+
+function animate(){
+  requestAnimationFrame(animate);
+  if(isAutoRotating&&!isDragging) targetYaw+=SETTINGS.autoRotateSpeed;
+  yaw+=(targetYaw-yaw)*0.08; pitch+=(targetPitch-pitch)*0.08;
+  currentFov+=(targetFov-currentFov)*0.1;
+  pitch=Math.max(-85,Math.min(85,pitch));
+  const yr=THREE.MathUtils.degToRad(yaw), pr=THREE.MathUtils.degToRad(pitch);
+  camera.lookAt(Math.cos(pr)*Math.sin(yr),Math.sin(pr),Math.cos(pr)*Math.cos(yr));
+  camera.fov=currentFov; camera.updateProjectionMatrix();
+  updateHotspotPositions();
+  const needle=document.getElementById('compass-needle');
+  if(needle) needle.style.transform=`rotate(${-yaw}deg)`;
+  document.getElementById('fov-display').textContent=Math.round(currentFov)+'°';
+  renderer.render(scene3d,camera);
+}
+
+function setupEvents(cont){
+  cont.addEventListener('mousedown',e=>{
+    if(e.target!==renderer.domElement)return;
+    isDragging=true; prevMouse={x:e.clientX,y:e.clientY};
+    cont.classList.add('dragging'); pauseAutoPlay();
+  });
+  window.addEventListener('mousemove',e=>{
+    if(!isDragging)return;
+    const s=currentFov/700;
+    targetYaw-=(e.clientX-prevMouse.x)*s; targetPitch+=(e.clientY-prevMouse.y)*s;
+    prevMouse={x:e.clientX,y:e.clientY};
+  });
+  window.addEventListener('mouseup',()=>{ isDragging=false; cont.classList.remove('dragging'); resumeAutoPlay(); });
+  cont.addEventListener('wheel',e=>{ e.preventDefault(); targetFov=Math.max(SETTINGS.minFov,Math.min(SETTINGS.maxFov,targetFov+e.deltaY*0.05)); },{passive:false});
+  cont.addEventListener('dblclick',()=>resetView());
+  let touches=[],lastDist=0;
+  cont.addEventListener('touchstart',e=>{
+    touches=Array.from(e.touches);
+    if(touches.length===1){isDragging=true;prevMouse={x:touches[0].clientX,y:touches[0].clientY};pauseAutoPlay();}
+    if(touches.length===2) lastDist=Math.hypot(touches[0].clientX-touches[1].clientX,touches[0].clientY-touches[1].clientY);
+  });
+  cont.addEventListener('touchmove',e=>{
+    e.preventDefault();
+    const t=Array.from(e.touches);
+    if(t.length===1&&isDragging){
+      const s=currentFov/400;
+      targetYaw-=(t[0].clientX-prevMouse.x)*s; targetPitch+=(t[0].clientY-prevMouse.y)*s;
+      prevMouse={x:t[0].clientX,y:t[0].clientY};
+    }
+    if(t.length===2){
+      const d=Math.hypot(t[0].clientX-t[1].clientX,t[0].clientY-t[1].clientY);
+      targetFov=Math.max(SETTINGS.minFov,Math.min(SETTINGS.maxFov,targetFov+(lastDist-d)*0.1));
+      lastDist=d;
+    }
+  },{passive:false});
+  cont.addEventListener('touchend',()=>{ isDragging=false; resumeAutoPlay(); });
+  window.addEventListener('keydown',e=>{
+    const sp=3;
+    if(e.key==='ArrowLeft'){targetYaw-=sp;pauseAutoPlay();}
+    if(e.key==='ArrowRight'){targetYaw+=sp;pauseAutoPlay();}
+    if(e.key==='ArrowUp') targetPitch+=sp;
+    if(e.key==='ArrowDown') targetPitch-=sp;
+    if(e.key==='+'||e.key==='=') zoomIn();
+    if(e.key==='-') zoomOut();
+    if(e.key==='r') resetView();
+    if(e.key==='Escape') closeModal();
+  });
+  window.addEventListener('resize',()=>{
+    camera.aspect=window.innerWidth/window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth,window.innerHeight);
+  });
+}
+
+function zoomIn()  { targetFov=Math.max(SETTINGS.minFov,targetFov-10); }
+function zoomOut() { targetFov=Math.min(SETTINGS.maxFov,targetFov+10); }
+function resetView(){ const sc=SCENES[currentSceneIndex]; targetYaw=sc.initYaw||0; targetPitch=sc.initPitch||0; targetFov=SETTINGS.defaultFov; }
+function toggleAutoRotate(){
+  isAutoRotating=!isAutoRotating;
+  updateRotateUI();
+}
+function updateRotateUI(){
+  const ind=document.getElementById('rotate-indicator');
+  const txt=document.getElementById('rotate-text');
+  ind.classList.toggle('paused',!isAutoRotating);
+  txt.textContent=isAutoRotating?'旋转中':'自动旋转';
+}
+function togglePanel(){
+  panelCollapsed=!panelCollapsed;
+  document.getElementById('scene-panel').classList.toggle('collapsed',panelCollapsed);
+  const btn=document.getElementById('toggle-panel');
+  btn.classList.toggle('collapsed',panelCollapsed);
+  btn.textContent=panelCollapsed?'▶':'◀';
+}
+function switchScene(idx){ if(idx===currentSceneIndex)return; resetAutoPlayTimer(); loadScene(idx,true); }
+function nextScene(){ switchScene((currentSceneIndex+1)%SCENES.length); }
+function prevScene(){ switchScene((currentSceneIndex-1+SCENES.length)%SCENES.length); }
+
+let apPauseTimer=null;
+function startAutoPlay(){ clearInterval(autoPlayTimer); autoPlayTimer=setInterval(nextScene,SETTINGS.autoPlayDelay); }
+function pauseAutoPlay(){
+  if(!isAutoPlaying)return;
+  clearInterval(autoPlayTimer);
+  clearTimeout(apPauseTimer);
+  apPauseTimer=setTimeout(()=>{ if(isAutoPlaying)startAutoPlay(); },4000);
+}
+function resumeAutoPlay(){ /* handled by pauseAutoPlay timeout */ }
+function resetAutoPlayTimer(){ if(isAutoPlaying){ clearInterval(autoPlayTimer); startAutoPlay(); } }
+function toggleAutoPlay(){
+  isAutoPlaying=!isAutoPlaying;
+  if(isAutoPlaying)startAutoPlay(); else clearInterval(autoPlayTimer);
+  updateAutoPlayUI();
+}
+function updateAutoPlayUI(){
+  document.getElementById('autoplay-indicator').classList.toggle('paused',!isAutoPlaying);
+  document.getElementById('autoplay-text').textContent=isAutoPlaying?'自动轮播':'已暂停';
+}
+
+window.addEventListener('load',init);
+</script>
+</body>
+</html>
