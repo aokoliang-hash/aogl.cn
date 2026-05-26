@@ -1,0 +1,96 @@
+<p>This is the <strong>tenth original article</strong> on aogl.cn, sourced from <code>original/in-car-view/</code>. The folder documents a <strong>high-speed train window scenery</strong> study: lock a modern second-class carriage interior (seats, tray tables, power outlets, window proportions), drop interchangeable alpine meadow plates behind the glass, then export MP4s to see whether motion blur and a small speed HUD still read as a real passenger view. It is not an official rail promo and not a step-by-step tutorial for any one editing app—only filenames, layering choices, and how I decide a composite is “good enough.”</p>
+
+<h2>What is in the folder</h2>
+<ul>
+  <li><code>Train-window.png</code> — interior template with <strong>pure black window panes</strong> as placeholders for exterior plates</li>
+  <li><code>Train-window-all.png</code> — finished still: template plus one meadow + snow-peak exterior</li>
+  <li><code>scenery-1.png</code> through <code>scenery-4.png</code> — four horizontal landscape plates, each with strong <strong>foreground motion blur</strong> suggesting high speed</li>
+  <li><code>viedo.mp4</code> — main composite recording (filename spelling kept as in the repo)</li>
+  <li><code>exercise-video1.mp4</code>, <code>exercise-video3.mp4</code>, <code>exercise-video4.mp4</code> — three export iterations comparing frame edges and exposure</li>
+</ul>
+<p>Headings and captions use honest search phrases: <em>train window view</em>, <em>high-speed rail scenery</em>, <em>in-car landscape composite</em>, <em>passenger POV video</em>—tied to what is actually on disk, not keyword stuffing.</p>
+
+<h2>Why a train window instead of aerial panoramas</h2>
+<p>The site already hosts an <a href="apartment-360-panorama-tour.html">apartment 360° still + recording pack</a> (interior equirectangular) and an <a href="interactive-3d-earth.html">exterior 3D Earth</a> demo. This article fills a <strong>travel framing</strong> gap: the viewer sits in a fixed seat while the world moves outside a rigid frame. Psychologically, black glass or streaked grass reads as “I am moving” faster than a full-bleed landscape with no cabin context.</p>
+<p>I kept the cabin deliberately clean—cool white-grey panels, blue fabric seats, fold-down trays, Chinese-style outlets—not to sell tickets, but to stress-test swaps: when scenery-2 replaces scenery-1, do seat highlights and glass thickness still feel like one shoot?</p>
+
+<h2>Template: Train-window.png</h2>
+<p>A large center pane plus slivers of side windows matches a frontal gaze with peripheral vision. Black panes mark the <strong>only</strong> regions I replace; painting scenery over tray tables would break perspective. A small overlay reads <code>Speed: 300 km/h</code>—a symbolic speed cue for thumbnails, not a claim about any real timetable. Forks for documentary use should replace it with verifiable data or remove it.</p>
+
+<figure class="article-embed">
+  <img src="../original/in-car-view/Train-window.png" width="1200" height="675" loading="lazy" decoding="async" alt="High-speed train interior template — black window placeholders Train-window.png">
+  <figcaption><code>Train-window.png</code> — locked interior; three panes are composite targets.</figcaption>
+</figure>
+
+<h2>Four scenery plates: what changes between files</h2>
+<p>All four are wide horizontal plates: blurred grass in the near field, sharper snow peaks and deep blue sky farther away—mimicking how eyes fail to freeze foreground detail at rail speed. Differences are mood and vegetation density:</p>
+<ul>
+  <li><strong>scenery-1</strong> — cooler greens, crisp snow line, “early run” lighting</li>
+  <li><strong>scenery-2</strong> — more wildflowers (purple spikes, pink clusters), softer mid-ground rolls, “summer outside the glass”</li>
+  <li><strong>scenery-3</strong> and <strong>scenery-4</strong> — exposure and ridge silhouette tweaks to test whether seat reflections still match when the exterior brightens</li>
+</ul>
+<p>They are not surveyed maps or labeled routes—just an <strong>emotion library</strong> behind the same cabin shell so I can cut several shorts without redesigning the interior.</p>
+
+<div class="article-gallery">
+  <img src="../original/in-car-view/scenery-1.png" width="800" height="450" loading="lazy" decoding="async" alt="Exterior plate scenery-1 — alpine meadow motion blur and snow peaks">
+  <img src="../original/in-car-view/scenery-2.png" width="800" height="450" loading="lazy" decoding="async" alt="Exterior plate scenery-2 — wildflower meadow and mountains">
+  <img src="../original/in-car-view/scenery-3.png" width="800" height="450" loading="lazy" decoding="async" alt="Exterior plate scenery-3">
+  <img src="../original/in-car-view/scenery-4.png" width="800" height="450" loading="lazy" decoding="async" alt="Exterior plate scenery-4">
+</div>
+
+<h2>Hero still: Train-window-all.png</h2>
+<p>This is the “poster” frame—exterior mounted, snow line across the horizon, streaked grass, cabin exposure matched to the bright outside. The article JSON points <code>heroImage</code> here so the home carousel and Open Graph show the full story, not the black template or an isolated meadow file.</p>
+
+<figure class="article-embed">
+  <img src="../original/in-car-view/Train-window-all.png" width="1200" height="675" loading="lazy" decoding="async" alt="Composited train window view — seats and alpine scenery Train-window-all.png">
+  <figcaption><code>Train-window-all.png</code> — template plus exterior plate, publication still.</figcaption>
+</figure>
+
+<h2>Main video and exercise exports</h2>
+<p>Stills hide edge halos; video reveals flicker at the mullions and whether blur direction matches forward travel. <code>viedo.mp4</code> is the keeper; the <code>exercise-video</code> trio logs iterations (there is no <code>exercise-video2.mp4</code>—discarded mid-stream). Embed them below for side-by-side review.</p>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/in-car-view/Train-window-all.png" aria-label="Main in-car train window composite viedo.mp4">
+    <source src="../original/in-car-view/viedo.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>viedo.mp4</code> — main composite (filename as stored).</figcaption>
+</figure>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/in-car-view/scenery-1.png" aria-label="Train window export iteration exercise-video1">
+    <source src="../original/in-car-view/exercise-video1.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>exercise-video1.mp4</code> — pass 1: frame edge and blur direction.</figcaption>
+</figure>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/in-car-view/scenery-2.png" aria-label="Train window export iteration exercise-video3">
+    <source src="../original/in-car-view/exercise-video3.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>exercise-video3.mp4</code> — pass 3: exposure after swapping exterior plate.</figcaption>
+</figure>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/in-car-view/scenery-4.png" aria-label="Train window export iteration exercise-video4">
+    <source src="../original/in-car-view/exercise-video4.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>exercise-video4.mp4</code> — pass 4: final exterior swap before locking <code>viedo.mp4</code>.</figcaption>
+</figure>
+
+<h2>Publishing, accessibility, and search snippets</h2>
+<p>Each embed uses <code>controls</code>, <code>playsinline</code>, and <code>preload="metadata"</code> so mobile visitors are not forced into fullscreen autoplay. Posters point at stills that already appear in the article, which gives crawlers textual context even when video bytes are large. The page title and meta description come from <code>data/articles/in-car-view-train-window-scenery.json</code>; body copy repeats natural phrases like “high-speed train window” in headings instead of hiding keywords in invisible spans.</p>
+<p>For Google Search Console I submit only the article URL—the MP4s are assets, not separate landing pages. Structured data inherits the site-wide Article template generated by <code>build-articles.mjs</code>, with <code>heroImage</code> set to the composited still so social cards show the full cabin plus mountains, not a black-window template.</p>
+
+<h2>Boundary vs the parallax phone demo</h2>
+<p><a href="travel-through-parallax-phone.html">Travel-through parallax phone</a> stacks PNG layers with handheld parallax; this study uses one cabin “shell” and swaps horizontal exterior media—closer to a film <strong>window insert</strong> than to gyro-driven depth. Both sell travel, but the tech paths stay separate on the home carousel.</p>
+
+<h2>What I did not ship</h2>
+<p>No official rail branding, no purchasable UI kit, no live GPS or timetable feed. Speed text is decorative. Commercial reuse needs your own clearances for marks, likeness, and route claims, plus rewritten copy.</p>
+
+<h2>Reuse checklist</h2>
+<ol>
+  <li>Export a stable interior template with empty panes, then separate horizontal plates with consistent motion blur.</li>
+  <li>Align plate perspective to each pane; adjust seat highlights when exterior brightness shifts.</li>
+  <li>Keep one main MP4 plus a few labeled exercise exports, and publish an 800+ word note explaining keep/delete—better for SEO and “substantial content” reviews than bare video links.</li>
+</ol>
+<p>Assets stay beside <code>original/in-car-view/</code> with relative embed paths so GitHub Pages and local WAMP mirrors behave the same.</p>
