@@ -8,7 +8,7 @@
   "descZh": "按 Newzoo 与行业营收常见梯队排序的十个商店与发行商，每站三条官方公告或博文外链。",
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
-  "updated": "2026-05-19",
+  "updated": "2026-05-26",
   "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Hot mix below merges public RSS when you run <code>npm run fetch-hub-news</code> — dedupe is best-effort, timestamps come from feeds, and headlines often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want one scrollable strip of <em>first-party</em> headlines (patches, hardware, live-service notes) without opening five tabs. I use it as a Sunday catch-up rail, not a discovery feed for unknown APK sites. If a publisher ships a major client update, I expect to see it via Steam News or the console blogs first — mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p>",
   "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>下方 Hot mix 在运行 <code>npm run fetch-hub-news</code> 时从公开 RSS 合并写入；去重为尽力而为，时间戳随 feed，标题多保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但想在一个横向列表里扫一遍<strong>第一方</strong>补丁、硬件与运营公告的人。我自己当「周日补课」用，不把它当成 APK 发现站。大版本更新我默认会先出现在 Steam 新闻或御三家博客里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
@@ -25,180 +25,180 @@
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时合并：Steam 新闻、PlayStation / Xbox 官方博客、Epic/Unreal RSS，以及 TechCrunch 游戏、主机、电竞、手游等标签。条目按 feed 日期尽量新在前；标题多为英文。",
   "hotMixItems": [
     {
-      "titleEn": "Introducing XBOX Player Voice: A Simpler Way to Share Feedback",
-      "titleZh": "Introducing XBOX Player Voice: A Simpler Way to Share Feedback",
-      "url": "https://news.xbox.com/en-us/2026/05/18/introducing-xbox-player-voice/",
-      "date": "2026-05-18",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Player-Voice_FINAL-copy-85e2f62597d4213d3fb4-scaled.jpg"
-    },
-    {
-      "titleEn": "A Tourist’s Guide to Forza Horizon 6, From A Designer’s Perspective",
-      "titleZh": "A Tourist’s Guide to Forza Horizon 6, From A Designer’s Perspective",
-      "url": "https://news.xbox.com/en-us/2026/05/18/forza-horizon-6-japan-landmarks-launch-xbox/",
-      "date": "2026-05-18",
-      "source": "Xbox",
-      "image": "https://secure.gravatar.com/avatar/f1f7c5bb89b11d874ad42c9e072abe316daa16fdb16f9d6e8b7f92b66eded965?s=144&d=mm&r=g"
-    },
-    {
-      "titleEn": "Time travel, trials, and treasure awaits in The Adventures of Elliot: The Millennium Tales",
-      "titleZh": "Time travel, trials, and treasure awaits in The Adventures of Elliot: The Millennium Tales",
-      "url": "https://blog.playstation.com/2026/05/18/time-travel-trials-and-treasure-awaits-in-the-adventures-of-elliot-the-millennium-tales/",
-      "date": "2026-05-18",
-      "source": "PlayStation",
-      "image": "https://live.staticflickr.com/65535/55269880274_16d9714290_o.jpg"
-    },
-    {
-      "titleEn": "Official PlayStation Podcast Episode 541: Legendary Run",
-      "titleZh": "Official PlayStation Podcast Episode 541: Legendary Run",
-      "url": "https://blog.playstation.com/2026/05/15/official-playstation-podcast-episode-541-legendary-run/",
-      "date": "2026-05-15",
-      "source": "PlayStation",
-      "image": "https://blog.us.playstation.com/tachyon/2020/05/8797400289_c315225185_o.jpg"
-    },
-    {
-      "titleEn": "Saccharine Echo: Paranormal Dating Novel or Something More?",
-      "titleZh": "Saccharine Echo: Paranormal Dating Novel or Something More?",
-      "url": "https://news.xbox.com/en-us/2026/05/15/saccharine-echo-paranormal-dating/",
-      "date": "2026-05-15",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Hero_art-671df9649f9b5f103b71.jpg"
-    },
-    {
-      "titleEn": "Share of the Week: EA Sports FC 26",
-      "titleZh": "Share of the Week: EA Sports FC 26",
-      "url": "https://blog.playstation.com/2026/05/15/share-of-the-week-ea-sports-fc-26/",
-      "date": "2026-05-15",
-      "source": "PlayStation",
-      "image": "https://live.staticflickr.com/65535/55269356985_74c2f0d4ce_h.jpg"
-    },
-    {
-      "titleEn": "Next Week on XBOX: New Games for May 18 to 22",
-      "titleZh": "Next Week on XBOX: New Games for May 18 to 22",
-      "url": "https://news.xbox.com/en-us/2026/05/15/next-week-on-xbox-new-games-for-may-18-to-22/",
-      "date": "2026-05-15",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/nwox-hero-990895392ec7fac8c4fe-1900x1080.jpg"
-    },
-    {
-      "titleEn": "Ghost of Yōtei Legends Raid: building the multiplayer mode’s endgame",
-      "titleZh": "Ghost of Yōtei Legends Raid: building the multiplayer mode’s endgame",
-      "url": "https://blog.playstation.com/2026/05/15/ghost-of-yotei-legends-raid-building-the-multiplayer-modes-endgame/",
-      "date": "2026-05-15",
+      "titleEn": "Where Winds Meet: Secrets of the Imperial Palace Unfold May 28 with PS5 Pro enhancements",
+      "titleZh": "Where Winds Meet: Secrets of the Imperial Palace Unfold May 28 with PS5 Pro enhancements",
+      "url": "https://blog.playstation.com/2026/05/25/where-winds-meet-secrets-of-the-imperial-palace-unfold-may-28-with-ps5-pro-enhancements/",
+      "date": "2026-05-25",
       "source": "PlayStation",
       "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
     },
     {
-      "titleEn": "Ticket to Ride’s 10th Expansion Arrives, Plus an Exclusive Look to New Horizons!",
-      "titleZh": "Ticket to Ride’s 10th Expansion Arrives, Plus an Exclusive Look to New Horizons!",
-      "url": "https://news.xbox.com/en-us/2026/05/14/ticket-to-ride-round-the-world/",
-      "date": "2026-05-14",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/TTR_POL_3-bcb4e8e827cccbcc5d26-1024x587.jpg"
-    },
-    {
-      "titleEn": "Creating Saros: how performance tech and a bad commute brought Arjun Devraj to life",
-      "titleZh": "Creating Saros: how performance tech and a bad commute brought Arjun Devraj to life",
-      "url": "https://blog.playstation.com/2026/05/14/creating-saros-how-performance-tech-and-a-bad-commute-brought-arjun-devraj-to-life/",
-      "date": "2026-05-14",
-      "source": "PlayStation",
-      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
-    },
-    {
-      "titleEn": "Free Play Days – Battlefield 6, Bassmaster Fishing and JDM: Japanese Drift Master",
-      "titleZh": "Free Play Days – Battlefield 6, Bassmaster Fishing and JDM: Japanese Drift Master",
-      "url": "https://news.xbox.com/en-us/2026/05/14/free-play-days-05-14-2026/",
-      "date": "2026-05-14",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/FY26-Social-FPD_05-14-2026_1920x1080-3shot-b2c6442348ab94674019-1024x576.jpg"
-    },
-    {
-      "titleEn": "Warhammer 40,000: Speed Freeks – Join The Speedwaaagh on May 21",
-      "titleZh": "Warhammer 40,000: Speed Freeks – Join The Speedwaaagh on May 21",
-      "url": "https://news.xbox.com/en-us/2026/05/13/join-the-speedwaaagh-on-may-21/",
-      "date": "2026-05-13",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/SF_Console_Release_Date_Thumb_4K_XB-f0dd2cee8a5836999723.jpg"
-    },
-    {
-      "titleEn": "PlayStation Plus Game Catalog for May: Star Wars Outlaws, Red Dead Redemption 2, Bramble: The Mountain King, The Thaumaturge and more",
-      "titleZh": "PlayStation Plus Game Catalog for May: Star Wars Outlaws, Red Dead Redemption 2, Bramble: The Mountain King, The Thaumaturge and more",
-      "url": "https://blog.playstation.com/2026/05/13/playstation-plus-game-catalog-for-may-star-wars-outlaws-red-dead-redemption-2-bramble-the-mountain-king-the-thaumaturge-and-more/",
-      "date": "2026-05-13",
-      "source": "PlayStation",
-      "image": "https://blog.playstation.com/tachyon/2026/05/6f90a27fce89520367ce90cc37784f94c367664a-scaled.jpg?fit=1024%2C1024"
-    },
-    {
-      "titleEn": "Available for XBOX Insiders: New XBOX Console Updates Bring Updated Boot Up, Gamerscore Badges and More",
-      "titleZh": "Available for XBOX Insiders: New XBOX Console Updates Bring Updated Boot Up, Gamerscore Badges and More",
-      "url": "https://news.xbox.com/en-us/2026/05/13/xbox-insiders-june-2026-console-features/",
-      "date": "2026-05-13",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Bootup_Wire-9c068aa206c9a72d2b1f-1024x576.png"
-    },
-    {
-      "titleEn": "Crunchyroll Ani-May x Forza Horizon 6: Sign Up to Claim a Free Car Voucher",
-      "titleZh": "Crunchyroll Ani-May x Forza Horizon 6: Sign Up to Claim a Free Car Voucher",
-      "url": "https://www.crunchyroll.com/code-campaign/forza#new_tab",
-      "date": "2026-05-13",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Player-Voice_FINAL-copy-85e2f62597d4213d3fb4-scaled.jpg"
-    },
-    {
-      "titleEn": "Inside the Heist: How PUBG Teamed Up with Payday to Evolve Beyond Battle Royale",
-      "titleZh": "Inside the Heist: How PUBG Teamed Up with Payday to Evolve Beyond Battle Royale",
-      "url": "https://news.xbox.com/en-us/2026/05/13/pubg-payday-limited-game-mode/",
-      "date": "2026-05-13",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/01.-PUBG_PAYDAY_Keyart_1920x1080_withPAYDAY_v0-32f57888a7ada1359221-1024x576.jpg"
-    },
-    {
-      "titleEn": "MetaHuman 5.8 Preview Released!",
-      "titleZh": "MetaHuman 5.8 Preview Released!",
-      "url": "https://forums.unrealengine.com/t/metahuman-5-8-preview-released/2721648",
-      "date": "2026-05-12",
-      "source": "Epic / Unreal",
-      "image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/1/6/9/169ec7667dd0cc1ea9f0803dd8415aa9a7f40ccf_2_1024x576.png"
-    },
-    {
-      "titleEn": "Revealing Scuf Omega, a performance controller officially licensed for PlayStation 5 consoles",
-      "titleZh": "Revealing Scuf Omega, a performance controller officially licensed for PlayStation 5 consoles",
-      "url": "https://blog.playstation.com/2026/05/12/revealing-scuf-omega-a-performance-controller-officially-licensed-for-playstation-5-consoles/",
-      "date": "2026-05-12",
-      "source": "PlayStation",
-      "image": "https://blog.playstation.com/tachyon/2026/05/5e647029775ff148945fb1356f2f92ff5d93952f.jpg?fit=1024%2C1024"
-    },
-    {
-      "titleEn": "Unreal Engine 5.8 Preview",
-      "titleZh": "Unreal Engine 5.8 Preview",
-      "url": "https://forums.unrealengine.com/t/unreal-engine-5-8-preview/2721597",
-      "date": "2026-05-12",
-      "source": "Epic / Unreal",
-      "image": "https://d3kjluh73b9h9o.cloudfront.net/optimized/4X/1/6/9/169ec7667dd0cc1ea9f0803dd8415aa9a7f40ccf_2_1024x576.png"
-    },
-    {
-      "titleEn": "(For Southeast Asia) Genshin Impact Version “Luna VII” Introduces Nicole Reeyn, the First Playable Hexenzirkel Member, on May 20!",
-      "titleZh": "(For Southeast Asia) Genshin Impact Version “Luna VII” Introduces Nicole Reeyn, the First Playable Hexenzirkel Member, on May 20!",
-      "url": "https://blog.playstation.com/2026/05/11/20260511-gi/",
-      "date": "2026-05-11",
-      "source": "PlayStation",
-      "image": "https://blog.ja.playstation.com/uploads/sites/7/2026/05/970ef3790a77457a9c5b3bbca53bed2a971c4ca1-scaled.jpg"
-    },
-    {
-      "titleEn": "NYT’s Wordle to become a TV game show",
-      "titleZh": "NYT’s Wordle to become a TV game show",
-      "url": "https://techcrunch.com/2026/05/11/nyts-wordle-to-become-a-tv-game-show/",
-      "date": "2026-05-11",
-      "source": "TechCrunch · Mobile games",
+      "titleEn": "Team Fortress 2 Update Released",
+      "titleZh": "Team Fortress 2 Update Released",
+      "url": "https://store.steampowered.com/news/271749/",
+      "date": "2026-05-25",
+      "source": "Steam",
       "image": ""
     },
     {
-      "titleEn": "Share of the Week: Celebrate",
-      "titleZh": "Share of the Week: Celebrate",
-      "url": "https://blog.playstation.com/2026/05/08/share-of-the-week-celebrate/",
-      "date": "2026-05-08",
+      "titleEn": "The pitch trick that helped an eSports startup raise $20M when VCs only wanted AI",
+      "titleZh": "The pitch trick that helped an eSports startup raise $20M when VCs only wanted AI",
+      "url": "https://techcrunch.com/2026/05/25/the-pitch-trick-that-helped-an-esports-startup-raise-20m-when-vcs-only-wanted-ai/",
+      "date": "2026-05-25",
+      "source": "TechCrunch · Esports",
+      "image": ""
+    },
+    {
+      "titleEn": "(For Southeast Asia) Singapore’s Sands Theatre to host first Gran Turismo World Series event in Southeast Asia on Saturday, 3 October",
+      "titleZh": "(For Southeast Asia) Singapore’s Sands Theatre to host first Gran Turismo World Series event in Southeast Asia on Saturday, 3 October",
+      "url": "https://blog.playstation.com/2026/05/24/20260525-gt/",
+      "date": "2026-05-25",
       "source": "PlayStation",
-      "image": "https://live.staticflickr.com/65535/55254821055_df6a53c48f_o.png"
+      "image": ""
+    },
+    {
+      "titleEn": "Team Fortress 2 Update Released",
+      "titleZh": "Team Fortress 2 Update Released",
+      "url": "https://store.steampowered.com/news/271650/",
+      "date": "2026-05-22",
+      "source": "Steam",
+      "image": ""
+    },
+    {
+      "titleEn": "Introducing Call of Duty: Mobile Season 5 — Revenge",
+      "titleZh": "Introducing Call of Duty: Mobile Season 5 — Revenge",
+      "url": "https://www.callofduty.com/blog/2026/05/call-of-duty-mobile-season-5-2026-revenge-the-boys#new_tab",
+      "date": "2026-05-22",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/XBOX-Adaptive-Thumbstick-Topper-Goal-Post-shape-with-XBOX-Adaptive-Joystick-4db212a5fe3a89d88740.jpg"
+    },
+    {
+      "titleEn": "Official PlayStation Podcast Episode 542: Horror on a Dark Knight",
+      "titleZh": "Official PlayStation Podcast Episode 542: Horror on a Dark Knight",
+      "url": "https://blog.playstation.com/2026/05/22/official-playstation-podcast-episode-542-horror-on-a-dark-knight/",
+      "date": "2026-05-22",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/tachyon/2020/06/2020.06.19-Launch-Blog.jpg"
+    },
+    {
+      "titleEn": "Apple says Epic lawsuit shouldn’t reshape App Store rules for all developers",
+      "titleZh": "Apple says Epic lawsuit shouldn’t reshape App Store rules for all developers",
+      "url": "https://techcrunch.com/2026/05/22/apple-says-epic-lawsuit-shouldnt-reshape-app-store-rules-for-all-developers/",
+      "date": "2026-05-22",
+      "source": "TechCrunch · Epic",
+      "image": ""
+    },
+    {
+      "titleEn": "Share of the Week: Hands",
+      "titleZh": "Share of the Week: Hands",
+      "url": "https://blog.playstation.com/2026/05/22/share-of-the-week-hands/",
+      "date": "2026-05-22",
+      "source": "PlayStation",
+      "image": "https://live.staticflickr.com/65535/55283786745_5ad9747ee4_h.jpg"
+    },
+    {
+      "titleEn": "Bubsy Returns in Bubsy 4D, A Modern Intergalactic Platforming Adventure, Out Today",
+      "titleZh": "Bubsy Returns in Bubsy 4D, A Modern Intergalactic Platforming Adventure, Out Today",
+      "url": "https://news.xbox.com/en-us/2026/05/22/bubsy-4d-xbox-launch/",
+      "date": "2026-05-22",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/bubsy-4d-hero-c12126686e49c6348f06-1024x576.jpg"
+    },
+    {
+      "titleEn": "13 must-play open-world games available with PlayStation Plus Game Catalog",
+      "titleZh": "13 must-play open-world games available with PlayStation Plus Game Catalog",
+      "url": "https://blog.playstation.com/2026/05/22/13-must-play-open-world-games-available-with-playstation-plus-game-catalog/",
+      "date": "2026-05-22",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
+    },
+    {
+      "titleEn": "Warhammer 40,000: Chaos Gate – Deathwatch: Redefined Brutal Turn-Based Tactics on XBOX",
+      "titleZh": "Warhammer 40,000: Chaos Gate – Deathwatch: Redefined Brutal Turn-Based Tactics on XBOX",
+      "url": "https://news.xbox.com/en-us/2026/05/22/warhammer-40k-chaos-gate-deathwatch-announcement/",
+      "date": "2026-05-22",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/ChaosGateDeathwatch_Announce_Shot02_Combat_Bulwark_1920x1080-6b575222bfbbccf6b8d1-1024x576.jpg"
+    },
+    {
+      "titleEn": "Next Week on XBOX: New Games for May 25 to 29",
+      "titleZh": "Next Week on XBOX: New Games for May 25 to 29",
+      "url": "https://news.xbox.com/en-us/2026/05/22/next-week-on-xbox-new-games-for-may-25-to-29/",
+      "date": "2026-05-22",
+      "source": "Xbox",
+      "image": "https://secure.gravatar.com/avatar/7612cc9e3cdef31108ad3c20db959e729ab48348d97d084f0d0cfba7ac35ab3b?s=144&d=mm&r=g"
+    },
+    {
+      "titleEn": "The sound of the Eclipse: Sam Slater on scoring Saros",
+      "titleZh": "The sound of the Eclipse: Sam Slater on scoring Saros",
+      "url": "https://blog.playstation.com/2026/05/22/the-sound-of-the-eclipse-sam-slater-on-scoring-saros/",
+      "date": "2026-05-22",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/tachyon/2028/05/45f09875e9f383df6e291ba7180e565540b0cd8b.jpg"
+    },
+    {
+      "titleEn": "XBOX Celebrates Global Accessibility Awareness Day with Improved Adaptive Thumbstick Toppers and More",
+      "titleZh": "XBOX Celebrates Global Accessibility Awareness Day with Improved Adaptive Thumbstick Toppers and More",
+      "url": "https://news.xbox.com/en-us/2026/05/21/xbox-global-accessibility-awareness-day-2026/",
+      "date": "2026-05-21",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/XBOX-Adaptive-Thumbstick-Topper-Goal-Post-shape-with-XBOX-Adaptive-Joystick-4db212a5fe3a89d88740-1024x575.jpg"
+    },
+    {
+      "titleEn": "How Table Flip Simulator Turns Life’s Annoyances into Chaotic Fun",
+      "titleZh": "How Table Flip Simulator Turns Life’s Annoyances into Chaotic Fun",
+      "url": "https://news.xbox.com/en-us/2026/05/21/how-table-flip-simulator-turns-lifes-annoyances-into-chaotic-fun/",
+      "date": "2026-05-21",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/TableFlipSimulator_XboxWire_Hero_Image-a94b2981646a9cc9d68e.jpg"
+    },
+    {
+      "titleEn": "Introducing the XBOX Game Studios Shop",
+      "titleZh": "Introducing the XBOX Game Studios Shop",
+      "url": "https://news.xbox.com/en-us/2026/05/21/introducing-the-xbox-game-studios-shop/",
+      "date": "2026-05-21",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/XBOX-Gear-Shop-hero-3e1226862ca7ac526e6b.jpg"
+    },
+    {
+      "titleEn": "Warhammer Skulls 2026 – All The News and Updates for XBOX",
+      "titleZh": "Warhammer Skulls 2026 – All The News and Updates for XBOX",
+      "url": "https://news.xbox.com/en-us/2026/05/21/warhammer-skulls-2026-xbox-recap/",
+      "date": "2026-05-21",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Skulls-2026_Key-Art_XBOX_1920x1080-2138b78b86924a7b4cca-1024x576.jpg"
+    },
+    {
+      "titleEn": "Free Play Days – Warhammer Skulls Takeover 2026",
+      "titleZh": "Free Play Days – Warhammer Skulls Takeover 2026",
+      "url": "https://news.xbox.com/en-us/2026/05/21/free-play-days-05-21-26-warhammer-skulls-2026/",
+      "date": "2026-05-21",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/FY26-Social-FPD_05-21-2026_1920x1080-5shot-1-f3411b5eee2719555abb-1024x576.jpg"
+    },
+    {
+      "titleEn": "Watch the world’s top Gran Turismo 7 gamers race live in Milan",
+      "titleZh": "Watch the world’s top Gran Turismo 7 gamers race live in Milan",
+      "url": "https://blog.playstation.com/2026/05/21/watch-the-worlds-top-gran-turismo-7-gamers-race-live-in-milan/",
+      "date": "2026-05-21",
+      "source": "PlayStation",
+      "image": "https://live.staticflickr.com/65535/55277962348_b02ef08613_o.jpg"
+    },
+    {
+      "titleEn": "House Flipper 2: Sakura DLC Offers a Trip to Japan",
+      "titleZh": "House Flipper 2: Sakura DLC Offers a Trip to Japan",
+      "url": "https://news.xbox.com/en-us/2026/05/21/house-flipper-2-sakura-dlc/",
+      "date": "2026-05-21",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Sakura-DLC-1-50b77e4f67418a070d7c-1024x576.jpg"
+    },
+    {
+      "titleEn": "State of Play returns Tuesday, June 2",
+      "titleZh": "State of Play returns Tuesday, June 2",
+      "url": "https://blog.playstation.com/2026/05/20/state-of-play-returns-tuesday-june-2/",
+      "date": "2026-05-20",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
     }
   ],
   "moreTitleEn": "More studios",
@@ -298,22 +298,22 @@
       "labelZh": "Steam",
       "items": [
         {
+          "titleEn": "Team Fortress 2 Update Released",
+          "titleZh": "Team Fortress 2 Update Released",
+          "url": "https://store.steampowered.com/news/271749/",
+          "date": "2026-05-25"
+        },
+        {
+          "titleEn": "Team Fortress 2 Update Released",
+          "titleZh": "Team Fortress 2 Update Released",
+          "url": "https://store.steampowered.com/news/271650/",
+          "date": "2026-05-22"
+        },
+        {
           "titleEn": "Left 4 Dead - Update",
           "titleZh": "Left 4 Dead - Update",
           "url": "https://store.steampowered.com/news/270398/",
           "date": "2026-05-06"
-        },
-        {
-          "titleEn": "Steam Mobile App update",
-          "titleZh": "Steam 移动应用更新",
-          "url": "https://store.steampowered.com/news/app/593110/view/3329873512156647585",
-          "date": "Rolling"
-        },
-        {
-          "titleEn": "Steam Client update (Apr 28)",
-          "titleZh": "Steam 客户端更新说明",
-          "url": "https://store.steampowered.com/news/app/593110/view/532129653907784634",
-          "date": "Rolling"
         }
       ]
     },
@@ -323,22 +323,22 @@
       "labelZh": "PlayStation",
       "items": [
         {
-          "titleEn": "Time travel, trials, and treasure awaits in The Adventures of Elliot: The Millennium Tales",
-          "titleZh": "Time travel, trials, and treasure awaits in The Adventures of Elliot: The Millennium Tales",
-          "url": "https://blog.playstation.com/2026/05/18/time-travel-trials-and-treasure-awaits-in-the-adventures-of-elliot-the-millennium-tales/",
-          "date": "2026-05-18"
+          "titleEn": "Where Winds Meet: Secrets of the Imperial Palace Unfold May 28 with PS5 Pro enhancements",
+          "titleZh": "Where Winds Meet: Secrets of the Imperial Palace Unfold May 28 with PS5 Pro enhancements",
+          "url": "https://blog.playstation.com/2026/05/25/where-winds-meet-secrets-of-the-imperial-palace-unfold-may-28-with-ps5-pro-enhancements/",
+          "date": "2026-05-25"
         },
         {
-          "titleEn": "Official PlayStation Podcast Episode 541: Legendary Run",
-          "titleZh": "Official PlayStation Podcast Episode 541: Legendary Run",
-          "url": "https://blog.playstation.com/2026/05/15/official-playstation-podcast-episode-541-legendary-run/",
-          "date": "2026-05-15"
+          "titleEn": "(For Southeast Asia) Singapore’s Sands Theatre to host first Gran Turismo World Series event in Southeast Asia on Saturday, 3 October",
+          "titleZh": "(For Southeast Asia) Singapore’s Sands Theatre to host first Gran Turismo World Series event in Southeast Asia on Saturday, 3 October",
+          "url": "https://blog.playstation.com/2026/05/24/20260525-gt/",
+          "date": "2026-05-25"
         },
         {
-          "titleEn": "Share of the Week: EA Sports FC 26",
-          "titleZh": "Share of the Week: EA Sports FC 26",
-          "url": "https://blog.playstation.com/2026/05/15/share-of-the-week-ea-sports-fc-26/",
-          "date": "2026-05-15"
+          "titleEn": "Official PlayStation Podcast Episode 542: Horror on a Dark Knight",
+          "titleZh": "Official PlayStation Podcast Episode 542: Horror on a Dark Knight",
+          "url": "https://blog.playstation.com/2026/05/22/official-playstation-podcast-episode-542-horror-on-a-dark-knight/",
+          "date": "2026-05-22"
         }
       ]
     },
@@ -348,22 +348,22 @@
       "labelZh": "Xbox",
       "items": [
         {
-          "titleEn": "Introducing XBOX Player Voice: A Simpler Way to Share Feedback",
-          "titleZh": "Introducing XBOX Player Voice: A Simpler Way to Share Feedback",
-          "url": "https://news.xbox.com/en-us/2026/05/18/introducing-xbox-player-voice/",
-          "date": "2026-05-18"
+          "titleEn": "Introducing Call of Duty: Mobile Season 5 — Revenge",
+          "titleZh": "Introducing Call of Duty: Mobile Season 5 — Revenge",
+          "url": "https://www.callofduty.com/blog/2026/05/call-of-duty-mobile-season-5-2026-revenge-the-boys#new_tab",
+          "date": "2026-05-22"
         },
         {
-          "titleEn": "A Tourist’s Guide to Forza Horizon 6, From A Designer’s Perspective",
-          "titleZh": "A Tourist’s Guide to Forza Horizon 6, From A Designer’s Perspective",
-          "url": "https://news.xbox.com/en-us/2026/05/18/forza-horizon-6-japan-landmarks-launch-xbox/",
-          "date": "2026-05-18"
+          "titleEn": "Bubsy Returns in Bubsy 4D, A Modern Intergalactic Platforming Adventure, Out Today",
+          "titleZh": "Bubsy Returns in Bubsy 4D, A Modern Intergalactic Platforming Adventure, Out Today",
+          "url": "https://news.xbox.com/en-us/2026/05/22/bubsy-4d-xbox-launch/",
+          "date": "2026-05-22"
         },
         {
-          "titleEn": "Saccharine Echo: Paranormal Dating Novel or Something More?",
-          "titleZh": "Saccharine Echo: Paranormal Dating Novel or Something More?",
-          "url": "https://news.xbox.com/en-us/2026/05/15/saccharine-echo-paranormal-dating/",
-          "date": "2026-05-15"
+          "titleEn": "Warhammer 40,000: Chaos Gate – Deathwatch: Redefined Brutal Turn-Based Tactics on XBOX",
+          "titleZh": "Warhammer 40,000: Chaos Gate – Deathwatch: Redefined Brutal Turn-Based Tactics on XBOX",
+          "url": "https://news.xbox.com/en-us/2026/05/22/warhammer-40k-chaos-gate-deathwatch-announcement/",
+          "date": "2026-05-22"
         }
       ]
     },

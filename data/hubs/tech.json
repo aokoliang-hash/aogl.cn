@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-05-19",
+  "updated": "2026-05-26",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-05-19</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-05-19</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "NVIDIA CEO Jensen Huang at Dell Technologies World: ‘Demand Is Going Parabolic, Utterly Parabolic’",
-          "titleZh": "NVIDIA CEO Jensen Huang at Dell Technologies World: ‘Demand Is Going Parabolic, Utterly Parabolic’",
-          "url": "https://blogs.nvidia.com/blog/dell-technologies-agent-enterprise-ai/",
-          "date": "2026-05-18"
+          "titleEn": "Synthesize Realistic 3D Medical Images at Scale to Ship Pre‑Trained Models",
+          "titleZh": "Synthesize Realistic 3D Medical Images at Scale to Ship Pre‑Trained Models",
+          "url": "https://developer.nvidia.com/blog/synthesize-realistic-3d-medical-images-at-scale-to-ship-pre-trained-models/",
+          "date": "2026-05-22"
         },
         {
-          "titleEn": "Vera Arrives: NVIDIA’s First CPU Built for Agents Lands at Top AI Labs",
-          "titleZh": "Vera Arrives: NVIDIA’s First CPU Built for Agents Lands at Top AI Labs",
-          "url": "https://blogs.nvidia.com/blog/vera-cpu-delivery/",
-          "date": "2026-05-18"
+          "titleEn": "Automating and Optimizing Financial Signal Discovery with Multi-Agent Systems",
+          "titleZh": "Automating and Optimizing Financial Signal Discovery with Multi-Agent Systems",
+          "url": "https://developer.nvidia.com/blog/automating-and-optimizing-financial-signal-discovery-with-multi-agent-systems/",
+          "date": "2026-05-21"
         },
         {
-          "titleEn": "How the NVIDIA Vera Rubin Platform is Solving Agentic AI’s Scale-Up Problem",
-          "titleZh": "How the NVIDIA Vera Rubin Platform is Solving Agentic AI’s Scale-Up Problem",
-          "url": "https://developer.nvidia.com/blog/how-the-nvidia-vera-rubin-platform-is-solving-agentic-ais-scale-up-problem/",
-          "date": "2026-05-14"
+          "titleEn": "Get Real-Time Visibility into GPU Usage Across Kubernetes Clusters",
+          "titleZh": "Get Real-Time Visibility into GPU Usage Across Kubernetes Clusters",
+          "url": "https://developer.nvidia.com/blog/get-real-time-visibility-into-gpu-usage-across-kubernetes-clusters/",
+          "date": "2026-05-21"
         }
       ]
     },
@@ -191,22 +191,22 @@
       "labelZh": "AMD",
       "items": [
         {
+          "titleEn": "AMD Announces Production Ramp of Next-Generation AMD EPYC Processor “Venice” on TSMC 2nm Process Technology",
+          "titleZh": "AMD Announces Production Ramp of Next-Generation AMD EPYC Processor “Venice” on TSMC 2nm Process Technology",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1287/amd-announces-production-ramp-of-next-generation-amd-epyc-processor-venice-on-tsmc-2nm-process-technology",
+          "date": "2026-05-21"
+        },
+        {
+          "titleEn": "AMD Announces More Than $10 Billion in Taiwan Ecosystem Investments to Accelerate AI Infrastructure",
+          "titleZh": "AMD Announces More Than $10 Billion in Taiwan Ecosystem Investments to Accelerate AI Infrastructure",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure",
+          "date": "2026-05-21"
+        },
+        {
           "titleEn": "AMD to Host Annual Meeting of Stockholders",
           "titleZh": "AMD to Host Annual Meeting of Stockholders",
           "url": "https://ir.amd.com/news-events/press-releases/detail/1285/amd-to-host-annual-meeting-of-stockholders",
           "date": "2026-05-07"
-        },
-        {
-          "titleEn": "AMD Reports First Quarter 2026 Financial Results",
-          "titleZh": "AMD Reports First Quarter 2026 Financial Results",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results",
-          "date": "2026-05-05"
-        },
-        {
-          "titleEn": "AMD Announces “Advancing AI 2026”",
-          "titleZh": "AMD Announces “Advancing AI 2026”",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1283/amd-announces-advancing-ai-2026",
-          "date": "2026-04-28"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "Samsung Art Store Welcomes the Wonderful World of the Moomins in New Global Collaboration",
-          "titleZh": "Samsung Art Store Welcomes the Wonderful World of the Moomins in New Global Collaboration",
-          "url": "https://news.samsung.com/global/samsung-art-store-welcomes-the-wonderful-world-of-the-moomins-in-new-global-collaboration",
-          "date": "2026-05-18"
+          "titleEn": "[Interview] The Future of Screen Experiences, Part ①: Inside Samsung’s Micro RGB TV, Setting a New Standard for Next-Generation Displays",
+          "titleZh": "[Interview] The Future of Screen Experiences, Part ①: Inside Samsung’s Micro RGB TV, Setting a New Standard for Next-Generation Displays",
+          "url": "https://news.samsung.com/global/interview-the-future-of-screen-experiences-part-%e2%91%a0-inside-samsungs-micro-rgb-tv-setting-a-new-standard-for-next-generation-displays",
+          "date": "2026-05-26"
         },
         {
-          "titleEn": "Samsung Presents AI-Powered Screen Innovations at Australian Tech Summit 2026",
-          "titleZh": "Samsung Presents AI-Powered Screen Innovations at Australian Tech Summit 2026",
-          "url": "https://news.samsung.com/global/samsung-presents-ai-powered-screen-innovations-at-australian-tech-summit-2026",
-          "date": "2026-05-15"
+          "titleEn": "Samsung TV Plus Brings Monthly SM K-Pop Concert Series to Fans at Home",
+          "titleZh": "Samsung TV Plus Brings Monthly SM K-Pop Concert Series to Fans at Home",
+          "url": "https://news.samsung.com/global/samsung-tv-plus-brings-monthly-sm-k-pop-concert-series-to-fans-at-home",
+          "date": "2026-05-22"
         },
         {
-          "titleEn": "Samsung Launches Samsung AI Week 2026 for AI-Powered Living",
-          "titleZh": "Samsung Launches Samsung AI Week 2026 for AI-Powered Living",
-          "url": "https://news.samsung.com/global/samsung-launches-samsung-ai-week-2026-for-ai-powered-living",
-          "date": "2026-05-14"
+          "titleEn": "[Infographic] Samsung AI Appliances Deliver Inclusive Experiences Through Enhanced Accessibility Features",
+          "titleZh": "[Infographic] Samsung AI Appliances Deliver Inclusive Experiences Through Enhanced Accessibility Features",
+          "url": "https://news.samsung.com/global/infographic-samsung-ai-appliances-deliver-inclusive-experiences-through-enhanced-accessibility-features",
+          "date": "2026-05-21"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "英特尔",
       "items": [
         {
+          "titleEn": "Intel’s 2025 Outstanding Researcher Awards Honor 10 Academic Innovators",
+          "titleZh": "Intel’s 2025 Outstanding Researcher Awards Honor 10 Academic Innovators",
+          "url": "https://newsroom.intel.com/corporate/intels-2025-outstanding-researcher-awards-honor-10-academic-innovators",
+          "date": "2026-05-21"
+        },
+        {
+          "titleEn": "Intel Core Ultra Series 3: The New Standard for Edge AI Robotics Compute",
+          "titleZh": "Intel Core Ultra Series 3: The New Standard for Edge AI Robotics Compute",
+          "url": "https://newsroom.intel.com/artificial-intelligence/intel-core-ultra-series-3-for-edge-ai-robotics",
+          "date": "2026-05-20"
+        },
+        {
           "titleEn": "Intel Named Official Compute Partner of McLaren Racing",
           "titleZh": "Intel Named Official Compute Partner of McLaren Racing",
           "url": "https://newsroom.intel.com/corporate/intel-named-official-compute-partner-of-mclaren-racing",
           "date": "2026-05-14"
-        },
-        {
-          "titleEn": "Intel Corporation to Participate in Upcoming Investor Conferences",
-          "titleZh": "Intel Corporation to Participate in Upcoming Investor Conferences",
-          "url": "https://newsroom.intel.com/corporate/intel-corporation-to-participate-in-upcoming-investor-conferences-may-2026",
-          "date": "2026-05-05"
-        },
-        {
-          "titleEn": "Intel at Computex 2026: Advancing the Next Era of AI-Driven Computing",
-          "titleZh": "Intel at Computex 2026: Advancing the Next Era of AI-Driven Computing",
-          "url": "https://newsroom.intel.com/client-computing/intel-at-computex-2026-the-next-era-of-ai-driven-computing",
-          "date": "2026-05-05"
         }
       ]
     },

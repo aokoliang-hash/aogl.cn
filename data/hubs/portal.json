@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-05-19",
+  "updated": "2026-05-26",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "The new AI-powered Google Finance is expanding to Europe.",
-          "titleZh": "The new AI-powered Google Finance is expanding to Europe.",
-          "url": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
-          "date": "2026-05-11"
+          "titleEn": "Catch up on the Dialogues stage at Google I/O 2026.",
+          "titleZh": "Catch up on the Dialogues stage at Google I/O 2026.",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+          "date": "2026-05-22"
         },
         {
-          "titleEn": "See what happens when creative legends use AI to make ads for small businesses.",
-          "titleZh": "See what happens when creative legends use AI to make ads for small businesses.",
-          "url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
-          "date": "2026-05-08"
+          "titleEn": "We’re announcing new community investments in Missouri.",
+          "titleZh": "We’re announcing new community investments in Missouri.",
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
+          "date": "2026-05-20"
         },
         {
-          "titleEn": "5 gardening tips you can try right in Search",
-          "titleZh": "5 gardening tips you can try right in Search",
-          "url": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
-          "date": "2026-05-06"
+          "titleEn": "100 things we announced at I/O 2026",
+          "titleZh": "100 things we announced at I/O 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+          "date": "2026-05-20"
         }
       ],
       "hotSearchPills": [
@@ -193,22 +193,22 @@
       "labelZh": "YouTube",
       "items": [
         {
+          "titleEn": "Fuel your next wave of growth on YouTube with Demand Gen",
+          "titleZh": "Fuel your next wave of growth on YouTube with Demand Gen",
+          "url": "https://blog.google/products-and-platforms/products/youtube/youtube-demand-gen-updates/",
+          "date": "2026-05-20"
+        },
+        {
+          "titleEn": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
+          "titleZh": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
+          "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
+          "date": "2026-05-19"
+        },
+        {
           "titleEn": "Check out the latest news from YouTube’s Brandcast 2026.",
           "titleZh": "Check out the latest news from YouTube’s Brandcast 2026.",
           "url": "https://blog.google/products-and-platforms/products/youtube/youtube-brandcast-2026-advertiser-updates/",
           "date": "2026-05-13"
-        },
-        {
-          "titleEn": "Enjoy new ways to create, search and stream on Google TV",
-          "titleZh": "Enjoy new ways to create, search and stream on Google TV",
-          "url": "https://blog.google/products-and-platforms/platforms/google-tv/enjoy-new-ways-to-create-search-and-stream-on-google-tv/",
-          "date": "2026-04-29"
-        },
-        {
-          "titleEn": "Convert faster on YouTube with April’s Demand Gen Drop.",
-          "titleZh": "Convert faster on YouTube with April’s Demand Gen Drop.",
-          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-april-2026/",
-          "date": "2026-04-23"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "International Roma Day Edit-a-thon 2026",
-          "titleZh": "International Roma Day Edit-a-thon 2026",
-          "url": "https://diff.wikimedia.org/2026/05/19/international-roma-day-edit-a-thon-2026/",
-          "date": "2026-05-19"
+          "titleEn": "Every Book Its Reader: Wiki Encontros and Knowledge construction in Brazil",
+          "titleZh": "Every Book Its Reader: Wiki Encontros and Knowledge construction in Brazil",
+          "url": "https://diff.wikimedia.org/2026/05/26/every-book-its-reader-wiki-encontros-and-knowledge-construction-in-brazil/",
+          "date": "2026-05-26"
         },
         {
-          "titleEn": "Mengikuti WikiNusantara Untuk Pertama Kalinya",
-          "titleZh": "Mengikuti WikiNusantara Untuk Pertama Kalinya",
-          "url": "https://diff.wikimedia.org/2026/05/19/mengikuti-wikinusantara-untuk-pertama-kalinya/",
-          "date": "2026-05-19"
+          "titleEn": "Documenting Women’s Leadership Through Wikipedia with Africa Wiki Women in Antananarivo-Madagascar",
+          "titleZh": "Documenting Women’s Leadership Through Wikipedia with Africa Wiki Women in Antananarivo-Madagascar",
+          "url": "https://diff.wikimedia.org/2026/05/26/documenting-womens-leadership-through-wikipedia-with-africa-wiki-women-in-antananarivo-madagascar/",
+          "date": "2026-05-26"
         },
         {
-          "titleEn": "Tech News 2026 – Issue 21",
-          "titleZh": "Tech News 2026 – Issue 21",
-          "url": "https://diff.wikimedia.org/2026/05/18/tech-news-2026-issue-21/",
-          "date": "2026-05-18"
+          "titleEn": "Tech News 2026 – Issue 22",
+          "titleZh": "Tech News 2026 – Issue 22",
+          "url": "https://diff.wikimedia.org/2026/05/25/tech-news-2026-issue-22/",
+          "date": "2026-05-25"
         }
       ],
       "hotSearchPills": [
@@ -663,6 +663,12 @@
       "labelZh": "Reddit",
       "items": [
         {
+          "titleEn": "Meta quietly launches a new Reddit-like app called Forum",
+          "titleZh": "Meta quietly launches a new Reddit-like app called Forum",
+          "url": "https://techcrunch.com/2026/05/22/meta-quietly-launches-a-new-reddit-like-app-called-forum/",
+          "date": "2026-05-22"
+        },
+        {
           "titleEn": "Google updates AI search to include quotes from Reddit and other sources",
           "titleZh": "Google updates AI search to include quotes from Reddit and other sources",
           "url": "https://techcrunch.com/2026/05/06/google-updates-ai-search-to-include-expert-advice-from-reddit-and-other-web-forums/",
@@ -673,12 +679,6 @@
           "titleZh": "People are finally using Reddit’s search",
           "url": "https://techcrunch.com/2026/05/01/people-are-finally-using-reddits-search/",
           "date": "2026-05-01"
-        },
-        {
-          "titleEn": "Reddit takes on the bots with new ‘human verification’ requirements for fishy behavior",
-          "titleZh": "Reddit takes on the bots with new ‘human verification’ requirements for fishy behavior",
-          "url": "https://techcrunch.com/2026/03/25/reddit-bots-new-human-verification-requirements/",
-          "date": "2026-03-25"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Alexa+ now generates podcast episodes on demand",
-          "titleZh": "Alexa+ now generates podcast episodes on demand",
-          "url": "https://www.aboutamazon.com/news/devices/alexa-podcasts-ai-generated-audio-episodes?utm_source=rss",
-          "date": "2026-05-18"
+          "titleEn": "Amazon in the community: Service, community, and commitment at HQ2",
+          "titleZh": "Amazon in the community: Service, community, and commitment at HQ2",
+          "url": "https://www.aboutamazon.com/news/community/amazon-arlington-virginia-news?utm_source=rss",
+          "date": "2026-05-21"
         },
         {
-          "titleEn": "An update on the search for the next James Bond",
-          "titleZh": "An update on the search for the next James Bond",
-          "url": "https://www.aboutamazon.com/news/entertainment/next-james-bond-movie-latest-updates?utm_source=rss",
-          "date": "2026-05-14"
+          "titleEn": "Amazon data center communities: Here’s what’s happening near data centers across the US",
+          "titleZh": "Amazon data center communities: Here’s what’s happening near data centers across the US",
+          "url": "https://www.aboutamazon.com/news/aws/amazon-data-centers-locations-news?utm_source=rss",
+          "date": "2026-05-21"
         },
         {
-          "titleEn": "Everything to know about Audible",
-          "titleZh": "Everything to know about Audible",
-          "url": "https://www.aboutamazon.com/news/entertainment/everything-to-know-about-audible?utm_source=rss",
-          "date": "2026-05-13"
+          "titleEn": "Amazon CEO Andy Jassy on Prime Video: ‘That business is growing, it’s profitable, and it’s still early’",
+          "titleZh": "Amazon CEO Andy Jassy on Prime Video: ‘That business is growing, it’s profitable, and it’s still early’",
+          "url": "https://www.aboutamazon.com/news/entertainment/amazon-ceo-andy-jassy-on-prime-video-growth?utm_source=rss",
+          "date": "2026-05-21"
         }
       ],
       "hotSearchPills": [
