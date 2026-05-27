@@ -1,0 +1,464 @@
+<!DOCTYPE html><html lang="en" data-title-en="Major planets texture atlas — eight worlds, Earth maps &amp; WebGL-ready PNGs — aogl.cn" data-desc-en="Original aogl.cn asset pack in original/major-planets8: equirectangular maps for eight solar-system worlds, multi-map Earth stack, starfield, hero renders, and a WebGL Earth screen recording for Three.js demos." data-title-zh="太阳系八大行星贴图集：equirectangular 纹理与地球多通道素材 — aogl.cn" data-desc-zh="本站原创：original/major-planets8 八大行星 2:1 等距柱状贴图、地球多通道图、星空背景与 3D 地球演示录屏，供 Three.js 太阳系可视化复用。" data-title-ja="太陽系8惑星テクスチャ集 — aogl.cn" data-desc-ja="オリジナル：major-planets8 の惑星テクスチャと地球マップ。" data-title-ko="태양계 8대 행성 텍스처 아틀라스 — aogl.cn" data-desc-ko="오리지널: major-planets8 행성 텍스처·지구 맵." data-title-fr="Atlas textures — huit planètes et cartes Terre — aogl.cn" data-desc-fr="Note originale : atlas major-planets8 pour visualisations Three.js." data-title-ru="Атлас текстур — восемь планет и карты Земли — aogl.cn" data-desc-ru="Оригинал: атлас major-planets8 для WebGL." data-title-ar="أطلس خامات — ثماني كواكب وخرائط الأرض — aogl.cn" data-desc-ar="ملاحظة أصلية: أطلس major-planets8 لعرض WebGL."><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Original aogl.cn asset pack in original/major-planets8: equirectangular maps for eight solar-system worlds, multi-map Earth stack, starfield, hero renders, and a WebGL Earth screen recording for Three.js demos.">
+  <title>Major planets texture atlas — eight worlds, Earth maps &amp; WebGL-ready PNGs — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/major-planets8-solar-system-textures.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/major-planets8-solar-system-textures.html">
+  <meta property="og:title" content="Major planets texture atlas — eight worlds, Earth maps &amp; WebGL-ready PNGs — aogl.cn">
+  <meta property="og:description" content="Original aogl.cn asset pack in original/major-planets8: equirectangular maps for eight solar-system worlds, multi-map Earth stack, starfield, hero renders, and a WebGL Earth screen recording for Three.js demos.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/original/major-planets8/Gemini_Generated_Image_79swyt79swyt79sw.png">
+  <meta property="og:image:alt" content="Saturn with rings — 3D-style planet render from major-planets8 texture atlas (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/original/major-planets8/Gemini_Generated_Image_79swyt79swyt79sw.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/hub.css">
+  <link rel="stylesheet" href="../css/article-hub.css">
+  <script src="../js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Mercury–Neptune · earth-blue-marble · Interactive-3D-Earth-video.mp4","alternativeHeadline":"太阳系八大行星贴图集：equirectangular 纹理与地球多通道素材","datePublished":"2026-05-26","dateModified":"2026-05-26","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/major-planets8-solar-system-textures.html"},"url":"https://aogl.cn/en/articles/major-planets8-solar-system-textures.html","inLanguage":"mul","description":"Original aogl.cn asset pack in original/major-planets8: equirectangular maps for eight solar-system worlds, multi-map Earth stack, starfield, hero renders, and a WebGL Earth screen recording for Three.js demos.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="../js/bg-canvas.js"></script>
+  <script src="../js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ru brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ar brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li><a href="../index.html#tools-directory">AI frontier</a></li>
+          <li><a href="../portal.html">Top sites</a></li>
+          <li><a href="../brands.html">Brands</a></li>
+          <li><a href="../shopping.html">Shopping</a></li>
+          <li><a href="../life.html">Life</a></li>
+          <li><a href="../social.html">Social</a></li>
+          <li><a href="../tech.html">Tech</a></li>
+          <li><a href="../games.html">Games</a></li>
+          <li><a href="../tools.html">Utilities</a></li>
+        </ul>
+        <ul class="site-nav-list lang-zh">
+          <li><a href="../index.html#tools-directory">AI 前沿</a></li>
+          <li><a href="../portal.html">全球站点</a></li>
+          <li><a href="../brands.html">品牌</a></li>
+          <li><a href="../shopping.html">购物</a></li>
+          <li><a href="../life.html">生活</a></li>
+          <li><a href="../social.html">社交</a></li>
+          <li><a href="../tech.html">科技</a></li>
+          <li><a href="../games.html">游戏</a></li>
+          <li><a href="../tools.html">工具</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ja">
+          <li><a href="../index.html#tools-directory">AI最前線</a></li>
+          <li><a href="../portal.html">主要サイト</a></li>
+          <li><a href="../brands.html">ブランド</a></li>
+          <li><a href="../shopping.html">ショッピング</a></li>
+          <li><a href="../life.html">ライフ</a></li>
+          <li><a href="../social.html">ソーシャル</a></li>
+          <li><a href="../tech.html">テック</a></li>
+          <li><a href="../games.html">ゲーム</a></li>
+          <li><a href="../tools.html">実用ツール</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ko">
+          <li><a href="../index.html#tools-directory">AI 최전선</a></li>
+          <li><a href="../portal.html">주요 사이트</a></li>
+          <li><a href="../brands.html">브랜드</a></li>
+          <li><a href="../shopping.html">쇼핑</a></li>
+          <li><a href="../life.html">라이프</a></li>
+          <li><a href="../social.html">소셜</a></li>
+          <li><a href="../tech.html">테크</a></li>
+          <li><a href="../games.html">게임</a></li>
+          <li><a href="../tools.html">실용 도구</a></li>
+        </ul>
+        <ul class="site-nav-list lang-fr">
+          <li><a href="../index.html#tools-directory">IA — veille</a></li>
+          <li><a href="../portal.html">Grands sites</a></li>
+          <li><a href="../brands.html">Marques</a></li>
+          <li><a href="../shopping.html">Shopping</a></li>
+          <li><a href="../life.html">Vie</a></li>
+          <li><a href="../social.html">Social</a></li>
+          <li><a href="../tech.html">Tech</a></li>
+          <li><a href="../games.html">Jeux</a></li>
+          <li><a href="../tools.html">Utilitaires</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ru">
+          <li><a href="../index.html#tools-directory">ИИ — новинки</a></li>
+          <li><a href="../portal.html">Топ сайтов</a></li>
+          <li><a href="../brands.html">Бренды</a></li>
+          <li><a href="../shopping.html">Шопинг</a></li>
+          <li><a href="../life.html">Сервисы</a></li>
+          <li><a href="../social.html">Соцсети</a></li>
+          <li><a href="../tech.html">Техно</a></li>
+          <li><a href="../games.html">Игры</a></li>
+          <li><a href="../tools.html">Утилиты</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ar">
+          <li><a href="../index.html#tools-directory">أحدث الذكاء الاصطناعي</a></li>
+          <li><a href="../portal.html">أبرز المواقع</a></li>
+          <li><a href="../brands.html">العلامات</a></li>
+          <li><a href="../shopping.html">التسوق</a></li>
+          <li><a href="../life.html">الحياة الرقمية</a></li>
+          <li><a href="../social.html">التواصل</a></li>
+          <li><a href="../tech.html">التقنية</a></li>
+          <li><a href="../games.html">الألعاب</a></li>
+          <li><a href="../tools.html">أدوات مساعدة</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Major planets texture atlas — eight worlds, Earth maps &amp; WebGL-ready PNGs</h1>
+        <p class="article-shell__sub">Mercury–Neptune · earth-blue-marble · Interactive-3D-Earth-video.mp4</p>
+        <p class="article-shell__meta"><time datetime="2026-05-26">2026-05-26</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This is the <strong>eleventh original article</strong> on aogl.cn, sourced from <code>original/major-planets8/</code>. The folder is a <strong>solar-system texture atlas</strong> for WebGL and outreach pages: equirectangular maps for eight worlds (Earth plus Mercury through Neptune), a multi-channel Earth stack, a starfield background, six Gemini-style hero spheres, and <code>Interactive-3D-Earth-video.mp4</code> showing how the Earth channels behave in the browser. It is not a NASA data portal and not a stock asset store—only filenames, roles, and how this pack relates to other demos on the site.</p>
+
+<h2>What is in the folder</h2>
+<ul>
+  <li><strong>Planet equirectangular maps</strong> — <code>Mercury.png</code>, <code>Venus.png</code>, <code>Mars.png</code>, <code>jupiter.png</code>, <code>saturn.png</code>, <code>uranus.png</code>, <code>neptune.png</code></li>
+  <li><strong>Earth channels</strong> — <code>earth-blue-marble.jpg</code>, <code>earth-topology.png</code> (bump), <code>earth-water.png</code> (specular/ocean), <code>earth-night.jpg</code> (city lights), <code>earth-dark.jpg</code> (night-side helper)</li>
+  <li><strong>Environment</strong> — <code>night-sky.png</code> starfield</li>
+  <li><strong>Hero renders</strong> — six <code>Gemini_Generated_Image_*.png</code> full-sphere illustrations</li>
+  <li><strong>Screen recording</strong> — <code>Interactive-3D-Earth-video.mp4</code></li>
+</ul>
+<p>Headings use honest phrases such as <em>solar system textures</em>, <em>planet equirectangular map</em>, <em>Three.js sphere texture</em>, and <em>blue marble earth</em>—each tied to files on disk, not invisible keyword spam.</p>
+
+<h2>Why 2:1 equirectangular maps</h2>
+<p>Wrapped on <code>SphereGeometry</code> in Three.js, a <strong>2:1</strong> equirectangular image covers the globe with predictable pole stretching. Gas giants need clean seams at 0°/360° longitude so banding does not flicker when users drag orbit controls. Rocky bodies need crater ray systems that do not “break” at the seam. I always zoom the seam column before publishing.</p>
+<p>The site’s <a href="interactive-3d-earth.html">interactive 3D Earth</a> already uses this pattern for an exterior-view Earth with clouds and atmosphere. <code>major-planets8</code> supplies <strong>the other seven planets</strong> so you can build a classroom solar-system row, a museum kiosk, or a portfolio strip without hunting new textures each time.</p>
+
+<h2>Terrestrial maps: Mercury, Venus, Mars</h2>
+<p><code>Mercury.png</code> is a grey, cratered globe with bright ray systems from young impacts—useful copy hooks for MESSENGER-era global mapping. <code>Venus.png</code> shows radar topography in gold and brown: bright tessera highlands and darker volcanic plains. Remind readers the surface is hidden by sulfuric acid clouds; the map is radar shape, not a visible-light photo. <code>Mars.png</code> delivers rust tones, Valles Marineris, and polar caps—pair it with <code>Gemini_Generated_Image_6wdi276wdi276wdi.png</code> when you want a poster-style Mars beside a science map.</p>
+
+<div class="article-gallery">
+  <img src="../original/major-planets8/Mercury.png" width="800" height="400" loading="lazy" decoding="async" alt="Mercury equirectangular texture Mercury.png">
+  <img src="../original/major-planets8/Venus.png" width="800" height="400" loading="lazy" decoding="async" alt="Venus radar topography map Venus.png">
+  <img src="../original/major-planets8/Mars.png" width="800" height="400" loading="lazy" decoding="async" alt="Mars global map Mars.png">
+</div>
+
+<h2>Gas and ice giants: Jupiter through Neptune</h2>
+<p><code>jupiter.png</code> includes the Great Red Spot and alternating belts and zones—align lighting in your scene so the storm sits in a believable latitude. <code>saturn.png</code> covers the cloud bands; rings belong on separate geometry or alpha cards, not inside the 2:1 strip. The Gemini Saturn render (<code>Gemini_Generated_Image_79swyt79swyt79sw.png</code>) is the article hero because rings read instantly in thumbnails.</p>
+<p><code>uranus.png</code> is smooth cyan-green—pair with copy about its extreme axial tilt. <code>neptune.png</code> shows deep blue banding and dark spots for ice-giant wind stories. Gallery below is ready for hotlinking in your own demos.</p>
+
+<div class="article-gallery">
+  <img src="../original/major-planets8/jupiter.png" width="800" height="400" loading="lazy" decoding="async" alt="Jupiter atmosphere map jupiter.png">
+  <img src="../original/major-planets8/saturn.png" width="800" height="400" loading="lazy" decoding="async" alt="Saturn cloud bands saturn.png">
+  <img src="../original/major-planets8/uranus.png" width="800" height="400" loading="lazy" decoding="async" alt="Uranus texture uranus.png">
+  <img src="../original/major-planets8/neptune.png" width="800" height="400" loading="lazy" decoding="async" alt="Neptune texture neptune.png">
+</div>
+
+<h2>Earth: five files, one planet</h2>
+<p>Earth is the only world shipped with <strong>multiple channels</strong>:</p>
+<ul>
+  <li><code>earth-blue-marble.jpg</code> — daytime albedo, the default “classroom globe” look</li>
+  <li><code>earth-topology.png</code> — bump driver for relief</li>
+  <li><code>earth-water.png</code> — specular mask for oceans</li>
+  <li><code>earth-night.jpg</code> — city lights for dusk terminators</li>
+  <li><code>earth-dark.jpg</code> — helper to keep nightside cities from leaking onto day</li>
+</ul>
+<p>For a live Earth, start with the iframe in <a href="interactive-3d-earth.html">interactive 3D Earth</a>; use <code>major-planets8</code> when you need source paths to fork, compress, or mirror on a CDN.</p>
+
+<figure class="article-embed">
+  <img src="../original/major-planets8/earth-blue-marble.jpg" width="1200" height="600" loading="lazy" decoding="async" alt="Earth blue marble map earth-blue-marble.jpg">
+  <figcaption><code>earth-blue-marble.jpg</code> — daytime Earth, 2:1 global texture.</figcaption>
+</figure>
+
+<h2>Starfield: night-sky.png</h2>
+<p>Use <code>night-sky.png</code> as <code>Scene.background</code> or a skydome so planets sit in space instead of flat grey WebGL clears. It does not need to match planet resolution, but keep it slightly dark and cool so Jupiter or Saturn does not lose contrast.</p>
+
+<h2>Gemini hero spheres for cards and OG images</h2>
+<p>The six <code>Gemini_Generated_Image_*.png</code> files are <strong>full-disk illustrations</strong> on neutral grey—not equirectangular strips. Use them for carousel art, social cards, and hero images; use the PNG/JPG maps when you need a spinnable globe. Three examples below; the rest remain in the folder for your own comparisons.</p>
+
+<div class="article-gallery">
+  <img src="../original/major-planets8/Gemini_Generated_Image_aymbswaymbswaymb.png" width="512" height="512" loading="lazy" decoding="async" alt="Mercury hero sphere Gemini_Generated_Image_aymbswaymbswaymb.png">
+  <img src="../original/major-planets8/Gemini_Generated_Image_79swyt79swyt79sw.png" width="512" height="512" loading="lazy" decoding="async" alt="Saturn with rings hero Gemini_Generated_Image_79swyt79swyt79sw.png">
+  <img src="../original/major-planets8/Gemini_Generated_Image_qavqocqavqocqavq.png" width="512" height="512" loading="lazy" decoding="async" alt="Neptune hero Gemini_Generated_Image_qavqocqavqocqavq.png">
+</div>
+
+<h2>Screen recording: Interactive-3D-Earth-video.mp4</h2>
+<p>The MP4 documents Earth interaction—drag, zoom, atmospheric rim—not a tour of every planet texture. It still anchors why the Earth files exist and how they differ from a single-map gas giant.</p>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/major-planets8/earth-blue-marble.jpg" aria-label="Interactive 3D Earth WebGL screen recording">
+    <source src="../original/major-planets8/Interactive-3D-Earth-video.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>Interactive-3D-Earth-video.mp4</code> — Earth Three.js demo capture (~24 MB).</figcaption>
+</figure>
+
+<h2>Publishing, accessibility, and search</h2>
+<p>Video embeds use <code>controls</code>, <code>playsinline</code>, and <code>preload="metadata"</code>. Still maps include descriptive <code>alt</code> text with planet names and filenames. JSON metadata drives titles and descriptions; body copy repeats topics in visible <code>h2</code> headings. Submit the article URL in Search Console—textures stay assets, not separate landing pages.</p>
+
+<h2>How this differs from other space demos here</h2>
+<p><a href="velmora.html">Velmora</a> is a solar-system explorer concept with its own art direction. <a href="interactive-3d-earth.html">Interactive 3D Earth</a> is Earth-only. <a href="in-car-view-train-window-scenery.html">In-car train window scenery</a> and <a href="apartment-360-panorama-tour.html">apartment 360°</a> are interior framing studies. <code>major-planets8</code> is the <strong>downloadable map pack + Earth channels + hero art</strong> lane on the home carousel.</p>
+
+<h2>What I did not ship</h2>
+<p>No Pluto maps, no orbital mechanics simulator, no claim of live telescope feeds. Educational products need their own fact-checking and licensing review; Gemini heroes are not mission-grade charts.</p>
+
+<h2>Reuse checklist</h2>
+<ol>
+  <li>One <code>SphereGeometry</code> per planet with equirectangular <code>map</code>; Earth adds bump, specular, and night blend.</li>
+  <li>Model Saturnian, Uranian, and Neptunian <strong>rings</strong> separately from the 2:1 body texture.</li>
+  <li>Back scenes with <code>night-sky.png</code> and publish an 800+ word note like this one so crawlers see context around the binaries.</li>
+</ol>
+<p>Keep <code>original/major-planets8/</code> beside article HTML with relative paths so GitHub Pages and local WAMP stay in sync.</p></article>
+    </div>
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>太阳系八大行星贴图集：equirectangular 纹理与地球多通道素材</h1>
+        <p class="article-shell__sub">Mercury–Neptune · earth-blue-marble · Interactive-3D-Earth-video.mp4</p>
+        <p class="article-shell__meta"><time datetime="2026-05-26">2026-05-26</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>这篇是 aogl.cn 归档的<strong>第 11 篇原创手记</strong>，素材在 <code>original/major-planets8/</code>。文件夹是一套<strong>太阳系八大行星可视化贴图包</strong>：七颗外行星与地球各自一张（或多张）2:1 等距柱状（equirectangular）纹理，外加地球专用的凹凸、夜景、水面高光通道，几张适合封面用的 Gemini 风格整球渲染图，以及一段 <code>Interactive-3D-Earth-video.mp4</code> 录屏。不是 NASA 官方数据门户，也不卖素材包授权；只记文件名、用途和与站内其他 Demo 的分工。</p>
+
+<h2>文件夹里有什么</h2>
+<ul>
+  <li><strong>行星 equirectangular 贴图</strong> — <code>Mercury.png</code>、<code>Venus.png</code>、<code>Mars.png</code>、<code>jupiter.png</code>、<code>saturn.png</code>、<code>uranus.png</code>、<code>neptune.png</code></li>
+  <li><strong>地球多通道</strong> — <code>earth-blue-marble.jpg</code>、<code>earth-topology.png</code>（凹凸）、<code>earth-water.png</code>（高光/水体）、<code>earth-night.jpg</code>（夜景灯光）、<code>earth-dark.jpg</code>（暗面或合成辅助）</li>
+  <li><strong>环境</strong> — <code>night-sky.png</code> 星空背景</li>
+  <li><strong>封面级渲染</strong> — 六张 <code>Gemini_Generated_Image_*.png</code>（水星、金星、火星、木星、土星、天王星、海王星等整球插画风格）</li>
+  <li><strong>演示录屏</strong> — <code>Interactive-3D-Earth-video.mp4</code></li>
+</ul>
+<p>标题与段落里自然出现 <em>solar system textures</em>、<em>planet equirectangular map</em>、<em>Three.js sphere texture</em>、<em>blue marble earth</em> 等检索词，均对应真实文件，不做隐藏堆砌。</p>
+
+<h2>为什么用 2:1 等距柱状图</h2>
+<p>在 Three.js 里把贴图包在 <code>SphereGeometry</code> 上时，<strong>宽高比 2:1</strong> 的 equirectangular 图能在极点变形可控的前提下覆盖整球。木星、土星这类气态巨行星横向条纹会在经度 0°/360° 接缝处对齐；岩石行星（水星、火星）则要检查陨石坑射线是否在接缝处断开。我导出前会放大接缝带看一眼，避免上线后观众拖拽旋转时出现竖线闪动。</p>
+<p>本站 <a href="interactive-3d-earth.html">交互 3D 地球</a> 已用类似思路做<strong>外观测</strong>地球：蓝大理石底色 + 凹凸 + 高光 + 云层。本篇 <code>major-planets8</code> 把<strong>其余七颗行星</strong>补齐，方便你做太阳系沙盘、科普页轮播或教学用 HTML，而不必每次重新找贴图。</p>
+
+<h2>类地行星贴图：水星、金星、火星</h2>
+<p><code>Mercury.png</code> 灰褐色撞击坑密集，左侧可见年轻撞击坑的射线纹——适合讲「最接近太阳的岩石行星」与 MESSENGER 任务时代的全球制图。<code>Venus.png</code> 呈雷达反照的金色地形，亮区对应高原（如伊师塔高原、阿佛洛狄忒高地），暗区为火山平原；提醒读者金星表面被浓硫酸云层遮住，贴图代表的是雷达看到的「地表」，不是可见光照片。<code>Mars.png</code> 铁锈色外壳上横贯水手号峡谷系统，两极有白色极冠——与 <code>Gemini_Generated_Image_6wdi276wdi276wdi.png</code> 的插画版火星可对照：一张偏科学制图，一张偏科普封面。</p>
+
+<div class="article-gallery">
+  <img src="../original/major-planets8/Mercury.png" width="800" height="400" loading="lazy" decoding="async" alt="水星 equirectangular 贴图 Mercury.png">
+  <img src="../original/major-planets8/Venus.png" width="800" height="400" loading="lazy" decoding="async" alt="金星雷达地形贴图 Venus.png">
+  <img src="../original/major-planets8/Mars.png" width="800" height="400" loading="lazy" decoding="async" alt="火星全球贴图 Mars.png">
+</div>
+
+<h2>气态与冰巨行星：木星到海王星</h2>
+<p><code>jupiter.png</code> 展示大红斑与多条云带，是典型的木星大气 equirectangular 展开；贴到球体上时，大红斑纬度要和你场景里的光照方向一致，否则「风暴位置」会显得假。<code>saturn.png</code> 除球面云带外，环系统往往要<strong>单独几何体</strong>（环面或透明贴图），不要强行画进 2:1 展开图里——本站 Gemini 版土星（<code>Gemini_Generated_Image_79swyt79swyt79sw.png</code>）就是把环做成封面英雄图的好例子。</p>
+<p><code>uranus.png</code> 青绿色平滑大气，适合配合「躺着自转」的科普文案；<code>neptune.png</code> 深蓝条带与大暗斑，风速极强的冰巨星叙事。四张气态/冰巨星贴图如下，可直接下载复用。</p>
+
+<div class="article-gallery">
+  <img src="../original/major-planets8/jupiter.png" width="800" height="400" loading="lazy" decoding="async" alt="木星大气 equirectangular 贴图 jupiter.png">
+  <img src="../original/major-planets8/saturn.png" width="800" height="400" loading="lazy" decoding="async" alt="土星云带贴图 saturn.png">
+  <img src="../original/major-planets8/uranus.png" width="800" height="400" loading="lazy" decoding="async" alt="天王星贴图 uranus.png">
+  <img src="../original/major-planets8/neptune.png" width="800" height="400" loading="lazy" decoding="async" alt="海王星贴图 neptune.png">
+</div>
+
+<h2>地球：五张图组成「多层地球」</h2>
+<p>地球是唯一同时提供<strong>多通道</strong>的行星，这也是文件夹里最「重」的一组资产：</p>
+<ul>
+  <li><code>earth-blue-marble.jpg</code> — 白天地表反照，科普页最常用</li>
+  <li><code>earth-topology.png</code> — 灰度凹凸，驱动法线/位移</li>
+  <li><code>earth-water.png</code> — 海洋镜面高光遮罩</li>
+  <li><code>earth-night.jpg</code> — 城市夜灯，可与白天做混合 shader</li>
+  <li><code>earth-dark.jpg</code> — 暗部或合成辅助，避免夜灯在昼侧漏光</li>
+</ul>
+<p>若你只想要一颗「能转、能缩放」的地球，优先看文章 <a href="interactive-3d-earth.html">交互 3D 地球</a> 里的 iframe 演示；<code>major-planets8</code> 提供的是<strong>可替换的源贴图</strong>，方便你 fork 后改路径或降分辨率上 CDN。</p>
+
+<figure class="article-embed">
+  <img src="../original/major-planets8/earth-blue-marble.jpg" width="1200" height="600" loading="lazy" decoding="async" alt="地球蓝大理石贴图 earth-blue-marble.jpg">
+  <figcaption><code>earth-blue-marble.jpg</code> — 地球白天通道，2:1 全球贴图。</figcaption>
+</figure>
+
+<h2>星空背景 night-sky.png</h2>
+<p><code>night-sky.png</code> 用作场景后景或 <code>Scene.background</code> 的 equirectangular 环境图，把行星放在暗星场里，避免纯色 WebGL 背景显得像未完成的 debug 视图。分辨率不必与行星贴图相同，但<strong>色温要偏冷、略压暗</strong>，以免抢过行星本体的对比度。</p>
+
+<h2>Gemini 风格整球图：给封面与 Open Graph 用</h2>
+<p>六张 <code>Gemini_Generated_Image_*.png</code> 不是 equirectangular 展开，而是<strong>正圆整球 + 浅灰背景</strong>的插画式渲染，适合首页卡片、社交分享缩略图或文章 hero。它们与科学贴图并存：贴图负责「可绕转的球」，Gemini 图负责「一眼认出是哪颗星」。下文选三张代表内行星、巨行星与冰巨星；其余文件仍在目录中可自行对照。</p>
+
+<div class="article-gallery">
+  <img src="../original/major-planets8/Gemini_Generated_Image_aymbswaymbswaymb.png" width="512" height="512" loading="lazy" decoding="async" alt="水星整球渲染 Gemini_Generated_Image_aymbswaymbswaymb.png">
+  <img src="../original/major-planets8/Gemini_Generated_Image_79swyt79swyt79sw.png" width="512" height="512" loading="lazy" decoding="async" alt="土星环整球渲染 Gemini_Generated_Image_79swyt79swyt79sw.png">
+  <img src="../original/major-planets8/Gemini_Generated_Image_qavqocqavqocqavq.png" width="512" height="512" loading="lazy" decoding="async" alt="海王星整球渲染 Gemini_Generated_Image_qavqocqavqocqavq.png">
+</div>
+
+<h2>演示录屏 Interactive-3D-Earth-video.mp4</h2>
+<p>录屏展示的是<strong>地球 WebGL 交互</strong>（拖拽、缩放、大气边缘光），说明这套地球通道最终如何进浏览器。行星贴图本身不在此视频里逐一旋转，但地球管线与文件夹命名一一对应，便于你对照 <code>earth-*.jpg/png</code> 文件。</p>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/major-planets8/earth-blue-marble.jpg" aria-label="3D 地球 WebGL 演示录屏">
+    <source src="../original/major-planets8/Interactive-3D-Earth-video.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>Interactive-3D-Earth-video.mp4</code> — 地球 Three.js 演示屏录（约 24 MB）。</figcaption>
+</figure>
+
+<h2>和本站其他太空 Demo 的边界</h2>
+<p><a href="velmora.html">Velmora</a> 是另一套太阳系探索 UI 概念；<a href="interactive-3d-earth.html">交互 3D 地球</a> 只聚焦一颗地球；<a href="in-car-view-train-window-scenery.html">高铁车窗风景</a> 与 <a href="apartment-360-panorama-tour.html">公寓 360°</a> 是室内/交通框景，不是行星尺度。本篇 <code>major-planets8</code> 的定位是<strong>可下载的行星贴图源 + 地球多通道 + 封面渲染</strong>，三条线并列在首页「本站原创」轮播，避免访客以为全站只有一个地球 Demo。</p>
+
+<h2>我刻意没做的事</h2>
+<p>未包含冥王星或小行星带贴图；未提供克卜勒轨道数值仿真；未声称数据来自某一架望远镜的实时下行。商用太空教育产品需自行核对科学表述与版权；Gemini 插画不可当作任务级科学制图。</p>
+
+<h2>若你要复用 major-planets8</h2>
+<ol>
+  <li>每颗行星一颗 <code>SphereGeometry</code> + equirectangular <code>map</code>；地球额外挂 <code>bumpMap</code>、<code>specularMap</code> 与夜灯混合。</li>
+  <li>土星、天王星、海王星的<strong>环</strong>单独建模，别挤进 2:1 贴图。</li>
+  <li>用 <code>night-sky.png</code> 做背景，文章页用 800 字以上手记写清文件分工——比只放下载链接更有利于 SEO 与 AdSense 对「实质性内容」的判断。</li>
+</ol>
+<p>部署时保持 <code>original/major-planets8/</code> 与 HTML 相对路径不变，GitHub Pages 与本地 WAMP 才能共用同一套链接。</p></article>
+    </div>
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>太陽系8惑星テクスチャ集</h1>
+        <p class="article-shell__sub">水星〜海王星・地球マップ・MP4</p>
+        <p class="article-shell__meta"><time datetime="2026-05-26">2026-05-26</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p>aogl.cn の<strong>オリジナル第11弾</strong>。<code>original/major-planets8/</code> に太陽系8惑星の equirectangular テクスチャ、地球の多通道マップ、星空背景、Gemini 風ヒーロー画像、<code>Interactive-3D-Earth-video.mp4</code> があります。英語・中国語に全文があります。</p>
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/major-planets8/earth-blue-marble.jpg" aria-label="3D Earth demo video">
+    <source src="../original/major-planets8/Interactive-3D-Earth-video.mp4" type="video/mp4">
+  </video>
+</figure>
+<p>関連：<a href="interactive-3d-earth.html">3D Earth</a> · <a href="velmora.html">Velmora</a></p></article>
+    </div>
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>태양계 8대 행성 텍스처 아틀라스</h1>
+        <p class="article-shell__sub">수성~해왕성·지구 맵·MP4</p>
+        <p class="article-shell__meta"><time datetime="2026-05-26">2026-05-26</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p>aogl.cn <strong>열한 번째 오리지널</strong>. <code>original/major-planets8/</code> — 태양계 8행성 equirectangular 텍스처, 지구 다채널 맵, <code>night-sky.png</code>, <code>Interactive-3D-Earth-video.mp4</code>. 전문은 영문·중문.</p>
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/major-planets8/earth-blue-marble.jpg" aria-label="3D 지구 데모">
+    <source src="../original/major-planets8/Interactive-3D-Earth-video.mp4" type="video/mp4">
+  </video>
+</figure></article>
+    </div>
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Atlas textures — huit planètes et cartes Terre</h1>
+        <p class="article-shell__sub">Mercure–Neptune · cartes Terre · MP4</p>
+        <p class="article-shell__meta"><time datetime="2026-05-26">2026-05-26</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p><strong>11<sup>e</sup> note originale</strong> — <code>original/major-planets8/</code> : textures équirectangulaires pour huit planètes, cartes multi-couches de la Terre, ciel étoilé, rendus Gemini, vidéo WebGL Terre. Texte intégral en anglais et chinois.</p>
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/major-planets8/earth-blue-marble.jpg" aria-label="Démo Terre 3D">
+    <source src="../original/major-planets8/Interactive-3D-Earth-video.mp4" type="video/mp4">
+  </video>
+</figure></article>
+    </div>
+    <div class="lang-ru">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← На главную · оригиналы</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Атлас текстур — восемь планет и карты Земли</h1>
+        <p class="article-shell__sub">Меркурий–Нептун · карты Земли · MP4</p>
+        <p class="article-shell__meta"><time datetime="2026-05-26">2026-05-26</time> · Оригинал aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="ru"><p><strong>Одиннадцатая оригинальная</strong> заметка: <code>original/major-planets8/</code> — текстуры восьми планет, карты Земли, звёздное небо, <code>Interactive-3D-Earth-video.mp4</code>. Полный текст на английском и китайском.</p>
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/major-planets8/earth-blue-marble.jpg" aria-label="Демо 3D Земли">
+    <source src="../original/major-planets8/Interactive-3D-Earth-video.mp4" type="video/mp4">
+  </video>
+</figure></article>
+    </div>
+    <div class="lang-ar">
+      <div class="article-shell__top">
+        <a href="../index.html#originals">← الرئيسية · محتوى أصلي</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>أطلس خامات — ثماني كواكب وخرائط الأرض</h1>
+        <p class="article-shell__sub">عطارد–نبتون · خرائط الأرض · MP4</p>
+        <p class="article-shell__meta"><time datetime="2026-05-26">2026-05-26</time> · محتوى أصلي</p>
+      </div>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p><strong>المقال الأصلي الحادي عشر</strong>: مجلد <code>original/major-planets8/</code> — خامات ثماني كواكب، خرائط الأرض متعددة القنوات، <code>night-sky.png</code> و<code>Interactive-3D-Earth-video.mp4</code>. النص الكامل بالإنجليزية والصينية.</p>
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/major-planets8/earth-blue-marble.jpg" aria-label="عرض الأرض ثلاثي الأبعاد">
+    <source src="../original/major-planets8/Interactive-3D-Earth-video.mp4" type="video/mp4">
+  </video>
+</figure></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="../about.html" class="footer-legal-link lang-en">About</a>
+        <a href="../contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="../changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="../privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="../about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="../contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="../changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="../privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="../about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="../contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="../changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="../privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="../about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="../contact.html" class="footer-legal-link lang-ko">문의</a>
+        <a href="../changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="../privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="../about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="../contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="../changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="../privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="../about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="../contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="../changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="../privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="../about.html" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="../contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
+        <a href="../changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="../privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/hub-common.js" defer></script>
+</body></html>
