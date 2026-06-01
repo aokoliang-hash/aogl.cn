@@ -175,6 +175,56 @@ const HUB_NAV_LINKS = {
 const INDEX_START = "      <!-- INDEX_ORIGINALS_AUTO_START -->";
 const INDEX_END = "      <!-- INDEX_ORIGINALS_AUTO_END -->";
 
+const PRIMARY_CONTENT_LEAD = {
+  en: '<strong>Primary content</strong> on this site is twelve editorial demos with honest production notes—not the AI link lists below. <a href="articles/index.html">Full article index</a> (newest first).',
+  zh: "本站<strong>主内容</strong>是十二篇原创 Demo 手记，而非下方 AI 外链汇总。<a href=\"articles/index.html\">全部文章索引</a>（新→旧）。",
+  ja: "当サイトの<strong>主コンテンツ</strong>は12本の編集デモと制作メモです（下のAIリンク集ではありません）。<a href=\"articles/index.html\">記事一覧</a>（新しい順）。",
+  ko: "이 사이트의 <strong>주 콘텐츠</strong>는 12편의 편집 데모와 제작 메모이며, 아래 AI 링크 목록이 아닙니다. <a href=\"articles/index.html\">전체 글 목록</a>（최신순）.",
+  fr: "Le <strong>contenu principal</strong> du site, ce sont douze démos éditoriales avec notes de production — pas les listes de liens IA ci-dessous. <a href=\"articles/index.html\">Index des articles</a> (plus récent d’abord).",
+  ru: "<strong>Основной контент</strong> сайта — двенадцать авторских демо с заметками о производстве, а не списки ссылок на ИИ ниже. <a href=\"articles/index.html\">Все статьи</a> (сначала новые).",
+  ar: "<strong>المحتوى الأساسي</strong> في الموقع هو اثنا عشر عرضًا تحريريًا مع ملاحظات إنتاج — وليس قوائم روابط الذكاء الاصطناعي أدناه. <a href=\"articles/index.html\">فهرس المقالات</a> (الأحدث أولاً).",
+};
+
+const ARTICLES_INDEX_H1 = {
+  en: "Editorial articles",
+  zh: "原创文章",
+  ja: "編集記事一覧",
+  ko: "편집 글 목록",
+  fr: "Articles éditoriaux",
+  ru: "Редакционные статьи",
+  ar: "مقالات تحريرية",
+};
+
+const ARTICLES_INDEX_LEAD = {
+  en: "Twelve personal demos on aogl.cn—WebGL, video, panoramas, and illustration pipelines—with production notes in first-screen HTML. Sorted newest first.",
+  zh: "aogl.cn 上十二篇个人 Demo：WebGL、视频、全景与插画流程，首屏 HTML 含制作手记。按日期新→旧排列。",
+  ja: "aogl.cn の個人デモ12本（WebGL・動画・パノラマ・イラスト）と制作メモ。新しい順。",
+  ko: "aogl.cn의 개인 데모 12편(WebGL·영상·파노라마·일러스트)과 제작 메모. 최신순.",
+  fr: "Douze démos personnelles sur aogl.cn — WebGL, vidéo, panoramas, illustration — avec notes de production en HTML. Plus récent d’abord.",
+  ru: "Двенадцать личных демо на aogl.cn — WebGL, видео, панорамы, иллюстрация — с заметками в HTML. Сначала новые.",
+  ar: "اثنا عشر عرضًا شخصيًا على aogl.cn — WebGL وفيديو وبانوراما ورسوم — مع ملاحظات إنتاج في HTML. الأحدث أولاً.",
+};
+
+const ARTICLES_INDEX_BACK = {
+  en: "← Back to home · Editorial originals",
+  zh: "← 返回首页 · 本站原创",
+  ja: "← ホームへ · オリジナル",
+  ko: "← 홈으로 · 오리지널",
+  fr: "← Accueil · contenus originaux",
+  ru: "← На главную · оригиналы",
+  ar: "← الرئيسية · محتوى أصلي",
+};
+
+const ARTICLES_INDEX_LIST_TITLE = {
+  en: "All articles",
+  zh: "全部文章",
+  ja: "すべての記事",
+  ko: "전체 글",
+  fr: "Tous les articles",
+  ru: "Все статьи",
+  ar: "كل المقالات",
+};
+
 function suffixForLang(lang) {
   if (lang === "en") return "En";
   if (lang === "zh") return "Zh";
@@ -680,14 +730,171 @@ ${INDEX_END}`;
     return `        <h2${id} class="page-section-title lang-${l}">${SECTION_TITLE[l]}</h2>`;
   }).join("\n");
 
+  const primaryLeads = LANGS.map(
+    (l) => `        <p class="reading-intro site-primary-lead lang-${l}">${PRIMARY_CONTENT_LEAD[l]}</p>`,
+  ).join("\n");
+
   const carousel = originalsCarouselUl(slice);
 
   return `${INDEX_START}
       <section id="originals" class="site-originals" aria-labelledby="originals-title">
+${primaryLeads}
 ${titleBlock}
 ${carousel}
       </section>
 ${INDEX_END}`;
+}
+
+function reorderIndexPutOriginalsFirst(html) {
+  const introRe = /(\s*<section id="intro" class="site-intro"[\s\S]*?<\/section>)/;
+  const origRe = /([\t ]*<!-- INDEX_ORIGINALS_AUTO_START -->[\s\S]*?<!-- INDEX_ORIGINALS_AUTO_END -->)/;
+  const mIntro = html.match(introRe);
+  const mOrig = html.match(origRe);
+  if (!mIntro || !mOrig) return html;
+  const intro = mIntro[1];
+  const orig = mOrig[1];
+  if (html.indexOf(orig) < html.indexOf(intro)) return html;
+  let out = html.replace(introRe, "");
+  out = out.replace(origRe, orig + intro);
+  return out;
+}
+
+function buildArticlesIndexListItems(articles) {
+  return articles
+    .map((a) => {
+      const slug = a.slug;
+      const href = `${slug}.html`;
+      const dateIso = escAttr(a.datePublished || "");
+      const dateVis = escHtml(a.datePublished || "—");
+      const titleSpans = LANGS.map((lang) => {
+        const title = strByLang(a, lang, "title");
+        return `<span class="lang-${lang}">${escHtml(title)}</span>`;
+      }).join("");
+      const excerptSpans = LANGS.map((lang) => {
+        const ex = strByLang(a, lang, "indexExcerpt") || strByLang(a, lang, "desc");
+        const short = String(ex).length > 160 ? String(ex).slice(0, 157) + "…" : ex;
+        return `<span class="lang-${lang}">${escHtml(short)}</span>`;
+      }).join("");
+      const hero = teaserHeroSrc(a);
+      const img = escAttr(
+        hero.startsWith("http://") || hero.startsWith("https://") ? hero : `../${hero.replace(/^\.\.\//, "")}`,
+      );
+      return `        <li class="articles-index-item">
+          <a class="articles-index-thumb" href="${escAttr(href)}" tabindex="-1" aria-hidden="true">
+            <img src="${img}" width="160" height="90" alt="" loading="lazy" decoding="async">
+          </a>
+          <div class="articles-index-body">
+            <p class="articles-index-meta"><time datetime="${dateIso}">${dateVis}</time></p>
+            <h3 class="articles-index-title"><a href="${escAttr(href)}">${titleSpans}</a></h3>
+            <p class="articles-index-excerpt">${excerptSpans}</p>
+          </div>
+        </li>`;
+    })
+    .join("\n");
+}
+
+function buildArticlesIndexPage(articles) {
+  const P = "../";
+  const count = articles.length;
+  const dataAttrs = LANGS.map((lang) => {
+    const title = ARTICLES_INDEX_H1[lang] || ARTICLES_INDEX_H1.en;
+    const desc = (ARTICLES_INDEX_LEAD[lang] || ARTICLES_INDEX_LEAD.en).replace(/<[^>]+>/g, "");
+    return `data-title-${lang}="${escAttr(title)} — aogl.cn" data-desc-${lang}="${escAttr(desc)}"`;
+  }).join(" ");
+
+  const titleEn = ARTICLES_INDEX_H1.en;
+  const descEn = ARTICLES_INDEX_LEAD.en.replace(/<[^>]+>/g, "");
+  const lastmod = new Date().toISOString().slice(0, 10);
+
+  const h1Block = LANGS.map(
+    (lang) => `        <h1 class="lang-${lang} hub-page-title">${escHtml(ARTICLES_INDEX_H1[lang])}</h1>`,
+  ).join("\n");
+  const leadBlock = LANGS.map(
+    (lang) =>
+      `        <p class="lang-${lang} hub-prose articles-index-lead">${ARTICLES_INDEX_LEAD[lang]} (${count})</p>`,
+  ).join("\n");
+  const backBlock = LANGS.map(
+    (lang) => `        <p class="lang-${lang} articles-index-back"><a href="${P}index.html#originals">${escHtml(ARTICLES_INDEX_BACK[lang])}</a></p>`,
+  ).join("\n");
+  const listTitle = LANGS.map(
+    (lang) => `      <h2 class="page-section-title lang-${lang}">${ARTICLES_INDEX_LIST_TITLE[lang]}</h2>`,
+  ).join("\n");
+
+  const jsonLd = `<script type="application/ld+json">
+${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: titleEn,
+    description: descEn,
+    url: "https://aogl.cn/en/articles/index.html",
+    inLanguage: "mul",
+    numberOfItems: count,
+    isPartOf: { "@type": "WebSite", name: "aogl.cn", url: "https://aogl.cn/" },
+  })}
+</script>`;
+
+  const listItems = buildArticlesIndexListItems(articles);
+
+  return `<!DOCTYPE html><html lang="en" ${dataAttrs}><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="${P}favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="${escAttr(descEn)}">
+  <title>${escAttr(titleEn)} — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/index.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aogl.cn/en/articles/index.html">
+  <meta property="og:title" content="${escAttr(titleEn)} — aogl.cn">
+  <meta property="og:description" content="${escAttr(descEn)}">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:image" content="https://aogl.cn/og-default.png">
+  <link rel="stylesheet" href="${P}css/style.css">
+  <link rel="stylesheet" href="${P}css/hub.css">
+  <link rel="stylesheet" href="${P}css/article-hub.css">
+  <script src="${P}js/adsense.js"></script>
+  ${jsonLd}
+</head>
+<body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="${P}js/bg-canvas.js"></script>
+  <script src="${P}js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+${buildHubBrandBlock(P)}
+      </div>
+${buildHubNavBlock(P)}
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="hub-main wrap articles-index-main" id="main">
+    <article class="hub-editorial prose-block">
+${backBlock}
+${h1Block}
+      <p class="hub-updated lang-en">Updated ${escHtml(lastmod)}</p>
+      <p class="hub-updated lang-zh">更新 ${escHtml(lastmod)}</p>
+      <p class="hub-updated lang-ja">更新 ${escHtml(lastmod)}</p>
+      <p class="hub-updated lang-ko">업데이트 ${escHtml(lastmod)}</p>
+      <p class="hub-updated lang-fr">Mise à jour ${escHtml(lastmod)}</p>
+      <p class="hub-updated lang-ru">Обновлено ${escHtml(lastmod)}</p>
+      <p class="hub-updated lang-ar">تحديث ${escHtml(lastmod)}</p>
+${leadBlock}
+    </article>
+    <section class="articles-index-section" aria-labelledby="articles-index-list-title">
+      <h2 id="articles-index-list-title" class="visually-hidden">Article list</h2>
+${listTitle}
+      <ol class="articles-index-list">
+${listItems}
+      </ol>
+    </section>
+  </main>
+${buildHubFooterBlock(P)}
+  <script src="${P}js/hub-common.js" defer></script>
+</body></html>`;
 }
 
 function main() {
@@ -705,8 +912,13 @@ function main() {
     throw new Error("INDEX_ORIGINALS markers missing in _multilang/index.html");
   }
   index = index.replace(re, buildIndexBlock(articles));
+  index = reorderIndexPutOriginalsFirst(index);
   fs.writeFileSync(INDEX_PATH, index, "utf8");
   console.log("Updated INDEX_ORIGINALS in _multilang/index.html (" + articles.length + " article(s))");
+
+  const indexPage = buildArticlesIndexPage(articles);
+  fs.writeFileSync(path.join(OUT_DIR, "index.html"), indexPage, "utf8");
+  console.log("Wrote _multilang/articles/index.html (" + articles.length + " entries)");
 }
 
 main();

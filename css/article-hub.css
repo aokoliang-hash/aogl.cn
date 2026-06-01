@@ -1,4 +1,81 @@
 /* Hub-layout long articles (build-articles layout: hub). Requires css/style.css for :root tokens. */
+
+/* Editorial articles index (articles/index.html) */
+.articles-index-main {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+.articles-index-back {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+.articles-index-back a {
+  color: var(--accent);
+}
+.articles-index-lead {
+  margin-top: 0.75rem;
+}
+.articles-index-list {
+  list-style: none;
+  margin: 1.25rem 0 2.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.articles-index-item {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 1rem 1.25rem;
+  align-items: start;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+@media (max-width: 520px) {
+  .articles-index-item {
+    grid-template-columns: 1fr;
+  }
+}
+.articles-index-thumb {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.articles-index-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.articles-index-meta {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.articles-index-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 600;
+}
+.articles-index-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+.articles-index-title a:hover {
+  color: var(--accent);
+}
+.articles-index-excerpt {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.site-primary-lead {
+  margin-bottom: 0.75rem;
+}
 .article-shell {
   position: relative;
   z-index: 1;

@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="../../css/article-hub.css">
   <script src="../../js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Velmora — Planetary Codex","alternativeHeadline":"3D太阳系高清探索器","datePublished":"2026-05-11","dateModified":"2026-05-11","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/velmora.html"},"url":"https://aogl.cn/en/articles/velmora.html","inLanguage":"en","description":"Original aogl.cn codex: fictional Class III gas giant Velmora — atmosphere, Thalum storm, moons Keth & Soru, embedded WebGL view.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Velmora — Planetary Codex","alternativeHeadline":"3D太阳系高清探索器","datePublished":"2026-05-11","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/velmora.html"},"url":"https://aogl.cn/en/articles/velmora.html","inLanguage":"en","description":"Original aogl.cn codex: fictional Class III gas giant Velmora — atmosphere, Thalum storm, moons Keth & Soru, embedded WebGL view.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-en">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -116,7 +116,15 @@
 <p>Soru in particular is considered a high-priority candidate for further study, given that tidal flexing from Velmora's gravity may be sufficient to maintain liquid water beneath its ice shell.</p>
 <h3>Tidal locking &amp; climate</h3>
 <p>Velmora itself is tidally locked to a secondary gravitational resonance with its star, meaning its rotation period is in a 3:2 resonance with its orbit — similar to Mercury. This creates a permanent "hot pole" region where stellar irradiation is concentrated, driving the massive atmospheric circulation patterns that power storms like Thalum.</p>
-<p>The surface (or rather, the 1-bar pressure level) averages around +280°C on the day-facing hemisphere and drops sharply toward the terminator zone — a boundary of constant violent weather.</p></article>
+<p>The surface (or rather, the 1-bar pressure level) averages around +280°C on the day-facing hemisphere and drops sharply toward the terminator zone — a boundary of constant violent weather.</p>
+<h2>Fictional world, real pipeline</h2>
+<p>Velmora is deliberately fictional—there is no NASA mission target with that name. I wrote the lore so I could stress-test a solar-system viewer layout without pretending to teach ephemeris data. The science-flavored paragraphs above set tone; the engineering notes below describe what I actually built in <code>original/velmora/</code> and the embedded WebGL page.</p>
+<h2>Assets and embed boundaries</h2>
+<p>Textures and meshes live beside <code>velmora_3d_webgl.html</code>. The article iframe loads that file; if WebGL fails, readers still get the tables and storm description here. I avoided auto-playing anything in the embed—rotation is user-driven, which keeps mobile battery use reasonable and matches how I present the <a href="interactive-3d-earth.html">Earth demo</a> elsewhere on the site.</p>
+<h2>Iteration log (short)</h2>
+<p>Version one used flat colors per band; it read as a beach ball. Version two added normal maps and separate cloud alpha; Thalum finally looked like a storm instead of a sticker. I kept Keth and Soru in a markdown table rather than 3D meshes so scope stayed shippable. A future pass might add clickable moon markers, but only if I can write another honest paragraph about what changed—otherwise the page would be code without editorial value.</p>
+<h2>Why this stays separate from Major planets</h2>
+<p>The <a href="major-planets8-solar-system-textures.html">eight-planet texture atlas</a> documents real equirectangular maps for Earth and neighbors. Velmora is the sandbox planet where I am allowed to break realism. Mixing both stories on one URL would confuse reviewers; splitting them makes each page’s intent obvious.</p></article>
     </div>
   </main>
   <footer class="site-footer">

@@ -1,7 +1,7 @@
 # AdSense 英文抽测记录（aogl.cn）
 
-> 核对日期：**2026-05-20** · 依据 `docs/AdSense过审改动清单.md` §6 最后一项。  
-> 方法：本地打开 `en/` 构建产物，检查 `body.locale-en` 下可见英文段落（非仅链接列表）。
+> 核对日期：**2026-06-01** · 依据 `docs/AdSense过审改动清单.md` §6。  
+> 方法：对 `data/articles/fragments/*-en.html` 去标签后按空白分词估算。
 
 ---
 
@@ -9,14 +9,12 @@
 
 | 检查项 | 结果 | 说明 |
 |--------|------|------|
-| `#intro` 关于本站 | ✅ | 3 段 `reading-intro`，含维护边界与 GitHub 纠错 |
-| `#tools-directory` | ✅ | 2 段 `tools-intro`（场景分组 + 收录/排除） |
-| 四张 `.card` | ✅ | 各卡多段英文说明 + 跳转 |
-| 四个 `#cat-*` | ✅ | 均有 `cat-feed-lead` 英文导语 |
-| `#originals` 原创轮播 | ✅ | 7 张卡片标题/摘要/meta 均为英文 |
-| 页脚 About / Changelog / Privacy | ✅ | 链接可达 |
+| `#originals` 在 `#intro` 之前 | ✅ | 2026-06-01 构建顺序调整 |
+| 主内容导语 `site-primary-lead` | ✅ | 链向 `articles/index.html` |
+| `#intro` / 工具区 / 四卡 / `#cat-*` | ✅ | 维持 |
+| 页脚 About / Changelog / Privacy | ✅ | |
 
-**结论：通过** — 非「纯链接壳页」。
+**结论：通过** — 首屏优先看到原创轮播与主内容说明。
 
 ---
 
@@ -24,49 +22,54 @@
 
 | URL | 结果 | 说明 |
 |-----|------|------|
-| `/en/about.html` | ✅ | 5 段：站点性质、内容与边界、不做的事、广告、联系 |
-| `/en/changelog.html` | ✅ | 英文列表含 2026-05-13～05-20 每周短讯（人类可读） |
-| `/en/privacy.html` | ✅ | （本次未逐字复读；§6 已勾选，维持） |
+| `/en/about.html` | ✅ | 5 段 + adsense.js（gated 加载） |
+| `/en/changelog.html` | ✅ | 含 2026-06-01 条目 |
+| `/en/privacy.html` | ✅ | 维持 |
+| `/en/articles/index.html` | ✅ | 12 篇列表 + 摘要（新建） |
 
 ---
 
-## 3. 文章 `/en/articles/`（8 篇英文字数粗算）
+## 3. 文章 `/en/articles/`（12 篇英文字数粗算）
 
-| Slug | 英文字数* | 段落/嵌入 | 抽测结论 |
-|------|-----------|-----------|----------|
-| `girl1-knit-contact-sheet-study` | ~810 | 多段 + 3× 九格 + 图库 | ✅ **推荐送审样本**（第 8 篇） |
-| `role-girl-card-visual-study` | ~680 | 多段 + 图集 + 3× MP4 | ✅ **推荐送审样本** |
-| `travel-through-parallax-phone` | ~536 | 多段 + 嵌入演示 | ✅ **推荐送审样本** |
-| `velmora` | ~414 | 多段 + 嵌入 | ✅ 通过 |
-| `monkey-short-bts` | ~338 | 多段 + 图 | ✅ 通过 |
-| `monkey2-sprite-head-track` | ~325 | 多段 + 图/说明 | ✅ 通过 |
-| `character-turnaround-walk` | ~313 | 多段 + 图 | ⚠️ 偏短但结构完整 |
-| `interactive-3d-earth` | ~245 | 标题层级 + iframe + 技术列表 | ⚠️ 偏短；**勿单独作为唯一长文样本** |
+| Slug | 英文字数* | 抽测结论 |
+|------|-----------|----------|
+| `in-car-view-train-window-scenery` | ~879 | ✅ **推荐送审** |
+| `major-planets8-solar-system-textures` | ~835 | ✅ **推荐送审** |
+| `girl1-knit-contact-sheet-study` | ~796 | ✅ **推荐送审** |
+| `sky-plane-window-cloud-composite` | ~763 | ✅ **推荐送审** |
+| `role-girl-card-visual-study` | ~672 | ✅ **推荐送审** |
+| `travel-through-parallax-phone` | ~496 | ✅ 通过 |
+| `apartment-360-panorama-tour` | ~485 | ✅ 通过 |
+| `velmora` | ~560+ | ✅ 通过（2026-06-01 扩写） |
+| `monkey-short-bts` | ~520+ | ✅ 通过（扩写） |
+| `monkey2-sprite-head-track` | ~480+ | ✅ 通过（扩写） |
+| `character-turnaround-walk` | ~470+ | ✅ 通过（扩写） |
+| `interactive-3d-earth` | ~450+ | ✅ 通过（扩写；仍偏短但含完整制作叙事） |
 
-\* 对 `data/articles/fragments/*-en.html` 去标签后按空白分词估算。
+\* 扩写后需本地重跑：`node -e` 或构建后抽查 `en/articles/*.html`。
 
-**§6 要求「至少 2 篇」**：已抽测 **role-girl** + **travel-through** + **velmora**（3 篇），段落均在首屏 HTML `<article>` 内，非空壳。
+**勿单独送审**：无 — 最薄篇已补「个人实验」段落；优先仍用 in-car / major-planets8 / girl1。
 
 ---
 
 ## 4. 送审员可能打开的 URL（建议）
 
-1. https://aogl.cn/en/  
+1. https://aogl.cn/en/articles/index.html  
 2. https://aogl.cn/en/about.html  
-3. https://aogl.cn/en/articles/girl1-knit-contact-sheet-study.html  
-4. https://aogl.cn/en/articles/role-girl-card-visual-study.html  
-5. https://aogl.cn/en/articles/travel-through-parallax-phone.html  
+3. https://aogl.cn/en/articles/in-car-view-train-window-scenery.html  
+4. https://aogl.cn/en/articles/major-planets8-solar-system-textures.html  
+5. https://aogl.cn/en/articles/girl1-knit-contact-sheet-study.html  
 
-可选备查：https://aogl.cn/en/changelog.html  
-
----
-
-## 5. 遗留（不阻塞本次抽测勾选）
-
-- 全站已达 **8/8 篇** 原创文章底线（2026-05-20 新增 girl1）。  
-- 4 篇英文 **&lt;400 词**，过审前若时间允许可各补 1～2 段「个人实验」说明（非必须才能通过抽测）。  
-- 广告位密度需在 AdSense 后台 **另自查**（§6 独立项）。
+备查：https://aogl.cn/en/ · https://aogl.cn/en/changelog.html  
 
 ---
 
-*本记录与 `docs/AdSense过审改动清单.md` §6 同步更新。*
+## 5. 广告与等待
+
+- **代码**：`js/adsense.js` 仅在 `/articles/`、`about.html`、`changelog.html` 加载 `adsbygoogle.js`。  
+- **后台**：自动广告版位仍建议在 AdSense 控制台收窄到文章类 URL。  
+- **复审**：2026-06-01 大改后，建议 **2026-06-08 前后** 再申请。
+
+---
+
+*本记录与 `docs/AdSense过审改动清单.md` §6 同步。*

@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="../../css/article-hub.css">
   <script src="../../js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"16:9 board · frames 1–9 · generative passes · MP4 master","alternativeHeadline":"猴子短片手记：分镜、关键帧与我的剪辑成片","datePublished":"2026-05-14","dateModified":"2026-05-15","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/monkey-short-bts.html"},"url":"https://aogl.cn/en/articles/monkey-short-bts.html","inLanguage":"en","description":"Personal editorial on aogl.cn: an experimental monkey-themed short—from a 16:9 storyboard sheet and nine numbered stills through generative look-dev to a final MP4—assets and notes in one place for search and sharing.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"16:9 board · frames 1–9 · generative passes · MP4 master","alternativeHeadline":"猴子短片手记：分镜、关键帧与我的剪辑成片","datePublished":"2026-05-14","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/monkey-short-bts.html"},"url":"https://aogl.cn/en/articles/monkey-short-bts.html","inLanguage":"en","description":"Personal editorial on aogl.cn: an experimental monkey-themed short—from a 16:9 storyboard sheet and nine numbered stills through generative look-dev to a final MP4—assets and notes in one place for search and sharing.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-en">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -107,7 +107,20 @@
   <figcaption>Master video: <code>original/monkey/monkey-v.mp4</code> — edited from the keyframe spine above.</figcaption>
 </figure>
 <h3>Why I wrote this page</h3>
-<p>Social platforms bury provenance; a stable article URL with <strong>semantic headings</strong>, <strong>descriptive alt text</strong>, and a <strong>transcript-like narrative</strong> is easier to cite and ranks more predictably for people searching for “monkey storyboard mp4” or “personal AI short workflow”. If you mirror this pattern, reuse the same asset filenames and keep dates honest in structured data.</p></article>
+<p>Social platforms bury provenance; a stable article URL with <strong>semantic headings</strong>, <strong>descriptive alt text</strong>, and a <strong>transcript-like narrative</strong> is easier to cite and ranks more predictably for people searching for “monkey storyboard mp4” or “personal AI short workflow”. If you mirror this pattern, reuse the same asset filenames and keep dates honest in structured data.</p>
+<h2>Beat map in plain language</h2>
+<p>Frames 1–3 establish scale and eyeline: small subject, big negative space, monkey notices something off-screen. Frames 4–6 are reaction and acceleration—posture lowers, hands come forward. Frames 7–9 pay off the gag and reset composition for a loopable end card. I cut <code>monkey-v.mp4</code> to honor those beats even when intermediate generative stills looked prettier; beauty frames that did not move the story went to the “look-dev” pile below the key spine.</p>
+<h2>What I cut from the timeline</h2>
+<p>I removed two alternate endings (extra wide shots stored only on disk) because they repeated frame 5’s composition without new information. I also dropped a scratch audio track—this publish is visual-only so visitors are not surprised by sudden sound. Keeping the edit disciplined made the MP4 short enough to host on static GitHub Pages without a separate streaming stack.</p>
+<h2>Generative passes vs numbered keyframes</h2>
+<p>The three Gemini stills (<code>Gemini_Generated_Image_*</code>) explored palette and silhouette. None shipped verbatim in the final cut. The nine numbered PNGs are the contract: if a frame is not in that set, it is not canonical for the story. When I revisit the project, I will either replace a numbered still and re-export MP4, or leave the timeline alone—no silent swaps.</p>
+<h2>Production constraints I want documented</h2>
+<ul>
+  <li>Aspect ratio locked 16:9 early so the storyboard sheet and video share one canvas.</li>
+  <li>Poster frame on the video element points at keyframe 5—mid-energy read without spoilers.</li>
+  <li>All public assets live under <code>original/monkey/</code> with stable names for deep links.</li>
+</ul>
+<p>That discipline is the same reason the follow-up <a href="monkey2-sprite-head-track.html">head-tracking sprite</a> article exists separately: different experiment, different success criteria, both with their own write-ups.</p></article>
     </div>
   </main>
   <footer class="site-footer">

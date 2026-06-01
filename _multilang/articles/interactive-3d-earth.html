@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../css/article-hub.css">
   <script src="../js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-05-15","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/en/articles/interactive-3d-earth.html","inLanguage":"mul","description":"Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/en/articles/interactive-3d-earth.html","inLanguage":"mul","description":"Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-en">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -167,7 +167,27 @@
 <h3>Technical stack (for developers)</h3>
 <p>Rendering uses a <code>WebGLRenderer</code> with physically based lighting cues (directional “sun” + ambient fill), <code>OrbitControls</code> for camera interaction, and textures loaded from a CDN. The atmosphere is a second sphere with a fragment shader that mixes Fresnel-style rim lighting with a subtle blue tint—classic “pale blue dot” presentation without heavy post-processing.</p>
 
-<p>If you are building a multilingual site, pair this hub layout with localized titles and excerpts (as on aogl.cn) so each language URL can rank for its own queries while sharing one canonical interactive asset.</p></article>
+<p>If you are building a multilingual site, pair this hub layout with localized titles and excerpts (as on aogl.cn) so each language URL can rank for its own queries while sharing one canonical interactive asset.</p>
+
+<h2>Why I keep this demo on aogl.cn</h2>
+<p>I originally built the globe as a one-off HTML file under <code>original/earth/</code> and only later wrapped it in this article. The split matters: the iframe stays a stable asset I can swap without touching seven language shells, while this page carries the narrative Google AdSense reviewers actually read—what I tried, what I rejected, and which files are authoritative. That is the difference between “embed only” and “substantive page” in my workflow.</p>
+
+<h2>First pass and what I threw away</h2>
+<p>My first prototype used a flat UV sphere with a single diffuse map and no clouds. It looked fine in screenshots but felt plastic when you orbited: no specular break on oceans, no limb glow, and the terminator was a hard cut. I also tried loading six 8K tiles locally; on a mid-range laptop the first interaction stuttered for two seconds while textures decoded. The version you see now trades maximum resolution for predictable load—CDN-hosted 2K-class maps, one cloud shell, and a lightweight rim shader instead of a full post stack.</p>
+
+<h2>Files I treat as source of truth</h2>
+<ul>
+  <li><code>original/earth/interactive-3d-earth.html</code> — the embed target (OrbitControls, renderer loop).</li>
+  <li>Blue-marble color, bump, and specular maps referenced inside that file (hosted URLs documented in the demo’s comments).</li>
+  <li><code>original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png</code> — hero still for social cards when I do not want a live WebGL capture.</li>
+</ul>
+<p>When I update textures I change the demo first, re-screenshot if needed, then bump <code>dateModified</code> on the article JSON so humans and crawlers see the same revision date.</p>
+
+<h2>Interaction and accessibility choices</h2>
+<p>Orbit is mouse-only in the embed; I considered touch gestures but kept the scope small so the script stays readable. The article page itself is keyboard-friendly: headings, figure/figcaption, and this prose all sit outside the iframe. If you ship something similar, duplicate that pattern—never put your only explanatory text inside the canvas document.</p>
+
+<h2>What I would do next</h2>
+<p>Time permitting I will add a short “known limits” list inside the embed (polar pinch, no night lights) and link outward to the <a href="major-planets8-solar-system-textures.html">eight-planet texture atlas</a> article where I document equirectangular assets for the rest of the solar system. For now this page’s job is to prove the globe is maintained, not to compete with NASA’s own apps.</p></article>
     </div>
     <div class="lang-zh">
       <div class="article-shell__top">

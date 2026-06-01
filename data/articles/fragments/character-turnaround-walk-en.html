@@ -80,3 +80,22 @@
 
 <h3>Extra passes on disk</h3>
 <p>Additional PNG passes (e.g. <code>turn_around3.png</code>, <code>turn_around4.png</code>, <code>character-video2.mp4</code> / <code>character-video3.mp4</code>, and numbered “生成图片” exports) live in the same directory for offline review; this article focuses on the clearest teaching path for humans and search engines.</p>
+
+<h2>How I actually work through this folder</h2>
+<p>I do not jump straight to animation. The order that saved me time on this character was: lock orthographic turnaround (front/left/back/right) → run seven exploration stills (<code>character0–6</code>) to settle proportions → export nine walk keys → only then record <code>walk-video.mp4</code> and wire <code>walk.html</code>. When a pose looked wrong in motion, I fixed the still sheet first; re-painting inside the video tool always cost more iterations.</p>
+
+<h2>What failed before the walk embed worked</h2>
+<p>Early <code>walk.html</code> prototypes mapped arrow keys to time scrubbing on a long MP4. That felt mushy—frames between contacts blurred together. Switching to discrete frame indices tied to <code>walk1.png</code>–<code>walk9.png</code> made left/right reads crisp again. I also tried mirroring the sprite in CSS; costume asymmetry broke, so direction changes now swap the source frame index instead of flipping pixels.</p>
+
+<h2>Generative anchors vs authored sheets</h2>
+<p>The two Gemini PNGs at the bottom are mood boards, not replacements for the turnaround. I keep them in git so I remember the lighting I liked on day one, but shipping decisions (hem length, shoe height, hair volume) always reference the orthographic quartet. If you are auditing this site for originality, compare the hand-numbered exploration grid to the generative stills—you should see deliberate drift toward the turnaround, not copy-paste.</p>
+
+<h2>Review checklist I use before publishing</h2>
+<ul>
+  <li>All four orthographic views share the same head height and foot plant line.</li>
+  <li>Walk cycle contacts (frames 1 and 5) align vertically in a quick flip-book test.</li>
+  <li>Embedded <code>walk.html</code> loads without autoplay audio (there is none) and respects reduced motion where possible.</li>
+  <li>MP4 masters have posters so mobile users see a still before decoding video.</li>
+</ul>
+<p>That checklist is why this article exists as a long HTML page instead of a folder dump: reviewers and future-me both need the “why kept / why cut” story, not only assets.</p>
+<p>If you fork this pipeline, start by publishing the four orthographic PNGs plus one walk cycle strip before you upload any MP4—static proof of rigor ranks better than a single autoplay clip with no context.</p>

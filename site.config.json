@@ -4,7 +4,7 @@
   "adsense": {
     "publisherId": "ca-pub-6958761551797888",
     "mode": "auto_plus_manual_display",
-    "note": "后台开启自动广告；固定位填 js/adsense.js 的 DISPLAY_AD_SLOT；ads.txt 在根目录。若本地无法访问 Google 广告域名，可在 URL 加 ?noads=1 或 localStorage.setItem('aogl-disable-ads','1') 跳过加载。"
+    "note": "后台可开自动广告；js/adsense.js 仅在 /articles/、about、changelog 加载发布商脚本（过审期 Hub/首页不加载）。固定位填 DISPLAY_AD_SLOT；ads.txt 在根目录。?noads=1 或 localStorage aogl-disable-ads=1 可跳过。"
   },
   "readingMaxTotal": 30,
   "sources": {

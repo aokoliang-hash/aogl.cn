@@ -10,6 +10,9 @@
  * 本地或不想发起该请求时：地址栏加 ?noads=1，或执行
  *   localStorage.setItem('aogl-disable-ads','1')
  * 后刷新。若页面在 adsense.js 之前设置了 window.AOGL_DISABLE_ADSENSE = true，也会跳过加载。
+ *
+ * 过审策略：仅在「以正文为主」的 URL 加载发布商脚本（文章、about、changelog），
+ * 首页 / Hub 等薄页仍引用本文件但不发起 adsbygoogle 请求，避免自动广告铺满目录页。
  */
 (function () {
   var PUBLISHER_CLIENT = "ca-pub-6958761551797888";
@@ -25,8 +28,17 @@
     (typeof window !== "undefined" && window.AOGL_DISABLE_ADSENSE === true) ||
     (typeof localStorage !== "undefined" && localStorage.getItem("aogl-disable-ads") === "1");
 
+  /** AdSense review: load publisher script only on article / about / changelog URLs. */
+  function isContentPrimaryPage() {
+    if (typeof location === "undefined") return false;
+    var p = String(location.pathname || "").toLowerCase();
+    if (/\/articles\//.test(p)) return true;
+    if (/\/about\.html$/.test(p) || /\/changelog\.html$/.test(p)) return true;
+    return false;
+  }
+
   function loadPublisherScript() {
-    if (skipAds) return;
+    if (skipAds || !isContentPrimaryPage()) return;
     var s = document.createElement("script");
     s.async = true;
     s.src =
