@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja" data-title-ja="キャラクター設計メモ：三面図・歩行サイクル・モーション — aogl.cn" data-desc-ja="同一キャラの設計アーカイブ：四面ターンアラウンド、character0–6、歩行walk1–9、埋め込みwalk.html、MP4モーション検証と生成アンカー画像。" data-aogl-lang="ja" data-aogl-seo-locale="1"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
   <meta name="description" content="同一キャラの設計アーカイブ：四面ターンアラウンド、character0–6、歩行walk1–9、埋め込みwalk.html、MP4モーション検証と生成アンカー画像。">
   <title>キャラクター設計メモ：三面図・歩行サイクル・モーション — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/ja/articles/character-turnaround-walk.html">
@@ -26,35 +26,35 @@
   <meta property="og:image:alt" content="Original character design — turnaround, walk cycle, and motion studies (aogl.cn)">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://aogl.cn/upload/articles/character-turnaround-walk.webp">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/hub.css">
-  <link rel="stylesheet" href="../../css/article-hub.css">
-  <script src="../../js/adsense.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+  <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"orthographic views · walk1–9 · embedded walk.html · MP4 clips","alternativeHeadline":"角色设计手记：四视图、行走循环与动态演示","datePublished":"2026-05-16","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ja/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/character-turnaround-walk.html"},"url":"https://aogl.cn/en/articles/character-turnaround-walk.html","inLanguage":"ja","description":"Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-ja">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
-  <script src="../../js/bg-canvas.js"></script>
-  <script src="../../js/i18n.js"></script>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
   <header>
     <div class="head-row">
       <div class="brand">
       <h1 class="lang-ja brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
         </h1>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <ul class="site-nav-list lang-ja">
-          <li><a href="../../index.html#tools-directory">AI最前線</a></li>
-          <li><a href="../../portal.html">主要サイト</a></li>
-          <li><a href="../../brands.html">ブランド</a></li>
-          <li><a href="../../shopping.html">ショッピング</a></li>
-          <li><a href="../../life.html">ライフ</a></li>
-          <li><a href="../../social.html">ソーシャル</a></li>
-          <li><a href="../../tech.html">テック</a></li>
-          <li><a href="../../games.html">ゲーム</a></li>
-          <li><a href="../../tools.html">実用ツール</a></li>
+          <li><a href="/ja/index.html#tools-directory">AI最前線</a></li>
+          <li><a href="/ja/portal.html">主要サイト</a></li>
+          <li><a href="/ja/brands.html">ブランド</a></li>
+          <li><a href="/ja/shopping.html">ショッピング</a></li>
+          <li><a href="/ja/life.html">ライフ</a></li>
+          <li><a href="/ja/social.html">ソーシャル</a></li>
+          <li><a href="/ja/tech.html">テック</a></li>
+          <li><a href="/ja/games.html">ゲーム</a></li>
+          <li><a href="/ja/tools.html">実用ツール</a></li>
         </ul>
       </nav>
       <div class="lang-switch">
@@ -65,7 +65,7 @@
   <main class="article-shell hub-main wrap" id="main">
     <div class="lang-ja">
       <div class="article-shell__top">
-        <a href="../../index.html#originals">← ホームへ · オリジナル</a>
+        <a href="/ja/index.html#originals">← ホームへ · オリジナル</a>
       </div>
       <div class="article-shell__header">
         <h1>キャラクター設計メモ：三面図・歩行サイクル・モーション</h1>
@@ -76,64 +76,64 @@
 <h2>オルソグラフィック・ターンアラウンド（4面）</h2>
 <p>透視ゆれを抑えた4枚でシルエットとコスチュームを固定します。</p>
 <div class="article-gallery">
-  <img src="../../original/character/正面1.png" width="512" height="512" loading="lazy" decoding="async" alt="ターンアラウンド正面">
-  <img src="../../original/character/左面2.png" width="512" height="512" loading="lazy" decoding="async" alt="ターンアラウンド左">
-  <img src="../../original/character/背面3.png" width="512" height="512" loading="lazy" decoding="async" alt="ターンアラウンド背面">
-  <img src="../../original/character/右面4.png" width="512" height="512" loading="lazy" decoding="async" alt="ターンアラウンド右">
+  <img src="/original/character/正面1.png" width="512" height="512" loading="lazy" decoding="async" alt="ターンアラウンド正面">
+  <img src="/original/character/左面2.png" width="512" height="512" loading="lazy" decoding="async" alt="ターンアラウンド左">
+  <img src="/original/character/背面3.png" width="512" height="512" loading="lazy" decoding="async" alt="ターンアラウンド背面">
+  <img src="/original/character/右面4.png" width="512" height="512" loading="lazy" decoding="async" alt="ターンアラウンド右">
 </div>
 <h2>探索シート character0–6</h2>
 <p>アニメに入る前のポーズとプロポーションのチェック用7枚です。</p>
 <div class="article-gallery">
-  <img src="../../original/character/character0.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索0">
-  <img src="../../original/character/character1.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索1">
-  <img src="../../original/character/character2.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索2">
-  <img src="../../original/character/character3.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索3">
-  <img src="../../original/character/character4.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索4">
-  <img src="../../original/character/character5.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索5">
-  <img src="../../original/character/character6.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索6">
+  <img src="/original/character/character0.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索0">
+  <img src="/original/character/character1.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索1">
+  <img src="/original/character/character2.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索2">
+  <img src="/original/character/character3.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索3">
+  <img src="/original/character/character4.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索4">
+  <img src="/original/character/character5.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索5">
+  <img src="/original/character/character6.png" width="400" height="400" loading="lazy" decoding="async" alt="キャラ探索6">
 </div>
 <h2>インタラクティブ歩行デモ（walk.html）</h2>
 <p><kbd>←</kbd><kbd>→</kbd> / <kbd>A</kbd><kbd>D</kbd> で方向を切り替える埋め込みデモです。</p>
 <figure class="article-embed">
-  <iframe src="../../original/character/walk.html" title="インタラクティブ歩行コントロール" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="/original/character/walk.html" title="インタラクティブ歩行コントロール" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <figcaption><code>original/character/walk.html</code>（<code>walk-video.mp4</code> を使用）。</figcaption>
 </figure>
 <h2>歩行サイクル walk1–9</h2>
 <p>9枚の静止フレームで歩行リズムを追跡します。</p>
 <div class="article-gallery">
-  <img src="../../original/character/walk1.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム1">
-  <img src="../../original/character/walk2.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム2">
-  <img src="../../original/character/walk3.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム3">
-  <img src="../../original/character/walk4.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム4">
-  <img src="../../original/character/walk5.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム5">
-  <img src="../../original/character/walk6.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム6">
-  <img src="../../original/character/walk7.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム7">
-  <img src="../../original/character/walk8.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム8">
-  <img src="../../original/character/walk9.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム9">
+  <img src="/original/character/walk1.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム1">
+  <img src="/original/character/walk2.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム2">
+  <img src="/original/character/walk3.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム3">
+  <img src="/original/character/walk4.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム4">
+  <img src="/original/character/walk5.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム5">
+  <img src="/original/character/walk6.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム6">
+  <img src="/original/character/walk7.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム7">
+  <img src="/original/character/walk8.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム8">
+  <img src="/original/character/walk9.png" width="320" height="320" loading="lazy" decoding="async" alt="歩行フレーム9">
 </div>
 <h2>モーションクリップ（MP4）</h2>
 <figure class="article-embed">
   <video controls="" playsinline="" preload="metadata" poster="../original/character/turn_around1.png" aria-label="ターンアラウンド動画">
-    <source src="../../original/character/turn_around-v.mp4" type="video/mp4">
+    <source src="/original/character/turn_around-v.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_around-v.mp4</code></figcaption>
 </figure>
 <figure class="article-embed">
   <video controls="" playsinline="" preload="metadata" poster="../original/character/walk1.png" aria-label="歩行参考動画">
-    <source src="../../original/character/walk-video.mp4" type="video/mp4">
+    <source src="/original/character/walk-video.mp4" type="video/mp4">
   </video>
   <figcaption><code>walk-video.mp4</code></figcaption>
 </figure>
 <figure class="article-embed">
   <video controls="" playsinline="" preload="metadata" poster="../original/character/character1.png" aria-label="キャラモーション1">
-    <source src="../../original/character/character-video1.mp4" type="video/mp4">
+    <source src="/original/character/character-video1.mp4" type="video/mp4">
   </video>
   <figcaption><code>character-video1.mp4</code></figcaption>
 </figure>
 <h3>生成アンカー画像</h3>
 <div class="article-gallery">
-  <img src="../../original/character/Gemini_Generated_Image_h75mjuh75mjuh75m.png" width="512" height="512" loading="lazy" decoding="async" alt="生成アンカー1">
-  <img src="../../original/character/Gemini_Generated_Image_j2zyeoj2zyeoj2zy.png" width="512" height="512" loading="lazy" decoding="async" alt="生成アンカー2">
+  <img src="/original/character/Gemini_Generated_Image_h75mjuh75mjuh75m.png" width="512" height="512" loading="lazy" decoding="async" alt="生成アンカー1">
+  <img src="/original/character/Gemini_Generated_Image_j2zyeoj2zyeoj2zy.png" width="512" height="512" loading="lazy" decoding="async" alt="生成アンカー2">
 </div>
 <h3>その他のファイル</h3>
 <p><code>turn_around3.png</code>、<code>character-video2/3</code>、「生成图片」系PNGなども同フォルダにあります。</p></article>
@@ -147,17 +147,17 @@
         </div>
       </div>
       <div class="footer-watermark" aria-hidden="true">
-        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
       </div>
       <div class="footer-legal">
-        <a href="../../about.html" class="footer-legal-link lang-ja">概要</a>
-        <a href="../../contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
-        <a href="../../changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
-        <a href="../../privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/ja/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/ja/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/ja/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/ja/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
         <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
       </div>
     </div>
   </footer>
-  <script src="../../js/hub-common.js" defer=""></script>
+  <script src="/js/hub-common.js" defer=""></script>
 </body></html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ru" data-title-ru="Спрайт обезьяны — поворот головы 120 кадров и демо — aogl.cn" data-desc-ru="120 кадров поворота головы (10×12) из видео, калибровка угол→кадр, управление мышью, HD-листы, калибровочная доска, курсор-персик, HTML и MP4." data-aogl-lang="ru" data-aogl-seo-locale="1"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
   <meta name="description" content="120 кадров поворота головы (10×12) из видео, калибровка угол→кадр, управление мышью, HD-листы, калибровочная доска, курсор-персик, HTML и MP4.">
   <title>Спрайт обезьяны — поворот головы 120 кадров и демо — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/ru/articles/monkey2-sprite-head-track.html">
@@ -26,35 +26,35 @@
   <meta property="og:image:alt" content="Monkey sprite head tracking — 120-frame sheet and mouse-driven demo (aogl.cn)">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://aogl.cn/upload/articles/monkey2-sprite-head-track.webp">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/hub.css">
-  <link rel="stylesheet" href="../../css/article-hub.css">
-  <script src="../../js/adsense.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+  <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"sprite_hd_120 · angle calibration · embedded HTML · source MP4","alternativeHeadline":"猴子精灵图转头：120 帧雪碧图与桃子光标互动","datePublished":"2026-05-18","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ru/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/monkey2-sprite-head-track.html"},"url":"https://aogl.cn/en/articles/monkey2-sprite-head-track.html","inLanguage":"ru","description":"Original aogl.cn notes: extract a 120-frame monkey head-turn sprite (10×12 grid) from keyed video, calibrate angle-to-frame (not naive linear mapping), and drive frames with the mouse—plus HD sprite sheets, calibration board, front frame, peach cursor, embeddable HTML demo, stills, and MP4 sources.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-ru">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
-  <script src="../../js/bg-canvas.js"></script>
-  <script src="../../js/i18n.js"></script>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
   <header>
     <div class="head-row">
       <div class="brand">
       <h1 class="lang-ru brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
         </h1>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <ul class="site-nav-list lang-ru">
-          <li><a href="../../index.html#tools-directory">ИИ — новинки</a></li>
-          <li><a href="../../portal.html">Топ сайтов</a></li>
-          <li><a href="../../brands.html">Бренды</a></li>
-          <li><a href="../../shopping.html">Шопинг</a></li>
-          <li><a href="../../life.html">Сервисы</a></li>
-          <li><a href="../../social.html">Соцсети</a></li>
-          <li><a href="../../tech.html">Техно</a></li>
-          <li><a href="../../games.html">Игры</a></li>
-          <li><a href="../../tools.html">Утилиты</a></li>
+          <li><a href="/ru/index.html#tools-directory">ИИ — новинки</a></li>
+          <li><a href="/ru/portal.html">Топ сайтов</a></li>
+          <li><a href="/ru/brands.html">Бренды</a></li>
+          <li><a href="/ru/shopping.html">Шопинг</a></li>
+          <li><a href="/ru/life.html">Сервисы</a></li>
+          <li><a href="/ru/social.html">Соцсети</a></li>
+          <li><a href="/ru/tech.html">Техно</a></li>
+          <li><a href="/ru/games.html">Игры</a></li>
+          <li><a href="/ru/tools.html">Утилиты</a></li>
         </ul>
       </nav>
       <div class="lang-switch">
@@ -65,7 +65,7 @@
   <main class="article-shell hub-main wrap" id="main">
     <div class="lang-ru">
       <div class="article-shell__top">
-        <a href="../../index.html#originals">← На главную · оригиналы</a>
+        <a href="/ru/index.html#originals">← На главную · оригиналы</a>
       </div>
       <div class="article-shell__header">
         <h1>Спрайт обезьяны — поворот головы 120 кадров и демо</h1>
@@ -75,54 +75,54 @@
       <article class="article-shell__body" lang="ru"><p><strong>Архив спрайта обезьяны</strong> на aogl.cn: короткое <strong>видео поворота головы</strong>, <strong>sprite sheet</strong>, калибровка <strong>угол-кадр</strong> (не линейный <code>angle/360*frames</code>), HTML-демо с мышью и <strong>курсором-персиком</strong>.</p>
 <h2>Калибровка и фронт</h2>
 <figure class="article-embed">
-  <img src="../../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Калибровочная доска угол-кадр">
+  <img src="/original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Калибровочная доска угол-кадр">
   <figcaption><code>calibration_sheet.jpg</code></figcaption>
 </figure>
 <figure class="article-embed">
-  <img src="../../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Фронтальный кадр frame_front">
+  <img src="/original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Фронтальный кадр frame_front">
   <figcaption><code>frame_front.webp</code></figcaption>
 </figure>
 <h2>Демо 120 кадров</h2>
 <figure class="article-embed">
-  <iframe src="../../original/monkey2/gemini-code-1778834915677.html" title="Поворот головы 120 кадров курсор-персик" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="/original/monkey2/gemini-code-1778834915677.html" title="Поворот головы 120 кадров курсор-персик" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <figcaption><code>sprite_hd_120.webp</code> (10x12)</figcaption>
 </figure>
 <h2>WebP-листы</h2>
 <div class="article-gallery">
-  <img src="../../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="Спрайт стандарт">
-  <img src="../../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="Спрайт HD">
-  <img src="../../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="Спрайт 120 кадров">
+  <img src="/original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="Спрайт стандарт">
+  <img src="/original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="Спрайт HD">
+  <img src="/original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="Спрайт 120 кадров">
 </div>
 <h2>turn_head_1-10</h2>
 <div class="article-gallery">
-  <img src="../../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 1">
-  <img src="../../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 2">
-  <img src="../../original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 3">
-  <img src="../../original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 4">
-  <img src="../../original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 5">
-  <img src="../../original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 6">
-  <img src="../../original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 7">
-  <img src="../../original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 8">
-  <img src="../../original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 9">
-  <img src="../../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 10">
+  <img src="/original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 1">
+  <img src="/original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 2">
+  <img src="/original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 3">
+  <img src="/original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 4">
+  <img src="/original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 5">
+  <img src="/original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 6">
+  <img src="/original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 7">
+  <img src="/original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 8">
+  <img src="/original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 9">
+  <img src="/original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="Поворот 10">
 </div>
 <h2>MP4</h2>
 <figure class="article-embed">
   <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="Видео v1">
-    <source src="../../original/monkey2/turn_head_v1.mp4" type="video/mp4">
+    <source src="/original/monkey2/turn_head_v1.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_head_v1.mp4</code></figcaption>
 </figure>
 <figure class="article-embed">
   <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="Видео v2">
-    <source src="../../original/monkey2/turn_head_v2.mp4" type="video/mp4">
+    <source src="/original/monkey2/turn_head_v2.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_head_v2.mp4</code></figcaption>
 </figure>
 <h3>Генеративные опоры</h3>
 <div class="article-gallery">
-  <img src="../../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="Генератив 1">
-  <img src="../../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="Генератив 2">
+  <img src="/original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="Генератив 1">
+  <img src="/original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="Генератив 2">
 </div>
 <p>Скрипты <code>gemini-code-*.py</code>, <code>txt.txt</code> в <code>original/monkey2/</code>.</p></article>
     </div>
@@ -135,17 +135,17 @@
         </div>
       </div>
       <div class="footer-watermark" aria-hidden="true">
-        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
       </div>
       <div class="footer-legal">
-        <a href="../../about.html" class="footer-legal-link lang-ru">О сайте</a>
-        <a href="../../contact.html" class="footer-legal-link lang-ru">Контакты</a>
-        <a href="../../changelog.html" class="footer-legal-link lang-ru">Обновления</a>
-        <a href="../../privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="/ru/about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="/ru/contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="/ru/changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="/ru/privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ru" target="_blank" rel="noopener noreferrer">aoglang</a>
         <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
       </div>
     </div>
   </footer>
-  <script src="../../js/hub-common.js" defer=""></script>
+  <script src="/js/hub-common.js" defer=""></script>
 </body></html>

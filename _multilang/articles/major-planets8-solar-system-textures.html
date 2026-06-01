@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en" data-title-en="Major planets texture atlas — eight worlds, Earth maps &amp; WebGL-ready PNGs — aogl.cn" data-desc-en="Original aogl.cn asset pack in original/major-planets8: equirectangular maps for eight solar-system worlds, multi-map Earth stack, starfield, hero renders, and a WebGL Earth screen recording for Three.js demos." data-title-zh="太阳系八大行星贴图集：equirectangular 纹理与地球多通道素材 — aogl.cn" data-desc-zh="本站原创：original/major-planets8 八大行星 2:1 等距柱状贴图、地球多通道图、星空背景与 3D 地球演示录屏，供 Three.js 太阳系可视化复用。" data-title-ja="太陽系8惑星テクスチャ集 — aogl.cn" data-desc-ja="オリジナル：major-planets8 の惑星テクスチャと地球マップ。" data-title-ko="태양계 8대 행성 텍스처 아틀라스 — aogl.cn" data-desc-ko="오리지널: major-planets8 행성 텍스처·지구 맵." data-title-fr="Atlas textures — huit planètes et cartes Terre — aogl.cn" data-desc-fr="Note originale : atlas major-planets8 pour visualisations Three.js." data-title-ru="Атлас текстур — восемь планет и карты Земли — aogl.cn" data-desc-ru="Оригинал: атлас major-planets8 для WebGL." data-title-ar="أطلس خامات — ثماني كواكب وخرائط الأرض — aogl.cn" data-desc-ar="ملاحظة أصلية: أطلس major-planets8 لعرض WebGL."><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
   <meta name="description" content="Original aogl.cn asset pack in original/major-planets8: equirectangular maps for eight solar-system worlds, multi-map Earth stack, starfield, hero renders, and a WebGL Earth screen recording for Three.js demos.">
   <title>Major planets texture atlas — eight worlds, Earth maps &amp; WebGL-ready PNGs — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/en/articles/major-planets8-solar-system-textures.html">
@@ -17,119 +17,119 @@
   <meta property="og:image:alt" content="Saturn with rings — 3D-style planet render from major-planets8 texture atlas (aogl.cn)">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://aogl.cn/upload/articles/major-planets8-solar-system-textures.webp">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/hub.css">
-  <link rel="stylesheet" href="../css/article-hub.css">
-  <script src="../js/adsense.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+  <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Mercury–Neptune · earth-blue-marble · Interactive-3D-Earth-video.mp4","alternativeHeadline":"太阳系八大行星贴图集：equirectangular 纹理与地球多通道素材","datePublished":"2026-05-26","dateModified":"2026-05-26","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/major-planets8-solar-system-textures.html"},"url":"https://aogl.cn/en/articles/major-planets8-solar-system-textures.html","inLanguage":"mul","description":"Original aogl.cn asset pack in original/major-planets8: equirectangular maps for eight solar-system worlds, multi-map Earth stack, starfield, hero renders, and a WebGL Earth screen recording for Three.js demos.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-en">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
-  <script src="../js/bg-canvas.js"></script>
-  <script src="../js/i18n.js"></script>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
   <header>
     <div class="head-row">
       <div class="brand">
       <h1 class="lang-en brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
         </h1>
       <h1 class="lang-zh brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
         </h1>
       <h1 class="lang-ja brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
         </h1>
       <h1 class="lang-ko brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
         </h1>
       <h1 class="lang-fr brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
         </h1>
       <h1 class="lang-ru brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
         </h1>
       <h1 class="lang-ar brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
         </h1>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <ul class="site-nav-list lang-en">
-          <li><a href="../index.html#tools-directory">AI frontier</a></li>
-          <li><a href="../portal.html">Top sites</a></li>
-          <li><a href="../brands.html">Brands</a></li>
-          <li><a href="../shopping.html">Shopping</a></li>
-          <li><a href="../life.html">Life</a></li>
-          <li><a href="../social.html">Social</a></li>
-          <li><a href="../tech.html">Tech</a></li>
-          <li><a href="../games.html">Games</a></li>
-          <li><a href="../tools.html">Utilities</a></li>
+          <li><a href="/index.html#tools-directory">AI frontier</a></li>
+          <li><a href="/portal.html">Top sites</a></li>
+          <li><a href="/brands.html">Brands</a></li>
+          <li><a href="/shopping.html">Shopping</a></li>
+          <li><a href="/life.html">Life</a></li>
+          <li><a href="/social.html">Social</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/tools.html">Utilities</a></li>
         </ul>
         <ul class="site-nav-list lang-zh">
-          <li><a href="../index.html#tools-directory">AI 前沿</a></li>
-          <li><a href="../portal.html">全球站点</a></li>
-          <li><a href="../brands.html">品牌</a></li>
-          <li><a href="../shopping.html">购物</a></li>
-          <li><a href="../life.html">生活</a></li>
-          <li><a href="../social.html">社交</a></li>
-          <li><a href="../tech.html">科技</a></li>
-          <li><a href="../games.html">游戏</a></li>
-          <li><a href="../tools.html">工具</a></li>
+          <li><a href="/index.html#tools-directory">AI 前沿</a></li>
+          <li><a href="/portal.html">全球站点</a></li>
+          <li><a href="/brands.html">品牌</a></li>
+          <li><a href="/shopping.html">购物</a></li>
+          <li><a href="/life.html">生活</a></li>
+          <li><a href="/social.html">社交</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tools.html">工具</a></li>
         </ul>
         <ul class="site-nav-list lang-ja">
-          <li><a href="../index.html#tools-directory">AI最前線</a></li>
-          <li><a href="../portal.html">主要サイト</a></li>
-          <li><a href="../brands.html">ブランド</a></li>
-          <li><a href="../shopping.html">ショッピング</a></li>
-          <li><a href="../life.html">ライフ</a></li>
-          <li><a href="../social.html">ソーシャル</a></li>
-          <li><a href="../tech.html">テック</a></li>
-          <li><a href="../games.html">ゲーム</a></li>
-          <li><a href="../tools.html">実用ツール</a></li>
+          <li><a href="/index.html#tools-directory">AI最前線</a></li>
+          <li><a href="/portal.html">主要サイト</a></li>
+          <li><a href="/brands.html">ブランド</a></li>
+          <li><a href="/shopping.html">ショッピング</a></li>
+          <li><a href="/life.html">ライフ</a></li>
+          <li><a href="/social.html">ソーシャル</a></li>
+          <li><a href="/tech.html">テック</a></li>
+          <li><a href="/games.html">ゲーム</a></li>
+          <li><a href="/tools.html">実用ツール</a></li>
         </ul>
         <ul class="site-nav-list lang-ko">
-          <li><a href="../index.html#tools-directory">AI 최전선</a></li>
-          <li><a href="../portal.html">주요 사이트</a></li>
-          <li><a href="../brands.html">브랜드</a></li>
-          <li><a href="../shopping.html">쇼핑</a></li>
-          <li><a href="../life.html">라이프</a></li>
-          <li><a href="../social.html">소셜</a></li>
-          <li><a href="../tech.html">테크</a></li>
-          <li><a href="../games.html">게임</a></li>
-          <li><a href="../tools.html">실용 도구</a></li>
+          <li><a href="/index.html#tools-directory">AI 최전선</a></li>
+          <li><a href="/portal.html">주요 사이트</a></li>
+          <li><a href="/brands.html">브랜드</a></li>
+          <li><a href="/shopping.html">쇼핑</a></li>
+          <li><a href="/life.html">라이프</a></li>
+          <li><a href="/social.html">소셜</a></li>
+          <li><a href="/tech.html">테크</a></li>
+          <li><a href="/games.html">게임</a></li>
+          <li><a href="/tools.html">실용 도구</a></li>
         </ul>
         <ul class="site-nav-list lang-fr">
-          <li><a href="../index.html#tools-directory">IA — veille</a></li>
-          <li><a href="../portal.html">Grands sites</a></li>
-          <li><a href="../brands.html">Marques</a></li>
-          <li><a href="../shopping.html">Shopping</a></li>
-          <li><a href="../life.html">Vie</a></li>
-          <li><a href="../social.html">Social</a></li>
-          <li><a href="../tech.html">Tech</a></li>
-          <li><a href="../games.html">Jeux</a></li>
-          <li><a href="../tools.html">Utilitaires</a></li>
+          <li><a href="/index.html#tools-directory">IA — veille</a></li>
+          <li><a href="/portal.html">Grands sites</a></li>
+          <li><a href="/brands.html">Marques</a></li>
+          <li><a href="/shopping.html">Shopping</a></li>
+          <li><a href="/life.html">Vie</a></li>
+          <li><a href="/social.html">Social</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/games.html">Jeux</a></li>
+          <li><a href="/tools.html">Utilitaires</a></li>
         </ul>
         <ul class="site-nav-list lang-ru">
-          <li><a href="../index.html#tools-directory">ИИ — новинки</a></li>
-          <li><a href="../portal.html">Топ сайтов</a></li>
-          <li><a href="../brands.html">Бренды</a></li>
-          <li><a href="../shopping.html">Шопинг</a></li>
-          <li><a href="../life.html">Сервисы</a></li>
-          <li><a href="../social.html">Соцсети</a></li>
-          <li><a href="../tech.html">Техно</a></li>
-          <li><a href="../games.html">Игры</a></li>
-          <li><a href="../tools.html">Утилиты</a></li>
+          <li><a href="/index.html#tools-directory">ИИ — новинки</a></li>
+          <li><a href="/portal.html">Топ сайтов</a></li>
+          <li><a href="/brands.html">Бренды</a></li>
+          <li><a href="/shopping.html">Шопинг</a></li>
+          <li><a href="/life.html">Сервисы</a></li>
+          <li><a href="/social.html">Соцсети</a></li>
+          <li><a href="/tech.html">Техно</a></li>
+          <li><a href="/games.html">Игры</a></li>
+          <li><a href="/tools.html">Утилиты</a></li>
         </ul>
         <ul class="site-nav-list lang-ar">
-          <li><a href="../index.html#tools-directory">أحدث الذكاء الاصطناعي</a></li>
-          <li><a href="../portal.html">أبرز المواقع</a></li>
-          <li><a href="../brands.html">العلامات</a></li>
-          <li><a href="../shopping.html">التسوق</a></li>
-          <li><a href="../life.html">الحياة الرقمية</a></li>
-          <li><a href="../social.html">التواصل</a></li>
-          <li><a href="../tech.html">التقنية</a></li>
-          <li><a href="../games.html">الألعاب</a></li>
-          <li><a href="../tools.html">أدوات مساعدة</a></li>
+          <li><a href="/index.html#tools-directory">أحدث الذكاء الاصطناعي</a></li>
+          <li><a href="/portal.html">أبرز المواقع</a></li>
+          <li><a href="/brands.html">العلامات</a></li>
+          <li><a href="/shopping.html">التسوق</a></li>
+          <li><a href="/life.html">الحياة الرقمية</a></li>
+          <li><a href="/social.html">التواصل</a></li>
+          <li><a href="/tech.html">التقنية</a></li>
+          <li><a href="/games.html">الألعاب</a></li>
+          <li><a href="/tools.html">أدوات مساعدة</a></li>
         </ul>
       </nav>
       <div class="lang-switch">
@@ -140,7 +140,7 @@
   <main class="article-shell hub-main wrap" id="main">
     <div class="lang-en">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← Back to home · Editorial originals</a>
+        <a href="/index.html#originals">← Back to home · Editorial originals</a>
       </div>
       <div class="article-shell__header">
         <h1>Major planets texture atlas — eight worlds, Earth maps &amp; WebGL-ready PNGs</h1>
@@ -240,7 +240,7 @@
     </div>
     <div class="lang-zh">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← 返回首页 · 本站原创</a>
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
       </div>
       <div class="article-shell__header">
         <h1>太阳系八大行星贴图集：equirectangular 纹理与地球多通道素材</h1>
@@ -337,7 +337,7 @@
     </div>
     <div class="lang-ja">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← ホームへ · オリジナル</a>
+        <a href="/index.html#originals">← ホームへ · オリジナル</a>
       </div>
       <div class="article-shell__header">
         <h1>太陽系8惑星テクスチャ集</h1>
@@ -354,7 +354,7 @@
     </div>
     <div class="lang-ko">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← 홈으로 · 오리지널</a>
+        <a href="/index.html#originals">← 홈으로 · 오리지널</a>
       </div>
       <div class="article-shell__header">
         <h1>태양계 8대 행성 텍스처 아틀라스</h1>
@@ -370,7 +370,7 @@
     </div>
     <div class="lang-fr">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← Accueil · contenus originaux</a>
+        <a href="/index.html#originals">← Accueil · contenus originaux</a>
       </div>
       <div class="article-shell__header">
         <h1>Atlas textures — huit planètes et cartes Terre</h1>
@@ -386,7 +386,7 @@
     </div>
     <div class="lang-ru">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← На главную · оригиналы</a>
+        <a href="/index.html#originals">← На главную · оригиналы</a>
       </div>
       <div class="article-shell__header">
         <h1>Атлас текстур — восемь планет и карты Земли</h1>
@@ -402,7 +402,7 @@
     </div>
     <div class="lang-ar">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← الرئيسية · محتوى أصلي</a>
+        <a href="/index.html#originals">← الرئيسية · محتوى أصلي</a>
       </div>
       <div class="article-shell__header">
         <h1>أطلس خامات — ثماني كواكب وخرائط الأرض</h1>
@@ -425,37 +425,37 @@
         </div>
       </div>
       <div class="footer-watermark" aria-hidden="true">
-        <img src="../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
       </div>
       <div class="footer-legal">
-        <a href="../about.html" class="footer-legal-link lang-en">About</a>
-        <a href="../contact.html" class="footer-legal-link lang-en">Contact</a>
-        <a href="../changelog.html" class="footer-legal-link lang-en">Changelog</a>
-        <a href="../privacy.html" class="footer-legal-link lang-en">Privacy</a>
-        <a href="../about.html" class="footer-legal-link lang-zh">关于</a>
-        <a href="../contact.html" class="footer-legal-link lang-zh">联系我们</a>
-        <a href="../changelog.html" class="footer-legal-link lang-zh">更新记录</a>
-        <a href="../privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
-        <a href="../about.html" class="footer-legal-link lang-ja">概要</a>
-        <a href="../contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
-        <a href="../changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
-        <a href="../privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
-        <a href="../about.html" class="footer-legal-link lang-ko">소개</a>
-        <a href="../contact.html" class="footer-legal-link lang-ko">문의</a>
-        <a href="../changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
-        <a href="../privacy.html" class="footer-legal-link lang-ko">개인정보</a>
-        <a href="../about.html" class="footer-legal-link lang-fr">À propos</a>
-        <a href="../contact.html" class="footer-legal-link lang-fr">Contact</a>
-        <a href="../changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
-        <a href="../privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
-        <a href="../about.html" class="footer-legal-link lang-ru">О сайте</a>
-        <a href="../contact.html" class="footer-legal-link lang-ru">Контакты</a>
-        <a href="../changelog.html" class="footer-legal-link lang-ru">Обновления</a>
-        <a href="../privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
-        <a href="../about.html" class="footer-legal-link lang-ar">حول الموقع</a>
-        <a href="../contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
-        <a href="../changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
-        <a href="../privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <a href="/about.html" class="footer-legal-link lang-en">About</a>
+        <a href="/contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="/privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="/contact.html" class="footer-legal-link lang-ko">문의</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="/about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="/contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="/privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="/about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="/contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="/about.html" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="/contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-en" target="_blank" rel="noopener noreferrer">aoglang</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
@@ -467,5 +467,5 @@
       </div>
     </div>
   </footer>
-  <script src="../js/hub-common.js" defer></script>
+  <script src="/js/hub-common.js" defer></script>
 </body></html>

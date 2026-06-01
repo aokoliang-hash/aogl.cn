@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN" data-title-zh="猴子短片手记：分镜、关键帧与我的剪辑成片 — aogl.cn" data-desc-zh="本站个人原创手记：围绕猴子角色的实验短片，从 16:9 分镜总表到九张关键帧静帧，再到生成式图像探索与最终 MP4 成片；素材与说明集中收录，便于检索与分享。" data-aogl-lang="zh"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
   <meta name="description" content="本站个人原创手记：围绕猴子角色的实验短片，从 16:9 分镜总表到九张关键帧静帧，再到生成式图像探索与最终 MP4 成片；素材与说明集中收录，便于检索与分享。">
   <title>猴子短片手记：分镜、关键帧与我的剪辑成片 — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/articles/monkey-short-bts.html">
@@ -26,35 +26,35 @@
   <meta property="og:image:alt" content="Monkey short — stylized character study for a personal AI-assisted storyboard">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://aogl.cn/upload/articles/monkey-short-bts.webp">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/hub.css">
-  <link rel="stylesheet" href="../css/article-hub.css">
-  <script src="../js/adsense.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+  <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"16:9 board · frames 1–9 · generative passes · MP4 master","alternativeHeadline":"猴子短片手记：分镜、关键帧与我的剪辑成片","datePublished":"2026-05-14","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/monkey-short-bts.html"},"url":"https://aogl.cn/en/articles/monkey-short-bts.html","inLanguage":"zh-CN","description":"Personal editorial on aogl.cn: an experimental monkey-themed short—from a 16:9 storyboard sheet and nine numbered stills through generative look-dev to a final MP4—assets and notes in one place for search and sharing.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zh">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
-  <script src="../js/bg-canvas.js"></script>
-  <script src="../js/i18n.js"></script>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
   <header>
     <div class="head-row">
       <div class="brand">
       <h1 class="lang-zh brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
         </h1>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <ul class="site-nav-list lang-zh">
-          <li><a href="../index.html#tools-directory">AI 前沿</a></li>
-          <li><a href="../portal.html">全球站点</a></li>
-          <li><a href="../brands.html">品牌</a></li>
-          <li><a href="../shopping.html">购物</a></li>
-          <li><a href="../life.html">生活</a></li>
-          <li><a href="../social.html">社交</a></li>
-          <li><a href="../tech.html">科技</a></li>
-          <li><a href="../games.html">游戏</a></li>
-          <li><a href="../tools.html">工具</a></li>
+          <li><a href="/index.html#tools-directory">AI 前沿</a></li>
+          <li><a href="/portal.html">全球站点</a></li>
+          <li><a href="/brands.html">品牌</a></li>
+          <li><a href="/shopping.html">购物</a></li>
+          <li><a href="/life.html">生活</a></li>
+          <li><a href="/social.html">社交</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tools.html">工具</a></li>
         </ul>
       </nav>
       <div class="lang-switch">
@@ -65,7 +65,7 @@
   <main class="article-shell hub-main wrap" id="main">
     <div class="lang-zh">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← 返回首页 · 本站原创</a>
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
       </div>
       <div class="article-shell__header">
         <h1>猴子短片手记：分镜、关键帧与我的剪辑成片</h1>
@@ -76,33 +76,33 @@
 <h2>16:9 分镜总表</h2>
 <p>下面这张宽画幅板子是我的「节拍地图」：在锁定单帧之前，先看整体构图与节奏。若你也做作品集落地页，建议大图旁永远跟一小段<strong>可被索引的文字</strong>，避免页面只剩图片。</p>
 <figure class="article-embed">
-  <img src="../original/monkey/Gemini_Generated_Image_7nr0x37nr0x37nr0.png" width="1920" height="1080" loading="lazy" decoding="async" alt="猴子主题短片 16:9 分镜总表 — 节拍与画幅安排">
+  <img src="/original/monkey/Gemini_Generated_Image_7nr0x37nr0x37nr0.png" width="1920" height="1080" loading="lazy" decoding="async" alt="猴子主题短片 16:9 分镜总表 — 节拍与画幅安排">
   <figcaption>16:9 总表：导出单帧前的整体节奏与分格走向。</figcaption>
 </figure>
 <h2>关键帧 1–9</h2>
 <p>这九张 PNG 是我剪辑时的「脊椎」——每张都是刻意检查点（姿态、视线、留白），而不是随手截屏。Alt 文案里标注<strong>镜号</strong>，兼顾无障碍与长尾检索，例如「猴子短片 分镜 第 3 帧」。</p>
 <div class="article-gallery">
-  <img src="../original/monkey/1.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 1 — 开场节拍">
-  <img src="../original/monkey/2.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 2">
-  <img src="../original/monkey/3.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 3">
-  <img src="../original/monkey/4.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 4">
-  <img src="../original/monkey/5.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 5 — 中段节拍">
-  <img src="../original/monkey/6.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 6">
-  <img src="../original/monkey/7.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 7">
-  <img src="../original/monkey/8.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 8">
-  <img src="../original/monkey/9.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 9 — 收束节拍">
+  <img src="/original/monkey/1.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 1 — 开场节拍">
+  <img src="/original/monkey/2.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 2">
+  <img src="/original/monkey/3.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 3">
+  <img src="/original/monkey/4.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 4">
+  <img src="/original/monkey/5.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 5 — 中段节拍">
+  <img src="/original/monkey/6.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 6">
+  <img src="/original/monkey/7.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 7">
+  <img src="/original/monkey/8.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 8">
+  <img src="/original/monkey/9.png" width="400" height="225" loading="lazy" decoding="async" alt="猴子短片关键帧 9 — 收束节拍">
 </div>
 <h2>生成式探索稿</h2>
 <p>上方 <strong>16:9 分镜总图</strong>已保存为 <code>Gemini_Generated_Image_7nr0x37nr0x37nr0.png</code>；此外我用<strong>生成式图像工具</strong>又做了两轮探索（配色与剪影），与关键帧同目录放在 <code>original/monkey/</code>，尽量保持文件夹精简可信。</p>
 <div class="article-gallery">
-  <img src="../original/monkey/Gemini_Generated_Image_p7wopjp7wopjp7wo.png" width="512" height="288" loading="lazy" decoding="async" alt="生成式色稿探索 — 备选配色">
-  <img src="../original/monkey/Gemini_Generated_Image_hfhz90hfhz90hfhz.png" width="512" height="288" loading="lazy" decoding="async" alt="生成式对比与剪影探索">
+  <img src="/original/monkey/Gemini_Generated_Image_p7wopjp7wopjp7wo.png" width="512" height="288" loading="lazy" decoding="async" alt="生成式色稿探索 — 备选配色">
+  <img src="/original/monkey/Gemini_Generated_Image_hfhz90hfhz90hfhz.png" width="512" height="288" loading="lazy" decoding="async" alt="生成式对比与剪影探索">
 </div>
 <h2>成片视频（MP4）</h2>
 <p>以下为时间线导出文件 <code>monkey-v.mp4</code>。浏览器需支持 MP4 内的 H.264/AVC；若无法播放，可直接从同目录下载本地查看。</p>
 <figure class="article-embed">
   <video controls="" playsinline="" preload="metadata" poster="../original/monkey/5.png" aria-label="猴子主题短片成片">
-    <source src="../original/monkey/monkey-v.mp4" type="video/mp4">
+    <source src="/original/monkey/monkey-v.mp4" type="video/mp4">
   </video>
   <figcaption>成片：<code>original/monkey/monkey-v.mp4</code>，由上方关键帧脊椎剪辑而成。</figcaption>
 </figure>
@@ -118,17 +118,17 @@
         </div>
       </div>
       <div class="footer-watermark" aria-hidden="true">
-        <img src="../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
       </div>
       <div class="footer-legal">
-        <a href="../about.html" class="footer-legal-link lang-zh">关于</a>
-        <a href="../contact.html" class="footer-legal-link lang-zh">联系我们</a>
-        <a href="../changelog.html" class="footer-legal-link lang-zh">更新记录</a>
-        <a href="../privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
         <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
       </div>
     </div>
   </footer>
-  <script src="../js/hub-common.js" defer=""></script>
+  <script src="/js/hub-common.js" defer=""></script>
 </body></html>

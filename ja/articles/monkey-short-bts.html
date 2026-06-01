@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja" data-title-ja="サル短編メモ：絵コンテ・キーフレームと完成動画 — aogl.cn" data-desc-ja="個人メモ：サルを主役にした実験短編。16:9絵コンテ、9枚のキーフレーム、生成によるルック開発、完成MP4までを一箇所に。" data-aogl-lang="ja" data-aogl-seo-locale="1"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
   <meta name="description" content="個人メモ：サルを主役にした実験短編。16:9絵コンテ、9枚のキーフレーム、生成によるルック開発、完成MP4までを一箇所に。">
   <title>サル短編メモ：絵コンテ・キーフレームと完成動画 — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/ja/articles/monkey-short-bts.html">
@@ -26,35 +26,35 @@
   <meta property="og:image:alt" content="Monkey short — stylized character study for a personal AI-assisted storyboard">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://aogl.cn/upload/articles/monkey-short-bts.webp">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/hub.css">
-  <link rel="stylesheet" href="../../css/article-hub.css">
-  <script src="../../js/adsense.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+  <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"16:9 board · frames 1–9 · generative passes · MP4 master","alternativeHeadline":"猴子短片手记：分镜、关键帧与我的剪辑成片","datePublished":"2026-05-14","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ja/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/monkey-short-bts.html"},"url":"https://aogl.cn/en/articles/monkey-short-bts.html","inLanguage":"ja","description":"Personal editorial on aogl.cn: an experimental monkey-themed short—from a 16:9 storyboard sheet and nine numbered stills through generative look-dev to a final MP4—assets and notes in one place for search and sharing.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-ja">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
-  <script src="../../js/bg-canvas.js"></script>
-  <script src="../../js/i18n.js"></script>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
   <header>
     <div class="head-row">
       <div class="brand">
       <h1 class="lang-ja brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
         </h1>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <ul class="site-nav-list lang-ja">
-          <li><a href="../../index.html#tools-directory">AI最前線</a></li>
-          <li><a href="../../portal.html">主要サイト</a></li>
-          <li><a href="../../brands.html">ブランド</a></li>
-          <li><a href="../../shopping.html">ショッピング</a></li>
-          <li><a href="../../life.html">ライフ</a></li>
-          <li><a href="../../social.html">ソーシャル</a></li>
-          <li><a href="../../tech.html">テック</a></li>
-          <li><a href="../../games.html">ゲーム</a></li>
-          <li><a href="../../tools.html">実用ツール</a></li>
+          <li><a href="/ja/index.html#tools-directory">AI最前線</a></li>
+          <li><a href="/ja/portal.html">主要サイト</a></li>
+          <li><a href="/ja/brands.html">ブランド</a></li>
+          <li><a href="/ja/shopping.html">ショッピング</a></li>
+          <li><a href="/ja/life.html">ライフ</a></li>
+          <li><a href="/ja/social.html">ソーシャル</a></li>
+          <li><a href="/ja/tech.html">テック</a></li>
+          <li><a href="/ja/games.html">ゲーム</a></li>
+          <li><a href="/ja/tools.html">実用ツール</a></li>
         </ul>
       </nav>
       <div class="lang-switch">
@@ -65,7 +65,7 @@
   <main class="article-shell hub-main wrap" id="main">
     <div class="lang-ja">
       <div class="article-shell__top">
-        <a href="../../index.html#originals">← ホームへ · オリジナル</a>
+        <a href="/ja/index.html#originals">← ホームへ · オリジナル</a>
       </div>
       <div class="article-shell__header">
         <h1>サル短編メモ：絵コンテ・キーフレームと完成動画</h1>
@@ -76,33 +76,33 @@
 <h2>16:9 絵コンテ総表</h2>
 <p>全体のリズムと画角を決めるマスターボードです。大きな画像の前後に短い説明文を置くと、クローラーにとっても有益です。</p>
 <figure class="article-embed">
-  <img src="../../original/monkey/Gemini_Generated_Image_7nr0x37nr0x37nr0.png" width="1920" height="1080" loading="lazy" decoding="async" alt="サル短編の16:9絵コンテ総表">
+  <img src="/original/monkey/Gemini_Generated_Image_7nr0x37nr0x37nr0.png" width="1920" height="1080" loading="lazy" decoding="async" alt="サル短編の16:9絵コンテ総表">
   <figcaption>16:9 総表：各カットへ落とし込む前のビート設計。</figcaption>
 </figure>
 <h2>キーフレーム 1〜9</h2>
 <p>編集の背骨として番号付けした静止画です。代替テキストにカット番号を入れ、アクセシビリティとロングテール検索の両方を補います。</p>
 <div class="article-gallery">
-  <img src="../../original/monkey/1.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム1 — 冒頭ビート">
-  <img src="../../original/monkey/2.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム2">
-  <img src="../../original/monkey/3.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム3">
-  <img src="../../original/monkey/4.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム4">
-  <img src="../../original/monkey/5.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム5 — 中盤">
-  <img src="../../original/monkey/6.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム6">
-  <img src="../../original/monkey/7.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム7">
-  <img src="../../original/monkey/8.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム8">
-  <img src="../../original/monkey/9.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム9 — 締め">
+  <img src="/original/monkey/1.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム1 — 冒頭ビート">
+  <img src="/original/monkey/2.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム2">
+  <img src="/original/monkey/3.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム3">
+  <img src="/original/monkey/4.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム4">
+  <img src="/original/monkey/5.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム5 — 中盤">
+  <img src="/original/monkey/6.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム6">
+  <img src="/original/monkey/7.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム7">
+  <img src="/original/monkey/8.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム8">
+  <img src="/original/monkey/9.png" width="400" height="225" loading="lazy" decoding="async" alt="キーフレーム9 — 締め">
 </div>
 <h2>生成によるルック開発</h2>
 <p>上の<strong>16:9総表</strong>は <code>Gemini_Generated_Image_7nr0x37nr0x37nr0.png</code> と同一ファイル。追加でパレットとシルエットを試す<strong>生成パス</strong>を2枚だけ同フォルダに残しています。</p>
 <div class="article-gallery">
-  <img src="../../original/monkey/Gemini_Generated_Image_p7wopjp7wopjp7wo.png" width="512" height="288" loading="lazy" decoding="async" alt="生成パレット案の探索">
-  <img src="../../original/monkey/Gemini_Generated_Image_hfhz90hfhz90hfhz.png" width="512" height="288" loading="lazy" decoding="async" alt="コントラストとシルエットの生成パス">
+  <img src="/original/monkey/Gemini_Generated_Image_p7wopjp7wopjp7wo.png" width="512" height="288" loading="lazy" decoding="async" alt="生成パレット案の探索">
+  <img src="/original/monkey/Gemini_Generated_Image_hfhz90hfhz90hfhz.png" width="512" height="288" loading="lazy" decoding="async" alt="コントラストとシルエットの生成パス">
 </div>
 <h2>完成動画（MP4）</h2>
 <p><code>monkey-v.mp4</code>。ブラウザが H.264 を再生できない場合はファイルをダウンロードしてローカル再生してください。</p>
 <figure class="article-embed">
   <video controls="" playsinline="" preload="metadata" poster="../original/monkey/5.png" aria-label="サル短編の完成映像">
-    <source src="../../original/monkey/monkey-v.mp4" type="video/mp4">
+    <source src="/original/monkey/monkey-v.mp4" type="video/mp4">
   </video>
   <figcaption>マスター映像：<code>original/monkey/monkey-v.mp4</code>。</figcaption>
 </figure>
@@ -118,17 +118,17 @@
         </div>
       </div>
       <div class="footer-watermark" aria-hidden="true">
-        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
       </div>
       <div class="footer-legal">
-        <a href="../../about.html" class="footer-legal-link lang-ja">概要</a>
-        <a href="../../contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
-        <a href="../../changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
-        <a href="../../privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/ja/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/ja/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/ja/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/ja/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
         <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
       </div>
     </div>
   </footer>
-  <script src="../../js/hub-common.js" defer=""></script>
+  <script src="/js/hub-common.js" defer=""></script>
 </body></html>

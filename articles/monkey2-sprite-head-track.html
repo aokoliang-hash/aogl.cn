@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN" data-title-zh="猴子精灵图转头：120 帧雪碧图与桃子光标互动 — aogl.cn" data-desc-zh="本站原创手记：从绿幕视频抽帧生成猴子转头精灵图（10×12 共 120 帧），经 contact sheet 与角度—帧号校准后实现鼠标驱动转头；含 HD 雪碧图、校准表、正面帧、桃子自定义光标与可嵌入演示页，附 turn_head 静帧与 MP4 源片，便于 SEO 检索。" data-aogl-lang="zh"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
   <meta name="description" content="本站原创手记：从绿幕视频抽帧生成猴子转头精灵图（10×12 共 120 帧），经 contact sheet 与角度—帧号校准后实现鼠标驱动转头；含 HD 雪碧图、校准表、正面帧、桃子自定义光标与可嵌入演示页，附 turn_head 静帧与 MP4 源片，便于 SEO 检索。">
   <title>猴子精灵图转头：120 帧雪碧图与桃子光标互动 — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/articles/monkey2-sprite-head-track.html">
@@ -26,35 +26,35 @@
   <meta property="og:image:alt" content="Monkey sprite head tracking — 120-frame sheet and mouse-driven demo (aogl.cn)">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://aogl.cn/upload/articles/monkey2-sprite-head-track.webp">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/hub.css">
-  <link rel="stylesheet" href="../css/article-hub.css">
-  <script src="../js/adsense.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+  <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"sprite_hd_120 · angle calibration · embedded HTML · source MP4","alternativeHeadline":"猴子精灵图转头：120 帧雪碧图与桃子光标互动","datePublished":"2026-05-18","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/monkey2-sprite-head-track.html"},"url":"https://aogl.cn/en/articles/monkey2-sprite-head-track.html","inLanguage":"zh-CN","description":"Original aogl.cn notes: extract a 120-frame monkey head-turn sprite (10×12 grid) from keyed video, calibrate angle-to-frame (not naive linear mapping), and drive frames with the mouse—plus HD sprite sheets, calibration board, front frame, peach cursor, embeddable HTML demo, stills, and MP4 sources.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zh">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
-  <script src="../js/bg-canvas.js"></script>
-  <script src="../js/i18n.js"></script>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
   <header>
     <div class="head-row">
       <div class="brand">
       <h1 class="lang-zh brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
         </h1>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <ul class="site-nav-list lang-zh">
-          <li><a href="../index.html#tools-directory">AI 前沿</a></li>
-          <li><a href="../portal.html">全球站点</a></li>
-          <li><a href="../brands.html">品牌</a></li>
-          <li><a href="../shopping.html">购物</a></li>
-          <li><a href="../life.html">生活</a></li>
-          <li><a href="../social.html">社交</a></li>
-          <li><a href="../tech.html">科技</a></li>
-          <li><a href="../games.html">游戏</a></li>
-          <li><a href="../tools.html">工具</a></li>
+          <li><a href="/index.html#tools-directory">AI 前沿</a></li>
+          <li><a href="/portal.html">全球站点</a></li>
+          <li><a href="/brands.html">品牌</a></li>
+          <li><a href="/shopping.html">购物</a></li>
+          <li><a href="/life.html">生活</a></li>
+          <li><a href="/social.html">社交</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tools.html">工具</a></li>
         </ul>
       </nav>
       <div class="lang-switch">
@@ -65,7 +65,7 @@
   <main class="article-shell hub-main wrap" id="main">
     <div class="lang-zh">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← 返回首页 · 本站原创</a>
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
       </div>
       <div class="article-shell__header">
         <h1>猴子精灵图转头：120 帧雪碧图与桃子光标互动</h1>
@@ -76,61 +76,61 @@
 <h2>流程概览</h2>
 <p>抽帧，制作<strong>校准总表</strong>确认真实朝向，建立角度键位表，打包 <strong>10x12 共 120 帧</strong> 到 <code>sprite_hd_120.webp</code>，在本地浏览器验证上、右、下、左、斜向与正中。</p>
 <figure class="article-embed">
-  <img src="../original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="猴子转头精灵图角度与帧号校准 contact sheet">
+  <img src="/original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="猴子转头精灵图角度与帧号校准 contact sheet">
   <figcaption><code>calibration_sheet.jpg</code>：角度与帧号对照用总表。</figcaption>
 </figure>
 <h2>正面参考帧</h2>
 <p>中性「朝镜头」单帧导出为 <code>frame_front.webp</code>，用于缩略图与打包前检查。</p>
 <figure class="article-embed">
-  <img src="../original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="猴子角色正面参考帧">
+  <img src="/original/monkey2/frame_front.webp" width="720" height="1280" loading="lazy" decoding="async" alt="猴子角色正面参考帧">
   <figcaption><code>frame_front.webp</code>：正面姿态参考。</figcaption>
 </figure>
 <h2>在线演示：120 帧高清 + 桃子光标</h2>
 <p>移动鼠标：角色在 <code>sprite_hd_120.webp</code> 上切换 <strong>120 个背景位置</strong>（10 列 x 12 行）；桃子图跟随指针，<code>pointer-events: none</code> 避免挡住点击。</p>
 <figure class="article-embed">
-  <iframe src="../original/monkey2/gemini-code-1778834915677.html" title="猴子转头 120 帧精灵图与桃子光标演示" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="/original/monkey2/gemini-code-1778834915677.html" title="猴子转头 120 帧精灵图与桃子光标演示" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <figcaption>嵌入：<code>original/monkey2/gemini-code-1778834915677.html</code>（<code>sprite_hd_120.webp</code>、<code>cursor.png</code>）。</figcaption>
 </figure>
 <h2>雪碧图资源</h2>
 <p>三份 WebP 记录迭代：标准密度、高清版、最终 <strong>120 帧</strong> 生产用网格。</p>
 <div class="article-gallery">
-  <img src="../original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图标准分辨率 WebP">
-  <img src="../original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图高清 WebP">
-  <img src="../original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图 120 帧 10x12 网格 WebP">
+  <img src="/original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图标准分辨率 WebP">
+  <img src="/original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图高清 WebP">
+  <img src="/original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图 120 帧 10x12 网格 WebP">
 </div>
 <h2>源片静帧 turn_head_1-10</h2>
 <p>十张编号 PNG 在打包全网格前抽样旋转弧线，便于质检与图库 alt 覆盖。</p>
 <div class="article-gallery">
-  <img src="../original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 1">
-  <img src="../original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 2">
-  <img src="../original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 3">
-  <img src="../original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 4">
-  <img src="../original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 5">
-  <img src="../original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 6">
-  <img src="../original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 7">
-  <img src="../original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 8">
-  <img src="../original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 9">
-  <img src="../original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 10">
+  <img src="/original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 1">
+  <img src="/original/monkey2/turn_head_2.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 2">
+  <img src="/original/monkey2/turn_head_3.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 3">
+  <img src="/original/monkey2/turn_head_4.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 4">
+  <img src="/original/monkey2/turn_head_5.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 5">
+  <img src="/original/monkey2/turn_head_6.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 6">
+  <img src="/original/monkey2/turn_head_7.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 7">
+  <img src="/original/monkey2/turn_head_8.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 8">
+  <img src="/original/monkey2/turn_head_9.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 9">
+  <img src="/original/monkey2/turn_head_10.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 10">
 </div>
 <h2>源视频（MP4）</h2>
 <p>两版导出记录早期与 refined 转头；抠绿前保留主体、避免误抠白/灰区域。</p>
 <figure class="article-embed">
   <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_1.png" aria-label="转头源视频 v1">
-    <source src="../original/monkey2/turn_head_v1.mp4" type="video/mp4">
+    <source src="/original/monkey2/turn_head_v1.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_head_v1.mp4</code></figcaption>
 </figure>
 <figure class="article-embed">
   <video controls="" playsinline="" preload="metadata" poster="../original/monkey2/turn_head_5.png" aria-label="转头源视频 v2">
-    <source src="../original/monkey2/turn_head_v2.mp4" type="video/mp4">
+    <source src="/original/monkey2/turn_head_v2.mp4" type="video/mp4">
   </video>
   <figcaption><code>turn_head_v2.mp4</code></figcaption>
 </figure>
 <h3>生成式风格锚点</h3>
 <p>两张 Gemini 图与工程资产并列，用于分享预览与图像检索，不替代校准后的精灵图。</p>
 <div class="article-gallery">
-  <img src="../original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚点光影与造型">
-  <img src="../original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚点备选风格">
+  <img src="/original/monkey2/Gemini_Generated_Image_ju98jsju98jsju98.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚点光影与造型">
+  <img src="/original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚点备选风格">
 </div>
 <h3>离线脚本</h3>
 <p><code>gemini-code-*.py</code> 与 <code>txt.txt</code> 记录抽帧与抠像规则。本文固定公开 HTML、图片与视频路径，便于 SEO 与长期引用。</p></article>
@@ -144,17 +144,17 @@
         </div>
       </div>
       <div class="footer-watermark" aria-hidden="true">
-        <img src="../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
       </div>
       <div class="footer-legal">
-        <a href="../about.html" class="footer-legal-link lang-zh">关于</a>
-        <a href="../contact.html" class="footer-legal-link lang-zh">联系我们</a>
-        <a href="../changelog.html" class="footer-legal-link lang-zh">更新记录</a>
-        <a href="../privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
         <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
       </div>
     </div>
   </footer>
-  <script src="../js/hub-common.js" defer=""></script>
+  <script src="/js/hub-common.js" defer=""></script>
 </body></html>

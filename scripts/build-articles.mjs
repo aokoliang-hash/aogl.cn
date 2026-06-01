@@ -11,6 +11,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { sitePath } from "./site-paths.mjs";
 import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -465,7 +466,7 @@ function articleShellLangAttrs(lang) {
 
 function buildArticlePageHub(article) {
   const slug = article.slug;
-  const P = "../";
+  const P = "/";
   const dataAttrs = LANGS.map((lang) => {
     const titleVal = strByLang(article, lang, "title");
     const descVal = strByLang(article, lang, "desc");
@@ -568,7 +569,7 @@ function buildArticlePageEditorial(article) {
   const headBlock = `<!DOCTYPE html><html lang="en" ${dataAttrs}><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="${sitePath("favicon.svg")}" type="image/svg+xml" sizes="any">
   <meta name="description" content="${escAttr(descEn)}">
   <title>${escAttr(titleEn)} — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/en/articles/${slug}.html">
@@ -584,11 +585,11 @@ function buildArticlePageEditorial(article) {
   <meta property="og:image:alt" content="aogl.cn">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://aogl.cn/og-default.png">
-  <link rel="stylesheet" href="../css/privacy.css">
+  <link rel="stylesheet" href="${sitePath("css/privacy.css")}">
   ${buildJsonLd(article, titleEn, descEn)}
 </head>`;
 
-  const back = LANGS.map((lang) => `<a href="../index.html" class="lang-${lang}">${BACK_LABEL[lang]}</a>`).join("\n    ");
+  const back = LANGS.map((lang) => `<a href="${sitePath("index.html")}" class="lang-${lang}">${BACK_LABEL[lang]}</a>`).join("\n    ");
 
   const h1s = LANGS.map((lang) => {
     const h = strByLang(article, lang, "title");
@@ -609,7 +610,7 @@ function buildArticlePageEditorial(article) {
   const dateVis = escHtml(article.datePublished || "—");
 
   const body = `<body class="locale-en">
-  <script src="../js/i18n.js"></script>
+  <script src="${sitePath("js/i18n.js")}"></script>
   <div class="top">
     ${back}
     <div class="lang-switch">
@@ -638,11 +639,10 @@ function buildArticlePage(article) {
 
 function heroSrc(article) {
   const h = (article.heroImage || "").trim();
-  if (!h) return "../og-default.png";
+  if (!h) return sitePath("og-default.png");
   if (h.startsWith("http://") || h.startsWith("https://")) return h;
   if (h.startsWith("/")) return h;
-  if (h.startsWith("../")) return h;
-  return "../" + h.replace(/^\.?\//, "");
+  return sitePath(h.replace(/^\.?\//, ""));
 }
 
 /** Home index lives at site root — teaser images must not use ../ (would escape the site folder). */
@@ -781,7 +781,7 @@ function buildArticlesIndexListItems(articles) {
       }).join("");
       const hero = teaserHeroSrc(a);
       const img = escAttr(
-        hero.startsWith("http://") || hero.startsWith("https://") ? hero : `../${hero.replace(/^\.\.\//, "")}`,
+        hero.startsWith("http://") || hero.startsWith("https://") ? hero : sitePath(hero.replace(/^\.\.\//, "")),
       );
       return `        <li class="articles-index-item">
           <a class="articles-index-thumb" href="${escAttr(href)}" tabindex="-1" aria-hidden="true">
@@ -798,7 +798,7 @@ function buildArticlesIndexListItems(articles) {
 }
 
 function buildArticlesIndexPage(articles) {
-  const P = "../";
+  const P = "/";
   const count = articles.length;
   const dataAttrs = LANGS.map((lang) => {
     const title = ARTICLES_INDEX_H1[lang] || ARTICLES_INDEX_H1.en;

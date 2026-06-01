@@ -19,6 +19,7 @@ import {
   toolName,
   catTitle,
 } from "./tool-guide-utils.mjs";
+import { sitePath } from "./site-paths.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.join(ROOT, "_multilang", "tool-guides");
@@ -73,7 +74,7 @@ function buildPage(guide) {
   const headBlock = `<!DOCTYPE html><html lang="en" ${dataAttrs}><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="${sitePath("favicon.svg")}" type="image/svg+xml" sizes="any">
   <meta name="description" content="${escAttr(descEn)}">
   <title>${escAttr(titleEn)} — aogl.cn</title>
   <link rel="canonical" href="${SITE}/en/${toolGuidePath(slug)}">
@@ -83,15 +84,15 @@ function buildPage(guide) {
   <meta property="og:title" content="${escAttr(titleEn)} — aogl.cn">
   <meta property="og:description" content="${escAttr(descEn)}">
   <meta property="og:image" content="${SITE}/og-default.png">
-  <link rel="stylesheet" href="../css/privacy.css">
-  <link rel="stylesheet" href="../css/brief.css">
-  <link rel="stylesheet" href="../css/tool-guide.css">
-  <script src="../js/adsense.js"></script>
+  <link rel="stylesheet" href="${sitePath("css/privacy.css")}">
+  <link rel="stylesheet" href="${sitePath("css/brief.css")}">
+  <link rel="stylesheet" href="${sitePath("css/tool-guide.css")}">
+  <script src="${sitePath("js/adsense.js")}"></script>
   ${buildJsonLd(guide, titleEn, descEn)}
 </head>`;
 
   const back = LANGS.map(
-    (lang) => `<a href="../index.html#tools-directory" class="lang-${lang}">${BACK_LABEL[lang]}</a>`
+    (lang) => `<a href="${sitePath("index.html")}#tools-directory" class="lang-${lang}">${BACK_LABEL[lang]}</a>`
   ).join("\n    ");
 
   const h1s = LANGS.map((lang) => `<h1 class="lang-${lang}">${escHtml(toolName(guide, lang))}</h1>`).join("\n  ");
@@ -111,7 +112,7 @@ function buildPage(guide) {
   }).join("\n    ");
 
   const body = `<body class="locale-en">
-  <script src="../js/i18n.js"></script>
+  <script src="${sitePath("js/i18n.js")}"></script>
   <div class="top">
     ${back}
     <div class="lang-switch">
@@ -119,7 +120,7 @@ function buildPage(guide) {
     </div>
   </div>
   <div class="tool-guide-header">
-    <img class="tool-guide-icon" src="../${icon}" width="48" height="48" alt="" loading="lazy" decoding="async">
+    <img class="tool-guide-icon" src="${sitePath(icon)}" width="48" height="48" alt="" loading="lazy" decoding="async">
     <div class="tool-guide-header-text">
       ${h1s}
       ${catBadges}

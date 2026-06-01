@@ -17,6 +17,7 @@ import {
   loadAllBriefs,
   strByLang,
 } from "./brief-utils.mjs";
+import { sitePath } from "./site-paths.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.join(ROOT, "_multilang", "briefs");
@@ -77,7 +78,7 @@ function buildBriefPage(brief) {
   const headBlock = `<!DOCTYPE html><html lang="en" ${dataAttrs}><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="${sitePath("favicon.svg")}" type="image/svg+xml" sizes="any">
   <meta name="description" content="${escAttr(descEn)}">
   <title>${escAttr(titleEn)} — aogl.cn</title>
   <link rel="canonical" href="${SITE}/en/briefs/${slug}.html">
@@ -88,14 +89,14 @@ function buildBriefPage(brief) {
   <meta property="og:description" content="${escAttr(descEn)}">
   <meta property="og:image" content="${SITE}/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="../css/privacy.css">
-  <link rel="stylesheet" href="../css/brief.css">
-  <script src="../js/adsense.js"></script>
+  <link rel="stylesheet" href="${sitePath("css/privacy.css")}">
+  <link rel="stylesheet" href="${sitePath("css/brief.css")}">
+  <script src="${sitePath("js/adsense.js")}"></script>
   ${buildJsonLd(brief, titleEn, descEn)}
 </head>`;
 
   const back = LANGS.map(
-    (lang) => `<a href="../index.html#reading" class="lang-${lang}">${BACK_LABEL[lang]}</a>`
+    (lang) => `<a href="${sitePath("index.html")}#reading" class="lang-${lang}">${BACK_LABEL[lang]}</a>`
   ).join("\n    ");
 
   const h1s = LANGS.map((lang) => {
@@ -124,7 +125,7 @@ function buildBriefPage(brief) {
   }).join("\n  ");
 
   const body = `<body class="locale-en">
-  <script src="../js/i18n.js"></script>
+  <script src="${sitePath("js/i18n.js")}"></script>
   <div class="top">
     ${back}
     <div class="lang-switch">
@@ -164,13 +165,13 @@ function buildBriefIndex(briefs) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="${sitePath("favicon.svg")}" type="image/svg+xml" sizes="any">
   <meta name="description" content="Local brief pages for OpenAI, Anthropic, and DeepMind headlines — summaries on aogl.cn with links to originals.">
   <title>Official headline briefs — aogl.cn</title>
   <link rel="canonical" href="${SITE}/en/briefs/">
-  <link rel="stylesheet" href="../css/privacy.css">
-  <link rel="stylesheet" href="../css/brief.css">
-  <script src="../js/i18n.js"></script>
+  <link rel="stylesheet" href="${sitePath("css/privacy.css")}">
+  <link rel="stylesheet" href="${sitePath("css/brief.css")}">
+  <script src="${sitePath("js/i18n.js")}"></script>
 </head>
 <body class="locale-en">
   <div class="top">

@@ -297,33 +297,72 @@ function isNestedContentPage(filename) {
   return CONTENT_PATH_SEGMENTS.some((seg) => filename.startsWith(`${seg}/`));
 }
 
-/**
- * Nested templates use one "../" from _multilang/{articles|briefs|tool-guides|hub-links}/;
- * output may be foo.html, en/foo.html, or zh/tool-guides/bar.html.
- */
-function rewriteNestedAssetDepth($, filename, outDirSegment = "") {
-  if (!isNestedContentPage(filename)) return;
-  const rel = outDirSegment ? `${outDirSegment}/${filename}` : filename;
-  const depth = rel.split("/").filter(Boolean).length - 1;
-  const prefix = depth <= 0 ? "" : "../".repeat(depth);
+function stripRelativePrefix(pathPart) {
+  return pathPart.replace(/^(?:\.\.\/|\.\/)+/, "");
+}
+
+function isSiteRootAssetPath(clean) {
+  return (
+    clean.startsWith("css/") ||
+    clean.startsWith("js/") ||
+    clean.startsWith("upload/") ||
+    clean.startsWith("original/") ||
+    clean === "favicon.svg" ||
+    clean === "logo.svg" ||
+    clean === "footer-wordmark-outline.svg" ||
+    clean === "og-default.png"
+  );
+}
+
+/** css/js/upload/original/… → /css/… (immune to /en/briefs/ depth). */
+function rewriteSiteRootAssetRefs($) {
   const sel = "link[href], script[src], img[src], a[href], iframe[src], source[src]";
   $(sel).each((_, el) => {
     const $el = $(el);
     for (const a of ["href", "src"]) {
       const v = $el.attr(a);
       if (v == null || v === "") continue;
-      if (v.startsWith("http:") || v.startsWith("https:") || v.startsWith("mailto:") || v.startsWith("#") || v.startsWith("data:"))
-        continue;
-      if (v.startsWith("./")) {
-        const rest = v.replace(/^\.\/+/, "");
-        $el.attr(a, prefix + rest);
-        continue;
-      }
-      if (!v.startsWith("../")) continue;
-      const rest = v.replace(/^\.\.\/+/, "");
-      $el.attr(a, prefix + rest);
+      if (/^(https?:|mailto:|#|data:)/.test(v) || v.startsWith("/")) continue;
+      const hashIdx = v.indexOf("#");
+      const pathPart = hashIdx === -1 ? v : v.slice(0, hashIdx);
+      const hash = hashIdx === -1 ? "" : v.slice(hashIdx);
+      const clean = stripRelativePrefix(pathPart);
+      if (!isSiteRootAssetPath(clean)) continue;
+      $el.attr(a, `/${clean}${hash}`);
     }
   });
+}
+
+/** /index.html or ../../portal.html on en/briefs/ → /en/index.html, /en/portal.html */
+function rewriteLocaleStaticNavLinks($, outDirSegment) {
+  const staticHtml = new Set(STATIC_PAGES);
+  $("a[href]").each((_, el) => {
+    const $el = $(el);
+    const v = $el.attr("href");
+    if (v == null || v === "") return;
+    if (/^(https?:|mailto:|#)/.test(v)) return;
+    const hashIdx = v.indexOf("#");
+    const pathPart = hashIdx === -1 ? v : v.slice(0, hashIdx);
+    const hash = hashIdx === -1 ? "" : v.slice(hashIdx);
+    let file = null;
+    const rel = pathPart.match(/^(?:\.\.\/)+([a-z0-9_.-]+\.html)$/i);
+    if (rel) file = rel[1];
+    else if (pathPart.startsWith("/")) {
+      const clean = pathPart.slice(1);
+      if (outDirSegment && clean.startsWith(`${outDirSegment}/`)) return;
+      if (staticHtml.has(clean)) file = clean;
+    }
+    if (!file || !staticHtml.has(file)) return;
+    $el.attr("href", (outDirSegment ? `/${outDirSegment}/${file}` : `/${file}`) + hash);
+  });
+}
+
+function applyLocalePathRewrites($, filename, outDirSegment = "") {
+  rewriteSiteRootAssetRefs($);
+  if (isNestedContentPage(filename) || outDirSegment) {
+    rewriteLocaleStaticNavLinks($, outDirSegment);
+  }
+  rewriteLocaleContentLinks($, outDirSegment);
 }
 
 function replaceHreflangCluster($, filename) {
@@ -430,8 +469,7 @@ function transformSubfolderLocale(html, locale, filename, outDirSegment) {
   stripAlternateLocales($, locale);
   rootDataAttrsForLocale($, locale);
   absolutizeAssetRefs($);
-  rewriteNestedAssetDepth($, filename, outDirSegment ?? locale);
-  rewriteLocaleContentLinks($, outDirSegment ?? locale);
+  applyLocalePathRewrites($, filename, outDirSegment ?? locale);
   const can = urlLocale(locale, filename);
   applyLocaleHead($, locale, filename, can, {
     bodyClass: `locale-${locale}`,
@@ -447,8 +485,7 @@ function transformZhTraditional(html, filename) {
   stripAlternateLocales($, "zh");
   rootDataAttrsForLocale($, "zh");
   absolutizeAssetRefs($);
-  rewriteNestedAssetDepth($, filename, "zh");
-  rewriteLocaleContentLinks($, "zh");
+  applyLocalePathRewrites($, filename, "zh");
   applyLocaleHead($, "zht", filename, urlZhHant(filename), {
     bodyClass: "locale-zht",
     dataLang: "zht",
@@ -464,8 +501,7 @@ function transformRootSimplifiedZh(html, filename) {
   const $ = cheerio.load(html, { decodeEntities: false });
   stripAlternateLocales($, "zh");
   rootDataAttrsForLocale($, "zh");
-  rewriteNestedAssetDepth($, filename, "");
-  rewriteLocaleContentLinks($, "");
+  applyLocalePathRewrites($, filename, "");
   applyLocaleHead($, "zh", filename, urlZhCn(filename), {
     bodyClass: "locale-zh",
     dataLang: "zh",

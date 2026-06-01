@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en" data-title-en="Character design notes — turnaround, walk cycle &amp; motion demos — aogl.cn" data-desc-en="Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery." data-title-zh="角色设计手记：四视图、行走循环与动态演示 — aogl.cn" data-desc-zh="本站原创归档：同一角色的四视图 turnaround、角色表 character0–6、行走关键帧 walk1–9、浏览器内行走控制演示 walk.html，以及 walk / turnaround / character 等多段 MP4；附生成式风格锚点图，便于检索与分享。" data-title-ja="キャラクター設計メモ：三面図・歩行サイクル・モーション — aogl.cn" data-desc-ja="同一キャラの設計アーカイブ：四面ターンアラウンド、character0–6、歩行walk1–9、埋め込みwalk.html、MP4モーション検証と生成アンカー画像。" data-title-ko="캐릭터 디자인 노트: 턴어라운드·워크사이클·모션 — aogl.cn" data-desc-ko="한 캐릭터 파이프라인: 정·좌·후·우 뷰, character0–6, walk1–9, walk.html 임베드, MP4 모션과 생성 앵커 이미지." data-title-fr="Design de personnage — turnaround, marche en cycle et démos — aogl.cn" data-desc-fr="Archive d’un même personnage : turnaround orthographique, planches character0–6, poses walk1–9, démo walk.html intégrée, clips MP4 et images génératrices d’ancrage." data-title-ru="Дизайн персонажа — разворот, цикл ходьбы и ролики — aogl.cn" data-desc-ru="Архив одного персонажа: ортографический turnaround, листы character0–6, кадры walk1–9, встроенный walk.html, MP4-тесты и генеративные опорные кадры." data-title-ar="تصميم شخصية — جولان ودورة مشي وعروض حركة — aogl.cn" data-desc-ar="أرشيف شخصية واحدة: مناظر أمامية ويسرى وخلفية ويمين، أوراق character0–6، إطارات walk1–9، عرض walk.html مضمن، مقاطع MP4 وصور توليدية مرجعية."><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
   <meta name="description" content="Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery.">
   <title>Character design notes — turnaround, walk cycle &amp; motion demos — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/en/articles/character-turnaround-walk.html">
@@ -17,119 +17,119 @@
   <meta property="og:image:alt" content="Original character design — turnaround, walk cycle, and motion studies (aogl.cn)">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://aogl.cn/upload/articles/character-turnaround-walk.webp">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/hub.css">
-  <link rel="stylesheet" href="../css/article-hub.css">
-  <script src="../js/adsense.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+  <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"orthographic views · walk1–9 · embedded walk.html · MP4 clips","alternativeHeadline":"角色设计手记：四视图、行走循环与动态演示","datePublished":"2026-05-16","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/character-turnaround-walk.html"},"url":"https://aogl.cn/en/articles/character-turnaround-walk.html","inLanguage":"mul","description":"Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-en">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
-  <script src="../js/bg-canvas.js"></script>
-  <script src="../js/i18n.js"></script>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
   <header>
     <div class="head-row">
       <div class="brand">
       <h1 class="lang-en brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
         </h1>
       <h1 class="lang-zh brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
         </h1>
       <h1 class="lang-ja brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
         </h1>
       <h1 class="lang-ko brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
         </h1>
       <h1 class="lang-fr brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
         </h1>
       <h1 class="lang-ru brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
         </h1>
       <h1 class="lang-ar brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
         </h1>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <ul class="site-nav-list lang-en">
-          <li><a href="../index.html#tools-directory">AI frontier</a></li>
-          <li><a href="../portal.html">Top sites</a></li>
-          <li><a href="../brands.html">Brands</a></li>
-          <li><a href="../shopping.html">Shopping</a></li>
-          <li><a href="../life.html">Life</a></li>
-          <li><a href="../social.html">Social</a></li>
-          <li><a href="../tech.html">Tech</a></li>
-          <li><a href="../games.html">Games</a></li>
-          <li><a href="../tools.html">Utilities</a></li>
+          <li><a href="/index.html#tools-directory">AI frontier</a></li>
+          <li><a href="/portal.html">Top sites</a></li>
+          <li><a href="/brands.html">Brands</a></li>
+          <li><a href="/shopping.html">Shopping</a></li>
+          <li><a href="/life.html">Life</a></li>
+          <li><a href="/social.html">Social</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/tools.html">Utilities</a></li>
         </ul>
         <ul class="site-nav-list lang-zh">
-          <li><a href="../index.html#tools-directory">AI 前沿</a></li>
-          <li><a href="../portal.html">全球站点</a></li>
-          <li><a href="../brands.html">品牌</a></li>
-          <li><a href="../shopping.html">购物</a></li>
-          <li><a href="../life.html">生活</a></li>
-          <li><a href="../social.html">社交</a></li>
-          <li><a href="../tech.html">科技</a></li>
-          <li><a href="../games.html">游戏</a></li>
-          <li><a href="../tools.html">工具</a></li>
+          <li><a href="/index.html#tools-directory">AI 前沿</a></li>
+          <li><a href="/portal.html">全球站点</a></li>
+          <li><a href="/brands.html">品牌</a></li>
+          <li><a href="/shopping.html">购物</a></li>
+          <li><a href="/life.html">生活</a></li>
+          <li><a href="/social.html">社交</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tools.html">工具</a></li>
         </ul>
         <ul class="site-nav-list lang-ja">
-          <li><a href="../index.html#tools-directory">AI最前線</a></li>
-          <li><a href="../portal.html">主要サイト</a></li>
-          <li><a href="../brands.html">ブランド</a></li>
-          <li><a href="../shopping.html">ショッピング</a></li>
-          <li><a href="../life.html">ライフ</a></li>
-          <li><a href="../social.html">ソーシャル</a></li>
-          <li><a href="../tech.html">テック</a></li>
-          <li><a href="../games.html">ゲーム</a></li>
-          <li><a href="../tools.html">実用ツール</a></li>
+          <li><a href="/index.html#tools-directory">AI最前線</a></li>
+          <li><a href="/portal.html">主要サイト</a></li>
+          <li><a href="/brands.html">ブランド</a></li>
+          <li><a href="/shopping.html">ショッピング</a></li>
+          <li><a href="/life.html">ライフ</a></li>
+          <li><a href="/social.html">ソーシャル</a></li>
+          <li><a href="/tech.html">テック</a></li>
+          <li><a href="/games.html">ゲーム</a></li>
+          <li><a href="/tools.html">実用ツール</a></li>
         </ul>
         <ul class="site-nav-list lang-ko">
-          <li><a href="../index.html#tools-directory">AI 최전선</a></li>
-          <li><a href="../portal.html">주요 사이트</a></li>
-          <li><a href="../brands.html">브랜드</a></li>
-          <li><a href="../shopping.html">쇼핑</a></li>
-          <li><a href="../life.html">라이프</a></li>
-          <li><a href="../social.html">소셜</a></li>
-          <li><a href="../tech.html">테크</a></li>
-          <li><a href="../games.html">게임</a></li>
-          <li><a href="../tools.html">실용 도구</a></li>
+          <li><a href="/index.html#tools-directory">AI 최전선</a></li>
+          <li><a href="/portal.html">주요 사이트</a></li>
+          <li><a href="/brands.html">브랜드</a></li>
+          <li><a href="/shopping.html">쇼핑</a></li>
+          <li><a href="/life.html">라이프</a></li>
+          <li><a href="/social.html">소셜</a></li>
+          <li><a href="/tech.html">테크</a></li>
+          <li><a href="/games.html">게임</a></li>
+          <li><a href="/tools.html">실용 도구</a></li>
         </ul>
         <ul class="site-nav-list lang-fr">
-          <li><a href="../index.html#tools-directory">IA — veille</a></li>
-          <li><a href="../portal.html">Grands sites</a></li>
-          <li><a href="../brands.html">Marques</a></li>
-          <li><a href="../shopping.html">Shopping</a></li>
-          <li><a href="../life.html">Vie</a></li>
-          <li><a href="../social.html">Social</a></li>
-          <li><a href="../tech.html">Tech</a></li>
-          <li><a href="../games.html">Jeux</a></li>
-          <li><a href="../tools.html">Utilitaires</a></li>
+          <li><a href="/index.html#tools-directory">IA — veille</a></li>
+          <li><a href="/portal.html">Grands sites</a></li>
+          <li><a href="/brands.html">Marques</a></li>
+          <li><a href="/shopping.html">Shopping</a></li>
+          <li><a href="/life.html">Vie</a></li>
+          <li><a href="/social.html">Social</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/games.html">Jeux</a></li>
+          <li><a href="/tools.html">Utilitaires</a></li>
         </ul>
         <ul class="site-nav-list lang-ru">
-          <li><a href="../index.html#tools-directory">ИИ — новинки</a></li>
-          <li><a href="../portal.html">Топ сайтов</a></li>
-          <li><a href="../brands.html">Бренды</a></li>
-          <li><a href="../shopping.html">Шопинг</a></li>
-          <li><a href="../life.html">Сервисы</a></li>
-          <li><a href="../social.html">Соцсети</a></li>
-          <li><a href="../tech.html">Техно</a></li>
-          <li><a href="../games.html">Игры</a></li>
-          <li><a href="../tools.html">Утилиты</a></li>
+          <li><a href="/index.html#tools-directory">ИИ — новинки</a></li>
+          <li><a href="/portal.html">Топ сайтов</a></li>
+          <li><a href="/brands.html">Бренды</a></li>
+          <li><a href="/shopping.html">Шопинг</a></li>
+          <li><a href="/life.html">Сервисы</a></li>
+          <li><a href="/social.html">Соцсети</a></li>
+          <li><a href="/tech.html">Техно</a></li>
+          <li><a href="/games.html">Игры</a></li>
+          <li><a href="/tools.html">Утилиты</a></li>
         </ul>
         <ul class="site-nav-list lang-ar">
-          <li><a href="../index.html#tools-directory">أحدث الذكاء الاصطناعي</a></li>
-          <li><a href="../portal.html">أبرز المواقع</a></li>
-          <li><a href="../brands.html">العلامات</a></li>
-          <li><a href="../shopping.html">التسوق</a></li>
-          <li><a href="../life.html">الحياة الرقمية</a></li>
-          <li><a href="../social.html">التواصل</a></li>
-          <li><a href="../tech.html">التقنية</a></li>
-          <li><a href="../games.html">الألعاب</a></li>
-          <li><a href="../tools.html">أدوات مساعدة</a></li>
+          <li><a href="/index.html#tools-directory">أحدث الذكاء الاصطناعي</a></li>
+          <li><a href="/portal.html">أبرز المواقع</a></li>
+          <li><a href="/brands.html">العلامات</a></li>
+          <li><a href="/shopping.html">التسوق</a></li>
+          <li><a href="/life.html">الحياة الرقمية</a></li>
+          <li><a href="/social.html">التواصل</a></li>
+          <li><a href="/tech.html">التقنية</a></li>
+          <li><a href="/games.html">الألعاب</a></li>
+          <li><a href="/tools.html">أدوات مساعدة</a></li>
         </ul>
       </nav>
       <div class="lang-switch">
@@ -140,7 +140,7 @@
   <main class="article-shell hub-main wrap" id="main">
     <div class="lang-en">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← Back to home · Editorial originals</a>
+        <a href="/index.html#originals">← Back to home · Editorial originals</a>
       </div>
       <div class="article-shell__header">
         <h1>Character design notes — turnaround, walk cycle &amp; motion demos</h1>
@@ -251,7 +251,7 @@
     </div>
     <div class="lang-zh">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← 返回首页 · 本站原创</a>
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
       </div>
       <div class="article-shell__header">
         <h1>角色设计手记：四视图、行走循环与动态演示</h1>
@@ -343,7 +343,7 @@
     </div>
     <div class="lang-ja">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← ホームへ · オリジナル</a>
+        <a href="/index.html#originals">← ホームへ · オリジナル</a>
       </div>
       <div class="article-shell__header">
         <h1>キャラクター設計メモ：三面図・歩行サイクル・モーション</h1>
@@ -433,7 +433,7 @@
     </div>
     <div class="lang-ko">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← 홈으로 · 오리지널</a>
+        <a href="/index.html#originals">← 홈으로 · 오리지널</a>
       </div>
       <div class="article-shell__header">
         <h1>캐릭터 디자인 노트: 턴어라운드·워크사이클·모션</h1>
@@ -520,7 +520,7 @@
     </div>
     <div class="lang-fr">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← Accueil · contenus originaux</a>
+        <a href="/index.html#originals">← Accueil · contenus originaux</a>
       </div>
       <div class="article-shell__header">
         <h1>Design de personnage — turnaround, marche en cycle et démos</h1>
@@ -607,7 +607,7 @@
     </div>
     <div class="lang-ru">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← На главную · оригиналы</a>
+        <a href="/index.html#originals">← На главную · оригиналы</a>
       </div>
       <div class="article-shell__header">
         <h1>Дизайн персонажа — разворот, цикл ходьбы и ролики</h1>
@@ -694,7 +694,7 @@
     </div>
     <div class="lang-ar">
       <div class="article-shell__top">
-        <a href="../index.html#originals">← الرئيسية · محتوى أصلي</a>
+        <a href="/index.html#originals">← الرئيسية · محتوى أصلي</a>
       </div>
       <div class="article-shell__header">
         <h1>تصميم شخصية — جولان ودورة مشي وعروض حركة</h1>
@@ -788,37 +788,37 @@
         </div>
       </div>
       <div class="footer-watermark" aria-hidden="true">
-        <img src="../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
       </div>
       <div class="footer-legal">
-        <a href="../about.html" class="footer-legal-link lang-en">About</a>
-        <a href="../contact.html" class="footer-legal-link lang-en">Contact</a>
-        <a href="../changelog.html" class="footer-legal-link lang-en">Changelog</a>
-        <a href="../privacy.html" class="footer-legal-link lang-en">Privacy</a>
-        <a href="../about.html" class="footer-legal-link lang-zh">关于</a>
-        <a href="../contact.html" class="footer-legal-link lang-zh">联系我们</a>
-        <a href="../changelog.html" class="footer-legal-link lang-zh">更新记录</a>
-        <a href="../privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
-        <a href="../about.html" class="footer-legal-link lang-ja">概要</a>
-        <a href="../contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
-        <a href="../changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
-        <a href="../privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
-        <a href="../about.html" class="footer-legal-link lang-ko">소개</a>
-        <a href="../contact.html" class="footer-legal-link lang-ko">문의</a>
-        <a href="../changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
-        <a href="../privacy.html" class="footer-legal-link lang-ko">개인정보</a>
-        <a href="../about.html" class="footer-legal-link lang-fr">À propos</a>
-        <a href="../contact.html" class="footer-legal-link lang-fr">Contact</a>
-        <a href="../changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
-        <a href="../privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
-        <a href="../about.html" class="footer-legal-link lang-ru">О сайте</a>
-        <a href="../contact.html" class="footer-legal-link lang-ru">Контакты</a>
-        <a href="../changelog.html" class="footer-legal-link lang-ru">Обновления</a>
-        <a href="../privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
-        <a href="../about.html" class="footer-legal-link lang-ar">حول الموقع</a>
-        <a href="../contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
-        <a href="../changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
-        <a href="../privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <a href="/about.html" class="footer-legal-link lang-en">About</a>
+        <a href="/contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="/privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="/contact.html" class="footer-legal-link lang-ko">문의</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="/about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="/contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="/privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="/about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="/contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="/about.html" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="/contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-en" target="_blank" rel="noopener noreferrer">aoglang</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
@@ -830,5 +830,5 @@
       </div>
     </div>
   </footer>
-  <script src="../js/hub-common.js" defer></script>
+  <script src="/js/hub-common.js" defer></script>
 </body></html>

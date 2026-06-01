@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja" data-title-ja="インタラクティブ3D地球ビューア — aogl.cn" data-desc-ja="当サイトオリジナルWebGL：Three.jsによるリアルタイム3D地球。ブルーマーブル地形・凹凸・水鏡・雲レイヤーと大気リムシェーダー。ドラッグ回転・ホイールズーム。地理・科普向け。" data-aogl-lang="ja" data-aogl-seo-locale="1"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
   <meta name="description" content="当サイトオリジナルWebGL：Three.jsによるリアルタイム3D地球。ブルーマーブル地形・凹凸・水鏡・雲レイヤーと大気リムシェーダー。ドラッグ回転・ホイールズーム。地理・科普向け。">
   <title>インタラクティブ3D地球ビューア — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/ja/articles/interactive-3d-earth.html">
@@ -26,35 +26,35 @@
   <meta property="og:image:alt" content="Interactive 3D Earth — WebGL globe with clouds and atmospheric glow">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://aogl.cn/upload/articles/interactive-3d-earth.webp">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/hub.css">
-  <link rel="stylesheet" href="../../css/article-hub.css">
-  <script src="../../js/adsense.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+  <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ja/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/en/articles/interactive-3d-earth.html","inLanguage":"ja","description":"Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-ja">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
-  <script src="../../js/bg-canvas.js"></script>
-  <script src="../../js/i18n.js"></script>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
   <header>
     <div class="head-row">
       <div class="brand">
       <h1 class="lang-ja brand-logo-heading">
-          <a href="https://aogl.cn/" class="brand-logo-link"><img src="../../logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
         </h1>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <ul class="site-nav-list lang-ja">
-          <li><a href="../../index.html#tools-directory">AI最前線</a></li>
-          <li><a href="../../portal.html">主要サイト</a></li>
-          <li><a href="../../brands.html">ブランド</a></li>
-          <li><a href="../../shopping.html">ショッピング</a></li>
-          <li><a href="../../life.html">ライフ</a></li>
-          <li><a href="../../social.html">ソーシャル</a></li>
-          <li><a href="../../tech.html">テック</a></li>
-          <li><a href="../../games.html">ゲーム</a></li>
-          <li><a href="../../tools.html">実用ツール</a></li>
+          <li><a href="/ja/index.html#tools-directory">AI最前線</a></li>
+          <li><a href="/ja/portal.html">主要サイト</a></li>
+          <li><a href="/ja/brands.html">ブランド</a></li>
+          <li><a href="/ja/shopping.html">ショッピング</a></li>
+          <li><a href="/ja/life.html">ライフ</a></li>
+          <li><a href="/ja/social.html">ソーシャル</a></li>
+          <li><a href="/ja/tech.html">テック</a></li>
+          <li><a href="/ja/games.html">ゲーム</a></li>
+          <li><a href="/ja/tools.html">実用ツール</a></li>
         </ul>
       </nav>
       <div class="lang-switch">
@@ -65,7 +65,7 @@
   <main class="article-shell hub-main wrap" id="main">
     <div class="lang-ja">
       <div class="article-shell__top">
-        <a href="../../index.html#originals">← ホームへ · オリジナル</a>
+        <a href="/ja/index.html#originals">← ホームへ · オリジナル</a>
       </div>
       <div class="article-shell__header">
         <h1>インタラクティブ3D地球ビューア</h1>
@@ -76,7 +76,7 @@
 <h2>ライブ地球を操作</h2>
 <p>マウス<strong>ドラッグ</strong>で周回、<strong>ホイール</strong>でズーム。ブラウザ内完結でプラグイン不要です。</p>
 <figure class="article-embed">
-  <iframe src="../../original/earth/interactive-3d-earth.html" title="インタラクティブ3D地球 — WebGLデモ" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+  <iframe src="/original/earth/interactive-3d-earth.html" title="インタラクティブ3D地球 — WebGLデモ" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
   <figcaption>埋め込みWebGLビューア：Three.jsの地球・雲・大気のグロー。</figcaption>
 </figure>
 <h2>SEO観点のポイント</h2>
@@ -98,17 +98,17 @@
         </div>
       </div>
       <div class="footer-watermark" aria-hidden="true">
-        <img src="../../footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
       </div>
       <div class="footer-legal">
-        <a href="../../about.html" class="footer-legal-link lang-ja">概要</a>
-        <a href="../../contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
-        <a href="../../changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
-        <a href="../../privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/ja/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/ja/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/ja/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/ja/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
         <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
         <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
       </div>
     </div>
   </footer>
-  <script src="../../js/hub-common.js" defer=""></script>
+  <script src="/js/hub-common.js" defer=""></script>
 </body></html>
