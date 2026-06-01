@@ -195,7 +195,19 @@
   <li>Keep stable filenames so your CMS or custom viewer can reference them.</li>
   <li>Publish with semantic headings, figure/figcaption around the recording, and honest scope in the lead paragraph—helps queries like <em>360 panorama</em>, <em>equirectangular interior</em>, <em>virtual tour recording</em>.</li>
 </ol>
-<p>I skip a “top ten panorama plugins” roundup here. Plugins churn; documenting <strong>your scene files and naming</strong> ages better and reads as maintainer-written, which is what I want this archive to look like.</p></article>
+<p>I skip a “top ten panorama plugins” roundup here. Plugins churn; documenting <strong>your scene files and naming</strong> ages better and reads as maintainer-written, which is what I want this archive to look like.</p>
+
+<h2>How the four rooms connect in v360.mp4</h2>
+<p>The recording is a single continuous path: living room opens on park-side glazing, then a hard cut through the dining threshold (chandelier visible), into the island kitchen (copper pans as a color accent), and finally the master bedroom with skyline exposure. I did not use dissolve transitions—hard cuts make it obvious each PNG still matches a distinct equirectangular file. When I scrub the MP4 slowly, I check that vertical lines (door frames, island edge) stay vertical; if they barrel, the source panorama was stitched with the wrong projection and I re-export before publishing.</p>
+
+<h2>Export settings I write on the tin</h2>
+<p>Each still is exported at roughly <strong>8192×4096</strong> working resolution, then downscaled to web-friendly dimensions for this article gallery. I keep filenames lowercase with hyphens (<code>dining-room.png</code>) so Linux hosting and GitHub Pages stay case-safe. Alpha is unnecessary for interior spheres—RGB only. For the MP4 I use H.264 with a poster frame pulled from the living room still so first paint is not black; audio is omitted because this is a visual asset pack, not a narrated tour.</p>
+
+<h2>Future interactive shell (not shipped)</h2>
+<p>A draggable WebGL viewer would reuse the same four maps on an inverted sphere with <code>MeshBasicMaterial</code> to preserve baked lighting. I have not shipped that HTML on aogl.cn because mobile GPU memory and gesture UX need another honest article—not a silent iframe swap. When I do ship it, this page will gain a second embed and a short “what changed from v360-only” section rather than replacing the video, so older links keep working.</p>
+
+<h2>SEO and honesty boundaries</h2>
+<p>Queries like <em>apartment 360 tour</em> or <em>equirectangular interior</em> should land on a page that states clearly these are <strong>staging renders</strong>, not a listing at a real address. That boundary protects trust and matches how I describe the <a href="in-car-view-train-window-scenery.html">train window composite</a> and <a href="sky-plane-window-cloud-composite.html">plane window composite</a> articles: synthetic plates with explicit scope in the lead paragraph.</p></article>
     </div>
     <div class="lang-zh">
       <div class="article-shell__top">

@@ -88,3 +88,17 @@
 
 <h2>Relationship to the monkey short article</h2>
 <p>This sprite rig is a technical spin-off from the same character family as <a href="monkey-short-bts.html">monkey short BTS</a>, but the deliverables differ: here I care about angular fidelity and file size, there I care about story beats. Keeping them as separate URLs stops one page from becoming a grab bag of unrelated MP4s—a pattern AdSense tends to classify as thin even when assets are large.</p>
+
+<h2>Frame index math in the demo</h2>
+<p>Given a 10×12 grid, frame index <code>i</code> maps to column <code>i % 10</code> and row <code>floor(i / 10)</code>. Background position is <code>-col * frameWidth</code>, <code>-row * frameHeight</code>. The lookup table maps compass buckets (N, NE, E, …) to indices—not to degrees—so profile frames get more entries than head-on frames. Documenting that table in <code>txt.txt</code> saved me from re-deriving angles after every re-export.</p>
+
+<h2>Memory and network budget</h2>
+<p><code>sprite_hd_120.webp</code> is the heaviest asset; I lazy-load the iframe and keep lighter <code>sprite.webp</code> in the gallery for comparison screenshots. On slow networks the demo still paints frame 0 from the front reference while the grid decodes. I avoid loading all three WebP masters inside one iframe—only the 120-frame grid ships in production HTML.</p>
+
+<h2>QA script I run before publishing</h2>
+<ol>
+  <li>Move pointer to eight compass points + center; note frame index in devtools.</li>
+  <li>Leave box; confirm custom cursor hides and layers ease to neutral.</li>
+  <li>Reload page with cache disabled once after any sprite re-export.</li>
+</ol>
+<p>Passing that script is my definition of “done” for this article—not perfect lip-sync or game-ready rigging. I also snapshot the final frame index in a one-line commit message whenever I replace the WebP master so rollback stays obvious.</p>

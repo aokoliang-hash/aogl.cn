@@ -247,7 +247,16 @@
   <li>MP4 masters have posters so mobile users see a still before decoding video.</li>
 </ul>
 <p>That checklist is why this article exists as a long HTML page instead of a folder dump: reviewers and future-me both need the “why kept / why cut” story, not only assets.</p>
-<p>If you fork this pipeline, start by publishing the four orthographic PNGs plus one walk cycle strip before you upload any MP4—static proof of rigor ranks better than a single autoplay clip with no context.</p></article>
+<p>If you fork this pipeline, start by publishing the four orthographic PNGs plus one walk cycle strip before you upload any MP4—static proof of rigor ranks better than a single autoplay clip with no context.</p>
+
+<h2>Orthographic camera setup</h2>
+<p>I render turnaround views with a parallel projection (no perspective foreshortening) so hem lines and shoulder width match across front, left, back, and right. The Chinese filenames (<code>正面1.png</code>, etc.) mirror the order I use in design reviews: front first, then left profile, back, right. When I export exploration sheets <code>character0–6</code>, I reuse the same camera distance so scale drift is obvious—if the head grows by even a few pixels, the sheet fails the checklist below.</p>
+
+<h2>Walk cycle timing notes</h2>
+<p>Nine frames imply an odd count contact/pass layout: frames 1 and 5 are contacts, 3 and 7 are passing positions. I flip-book test by toggling between 1 and 5 in the OS image viewer before encoding video. The canvas demo does not interpolate between PNGs—it snaps indices—because interpolation blurred shoe contact on early prototypes.</p>
+
+<h2>Scope boundary for this URL</h2>
+<p><code>character-video2.mp4</code> and extra turnaround PNGs on disk are experiments that did not change the published teaching path. I mention them once so nobody assumes the repo is incomplete; I do not embed every MP4 because that would dilute the article’s focus on turnaround + walk discipline.</p></article>
     </div>
     <div class="lang-zh">
       <div class="article-shell__top">

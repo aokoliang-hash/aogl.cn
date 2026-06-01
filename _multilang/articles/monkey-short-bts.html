@@ -208,7 +208,16 @@
   <li>Poster frame on the video element points at keyframe 5—mid-energy read without spoilers.</li>
   <li>All public assets live under <code>original/monkey/</code> with stable names for deep links.</li>
 </ul>
-<p>That discipline is the same reason the follow-up <a href="monkey2-sprite-head-track.html">head-tracking sprite</a> article exists separately: different experiment, different success criteria, both with their own write-ups.</p></article>
+<p>That discipline is the same reason the follow-up <a href="monkey2-sprite-head-track.html">head-tracking sprite</a> article exists separately: different experiment, different success criteria, both with their own write-ups.</p>
+
+<h2>Timeline editing in practice</h2>
+<p>I cut in a non-linear editor with the nine PNGs pinned as reference stills on a secondary track—never as the only source—so timing drift is visible. Hold lengths: frames 1–3 get longer holds (establishing), frames 4–6 shorter (motion), frames 7–9 medium (payoff). Total runtime stays under thirty seconds so the MP4 stays small enough for static hosting without a CDN transcode pipeline. If a beat needed an extra half-second, I extended the hold on the preceding keyframe rather than adding a tenth “bonus” still that would confuse the numbered spine.</p>
+
+<h2>File naming and git hygiene</h2>
+<p>Numbered keyframes use simple integers (<code>1.png</code> … <code>9.png</code>). Generative look-dev files keep vendor prefixes (<code>Gemini_Generated_Image_*</code>) so I can grep them separately from authored art. The master video is always <code>monkey-v.mp4</code>; I do not version in the filename—git history is the version log. Poster on the video element points at frame 5 because it is mid-energy without spoiling the closing gag.</p>
+
+<h2>What I would not publish here</h2>
+<p>I keep draft audio, alternate aspect ratios, and client-style logo slates off the public folder. aogl.cn articles are maintainer-written archives, not a Behance clone with every WIP layer exposed. If a file does not help someone understand the shipped short, it stays local.</p></article>
     </div>
     <div class="lang-zh">
       <div class="article-shell__top">

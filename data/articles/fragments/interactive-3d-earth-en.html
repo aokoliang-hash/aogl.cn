@@ -39,3 +39,18 @@
 
 <h2>What I would do next</h2>
 <p>Time permitting I will add a short “known limits” list inside the embed (polar pinch, no night lights) and link outward to the <a href="major-planets8-solar-system-textures.html">eight-planet texture atlas</a> article where I document equirectangular assets for the rest of the solar system. For now this page’s job is to prove the globe is maintained, not to compete with NASA’s own apps.</p>
+
+<h2>Atmosphere shader in one paragraph</h2>
+<p>The rim glow is a Fresnel-weighted mix: facing the camera gets less tint, grazing angles pick up a saturated blue. I keep intensity low so the effect reads on dark article backgrounds without blowing out Africa on the day side. No bloom pass—just one extra draw call for the atmosphere shell—so mid-tier GPUs stay smooth when the iframe is only part of a long article page.</p>
+
+<h2>Texture pipeline and CDN</h2>
+<p>Color, bump, and specular maps load from stable HTTPS URLs referenced in the demo source. When a CDN hiccups, the globe still renders with flat color but loses relief; I note that in comments so future-me does not chase a “broken shader” that is really a 404 on bump. Specular is masked to oceans only so continents do not look wet. Clouds rotate slightly faster than the surface for parallax separation—a cheap trick that reads better than a single shell.</p>
+
+<h2>Publishing checklist (Earth-specific)</h2>
+<ul>
+  <li>Article prose outside iframe explains stack, limits, and file paths.</li>
+  <li>iframe <code>loading="lazy"</code> on listing pages; eager only if this URL is opened directly.</li>
+  <li><code>dateModified</code> bumped when demo textures or controls change.</li>
+  <li>Cross-link to planet atlas for readers who want real ephemeris data, not a toy globe.</li>
+</ul>
+<p>That checklist mirrors what I already do on composite articles—consistent maintainer voice across the twelve originals matters more than one perfect WebGL demo in isolation.</p>

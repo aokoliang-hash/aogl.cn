@@ -60,3 +60,12 @@
 
 <h2>Why this stays separate from Major planets</h2>
 <p>The <a href="major-planets8-solar-system-textures.html">eight-planet texture atlas</a> documents real equirectangular maps for Earth and neighbors. Velmora is the sandbox planet where I am allowed to break realism. Mixing both stories on one URL would confuse reviewers; splitting them makes each page’s intent obvious.</p>
+
+<h2>WebGL scene graph (plain language)</h2>
+<p>The embed uses Three.js r128 with a single directional light plus low ambient fill—enough to read banding without washing out the teal belts. The gas giant mesh uses a color map and a normal map so Thalum reads as relief instead of a flat decal. Clouds are a slightly larger sphere with partial transparency; rotation is user-driven via drag, not autoplay, so battery use on laptops stays modest. I cap pixel ratio at device default to avoid retina overdraw on 4K monitors when the iframe is only ~600px wide in the article column.</p>
+
+<h2>Texture authoring notes</h2>
+<p>Band colors were painted in passes: warm ferric zones first, then cool methane belts masked separately so I could nudge hue without repainting the whole sphere. Thalum’s spiral arms are a separate alpha stack blended in the shader—not a second mesh—so draw calls stay at one planet + one cloud shell. Keth and Soru remain table-only lore so scope stays shippable; if I add moon meshes later, this section will gain a paragraph on scale and orbit radius choices.</p>
+
+<h2>Maintenance contract with readers</h2>
+<p>When I change <code>velmora_3d_webgl.html</code>, I update <code>dateModified</code> on the article JSON and mention the change here in one sentence. That keeps AdSense reviewers and future-me aligned: the iframe is not a black box floating on a link farm page.</p>

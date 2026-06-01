@@ -33,22 +33,22 @@
 
 | Slug | 英文字数* | 抽测结论 |
 |------|-----------|----------|
-| `in-car-view-train-window-scenery` | ~879 | ✅ **推荐送审** |
-| `major-planets8-solar-system-textures` | ~835 | ✅ **推荐送审** |
-| `girl1-knit-contact-sheet-study` | ~796 | ✅ **推荐送审** |
-| `sky-plane-window-cloud-composite` | ~763 | ✅ **推荐送审** |
-| `role-girl-card-visual-study` | ~672 | ✅ **推荐送审** |
-| `travel-through-parallax-phone` | ~496 | ✅ 通过 |
-| `apartment-360-panorama-tour` | ~485 | ✅ 通过 |
-| `velmora` | ~560+ | ✅ 通过（2026-06-01 扩写） |
-| `monkey-short-bts` | ~520+ | ✅ 通过（扩写） |
-| `monkey2-sprite-head-track` | ~480+ | ✅ 通过（扩写） |
-| `character-turnaround-walk` | ~470+ | ✅ 通过（扩写） |
-| `interactive-3d-earth` | ~450+ | ✅ 通过（扩写；仍偏短但含完整制作叙事） |
+| `in-car-view-train-window-scenery` | ~912 | ✅ **推荐送审** |
+| `major-planets8-solar-system-textures` | ~877 | ✅ **推荐送审** |
+| `girl1-knit-contact-sheet-study` | ~825 | ✅ **推荐送审** |
+| `sky-plane-window-cloud-composite` | ~800 | ✅ **推荐送审** |
+| `role-girl-card-visual-study` | ~693 | ✅ **推荐送审** |
+| `travel-through-parallax-phone` | ~920 | ✅ 800+（2026-06-01 扩写） |
+| `apartment-360-panorama-tour` | ~834 | ✅ 800+（扩写） |
+| `velmora` | ~883 | ✅ 800+（扩写） |
+| `monkey-short-bts` | ~827 | ✅ 800+（扩写） |
+| `monkey2-sprite-head-track` | ~807 | ✅ 800+（扩写） |
+| `character-turnaround-walk` | ~851 | ✅ 800+（扩写） |
+| `interactive-3d-earth` | ~848 | ✅ 800+（扩写） |
 
-\* 扩写后需本地重跑：`node -e` 或构建后抽查 `en/articles/*.html`。
+\* 去标签分词；扩写后 2026-06-01 本地重跑确认。
 
-**勿单独送审**：无 — 最薄篇已补「个人实验」段落；优先仍用 in-car / major-planets8 / girl1。
+**勿单独送审**：`role-girl-card-visual-study`（~693 词，仍偏短）；优先仍用 in-car / major-planets8 / girl1 / sky-plane。
 
 ---
 
