@@ -25,6 +25,7 @@
     "sync-tool-guides": "node scripts/sync-tool-guides.mjs",
     "build-tool-guides": "node scripts/build-tool-guide-pages.mjs",
     "sync-hub-links": "node scripts/sync-hub-links.mjs",
+    "sync-hub-links:fetch": "node scripts/sync-hub-links-fetch.mjs --fetch",
     "build-hub-link-pages": "node scripts/build-hub-link-pages.mjs",
     "build-official-news": "node scripts/build-official-news-page.mjs",
     "inject-categories": "node scripts/inject-categories.mjs",

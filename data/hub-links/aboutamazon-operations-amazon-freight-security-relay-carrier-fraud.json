@@ -3,7 +3,7 @@
   "url": "https://www.aboutamazon.com/news/operations/amazon-freight-security-relay-carrier-fraud?utm_source=rss",
   "name_en": "Amazon",
   "name_zh": "亚马逊",
-  "title_en": "",
+  "title_en": "How Amazon protects cargo from fraud and theft across its shipping network",
   "title_zh": "",
   "domain": "aboutamazon.com",
   "hub": "brands",
@@ -15,5 +15,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Amazon evaluates carriers using rigorous security and safety standards, smart trailer technology, chain-of-custody controls, and law enforcement collaboration.",
+  "excerpt_zh": "Amazon evaluates carriers using rigorous security and safety standards, smart trailer technology, chain-of-custody controls, and law enforcement collaboration.",
+  "fetchedAt": "2026-06-01"
 }

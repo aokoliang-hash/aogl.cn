@@ -44,6 +44,14 @@
   padding-bottom: 0.85rem;
   border-bottom: 1px solid #e4e4e7;
 }
+.hub-index-hub-title {
+  margin: 1.75rem 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.hub-index-sections .brief-index-list:first-of-type {
+  margin-top: 0;
+}
 .brief-index-meta {
   display: block;
   font-size: 0.85rem;

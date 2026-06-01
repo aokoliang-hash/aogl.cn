@@ -3,7 +3,7 @@
   "url": "https://2xko.riotgames.com/en-us/news/game-updates/2xko-patch-notes-1-1-5",
   "name_en": "Riot Games",
   "name_zh": "拳头",
-  "title_en": "",
+  "title_en": "2XKO Patch Notes: 1.1.5 (Apr 7 2026)",
   "title_zh": "",
   "domain": "2xko.riotgames.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "2XKO’s new patch drops April 7, featuring Akali, Local Duos mode, a Spirit Blossom event, and more.",
+  "excerpt_zh": "2XKO’s new patch drops April 7, featuring Akali, Local Duos mode, a Spirit Blossom event, and more.",
+  "fetchedAt": "2026-06-01"
 }

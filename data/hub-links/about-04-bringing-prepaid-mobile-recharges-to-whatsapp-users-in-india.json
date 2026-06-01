@@ -3,7 +3,7 @@
   "url": "https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india",
   "name_en": "WhatsApp",
   "name_zh": "WhatsApp",
-  "title_en": "",
+  "title_en": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
   "title_zh": "",
   "domain": "about.fb.com",
   "hub": "portal",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "We're introducing the ability for people in India to complete prepaid mobile recharges directly within WhatsApp, making it easier to stay connected by getting an everyday essential done within the app they already use.",
+  "excerpt_zh": "We're introducing the ability for people in India to complete prepaid mobile recharges directly within WhatsApp, making it easier to stay connected by getting an everyday essential done within the app they already use.",
+  "fetchedAt": "2026-06-01"
 }

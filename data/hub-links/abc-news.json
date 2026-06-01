@@ -1,8 +1,8 @@
 {
   "slug": "abc-news",
   "url": "https://www.abc.net.au/news",
-  "name_en": "",
-  "name_zh": "",
+  "name_en": "ABC News (Australia)",
+  "name_zh": "澳大利亚广播公司新闻",
   "title_en": "",
   "title_zh": "",
   "domain": "abc.net.au",

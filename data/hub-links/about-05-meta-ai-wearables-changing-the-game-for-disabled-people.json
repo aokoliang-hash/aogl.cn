@@ -3,7 +3,7 @@
   "url": "https://about.fb.com/news/2026/05/meta-ai-wearables-changing-the-game-for-disabled-people",
   "name_en": "Facebook / Meta",
   "name_zh": "Facebook / Meta",
-  "title_en": "",
+  "title_en": "Our AI Wearables Are “Changing the Game” for Disabled People",
   "title_zh": "",
   "domain": "about.fb.com",
   "hub": "portal",
@@ -16,5 +16,8 @@
     "news",
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "We're rolling out new features on our AI glasses that make the technology more accessible to people with disabilities.",
+  "excerpt_zh": "We're rolling out new features on our AI glasses that make the technology more accessible to people with disabilities.",
+  "fetchedAt": "2026-06-01"
 }

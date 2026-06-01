@@ -3,7 +3,7 @@
   "url": "https://about.fb.com/news/2026/05/from-scroll-to-chat-to-cart-trends-reshaping-how-india-shops",
   "name_en": "Facebook / Meta",
   "name_zh": "Facebook / Meta",
-  "title_en": "",
+  "title_en": "From Scroll to Chat to Cart: Trends Reshaping How India Shops",
   "title_zh": "",
   "domain": "about.fb.com",
   "hub": "social",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "On the sidelines of the 2026 Meta Marketing Summit E-Commerce edition, we are sharing key trends shaping the future of shopping in India — from the rise of AI-powered discovery and video-first commerce to the growing role of conversational messaging in driving transactions.",
+  "excerpt_zh": "On the sidelines of the 2026 Meta Marketing Summit E-Commerce edition, we are sharing key trends shaping the future of shopping in India — from the rise of AI-powered discovery and video-first commerce to the growing role of conversational messaging in driving transactions.",
+  "fetchedAt": "2026-06-01"
 }

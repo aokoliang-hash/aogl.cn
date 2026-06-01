@@ -1,7 +1,7 @@
 # Hub 栏目外链本地化实施方案
 
 > 版本：2026-06-01  
-> 状态：一期 + 二期 **已实施**（2026-06-01）  
+> 状态：一期 + 二期 + 三期 **已实施**（2026-06-01）  
 > 关联：`docs/AdSense过审改动清单.md`、`tool-guides/`、`briefs/` 已上线模式
 
 ---
@@ -52,7 +52,7 @@ Hub 页本身已有 **4 段站长编辑说明**（`data/hubs/*.json` → `editor
 |------|------|------|
 | **一期** | top10 + more + newsGroups 本地化 | `data/hub-links/`、`hub-links/*.html`、Hub 构建改 href |
 | **二期** | hotMix：已有 `briefs` 的链 brief，其余进 hub-links | `sync` 去重、Hot mix 卡片改 href |
-| **三期**（可选） | 从 `og:description` 拉摘要、`hub-links/index.html` 总索引 | `npm run sync-hub-links:fetch` |
+| **三期** | 从 `og:description` 拉摘要、`hub-links/index.html` 总索引 | `npm run sync-hub-links:fetch` |
 
 ---
 
@@ -143,6 +143,8 @@ sync-hub-links → build-hub-link-pages → build-hubs → build-seo-locales
 | `scripts/sync-hub-links.mjs` | 从 hubs JSON 收集并写入 `data/hub-links/` |
 | `scripts/build-hub-link-pages.mjs` | 输出 `_multilang/hub-links/*.html` |
 | `scripts/test-i18n-paths.mjs` | 增加 `hub-links` 用例 |
+| `scripts/fetch-page-meta.mjs` | 共用 og 元数据抓取 |
+| `scripts/sync-hub-links-fetch.mjs` | `npm run sync-hub-links:fetch` |
 
 ---
 
@@ -154,6 +156,8 @@ sync-hub-links → build-hub-link-pages → build-hubs → build-seo-locales
 - [x] social / games 的 Hot mix 卡片：有 brief 的 → `briefs/`；无 brief 的 → `hub-links/`。
 - [x] 简介页文末外链可打开正确官网。
 - [x] 右上角语言切换：简体 / 繁体 / en 等路径含 `hub-links` 子路径与 `/aogl.cn` 部署前缀。
+- [x] `hub-links/index.html` 按 Hub 分组列出全部简介页（`/en/hub-links/index.html`）。
+- [x] `npm run sync-hub-links:fetch` 可将 `og:description` 写入 `data/hub-links/*.json` 的 `excerpt_*` 并用于正文。
 
 ### 5.2 构建
 
@@ -199,6 +203,7 @@ npm run build-site
 |------|------|------|
 | 2026-06-01 | 文档 | 初版 |
 | 2026-06-01 | 一期+二期 | 按 §3–§5 落地代码与构建 |
+| 2026-06-01 | 三期 | `sync-hub-links:fetch`、`hub-links/index.html`、简介页 excerpt 段落；修复 hub JSON `nameEn` 同步 |
 
 ---
 

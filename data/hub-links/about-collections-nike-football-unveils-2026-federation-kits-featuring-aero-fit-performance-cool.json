@@ -3,7 +3,7 @@
   "url": "https://about.nike.com/newsroom/collections/nike-football-unveils-2026-federation-kits-featuring-aero-fit-performance-cooling-technology",
   "name_en": "Nike",
   "name_zh": "耐克",
-  "title_en": "",
+  "title_en": "Nike Football Unveils 2026 Federation Kits, Engineered With Aero-FIT for the World’s Greatest Stage",
   "title_zh": "",
   "domain": "about.nike.com",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "As football fans around the world turn their eyes to the game’s biggest stage this summer, Nike is setting a new standard for national team kit design: merging pinnacle cooling innovation with time-honored tradition and bold visions for the future.",
+  "excerpt_zh": "As football fans around the world turn their eyes to the game’s biggest stage this summer, Nike is setting a new standard for national team kit design: merging pinnacle cooling innovation with time-honored tradition and bold visions for the future.",
+  "fetchedAt": "2026-06-01"
 }

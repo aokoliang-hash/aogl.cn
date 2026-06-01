@@ -1,8 +1,8 @@
 {
   "slug": "weather-post",
   "url": "https://weather.com",
-  "name_en": "",
-  "name_zh": "",
+  "name_en": "The Weather Channel",
+  "name_zh": "天气频道",
   "title_en": "",
   "title_zh": "",
   "domain": "weather.com",

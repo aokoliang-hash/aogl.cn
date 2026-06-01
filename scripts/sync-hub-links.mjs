@@ -65,6 +65,8 @@ function main() {
         hubs: meta.hubs,
         kind: meta.kinds[0],
         kinds: meta.kinds,
+        excerpt_en: "",
+        excerpt_zh: "",
         updated: new Date().toISOString().slice(0, 10),
       };
     } else {

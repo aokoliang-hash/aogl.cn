@@ -3,7 +3,7 @@
   "url": "https://www.airbnb.com/help/article/4",
   "name_en": "Airbnb",
   "name_zh": "Airbnb",
-  "title_en": "",
+  "title_en": "How Airbnb builds trust between hosts and guests - Airbnb Help Center",
   "title_zh": "",
   "domain": "airbnb.com",
   "hub": "life",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "We offer features that help build trust, including our secure messaging system, reviews, AirCover for hosts and guests, and more.",
+  "excerpt_zh": "We offer features that help build trust, including our secure messaging system, reviews, AirCover for hosts and guests, and more.",
+  "fetchedAt": "2026-06-01"
 }

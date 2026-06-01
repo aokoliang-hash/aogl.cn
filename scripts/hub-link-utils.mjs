@@ -110,8 +110,24 @@ export function displayTitle(link, lang) {
 export function linkDesc(link, lang) {
   const title = displayTitle(link, lang);
   const hub = hubLabel(link.hub, lang);
+  const rawExcerpt = (lang === "zh" ? link.excerpt_zh : link.excerpt_en) || link.excerpt_en || "";
+  const excerpt = String(rawExcerpt).trim();
+  if (excerpt.length > 40) {
+    const short = excerpt.length > 155 ? `${excerpt.slice(0, 152)}…` : excerpt;
+    return lang === "zh"
+      ? `${title}（${hub}）— ${short}`
+      : `${title} (${hub}) — ${short}`;
+  }
   if (lang === "zh") return `${title}（${hub}）— aogl.cn 书签简介与官网跳转。`;
   return `${title} (${hub}) — bookmark brief on aogl.cn with link to the official site.`;
+}
+
+function hubDefaultSummary(title, hub, lang) {
+  const catLabel = hubLabel(hub, lang);
+  if (lang === "zh") {
+    return `「${title}」收录在「${catLabel}」Hub。本站根据公开页面摘要整理语境，便于核对后再打开官网；功能、价格与条款以外链为准。`;
+  }
+  return `"${title}" is listed on the ${catLabel} hub. This page adds scanning context from public summaries on aogl.cn; live terms stay on the official site.`;
 }
 
 export function buildHubLinkBodyHtml(link, lang) {
@@ -120,6 +136,9 @@ export function buildHubLinkBodyHtml(link, lang) {
   const ctx = HUB_CONTEXT[hub] || HUB_CONTEXT.portal;
   const catLabel = hubLabel(hub, lang);
   const domain = link.domain || "";
+  const rawExcerpt = (lang === "zh" ? link.excerpt_zh : link.excerpt_en) || link.excerpt_en || "";
+  const excerpt = String(rawExcerpt).trim();
+  const summary = excerpt.length > 40 ? excerpt : hubDefaultSummary(title, hub, lang);
 
   const note =
     lang === "zh"
@@ -128,8 +147,10 @@ export function buildHubLinkBodyHtml(link, lang) {
 
   const intro =
     lang === "zh"
-      ? `<p><strong>${escHtml(title)}</strong> 收录在「${escHtml(catLabel)}」Hub（${escHtml(ctx.zh)}）。便于先了解语境，再打开下方官网链接。</p>`
-      : `<p><strong>${escHtml(title)}</strong> is listed on the “${escHtml(catLabel)}” hub (${escHtml(ctx.en)}). Skim here, then use the official link below.</p>`;
+      ? `<p><strong>${escHtml(title)}</strong> 收录在「${escHtml(catLabel)}」Hub（${escHtml(ctx.zh)}）。</p>`
+      : `<p><strong>${escHtml(title)}</strong> is listed on the “${escHtml(catLabel)}” hub (${escHtml(ctx.en)}).</p>`;
+
+  const summaryP = `<p>${escHtml(summary)}</p>`;
 
   const uses = (lang === "zh" ? ctx.uses_zh : ctx.uses_en)
     .map((u) => `<li>${escHtml(u)}</li>`)
@@ -140,7 +161,19 @@ export function buildHubLinkBodyHtml(link, lang) {
       ? `<p>主域名：<code>${escHtml(domain)}</code>。请通过下方按钮访问官网获取最新页面与账户设置。</p>`
       : `<p>Primary domain: <code>${escHtml(domain)}</code>. Open the official site below for live pages and account settings.</p>`;
 
-  return `${note}${intro}<h2>${escHtml(usesH)}</h2><ul class="brief-bullets">${uses}</ul>${domainP}`;
+  return `${note}${intro}${summaryP}<h2>${escHtml(usesH)}</h2><ul class="brief-bullets">${uses}</ul>${domainP}`;
+}
+
+export const HUB_ORDER = ["portal", "brands", "shopping", "life", "social", "tech", "games", "tools"];
+
+export function sortHubLinks(links) {
+  const order = new Map(HUB_ORDER.map((h, i) => [h, i]));
+  return [...links].sort((a, b) => {
+    const ha = order.get(a.hub) ?? 99;
+    const hb = order.get(b.hub) ?? 99;
+    if (ha !== hb) return ha - hb;
+    return displayTitle(a, "en").localeCompare(displayTitle(b, "en"));
+  });
 }
 
 export function loadAllHubLinks() {
@@ -153,6 +186,15 @@ export function loadAllHubLinks() {
 }
 
 /** Collect unique outbound URLs from hub JSON specs. */
+function hubEntryNames(entry) {
+  return {
+    name_en: entry.name_en || entry.nameEn || "",
+    name_zh: entry.name_zh || entry.nameZh || "",
+    title_en: entry.title_en || entry.titleEn || entry.title || "",
+    title_zh: entry.title_zh || entry.titleZh || entry.title || "",
+  };
+}
+
 export function collectHubOutboundItems() {
   const map = new Map();
   const files = fs.readdirSync(HUB_DATA_DIR).filter((f) => f.endsWith(".json") && f !== "news-feeds.json");
@@ -161,21 +203,22 @@ export function collectHubOutboundItems() {
     const url = normalizeUrl(entry.url);
     if (!url) return;
     const slug = entry.slug || slugFromUrl(url);
+    const names = hubEntryNames(entry);
     const prev = map.get(url) || {
       slug,
       url,
-      name_en: entry.name_en || "",
-      name_zh: entry.name_zh || "",
-      title_en: entry.title_en || "",
-      title_zh: entry.title_zh || "",
+      name_en: names.name_en,
+      name_zh: names.name_zh,
+      title_en: names.title_en,
+      title_zh: names.title_zh,
       domain: entry.domain || "",
       hubs: [],
       kinds: [],
     };
-    if (entry.name_en) prev.name_en = entry.name_en;
-    if (entry.name_zh) prev.name_zh = entry.name_zh;
-    if (entry.title_en) prev.title_en = entry.title_en;
-    if (entry.title_zh) prev.title_zh = entry.title_zh;
+    if (names.name_en) prev.name_en = names.name_en;
+    if (names.name_zh) prev.name_zh = names.name_zh;
+    if (names.title_en) prev.title_en = names.title_en;
+    if (names.title_zh) prev.title_zh = names.title_zh;
     if (entry.domain) prev.domain = entry.domain;
     if (entry.hub && !prev.hubs.includes(entry.hub)) prev.hubs.push(entry.hub);
     if (entry.kind && !prev.kinds.includes(entry.kind)) prev.kinds.push(entry.kind);

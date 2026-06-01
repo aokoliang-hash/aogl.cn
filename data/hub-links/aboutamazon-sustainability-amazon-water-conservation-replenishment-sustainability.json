@@ -3,7 +3,7 @@
   "url": "https://www.aboutamazon.com/news/sustainability/amazon-water-conservation-replenishment-sustainability?utm_source=rss",
   "name_en": "Amazon",
   "name_zh": "亚马逊",
-  "title_en": "",
+  "title_en": "Sustainability at Amazon: Water conservation efforts, supports California watershed restoration through innovative Forest Resilience Bond",
   "title_zh": "",
   "domain": "aboutamazon.com",
   "hub": "brands",
@@ -15,5 +15,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Get the latest updates on how we’re reducing our water footprint and investing in innovations to address water scarcity.",
+  "excerpt_zh": "Get the latest updates on how we’re reducing our water footprint and investing in innovations to address water scarcity.",
+  "fetchedAt": "2026-06-01"
 }

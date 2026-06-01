@@ -3,7 +3,7 @@
   "url": "https://about.fb.com/news/2026/05/incognito-chat-whatsapp-meta-ai",
   "name_en": "Facebook / Meta",
   "name_zh": "Facebook / Meta",
-  "title_en": "",
+  "title_en": "Introducing a Completely Private Way to Chat With AI",
   "title_zh": "",
   "domain": "about.fb.com",
   "hub": "portal",
@@ -16,5 +16,8 @@
     "news",
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Incognito Chat lets you talk to Meta AI in a way that is invisible to anyone else.",
+  "excerpt_zh": "Incognito Chat lets you talk to Meta AI in a way that is invisible to anyone else.",
+  "fetchedAt": "2026-06-01"
 }

@@ -3,7 +3,7 @@
   "url": "https://2xko.riotgames.com/en-us/news/game-updates/2xko-patch-notes-1-1-2",
   "name_en": "Riot Games",
   "name_zh": "拳头",
-  "title_en": "",
+  "title_en": "2XKO Patch Notes 1.1.2",
   "title_zh": "",
   "domain": "2xko.riotgames.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "We’re fixing some critical bugs impacting core gameplay, and more.",
+  "excerpt_zh": "We’re fixing some critical bugs impacting core gameplay, and more.",
+  "fetchedAt": "2026-06-01"
 }

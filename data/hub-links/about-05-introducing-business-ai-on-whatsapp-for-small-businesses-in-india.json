@@ -3,7 +3,7 @@
   "url": "https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses-in-india",
   "name_en": "Facebook / Meta",
   "name_zh": "Facebook / Meta",
-  "title_en": "",
+  "title_en": "Introducing Business AI on WhatsApp for Small Businesses in India",
   "title_zh": "",
   "domain": "about.fb.com",
   "hub": "portal",
@@ -16,5 +16,8 @@
     "news",
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "To enable small businesses with AI-powered customer support directly into the WhatsApp Business app, we've launched Business AI in India.",
+  "excerpt_zh": "To enable small businesses with AI-powered customer support directly into the WhatsApp Business app, we've launched Business AI in India.",
+  "fetchedAt": "2026-06-01"
 }
