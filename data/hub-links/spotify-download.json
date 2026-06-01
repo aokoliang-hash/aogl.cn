@@ -1,0 +1,18 @@
+{
+  "slug": "spotify-download",
+  "url": "https://www.spotify.com/download",
+  "name_en": "Spotify",
+  "name_zh": "Spotify",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "spotify.com",
+  "hub": "life",
+  "hubs": [
+    "life"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

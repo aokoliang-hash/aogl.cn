@@ -1,0 +1,18 @@
+{
+  "slug": "target-post",
+  "url": "https://www.target.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "target.com",
+  "hub": "shopping",
+  "hubs": [
+    "shopping"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

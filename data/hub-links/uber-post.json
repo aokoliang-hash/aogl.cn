@@ -1,0 +1,18 @@
+{
+  "slug": "uber-post",
+  "url": "https://www.uber.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "uber.com",
+  "hub": "life",
+  "hubs": [
+    "life"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

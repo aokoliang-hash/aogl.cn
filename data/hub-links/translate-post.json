@@ -1,0 +1,18 @@
+{
+  "slug": "translate-post",
+  "url": "https://translate.google.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "translate.google.com",
+  "hub": "tools",
+  "hubs": [
+    "tools"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

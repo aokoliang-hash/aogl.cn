@@ -1,0 +1,18 @@
+{
+  "slug": "booking-post",
+  "url": "https://www.booking.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "booking.com",
+  "hub": "life",
+  "hubs": [
+    "life"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

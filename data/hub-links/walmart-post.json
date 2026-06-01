@@ -1,0 +1,18 @@
+{
+  "slug": "walmart-post",
+  "url": "https://www.walmart.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "walmart.com",
+  "hub": "shopping",
+  "hubs": [
+    "shopping"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

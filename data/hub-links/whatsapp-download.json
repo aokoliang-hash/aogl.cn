@@ -1,0 +1,19 @@
+{
+  "slug": "whatsapp-download",
+  "url": "https://www.whatsapp.com/download",
+  "name_en": "WhatsApp",
+  "name_zh": "WhatsApp",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "whatsapp.com",
+  "hub": "life",
+  "hubs": [
+    "life",
+    "social"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

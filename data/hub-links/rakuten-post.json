@@ -1,0 +1,18 @@
+{
+  "slug": "rakuten-post",
+  "url": "https://www.rakuten.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "rakuten.com",
+  "hub": "shopping",
+  "hubs": [
+    "shopping"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

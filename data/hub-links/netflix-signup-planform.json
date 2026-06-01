@@ -1,0 +1,18 @@
+{
+  "slug": "netflix-signup-planform",
+  "url": "https://www.netflix.com/signup/planform",
+  "name_en": "Netflix",
+  "name_zh": "Netflix",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "netflix.com",
+  "hub": "life",
+  "hubs": [
+    "life"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

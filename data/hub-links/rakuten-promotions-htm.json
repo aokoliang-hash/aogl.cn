@@ -1,0 +1,18 @@
+{
+  "slug": "rakuten-promotions-htm",
+  "url": "https://www.rakuten.com/promotions.htm",
+  "name_en": "Rakuten",
+  "name_zh": "乐天",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "rakuten.com",
+  "hub": "shopping",
+  "hubs": [
+    "shopping"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

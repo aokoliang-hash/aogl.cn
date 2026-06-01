@@ -1,0 +1,18 @@
+{
+  "slug": "linkedin-news",
+  "url": "https://www.linkedin.com/news",
+  "name_en": "LinkedIn",
+  "name_zh": "领英",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "linkedin.com",
+  "hub": "social",
+  "hubs": [
+    "social"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

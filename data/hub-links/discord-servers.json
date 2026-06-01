@@ -1,0 +1,18 @@
+{
+  "slug": "discord-servers",
+  "url": "https://discord.com/servers",
+  "name_en": "Discord",
+  "name_zh": "Discord",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "discord.com",
+  "hub": "social",
+  "hubs": [
+    "social"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

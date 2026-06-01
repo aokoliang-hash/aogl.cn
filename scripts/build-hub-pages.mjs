@@ -8,6 +8,7 @@ import { fileURLToPath } from "url";
 import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
 import { faviconSrcForHtml } from "./favicon-local.mjs";
 import { hotMixImageSrcForHtml } from "./hub-image-local.mjs";
+import { localHrefAttr, resolveLocalHref } from "./resolve-local-link.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -495,7 +496,7 @@ function renderPage(spec, activeFile) {
   const top10Lis = top10
     .map(
       (t, i) => `          <li class="hub-rank-item">
-            <a class="hub-rank-link" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">
+            <a class="hub-rank-link" href="${esc(resolveLocalHref(t.url))}"${localHrefAttr(resolveLocalHref(t.url))}>
               <span class="hub-rank-num">${i + 1}</span>
               <img class="hub-favicon" src="${esc(hubFaviconSrc(t.domain))}" width="40" height="40" alt="" loading="lazy" decoding="async" data-domain="${esc(t.domain)}" />
               <span class="hub-rank-text">${LOCALES.map((code) => `<span class="lang-${code}">${esc(displayName(t, code))}</span>`).join("")}</span>
@@ -517,7 +518,7 @@ function renderPage(spec, activeFile) {
 ${(g.items || [])
   .map(
     (it) => `            <li>
-              <a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${LOCALES.map(
+              <a href="${esc(resolveLocalHref(it.url))}"${localHrefAttr(resolveLocalHref(it.url))}>${LOCALES.map(
                 (code) => `<span class="lang-${code}">${esc(newsTitle(it, code))}</span>`
               ).join("")}</a>
               <span class="hub-news-meta">${esc(it.date || "")}</span>
@@ -546,7 +547,7 @@ ${newsBlocks}
   const hotMixLis = hotMixItems
     .map(
       (it) => `        <li class="hub-hotmix-card">
-          <a class="hub-hotmix-card-link" href="${esc(it.url)}" target="_blank" rel="noopener noreferrer" draggable="false">
+          <a class="hub-hotmix-card-link" href="${esc(resolveLocalHref(it.url))}"${localHrefAttr(resolveLocalHref(it.url))} draggable="false">
             <div class="hub-hotmix-card-media">
               <img class="hub-hotmix-card-img" src="${esc(hotMixItemImageUrl(it, spec))}" width="400" height="225" alt="" loading="lazy" decoding="async" draggable="false" />
             </div>
@@ -579,7 +580,7 @@ ${hotMixLis}
   const moreLis = more
     .map(
       (t) => `          <li class="hub-more-item">
-            <a class="hub-more-link" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">
+            <a class="hub-more-link" href="${esc(resolveLocalHref(t.url))}"${localHrefAttr(resolveLocalHref(t.url))}>
               <img class="hub-favicon hub-favicon-sm" src="${esc(hubFaviconSrc(t.domain))}" width="28" height="28" alt="" loading="lazy" decoding="async" />
               ${LOCALES.map((code) => `<span class="lang-${code}">${esc(displayName(t, code))}</span>`).join("")}
             </a>

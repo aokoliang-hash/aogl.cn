@@ -1,0 +1,18 @@
+{
+  "slug": "wechat-post",
+  "url": "https://www.wechat.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "wechat.com",
+  "hub": "social",
+  "hubs": [
+    "social"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

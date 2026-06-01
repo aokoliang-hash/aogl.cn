@@ -41,7 +41,7 @@
   var FULL_UI_LOCALES = ["en", "zh", "zht", "ja", "ko", "fr", "ru", "ar"];
 
   /** Subfolders whose path must be kept when switching locale (like articles/). */
-  var CONTENT_DIRS = ["articles", "briefs", "tool-guides"];
+  var CONTENT_DIRS = ["articles", "briefs", "tool-guides", "hub-links"];
 
   function pathParts() {
     return (location.pathname || "/").replace(/\/+/g, "/").split("/").filter(Boolean);

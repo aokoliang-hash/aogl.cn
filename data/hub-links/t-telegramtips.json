@@ -1,0 +1,18 @@
+{
+  "slug": "t-telegramtips",
+  "url": "https://t.me/telegramtips",
+  "name_en": "Telegram",
+  "name_zh": "Telegram",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "t.me",
+  "hub": "social",
+  "hubs": [
+    "social"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

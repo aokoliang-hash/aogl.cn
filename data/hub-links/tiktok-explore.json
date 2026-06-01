@@ -1,0 +1,18 @@
+{
+  "slug": "tiktok-explore",
+  "url": "https://www.tiktok.com/explore",
+  "name_en": "TikTok",
+  "name_zh": "TikTok",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "tiktok.com",
+  "hub": "social",
+  "hubs": [
+    "social"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

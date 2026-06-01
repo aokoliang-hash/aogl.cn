@@ -1,0 +1,18 @@
+{
+  "slug": "booking-content-howitworks-html",
+  "url": "https://www.booking.com/content/howitworks.html",
+  "name_en": "Booking.com",
+  "name_zh": "Booking",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "booking.com",
+  "hub": "life",
+  "hubs": [
+    "life"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

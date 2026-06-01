@@ -1,0 +1,18 @@
+{
+  "slug": "zhihu-post",
+  "url": "https://www.zhihu.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "zhihu.com",
+  "hub": "life",
+  "hubs": [
+    "life"
+  ],
+  "kind": "more",
+  "kinds": [
+    "more"
+  ],
+  "updated": "2026-06-01"
+}

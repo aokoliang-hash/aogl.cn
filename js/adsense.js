@@ -32,7 +32,8 @@
   function isContentPrimaryPage() {
     if (typeof location === "undefined") return false;
     var p = String(location.pathname || "").toLowerCase();
-    if (/\/articles\//.test(p) || /\/briefs\//.test(p) || /\/tool-guides\//.test(p)) return true;
+    if (/\/articles\//.test(p) || /\/briefs\//.test(p) || /\/tool-guides\//.test(p) || /\/hub-links\//.test(p))
+      return true;
     if (/\/about\.html$/.test(p) || /\/changelog\.html$/.test(p)) return true;
     return false;
   }

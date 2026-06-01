@@ -1,0 +1,18 @@
+{
+  "slug": "mercadolibre-mas-vendido",
+  "url": "https://www.mercadolibre.com.mx/mas-vendido",
+  "name_en": "Mercado Libre",
+  "name_zh": "Mercado Libre",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "mercadolibre.com.mx",
+  "hub": "shopping",
+  "hubs": [
+    "shopping"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

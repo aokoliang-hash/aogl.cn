@@ -1,0 +1,18 @@
+{
+  "slug": "battle-post",
+  "url": "https://battle.net",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "battle.net",
+  "hub": "games",
+  "hubs": [
+    "games"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

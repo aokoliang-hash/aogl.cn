@@ -1,0 +1,18 @@
+{
+  "slug": "paypal-cshelp-personal",
+  "url": "https://www.paypal.com/us/cshelp/personal",
+  "name_en": "PayPal",
+  "name_zh": "PayPal",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "paypal.com",
+  "hub": "life",
+  "hubs": [
+    "life"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

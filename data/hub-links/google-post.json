@@ -1,0 +1,19 @@
+{
+  "slug": "google-post",
+  "url": "https://www.google.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "google.com",
+  "hub": "brands",
+  "hubs": [
+    "brands",
+    "portal"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

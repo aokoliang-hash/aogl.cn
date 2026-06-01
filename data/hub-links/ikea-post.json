@@ -1,0 +1,19 @@
+{
+  "slug": "ikea-post",
+  "url": "https://www.ikea.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "ikea.com",
+  "hub": "brands",
+  "hubs": [
+    "brands",
+    "shopping"
+  ],
+  "kind": "more",
+  "kinds": [
+    "more"
+  ],
+  "updated": "2026-06-01"
+}

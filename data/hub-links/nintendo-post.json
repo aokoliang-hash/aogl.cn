@@ -1,0 +1,18 @@
+{
+  "slug": "nintendo-post",
+  "url": "https://www.nintendo.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "nintendo.com",
+  "hub": "games",
+  "hubs": [
+    "games"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

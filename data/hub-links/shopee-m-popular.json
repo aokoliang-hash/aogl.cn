@@ -1,0 +1,18 @@
+{
+  "slug": "shopee-m-popular",
+  "url": "https://shopee.sg/m/popular",
+  "name_en": "Shopee (Sea)",
+  "name_zh": "Shopee（Sea）",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "shopee.sg",
+  "hub": "shopping",
+  "hubs": [
+    "shopping"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

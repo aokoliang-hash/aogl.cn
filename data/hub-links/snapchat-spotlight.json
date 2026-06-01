@@ -1,0 +1,18 @@
+{
+  "slug": "snapchat-spotlight",
+  "url": "https://www.snapchat.com/spotlight",
+  "name_en": "Snapchat",
+  "name_zh": "Snapchat",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "snapchat.com",
+  "hub": "social",
+  "hubs": [
+    "social"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

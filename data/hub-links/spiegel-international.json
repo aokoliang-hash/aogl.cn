@@ -1,0 +1,18 @@
+{
+  "slug": "spiegel-international",
+  "url": "https://www.spiegel.de/international",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "spiegel.de",
+  "hub": "portal",
+  "hubs": [
+    "portal"
+  ],
+  "kind": "more",
+  "kinds": [
+    "more"
+  ],
+  "updated": "2026-06-01"
+}

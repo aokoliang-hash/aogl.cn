@@ -1,0 +1,18 @@
+{
+  "slug": "amazon-gp-goldbox",
+  "url": "https://www.amazon.com/gp/goldbox",
+  "name_en": "Amazon",
+  "name_zh": "亚马逊",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "amazon.com",
+  "hub": "shopping",
+  "hubs": [
+    "shopping"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "x-post",
+  "url": "https://x.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "x.com",
+  "hub": "portal",
+  "hubs": [
+    "portal",
+    "social"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank",
+    "more"
+  ],
+  "updated": "2026-06-01"
+}

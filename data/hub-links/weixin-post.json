@@ -1,0 +1,20 @@
+{
+  "slug": "weixin-post",
+  "url": "https://weixin.qq.com",
+  "name_en": "WeChat",
+  "name_zh": "微信",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "weixin.qq.com",
+  "hub": "life",
+  "hubs": [
+    "life",
+    "social"
+  ],
+  "kind": "more",
+  "kinds": [
+    "more",
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

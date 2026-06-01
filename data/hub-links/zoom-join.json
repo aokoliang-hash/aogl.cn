@@ -1,0 +1,18 @@
+{
+  "slug": "zoom-join",
+  "url": "https://www.zoom.us/join",
+  "name_en": "Zoom",
+  "name_zh": "Zoom",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "zoom.us",
+  "hub": "life",
+  "hubs": [
+    "life"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

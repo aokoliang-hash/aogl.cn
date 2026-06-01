@@ -66,6 +66,8 @@ const cases = [
   [`${DEPLOY}/en/briefs/index.html`, "zh", `${DEPLOY}/briefs/index.html`],
   [`/games.html`, "ja", `/ja/games.html`],
   [`${DEPLOY}/ja/tech.html`, "zh", `${DEPLOY}/tech.html`],
+  [`${DEPLOY}/hub-links/apple-com.html`, "en", `${DEPLOY}/en/hub-links/apple-com.html`],
+  [`/en/hub-links/apple-com.html`, "zht", `/zh/hub-links/apple-com.html`],
 ];
 
 const compareCases = [

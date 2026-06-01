@@ -1,0 +1,18 @@
+{
+  "slug": "story-post",
+  "url": "https://story.snapchat.com",
+  "name_en": "Snapchat",
+  "name_zh": "Snapchat",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "story.snapchat.com",
+  "hub": "social",
+  "hubs": [
+    "social"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

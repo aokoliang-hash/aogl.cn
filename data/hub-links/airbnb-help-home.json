@@ -1,0 +1,18 @@
+{
+  "slug": "airbnb-help-home",
+  "url": "https://www.airbnb.com/help/home",
+  "name_en": "Airbnb",
+  "name_zh": "Airbnb",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "airbnb.com",
+  "hub": "life",
+  "hubs": [
+    "life"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

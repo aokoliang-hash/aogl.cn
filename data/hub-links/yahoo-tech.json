@@ -1,0 +1,18 @@
+{
+  "slug": "yahoo-tech",
+  "url": "https://www.yahoo.com/tech",
+  "name_en": "Yahoo",
+  "name_zh": "Yahoo",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "yahoo.com",
+  "hub": "portal",
+  "hubs": [
+    "portal"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

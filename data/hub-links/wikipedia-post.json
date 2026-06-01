@@ -1,0 +1,18 @@
+{
+  "slug": "wikipedia-post",
+  "url": "https://www.wikipedia.org",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "wikipedia.org",
+  "hub": "portal",
+  "hubs": [
+    "portal"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "washingtonpost-post",
+  "url": "https://www.washingtonpost.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "washingtonpost.com",
+  "hub": "portal",
+  "hubs": [
+    "portal"
+  ],
+  "kind": "more",
+  "kinds": [
+    "more"
+  ],
+  "updated": "2026-06-01"
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "etsy-featured",
+  "url": "https://www.etsy.com/featured",
+  "name_en": "Etsy",
+  "name_zh": "Etsy",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "etsy.com",
+  "hub": "shopping",
+  "hubs": [
+    "shopping"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

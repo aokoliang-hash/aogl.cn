@@ -24,10 +24,12 @@
     "build-brief-pages": "node scripts/build-brief-pages.mjs",
     "sync-tool-guides": "node scripts/sync-tool-guides.mjs",
     "build-tool-guides": "node scripts/build-tool-guide-pages.mjs",
+    "sync-hub-links": "node scripts/sync-hub-links.mjs",
+    "build-hub-link-pages": "node scripts/build-hub-link-pages.mjs",
     "build-official-news": "node scripts/build-official-news-page.mjs",
     "inject-categories": "node scripts/inject-categories.mjs",
     "update-reading": "node scripts/update-reading.mjs",
-    "build-site": "npm run build-hubs && npm run build-articles && npm run sync-brief-articles && npm run build-brief-pages && npm run sync-tool-guides && npm run build-tool-guides && npm run inject-tools-directory && npm run inject-categories && npm run update-reading && npm run build-official-news && npm run build-index-pills && npm run build-contact && npm run build-seo-locales"
+    "build-site": "npm run build-articles && npm run sync-brief-articles && npm run build-brief-pages && npm run sync-tool-guides && npm run build-tool-guides && npm run sync-hub-links && npm run build-hub-link-pages && npm run build-hubs && npm run inject-tools-directory && npm run inject-categories && npm run update-reading && npm run build-official-news && npm run build-index-pills && npm run build-contact && npm run build-seo-locales"
   },
   "devDependencies": {
     "cheerio": "^1.2.0",

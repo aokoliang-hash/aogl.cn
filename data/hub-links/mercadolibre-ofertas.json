@@ -1,0 +1,18 @@
+{
+  "slug": "mercadolibre-ofertas",
+  "url": "https://www.mercadolibre.com/ofertas",
+  "name_en": "Mercado Libre",
+  "name_zh": "Mercado Libre",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "mercadolibre.com",
+  "hub": "shopping",
+  "hubs": [
+    "shopping"
+  ],
+  "kind": "news",
+  "kinds": [
+    "news"
+  ],
+  "updated": "2026-06-01"
+}

@@ -16,7 +16,8 @@
 | 原创文章 | ✅ **12/12** | 见下方列表；2026-06-01 扩写 5 篇偏短英文 |
 | 文章索引页 | ✅ | `articles/index.html`（构建生成，12 篇摘要） |
 | 首页顺序 | ✅ | 「本站原创」在「关于本站」之前 + 主内容导语链向索引 |
-| 广告加载范围 | ✅ | `js/adsense.js` 仅在 `/articles/`、about、changelog 加载发布商脚本 |
+| 广告加载范围 | ✅ | `js/adsense.js` 仅在 `/articles/`、`/briefs/`、`/tool-guides/`、`/hub-links/`、about、changelog 加载发布商脚本 |
+| Hub 内链本地化 | ✅ | `hub-links/` + Hot mix 优先 `briefs/`；见 `docs/Hub栏目外链本地化实施方案.md` |
 | changelog 每周一条 | ✅ | 含 2026-06-01 AdSense 准备条目 |
 | 等 3～7 天再申 | ⏳ 运营项 | 本次大改后建议 **2026-06-08 前后** 再点「申请审核」 |
 

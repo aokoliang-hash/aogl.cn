@@ -1,0 +1,19 @@
+{
+  "slug": "youtube-post",
+  "url": "https://www.youtube.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "youtube.com",
+  "hub": "portal",
+  "hubs": [
+    "portal",
+    "social"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

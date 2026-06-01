@@ -78,8 +78,24 @@ function multilangToolGuidePages() {
     .map((f) => `tool-guides/${f}`);
 }
 
+function multilangHubLinkPages() {
+  const dir = path.join(MULTILANG_DIR, "hub-links");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".html"))
+    .sort()
+    .map((f) => `hub-links/${f}`);
+}
+
 function getAllPages() {
-  return [...STATIC_PAGES, ...multilangArticlePages(), ...multilangBriefPages(), ...multilangToolGuidePages()];
+  return [
+    ...STATIC_PAGES,
+    ...multilangArticlePages(),
+    ...multilangBriefPages(),
+    ...multilangToolGuidePages(),
+    ...multilangHubLinkPages(),
+  ];
 }
 
 const toTraditional = OpenCC.Converter({ from: "cn", to: "tw" });

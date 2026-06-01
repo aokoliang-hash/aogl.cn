@@ -1,0 +1,18 @@
+{
+  "slug": "yahoo-post",
+  "url": "https://www.yahoo.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "yahoo.com",
+  "hub": "portal",
+  "hubs": [
+    "portal"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}

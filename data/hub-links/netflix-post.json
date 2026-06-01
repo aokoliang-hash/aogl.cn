@@ -1,0 +1,18 @@
+{
+  "slug": "netflix-post",
+  "url": "https://www.netflix.com",
+  "name_en": "",
+  "name_zh": "",
+  "title_en": "",
+  "title_zh": "",
+  "domain": "netflix.com",
+  "hub": "life",
+  "hubs": [
+    "life"
+  ],
+  "kind": "rank",
+  "kinds": [
+    "rank"
+  ],
+  "updated": "2026-06-01"
+}
