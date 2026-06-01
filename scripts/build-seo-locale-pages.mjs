@@ -236,6 +236,14 @@ function slimLocaleHeadExtras($, locale, filename) {
   slimJsonLdScripts($, langTag, filename, siteHome, canonicalHref);
 }
 
+const CONTENT_PATH_SEGMENTS = ["articles", "briefs", "tool-guides", "hub-links"];
+
+function isInternalContentPath(v) {
+  if (v == null || v === "") return false;
+  const clean = String(v).replace(/^\//, "").split("#")[0].split("?")[0];
+  return CONTENT_PATH_SEGMENTS.some((seg) => clean === seg || clean.startsWith(`${seg}/`));
+}
+
 function absolutizeAssetRefs($) {
   const attrs = ["href", "src"];
   const sameDirHtml = /^[a-z0-9_.-]+\.html(?:#.*)?$/i;
@@ -247,6 +255,7 @@ function absolutizeAssetRefs($) {
       if (v.startsWith("http:") || v.startsWith("https:") || v.startsWith("mailto:") || v.startsWith("#") || v.startsWith("/"))
         continue;
       if (v.startsWith("../") || v.startsWith("./")) continue;
+      if (isInternalContentPath(v)) continue;
       if (a === "href" && (v.startsWith("javascript:") || v === "#")) continue;
       if (a === "href" && sameDirHtml.test(v)) continue;
       $el.attr(a, "/" + v.replace(/^\.?\//, ""));
@@ -254,12 +263,35 @@ function absolutizeAssetRefs($) {
   });
 }
 
+/** After absolutize: /briefs/foo on en/index.html → briefs/foo (sibling under /en/). */
+function rewriteLocaleContentLinks($, outDirSegment) {
+  if (!outDirSegment) return;
+  $("a[href], link[href]").each((_, el) => {
+    const $el = $(el);
+    const v = $el.attr("href");
+    if (v == null || v === "") return;
+    if (v.startsWith("http:") || v.startsWith("https:") || v.startsWith("mailto:") || v.startsWith("#")) return;
+    if (!v.startsWith("/")) return;
+    const hashIdx = v.indexOf("#");
+    const pathPart = hashIdx === -1 ? v : v.slice(0, hashIdx);
+    const hash = hashIdx === -1 ? "" : v.slice(hashIdx);
+    const clean = pathPart.slice(1);
+    if (!isInternalContentPath(clean)) return;
+    $el.attr("href", clean + hash);
+  });
+}
+
+function isNestedContentPage(filename) {
+  if (!filename || !filename.endsWith(".html")) return false;
+  return CONTENT_PATH_SEGMENTS.some((seg) => filename.startsWith(`${seg}/`));
+}
+
 /**
- * Article templates use one "../" from _multilang/articles/; output may be
- * articles/foo.html or en/articles/foo.html. Pass outDirSegment ("en", "zh", "ja", …) or "" for root zh.
+ * Nested templates use one "../" from _multilang/{articles|briefs|tool-guides|hub-links}/;
+ * output may be foo.html, en/foo.html, or zh/tool-guides/bar.html.
  */
-function rewriteArticleAssetDepth($, filename, outDirSegment = "") {
-  if (!filename || !filename.includes("articles/") || !filename.endsWith(".html")) return;
+function rewriteNestedAssetDepth($, filename, outDirSegment = "") {
+  if (!isNestedContentPage(filename)) return;
   const rel = outDirSegment ? `${outDirSegment}/${filename}` : filename;
   const depth = rel.split("/").filter(Boolean).length - 1;
   const prefix = depth <= 0 ? "" : "../".repeat(depth);
@@ -387,7 +419,8 @@ function transformSubfolderLocale(html, locale, filename, outDirSegment) {
   stripAlternateLocales($, locale);
   rootDataAttrsForLocale($, locale);
   absolutizeAssetRefs($);
-  rewriteArticleAssetDepth($, filename, outDirSegment ?? locale);
+  rewriteNestedAssetDepth($, filename, outDirSegment ?? locale);
+  rewriteLocaleContentLinks($, outDirSegment ?? locale);
   const can = urlLocale(locale, filename);
   applyLocaleHead($, locale, filename, can, { bodyClass: `locale-${locale}`, dataLang: locale, seoLocale: true });
   return tidySeoHtml($.root().html());
@@ -398,7 +431,8 @@ function transformZhTraditional(html, filename) {
   stripAlternateLocales($, "zh");
   rootDataAttrsForLocale($, "zh");
   absolutizeAssetRefs($);
-  rewriteArticleAssetDepth($, filename, "zh");
+  rewriteNestedAssetDepth($, filename, "zh");
+  rewriteLocaleContentLinks($, "zh");
   applyLocaleHead($, "zht", filename, urlZhHant(filename), {
     bodyClass: "locale-zht",
     dataLang: "zht",
@@ -413,7 +447,7 @@ function transformRootSimplifiedZh(html, filename) {
   const $ = cheerio.load(html, { decodeEntities: false });
   stripAlternateLocales($, "zh");
   rootDataAttrsForLocale($, "zh");
-  rewriteArticleAssetDepth($, filename, "");
+  rewriteNestedAssetDepth($, filename, "");
   applyLocaleHead($, "zh", filename, urlZhCn(filename), {
     bodyClass: "locale-zh",
     dataLang: "zh",
