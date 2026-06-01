@@ -3,7 +3,7 @@
   "url": "https://blog.google/products-and-platforms/products/youtube/youtube-brandcast-2026-advertiser-updates",
   "name_en": "YouTube",
   "name_zh": "YouTube",
-  "title_en": "",
+  "title_en": "Check out the latest news from YouTube’s Brandcast 2026.",
   "title_zh": "",
   "domain": "blog.google",
   "hub": "social",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Learn how YouTube is helping brands reach people across screens with AI-driven content tools, creator partnerships, and direct buying options on TV.",
+  "excerpt_zh": "Learn how YouTube is helping brands reach people across screens with AI-driven content tools, creator partnerships, and direct buying options on TV.",
+  "fetchedAt": "2026-06-01"
 }

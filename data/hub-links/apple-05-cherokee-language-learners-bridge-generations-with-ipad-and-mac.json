@@ -3,7 +3,7 @@
   "url": "https://www.apple.com/newsroom/2026/05/cherokee-language-learners-bridge-generations-with-ipad-and-mac",
   "name_en": "Apple",
   "name_zh": "苹果",
-  "title_en": "",
+  "title_en": "Cherokee language learners bridge generations with iPad and Mac",
   "title_zh": "",
   "domain": "apple.com",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Through its Community Education Initiative, Apple has been working with OCU and Cherokee Nation to equip young learners with iPad and Mac.",
+  "excerpt_zh": "Through its Community Education Initiative, Apple has been working with OCU and Cherokee Nation to equip young learners with iPad and Mac.",
+  "fetchedAt": "2026-06-01"
 }

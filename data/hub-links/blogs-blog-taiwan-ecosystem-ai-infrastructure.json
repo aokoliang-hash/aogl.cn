@@ -3,7 +3,7 @@
   "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure",
   "name_en": "NVIDIA",
   "name_zh": "英伟达",
-  "title_en": "",
+  "title_en": "Taiwan’s Industry Titans Turbocharge World’s AI Infrastructure Buildout With NVIDIA",
   "title_zh": "",
   "domain": "blogs.nvidia.com",
   "hub": "tech",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Semiconductor and electronics manufacturing leaders are using NVIDIA AI to speed manufacturing from fabs to factory floors as they ramp up the production of NVIDIA Vera Rubin NVL72 infrastructure for agentic AI factories.",
+  "excerpt_zh": "Semiconductor and electronics manufacturing leaders are using NVIDIA AI to speed manufacturing from fabs to factory floors as they ramp up the production of NVIDIA Vera Rubin NVL72 infrastructure for agentic AI factories.",
+  "fetchedAt": "2026-06-01"
 }

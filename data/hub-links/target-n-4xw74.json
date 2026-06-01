@@ -3,7 +3,7 @@
   "url": "https://www.target.com/c/top-deals/-/N-4xw74",
   "name_en": "Target",
   "name_zh": "Target",
-  "title_en": "",
+  "title_en": "Top Deals at Target",
   "title_zh": "",
   "domain": "target.com",
   "hub": "shopping",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Shop Target's top deals for savings on toys, electronics, home decor and more. Shop seamlessly with order drive up, same day delivery & free delivery with $35+ orders.",
+  "excerpt_zh": "Shop Target's top deals for savings on toys, electronics, home decor and more. Shop seamlessly with order drive up, same day delivery & free delivery with $35+ orders.",
+  "fetchedAt": "2026-06-01"
 }

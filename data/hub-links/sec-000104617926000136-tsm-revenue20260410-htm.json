@@ -3,7 +3,7 @@
   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000136/tsm-revenue20260410.htm",
   "name_en": "TSMC",
   "name_zh": "台积电",
-  "title_en": "",
+  "title_en": "Document",
   "title_zh": "",
   "domain": "sec.gov",
   "hub": "tech",
@@ -14,5 +14,6 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "fetchedAt": "2026-06-01"
 }

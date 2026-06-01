@@ -3,7 +3,7 @@
   "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions",
   "name_en": "YouTube",
   "name_zh": "YouTube",
-  "title_en": "",
+  "title_en": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
   "title_zh": "",
   "domain": "blog.google",
   "hub": "portal",
@@ -16,5 +16,8 @@
     "news",
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Introducing a $100 AI Ultra plan — plus, new features and benefits for Google AI Plus, Pro and Ultra subscribers.",
+  "excerpt_zh": "Introducing a $100 AI Ultra plan — plus, new features and benefits for Google AI Plus, Pro and Ultra subscribers.",
+  "fetchedAt": "2026-06-01"
 }

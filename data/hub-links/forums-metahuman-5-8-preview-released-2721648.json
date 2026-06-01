@@ -3,7 +3,7 @@
   "url": "https://forums.unrealengine.com/t/metahuman-5-8-preview-released/2721648",
   "name_en": "Epic Games",
   "name_zh": "Epic",
-  "title_en": "",
+  "title_en": "MetaHuman 5.8 Preview Released!",
   "title_zh": "",
   "domain": "forums.unrealengine.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Download Unreal Engine 5.8 Preview from the Epic Games Launcher, GitHub, or for Linux.  MetaHuman features in the Unreal Engine 5.8 Preview introduce powerful new real-time MetaHuman workflows; here are a few key highlights.  The new MetaHuman Collections provide the means to populate real-time environments with vast crowds of MetaHumans, scaling your character counts from tens to thousands via the MetaHuman Crowds plugin.  Mesh to MetaHuman enhancements now enables you to turn any meshes int...",
+  "excerpt_zh": "Download Unreal Engine 5.8 Preview from the Epic Games Launcher, GitHub, or for Linux.  MetaHuman features in the Unreal Engine 5.8 Preview introduce powerful new real-time MetaHuman workflows; here are a few key highlights.  The new MetaHuman Collections provide the means to populate real-time environments with vast crowds of MetaHumans, scaling your character counts from tens to thousands via the MetaHuman Crowds plugin.  Mesh to MetaHuman enhancements now enables you to turn any meshes int...",
+  "fetchedAt": "2026-06-01"
 }

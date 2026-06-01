@@ -3,7 +3,7 @@
   "url": "https://www.linkedin.com/creators",
   "name_en": "LinkedIn",
   "name_zh": "领英",
-  "title_en": "",
+  "title_en": "Create more than content, create conversation.",
   "title_zh": "",
   "domain": "linkedin.com",
   "hub": "social",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "The Creator Accelerator Program is a 6-week incubator style program where participants can bring new concepts and visions to life, grow their audience, and engage with the LinkedIn community.",
+  "excerpt_zh": "The Creator Accelerator Program is a 6-week incubator style program where participants can bring new concepts and visions to life, grow their audience, and engage with the LinkedIn community.",
+  "fetchedAt": "2026-06-01"
 }

@@ -3,7 +3,7 @@
   "url": "https://www.apple.com/newsroom/2026/05/after-the-whistle-with-brendan-hunt-and-rebecca-lowe-returns",
   "name_en": "Apple",
   "name_zh": "苹果",
-  "title_en": "",
+  "title_en": "After the Whistle with Brendan Hunt and Rebecca Lowe returns",
   "title_zh": "",
   "domain": "apple.com",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Apple’s hit podcast ‘After the Whistle with Brendan Hunt and Rebecca Lowe’ returns for a third season June 7, with commentary on the World Cup.",
+  "excerpt_zh": "Apple’s hit podcast ‘After the Whistle with Brendan Hunt and Rebecca Lowe’ returns for a third season June 7, with commentary on the World Cup.",
+  "fetchedAt": "2026-06-01"
 }

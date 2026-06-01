@@ -3,7 +3,7 @@
   "url": "https://thewaltdisneycompany.com/news/sofia-the-first-royal-magic",
   "name_en": "Disney",
   "name_zh": "迪士尼",
-  "title_en": "",
+  "title_en": "How 'Sofia the First: Royal Magic' Is Enchanting a New Generation | The Walt Disney Company",
   "title_zh": "",
   "domain": "thewaltdisneycompany.com",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Sofia returns in 'Sofia the First: Royal Magic,' following her journey at the Charmswell School for Royal Magic on Disney Jr. and Disney+. Learn more.",
+  "excerpt_zh": "Sofia returns in 'Sofia the First: Royal Magic,' following her journey at the Charmswell School for Royal Magic on Disney Jr. and Disney+. Learn more.",
+  "fetchedAt": "2026-06-01"
 }

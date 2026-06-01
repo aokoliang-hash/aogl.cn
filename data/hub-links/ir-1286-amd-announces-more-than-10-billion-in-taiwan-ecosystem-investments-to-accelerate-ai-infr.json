@@ -3,7 +3,7 @@
   "url": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure",
   "name_en": "AMD",
   "name_zh": "AMD",
-  "title_en": "",
+  "title_en": "AMD Announces More Than $10 Billion in Taiwan Ecosystem Investments to Accelerate AI Infrastructure",
   "title_zh": "",
   "domain": "ir.amd.com",
   "hub": "tech",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "News Summary:  \nMore than $10 billion in investments across the Taiwan ecosystem to expand strategic partnerships and scale advanced packaging…...",
+  "excerpt_zh": "News Summary:  \nMore than $10 billion in investments across the Taiwan ecosystem to expand strategic partnerships and scale advanced packaging…...",
+  "fetchedAt": "2026-06-01"
 }

@@ -14,5 +14,8 @@
   "kinds": [
     "rank"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Steam is the ultimate destination for playing, discussing, and creating games.",
+  "excerpt_zh": "Steam is the ultimate destination for playing, discussing, and creating games.",
+  "fetchedAt": "2026-06-01"
 }

@@ -3,7 +3,7 @@
   "url": "https://www.nintendo.com/my/news/article/AyUbs2eACLw09cF8n5xZw",
   "name_en": "Nintendo",
   "name_zh": "任天堂",
-  "title_en": "",
+  "title_en": "Star Fox is coming to Nintendo Switch 2 on 25 June 2026. | News & Updates | Nintendo",
   "title_zh": "",
   "domain": "nintendo.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Star Fox is coming to Nintendo Switch 2 on 25 June 2026.",
+  "excerpt_zh": "Star Fox is coming to Nintendo Switch 2 on 25 June 2026.",
+  "fetchedAt": "2026-06-01"
 }

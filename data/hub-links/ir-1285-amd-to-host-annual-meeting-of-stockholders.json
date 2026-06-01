@@ -3,7 +3,7 @@
   "url": "https://ir.amd.com/news-events/press-releases/detail/1285/amd-to-host-annual-meeting-of-stockholders",
   "name_en": "AMD",
   "name_zh": "AMD",
-  "title_en": "",
+  "title_en": "AMD to Host Annual Meeting of Stockholders",
   "title_zh": "",
   "domain": "ir.amd.com",
   "hub": "tech",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "SANTA CLARA, Calif., May  07, 2026  (GLOBE NEWSWIRE) -- AMD (NASDAQ: AMD) will hold its Annual Meeting of Stockholders on Wednesday, May 13, 2026 at…...",
+  "excerpt_zh": "SANTA CLARA, Calif., May  07, 2026  (GLOBE NEWSWIRE) -- AMD (NASDAQ: AMD) will hold its Annual Meeting of Stockholders on Wednesday, May 13, 2026 at…...",
+  "fetchedAt": "2026-06-01"
 }

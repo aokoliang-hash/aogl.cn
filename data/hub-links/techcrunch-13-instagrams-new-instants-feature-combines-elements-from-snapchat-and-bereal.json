@@ -3,7 +3,7 @@
   "url": "https://techcrunch.com/2026/05/13/instagrams-new-instants-feature-combines-elements-from-snapchat-and-bereal",
   "name_en": "TechCrunch",
   "name_zh": "TechCrunch",
-  "title_en": "",
+  "title_en": "Instagram's new 'Instants' feature combines elements from Snapchat and BeReal | TechCrunch",
   "title_zh": "",
   "domain": "techcrunch.com",
   "hub": "social",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "The feature lets users share disappearing photos with their close friends or mutual followers that can be viewed only once and remain available for 24 hours.",
+  "excerpt_zh": "The feature lets users share disappearing photos with their close friends or mutual followers that can be viewed only once and remain available for 24 hours.",
+  "fetchedAt": "2026-06-01"
 }

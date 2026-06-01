@@ -3,7 +3,7 @@
   "url": "https://news.xbox.com/en-us/2026/05/28/free-play-days-05-28-26",
   "name_en": "Xbox",
   "name_zh": "Xbox",
-  "title_en": "",
+  "title_en": "Free Play Days – Gears of War Reloaded, Formula Legends, High on Life 2 and Dying Light - XBOX Wire",
   "title_zh": "",
   "domain": "news.xbox.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Free Play Days – Game Pass members can hop into Formula Legends and Dying Light this weekend, while Gears of War: Reloaded and High on Life 2 are free for all, no membership needed.",
+  "excerpt_zh": "Free Play Days – Game Pass members can hop into Formula Legends and Dying Light this weekend, while Gears of War: Reloaded and High on Life 2 are free for all, no membership needed.",
+  "fetchedAt": "2026-06-01"
 }

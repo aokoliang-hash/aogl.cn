@@ -3,7 +3,7 @@
   "url": "https://www.ubisoft.com/en-us/game/assassins-creed/news/3DdTBz0edxZ0mQ7Ub4jv85/assassins-creed-into-2026",
   "name_en": "Ubisoft",
   "name_zh": "育碧",
-  "title_en": "",
+  "title_en": "Assassin's Creed: Into 2026",
   "title_zh": "",
   "domain": "ubisoft.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Take a look at what we’re planning over the next few months across the Assassin's Creed brand.",
+  "excerpt_zh": "Take a look at what we’re planning over the next few months across the Assassin's Creed brand.",
+  "fetchedAt": "2026-06-01"
 }

@@ -3,7 +3,7 @@
   "url": "https://global.toyota/en/newsroom/corporate/43951723.html",
   "name_en": "Toyota",
   "name_zh": "丰田",
-  "title_en": "",
+  "title_en": "TMC Announces Changes to Executive Structure | Corporate | Global Newsroom | Toyota Motor Corporation Official Global Website",
   "title_zh": "",
   "domain": "global.toyota",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Toyota Motor Corporation (TMC) announced today that it intends to implement changes to its executive structure effective April 1, 2026, and changes to its Board of Directors effective the date of its 122nd Ordinary General Shareholders' Meeting.",
+  "excerpt_zh": "Toyota Motor Corporation (TMC) announced today that it intends to implement changes to its executive structure effective April 1, 2026, and changes to its Board of Directors effective the date of its 122nd Ordinary General Shareholders' Meeting.",
+  "fetchedAt": "2026-06-01"
 }

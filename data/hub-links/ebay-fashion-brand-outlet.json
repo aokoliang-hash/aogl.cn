@@ -3,7 +3,7 @@
   "url": "https://www.ebay.com/e/fashion/brand-outlet",
   "name_en": "eBay",
   "name_zh": "eBay",
-  "title_en": "",
+  "title_en": "eBay 主页",
   "title_zh": "",
   "domain": "ebay.com",
   "hub": "shopping",
@@ -14,5 +14,6 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "fetchedAt": "2026-06-01"
 }

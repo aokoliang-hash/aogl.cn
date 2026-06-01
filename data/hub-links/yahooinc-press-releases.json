@@ -3,7 +3,7 @@
   "url": "https://www.yahooinc.com/press-releases",
   "name_en": "Yahoo",
   "name_zh": "Yahoo",
-  "title_en": "",
+  "title_en": "Yahoo",
   "title_zh": "",
   "domain": "yahooinc.com",
   "hub": "portal",
@@ -14,5 +14,6 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "fetchedAt": "2026-06-01"
 }

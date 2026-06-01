@@ -14,5 +14,8 @@
   "kinds": [
     "rank"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "From cloud to edge, Arm provides the compute platforms behind today’s most advanced AI, trusted by innovators worldwide.",
+  "excerpt_zh": "From cloud to edge, Arm provides the compute platforms behind today’s most advanced AI, trusted by innovators worldwide.",
+  "fetchedAt": "2026-06-01"
 }

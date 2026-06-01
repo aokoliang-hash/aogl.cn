@@ -3,7 +3,7 @@
   "url": "https://corporate.mcdonalds.com/corpmcd/our-stories/article/mcdonalds-builds-inclusive-place.html",
   "name_en": "McDonald's",
   "name_zh": "麦当劳",
-  "title_en": "",
+  "title_en": "McDonald’s Builds an Inclusive Place Where Everyone Belongs",
   "title_zh": "",
   "domain": "corporate.mcdonalds.com",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "From the start, inclusion has been at the heart of what we do. Today, we continue to come up with new ways to set our team members up for success.",
+  "excerpt_zh": "From the start, inclusion has been at the heart of what we do. Today, we continue to come up with new ways to set our team members up for success.",
+  "fetchedAt": "2026-06-01"
 }

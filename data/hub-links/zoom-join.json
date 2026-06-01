@@ -3,7 +3,7 @@
   "url": "https://www.zoom.us/join",
   "name_en": "Zoom",
   "name_zh": "Zoom",
-  "title_en": "",
+  "title_en": "Join Meeting | Zoom",
   "title_zh": "",
   "domain": "zoom.us",
   "hub": "life",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Join a Zoom Meeting directly from your web browser using a meeting code or link.",
+  "excerpt_zh": "Join a Zoom Meeting directly from your web browser using a meeting code or link.",
+  "fetchedAt": "2026-06-01"
 }

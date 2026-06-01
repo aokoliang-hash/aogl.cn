@@ -3,7 +3,7 @@
   "url": "https://global.toyota/en/newsroom/toyota/43950889.html",
   "name_en": "Toyota",
   "name_zh": "丰田",
-  "title_en": "",
+  "title_en": "Premiere of Three-Row Highlander BEV in North America | Toyota | Global Newsroom | Toyota Motor Corporation Official Global Website",
   "title_zh": "",
   "domain": "global.toyota",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Toyota Motor Corporation (Toyota) announced that it will expand its battery electric vehicle (BEV) lineup in North America as part of its multi-pathway approach toward achieving a carbon-neutral society. As part of this effort, Toyota Motor North America (TMNA), Toyota's North American business entity, premiered a new BEV model of the three-row SUV Highlander on February 11 (JST; February 10 PST) in Ojai, California. Sales in North America are expected to begin in late 2026.",
+  "excerpt_zh": "Toyota Motor Corporation (Toyota) announced that it will expand its battery electric vehicle (BEV) lineup in North America as part of its multi-pathway approach toward achieving a carbon-neutral society. As part of this effort, Toyota Motor North America (TMNA), Toyota's North American business entity, premiered a new BEV model of the three-row SUV Highlander on February 11 (JST; February 10 PST) in Ojai, California. Sales in North America are expected to begin in late 2026.",
+  "fetchedAt": "2026-06-01"
 }

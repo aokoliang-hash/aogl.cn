@@ -3,7 +3,7 @@
   "url": "https://www.nintendo.com/us/whatsnew/price-revision-for-nintendo-switch-2-system",
   "name_en": "Nintendo",
   "name_zh": "任天堂",
-  "title_en": "",
+  "title_en": "Price Revision for Nintendo Switch 2 System - News - Nintendo Official Site",
   "title_zh": "",
   "domain": "nintendo.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Beginning on September 1, 2026, Nintendo of America will revise the MSRP of the Nintendo Switch 2 system in the U.S. from $449.99 to $499.99. This is in response to various changes in market conditions, which are expected to extend over the medium t…",
+  "excerpt_zh": "Beginning on September 1, 2026, Nintendo of America will revise the MSRP of the Nintendo Switch 2 system in the U.S. from $449.99 to $499.99. This is in response to various changes in market conditions, which are expected to extend over the medium t…",
+  "fetchedAt": "2026-06-01"
 }

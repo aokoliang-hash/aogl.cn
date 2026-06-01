@@ -3,7 +3,7 @@
   "url": "https://blogs.microsoft.com/blog/2026/04/28/unlocking-human-ambition-to-drive-business-growth-with-ai",
   "name_en": "Microsoft",
   "name_zh": "微软",
-  "title_en": "",
+  "title_en": "Unlocking human ambition to drive business growth with AI - The Official Microsoft Blog",
   "title_zh": "",
   "domain": "blogs.microsoft.com",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "As our customers progress toward becoming Frontier Firms, they are using AI not only to optimize how work gets done, but to reinvent their business on the promise of growth. Organizations can now unlock creativity, accelerate innovation and democratize intelligence by bringing Copilots and agents directly into the tools people love and use every day....",
+  "excerpt_zh": "As our customers progress toward becoming Frontier Firms, they are using AI not only to optimize how work gets done, but to reinvent their business on the promise of growth. Organizations can now unlock creativity, accelerate innovation and democratize intelligence by bringing Copilots and agents directly into the tools people love and use every day....",
+  "fetchedAt": "2026-06-01"
 }

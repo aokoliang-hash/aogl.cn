@@ -3,7 +3,7 @@
   "url": "https://news.xbox.com/en-us/2026/05/29/next-week-on-xbox-new-games-for-june-1-to-5",
   "name_en": "Xbox",
   "name_zh": "Xbox",
-  "title_en": "",
+  "title_en": "Next Week on XBOX: New Games for June 1 to 5 - XBOX Wire",
   "title_zh": "",
   "domain": "news.xbox.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Next Week on Xbox: Final Fantasy VII Rebirth, The 7th Guest Remake, Gothic Remake, and more coming soon!",
+  "excerpt_zh": "Next Week on Xbox: Final Fantasy VII Rebirth, The 7th Guest Remake, Gothic Remake, and more coming soon!",
+  "fetchedAt": "2026-06-01"
 }

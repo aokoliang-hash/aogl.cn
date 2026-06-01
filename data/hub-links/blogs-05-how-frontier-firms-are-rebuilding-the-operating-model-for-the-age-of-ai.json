@@ -3,7 +3,7 @@
   "url": "https://blogs.microsoft.com/blog/2026/05/05/how-frontier-firms-are-rebuilding-the-operating-model-for-the-age-of-ai",
   "name_en": "Microsoft",
   "name_zh": "微软",
-  "title_en": "",
+  "title_en": "How Frontier Firms are rebuilding the operating model for the age of AI - The Official Microsoft Blog",
   "title_zh": "",
   "domain": "blogs.microsoft.com",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Updated May 11, 2026: The post was updated to reflect that third-party plugins will be available starting May 12, 2026. Spend time with any software engineering team right now and you’ll see something worth paying attention to. Over the last few years, the way software gets built has moved through four distinct patterns of human-agent...",
+  "excerpt_zh": "Updated May 11, 2026: The post was updated to reflect that third-party plugins will be available starting May 12, 2026. Spend time with any software engineering team right now and you’ll see something worth paying attention to. Over the last few years, the way software gets built has moved through four distinct patterns of human-agent...",
+  "fetchedAt": "2026-06-01"
 }

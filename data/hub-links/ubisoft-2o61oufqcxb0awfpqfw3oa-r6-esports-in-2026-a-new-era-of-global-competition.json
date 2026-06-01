@@ -3,7 +3,7 @@
   "url": "https://www.ubisoft.com/en-gb/esports/rainbow-six/siege/news-updates/2o61ouFqCXB0awFPQFW3oA/r6-esports-in-2026-a-new-era-of-global-competition",
   "name_en": "Ubisoft",
   "name_zh": "育碧",
-  "title_en": "",
+  "title_en": "R6 Esports | R6 Esports in 2026: A New Era of Global Competition",
   "title_zh": "",
   "domain": "ubisoft.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "The latest R6 esports news, updates, and announcements. Keep informed on all things Rainbow Six Siege.",
+  "excerpt_zh": "The latest R6 esports news, updates, and announcements. Keep informed on all things Rainbow Six Siege.",
+  "fetchedAt": "2026-06-01"
 }

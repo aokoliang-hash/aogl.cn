@@ -3,7 +3,7 @@
   "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music",
   "name_en": "TechCrunch",
   "name_zh": "TechCrunch",
-  "title_en": "",
+  "title_en": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music | TechCrunch",
   "title_zh": "",
   "domain": "techcrunch.com",
   "hub": "social",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "For years, UMG has pushed platforms, streaming services, and AI companies to implement stricter content moderation policies.",
+  "excerpt_zh": "For years, UMG has pushed platforms, streaming services, and AI companies to implement stricter content moderation policies.",
+  "fetchedAt": "2026-06-01"
 }

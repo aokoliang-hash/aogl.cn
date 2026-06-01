@@ -3,7 +3,7 @@
   "url": "https://blog.playstation.com/2026/05/26/mlb-the-show-mobile-launches-globally-today",
   "name_en": "PlayStation",
   "name_zh": "PlayStation",
-  "title_en": "",
+  "title_en": "MLB The Show Mobile launches globally today",
   "title_zh": "",
   "domain": "blog.playstation.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "MLB The Show Mobile’s global launch starts today.",
+  "excerpt_zh": "MLB The Show Mobile’s global launch starts today.",
+  "fetchedAt": "2026-06-01"
 }

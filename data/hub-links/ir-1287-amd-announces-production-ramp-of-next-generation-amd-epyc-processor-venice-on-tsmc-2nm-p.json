@@ -3,7 +3,7 @@
   "url": "https://ir.amd.com/news-events/press-releases/detail/1287/amd-announces-production-ramp-of-next-generation-amd-epyc-processor-venice-on-tsmc-2nm-process-technology",
   "name_en": "AMD",
   "name_zh": "AMD",
-  "title_en": "",
+  "title_en": "AMD Announces Production Ramp of Next-Generation AMD EPYC Processor “Venice” on TSMC 2nm Process Technology",
   "title_zh": "",
   "domain": "ir.amd.com",
   "hub": "tech",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "News Summary:    \nAMD has begun production ramp of its 6th Gen AMD EPYC™ CPUs, codenamed “Venice,” marking a major milestone for the AMD and…...",
+  "excerpt_zh": "News Summary:    \nAMD has begun production ramp of its 6th Gen AMD EPYC™ CPUs, codenamed “Venice,” marking a major milestone for the AMD and…...",
+  "fetchedAt": "2026-06-01"
 }

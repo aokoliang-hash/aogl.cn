@@ -3,7 +3,7 @@
   "url": "https://www.ubisoft.com/en-us/news/ignt.59687/hybrid-mode-update",
   "name_en": "Ubisoft",
   "name_zh": "育碧",
-  "title_en": "",
+  "title_en": "Hybrid Mode Update",
   "title_zh": "",
   "domain": "ubisoft.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Read everything about the Hybrid Mode Update coming to The Crew 2!",
+  "excerpt_zh": "Read everything about the Hybrid Mode Update coming to The Crew 2!",
+  "fetchedAt": "2026-06-01"
 }

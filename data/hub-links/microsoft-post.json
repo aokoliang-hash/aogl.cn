@@ -14,5 +14,8 @@
   "kinds": [
     "rank"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "浏览适合家庭或企业的 Microsoft 产品、服务和支持。购买 Microsoft 365、Copilot、Teams、Xbox、Windows、Azure、Surface 等产品/服务。",
+  "excerpt_zh": "浏览适合家庭或企业的 Microsoft 产品、服务和支持。购买 Microsoft 365、Copilot、Teams、Xbox、Windows、Azure、Surface 等产品/服务。",
+  "fetchedAt": "2026-06-01"
 }

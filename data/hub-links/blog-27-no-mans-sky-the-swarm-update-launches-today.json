@@ -3,7 +3,7 @@
   "url": "https://blog.playstation.com/2026/05/27/no-mans-sky-the-swarm-update-launches-today",
   "name_en": "PlayStation",
   "name_zh": "PlayStation",
-  "title_en": "",
+  "title_en": "No Man’s Sky: The Swarm update launches today",
   "title_zh": "",
   "domain": "blog.playstation.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Join fellow Travellers to take on an ominous new threat in frenetic space combat.",
+  "excerpt_zh": "Join fellow Travellers to take on an ominous new threat in frenetic space combat.",
+  "fetchedAt": "2026-06-01"
 }

@@ -3,7 +3,7 @@
   "url": "https://global.toyota/en/newsroom/corporate/43451757.html",
   "name_en": "Toyota",
   "name_zh": "丰田",
-  "title_en": "",
+  "title_en": "TMC's FY2026 2Q Financial Results Press Briefing | Corporate | Global Newsroom | Toyota Motor Corporation Official Global Website",
   "title_zh": "",
   "domain": "global.toyota",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Toyota Motor Corporation (TMC) announced today its 2Q financial results for the fiscal year ended March 31, 2026. The press briefing can be watched via the following link.",
+  "excerpt_zh": "Toyota Motor Corporation (TMC) announced today its 2Q financial results for the fiscal year ended March 31, 2026. The press briefing can be watched via the following link.",
+  "fetchedAt": "2026-06-01"
 }

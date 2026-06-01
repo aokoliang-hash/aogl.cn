@@ -3,7 +3,7 @@
   "url": "https://blogs.microsoft.com/blog/2026/05/21/from-ai-pilots-to-enterprise-impact-why-execution-is-the-new-differentiator",
   "name_en": "Microsoft",
   "name_zh": "微软",
-  "title_en": "",
+  "title_en": "From AI pilots to enterprise impact: Why execution is the new differentiator - The Official Microsoft Blog",
   "title_zh": "",
   "domain": "blogs.microsoft.com",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "As the pace of change accelerates, organizations are moving quickly from AI experimentation to enterprise-scale transformation. Leaders are prioritizing measurable outcomes, faster time to value and repeatability across the business. But many are encountering the same reality: the challenge is no longer deciding whether to invest in AI — it’s scaling adoption and delivering consistent,...",
+  "excerpt_zh": "As the pace of change accelerates, organizations are moving quickly from AI experimentation to enterprise-scale transformation. Leaders are prioritizing measurable outcomes, faster time to value and repeatability across the business. But many are encountering the same reality: the challenge is no longer deciding whether to invest in AI — it’s scaling adoption and delivering consistent,...",
+  "fetchedAt": "2026-06-01"
 }

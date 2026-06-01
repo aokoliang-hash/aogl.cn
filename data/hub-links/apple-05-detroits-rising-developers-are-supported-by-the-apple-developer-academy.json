@@ -3,7 +3,7 @@
   "url": "https://www.apple.com/newsroom/2026/05/detroits-rising-developers-are-supported-by-the-apple-developer-academy",
   "name_en": "Apple",
   "name_zh": "苹果",
-  "title_en": "",
+  "title_en": "Detroit’s rising developers are supported by the Apple Developer Academy",
   "title_zh": "",
   "domain": "apple.com",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "This year marks the Apple Developer Academy in Detroit’s fifth commencement in collaboration with MSU and the Gilbert Family Foundation.",
+  "excerpt_zh": "This year marks the Apple Developer Academy in Detroit’s fifth commencement in collaboration with MSU and the Gilbert Family Foundation.",
+  "fetchedAt": "2026-06-01"
 }

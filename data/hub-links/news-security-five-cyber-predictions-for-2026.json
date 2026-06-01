@@ -3,7 +3,7 @@
   "url": "https://news.broadcom.com/security/five-cyber-predictions-for-2026",
   "name_en": "Broadcom",
   "name_zh": "博通",
-  "title_en": "",
+  "title_en": "Five Cyber Predictions for 2026",
   "title_zh": "",
   "domain": "news.broadcom.com",
   "hub": "tech",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "As lines blur between human error and machine intelligence, defense has never been more personal",
+  "excerpt_zh": "As lines blur between human error and machine intelligence, defense has never been more personal",
+  "fetchedAt": "2026-06-01"
 }

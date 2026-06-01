@@ -3,7 +3,7 @@
   "url": "https://corporate.mcdonalds.com/corpmcd/our-stories/article/mcdonalds-usa-summer-hiring-celebrate-archways-anniversary.html",
   "name_en": "McDonald's",
   "name_zh": "麦当劳",
-  "title_en": "",
+  "title_en": "McDonald's USA Announces Summer Hiring Surge,   Celebrates 10th Anniversary of Archways to Opportunity",
   "title_zh": "",
   "domain": "corporate.mcdonalds.com",
   "hub": "brands",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Archways to Opportunity releases new Impact Report, quantifying its impact on economic opportunity and educational advancement for more than 90,000 crew members",
+  "excerpt_zh": "Archways to Opportunity releases new Impact Report, quantifying its impact on economic opportunity and educational advancement for more than 90,000 crew members",
+  "fetchedAt": "2026-06-01"
 }

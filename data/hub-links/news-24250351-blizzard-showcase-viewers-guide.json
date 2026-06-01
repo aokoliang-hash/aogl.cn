@@ -3,7 +3,7 @@
   "url": "https://news.blizzard.com/en-us/article/24250351/blizzard-showcase-viewers-guide",
   "name_en": "Blizzard / Battle.net",
   "name_zh": "暴雪",
-  "title_en": "",
+  "title_en": "Blizzard Showcase: Viewers’ Guide",
   "title_zh": "",
   "domain": "news.blizzard.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Tune in to see what’s next across our games and universes.",
+  "excerpt_zh": "Tune in to see what’s next across our games and universes.",
+  "fetchedAt": "2026-06-01"
 }

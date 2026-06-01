@@ -3,7 +3,7 @@
   "url": "https://support.zoom.us",
   "name_en": "Zoom",
   "name_zh": "Zoom",
-  "title_en": "",
+  "title_en": "Official Zoom Support | Help Center",
   "title_zh": "",
   "domain": "support.zoom.us",
   "hub": "life",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Access a wealth of support resources for all things Zoom. Choose from articles, videos, search, chat, and phone support. Get answers to all your questions here!",
+  "excerpt_zh": "Access a wealth of support resources for all things Zoom. Choose from articles, videos, search, chat, and phone support. Get answers to all your questions here!",
+  "fetchedAt": "2026-06-01"
 }

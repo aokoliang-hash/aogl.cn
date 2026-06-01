@@ -3,7 +3,7 @@
   "url": "https://blog.playstation.com/2026/05/28/call-of-duty-modern-warfare-4-campaign-multiplayer-and-dmz-launches-october-23",
   "name_en": "PlayStation",
   "name_zh": "PlayStation",
-  "title_en": "",
+  "title_en": "Call of Duty: Modern Warfare 4 — Campaign, Multiplayer, and DMZ launches October 23",
   "title_zh": "",
   "domain": "blog.playstation.com",
   "hub": "games",
@@ -15,5 +15,8 @@
     "news",
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Get intel on all three modes and the return of Captain Price.",
+  "excerpt_zh": "Get intel on all three modes and the return of Captain Price.",
+  "fetchedAt": "2026-06-01"
 }

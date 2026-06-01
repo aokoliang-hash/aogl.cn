@@ -3,7 +3,7 @@
   "url": "https://www.walmart.com/shop/deals/electronics",
   "name_en": "Walmart",
   "name_zh": "沃尔玛",
-  "title_en": "",
+  "title_en": "Electronics Deals",
   "title_zh": "",
   "domain": "walmart.com",
   "hub": "shopping",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Shop deals on TVs, laptops, tablets, gaming gear, headphones, and smartphones at Walmart. Save with limited time tech offers.",
+  "excerpt_zh": "Shop deals on TVs, laptops, tablets, gaming gear, headphones, and smartphones at Walmart. Save with limited time tech offers.",
+  "fetchedAt": "2026-06-01"
 }

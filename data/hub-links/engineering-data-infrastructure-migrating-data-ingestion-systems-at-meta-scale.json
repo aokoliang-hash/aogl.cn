@@ -3,7 +3,7 @@
   "url": "https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale",
   "name_en": "Meta Engineering",
   "name_zh": "Meta Engineering",
-  "title_en": "",
+  "title_en": "Migrating Data Ingestion Systems at Meta Scale",
   "title_zh": "",
   "domain": "engineering.fb.com",
   "hub": "portal",
@@ -16,5 +16,8 @@
     "news",
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Meta’s data ingestion system, which our engineering teams leverage for up-to-date snapshots of the social graph, has recently undergone a significant revamp to enhance its reliability at scale.  Mo…",
+  "excerpt_zh": "Meta’s data ingestion system, which our engineering teams leverage for up-to-date snapshots of the social graph, has recently undergone a significant revamp to enhance its reliability at scale.  Mo…",
+  "fetchedAt": "2026-06-01"
 }

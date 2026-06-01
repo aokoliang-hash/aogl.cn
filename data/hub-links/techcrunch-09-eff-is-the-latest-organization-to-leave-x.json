@@ -3,7 +3,7 @@
   "url": "https://techcrunch.com/2026/04/09/eff-is-the-latest-organization-to-leave-x",
   "name_en": "X",
   "name_zh": "X",
-  "title_en": "",
+  "title_en": "EFF is the latest organization to leave X | TechCrunch",
   "title_zh": "",
   "domain": "techcrunch.com",
   "hub": "portal",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "The EFF follows the departure of various news organizations and others who no longer find X a viable source of traffic.",
+  "excerpt_zh": "The EFF follows the departure of various news organizations and others who no longer find X a viable source of traffic.",
+  "fetchedAt": "2026-06-01"
 }

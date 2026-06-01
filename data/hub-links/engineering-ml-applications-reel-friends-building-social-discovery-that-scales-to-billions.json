@@ -3,7 +3,7 @@
   "url": "https://engineering.fb.com/2026/05/13/ml-applications/reel-friends-building-social-discovery-that-scales-to-billions",
   "name_en": "Instagram",
   "name_zh": "Instagram",
-  "title_en": "",
+  "title_en": "Reel Friends: Building Social Discovery that Scales to Billions",
   "title_zh": "",
   "domain": "engineering.fb.com",
   "hub": "portal",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "On its face the new Friend Bubbles feature looks simple enough. It highlights Reels your friends have watched and reacted to. But sometimes the features that seem the most straightforward require t…",
+  "excerpt_zh": "On its face the new Friend Bubbles feature looks simple enough. It highlights Reels your friends have watched and reacted to. But sometimes the features that seem the most straightforward require t…",
+  "fetchedAt": "2026-06-01"
 }

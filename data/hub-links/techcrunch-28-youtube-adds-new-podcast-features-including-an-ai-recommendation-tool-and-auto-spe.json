@@ -3,7 +3,7 @@
   "url": "https://techcrunch.com/2026/05/28/youtube-adds-new-podcast-features-including-an-ai-recommendation-tool-and-auto-speed",
   "name_en": "TechCrunch",
   "name_zh": "TechCrunch",
-  "title_en": "",
+  "title_en": "YouTube adds new podcast features, including an AI recommendation tool and 'Auto speed' | TechCrunch",
   "title_zh": "",
   "domain": "techcrunch.com",
   "hub": "social",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "The update signals YouTube's ongoing efforts to compete with other platforms for podcast audiences.",
+  "excerpt_zh": "The update signals YouTube's ongoing efforts to compete with other platforms for podcast audiences.",
+  "fetchedAt": "2026-06-01"
 }

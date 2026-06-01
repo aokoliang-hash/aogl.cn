@@ -3,7 +3,7 @@
   "url": "https://news.blizzard.com/en-us/article/24188065/blizzcon-returns-in-2026",
   "name_en": "Blizzard / Battle.net",
   "name_zh": "暴雪",
-  "title_en": "",
+  "title_en": "BlizzCon Returns In 2026",
   "title_zh": "",
   "domain": "news.blizzard.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Our celebration of our universes, connection, and community is coming back to the Anaheim Convention Center next year.",
+  "excerpt_zh": "Our celebration of our universes, connection, and community is coming back to the Anaheim Convention Center next year.",
+  "fetchedAt": "2026-06-01"
 }

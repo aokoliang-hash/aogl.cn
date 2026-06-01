@@ -3,7 +3,7 @@
   "url": "https://www.paypal.com/us/cshelp/personal",
   "name_en": "PayPal",
   "name_zh": "PayPal",
-  "title_en": "",
+  "title_en": "PayPal Help Center - Personal | PayPal US",
   "title_zh": "",
   "domain": "paypal.com",
   "hub": "life",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Find answers to your PayPal questions. Browse common questions, watch videos, or ask the Community.",
+  "excerpt_zh": "Find answers to your PayPal questions. Browse common questions, watch videos, or ask the Community.",
+  "fetchedAt": "2026-06-01"
 }

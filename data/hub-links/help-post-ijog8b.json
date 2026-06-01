@@ -3,7 +3,7 @@
   "url": "https://help.uber.com",
   "name_en": "Uber",
   "name_zh": "Uber",
-  "title_en": "",
+  "title_en": "Uber Support & Customer Service | Uber Help",
   "title_zh": "",
   "domain": "help.uber.com",
   "hub": "life",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Explore Uber help resources or contact us to resolve issues with our products and services including Uber Rides, Uber Eats, Uber for Business or driver issues.",
+  "excerpt_zh": "Explore Uber help resources or contact us to resolve issues with our products and services including Uber Rides, Uber Eats, Uber for Business or driver issues.",
+  "fetchedAt": "2026-06-01"
 }

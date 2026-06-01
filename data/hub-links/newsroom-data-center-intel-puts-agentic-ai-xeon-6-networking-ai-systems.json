@@ -3,7 +3,7 @@
   "url": "https://newsroom.intel.com/data-center/intel-puts-agentic-ai-xeon-6-networking-ai-systems",
   "name_en": "Intel",
   "name_zh": "英特尔",
-  "title_en": "",
+  "title_en": "Intel Puts Agentic AI to Work with Xeon 6+, Networking, and AI Systems",
   "title_zh": "",
   "domain": "newsroom.intel.com",
   "hub": "tech",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Intel expands its AI ready platform across data center, network, and edge—showing why the CPU is at the heart of agentic AI orchestration, scale and data movement.",
+  "excerpt_zh": "Intel expands its AI ready platform across data center, network, and edge—showing why the CPU is at the heart of agentic AI orchestration, scale and data movement.",
+  "fetchedAt": "2026-06-01"
 }

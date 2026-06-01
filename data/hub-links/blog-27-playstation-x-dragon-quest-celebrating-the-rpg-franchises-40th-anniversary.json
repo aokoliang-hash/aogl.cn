@@ -3,7 +3,7 @@
   "url": "https://blog.playstation.com/2026/05/27/playstation-x-dragon-quest-celebrating-the-rpg-franchises-40th-anniversary",
   "name_en": "PlayStation",
   "name_zh": "PlayStation",
-  "title_en": "",
+  "title_en": "PlayStation × Dragon Quest: celebrating the RPG franchise’s 40th anniversary",
   "title_zh": "",
   "domain": "blog.playstation.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "A look back at the six mainline entries on PlayStation consoles and the innovations they brought to the genre.",
+  "excerpt_zh": "A look back at the six mainline entries on PlayStation consoles and the innovations they brought to the genre.",
+  "fetchedAt": "2026-06-01"
 }

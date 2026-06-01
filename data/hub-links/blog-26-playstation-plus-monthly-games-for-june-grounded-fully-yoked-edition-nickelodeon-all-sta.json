@@ -3,7 +3,7 @@
   "url": "https://blog.playstation.com/2026/05/26/playstation-plus-monthly-games-for-june-grounded-fully-yoked-edition-nickelodeon-all-star-brawl-2-warhammer-40000-darktide",
   "name_en": "PlayStation",
   "name_zh": "PlayStation",
-  "title_en": "",
+  "title_en": "Playstation Plus Monthly Games for June: Grounded Fully Yoked Edition, Nickelodeon All-Star Brawl 2, Warhammer 40,000: Darktide",
   "title_zh": "",
   "domain": "blog.playstation.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "All available June 2.",
+  "excerpt_zh": "All available June 2.",
+  "fetchedAt": "2026-06-01"
 }

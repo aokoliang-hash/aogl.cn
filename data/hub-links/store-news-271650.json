@@ -3,7 +3,7 @@
   "url": "https://store.steampowered.com/news/271650",
   "name_en": "Steam / Valve",
   "name_zh": "Steam",
-  "title_en": "",
+  "title_en": "News - Team Fortress 2 Update Released",
   "title_zh": "",
   "domain": "store.steampowered.com",
   "hub": "games",
@@ -14,5 +14,6 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "fetchedAt": "2026-06-01"
 }

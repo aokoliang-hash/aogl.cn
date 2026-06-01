@@ -3,7 +3,7 @@
   "url": "https://news.xbox.com/en-us/2026/05/29/fatal-fury-city-of-the-wolves-mr-karate",
   "name_en": "Xbox",
   "name_zh": "Xbox",
-  "title_en": "",
+  "title_en": "A New Challenger Appears! - Mr. Karate Brings Kyokugenryu to Fatal Fury: City of the Wolves  - XBOX Wire",
   "title_zh": "",
   "domain": "news.xbox.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Master Mr. Karate's Kyokugen style in this moveset breakdown for Fatal Fury: City of the Wolves' latest character.",
+  "excerpt_zh": "Master Mr. Karate's Kyokugen style in this moveset breakdown for Fatal Fury: City of the Wolves' latest character.",
+  "fetchedAt": "2026-06-01"
 }

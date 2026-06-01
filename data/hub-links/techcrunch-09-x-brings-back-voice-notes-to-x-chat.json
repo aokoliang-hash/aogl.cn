@@ -3,7 +3,7 @@
   "url": "https://techcrunch.com/2026/04/09/x-brings-back-voice-notes-to-x-chat",
   "name_en": "X",
   "name_zh": "X",
-  "title_en": "",
+  "title_en": "X brings back Voice Notes to X Chat | TechCrunch",
   "title_zh": "",
   "domain": "techcrunch.com",
   "hub": "portal",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "X Chat brings back Voice Notes to DMs and group chats after removing the option during the upgrade.",
+  "excerpt_zh": "X Chat brings back Voice Notes to DMs and group chats after removing the option during the upgrade.",
+  "fetchedAt": "2026-06-01"
 }

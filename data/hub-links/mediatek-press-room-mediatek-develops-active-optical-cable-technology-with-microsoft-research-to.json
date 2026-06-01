@@ -3,7 +3,7 @@
   "url": "https://www.mediatek.com/press-room/mediatek-develops-active-optical-cable-technology-with-microsoft-research-to-deliver-significant-improvements-in-data-center-efficiency",
   "name_en": "MediaTek",
   "name_zh": "联发科",
-  "title_en": "",
+  "title_en": "MediaTek Develops Active Optical Cable Technology with Microsoft Research to Deliver Significant Improvements in Data Center Efficiency",
   "title_zh": "",
   "domain": "mediatek.com",
   "hub": "tech",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "MediaTek and Microsoft Research solve data center power and reliability trade-offs with a next-gen MicroLED Active Optical Cable for AI infrastructure.",
+  "excerpt_zh": "MediaTek and Microsoft Research solve data center power and reliability trade-offs with a next-gen MicroLED Active Optical Cable for AI infrastructure.",
+  "fetchedAt": "2026-06-01"
 }

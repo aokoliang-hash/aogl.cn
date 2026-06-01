@@ -3,7 +3,7 @@
   "url": "https://techcrunch.com/2026/05/30/tiktoks-road-to-becoming-a-super-app",
   "name_en": "TechCrunch",
   "name_zh": "TechCrunch",
-  "title_en": "",
+  "title_en": "TikTok's road to becoming a super app | TechCrunch",
   "title_zh": "",
   "domain": "techcrunch.com",
   "hub": "social",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "TikTok may be working to become the app that people use for most of their digital activities.",
+  "excerpt_zh": "TikTok may be working to become the app that people use for most of their digital activities.",
+  "fetchedAt": "2026-06-01"
 }

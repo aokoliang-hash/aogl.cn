@@ -3,7 +3,7 @@
   "url": "https://www.ebay.com/deals",
   "name_en": "eBay",
   "name_zh": "eBay",
-  "title_en": "",
+  "title_en": "Daily Deals on eBay | Best deals and Free Shipping",
   "title_zh": "",
   "domain": "ebay.com",
   "hub": "shopping",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Save money on the best Deals online with eBay Deals. We update our deals daily, so check back for the best deals - Plus Free Shipping",
+  "excerpt_zh": "Save money on the best Deals online with eBay Deals. We update our deals daily, so check back for the best deals - Plus Free Shipping",
+  "fetchedAt": "2026-06-01"
 }

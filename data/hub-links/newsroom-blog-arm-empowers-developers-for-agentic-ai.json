@@ -3,7 +3,7 @@
   "url": "https://newsroom.arm.com/blog/arm-empowers-developers-for-agentic-ai",
   "name_en": "ARM",
   "name_zh": "ARM",
-  "title_en": "",
+  "title_en": "Breadth, depth and value: Arm empowers developers for the agentic AI era",
   "title_zh": "",
   "domain": "newsroom.arm.com",
   "hub": "tech",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "As AI scales across cloud, edge, and devices, Arm is helping developers build and deploy software faster across the full compute spectrum.",
+  "excerpt_zh": "As AI scales across cloud, edge, and devices, Arm is helping developers build and deploy software faster across the full compute spectrum.",
+  "fetchedAt": "2026-06-01"
 }

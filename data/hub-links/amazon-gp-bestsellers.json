@@ -3,7 +3,7 @@
   "url": "https://www.amazon.com/gp/bestsellers",
   "name_en": "Amazon",
   "name_zh": "亚马逊",
-  "title_en": "",
+  "title_en": "Amazon.com Best Sellers: The most popular items on Amazon",
   "title_zh": "",
   "domain": "amazon.com",
   "hub": "shopping",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Discover the best  in Best Sellers.  Find the top 100 most popular items in Amazon  Best Sellers.",
+  "excerpt_zh": "Discover the best  in Best Sellers.  Find the top 100 most popular items in Amazon  Best Sellers.",
+  "fetchedAt": "2026-06-01"
 }

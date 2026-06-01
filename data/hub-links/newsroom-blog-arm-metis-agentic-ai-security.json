@@ -3,7 +3,7 @@
   "url": "https://newsroom.arm.com/blog/arm-metis-agentic-ai-security",
   "name_en": "ARM",
   "name_zh": "ARM",
-  "title_en": "",
+  "title_en": "Agentic AI-powered Arm Metis advances security vulnerability discovery in software",
   "title_zh": "",
   "domain": "newsroom.arm.com",
   "hub": "tech",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Arm Metis is an open-source agentic AI security framework that helps detect software vulnerabilities earlier.",
+  "excerpt_zh": "Arm Metis is an open-source agentic AI security framework that helps detect software vulnerabilities earlier.",
+  "fetchedAt": "2026-06-01"
 }

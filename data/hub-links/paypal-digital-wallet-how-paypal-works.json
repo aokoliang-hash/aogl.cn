@@ -3,7 +3,7 @@
   "url": "https://www.paypal.com/us/digital-wallet/how-paypal-works",
   "name_en": "PayPal",
   "name_zh": "PayPal",
-  "title_en": "",
+  "title_en": "What is PayPal and How Does it Work | PayPal US",
   "title_zh": "",
   "domain": "paypal.com",
   "hub": "life",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "PayPal enables you to securely make payments to individuals or businesses worldwide. Our app provides a simple and secure way to pay anyone, anywhere.",
+  "excerpt_zh": "PayPal enables you to securely make payments to individuals or businesses worldwide. Our app provides a simple and secure way to pay anyone, anywhere.",
+  "fetchedAt": "2026-06-01"
 }

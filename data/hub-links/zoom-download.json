@@ -3,7 +3,7 @@
   "url": "https://www.zoom.us/download",
   "name_en": "Zoom",
   "name_zh": "Zoom",
-  "title_en": "",
+  "title_en": "Download Center for Zoom Apps and Plugins | Zoom",
   "title_zh": "",
   "domain": "zoom.us",
   "hub": "life",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Download Zoom apps, plugins, and add-ons for mobile devices, desktop, web browsers, and operating systems. Available for Mac, PC, Android, Chrome, and Firefox.",
+  "excerpt_zh": "Download Zoom apps, plugins, and add-ons for mobile devices, desktop, web browsers, and operating systems. Available for Mac, PC, Android, Chrome, and Firefox.",
+  "fetchedAt": "2026-06-01"
 }

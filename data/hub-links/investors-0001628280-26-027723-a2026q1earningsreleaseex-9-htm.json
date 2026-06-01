@@ -3,7 +3,7 @@
   "url": "https://investors.coca-colacompany.com/filings-reports/all-sec-filings/content/0001628280-26-027723/a2026q1earningsreleaseex-9.htm",
   "name_en": "Coca-Cola",
   "name_zh": "可口可乐",
-  "title_en": "",
+  "title_en": "April 28, 2026 - EX-99.1 - 8-K: Current report | The Coca-Cola Company (KO)",
   "title_zh": "",
   "domain": "investors.coca-colacompany.com",
   "hub": "brands",
@@ -14,5 +14,6 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "fetchedAt": "2026-06-01"
 }

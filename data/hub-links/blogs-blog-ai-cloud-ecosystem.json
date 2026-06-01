@@ -3,7 +3,7 @@
   "url": "https://blogs.nvidia.com/blog/ai-cloud-ecosystem",
   "name_en": "NVIDIA",
   "name_zh": "英伟达",
-  "title_en": "",
+  "title_en": "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand",
   "title_zh": "",
   "domain": "blogs.nvidia.com",
   "hub": "tech",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Fast-growing ecosystem helps enterprises, startups, nations, AI labs and developers scale agentic AI applications.",
+  "excerpt_zh": "Fast-growing ecosystem helps enterprises, startups, nations, AI labs and developers scale agentic AI applications.",
+  "fetchedAt": "2026-06-01"
 }

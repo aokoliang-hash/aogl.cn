@@ -3,7 +3,7 @@
   "url": "https://www.ea.com/games/battlefield/battlefield-6/news/battlefield-6-game-update-1-2-3-5",
   "name_en": "Electronic Arts",
   "name_zh": "EA",
-  "title_en": "",
+  "title_en": "BATTLEFIELD 6 GAME UPDATE 1.2.3.5",
   "title_zh": "",
   "domain": "ea.com",
   "hub": "games",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Read the Battlefield 6 1.2.3.5 Game Update notes, with quality-of-life improvements across stability, progression, UI, Operation Augur, Gauntlet, and REDSEC.",
+  "excerpt_zh": "Read the Battlefield 6 1.2.3.5 Game Update notes, with quality-of-life improvements across stability, progression, UI, Operation Augur, Gauntlet, and REDSEC.",
+  "fetchedAt": "2026-06-01"
 }

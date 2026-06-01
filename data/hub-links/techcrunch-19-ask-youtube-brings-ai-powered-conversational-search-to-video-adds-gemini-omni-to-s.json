@@ -3,7 +3,7 @@
   "url": "https://techcrunch.com/2026/05/19/ask-youtube-brings-ai-powered-conversational-search-to-video-adds-gemini-omni-to-shorts",
   "name_en": "TechCrunch",
   "name_zh": "TechCrunch",
-  "title_en": "",
+  "title_en": "'Ask YouTube' brings AI-powered conversational search to video, adds Gemini Omni to Shorts | TechCrunch",
   "title_zh": "",
   "domain": "techcrunch.com",
   "hub": "social",
@@ -14,5 +14,8 @@
   "kinds": [
     "hotmix"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Google is completely revamping its search experience, and that doesn't stop at YouTube.",
+  "excerpt_zh": "Google is completely revamping its search experience, and that doesn't stop at YouTube.",
+  "fetchedAt": "2026-06-01"
 }

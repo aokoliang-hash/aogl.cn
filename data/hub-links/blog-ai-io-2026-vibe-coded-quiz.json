@@ -3,7 +3,7 @@
   "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz",
   "name_en": "Google",
   "name_zh": "Google",
-  "title_en": "",
+  "title_en": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
   "title_zh": "",
   "domain": "blog.google",
   "hub": "brands",
@@ -15,5 +15,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
+  "excerpt_zh": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
+  "fetchedAt": "2026-06-01"
 }

@@ -3,7 +3,7 @@
   "url": "https://www.target.com/circle",
   "name_en": "Target",
   "name_zh": "Target",
-  "title_en": "",
+  "title_en": "Target Circle™",
   "title_zh": "",
   "domain": "target.com",
   "hub": "shopping",
@@ -14,5 +14,8 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01"
+  "updated": "2026-06-01",
+  "excerpt_en": "Join Target Circle™ to get perks, deals & a whole lot more every time you shop at Target.",
+  "excerpt_zh": "Join Target Circle™ to get perks, deals & a whole lot more every time you shop at Target.",
+  "fetchedAt": "2026-06-01"
 }
