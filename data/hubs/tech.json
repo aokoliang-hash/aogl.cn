@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-05-26",
+  "updated": "2026-06-01",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-05-19</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-05-19</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "Synthesize Realistic 3D Medical Images at Scale to Ship Pre‑Trained Models",
-          "titleZh": "Synthesize Realistic 3D Medical Images at Scale to Ship Pre‑Trained Models",
-          "url": "https://developer.nvidia.com/blog/synthesize-realistic-3d-medical-images-at-scale-to-ship-pre-trained-models/",
-          "date": "2026-05-22"
+          "titleEn": "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand",
+          "titleZh": "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand",
+          "url": "https://blogs.nvidia.com/blog/ai-cloud-ecosystem/",
+          "date": "2026-06-01"
         },
         {
-          "titleEn": "Automating and Optimizing Financial Signal Discovery with Multi-Agent Systems",
-          "titleZh": "Automating and Optimizing Financial Signal Discovery with Multi-Agent Systems",
-          "url": "https://developer.nvidia.com/blog/automating-and-optimizing-financial-signal-discovery-with-multi-agent-systems/",
-          "date": "2026-05-21"
+          "titleEn": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
+          "titleZh": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
+          "url": "https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain/",
+          "date": "2026-06-01"
         },
         {
-          "titleEn": "Get Real-Time Visibility into GPU Usage Across Kubernetes Clusters",
-          "titleZh": "Get Real-Time Visibility into GPU Usage Across Kubernetes Clusters",
-          "url": "https://developer.nvidia.com/blog/get-real-time-visibility-into-gpu-usage-across-kubernetes-clusters/",
-          "date": "2026-05-21"
+          "titleEn": "Taiwan’s Industry Titans Turbocharge World’s AI Infrastructure Buildout With NVIDIA",
+          "titleZh": "Taiwan’s Industry Titans Turbocharge World’s AI Infrastructure Buildout With NVIDIA",
+          "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/",
+          "date": "2026-06-01"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "[Interview] The Future of Screen Experiences, Part ①: Inside Samsung’s Micro RGB TV, Setting a New Standard for Next-Generation Displays",
-          "titleZh": "[Interview] The Future of Screen Experiences, Part ①: Inside Samsung’s Micro RGB TV, Setting a New Standard for Next-Generation Displays",
-          "url": "https://news.samsung.com/global/interview-the-future-of-screen-experiences-part-%e2%91%a0-inside-samsungs-micro-rgb-tv-setting-a-new-standard-for-next-generation-displays",
-          "date": "2026-05-26"
+          "titleEn": "[Interview] Where Sound Meets Design — Redefining the Audio Experience With Music Studio",
+          "titleZh": "[Interview] Where Sound Meets Design — Redefining the Audio Experience With Music Studio",
+          "url": "https://news.samsung.com/global/interview-where-sound-meets-design-redefining-the-audio-experience-with-music-studio",
+          "date": "2026-06-01"
         },
         {
-          "titleEn": "Samsung TV Plus Brings Monthly SM K-Pop Concert Series to Fans at Home",
-          "titleZh": "Samsung TV Plus Brings Monthly SM K-Pop Concert Series to Fans at Home",
-          "url": "https://news.samsung.com/global/samsung-tv-plus-brings-monthly-sm-k-pop-concert-series-to-fans-at-home",
-          "date": "2026-05-22"
+          "titleEn": "Samsung and MUNCH Museum Bring Rarely Seen Masterpieces to Samsung Art Store",
+          "titleZh": "Samsung and MUNCH Museum Bring Rarely Seen Masterpieces to Samsung Art Store",
+          "url": "https://news.samsung.com/global/samsung-and-munch-museum-bring-rarely-seen-masterpieces-to-samsung-art-store",
+          "date": "2026-06-01"
         },
         {
-          "titleEn": "[Infographic] Samsung AI Appliances Deliver Inclusive Experiences Through Enhanced Accessibility Features",
-          "titleZh": "[Infographic] Samsung AI Appliances Deliver Inclusive Experiences Through Enhanced Accessibility Features",
-          "url": "https://news.samsung.com/global/infographic-samsung-ai-appliances-deliver-inclusive-experiences-through-enhanced-accessibility-features",
-          "date": "2026-05-21"
+          "titleEn": "Samsung Electronics Begins Shipment of Industry-First HBM4E Samples",
+          "titleZh": "Samsung Electronics Begins Shipment of Industry-First HBM4E Samples",
+          "url": "https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples",
+          "date": "2026-05-29"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "英特尔",
       "items": [
         {
-          "titleEn": "Intel’s 2025 Outstanding Researcher Awards Honor 10 Academic Innovators",
-          "titleZh": "Intel’s 2025 Outstanding Researcher Awards Honor 10 Academic Innovators",
-          "url": "https://newsroom.intel.com/corporate/intels-2025-outstanding-researcher-awards-honor-10-academic-innovators",
-          "date": "2026-05-21"
+          "titleEn": "Intel Puts Agentic AI to Work with Xeon 6+, Networking, and AI Systems",
+          "titleZh": "Intel Puts Agentic AI to Work with Xeon 6+, Networking, and AI Systems",
+          "url": "https://newsroom.intel.com/data-center/intel-puts-agentic-ai-xeon-6-networking-ai-systems",
+          "date": "2026-06-01"
         },
         {
-          "titleEn": "Intel Core Ultra Series 3: The New Standard for Edge AI Robotics Compute",
-          "titleZh": "Intel Core Ultra Series 3: The New Standard for Edge AI Robotics Compute",
-          "url": "https://newsroom.intel.com/artificial-intelligence/intel-core-ultra-series-3-for-edge-ai-robotics",
-          "date": "2026-05-20"
+          "titleEn": "130+ Customers Choose Intel Series 3 Processors for Edge Devices",
+          "titleZh": "130+ Customers Choose Intel Series 3 Processors for Edge Devices",
+          "url": "https://newsroom.intel.com/client-computing/customers-choose-intel-for-edge-devices",
+          "date": "2026-06-01"
         },
         {
-          "titleEn": "Intel Named Official Compute Partner of McLaren Racing",
-          "titleZh": "Intel Named Official Compute Partner of McLaren Racing",
-          "url": "https://newsroom.intel.com/corporate/intel-named-official-compute-partner-of-mclaren-racing",
-          "date": "2026-05-14"
+          "titleEn": "Meet the Intel Pioneer Behind EMIB Chip Packaging",
+          "titleZh": "Meet the Intel Pioneer Behind EMIB Chip Packaging",
+          "url": "https://newsroom.intel.com/intel-foundry/meet-the-inventor-of-emib",
+          "date": "2026-05-28"
         }
       ]
     },
@@ -316,22 +316,22 @@
       "labelZh": "ARM",
       "items": [
         {
-          "titleEn": "Scaling Agentic AI: Arm AGI CPU and Red Hat bring production-ready AI stack to empower agentic AI data centers",
-          "titleZh": "Scaling Agentic AI: Arm AGI CPU and Red Hat bring production-ready AI stack to empower agentic AI data centers",
-          "url": "https://newsroom.arm.com/blog/agentic-ai-infrastructure-arm-agi-cpu-red-hat",
-          "date": "2026-05-11"
+          "titleEn": "Agentic AI-powered Arm Metis advances security vulnerability discovery in software",
+          "titleZh": "Agentic AI-powered Arm Metis advances security vulnerability discovery in software",
+          "url": "https://newsroom.arm.com/blog/arm-metis-agentic-ai-security",
+          "date": "2026-05-28"
         },
         {
-          "titleEn": "Arm’s vital role in the age of AI from cloud to edge: Five takeaways from the Moor Insights and Strategy report",
-          "titleZh": "Arm’s vital role in the age of AI from cloud to edge: Five takeaways from the Moor Insights and Strategy report",
-          "url": "https://newsroom.arm.com/blog/five-takeaways-from-the-moor-insights-and-strategy-report",
-          "date": "2026-05-07"
+          "titleEn": "Breadth, depth and value: Arm empowers developers for the agentic AI era",
+          "titleZh": "Breadth, depth and value: Arm empowers developers for the agentic AI era",
+          "url": "https://newsroom.arm.com/blog/arm-empowers-developers-for-agentic-ai",
+          "date": "2026-05-27"
         },
         {
-          "titleEn": "What Arm-based innovations happened in April 2026?",
-          "titleZh": "What Arm-based innovations happened in April 2026?",
-          "url": "https://newsroom.arm.com/blog/arm-based-innovations-from-april-2026",
-          "date": "2026-05-01"
+          "titleEn": "Arm and Google: Powering the next generation of AI-native Googlebooks",
+          "titleZh": "Arm and Google: Powering the next generation of AI-native Googlebooks",
+          "url": "https://newsroom.arm.com/blog/arm-google-ai-native-googlebooks",
+          "date": "2026-05-26"
         }
       ]
     },

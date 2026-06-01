@@ -278,6 +278,7 @@ function hotMixRowsToSpecItems(rows) {
     date: formatDateLabel(x.pubMs) || todayYmd(),
     source: x.source || "",
     image: x.image || "",
+    imageSource: x.image || "",
   }));
 }
 

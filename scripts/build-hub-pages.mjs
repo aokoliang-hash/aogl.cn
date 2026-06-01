@@ -5,6 +5,9 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
+import { faviconSrcForHtml } from "./favicon-local.mjs";
+import { hotMixImageSrcForHtml } from "./hub-image-local.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -187,9 +190,8 @@ function updatedSpans(spec) {
   }).join("");
 }
 
-function faviconUrl(domain, sz = 64) {
-  const d = String(domain || "").replace(/^www\./, "");
-  return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(d)}&sz=${sz}`;
+function hubFaviconSrc(domain) {
+  return faviconSrcForHtml(String(domain || "").replace(/^www\./, ""));
 }
 
 function hotMixThumbDomain(source) {
@@ -206,10 +208,10 @@ function hotMixThumbDomain(source) {
   return "steampowered.com";
 }
 
-function hotMixItemImageUrl(it) {
-  const u = String(it.image || "").trim();
-  if (u && /^https?:\/\//i.test(u)) return u;
-  return faviconUrl(hotMixThumbDomain(it.source), 128);
+function hotMixItemImageUrl(it, spec) {
+  const local = hotMixImageSrcForHtml(spec.slug, it);
+  if (local) return local;
+  return hubFaviconSrc(hotMixThumbDomain(it.source));
 }
 
 const NAV = [
@@ -468,7 +470,7 @@ function footerLegal() {
         code === "en" ? "Privacy" : code === "zh" ? "隐私政策" : FOOTER_PRIVACY[code]
       )}</a>`
   ).join("\n");
-  return about + "\n" + contact + "\n" + log + "\n" + priv;
+  return about + "\n" + contact + "\n" + log + "\n" + priv + "\n" + footerFriendLinkHtml(LOCALES, esc);
 }
 
 function renderPage(spec, activeFile) {
@@ -495,7 +497,7 @@ function renderPage(spec, activeFile) {
       (t, i) => `          <li class="hub-rank-item">
             <a class="hub-rank-link" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">
               <span class="hub-rank-num">${i + 1}</span>
-              <img class="hub-favicon" src="${esc(faviconUrl(t.domain))}" width="40" height="40" alt="" loading="lazy" decoding="async" data-domain="${esc(t.domain)}" />
+              <img class="hub-favicon" src="${esc(hubFaviconSrc(t.domain))}" width="40" height="40" alt="" loading="lazy" decoding="async" data-domain="${esc(t.domain)}" />
               <span class="hub-rank-text">${LOCALES.map((code) => `<span class="lang-${code}">${esc(displayName(t, code))}</span>`).join("")}</span>
             </a>
           </li>`
@@ -546,7 +548,7 @@ ${newsBlocks}
       (it) => `        <li class="hub-hotmix-card">
           <a class="hub-hotmix-card-link" href="${esc(it.url)}" target="_blank" rel="noopener noreferrer" draggable="false">
             <div class="hub-hotmix-card-media">
-              <img class="hub-hotmix-card-img" src="${esc(hotMixItemImageUrl(it))}" width="400" height="225" alt="" loading="lazy" decoding="async" draggable="false" />
+              <img class="hub-hotmix-card-img" src="${esc(hotMixItemImageUrl(it, spec))}" width="400" height="225" alt="" loading="lazy" decoding="async" draggable="false" />
             </div>
             <div class="hub-hotmix-card-body">
               <div class="hub-hotmix-card-titles">${LOCALES.map(
@@ -578,7 +580,7 @@ ${hotMixLis}
     .map(
       (t) => `          <li class="hub-more-item">
             <a class="hub-more-link" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">
-              <img class="hub-favicon hub-favicon-sm" src="${esc(faviconUrl(t.domain))}" width="28" height="28" alt="" loading="lazy" decoding="async" />
+              <img class="hub-favicon hub-favicon-sm" src="${esc(hubFaviconSrc(t.domain))}" width="28" height="28" alt="" loading="lazy" decoding="async" />
               ${LOCALES.map((code) => `<span class="lang-${code}">${esc(displayName(t, code))}</span>`).join("")}
             </a>
           </li>`

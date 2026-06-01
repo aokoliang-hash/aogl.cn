@@ -5,6 +5,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { faviconSrcForHtml } from "./favicon-local.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -27,10 +28,6 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
-function faviconUrl(domain) {
-  return "https://www.google.com/s2/favicons?domain=" + encodeURIComponent(domain) + "&sz=48";
-}
-
 function toolName(t, lang) {
   if (lang === "en") return t.name_en;
   if (lang === "zh") return t.name_zh;
@@ -39,7 +36,7 @@ function toolName(t, lang) {
 }
 
 function renderTool(t) {
-  const icon = faviconUrl(t.domain);
+  const icon = faviconSrcForHtml(t.domain);
   const names = LOCALES.map(
     (lang) => `                <span class="tool-tile-name lang-${lang}">${escapeHtml(toolName(t, lang))}</span>`
   ).join("\n");

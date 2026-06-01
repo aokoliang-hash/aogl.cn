@@ -7,12 +7,18 @@
     "build-logo": "node scripts/regenerate-logo-wordmark.cjs",
     "build-hubs": "node scripts/build-hub-pages.mjs",
     "fetch-hub-news": "node scripts/fetch-hub-news.mjs",
-    "refresh-hub-news": "node scripts/fetch-hub-news.mjs && npm run build-hubs && npm run build-seo-locales",
+    "refresh-hub-news": "node scripts/fetch-hub-news.mjs && npm run fetch-hub-hotmix-images && npm run build-hubs && npm run build-seo-locales",
     "build-articles": "node scripts/build-articles.mjs",
+    "generate-article-covers": "py -3 scripts/generate-article-covers.py",
+    "fetch-tools-favicons": "node scripts/fetch-tools-favicons.mjs",
+    "fetch-tools-favicons:force": "node scripts/fetch-tools-favicons.mjs -- --force",
+    "fetch-hub-hotmix-images": "node scripts/fetch-hub-hotmix-images.mjs",
+    "localize-site-images": "npm run fetch-tools-favicons && npm run fetch-hub-hotmix-images",
+    "inject-tools-directory": "node scripts/inject-tools-directory.mjs",
     "build-index-pills": "node scripts/inject-index-pills.mjs",
     "build-contact": "node scripts/build-contact-page.mjs",
     "build-seo-locales": "node scripts/build-seo-locale-pages.mjs",
-    "build-site": "npm run build-hubs && npm run build-articles && npm run build-index-pills && npm run build-contact && npm run build-seo-locales"
+    "build-site": "npm run build-hubs && npm run build-articles && npm run inject-tools-directory && npm run build-index-pills && npm run build-contact && npm run build-seo-locales"
   },
   "devDependencies": {
     "cheerio": "^1.2.0",

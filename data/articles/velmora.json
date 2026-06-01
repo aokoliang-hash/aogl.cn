@@ -4,7 +4,7 @@
   "datePublished": "2026-05-11",
   "dateModified": "2026-06-01",
   "author": "aogl.cn",
-  "heroImage": "original/Gemini_Generated_Image_f7vc2cf7vc2cf7vc.png",
+  "heroImage": "upload/articles/velmora.webp",
   "heroImageAlt": "Velmora planetary concept",
   "htmlFragments": {
     "en": "fragments/velmora-en.html",
@@ -42,5 +42,6 @@
   "indexExcerptKo": "Velmora 설정과 WebGL 뷰",
   "indexExcerptFr": "Velmora — codex planétaire",
   "indexExcerptRu": "Velmora — планетный кодекс",
-  "indexExcerptAr": "Velmora — دليل كوكبي"
+  "indexExcerptAr": "Velmora — دليل كوكبي",
+  "heroImageSource": "original/Gemini_Generated_Image_f7vc2cf7vc2cf7vc.png"
 }

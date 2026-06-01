@@ -6,10 +6,12 @@
  *
  * 新增文章：复制 data/articles/velmora.json，改 slug / 日期 / 各语种字段；长正文可放 data/articles/fragments/<slug>-<lang>.html
  * 并在 JSON 里用 htmlFragments 引用。layout: "hub" 为站点顶栏+深色主题；省略 layout 则为短文 privacy.css 模板。
+ * 封面：heroImage 指向 upload/articles/<slug>.webp（1200×675 WebP）；原图 heroImageSource。生成：npm run generate-article-covers
  */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -430,6 +432,7 @@ function buildHubFooterBlock(prefix) {
       )
       .join("\n");
   }).join("\n");
+  const friend = footerFriendLinkHtml(LANGS, escHtml);
   return `  <footer class="site-footer">
     <div class="wrap footer-wrap">
       <div class="footer-top">
@@ -442,6 +445,7 @@ function buildHubFooterBlock(prefix) {
       </div>
       <div class="footer-legal">
 ${legal}
+${friend}
         <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
       </div>
     </div>

@@ -4,7 +4,7 @@
   "datePublished": "2026-05-19",
   "dateModified": "2026-05-19",
   "author": "aogl.cn",
-  "heroImage": "original/travel-through/ren1.png",
+  "heroImage": "upload/articles/travel-through-parallax-phone.webp",
   "heroImageAlt": "Travel-through parallax demo — character look-dev render (ren1)",
   "htmlFragments": {
     "en": "fragments/travel-through-parallax-phone-en.html",
@@ -42,5 +42,6 @@
   "indexExcerptKo": "폰 3레이어 시차 데모",
   "indexExcerptFr": "Parallaxe téléphone en couches",
   "indexExcerptRu": "Параллакс слоёв телефона",
-  "indexExcerptAr": "بارالاكس هاتف بطبقات"
+  "indexExcerptAr": "بارالاكس هاتف بطبقات",
+  "heroImageSource": "original/travel-through/ren1.png"
 }

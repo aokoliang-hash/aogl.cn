@@ -4,7 +4,7 @@
   "datePublished": "2026-05-27",
   "dateModified": "2026-05-27",
   "author": "aogl.cn",
-  "heroImage": "original/sky-plane/sky.png",
+  "heroImage": "upload/articles/sky-plane-window-cloud-composite.webp",
   "heroImageAlt": "Aerial sea of clouds at golden hour — exterior plate for sky-plane window composite (aogl.cn)",
   "htmlFragments": {
     "en": "fragments/sky-plane-window-cloud-composite-en.html",
@@ -42,5 +42,6 @@
   "indexExcerptKo": "기내 창·구름·MP4",
   "indexExcerptFr": "Fenêtre cabine · nuages · MP4",
   "indexExcerptRu": "Иллюминатор · облака · MP4",
-  "indexExcerptAr": "نافذة · سحب · MP4"
+  "indexExcerptAr": "نافذة · سحب · MP4",
+  "heroImageSource": "original/sky-plane/sky.png"
 }

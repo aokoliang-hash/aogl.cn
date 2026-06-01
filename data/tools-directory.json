@@ -2,8 +2,8 @@
   "updated": "2026-05-11",
   "heading_en": "AI tools directory",
   "heading_zh": "AI 工具分类导航",
-  "intro_en": "Quick links to official sites (new tab). Icons use each site’s favicon.",
-  "intro_zh": "以下为常见 AI 工具官网入口（新标签页打开）。图标来自各站 favicon。",
+  "intro_en": "Quick links to official sites (new tab). Tool icons are cached on this server under upload/favicons/.",
+  "intro_zh": "以下为常见 AI 工具官网入口（新标签页打开）。图标已缓存在本站 upload/favicons/，不再外链 Google。",
   "categories": [
     {
       "id": "chat-llm",

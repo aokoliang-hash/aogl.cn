@@ -4,7 +4,7 @@
   "datePublished": "2026-05-16",
   "dateModified": "2026-06-01",
   "author": "aogl.cn",
-  "heroImage": "original/character/Gemini_Generated_Image_h75mjuh75mjuh75m.png",
+  "heroImage": "upload/articles/character-turnaround-walk.webp",
   "heroImageAlt": "Original character design — turnaround, walk cycle, and motion studies (aogl.cn)",
   "htmlFragments": {
     "en": "fragments/character-turnaround-walk-en.html",
@@ -42,5 +42,6 @@
   "indexExcerptKo": "턴어라운드·워크사이클·walk.html",
   "indexExcerptFr": "Turnaround · marche · walk.html",
   "indexExcerptRu": "Разворот · ходьба · walk.html",
-  "indexExcerptAr": "جولان ومشي وwalk.html"
+  "indexExcerptAr": "جولان ومشي وwalk.html",
+  "heroImageSource": "original/character/Gemini_Generated_Image_h75mjuh75mjuh75m.png"
 }

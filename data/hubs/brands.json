@@ -8,7 +8,7 @@
   "descZh": "参考 Interbrand「全球最佳品牌」价值榜常见前十，每牌三条官网新闻稿或博文外链。",
   "h1En": "Interbrand top 10 (global brand value)",
   "h1Zh": "全球品牌价值前十（Interbrand 口径）",
-  "updated": "2026-05-26",
+  "updated": "2026-06-01",
   "editorialHtmlEn": "<p>Ten names usually clustered at the top of Interbrand’s “Best Global Brands” value ranking; order tweaks when they republish the annual table.</p><p>Valuation moves with equity markets and product cycles. This page is a <strong>bookmark rail</strong> — not investment research and not a recommendation to buy, hold, or sell any security.</p><p>Last reviewed: <strong>2026-05-19</strong>. I do not rank brands by ad spend or sponsorship; links point to corporate homepages or newsrooms only.</p><p>Press PDFs and campaign microsites are not mirrored here — only the three outbound story links per row that I actually read.</p>",
   "editorialHtmlZh": "<p>十个名字大致对应 Interbrand《全球最佳品牌》年度价值榜里常见的前排；他们发新榜后再微调顺序。</p><p>品牌价值随市场与业务周期波动。本页只是<strong>外链书签条</strong>，不构成投资建议，亦不代表买入、持有或卖出任何证券。</p><p>最近核对：<strong>2026-05-19</strong>。不按广告或赞助排序；链接仅指向企业官网或新闻稿入口。</p><p>新闻稿 PDF 与 campaign 微站不在本站转载，每行三条外链是我自己会点进去看的稿件入口。</p>",
   "rankTitleEn": "Global top 10 (brand value)",
@@ -116,22 +116,22 @@
       "labelZh": "苹果",
       "items": [
         {
-          "titleEn": "Apple TV to air first major live pro sports event shot on iPhone 17 Pro",
-          "titleZh": "Apple TV to air first major live pro sports event shot on iPhone 17 Pro",
-          "url": "https://www.apple.com/newsroom/2026/05/apple-tv-to-air-first-major-live-pro-sports-event-shot-on-iphone-17-pro/",
-          "date": "2026-05-21"
+          "titleEn": "Detroit’s rising developers are supported by the Apple Developer Academy",
+          "titleZh": "Detroit’s rising developers are supported by the Apple Developer Academy",
+          "url": "https://www.apple.com/newsroom/2026/05/detroits-rising-developers-are-supported-by-the-apple-developer-academy/",
+          "date": "2026-05-29"
         },
         {
-          "titleEn": "The App Store stopped over $2.2 billion in fraudulent transactions in 2025",
-          "titleZh": "The App Store stopped over $2.2 billion in fraudulent transactions in 2025",
-          "url": "https://www.apple.com/newsroom/2026/05/the-app-store-stopped-over-2-point-2-billion-usd-in-fraudulent-transactions-in-2025/",
-          "date": "2026-05-20"
+          "titleEn": "Cherokee language learners bridge generations with iPad and Mac",
+          "titleZh": "Cherokee language learners bridge generations with iPad and Mac",
+          "url": "https://www.apple.com/newsroom/2026/05/cherokee-language-learners-bridge-generations-with-ipad-and-mac/",
+          "date": "2026-05-28"
         },
         {
-          "titleEn": "Apple Sports expands to more than 90 new countries and regions",
-          "titleZh": "Apple Sports expands to more than 90 new countries and regions",
-          "url": "https://www.apple.com/newsroom/2026/05/apple-sports-expands-to-more-than-90-new-countries-and-regions/",
-          "date": "2026-05-19"
+          "titleEn": "After the Whistle with Brendan Hunt and Rebecca Lowe returns",
+          "titleZh": "After the Whistle with Brendan Hunt and Rebecca Lowe returns",
+          "url": "https://www.apple.com/newsroom/2026/05/after-the-whistle-with-brendan-hunt-and-rebecca-lowe-returns/",
+          "date": "2026-05-27"
         }
       ]
     },
@@ -169,19 +169,19 @@
           "titleEn": "Amazon in the community: Service, community, and commitment at HQ2",
           "titleZh": "Amazon in the community: Service, community, and commitment at HQ2",
           "url": "https://www.aboutamazon.com/news/community/amazon-arlington-virginia-news?utm_source=rss",
-          "date": "2026-05-21"
+          "date": "2026-05-29"
         },
         {
-          "titleEn": "Amazon data center communities: Here’s what’s happening near data centers across the US",
-          "titleZh": "Amazon data center communities: Here’s what’s happening near data centers across the US",
-          "url": "https://www.aboutamazon.com/news/aws/amazon-data-centers-locations-news?utm_source=rss",
-          "date": "2026-05-21"
+          "titleEn": "Amazon's water conservation and replenishment efforts around the world",
+          "titleZh": "Amazon's water conservation and replenishment efforts around the world",
+          "url": "https://www.aboutamazon.com/news/sustainability/amazon-water-conservation-replenishment-sustainability?utm_source=rss",
+          "date": "2026-05-29"
         },
         {
-          "titleEn": "Amazon CEO Andy Jassy on Prime Video: ‘That business is growing, it’s profitable, and it’s still early’",
-          "titleZh": "Amazon CEO Andy Jassy on Prime Video: ‘That business is growing, it’s profitable, and it’s still early’",
-          "url": "https://www.aboutamazon.com/news/entertainment/amazon-ceo-andy-jassy-on-prime-video-growth?utm_source=rss",
-          "date": "2026-05-21"
+          "titleEn": "How Amazon protects cargo from fraud and theft across its shipping network",
+          "titleZh": "How Amazon protects cargo from fraud and theft across its shipping network",
+          "url": "https://www.aboutamazon.com/news/operations/amazon-freight-security-relay-carrier-fraud?utm_source=rss",
+          "date": "2026-05-29"
         }
       ]
     },
@@ -191,22 +191,22 @@
       "labelZh": "谷歌",
       "items": [
         {
-          "titleEn": "Catch up on the Dialogues stage at Google I/O 2026.",
-          "titleZh": "Catch up on the Dialogues stage at Google I/O 2026.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
-          "date": "2026-05-22"
+          "titleEn": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+          "titleZh": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+          "date": "2026-05-29"
         },
         {
-          "titleEn": "We’re announcing new community investments in Missouri.",
-          "titleZh": "We’re announcing new community investments in Missouri.",
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
-          "date": "2026-05-20"
+          "titleEn": "9 demos of Gemini Omni and Gemini 3.5 in action",
+          "titleZh": "9 demos of Gemini Omni and Gemini 3.5 in action",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+          "date": "2026-05-29"
         },
         {
-          "titleEn": "100 things we announced at I/O 2026",
-          "titleZh": "100 things we announced at I/O 2026",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
-          "date": "2026-05-20"
+          "titleEn": "Check out real-life AI prototypes from the Futures Lab.",
+          "titleZh": "Check out real-life AI prototypes from the Futures Lab.",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+          "date": "2026-05-29"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星",
       "items": [
         {
-          "titleEn": "[Interview] The Future of Screen Experiences, Part ①: Inside Samsung’s Micro RGB TV, Setting a New Standard for Next-Generation Displays",
-          "titleZh": "[Interview] The Future of Screen Experiences, Part ①: Inside Samsung’s Micro RGB TV, Setting a New Standard for Next-Generation Displays",
-          "url": "https://news.samsung.com/global/interview-the-future-of-screen-experiences-part-%e2%91%a0-inside-samsungs-micro-rgb-tv-setting-a-new-standard-for-next-generation-displays",
-          "date": "2026-05-26"
+          "titleEn": "[Interview] Where Sound Meets Design — Redefining the Audio Experience With Music Studio",
+          "titleZh": "[Interview] Where Sound Meets Design — Redefining the Audio Experience With Music Studio",
+          "url": "https://news.samsung.com/global/interview-where-sound-meets-design-redefining-the-audio-experience-with-music-studio",
+          "date": "2026-06-01"
         },
         {
-          "titleEn": "Samsung TV Plus Brings Monthly SM K-Pop Concert Series to Fans at Home",
-          "titleZh": "Samsung TV Plus Brings Monthly SM K-Pop Concert Series to Fans at Home",
-          "url": "https://news.samsung.com/global/samsung-tv-plus-brings-monthly-sm-k-pop-concert-series-to-fans-at-home",
-          "date": "2026-05-22"
+          "titleEn": "Samsung and MUNCH Museum Bring Rarely Seen Masterpieces to Samsung Art Store",
+          "titleZh": "Samsung and MUNCH Museum Bring Rarely Seen Masterpieces to Samsung Art Store",
+          "url": "https://news.samsung.com/global/samsung-and-munch-museum-bring-rarely-seen-masterpieces-to-samsung-art-store",
+          "date": "2026-06-01"
         },
         {
-          "titleEn": "[Infographic] Samsung AI Appliances Deliver Inclusive Experiences Through Enhanced Accessibility Features",
-          "titleZh": "[Infographic] Samsung AI Appliances Deliver Inclusive Experiences Through Enhanced Accessibility Features",
-          "url": "https://news.samsung.com/global/infographic-samsung-ai-appliances-deliver-inclusive-experiences-through-enhanced-accessibility-features",
-          "date": "2026-05-21"
+          "titleEn": "Samsung Electronics Begins Shipment of Industry-First HBM4E Samples",
+          "titleZh": "Samsung Electronics Begins Shipment of Industry-First HBM4E Samples",
+          "url": "https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples",
+          "date": "2026-05-29"
         }
       ]
     },
@@ -341,22 +341,22 @@
       "labelZh": "迪士尼",
       "items": [
         {
-          "titleEn": "Disney Consumer Products Ushers in a New Era of Collaboration and Culture at Licensing Expo with ‘Icons Unleashed’",
-          "titleZh": "Disney Consumer Products Ushers in a New Era of Collaboration and Culture at Licensing Expo with ‘Icons Unleashed’",
-          "url": "https://thewaltdisneycompany.com/news/consumer-products-licensing-expo-icons-unleashed/",
-          "date": "2026-05-21"
+          "titleEn": "Disney and Philips Bring Beloved Storytelling and Innovative Technology to Support Kids Undergoing MRI Exams",
+          "titleZh": "Disney and Philips Bring Beloved Storytelling and Innovative Technology to Support Kids Undergoing MRI Exams",
+          "url": "https://thewaltdisneycompany.com/news/disney-philips-mri-ambient-experience-children/",
+          "date": "2026-05-28"
         },
         {
-          "titleEn": "Pedro Pascal and Jon Favreau on Crafting a Big-Screen ‘Star Wars’ Adventure with ‘The Mandalorian and Grogu’",
-          "titleZh": "Pedro Pascal and Jon Favreau on Crafting a Big-Screen ‘Star Wars’ Adventure with ‘The Mandalorian and Grogu’",
-          "url": "https://thewaltdisneycompany.com/news/the-mandalorian-and-grogu/",
-          "date": "2026-05-21"
+          "titleEn": "How ‘Sofia the First: Royal Magic’ Is Enchanting a Whole New Generation on Disney Jr. and Disney+",
+          "titleZh": "How ‘Sofia the First: Royal Magic’ Is Enchanting a Whole New Generation on Disney Jr. and Disney+",
+          "url": "https://thewaltdisneycompany.com/news/sofia-the-first-royal-magic/",
+          "date": "2026-05-26"
         },
         {
-          "titleEn": "Disney and Epic Games Bring ‘Star Wars’ Stories to Fortnite Fans",
-          "titleZh": "Disney and Epic Games Bring ‘Star Wars’ Stories to Fortnite Fans",
-          "url": "https://thewaltdisneycompany.com/news/fortnite-epic-games-star-wars/",
-          "date": "2026-05-19"
+          "titleEn": "Bluey’s Next Chapter: From Streaming Sensation to Real-World Magic",
+          "titleZh": "Bluey’s Next Chapter: From Streaming Sensation to Real-World Magic",
+          "url": "https://thewaltdisneycompany.com/news/bluey-streaming-parks-cruises-movie/",
+          "date": "2026-05-26"
         }
       ]
     }

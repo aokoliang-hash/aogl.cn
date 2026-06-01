@@ -4,7 +4,7 @@
   "datePublished": "2026-05-22",
   "dateModified": "2026-05-22",
   "author": "aogl.cn",
-  "heroImage": "original/in-car-view/Train-window-all.png",
+  "heroImage": "upload/articles/in-car-view-train-window-scenery.webp",
   "heroImageAlt": "High-speed train window view — alpine meadow and snow peaks through carriage glass (aogl.cn)",
   "htmlFragments": {
     "en": "fragments/in-car-view-train-window-scenery-en.html",
@@ -42,5 +42,6 @@
   "indexExcerptKo": "기차 창·풍경4",
   "indexExcerptFr": "Fenêtre train · 4 scènes",
   "indexExcerptRu": "Окно поезда · 4 сцены",
-  "indexExcerptAr": "نافذة قطار · 4 مشاهد"
+  "indexExcerptAr": "نافذة قطار · 4 مشاهد",
+  "heroImageSource": "original/in-car-view/Train-window-all.png"
 }

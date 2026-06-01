@@ -4,7 +4,7 @@
   "datePublished": "2026-05-13",
   "dateModified": "2026-06-01",
   "author": "aogl.cn",
-  "heroImage": "original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png",
+  "heroImage": "upload/articles/interactive-3d-earth.webp",
   "heroImageAlt": "Interactive 3D Earth — WebGL globe with clouds and atmospheric glow",
   "htmlFragments": {
     "en": "fragments/interactive-3d-earth-en.html",
@@ -42,5 +42,6 @@
   "indexExcerptKo": "Three.js 실시간 지구·구름·대기",
   "indexExcerptFr": "Terre temps réel Three.js — nuages & halo",
   "indexExcerptRu": "Земля в Three.js — облака и ореол",
-  "indexExcerptAr": "أرض Three.js مباشرة مع سحب وهالة"
+  "indexExcerptAr": "أرض Three.js مباشرة مع سحب وهالة",
+  "heroImageSource": "original/Gemini_Generated_Image_r5r2i4r5r2i4r5r2.png"
 }

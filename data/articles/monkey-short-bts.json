@@ -4,7 +4,7 @@
   "datePublished": "2026-05-14",
   "dateModified": "2026-06-01",
   "author": "aogl.cn",
-  "heroImage": "original/monkey/Gemini_Generated_Image_7nr0x37nr0x37nr0.png",
+  "heroImage": "upload/articles/monkey-short-bts.webp",
   "heroImageAlt": "Monkey short — stylized character study for a personal AI-assisted storyboard",
   "htmlFragments": {
     "en": "fragments/monkey-short-bts-en.html",
@@ -42,5 +42,6 @@
   "indexExcerptKo": "스토리보드부터 MP4까지",
   "indexExcerptFr": "Storyboard jusqu’au MP4 final",
   "indexExcerptRu": "От раскадровки до MP4",
-  "indexExcerptAr": "من اللوحة الإيقاعية إلى MP4"
+  "indexExcerptAr": "من اللوحة الإيقاعية إلى MP4",
+  "heroImageSource": "original/monkey/Gemini_Generated_Image_7nr0x37nr0x37nr0.png"
 }

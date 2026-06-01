@@ -4,7 +4,7 @@
   "datePublished": "2026-05-19",
   "dateModified": "2026-05-19",
   "author": "aogl.cn",
-  "heroImage": "original/role-girl/card-1.png",
+  "heroImage": "upload/articles/role-girl-card-visual-study.webp",
   "heroImageAlt": "Role-girl card study — portrait card-1, white lace dress (aogl.cn)",
   "htmlFragments": {
     "en": "fragments/role-girl-card-visual-study-en.html",
@@ -42,5 +42,6 @@
   "indexExcerptKo": "흰 드레스·12장 정稿",
   "indexExcerptFr": "Robe blanche · 12 poses",
   "indexExcerptRu": "Белое платье · 12 кадров",
-  "indexExcerptAr": "فستان أبيض · 12 إطارًا"
+  "indexExcerptAr": "فستان أبيض · 12 إطارًا",
+  "heroImageSource": "original/role-girl/card-1.png"
 }

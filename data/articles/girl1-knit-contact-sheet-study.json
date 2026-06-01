@@ -4,7 +4,7 @@
   "datePublished": "2026-05-20",
   "dateModified": "2026-05-20",
   "author": "aogl.cn",
-  "heroImage": "original/girl1/juese1.png",
+  "heroImage": "upload/articles/girl1-knit-contact-sheet-study.webp",
   "heroImageAlt": "Girl1 knit portrait study — window light, off-shoulder beige sweater (aogl.cn)",
   "htmlFragments": {
     "en": "fragments/girl1-knit-contact-sheet-study-en.html",
@@ -42,5 +42,6 @@
   "indexExcerptKo": "베이지 니트·9컷 시트",
   "indexExcerptFr": "Maille beige · grilles 3×3",
   "indexExcerptRu": "Бежевый трикотаж · листы 3×3",
-  "indexExcerptAr": "تريكو بيج · شبكات 3×3"
+  "indexExcerptAr": "تريكو بيج · شبكات 3×3",
+  "heroImageSource": "original/girl1/juese1.png"
 }

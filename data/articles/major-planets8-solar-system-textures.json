@@ -4,7 +4,7 @@
   "datePublished": "2026-05-26",
   "dateModified": "2026-05-26",
   "author": "aogl.cn",
-  "heroImage": "original/major-planets8/Gemini_Generated_Image_79swyt79swyt79sw.png",
+  "heroImage": "upload/articles/major-planets8-solar-system-textures.webp",
   "heroImageAlt": "Saturn with rings — 3D-style planet render from major-planets8 texture atlas (aogl.cn)",
   "htmlFragments": {
     "en": "fragments/major-planets8-solar-system-textures-en.html",
@@ -42,5 +42,6 @@
   "indexExcerptKo": "8행성 텍스처",
   "indexExcerptFr": "8 planètes · textures",
   "indexExcerptRu": "8 планет · текстуры",
-  "indexExcerptAr": "8 كواكب · خامات"
+  "indexExcerptAr": "8 كواكب · خامات",
+  "heroImageSource": "original/major-planets8/Gemini_Generated_Image_79swyt79swyt79sw.png"
 }
