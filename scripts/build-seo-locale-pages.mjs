@@ -152,7 +152,7 @@ function siteHomeFromCanonical(canonicalHref) {
   return u.href;
 }
 
-function patchJsonLdNode(node, langTag, filename, siteHome, canonicalHref) {
+function patchJsonLdNode(node, langTag, filename, siteHome, canonicalHref, localePrefix = "") {
   const origin = "https://aogl.cn";
 
   function rewriteStr(s) {
@@ -164,6 +164,14 @@ function patchJsonLdNode(node, langTag, filename, siteHome, canonicalHref) {
     }
     if (s === origin + "/") {
       return homeNorm;
+    }
+    if (localePrefix) {
+      for (const seg of CONTENT_PATH_SEGMENTS) {
+        const bare = `${origin}/${seg}/`;
+        if (s === `${origin}/${seg}` || s.startsWith(bare)) {
+          return `${origin}/${localePrefix}/${seg}/${s.slice(bare.length)}`;
+        }
+      }
     }
     if (filename !== "index.html") {
       const legacyFile = `${origin}/${filename}`;
@@ -199,7 +207,7 @@ function patchJsonLdNode(node, langTag, filename, siteHome, canonicalHref) {
   walk(node);
 }
 
-function slimJsonLdScripts($, langTag, filename, siteHome, canonicalHref) {
+function slimJsonLdScripts($, langTag, filename, siteHome, canonicalHref, localePrefix = "") {
   $("script[type='application/ld+json']").each((_, el) => {
     const $el = $(el);
     const text = $el.html();
@@ -212,17 +220,17 @@ function slimJsonLdScripts($, langTag, filename, siteHome, canonicalHref) {
     }
     if (data["@graph"] && Array.isArray(data["@graph"])) {
       for (const item of data["@graph"]) {
-        patchJsonLdNode(item, langTag, filename, siteHome, canonicalHref);
+        patchJsonLdNode(item, langTag, filename, siteHome, canonicalHref, localePrefix);
       }
     } else {
-      patchJsonLdNode(data, langTag, filename, siteHome, canonicalHref);
+      patchJsonLdNode(data, langTag, filename, siteHome, canonicalHref, localePrefix);
     }
     $el.html("\n" + JSON.stringify(data) + "\n");
   });
 }
 
 /** Single-locale pages: drop alternate og locales, trim keywords, tighten JSON-LD. */
-function slimLocaleHeadExtras($, locale, filename) {
+function slimLocaleHeadExtras($, locale, filename, localePrefix = "") {
   $('meta[property="og:locale:alternate"]').remove();
   if (locale !== "en") $('meta[name="keywords"]').remove();
   const canonicalHref = $('link[rel="canonical"]').attr("href") || "";
@@ -233,7 +241,7 @@ function slimLocaleHeadExtras($, locale, filename) {
     /* keep canonicalHref */
   }
   const langTag = HTML_LANG[locale] || locale;
-  slimJsonLdScripts($, langTag, filename, siteHome, canonicalHref);
+  slimJsonLdScripts($, langTag, filename, siteHome, canonicalHref, localePrefix);
 }
 
 const CONTENT_PATH_SEGMENTS = ["articles", "briefs", "tool-guides", "hub-links"];
@@ -263,21 +271,24 @@ function absolutizeAssetRefs($) {
   });
 }
 
-/** After absolutize: /briefs/foo on en/index.html → briefs/foo (sibling under /en/). */
+/**
+ * articles|briefs|tool-guides|hub-links → locale-prefixed absolute paths.
+ * e.g. en/index: articles/foo → /en/articles/foo (not /articles/foo — root is zh-CN).
+ * Relative sibling links break when the page URL has no trailing slash (/en → /articles/…).
+ */
 function rewriteLocaleContentLinks($, outDirSegment) {
-  if (!outDirSegment) return;
   $("a[href], link[href]").each((_, el) => {
     const $el = $(el);
     const v = $el.attr("href");
     if (v == null || v === "") return;
     if (v.startsWith("http:") || v.startsWith("https:") || v.startsWith("mailto:") || v.startsWith("#")) return;
-    if (!v.startsWith("/")) return;
     const hashIdx = v.indexOf("#");
     const pathPart = hashIdx === -1 ? v : v.slice(0, hashIdx);
     const hash = hashIdx === -1 ? "" : v.slice(hashIdx);
-    const clean = pathPart.slice(1);
+    let clean = pathPart.replace(/^\.\//, "");
+    if (clean.startsWith("/")) clean = clean.slice(1);
     if (!isInternalContentPath(clean)) return;
-    $el.attr("href", clean + hash);
+    $el.attr("href", (outDirSegment ? `/${outDirSegment}/${clean}` : `/${clean}`) + hash);
   });
 }
 
@@ -376,7 +387,7 @@ function applyLocaleHead($, locale, filename, canonicalHref, opts) {
   if (opts.seoLocale) html.attr("data-aogl-seo-locale", "1");
   else html.removeAttr("data-aogl-seo-locale");
   replaceHreflangCluster($, filename);
-  slimLocaleHeadExtras($, locale, filename);
+  slimLocaleHeadExtras($, locale, filename, opts.localePrefix || "");
 }
 
 function tidySeoHtml(html) {
@@ -422,7 +433,12 @@ function transformSubfolderLocale(html, locale, filename, outDirSegment) {
   rewriteNestedAssetDepth($, filename, outDirSegment ?? locale);
   rewriteLocaleContentLinks($, outDirSegment ?? locale);
   const can = urlLocale(locale, filename);
-  applyLocaleHead($, locale, filename, can, { bodyClass: `locale-${locale}`, dataLang: locale, seoLocale: true });
+  applyLocaleHead($, locale, filename, can, {
+    bodyClass: `locale-${locale}`,
+    dataLang: locale,
+    seoLocale: true,
+    localePrefix: outDirSegment ?? locale,
+  });
   return tidySeoHtml($.root().html());
 }
 
@@ -437,6 +453,7 @@ function transformZhTraditional(html, filename) {
     bodyClass: "locale-zht",
     dataLang: "zht",
     seoLocale: true,
+    localePrefix: "zh",
   });
   let out = $.root().html();
   out = toTraditionalOutsideScripts(out);
@@ -448,6 +465,7 @@ function transformRootSimplifiedZh(html, filename) {
   stripAlternateLocales($, "zh");
   rootDataAttrsForLocale($, "zh");
   rewriteNestedAssetDepth($, filename, "");
+  rewriteLocaleContentLinks($, "");
   applyLocaleHead($, "zh", filename, urlZhCn(filename), {
     bodyClass: "locale-zh",
     dataLang: "zh",
