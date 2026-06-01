@@ -1,0 +1,14 @@
+{
+  "slug": "notion-product-ai",
+  "url": "https://www.notion.so/product/ai",
+  "name_en": "Notion AI",
+  "name_zh": "Notion AI",
+  "domain": "notion.so",
+  "category_id": "writing",
+  "category_ids": [
+    "writing"
+  ],
+  "category_title_en": "Writing & productivity",
+  "category_title_zh": "写作与效率",
+  "updated": "2026-06-01"
+}

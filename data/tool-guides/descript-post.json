@@ -1,0 +1,14 @@
+{
+  "slug": "descript-post",
+  "url": "https://www.descript.com",
+  "name_en": "Descript",
+  "name_zh": "Descript",
+  "domain": "descript.com",
+  "category_id": "audio",
+  "category_ids": [
+    "audio"
+  ],
+  "category_title_en": "Audio & music",
+  "category_title_zh": "音频与音乐",
+  "updated": "2026-06-01"
+}

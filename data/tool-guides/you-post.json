@@ -1,0 +1,14 @@
+{
+  "slug": "you-post",
+  "url": "https://you.com",
+  "name_en": "You.com",
+  "name_zh": "You.com",
+  "domain": "you.com",
+  "category_id": "search",
+  "category_ids": [
+    "search"
+  ],
+  "category_title_en": "Search & research",
+  "category_title_zh": "搜索与研究",
+  "updated": "2026-06-01"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "adobe-products-firefly-html",
+  "url": "https://www.adobe.com/products/firefly.html",
+  "name_en": "Adobe Firefly",
+  "name_zh": "Adobe Firefly",
+  "domain": "adobe.com",
+  "category_id": "image",
+  "category_ids": [
+    "image"
+  ],
+  "category_title_en": "Image generation",
+  "category_title_zh": "图像生成",
+  "updated": "2026-06-01"
+}

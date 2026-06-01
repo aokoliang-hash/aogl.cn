@@ -1,0 +1,14 @@
+{
+  "slug": "runwayml-post",
+  "url": "https://runwayml.com",
+  "name_en": "Runway",
+  "name_zh": "Runway",
+  "domain": "runwayml.com",
+  "category_id": "video",
+  "category_ids": [
+    "video"
+  ],
+  "category_title_en": "Video",
+  "category_title_zh": "视频生成",
+  "updated": "2026-06-01"
+}

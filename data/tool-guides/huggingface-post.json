@@ -1,0 +1,14 @@
+{
+  "slug": "huggingface-post",
+  "url": "https://huggingface.co",
+  "name_en": "Hugging Face",
+  "name_zh": "Hugging Face",
+  "domain": "huggingface.co",
+  "category_id": "chat-llm",
+  "category_ids": [
+    "chat-llm"
+  ],
+  "category_title_en": "Chat & LLM",
+  "category_title_zh": "对话与大模型",
+  "updated": "2026-06-01"
+}

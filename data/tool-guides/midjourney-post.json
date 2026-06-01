@@ -1,0 +1,14 @@
+{
+  "slug": "midjourney-post",
+  "url": "https://www.midjourney.com",
+  "name_en": "Midjourney",
+  "name_zh": "Midjourney",
+  "domain": "midjourney.com",
+  "category_id": "image",
+  "category_ids": [
+    "image"
+  ],
+  "category_title_en": "Image generation",
+  "category_title_zh": "图像生成",
+  "updated": "2026-06-01"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "meta-post",
+  "url": "https://www.meta.ai",
+  "name_en": "Meta AI",
+  "name_zh": "Meta AI",
+  "domain": "meta.ai",
+  "category_id": "chat-llm",
+  "category_ids": [
+    "chat-llm"
+  ],
+  "category_title_en": "Chat & LLM",
+  "category_title_zh": "对话与大模型",
+  "updated": "2026-06-01"
+}

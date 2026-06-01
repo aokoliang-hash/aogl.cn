@@ -1,27 +1,99 @@
 {
-  "updated": "2026-05-11",
+  "updated": "2026-06-01",
   "heading_en": "AI tools directory",
   "heading_zh": "AI 工具分类导航",
-  "intro_en": "Quick links to official sites (new tab). Tool icons are cached on this server under upload/favicons/.",
-  "intro_zh": "以下为常见 AI 工具官网入口（新标签页打开）。图标已缓存在本站 upload/favicons/，不再外链 Google。",
+  "intro_en": "Each tile opens a short guide on this site; the official website link is on that page. Icons are cached under upload/favicons/.",
+  "intro_zh": "点击方块进入本站工具简介页，页内再跳转官网。图标已缓存在 upload/favicons/。",
   "categories": [
     {
       "id": "chat-llm",
       "title_en": "Chat & LLM",
       "title_zh": "对话与大模型",
       "tools": [
-        { "name_en": "ChatGPT", "name_zh": "ChatGPT", "url": "https://chatgpt.com", "domain": "openai.com" },
-        { "name_en": "Claude", "name_zh": "Claude", "url": "https://claude.ai", "domain": "anthropic.com" },
-        { "name_en": "Gemini", "name_zh": "Gemini", "url": "https://gemini.google.com", "domain": "google.com" },
-        { "name_en": "Copilot", "name_zh": "Copilot", "url": "https://copilot.microsoft.com", "domain": "microsoft.com" },
-        { "name_en": "Perplexity", "name_zh": "Perplexity", "url": "https://www.perplexity.ai", "domain": "perplexity.ai" },
-        { "name_en": "Mistral AI", "name_zh": "Mistral AI", "url": "https://mistral.ai", "domain": "mistral.ai" },
-        { "name_en": "DeepSeek", "name_zh": "DeepSeek", "url": "https://www.deepseek.com", "domain": "deepseek.com" },
-        { "name_en": "Groq", "name_zh": "Groq", "url": "https://groq.com", "domain": "groq.com" },
-        { "name_en": "Poe", "name_zh": "Poe", "url": "https://poe.com", "domain": "poe.com" },
-        { "name_en": "OpenRouter", "name_zh": "OpenRouter", "url": "https://openrouter.ai", "domain": "openrouter.ai" },
-        { "name_en": "Hugging Face", "name_zh": "Hugging Face", "url": "https://huggingface.co", "domain": "huggingface.co" },
-        { "name_en": "Meta AI", "name_zh": "Meta AI", "url": "https://www.meta.ai", "domain": "meta.ai" }
+        {
+          "name_en": "ChatGPT",
+          "name_zh": "ChatGPT",
+          "url": "https://chatgpt.com",
+          "domain": "openai.com",
+          "slug": "chatgpt-post"
+        },
+        {
+          "name_en": "Claude",
+          "name_zh": "Claude",
+          "url": "https://claude.ai",
+          "domain": "anthropic.com",
+          "slug": "claude-post"
+        },
+        {
+          "name_en": "Gemini",
+          "name_zh": "Gemini",
+          "url": "https://gemini.google.com",
+          "domain": "google.com",
+          "slug": "gemini-post"
+        },
+        {
+          "name_en": "Copilot",
+          "name_zh": "Copilot",
+          "url": "https://copilot.microsoft.com",
+          "domain": "microsoft.com",
+          "slug": "copilot-post"
+        },
+        {
+          "name_en": "Perplexity",
+          "name_zh": "Perplexity",
+          "url": "https://www.perplexity.ai",
+          "domain": "perplexity.ai",
+          "slug": "perplexity-post"
+        },
+        {
+          "name_en": "Mistral AI",
+          "name_zh": "Mistral AI",
+          "url": "https://mistral.ai",
+          "domain": "mistral.ai",
+          "slug": "mistral-post"
+        },
+        {
+          "name_en": "DeepSeek",
+          "name_zh": "DeepSeek",
+          "url": "https://www.deepseek.com",
+          "domain": "deepseek.com",
+          "slug": "deepseek-post"
+        },
+        {
+          "name_en": "Groq",
+          "name_zh": "Groq",
+          "url": "https://groq.com",
+          "domain": "groq.com",
+          "slug": "groq-post"
+        },
+        {
+          "name_en": "Poe",
+          "name_zh": "Poe",
+          "url": "https://poe.com",
+          "domain": "poe.com",
+          "slug": "poe-post"
+        },
+        {
+          "name_en": "OpenRouter",
+          "name_zh": "OpenRouter",
+          "url": "https://openrouter.ai",
+          "domain": "openrouter.ai",
+          "slug": "openrouter-post"
+        },
+        {
+          "name_en": "Hugging Face",
+          "name_zh": "Hugging Face",
+          "url": "https://huggingface.co",
+          "domain": "huggingface.co",
+          "slug": "huggingface-post"
+        },
+        {
+          "name_en": "Meta AI",
+          "name_zh": "Meta AI",
+          "url": "https://www.meta.ai",
+          "domain": "meta.ai",
+          "slug": "meta-post"
+        }
       ]
     },
     {
@@ -29,14 +101,62 @@
       "title_en": "Image generation",
       "title_zh": "图像生成",
       "tools": [
-        { "name_en": "Midjourney", "name_zh": "Midjourney", "url": "https://www.midjourney.com", "domain": "midjourney.com" },
-        { "name_en": "DALL·E", "name_zh": "DALL·E", "url": "https://openai.com/dall-e", "domain": "openai.com" },
-        { "name_en": "Adobe Firefly", "name_zh": "Adobe Firefly", "url": "https://www.adobe.com/products/firefly.html", "domain": "adobe.com" },
-        { "name_en": "Leonardo.Ai", "name_zh": "Leonardo.Ai", "url": "https://leonardo.ai", "domain": "leonardo.ai" },
-        { "name_en": "Ideogram", "name_zh": "Ideogram", "url": "https://ideogram.ai", "domain": "ideogram.ai" },
-        { "name_en": "Stability AI", "name_zh": "Stability AI", "url": "https://stability.ai", "domain": "stability.ai" },
-        { "name_en": "Canva AI", "name_zh": "Canva AI", "url": "https://www.canva.com", "domain": "canva.com" },
-        { "name_en": "Freepik AI", "name_zh": "Freepik AI", "url": "https://www.freepik.com/ai", "domain": "freepik.com" }
+        {
+          "name_en": "Midjourney",
+          "name_zh": "Midjourney",
+          "url": "https://www.midjourney.com",
+          "domain": "midjourney.com",
+          "slug": "midjourney-post"
+        },
+        {
+          "name_en": "DALL·E",
+          "name_zh": "DALL·E",
+          "url": "https://openai.com/dall-e",
+          "domain": "openai.com",
+          "slug": "openai-dall-e"
+        },
+        {
+          "name_en": "Adobe Firefly",
+          "name_zh": "Adobe Firefly",
+          "url": "https://www.adobe.com/products/firefly.html",
+          "domain": "adobe.com",
+          "slug": "adobe-products-firefly-html"
+        },
+        {
+          "name_en": "Leonardo.Ai",
+          "name_zh": "Leonardo.Ai",
+          "url": "https://leonardo.ai",
+          "domain": "leonardo.ai",
+          "slug": "leonardo-post"
+        },
+        {
+          "name_en": "Ideogram",
+          "name_zh": "Ideogram",
+          "url": "https://ideogram.ai",
+          "domain": "ideogram.ai",
+          "slug": "ideogram-post"
+        },
+        {
+          "name_en": "Stability AI",
+          "name_zh": "Stability AI",
+          "url": "https://stability.ai",
+          "domain": "stability.ai",
+          "slug": "stability-post"
+        },
+        {
+          "name_en": "Canva AI",
+          "name_zh": "Canva AI",
+          "url": "https://www.canva.com",
+          "domain": "canva.com",
+          "slug": "canva-post"
+        },
+        {
+          "name_en": "Freepik AI",
+          "name_zh": "Freepik AI",
+          "url": "https://www.freepik.com/ai",
+          "domain": "freepik.com",
+          "slug": "freepik-ai"
+        }
       ]
     },
     {
@@ -44,13 +164,55 @@
       "title_en": "Video",
       "title_zh": "视频生成",
       "tools": [
-        { "name_en": "Runway", "name_zh": "Runway", "url": "https://runwayml.com", "domain": "runwayml.com" },
-        { "name_en": "Pika", "name_zh": "Pika", "url": "https://pika.art", "domain": "pika.art" },
-        { "name_en": "Kling AI", "name_zh": "可灵 AI", "url": "https://klingai.com", "domain": "klingai.com" },
-        { "name_en": "Luma Dream Machine", "name_zh": "Luma", "url": "https://lumalabs.ai", "domain": "lumalabs.ai" },
-        { "name_en": "HeyGen", "name_zh": "HeyGen", "url": "https://www.heygen.com", "domain": "heygen.com" },
-        { "name_en": "Synthesia", "name_zh": "Synthesia", "url": "https://www.synthesia.io", "domain": "synthesia.io" },
-        { "name_en": "CapCut Web", "name_zh": "剪映网页", "url": "https://www.capcut.com", "domain": "capcut.com" }
+        {
+          "name_en": "Runway",
+          "name_zh": "Runway",
+          "url": "https://runwayml.com",
+          "domain": "runwayml.com",
+          "slug": "runwayml-post"
+        },
+        {
+          "name_en": "Pika",
+          "name_zh": "Pika",
+          "url": "https://pika.art",
+          "domain": "pika.art",
+          "slug": "pika-post"
+        },
+        {
+          "name_en": "Kling AI",
+          "name_zh": "可灵 AI",
+          "url": "https://klingai.com",
+          "domain": "klingai.com",
+          "slug": "klingai-post"
+        },
+        {
+          "name_en": "Luma Dream Machine",
+          "name_zh": "Luma",
+          "url": "https://lumalabs.ai",
+          "domain": "lumalabs.ai",
+          "slug": "lumalabs-post"
+        },
+        {
+          "name_en": "HeyGen",
+          "name_zh": "HeyGen",
+          "url": "https://www.heygen.com",
+          "domain": "heygen.com",
+          "slug": "heygen-post"
+        },
+        {
+          "name_en": "Synthesia",
+          "name_zh": "Synthesia",
+          "url": "https://www.synthesia.io",
+          "domain": "synthesia.io",
+          "slug": "synthesia-post"
+        },
+        {
+          "name_en": "CapCut Web",
+          "name_zh": "剪映网页",
+          "url": "https://www.capcut.com",
+          "domain": "capcut.com",
+          "slug": "capcut-post"
+        }
       ]
     },
     {
@@ -58,14 +220,62 @@
       "title_en": "Coding & IDE",
       "title_zh": "编程与 IDE",
       "tools": [
-        { "name_en": "GitHub Copilot", "name_zh": "GitHub Copilot", "url": "https://github.com/features/copilot", "domain": "github.com" },
-        { "name_en": "Cursor", "name_zh": "Cursor", "url": "https://cursor.com", "domain": "cursor.com" },
-        { "name_en": "Windsurf", "name_zh": "Windsurf", "url": "https://windsurf.com", "domain": "windsurf.com" },
-        { "name_en": "Replit", "name_zh": "Replit", "url": "https://replit.com", "domain": "replit.com" },
-        { "name_en": "Tabnine", "name_zh": "Tabnine", "url": "https://www.tabnine.com", "domain": "tabnine.com" },
-        { "name_en": "Amazon Q Developer", "name_zh": "Amazon Q", "url": "https://aws.amazon.com/q/developer/", "domain": "aws.amazon.com" },
-        { "name_en": "JetBrains AI", "name_zh": "JetBrains AI", "url": "https://www.jetbrains.com/ai/", "domain": "jetbrains.com" },
-        { "name_en": "Sourcegraph Cody", "name_zh": "Cody", "url": "https://sourcegraph.com/cody", "domain": "sourcegraph.com" }
+        {
+          "name_en": "GitHub Copilot",
+          "name_zh": "GitHub Copilot",
+          "url": "https://github.com/features/copilot",
+          "domain": "github.com",
+          "slug": "github-features-copilot"
+        },
+        {
+          "name_en": "Cursor",
+          "name_zh": "Cursor",
+          "url": "https://cursor.com",
+          "domain": "cursor.com",
+          "slug": "cursor-post"
+        },
+        {
+          "name_en": "Windsurf",
+          "name_zh": "Windsurf",
+          "url": "https://windsurf.com",
+          "domain": "windsurf.com",
+          "slug": "windsurf-post"
+        },
+        {
+          "name_en": "Replit",
+          "name_zh": "Replit",
+          "url": "https://replit.com",
+          "domain": "replit.com",
+          "slug": "replit-post"
+        },
+        {
+          "name_en": "Tabnine",
+          "name_zh": "Tabnine",
+          "url": "https://www.tabnine.com",
+          "domain": "tabnine.com",
+          "slug": "tabnine-post"
+        },
+        {
+          "name_en": "Amazon Q Developer",
+          "name_zh": "Amazon Q",
+          "url": "https://aws.amazon.com/q/developer",
+          "domain": "aws.amazon.com",
+          "slug": "aws-q-developer"
+        },
+        {
+          "name_en": "JetBrains AI",
+          "name_zh": "JetBrains AI",
+          "url": "https://www.jetbrains.com/ai",
+          "domain": "jetbrains.com",
+          "slug": "jetbrains-ai"
+        },
+        {
+          "name_en": "Sourcegraph Cody",
+          "name_zh": "Cody",
+          "url": "https://sourcegraph.com/cody",
+          "domain": "sourcegraph.com",
+          "slug": "sourcegraph-cody"
+        }
       ]
     },
     {
@@ -73,11 +283,41 @@
       "title_en": "Audio & music",
       "title_zh": "音频与音乐",
       "tools": [
-        { "name_en": "Suno", "name_zh": "Suno", "url": "https://suno.com", "domain": "suno.com" },
-        { "name_en": "Udio", "name_zh": "Udio", "url": "https://www.udio.com", "domain": "udio.com" },
-        { "name_en": "ElevenLabs", "name_zh": "ElevenLabs", "url": "https://elevenlabs.io", "domain": "elevenlabs.io" },
-        { "name_en": "Adobe Podcast", "name_zh": "Adobe Podcast", "url": "https://podcast.adobe.com", "domain": "adobe.com" },
-        { "name_en": "Descript", "name_zh": "Descript", "url": "https://www.descript.com", "domain": "descript.com" }
+        {
+          "name_en": "Suno",
+          "name_zh": "Suno",
+          "url": "https://suno.com",
+          "domain": "suno.com",
+          "slug": "suno-post"
+        },
+        {
+          "name_en": "Udio",
+          "name_zh": "Udio",
+          "url": "https://www.udio.com",
+          "domain": "udio.com",
+          "slug": "udio-post"
+        },
+        {
+          "name_en": "ElevenLabs",
+          "name_zh": "ElevenLabs",
+          "url": "https://elevenlabs.io",
+          "domain": "elevenlabs.io",
+          "slug": "elevenlabs-post"
+        },
+        {
+          "name_en": "Adobe Podcast",
+          "name_zh": "Adobe Podcast",
+          "url": "https://podcast.adobe.com",
+          "domain": "adobe.com",
+          "slug": "podcast-post"
+        },
+        {
+          "name_en": "Descript",
+          "name_zh": "Descript",
+          "url": "https://www.descript.com",
+          "domain": "descript.com",
+          "slug": "descript-post"
+        }
       ]
     },
     {
@@ -85,11 +325,41 @@
       "title_en": "Search & research",
       "title_zh": "搜索与研究",
       "tools": [
-        { "name_en": "Perplexity", "name_zh": "Perplexity", "url": "https://www.perplexity.ai", "domain": "perplexity.ai" },
-        { "name_en": "You.com", "name_zh": "You.com", "url": "https://you.com", "domain": "you.com" },
-        { "name_en": "Phind", "name_zh": "Phind", "url": "https://www.phind.com", "domain": "phind.com" },
-        { "name_en": "Consensus", "name_zh": "Consensus", "url": "https://consensus.app", "domain": "consensus.app" },
-        { "name_en": "Elicit", "name_zh": "Elicit", "url": "https://elicit.org", "domain": "elicit.org" }
+        {
+          "name_en": "Perplexity",
+          "name_zh": "Perplexity",
+          "url": "https://www.perplexity.ai",
+          "domain": "perplexity.ai",
+          "slug": "perplexity-post"
+        },
+        {
+          "name_en": "You.com",
+          "name_zh": "You.com",
+          "url": "https://you.com",
+          "domain": "you.com",
+          "slug": "you-post"
+        },
+        {
+          "name_en": "Phind",
+          "name_zh": "Phind",
+          "url": "https://www.phind.com",
+          "domain": "phind.com",
+          "slug": "phind-post"
+        },
+        {
+          "name_en": "Consensus",
+          "name_zh": "Consensus",
+          "url": "https://consensus.app",
+          "domain": "consensus.app",
+          "slug": "consensus-post"
+        },
+        {
+          "name_en": "Elicit",
+          "name_zh": "Elicit",
+          "url": "https://elicit.org",
+          "domain": "elicit.org",
+          "slug": "elicit-post"
+        }
       ]
     },
     {
@@ -97,12 +367,48 @@
       "title_en": "Writing & productivity",
       "title_zh": "写作与效率",
       "tools": [
-        { "name_en": "Notion AI", "name_zh": "Notion AI", "url": "https://www.notion.so/product/ai", "domain": "notion.so" },
-        { "name_en": "Grammarly", "name_zh": "Grammarly", "url": "https://www.grammarly.com", "domain": "grammarly.com" },
-        { "name_en": "Jasper", "name_zh": "Jasper", "url": "https://www.jasper.ai", "domain": "jasper.ai" },
-        { "name_en": "Otter.ai", "name_zh": "Otter.ai", "url": "https://otter.ai", "domain": "otter.ai" },
-        { "name_en": "Gamma", "name_zh": "Gamma", "url": "https://gamma.app", "domain": "gamma.app" },
-        { "name_en": "Tome", "name_zh": "Tome", "url": "https://tome.app", "domain": "tome.app" }
+        {
+          "name_en": "Notion AI",
+          "name_zh": "Notion AI",
+          "url": "https://www.notion.so/product/ai",
+          "domain": "notion.so",
+          "slug": "notion-product-ai"
+        },
+        {
+          "name_en": "Grammarly",
+          "name_zh": "Grammarly",
+          "url": "https://www.grammarly.com",
+          "domain": "grammarly.com",
+          "slug": "grammarly-post"
+        },
+        {
+          "name_en": "Jasper",
+          "name_zh": "Jasper",
+          "url": "https://www.jasper.ai",
+          "domain": "jasper.ai",
+          "slug": "jasper-post"
+        },
+        {
+          "name_en": "Otter.ai",
+          "name_zh": "Otter.ai",
+          "url": "https://otter.ai",
+          "domain": "otter.ai",
+          "slug": "otter-post"
+        },
+        {
+          "name_en": "Gamma",
+          "name_zh": "Gamma",
+          "url": "https://gamma.app",
+          "domain": "gamma.app",
+          "slug": "gamma-post"
+        },
+        {
+          "name_en": "Tome",
+          "name_zh": "Tome",
+          "url": "https://tome.app",
+          "domain": "tome.app",
+          "slug": "tome-post"
+        }
       ]
     },
     {
@@ -110,14 +416,62 @@
       "title_en": "Platforms & APIs",
       "title_zh": "平台与 API",
       "tools": [
-        { "name_en": "OpenAI Platform", "name_zh": "OpenAI API", "url": "https://platform.openai.com", "domain": "openai.com" },
-        { "name_en": "Anthropic Console", "name_zh": "Anthropic API", "url": "https://console.anthropic.com", "domain": "anthropic.com" },
-        { "name_en": "Google AI Studio", "name_zh": "Google AI Studio", "url": "https://aistudio.google.com", "domain": "google.com" },
-        { "name_en": "Azure OpenAI", "name_zh": "Azure OpenAI", "url": "https://azure.microsoft.com/products/ai-services/openai-service", "domain": "microsoft.com" },
-        { "name_en": "AWS Bedrock", "name_zh": "AWS Bedrock", "url": "https://aws.amazon.com/bedrock/", "domain": "aws.amazon.com" },
-        { "name_en": "Together AI", "name_zh": "Together AI", "url": "https://www.together.ai", "domain": "together.ai" },
-        { "name_en": "Fireworks AI", "name_zh": "Fireworks AI", "url": "https://fireworks.ai", "domain": "fireworks.ai" },
-        { "name_en": "Replicate", "name_zh": "Replicate", "url": "https://replicate.com", "domain": "replicate.com" }
+        {
+          "name_en": "OpenAI Platform",
+          "name_zh": "OpenAI API",
+          "url": "https://platform.openai.com",
+          "domain": "openai.com",
+          "slug": "platform-post"
+        },
+        {
+          "name_en": "Anthropic Console",
+          "name_zh": "Anthropic API",
+          "url": "https://console.anthropic.com",
+          "domain": "anthropic.com",
+          "slug": "console-post"
+        },
+        {
+          "name_en": "Google AI Studio",
+          "name_zh": "Google AI Studio",
+          "url": "https://aistudio.google.com",
+          "domain": "google.com",
+          "slug": "aistudio-post"
+        },
+        {
+          "name_en": "Azure OpenAI",
+          "name_zh": "Azure OpenAI",
+          "url": "https://azure.microsoft.com/products/ai-services/openai-service",
+          "domain": "microsoft.com",
+          "slug": "azure-ai-services-openai-service"
+        },
+        {
+          "name_en": "AWS Bedrock",
+          "name_zh": "AWS Bedrock",
+          "url": "https://aws.amazon.com/bedrock",
+          "domain": "aws.amazon.com",
+          "slug": "aws-bedrock"
+        },
+        {
+          "name_en": "Together AI",
+          "name_zh": "Together AI",
+          "url": "https://www.together.ai",
+          "domain": "together.ai",
+          "slug": "together-post"
+        },
+        {
+          "name_en": "Fireworks AI",
+          "name_zh": "Fireworks AI",
+          "url": "https://fireworks.ai",
+          "domain": "fireworks.ai",
+          "slug": "fireworks-post"
+        },
+        {
+          "name_en": "Replicate",
+          "name_zh": "Replicate",
+          "url": "https://replicate.com",
+          "domain": "replicate.com",
+          "slug": "replicate-post"
+        }
       ]
     }
   ]

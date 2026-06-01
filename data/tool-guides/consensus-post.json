@@ -1,0 +1,14 @@
+{
+  "slug": "consensus-post",
+  "url": "https://consensus.app",
+  "name_en": "Consensus",
+  "name_zh": "Consensus",
+  "domain": "consensus.app",
+  "category_id": "search",
+  "category_ids": [
+    "search"
+  ],
+  "category_title_en": "Search & research",
+  "category_title_zh": "搜索与研究",
+  "updated": "2026-06-01"
+}

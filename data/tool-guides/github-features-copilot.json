@@ -1,0 +1,14 @@
+{
+  "slug": "github-features-copilot",
+  "url": "https://github.com/features/copilot",
+  "name_en": "GitHub Copilot",
+  "name_zh": "GitHub Copilot",
+  "domain": "github.com",
+  "category_id": "coding",
+  "category_ids": [
+    "coding"
+  ],
+  "category_title_en": "Coding & IDE",
+  "category_title_zh": "编程与 IDE",
+  "updated": "2026-06-01"
+}

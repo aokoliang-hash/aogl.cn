@@ -1,0 +1,14 @@
+{
+  "slug": "aws-bedrock",
+  "url": "https://aws.amazon.com/bedrock",
+  "name_en": "AWS Bedrock",
+  "name_zh": "AWS Bedrock",
+  "domain": "aws.amazon.com",
+  "category_id": "platform-api",
+  "category_ids": [
+    "platform-api"
+  ],
+  "category_title_en": "Platforms & APIs",
+  "category_title_zh": "平台与 API",
+  "updated": "2026-06-01"
+}

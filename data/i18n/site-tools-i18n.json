@@ -7,11 +7,11 @@
     "ar": "دليل أدوات الذكاء الاصطناعي"
   },
   "intro": {
-    "ja": "各公式サイトへのショートカット（新しいタブ）。アイコンは各ドメインの favicon を使用。",
-    "ko": "각 도구 공식 사이트로 바로가기(새 탭). 아이콘은 해당 도메인 파비콘입니다.",
-    "fr": "Liens rapides vers les sites officiels (nouvel onglet). Icônes = favicon de chaque domaine.",
-    "ru": "Быстрые ссылки на официальные сайты (новая вкладка). Иконки — favicon доменов.",
-    "ar": "روابط سريعة إلى المواقع الرسمية (تبويب جديد). الأيقونات من أيقونة الموقع المفضلة لكل نطاق."
+    "ja": "タイルから本站のツール紹介へ。公式サイトへのリンクは各ページ内です。アイコンは upload/favicons/ にキャッシュ。",
+    "ko": "타일을 누르면 사이트 내 도구 소개로 이동합니다. 공식 사이트 링크는 해당 페이지에 있습니다. 아이콘은 upload/favicons/ 에 캐시됩니다.",
+    "fr": "Chaque tuile ouvre un guide sur ce site ; le lien officiel est sur cette page. Icônes en cache sous upload/favicons/.",
+    "ru": "Плитка ведёт на краткое описание на сайте; ссылка на официальный сайт — на той же странице. Иконки в upload/favicons/.",
+    "ar": "كل بطاقة تفتح دليلًا قصيرًا على الموقع؛ رابط الموقع الرسمي داخل الصفحة. الأيقونات مخزّنة في upload/favicons/."
   },
   "categories": {
     "chat-llm": {

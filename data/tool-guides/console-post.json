@@ -1,0 +1,14 @@
+{
+  "slug": "console-post",
+  "url": "https://console.anthropic.com",
+  "name_en": "Anthropic Console",
+  "name_zh": "Anthropic API",
+  "domain": "anthropic.com",
+  "category_id": "platform-api",
+  "category_ids": [
+    "platform-api"
+  ],
+  "category_title_en": "Platforms & APIs",
+  "category_title_zh": "平台与 API",
+  "updated": "2026-06-01"
+}

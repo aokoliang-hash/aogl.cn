@@ -1,0 +1,14 @@
+{
+  "slug": "jasper-post",
+  "url": "https://www.jasper.ai",
+  "name_en": "Jasper",
+  "name_zh": "Jasper",
+  "domain": "jasper.ai",
+  "category_id": "writing",
+  "category_ids": [
+    "writing"
+  ],
+  "category_title_en": "Writing & productivity",
+  "category_title_zh": "写作与效率",
+  "updated": "2026-06-01"
+}

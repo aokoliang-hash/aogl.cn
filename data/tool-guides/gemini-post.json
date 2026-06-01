@@ -1,0 +1,14 @@
+{
+  "slug": "gemini-post",
+  "url": "https://gemini.google.com",
+  "name_en": "Gemini",
+  "name_zh": "Gemini",
+  "domain": "google.com",
+  "category_id": "chat-llm",
+  "category_ids": [
+    "chat-llm"
+  ],
+  "category_title_en": "Chat & LLM",
+  "category_title_zh": "对话与大模型",
+  "updated": "2026-06-01"
+}

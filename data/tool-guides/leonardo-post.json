@@ -1,0 +1,14 @@
+{
+  "slug": "leonardo-post",
+  "url": "https://leonardo.ai",
+  "name_en": "Leonardo.Ai",
+  "name_zh": "Leonardo.Ai",
+  "domain": "leonardo.ai",
+  "category_id": "image",
+  "category_ids": [
+    "image"
+  ],
+  "category_title_en": "Image generation",
+  "category_title_zh": "图像生成",
+  "updated": "2026-06-01"
+}

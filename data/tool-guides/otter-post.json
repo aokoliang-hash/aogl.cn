@@ -1,0 +1,14 @@
+{
+  "slug": "otter-post",
+  "url": "https://otter.ai",
+  "name_en": "Otter.ai",
+  "name_zh": "Otter.ai",
+  "domain": "otter.ai",
+  "category_id": "writing",
+  "category_ids": [
+    "writing"
+  ],
+  "category_title_en": "Writing & productivity",
+  "category_title_zh": "写作与效率",
+  "updated": "2026-06-01"
+}

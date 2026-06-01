@@ -1,0 +1,15 @@
+{
+  "slug": "perplexity-post",
+  "url": "https://www.perplexity.ai",
+  "name_en": "Perplexity",
+  "name_zh": "Perplexity",
+  "domain": "perplexity.ai",
+  "category_id": "chat-llm",
+  "category_ids": [
+    "chat-llm",
+    "search"
+  ],
+  "category_title_en": "Chat & LLM",
+  "category_title_zh": "对话与大模型",
+  "updated": "2026-06-01"
+}

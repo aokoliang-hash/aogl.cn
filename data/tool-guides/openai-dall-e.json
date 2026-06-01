@@ -1,0 +1,14 @@
+{
+  "slug": "openai-dall-e",
+  "url": "https://openai.com/dall-e",
+  "name_en": "DALL·E",
+  "name_zh": "DALL·E",
+  "domain": "openai.com",
+  "category_id": "image",
+  "category_ids": [
+    "image"
+  ],
+  "category_title_en": "Image generation",
+  "category_title_zh": "图像生成",
+  "updated": "2026-06-01"
+}

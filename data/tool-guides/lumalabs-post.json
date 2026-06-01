@@ -1,0 +1,14 @@
+{
+  "slug": "lumalabs-post",
+  "url": "https://lumalabs.ai",
+  "name_en": "Luma Dream Machine",
+  "name_zh": "Luma",
+  "domain": "lumalabs.ai",
+  "category_id": "video",
+  "category_ids": [
+    "video"
+  ],
+  "category_title_en": "Video",
+  "category_title_zh": "视频生成",
+  "updated": "2026-06-01"
+}

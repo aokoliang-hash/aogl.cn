@@ -1,0 +1,14 @@
+{
+  "slug": "ideogram-post",
+  "url": "https://ideogram.ai",
+  "name_en": "Ideogram",
+  "name_zh": "Ideogram",
+  "domain": "ideogram.ai",
+  "category_id": "image",
+  "category_ids": [
+    "image"
+  ],
+  "category_title_en": "Image generation",
+  "category_title_zh": "图像生成",
+  "updated": "2026-06-01"
+}

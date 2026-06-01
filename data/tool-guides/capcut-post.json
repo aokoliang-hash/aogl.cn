@@ -1,0 +1,14 @@
+{
+  "slug": "capcut-post",
+  "url": "https://www.capcut.com",
+  "name_en": "CapCut Web",
+  "name_zh": "剪映网页",
+  "domain": "capcut.com",
+  "category_id": "video",
+  "category_ids": [
+    "video"
+  ],
+  "category_title_en": "Video",
+  "category_title_zh": "视频生成",
+  "updated": "2026-06-01"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "pika-post",
+  "url": "https://pika.art",
+  "name_en": "Pika",
+  "name_zh": "Pika",
+  "domain": "pika.art",
+  "category_id": "video",
+  "category_ids": [
+    "video"
+  ],
+  "category_title_en": "Video",
+  "category_title_zh": "视频生成",
+  "updated": "2026-06-01"
+}

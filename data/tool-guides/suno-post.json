@@ -1,0 +1,14 @@
+{
+  "slug": "suno-post",
+  "url": "https://suno.com",
+  "name_en": "Suno",
+  "name_zh": "Suno",
+  "domain": "suno.com",
+  "category_id": "audio",
+  "category_ids": [
+    "audio"
+  ],
+  "category_title_en": "Audio & music",
+  "category_title_zh": "音频与音乐",
+  "updated": "2026-06-01"
+}

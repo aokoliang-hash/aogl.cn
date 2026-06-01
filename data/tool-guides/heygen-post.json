@@ -1,0 +1,14 @@
+{
+  "slug": "heygen-post",
+  "url": "https://www.heygen.com",
+  "name_en": "HeyGen",
+  "name_zh": "HeyGen",
+  "domain": "heygen.com",
+  "category_id": "video",
+  "category_ids": [
+    "video"
+  ],
+  "category_title_en": "Video",
+  "category_title_zh": "视频生成",
+  "updated": "2026-06-01"
+}

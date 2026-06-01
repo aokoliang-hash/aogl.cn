@@ -12,6 +12,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { loadCategoryData, renderHomeJsonLd, renderReadingSection, renderReadingTeaser } from "./official-feeds-lib.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -262,81 +263,6 @@ async function buildItemsFromDiscovery(config, existingItems, orderedPairs) {
   return next.slice(0, config.readingMaxTotal);
 }
 
-function renderReadingHtml(items) {
-  const n = items.length;
-  const introEn = `${n} additional official links (OpenAI, Anthropic, Google DeepMind) — same sources as above, but no URL duplicated from the category news feeds.`;
-  const introZh = `下列 ${n} 条亦为三家官网一手文章，与上方「资讯 / 排行 / 分类 / 技巧」区块中的链接不重复（外链将离开本站）。`;
-
-  const liEn = items
-    .map(
-      (it) => `          <li>
-            <a href="${escapeHtml(it.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(it.title_en)}</a>
-            <span class="reading-meta">${escapeHtml(it.meta_en)}</span>
-          </li>`
-    )
-    .join("\n");
-
-  const liZh = items
-    .map(
-      (it) => `          <li>
-            <a href="${escapeHtml(it.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(it.title_zh)}</a>
-            <span class="reading-meta">${escapeHtml(it.meta_zh)}</span>
-          </li>`
-    )
-    .join("\n");
-
-  return `      <section id="reading">
-        <h2 class="page-section-title lang-en">Latest official articles</h2>
-        <h2 class="page-section-title lang-zh">最新官方文章（外链）</h2>
-        <p class="reading-intro lang-en">
-          ${escapeHtml(introEn)}
-        </p>
-        <p class="reading-intro lang-zh">
-          ${escapeHtml(introZh)}
-        </p>
-
-        <ul class="reading-list lang-en">
-${liEn}
-        </ul>
-
-        <ul class="reading-list lang-zh">
-${liZh}
-        </ul>
-      </section>`;
-}
-
-function renderJsonLd(siteUrl, items) {
-  const base = siteUrl.replace(/\/$/, "");
-  const { meta_en: mEn } = metaNowEnZh();
-  const graph = [
-    {
-      "@type": "WebSite",
-      "@id": `${base}/#website`,
-      name: "aogl.cn",
-      url: `${base}/`,
-      description:
-        "AI tools news, rankings, categories, and practical tips for generative AI.",
-      inLanguage: ["en", "zh-CN"],
-    },
-    {
-      "@type": "ItemList",
-      "@id": `${base}/#reading-list`,
-      name: "Official AI lab reading list",
-      numberOfItems: items.length,
-      itemListElement: items.map((it, i) => ({
-        "@type": "ListItem",
-        position: i + 1,
-        name: it.title_en,
-        url: it.url,
-      })),
-    },
-  ];
-  const payload = {
-    "@context": "https://schema.org",
-    "@graph": graph,
-  };
-  return `<script type="application/ld+json">\n${JSON.stringify(payload, null, 2)}\n</script>`;
-}
 
 function replaceMarker(html, start, end, inner) {
   const i0 = html.indexOf(start);
@@ -425,11 +351,15 @@ async function main() {
     console.warn("Warning: some URLs failed verification:", bad);
   }
 
+  const catSections = loadCategoryData().sections.length;
   let indexHtml = fs.readFileSync(INDEX_PATH, "utf8");
-  const readingBlock = renderReadingHtml(items);
+  const showList = config.homepageShowReadingList !== false;
+  const readingBlock = showList
+    ? renderReadingSection(items)
+    : renderReadingTeaser(items.length, catSections);
   indexHtml = replaceMarker(indexHtml, READING_START, READING_END, readingBlock);
 
-  const jsonLd = renderJsonLd(config.siteUrl, items);
+  const jsonLd = renderHomeJsonLd(config.siteUrl);
   indexHtml = replaceMarker(indexHtml, JSONLD_START, JSONLD_END, jsonLd);
 
   fs.writeFileSync(INDEX_PATH, indexHtml, "utf8");

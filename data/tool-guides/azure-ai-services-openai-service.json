@@ -1,0 +1,14 @@
+{
+  "slug": "azure-ai-services-openai-service",
+  "url": "https://azure.microsoft.com/products/ai-services/openai-service",
+  "name_en": "Azure OpenAI",
+  "name_zh": "Azure OpenAI",
+  "domain": "microsoft.com",
+  "category_id": "platform-api",
+  "category_ids": [
+    "platform-api"
+  ],
+  "category_title_en": "Platforms & APIs",
+  "category_title_zh": "平台与 API",
+  "updated": "2026-06-01"
+}

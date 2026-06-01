@@ -1,0 +1,14 @@
+{
+  "slug": "replit-post",
+  "url": "https://replit.com",
+  "name_en": "Replit",
+  "name_zh": "Replit",
+  "domain": "replit.com",
+  "category_id": "coding",
+  "category_ids": [
+    "coding"
+  ],
+  "category_title_en": "Coding & IDE",
+  "category_title_zh": "编程与 IDE",
+  "updated": "2026-06-01"
+}

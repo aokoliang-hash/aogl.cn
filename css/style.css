@@ -704,6 +704,24 @@ footer.site-footer {
   color: #e0e8f0;
   line-height: 1.2; 
 }
+.cat-feed-more {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+}
+.cat-feed-more a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+.cat-feed-more a:hover {
+  text-decoration: underline;
+}
+.reading-teaser {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border, #2a3544);
+  border-radius: 10px;
+  background: rgba(6, 10, 14, 0.45);
+}
 /* One visible .lang-XX per body.locale-XX (partial locales keep body on en/zh). */
 body:not(.locale-en) .lang-en {
   display: none !important;

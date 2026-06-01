@@ -1,0 +1,14 @@
+{
+  "slug": "fireworks-post",
+  "url": "https://fireworks.ai",
+  "name_en": "Fireworks AI",
+  "name_zh": "Fireworks AI",
+  "domain": "fireworks.ai",
+  "category_id": "platform-api",
+  "category_ids": [
+    "platform-api"
+  ],
+  "category_title_en": "Platforms & APIs",
+  "category_title_zh": "平台与 API",
+  "updated": "2026-06-01"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "tabnine-post",
+  "url": "https://www.tabnine.com",
+  "name_en": "Tabnine",
+  "name_zh": "Tabnine",
+  "domain": "tabnine.com",
+  "category_id": "coding",
+  "category_ids": [
+    "coding"
+  ],
+  "category_title_en": "Coding & IDE",
+  "category_title_zh": "编程与 IDE",
+  "updated": "2026-06-01"
+}

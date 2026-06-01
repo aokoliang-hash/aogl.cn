@@ -1,0 +1,14 @@
+{
+  "slug": "podcast-post",
+  "url": "https://podcast.adobe.com",
+  "name_en": "Adobe Podcast",
+  "name_zh": "Adobe Podcast",
+  "domain": "adobe.com",
+  "category_id": "audio",
+  "category_ids": [
+    "audio"
+  ],
+  "category_title_en": "Audio & music",
+  "category_title_zh": "音频与音乐",
+  "updated": "2026-06-01"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "synthesia-post",
+  "url": "https://www.synthesia.io",
+  "name_en": "Synthesia",
+  "name_zh": "Synthesia",
+  "domain": "synthesia.io",
+  "category_id": "video",
+  "category_ids": [
+    "video"
+  ],
+  "category_title_en": "Video",
+  "category_title_zh": "视频生成",
+  "updated": "2026-06-01"
+}

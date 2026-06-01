@@ -6,6 +6,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { faviconSrcForHtml } from "./favicon-local.mjs";
+import { slugFromUrl, toolGuidePath } from "./tool-guide-utils.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -37,11 +38,13 @@ function toolName(t, lang) {
 
 function renderTool(t) {
   const icon = faviconSrcForHtml(t.domain);
+  const slug = t.slug || slugFromUrl(t.url);
+  const href = toolGuidePath(slug);
   const names = LOCALES.map(
     (lang) => `                <span class="tool-tile-name lang-${lang}">${escapeHtml(toolName(t, lang))}</span>`
   ).join("\n");
   return `            <li>
-              <a class="tool-tile" href="${escapeHtml(t.url)}" target="_blank" rel="noopener noreferrer">
+              <a class="tool-tile" href="${escapeHtml(href)}">
                 <span class="tool-tile-icon-wrap">
                   <img class="tool-tile-icon" src="${icon}" width="36" height="36" alt="" loading="lazy" decoding="async" />
                 </span>

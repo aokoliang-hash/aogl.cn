@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node scripts/test-i18n-paths.mjs",
+    "test:i18n-paths": "node scripts/test-i18n-paths.mjs",
     "build-logo": "node scripts/regenerate-logo-wordmark.cjs",
     "build-hubs": "node scripts/build-hub-pages.mjs",
     "fetch-hub-news": "node scripts/fetch-hub-news.mjs",
@@ -18,7 +19,15 @@
     "build-index-pills": "node scripts/inject-index-pills.mjs",
     "build-contact": "node scripts/build-contact-page.mjs",
     "build-seo-locales": "node scripts/build-seo-locale-pages.mjs",
-    "build-site": "npm run build-hubs && npm run build-articles && npm run inject-tools-directory && npm run build-index-pills && npm run build-contact && npm run build-seo-locales"
+    "sync-brief-articles": "node scripts/sync-brief-articles.mjs",
+    "sync-brief-articles:fetch": "node scripts/sync-brief-articles.mjs --fetch",
+    "build-brief-pages": "node scripts/build-brief-pages.mjs",
+    "sync-tool-guides": "node scripts/sync-tool-guides.mjs",
+    "build-tool-guides": "node scripts/build-tool-guide-pages.mjs",
+    "build-official-news": "node scripts/build-official-news-page.mjs",
+    "inject-categories": "node scripts/inject-categories.mjs",
+    "update-reading": "node scripts/update-reading.mjs",
+    "build-site": "npm run build-hubs && npm run build-articles && npm run sync-brief-articles && npm run build-brief-pages && npm run sync-tool-guides && npm run build-tool-guides && npm run inject-tools-directory && npm run inject-categories && npm run update-reading && npm run build-official-news && npm run build-index-pills && npm run build-contact && npm run build-seo-locales"
   },
   "devDependencies": {
     "cheerio": "^1.2.0",

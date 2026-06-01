@@ -1,0 +1,14 @@
+{
+  "slug": "aws-q-developer",
+  "url": "https://aws.amazon.com/q/developer",
+  "name_en": "Amazon Q Developer",
+  "name_zh": "Amazon Q",
+  "domain": "aws.amazon.com",
+  "category_id": "coding",
+  "category_ids": [
+    "coding"
+  ],
+  "category_title_en": "Coding & IDE",
+  "category_title_zh": "编程与 IDE",
+  "updated": "2026-06-01"
+}

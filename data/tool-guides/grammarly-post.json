@@ -1,0 +1,14 @@
+{
+  "slug": "grammarly-post",
+  "url": "https://www.grammarly.com",
+  "name_en": "Grammarly",
+  "name_zh": "Grammarly",
+  "domain": "grammarly.com",
+  "category_id": "writing",
+  "category_ids": [
+    "writing"
+  ],
+  "category_title_en": "Writing & productivity",
+  "category_title_zh": "写作与效率",
+  "updated": "2026-06-01"
+}

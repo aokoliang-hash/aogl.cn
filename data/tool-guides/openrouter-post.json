@@ -1,0 +1,14 @@
+{
+  "slug": "openrouter-post",
+  "url": "https://openrouter.ai",
+  "name_en": "OpenRouter",
+  "name_zh": "OpenRouter",
+  "domain": "openrouter.ai",
+  "category_id": "chat-llm",
+  "category_ids": [
+    "chat-llm"
+  ],
+  "category_title_en": "Chat & LLM",
+  "category_title_zh": "对话与大模型",
+  "updated": "2026-06-01"
+}

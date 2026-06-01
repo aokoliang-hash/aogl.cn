@@ -1,0 +1,14 @@
+{
+  "slug": "aistudio-post",
+  "url": "https://aistudio.google.com",
+  "name_en": "Google AI Studio",
+  "name_zh": "Google AI Studio",
+  "domain": "google.com",
+  "category_id": "platform-api",
+  "category_ids": [
+    "platform-api"
+  ],
+  "category_title_en": "Platforms & APIs",
+  "category_title_zh": "平台与 API",
+  "updated": "2026-06-01"
+}

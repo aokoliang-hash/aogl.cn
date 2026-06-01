@@ -1,0 +1,14 @@
+{
+  "slug": "canva-post",
+  "url": "https://www.canva.com",
+  "name_en": "Canva AI",
+  "name_zh": "Canva AI",
+  "domain": "canva.com",
+  "category_id": "image",
+  "category_ids": [
+    "image"
+  ],
+  "category_title_en": "Image generation",
+  "category_title_zh": "图像生成",
+  "updated": "2026-06-01"
+}

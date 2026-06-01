@@ -1,0 +1,14 @@
+{
+  "slug": "phind-post",
+  "url": "https://www.phind.com",
+  "name_en": "Phind",
+  "name_zh": "Phind",
+  "domain": "phind.com",
+  "category_id": "search",
+  "category_ids": [
+    "search"
+  ],
+  "category_title_en": "Search & research",
+  "category_title_zh": "搜索与研究",
+  "updated": "2026-06-01"
+}

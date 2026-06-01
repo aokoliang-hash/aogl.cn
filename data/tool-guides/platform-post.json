@@ -1,0 +1,14 @@
+{
+  "slug": "platform-post",
+  "url": "https://platform.openai.com",
+  "name_en": "OpenAI Platform",
+  "name_zh": "OpenAI API",
+  "domain": "openai.com",
+  "category_id": "platform-api",
+  "category_ids": [
+    "platform-api"
+  ],
+  "category_title_en": "Platforms & APIs",
+  "category_title_zh": "平台与 API",
+  "updated": "2026-06-01"
+}

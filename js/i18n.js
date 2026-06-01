@@ -40,54 +40,121 @@
    */
   var FULL_UI_LOCALES = ["en", "zh", "zht", "ja", "ko", "fr", "ru", "ar"];
 
+  /** Subfolders whose path must be kept when switching locale (like articles/). */
+  var CONTENT_DIRS = ["articles", "briefs", "tool-guides"];
+
+  function pathParts() {
+    return (location.pathname || "/").replace(/\/+/g, "/").split("/").filter(Boolean);
+  }
+
+  /**
+   * [deployBase][/locale/]relFile — deployBase is e.g. /aogl.cn on WAMP; relFile keeps articles/… subpaths.
+   */
+  function parseLocalePath() {
+    var parts = pathParts();
+    var localeIdx = -1;
+    var locale = "zh";
+
+    for (var i = 0; i < parts.length; i++) {
+      if (parts[i] === "zh") {
+        localeIdx = i;
+        locale = "zht";
+        break;
+      }
+      if (/^(en|ja|ko|fr|ru|ar)$/.test(parts[i])) {
+        localeIdx = i;
+        locale = parts[i];
+        break;
+      }
+    }
+
+    var deployBase = "";
+    var relFile = "index.html";
+
+    if (localeIdx >= 0) {
+      if (localeIdx > 0) deployBase = "/" + parts.slice(0, localeIdx).join("/");
+      var tail = parts.slice(localeIdx + 1);
+      relFile = tail.length ? tail.join("/") : "index.html";
+    } else {
+      var contentAt = -1;
+      for (var j = 0; j < parts.length; j++) {
+        if (CONTENT_DIRS.indexOf(parts[j]) !== -1) {
+          contentAt = j;
+          break;
+        }
+      }
+      if (contentAt >= 0) {
+        if (contentAt > 0) deployBase = "/" + parts.slice(0, contentAt).join("/");
+        relFile = parts.slice(contentAt).join("/");
+      } else if (parts.length && /\.html$/i.test(parts[parts.length - 1])) {
+        if (parts.length > 1) deployBase = "/" + parts.slice(0, -1).join("/");
+        relFile = parts[parts.length - 1];
+      } else if (parts.length) {
+        deployBase = "/" + parts.join("/");
+        relFile = "index.html";
+      }
+    }
+
+    if (!relFile || relFile === "/") relFile = "index.html";
+    return { locale: locale, deployBase: deployBase, relFile: relFile };
+  }
+
   /**
    * URL → locale for built single-language pages (see build-seo-locale-pages).
    * /zh/… → 繁體；/en/、/ja/… → 对应语种；根路径及 /tools.html、/articles/… 等 → 简体 zh。
    * Must not return null on root: localStorage from a prior /en/ visit would hide all .lang-zh markup.
    */
   function localeFromPath() {
-    if (/^\/zh(?:\/|$)/.test(location.pathname)) return "zht";
-    var m = location.pathname.match(/^\/(en|ja|ko|fr|ru|ar)(?:\/|$)/);
-    if (m) return m[1];
-    return "zh";
+    return parseLocalePath().locale;
   }
 
   function currentHtmlFilename() {
-    var p = (location.pathname || "/").replace(/\/+/g, "/");
-    if (p === "/" || p === "/index.html") return "index.html";
-    var parts = p.split("/").filter(Boolean);
-    var last = parts[parts.length - 1];
-    if (last && last.indexOf(".html") !== -1) {
-      var ai = parts.indexOf("articles");
-      if (ai !== -1 && ai < parts.length - 1) return "articles/" + last;
-      return last;
-    }
-    return "index.html";
+    return parseLocalePath().relFile;
   }
 
-  function targetPathForLocale(lang, file) {
+  function targetPathForLocale(lang, file, deployBase) {
+    var inner;
     if (lang === "zh") {
-      if (file === "index.html") return "/";
-      return "/" + file;
+      inner = file === "index.html" ? "/" : "/" + file;
+    } else if (lang === "zht") {
+      inner = file === "index.html" ? "/zh/" : "/zh/" + file;
+    } else if (lang === "en") {
+      inner = file === "index.html" ? "/en/" : "/en/" + file;
+    } else if (file === "index.html") {
+      inner = "/" + lang + "/";
+    } else {
+      inner = "/" + lang + "/" + file;
     }
-    if (lang === "zht") {
-      if (file === "index.html") return "/zh/";
-      return "/zh/" + file;
+    deployBase = deployBase || "";
+    if (deployBase.length > 1 && deployBase.charAt(deployBase.length - 1) === "/") {
+      deployBase = deployBase.slice(0, -1);
     }
-    if (lang === "en") {
-      if (file === "index.html") return "/en/";
-      return "/en/" + file;
-    }
-    if (file === "index.html") return "/" + lang + "/";
-    return "/" + lang + "/" + file;
+    if (!deployBase) return inner;
+    if (inner === "/") return deployBase + "/";
+    return deployBase + inner;
   }
 
   function normalizePath(p) {
     p = (p || "/").replace(/\/+/g, "/");
     if (p === "/index.html") return "/";
-    if (p.length > 10 && p.slice(-10) === "/index.html") {
-      p = p.slice(0, -10) || "/";
+
+    var parts = p.split("/").filter(Boolean);
+    if (parts.length && parts[parts.length - 1] === "index.html") {
+      var withoutIndex = parts.slice(0, -1);
+      if (withoutIndex.length === 0) return "/";
+      var last = withoutIndex[withoutIndex.length - 1];
+      if (last === "zh" || /^(en|ja|ko|fr|ru|ar)$/.test(last)) {
+        return "/" + withoutIndex.join("/");
+      }
+      if (
+        withoutIndex.length === 1 &&
+        CONTENT_DIRS.indexOf(withoutIndex[0]) === -1 &&
+        !/\.html$/i.test(withoutIndex[0])
+      ) {
+        return "/" + withoutIndex.join("/");
+      }
     }
+
     if (p.length > 1 && p.charAt(p.length - 1) === "/") p = p.slice(0, -1);
     if (p === "") p = "/";
     return p;
@@ -96,8 +163,8 @@
   /** If UI language should load a different URL, navigate and return true. */
   function navigateIfLocaleSwitch(lang) {
     if (!isSupported(lang)) return false;
-    var file = currentHtmlFilename();
-    var want = normalizePath(targetPathForLocale(lang, file));
+    var parsed = parseLocalePath();
+    var want = normalizePath(targetPathForLocale(lang, parsed.relFile, parsed.deployBase));
     var cur = normalizePath(location.pathname);
     if (cur === want) return false;
     try {

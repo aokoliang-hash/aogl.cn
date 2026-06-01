@@ -45,6 +45,7 @@ const STATIC_PAGES = [
   "changelog.html",
   "about.html",
   "contact.html",
+  "official-news.html",
 ];
 
 function multilangArticlePages() {
@@ -57,8 +58,28 @@ function multilangArticlePages() {
     .map((f) => `articles/${f}`);
 }
 
+function multilangBriefPages() {
+  const dir = path.join(MULTILANG_DIR, "briefs");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".html"))
+    .sort()
+    .map((f) => `briefs/${f}`);
+}
+
+function multilangToolGuidePages() {
+  const dir = path.join(MULTILANG_DIR, "tool-guides");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".html"))
+    .sort()
+    .map((f) => `tool-guides/${f}`);
+}
+
 function getAllPages() {
-  return [...STATIC_PAGES, ...multilangArticlePages()];
+  return [...STATIC_PAGES, ...multilangArticlePages(), ...multilangBriefPages(), ...multilangToolGuidePages()];
 }
 
 const toTraditional = OpenCC.Converter({ from: "cn", to: "tw" });

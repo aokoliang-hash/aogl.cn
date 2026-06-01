@@ -1,215 +1,245 @@
 {
-  "updated": "2026-05-11",
+  "updated": "2026-06-01",
   "items": [
     {
       "url": "https://openai.com/index/introducing-gpt-5-2",
       "title_en": "Introducing GPT-5.2",
       "title_zh": "发布 GPT-5.2",
       "meta_en": "OpenAI · Dec 2025",
-      "meta_zh": "OpenAI · 2025年12月"
+      "meta_zh": "OpenAI · 2025年12月",
+      "slug": "openai-introducing-gpt-5-2"
     },
     {
       "url": "https://openai.com/index/introducing-chatgpt-go",
       "title_en": "Introducing ChatGPT Go, now available worldwide",
       "title_zh": "ChatGPT Go 全球上线",
       "meta_en": "OpenAI · Jan 2026",
-      "meta_zh": "OpenAI · 2026年1月"
+      "meta_zh": "OpenAI · 2026年1月",
+      "slug": "openai-introducing-chatgpt-go"
     },
     {
       "url": "https://openai.com/index/codex-now-generally-available",
       "title_en": "Codex is now generally available",
       "title_zh": "Codex 正式上线（GA）",
       "meta_en": "OpenAI · Oct 2025",
-      "meta_zh": "OpenAI · 2025年10月"
+      "meta_zh": "OpenAI · 2025年10月",
+      "slug": "openai-codex-now-generally-available"
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
       "title_en": "Anthropic raises $30 billion in Series G funding",
       "title_zh": "Anthropic 完成 300 亿美元 G 轮融资",
       "meta_en": "Anthropic · Feb 2026",
-      "meta_zh": "Anthropic · 2026年2月"
+      "meta_zh": "Anthropic · 2026年2月",
+      "slug": "anthropic-news-anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation"
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
       "title_en": "Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute",
       "title_zh": "与 Amazon 扩大算力合作（最高约 5 GW）",
       "meta_en": "Anthropic · Apr 2026",
-      "meta_zh": "Anthropic · 2026年4月"
+      "meta_zh": "Anthropic · 2026年4月",
+      "slug": "anthropic-news-anthropic-amazon-compute"
     },
     {
       "url": "https://www.anthropic.com/news/the-anthropic-institute",
       "title_en": "Introducing The Anthropic Institute",
       "title_zh": "成立 Anthropic Institute",
       "meta_en": "Anthropic · Mar 2026",
-      "meta_zh": "Anthropic · 2026年3月"
+      "meta_zh": "Anthropic · 2026年3月",
+      "slug": "anthropic-news-the-anthropic-institute"
     },
     {
       "url": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025",
       "title_en": "Google 2025 recap: Research breakthroughs of the year",
       "title_zh": "Google 2025 研究进展回顾",
       "meta_en": "Google DeepMind · Dec 2025",
-      "meta_zh": "Google DeepMind · 2025年12月"
+      "meta_zh": "Google DeepMind · 2025年12月",
+      "slug": "deepmind-blog-googles-year-in-review-8-areas-with-research-breakthroughs-in-2025"
     },
     {
       "url": "https://deepmind.google/blog/gemini-3-1-flash-lite-built-for-intelligence-at-scale",
       "title_en": "Gemini 3.1 Flash Lite: Our most cost-effective AI model yet",
       "title_zh": "Gemini 3.1 Flash Lite：高性价比模型",
       "meta_en": "Google DeepMind · Mar 2026",
-      "meta_zh": "Google DeepMind · 2026年3月"
+      "meta_zh": "Google DeepMind · 2026年3月",
+      "slug": "deepmind-blog-gemini-3-1-flash-lite-built-for-intelligence-at-scale"
     },
     {
       "url": "https://deepmind.google/blog/10-years-of-alphago",
       "title_en": "AlphaGo at 10: How AI innovation is paving the path to AGI",
       "title_zh": "AlphaGo 十周年与 AGI 路径",
       "meta_en": "Google DeepMind · Mar 2026",
-      "meta_zh": "Google DeepMind · 2026年3月"
+      "meta_zh": "Google DeepMind · 2026年3月",
+      "slug": "deepmind-blog-10-years-of-alphago"
     },
     {
       "url": "https://openai.com/index/accelerating-the-next-phase-ai",
       "title_en": "OpenAI raises $122 billion to accelerate the next phase of AI",
       "title_zh": "OpenAI 融资 1220 亿美元，推进下一阶段 AI",
       "meta_en": "OpenAI · Mar 2026",
-      "meta_zh": "OpenAI · 2026年3月"
+      "meta_zh": "OpenAI · 2026年3月",
+      "slug": "openai-accelerating-the-next-phase-ai"
     },
     {
       "url": "https://openai.com/index/introducing-gpt-5-5",
       "title_en": "Introducing GPT-5.5",
       "title_zh": "发布 GPT-5.5",
       "meta_en": "OpenAI · Apr 2026",
-      "meta_zh": "OpenAI · 2026年4月"
+      "meta_zh": "OpenAI · 2026年4月",
+      "slug": "openai-introducing-gpt-5-5"
     },
     {
       "url": "https://openai.com/index/amazon-partnership",
       "title_en": "OpenAI and Amazon announce strategic partnership",
       "title_zh": "OpenAI 与 Amazon 宣布战略合作",
       "meta_en": "OpenAI · Feb 2026",
-      "meta_zh": "OpenAI · 2026年2月"
+      "meta_zh": "OpenAI · 2026年2月",
+      "slug": "openai-amazon-partnership"
     },
     {
       "url": "https://openai.com/index/introducing-gpt-5",
       "title_en": "Introducing GPT-5",
       "title_zh": "发布 GPT-5",
       "meta_en": "OpenAI · Aug 2025",
-      "meta_zh": "OpenAI · 2025年8月"
+      "meta_zh": "OpenAI · 2025年8月",
+      "slug": "openai-introducing-gpt-5"
     },
     {
       "url": "https://openai.com/index/introducing-openai-frontier",
       "title_en": "Introducing OpenAI Frontier",
       "title_zh": "推出 OpenAI Frontier 企业平台",
       "meta_en": "OpenAI · Feb 2026",
-      "meta_zh": "OpenAI · 2026年2月"
+      "meta_zh": "OpenAI · 2026年2月",
+      "slug": "openai-introducing-openai-frontier"
     },
     {
       "url": "https://openai.com/index/advancing-independent-research-ai-alignment",
       "title_en": "Advancing independent research on AI alignment",
       "title_zh": "推动 AI 对齐方面的独立研究资助",
       "meta_en": "OpenAI · Jul 2025",
-      "meta_zh": "OpenAI · 2025年7月"
+      "meta_zh": "OpenAI · 2025年7月",
+      "slug": "openai-advancing-independent-research-ai-alignment"
     },
     {
       "url": "https://openai.com/index/introducing-openai-safety-fellowship",
       "title_en": "Introducing the OpenAI Safety Fellowship",
       "title_zh": "推出 OpenAI 安全研究奖学金计划",
       "meta_en": "OpenAI · Sep 2026",
-      "meta_zh": "OpenAI · 2026年9月"
+      "meta_zh": "OpenAI · 2026年9月",
+      "slug": "openai-introducing-openai-safety-fellowship"
     },
     {
       "url": "https://openai.com/index/us-caisi-uk-aisi-ai-update",
       "title_en": "Working with US CAISI and UK AISI to build more secure AI systems",
       "title_zh": "与美英 AI 安全机构合作强化模型安全",
       "meta_en": "OpenAI · Jul 2025",
-      "meta_zh": "OpenAI · 2025年7月"
+      "meta_zh": "OpenAI · 2025年7月",
+      "slug": "openai-us-caisi-uk-aisi-ai-update"
     },
     {
       "url": "https://www.anthropic.com/news/claude-opus-4-6",
       "title_en": "Introducing Claude Opus 4.6",
       "title_zh": "发布 Claude Opus 4.6",
       "meta_en": "Anthropic · Feb 2026",
-      "meta_zh": "Anthropic · 2026年2月"
+      "meta_zh": "Anthropic · 2026年2月",
+      "slug": "anthropic-news-claude-opus-4-6"
     },
     {
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "title_en": "Claude is a space to think",
       "title_zh": "Claude：专注思考的空间（无广告承诺）",
       "meta_en": "Anthropic · Feb 2026",
-      "meta_zh": "Anthropic · 2026年2月"
+      "meta_zh": "Anthropic · 2026年2月",
+      "slug": "anthropic-news-claude-is-a-space-to-think"
     },
     {
       "url": "https://www.anthropic.com/news/claude-new-constitution",
       "title_en": "Claude's new constitution",
       "title_zh": "Claude 新版宪法（准则更新）",
       "meta_en": "Anthropic · Jan 2026",
-      "meta_zh": "Anthropic · 2026年1月"
+      "meta_zh": "Anthropic · 2026年1月",
+      "slug": "anthropic-news-claude-new-constitution"
     },
     {
       "url": "https://www.anthropic.com/news/healthcare-life-sciences",
       "title_en": "Advancing Claude in healthcare and the life sciences",
       "title_zh": "拓展 Claude 在医疗健康与生命科学中的应用",
       "meta_en": "Anthropic · Jan 2026",
-      "meta_zh": "Anthropic · 2026年1月"
+      "meta_zh": "Anthropic · 2026年1月",
+      "slug": "anthropic-news-healthcare-life-sciences"
     },
     {
       "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
       "title_en": "Donating MCP and establishing the Agentic AI Foundation",
       "title_zh": "捐赠 MCP 并发起 Agentic AI Foundation",
       "meta_en": "Anthropic · Dec 2025",
-      "meta_zh": "Anthropic · 2025年12月"
+      "meta_zh": "Anthropic · 2025年12月",
+      "slug": "anthropic-news-donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"
     },
     {
       "url": "https://www.anthropic.com/news/our-framework-for-developing-safe-and-trustworthy-agents",
       "title_en": "Our framework for developing safe and trustworthy agents",
       "title_zh": "安全可信智能体开发框架",
       "meta_en": "Anthropic · 2025",
-      "meta_zh": "Anthropic · 2025年"
+      "meta_zh": "Anthropic · 2025年",
+      "slug": "anthropic-news-our-framework-for-developing-safe-and-trustworthy-agents"
     },
     {
       "url": "https://www.anthropic.com/news/usage-policy-update",
       "title_en": "Usage Policy Update",
       "title_zh": "使用条款政策更新",
       "meta_en": "Anthropic · Aug 2025",
-      "meta_zh": "Anthropic · 2025年8月"
+      "meta_zh": "Anthropic · 2025年8月",
+      "slug": "anthropic-news-usage-policy-update"
     },
     {
       "url": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable",
       "title_en": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
       "title_zh": "Gemini 3.1 Flash Live：更自然可靠的语音 AI",
       "meta_en": "Google DeepMind · Mar 2026",
-      "meta_zh": "Google DeepMind · 2026年3月"
+      "meta_zh": "Google DeepMind · 2026年3月",
+      "slug": "deepmind-blog-gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable"
     },
     {
       "url": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech",
       "title_en": "Gemini 3.1 Flash TTS: The next generation of expressive AI speech",
       "title_zh": "Gemini 3.1 Flash TTS：新一代表现力语音合成",
       "meta_en": "Google DeepMind · Apr 2026",
-      "meta_zh": "Google DeepMind · 2026年4月"
+      "meta_zh": "Google DeepMind · 2026年4月",
+      "slug": "deepmind-blog-gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech"
     },
     {
       "url": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed",
       "title_en": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
       "title_zh": "Nano Banana 2：Pro 级能力 + 极速出图",
       "meta_en": "Google DeepMind · Feb 2026",
-      "meta_zh": "Google DeepMind · 2026年2月"
+      "meta_zh": "Google DeepMind · 2026年2月",
+      "slug": "deepmind-blog-nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed"
     },
     {
       "url": "https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework",
       "title_en": "Measuring progress toward AGI: A cognitive framework",
       "title_zh": "衡量通向 AGI 的进展：认知框架",
       "meta_en": "Google DeepMind · Mar 2026",
-      "meta_zh": "Google DeepMind · 2026年3月"
+      "meta_zh": "Google DeepMind · 2026年3月",
+      "slug": "deepmind-blog-measuring-progress-toward-agi-a-cognitive-framework"
     },
     {
       "url": "https://deepmind.google/blog/deepening-our-partnership-with-the-uk-ai-security-institute",
       "title_en": "Deepening our partnership with the UK AI Security Institute",
       "title_zh": "深化与英国 AI 安全研究所的合作",
       "meta_en": "Google DeepMind · Dec 2025",
-      "meta_zh": "Google DeepMind · 2025年12月"
+      "meta_zh": "Google DeepMind · 2025年12月",
+      "slug": "deepmind-blog-deepening-our-partnership-with-the-uk-ai-security-institute"
     },
     {
       "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks",
       "title_en": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
       "title_zh": "Gemini 3.1 Pro：面向复杂任务的更强模型",
       "meta_en": "Google DeepMind · Feb 2026",
-      "meta_zh": "Google DeepMind · 2026年2月"
+      "meta_zh": "Google DeepMind · 2026年2月",
+      "slug": "deepmind-blog-gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks"
     }
   ]
 }
