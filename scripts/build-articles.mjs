@@ -12,6 +12,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { sitePath } from "./site-paths.mjs";
+import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
 import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -502,6 +503,7 @@ function buildArticlePageHub(article) {
   <link rel="stylesheet" href="${P}css/style.css">
   <link rel="stylesheet" href="${P}css/hub.css">
   <link rel="stylesheet" href="${P}css/article-hub.css">
+  ${GTAG_SCRIPT}
   <script src="${P}js/adsense.js"></script>
   ${buildJsonLdHub(article, titleEn, subtitleEn, descEn, titleZh)}
 </head>`;
@@ -857,6 +859,7 @@ ${JSON.stringify({
   <link rel="stylesheet" href="${P}css/style.css">
   <link rel="stylesheet" href="${P}css/hub.css">
   <link rel="stylesheet" href="${P}css/article-hub.css">
+  ${GTAG_SCRIPT}
   <script src="${P}js/adsense.js"></script>
   ${jsonLd}
 </head>

@@ -6,6 +6,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
+import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
 import {
   ROOT,
   escapeHtml,
@@ -79,6 +80,7 @@ function main() {
   <meta property="og:site_name" content="aogl.cn" />
   <meta property="og:image" content="${esc(base)}/og-default.png" />
   <link rel="stylesheet" href="css/style.css" />
+  ${GTAG_SCRIPT}
   <script src="js/adsense.js"></script>
   <!-- JSONLD_OFFICIAL_NEWS_START -->
 ${jsonLd}

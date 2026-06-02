@@ -21,6 +21,7 @@ import {
   sortHubLinks,
 } from "./hub-link-utils.mjs";
 import { sitePath } from "./site-paths.mjs";
+import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.join(ROOT, "_multilang", "hub-links");
@@ -88,6 +89,7 @@ function buildPage(link) {
   <link rel="stylesheet" href="${sitePath("css/privacy.css")}">
   <link rel="stylesheet" href="${sitePath("css/brief.css")}">
   <link rel="stylesheet" href="${sitePath("css/tool-guide.css")}">
+  ${GTAG_SCRIPT}
   <script src="${sitePath("js/adsense.js")}"></script>
   ${buildJsonLd(link, titleEn, descEn)}
 </head>`;

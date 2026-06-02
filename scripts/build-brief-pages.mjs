@@ -18,6 +18,7 @@ import {
   strByLang,
 } from "./brief-utils.mjs";
 import { sitePath } from "./site-paths.mjs";
+import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.join(ROOT, "_multilang", "briefs");
@@ -91,6 +92,7 @@ function buildBriefPage(brief) {
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="${sitePath("css/privacy.css")}">
   <link rel="stylesheet" href="${sitePath("css/brief.css")}">
+  ${GTAG_SCRIPT}
   <script src="${sitePath("js/adsense.js")}"></script>
   ${buildJsonLd(brief, titleEn, descEn)}
 </head>`;

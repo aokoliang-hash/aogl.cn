@@ -9,6 +9,7 @@ import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
 import { faviconSrcForHtml } from "./favicon-local.mjs";
 import { hotMixImageSrcForHtml } from "./hub-image-local.mjs";
 import { localHrefAttr, resolveLocalHref } from "./resolve-local-link.mjs";
+import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -621,6 +622,7 @@ ${JSON.stringify({ "@context": "https://schema.org", "@graph": graph }, null, 2)
   </script>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/hub.css" />
+  ${GTAG_SCRIPT}
   <script src="js/adsense.js"></script>
 </head>
 <body class="locale-en">

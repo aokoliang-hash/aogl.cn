@@ -450,6 +450,15 @@ function collapseBlankLinesOutsideBlocks(s) {
     .replace(/\n{2,}/g, "\n");
 }
 
+/** GA4 — inject /js/gtag.js once per page if missing from _multilang source. */
+function ensureGtagScript($) {
+  if ($('script[src*="gtag.js"], script[src*="googletagmanager.com/gtag"]').length) return;
+  const tag = '<script src="/js/gtag.js"></script>';
+  const adsense = $('script[src*="adsense.js"]').first();
+  if (adsense.length) adsense.before(`\n  ${tag}`);
+  else $("head").append(`\n  ${tag}\n`);
+}
+
 function toTraditionalOutsideScripts(html) {
   const re = /(<(?:script|style)\b[^>]*>[\s\S]*?<\/(?:script|style)>)/gi;
   const parts = [];
@@ -477,6 +486,7 @@ function transformSubfolderLocale(html, locale, filename, outDirSegment) {
     seoLocale: true,
     localePrefix: outDirSegment ?? locale,
   });
+  ensureGtagScript($);
   return tidySeoHtml($.root().html());
 }
 
@@ -494,7 +504,9 @@ function transformZhTraditional(html, filename) {
   });
   let out = $.root().html();
   out = toTraditionalOutsideScripts(out);
-  return tidySeoHtml(out);
+  const $out = cheerio.load(out, { decodeEntities: false });
+  ensureGtagScript($out);
+  return tidySeoHtml($out.root().html());
 }
 
 function transformRootSimplifiedZh(html, filename) {
@@ -507,6 +519,7 @@ function transformRootSimplifiedZh(html, filename) {
     dataLang: "zh",
     seoLocale: false,
   });
+  ensureGtagScript($);
   return tidySeoHtml($.root().html());
 }
 
