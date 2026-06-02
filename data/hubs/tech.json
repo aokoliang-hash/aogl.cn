@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-06-01",
+  "updated": "2026-06-02",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-05-19</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-05-19</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand",
-          "titleZh": "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand",
-          "url": "https://blogs.nvidia.com/blog/ai-cloud-ecosystem/",
-          "date": "2026-06-01"
+          "titleEn": "Why Financial Institutions Are Converging on Transaction Foundation Models to Build Their Own Intelligence",
+          "titleZh": "Why Financial Institutions Are Converging on Transaction Foundation Models to Build Their Own Intelligence",
+          "url": "https://blogs.nvidia.com/blog/financial-institutions-transaction-foundation-models/",
+          "date": "2026-06-02"
         },
         {
-          "titleEn": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
-          "titleZh": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
-          "url": "https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain/",
-          "date": "2026-06-01"
+          "titleEn": "NVIDIA Jetson Brings Agentic AI to the Physical World",
+          "titleZh": "NVIDIA Jetson Brings Agentic AI to the Physical World",
+          "url": "https://blogs.nvidia.com/blog/jetson-agentic-ai-physical-world/",
+          "date": "2026-06-02"
         },
         {
-          "titleEn": "Taiwan’s Industry Titans Turbocharge World’s AI Infrastructure Buildout With NVIDIA",
-          "titleZh": "Taiwan’s Industry Titans Turbocharge World’s AI Infrastructure Buildout With NVIDIA",
-          "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/",
-          "date": "2026-06-01"
+          "titleEn": "Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.2",
+          "titleZh": "Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.2",
+          "url": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2/",
+          "date": "2026-06-02"
         }
       ]
     },
@@ -216,6 +216,12 @@
       "labelZh": "三星电子",
       "items": [
         {
+          "titleEn": "[Video] Where Robotics Meets Precision: Samsung Displays Shape KUKA’s Immersive Showroom",
+          "titleZh": "[Video] Where Robotics Meets Precision: Samsung Displays Shape KUKA’s Immersive Showroom",
+          "url": "https://news.samsung.com/global/video-where-robotics-meets-precision-samsung-displays-shape-kukas-immersive-showroom",
+          "date": "2026-06-02"
+        },
+        {
           "titleEn": "[Interview] Where Sound Meets Design — Redefining the Audio Experience With Music Studio",
           "titleZh": "[Interview] Where Sound Meets Design — Redefining the Audio Experience With Music Studio",
           "url": "https://news.samsung.com/global/interview-where-sound-meets-design-redefining-the-audio-experience-with-music-studio",
@@ -226,12 +232,6 @@
           "titleZh": "Samsung and MUNCH Museum Bring Rarely Seen Masterpieces to Samsung Art Store",
           "url": "https://news.samsung.com/global/samsung-and-munch-museum-bring-rarely-seen-masterpieces-to-samsung-art-store",
           "date": "2026-06-01"
-        },
-        {
-          "titleEn": "Samsung Electronics Begins Shipment of Industry-First HBM4E Samples",
-          "titleZh": "Samsung Electronics Begins Shipment of Industry-First HBM4E Samples",
-          "url": "https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples",
-          "date": "2026-05-29"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "英特尔",
       "items": [
         {
+          "titleEn": "Computex 2026: An Intelligent World Built on Silicon",
+          "titleZh": "Computex 2026: An Intelligent World Built on Silicon",
+          "url": "https://newsroom.intel.com/artificial-intelligence/computex-2026-an-intelligent-world-built-on-silicon",
+          "date": "2026-06-02"
+        },
+        {
+          "titleEn": "Intel Announces New AI Innovations at Computex",
+          "titleZh": "Intel Announces New AI Innovations at Computex",
+          "url": "https://newsroom.intel.com/artificial-intelligence/intel-announces-new-ai-innovations-at-computex",
+          "date": "2026-06-02"
+        },
+        {
           "titleEn": "Intel Puts Agentic AI to Work with Xeon 6+, Networking, and AI Systems",
           "titleZh": "Intel Puts Agentic AI to Work with Xeon 6+, Networking, and AI Systems",
           "url": "https://newsroom.intel.com/data-center/intel-puts-agentic-ai-xeon-6-networking-ai-systems",
           "date": "2026-06-01"
-        },
-        {
-          "titleEn": "130+ Customers Choose Intel Series 3 Processors for Edge Devices",
-          "titleZh": "130+ Customers Choose Intel Series 3 Processors for Edge Devices",
-          "url": "https://newsroom.intel.com/client-computing/customers-choose-intel-for-edge-devices",
-          "date": "2026-06-01"
-        },
-        {
-          "titleEn": "Meet the Intel Pioneer Behind EMIB Chip Packaging",
-          "titleZh": "Meet the Intel Pioneer Behind EMIB Chip Packaging",
-          "url": "https://newsroom.intel.com/intel-foundry/meet-the-inventor-of-emib",
-          "date": "2026-05-28"
         }
       ]
     },

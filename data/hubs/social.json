@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-06-01",
+  "updated": "2026-06-02",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,15 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access",
+      "titleZh": "Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access",
+      "url": "https://techcrunch.com/2026/06/01/hackers-hijacked-instagram-accounts-by-tricking-meta-ai-support-chatbot-into-granting-access/",
+      "date": "2026-06-01",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
     {
       "titleEn": "This weekend’s two biggest movies were both directed by YouTubers",
       "titleZh": "This weekend’s two biggest movies were both directed by YouTubers",
@@ -48,8 +57,8 @@
       "url": "https://about.fb.com/news/2026/05/protecting-players-and-fans-during-fifa-world-cup-2026/",
       "date": "2026-05-28",
       "source": "Facebook / Meta",
-      "image": "upload/hub-hotmix/social/9c79aafe435e05a1.jpg",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/How-to-Spot-and-Avoid-Scams-in-the-Summer-of-Soccer_Thumbnail.jpg?fit=1200%2C675"
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/How-to-Spot-and-Avoid-Scams-in-the-Summer-of-Soccer_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/How-to-Spot-and-Avoid-Scams-in-the-Summer-of-Soccer_Thumbnail.jpg?fit=890%2C501"
     },
     {
       "titleEn": "YouTube adds new podcast features, including an AI recommendation tool and ‘Auto speed’",
@@ -138,8 +147,8 @@
       "url": "https://about.fb.com/news/2026/05/meta-ai-wearables-changing-the-game-for-disabled-people/",
       "date": "2026-05-18",
       "source": "Facebook / Meta",
-      "image": "upload/hub-hotmix/social/0e41129f3a20ffd7.jpg",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/Our-AI-Wearables-are-Changing-the-Game-for-Disabled-People_Thumbnail-1.jpg?fit=1200%2C675"
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/Our-AI-Wearables-are-Changing-the-Game-for-Disabled-People_Thumbnail-1.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/Our-AI-Wearables-are-Changing-the-Game-for-Disabled-People_Thumbnail-1.jpg?fit=890%2C501"
     },
     {
       "titleEn": "Introducing Business AI on WhatsApp for Small Businesses in India",
@@ -147,8 +156,8 @@
       "url": "https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses-in-india/",
       "date": "2026-05-15",
       "source": "Facebook / Meta",
-      "image": "upload/hub-hotmix/social/e8ca4f90ca704b6b.jpg",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/English-US-WA-Biz-AI-Onboarding-key-steps.jpg?fit=1200%2C675"
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/English-US-WA-Biz-AI-Onboarding-key-steps.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/English-US-WA-Biz-AI-Onboarding-key-steps.jpg?fit=890%2C501"
     },
     {
       "titleEn": "How to turn off Instagram’s new Instants feature and retract photos you accidentally shared",
@@ -165,8 +174,8 @@
       "url": "https://about.fb.com/news/2026/05/from-scroll-to-chat-to-cart-trends-reshaping-how-india-shops/",
       "date": "2026-05-14",
       "source": "Facebook / Meta",
-      "image": "upload/hub-hotmix/social/0629598ac21117de.png",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/NRP-2.png?fit=1200%2C675"
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/NRP-2.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/NRP-2.png?fit=890%2C501"
     },
     {
       "titleEn": "Check out the latest news from YouTube’s Brandcast 2026.",
@@ -192,8 +201,8 @@
       "url": "https://about.fb.com/news/2026/05/instants-share-in-the-moment/",
       "date": "2026-05-13",
       "source": "Facebook / Meta",
-      "image": "upload/hub-hotmix/social/47d5eb36a2f1e22f.gif",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/IG_Instants_A-New-Way-to-Share-in-the-Moment_Thumbnail.gif?fit=1200%2C675"
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/IG_Instants_A-New-Way-to-Share-in-the-Moment_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/IG_Instants_A-New-Way-to-Share-in-the-Moment_Thumbnail.gif?fit=890%2C501"
     },
     {
       "titleEn": "Introducing a Completely Private Way to Chat With AI",
@@ -201,8 +210,8 @@
       "url": "https://about.fb.com/news/2026/05/incognito-chat-whatsapp-meta-ai/",
       "date": "2026-05-13",
       "source": "Facebook / Meta",
-      "image": "upload/hub-hotmix/social/18f8f67ca5582e34.jpg",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/Incognito-Chat-with-Meta-AI_Thumbnail.jpg?fit=1200%2C675"
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/Incognito-Chat-with-Meta-AI_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/Incognito-Chat-with-Meta-AI_Thumbnail.jpg?fit=890%2C501"
     },
     {
       "titleEn": "Celebrating African Cinema With the ‘Made by Africa, Loved by the World’ 2026 Campaign",
@@ -210,17 +219,8 @@
       "url": "https://about.fb.com/news/2026/05/celebrating-african-cinema-with-the-made-by-africa-loved-by-the-world-2026-campaign/",
       "date": "2026-05-13",
       "source": "Facebook / Meta",
-      "image": "upload/hub-hotmix/social/94171c87343bcb9e.jpg",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/Nigeria-Banner.jpg?fit=1200%2C675"
-    },
-    {
-      "titleEn": "Migrating Data Ingestion Systems at Meta Scale",
-      "titleZh": "Migrating Data Ingestion Systems at Meta Scale",
-      "url": "https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale/",
-      "date": "2026-05-12",
-      "source": "Meta Engineering",
-      "image": "upload/hub-hotmix/social/0f6fb7e73c81973d.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/05/Migrating-Data-Ingestion-Systems-at-Meta-Scale-image-1-e1778517437665.png"
+      "image": "https://about.fb.com/wp-content/uploads/2026/05/Nigeria-Banner.jpg?fit=960%2C366",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/Nigeria-Banner.jpg?fit=960%2C366"
     }
   ],
   "moreTitleEn": "More social networks",

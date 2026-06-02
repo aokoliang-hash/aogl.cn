@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-06-01",
+  "updated": "2026-06-02",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,6 +116,12 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "How we used Gemini to build Google I/O 2026",
+          "titleZh": "How we used Gemini to build Google I/O 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+          "date": "2026-06-01"
+        },
+        {
           "titleEn": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
           "titleZh": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
           "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
@@ -125,12 +131,6 @@
           "titleEn": "9 demos of Gemini Omni and Gemini 3.5 in action",
           "titleZh": "9 demos of Gemini Omni and Gemini 3.5 in action",
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
-          "date": "2026-05-29"
-        },
-        {
-          "titleEn": "Check out real-life AI prototypes from the Futures Lab.",
-          "titleZh": "Check out real-life AI prototypes from the Futures Lab.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
           "date": "2026-05-29"
         }
       ],
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "AWW Podcast Season 2 Episode #1 Can Wikipedia Evolve With the Digital Age?",
-          "titleZh": "AWW Podcast Season 2 Episode #1 Can Wikipedia Evolve With the Digital Age?",
-          "url": "https://diff.wikimedia.org/2026/06/01/aww-podcast-season-2-episode-1-can-wikipedia-evolve-with-the-digital-age/",
+          "titleEn": "Celebrating Growth, Impact, and Digital Inclusion: Africa Wiki Women On-Wiki Skills Mentorship Program",
+          "titleZh": "Celebrating Growth, Impact, and Digital Inclusion: Africa Wiki Women On-Wiki Skills Mentorship Program",
+          "url": "https://diff.wikimedia.org/2026/06/02/celebrating-growth-impact-and-digital-inclusion-africa-wiki-women-on-wiki-skills-mentorship-program/",
+          "date": "2026-06-02"
+        },
+        {
+          "titleEn": "Finding My Voice Through the On Wiki Skill Mentorship",
+          "titleZh": "Finding My Voice Through the On Wiki Skill Mentorship",
+          "url": "https://diff.wikimedia.org/2026/06/02/finding-my-voice-through-the-on-wiki-skill-mentorship/",
+          "date": "2026-06-02"
+        },
+        {
+          "titleEn": "Tech News 2026 – Issue 23",
+          "titleZh": "Tech News 2026 – Issue 23",
+          "url": "https://diff.wikimedia.org/2026/06/01/tech-news-2026-issue-23/",
           "date": "2026-06-01"
-        },
-        {
-          "titleEn": "When the Home Page Gets Boring: How My Colleagues and I Revitalised Thai Wikipedia",
-          "titleZh": "When the Home Page Gets Boring: How My Colleagues and I Revitalised Thai Wikipedia",
-          "url": "https://diff.wikimedia.org/2026/05/31/when-the-home-page-gets-boring-how-my-colleagues-and-i-revitalised-thai-wikipedia/",
-          "date": "2026-05-31"
-        },
-        {
-          "titleEn": "From Code to Contribution: My Journey Through the Wikimedia Ecosystem",
-          "titleZh": "From Code to Contribution: My Journey Through the Wikimedia Ecosystem",
-          "url": "https://diff.wikimedia.org/2026/05/31/from-code-to-contribution-my-journey-through-the-wikimedia-ecosystem/",
-          "date": "2026-05-31"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon in the community: Service, community, and commitment at HQ2",
-          "titleZh": "Amazon in the community: Service, community, and commitment at HQ2",
-          "url": "https://www.aboutamazon.com/news/community/amazon-arlington-virginia-news?utm_source=rss",
-          "date": "2026-05-29"
+          "titleEn": "Early screenings to Sony Pictures' 'Spider-Man: Brand New Day' will be available for U.S. Prime members",
+          "titleZh": "Early screenings to Sony Pictures' 'Spider-Man: Brand New Day' will be available for U.S. Prime members",
+          "url": "https://www.aboutamazon.com/news/retail/spiderman-brand-new-day-tickets-prime?utm_source=rss",
+          "date": "2026-06-02"
         },
         {
-          "titleEn": "Amazon's water conservation and replenishment efforts around the world",
-          "titleZh": "Amazon's water conservation and replenishment efforts around the world",
-          "url": "https://www.aboutamazon.com/news/sustainability/amazon-water-conservation-replenishment-sustainability?utm_source=rss",
-          "date": "2026-05-29"
+          "titleEn": "How AWS transformed IT by making cloud computing accessible to everyone",
+          "titleZh": "How AWS transformed IT by making cloud computing accessible to everyone",
+          "url": "https://www.aboutamazon.com/news/aws/aws-cloud-computing-it-services?utm_source=rss",
+          "date": "2026-06-02"
         },
         {
-          "titleEn": "How Amazon protects cargo from fraud and theft across its shipping network",
-          "titleZh": "How Amazon protects cargo from fraud and theft across its shipping network",
-          "url": "https://www.aboutamazon.com/news/operations/amazon-freight-security-relay-carrier-fraud?utm_source=rss",
-          "date": "2026-05-29"
+          "titleEn": "The 10 best early Prime Day 2026 deals you can shop right now",
+          "titleZh": "The 10 best early Prime Day 2026 deals you can shop right now",
+          "url": "https://www.aboutamazon.com/news/retail/best-early-prime-day-deals-2026?utm_source=rss",
+          "date": "2026-06-02"
         }
       ],
       "hotSearchPills": [
