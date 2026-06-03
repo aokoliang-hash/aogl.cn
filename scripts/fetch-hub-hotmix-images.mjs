@@ -21,11 +21,23 @@ import {
   shouldSkipHotmixUrl,
   upgradeRemoteImageUrl,
 } from "./hub-image-local.mjs";
+import { fetchPageMeta, sleep } from "./fetch-page-meta.mjs";
 
 const HUB_DIR = path.join(ROOT, "data", "hubs");
 const MIN_BYTES = 200;
 const DELAY_MS = 100;
+const OG_DELAY_MS = 250;
 const FORCE = process.argv.includes("--force");
+const HUB_FILTER = (() => {
+  const i = process.argv.indexOf("--hub");
+  if (i === -1 || !process.argv[i + 1]) return null;
+  return new Set(
+    process.argv[i + 1]
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean)
+  );
+})();
 
 async function download(url) {
   const res = await fetch(url, {
@@ -53,10 +65,19 @@ function loadHubSpecs() {
 
 function resolveRemoteUrl(it) {
   const src = String(it.imageSource || "").trim();
-  if (isRemoteUrl(src)) return upgradeRemoteImageUrl(src);
+  if (isRemoteUrl(src) && !shouldSkipHotmixUrl(src)) return upgradeRemoteImageUrl(src);
   const img = String(it.image || "").trim();
-  if (isRemoteUrl(img)) return upgradeRemoteImageUrl(img);
+  if (isRemoteUrl(img) && !shouldSkipHotmixUrl(img)) return upgradeRemoteImageUrl(img);
   return "";
+}
+
+async function ogImageForItem(it) {
+  const pageUrl = String(it.url || "").trim();
+  if (!isRemoteUrl(pageUrl)) return "";
+  const meta = await fetchPageMeta(pageUrl);
+  await sleep(OG_DELAY_MS);
+  if (!meta.ok || !meta.image) return "";
+  return upgradeRemoteImageUrl(meta.image);
 }
 
 async function main() {
@@ -68,6 +89,7 @@ async function main() {
 
   for (const spec of specs) {
     const slug = spec.slug;
+    if (HUB_FILTER && !HUB_FILTER.has(slug)) continue;
     const items = spec.hotMixItems;
     if (!slug || !Array.isArray(items) || !items.length) continue;
 
@@ -75,8 +97,21 @@ async function main() {
     fs.mkdirSync(path.join(HUB_HOTMIX_DIR, slug), { recursive: true });
 
     for (const it of items) {
-      const remote = resolveRemoteUrl(it);
+      let remote = resolveRemoteUrl(it);
       const local = String(it.image || "").trim();
+      const pageUrl = String(it.url || "").trim();
+
+      if (
+        isRemoteUrl(pageUrl) &&
+        (FORCE || !remote || shouldSkipHotmixUrl(String(it.imageSource || it.image || "")))
+      ) {
+        const og = await ogImageForItem(it);
+        if (og) {
+          it.imageSource = og;
+          remote = og;
+          console.log(`OG ${slug} ${pageUrl.slice(0, 64)}…`);
+        }
+      }
 
       if (!remote) {
         if (local && isLocalAssetPath(local)) {
