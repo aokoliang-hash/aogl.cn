@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&family=Cinzel:wght@400;600&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body {
+  width:1600px; height:900px;
+  background:#FAFCFF;
+  font-family:'Noto Sans SC',sans-serif;
+  overflow:hidden;
+  position:relative;
+}
+
+/* Watermark pattern */
+body::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background-image: radial-gradient(circle, rgba(160,200,230,0.08) 1px, transparent 1px);
+  background-size:28px 28px;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* Decorative wave top border */
+body::after {
+  content:'';
+  position:absolute;
+  top:0; left:0; right:0;
+  height:3px;
+  background: linear-gradient(90deg, #B8D4E8 0%, #7EB8D8 30%, #4A9CC8 55%, #7EB8D8 80%, #B8D4E8 100%);
+  z-index:10;
+}
+
+.sheet {
+  position:relative;
+  width:100%; height:100%;
+  display:grid;
+  grid-template-columns: 198px 440px 1fr;
+  grid-template-rows: 52px 1fr 88px;
+  z-index:1;
+}
+
+/* ═══════════════ HEADER ═══════════════ */
+.header {
+  grid-column:1/-1;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 28px 0 24px;
+  background:#fff;
+  border-bottom:1px solid rgba(120,180,220,0.2);
+  position:relative;
+}
+
+.header::after {
+  content:'';
+  position:absolute;
+  bottom:-2px; left:0; right:0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(120,180,220,0.3),transparent);
+}
+
+.h-left { display:flex; align-items:baseline; gap:14px; }
+
+.title-cn {
+  font-family:'Noto Serif SC',serif;
+  font-size:26px; font-weight:600;
+  color:#1A3A5C;
+  letter-spacing:0.08em;
+}
+
+.title-en {
+  font-family:'Cinzel',serif;
+  font-size:11px; font-weight:400;
+  color:#7AAAC8;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+}
+
+.h-deco {
+  display:flex; gap:6px; align-items:center;
+  margin-left:20px;
+}
+
+.h-deco-dot {
+  width:4px; height:4px; border-radius:50%;
+  background:#A8CDE0;
+}
+
+.h-deco-line {
+  width:60px; height:0.5px;
+  background:linear-gradient(90deg,#A8CDE0,transparent);
+}
+
+.h-right { display:flex; align-items:center; gap:10px; }
+
+.badge {
+  font-size:9px; font-weight:500;
+  letter-spacing:0.1em; text-transform:uppercase;
+  padding:3px 10px; border-radius:20px; border:0.5px solid;
+}
+.badge-blue { color:#3A7FA8; border-color:#7AAAC8; background:#EEF6FC; }
+.badge-gold { color:#7A5A18; border-color:#C8A850; background:#FDF8EC; }
+.badge-teal { color:#2A6858; border-color:#5AA890; background:#EEF9F5; }
+
+.ver-tag {
+  font-size:9px; color:#B8CCE0;
+  letter-spacing:0.08em;
+  font-family:'Cinzel',serif;
+}
+
+/* ═══════════════ LEFT INFO PANEL ═══════════════ */
+.panel-info {
+  grid-column:1;
+  grid-row:2;
+  padding:16px 14px 14px 18px;
+  border-right:1px solid rgba(120,180,220,0.15);
+  display:flex; flex-direction:column; gap:14px;
+  background:linear-gradient(180deg,#FAFCFF 0%,#F4F8FD 100%);
+  overflow:hidden;
+}
+
+.info-block-title {
+  font-size:8.5px; font-weight:500;
+  letter-spacing:0.18em; text-transform:uppercase;
+  color:#7AAAC8;
+  display:flex; align-items:center; gap:6px;
+  margin-bottom:6px;
+}
+
+.info-block-title::before {
+  content:'';
+  width:14px; height:0.5px;
+  background:#7AAAC8;
+}
+
+.info-block-title .cn {
+  font-family:'Noto Serif SC',serif;
+  font-size:10px; font-weight:500;
+  color:#2A5A7A; letter-spacing:0.06em;
+  text-transform:none;
+}
+
+.info-row {
+  display:flex; align-items:baseline; gap:0;
+  padding:3.5px 0;
+  border-bottom:0.5px solid rgba(120,180,220,0.1);
+}
+
+.info-key {
+  font-size:9.5px; color:#8AAAC0;
+  min-width:36px; flex-shrink:0;
+  font-weight:400;
+}
+
+.info-val {
+  font-size:9.5px; color:#2A4A6A;
+  font-weight:400; flex:1;
+}
+
+.info-val strong { font-weight:500; color:#1A3A5C; }
+
+/* Profile text */
+.profile-text {
+  font-size:9.5px; color:#4A6A88;
+  line-height:1.85; font-weight:300;
+}
+
+/* Faction emblem area */
+.faction-block {
+  margin-top:auto;
+  padding:10px;
+  background:rgba(120,180,220,0.06);
+  border-radius:8px;
+  border:0.5px solid rgba(120,180,220,0.18);
+  text-align:center;
+}
+
+.faction-emblem {
+  width:38px; height:38px; margin:0 auto 6px;
+}
+
+.faction-name {
+  font-family:'Noto Serif SC',serif;
+  font-size:10px; font-weight:500;
+  color:#1A4A6A; letter-spacing:0.08em;
+}
+
+.faction-desc {
+  font-size:8.5px; color:#7AAAC8;
+  margin-top:3px; line-height:1.6;
+}
+
+/* ═══════════════ CENTER: THREE VIEWS ═══════════════ */
+.panel-views {
+  grid-column:2;
+  grid-row:2;
+  padding:14px 12px 14px 16px;
+  border-right:1px solid rgba(120,180,220,0.15);
+  display:flex; flex-direction:column; gap:10px;
+  overflow:hidden;
+}
+
+.section-header {
+  display:flex; align-items:center; gap:8px;
+}
+
+.section-bar {
+  width:3px; height:14px; border-radius:2px;
+  background:linear-gradient(180deg,#7AAAC8,#4A7EA8);
+}
+
+.section-title-cn {
+  font-family:'Noto Serif SC',serif;
+  font-size:11px; font-weight:500;
+  color:#1A3A5C; letter-spacing:0.06em;
+}
+
+.section-title-en {
+  font-size:8.5px; color:#A8C8E0;
+  font-family:'Cinzel',serif;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+}
+
+.views-row {
+  display:flex; gap:10px; flex:1; align-items:stretch;
+}
+
+.view-slot {
+  flex:1; display:flex; flex-direction:column; gap:6px;
+  align-items:center;
+}
+
+.view-slot.main { flex:1.18; }
+
+.view-frame {
+  flex:1; width:100%;
+  background:#F0F5FA;
+  border-radius:8px;
+  border:0.5px solid rgba(120,180,220,0.2);
+  overflow:hidden;
+  position:relative;
+}
+
+.view-frame img {
+  width:100%; height:100%;
+  object-fit:cover;
+  object-position:center top;
+}
+
+/* Height ruler */
+.height-ruler {
+  position:absolute;
+  left:7px; top:8px; bottom:8px;
+  width:14px;
+  pointer-events:none;
+}
+
+.ruler-spine {
+  position:absolute;
+  left:6px; top:0; bottom:0; width:0.5px;
+  background:rgba(120,180,220,0.4);
+}
+
+.ruler-tick {
+  position:absolute; left:3px;
+  width:6px; height:0.5px;
+  background:rgba(120,180,220,0.5);
+}
+
+.ruler-label {
+  position:absolute; left:10px;
+  font-size:7px; color:rgba(80,140,190,0.7);
+  font-family:'Cinzel',serif;
+  white-space:nowrap;
+}
+
+.height-tag {
+  position:absolute; left:7px; top:6px;
+  font-size:8px; font-weight:500;
+  color:#4A8AC8; background:rgba(255,255,255,0.85);
+  padding:1px 5px; border-radius:3px;
+  border:0.5px solid rgba(120,180,220,0.3);
+  letter-spacing:0.06em;
+}
+
+.view-label-row {
+  display:flex; align-items:center; gap:5px;
+}
+
+.view-label-cn {
+  font-family:'Noto Serif SC',serif;
+  font-size:10px; font-weight:500; color:#2A5A7A;
+}
+
+.view-label-en {
+  font-size:8px; color:#A8C8E0;
+  font-family:'Cinzel',serif;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+}
+
+/* ═══════════════ RIGHT PANEL ═══════════════ */
+.panel-right {
+  grid-column:3;
+  grid-row:2;
+  padding:14px 20px 14px 14px;
+  display:grid;
+  grid-template-rows: auto auto 1fr;
+  gap:14px;
+  overflow:hidden;
+}
+
+/* Expressions row */
+.expr-row {
+  display:flex; gap:8px;
+}
+
+.expr-item {
+  display:flex; flex-direction:column; align-items:center; gap:5px;
+  flex:1;
+}
+
+.expr-circle {
+  width:68px; height:68px;
+  border-radius:50%;
+  overflow:hidden;
+  border:0.5px solid rgba(120,180,220,0.2);
+  background:#F0F5FA;
+  position:relative;
+  flex-shrink:0;
+}
+
+.expr-circle img {
+  width:240%; height:210%;
+  object-fit:cover;
+  object-position:50% 5%;
+  margin-left:-70%; margin-top:-8%;
+}
+
+.expr-labels { text-align:center; }
+.expr-cn { font-size:9px; color:#2A5A7A; font-weight:500; letter-spacing:0.04em; }
+.expr-dot { font-size:7px; color:#C8DCF0; }
+
+/* Expr tint overlays */
+.tint-serene::after { content:''; position:absolute; inset:0; background:rgba(160,210,240,0.08); border-radius:50%; }
+.tint-warm::after   { content:''; position:absolute; inset:0; background:rgba(240,200,150,0.1); border-radius:50%; }
+.tint-sad::after    { content:''; position:absolute; inset:0; background:rgba(130,160,200,0.13); border-radius:50%; }
+.tint-resolve::after{ content:''; position:absolute; inset:0; background:rgba(100,180,160,0.1); border-radius:50%; }
+.tint-joy::after    { content:''; position:absolute; inset:0; background:rgba(250,220,180,0.12); border-radius:50%; }
+
+/* Costume details grid */
+.costume-section {}
+
+.costume-grid {
+  display:grid;
+  grid-template-columns: repeat(4,1fr) 48px;
+  grid-template-rows: repeat(2, auto);
+  gap:7px;
+  margin-top:8px;
+}
+
+.costume-cell {
+  background:#F4F8FC;
+  border-radius:7px;
+  border:0.5px solid rgba(120,180,220,0.18);
+  overflow:hidden;
+  display:flex; flex-direction:column;
+}
+
+.costume-img {
+  flex:1;
+  min-height:64px;
+  position:relative;
+  overflow:hidden;
+}
+
+.costume-img svg {
+  width:100%; height:100%;
+}
+
+.costume-cap {
+  padding:4px 6px;
+  font-size:8px; color:#4A7A9A;
+  border-top:0.5px solid rgba(120,180,220,0.12);
+  text-align:center; letter-spacing:0.04em;
+}
+
+/* Right-side small cells stacked */
+.costume-side {
+  display:flex; flex-direction:column; gap:7px;
+  grid-column:5; grid-row:1/3;
+}
+
+.costume-side-cell {
+  flex:1;
+  background:#F4F8FC;
+  border-radius:7px;
+  border:0.5px solid rgba(120,180,220,0.18);
+  overflow:hidden;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  gap:3px; padding:5px;
+}
+
+.side-icon { font-size:18px; }
+.side-label { font-size:7.5px; color:#6A9AB8; text-align:center; line-height:1.3; letter-spacing:0.03em; }
+
+/* Bottom row: palette + world */
+.bottom-row {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px;
+  align-self:end;
+}
+
+/* Palette */
+.palette-block {}
+
+.palette-rows { display:flex; flex-direction:column; gap:5px; margin-top:7px; }
+
+.pal-row {
+  display:flex; align-items:center; gap:7px;
+}
+
+.pal-label {
+  font-size:8.5px; color:#8AAAC0; min-width:28px;
+  letter-spacing:0.04em;
+}
+
+.pal-swatches { display:flex; gap:5px; }
+
+.sw {
+  width:22px; height:22px; border-radius:5px;
+  border:0.5px solid rgba(0,0,0,0.07);
+}
+
+/* World setting */
+.world-block {}
+
+.world-text {
+  font-size:9px; color:#4A6A88;
+  line-height:1.85; font-weight:300;
+  margin-top:7px;
+}
+
+.world-text em {
+  color:#2A5A7A; font-style:normal; font-weight:500;
+}
+
+/* ═══════════════ FOOTER ═══════════════ */
+.footer {
+  grid-column:1/-1;
+  display:flex; align-items:center;
+  justify-content:space-between;
+  padding:0 28px;
+  background:#fff;
+  border-top:1px solid rgba(120,180,220,0.15);
+}
+
+.footer-left { display:flex; align-items:center; gap:16px; }
+.footer-note { font-size:8.5px; color:#C8DCF0; letter-spacing:0.1em; text-transform:uppercase; }
+
+.footer-tag {
+  font-size:8.5px; background:#1A3A5C; color:#fff;
+  padding:2px 10px; border-radius:20px;
+  letter-spacing:0.08em; font-family:'Cinzel',serif;
+}
+
+.footer-dots { display:flex; gap:5px; align-items:center; }
+.fdot { width:5px; height:5px; border-radius:50%; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<!-- ══ HEADER ══ -->
+<header class="header">
+  <div class="h-left">
+    <span class="title-cn">海风之诗</span>
+    <div class="h-deco">
+      <div class="h-deco-dot"></div>
+      <div class="h-deco-line"></div>
+    </div>
+    <span class="title-en">Poem of the Sea Wind &nbsp;·&nbsp; Character Reference Sheet</span>
+  </div>
+  <div class="h-right">
+    <span class="badge badge-blue">Female · 22</span>
+    <span class="badge badge-teal">Island Fantasy</span>
+    <span class="badge badge-gold">Primary · Priestess</span>
+    <span class="ver-tag">Official · v1.0</span>
+  </div>
+</header>
+
+<!-- ══ LEFT INFO ══ -->
+<section class="panel-info">
+
+  <div>
+    <div class="info-block-title"><span class="cn">基本信息</span> INFORMATION</div>
+    <div class="info-row"><span class="info-key">姓名</span><span class="info-val"><strong>艾琳娜</strong> (Elena)</span></div>
+    <div class="info-row"><span class="info-key">称号</span><span class="info-val">海风之诗</span></div>
+    <div class="info-row"><span class="info-key">种族</span><span class="info-val">人类</span></div>
+    <div class="info-row"><span class="info-key">年龄</span><span class="info-val">22岁</span></div>
+    <div class="info-row"><span class="info-key">身高</span><span class="info-val"><strong>168 cm</strong></span></div>
+    <div class="info-row"><span class="info-key">生日</span><span class="info-val">5月21日</span></div>
+    <div class="info-row"><span class="info-key">所属</span><span class="info-val">碧海群岛·潮音祭司团</span></div>
+    <div class="info-row"><span class="info-key">职业</span><span class="info-val">祭司 / 治愈者</span></div>
+    <div class="info-row"><span class="info-key">武器</span><span class="info-val">潮沙法杖</span></div>
+    <div class="info-row"><span class="info-key">元素</span><span class="info-val">水</span></div>
+    <div class="info-row" style="border:none;"><span class="info-key">性格</span><span class="info-val">温柔宁静、善解人意、内心坚韧</span></div>
+  </div>
+
+  <div>
+    <div class="info-block-title"><span class="cn">角色简介</span> PROFILE</div>
+    <div class="profile-text">
+      艾琳娜是碧海群岛的祭司，拥有与海洋共鸣的能力。她用温柔的歌声托平人们的伤痛，也能借助潮沙的力量净化与守护。她如同海风般轻柔，却又如深海般坚定而深邃。
+    </div>
+  </div>
+
+  <div class="faction-block">
+    <!-- Wave emblem SVG -->
+    <svg class="faction-emblem" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="19" cy="19" r="17" fill="none" stroke="#7AAAC8" stroke-width="0.6" opacity="0.5"/>
+      <circle cx="19" cy="19" r="14" fill="none" stroke="#7AAAC8" stroke-width="0.4" opacity="0.35"/>
+      <!-- Stylized wave cross -->
+      <path d="M10 19 Q13 15 16 19 Q19 23 22 19 Q25 15 28 19" fill="none" stroke="#4A8AC8" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M10 22 Q13 18 16 22 Q19 26 22 22 Q25 18 28 22" fill="none" stroke="#7AAAC8" stroke-width="0.7" stroke-linecap="round" opacity="0.6"/>
+      <path d="M10 16 Q13 12 16 16 Q19 20 22 16 Q25 12 28 16" fill="none" stroke="#7AAAC8" stroke-width="0.7" stroke-linecap="round" opacity="0.6"/>
+      <!-- Center gem -->
+      <circle cx="19" cy="19" r="2.5" fill="none" stroke="#C8A850" stroke-width="0.8"/>
+      <circle cx="19" cy="19" r="1.2" fill="#D4C080"/>
+      <!-- Top floret -->
+      <circle cx="19" cy="6" r="1.8" fill="none" stroke="#7AAAC8" stroke-width="0.6"/>
+      <circle cx="19" cy="6" r="0.8" fill="#A8C8E0"/>
+    </svg>
+    <div class="faction-name">潮音祭司团</div>
+    <div class="faction-desc">守护碧海群岛古老祭司组织<br>与海洋女神信仰相连</div>
+  </div>
+
+</section>
+
+<!-- ══ CENTER: THREE VIEWS ══ -->
+<section class="panel-views">
+
+  <div class="section-header">
+    <div class="section-bar"></div>
+    <span class="section-title-cn">三视图</span>
+    <span class="section-title-en">3-View Reference</span>
+  </div>
+
+  <div class="views-row">
+
+    <!-- FRONT -->
+    <div class="view-slot main">
+      <div class="view-frame" style="background:#EEF4FA;">
+        <img src="ChatGPT-Image2.png"
+          style="object-position:34% 0%; width:290%; margin-left:-85%; height:130%; object-fit:cover;">
+        <!-- Height ruler -->
+        <div class="height-ruler">
+          <div class="ruler-spine"></div>
+          <div class="ruler-tick" style="top:0%;"></div>
+          <div class="ruler-tick" style="top:20%;"></div>
+          <div class="ruler-tick" style="top:40%;"></div>
+          <div class="ruler-tick" style="top:60%;"></div>
+          <div class="ruler-tick" style="top:80%;"></div>
+          <div class="ruler-tick" style="top:100%;"></div>
+        </div>
+        <div class="height-tag">168cm</div>
+      </div>
+      <div class="view-label-row">
+        <span class="view-label-cn">正面</span>
+        <span class="view-label-en">Front</span>
+      </div>
+    </div>
+
+    <!-- SIDE -->
+    <div class="view-slot">
+      <div class="view-frame" style="background:#EEF4FA;">
+        <img src="ChatGPT-Image2.png"
+          style="object-position:60% 0%; width:290%; margin-left:-153%; height:130%; object-fit:cover;">
+      </div>
+      <div class="view-label-row">
+        <span class="view-label-cn">侧面</span>
+        <span class="view-label-en">Side</span>
+      </div>
+    </div>
+
+    <!-- BACK -->
+    <div class="view-slot">
+      <div class="view-frame" style="background:#EEF4FA;">
+        <img src="ChatGPT-Image2.png"
+          style="object-position:87% 0%; width:290%; margin-left:-214%; height:130%; object-fit:cover;">
+      </div>
+      <div class="view-label-row">
+        <span class="view-label-cn">背面</span>
+        <span class="view-label-en">Back</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ RIGHT PANEL ══ -->
+<section class="panel-right">
+
+  <!-- Expressions -->
+  <div>
+    <div class="section-header">
+      <div class="section-bar"></div>
+      <span class="section-title-cn">表情设定</span>
+      <span class="section-title-en">Expression Studies</span>
+    </div>
+    <div class="expr-row" style="margin-top:9px;">
+
+      <div class="expr-item">
+        <div class="expr-circle tint-serene">
+          <img src="ChatGPT-Image2.png" style="filter:saturate(0.95)">
+        </div>
+        <div class="expr-labels"><div class="expr-cn">温柔</div><div class="expr-dot">◆</div></div>
+      </div>
+
+      <div class="expr-item">
+        <div class="expr-circle tint-warm">
+          <img src="ChatGPT-Image2.png" style="filter:brightness(1.06) saturate(1.1);">
+        </div>
+        <div class="expr-labels"><div class="expr-cn" style="color:#9A7030;">微笑</div><div class="expr-dot">◆</div></div>
+      </div>
+
+      <div class="expr-item">
+        <div class="expr-circle tint-sad">
+          <img src="ChatGPT-Image2.png" style="filter:saturate(0.6) brightness(0.97) hue-rotate(15deg);">
+        </div>
+        <div class="expr-labels"><div class="expr-cn" style="color:#5A7A9A;">沉思</div><div class="expr-dot">◆</div></div>
+      </div>
+
+      <div class="expr-item">
+        <div class="expr-circle tint-resolve">
+          <img src="ChatGPT-Image2.png" style="filter:contrast(1.06) saturate(0.88);">
+        </div>
+        <div class="expr-labels"><div class="expr-cn" style="color:#2A6858;">坚定</div><div class="expr-dot">◆</div></div>
+      </div>
+
+      <div class="expr-item">
+        <div class="expr-circle tint-joy">
+          <img src="ChatGPT-Image2.png" style="filter:brightness(1.08) saturate(1.15);">
+        </div>
+        <div class="expr-labels"><div class="expr-cn" style="color:#8A5A20;">喜悦</div><div class="expr-dot">◆</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Costume details -->
+  <div class="costume-section">
+    <div class="section-header">
+      <div class="section-bar"></div>
+      <span class="section-title-cn">服装与装备详解</span>
+      <span class="section-title-en">Costume &amp; Equipment Details</span>
+    </div>
+
+    <div class="costume-grid">
+
+      <!-- Cell 1: Top front -->
+      <div class="costume-cell">
+        <div class="costume-img" style="min-height:70px;">
+          <svg viewBox="0 0 90 70" xmlns="http://www.w3.org/2000/svg">
+            <rect width="90" height="70" fill="#EEF4FA"/>
+            <!-- White bandeau top front -->
+            <path d="M22 20 Q45 16 68 20 L66 44 Q52 48 45 46 Q38 48 24 44Z" fill="#FFFEFA" stroke="#D0DFF0" stroke-width="0.7"/>
+            <!-- Tie center -->
+            <path d="M42 44 L45 52 L48 44" fill="#F8F0E8" stroke="#C8BCA8" stroke-width="0.6"/>
+            <circle cx="45" cy="52" r="2.5" fill="none" stroke="#D4BFA0" stroke-width="0.7"/>
+            <!-- Fabric shading -->
+            <path d="M30 22 Q35 20 40 22" fill="none" stroke="rgba(200,220,240,0.6)" stroke-width="0.5"/>
+            <path d="M50 22 Q55 20 60 22" fill="none" stroke="rgba(200,220,240,0.6)" stroke-width="0.5"/>
+            <!-- Gold chain detail -->
+            <path d="M30 40 Q45 38 60 40" fill="none" stroke="#D4AF6A" stroke-width="0.6" stroke-dasharray="1.5 2"/>
+          </svg>
+        </div>
+        <div class="costume-cap">上衣（正面）</div>
+      </div>
+
+      <!-- Cell 2: Top back -->
+      <div class="costume-cell">
+        <div class="costume-img" style="min-height:70px;">
+          <svg viewBox="0 0 90 70" xmlns="http://www.w3.org/2000/svg">
+            <rect width="90" height="70" fill="#EEF4FA"/>
+            <path d="M22 20 Q45 16 68 20 L66 44 Q52 48 45 46 Q38 48 24 44Z" fill="#FFFEFA" stroke="#D0DFF0" stroke-width="0.7"/>
+            <!-- Back tie ribbon -->
+            <path d="M38 44 Q42 50 45 55 Q48 50 52 44" fill="none" stroke="#B8D0E8" stroke-width="1" stroke-linecap="round"/>
+            <path d="M43 55 Q40 60 36 63" fill="none" stroke="#B8D0E8" stroke-width="0.7" stroke-linecap="round"/>
+            <path d="M47 55 Q50 60 54 63" fill="none" stroke="#B8D0E8" stroke-width="0.7" stroke-linecap="round"/>
+            <!-- Back strap lines -->
+            <path d="M38 20 L36 44" fill="none" stroke="rgba(200,210,225,0.7)" stroke-width="0.5"/>
+            <path d="M52 20 L54 44" fill="none" stroke="rgba(200,210,225,0.7)" stroke-width="0.5"/>
+          </svg>
+        </div>
+        <div class="costume-cap">上衣（背面）</div>
+      </div>
+
+      <!-- Cell 3: Skirt -->
+      <div class="costume-cell">
+        <div class="costume-img" style="min-height:70px;">
+          <svg viewBox="0 0 90 70" xmlns="http://www.w3.org/2000/svg">
+            <rect width="90" height="70" fill="#EEF4FA"/>
+            <!-- Layered sheer skirt -->
+            <path d="M28 10 Q45 8 62 10 L70 68 Q45 65 20 68Z" fill="rgba(220,235,248,0.3)" stroke="#C0D8F0" stroke-width="0.5"/>
+            <path d="M32 10 Q45 8 58 10 L62 68 Q45 64 28 68Z" fill="rgba(240,248,255,0.4)" stroke="#C8DDF5" stroke-width="0.4"/>
+            <!-- Gold waist belt chain -->
+            <path d="M28 12 Q45 10 62 12" fill="none" stroke="#D4AF6A" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M30 14 Q45 12 60 14" fill="none" stroke="#C8A050" stroke-width="0.6" stroke-linecap="round"/>
+            <!-- Fabric drape lines -->
+            <path d="M38 14 L32 68" fill="none" stroke="rgba(180,210,240,0.5)" stroke-width="0.5"/>
+            <path d="M45 14 L45 68" fill="none" stroke="rgba(180,210,240,0.5)" stroke-width="0.5"/>
+            <path d="M52 14 L58 68" fill="none" stroke="rgba(180,210,240,0.5)" stroke-width="0.5"/>
+            <!-- Pendant drops on chain -->
+            <line x1="40" y1="14" x2="40" y2="21" stroke="#D4AF6A" stroke-width="0.6"/>
+            <circle cx="40" cy="23" r="2" fill="none" stroke="#D4AF6A" stroke-width="0.6"/>
+            <line x1="50" y1="14" x2="50" y2="21" stroke="#D4AF6A" stroke-width="0.6"/>
+            <circle cx="50" cy="23" r="2" fill="none" stroke="#D4AF6A" stroke-width="0.6"/>
+          </svg>
+        </div>
+        <div class="costume-cap">沙滩纱裙（腰带链）</div>
+      </div>
+
+      <!-- Cell 4: Staff weapon -->
+      <div class="costume-cell">
+        <div class="costume-img" style="min-height:70px;">
+          <svg viewBox="0 0 90 70" xmlns="http://www.w3.org/2000/svg">
+            <rect width="90" height="70" fill="#EEF4FA"/>
+            <!-- Staff shaft -->
+            <rect x="42" y="8" width="6" height="54" rx="3" fill="#D4C890" stroke="#C8A850" stroke-width="0.5"/>
+            <!-- Ornate head -->
+            <ellipse cx="45" cy="18" rx="14" ry="12" fill="none" stroke="#C8A850" stroke-width="1"/>
+            <!-- Sun cross arms -->
+            <line x1="31" y1="18" x2="59" y2="18" stroke="#C8A850" stroke-width="0.7"/>
+            <line x1="45" y1="6"  x2="45" y2="30" stroke="#C8A850" stroke-width="0.7"/>
+            <!-- Diagonal arms -->
+            <line x1="35" y1="9" x2="55" y2="27" stroke="#C8A850" stroke-width="0.5" opacity="0.6"/>
+            <line x1="55" y1="9" x2="35" y2="27" stroke="#C8A850" stroke-width="0.5" opacity="0.6"/>
+            <!-- Center gem (ocean blue) -->
+            <circle cx="45" cy="18" r="6" fill="#A8D0F0" stroke="#7AAAC8" stroke-width="0.8"/>
+            <circle cx="45" cy="18" r="3.5" fill="#D0EAFA" stroke="none"/>
+            <!-- Glow rings -->
+            <circle cx="45" cy="18" r="9" fill="none" stroke="#7AAAC8" stroke-width="0.4" stroke-dasharray="2 2" opacity="0.5"/>
+            <!-- Tip -->
+            <path d="M42 62 L45 70 L48 62Z" fill="#C8A850" stroke="none"/>
+          </svg>
+        </div>
+        <div class="costume-cap">武器：潮沙法杖</div>
+      </div>
+
+      <!-- Side accessories column -->
+      <div class="costume-side">
+
+        <!-- Flower crown -->
+        <div class="costume-side-cell">
+          <svg viewBox="0 0 40 32" xmlns="http://www.w3.org/2000/svg" style="width:36px;height:28px;">
+            <path d="M4 18 Q20 8 36 18" fill="none" stroke="#C8D8A8" stroke-width="1.2" stroke-linecap="round"/>
+            <!-- Flowers -->
+            <circle cx="12" cy="14" r="3" fill="none" stroke="#E8D8F0" stroke-width="0.8"/>
+            <circle cx="12" cy="14" r="1.2" fill="#F0E8D0"/>
+            <circle cx="20" cy="11" r="3.5" fill="none" stroke="#E8D8F0" stroke-width="0.8"/>
+            <circle cx="20" cy="11" r="1.5" fill="#F0E8D0"/>
+            <circle cx="28" cy="14" r="3" fill="none" stroke="#E8D8F0" stroke-width="0.8"/>
+            <circle cx="28" cy="14" r="1.2" fill="#F0E8D0"/>
+          </svg>
+          <div class="side-label">头饰<br>栀子花环</div>
+        </div>
+
+        <!-- Bracelet -->
+        <div class="costume-side-cell">
+          <svg viewBox="0 0 40 32" xmlns="http://www.w3.org/2000/svg" style="width:36px;height:28px;">
+            <ellipse cx="20" cy="16" rx="14" ry="7" fill="none" stroke="#D4AF6A" stroke-width="1"/>
+            <ellipse cx="20" cy="16" rx="11" ry="5" fill="none" stroke="#E8C870" stroke-width="0.5" stroke-dasharray="2 2"/>
+            <!-- Gems on bracelet -->
+            <circle cx="11" cy="13" r="2" fill="#A8D0F0" stroke="#7AAAC8" stroke-width="0.5"/>
+            <circle cx="20" cy="9"  r="2" fill="#A8D0F0" stroke="#7AAAC8" stroke-width="0.5"/>
+            <circle cx="29" cy="13" r="2" fill="#A8D0F0" stroke="#7AAAC8" stroke-width="0.5"/>
+          </svg>
+          <div class="side-label">手镯<br>与臂环</div>
+        </div>
+
+        <!-- Anklet -->
+        <div class="costume-side-cell">
+          <svg viewBox="0 0 40 32" xmlns="http://www.w3.org/2000/svg" style="width:36px;height:28px;">
+            <ellipse cx="20" cy="18" rx="13" ry="5" fill="none" stroke="#D0C0A0" stroke-width="0.8"/>
+            <!-- Pearl drops -->
+            <line x1="14" y1="22" x2="13" y2="28" stroke="#D0C0A0" stroke-width="0.6"/>
+            <circle cx="13" cy="29" r="1.8" fill="#F0ECE8" stroke="#C8B898" stroke-width="0.5"/>
+            <line x1="20" y1="23" x2="20" y2="29" stroke="#D0C0A0" stroke-width="0.6"/>
+            <circle cx="20" cy="30" r="1.8" fill="#F0ECE8" stroke="#C8B898" stroke-width="0.5"/>
+            <line x1="26" y1="22" x2="27" y2="28" stroke="#D0C0A0" stroke-width="0.6"/>
+            <circle cx="27" cy="29" r="1.8" fill="#F0ECE8" stroke="#C8B898" stroke-width="0.5"/>
+          </svg>
+          <div class="side-label">脚链<br>珍珠与贝壳</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom: Palette + World -->
+  <div class="bottom-row">
+
+    <div class="palette-block">
+      <div class="section-header">
+        <div class="section-bar" style="height:12px;"></div>
+        <span class="section-title-cn" style="font-size:10px;">色板</span>
+        <span class="section-title-en">Color Palette</span>
+      </div>
+      <div class="palette-rows">
+        <div class="pal-row">
+          <span class="pal-label">主色</span>
+          <div class="pal-swatches">
+            <div class="sw" style="background:#FDFAF6;" title="象牙白"></div>
+            <div class="sw" style="background:#B8D8F0;" title="天光蓝"></div>
+            <div class="sw" style="background:#5AAAD8;" title="海洋蓝"></div>
+            <div class="sw" style="background:#1A3A5C;" title="深海蓝"></div>
+          </div>
+        </div>
+        <div class="pal-row">
+          <span class="pal-label">辅色</span>
+          <div class="pal-swatches">
+            <div class="sw" style="background:#F8F4EE;" title="米白"></div>
+            <div class="sw" style="background:#E8DCC8;" title="沙滩米"></div>
+            <div class="sw" style="background:#D4C090;" title="暖沙金"></div>
+            <div class="sw" style="background:#C0A870;" title="古铜金"></div>
+          </div>
+        </div>
+        <div class="pal-row">
+          <span class="pal-label">点缀色</span>
+          <div class="pal-swatches">
+            <div class="sw" style="background:#D4C890;" title="法杖金"></div>
+            <div class="sw" style="background:#A8CCA0;" title="花冠绿"></div>
+            <div class="sw" style="background:#90C0E0;" title="宝石蓝"></div>
+            <div class="sw" style="background:#E0D0E8;" title="薄雾紫"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="world-block">
+      <div class="section-header">
+        <div class="section-bar" style="height:12px;"></div>
+        <span class="section-title-cn" style="font-size:10px;">世界观设定</span>
+        <span class="section-title-en">World Setting</span>
+      </div>
+      <div class="world-text">
+        <em>碧海群岛</em>位于世界的东方海域，由无数珊瑚礁与小岛组成。这里常年阳光明媚，海风温柔，是海洋信仰与自然共生的乐土。<em>潮沙之力</em>源自海洋女神的恩赐，也潜藏着未知的古老力量。
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-left">
+    <span class="footer-note">Official Character Design · Confidential</span>
+    <span class="footer-tag">Elena · 艾琳娜</span>
+  </div>
+  <div class="footer-dots">
+    <div class="fdot" style="background:#B8D8F0;"></div>
+    <div class="fdot" style="background:#7AAAC8;"></div>
+    <div class="fdot" style="background:#D4AF6A;"></div>
+    <div class="fdot" style="background:#7AAAC8;"></div>
+    <div class="fdot" style="background:#B8D8F0;"></div>
+  </div>
+  <span class="footer-note">三视图 · 表情 · 服装装备 · 配色 · 世界观 &nbsp;·&nbsp; v1.0 © 2025</span>
+</footer>
+
+</div>
+</body>
+</html>
