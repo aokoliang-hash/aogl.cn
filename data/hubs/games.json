@@ -8,7 +8,7 @@
   "descZh": "按 Newzoo 与行业营收常见梯队排序的十个商店与发行商，每站三条官方公告或博文外链。",
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
-  "updated": "2026-06-02",
+  "updated": "2026-06-09",
   "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Hot mix below merges public RSS when you run <code>npm run fetch-hub-news</code> — dedupe is best-effort, timestamps come from feeds, and headlines often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want one scrollable strip of <em>first-party</em> headlines (patches, hardware, live-service notes) without opening five tabs. I use it as a Sunday catch-up rail, not a discovery feed for unknown APK sites. If a publisher ships a major client update, I expect to see it via Steam News or the console blogs first — mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p>",
   "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>下方 Hot mix 在运行 <code>npm run fetch-hub-news</code> 时从公开 RSS 合并写入；去重为尽力而为，时间戳随 feed，标题多保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但想在一个横向列表里扫一遍<strong>第一方</strong>补丁、硬件与运营公告的人。我自己当「周日补课」用，不把它当成 APK 发现站。大版本更新我默认会先出现在 Steam 新闻或御三家博客里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
@@ -25,202 +25,202 @@
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时合并：Steam 新闻、PlayStation / Xbox 官方博客、Epic/Unreal RSS，以及 TechCrunch 游戏、主机、电竞、手游等标签。条目按 feed 日期尽量新在前；标题多为英文。",
   "hotMixItems": [
     {
-      "titleEn": "(For Southeast Asia) FlexStrike wireless fight stick launching in August, followed by Pulse Elevate wireless speakers later this year",
-      "titleZh": "(For Southeast Asia) FlexStrike wireless fight stick launching in August, followed by Pulse Elevate wireless speakers later this year",
-      "url": "https://blog.playstation.com/2026/06/01/20260602-flexstrike/",
+      "titleEn": "Resonance: A Plague Tale Legacy Arrives August 27 – Learn More About This Compelling Prequel",
+      "titleZh": "Resonance: A Plague Tale Legacy Arrives August 27 – Learn More About This Compelling Prequel",
+      "url": "https://news.xbox.com/en-us/2026/06/08/resonance-plague-tale-story-combat-details-xbox-games-showcase-2026/",
+      "date": "2026-06-08",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/RESONANCE_LOGO-8e7b6d7d4a5b2a4f0331-1024x576.jpg",
+      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/RESONANCE_LOGO-8e7b6d7d4a5b2a4f0331-1024x576.jpg"
+    },
+    {
+      "titleEn": "The First Details on Wo Long 2: Wings of Ember, Heading to Xbox in 2027",
+      "titleZh": "The First Details on Wo Long 2: Wings of Ember, Heading to Xbox in 2027",
+      "url": "https://news.xbox.com/en-us/2026/06/08/wo-long-2-wings-of-ember-xbox-games-showcase-2026/",
+      "date": "2026-06-08",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/Key-Art-75753143602c0c93d4f0.jpg",
+      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/Key-Art-75753143602c0c93d4f0.jpg"
+    },
+    {
+      "titleEn": "Halo: Campaign Evolved – Creating New Cosmetics for Master Chief That Honor the Halo Legacy",
+      "titleZh": "Halo: Campaign Evolved – Creating New Cosmetics for Master Chief That Honor the Halo Legacy",
+      "url": "https://news.xbox.com/en-us/2026/06/08/halo-campaign-evolved-prorder-alpha-halo-armory-pack-skins/",
+      "date": "2026-06-08",
+      "source": "Xbox",
+      "image": "https://secure.gravatar.com/avatar/f1f7c5bb89b11d874ad42c9e072abe316daa16fdb16f9d6e8b7f92b66eded965?s=144&d=mm&r=g",
+      "imageSource": "https://secure.gravatar.com/avatar/f1f7c5bb89b11d874ad42c9e072abe316daa16fdb16f9d6e8b7f92b66eded965?s=144&d=mm&r=g"
+    },
+    {
+      "titleEn": "Summer Game Fest 2026: Hands-on and more details on 6 upcoming PS5 games",
+      "titleZh": "Summer Game Fest 2026: Hands-on and more details on 6 upcoming PS5 games",
+      "url": "https://blog.playstation.com/2026/06/08/summer-game-fest-2026-hands-on-and-more-details-on-6-upcoming-ps5-games/",
+      "date": "2026-06-08",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/tachyon/2026/06/d230face6646fb22dc195d275de13eb8e86d760e.jpg",
+      "imageSource": "https://blog.playstation.com/tachyon/2026/06/d230face6646fb22dc195d275de13eb8e86d760e.jpg"
+    },
+    {
+      "titleEn": "Dive Into the Depths in Grounded 2’s Into the Abyss Update",
+      "titleZh": "Dive Into the Depths in Grounded 2’s Into the Abyss Update",
+      "url": "https://news.xbox.com/en-us/2026/06/08/grounded-2-into-the-abyss-update-xbox-games-showcase-2026/",
+      "date": "2026-06-08",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/OEI_GROUNDED2_BAYOU_SWIMMING_FINAL_4KUHD-b1179b5a1dda53d97ca6-1024x576.jpg",
+      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/OEI_GROUNDED2_BAYOU_SWIMMING_FINAL_4KUHD-b1179b5a1dda53d97ca6-1024x576.jpg"
+    },
+    {
+      "titleEn": "Discover the Gears of War: E-Day Collector’s Edition",
+      "titleZh": "Discover the Gears of War: E-Day Collector’s Edition",
+      "url": "https://news.xbox.com/en-us/2026/06/08/gears-of-war-e-day-collectors-edition-xbox-games-showcase-2026/",
+      "date": "2026-06-08",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/Fairlight_THUMBNAILS_Collection_CC-a64e132abd9b2e16866a-1024x576.jpg",
+      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/Fairlight_THUMBNAILS_Collection_CC-a64e132abd9b2e16866a-1024x576.jpg"
+    },
+    {
+      "titleEn": "Magicians: The Devil’s Deal Blends First-Person Gameplay with Stage Magic Deception",
+      "titleZh": "Magicians: The Devil’s Deal Blends First-Person Gameplay with Stage Magic Deception",
+      "url": "https://news.xbox.com/en-us/2026/06/08/magicians-the-devils-deal-details-xbox-games-showcase-2026/",
+      "date": "2026-06-08",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/Magicians_3840x2160_LOGO-3a0f4bcfc4ba04d55591-1024x576.jpg",
+      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/Magicians_3840x2160_LOGO-3a0f4bcfc4ba04d55591-1024x576.jpg"
+    },
+    {
+      "titleEn": "UEFN Student Bootcamp application is open now",
+      "titleZh": "UEFN Student Bootcamp application is open now",
+      "url": "https://www.unrealengine.com/learning/uefn-student-bootcamp-application-is-open-now",
+      "date": "2026-06-08",
+      "source": "Epic / Unreal",
+      "image": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmq1cibio402d07ociypz8y5n",
+      "imageSource": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmq1cibio402d07ociypz8y5n"
+    },
+    {
+      "titleEn": "Rebuilding Brotherhood: How Gears of War: E-Day Renews a Legendary Franchise",
+      "titleZh": "Rebuilding Brotherhood: How Gears of War: E-Day Renews a Legendary Franchise",
+      "url": "https://news.xbox.com/en-us/2026/06/07/gears-of-war-eday-direct-xbox-games-showcase-2026/",
+      "date": "2026-06-07",
+      "source": "Xbox",
+      "image": "https://secure.gravatar.com/avatar/f1f7c5bb89b11d874ad42c9e072abe316daa16fdb16f9d6e8b7f92b66eded965?s=144&d=mm&r=g",
+      "imageSource": "https://secure.gravatar.com/avatar/f1f7c5bb89b11d874ad42c9e072abe316daa16fdb16f9d6e8b7f92b66eded965?s=144&d=mm&r=g"
+    },
+    {
+      "titleEn": "Minecraft Dungeons II Gameplay Reveal and Release Date Announce",
+      "titleZh": "Minecraft Dungeons II Gameplay Reveal and Release Date Announce",
+      "url": "https://www.minecraft.net/article/minecraft-dungeons-ii-date-announce#new_tab",
+      "date": "2026-06-07",
+      "source": "Xbox",
+      "image": "https://secure.gravatar.com/avatar/7612cc9e3cdef31108ad3c20db959e729ab48348d97d084f0d0cfba7ac35ab3b?s=144&d=mm&r=g",
+      "imageSource": "https://secure.gravatar.com/avatar/7612cc9e3cdef31108ad3c20db959e729ab48348d97d084f0d0cfba7ac35ab3b?s=144&d=mm&r=g"
+    },
+    {
+      "titleEn": "XBOX Games Showcase 2026 Recap: The Return of Exclusives, World Premieres, and Anniversary Hardware",
+      "titleZh": "XBOX Games Showcase 2026 Recap: The Return of Exclusives, World Premieres, and Anniversary Hardware",
+      "url": "https://news.xbox.com/en-us/2026/06/07/xbox-games-showcase-2026-recap-everything-announced/",
+      "date": "2026-06-07",
+      "source": "Xbox",
+      "image": "https://secure.gravatar.com/avatar/9e231860775575ba7e3b1726df5b534df12e6d8459e1a1496a4e499a5c489927?s=144&d=mm&r=g",
+      "imageSource": "https://secure.gravatar.com/avatar/9e231860775575ba7e3b1726df5b534df12e6d8459e1a1496a4e499a5c489927?s=144&d=mm&r=g"
+    },
+    {
+      "titleEn": "DMZ – New Intel on Call of Duty’s Extraction Shooter Experience",
+      "titleZh": "DMZ – New Intel on Call of Duty’s Extraction Shooter Experience",
+      "url": "https://news.xbox.com/en-us/2026/06/07/dmz-new-intel-call-of-duty-extraction-shooter-xbox-games-showcase-2026/",
+      "date": "2026-06-07",
+      "source": "Xbox",
+      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/MW4_DMZ_011_BRANDED-14317359d6d97353e6a2-1024x576.jpg",
+      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/MW4_DMZ_011_BRANDED-14317359d6d97353e6a2-1024x576.jpg"
+    },
+    {
+      "titleEn": "Summer Game Fest 2026 highlights: 16 games coming to PS5",
+      "titleZh": "Summer Game Fest 2026 highlights: 16 games coming to PS5",
+      "url": "https://blog.playstation.com/2026/06/05/summer-game-fest-2026-highlights-16-games-coming-to-ps5/",
+      "date": "2026-06-06",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg",
+      "imageSource": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
+    },
+    {
+      "titleEn": "Official PlayStation Podcast Episode 543: State of Faye",
+      "titleZh": "Official PlayStation Podcast Episode 543: State of Faye",
+      "url": "https://blog.playstation.com/2026/06/05/official-playstation-podcast-episode-543-state-of-faye/",
+      "date": "2026-06-05",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/tachyon/2026/06/bba1c6d7e2e3b992a441dc935066993486f05a2a.jpg",
+      "imageSource": "https://blog.playstation.com/tachyon/2026/06/bba1c6d7e2e3b992a441dc935066993486f05a2a.jpg"
+    },
+    {
+      "titleEn": "Share of the Week: Star Wars Outlaws",
+      "titleZh": "Share of the Week: Star Wars Outlaws",
+      "url": "https://blog.playstation.com/2026/06/05/share-of-the-week-star-wars-outlaws/",
+      "date": "2026-06-05",
+      "source": "PlayStation",
+      "image": "https://live.staticflickr.com/65535/55313133664_17e395bee0_b.jpg",
+      "imageSource": "https://live.staticflickr.com/65535/55313133664_17e395bee0_b.jpg"
+    },
+    {
+      "titleEn": "(For Southeast Asia) PlayStation Store: May 2026’s top downloads",
+      "titleZh": "(For Southeast Asia) PlayStation Store: May 2026’s top downloads",
+      "url": "https://blog.playstation.com/2026/06/05/20260605-top/",
+      "date": "2026-06-05",
+      "source": "PlayStation",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Hands-on report — Ace Combat 8: Wings of Theve",
+      "titleZh": "Hands-on report — Ace Combat 8: Wings of Theve",
+      "url": "https://blog.playstation.com/2026/06/04/hands-on-report-ace-combat-8-wings-of-theve/",
+      "date": "2026-06-04",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/tachyon/2028/06/6346b2572c3b196cee15585f3f7d5e3af7217af6.jpg",
+      "imageSource": "https://blog.playstation.com/tachyon/2028/06/6346b2572c3b196cee15585f3f7d5e3af7217af6.jpg"
+    },
+    {
+      "titleEn": "Start building games with our new course: ‘Your First Game in Unreal Engine’",
+      "titleZh": "Start building games with our new course: ‘Your First Game in Unreal Engine’",
+      "url": "https://www.unrealengine.com/learning/start-building-games-with-our-new-course-your-first-game-in-unreal-engine",
+      "date": "2026-06-04",
+      "source": "Epic / Unreal",
+      "image": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmpmjfojs06sk06o7nis9r69y",
+      "imageSource": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmpmjfojs06sk06o7nis9r69y"
+    },
+    {
+      "titleEn": "PlayStation Store: May 2026’s top downloads",
+      "titleZh": "PlayStation Store: May 2026’s top downloads",
+      "url": "https://blog.playstation.com/2026/06/03/playstation-store-may-2026s-top-downloads/",
+      "date": "2026-06-03",
+      "source": "PlayStation",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "(For Southeast Asia) Marvel’s Wolverine: new gameplay, story details from State of Play",
+      "titleZh": "(For Southeast Asia) Marvel’s Wolverine: new gameplay, story details from State of Play",
+      "url": "https://blog.playstation.com/2026/06/02/20260603-marvel/",
+      "date": "2026-06-03",
+      "source": "PlayStation",
+      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg",
+      "imageSource": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
+    },
+    {
+      "titleEn": "Join us at Annecy International Animation Film Festival 2026",
+      "titleZh": "Join us at Annecy International Animation Film Festival 2026",
+      "url": "https://www.unrealengine.com/events/join-us-at-annecy-international-animation-film-festival-2026",
+      "date": "2026-06-03",
+      "source": "Epic / Unreal",
+      "image": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmppw9suu0udy07mumiqj3tbs",
+      "imageSource": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmppw9suu0udy07mumiqj3tbs"
+    },
+    {
+      "titleEn": "State of Play June 2026: all announcements, trailers",
+      "titleZh": "State of Play June 2026: all announcements, trailers",
+      "url": "https://blog.playstation.com/2026/06/02/state-of-play-june-2026-all-announcements-trailers/",
       "date": "2026-06-02",
       "source": "PlayStation",
-      "image": "upload/hub-hotmix/games/beeb60f98782c655.jpg",
-      "imageSource": "https://blog.playstation.com/tachyon/2026/06/94cd95f3d1c5ac44dd57d96f60f87bd6e589be67-scaled.jpg"
-    },
-    {
-      "titleEn": "(For Southeast Asia) Hands-on report: FlexStrike wireless fight stick and Pulse Elevate wireless speakers",
-      "titleZh": "(For Southeast Asia) Hands-on report: FlexStrike wireless fight stick and Pulse Elevate wireless speakers",
-      "url": "https://blog.playstation.com/2026/06/01/20260602-flexstrike2/",
-      "date": "2026-06-02",
-      "source": "PlayStation",
-      "image": "upload/hub-hotmix/games/b0764ed48ed9dcc7.png",
-      "imageSource": "https://blog.playstation.com/tachyon/2026/06/04d99669e9dc4a0b739538a81b8910c9dc2c9339.png"
-    },
-    {
-      "titleEn": "Hands-on report: FlexStrike wireless fight stick, Pulse Elevate wireless speakers, PlayStation’s 27” Gaming Monitor",
-      "titleZh": "Hands-on report: FlexStrike wireless fight stick, Pulse Elevate wireless speakers, PlayStation’s 27” Gaming Monitor",
-      "url": "https://blog.playstation.com/2026/06/01/hands-on-report-flexstrike-wireless-fight-stick-pulse-elevate-wireless-speakers-playstations-27-gaming-monitor/",
-      "date": "2026-06-01",
-      "source": "PlayStation",
-      "image": "upload/hub-hotmix/games/6175fd0bc714ed07.jpg",
-      "imageSource": "https://blog.playstation.com/tachyon/2026/06/b4579e0745081b083042ffcd6fb06a6905d66c76.jpg"
-    },
-    {
-      "titleEn": "FlexStrike wireless fight stick, 27’’ Gaming Monitor launching in August, followed by Pulse Elevate wireless speakers later this year",
-      "titleZh": "FlexStrike wireless fight stick, 27’’ Gaming Monitor launching in August, followed by Pulse Elevate wireless speakers later this year",
-      "url": "https://blog.playstation.com/2026/06/01/flexstrike-wireless-fight-stick-27-gaming-monitor-launching-in-august-followed-by-pulse-elevate-wireless-speakers-later-this-year/",
-      "date": "2026-06-01",
-      "source": "PlayStation",
-      "image": "upload/hub-hotmix/games/75b33f566ba925ab.jpg",
-      "imageSource": "https://blog.playstation.com/tachyon/2026/06/b9939045eb3a62128a27c90145703c278ba071f2.jpg"
-    },
-    {
-      "titleEn": "EA Sports F1 25: Enhanced PSSR available alongside 2026 Season Pack",
-      "titleZh": "EA Sports F1 25: Enhanced PSSR available alongside 2026 Season Pack",
-      "url": "https://blog.playstation.com/2026/06/01/ea-sports-f1-25-enhanced-pssr-available-alongside-2026-season-pack/",
-      "date": "2026-06-01",
-      "source": "PlayStation",
-      "image": "upload/hub-hotmix/games/40308863917db7e4.jpg",
-      "imageSource": "https://blog.playstation.com/tachyon/2028/06/9e848d751ab4fa0a10de0b277ca9899f808632ea-scaled.jpg"
-    },
-    {
-      "titleEn": "Players’ Choice: Vote for May 2026’s best new game",
-      "titleZh": "Players’ Choice: Vote for May 2026’s best new game",
-      "url": "https://blog.playstation.com/2026/06/01/players-choice-vote-for-may-2026s-best-new-game/",
-      "date": "2026-06-01",
-      "source": "PlayStation",
-      "image": "upload/hub-hotmix/games/6b2ab7801c466b5c.jpg",
-      "imageSource": "https://blog.playstation.com/tachyon/2028/06/97cf50251efdf86823086573290df319b150622c.jpg"
-    },
-    {
-      "titleEn": "How to Watch the XBOX Games Showcase and Gears of War: E-Day Direct on Sunday",
-      "titleZh": "How to Watch the XBOX Games Showcase and Gears of War: E-Day Direct on Sunday",
-      "url": "https://news.xbox.com/en-us/2026/06/01/xbox-games-showcase-2026-gears-of-war-e-day-direct-how-to-watch/",
-      "date": "2026-06-01",
-      "source": "Xbox",
-      "image": "upload/hub-hotmix/games/794676a3a4164173.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/03/2026_Showcase_DoubleFeature_16x9-1-503e797dfa7152ff8c4e.jpg"
-    },
-    {
-      "titleEn": "Minecraft LIVE Recap",
-      "titleZh": "Minecraft LIVE Recap",
-      "url": "https://www.minecraft.net/article/minecraft-live-twitchcon-rotterdam-recap#new_tab",
-      "date": "2026-05-30",
-      "source": "Xbox",
-      "image": "upload/hub-hotmix/games/49de457345dc57ce.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Minecraft_Live_Master-e4aa885b497de9f471eb-1900x1080.jpg"
-    },
-    {
-      "titleEn": "Announcing the Minecraft Movie Build Challenge",
-      "titleZh": "Announcing the Minecraft Movie Build Challenge",
-      "url": "http://www.minecraft.net/article/minecraft-movie-build-challenge#new_tab",
-      "date": "2026-05-30",
-      "source": "Xbox",
-      "image": "upload/hub-hotmix/games/8d818b4c2b2caf53.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Build_Challenge_Splash_Art_XboxWire_1920x1080-947674112ba1c972c18a-1900x1080.jpg"
-    },
-    {
-      "titleEn": "Matt Booty Talks Games Showcase, Forza, CoD, and More – Official XBOX Podcast",
-      "titleZh": "Matt Booty Talks Games Showcase, Forza, CoD, and More – Official XBOX Podcast",
-      "url": "https://youtu.be/BwYglyND1EA?si=v8seL5QHTv4GsAUr#new_tab",
-      "date": "2026-05-29",
-      "source": "Xbox",
-      "image": "upload/hub-hotmix/games/794676a3a4164173.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/03/2026_Showcase_DoubleFeature_16x9-1-503e797dfa7152ff8c4e.jpg"
-    },
-    {
-      "titleEn": "Available for XBOX Insiders: Personalize Your Experience with New Color Options, Controller on Screen Settings and More",
-      "titleZh": "Available for XBOX Insiders: Personalize Your Experience with New Color Options, Controller on Screen Settings and More",
-      "url": "https://news.xbox.com/en-us/2026/05/29/xbox-insiders-july-2026-console-features/",
-      "date": "2026-05-29",
-      "source": "Xbox",
-      "image": "upload/hub-hotmix/games/524459a18161b42d.png",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Hero_Color_Controller_Indicators-f201af1cc5c056ee5431-1024x576.png"
-    },
-    {
-      "titleEn": "Share of the Week – LEGO Batman: Legacy of the Dark Knight",
-      "titleZh": "Share of the Week – LEGO Batman: Legacy of the Dark Knight",
-      "url": "https://blog.playstation.com/2026/05/29/share-of-the-week-lego-batman-legacy-of-the-dark-knight/",
-      "date": "2026-05-29",
-      "source": "PlayStation",
-      "image": "upload/hub-hotmix/games/2a608d49430f4e33.png",
-      "imageSource": "https://blog.playstation.com/tachyon/2028/05/2fee61ebb6f920268c9ed0ea39e9a40e67b13f83.png"
-    },
-    {
-      "titleEn": "A New Challenger Appears! – Mr. Karate Brings Kyokugenryu to Fatal Fury: City of the Wolves",
-      "titleZh": "A New Challenger Appears! – Mr. Karate Brings Kyokugenryu to Fatal Fury: City of the Wolves",
-      "url": "https://news.xbox.com/en-us/2026/05/29/fatal-fury-city-of-the-wolves-mr-karate/",
-      "date": "2026-05-29",
-      "source": "Xbox",
-      "image": "upload/hub-hotmix/games/8a0011a021e124c6.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Hero-Image-ab85630c9ad1c5e75adc.jpg"
-    },
-    {
-      "titleEn": "Next Week on XBOX: New Games for June 1 to 5",
-      "titleZh": "Next Week on XBOX: New Games for June 1 to 5",
-      "url": "https://news.xbox.com/en-us/2026/05/29/next-week-on-xbox-new-games-for-june-1-to-5/",
-      "date": "2026-05-29",
-      "source": "Xbox",
-      "image": "upload/hub-hotmix/games/47311866242b2775.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/nwox-hero-c934b584c207beaed63a.jpg"
-    },
-    {
-      "titleEn": "May’s Epic learning content: Environments, lighting, and more",
-      "titleZh": "May’s Epic learning content: Environments, lighting, and more",
-      "url": "https://www.unrealengine.com/learning/mays-epic-learning-content-environments-lighting-and-more",
-      "date": "2026-05-29",
-      "source": "Epic / Unreal",
-      "image": "upload/hub-hotmix/games/bfa71d188e9959b2.jpg",
-      "imageSource": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmpmpe4g60o7e07od5yb12k04"
-    },
-    {
-      "titleEn": "Watch the Call of Duty: Modern Warfare 4 Reveal Trailer",
-      "titleZh": "Watch the Call of Duty: Modern Warfare 4 Reveal Trailer",
-      "url": "https://www.youtube.com/watch?v=xixym-ICJrg#new_tab",
-      "date": "2026-05-28",
-      "source": "Xbox",
-      "image": "upload/hub-hotmix/games/c3f0911f628a5c7b.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Minecraft_Live_Master-e4aa885b497de9f471eb.jpg"
-    },
-    {
-      "titleEn": "Play NBA The Run open beta on PS5 this weekend",
-      "titleZh": "Play NBA The Run open beta on PS5 this weekend",
-      "url": "https://blog.playstation.com/2026/05/28/play-nba-the-run-open-beta-on-ps5-this-weekend/",
-      "date": "2026-05-28",
-      "source": "PlayStation",
-      "image": "upload/hub-hotmix/games/a7fa8a52a71bd3cb.png",
-      "imageSource": "https://blog.playstation.com/tachyon/2028/05/5aff4ba4f04e42bf00e6d82e7e3428a67004ff31-scaled.png"
-    },
-    {
-      "titleEn": "Free Play Days – Gears of War Reloaded, Formula Legends, High on Life 2 and Dying Light",
-      "titleZh": "Free Play Days – Gears of War Reloaded, Formula Legends, High on Life 2 and Dying Light",
-      "url": "https://news.xbox.com/en-us/2026/05/28/free-play-days-05-28-26/",
-      "date": "2026-05-28",
-      "source": "Xbox",
-      "image": "upload/hub-hotmix/games/5c1659490bbe5bec.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/FY26-Social-FPD_05-28-2026_1920x1080-4shot-cfac16b52fe766473d34.jpg"
-    },
-    {
-      "titleEn": "Call of Duty: Modern Warfare 4 — Campaign, Multiplayer, and DMZ launches October 23",
-      "titleZh": "Call of Duty: Modern Warfare 4 — Campaign, Multiplayer, and DMZ launches October 23",
-      "url": "https://blog.playstation.com/2026/05/28/call-of-duty-modern-warfare-4-campaign-multiplayer-and-dmz-launches-october-23/",
-      "date": "2026-05-28",
-      "source": "PlayStation",
-      "image": "upload/hub-hotmix/games/8b84b4fcbe449e46.png",
-      "imageSource": "https://blog.playstation.com/tachyon/2028/05/898360a33ff3150179a7f1fd9dd4a3f4e90f680e-scaled.png"
-    },
-    {
-      "titleEn": "Announcing Call of Duty: Modern Warfare 4",
-      "titleZh": "Announcing Call of Duty: Modern Warfare 4",
-      "url": "https://www.callofduty.com/blog/2026/05/call-of-duty-modern-warfare-4-announcement#new_tab",
-      "date": "2026-05-28",
-      "source": "Xbox",
-      "image": "upload/hub-hotmix/games/c3f0911f628a5c7b.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/Minecraft_Live_Master-e4aa885b497de9f471eb.jpg"
-    },
-    {
-      "titleEn": "BeamNG.drive speeds onto PS5 this year",
-      "titleZh": "BeamNG.drive speeds onto PS5 this year",
-      "url": "https://blog.playstation.com/2026/05/28/beamng-drive-speeds-onto-ps5-this-year/",
-      "date": "2026-05-28",
-      "source": "PlayStation",
-      "image": "upload/hub-hotmix/games/0752322389b61546.jpg",
-      "imageSource": "https://blog.playstation.com/tachyon/2026/05/89cd3e388eab478b12febd056f110787c04664ef.jpg"
-    },
-    {
-      "titleEn": "Built with UE5, NBA THE RUN looks to bring back the golden age of basketball video games",
-      "titleZh": "Built with UE5, NBA THE RUN looks to bring back the golden age of basketball video games",
-      "url": "https://www.unrealengine.com/developer-interviews/built-with-ue5-nba-the-run-looks-to-bring-back-the-golden-age-of-basketball-video-games",
-      "date": "2026-05-28",
-      "source": "Epic / Unreal",
-      "image": "upload/hub-hotmix/games/cbf01a740bc7be4f.jpg",
-      "imageSource": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmpgrjvf30h7u07o3okh9ojzw"
+      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg",
+      "imageSource": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
     }
   ],
   "moreTitleEn": "More studios",
@@ -345,22 +345,22 @@
       "labelZh": "PlayStation",
       "items": [
         {
-          "titleEn": "(For Southeast Asia) FlexStrike wireless fight stick launching in August, followed by Pulse Elevate wireless speakers later this year",
-          "titleZh": "(For Southeast Asia) FlexStrike wireless fight stick launching in August, followed by Pulse Elevate wireless speakers later this year",
-          "url": "https://blog.playstation.com/2026/06/01/20260602-flexstrike/",
-          "date": "2026-06-02"
+          "titleEn": "Summer Game Fest 2026: Hands-on and more details on 6 upcoming PS5 games",
+          "titleZh": "Summer Game Fest 2026: Hands-on and more details on 6 upcoming PS5 games",
+          "url": "https://blog.playstation.com/2026/06/08/summer-game-fest-2026-hands-on-and-more-details-on-6-upcoming-ps5-games/",
+          "date": "2026-06-08"
         },
         {
-          "titleEn": "(For Southeast Asia) Hands-on report: FlexStrike wireless fight stick and Pulse Elevate wireless speakers",
-          "titleZh": "(For Southeast Asia) Hands-on report: FlexStrike wireless fight stick and Pulse Elevate wireless speakers",
-          "url": "https://blog.playstation.com/2026/06/01/20260602-flexstrike2/",
-          "date": "2026-06-02"
+          "titleEn": "Summer Game Fest 2026 highlights: 16 games coming to PS5",
+          "titleZh": "Summer Game Fest 2026 highlights: 16 games coming to PS5",
+          "url": "https://blog.playstation.com/2026/06/05/summer-game-fest-2026-highlights-16-games-coming-to-ps5/",
+          "date": "2026-06-06"
         },
         {
-          "titleEn": "Hands-on report: FlexStrike wireless fight stick, Pulse Elevate wireless speakers, PlayStation’s 27” Gaming Monitor",
-          "titleZh": "Hands-on report: FlexStrike wireless fight stick, Pulse Elevate wireless speakers, PlayStation’s 27” Gaming Monitor",
-          "url": "https://blog.playstation.com/2026/06/01/hands-on-report-flexstrike-wireless-fight-stick-pulse-elevate-wireless-speakers-playstations-27-gaming-monitor/",
-          "date": "2026-06-01"
+          "titleEn": "Official PlayStation Podcast Episode 543: State of Faye",
+          "titleZh": "Official PlayStation Podcast Episode 543: State of Faye",
+          "url": "https://blog.playstation.com/2026/06/05/official-playstation-podcast-episode-543-state-of-faye/",
+          "date": "2026-06-05"
         }
       ]
     },
@@ -370,22 +370,22 @@
       "labelZh": "Xbox",
       "items": [
         {
-          "titleEn": "How to Watch the XBOX Games Showcase and Gears of War: E-Day Direct on Sunday",
-          "titleZh": "How to Watch the XBOX Games Showcase and Gears of War: E-Day Direct on Sunday",
-          "url": "https://news.xbox.com/en-us/2026/06/01/xbox-games-showcase-2026-gears-of-war-e-day-direct-how-to-watch/",
-          "date": "2026-06-01"
+          "titleEn": "Resonance: A Plague Tale Legacy Arrives August 27 – Learn More About This Compelling Prequel",
+          "titleZh": "Resonance: A Plague Tale Legacy Arrives August 27 – Learn More About This Compelling Prequel",
+          "url": "https://news.xbox.com/en-us/2026/06/08/resonance-plague-tale-story-combat-details-xbox-games-showcase-2026/",
+          "date": "2026-06-08"
         },
         {
-          "titleEn": "Minecraft LIVE Recap",
-          "titleZh": "Minecraft LIVE Recap",
-          "url": "https://www.minecraft.net/article/minecraft-live-twitchcon-rotterdam-recap#new_tab",
-          "date": "2026-05-30"
+          "titleEn": "The First Details on Wo Long 2: Wings of Ember, Heading to Xbox in 2027",
+          "titleZh": "The First Details on Wo Long 2: Wings of Ember, Heading to Xbox in 2027",
+          "url": "https://news.xbox.com/en-us/2026/06/08/wo-long-2-wings-of-ember-xbox-games-showcase-2026/",
+          "date": "2026-06-08"
         },
         {
-          "titleEn": "Announcing the Minecraft Movie Build Challenge",
-          "titleZh": "Announcing the Minecraft Movie Build Challenge",
-          "url": "http://www.minecraft.net/article/minecraft-movie-build-challenge#new_tab",
-          "date": "2026-05-30"
+          "titleEn": "Halo: Campaign Evolved – Creating New Cosmetics for Master Chief That Honor the Halo Legacy",
+          "titleZh": "Halo: Campaign Evolved – Creating New Cosmetics for Master Chief That Honor the Halo Legacy",
+          "url": "https://news.xbox.com/en-us/2026/06/08/halo-campaign-evolved-prorder-alpha-halo-armory-pack-skins/",
+          "date": "2026-06-08"
         }
       ]
     },
@@ -420,22 +420,22 @@
       "labelZh": "Epic",
       "items": [
         {
-          "titleEn": "May’s Epic learning content: Environments, lighting, and more",
-          "titleZh": "May’s Epic learning content: Environments, lighting, and more",
-          "url": "https://www.unrealengine.com/learning/mays-epic-learning-content-environments-lighting-and-more",
-          "date": "2026-05-29"
+          "titleEn": "UEFN Student Bootcamp application is open now",
+          "titleZh": "UEFN Student Bootcamp application is open now",
+          "url": "https://www.unrealengine.com/learning/uefn-student-bootcamp-application-is-open-now",
+          "date": "2026-06-08"
         },
         {
-          "titleEn": "Built with UE5, NBA THE RUN looks to bring back the golden age of basketball video games",
-          "titleZh": "Built with UE5, NBA THE RUN looks to bring back the golden age of basketball video games",
-          "url": "https://www.unrealengine.com/developer-interviews/built-with-ue5-nba-the-run-looks-to-bring-back-the-golden-age-of-basketball-video-games",
-          "date": "2026-05-28"
+          "titleEn": "Start building games with our new course: ‘Your First Game in Unreal Engine’",
+          "titleZh": "Start building games with our new course: ‘Your First Game in Unreal Engine’",
+          "url": "https://www.unrealengine.com/learning/start-building-games-with-our-new-course-your-first-game-in-unreal-engine",
+          "date": "2026-06-04"
         },
         {
-          "titleEn": "MetaHuman 5.8 Preview Released!",
-          "titleZh": "MetaHuman 5.8 Preview Released!",
-          "url": "https://forums.unrealengine.com/t/metahuman-5-8-preview-released/2721648",
-          "date": "2026-05-12"
+          "titleEn": "Join us at Annecy International Animation Film Festival 2026",
+          "titleZh": "Join us at Annecy International Animation Film Festival 2026",
+          "url": "https://www.unrealengine.com/events/join-us-at-annecy-international-animation-film-festival-2026",
+          "date": "2026-06-03"
         }
       ]
     },

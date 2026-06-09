@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-06-02",
+  "updated": "2026-06-09",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "The latest AI news we announced in May 2026",
+          "titleZh": "The latest AI news we announced in May 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+          "date": "2026-06-05"
+        },
+        {
+          "titleEn": "5 ways Google Search can level up your thrift and vintage shopping",
+          "titleZh": "5 ways Google Search can level up your thrift and vintage shopping",
+          "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+          "date": "2026-06-03"
+        },
+        {
           "titleEn": "How we used Gemini to build Google I/O 2026",
           "titleZh": "How we used Gemini to build Google I/O 2026",
           "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
           "date": "2026-06-01"
-        },
-        {
-          "titleEn": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-          "titleZh": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
-          "date": "2026-05-29"
-        },
-        {
-          "titleEn": "9 demos of Gemini Omni and Gemini 3.5 in action",
-          "titleZh": "9 demos of Gemini Omni and Gemini 3.5 in action",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
-          "date": "2026-05-29"
         }
       ],
       "hotSearchPills": [
@@ -193,6 +193,12 @@
       "labelZh": "YouTube",
       "items": [
         {
+          "titleEn": "YouTube earns industry's first MRC accreditation for short-form video.",
+          "titleZh": "YouTube earns industry's first MRC accreditation for short-form video.",
+          "url": "https://blog.google/products/ads-commerce/youtube-mrc-accreditation-shorts/",
+          "date": "2026-06-03"
+        },
+        {
           "titleEn": "Google Display Ads has a new home in Demand Gen.",
           "titleZh": "Google Display Ads has a new home in Demand Gen.",
           "url": "https://blog.google/products/ads-commerce/google-display-ads-demand-gen/",
@@ -203,12 +209,6 @@
           "titleZh": "Fuel your next wave of growth on YouTube with Demand Gen",
           "url": "https://blog.google/products-and-platforms/products/youtube/youtube-demand-gen-updates/",
           "date": "2026-05-20"
-        },
-        {
-          "titleEn": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
-          "titleZh": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
-          "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
-          "date": "2026-05-19"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "Protecting Players and Fans during FIFA World Cup 2026™",
-          "titleZh": "Protecting Players and Fans during FIFA World Cup 2026™",
-          "url": "https://about.fb.com/news/2026/05/protecting-players-and-fans-during-fifa-world-cup-2026/",
-          "date": "2026-05-28"
+          "titleEn": "America’s Workforce Academy: The Future Is for Everyone",
+          "titleZh": "America’s Workforce Academy: The Future Is for Everyone",
+          "url": "https://about.fb.com/news/2026/06/americas-workforce-academy-free-skilled-trade-training/",
+          "date": "2026-06-08"
         },
         {
-          "titleEn": "Our AI Wearables Are “Changing the Game” for Disabled People",
-          "titleZh": "Our AI Wearables Are “Changing the Game” for Disabled People",
-          "url": "https://about.fb.com/news/2026/05/meta-ai-wearables-changing-the-game-for-disabled-people/",
-          "date": "2026-05-18"
+          "titleEn": "Fighting Spyware: An Update From WhatsApp",
+          "titleZh": "Fighting Spyware: An Update From WhatsApp",
+          "url": "https://about.fb.com/news/2026/06/fighting-spyware-an-update-from-whatsapp/",
+          "date": "2026-06-08"
         },
         {
-          "titleEn": "Introducing Business AI on WhatsApp for Small Businesses in India",
-          "titleZh": "Introducing Business AI on WhatsApp for Small Businesses in India",
-          "url": "https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses-in-india/",
-          "date": "2026-05-15"
+          "titleEn": "Introducing Creator Assistant, Plus More Languages For AI Translations on Facebook",
+          "titleZh": "Introducing Creator Assistant, Plus More Languages For AI Translations on Facebook",
+          "url": "https://about.fb.com/news/2026/06/creator-assistant-more-languages-for-ai-translations-on-facebook/",
+          "date": "2026-06-04"
         }
       ],
       "hotSearchPills": [
@@ -387,6 +387,12 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "Lights Out, Systems On: Validating Instant Power Loss Readiness",
+          "titleZh": "Lights Out, Systems On: Validating Instant Power Loss Readiness",
+          "url": "https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/",
+          "date": "2026-06-03"
+        },
+        {
           "titleEn": "SilverTorch: Index as Model — A New Retrieval Paradigm for Recommendation Systems",
           "titleZh": "SilverTorch: Index as Model — A New Retrieval Paradigm for Recommendation Systems",
           "url": "https://engineering.fb.com/2026/05/26/ml-applications/silvertorch-index-as-model-new-retrieval-paradigm-recommendation-systems/",
@@ -397,12 +403,6 @@
           "titleZh": "Reel Friends: Building Social Discovery that Scales to Billions",
           "url": "https://engineering.fb.com/2026/05/13/ml-applications/reel-friends-building-social-discovery-that-scales-to-billions/",
           "date": "2026-05-13"
-        },
-        {
-          "titleEn": "Migrating Data Ingestion Systems at Meta Scale",
-          "titleZh": "Migrating Data Ingestion Systems at Meta Scale",
-          "url": "https://engineering.fb.com/2026/05/12/data-infrastructure/migrating-data-ingestion-systems-at-meta-scale/",
-          "date": "2026-05-12"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Celebrating Growth, Impact, and Digital Inclusion: Africa Wiki Women On-Wiki Skills Mentorship Program",
-          "titleZh": "Celebrating Growth, Impact, and Digital Inclusion: Africa Wiki Women On-Wiki Skills Mentorship Program",
-          "url": "https://diff.wikimedia.org/2026/06/02/celebrating-growth-impact-and-digital-inclusion-africa-wiki-women-on-wiki-skills-mentorship-program/",
-          "date": "2026-06-02"
+          "titleEn": "Two Years of Success: The Story of WikiMed in Egypt",
+          "titleZh": "Two Years of Success: The Story of WikiMed in Egypt",
+          "url": "https://diff.wikimedia.org/2026/06/09/two-years-of-success-the-story-of-wikimed-in-egypt/",
+          "date": "2026-06-09"
         },
         {
-          "titleEn": "Finding My Voice Through the On Wiki Skill Mentorship",
-          "titleZh": "Finding My Voice Through the On Wiki Skill Mentorship",
-          "url": "https://diff.wikimedia.org/2026/06/02/finding-my-voice-through-the-on-wiki-skill-mentorship/",
-          "date": "2026-06-02"
+          "titleEn": "Tech News 2026 – Issue 24",
+          "titleZh": "Tech News 2026 – Issue 24",
+          "url": "https://diff.wikimedia.org/2026/06/08/tech-news-2026-issue-24/",
+          "date": "2026-06-08"
         },
         {
-          "titleEn": "Tech News 2026 – Issue 23",
-          "titleZh": "Tech News 2026 – Issue 23",
-          "url": "https://diff.wikimedia.org/2026/06/01/tech-news-2026-issue-23/",
-          "date": "2026-06-01"
+          "titleEn": "To the Dagbani Wikimedians User Group: Thank You for Believing in Us",
+          "titleZh": "To the Dagbani Wikimedians User Group: Thank You for Believing in Us",
+          "url": "https://diff.wikimedia.org/2026/06/08/to-the-dagbani-wikimedians-user-group-thank-you-for-believing-in-us/",
+          "date": "2026-06-08"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Early screenings to Sony Pictures' 'Spider-Man: Brand New Day' will be available for U.S. Prime members",
-          "titleZh": "Early screenings to Sony Pictures' 'Spider-Man: Brand New Day' will be available for U.S. Prime members",
-          "url": "https://www.aboutamazon.com/news/retail/spiderman-brand-new-day-tickets-prime?utm_source=rss",
-          "date": "2026-06-02"
+          "titleEn": "How to watch every FIFA World Cup 2026™ match on Fire TV",
+          "titleZh": "How to watch every FIFA World Cup 2026™ match on Fire TV",
+          "url": "https://www.aboutamazon.com/news/devices/fire-tv-fifa-world-cup-2026-how-to-watch?utm_source=rss",
+          "date": "2026-06-08"
         },
         {
-          "titleEn": "How AWS transformed IT by making cloud computing accessible to everyone",
-          "titleZh": "How AWS transformed IT by making cloud computing accessible to everyone",
-          "url": "https://www.aboutamazon.com/news/aws/aws-cloud-computing-it-services?utm_source=rss",
-          "date": "2026-06-02"
+          "titleEn": "Customers can now design merch with Alexa for Shopping on Amazon",
+          "titleZh": "Customers can now design merch with Alexa for Shopping on Amazon",
+          "url": "https://www.aboutamazon.com/news/retail/design-merch-with-ai-alexa-for-shopping?utm_source=rss",
+          "date": "2026-06-08"
         },
         {
-          "titleEn": "The 10 best early Prime Day 2026 deals you can shop right now",
-          "titleZh": "The 10 best early Prime Day 2026 deals you can shop right now",
-          "url": "https://www.aboutamazon.com/news/retail/best-early-prime-day-deals-2026?utm_source=rss",
-          "date": "2026-06-02"
+          "titleEn": "Amazon announces agreement with Corning to boost US fiber optics manufacturing, creating 1,000 advanced manufacturing jobs in North Carolina",
+          "titleZh": "Amazon announces agreement with Corning to boost US fiber optics manufacturing, creating 1,000 advanced manufacturing jobs in North Carolina",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-corning-fiber-optics-1000-jobs-north-carolina?utm_source=rss",
+          "date": "2026-06-08"
         }
       ],
       "hotSearchPills": [
@@ -934,6 +934,12 @@
       "labelZh": "WhatsApp",
       "items": [
         {
+          "titleEn": "Fighting Spyware: An Update From WhatsApp",
+          "titleZh": "Fighting Spyware: An Update From WhatsApp",
+          "url": "https://about.fb.com/news/2026/06/fighting-spyware-an-update-from-whatsapp/",
+          "date": "2026-06-08"
+        },
+        {
           "titleEn": "Introducing Business AI on WhatsApp for Small Businesses in India",
           "titleZh": "Introducing Business AI on WhatsApp for Small Businesses in India",
           "url": "https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses-in-india/",
@@ -944,12 +950,6 @@
           "titleZh": "Introducing a Completely Private Way to Chat With AI",
           "url": "https://about.fb.com/news/2026/05/incognito-chat-whatsapp-meta-ai/",
           "date": "2026-05-13"
-        },
-        {
-          "titleEn": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
-          "titleZh": "Bringing Prepaid Mobile Recharges to WhatsApp Users in India",
-          "url": "https://about.fb.com/news/2026/04/bringing-prepaid-mobile-recharges-to-whatsapp-users-in-india/",
-          "date": "2026-04-29"
         }
       ],
       "hotSearchPills": [
