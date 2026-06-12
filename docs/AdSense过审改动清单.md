@@ -147,6 +147,7 @@ npm run build-hubs && npm run build-seo-locales
 
 | 文档 | 关系 |
 |------|------|
+| `docs/低价值内容与SEO优化实施方案.md` | **canonical 对齐、hub-links noindex、sitemap 瘦身（2026-06-12）** |
 | `docs/AdSense英文抽测记录.md` | 12 篇英文字数 + 送审 URL |
 | `docs/首页原创文章与SEO实施说明.md` | 构建与 SEO |
 | `docs/站点曝光与增长实施方案.md` | GSC（与 AdSense 分开） |

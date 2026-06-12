@@ -80,7 +80,7 @@ function buildPage(link) {
   <meta name="description" content="${escAttr(descEn)}">
   <title>${escAttr(titleEn)} — aogl.cn</title>
   <link rel="canonical" href="${SITE}/en/${hubLinkPath(slug)}">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="noindex,follow">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${SITE}/en/${hubLinkPath(slug)}">
   <meta property="og:title" content="${escAttr(titleEn)} — aogl.cn">
@@ -90,7 +90,6 @@ function buildPage(link) {
   <link rel="stylesheet" href="${sitePath("css/brief.css")}">
   <link rel="stylesheet" href="${sitePath("css/tool-guide.css")}">
   ${GTAG_SCRIPT}
-  <script src="${sitePath("js/adsense.js")}"></script>
   ${buildJsonLd(link, titleEn, descEn)}
 </head>`;
 
@@ -187,7 +186,7 @@ ${items}
   <meta name="description" content="Index of local hub bookmark briefs on aogl.cn — grouped by portal, brands, shopping, and other hubs.">
   <title>Hub bookmark briefs — aogl.cn</title>
   <link rel="canonical" href="${SITE}/en/hub-links/">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="noindex,follow">
   <link rel="stylesheet" href="${sitePath("css/privacy.css")}">
   <link rel="stylesheet" href="${sitePath("css/brief.css")}">
   <script src="${sitePath("js/i18n.js")}"></script>

@@ -98,6 +98,11 @@ function getAllPages() {
   ];
 }
 
+/** Sitemap: indexable pages only — hub-links are noindex navigation helpers (see docs/低价值内容与SEO优化实施方案.md). */
+function getSitemapPages() {
+  return getAllPages().filter((f) => !f.startsWith("hub-links/"));
+}
+
 const toTraditional = OpenCC.Converter({ from: "cn", to: "tw" });
 
 function urlZhCn(filename) {
@@ -205,6 +210,25 @@ function patchJsonLdNode(node, langTag, filename, siteHome, canonicalHref, local
   }
 
   walk(node);
+  syncPageJsonLdToCanonical(node, canonicalHref);
+}
+
+/** Keep page-level JSON-LD url/mainEntityOfPage aligned with this locale's canonical (fixes GSC duplicate-canonical reports). */
+function syncPageJsonLdToCanonical(node, canonicalHref) {
+  if (!node || typeof node !== "object" || !canonicalHref) return;
+  const origin = "https://aogl.cn";
+  function isAoglContentUrl(s) {
+    if (typeof s !== "string" || !s.startsWith(origin)) return false;
+    return CONTENT_PATH_SEGMENTS.some((seg) => s.includes(`/${seg}/`) || s.endsWith(`/${seg}`));
+  }
+  if ("url" in node && isAoglContentUrl(node.url)) node.url = canonicalHref;
+  if (!("mainEntityOfPage" in node)) return;
+  const mep = node.mainEntityOfPage;
+  if (typeof mep === "string" && isAoglContentUrl(mep)) {
+    node.mainEntityOfPage = canonicalHref;
+  } else if (mep && typeof mep === "object" && typeof mep["@id"] === "string" && isAoglContentUrl(mep["@id"])) {
+    mep["@id"] = canonicalHref;
+  }
 }
 
 function slimJsonLdScripts($, langTag, filename, siteHome, canonicalHref, localePrefix = "") {
@@ -561,7 +585,7 @@ function isArticlePage(file) {
 
 function writeSitemap() {
   const lastmod = new Date().toISOString().slice(0, 10);
-  const pages = getAllPages();
+  const pages = getSitemapPages();
   const urls = [];
   for (const file of pages) {
     const art = isArticlePage(file);
