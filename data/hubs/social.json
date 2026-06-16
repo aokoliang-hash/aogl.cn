@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-06-09",
+  "updated": "2026-06-16",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,123 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "New Features to Celebrate 500 Million Monthly Users on Threads",
+      "titleZh": "New Features to Celebrate 500 Million Monthly Users on Threads",
+      "url": "https://about.fb.com/news/2026/06/meta-launching-new-features-500-million-monthly-threads-users/",
+      "date": "2026-06-16",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/Threads-Reaches-500M-Monthly-Active-Users_Heres-Whats-Next_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Threads-Reaches-500M-Monthly-Active-Users_Heres-Whats-Next_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta’s new ‘AI Mode’ on Facebook pulls from public info across its platforms",
+      "titleZh": "Meta’s new ‘AI Mode’ on Facebook pulls from public info across its platforms",
+      "url": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
+      "date": "2026-06-15",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "New AI Tools to Help You Make Things Happen on Facebook",
+      "titleZh": "New AI Tools to Help You Make Things Happen on Facebook",
+      "url": "https://about.fb.com/news/2026/06/new-ai-tools-to-help-you-make-things-happen-on-facebook/",
+      "date": "2026-06-15",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/New-AI-Tools-to-Help-You-Make-Things-on-Facebook_Thumbnail-1.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/New-AI-Tools-to-Help-You-Make-Things-on-Facebook_Thumbnail-1.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "UK unveils sweeping social media ban for users under 16",
+      "titleZh": "UK unveils sweeping social media ban for users under 16",
+      "url": "https://techcrunch.com/2026/06/15/uk-unveils-sweeping-social-media-ban-for-users-under-16/",
+      "date": "2026-06-15",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "The Future Is for Everyone: Free AI Glasses for Every Blind Veteran in America",
+      "titleZh": "The Future Is for Everyone: Free AI Glasses for Every Blind Veteran in America",
+      "url": "https://about.fb.com/news/2026/06/free-ai-glasses-for-every-blind-veteran/",
+      "date": "2026-06-12",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/AI-Glasses-for-Blind-Veterans-in-America_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/AI-Glasses-for-Blind-Veterans-in-America_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta’s Edits app is getting an AI assistant and a desktop version",
+      "titleZh": "Meta’s Edits app is getting an AI assistant and a desktop version",
+      "url": "https://techcrunch.com/2026/06/11/metas-edits-app-is-getting-an-ai-assistant-and-a-desktop-version/",
+      "date": "2026-06-11",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Going All in for Global Football Fans Across Meta Apps",
+      "titleZh": "Going All in for Global Football Fans Across Meta Apps",
+      "url": "https://about.fb.com/news/2026/06/going-all-in-for-global-football-fans-across-meta-apps/",
+      "date": "2026-06-11",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/Going-All-in-for-Global-Football-Fans-Across-Meta-Apps_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Going-All-in-for-Global-Football-Fans-Across-Meta-Apps_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "We’re bringing Walmart Connect to Display & Video 360.",
+      "titleZh": "We’re bringing Walmart Connect to Display & Video 360.",
+      "url": "https://blog.google/products/marketingplatform/360/walmart-connect/",
+      "date": "2026-06-11",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/heroimagenoarrownoborder.max-600x600.format-webp.webp",
+      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/heroimagenoarrownoborder.max-600x600.format-webp.webp"
+    },
+    {
+      "titleEn": "Why Social Media Bans Alone Can’t Solve the Age Verification Dilemma",
+      "titleZh": "Why Social Media Bans Alone Can’t Solve the Age Verification Dilemma",
+      "url": "https://about.fb.com/news/2026/06/how-to-verify-age-online/",
+      "date": "2026-06-11",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/Why-Social-Media-Bans-Alone-Cant-Solve-the-Age-Verification-DilemmaThumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Why-Social-Media-Bans-Alone-Cant-Solve-the-Age-Verification-DilemmaThumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Infrastructure Explained: Compute Power",
+      "titleZh": "Infrastructure Explained: Compute Power",
+      "url": "https://about.fb.com/news/2026/06/what-is-compute-power-meta-ai-infrastructure/",
+      "date": "2026-06-10",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/InfraExplained_Compute_Header.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/InfraExplained_Compute_Header.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "Snapchat limits users under 16 to sharing Spotlights with friends",
+      "titleZh": "Snapchat limits users under 16 to sharing Spotlights with friends",
+      "url": "https://techcrunch.com/2026/06/10/snapchat-limits-users-under-16-to-sharing-spotlights-with-friends/",
+      "date": "2026-06-10",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Meta Partners With Reliance on AI-Enabled Data Center in India",
+      "titleZh": "Meta Partners With Reliance on AI-Enabled Data Center in India",
+      "url": "https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/",
+      "date": "2026-06-10",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partners-With-Reliance-on-AI-Data-Center-in-India_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partners-With-Reliance-on-AI-Data-Center-in-India_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Better Personalization and Changes to Controls for Your Activity From Other Businesses",
+      "titleZh": "Better Personalization and Changes to Controls for Your Activity From Other Businesses",
+      "url": "https://about.fb.com/news/2026/06/better-personalization-and-changes-to-controls-for-your-activity-from-other-businesses/",
+      "date": "2026-06-09",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/Better-Personalization-and-Changes-to-Controls-for-Your-Activity-From-Other-Businesses_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Better-Personalization-and-Changes-to-Controls-for-Your-Activity-From-Other-Businesses_Thumbnail.jpg?fit=890%2C501"
+    },
     {
       "titleEn": "America’s Workforce Academy: The Future Is for Everyone",
       "titleZh": "America’s Workforce Academy: The Future Is for Everyone",
@@ -52,15 +169,6 @@
       "imageSource": ""
     },
     {
-      "titleEn": "Introducing Creator Assistant, Plus More Languages For AI Translations on Facebook",
-      "titleZh": "Introducing Creator Assistant, Plus More Languages For AI Translations on Facebook",
-      "url": "https://about.fb.com/news/2026/06/creator-assistant-more-languages-for-ai-translations-on-facebook/",
-      "date": "2026-06-04",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Introducing-Creator-Assistant-Plus-More-Languages-for-AI-Translations-on-Facebook_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Introducing-Creator-Assistant-Plus-More-Languages-for-AI-Translations-on-Facebook_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
       "titleEn": "Chinese spies are using LinkedIn to lure Westerners into sharing sensitive information",
       "titleZh": "Chinese spies are using LinkedIn to lure Westerners into sharing sensitive information",
       "url": "https://techcrunch.com/2026/06/04/chinese-spies-are-using-linkedin-to-lure-westerners-into-sharing-sensitive-information/",
@@ -68,24 +176,6 @@
       "source": "LinkedIn · TechCrunch",
       "image": "",
       "imageSource": ""
-    },
-    {
-      "titleEn": "Reels Is Shaping India’s Video-First Future Across Gen Z, Women & Bharat",
-      "titleZh": "Reels Is Shaping India’s Video-First Future Across Gen Z, Women & Bharat",
-      "url": "https://about.fb.com/news/2026/06/reels-is-shaping-indias-video-first-future-across-gen-z-women-bharat/",
-      "date": "2026-06-04",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/2026-IPSOS-Report.png?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/2026-IPSOS-Report.png?fit=890%2C501"
-    },
-    {
-      "titleEn": "Leading Tech Companies and Law Enforcement Join Forces to Disrupt Criminal Scam Networks in Southeast Asia",
-      "titleZh": "Leading Tech Companies and Law Enforcement Join Forces to Disrupt Criminal Scam Networks in Southeast Asia",
-      "url": "https://about.fb.com/news/2026/06/leading-tech-companies-law-enforcement-disrupt-criminal-scam-networks-in-southeast-asia/",
-      "date": "2026-06-03",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Leading-Tech-Companies-and-Law-Enforcement-Join-Forces-to-Disrupt-Criminal-Scam-Networks-in-Southeast-Asia_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Leading-Tech-Companies-and-Law-Enforcement-Join-Forces-to-Disrupt-Criminal-Scam-Networks-in-Southeast-Asia_Thumbnail.jpg?fit=890%2C501"
     },
     {
       "titleEn": "Instagram is alerting users who were targeted by hackers during AI chatbot attacks",
@@ -115,15 +205,6 @@
       "imageSource": ""
     },
     {
-      "titleEn": "Be There for Every Customer With Meta Business Agent",
-      "titleZh": "Be There for Every Customer With Meta Business Agent",
-      "url": "https://about.fb.com/news/2026/06/meta-business-agent/",
-      "date": "2026-06-03",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Newsroom-post-title-here_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Newsroom-post-title-here_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
       "titleEn": "Meta tests ‘Series’ for episodic Reels on Instagram and Facebook",
       "titleZh": "Meta tests ‘Series’ for episodic Reels on Instagram and Facebook",
       "url": "https://techcrunch.com/2026/06/02/meta-tests-series-for-episodic-reels-on-instagram-and-facebook/",
@@ -133,91 +214,10 @@
       "imageSource": ""
     },
     {
-      "titleEn": "New 13+ Content Settings for Teen Accounts Expanding Globally on Instagram, Facebook, and Messenger",
-      "titleZh": "New 13+ Content Settings for Teen Accounts Expanding Globally on Instagram, Facebook, and Messenger",
-      "url": "https://about.fb.com/news/2026/06/new-13-plus-content-settings-for-teen-accounts-expanding-globally-on-instagram-facebook-messenger/",
-      "date": "2026-06-02",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Teen-Accounts-Expanding-Globally-on-Instagram-Facebook-and-Messenger_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Teen-Accounts-Expanding-Globally-on-Instagram-Facebook-and-Messenger_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
       "titleEn": "Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access",
       "titleZh": "Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access",
       "url": "https://techcrunch.com/2026/06/01/hackers-hijacked-instagram-accounts-by-tricking-meta-ai-support-chatbot-into-granting-access/",
       "date": "2026-06-01",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "This weekend’s two biggest movies were both directed by YouTubers",
-      "titleZh": "This weekend’s two biggest movies were both directed by YouTubers",
-      "url": "https://techcrunch.com/2026/05/31/this-weekends-two-biggest-movies-were-both-directed-by-youtubers/",
-      "date": "2026-05-31",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "TikTok’s road to becoming a super app",
-      "titleZh": "TikTok’s road to becoming a super app",
-      "url": "https://techcrunch.com/2026/05/30/tiktoks-road-to-becoming-a-super-app/",
-      "date": "2026-05-30",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Protecting Players and Fans during FIFA World Cup 2026™",
-      "titleZh": "Protecting Players and Fans during FIFA World Cup 2026™",
-      "url": "https://about.fb.com/news/2026/05/protecting-players-and-fans-during-fifa-world-cup-2026/",
-      "date": "2026-05-28",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/05/How-to-Spot-and-Avoid-Scams-in-the-Summer-of-Soccer_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/05/How-to-Spot-and-Avoid-Scams-in-the-Summer-of-Soccer_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "YouTube adds new podcast features, including an AI recommendation tool and ‘Auto speed’",
-      "titleZh": "YouTube adds new podcast features, including an AI recommendation tool and ‘Auto speed’",
-      "url": "https://techcrunch.com/2026/05/28/youtube-adds-new-podcast-features-including-an-ai-recommendation-tool-and-auto-speed/",
-      "date": "2026-05-28",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans",
-      "titleZh": "Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans",
-      "url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/",
-      "date": "2026-05-27",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "YouTube will now automatically label AI videos",
-      "titleZh": "YouTube will now automatically label AI videos",
-      "url": "https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/",
-      "date": "2026-05-27",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Google Display Ads has a new home in Demand Gen.",
-      "titleZh": "Google Display Ads has a new home in Demand Gen.",
-      "url": "https://blog.google/products/ads-commerce/google-display-ads-demand-gen/",
-      "date": "2026-05-26",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Ads_Logo_SS_social.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Ads_Logo_SS_social.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
-      "titleZh": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
-      "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
-      "date": "2026-05-26",
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""
