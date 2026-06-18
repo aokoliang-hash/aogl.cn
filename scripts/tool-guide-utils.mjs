@@ -119,6 +119,20 @@ export function guideDesc(guide, lang) {
 }
 
 export function buildToolGuideBodyHtml(guide, lang) {
+  const custom = guide.editorialHtml?.[lang] || guide.editorialHtml?.en;
+  if (custom) {
+    const note =
+      lang === "zh"
+        ? "<p class=\"brief-note\"><strong>说明：</strong>本页为 aogl.cn 书签站整理的工具简介，非厂商官方文档；功能与价格以官网为准。</p>"
+        : "<p class=\"brief-note\"><strong>Note:</strong> Bookmark-style intro on aogl.cn — not the vendor’s official docs. Features and pricing are on their site.</p>";
+    const checked =
+      guide.updated && lang === "zh"
+        ? `<p class="tool-guide-checked">核对日期：<strong>${escHtml(guide.updated)}</strong>。</p>`
+        : guide.updated
+          ? `<p class="tool-guide-checked">Last checked: <strong>${escHtml(guide.updated)}</strong>.</p>`
+          : "";
+    return `${note}${custom}${checked}`;
+  }
   const name = toolName(guide, lang);
   const catId = guide.category_id || "chat-llm";
   const ctx = CAT_CONTEXT[catId] || CAT_CONTEXT["chat-llm"];

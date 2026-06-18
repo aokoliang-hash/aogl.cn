@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang="zh-Hant" data-title-zh="艾琳娜配色與儀式 UI：HTML 設定表維護手記 — aogl.cn" data-desc-zh="續寫艾琳娜線：original/game-girl 設定表中配色硬字段、五表情 CSS 佔位與靜態 HTML 維護約定；非商業遊戲資產。" data-aogl-lang="zht" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="續寫艾琳娜線：original/game-girl 設定表中配色硬字段、五表情 CSS 佔位與靜態 HTML 維護約定；非商業遊戲資產。">
+  <title>艾琳娜配色與儀式 UI：HTML 設定表維護手記 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/zh/articles/game-girl-elena-palette-ritual-notes.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/game-girl-elena-palette-ritual-notes.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/game-girl-elena-palette-ritual-notes.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/game-girl-elena-palette-ritual-notes.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/game-girl-elena-palette-ritual-notes.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/game-girl-elena-palette-ritual-notes.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/game-girl-elena-palette-ritual-notes.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/game-girl-elena-palette-ritual-notes.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/zh/articles/game-girl-elena-palette-ritual-notes.html">
+  <meta property="og:title" content="艾琳娜配色與儀式 UI：HTML 設定表維護手記 — aogl.cn">
+  <meta property="og:description" content="續寫艾琳娜線：original/game-girl 設定表中配色硬字段、五表情 CSS 佔位與靜態 HTML 維護約定；非商業遊戲資產。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/game-girl-elena-palette-ritual-notes.webp">
+  <meta property="og:image:alt" content="Elena Poem of the Sea Wind — palette swatches and ritual UI notes (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/game-girl-elena-palette-ritual-notes.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Hard palette fields · five expression slots · v1.0 maintenance contract","alternativeHeadline":"艾琳娜配色与仪式 UI：HTML 设定表维护手记","datePublished":"2026-06-18","dateModified":"2026-06-18","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/game-girl-elena-palette-ritual-notes.html"},"url":"https://aogl.cn/zh/articles/game-girl-elena-palette-ritual-notes.html","inLanguage":"zh-Hant","description":"Follow-up to Elena (Poem of the Sea Wind): how palette rows, expression discs, and static HTML in original/game-girl stay maintainable—editorial notes, not a shipped game asset pack.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-zht">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具與大模型動態（個人書籤）" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/zh/articles/index.html">本站原創</a></li>
+          <li><a href="/zh/index.html#tools-directory">AI 工具</a></li>
+          <li><a href="/zh/briefs/index.html">快訊</a></li>
+          <li><a href="/zh/games.html">遊戲</a></li>
+          <li><a href="/zh/tech.html">科技</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>更多</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/zh/portal.html">全球站點</a></li>
+              <li><a href="/zh/brands.html">品牌</a></li>
+              <li><a href="/zh/shopping.html">購物</a></li>
+              <li><a href="/zh/life.html">生活</a></li>
+              <li><a href="/zh/social.html">社交</a></li>
+              <li><a href="/zh/tools.html">工具</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/zh/index.html#originals">← 返回首頁 · 本站原創</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>艾琳娜配色與儀式 UI：HTML 設定表維護手記</h1>
+        <p class="article-shell__sub">色板硬字段 · 五表情佔位 · v1.0 維護約定</p>
+        <p class="article-shell__meta"><time datetime="2026-06-18">2026-06-18</time> · 本站原創</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>本文是 <a href="game-girl-elena-sea-wind-reference.html">海島祭司艾琳娜 · 海風之詩</a> 的<strong>續篇</strong>。首篇介紹 HTML 設定表、三視圖源圖與 5/18–5/20 探索圖；這裡寫我日常真正維護的內容：<strong>配色硬字段</strong>、五個表情佔位與設定表裡的「儀式 UI」語氣——仍是個人歸檔，不是商業遊戲 SKU。</p>
+<h2>為什麼另開 URL 而不改首篇</h2>
+<p>把配色規則塞進首發文會淹沒「角色色板」「HTML 設定表維護」等長尾。拆分後，首篇負責「是誰、有哪些文件」，本篇回答「改一個顏色怎樣不弄壞版式」。做法類似 <a href="interactive-3d-earth.html">WebGL 地球</a> 與 <a href="major-planets8-solar-system-textures.html">真實行星貼圖</a> 分兩頁。</p>
+<h2>左欄色板硬字段</h2>
+<p>主色（象牙白 / 天青 / 海藍 / 深海藍）、輔色（沙米 / 暖金）、強調色（杖金 / 冠綠 / 寶石藍）不是裝飾——是<strong>淘汰標準</strong>。新圖若頭髮偏霓虹紫、裙襬變大紅，在換 <code>ChatGPT-Image2.png</code> 之前直接棄用。色塊上的 hex 會抄進提示詞；我不從 PNG 自動吸色（曾有一次壓縮導致膚色漂移）。</p>
+<figure class="article-embed">
+  <iframe src="/original/game-girl/elena_character_sheet.html" title="艾琳娜 HTML 設定表 — 配色與儀式 UI" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>在線設定表：色板、表情行與頁腳「Official Character Design」語氣（僅版式）。</figcaption>
+</figure>
+<h2>五個表情圓：CSS 濾鏡佔位</h2>
+<p>每個情緒圈複用臉部裁剪 + <code>filter</code>，是刻意的技術債：先讓版式可發佈，再補五張手繪表情。對外交付前必須換成真實裁剪——本站保留濾鏡是為了固定 UX 槽位（溫柔 / 微笑 / 沉思 / 堅定 / 喜悅），避免日後插圖到位時佈局跳動。</p>
+<h2>儀式 UI 文案</h2>
+<p>頁腳「Official Character Design · Confidential」營造 AAA 管線感，在本站僅表示<strong>版式語氣</strong>：無 NDA、無發行商、無 SKU。若開源 HTML，會在頁腳上加一句免責；目前海島幻想與假保密欄的反差也是 Demo 的一部分。</p>
+<h2>維護約定（v1.0）</h2>
+<ol>
+  <li>更換 <code>ChatGPT-Image2.png</code> → 必須重查三視圖的 <code>object-position</code>。</li>
+  <li>改 hex 色板 → 更新文章 <code>dateModified</code> 與 changelog 一條。</li>
+  <li>加第六個表情 → 先改 HTML 網格，再畫圖。</li>
+  <li>不在此頁嵌 WebGL / Live2D；動畫另開文章並寫清範圍。</li>
+</ol>
+<h2>配套工具書籤</h2>
+<p>出圖探索：<a href="/zh/tool-guides/gemini-post.html">Gemini</a>、<a href="/zh/tool-guides/midjourney-post.html">Midjourney</a> 備忘。改表代碼：<a href="/zh/tool-guides/cursor-post.html">Cursor</a>。模型政策：<a href="/zh/briefs/index.html">快訊</a>。</p>
+<h2>與遊戲 Hub 的關係</h2>
+<p>我在 <a href="/zh/games.html">games.html</a> 掃第一方標題，再回到 <code>original/game-girl/</code> 做個人美術實驗——流程見 <a href="games-hub-generative-art-workflow.html">遊戲 Hub × 生成式角色美術工作流</a>。商店 RSS 不會自動改設定表。</p>
+<h3>邊界</h3>
+<p>無骨骼、無引擎包、無抽卡數值。第三篇只會在新實物（例如手繪五表情）上線時出現，而不是為堆關鍵詞。</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/zh/about.html" class="footer-legal-link lang-zh">關於</a>
+        <a href="/zh/contact.html" class="footer-legal-link lang-zh">聯繫我們</a>
+        <a href="/zh/changelog.html" class="footer-legal-link lang-zh">更新記錄</a>
+        <a href="/zh/privacy.html" class="footer-legal-link lang-zh">隱私政策</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情鏈接 aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer=""></script>
+</body></html>

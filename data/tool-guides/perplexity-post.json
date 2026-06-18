@@ -11,5 +11,9 @@
   ],
   "category_title_en": "Chat & LLM",
   "category_title_zh": "对话与大模型",
-  "updated": "2026-06-01"
+  "updated": "2026-06-18",
+  "editorialHtml": {
+    "en": "<p>Perplexity is where I ask <strong>one narrow question with citations</strong>—for example “what did this press release say about UE5 nanite” after reading a <a href=\"/games.html\">games hub</a> headline. It complements Claude (long drafting) and Copilot (Microsoft ecosystem).</p><h2>Good questions for site maintenance</h2><ul class=\"brief-bullets\"><li>Verify a chip company acronym before I add it to hub copy.</li><li>Find the canonical IR URL when a headline truncates the domain.</li><li>Cross-check whether a tool rename already happened before I update <code>data/tool-guides/</code>.</li></ul><h2>Bad questions</h2><ul class=\"brief-bullets\"><li>“Write my article for AdSense” — I still author HTML on this site.</li><li>Medical, legal, or investment decisions.</li></ul><h2>Routine</h2><ol><li>Open official link below.</li><li>Paste the exact headline or URL I am unsure about.</li><li>Click through to primary sources; do not cite Perplexity itself as authority.</li><li>Update hub JSON or tool guide with <code>updated</code> date.</li></ol><p>Related: <a href=\"/briefs/index.html\">briefs</a> for lab news · <a href=\"/articles/interactive-3d-earth.html\">WebGL Earth article</a>.</p>",
+    "zh": "<p>Perplexity 用来问<strong>带引用的一条窄问题</strong>——例如在 <a href=\"/games.html\">游戏 Hub</a> 看到标题后查「这篇稿是否提到某引擎」。与 Claude（长文）、Copilot（微软系）互补。</p><h2>适合本站维护的问题</h2><ul class=\"brief-bullets\"><li>写 Hub 文案前核对芯片公司缩写。</li><li>标题截断时找投资者关系 canonical URL。</li><li>改 <code>tool-guides</code> 前确认产品是否已更名。</li></ul><h2>不适合</h2><ul class=\"brief-bullets\"><li>代写 AdSense 文章——HTML 仍由站长写。</li><li>医疗 / 法律 / 投资决策。</li></ul><h2>流程</h2><ol><li>从下方官网进入。</li><li>粘贴不确定的标题或 URL。</li><li>点进一手来源，不以 Perplexity 本身当权威。</li><li>改 JSON 时更新 <code>updated</code> 日期。</li></ol><p>另见：<a href=\"/briefs/index.html\">快讯</a> · <a href=\"/articles/interactive-3d-earth.html\">WebGL 地球文</a>。</p>"
+  }
 }

@@ -1,8 +1,8 @@
-<!DOCTYPE html><html lang="en" data-title-en="Interactive 3D Earth — WebGL globe viewer — aogl.cn" data-desc-en="Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages." data-aogl-lang="en" data-aogl-seo-locale="1"><head>
+<!DOCTYPE html><html lang="en" data-title-en="Interactive 3D Earth — WebGL globe viewer — aogl.cn" data-desc-en="Original aogl.cn WebGL demo and three.js earth texture tutorial notes: real-time 3D globe with blue-marble maps, bump/specular, animated clouds, and atmospheric rim shader; drag to orbit and scroll to zoom for geography outreach." data-aogl-lang="en" data-aogl-seo-locale="1"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
-  <meta name="description" content="Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.">
+  <meta name="description" content="Original aogl.cn WebGL demo and three.js earth texture tutorial notes: real-time 3D globe with blue-marble maps, bump/specular, animated clouds, and atmospheric rim shader; drag to orbit and scroll to zoom for geography outreach.">
   <title>Interactive 3D Earth — WebGL globe viewer — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
   <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
@@ -19,7 +19,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://aogl.cn/en/articles/interactive-3d-earth.html">
   <meta property="og:title" content="Interactive 3D Earth — WebGL globe viewer — aogl.cn">
-  <meta property="og:description" content="Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.">
+  <meta property="og:description" content="Original aogl.cn WebGL demo and three.js earth texture tutorial notes: real-time 3D globe with blue-marble maps, bump/specular, animated clouds, and atmospheric rim shader; drag to orbit and scroll to zoom for geography outreach.">
   <meta property="og:site_name" content="aogl.cn">
   <meta property="og:locale" content="en_US">
   <meta property="og:image" content="https://aogl.cn/upload/articles/interactive-3d-earth.webp">
@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/en/articles/interactive-3d-earth.html","inLanguage":"en","description":"Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/en/articles/interactive-3d-earth.html","inLanguage":"en","description":"Original aogl.cn WebGL demo and three.js earth texture tutorial notes: real-time 3D globe with blue-marble maps, bump/specular, animated clouds, and atmospheric rim shader; drag to orbit and scroll to zoom for geography outreach.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-en">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -47,15 +47,24 @@
       </div>
       <nav class="site-nav" aria-label="Primary">
         <ul class="site-nav-list lang-en">
-          <li><a href="/en/index.html#tools-directory">AI frontier</a></li>
-          <li><a href="/en/portal.html">Top sites</a></li>
-          <li><a href="/en/brands.html">Brands</a></li>
-          <li><a href="/en/shopping.html">Shopping</a></li>
-          <li><a href="/en/life.html">Life</a></li>
-          <li><a href="/en/social.html">Social</a></li>
-          <li><a href="/en/tech.html">Tech</a></li>
+          <li class="is-active"><a href="/en/articles/index.html">Originals</a></li>
+          <li><a href="/en/index.html#tools-directory">AI tools</a></li>
+          <li><a href="/en/briefs/index.html">Briefs</a></li>
           <li><a href="/en/games.html">Games</a></li>
-          <li><a href="/en/tools.html">Utilities</a></li>
+          <li><a href="/en/tech.html">Tech</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>More</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/en/portal.html">Top sites</a></li>
+              <li><a href="/en/brands.html">Brands</a></li>
+              <li><a href="/en/shopping.html">Shopping</a></li>
+              <li><a href="/en/life.html">Life</a></li>
+              <li><a href="/en/social.html">Social</a></li>
+              <li><a href="/en/tools.html">Utilities</a></li>
+              </ul>
+            </details>
+          </li>
         </ul>
       </nav>
       <div class="lang-switch">

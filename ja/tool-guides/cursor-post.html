@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="/css/privacy.css">
   <link rel="stylesheet" href="/css/brief.css">
   <link rel="stylesheet" href="/css/tool-guide.css">
-  <script src="/js/gtag.js"></script>
+    <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebPage","name":"Cursor","description":"Cursor (Coding & IDE) — short guide on aogl.cn with link to the official site.","url":"https://aogl.cn/ja/tool-guides/cursor-post.html","mainEntityOfPage":"https://aogl.cn/ja/tool-guides/cursor-post.html","inLanguage":"ja","about":{"@type":"SoftwareApplication","name":"Cursor","url":"https://cursor.com"}}
@@ -32,6 +32,7 @@
   <script src="/js/i18n.js"></script>
   <div class="top">
     <a href="/ja/index.html#tools-directory" class="lang-ja">← ツール一覧</a>
+    <a href="/ja/guides/index.html" class="lang-ja tool-guide-guides-link">ガイド一覧</a>
     <div class="lang-switch">
       <select class="aogl-lang-select" id="aogl-lang-tool-cursor-post" aria-label="Language"></select>
     </div>
@@ -43,7 +44,7 @@
     <p class="lang-ja tool-guide-cat">Coding &amp; IDE</p>
     </div>
   </div>
-  <div class="lang-ja article-body brief-body"><p class="brief-note"><strong>Note:</strong> Bookmark-style intro on aogl.cn — not the vendor’s official docs. Features and pricing are on their site.</p><p><strong>Cursor</strong> is listed under “Coding &amp; IDE” (AI-assisted coding environments and agents). This page helps you decide whether to open the official site from our directory.</p><h2>Typical uses</h2><ul class="brief-bullets"><li>Inline completion and refactors in the IDE</li><li>Repo-aware Q&amp;A and small feature scaffolding</li><li>Pairing with your existing Git workflow</li></ul><p>Primary domain: <code>cursor.com</code>. Use the button below for the live product, model list, and account settings.</p></div>
+  <div class="lang-ja article-body brief-body"><p class="brief-note"><strong>Note:</strong> Bookmark-style intro on aogl.cn — not the vendor’s official docs. Features and pricing are on their site.</p><p>Cursor is the IDE I use to maintain this static repository: multilang HTML, Node build scripts, and JSON data under <code>data/</code>. I list it under <strong>Coding &amp; IDE</strong> on the <a href="/ja/index.html#tools-directory">tools directory</a> because it is where edits land in git—not where I browse headlines.</p><h2>Typical tasks on aogl.cn</h2><ul class="brief-bullets"><li>Refactor a build script (<code>scripts/build-seo-locale-pages.mjs</code>, hub generators) with repo context.</li><li>Generate a new multilingual HTML shell, then I hand-tune <code>lang-*</code> blocks.</li><li>Find all nav copies before centralizing them in <code>scripts/site-nav.mjs</code>.</li><li>Run <code>npm run build-site</code> in the integrated terminal and fix linter issues file-by-file.</li></ul><h2>How I keep quality high</h2><p>I treat agent suggestions as diffs to review, not commits to blindly accept. Rules that saved this project:</p><ol><li><strong>Scope</strong> — one script or one JSON hub per task; no drive-by reformat of unrelated HTML.</li><li><strong>Build after change</strong> — if <code>build-hubs</code> or <code>build-articles</code> fails, the task is not done.</li><li><strong>No secrets</strong> — AdSense IDs and analytics are already public in <code>js/</code>; still no private tokens in prompts.</li><li><strong>Preserve markers</strong> — comments like <code>INDEX_ORIGINALS_AUTO_START</code> must survive automation.</li></ol><h2>Cursor vs GitHub Copilot</h2><p>Both appear in my directory. Cursor wins when I need cross-file refactors and chat anchored to the workspace; Copilot wins for single-line completions inside a file I already have open. I link both honestly—pick the tool that matches the grain of the task.</p><h2>Limits</h2><ul class="brief-bullets"><li>Cursor does not replace reading vendor docs for Claude, Gemini, or API pricing.</li><li>It will not run GitHub Actions schedules for me—I still rely on <code>.github/workflows/</code>.</li><li>Generated copy for public articles gets a human pass for facts and tone before deploy.</li></ul><p>See also: <a href="/ja/tool-guides/claude-post.html">Claude bookmark notes</a>, <a href="/ja/tool-guides/github-features-copilot.html">GitHub Copilot guide</a>, and <a href="/ja/articles/interactive-3d-earth.html">WebGL article</a> for the kind of demo this repo publishes.</p><p class="tool-guide-checked">Last checked: <strong>2026-06-18</strong>.</p></div>
   <div class="brief-source-box">
     <p class="lang-ja brief-source-cta"><a href="https://cursor.com" rel="noopener noreferrer" target="_blank">公式サイトへ →</a></p>
     <p class="brief-source-url"><a href="https://cursor.com" rel="noopener noreferrer" target="_blank">https://cursor.com</a></p>

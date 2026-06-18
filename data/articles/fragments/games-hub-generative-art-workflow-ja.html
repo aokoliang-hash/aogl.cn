@@ -1,0 +1,46 @@
+<p>This article connects two parts of aogl.cn that usually live in separate tabs: the <a href="/games.html">games hub</a> (first-party Steam / console / publisher RSS headlines) and the <a href="/articles/index.html">editorial articles</a> where I archive generative <strong>character look-dev</strong>. It is a personal Sunday workflow—not a review site, not an art scraping guide, and not affiliated with any storefront.</p>
+
+<h2>The Sunday loop in plain language</h2>
+<ol>
+  <li>Open <code>games.html</code> after <code>npm run fetch-hub-news</code> refreshes Hot mix.</li>
+  <li>Skim for art-direction-heavy posts (reworks, character trailers, style guides)—ignore patch-note-only drops unless I play the title.</li>
+  <li>Ask a narrow generative question in <a href="/tool-guides/midjourney-post.html">Midjourney</a> or <a href="/tool-guides/gemini-post.html">Gemini</a>: “palette + silhouette” only, not “copy this official key art.”</li>
+  <li>Save explorations under <code>original/&lt;project&gt;/</code> with dated filenames; reject anything that drifts identity anchors.</li>
+  <li>If a folder matures, publish an honest article (HTML sheet, contact sheet, or video)—examples below.</li>
+</ol>
+
+<h2>What I refuse to do</h2>
+<ul>
+  <li><strong>No store art scraping</strong> — thumbnails and key art stay on vendor CDNs; I do not mirror them on aogl.cn.</li>
+  <li><strong>No APK / crack indexes</strong> — already excluded in games hub editorial rules.</li>
+  <li><strong>No “10/10 must play” lists</strong> — traffic strategy on this site targets maintainer archives, not generic game rankings.</li>
+  <li><strong>No prompt dumps</strong> — articles explain decisions; they are not SaaS tutorials.</li>
+</ul>
+
+<h2>Case studies already on this site</h2>
+<p>These folders matured from headline-inspired look-dev into standalone URLs:</p>
+<ul>
+  <li><a href="game-girl-elena-sea-wind-reference.html">Elena · Poem of the Sea Wind</a> — island priestess HTML sheet + explorations.</li>
+  <li><a href="game-girl-elena-palette-ritual-notes.html">Elena palette & ritual UI</a> — maintenance notes for the same sheet.</li>
+  <li><a href="role-girl-card-visual-study.html">Role-girl card study</a> — white dress contact sheet line.</li>
+  <li><a href="character-turnaround-walk.html">Turnaround walk</a> — orthographic + walk-cycle discipline.</li>
+</ul>
+<p>None claim to be official fan art for a commercial title; they are practice archives triggered by keeping up with industry visuals.</p>
+
+<h2>When RSS is enough without generative tools</h2>
+<p>If a headline only announces server maintenance, I stop at the hub—no article. The games page is already valuable as a <strong>reading rail</strong>. Generative work earns a new URL only when I produce inspectable files (PNG, HTML, MP4) and can write a scope paragraph.</p>
+
+<h2>Tool directory cross-links</h2>
+<p>Video look-dev: <a href="/tool-guides/runwayml-post.html">Runway</a> notes. Coding the sheet: <a href="/tool-guides/cursor-post.html">Cursor</a>. Long-form copy edits: <a href="/tool-guides/claude-post.html">Claude</a>. Cited web search when a press release references an unfamiliar engine: <a href="/tool-guides/perplexity-post.html">Perplexity</a>. Full list: <a href="/guides/index.html">guides index</a>.</p>
+
+<h2>Publishing checklist before I add articles/index.html rows</h2>
+<ol>
+  <li>Lead paragraph states fictional vs real scope (staging copy, not a listing).</li>
+  <li>English body ≥ 800 words or equivalent depth with figures/embeds.</li>
+  <li>Stable filenames under <code>original/</code> referenced in figcaptions.</li>
+  <li>Internal links to related demos (window composites, WebGL globes, other character lines).</li>
+  <li><code>dateModified</code> updated when assets change; changelog entry for humans.</li>
+</ol>
+
+<h3>Why this belongs in articles/ not games.html</h3>
+<p>Hub pages stay short editorial rails with outbound links. Long workflow prose would dilute their purpose and trigger “thin hub” signals. Articles carry the teachable narrative; games.html stays the Sunday headline strip.</p>

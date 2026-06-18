@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="/css/privacy.css">
   <link rel="stylesheet" href="/css/brief.css">
   <link rel="stylesheet" href="/css/tool-guide.css">
-  <script src="/js/gtag.js"></script>
+    <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebPage","name":"Cursor","description":"Cursor (Coding & IDE) — short guide on aogl.cn with link to the official site.","url":"https://aogl.cn/zh/tool-guides/cursor-post.html","mainEntityOfPage":"https://aogl.cn/zh/tool-guides/cursor-post.html","inLanguage":"zh-Hant","about":{"@type":"SoftwareApplication","name":"Cursor","url":"https://cursor.com"}}
@@ -32,6 +32,7 @@
   <script src="/js/i18n.js"></script>
   <div class="top">
     <a href="/zh/index.html#tools-directory" class="lang-zh">← 工具目錄</a>
+    <a href="/zh/guides/index.html" class="lang-zh tool-guide-guides-link">全部攻略索引</a>
     <div class="lang-switch">
       <select class="aogl-lang-select" id="aogl-lang-tool-cursor-post" aria-label="Language"></select>
     </div>
@@ -43,7 +44,7 @@
     <p class="lang-zh tool-guide-cat">編程與 IDE</p>
     </div>
   </div>
-  <div class="lang-zh article-body brief-body"><p class="brief-note"><strong>說明：</strong>本頁為 aogl.cn 書籤站整理的工具簡介，非廠商官方文檔；功能與價格以官網為準。</p><p><strong>Cursor</strong> 歸類在「編程與 IDE」，屬於AI 編程輔助與智能體環境。本站收錄便於從首頁目錄快速瞭解用途，再一鍵打開官網註冊或使用。</p><h2>常見用途</h2><ul class="brief-bullets"><li>IDE 內補全與重構</li><li>結合倉庫上下文的問答與小功能腳手架</li><li>配合現有 Git 工作流使用</li></ul><p>主域名：<code>cursor.com</code>。若你已使用該工具，建議通過下方按鈕訪問官網以獲取最新模型列表與賬戶設置。</p></div>
+  <div class="lang-zh article-body brief-body"><p class="brief-note"><strong>說明：</strong>本頁為 aogl.cn 書籤站整理的工具簡介，非廠商官方文檔；功能與價格以官網為準。</p><p>Cursor 是我維護本靜態倉庫用的 IDE：多語言 HTML、Node 構建腳本和 <code>data/</code> 下的 JSON。放在<a href="/zh/index.html#tools-directory">工具目錄</a>的「編程與 IDE」裡，因為改動最終要進 git——不是看新聞的地方。</p><h2>在 aogl.cn 上的常見任務</h2><ul class="brief-bullets"><li>重構構建腳本（如 <code>build-seo-locale-pages.mjs</code>、hub 生成器）並保留倉庫上下文。</li><li>生成多語言 HTML 殼，再手改 <code>lang-*</code> 塊。</li><li>集中導航前全局搜索所有 <code>site-nav</code> 副本。</li><li>在集成終端跑 <code>npm run build-site</code> 並逐文件修 lint。</li></ul><h2>怎樣不讓 Agent 改壞站</h2><ol><li><strong>縮小範圍</strong> — 一次一個腳本或一個 hub JSON，不順手格式化無關 HTML。</li><li><strong>必跑構建</strong> — <code>build-hubs</code> / <code>build-articles</code> 失敗則任務未完成。</li><li><strong>不貼密鑰</strong> — 公開腳本里的 AdSense ID 可以，私有 token 不行。</li><li><strong>保留標記</strong> — <code>INDEX_ORIGINALS_AUTO_START</code> 等註釋區間不能被覆蓋。</li></ol><h2>和 GitHub Copilot 的分工</h2><p>目錄裡兩者都有。跨文件重構、以工作區為上下文的對話用 Cursor；單文件內補全用 Copilot 更輕。按任務粒度選，不站隊。</p><h2>侷限</h2><ul class="brief-bullets"><li>不能代替閱讀 Claude、Gemini 或 API 定價的官網文檔。</li><li>不會替我跑 GitHub Actions 定時任務。</li><li>對外文章裡的生成文案發布前仍要人工核對事實與語氣。</li></ul><p>另見：<a href="/zh/tool-guides/claude-post.html">Claude 備忘</a>、<a href="/zh/tool-guides/github-features-copilot.html">GitHub Copilot 簡介</a>、<a href="/zh/articles/interactive-3d-earth.html">WebGL 地球原創文</a>。</p><p class="tool-guide-checked">核對日期：<strong>2026-06-18</strong>。</p></div>
   <div class="brief-source-box">
     <p class="brief-source-label lang-zh">官方網站</p>
     <p class="lang-zh brief-source-cta"><a href="https://cursor.com" rel="noopener noreferrer" target="_blank">打開官網 →</a></p>

@@ -10,6 +10,7 @@ import { faviconSrcForHtml } from "./favicon-local.mjs";
 import { hotMixImageSrcForHtml } from "./hub-image-local.mjs";
 import { localHrefAttr, resolveLocalHref } from "./resolve-local-link.mjs";
 import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
+import { navHtml } from "./site-nav.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -216,34 +217,6 @@ function hotMixItemImageUrl(it, spec) {
   return hubFaviconSrc(hotMixThumbDomain(it.source));
 }
 
-const NAV = [
-  { href: "index.html#tools-directory", file: null, en: "AI frontier", zh: "AI 前沿", ja: "AI最前線", ko: "AI 최전선", fr: "IA — veille", ru: "ИИ — новинки", ar: "أحدث الذكاء الاصطناعي" },
-  { href: "portal.html", file: "portal.html", en: "Top sites", zh: "全球站点", ja: "主要サイト", ko: "주요 사이트", fr: "Grands sites", ru: "Топ сайтов", ar: "أبرز المواقع" },
-  { href: "brands.html", file: "brands.html", en: "Brands", zh: "品牌", ja: "ブランド", ko: "브랜드", fr: "Marques", ru: "Бренды", ar: "العلامات" },
-  { href: "shopping.html", file: "shopping.html", en: "Shopping", zh: "购物", ja: "ショッピング", ko: "쇼핑", fr: "Shopping", ru: "Шопинг", ar: "التسوق" },
-  { href: "life.html", file: "life.html", en: "Life", zh: "生活", ja: "ライフ", ko: "라이프", fr: "Vie", ru: "Сервисы", ar: "الحياة الرقمية" },
-  { href: "social.html", file: "social.html", en: "Social", zh: "社交", ja: "ソーシャル", ko: "소셜", fr: "Social", ru: "Соцсети", ar: "التواصل" },
-  { href: "tech.html", file: "tech.html", en: "Tech", zh: "科技", ja: "テック", ko: "테크", fr: "Tech", ru: "Техно", ar: "التقنية" },
-  { href: "games.html", file: "games.html", en: "Games", zh: "游戏", ja: "ゲーム", ko: "게임", fr: "Jeux", ru: "Игры", ar: "الألعاب" },
-  { href: "tools.html", file: "tools.html", en: "Utilities", zh: "工具", ja: "実用ツール", ko: "실용 도구", fr: "Utilitaires", ru: "Утилиты", ar: "أدوات مساعدة" },
-];
-
-function navLabel(n, lang) {
-  return n[lang] || n.en;
-}
-
-function navHtml(activeFile) {
-  return LOCALES.map(
-    (lang) => `        <ul class="site-nav-list lang-${lang}">
-${NAV.map((n) => {
-          const isActive =
-            (n.file != null && n.file === activeFile) || (n.file === null && activeFile === "index.html");
-          const cur = isActive ? ' class="is-active"' : "";
-          return `          <li${cur}><a href="${esc(n.href)}">${esc(navLabel(n, lang))}</a></li>`;
-        }).join("\n")}
-        </ul>`
-  ).join("\n");
-}
 
 function jsonLdItemList(name, items) {
   return {
@@ -635,7 +608,7 @@ ${JSON.stringify({ "@context": "https://schema.org", "@graph": graph }, null, 2)
 ${brandHeadings()}
       </div>
       <nav class="site-nav" aria-label="Primary">
-${navHtml(activeFile)}
+${navHtml({ activeFile })}
       </nav>
       <div class="lang-switch">
         <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>

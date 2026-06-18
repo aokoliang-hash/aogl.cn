@@ -233,3 +233,38 @@
   border: 1px solid var(--border);
   vertical-align: middle;
 }
+
+.guides-index-back {
+  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+}
+.guides-index-sections {
+  margin-top: 1.25rem;
+}
+.guides-index-cat + .guides-index-cat {
+  margin-top: 1.75rem;
+}
+.guides-index-cat-title {
+  margin-bottom: 0.65rem;
+}
+.guides-index-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.45rem 1rem;
+}
+.guides-index-item a {
+  display: block;
+  padding: 0.45rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+.guides-index-item a:hover {
+  border-color: rgba(125, 211, 252, 0.45);
+  color: var(--accent);
+}

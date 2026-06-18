@@ -18,7 +18,22 @@ If a link is wrong, renamed, or should be removed, please open an issue using th
 
 ---
 
-## Build (local)
+## Editorial demos (share these)
+
+Primary content is **not** the link lists—it is maintainer-written articles and tool notes:
+
+| Page | Topic |
+|------|--------|
+| [Interactive 3D Earth](https://aogl.cn/en/articles/interactive-3d-earth.html) | WebGL / Three.js globe demo |
+| [Elena · Sea-Wind reference](https://aogl.cn/en/articles/game-girl-elena-sea-wind-reference.html) | Game character HTML sheet |
+| [Elena palette & ritual UI](https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html) | Character sheet maintenance |
+| [Games hub × generative art](https://aogl.cn/en/articles/games-hub-generative-art-workflow.html) | RSS headlines → look-dev workflow |
+| [AI tool guides index](https://aogl.cn/en/guides/index.html) | Workflow notes for 50+ tools |
+| [All editorial articles](https://aogl.cn/en/articles/index.html) | Newest first |
+
+Growth and column strategy (maintainer doc, Chinese): `docs/流量增长与栏目整改实施方案.md` in this repo.
+
+---
 
 Requires **Node.js 20+**.
 

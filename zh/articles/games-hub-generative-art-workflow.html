@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="zh-Hant" data-title-zh="遊戲 Hub 快訊 × 生成式角色美術：個人工作流備忘 — aogl.cn" data-desc-zh="從 games.html 官方 RSS 標題出發，如何用生成式工具做個人角色 look-dev 並寫入 articles/；不抓取商店美術、非評測。" data-aogl-lang="zht" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="從 games.html 官方 RSS 標題出發，如何用生成式工具做個人角色 look-dev 並寫入 articles/；不抓取商店美術、非評測。">
+  <title>遊戲 Hub 快訊 × 生成式角色美術：個人工作流備忘 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/zh/articles/games-hub-generative-art-workflow.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/games-hub-generative-art-workflow.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/games-hub-generative-art-workflow.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/games-hub-generative-art-workflow.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/games-hub-generative-art-workflow.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/games-hub-generative-art-workflow.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/games-hub-generative-art-workflow.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/games-hub-generative-art-workflow.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/games-hub-generative-art-workflow.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/games-hub-generative-art-workflow.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/zh/articles/games-hub-generative-art-workflow.html">
+  <meta property="og:title" content="遊戲 Hub 快訊 × 生成式角色美術：個人工作流備忘 — aogl.cn">
+  <meta property="og:description" content="從 games.html 官方 RSS 標題出發，如何用生成式工具做個人角色 look-dev 並寫入 articles/；不抓取商店美術、非評測。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/games-hub-generative-art-workflow.webp">
+  <meta property="og:image:alt" content="Games hub RSS plus generative character look-dev workflow (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/games-hub-generative-art-workflow.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"games.html hot mix · no official art scraping · archive in articles/","alternativeHeadline":"游戏 Hub 快讯 × 生成式角色美术：个人工作流备忘","datePublished":"2026-06-18","dateModified":"2026-06-18","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/games-hub-generative-art-workflow.html"},"url":"https://aogl.cn/zh/articles/games-hub-generative-art-workflow.html","inLanguage":"zh-Hant","description":"How I read first-party headlines on games.html, run small generative look-dev passes, and publish honest notes under articles/—without scraping store art or writing reviews.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-zht">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具與大模型動態（個人書籤）" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/zh/articles/index.html">本站原創</a></li>
+          <li><a href="/zh/index.html#tools-directory">AI 工具</a></li>
+          <li><a href="/zh/briefs/index.html">快訊</a></li>
+          <li><a href="/zh/games.html">遊戲</a></li>
+          <li><a href="/zh/tech.html">科技</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>更多</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/zh/portal.html">全球站點</a></li>
+              <li><a href="/zh/brands.html">品牌</a></li>
+              <li><a href="/zh/shopping.html">購物</a></li>
+              <li><a href="/zh/life.html">生活</a></li>
+              <li><a href="/zh/social.html">社交</a></li>
+              <li><a href="/zh/tools.html">工具</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/zh/index.html#originals">← 返回首頁 · 本站原創</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>遊戲 Hub 快訊 × 生成式角色美術：個人工作流備忘</h1>
+        <p class="article-shell__sub">games.html Hot mix · 非官方美術抓取 · articles 歸檔</p>
+        <p class="article-shell__meta"><time datetime="2026-06-18">2026-06-18</time> · 本站原創</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>本文把 aogl.cn 上兩個常分開看的部分連起來：<a href="/zh/games.html">遊戲 Hub</a>（Steam / 御三家 / 發行商第一方 RSS）與<a href="/zh/articles/index.html">原創文章</a>裡歸檔的生成式<strong>角色 look-dev</strong>。是個人週日流程——不是評測站、不是美術抓取教程，也與任何商店無隸屬關係。</p>
+<h2>週日循環（白話）</h2>
+<ol>
+  <li>跑完 <code>fetch-hub-news</code> 後打開 <code>games.html</code> 看 Hot mix。</li>
+  <li>挑美術向標題（重製、角色預告、風格指南）；純服務器維護類通常止步於 Hub。</li>
+  <li>在 <a href="/zh/tool-guides/midjourney-post.html">Midjourney</a> 或 <a href="/zh/tool-guides/gemini-post.html">Gemini</a> 問窄問題：只要「配色 + 剪影」，不「復刻這張官方 KV」。</li>
+  <li>探索圖存 <code>original/項目名/</code> 並帶日期；偏離身份錨點的直接棄。</li>
+  <li>文件夾成熟後寫一篇誠實手記（HTML 設定表、contact sheet 或視頻）。</li>
+</ol>
+<h2>明確不做的事</h2>
+<ul>
+  <li><strong>不抓商店美術</strong> — KV 與縮略圖留在官方 CDN，本站不鏡像。</li>
+  <li><strong>無破解 / APK 索引</strong> — 與遊戲 Hub 排除項一致。</li>
+  <li><strong>不寫「必玩十大」</strong> — 本站流量策略是維護者歸檔，不是泛遊戲榜單。</li>
+  <li><strong>不堆提示詞教程</strong> — 文章講取捨，不是 SaaS 說明書。</li>
+</ul>
+<h2>本站已有案例</h2>
+<ul>
+  <li><a href="game-girl-elena-sea-wind-reference.html">艾琳娜 · 海風之詩</a> — 海島祭司 HTML 設定表。</li>
+  <li><a href="game-girl-elena-palette-ritual-notes.html">艾琳娜配色與儀式 UI</a> — 設定表維護手記。</li>
+  <li><a href="role-girl-card-visual-study.html">角色卡牌視覺練習</a> — 白裙 contact sheet。</li>
+  <li><a href="character-turnaround-walk.html">角色設計手記</a> — 四視圖與行走循環。</li>
+</ul>
+<p>均非某商業遊戲的官方同人聲明，而是「跟著行業視覺做練習」的歸檔。</p>
+<h2>何時停在 RSS 就夠了</h2>
+<p>若標題只是停服維護，不必開生成工具、也不必新文章。遊戲頁作為<strong>閱讀軌</strong>已有價值；只有產出可檢查的 PNG / HTML / MP4 並寫好範圍段時，才新增 articles URL。</p>
+<h2>工具書籤</h2>
+<p>視頻：<a href="/zh/tool-guides/runwayml-post.html">Runway</a>；寫表：<a href="/zh/tool-guides/cursor-post.html">Cursor</a>；長文：<a href="/zh/tool-guides/claude-post.html">Claude</a>；查陌生引擎名：<a href="/zh/tool-guides/perplexity-post.html">Perplexity</a>；全集：<a href="/zh/guides/index.html">攻略索引</a>。</p>
+<h2>發文章前自檢</h2>
+<ol>
+  <li>首段寫明虛構 / 演練範圍，非真實房源或商品。</li>
+  <li>英文正文約 800 詞或同等深度，含圖 / 嵌入。</li>
+  <li><code>original/</code> 文件名穩定且在 figcaption 中可查。</li>
+  <li>內鏈到相關 Demo（窗景合成、WebGL、其它角色線）。</li>
+  <li>改資產則更新 <code>dateModified</code> 與 changelog。</li>
+</ol>
+<h3>為何放在 articles 而非 games.html</h3>
+<p>Hub 頁保持短導語 + 外鏈；長流程會稀釋定位並帶來「薄頁」風險。可教敘事放文章，games 頁繼續當週日標題條。</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/zh/about.html" class="footer-legal-link lang-zh">關於</a>
+        <a href="/zh/contact.html" class="footer-legal-link lang-zh">聯繫我們</a>
+        <a href="/zh/changelog.html" class="footer-legal-link lang-zh">更新記錄</a>
+        <a href="/zh/privacy.html" class="footer-legal-link lang-zh">隱私政策</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情鏈接 aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer=""></script>
+</body></html>

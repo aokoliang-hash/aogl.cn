@@ -1,0 +1,45 @@
+<p>本文把 aogl.cn 上两个常分开看的部分连起来：<a href="/games.html">游戏 Hub</a>（Steam / 御三家 / 发行商第一方 RSS）与<a href="/articles/index.html">原创文章</a>里归档的生成式<strong>角色 look-dev</strong>。是个人周日流程——不是评测站、不是美术抓取教程，也与任何商店无隶属关系。</p>
+
+<h2>周日循环（白话）</h2>
+<ol>
+  <li>跑完 <code>fetch-hub-news</code> 后打开 <code>games.html</code> 看 Hot mix。</li>
+  <li>挑美术向标题（重制、角色预告、风格指南）；纯服务器维护类通常止步于 Hub。</li>
+  <li>在 <a href="/tool-guides/midjourney-post.html">Midjourney</a> 或 <a href="/tool-guides/gemini-post.html">Gemini</a> 问窄问题：只要「配色 + 剪影」，不「复刻这张官方 KV」。</li>
+  <li>探索图存 <code>original/项目名/</code> 并带日期；偏离身份锚点的直接弃。</li>
+  <li>文件夹成熟后写一篇诚实手记（HTML 设定表、contact sheet 或视频）。</li>
+</ol>
+
+<h2>明确不做的事</h2>
+<ul>
+  <li><strong>不抓商店美术</strong> — KV 与缩略图留在官方 CDN，本站不镜像。</li>
+  <li><strong>无破解 / APK 索引</strong> — 与游戏 Hub 排除项一致。</li>
+  <li><strong>不写「必玩十大」</strong> — 本站流量策略是维护者归档，不是泛游戏榜单。</li>
+  <li><strong>不堆提示词教程</strong> — 文章讲取舍，不是 SaaS 说明书。</li>
+</ul>
+
+<h2>本站已有案例</h2>
+<ul>
+  <li><a href="game-girl-elena-sea-wind-reference.html">艾琳娜 · 海风之诗</a> — 海岛祭司 HTML 设定表。</li>
+  <li><a href="game-girl-elena-palette-ritual-notes.html">艾琳娜配色与仪式 UI</a> — 设定表维护手记。</li>
+  <li><a href="role-girl-card-visual-study.html">角色卡牌视觉练习</a> — 白裙 contact sheet。</li>
+  <li><a href="character-turnaround-walk.html">角色设计手记</a> — 四视图与行走循环。</li>
+</ul>
+<p>均非某商业游戏的官方同人声明，而是「跟着行业视觉做练习」的归档。</p>
+
+<h2>何时停在 RSS 就够了</h2>
+<p>若标题只是停服维护，不必开生成工具、也不必新文章。游戏页作为<strong>阅读轨</strong>已有价值；只有产出可检查的 PNG / HTML / MP4 并写好范围段时，才新增 articles URL。</p>
+
+<h2>工具书签</h2>
+<p>视频：<a href="/tool-guides/runwayml-post.html">Runway</a>；写表：<a href="/tool-guides/cursor-post.html">Cursor</a>；长文：<a href="/tool-guides/claude-post.html">Claude</a>；查陌生引擎名：<a href="/tool-guides/perplexity-post.html">Perplexity</a>；全集：<a href="/guides/index.html">攻略索引</a>。</p>
+
+<h2>发文章前自检</h2>
+<ol>
+  <li>首段写明虚构 / 演练范围，非真实房源或商品。</li>
+  <li>英文正文约 800 词或同等深度，含图 / 嵌入。</li>
+  <li><code>original/</code> 文件名稳定且在 figcaption 中可查。</li>
+  <li>内链到相关 Demo（窗景合成、WebGL、其它角色线）。</li>
+  <li>改资产则更新 <code>dateModified</code> 与 changelog。</li>
+</ol>
+
+<h3>为何放在 articles 而非 games.html</h3>
+<p>Hub 页保持短导语 + 外链；长流程会稀释定位并带来「薄页」风险。可教叙事放文章，games 页继续当周日标题条。</p>

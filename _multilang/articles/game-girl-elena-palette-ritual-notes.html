@@ -1,0 +1,572 @@
+<!DOCTYPE html><html lang="en" data-title-en="Elena palette &amp; ritual UI — maintaining the HTML character sheet — aogl.cn" data-desc-en="Follow-up to Elena (Poem of the Sea Wind): how palette rows, expression discs, and static HTML in original/game-girl stay maintainable—editorial notes, not a shipped game asset pack." data-title-zh="艾琳娜配色与仪式 UI：HTML 设定表维护手记 — aogl.cn" data-desc-zh="续写艾琳娜线：original/game-girl 设定表中配色硬字段、五表情 CSS 占位与静态 HTML 维护约定；非商业游戏资产。" data-title-ja="エレナ配色と儀式UI — HTML設定表の保守メモ — aogl.cn" data-desc-ja="エレナ続編：game-girl 設定表の配色とHTML保守。" data-title-ko="엘레나 팔레트·의식 UI — HTML 설정표 유지 메모 — aogl.cn" data-desc-ko="엘레나 후속: game-girl 설정표 팔레트·HTML 유지." data-title-fr="Elena — palette et UI rituel (fiche HTML) — aogl.cn" data-desc-fr="Suite Elena : palette et maintenance HTML dans game-girl/." data-title-ru="Элена — палитра и ритуальный UI (HTML-лист) — aogl.cn" data-desc-ru="Продолжение Элены: палитра и сопровождение HTML в game-girl/." data-title-ar="إيلينا — لوحة الألوان وواجهة الطقوس (ورقة HTML) — aogl.cn" data-desc-ar="تابع إيلينا: لوحة الألوان وصيانة HTML في game-girl/."><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Follow-up to Elena (Poem of the Sea Wind): how palette rows, expression discs, and static HTML in original/game-girl stay maintainable—editorial notes, not a shipped game asset pack.">
+  <title>Elena palette &amp; ritual UI — maintaining the HTML character sheet — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html">
+  <meta property="og:title" content="Elena palette &amp; ritual UI — maintaining the HTML character sheet — aogl.cn">
+  <meta property="og:description" content="Follow-up to Elena (Poem of the Sea Wind): how palette rows, expression discs, and static HTML in original/game-girl stay maintainable—editorial notes, not a shipped game asset pack.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/game-girl-elena-palette-ritual-notes.webp">
+  <meta property="og:image:alt" content="Elena Poem of the Sea Wind — palette swatches and ritual UI notes (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/game-girl-elena-palette-ritual-notes.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Hard palette fields · five expression slots · v1.0 maintenance contract","alternativeHeadline":"艾琳娜配色与仪式 UI：HTML 设定表维护手记","datePublished":"2026-06-18","dateModified":"2026-06-18","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html"},"url":"https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html","inLanguage":"mul","description":"Follow-up to Elena (Poem of the Sea Wind): how palette rows, expression discs, and static HTML in original/game-girl stay maintainable—editorial notes, not a shipped game asset pack.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ru brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ar brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li class="is-active"><a href="/articles/index.html">Originals</a></li>
+          <li><a href="/index.html#tools-directory">AI tools</a></li>
+          <li><a href="/briefs/index.html">Briefs</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>More</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">Top sites</a></li>
+              <li><a href="/brands.html">Brands</a></li>
+              <li><a href="/shopping.html">Shopping</a></li>
+              <li><a href="/life.html">Life</a></li>
+              <li><a href="/social.html">Social</a></li>
+              <li><a href="/tools.html">Utilities</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/articles/index.html">本站原创</a></li>
+          <li><a href="/index.html#tools-directory">AI 工具</a></li>
+          <li><a href="/briefs/index.html">快讯</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>更多</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">全球站点</a></li>
+              <li><a href="/brands.html">品牌</a></li>
+              <li><a href="/shopping.html">购物</a></li>
+              <li><a href="/life.html">生活</a></li>
+              <li><a href="/social.html">社交</a></li>
+              <li><a href="/tools.html">工具</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-ja">
+          <li class="is-active"><a href="/articles/index.html">オリジナル</a></li>
+          <li><a href="/index.html#tools-directory">AIツール</a></li>
+          <li><a href="/briefs/index.html">速報</a></li>
+          <li><a href="/games.html">ゲーム</a></li>
+          <li><a href="/tech.html">テック</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>その他</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">主要サイト</a></li>
+              <li><a href="/brands.html">ブランド</a></li>
+              <li><a href="/shopping.html">ショッピング</a></li>
+              <li><a href="/life.html">ライフ</a></li>
+              <li><a href="/social.html">ソーシャル</a></li>
+              <li><a href="/tools.html">実用ツール</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-ko">
+          <li class="is-active"><a href="/articles/index.html">오리지널</a></li>
+          <li><a href="/index.html#tools-directory">AI 도구</a></li>
+          <li><a href="/briefs/index.html">속보</a></li>
+          <li><a href="/games.html">게임</a></li>
+          <li><a href="/tech.html">테크</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>더보기</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">주요 사이트</a></li>
+              <li><a href="/brands.html">브랜드</a></li>
+              <li><a href="/shopping.html">쇼핑</a></li>
+              <li><a href="/life.html">라이프</a></li>
+              <li><a href="/social.html">소셜</a></li>
+              <li><a href="/tools.html">실용 도구</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-fr">
+          <li class="is-active"><a href="/articles/index.html">Originaux</a></li>
+          <li><a href="/index.html#tools-directory">Outils IA</a></li>
+          <li><a href="/briefs/index.html">Brèves</a></li>
+          <li><a href="/games.html">Jeux</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>Plus</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">Grands sites</a></li>
+              <li><a href="/brands.html">Marques</a></li>
+              <li><a href="/shopping.html">Shopping</a></li>
+              <li><a href="/life.html">Vie</a></li>
+              <li><a href="/social.html">Social</a></li>
+              <li><a href="/tools.html">Utilitaires</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-ru">
+          <li class="is-active"><a href="/articles/index.html">Авторское</a></li>
+          <li><a href="/index.html#tools-directory">ИИ‑инструменты</a></li>
+          <li><a href="/briefs/index.html">Сводки</a></li>
+          <li><a href="/games.html">Игры</a></li>
+          <li><a href="/tech.html">Техно</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>Ещё</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">Топ сайтов</a></li>
+              <li><a href="/brands.html">Бренды</a></li>
+              <li><a href="/shopping.html">Шопинг</a></li>
+              <li><a href="/life.html">Сервисы</a></li>
+              <li><a href="/social.html">Соцсети</a></li>
+              <li><a href="/tools.html">Утилиты</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-ar">
+          <li class="is-active"><a href="/articles/index.html">محتوى أصلي</a></li>
+          <li><a href="/index.html#tools-directory">أدوات الذكاء</a></li>
+          <li><a href="/briefs/index.html">عناوين</a></li>
+          <li><a href="/games.html">الألعاب</a></li>
+          <li><a href="/tech.html">التقنية</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>المزيد</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">أبرز المواقع</a></li>
+              <li><a href="/brands.html">العلامات</a></li>
+              <li><a href="/shopping.html">التسوق</a></li>
+              <li><a href="/life.html">الحياة الرقمية</a></li>
+              <li><a href="/social.html">التواصل</a></li>
+              <li><a href="/tools.html">أدوات مساعدة</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Elena palette &amp; ritual UI — maintaining the HTML character sheet</h1>
+        <p class="article-shell__sub">Hard palette fields · five expression slots · v1.0 maintenance contract</p>
+        <p class="article-shell__meta"><time datetime="2026-06-18">2026-06-18</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This is a <strong>follow-up</strong> to <a href="game-girl-elena-sea-wind-reference.html">Elena · Poem of the Sea Wind</a> on aogl.cn. The first article introduced the HTML sheet, turnaround source, and May 18–20 exploration PNGs. Here I document what I actually maintain week to week: the <strong>palette contract</strong>, the five expression placeholders, and the “ritual UI” tone in <code>elena_character_sheet.html</code>—still personal archive work, not a commercial game SKU.</p>
+
+<h2>Why a second URL instead of editing the first post</h2>
+<p>Merging palette rules into the launch article would bury searchable phrases like <em>character palette swatches</em> and <em>HTML reference sheet maintenance</em>. Splitting lets the first page stay the onboarding story (who Elena is, what files exist) while this page answers “how do I change a color without breaking the sheet?” That mirrors how I split <a href="interactive-3d-earth.html">Earth WebGL</a> from <a href="major-planets8-solar-system-textures.html">real planet textures</a>.</p>
+
+<h2>Hard palette rows in the left panel</h2>
+<p>The sheet encodes primaries (ivory / sky blue / ocean blue / deep sea), secondaries (sand beige / warm gold), and accents (staff gold / crown green / gem blue). These are not decorative CSS—they are <strong>rejection criteria</strong>. If a new generative still pushes hair toward neon purple or shifts the skirt to crimson, I discard the frame before it touches <code>ChatGPT-Image2.png</code>. The inline swatches use hex values I copy into prompts as anchors; I do not auto-sync hex from PNG samples (that lied once when compression shifted skin tone).</p>
+
+<figure class="article-embed">
+  <iframe src="../original/game-girl/elena_character_sheet.html" title="Elena HTML sheet — palette and ritual UI" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Live sheet: palette swatches, expression row, and “Official Character Design” footer tone (layout only).</figcaption>
+</figure>
+
+<h2>Five expression discs: CSS filters as placeholders</h2>
+<p>Each mood circle reuses the face crop with <code>filter:saturate/brightness/hue-rotate</code>. That is intentional technical debt: I wanted the sheet shippable before five painted expressions existed. The footer of this article is honest—<strong>replace filters with real crops</strong> before any client delivery. For aogl.cn the filters document the UX slots (gentle / smile / contemplative / resolute / joyful) so layout does not jump when art arrives.</p>
+
+<h2>Ritual UI copy (confidential footer)</h2>
+<p>“Official Character Design · Confidential” reads like a AAA pipeline footer. On this site it signals <em>layout tone</em> only. I keep it because playtesters said the sheet felt more “real” with a footer bar—even though there is no NDA, no publisher, and no SKU. If I ever open-source the HTML, I will add a one-line disclaimer above the footer; until then the contrast between playful island lore and faux-confidential chrome is part of the demo.</p>
+
+<h2>Maintenance contract (v1.0)</h2>
+<ol>
+  <li>Replace <code>ChatGPT-Image2.png</code> → re-check all three <code>object-position</code> crops.</li>
+  <li>Change a hex swatch → update this article’s <code>dateModified</code> and one changelog bullet.</li>
+  <li>Add a sixth expression → widen the grid in HTML first, then paint—never the reverse.</li>
+  <li>Do not embed WebGL or Live2D here; animation belongs in a future article with its own scope paragraph.</li>
+</ol>
+
+<h2>Tool bookmarks I use beside the sheet</h2>
+<p>Look-dev stills: <a href="/tool-guides/gemini-post.html">Gemini</a> or <a href="/tool-guides/midjourney-post.html">Midjourney</a> notes on this site. Code edits to the sheet: <a href="/tool-guides/cursor-post.html">Cursor</a>. Official model news (if I need a policy reminder): <a href="/briefs/index.html">briefs</a>. None of these links are endorsements—they are my directory entries.</p>
+
+<h2>Relation to games hub</h2>
+<p>I read <a href="/games.html">games.html</a> for first-party headlines, then return to character folders like <code>original/game-girl/</code> for personal art passes—see <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a> for that Sunday routine. Store RSS does not auto-update the sheet; humans still merge decisions.</p>
+
+<h3>Scope boundary</h3>
+<p>No rig, no engine import, no gacha rates, no voice casting. If Elena gets a third article, it will be because a new artifact shipped (for example painted expressions)—not because I padded keywords.</p></article>
+    </div>
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>艾琳娜配色与仪式 UI：HTML 设定表维护手记</h1>
+        <p class="article-shell__sub">色板硬字段 · 五表情占位 · v1.0 维护约定</p>
+        <p class="article-shell__meta"><time datetime="2026-06-18">2026-06-18</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>本文是 <a href="game-girl-elena-sea-wind-reference.html">海岛祭司艾琳娜 · 海风之诗</a> 的<strong>续篇</strong>。首篇介绍 HTML 设定表、三视图源图与 5/18–5/20 探索图；这里写我日常真正维护的内容：<strong>配色硬字段</strong>、五个表情占位与设定表里的「仪式 UI」语气——仍是个人归档，不是商业游戏 SKU。</p>
+
+<h2>为什么另开 URL 而不改首篇</h2>
+<p>把配色规则塞进首发文会淹没「角色色板」「HTML 设定表维护」等长尾。拆分后，首篇负责「是谁、有哪些文件」，本篇回答「改一个颜色怎样不弄坏版式」。做法类似 <a href="interactive-3d-earth.html">WebGL 地球</a> 与 <a href="major-planets8-solar-system-textures.html">真实行星贴图</a> 分两页。</p>
+
+<h2>左栏色板硬字段</h2>
+<p>主色（象牙白 / 天青 / 海蓝 / 深海蓝）、辅色（沙米 / 暖金）、强调色（杖金 / 冠绿 / 宝石蓝）不是装饰——是<strong>淘汰标准</strong>。新图若头发偏霓虹紫、裙摆变大红，在换 <code>ChatGPT-Image2.png</code> 之前直接弃用。色块上的 hex 会抄进提示词；我不从 PNG 自动吸色（曾有一次压缩导致肤色漂移）。</p>
+
+<figure class="article-embed">
+  <iframe src="../original/game-girl/elena_character_sheet.html" title="艾琳娜 HTML 设定表 — 配色与仪式 UI" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>在线设定表：色板、表情行与页脚「Official Character Design」语气（仅版式）。</figcaption>
+</figure>
+
+<h2>五个表情圆：CSS 滤镜占位</h2>
+<p>每个情绪圈复用脸部裁剪 + <code>filter</code>，是刻意的技术债：先让版式可发布，再补五张手绘表情。对外交付前必须换成真实裁剪——本站保留滤镜是为了固定 UX 槽位（温柔 / 微笑 / 沉思 / 坚定 / 喜悦），避免日后插图到位时布局跳动。</p>
+
+<h2>仪式 UI 文案</h2>
+<p>页脚「Official Character Design · Confidential」营造 AAA 管线感，在本站仅表示<strong>版式语气</strong>：无 NDA、无发行商、无 SKU。若开源 HTML，会在页脚上加一句免责；目前海岛幻想与假保密栏的反差也是 Demo 的一部分。</p>
+
+<h2>维护约定（v1.0）</h2>
+<ol>
+  <li>更换 <code>ChatGPT-Image2.png</code> → 必须重查三视图的 <code>object-position</code>。</li>
+  <li>改 hex 色板 → 更新文章 <code>dateModified</code> 与 changelog 一条。</li>
+  <li>加第六个表情 → 先改 HTML 网格，再画图。</li>
+  <li>不在此页嵌 WebGL / Live2D；动画另开文章并写清范围。</li>
+</ol>
+
+<h2>配套工具书签</h2>
+<p>出图探索：<a href="/tool-guides/gemini-post.html">Gemini</a>、<a href="/tool-guides/midjourney-post.html">Midjourney</a> 备忘。改表代码：<a href="/tool-guides/cursor-post.html">Cursor</a>。模型政策：<a href="/briefs/index.html">快讯</a>。</p>
+
+<h2>与游戏 Hub 的关系</h2>
+<p>我在 <a href="/games.html">games.html</a> 扫第一方标题，再回到 <code>original/game-girl/</code> 做个人美术实验——流程见 <a href="games-hub-generative-art-workflow.html">游戏 Hub × 生成式角色美术工作流</a>。商店 RSS 不会自动改设定表。</p>
+
+<h3>边界</h3>
+<p>无骨骼、无引擎包、无抽卡数值。第三篇只会在新实物（例如手绘五表情）上线时出现，而不是为堆关键词。</p></article>
+    </div>
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>エレナ配色と儀式UI — HTML設定表の保守メモ</h1>
+        <p class="article-shell__sub">パレット固定・表情5枠・保守ルール</p>
+        <p class="article-shell__meta"><time datetime="2026-06-18">2026-06-18</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p>This is a <strong>follow-up</strong> to <a href="game-girl-elena-sea-wind-reference.html">Elena · Poem of the Sea Wind</a> on aogl.cn. The first article introduced the HTML sheet, turnaround source, and May 18–20 exploration PNGs. Here I document what I actually maintain week to week: the <strong>palette contract</strong>, the five expression placeholders, and the “ritual UI” tone in <code>elena_character_sheet.html</code>—still personal archive work, not a commercial game SKU.</p>
+
+<h2>Why a second URL instead of editing the first post</h2>
+<p>Merging palette rules into the launch article would bury searchable phrases like <em>character palette swatches</em> and <em>HTML reference sheet maintenance</em>. Splitting lets the first page stay the onboarding story (who Elena is, what files exist) while this page answers “how do I change a color without breaking the sheet?” That mirrors how I split <a href="interactive-3d-earth.html">Earth WebGL</a> from <a href="major-planets8-solar-system-textures.html">real planet textures</a>.</p>
+
+<h2>Hard palette rows in the left panel</h2>
+<p>The sheet encodes primaries (ivory / sky blue / ocean blue / deep sea), secondaries (sand beige / warm gold), and accents (staff gold / crown green / gem blue). These are not decorative CSS—they are <strong>rejection criteria</strong>. If a new generative still pushes hair toward neon purple or shifts the skirt to crimson, I discard the frame before it touches <code>ChatGPT-Image2.png</code>. The inline swatches use hex values I copy into prompts as anchors; I do not auto-sync hex from PNG samples (that lied once when compression shifted skin tone).</p>
+
+<figure class="article-embed">
+  <iframe src="../original/game-girl/elena_character_sheet.html" title="Elena HTML sheet — palette and ritual UI" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Live sheet: palette swatches, expression row, and “Official Character Design” footer tone (layout only).</figcaption>
+</figure>
+
+<h2>Five expression discs: CSS filters as placeholders</h2>
+<p>Each mood circle reuses the face crop with <code>filter:saturate/brightness/hue-rotate</code>. That is intentional technical debt: I wanted the sheet shippable before five painted expressions existed. The footer of this article is honest—<strong>replace filters with real crops</strong> before any client delivery. For aogl.cn the filters document the UX slots (gentle / smile / contemplative / resolute / joyful) so layout does not jump when art arrives.</p>
+
+<h2>Ritual UI copy (confidential footer)</h2>
+<p>“Official Character Design · Confidential” reads like a AAA pipeline footer. On this site it signals <em>layout tone</em> only. I keep it because playtesters said the sheet felt more “real” with a footer bar—even though there is no NDA, no publisher, and no SKU. If I ever open-source the HTML, I will add a one-line disclaimer above the footer; until then the contrast between playful island lore and faux-confidential chrome is part of the demo.</p>
+
+<h2>Maintenance contract (v1.0)</h2>
+<ol>
+  <li>Replace <code>ChatGPT-Image2.png</code> → re-check all three <code>object-position</code> crops.</li>
+  <li>Change a hex swatch → update this article’s <code>dateModified</code> and one changelog bullet.</li>
+  <li>Add a sixth expression → widen the grid in HTML first, then paint—never the reverse.</li>
+  <li>Do not embed WebGL or Live2D here; animation belongs in a future article with its own scope paragraph.</li>
+</ol>
+
+<h2>Tool bookmarks I use beside the sheet</h2>
+<p>Look-dev stills: <a href="/tool-guides/gemini-post.html">Gemini</a> or <a href="/tool-guides/midjourney-post.html">Midjourney</a> notes on this site. Code edits to the sheet: <a href="/tool-guides/cursor-post.html">Cursor</a>. Official model news (if I need a policy reminder): <a href="/briefs/index.html">briefs</a>. None of these links are endorsements—they are my directory entries.</p>
+
+<h2>Relation to games hub</h2>
+<p>I read <a href="/games.html">games.html</a> for first-party headlines, then return to character folders like <code>original/game-girl/</code> for personal art passes—see <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a> for that Sunday routine. Store RSS does not auto-update the sheet; humans still merge decisions.</p>
+
+<h3>Scope boundary</h3>
+<p>No rig, no engine import, no gacha rates, no voice casting. If Elena gets a third article, it will be because a new artifact shipped (for example painted expressions)—not because I padded keywords.</p></article>
+    </div>
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>엘레나 팔레트·의식 UI — HTML 설정표 유지 메모</h1>
+        <p class="article-shell__sub">고정 팔레트·표정 5칸·유지 규칙</p>
+        <p class="article-shell__meta"><time datetime="2026-06-18">2026-06-18</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p>This is a <strong>follow-up</strong> to <a href="game-girl-elena-sea-wind-reference.html">Elena · Poem of the Sea Wind</a> on aogl.cn. The first article introduced the HTML sheet, turnaround source, and May 18–20 exploration PNGs. Here I document what I actually maintain week to week: the <strong>palette contract</strong>, the five expression placeholders, and the “ritual UI” tone in <code>elena_character_sheet.html</code>—still personal archive work, not a commercial game SKU.</p>
+
+<h2>Why a second URL instead of editing the first post</h2>
+<p>Merging palette rules into the launch article would bury searchable phrases like <em>character palette swatches</em> and <em>HTML reference sheet maintenance</em>. Splitting lets the first page stay the onboarding story (who Elena is, what files exist) while this page answers “how do I change a color without breaking the sheet?” That mirrors how I split <a href="interactive-3d-earth.html">Earth WebGL</a> from <a href="major-planets8-solar-system-textures.html">real planet textures</a>.</p>
+
+<h2>Hard palette rows in the left panel</h2>
+<p>The sheet encodes primaries (ivory / sky blue / ocean blue / deep sea), secondaries (sand beige / warm gold), and accents (staff gold / crown green / gem blue). These are not decorative CSS—they are <strong>rejection criteria</strong>. If a new generative still pushes hair toward neon purple or shifts the skirt to crimson, I discard the frame before it touches <code>ChatGPT-Image2.png</code>. The inline swatches use hex values I copy into prompts as anchors; I do not auto-sync hex from PNG samples (that lied once when compression shifted skin tone).</p>
+
+<figure class="article-embed">
+  <iframe src="../original/game-girl/elena_character_sheet.html" title="Elena HTML sheet — palette and ritual UI" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Live sheet: palette swatches, expression row, and “Official Character Design” footer tone (layout only).</figcaption>
+</figure>
+
+<h2>Five expression discs: CSS filters as placeholders</h2>
+<p>Each mood circle reuses the face crop with <code>filter:saturate/brightness/hue-rotate</code>. That is intentional technical debt: I wanted the sheet shippable before five painted expressions existed. The footer of this article is honest—<strong>replace filters with real crops</strong> before any client delivery. For aogl.cn the filters document the UX slots (gentle / smile / contemplative / resolute / joyful) so layout does not jump when art arrives.</p>
+
+<h2>Ritual UI copy (confidential footer)</h2>
+<p>“Official Character Design · Confidential” reads like a AAA pipeline footer. On this site it signals <em>layout tone</em> only. I keep it because playtesters said the sheet felt more “real” with a footer bar—even though there is no NDA, no publisher, and no SKU. If I ever open-source the HTML, I will add a one-line disclaimer above the footer; until then the contrast between playful island lore and faux-confidential chrome is part of the demo.</p>
+
+<h2>Maintenance contract (v1.0)</h2>
+<ol>
+  <li>Replace <code>ChatGPT-Image2.png</code> → re-check all three <code>object-position</code> crops.</li>
+  <li>Change a hex swatch → update this article’s <code>dateModified</code> and one changelog bullet.</li>
+  <li>Add a sixth expression → widen the grid in HTML first, then paint—never the reverse.</li>
+  <li>Do not embed WebGL or Live2D here; animation belongs in a future article with its own scope paragraph.</li>
+</ol>
+
+<h2>Tool bookmarks I use beside the sheet</h2>
+<p>Look-dev stills: <a href="/tool-guides/gemini-post.html">Gemini</a> or <a href="/tool-guides/midjourney-post.html">Midjourney</a> notes on this site. Code edits to the sheet: <a href="/tool-guides/cursor-post.html">Cursor</a>. Official model news (if I need a policy reminder): <a href="/briefs/index.html">briefs</a>. None of these links are endorsements—they are my directory entries.</p>
+
+<h2>Relation to games hub</h2>
+<p>I read <a href="/games.html">games.html</a> for first-party headlines, then return to character folders like <code>original/game-girl/</code> for personal art passes—see <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a> for that Sunday routine. Store RSS does not auto-update the sheet; humans still merge decisions.</p>
+
+<h3>Scope boundary</h3>
+<p>No rig, no engine import, no gacha rates, no voice casting. If Elena gets a third article, it will be because a new artifact shipped (for example painted expressions)—not because I padded keywords.</p></article>
+    </div>
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Elena — palette et UI rituel (fiche HTML)</h1>
+        <p class="article-shell__sub">Palette figée · 5 expressions · contrat de maintenance</p>
+        <p class="article-shell__meta"><time datetime="2026-06-18">2026-06-18</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p>This is a <strong>follow-up</strong> to <a href="game-girl-elena-sea-wind-reference.html">Elena · Poem of the Sea Wind</a> on aogl.cn. The first article introduced the HTML sheet, turnaround source, and May 18–20 exploration PNGs. Here I document what I actually maintain week to week: the <strong>palette contract</strong>, the five expression placeholders, and the “ritual UI” tone in <code>elena_character_sheet.html</code>—still personal archive work, not a commercial game SKU.</p>
+
+<h2>Why a second URL instead of editing the first post</h2>
+<p>Merging palette rules into the launch article would bury searchable phrases like <em>character palette swatches</em> and <em>HTML reference sheet maintenance</em>. Splitting lets the first page stay the onboarding story (who Elena is, what files exist) while this page answers “how do I change a color without breaking the sheet?” That mirrors how I split <a href="interactive-3d-earth.html">Earth WebGL</a> from <a href="major-planets8-solar-system-textures.html">real planet textures</a>.</p>
+
+<h2>Hard palette rows in the left panel</h2>
+<p>The sheet encodes primaries (ivory / sky blue / ocean blue / deep sea), secondaries (sand beige / warm gold), and accents (staff gold / crown green / gem blue). These are not decorative CSS—they are <strong>rejection criteria</strong>. If a new generative still pushes hair toward neon purple or shifts the skirt to crimson, I discard the frame before it touches <code>ChatGPT-Image2.png</code>. The inline swatches use hex values I copy into prompts as anchors; I do not auto-sync hex from PNG samples (that lied once when compression shifted skin tone).</p>
+
+<figure class="article-embed">
+  <iframe src="../original/game-girl/elena_character_sheet.html" title="Elena HTML sheet — palette and ritual UI" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Live sheet: palette swatches, expression row, and “Official Character Design” footer tone (layout only).</figcaption>
+</figure>
+
+<h2>Five expression discs: CSS filters as placeholders</h2>
+<p>Each mood circle reuses the face crop with <code>filter:saturate/brightness/hue-rotate</code>. That is intentional technical debt: I wanted the sheet shippable before five painted expressions existed. The footer of this article is honest—<strong>replace filters with real crops</strong> before any client delivery. For aogl.cn the filters document the UX slots (gentle / smile / contemplative / resolute / joyful) so layout does not jump when art arrives.</p>
+
+<h2>Ritual UI copy (confidential footer)</h2>
+<p>“Official Character Design · Confidential” reads like a AAA pipeline footer. On this site it signals <em>layout tone</em> only. I keep it because playtesters said the sheet felt more “real” with a footer bar—even though there is no NDA, no publisher, and no SKU. If I ever open-source the HTML, I will add a one-line disclaimer above the footer; until then the contrast between playful island lore and faux-confidential chrome is part of the demo.</p>
+
+<h2>Maintenance contract (v1.0)</h2>
+<ol>
+  <li>Replace <code>ChatGPT-Image2.png</code> → re-check all three <code>object-position</code> crops.</li>
+  <li>Change a hex swatch → update this article’s <code>dateModified</code> and one changelog bullet.</li>
+  <li>Add a sixth expression → widen the grid in HTML first, then paint—never the reverse.</li>
+  <li>Do not embed WebGL or Live2D here; animation belongs in a future article with its own scope paragraph.</li>
+</ol>
+
+<h2>Tool bookmarks I use beside the sheet</h2>
+<p>Look-dev stills: <a href="/tool-guides/gemini-post.html">Gemini</a> or <a href="/tool-guides/midjourney-post.html">Midjourney</a> notes on this site. Code edits to the sheet: <a href="/tool-guides/cursor-post.html">Cursor</a>. Official model news (if I need a policy reminder): <a href="/briefs/index.html">briefs</a>. None of these links are endorsements—they are my directory entries.</p>
+
+<h2>Relation to games hub</h2>
+<p>I read <a href="/games.html">games.html</a> for first-party headlines, then return to character folders like <code>original/game-girl/</code> for personal art passes—see <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a> for that Sunday routine. Store RSS does not auto-update the sheet; humans still merge decisions.</p>
+
+<h3>Scope boundary</h3>
+<p>No rig, no engine import, no gacha rates, no voice casting. If Elena gets a third article, it will be because a new artifact shipped (for example painted expressions)—not because I padded keywords.</p></article>
+    </div>
+    <div class="lang-ru">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← На главную · оригиналы</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Элена — палитра и ритуальный UI (HTML-лист)</h1>
+        <p class="article-shell__sub">Фиксированная палитра · 5 эмоций · правила сопровождения</p>
+        <p class="article-shell__meta"><time datetime="2026-06-18">2026-06-18</time> · Оригинал aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="ru"><p>This is a <strong>follow-up</strong> to <a href="game-girl-elena-sea-wind-reference.html">Elena · Poem of the Sea Wind</a> on aogl.cn. The first article introduced the HTML sheet, turnaround source, and May 18–20 exploration PNGs. Here I document what I actually maintain week to week: the <strong>palette contract</strong>, the five expression placeholders, and the “ritual UI” tone in <code>elena_character_sheet.html</code>—still personal archive work, not a commercial game SKU.</p>
+
+<h2>Why a second URL instead of editing the first post</h2>
+<p>Merging palette rules into the launch article would bury searchable phrases like <em>character palette swatches</em> and <em>HTML reference sheet maintenance</em>. Splitting lets the first page stay the onboarding story (who Elena is, what files exist) while this page answers “how do I change a color without breaking the sheet?” That mirrors how I split <a href="interactive-3d-earth.html">Earth WebGL</a> from <a href="major-planets8-solar-system-textures.html">real planet textures</a>.</p>
+
+<h2>Hard palette rows in the left panel</h2>
+<p>The sheet encodes primaries (ivory / sky blue / ocean blue / deep sea), secondaries (sand beige / warm gold), and accents (staff gold / crown green / gem blue). These are not decorative CSS—they are <strong>rejection criteria</strong>. If a new generative still pushes hair toward neon purple or shifts the skirt to crimson, I discard the frame before it touches <code>ChatGPT-Image2.png</code>. The inline swatches use hex values I copy into prompts as anchors; I do not auto-sync hex from PNG samples (that lied once when compression shifted skin tone).</p>
+
+<figure class="article-embed">
+  <iframe src="../original/game-girl/elena_character_sheet.html" title="Elena HTML sheet — palette and ritual UI" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Live sheet: palette swatches, expression row, and “Official Character Design” footer tone (layout only).</figcaption>
+</figure>
+
+<h2>Five expression discs: CSS filters as placeholders</h2>
+<p>Each mood circle reuses the face crop with <code>filter:saturate/brightness/hue-rotate</code>. That is intentional technical debt: I wanted the sheet shippable before five painted expressions existed. The footer of this article is honest—<strong>replace filters with real crops</strong> before any client delivery. For aogl.cn the filters document the UX slots (gentle / smile / contemplative / resolute / joyful) so layout does not jump when art arrives.</p>
+
+<h2>Ritual UI copy (confidential footer)</h2>
+<p>“Official Character Design · Confidential” reads like a AAA pipeline footer. On this site it signals <em>layout tone</em> only. I keep it because playtesters said the sheet felt more “real” with a footer bar—even though there is no NDA, no publisher, and no SKU. If I ever open-source the HTML, I will add a one-line disclaimer above the footer; until then the contrast between playful island lore and faux-confidential chrome is part of the demo.</p>
+
+<h2>Maintenance contract (v1.0)</h2>
+<ol>
+  <li>Replace <code>ChatGPT-Image2.png</code> → re-check all three <code>object-position</code> crops.</li>
+  <li>Change a hex swatch → update this article’s <code>dateModified</code> and one changelog bullet.</li>
+  <li>Add a sixth expression → widen the grid in HTML first, then paint—never the reverse.</li>
+  <li>Do not embed WebGL or Live2D here; animation belongs in a future article with its own scope paragraph.</li>
+</ol>
+
+<h2>Tool bookmarks I use beside the sheet</h2>
+<p>Look-dev stills: <a href="/tool-guides/gemini-post.html">Gemini</a> or <a href="/tool-guides/midjourney-post.html">Midjourney</a> notes on this site. Code edits to the sheet: <a href="/tool-guides/cursor-post.html">Cursor</a>. Official model news (if I need a policy reminder): <a href="/briefs/index.html">briefs</a>. None of these links are endorsements—they are my directory entries.</p>
+
+<h2>Relation to games hub</h2>
+<p>I read <a href="/games.html">games.html</a> for first-party headlines, then return to character folders like <code>original/game-girl/</code> for personal art passes—see <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a> for that Sunday routine. Store RSS does not auto-update the sheet; humans still merge decisions.</p>
+
+<h3>Scope boundary</h3>
+<p>No rig, no engine import, no gacha rates, no voice casting. If Elena gets a third article, it will be because a new artifact shipped (for example painted expressions)—not because I padded keywords.</p></article>
+    </div>
+    <div class="lang-ar">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← الرئيسية · محتوى أصلي</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>إيلينا — لوحة الألوان وواجهة الطقوس (ورقة HTML)</h1>
+        <p class="article-shell__sub">لوحة ألوان ثابتة · خمس تعبيرات · عقد صيانة</p>
+        <p class="article-shell__meta"><time datetime="2026-06-18">2026-06-18</time> · محتوى أصلي</p>
+      </div>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p>This is a <strong>follow-up</strong> to <a href="game-girl-elena-sea-wind-reference.html">Elena · Poem of the Sea Wind</a> on aogl.cn. The first article introduced the HTML sheet, turnaround source, and May 18–20 exploration PNGs. Here I document what I actually maintain week to week: the <strong>palette contract</strong>, the five expression placeholders, and the “ritual UI” tone in <code>elena_character_sheet.html</code>—still personal archive work, not a commercial game SKU.</p>
+
+<h2>Why a second URL instead of editing the first post</h2>
+<p>Merging palette rules into the launch article would bury searchable phrases like <em>character palette swatches</em> and <em>HTML reference sheet maintenance</em>. Splitting lets the first page stay the onboarding story (who Elena is, what files exist) while this page answers “how do I change a color without breaking the sheet?” That mirrors how I split <a href="interactive-3d-earth.html">Earth WebGL</a> from <a href="major-planets8-solar-system-textures.html">real planet textures</a>.</p>
+
+<h2>Hard palette rows in the left panel</h2>
+<p>The sheet encodes primaries (ivory / sky blue / ocean blue / deep sea), secondaries (sand beige / warm gold), and accents (staff gold / crown green / gem blue). These are not decorative CSS—they are <strong>rejection criteria</strong>. If a new generative still pushes hair toward neon purple or shifts the skirt to crimson, I discard the frame before it touches <code>ChatGPT-Image2.png</code>. The inline swatches use hex values I copy into prompts as anchors; I do not auto-sync hex from PNG samples (that lied once when compression shifted skin tone).</p>
+
+<figure class="article-embed">
+  <iframe src="../original/game-girl/elena_character_sheet.html" title="Elena HTML sheet — palette and ritual UI" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Live sheet: palette swatches, expression row, and “Official Character Design” footer tone (layout only).</figcaption>
+</figure>
+
+<h2>Five expression discs: CSS filters as placeholders</h2>
+<p>Each mood circle reuses the face crop with <code>filter:saturate/brightness/hue-rotate</code>. That is intentional technical debt: I wanted the sheet shippable before five painted expressions existed. The footer of this article is honest—<strong>replace filters with real crops</strong> before any client delivery. For aogl.cn the filters document the UX slots (gentle / smile / contemplative / resolute / joyful) so layout does not jump when art arrives.</p>
+
+<h2>Ritual UI copy (confidential footer)</h2>
+<p>“Official Character Design · Confidential” reads like a AAA pipeline footer. On this site it signals <em>layout tone</em> only. I keep it because playtesters said the sheet felt more “real” with a footer bar—even though there is no NDA, no publisher, and no SKU. If I ever open-source the HTML, I will add a one-line disclaimer above the footer; until then the contrast between playful island lore and faux-confidential chrome is part of the demo.</p>
+
+<h2>Maintenance contract (v1.0)</h2>
+<ol>
+  <li>Replace <code>ChatGPT-Image2.png</code> → re-check all three <code>object-position</code> crops.</li>
+  <li>Change a hex swatch → update this article’s <code>dateModified</code> and one changelog bullet.</li>
+  <li>Add a sixth expression → widen the grid in HTML first, then paint—never the reverse.</li>
+  <li>Do not embed WebGL or Live2D here; animation belongs in a future article with its own scope paragraph.</li>
+</ol>
+
+<h2>Tool bookmarks I use beside the sheet</h2>
+<p>Look-dev stills: <a href="/tool-guides/gemini-post.html">Gemini</a> or <a href="/tool-guides/midjourney-post.html">Midjourney</a> notes on this site. Code edits to the sheet: <a href="/tool-guides/cursor-post.html">Cursor</a>. Official model news (if I need a policy reminder): <a href="/briefs/index.html">briefs</a>. None of these links are endorsements—they are my directory entries.</p>
+
+<h2>Relation to games hub</h2>
+<p>I read <a href="/games.html">games.html</a> for first-party headlines, then return to character folders like <code>original/game-girl/</code> for personal art passes—see <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a> for that Sunday routine. Store RSS does not auto-update the sheet; humans still merge decisions.</p>
+
+<h3>Scope boundary</h3>
+<p>No rig, no engine import, no gacha rates, no voice casting. If Elena gets a third article, it will be because a new artifact shipped (for example painted expressions)—not because I padded keywords.</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/about.html" class="footer-legal-link lang-en">About</a>
+        <a href="/contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="/privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="/contact.html" class="footer-legal-link lang-ko">문의</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="/about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="/contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="/privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="/about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="/contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="/about.html" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="/contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-en" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ko" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-fr" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ru" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ar" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer></script>
+</body></html>

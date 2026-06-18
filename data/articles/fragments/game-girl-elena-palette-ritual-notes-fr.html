@@ -1,0 +1,35 @@
+<p>This is a <strong>follow-up</strong> to <a href="game-girl-elena-sea-wind-reference.html">Elena · Poem of the Sea Wind</a> on aogl.cn. The first article introduced the HTML sheet, turnaround source, and May 18–20 exploration PNGs. Here I document what I actually maintain week to week: the <strong>palette contract</strong>, the five expression placeholders, and the “ritual UI” tone in <code>elena_character_sheet.html</code>—still personal archive work, not a commercial game SKU.</p>
+
+<h2>Why a second URL instead of editing the first post</h2>
+<p>Merging palette rules into the launch article would bury searchable phrases like <em>character palette swatches</em> and <em>HTML reference sheet maintenance</em>. Splitting lets the first page stay the onboarding story (who Elena is, what files exist) while this page answers “how do I change a color without breaking the sheet?” That mirrors how I split <a href="interactive-3d-earth.html">Earth WebGL</a> from <a href="major-planets8-solar-system-textures.html">real planet textures</a>.</p>
+
+<h2>Hard palette rows in the left panel</h2>
+<p>The sheet encodes primaries (ivory / sky blue / ocean blue / deep sea), secondaries (sand beige / warm gold), and accents (staff gold / crown green / gem blue). These are not decorative CSS—they are <strong>rejection criteria</strong>. If a new generative still pushes hair toward neon purple or shifts the skirt to crimson, I discard the frame before it touches <code>ChatGPT-Image2.png</code>. The inline swatches use hex values I copy into prompts as anchors; I do not auto-sync hex from PNG samples (that lied once when compression shifted skin tone).</p>
+
+<figure class="article-embed">
+  <iframe src="../original/game-girl/elena_character_sheet.html" title="Elena HTML sheet — palette and ritual UI" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <figcaption>Live sheet: palette swatches, expression row, and “Official Character Design” footer tone (layout only).</figcaption>
+</figure>
+
+<h2>Five expression discs: CSS filters as placeholders</h2>
+<p>Each mood circle reuses the face crop with <code>filter:saturate/brightness/hue-rotate</code>. That is intentional technical debt: I wanted the sheet shippable before five painted expressions existed. The footer of this article is honest—<strong>replace filters with real crops</strong> before any client delivery. For aogl.cn the filters document the UX slots (gentle / smile / contemplative / resolute / joyful) so layout does not jump when art arrives.</p>
+
+<h2>Ritual UI copy (confidential footer)</h2>
+<p>“Official Character Design · Confidential” reads like a AAA pipeline footer. On this site it signals <em>layout tone</em> only. I keep it because playtesters said the sheet felt more “real” with a footer bar—even though there is no NDA, no publisher, and no SKU. If I ever open-source the HTML, I will add a one-line disclaimer above the footer; until then the contrast between playful island lore and faux-confidential chrome is part of the demo.</p>
+
+<h2>Maintenance contract (v1.0)</h2>
+<ol>
+  <li>Replace <code>ChatGPT-Image2.png</code> → re-check all three <code>object-position</code> crops.</li>
+  <li>Change a hex swatch → update this article’s <code>dateModified</code> and one changelog bullet.</li>
+  <li>Add a sixth expression → widen the grid in HTML first, then paint—never the reverse.</li>
+  <li>Do not embed WebGL or Live2D here; animation belongs in a future article with its own scope paragraph.</li>
+</ol>
+
+<h2>Tool bookmarks I use beside the sheet</h2>
+<p>Look-dev stills: <a href="/tool-guides/gemini-post.html">Gemini</a> or <a href="/tool-guides/midjourney-post.html">Midjourney</a> notes on this site. Code edits to the sheet: <a href="/tool-guides/cursor-post.html">Cursor</a>. Official model news (if I need a policy reminder): <a href="/briefs/index.html">briefs</a>. None of these links are endorsements—they are my directory entries.</p>
+
+<h2>Relation to games hub</h2>
+<p>I read <a href="/games.html">games.html</a> for first-party headlines, then return to character folders like <code>original/game-girl/</code> for personal art passes—see <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a> for that Sunday routine. Store RSS does not auto-update the sheet; humans still merge decisions.</p>
+
+<h3>Scope boundary</h3>
+<p>No rig, no engine import, no gacha rates, no voice casting. If Elena gets a third article, it will be because a new artifact shipped (for example painted expressions)—not because I padded keywords.</p>

@@ -13,6 +13,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { sitePath } from "./site-paths.mjs";
 import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
+import { navBlock } from "./site-nav.mjs";
 import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -95,99 +96,32 @@ const BRAND_ALT = {
   ar: "aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي",
 };
 
-/** [href, label] — no is-active; matches hub pages */
-const HUB_NAV_LINKS = {
-  en: [
-    ["index.html#tools-directory", "AI frontier"],
-    ["portal.html", "Top sites"],
-    ["brands.html", "Brands"],
-    ["shopping.html", "Shopping"],
-    ["life.html", "Life"],
-    ["social.html", "Social"],
-    ["tech.html", "Tech"],
-    ["games.html", "Games"],
-    ["tools.html", "Utilities"],
-  ],
-  zh: [
-    ["index.html#tools-directory", "AI 前沿"],
-    ["portal.html", "全球站点"],
-    ["brands.html", "品牌"],
-    ["shopping.html", "购物"],
-    ["life.html", "生活"],
-    ["social.html", "社交"],
-    ["tech.html", "科技"],
-    ["games.html", "游戏"],
-    ["tools.html", "工具"],
-  ],
-  ja: [
-    ["index.html#tools-directory", "AI最前線"],
-    ["portal.html", "主要サイト"],
-    ["brands.html", "ブランド"],
-    ["shopping.html", "ショッピング"],
-    ["life.html", "ライフ"],
-    ["social.html", "ソーシャル"],
-    ["tech.html", "テック"],
-    ["games.html", "ゲーム"],
-    ["tools.html", "実用ツール"],
-  ],
-  ko: [
-    ["index.html#tools-directory", "AI 최전선"],
-    ["portal.html", "주요 사이트"],
-    ["brands.html", "브랜드"],
-    ["shopping.html", "쇼핑"],
-    ["life.html", "라이프"],
-    ["social.html", "소셜"],
-    ["tech.html", "테크"],
-    ["games.html", "게임"],
-    ["tools.html", "실용 도구"],
-  ],
-  fr: [
-    ["index.html#tools-directory", "IA — veille"],
-    ["portal.html", "Grands sites"],
-    ["brands.html", "Marques"],
-    ["shopping.html", "Shopping"],
-    ["life.html", "Vie"],
-    ["social.html", "Social"],
-    ["tech.html", "Tech"],
-    ["games.html", "Jeux"],
-    ["tools.html", "Utilitaires"],
-  ],
-  ru: [
-    ["index.html#tools-directory", "ИИ — новинки"],
-    ["portal.html", "Топ сайтов"],
-    ["brands.html", "Бренды"],
-    ["shopping.html", "Шопинг"],
-    ["life.html", "Сервисы"],
-    ["social.html", "Соцсети"],
-    ["tech.html", "Техно"],
-    ["games.html", "Игры"],
-    ["tools.html", "Утилиты"],
-  ],
-  ar: [
-    ["index.html#tools-directory", "أحدث الذكاء الاصطناعي"],
-    ["portal.html", "أبرز المواقع"],
-    ["brands.html", "العلامات"],
-    ["shopping.html", "التسوق"],
-    ["life.html", "الحياة الرقمية"],
-    ["social.html", "التواصل"],
-    ["tech.html", "التقنية"],
-    ["games.html", "الألعاب"],
-    ["tools.html", "أدوات مساعدة"],
-  ],
-};
-
 const INDEX_START = "      <!-- INDEX_ORIGINALS_AUTO_START -->";
 const INDEX_END = "      <!-- INDEX_ORIGINALS_AUTO_END -->";
 
 const PRIMARY_CONTENT_LEAD = {
-  en: '<strong>Primary content</strong> on this site is twelve editorial demos with honest production notes—not the AI link lists below. <a href="articles/index.html">Full article index</a> (newest first).',
-  zh: "本站<strong>主内容</strong>是十二篇原创 Demo 手记，而非下方 AI 外链汇总。<a href=\"articles/index.html\">全部文章索引</a>（新→旧）。",
-  ja: "当サイトの<strong>主コンテンツ</strong>は12本の編集デモと制作メモです（下のAIリンク集ではありません）。<a href=\"articles/index.html\">記事一覧</a>（新しい順）。",
-  ko: "이 사이트의 <strong>주 콘텐츠</strong>는 12편의 편집 데모와 제작 메모이며, 아래 AI 링크 목록이 아닙니다. <a href=\"articles/index.html\">전체 글 목록</a>（최신순）.",
-  fr: "Le <strong>contenu principal</strong> du site, ce sont douze démos éditoriales avec notes de production — pas les listes de liens IA ci-dessous. <a href=\"articles/index.html\">Index des articles</a> (plus récent d’abord).",
-  ru: "<strong>Основной контент</strong> сайта — двенадцать авторских демо с заметками о производстве, а не списки ссылок на ИИ ниже. <a href=\"articles/index.html\">Все статьи</a> (сначала новые).",
-  ar: "<strong>المحتوى الأساسي</strong> في الموقع هو اثنا عشر عرضًا تحريريًا مع ملاحظات إنتاج — وليس قوائم روابط الذكاء الاصطناعي أدناه. <a href=\"articles/index.html\">فهرس المقالات</a> (الأحدث أولاً).",
+  en: '<strong>Primary content</strong> on this site is {n} editorial demos with honest production notes—not the AI link lists below. <a href="articles/index.html">Full article index</a> (newest first).',
+  zh: "本站<strong>主内容</strong>是{n}篇原创 Demo 手记，而非下方 AI 外链汇总。<a href=\"articles/index.html\">全部文章索引</a>（新→旧）。",
+  ja: "当サイトの<strong>主コンテンツ</strong>は{n}本の編集デモと制作メモです（下のAIリンク集ではありません）。<a href=\"articles/index.html\">記事一覧</a>（新しい順）。",
+  ko: "이 사이트의 <strong>주 콘텐츠</strong>는 {n}편의 편집 데모와 제작 메모이며, 아래 AI 링크 목록이 아닙니다. <a href=\"articles/index.html\">전체 글 목록</a>（최신순）.",
+  fr: "Le <strong>contenu principal</strong> du site, ce sont {n} démos éditoriales avec notes de production — pas les listes de liens IA ci-dessous. <a href=\"articles/index.html\">Index des articles</a> (plus récent d’abord).",
+  ru: "<strong>Основной контент</strong> сайта — {n} авторских демо с заметками о производстве, а не списки ссылок на ИИ ниже. <a href=\"articles/index.html\">Все статьи</a> (сначала новые).",
+  ar: "<strong>المحتوى الأساسي</strong> في الموقع هو {n} عرضًا تحريريًا مع ملاحظات إنتاج — وليس قوائم روابط الذكاء الاصطناعي أدناه. <a href=\"articles/index.html\">فهرس المقالات</a> (الأحدث أولاً).",
 };
+
+const ARTICLES_INDEX_LEAD = {
+  en: "{n} personal demos on aogl.cn—WebGL, video, panoramas, and illustration pipelines—with production notes in first-screen HTML. Sorted newest first. Tool workflow notes: <a href=\"/guides/index.html\">guides index</a>.",
+  zh: "aogl.cn 上{n}篇个人 Demo：WebGL、视频、全景与插画流程，首屏 HTML 含制作手记。按日期新→旧排列。工具攻略见 <a href=\"/guides/index.html\">攻略索引</a>。",
+  ja: "aogl.cn の個人デモ{n}本（WebGL・動画・パノラマ・イラスト）と制作メモ。新しい順。<a href=\"/guides/index.html\">ツールガイド一覧</a>。",
+  ko: "aogl.cn의 개인 데모 {n}편(WebGL·영상·파노라마·일러스트)과 제작 메모. 최신순. <a href=\"/guides/index.html\">도구 가이드</a>.",
+  fr: "{n} démos personnelles sur aogl.cn — WebGL, vidéo, panoramas, illustration — avec notes de production en HTML. Plus récent d’abord. <a href=\"/guides/index.html\">Index des guides</a>.",
+  ru: "{n} личных демо на aogl.cn — WebGL, видео, панорамы, иллюстрация — с заметками в HTML. Сначала новые. <a href=\"/guides/index.html\">Гайды</a>.",
+  ar: "{n} عرضًا شخصيًا على aogl.cn — WebGL وفيديو وبانوراما ورسوم — مع ملاحظات إنتاج في HTML. الأحدث أولاً. <a href=\"/guides/index.html\">فهرس الأدلة</a>.",
+};
+
+function fillArticleCount(str, count) {
+  return String(str).replace(/\{n\}/g, String(count));
+}
 
 const ARTICLES_INDEX_H1 = {
   en: "Editorial articles",
@@ -197,16 +131,6 @@ const ARTICLES_INDEX_H1 = {
   fr: "Articles éditoriaux",
   ru: "Редакционные статьи",
   ar: "مقالات تحريرية",
-};
-
-const ARTICLES_INDEX_LEAD = {
-  en: "Twelve personal demos on aogl.cn—WebGL, video, panoramas, and illustration pipelines—with production notes in first-screen HTML. Sorted newest first.",
-  zh: "aogl.cn 上十二篇个人 Demo：WebGL、视频、全景与插画流程，首屏 HTML 含制作手记。按日期新→旧排列。",
-  ja: "aogl.cn の個人デモ12本（WebGL・動画・パノラマ・イラスト）と制作メモ。新しい順。",
-  ko: "aogl.cn의 개인 데모 12편(WebGL·영상·파노라마·일러스트)과 제작 메모. 최신순.",
-  fr: "Douze démos personnelles sur aogl.cn — WebGL, vidéo, panoramas, illustration — avec notes de production en HTML. Plus récent d’abord.",
-  ru: "Двенадцать личных демо на aogl.cn — WebGL, видео, панорамы, иллюстрация — с заметками в HTML. Сначала новые.",
-  ar: "اثنا عشر عرضًا شخصيًا على aogl.cn — WebGL وفيديو وبانوراما ورسوم — مع ملاحظات إنتاج في HTML. الأحدث أولاً.",
 };
 
 const ARTICLES_INDEX_BACK = {
@@ -369,14 +293,7 @@ function buildHubBrandBlock(prefix) {
 }
 
 function buildHubNavBlock(prefix) {
-  const navInner = LANGS.map((lang) => {
-    const rows = HUB_NAV_LINKS[lang] || HUB_NAV_LINKS.en;
-    const lis = rows
-      .map(([href, label]) => `          <li><a href="${prefix}${escAttr(href)}">${escHtml(label)}</a></li>`)
-      .join("\n");
-    return `        <ul class="site-nav-list lang-${lang}">\n${lis}\n        </ul>`;
-  }).join("\n");
-  return `      <nav class="site-nav" aria-label="Primary">\n${navInner}\n      </nav>`;
+  return navBlock({ prefix, activeContext: "articles" });
 }
 
 const FOOTER_LEGAL = {
@@ -737,7 +654,7 @@ ${INDEX_END}`;
   }).join("\n");
 
   const primaryLeads = LANGS.map(
-    (l) => `        <p class="reading-intro site-primary-lead lang-${l}">${PRIMARY_CONTENT_LEAD[l]}</p>`,
+    (l) => `        <p class="reading-intro site-primary-lead lang-${l}">${fillArticleCount(PRIMARY_CONTENT_LEAD[l], articles.length)}</p>`,
   ).join("\n");
 
   const carousel = originalsCarouselUl(slice);
@@ -804,12 +721,15 @@ function buildArticlesIndexPage(articles) {
   const count = articles.length;
   const dataAttrs = LANGS.map((lang) => {
     const title = ARTICLES_INDEX_H1[lang] || ARTICLES_INDEX_H1.en;
-    const desc = (ARTICLES_INDEX_LEAD[lang] || ARTICLES_INDEX_LEAD.en).replace(/<[^>]+>/g, "");
+    const desc = fillArticleCount(ARTICLES_INDEX_LEAD[lang] || ARTICLES_INDEX_LEAD.en, count).replace(
+      /<[^>]+>/g,
+      "",
+    );
     return `data-title-${lang}="${escAttr(title)} — aogl.cn" data-desc-${lang}="${escAttr(desc)}"`;
   }).join(" ");
 
   const titleEn = ARTICLES_INDEX_H1.en;
-  const descEn = ARTICLES_INDEX_LEAD.en.replace(/<[^>]+>/g, "");
+  const descEn = fillArticleCount(ARTICLES_INDEX_LEAD.en, count).replace(/<[^>]+>/g, "");
   const lastmod = new Date().toISOString().slice(0, 10);
 
   const h1Block = LANGS.map(
@@ -817,7 +737,7 @@ function buildArticlesIndexPage(articles) {
   ).join("\n");
   const leadBlock = LANGS.map(
     (lang) =>
-      `        <p class="lang-${lang} hub-prose articles-index-lead">${ARTICLES_INDEX_LEAD[lang]} (${count})</p>`,
+      `        <p class="lang-${lang} hub-prose articles-index-lead">${fillArticleCount(ARTICLES_INDEX_LEAD[lang], count)}</p>`,
   ).join("\n");
   const backBlock = LANGS.map(
     (lang) => `        <p class="lang-${lang} articles-index-back"><a href="${P}index.html#originals">${escHtml(ARTICLES_INDEX_BACK[lang])}</a></p>`,

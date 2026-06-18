@@ -18,3 +18,20 @@
   font-size: 0.9rem;
   color: #52525b;
 }
+.tool-guide-checked {
+  margin-top: 1.25rem;
+  font-size: 0.88rem;
+  color: #71717a;
+}
+.top .tool-guide-guides-link {
+  margin-left: 0.75rem;
+  font-size: 0.92rem;
+}
+.article-body h2 {
+  margin-top: 1.35rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.article-body ol {
+  padding-left: 1.35rem;
+}

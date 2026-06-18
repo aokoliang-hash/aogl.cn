@@ -36,6 +36,16 @@ const BACK_LABEL = {
   ar: "← الدليل",
 };
 
+const GUIDES_LABEL = {
+  en: "All tool guides",
+  zh: "全部攻略索引",
+  ja: "ガイド一覧",
+  ko: "가이드 목록",
+  fr: "Index des guides",
+  ru: "Все гайды",
+  ar: "فهرس الأدلة",
+};
+
 const VISIT_CTA = {
   en: "Open official site",
   zh: "打开官网",
@@ -96,6 +106,9 @@ function buildPage(guide) {
   const back = LANGS.map(
     (lang) => `<a href="${sitePath("index.html")}#tools-directory" class="lang-${lang}">${BACK_LABEL[lang]}</a>`
   ).join("\n    ");
+  const guides = LANGS.map(
+    (lang) => `<a href="${sitePath("guides/index.html")}" class="lang-${lang} tool-guide-guides-link">${GUIDES_LABEL[lang]}</a>`
+  ).join("\n    ");
 
   const h1s = LANGS.map((lang) => `<h1 class="lang-${lang}">${escHtml(toolName(guide, lang))}</h1>`).join("\n  ");
 
@@ -117,6 +130,7 @@ function buildPage(guide) {
   <script src="${sitePath("js/i18n.js")}"></script>
   <div class="top">
     ${back}
+    ${guides}
     <div class="lang-switch">
       <select class="aogl-lang-select" id="aogl-lang-tool-${slug.replace(/[^a-z0-9-]/gi, "-")}" aria-label="Language"></select>
     </div>

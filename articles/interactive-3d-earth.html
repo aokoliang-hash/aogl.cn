@@ -1,8 +1,8 @@
-<!DOCTYPE html><html lang="zh-CN" data-title-zh="交互式 3D 地球浏览器 — aogl.cn" data-desc-zh="本站原创 WebGL 演示：基于 Three.js 的实时 3D 地球，含蓝大理石贴图、地形凹凸、水体高光、云层与自定义大气着色器；支持拖拽旋转与滚轮缩放，利于地理与科普场景展示。" data-aogl-lang="zh"><head>
+<!DOCTYPE html><html lang="zh-CN" data-title-zh="交互式 3D 地球浏览器 — aogl.cn" data-desc-zh="本站原创 WebGL 演示：Three.js 实时 3D 地球教程向手记——蓝大理石贴图、地形凹凸、水体高光、云层与大气着色器；拖拽旋转与滚轮缩放，适合地理科普与 three.js earth texture 长尾。" data-aogl-lang="zh"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
-  <meta name="description" content="本站原创 WebGL 演示：基于 Three.js 的实时 3D 地球，含蓝大理石贴图、地形凹凸、水体高光、云层与自定义大气着色器；支持拖拽旋转与滚轮缩放，利于地理与科普场景展示。">
+  <meta name="description" content="本站原创 WebGL 演示：Three.js 实时 3D 地球教程向手记——蓝大理石贴图、地形凹凸、水体高光、云层与大气着色器；拖拽旋转与滚轮缩放，适合地理科普与 three.js earth texture 长尾。">
   <title>交互式 3D 地球浏览器 — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/articles/interactive-3d-earth.html">
   <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/interactive-3d-earth.html">
@@ -19,7 +19,7 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://aogl.cn/articles/interactive-3d-earth.html">
   <meta property="og:title" content="交互式 3D 地球浏览器 — aogl.cn">
-  <meta property="og:description" content="本站原创 WebGL 演示：基于 Three.js 的实时 3D 地球，含蓝大理石贴图、地形凹凸、水体高光、云层与自定义大气着色器；支持拖拽旋转与滚轮缩放，利于地理与科普场景展示。">
+  <meta property="og:description" content="本站原创 WebGL 演示：Three.js 实时 3D 地球教程向手记——蓝大理石贴图、地形凹凸、水体高光、云层与大气着色器；拖拽旋转与滚轮缩放，适合地理科普与 three.js earth texture 长尾。">
   <meta property="og:site_name" content="aogl.cn">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:image" content="https://aogl.cn/upload/articles/interactive-3d-earth.webp">
@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/articles/interactive-3d-earth.html","inLanguage":"zh-CN","description":"Original aogl.cn WebGL demo: a real-time 3D Earth in Three.js with blue-marble textures, bump and specular maps, animated clouds, and a custom atmospheric rim shader; drag to orbit and scroll to zoom—ideal for geography and outreach pages.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/articles/interactive-3d-earth.html","inLanguage":"zh-CN","description":"Original aogl.cn WebGL demo and three.js earth texture tutorial notes: real-time 3D globe with blue-marble maps, bump/specular, animated clouds, and atmospheric rim shader; drag to orbit and scroll to zoom for geography outreach.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zh">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -47,15 +47,24 @@
       </div>
       <nav class="site-nav" aria-label="Primary">
         <ul class="site-nav-list lang-zh">
-          <li><a href="/index.html#tools-directory">AI 前沿</a></li>
-          <li><a href="/portal.html">全球站点</a></li>
-          <li><a href="/brands.html">品牌</a></li>
-          <li><a href="/shopping.html">购物</a></li>
-          <li><a href="/life.html">生活</a></li>
-          <li><a href="/social.html">社交</a></li>
-          <li><a href="/tech.html">科技</a></li>
+          <li class="is-active"><a href="/articles/index.html">本站原创</a></li>
+          <li><a href="/index.html#tools-directory">AI 工具</a></li>
+          <li><a href="/briefs/index.html">快讯</a></li>
           <li><a href="/games.html">游戏</a></li>
-          <li><a href="/tools.html">工具</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>更多</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">全球站点</a></li>
+              <li><a href="/brands.html">品牌</a></li>
+              <li><a href="/shopping.html">购物</a></li>
+              <li><a href="/life.html">生活</a></li>
+              <li><a href="/social.html">社交</a></li>
+              <li><a href="/tools.html">工具</a></li>
+              </ul>
+            </details>
+          </li>
         </ul>
       </nav>
       <div class="lang-switch">

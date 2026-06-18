@@ -14,7 +14,7 @@
   "kinds": [
     "news"
   ],
-  "updated": "2026-06-01",
+  "updated": "2026-06-18",
   "excerpt_en": "We’re introducing SilverTorch, a reimagining of recommendation systems that unifies all retrieval components for user generated content under a unified architecture.  SilverTorch shows up to 23.7x …",
   "excerpt_zh": "We’re introducing SilverTorch, a reimagining of recommendation systems that unifies all retrieval components for user generated content under a unified architecture.  SilverTorch shows up to 23.7x …",
   "fetchedAt": "2026-06-01"

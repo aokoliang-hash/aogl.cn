@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LOCALES = ["en", "zh", "ja", "ko", "fr", "ru", "ar"];
-const CONTENT_DIRS = ["articles", "briefs", "tool-guides", "hub-links"];
+const CONTENT_DIRS = ["articles", "briefs", "tool-guides", "guides", "hub-links"];
 const BAD = /(?:href|src)=["'](?:\.\.\/)+(css|js|upload|favicon\.svg)["']/;
 
 let failed = 0;

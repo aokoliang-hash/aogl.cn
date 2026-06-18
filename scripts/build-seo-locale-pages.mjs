@@ -88,12 +88,19 @@ function multilangHubLinkPages() {
     .map((f) => `hub-links/${f}`);
 }
 
+function multilangGuidesPages() {
+  const p = path.join(MULTILANG_DIR, "guides", "index.html");
+  if (!fs.existsSync(p)) return [];
+  return ["guides/index.html"];
+}
+
 function getAllPages() {
   return [
     ...STATIC_PAGES,
     ...multilangArticlePages(),
     ...multilangBriefPages(),
     ...multilangToolGuidePages(),
+    ...multilangGuidesPages(),
     ...multilangHubLinkPages(),
   ];
 }
@@ -268,7 +275,7 @@ function slimLocaleHeadExtras($, locale, filename, localePrefix = "") {
   slimJsonLdScripts($, langTag, filename, siteHome, canonicalHref, localePrefix);
 }
 
-const CONTENT_PATH_SEGMENTS = ["articles", "briefs", "tool-guides", "hub-links"];
+const CONTENT_PATH_SEGMENTS = ["articles", "briefs", "tool-guides", "guides", "hub-links"];
 
 function isInternalContentPath(v) {
   if (v == null || v === "") return false;
