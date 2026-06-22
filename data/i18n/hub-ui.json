@@ -104,6 +104,20 @@
     "rankTitle": { "ja": "世界トップ10（プラットフォーム）", "ko": "글로벌 상위 10(플랫폼)", "fr": "Top 10 mondial (plateformes)", "ru": "Глобальный топ-10 (платформы)", "ar": "أفضل 10 عالميًا (المنصات)" },
     "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
     "originalsTitle": { "ja": "当サイトオリジナル（ゲーム）", "ko": "사이트 오리지널(게임)", "fr": "Notes originales (jeux)", "ru": "Оригинальные заметки (игры)", "ar": "محتوى أصلي (ألعاب)" },
+    "originalsPrimaryLead": {
+      "ja": "この Hub の<strong>主コンテンツ</strong>はゲーム向けオリジナル（新→旧、ほぼ毎日追加予定）。<a href=\"/articles/index.html\">記事一覧</a>。",
+      "ko": "게임 Hub <strong>주 콘텐츠</strong>는 게임 오리지널 메모(최신순·매일 추가 예정). <a href=\"/articles/index.html\">전체 글</a>.",
+      "fr": "Le <strong>contenu principal</strong> de ce hub : notes jeux (récent→ancien, un billet/jour prévu). <a href=\"/articles/index.html\">Index</a>.",
+      "ru": "<strong>Основной контент</strong> hub — игровые заметки (новые сверху, план — по одной в день). <a href=\"/articles/index.html\">Все статьи</a>.",
+      "ar": "<strong>المحتوى الرئيسي</strong> لهذا Hub: ملاحظات ألعاب (الأحدث أولاً، خطة منشور يومي). <a href=\"/articles/index.html\">كل المقالات</a>."
+    },
+    "originalsSecondaryLead": {
+      "ja": "下のトップ10・Hot mix RSS は補助ブックマーク（<code>noindex</code>）。",
+      "ko": "아래 상위 10·Hot mix RSS는 보조 북마크(<code>noindex</code>).",
+      "fr": "Top 10 et hot mix RSS ci-dessous : signets auxiliaires (<code>noindex</code>).",
+      "ru": "Топ-10 и Hot mix ниже — вспомогательные закладки (<code>noindex</code>).",
+      "ar": "أفضل 10 وHot mix أدناه: إشارات مرجعية مساعدة (<code>noindex</code>)."
+    },
     "originalsLead": {
       "ja": "ゲーム向け個人メモを順次追加します。下の Hot mix は fetch-hub-news の公式 RSS のままです。",
       "ko": "게임 관련 개인 메모를 점차 추가합니다. 아래 Hot mix는 fetch-hub-news 공식 RSS입니다.",

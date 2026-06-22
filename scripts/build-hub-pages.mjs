@@ -211,14 +211,27 @@ function buildGamesOriginalsCards(articles) {
     .join("\n");
 }
 
+function hubOriginalsIntroSpans(spec, key, className) {
+  const en = String(spec[key + "En"] ?? "").trim();
+  const zh = String(spec[key + "Zh"] ?? "").trim();
+  if (!en && !zh) return "";
+  const uiKey = key.replace(/En$|Zh$/, "");
+  const inner = LOCALES.map((code) => {
+    const text =
+      code === "en" ? en : code === "zh" ? zh || en : T(spec, uiKey, code);
+    return `<span class="lang-${code}">${text}</span>`;
+  }).join("");
+  return `      <p class="${className}">${inner}</p>\n`;
+}
+
 function gamesOriginalsSection(spec) {
   if (spec.slug !== "games") return "";
   const articles = loadGamesHubArticles();
   if (articles.length === 0) return "";
   const cards = buildGamesOriginalsCards(articles);
-  return `    <section class="hub-screen site-originals" id="games-originals" aria-labelledby="games-originals-title">
-      <h2 id="games-originals-title" class="page-section-title">${inlineTitleSpans(spec, "originalsTitle")}</h2>
-${hubOriginalsLeadSpans(spec)}      <div class="hub-carousel-wrap site-originals-carousel-wrap">
+  return `    <section class="site-originals" id="games-originals" aria-labelledby="games-originals-title">
+${hubOriginalsIntroSpans(spec, "originalsPrimaryLead", "reading-intro site-primary-lead")}      <h2 id="games-originals-title" class="page-section-title">${inlineTitleSpans(spec, "originalsTitle")}</h2>
+${hubOriginalsIntroSpans(spec, "originalsSecondaryLead", "reading-intro site-primary-lead site-primary-lead--secondary")}      <div class="hub-carousel-wrap site-originals-carousel-wrap">
         <ul class="hub-hotmix-cards hub-hotmix-cards--carousel site-originals-hotmix" role="list" aria-label="Game editorial notes — swipe or scroll sideways for more">
 ${cards}
         </ul>
@@ -747,7 +760,7 @@ ${navHtml({ activeFile })}
   </header>
 
   <main class="hub-main wrap" id="main">
-    <article class="hub-editorial prose-block">
+${gamesOriginalsSection(spec)}    <article class="hub-editorial prose-block">
       <h1 class="hub-page-title">${inlineTitleSpans(spec, "h1")}</h1>
       <p class="hub-updated">${updatedSpans(spec)}</p>
 ${editorialBlocks7(spec)}${hubSearchPillRows(spec)}
@@ -760,7 +773,7 @@ ${top10Lis}
       </ol>
     </section>
 
-${gamesOriginalsSection(spec)}${hotMixSection}${newsSection}    <section class="hub-screen hub-screen-more" id="more" aria-labelledby="hub-more-title">
+${hotMixSection}${newsSection}    <section class="hub-screen hub-screen-more" id="more" aria-labelledby="hub-more-title">
       <h2 id="hub-more-title" class="page-section-title">${inlineTitleSpans(spec, "moreTitle")}</h2>
 ${hubLeadSpans(spec, "moreLead")}      <ul class="hub-more-grid">
 ${moreLis}
