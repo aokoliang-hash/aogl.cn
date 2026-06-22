@@ -109,9 +109,19 @@ const PRIMARY_CONTENT_LEAD = {
   ar: "<strong>المحتوى الأساسي</strong> في الموقع هو {n} عرضًا تحريريًا مع ملاحظات إنتاج — وليس قوائم روابط الذكاء الاصطناعي أدناه. <a href=\"articles/index.html\">فهرس المقالات</a> (الأحدث أولاً).",
 };
 
+const PRIMARY_CONTENT_LEAD2 = {
+  en: 'Games, tech, briefs, and tool-guide pages are <strong>secondary bookmarks</strong> (marked <code>noindex</code> for search). Reviewers and visitors should start at <a href="about.html">About</a> or <a href="articles/index.html">articles</a>.',
+  zh: "游戏/科技 Hub、快讯与工具简介页仅为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。请从 <a href=\"about.html\">关于本站</a> 或 <a href=\"articles/index.html\">文章索引</a> 进入。",
+  ja: "ゲーム・テック Hub、briefs、ツールガイドは<strong>補助ブックマーク</strong>（検索向け <code>noindex</code>）。<a href=\"about.html\">About</a> または <a href=\"articles/index.html\">記事一覧</a> からどうぞ。",
+  ko: "게임·테크 Hub, briefs, 도구 가이드는 <strong>보조 북마크</strong>(<code>noindex</code>). <a href=\"about.html\">소개</a> 또는 <a href=\"articles/index.html\">글 목록</a>부터 보세요.",
+  fr: "Hubs jeux/tech, briefs et guides outils = <strong>signets secondaires</strong> (<code>noindex</code>). Commencez par <a href=\"about.html\">À propos</a> ou <a href=\"articles/index.html\">articles</a>.",
+  ru: "Игровые/tech hub, briefs и tool-guides — <strong>вспомогательные закладки</strong> (<code>noindex</code>). Начните с <a href=\"about.html\">О сайте</a> или <a href=\"articles/index.html\">статей</a>.",
+  ar: "صفحات الألعاب/التقنية والملخصات والأدلة = <strong>إشارات ثانوية</strong> (<code>noindex</code>). ابدأ من <a href=\"about.html\">حول</a> أو <a href=\"articles/index.html\">المقالات</a>.",
+};
+
 const ARTICLES_INDEX_LEAD = {
-  en: "{n} personal demos on aogl.cn—WebGL, video, panoramas, and illustration pipelines—with production notes in first-screen HTML. Sorted newest first. Tool workflow notes: <a href=\"/guides/index.html\">guides index</a>.",
-  zh: "aogl.cn 上{n}篇个人 Demo：WebGL、视频、全景与插画流程，首屏 HTML 含制作手记。按日期新→旧排列。工具攻略见 <a href=\"/guides/index.html\">攻略索引</a>。",
+  en: "{n} personal demos on aogl.cn—WebGL, video, panoramas, and illustration pipelines—with production notes in first-screen HTML. Sorted newest first.",
+  zh: "aogl.cn 上{n}篇个人 Demo：WebGL、视频、全景与插画流程，首屏 HTML 含制作手记。按日期新→旧排列。",
   ja: "aogl.cn の個人デモ{n}本（WebGL・動画・パノラマ・イラスト）と制作メモ。新しい順。<a href=\"/guides/index.html\">ツールガイド一覧</a>。",
   ko: "aogl.cn의 개인 데모 {n}편(WebGL·영상·파노라마·일러스트)과 제작 메모. 최신순. <a href=\"/guides/index.html\">도구 가이드</a>.",
   fr: "{n} démos personnelles sur aogl.cn — WebGL, vidéo, panoramas, illustration — avec notes de production en HTML. Plus récent d’abord. <a href=\"/guides/index.html\">Index des guides</a>.",
@@ -656,12 +666,16 @@ ${INDEX_END}`;
   const primaryLeads = LANGS.map(
     (l) => `        <p class="reading-intro site-primary-lead lang-${l}">${fillArticleCount(PRIMARY_CONTENT_LEAD[l], articles.length)}</p>`,
   ).join("\n");
+  const primaryLeads2 = LANGS.map(
+    (l) => `        <p class="reading-intro site-primary-lead site-primary-lead--secondary lang-${l}">${PRIMARY_CONTENT_LEAD2[l]}</p>`,
+  ).join("\n");
 
   const carousel = originalsCarouselUl(slice);
 
   return `${INDEX_START}
       <section id="originals" class="site-originals" aria-labelledby="originals-title">
 ${primaryLeads}
+${primaryLeads2}
 ${titleBlock}
 ${carousel}
       </section>

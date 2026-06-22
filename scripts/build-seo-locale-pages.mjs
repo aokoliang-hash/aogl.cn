@@ -12,6 +12,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 import * as cheerio from "cheerio";
 import OpenCC from "opencc-js/cn2t";
+import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
+import { isSitemapPage } from "./seo-index-policy.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -105,14 +107,9 @@ function getAllPages() {
   ];
 }
 
-/** Sitemap: indexable pages only — hub-links / briefs / tool-guides are noindex nav helpers (see docs/AdSense过审建议-2026-06-22.md). */
+/** Sitemap whitelist — articles + trust pages only (see docs/AdSense全面整改-2026-06-22.md). */
 function getSitemapPages() {
-  return getAllPages().filter(
-    (f) =>
-      !f.startsWith("hub-links/") &&
-      !f.startsWith("briefs/") &&
-      !f.startsWith("tool-guides/")
-  );
+  return getAllPages().filter(isSitemapPage);
 }
 
 const toTraditional = OpenCC.Converter({ from: "cn", to: "tw" });

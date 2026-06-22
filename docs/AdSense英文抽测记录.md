@@ -69,7 +69,7 @@
 | `briefs/` | `noindex,follow`，**不在 sitemap** |
 | `tool-guides/` | `noindex,follow`，**不在 sitemap** |
 | `hub-links/` | `noindex,follow`，**不在 sitemap** |
-| 建议复审日 | **不早于 2026-07-06** |
+| 建议复审日 | **不早于 2026-07-06**（代码已 gated，**不必**改 AdSense 后台 URL 版位） |
 
 ---
 

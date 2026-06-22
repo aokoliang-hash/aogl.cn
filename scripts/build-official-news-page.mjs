@@ -74,14 +74,13 @@ function main() {
   <meta name="description" content="OpenAI、Anthropic、Google DeepMind 官方动态；本站速览页收录，文末链出原文。" />
   <title>官方动态速览 — aogl.cn</title>
   <link rel="canonical" href="${esc(base)}/official-news.html" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="noindex,follow" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="${esc(base)}/official-news.html" />
   <meta property="og:site_name" content="aogl.cn" />
   <meta property="og:image" content="${esc(base)}/og-default.png" />
   <link rel="stylesheet" href="css/style.css" />
   ${GTAG_SCRIPT}
-  <script src="js/adsense.js"></script>
   <!-- JSONLD_OFFICIAL_NEWS_START -->
 ${jsonLd}
   <!-- JSONLD_OFFICIAL_NEWS_END -->

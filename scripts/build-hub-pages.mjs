@@ -10,6 +10,7 @@ import { faviconSrcForHtml } from "./favicon-local.mjs";
 import { hotMixImageSrcForHtml } from "./hub-image-local.mjs";
 import { localHrefAttr, resolveLocalHref } from "./resolve-local-link.mjs";
 import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
+import { NOINDEX_ROBOTS } from "./seo-index-policy.mjs";
 import { navHtml } from "./site-nav.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -580,7 +581,7 @@ ${dataDescs}
   <meta name="description" content="${esc(spec.descEn)}" />
   <title>${esc(spec.titleEn)}</title>
   <link rel="canonical" href="${esc(canonical)}" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="robots" content="${NOINDEX_ROBOTS}" />
   <meta name="author" content="aogl.cn" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="${esc(canonical)}" />
@@ -596,7 +597,6 @@ ${JSON.stringify({ "@context": "https://schema.org", "@graph": graph }, null, 2)
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/hub.css" />
   ${GTAG_SCRIPT}
-  <script src="js/adsense.js"></script>
 </head>
 <body class="locale-en">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>

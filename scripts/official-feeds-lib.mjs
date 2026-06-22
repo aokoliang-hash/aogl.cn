@@ -247,7 +247,6 @@ ${intros}
 export function renderHomeJsonLd(siteUrl) {
   const base = siteUrl.replace(/\/$/, "");
   const articles = editorialArticleSlugs();
-  const briefs = loadAllBriefs().slice(0, 24);
   const graph = [
     {
       "@type": "WebSite",
@@ -257,7 +256,7 @@ export function renderHomeJsonLd(siteUrl) {
       image: `${base}/og-default.png`,
       logo: `${base}/logo.svg`,
       description:
-        "Personal bookmarks for generative AI tools and editorial demo notes on aogl.cn.",
+        "Personal editorial demos and production notes on aogl.cn — WebGL, video, and illustration archives.",
       inLanguage: ["zh-CN", "en"],
     },
     {
@@ -270,18 +269,6 @@ export function renderHomeJsonLd(siteUrl) {
         position: i + 1,
         name: a.titleZh || a.titleEn || a.slug,
         url: `${base}/articles/${a.slug}.html`,
-      })),
-    },
-    {
-      "@type": "ItemList",
-      "@id": `${base}/#brief-list`,
-      name: "Official headline briefs on aogl.cn",
-      numberOfItems: briefs.length,
-      itemListElement: briefs.map((b, i) => ({
-        "@type": "ListItem",
-        position: i + 1,
-        name: b.title_en || b.slug,
-        url: `${base}/${briefPagePath(b.slug)}`,
       })),
     },
   ];

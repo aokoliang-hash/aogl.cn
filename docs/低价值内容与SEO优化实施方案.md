@@ -76,7 +76,7 @@
 - `isContentPrimaryPage()` **不再包含** `/hub-links/`。
 - 仅在 `articles/`、`briefs/`、`tool-guides/`、`about`、`changelog` 加载发布商脚本。
 
-**AdSense 后台建议**：自动广告仅对文章类 URL 开启；Hub / 首页关闭。
+**AdSense 后台**：自动广告可保持默认；版位已由 `js/adsense.js` 的 `isContentPrimaryPage()` 在代码侧限制。
 
 ### 3.4 构建与部署命令
 

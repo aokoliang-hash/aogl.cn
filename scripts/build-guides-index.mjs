@@ -8,6 +8,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { navBlock } from "./site-nav.mjs";
 import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
+import { NOINDEX_ROBOTS } from "./seo-index-policy.mjs";
 import { loadAllToolGuides, LANGS, escAttr, escHtml } from "./tool-guide-utils.mjs";
 import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
 
@@ -168,7 +169,7 @@ function main() {
   <meta name="description" content="${escAttr(LEAD.en.replace(/<[^>]+>/g, "").slice(0, 160))}">
   <title>${escAttr(H1.en)} — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/en/guides/index.html">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="${NOINDEX_ROBOTS}">
   <meta name="author" content="aogl.cn">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aogl.cn/en/guides/index.html">
