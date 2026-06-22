@@ -1,0 +1,450 @@
+{
+  "fetchedAt": "2026-06-22",
+  "fetchedAtTime": "15:51 UTC+8",
+  "geo": "US",
+  "geoLabelEn": "United States",
+  "geoLabelZh": "美国",
+  "windowLabelEn": "Past 24 hours · Trending now",
+  "windowLabelZh": "过去 24 小时 · Trending now",
+  "totalTrendsInExport": 380,
+  "sources": {
+    "home": "https://trends.google.com/home?hl=en-US",
+    "explore": "https://trends.google.com/explore?geo=US&hl=en-US",
+    "trending": "https://trends.google.com/trending?geo=US&hl=en-US"
+  },
+  "csvSource": "data/google-trends-us-trending-20260622.csv",
+  "trending24h": [
+    {
+      "trend": "uruguay vs cabo verde",
+      "volume": "100万+",
+      "volumeSort": 1000000,
+      "started": "2026年6月21日 UTC+8 21:30:00",
+      "ended": "",
+      "topRelated": [
+        "uruguay vs cabo verde",
+        "cape verde vs uruguay",
+        "cabo verde world cup",
+        "cape verde world cup",
+        "cape verde"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=uruguay%20vs%20cabo%20verde"
+    },
+    {
+      "trend": "new zealand vs egypt",
+      "volume": "50万+",
+      "volumeSort": 500000,
+      "started": "2026年6月22日 UTC+8 04:40:00",
+      "ended": "",
+      "topRelated": [
+        "new zealand vs egypt",
+        "egypt vs new zealand",
+        "egypt world cup",
+        "mo salah",
+        "egypt"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=new%20zealand%20vs%20egypt"
+    },
+    {
+      "trend": "house of the dragon season 3",
+      "volume": "20万+",
+      "volumeSort": 200000,
+      "started": "2026年6月21日 UTC+8 21:10:00",
+      "ended": "",
+      "topRelated": [
+        "house of the dragon season 3",
+        "game of thrones",
+        "rhaenyra targaryen",
+        "house of dragon season 3",
+        "hbomax"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=house%20of%20the%20dragon%20season%203"
+    },
+    {
+      "trend": "iran vs belgium",
+      "volume": "20万+",
+      "volumeSort": 200000,
+      "started": "2026年6月22日 UTC+8 00:10:00",
+      "ended": "",
+      "topRelated": [
+        "iran vs belgium",
+        "iran world cup",
+        "belgium world cup",
+        "belgium",
+        "iran belgium"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=iran%20vs%20belgium"
+    },
+    {
+      "trend": "spain national football team vs saudi arabia national football team standings",
+      "volume": "20万+",
+      "volumeSort": 200000,
+      "started": "2026年6月22日 UTC+8 00:30:00",
+      "ended": "2026年6月22日 UTC+8 10:20:00",
+      "topRelated": [
+        "spain national football team vs saudi arabia national football team standings",
+        "spain world cup",
+        "lamine yamal",
+        "spain",
+        "spain saudi arabia"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=spain%20national%20football%20team%20vs%20saudi%20arabia%20national%20football%20team%20standings"
+    },
+    {
+      "trend": "lottery",
+      "volume": "10万+",
+      "volumeSort": 100000,
+      "started": "2026年6月21日 UTC+8 23:50:00",
+      "ended": "",
+      "topRelated": [
+        "lottery",
+        "florida lottery"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=lottery"
+    },
+    {
+      "trend": "amazon.com",
+      "volume": "10万+",
+      "volumeSort": 100000,
+      "started": "2026年6月22日 UTC+8 05:40:00",
+      "ended": "",
+      "topRelated": [
+        "amazon.com",
+        "prime day 2026",
+        "prime day",
+        "amazon prime day 2026",
+        "when is prime day"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=amazon.com"
+    },
+    {
+      "trend": "who won the us open",
+      "volume": "10万+",
+      "volumeSort": 100000,
+      "started": "2026年6月22日 UTC+8 06:40:00",
+      "ended": "2026年6月22日 UTC+8 12:20:00",
+      "topRelated": [
+        "who won the us open",
+        "wyndham clark controversy",
+        "wyndham clark locker room",
+        "where is the us open this year",
+        "who won the us open 2026"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=who%20won%20the%20us%20open"
+    },
+    {
+      "trend": "oklahoma baseball",
+      "volume": "10万+",
+      "volumeSort": 100000,
+      "started": "2026年6月22日 UTC+8 02:50:00",
+      "ended": "2026年6月22日 UTC+8 07:40:00",
+      "topRelated": [
+        "oklahoma baseball",
+        "college baseball world series",
+        "ou baseball score",
+        "unc baseball score",
+        "ou baseball"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=oklahoma%20baseball"
+    },
+    {
+      "trend": "fathers day 2026",
+      "volume": "10万+",
+      "volumeSort": 100000,
+      "started": "2026年6月21日 UTC+8 19:00:00",
+      "ended": "2026年6月21日 UTC+8 23:30:00",
+      "topRelated": [
+        "fathers day 2026",
+        "father's day 2026",
+        "father day 2026"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=fathers%20day%202026"
+    },
+    {
+      "trend": "michael feldman savannah guthrie relationship",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月22日 UTC+8 06:00:00",
+      "ended": "",
+      "topRelated": [
+        "michael feldman savannah guthrie relationship"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=michael%20feldman%20savannah%20guthrie%20relationship"
+    },
+    {
+      "trend": "unruly aircraft passenger",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月22日 UTC+8 02:30:00",
+      "ended": "",
+      "topRelated": [
+        "unruly aircraft passenger",
+        "american airlines flight misconduct"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=unruly%20aircraft%20passenger"
+    },
+    {
+      "trend": "what is french fries love island",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月22日 UTC+8 09:20:00",
+      "ended": "",
+      "topRelated": [
+        "what is french fries love island",
+        "french fry love island",
+        "french fries love island meaning",
+        "what does french fries mean love island",
+        "love island french fries"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=what%20is%20french%20fries%20love%20island"
+    },
+    {
+      "trend": "brady tkachuk",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月22日 UTC+8 05:40:00",
+      "ended": "",
+      "topRelated": [
+        "brady tkachuk",
+        "florida panthers",
+        "brady tkachuk trade",
+        "matthew tkachuk",
+        "tkachuk brothers"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=brady%20tkachuk"
+    },
+    {
+      "trend": "abelardo de la espriella",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月22日 UTC+8 05:40:00",
+      "ended": "",
+      "topRelated": [
+        "abelardo de la espriella",
+        "colombia elections",
+        "colombian presidential election results",
+        "colombian elections",
+        "colombia elections 2026"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=abelardo%20de%20la%20espriella"
+    },
+    {
+      "trend": "trump frequent number 22 usage",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月21日 UTC+8 20:00:00",
+      "ended": "2026年6月22日 UTC+8 09:50:00",
+      "topRelated": [
+        "trump frequent number 22 usage"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=trump%20frequent%20number%2022%20usage"
+    },
+    {
+      "trend": "mets vs phillies",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月22日 UTC+8 07:10:00",
+      "ended": "2026年6月22日 UTC+8 11:10:00",
+      "topRelated": [
+        "mets vs phillies",
+        "phillies game",
+        "juan soto",
+        "phillies vs mets",
+        "brandon marsh"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=mets%20vs%20phillies"
+    },
+    {
+      "trend": "us open payout",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月22日 UTC+8 04:50:00",
+      "ended": "2026年6月22日 UTC+8 12:20:00",
+      "topRelated": [
+        "us open payout",
+        "us open purse",
+        "us open payout 2026",
+        "us open purse 2026",
+        "us open prize money"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=us%20open%20payout"
+    },
+    {
+      "trend": "elecciones colombia",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月22日 UTC+8 00:50:00",
+      "ended": "2026年6月22日 UTC+8 11:00:00",
+      "topRelated": [
+        "elecciones colombia",
+        "elecciones colombia 2026",
+        "registraduria de colombia",
+        "elecciones presidenciales colombia",
+        "presidente de colombia"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=elecciones%20colombia"
+    },
+    {
+      "trend": "nba draft",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月21日 UTC+8 22:50:00",
+      "ended": "2026年6月22日 UTC+8 14:20:00",
+      "topRelated": [
+        "nba draft",
+        "nba draft 2026",
+        "nba mock draft",
+        "when is the nba draft 2026"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=nba%20draft"
+    },
+    {
+      "trend": "cardinals vs royals",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月22日 UTC+8 01:40:00",
+      "ended": "2026年6月22日 UTC+8 06:30:00",
+      "topRelated": [
+        "cardinals vs royals",
+        "jj wetherholt"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=cardinals%20vs%20royals"
+    },
+    {
+      "trend": "posiciones de selección de fútbol de españa contra selección de fútbol de arabia saudita",
+      "volume": "5万+",
+      "volumeSort": 50000,
+      "started": "2026年6月22日 UTC+8 02:10:00",
+      "ended": "2026年6月22日 UTC+8 07:40:00",
+      "topRelated": [
+        "posiciones de selección de fútbol de españa contra selección de fútbol de arabia saudita",
+        "españa vs arabia saudita",
+        "españa",
+        "españa vs. arabia saudita",
+        "españa fc"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=posiciones%20de%20selecci%C3%B3n%20de%20f%C3%BAtbol%20de%20espa%C3%B1a%20contra%20selecci%C3%B3n%20de%20f%C3%BAtbol%20de%20arabia%20saudita"
+    },
+    {
+      "trend": "argentina vs austria",
+      "volume": "2万+",
+      "volumeSort": 20000,
+      "started": "2026年6月21日 UTC+8 23:40:00",
+      "ended": "",
+      "topRelated": [
+        "argentina vs austria"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=argentina%20vs%20austria"
+    },
+    {
+      "trend": "lindsey graham",
+      "volume": "2万+",
+      "volumeSort": 20000,
+      "started": "2026年6月22日 UTC+8 02:00:00",
+      "ended": "",
+      "topRelated": [
+        "lindsey graham"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=lindsey%20graham"
+    },
+    {
+      "trend": "aaron wiggins",
+      "volume": "2万+",
+      "volumeSort": 20000,
+      "started": "2026年6月22日 UTC+8 10:20:00",
+      "ended": "",
+      "topRelated": [
+        "aaron wiggins",
+        "aaron wiggins trade",
+        "nba news",
+        "atlanta hawks"
+      ],
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=aaron%20wiggins"
+    }
+  ],
+  "topQueriesYear": [
+    {
+      "query": "weather",
+      "change": "+30%"
+    },
+    {
+      "query": "google",
+      "change": "+10%"
+    },
+    {
+      "query": "youtube",
+      "change": "+20%"
+    },
+    {
+      "query": "amazon",
+      "change": "+5%"
+    },
+    {
+      "query": "news",
+      "change": "+20%"
+    },
+    {
+      "query": "reddit",
+      "change": "-2%"
+    },
+    {
+      "query": "apple",
+      "change": "+30%"
+    },
+    {
+      "query": "walmart",
+      "change": "+2%"
+    },
+    {
+      "query": "facebook",
+      "change": "-5%"
+    },
+    {
+      "query": "movies",
+      "change": "+20%"
+    }
+  ],
+  "risingQueriesYear": [
+    {
+      "query": "fifa world cup 2026",
+      "change": "+1,400%"
+    },
+    {
+      "query": "world cup 2026",
+      "change": "+1,250%"
+    },
+    {
+      "query": "knicks vs spurs",
+      "change": "+1,200%"
+    },
+    {
+      "query": "spurs vs knicks",
+      "change": "+1,150%"
+    },
+    {
+      "query": "world cup schedule",
+      "change": "+900%"
+    },
+    {
+      "query": "fifa world cup",
+      "change": "+800%"
+    },
+    {
+      "query": "world cup",
+      "change": "+650%"
+    },
+    {
+      "query": "spurs",
+      "change": "+550%"
+    },
+    {
+      "query": "fifa",
+      "change": "+500%"
+    },
+    {
+      "query": "spurs game",
+      "change": "+500%"
+    }
+  ],
+  "yearWindowLabelEn": "Past 12 months · Top / Rising queries",
+  "yearWindowLabelZh": "过去 12 个月 · Top / Rising queries"
+}

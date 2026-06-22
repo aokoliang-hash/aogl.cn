@@ -1,0 +1,69 @@
+{
+  "fetchedAt": "2026-06-01",
+  "fetchStatus": "manual",
+  "fetchNote": "Archived from Sensor Tower blog post (February 2026) and January 2026 Gaming Recap infographic. App Store + Google Play only; third-party Android markets excluded.",
+  "periodLabel": "January 2026",
+  "periodLabelZh": "2026年1月",
+  "sourceUrl": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-january-2026",
+  "chartImageUrl": "https://images.ctfassets.net/vfkpgemp7ek3/66a7y1kBam8zS3mT4qUcbs/156f7b02a54dc79ff87141171a71153e/2026-01_Gaming_Recap_Rankings_JAN_2026.002.png",
+  "revenueSummary": {
+    "totalUsd": "$7.1B",
+    "mom": "+1.4%",
+    "topMarkets": [
+      { "market": "United States", "share": "31%" },
+      { "market": "China (iOS only)", "share": "16%" },
+      { "market": "Japan", "share": "13%" }
+    ]
+  },
+  "downloadSummary": {
+    "total": "4.2B",
+    "mom": "+5.4%",
+    "topMarkets": [
+      { "market": "India", "share": "14.4%", "downloads": "607M" },
+      { "market": "United States", "share": "7.9%" },
+      { "market": "Brazil", "share": "7.1%" }
+    ]
+  },
+  "revenueTop10": [
+    { "rank": 1, "name": "Honor of Kings", "publisher": "Tencent", "noteEn": "Sun Wukong skin + hero Da Yu + S42 season", "noteZh": "孙悟空限定皮肤、新英雄大禹、S42 赛季" },
+    { "rank": 2, "name": "Last War: Survival Game", "publisher": "FunFly / Florere", "noteEn": "Strong live-ops monetization", "noteZh": "长线运营拉动内购" },
+    { "rank": 3, "name": "MONOPOLY GO!", "publisher": "Scopely", "noteEn": "Extended Harry Potter live ops", "noteZh": "哈利·波特联动周期延长" },
+    { "rank": 4, "name": "Royal Match", "publisher": "Dream Games", "noteEn": "Match-3 IAP leader", "noteZh": "三消内购头部" },
+    { "rank": 5, "name": "Whiteout Survival", "publisher": "Century Games", "noteEn": "Strategy / survival IAP", "noteZh": "策略生存类内购" },
+    { "rank": 10, "name": "Game for Peace", "publisher": "Tencent", "noteEn": "Re-entered top 10 (+19); international name Peacekeeper Elite", "noteZh": "重返全球收入前十（+19）；国际服名 Peacekeeper Elite" }
+  ],
+  "revenueMidRanksNoteEn": "Sensor Tower’s blog points to the official infographic for the full revenue top 10 (ranks 6–9). This archive lists every rank explicitly named in the post text plus the published download tables.",
+  "revenueMidRanksNoteZh": "Sensor Tower 博文将完整收入前十指向官方信息图（第 6–9 名）。本站表格仅存档文中点名的名次，以及信息图中的下载类榜单。",
+  "downloadsTop10": [
+    { "rank": 1, "name": "Block Blast!", "publisher": "Hungry Studio", "change": "=" },
+    { "rank": 2, "name": "ROBLOX", "publisher": "Roblox", "change": "=" },
+    { "rank": 3, "name": "Free Fire", "publisher": "Garena / Sea", "change": "=" },
+    { "rank": 4, "name": "Pizza Ready!", "publisher": "Supercent", "change": "=" },
+    { "rank": 5, "name": "Subway Surfers", "publisher": "Miniclip", "change": "=" },
+    { "rank": 6, "name": "Vita Mahjong", "publisher": "Vita Studio", "change": "▲" },
+    { "rank": 7, "name": "Ludo King", "publisher": "Gametion", "change": "▼" },
+    { "rank": 8, "name": "Tile Explorer - Triple Match", "publisher": "Oakever Games", "change": "▲" },
+    { "rank": 9, "name": "Football League 2023", "publisher": "Mobile Soccer", "change": "▲" },
+    { "rank": 10, "name": "Paper.io 2", "publisher": "Voodoo", "change": "▼" }
+  ],
+  "downloadsGrowthTop10": [
+    { "rank": 1, "name": "Heartopia", "publisher": "XD", "tag": "NEW" },
+    { "rank": 2, "name": "Goose Goose Duck", "publisher": "Gaggle Studios", "tag": "" },
+    { "rank": 3, "name": "Gossip Harbor", "publisher": "Microfun", "tag": "" },
+    { "rank": 4, "name": "TheoTown: City Builder Sim", "publisher": "blueflower", "tag": "" },
+    { "rank": 5, "name": "ColorBlock : Combo Blast", "publisher": "Flyyes Technology", "tag": "" },
+    { "rank": 6, "name": "Arknights: Endfield", "publisher": "Hypergryph", "tag": "NEW" },
+    { "rank": 7, "name": "Royal Kingdom", "publisher": "Dream Games", "tag": "" },
+    { "rank": 8, "name": "Rope Escape Master", "publisher": "PoseidonJoy", "tag": "" },
+    { "rank": 9, "name": "Tile Explorer - Triple Match", "publisher": "Oakever Games", "tag": "" },
+    { "rank": 10, "name": "Piano Beat: Rush Tiles", "publisher": "Geckolor Inc.", "tag": "" }
+  ],
+  "revenueGrowthHighlights": [
+    { "name": "Arknights: Endfield", "publisher": "Hypergryph", "noteEn": "No. 3 worldwide revenue growth after January launch", "noteZh": "1 月上线后全球收入增长第 3" },
+    { "name": "Genshin Impact", "publisher": "miHoYo", "noteEn": "Returned to growth list; mid-Jan banners + Archon Quest", "noteZh": "重返增长榜；月中限定与魔神任务" },
+    { "name": "Dragon Ball Z Dokkan Battle", "publisher": "Bandai Namco", "noteEn": "11th anniversary gacha rebound", "noteZh": "11 周年卡池拉动回流" },
+    { "name": "Dungeon & Fighter Mobile", "publisher": "Tencent", "noteEn": "Progression updates + live ops", "noteZh": "版本进度与长线活动" },
+    { "name": "Delta Force", "publisher": "Tencent", "noteEn": "Shooter season refresh in CN / SEA", "noteZh": "国服与东南亚赛季内容" },
+    { "name": "Naruto Mobile", "publisher": "Tencent", "noteEn": "IP events reactivated spenders", "noteZh": "IP 活动唤醒老玩家付费" }
+  ]
+}
