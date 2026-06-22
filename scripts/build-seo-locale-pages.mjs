@@ -105,9 +105,14 @@ function getAllPages() {
   ];
 }
 
-/** Sitemap: indexable pages only — hub-links are noindex navigation helpers (see docs/低价值内容与SEO优化实施方案.md). */
+/** Sitemap: indexable pages only — hub-links / briefs / tool-guides are noindex nav helpers (see docs/AdSense过审建议-2026-06-22.md). */
 function getSitemapPages() {
-  return getAllPages().filter((f) => !f.startsWith("hub-links/"));
+  return getAllPages().filter(
+    (f) =>
+      !f.startsWith("hub-links/") &&
+      !f.startsWith("briefs/") &&
+      !f.startsWith("tool-guides/")
+  );
 }
 
 const toTraditional = OpenCC.Converter({ from: "cn", to: "tw" });

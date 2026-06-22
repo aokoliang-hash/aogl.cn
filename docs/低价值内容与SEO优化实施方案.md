@@ -17,6 +17,7 @@
 | GSC 效果 | 月点击约 **7 次** | 几乎无搜索曝光 |
 | GA4 | 39 用户、互动 **21 秒** | 跳出高、自然搜索几乎为 0 |
 | sitemap | **4,632** 条 URL | 远超真实「主内容」体量 |
+| sitemap（2026-06-22 后） | **~248** 条 URL | 已排除 hub-links / briefs / tool-guides |
 | AdSense | 低价值内容（aqqlang.com）/ aogl.cn 准备中 | 收录 ≠ 能投放 |
 
 ### 1.2 根因
@@ -114,6 +115,19 @@ git push origin main
 curl -s https://aogl.cn/sitemap.xml | findstr /c:"hub-links"
 # 应无输出
 ```
+
+### 3.5 briefs / tool-guides noindex + sitemap 二次瘦身（2026-06-22）
+
+**文件**：`scripts/build-brief-pages.mjs`、`scripts/build-tool-guide-pages.mjs`、`scripts/build-guides-index.mjs`、`js/adsense.js`、`scripts/build-seo-locale-pages.mjs`
+
+- 全部 `briefs/`、`tool-guides/` 页改为 `<meta name="robots" content="noindex,follow">`，并移除 `adsense.js`。
+- `getSitemapPages()` 排除 `briefs/`、`tool-guides/`（与 hub-links 同理）。
+- `adsense.js` 仅在 `/articles/`、`about.html`、`changelog.html` 加载发布商脚本。
+- `guides/index.html` 保留 `index,follow`，但不加载 AdSense。
+
+**验收**：`sitemap.xml` 约 **248** URL；不含 `briefs/`、`tool-guides/`、`hub-links/`。
+
+详见 [`AdSense过审建议-2026-06-22.md`](./AdSense过审建议-2026-06-22.md)。
 
 ---
 

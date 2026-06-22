@@ -23,7 +23,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Hard palette fields · five expression slots · v1.0 maintenance contract","alternativeHeadline":"艾琳娜配色与仪式 UI：HTML 设定表维护手记","datePublished":"2026-06-18","dateModified":"2026-06-18","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html"},"url":"https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html","inLanguage":"mul","description":"Follow-up to Elena (Poem of the Sea Wind): how palette rows, expression discs, and static HTML in original/game-girl stay maintainable—editorial notes, not a shipped game asset pack.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Hard palette fields · five expression slots · v1.0 maintenance contract","alternativeHeadline":"艾琳娜配色与仪式 UI：HTML 设定表维护手记","datePublished":"2026-06-18","dateModified":"2026-06-22","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html"},"url":"https://aogl.cn/en/articles/game-girl-elena-palette-ritual-notes.html","inLanguage":"mul","description":"Follow-up to Elena (Poem of the Sea Wind): how palette rows, expression discs, and static HTML in original/game-girl stay maintainable—editorial notes, not a shipped game asset pack.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-en">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -245,7 +245,30 @@
 <p>I read <a href="/games.html">games.html</a> for first-party headlines, then return to character folders like <code>original/game-girl/</code> for personal art passes—see <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a> for that Sunday routine. Store RSS does not auto-update the sheet; humans still merge decisions.</p>
 
 <h3>Scope boundary</h3>
-<p>No rig, no engine import, no gacha rates, no voice casting. If Elena gets a third article, it will be because a new artifact shipped (for example painted expressions)—not because I padded keywords.</p></article>
+<p>No rig, no engine import, no gacha rates, no voice casting. If Elena gets a third article, it will be because a new artifact shipped (for example painted expressions)—not because I padded keywords.</p>
+
+<h2>Costume SVG cells: why inline vector placeholders</h2>
+<p>The sheet’s clothing breakdown uses simple inline SVG silhouettes—not final fashion flats. They exist so layout width stays stable when I swap PNG crops later. Each cell labels “主服 / 腰带 / 头饰 / 法杖” in Chinese because the sheet’s primary reader is me during maintenance; English articles explain the intent for visitors. I resist embedding raster costume pieces inside the SVG layer; rasters belong in the turnaround strip only.</p>
+
+<h2>Accent colors with hard reject rules</h2>
+<ul>
+  <li><strong>Staff gold (#D4AF37)</strong> — if generative output pushes orange brass, reject; the staff must read metallic, not wooden.</li>
+  <li><strong>Crown green (#2E8B57)</strong> — only the vine crown; never bleed into hair highlights.</li>
+  <li><strong>Gem blue (#4169E1)</strong> — reserved for the tide-sand staff orb; do not reuse on eyes or lip gloss.</li>
+</ul>
+<p>When a May 19 exploration violated gem blue on the pupils, I kept the PNG as a negative example locally but excluded it from the public gallery in the launch article.</p>
+
+<h2>Expression filter values (placeholder era)</h2>
+<p>Current CSS uses mild filters on the shared face crop: gentle (+5% brightness), smile (+10% saturate), contemplative (−8% brightness), resolute (+hue-rotate 5deg), joyful (+12% saturate). These numbers are not aesthetic goals—they prevent layout shift until painted discs arrive. Documenting them here means I can diff when replacing filters with real PNGs.</p>
+
+<h2>Version history I actually track</h2>
+<ol>
+  <li><strong>2026-05-18</strong> — First turnaround + sheet HTML scaffold.</li>
+  <li><strong>2026-05-20</strong> — Palette rows locked; exploration gallery finalized.</li>
+  <li><strong>2026-06-03</strong> — Launch article published (<a href="game-girl-elena-sea-wind-reference.html">sea-wind reference</a>).</li>
+  <li><strong>2026-06-18</strong> — Palette & ritual UI notes split to this URL.</li>
+</ol>
+<p>Any hex or filter change bumps the last row and triggers a changelog bullet—no silent edits.</p></article>
     </div>
     <div class="lang-zh">
       <div class="article-shell__top">

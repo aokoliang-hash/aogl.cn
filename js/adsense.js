@@ -11,8 +11,8 @@
  *   localStorage.setItem('aogl-disable-ads','1')
  * 后刷新。若页面在 adsense.js 之前设置了 window.AOGL_DISABLE_ADSENSE = true，也会跳过加载。
  *
- * 过审策略：仅在「以正文为主」的 URL 加载发布商脚本（文章、brief、tool-guides、about、changelog）。
- * hub-links 已 noindex，不在此加载；首页 / Hub 等薄页仍引用本文件但不发起 adsbygoogle 请求。
+ * 过审策略（2026-06-22）：仅在原创文章、about、changelog 加载发布商脚本。
+ * briefs / tool-guides / guides / hub-links / Hub / 首页 仍引用本文件但不发起 adsbygoogle 请求。
  */
 (function () {
   var PUBLISHER_CLIENT = "ca-pub-6958761551797888";
@@ -32,7 +32,7 @@
   function isContentPrimaryPage() {
     if (typeof location === "undefined") return false;
     var p = String(location.pathname || "").toLowerCase();
-    if (/\/articles\//.test(p) || /\/briefs\//.test(p) || /\/tool-guides\//.test(p) || /\/guides\//.test(p)) return true;
+    if (/\/articles\//.test(p)) return true;
     if (/\/about\.html$/.test(p) || /\/changelog\.html$/.test(p)) return true;
     return false;
   }

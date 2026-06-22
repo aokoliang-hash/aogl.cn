@@ -180,7 +180,6 @@ function main() {
   <link rel="stylesheet" href="${P}css/hub.css">
   <link rel="stylesheet" href="${P}css/article-hub.css">
   ${GTAG_SCRIPT}
-  <script src="${P}js/adsense.js"></script>
   <script type="application/ld+json">${jsonLd}</script>
 </head>
 <body class="locale-en">

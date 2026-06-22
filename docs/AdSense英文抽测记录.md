@@ -1,6 +1,6 @@
 # AdSense 英文抽测记录（aogl.cn）
 
-> 核对日期：**2026-06-01** · 依据 `docs/AdSense过审改动清单.md` §6。  
+> 核对日期：**2026-06-22** · 依据 [`AdSense过审建议-2026-06-22.md`](./AdSense过审建议-2026-06-22.md)。  
 > 方法：对 `data/articles/fragments/*-en.html` 去标签后按空白分词估算。
 
 ---
@@ -9,12 +9,9 @@
 
 | 检查项 | 结果 | 说明 |
 |--------|------|------|
-| `#originals` 在 `#intro` 之前 | ✅ | 2026-06-01 构建顺序调整 |
+| `#originals` 在 `#intro` 之前 | ✅ | 15 篇轮播 |
 | 主内容导语 `site-primary-lead` | ✅ | 链向 `articles/index.html` |
-| `#intro` / 工具区 / 四卡 / `#cat-*` | ✅ | 维持 |
 | 页脚 About / Changelog / Privacy | ✅ | |
-
-**结论：通过** — 首屏优先看到原创轮播与主内容说明。
 
 ---
 
@@ -22,54 +19,58 @@
 
 | URL | 结果 | 说明 |
 |-----|------|------|
-| `/en/about.html` | ✅ | 5 段 + adsense.js（gated 加载） |
-| `/en/changelog.html` | ✅ | 含 2026-06-01 条目 |
-| `/en/privacy.html` | ✅ | 维持 |
-| `/en/articles/index.html` | ✅ | 12 篇列表 + 摘要（新建） |
+| `/en/about.html` | ✅ | adsense gated |
+| `/en/changelog.html` | ✅ | 含 2026-06-22 整改条目 |
+| `/en/articles/index.html` | ✅ | 15 篇列表 |
 
 ---
 
-## 3. 文章 `/en/articles/`（12 篇英文字数粗算）
+## 3. 文章 `/en/articles/`（15 篇英文字数，2026-06-22）
 
 | Slug | 英文字数* | 抽测结论 |
 |------|-----------|----------|
-| `in-car-view-train-window-scenery` | ~912 | ✅ **推荐送审** |
-| `major-planets8-solar-system-textures` | ~877 | ✅ **推荐送审** |
-| `girl1-knit-contact-sheet-study` | ~825 | ✅ **推荐送审** |
-| `sky-plane-window-cloud-composite` | ~800 | ✅ **推荐送审** |
-| `role-girl-card-visual-study` | ~693 | ✅ **推荐送审** |
-| `travel-through-parallax-phone` | ~920 | ✅ 800+（2026-06-01 扩写） |
-| `apartment-360-panorama-tour` | ~834 | ✅ 800+（扩写） |
-| `velmora` | ~883 | ✅ 800+（扩写） |
-| `monkey-short-bts` | ~827 | ✅ 800+（扩写） |
-| `monkey2-sprite-head-track` | ~807 | ✅ 800+（扩写） |
-| `character-turnaround-walk` | ~851 | ✅ 800+（扩写） |
-| `interactive-3d-earth` | ~848 | ✅ 800+（扩写） |
+| `in-car-view-train-window-scenery` | ~912 | ✅ 推荐送审 |
+| `major-planets8-solar-system-textures` | ~877 | ✅ 推荐送审 |
+| `girl1-knit-contact-sheet-study` | ~825 | ✅ 推荐送审 |
+| `sky-plane-window-cloud-composite` | ~800 | ✅ 推荐送审 |
+| `game-girl-elena-sea-wind-reference` | ~957 | ✅ 推荐送审 |
+| `travel-through-parallax-phone` | ~957 | ✅ |
+| `apartment-360-panorama-tour` | ~834 | ✅ |
+| `velmora` | ~919 | ✅ |
+| `monkey-short-bts` | ~877 | ✅ |
+| `monkey2-sprite-head-track` | ~873 | ✅ |
+| `character-turnaround-walk` | ~884 | ✅ |
+| `interactive-3d-earth` | ~891 | ✅ |
+| `games-hub-generative-art-workflow` | 921 | ✅ 2026-06-22 扩写 |
+| `game-girl-elena-palette-ritual-notes` | 864 | ✅ 2026-06-22 扩写 |
+| `role-girl-card-visual-study` | 832 | ✅ 2026-06-22 扩写 |
 
-\* 去标签分词；扩写后 2026-06-01 本地重跑确认。
-
-**勿单独送审**：`role-girl-card-visual-study`（~693 词，仍偏短）；优先仍用 in-car / major-planets8 / girl1 / sky-plane。
+\* 本地 `py -3` 脚本去标签分词；带 `+` 为扩写后粗算下限。
 
 ---
 
-## 4. 送审员可能打开的 URL（建议）
+## 4. 送审样本 URL
 
 1. https://aogl.cn/en/articles/index.html  
 2. https://aogl.cn/en/about.html  
 3. https://aogl.cn/en/articles/in-car-view-train-window-scenery.html  
 4. https://aogl.cn/en/articles/major-planets8-solar-system-textures.html  
-5. https://aogl.cn/en/articles/girl1-knit-contact-sheet-study.html  
+5. https://aogl.cn/en/articles/game-girl-elena-sea-wind-reference.html  
 
-备查：https://aogl.cn/en/ · https://aogl.cn/en/changelog.html  
-
----
-
-## 5. 广告与等待
-
-- **代码**：`js/adsense.js` 仅在 `/articles/`、`about.html`、`changelog.html` 加载 `adsbygoogle.js`。  
-- **后台**：自动广告版位仍建议在 AdSense 控制台收窄到文章类 URL。  
-- **复审**：2026-06-01 大改后，建议 **2026-06-08 前后** 再申请。
+备查：https://aogl.cn/en/changelog.html
 
 ---
 
-*本记录与 `docs/AdSense过审改动清单.md` §6 同步。*
+## 5. 广告与 sitemap（2026-06-22）
+
+| 项 | 状态 |
+|----|------|
+| `adsense.js` 加载范围 | 仅 `/articles/`、`about.html`、`changelog.html` |
+| `briefs/` | `noindex,follow`，**不在 sitemap** |
+| `tool-guides/` | `noindex,follow`，**不在 sitemap** |
+| `hub-links/` | `noindex,follow`，**不在 sitemap** |
+| 建议复审日 | **不早于 2026-07-06** |
+
+---
+
+*与 `docs/AdSense过审建议-2026-06-22.md` §7 同步。*

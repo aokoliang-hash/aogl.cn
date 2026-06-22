@@ -89,7 +89,7 @@ function buildPage(guide) {
   <meta name="description" content="${escAttr(descEn)}">
   <title>${escAttr(titleEn)} — aogl.cn</title>
   <link rel="canonical" href="${SITE}/en/${toolGuidePath(slug)}">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="noindex,follow">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${SITE}/en/${toolGuidePath(slug)}">
   <meta property="og:title" content="${escAttr(titleEn)} — aogl.cn">
@@ -99,7 +99,6 @@ function buildPage(guide) {
   <link rel="stylesheet" href="${sitePath("css/brief.css")}">
   <link rel="stylesheet" href="${sitePath("css/tool-guide.css")}">
   ${GTAG_SCRIPT}
-  <script src="${sitePath("js/adsense.js")}"></script>
   ${buildJsonLd(guide, titleEn, descEn)}
 </head>`;
 

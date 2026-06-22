@@ -6,7 +6,21 @@
 
 ---
 
-## 0. 进度总览（2026-06-01 核对）
+## 0. 进度总览（2026-06-22 核对）
+
+| 类别 | 状态 | 说明 |
+|------|------|------|
+| About / 隐私 / changelog | ✅ 已落地 | 各语言页 + 页脚 + sitemap |
+| 原创文章 | ✅ **15/15** | 英文全部 ≥800 词（2026-06-22 补齐 3 篇） |
+| briefs / tool-guides | ✅ **noindex + 移出 sitemap** | 见 `docs/AdSense过审建议-2026-06-22.md` |
+| 广告加载范围 | ✅ | `js/adsense.js` 仅 articles / about / changelog |
+| 等 2～4 周再申 | ⏳ 运营项 | 建议 **2026-07-06 前后** 再点「申请审核」 |
+
+> **最新完整方案**：[`AdSense过审建议-2026-06-22.md`](./AdSense过审建议-2026-06-22.md)
+
+---
+
+## 0b. 历史进度（2026-06-01 核对）
 
 | 类别 | 状态 | 说明 |
 |------|------|------|
@@ -147,7 +161,8 @@ npm run build-hubs && npm run build-seo-locales
 
 | 文档 | 关系 |
 |------|------|
-| `docs/低价值内容与SEO优化实施方案.md` | **canonical 对齐、hub-links noindex、sitemap 瘦身（2026-06-12）** |
+| **`docs/AdSense过审建议-2026-06-22.md`** | **当前执行方案（briefs/tool-guides noindex、sitemap 瘦身、AdSense 收紧）** |
+| `docs/低价值内容与SEO优化实施方案.md` | canonical 对齐、hub-links noindex（2026-06-12） |
 | `docs/AdSense英文抽测记录.md` | 12 篇英文字数 + 送审 URL |
 | `docs/首页原创文章与SEO实施说明.md` | 构建与 SEO |
 | `docs/站点曝光与增长实施方案.md` | GSC（与 AdSense 分开） |

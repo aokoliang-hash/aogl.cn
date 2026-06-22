@@ -83,7 +83,7 @@ function buildBriefPage(brief) {
   <meta name="description" content="${escAttr(descEn)}">
   <title>${escAttr(titleEn)} — aogl.cn</title>
   <link rel="canonical" href="${SITE}/en/briefs/${slug}.html">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="noindex,follow">
   <meta property="og:type" content="article">
   <meta property="og:url" content="${SITE}/en/briefs/${slug}.html">
   <meta property="og:title" content="${escAttr(titleEn)} — aogl.cn">
@@ -93,7 +93,6 @@ function buildBriefPage(brief) {
   <link rel="stylesheet" href="${sitePath("css/privacy.css")}">
   <link rel="stylesheet" href="${sitePath("css/brief.css")}">
   ${GTAG_SCRIPT}
-  <script src="${sitePath("js/adsense.js")}"></script>
   ${buildJsonLd(brief, titleEn, descEn)}
 </head>`;
 
@@ -171,6 +170,7 @@ function buildBriefIndex(briefs) {
   <meta name="description" content="Local brief pages for OpenAI, Anthropic, and DeepMind headlines — summaries on aogl.cn with links to originals.">
   <title>Official headline briefs — aogl.cn</title>
   <link rel="canonical" href="${SITE}/en/briefs/">
+  <meta name="robots" content="noindex,follow">
   <link rel="stylesheet" href="${sitePath("css/privacy.css")}">
   <link rel="stylesheet" href="${sitePath("css/brief.css")}">
   <script src="${sitePath("js/i18n.js")}"></script>
