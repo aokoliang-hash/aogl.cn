@@ -9,8 +9,8 @@
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
   "updated": "2026-06-22",
-  "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Hot mix below merges public RSS when you run <code>npm run fetch-hub-news</code> — dedupe is best-effort, timestamps come from feeds, and headlines often stay English at the source.</p><p>Last reviewed: <strong>2026-06-22</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want one scrollable strip of <em>first-party</em> headlines (patches, hardware, live-service notes) without opening five tabs. I use it as a Sunday catch-up rail, not a discovery feed for unknown APK sites. If a publisher ships a major client update, I expect to see it via Steam News or the console blogs first — mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p><p><strong>Editorial cross-link:</strong> first game-original on this hub: <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Reading Steam Charts</a>; character look-dev in <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">Elena · Sea-Wind</a>, <a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">palette & ritual UI</a>, and <a href=\"/articles/games-hub-generative-art-workflow.html\">Games hub × generative art workflow</a>.</p>",
-  "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>下方 Hot mix 在运行 <code>npm run fetch-hub-news</code> 时从公开 RSS 合并写入；去重为尽力而为，时间戳随 feed，标题多保留来源站英文。</p><p>最近核对：<strong>2026-06-22</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但想在一个横向列表里扫一遍<strong>第一方</strong>补丁、硬件与运营公告的人。我自己当「周日补课」用，不把它当成 APK 发现站。大版本更新我默认会先出现在 Steam 新闻或御三家博客里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p><p><strong>原创交叉链：</strong>游戏 Hub 原创轮播首篇 <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Steam Charts 怎么读</a>；角色设定见 <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">艾琳娜 · 海风之诗</a>、<a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">配色与仪式 UI</a>，工作流 <a href=\"/articles/games-hub-generative-art-workflow.html\">游戏 Hub × 生成式角色美术</a>。</p>",
+  "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Last reviewed: <strong>2026-06-22</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want a ranked top-10 plus three official links per vendor — not a discovery feed for unknown APK sites. Major client updates still show up in the per-row news slots when you run <code>npm run fetch-hub-news</code>; mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p><p><strong>Editorial cross-link:</strong> first game-original on this hub: <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Reading Steam Charts</a>; character look-dev in <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">Elena · Sea-Wind</a>, <a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">palette & ritual UI</a>, and <a href=\"/articles/games-hub-generative-art-workflow.html\">Games hub × generative art workflow</a>.</p>",
+  "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>最近核对：<strong>2026-06-22</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但需要对照营收梯队、并点到各厂三条官方链接的人；不把它当成 APK 发现站。大版本更新仍会出现在每行「最新动态」里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p><p><strong>原创交叉链：</strong>游戏 Hub 原创轮播首篇 <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Steam Charts 怎么读</a>；角色设定见 <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">艾琳娜 · 海风之诗</a>、<a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">配色与仪式 UI</a>，工作流 <a href=\"/articles/games-hub-generative-art-workflow.html\">游戏 Hub × 生成式角色美术</a>。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
   "rankTitleZh": "全球前十（平台与发行）",
   "rankLeadEn": "Storefronts and publishers that Newzoo-style revenue tables usually put up front for PC and console — mobile-first giants are in “more”.",
@@ -23,214 +23,8 @@
   "originalsTitleZh": "本站原创（游戏向）",
   "originalsPrimaryLeadEn": "This hub’s <strong>main strip</strong> is game editorial on aogl.cn (newest first; plan to add one note most days). <a href=\"/articles/index.html\">All articles</a>.",
   "originalsPrimaryLeadZh": "游戏 Hub <strong>主内容</strong>是本站游戏向原创手记（新→旧，计划每日一篇）。<a href=\"/articles/index.html\">全部原创索引</a>。",
-  "originalsSecondaryLeadEn": "Platform top-10, Hot mix RSS, and vendor news below are auxiliary bookmarks (noindex).",
-  "originalsSecondaryLeadZh": "下方全球平台前十、Hot mix 与厂商动态为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。",
-  "originalsLeadEn": "Personal game notes on aogl.cn — newest first. Hot mix below still mirrors first-party RSS when you run fetch-hub-news.",
-  "originalsLeadZh": "本站游戏向原创手记，按新→旧排列；下方 Hot mix 仍为 fetch-hub-news 合并的官方 RSS。",
-  "hotMixTitleEn": "Hot games & industry news (PC, console, mobile) — RSS",
-  "hotMixTitleZh": "热门游戏与资讯（网游、主机、手游等 · 自动 RSS）",
-  "hotMixLeadEn": "Merged from public RSS when you run npm run fetch-hub-news: Steam news, PlayStation & Xbox blogs, Epic/Unreal feed, and TechCrunch tags (gaming, Nintendo, Steam, esports, mobile games, etc.). Items sort newest-first by feed date; titles are often English.",
-  "hotMixLeadZh": "运行 npm run fetch-hub-news 时合并：Steam 新闻、PlayStation / Xbox 官方博客、Epic/Unreal RSS，以及 TechCrunch 游戏、主机、电竞、手游等标签。条目按 feed 日期尽量新在前；标题多为英文。",
-  "hotMixItems": [
-    {
-      "titleEn": "Little Nightmares III – The Backstage: Meet the Puppeteer",
-      "titleZh": "Little Nightmares III – The Backstage: Meet the Puppeteer",
-      "url": "https://news.xbox.com/en-us/2026/06/15/little-nightmares-3-meet-the-puppeteer/",
-      "date": "2026-06-15",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/ConceptArt2-c080d303d00e8f96a1aa-1024x576.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/ConceptArt2-c080d303d00e8f96a1aa-1024x576.jpg"
-    },
-    {
-      "titleEn": "Assassin’s Creed Shadows’ final update features Animus-bending endgame content Domains",
-      "titleZh": "Assassin’s Creed Shadows’ final update features Animus-bending endgame content Domains",
-      "url": "https://blog.playstation.com/2026/06/15/assassins-creed-shadows-final-update-features-animus-bending-endgame-content-domains/",
-      "date": "2026-06-15",
-      "source": "PlayStation",
-      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg",
-      "imageSource": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
-    },
-    {
-      "titleEn": "Ace Combat 8: Wings of Theve Mixes Anime and Aviation to Deliver a Stunning Action-Adventure",
-      "titleZh": "Ace Combat 8: Wings of Theve Mixes Anime and Aviation to Deliver a Stunning Action-Adventure",
-      "url": "https://news.xbox.com/en-us/2026/06/15/ace-combat-8-wings-of-theve-mixes-anime-and-aviation/",
-      "date": "2026-06-15",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/03-8a48b1e2f85ab83d2cbb-scaled.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/03-8a48b1e2f85ab83d2cbb-scaled.jpg"
-    },
-    {
-      "titleEn": "The Hunt Awaits: Everything You Need to Know About the Mistfall Hunter Open Beta on XBOX",
-      "titleZh": "The Hunt Awaits: Everything You Need to Know About the Mistfall Hunter Open Beta on XBOX",
-      "url": "https://news.xbox.com/en-us/2026/06/15/mistfall-hunter-june-playtest-xbox/",
-      "date": "2026-06-15",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/Featured-Image-Mistfall-Hunter-Open-Beta-Key-Arts-e307b754dc601d467831-1024x576.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/Featured-Image-Mistfall-Hunter-Open-Beta-Key-Arts-e307b754dc601d467831-1024x576.jpg"
-    },
-    {
-      "titleEn": "Microsoft Flight Simulator Releases City Update 15: Illinois, Minnesota and Wisconsin Today",
-      "titleZh": "Microsoft Flight Simulator Releases City Update 15: Illinois, Minnesota and Wisconsin Today",
-      "url": "https://www.flightsimulator.com/city-update-15/#new_tab",
-      "date": "2026-06-12",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/ConceptArt2-c080d303d00e8f96a1aa.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/ConceptArt2-c080d303d00e8f96a1aa.jpg"
-    },
-    {
-      "titleEn": "How Re:Re:Ghosted Turned Institutional Dread into Horror",
-      "titleZh": "How Re:Re:Ghosted Turned Institutional Dread into Horror",
-      "url": "https://news.xbox.com/en-us/2026/06/12/how-rereghosted-turned-institutional-dread-into-horror/",
-      "date": "2026-06-12",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/THUMBNAIL1920x1080LOGO-9b7e4785b0271b06ae33.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/THUMBNAIL1920x1080LOGO-9b7e4785b0271b06ae33.jpg"
-    },
-    {
-      "titleEn": "Modern Warfare 4: Campaign Early Access Confirmed",
-      "titleZh": "Modern Warfare 4: Campaign Early Access Confirmed",
-      "url": "https://www.callofduty.com/blog/2026/06/call-of-duty-modern-warfare-4-campaign-early-access#new_tab",
-      "date": "2026-06-12",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/ConceptArt2-c080d303d00e8f96a1aa.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/ConceptArt2-c080d303d00e8f96a1aa.jpg"
-    },
-    {
-      "titleEn": "Fight Your Fight in UFC 6 With EA Play",
-      "titleZh": "Fight Your Fight in UFC 6 With EA Play",
-      "url": "https://news.xbox.com/en-us/2026/06/12/ea-play-june/",
-      "date": "2026-06-12",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/EAP_UFC6_EarlyAccessTrial_Social_1920x1080-32626d543238b941f3a5-1024x576.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/05/EAP_UFC6_EarlyAccessTrial_Social_1920x1080-32626d543238b941f3a5-1024x576.jpg"
-    },
-    {
-      "titleEn": "Share of the Week: Duality",
-      "titleZh": "Share of the Week: Duality",
-      "url": "https://blog.playstation.com/2026/06/12/share-of-the-week-duality-2/",
-      "date": "2026-06-12",
-      "source": "PlayStation",
-      "image": "https://live.staticflickr.com/65535/55328288386_6c7bc1c8eb_k.jpg",
-      "imageSource": "https://live.staticflickr.com/65535/55328288386_6c7bc1c8eb_k.jpg"
-    },
-    {
-      "titleEn": "Onimusha: Way of the Sword’s Developers Talk Miyamoto Musashi, a Haunted Kyoto, and Modernizing Combat",
-      "titleZh": "Onimusha: Way of the Sword’s Developers Talk Miyamoto Musashi, a Haunted Kyoto, and Modernizing Combat",
-      "url": "https://news.xbox.com/en-us/2026/06/12/onimusha-way-of-the-swords-developers-interview-preview/",
-      "date": "2026-06-12",
-      "source": "Xbox",
-      "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/04-21ef4c52b95e30aabdad-scaled.jpg",
-      "imageSource": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/04-21ef4c52b95e30aabdad-scaled.jpg"
-    },
-    {
-      "titleEn": "Next Week on XBOX: New Games for June 15 to 19",
-      "titleZh": "Next Week on XBOX: New Games for June 15 to 19",
-      "url": "https://news.xbox.com/en-us/2026/06/12/next-week-on-xbox-new-games-for-june-15-to-19/",
-      "date": "2026-06-12",
-      "source": "Xbox",
-      "image": "https://secure.gravatar.com/avatar/7612cc9e3cdef31108ad3c20db959e729ab48348d97d084f0d0cfba7ac35ab3b?s=144&d=mm&r=g",
-      "imageSource": "https://secure.gravatar.com/avatar/7612cc9e3cdef31108ad3c20db959e729ab48348d97d084f0d0cfba7ac35ab3b?s=144&d=mm&r=g"
-    },
-    {
-      "titleEn": "CONTROL Resonant: Hands-On With This Ambitious Sequel’s Shapeshifting Combat",
-      "titleZh": "CONTROL Resonant: Hands-On With This Ambitious Sequel’s Shapeshifting Combat",
-      "url": "https://news.xbox.com/en-us/2026/06/11/control-resonant-hands-on-melee-combat/",
-      "date": "2026-06-11",
-      "source": "Xbox",
-      "image": "https://secure.gravatar.com/avatar/7612cc9e3cdef31108ad3c20db959e729ab48348d97d084f0d0cfba7ac35ab3b?s=144&d=mm&r=g",
-      "imageSource": "https://secure.gravatar.com/avatar/7612cc9e3cdef31108ad3c20db959e729ab48348d97d084f0d0cfba7ac35ab3b?s=144&d=mm&r=g"
-    },
-    {
-      "titleEn": "Tomb Raider: Legacy of Atlantis hands-on report",
-      "titleZh": "Tomb Raider: Legacy of Atlantis hands-on report",
-      "url": "https://blog.playstation.com/2026/06/11/tomb-raider-legacy-of-atlantis-hands-on-report/",
-      "date": "2026-06-11",
-      "source": "PlayStation",
-      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg",
-      "imageSource": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
-    },
-    {
-      "titleEn": "Netflix expands revamped mobile app across Asia and doubles down on kids’ gaming",
-      "titleZh": "Netflix expands revamped mobile app across Asia and doubles down on kids’ gaming",
-      "url": "https://techcrunch.com/2026/06/10/netflix-expands-revamped-mobile-app-across-asia-and-doubles-down-on-kids-gaming/",
-      "date": "2026-06-10",
-      "source": "TechCrunch · Mobile games",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "PlayStation Plus Game Catalog for June: Final Fantasy XVI, Sonic X Shadow Generations, Kingdom Come: Deliverance, and more",
-      "titleZh": "PlayStation Plus Game Catalog for June: Final Fantasy XVI, Sonic X Shadow Generations, Kingdom Come: Deliverance, and more",
-      "url": "https://blog.playstation.com/2026/06/10/playstation-plus-game-catalog-for-june-final-fantasy-xvi-sonic-x-shadow-generations-kingdom-come-deliverance-and-more/",
-      "date": "2026-06-10",
-      "source": "PlayStation",
-      "image": "https://blog.playstation.com/tachyon/2026/06/bdad50c36b1df2ce10272c1b06d742ca97e91e3b-scaled.jpg?fit=1024%2C1024",
-      "imageSource": "https://blog.playstation.com/tachyon/2026/06/bdad50c36b1df2ce10272c1b06d742ca97e91e3b-scaled.jpg?fit=1024%2C1024"
-    },
-    {
-      "titleEn": "Gran Turismo 7 free update 1.70: choose Your Le Mans Hypercar",
-      "titleZh": "Gran Turismo 7 free update 1.70: choose Your Le Mans Hypercar",
-      "url": "https://blog.playstation.com/2026/06/10/gran-turismo-7-free-update-1-70-choose-your-le-mans-hypercar/",
-      "date": "2026-06-10",
-      "source": "PlayStation",
-      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg",
-      "imageSource": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
-    },
-    {
-      "titleEn": "Summer Game Fest 2026: Hands-on and more details on 11 upcoming PS5 games",
-      "titleZh": "Summer Game Fest 2026: Hands-on and more details on 11 upcoming PS5 games",
-      "url": "https://blog.playstation.com/2026/06/08/summer-game-fest-2026-hands-on-and-more-details-on-11-upcoming-ps5-games/",
-      "date": "2026-06-08",
-      "source": "PlayStation",
-      "image": "https://blog.playstation.com/tachyon/2026/06/9bbfb8210635ca44a1ed61f7572df63f97d7161e.jpg?fit=1024%2C1024",
-      "imageSource": "https://blog.playstation.com/tachyon/2026/06/9bbfb8210635ca44a1ed61f7572df63f97d7161e.jpg?fit=1024%2C1024"
-    },
-    {
-      "titleEn": "UEFN Student Bootcamp application is open now",
-      "titleZh": "UEFN Student Bootcamp application is open now",
-      "url": "https://www.unrealengine.com/learning/uefn-student-bootcamp-application-is-open-now",
-      "date": "2026-06-08",
-      "source": "Epic / Unreal",
-      "image": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmq1cibio402d07ociypz8y5n",
-      "imageSource": "https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/cmq1cibio402d07ociypz8y5n"
-    },
-    {
-      "titleEn": "Summer Game Fest 2026 highlights: 16 games coming to PS5",
-      "titleZh": "Summer Game Fest 2026 highlights: 16 games coming to PS5",
-      "url": "https://blog.playstation.com/2026/06/05/summer-game-fest-2026-highlights-16-games-coming-to-ps5/",
-      "date": "2026-06-06",
-      "source": "PlayStation",
-      "image": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg",
-      "imageSource": "https://blog.playstation.com/content/themes/playstation-2018/images/placeholder.svg"
-    },
-    {
-      "titleEn": "Official PlayStation Podcast Episode 543: State of Faye",
-      "titleZh": "Official PlayStation Podcast Episode 543: State of Faye",
-      "url": "https://blog.playstation.com/2026/06/05/official-playstation-podcast-episode-543-state-of-faye/",
-      "date": "2026-06-05",
-      "source": "PlayStation",
-      "image": "https://blog.playstation.com/tachyon/2026/06/bba1c6d7e2e3b992a441dc935066993486f05a2a.jpg",
-      "imageSource": "https://blog.playstation.com/tachyon/2026/06/bba1c6d7e2e3b992a441dc935066993486f05a2a.jpg"
-    },
-    {
-      "titleEn": "Share of the Week: Star Wars Outlaws",
-      "titleZh": "Share of the Week: Star Wars Outlaws",
-      "url": "https://blog.playstation.com/2026/06/05/share-of-the-week-star-wars-outlaws/",
-      "date": "2026-06-05",
-      "source": "PlayStation",
-      "image": "https://live.staticflickr.com/65535/55313133664_17e395bee0_b.jpg",
-      "imageSource": "https://live.staticflickr.com/65535/55313133664_17e395bee0_b.jpg"
-    },
-    {
-      "titleEn": "(For Southeast Asia) PlayStation Store: May 2026’s top downloads",
-      "titleZh": "(For Southeast Asia) PlayStation Store: May 2026’s top downloads",
-      "url": "https://blog.playstation.com/2026/06/05/20260605-top/",
-      "date": "2026-06-05",
-      "source": "PlayStation",
-      "image": "",
-      "imageSource": ""
-    }
-  ],
+  "originalsSecondaryLeadEn": "Platform top-10 and vendor news below are auxiliary bookmarks (noindex).",
+  "originalsSecondaryLeadZh": "下方全球平台前十与厂商动态为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。",
   "moreTitleEn": "More studios",
   "moreTitleZh": "其它厂牌入口",
   "moreLeadEn": "Mobile-first and Asia-Pacific publishers whose homepages look different from Western storefront grids — still official entry points.",
@@ -694,5 +488,6 @@
       "url": "https://annapurnainteractive.com/",
       "domain": "annapurnainteractive.com"
     }
-  ]
+  ],
+  "omitHotMix": true
 }

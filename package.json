@@ -17,6 +17,7 @@
     "fetch-tools-favicons:force": "node scripts/fetch-tools-favicons.mjs -- --force",
     "fetch-hub-hotmix-images": "node scripts/fetch-hub-hotmix-images.mjs",
     "localize-site-images": "npm run fetch-tools-favicons && npm run fetch-hub-hotmix-images",
+    "inject-site-nav": "node scripts/inject-site-nav.mjs",
     "inject-tools-directory": "node scripts/inject-tools-directory.mjs",
     "build-index-pills": "node scripts/inject-index-pills.mjs",
     "build-contact": "node scripts/build-contact-page.mjs",
@@ -33,7 +34,7 @@
     "build-official-news": "node scripts/build-official-news-page.mjs",
     "inject-categories": "node scripts/inject-categories.mjs",
     "update-reading": "node scripts/update-reading.mjs",
-    "build-site": "npm run build-articles && npm run sync-brief-articles && npm run build-brief-pages && npm run sync-tool-guides && npm run build-tool-guides && npm run build-guides-index && npm run sync-hub-links && npm run build-hub-link-pages && npm run build-hubs && npm run inject-tools-directory && npm run inject-categories && npm run update-reading && npm run build-official-news && npm run build-index-pills && npm run build-contact && npm run build-seo-locales"
+    "build-site": "npm run build-articles && npm run sync-brief-articles && npm run build-brief-pages && npm run sync-tool-guides && npm run build-tool-guides && npm run build-guides-index && npm run sync-hub-links && npm run build-hub-link-pages && npm run build-hubs && npm run inject-site-nav && npm run inject-tools-directory && npm run inject-categories && npm run update-reading && npm run build-official-news && npm run build-index-pills && npm run build-contact && npm run build-seo-locales"
   },
   "devDependencies": {
     "cheerio": "^1.2.0",

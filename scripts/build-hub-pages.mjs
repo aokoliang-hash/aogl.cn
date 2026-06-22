@@ -118,7 +118,7 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-const GAMES_ORIGINALS_META = {
+const HUB_ORIGINALS_META = {
   en: " · aogl.cn",
   zh: " · 本站",
   ja: " · 当サイト",
@@ -126,6 +126,110 @@ const GAMES_ORIGINALS_META = {
   fr: " · aogl.cn",
   ru: " · aogl.cn",
   ar: " · aogl.cn",
+};
+
+/** Fallback en/zh copy when hub JSON omits originals* fields. */
+const HUB_ORIGINALS_COPY = {
+  portal: {
+    originalsTitleEn: "Portal editorial notes",
+    originalsTitleZh: "本站原创（全球站点）",
+    originalsPrimaryLeadEn:
+      'This hub’s <strong>main strip</strong> is editorial on global portals (newest first; one note most days). <a href="/articles/index.html">All articles</a>.',
+    originalsPrimaryLeadZh:
+      '全球站点 Hub <strong>主内容</strong>是本站原创手记（新→旧，计划每日一篇）。<a href="/articles/index.html">全部原创索引</a>。',
+    originalsSecondaryLeadEn:
+      "Traffic top-10 and regional links below are auxiliary bookmarks (noindex).",
+    originalsSecondaryLeadZh:
+      "下方流量前十与「更多」链接为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。",
+  },
+  brands: {
+    originalsTitleEn: "Brand editorial notes",
+    originalsTitleZh: "本站原创（品牌）",
+    originalsPrimaryLeadEn:
+      'This hub’s <strong>main strip</strong> is brand-valuation editorial (newest first; one note most days). <a href="/articles/index.html">All articles</a>.',
+    originalsPrimaryLeadZh:
+      '品牌 Hub <strong>主内容</strong>是本站原创手记（新→旧，计划每日一篇）。<a href="/articles/index.html">全部原创索引</a>。',
+    originalsSecondaryLeadEn: "Interbrand-style top-10 and news links below are auxiliary bookmarks (noindex).",
+    originalsSecondaryLeadZh:
+      "下方品牌前十与动态链接为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。",
+  },
+  shopping: {
+    originalsTitleEn: "Shopping editorial notes",
+    originalsTitleZh: "本站原创（购物）",
+    originalsPrimaryLeadEn:
+      'This hub’s <strong>main strip</strong> is retail / marketplace editorial (newest first; one note most days). <a href="/articles/index.html">All articles</a>.',
+    originalsPrimaryLeadZh:
+      '购物 Hub <strong>主内容</strong>是本站原创手记（新→旧，计划每日一篇）。<a href="/articles/index.html">全部原创索引</a>。',
+    originalsSecondaryLeadEn: "Retailer top-10 and deal RSS below are auxiliary bookmarks (noindex).",
+    originalsSecondaryLeadZh:
+      "下方零售商前十与资讯链接为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。",
+  },
+  life: {
+    originalsTitleEn: "Life editorial notes",
+    originalsTitleZh: "本站原创（生活）",
+    originalsPrimaryLeadEn:
+      'This hub’s <strong>main strip</strong> is digital-life editorial (newest first; one note most days). <a href="/articles/index.html">All articles</a>.',
+    originalsPrimaryLeadZh:
+      '生活 Hub <strong>主内容</strong>是本站原创手记（新→旧，计划每日一篇）。<a href="/articles/index.html">全部原创索引</a>。',
+    originalsSecondaryLeadEn: "Super-app top-10 and product links below are auxiliary bookmarks (noindex).",
+    originalsSecondaryLeadZh:
+      "下方超级 App 前十与产品链接为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。",
+  },
+  social: {
+    originalsTitleEn: "Social editorial notes",
+    originalsTitleZh: "本站原创（社交）",
+    originalsPrimaryLeadEn:
+      'This hub’s <strong>main strip</strong> is social-platform editorial (newest first; one note most days). <a href="/articles/index.html">All articles</a>.',
+    originalsPrimaryLeadZh:
+      '社交 Hub <strong>主内容</strong>是本站原创手记（新→旧，计划每日一篇）。<a href="/articles/index.html">全部原创索引</a>。',
+    originalsSecondaryLeadEn: "MAU top-10 and official blog RSS below are auxiliary bookmarks (noindex).",
+    originalsSecondaryLeadZh:
+      "下方 MAU 前十与官方博客 RSS 为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。",
+  },
+  tools: {
+    originalsTitleEn: "Utilities editorial notes",
+    originalsTitleZh: "本站原创（工具）",
+    originalsPrimaryLeadEn:
+      'This hub’s <strong>main strip</strong> is utility-app editorial (newest first; one note most days). <a href="/articles/index.html">All articles</a>.',
+    originalsPrimaryLeadZh:
+      '工具 Hub <strong>主内容</strong>是本站原创手记（新→旧，计划每日一篇）。<a href="/articles/index.html">全部原创索引</a>。',
+    originalsSecondaryLeadEn: "Shortcut grid below links out only — auxiliary bookmarks (noindex).",
+    originalsSecondaryLeadZh:
+      "下方实用工具快捷方式为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。",
+  },
+  tech: {
+    originalsTitleEn: "Tech editorial notes",
+    originalsTitleZh: "本站原创（科技）",
+    originalsPrimaryLeadEn:
+      'This hub’s <strong>main strip</strong> is semiconductor / platform editorial (newest first; one note most days). <a href="/articles/index.html">All articles</a>.',
+    originalsPrimaryLeadZh:
+      '科技 Hub <strong>主内容</strong>是本站原创手记（新→旧，计划每日一篇）。<a href="/articles/index.html">全部原创索引</a>。',
+    originalsSecondaryLeadEn: "Cap-table top-10 and IR links below are auxiliary bookmarks (noindex).",
+    originalsSecondaryLeadZh:
+      "下方半导体/平台前十与 IR 链接为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。",
+  },
+  games: {
+    originalsTitleEn: "Game editorial notes",
+    originalsTitleZh: "本站原创（游戏向）",
+    originalsPrimaryLeadEn:
+      'This hub’s <strong>main strip</strong> is game editorial on aogl.cn (newest first; plan to add one note most days). <a href="/articles/index.html">All articles</a>.',
+    originalsPrimaryLeadZh:
+      '游戏 Hub <strong>主内容</strong>是本站游戏向原创手记（新→旧，计划每日一篇）。<a href="/articles/index.html">全部原创索引</a>。',
+    originalsSecondaryLeadEn:
+      "Platform top-10 and vendor news below are auxiliary bookmarks (noindex).",
+    originalsSecondaryLeadZh:
+      "下方全球平台前十与厂商动态为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。",
+  },
+};
+
+const HUB_ORIGINALS_PLACEHOLDER = {
+  en: "First editorial note coming soon — carousel fills as new posts ship (planned daily).",
+  zh: "首篇原创手记筹备中 — 发布后按新→旧显示在上方轮播（计划每日一篇）。",
+  ja: "最初のオリジナル記事を準備中 — 公開後に新→旧で表示（ほぼ毎日追加予定）。",
+  ko: "첫 오리지널 메모 준비 중 — 게시 후 최신순으로 표시(매일 추가 예정).",
+  fr: "Première note bientôt — le carrousel se remplit au fil des publications (quotidien prévu).",
+  ru: "Первая заметка скоро — карусель пополняется по мере публикаций (план — ежедневно).",
+  ar: "أول مقال قريبًا — يُحدَّث الشريط بترتيب الأحدث (منشور يومي مخطط).",
 };
 
 const CAROUSEL_CHEVRON_L =
@@ -155,33 +259,43 @@ function teaserHeroSrc(article) {
   return h.replace(/^\.?\//, "");
 }
 
-function loadGamesHubArticles() {
-  if (!fs.existsSync(GAMES_HUB_ARTICLES_PATH)) return [];
+function hubArticlesPath(slug) {
+  return path.join(ROOT, "data", `${slug}-hub-articles.json`);
+}
+
+function loadHubArticles(slug) {
+  const fp = hubArticlesPath(slug);
+  if (!fs.existsSync(fp)) return [];
   let slugs;
   try {
-    slugs = JSON.parse(fs.readFileSync(GAMES_HUB_ARTICLES_PATH, "utf8"));
+    slugs = JSON.parse(fs.readFileSync(fp, "utf8"));
   } catch (e) {
-    console.warn("Invalid games-hub-articles.json:", e.message);
+    console.warn(`Invalid ${slug}-hub-articles.json:`, e.message);
     return [];
   }
   if (!Array.isArray(slugs)) return [];
   const out = [];
-  for (const slug of slugs) {
-    const fp = path.join(ARTICLES_DIR, `${slug}.json`);
-    if (!fs.existsSync(fp)) {
-      console.warn("games-hub-articles: missing", slug);
+  for (const slugName of slugs) {
+    const articleFp = path.join(ARTICLES_DIR, `${slugName}.json`);
+    if (!fs.existsSync(articleFp)) {
+      console.warn(`${slug}-hub-articles: missing`, slugName);
       continue;
     }
     try {
-      out.push(JSON.parse(fs.readFileSync(fp, "utf8")));
+      out.push(JSON.parse(fs.readFileSync(articleFp, "utf8")));
     } catch (e) {
-      console.warn("games-hub-articles: invalid JSON for", slug, e.message);
+      console.warn(`${slug}-hub-articles: invalid JSON for`, slugName, e.message);
     }
   }
   return out;
 }
 
-function buildGamesOriginalsCards(articles) {
+/** @deprecated use loadHubArticles('games') */
+function loadGamesHubArticles() {
+  return loadHubArticles("games");
+}
+
+function buildHubOriginalsCards(articles) {
   return articles
     .map((a) => {
       const img = esc(teaserHeroSrc(a));
@@ -193,7 +307,7 @@ function buildGamesOriginalsCards(articles) {
       ).join("");
       const dVis = esc(a.datePublished || "—");
       const metaSpans = LOCALES.map(
-        (code) => `<span class="lang-${code}">${dVis}${esc(GAMES_ORIGINALS_META[code])}</span>`,
+        (code) => `<span class="lang-${code}">${dVis}${esc(HUB_ORIGINALS_META[code])}</span>`,
       ).join("");
       return `        <li class="hub-hotmix-card">
           <a class="hub-hotmix-card-link" href="articles/${esc(a.slug)}.html" draggable="false">
@@ -211,28 +325,58 @@ function buildGamesOriginalsCards(articles) {
     .join("\n");
 }
 
-function hubOriginalsIntroSpans(spec, key, className) {
-  const en = String(spec[key + "En"] ?? "").trim();
-  const zh = String(spec[key + "Zh"] ?? "").trim();
-  if (!en && !zh) return "";
-  const uiKey = key.replace(/En$|Zh$/, "");
-  const inner = LOCALES.map((code) => {
+function hubOriginalsPlaceholderHtml() {
+  const inner = LOCALES.map(
+    (code) => `<span class="lang-${code}">${HUB_ORIGINALS_PLACEHOLDER[code] || HUB_ORIGINALS_PLACEHOLDER.en}</span>`,
+  ).join("");
+  return `      <p class="article-note hub-originals-placeholder">${inner}</p>`;
+}
+
+function specOriginalsField(spec, field, lang) {
+  const suffix = lang === "zh" ? "Zh" : "En";
+  const fromSpec = spec[field + suffix];
+  if (fromSpec != null && String(fromSpec).trim() !== "") return String(fromSpec);
+  return HUB_ORIGINALS_COPY[spec.slug]?.[field + suffix] || "";
+}
+
+function inlineOriginalsTitleSpans(spec) {
+  return LOCALES.map((code) => {
     const text =
-      code === "en" ? en : code === "zh" ? zh || en : T(spec, uiKey, code);
+      code === "en"
+        ? specOriginalsField(spec, "originalsTitle", "en")
+        : code === "zh"
+          ? specOriginalsField(spec, "originalsTitle", "zh") || specOriginalsField(spec, "originalsTitle", "en")
+          : T(spec, "originalsTitle", code) || specOriginalsField(spec, "originalsTitle", "en");
+    return `<span class="lang-${code}">${esc(text)}</span>`;
+  }).join("");
+}
+
+function hubOriginalsIntroSpans(spec, key, className) {
+  const inner = LOCALES.map((code) => {
+    let text;
+    if (key === "originalsPrimaryLead" || key === "originalsSecondaryLead") {
+      text =
+        code === "en"
+          ? specOriginalsField(spec, key, "en")
+          : code === "zh"
+            ? specOriginalsField(spec, key, "zh") || specOriginalsField(spec, key, "en")
+            : T(spec, key, code) || specOriginalsField(spec, key, "en");
+    } else {
+      const en = String(spec[key + "En"] ?? "").trim();
+      const zh = String(spec[key + "Zh"] ?? "").trim();
+      text = code === "en" ? en : code === "zh" ? zh || en : T(spec, key, code);
+    }
     return `<span class="lang-${code}">${text}</span>`;
   }).join("");
+  if (!inner.replace(/<[^>]+>/g, "").trim()) return "";
   return `      <p class="${className}">${inner}</p>\n`;
 }
 
-function gamesOriginalsSection(spec) {
-  if (spec.slug !== "games") return "";
-  const articles = loadGamesHubArticles();
-  if (articles.length === 0) return "";
-  const cards = buildGamesOriginalsCards(articles);
-  return `    <section class="site-originals" id="games-originals" aria-labelledby="games-originals-title">
-${hubOriginalsIntroSpans(spec, "originalsPrimaryLead", "reading-intro site-primary-lead")}      <h2 id="games-originals-title" class="page-section-title">${inlineTitleSpans(spec, "originalsTitle")}</h2>
-${hubOriginalsIntroSpans(spec, "originalsSecondaryLead", "reading-intro site-primary-lead site-primary-lead--secondary")}      <div class="hub-carousel-wrap site-originals-carousel-wrap">
-        <ul class="hub-hotmix-cards hub-hotmix-cards--carousel site-originals-hotmix" role="list" aria-label="Game editorial notes — swipe or scroll sideways for more">
+function hubOriginalsSection(spec) {
+  const articles = loadHubArticles(spec.slug);
+  const cards = articles.length ? buildHubOriginalsCards(articles) : "";
+  const carouselBody = cards
+    ? `        <ul class="hub-hotmix-cards hub-hotmix-cards--carousel site-originals-hotmix" role="list" aria-label="${esc(spec.slug)} hub editorial notes — swipe or scroll sideways for more">
 ${cards}
         </ul>
           <button type="button" class="hub-carousel-nav hub-carousel-nav--prev" data-carousel-dir="prev">
@@ -240,7 +384,12 @@ ${cards}
           </button>
           <button type="button" class="hub-carousel-nav hub-carousel-nav--next" data-carousel-dir="next">
             ${CAROUSEL_CHEVRON_R}
-          </button>
+          </button>`
+    : hubOriginalsPlaceholderHtml();
+  return `    <section class="site-originals" id="${esc(spec.slug)}-originals" aria-labelledby="${esc(spec.slug)}-originals-title">
+${hubOriginalsIntroSpans(spec, "originalsPrimaryLead", "reading-intro site-primary-lead")}      <h2 id="${esc(spec.slug)}-originals-title" class="page-section-title">${inlineOriginalsTitleSpans(spec)}</h2>
+${hubOriginalsIntroSpans(spec, "originalsSecondaryLead", "reading-intro site-primary-lead site-primary-lead--secondary")}      <div class="hub-carousel-wrap site-originals-carousel-wrap">
+${carouselBody}
         </div>
     </section>
 
@@ -661,7 +810,7 @@ ${newsBlocks}
     : "";
 
   const hotMixItems = Array.isArray(spec.hotMixItems) ? spec.hotMixItems : [];
-  const showHotMix = hotMixItems.length > 0;
+  const showHotMix = !spec.omitHotMix && hotMixItems.length > 0;
   const hotMixLis = hotMixItems
     .map(
       (it) => `        <li class="hub-hotmix-card">
@@ -760,7 +909,7 @@ ${navHtml({ activeFile })}
   </header>
 
   <main class="hub-main wrap" id="main">
-${gamesOriginalsSection(spec)}    <article class="hub-editorial prose-block">
+${hubOriginalsSection(spec)}    <article class="hub-editorial prose-block">
       <h1 class="hub-page-title">${inlineTitleSpans(spec, "h1")}</h1>
       <p class="hub-updated">${updatedSpans(spec)}</p>
 ${editorialBlocks7(spec)}${hubSearchPillRows(spec)}

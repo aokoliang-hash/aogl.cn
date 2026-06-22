@@ -112,11 +112,11 @@
       "ar": "<strong>المحتوى الرئيسي</strong> لهذا Hub: ملاحظات ألعاب (الأحدث أولاً، خطة منشور يومي). <a href=\"/articles/index.html\">كل المقالات</a>."
     },
     "originalsSecondaryLead": {
-      "ja": "下のトップ10・Hot mix RSS は補助ブックマーク（<code>noindex</code>）。",
-      "ko": "아래 상위 10·Hot mix RSS는 보조 북마크(<code>noindex</code>).",
-      "fr": "Top 10 et hot mix RSS ci-dessous : signets auxiliaires (<code>noindex</code>).",
-      "ru": "Топ-10 и Hot mix ниже — вспомогательные закладки (<code>noindex</code>).",
-      "ar": "أفضل 10 وHot mix أدناه: إشارات مرجعية مساعدة (<code>noindex</code>)."
+      "ja": "下のトップ10・各社ニュースは補助ブックマーク（<code>noindex</code>）。",
+      "ko": "아래 상위 10·업체 뉴스는 보조 북마크(<code>noindex</code>).",
+      "fr": "Top 10 et actualités éditeurs ci-dessous : signets auxiliaires (<code>noindex</code>).",
+      "ru": "Топ-10 и новости ниже — вспомогательные закладки (<code>noindex</code>).",
+      "ar": "أفضل 10 وأخبار الشركات أدناه: إشارات مرجعية مساعدة (<code>noindex</code>)."
     },
     "originalsLead": {
       "ja": "ゲーム向け個人メモを順次追加します。下の Hot mix は fetch-hub-news の公式 RSS のままです。",
