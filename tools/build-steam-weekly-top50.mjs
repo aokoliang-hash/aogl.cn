@@ -1,0 +1,84 @@
+/**
+ * Build data/steam-charts-snapshot.json weeklyTopSellers (ranks 1–50)
+ * from archived HK storefront HTML (2026-06-09 – 2026-06-16).
+ */
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
+const OUT = path.join(ROOT, "data", "steam-charts-snapshot.json");
+
+const weeklyTopSellers = [
+  { rank: 1, appid: 730, name: "Counter-Strike 2", price: "Free to Play", priceZh: "免费开玩", change: "—", changeZh: "—", weeksOnChart: 723, url: "https://store.steampowered.com/app/730/" },
+  { rank: 2, appid: 4704690, name: "MECCHA CHAMELEON", price: "HK$ 36.00", priceZh: "HK$ 36.00", change: "New", changeZh: "新上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/4704690/" },
+  { rank: 3, appid: 394360, name: "Hearts of Iron IV", price: "HK$ 63.60 (-80%)", priceZh: "HK$ 63.60（原价 HK$ 318.00，-80%）", change: "▲ 37", changeZh: "▲ 37", weeksOnChart: 183, url: "https://store.steampowered.com/app/394360/" },
+  { rank: 4, appid: 578080, name: "PUBG: BATTLEGROUNDS", price: "Free to Play", priceZh: "免费开玩", change: "—", changeZh: "—", weeksOnChart: 482, url: "https://store.steampowered.com/app/578080/" },
+  { rank: 5, appid: 3513350, name: "Wuthering Waves", nameZh: "鸣潮", price: "Free to Play", priceZh: "免费开玩", change: "▲ 3", changeZh: "▲ 3", weeksOnChart: 48, url: "https://store.steampowered.com/app/3513350/" },
+  { rank: 6, appid: 2483190, name: "Forza Horizon 6", nameZh: "极限竞速：地平线 6", price: "HK$ 498.00", priceZh: "HK$ 498.00", change: "▼ 4", changeZh: "▼ 4", weeksOnChart: 21, url: "https://store.steampowered.com/app/2483190/" },
+  { rank: 7, appid: 1172470, name: "Apex Legends", price: "Free to Play", priceZh: "免费开玩", change: "▼ 4", changeZh: "▼ 4", weeksOnChart: 293, url: "https://store.steampowered.com/app/1172470/" },
+  { rank: 8, appid: 4148240, name: "Queens Game: Prosperous Age — Empress Edition", nameZh: "女王的游戏：盛世天下 女帝篇", price: "HK$ 69.60 (-20%)", priceZh: "HK$ 69.60（原价 HK$ 87.00，-20%）", change: "New", changeZh: "新上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/4148240/" },
+  { rank: 9, appid: 431960, name: "Wallpaper Engine", nameZh: "Wallpaper Engine：壁纸引擎", price: "HK$ 35.00", priceZh: "HK$ 35.00", change: "▲ 10", changeZh: "▲ 10", weeksOnChart: 258, url: "https://store.steampowered.com/app/431960/" },
+  { rank: 10, appid: 3564740, name: "Where Winds Meet", nameZh: "燕云十六声", price: "Free to Play", priceZh: "免费开玩", change: "▼ 3", changeZh: "▼ 3", weeksOnChart: 31, url: "https://store.steampowered.com/app/3564740/" },
+  { rank: 11, appid: 3557620, name: "Blue Archive", price: "Free to Play", priceZh: "免费开玩", change: "▲ 25", changeZh: "▲ 25", weeksOnChart: 10, url: "https://store.steampowered.com/app/3557620/" },
+  { rank: 12, appid: 1665460, name: "eFootball", price: "Free to Play", priceZh: "免费开玩", change: "▼ 1", changeZh: "▼ 1", weeksOnChart: 176, url: "https://store.steampowered.com/app/1665460/" },
+  { rank: 13, appid: 1085660, name: "Destiny 2", nameZh: "命运2", price: "Free to Play", priceZh: "免费开玩", change: "Re-entry", changeZh: "再度上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/1085660/" },
+  { rank: 14, appid: 2050650, name: "Resident Evil 4", price: "HK$ 298.00", priceZh: "HK$ 298.00", change: "▼ 4", changeZh: "▼ 4", weeksOnChart: 2, url: "https://store.steampowered.com/app/2050650/" },
+  { rank: 15, appid: 1364780, name: "Street Fighter 6", price: "HK$ 288.00", priceZh: "HK$ 288.00", change: "▼ 6", changeZh: "▼ 6", weeksOnChart: 48, url: "https://store.steampowered.com/app/1364780/" },
+  { rank: 16, appid: 1868140, name: "DAVE THE DIVER", nameZh: "潜水员戴夫 DAVE THE DIVER", price: "HK$ 62.50 (-50%)", priceZh: "HK$ 62.50（原价 HK$ 125.00，-50%）", change: "Re-entry", changeZh: "再度上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/1868140/" },
+  { rank: 17, appid: 3768760, name: "007 First Light", nameZh: "007 初露锋芒", price: "HK$ 468.00", priceZh: "HK$ 468.00", change: "▼ 11", changeZh: "▼ 11", weeksOnChart: 7, url: "https://store.steampowered.com/app/3768760/" },
+  { rank: 18, appid: 3472040, name: "NBA 2K26", price: "HK$ 125.60 (-80%)", priceZh: "HK$ 125.60（原价 HK$ 628.00，-80%）", change: "▼ 1", changeZh: "▼ 1", weeksOnChart: 43, url: "https://store.steampowered.com/app/3472040/" },
+  { rank: 19, appid: 322330, name: "Don't Starve Together", nameZh: "饥荒联机版", price: "HK$ 7.60 (-90%)", priceZh: "HK$ 7.60（原价 HK$ 76.00，-90%）", change: "Re-entry", changeZh: "再度上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/322330/" },
+  { rank: 20, appid: 1449850, name: "Yu-Gi-Oh! Master Duel", price: "Free to Play", priceZh: "免费开玩", change: "▼ 15", changeZh: "▼ 15", weeksOnChart: 12, url: "https://store.steampowered.com/app/1449850/" },
+  { rank: 21, appid: 230410, name: "Warframe", nameZh: "Warframe 星际战甲", price: "Free to Play", priceZh: "免费开玩", change: "▼ 6", changeZh: "▼ 6", weeksOnChart: 690, url: "https://store.steampowered.com/app/230410/" },
+  { rank: 22, appid: 3405690, name: "EA SPORTS FC 26", price: "HK$ 93.80 (-80%)", priceZh: "HK$ 93.80（原价 HK$ 469.00，-80%）", change: "▲ 1", changeZh: "▲ 1", weeksOnChart: 48, url: "https://store.steampowered.com/app/3405690/" },
+  { rank: 23, appid: 3796290, name: "Theater Pack - Hearts of Iron IV: Thunder at our Gates", price: "HK$ 138.00", priceZh: "HK$ 138.00", change: "New", changeZh: "新上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/3796290/" },
+  { rank: 24, appid: 3478050, name: "Queens Game: Prosperous Age — Meiniang Edition", nameZh: "女王的游戏：盛世天下 媚娘篇", price: "HK$ 46.50", priceZh: "HK$ 46.50", change: "Re-entry", changeZh: "再度上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/3478050/" },
+  { rank: 25, appid: 1462040, name: "FINAL FANTASY VII REMAKE INTERGRADE", price: "HK$ 107.80 (-65%)", priceZh: "HK$ 107.80（原价 HK$ 308.00，-65%）", change: "Re-entry", changeZh: "再度上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/1462040/" },
+  { rank: 26, appid: 1973530, name: "Limbus Company", price: "Free to Play", priceZh: "免费开玩", change: "▲ 13", changeZh: "▲ 13", weeksOnChart: 24, url: "https://store.steampowered.com/app/1973530/" },
+  { rank: 27, appid: 4496710, name: "Throne of Lust", nameZh: "欲望王座", price: "Free to Play", priceZh: "免费开玩", change: "New", changeZh: "新上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/4496710/" },
+  { rank: 28, appid: 2246340, name: "Monster Hunter Wilds", price: "HK$ 498.00", priceZh: "HK$ 498.00", change: "—", changeZh: "—", weeksOnChart: 2, url: "https://store.steampowered.com/app/2246340/" },
+  { rank: 29, appid: 4128580, name: "Auction King", nameZh: "竞拍之王", price: "HK$ 23.00", priceZh: "HK$ 23.00", change: "▼ 9", changeZh: "▼ 9", weeksOnChart: 9, url: "https://store.steampowered.com/app/4128580/" },
+  { rank: 30, appid: 3609080, name: "StarSavior", price: "Free to Play", priceZh: "免费开玩", change: "▲ 28", changeZh: "▲ 28", weeksOnChart: 13, url: "https://store.steampowered.com/app/3609080/" },
+  { rank: 31, appid: 3764200, name: "Resident Evil Requiem", price: "HK$ 518.00", priceZh: "HK$ 518.00", change: "▼ 18", changeZh: "▼ 18", weeksOnChart: 2, url: "https://store.steampowered.com/app/3764200/" },
+  { rank: 32, appid: 2897760, name: "The Legend of Picking Flowers", nameZh: "极品采花郎", price: "HK$ 98.00", priceZh: "HK$ 98.00", change: "—", changeZh: "—", weeksOnChart: 98, url: "https://store.steampowered.com/app/2897760/" },
+  { rank: 33, appid: 544810, name: "KARDS - The WWII Card Game", nameZh: "KARDS - 二战卡牌游戏", price: "Free to Play", priceZh: "免费开玩", change: "Re-entry", changeZh: "再度上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/544810/" },
+  { rank: 34, appid: 582010, name: "Monster Hunter: World", price: "HK$ 228.00", priceZh: "HK$ 228.00", change: "▲ 4", changeZh: "▲ 4", weeksOnChart: 2, url: "https://store.steampowered.com/app/582010/" },
+  { rank: 35, appid: 594650, name: "Hunt: Showdown 1896", nameZh: "猎杀：对决 1896", price: "HK$ 75.20 (-60%)", priceZh: "HK$ 75.20（原价 HK$ 188.00，-60%）", change: "Re-entry", changeZh: "再度上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/594650/" },
+  { rank: 36, appid: 457140, name: "Oxygen Not Included", nameZh: "缺氧", price: "HK$ 32.70 (-70%)", priceZh: "HK$ 32.70（原价 HK$ 109.00，-70%）", change: "Re-entry", changeZh: "再度上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/457140/" },
+  { rank: 37, appid: 381210, name: "Dead by Daylight", nameZh: "黎明杀机", price: "HK$ 38.00 (-60%)", priceZh: "HK$ 38.00（原价 HK$ 95.00，-60%）", change: "▲ 9", changeZh: "▲ 9", weeksOnChart: 476, url: "https://store.steampowered.com/app/381210/" },
+  { rank: 38, appid: 359550, name: "Rainbow Six Siege", nameZh: "彩虹六号：围攻", price: "Free to Play", priceZh: "免费开玩", change: "▼ 14", changeZh: "▼ 14", weeksOnChart: 6, url: "https://store.steampowered.com/app/359550/" },
+  { rank: 39, appid: 2767030, name: "Marvel Rivals", nameZh: "漫威争锋", price: "Free to Play", priceZh: "免费开玩", change: "Re-entry", changeZh: "再度上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/2767030/" },
+  { rank: 40, appid: 552990, name: "World of Warships", price: "Free to Play", priceZh: "免费开玩", change: "▼ 7", changeZh: "▼ 7", weeksOnChart: 12, url: "https://store.steampowered.com/app/552990/" },
+  { rank: 41, appid: 2139460, name: "Once Human", nameZh: "七日世界", price: "Free to Play", priceZh: "免费开玩", change: "▲ 45", changeZh: "▲ 45", weeksOnChart: 3, url: "https://store.steampowered.com/app/2139460/" },
+  { rank: 42, appid: 2358720, name: "Black Myth: Wukong", nameZh: "黑神话：悟空", price: "HK$ 298.00", priceZh: "HK$ 298.00", change: "▲ 45", changeZh: "▲ 45", weeksOnChart: 12, url: "https://store.steampowered.com/app/2358720/" },
+  { rank: 43, appid: 4394810, name: "DAVE THE DIVER - Jungle Content Pack", nameZh: "潜水员戴夫 - 丛林 Content Pack", price: "New · HK$ 62.00", priceZh: "新品 · HK$ 62.00", change: "New", changeZh: "新上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/4394810/" },
+  { rank: 44, appid: 1203220, name: "Naraka: Bladepoint", nameZh: "永劫无间", price: "Free to Play", priceZh: "免费开玩", change: "▼ 28", changeZh: "▼ 28", weeksOnChart: 258, url: "https://store.steampowered.com/app/1203220/" },
+  { rank: 45, appid: 3186540, name: "Destiny 2: Renegades", nameZh: "命运2：反叛", price: "HK$ 139.00", priceZh: "HK$ 139.00", change: "New", changeZh: "新上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/3186540/" },
+  { rank: 46, appid: 3240220, name: "Grand Theft Auto V Enhanced", nameZh: "Grand Theft Auto V 增强版", price: "HK$ 233.00", priceZh: "HK$ 233.00", change: "▼ 28", changeZh: "▼ 28", weeksOnChart: 21, url: "https://store.steampowered.com/app/3240220/" },
+  { rank: 47, appid: 2004680, name: "Wardling: Symbiosis", nameZh: "沃德灵：共生", price: "HK$ 130.50 (-10%)", priceZh: "HK$ 130.50（原价 HK$ 145.00，-10%）", change: "New", changeZh: "新上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/2004680/" },
+  { rank: 48, appid: 1551360, name: "Forza Horizon 5", nameZh: "极限竞速：地平线 5", price: "HK$ 419.00", priceZh: "HK$ 419.00", change: "▲ 18", changeZh: "▲ 18", weeksOnChart: 2, url: "https://store.steampowered.com/app/1551360/" },
+  { rank: 49, appid: 958520, name: "33 Immortals", nameZh: "33不朽灵魂", price: "HK$ 86.42", priceZh: "HK$ 86.42", change: "New", changeZh: "新上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/958520/" },
+  { rank: 50, appid: 281990, name: "Stellaris", price: "HK$ 95.40 (-70%)", priceZh: "HK$ 95.40（原价 HK$ 318.00，-70%）", change: "Re-entry", changeZh: "再度上榜", weeksOnChart: 1, url: "https://store.steampowered.com/app/281990/" },
+];
+
+const snapshot = {
+  fetchedAt: "2026-06-16",
+  fetchStatus: "manual",
+  fetchNote:
+    "Archived from store.steampowered.com weekly top sellers page (HK storefront, week ending 2026-06-16). Top 50 of 100.",
+  weekLabel: "2026-06-09 — 2026-06-16",
+  weekLabelZh: "2026年6月9日 – 2026年6月16日",
+  region: "HK",
+  sources: {
+    chartsHub: "https://store.steampowered.com/charts/",
+    mostPlayed: "https://store.steampowered.com/charts/mostplayed",
+    weeklyTopSellers: "https://store.steampowered.com/charts/topsellers",
+  },
+  weeklyTopSellers,
+  mostPlayed: [],
+  topSellers: [],
+};
+
+fs.writeFileSync(OUT, JSON.stringify(snapshot, null, 2) + "\n", "utf8");
+console.log(`Wrote ${weeklyTopSellers.length} rows to ${OUT}`);

@@ -1,78 +1,42 @@
-<p>This is <strong>game editorial #1</strong> on aogl.cn: personal notes on reading <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Steam Charts</a> inside Valve’s store—not a third-party stat site, not a “must play” list. The hub lives under the store nav item <strong>Charts</strong>, with <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> sorting by live concurrent players and separate views for revenue leaders. I compare official wording with my Sunday habit on <a href="/games.html">games.html</a>; I do <strong>not</strong> mirror key art or paste store descriptions—only link out to Steam app pages.</p>
+<p>This page archives Valve’s <strong>Weekly top sellers</strong> chart on the Steam store (<a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Charts</a> hub). Official copy states the list covers the top 100 products by <strong>revenue</strong> for a fixed seven-day window and refreshes every <strong>Tuesday at 1:00 AM Pacific</strong>. The table below matches the week of <strong>June 9 – June 16, 2026</strong> (Hong Kong storefront, HK$ prices) — no store screenshot, same columns as the live page.</p>
 
-<figure class="article-embed">
-  <img src="../original/steam-charts/share_image.png" width="1200" height="675" loading="lazy" decoding="async" alt="Official Steam Charts share image — store.steampowered.com/charts">
-  <figcaption>Generic share image Valve uses on Charts pages (<code>original/steam-charts/share_image.png</code>). Per-game capsules remain on Steam CDN; this site does not host them.</figcaption>
-</figure>
-
-<h2>Three charts, three questions</h2>
-<p>New readers often collapse “popular” into one idea. Steam splits at least these lanes—I open Charts after skimming Hot mix RSS to answer different questions:</p>
-<ul>
-  <li><strong>Top Sellers</strong> — “Who is <strong>paying</strong> this week?” Pre-orders, seasonal sales, and DLC spikes show up here. This is <strong>revenue momentum</strong>, not concurrent headcount.</li>
-  <li><strong>Most Played</strong> — “Who is <strong>running</strong> the client right now?” Rows expose live concurrents and peaks. Free-to-play staples and esports titles dominate; that is a different story from a day-one single-player launch.</li>
-  <li><strong>Weekly top sellers</strong> — “What sold best in this <strong>seven-day</strong> window?” Useful for launch week vs. evergreen MMO concurrency—closer to publishing cadence than minute-by-minute online counts.</li>
-</ul>
-<p>Official hub: <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">store.steampowered.com/charts/</a>. Most Played deep link: <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">…/charts/mostplayed</a>. I do <strong>not</strong> treat Charts as an APK discovery feed; it is for readers already inside the PC ecosystem.</p>
-
-<h2>Most Played: live, but not a quality score</h2>
-<p>The appeal of Most Played is <strong>near-real-time motion</strong>: patch days, weekend evenings, and tournament slots move numbers quickly. Valve publishes platform-side stats—not Metacritic, not my taste. Before I over-read a row I ask:</p>
-<ol>
-  <li>Is this a <strong>permanent F2P tenant</strong> (Counter-Strike 2, Dota 2) or a <strong>patch pulse</strong> on a premium game?</li>
-  <li>Which <strong>time zone’s night</strong> drives the peak I am seeing? (I fetch US-facing charts; your locale may differ.)</li>
-  <li>Does high concurrency imply “buy it”?—Usually <strong>no</strong>; it only means “many people are in-session now.”</li>
-</ol>
-<p>So this article keeps a <strong>weekly snapshot table</strong> (below), not a fake live ticker. For minute-level truth, use Valve’s page directly.</p>
-
-<h2>Top Sellers: revenue is not concurrency</h2>
-<p>The bestseller list tracks <strong>store transactions</strong>: launches, bundles, Deck-verified bumps, and winter sale waves reshuffle order constantly. Seeing game A on Most Played while game B tops sellers is normal—evergreen online titles vs. a discounted new release is the classic split.</p>
-<p>I use Top Sellers to cross-check first-party headlines on <code>games.html</code>: when PlayStation or Xbox blogs mention a title and Steam revenue also spikes, I open the app page for a patch or DLC—not to write “10/10 must buy.” See <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a>: sometimes RSS alone is enough without a new article.</p>
-
-<h2>Weekly tops: a changelog-friendly ruler</h2>
-<p>Weekly seller charts compress noise into a <strong>seven-day frame</strong>—easier for a static git site than pretending to stream live data. After <code>npm run fetch-steam-charts</code> I can commit JSON and note “weekly movers” in changelog without websocket infra. Weekly answers <strong>what sold</strong>; Most Played answers <strong>what is running</strong>.</p>
-
-<h2>Snapshot table (weekly automation)</h2>
-<p>The block below is injected from <code>data/steam-charts-snapshot.json</code> at build time. Run <code>npm run fetch-steam-charts</code> locally or let GitHub Actions refresh it. On HTTP 403 the script keeps the last good rows or shows an empty table with links to Valve. Full rebuild:</p>
-<pre><code>npm run refresh-steam-charts</code></pre>
-<p>Workflow: <code>.github/workflows/steam-charts-weekly.yml</code> (Tuesdays 06:30 UTC). Optional repo secret <code>STEAM_WEB_API_KEY</code> improves API success.</p>
+<h2>Top 50 this week (by revenue)</h2>
 <!-- STEAM_CHARTS_SNAPSHOT_AUTO -->
 
-<h2>How this splits from games.html Hot mix</h2>
+<h2>Three Charts tabs, three meanings</h2>
 <ul>
-  <li><strong>Hot mix</strong> — RSS headline rail, often English, news-shaped.</li>
-  <li><strong>This Charts note</strong> — vocabulary + auditable snapshot.</li>
-  <li><strong>Character archives</strong> (e.g. <a href="game-girl-elena-palette-ritual-notes.html">Elena palette</a>) — art notes, not rankings.</li>
+  <li><strong>Weekly top sellers</strong> (this article) — fixed 7-day revenue window with dates in the header.</li>
+  <li><strong>Top sellers</strong> — broader bestseller view; timing may differ from the weekly slice.</li>
+  <li><strong><a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a></strong> — sorts by <strong>live concurrent players</strong>, updated continuously; not the same as weekly revenue.</li>
 </ul>
-<p>All three can coexist on <a href="/games.html#games-originals">games.html</a> without turning the hub into a data broker.</p>
+<p>Counter-Strike 2 can rank high on both weekly revenue and Most Played, but the metrics answer different questions: money vs. simultaneous players.</p>
 
-<h2>Scope and compliance</h2>
+<h2>Notable rows for this week</h2>
+<p><strong>Counter-Strike 2</strong> leads with <strong>723</strong> weeks on chart — a long-tail revenue giant, not a one-week spike. <strong>MECCHA CHAMELEON</strong> (#2) is marked <strong>New</strong>. <strong>Hearts of Iron IV</strong> jumps <strong>▲ 37</strong> on an <strong>80%</strong> discount (HK$ 63.60 vs HK$ 318.00).</p>
+<p>Free-to-play rows dominate the top 50: PUBG, Wuthering Waves, Apex Legends, Where Winds Meet, Blue Archive, eFootball, Destiny 2, Limbus Company, StarSavior, Marvel Rivals, Once Human, Naraka: Bladepoint, and more — revenue comes from IAP/DLC, not the list price. Premium boxes include <strong>Forza Horizon 6</strong>, <strong>Monster Hunter Wilds</strong>, and <strong>Resident Evil Requiem</strong> (HK$ 498–518). <strong>Black Myth: Wukong</strong> and <strong>Once Human</strong> both climb <strong>▲ 45</strong> this week.</p>
+<p>DLC and expansions appear as their own rows: <strong>Hearts of Iron IV: Thunder at our Gates</strong> (#23), <strong>DAVE THE DIVER – Jungle Content Pack</strong> (#43), and <strong>Destiny 2: Renegades</strong> (#45). <strong>Wallpaper Engine</strong> shows <strong>258</strong> weeks on chart (+10); utility software routinely sits beside AAA titles. <strong>Dead by Daylight</strong> has <strong>476</strong> weeks on chart at HK$ 38.00 after a 60% discount.</p>
+
+<h2>Column glossary (matches the store UI)</h2>
 <ul>
-  <li>No long store copy, no mirrored key art—only outbound <code>/app/</code> links.</li>
-  <li>Not affiliated with Valve; no key reselling; no piracy indexes.</li>
-  <li>Snapshots are <strong>reading aids</strong>, not purchase advice.</li>
-  <li>Region, age gates, and account state change what you see; fetches default to US context.</li>
+  <li><strong>Price</strong> — HK$ on the captured storefront; discounts show base price and percentage; pre-orders and new releases are tagged.</li>
+  <li><strong>Change</strong> — New, Re-entry, or week-over-week ▲ / ▼ positions; unchanged rows show —.</li>
+  <li><strong>Weeks on chart</strong> — consecutive weeks in the weekly top-100 revenue list.</li>
 </ul>
 
-<h2>Can this page auto-update every week?</h2>
-<p><strong>Yes—for the snapshot table.</strong> Valve’s own Most Played numbers move continuously; this repo does not websocket-scrape them. Instead, <code>fetch-steam-charts</code> tries once per week (GitHub Actions or your cron), writes JSON, and <code>build-articles</code> injects fresh rows into this URL. That is the honest split: official Charts stay live; aogl.cn keeps a dated audit trail. If you need Tuesday-morning concurrency, open <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> in another tab while reading this explainer.</p>
-<p>When store JSON endpoints return 403 (common on some networks), add a Steam Web API key as repo secret <code>STEAM_WEB_API_KEY</code> so the workflow can call <code>ISteamChartsService/GetMostPlayedGames</code> and weekly seller services documented on partner portals. Without a key, the prose and SEO pills still stand; only the auto-table may stay empty until a successful fetch from GitHub’s US runners.</p>
+<h2>Weekly revenue vs Most Played</h2>
+<p>Most Played highlights who is running the client right now (Dota 2, CS2, battle royales). Weekly top sellers ranks <strong>store revenue in the printed date range</strong>. A deep-discount strategy title or new premium launch can outrank a game with higher concurrency but slower weekly spend. When reading news or forum posts, check which chart they cite.</p>
 
-<h2>Maintenance</h2>
-<ol>
-  <li>Weekly <code>fetch-steam-charts</code>; bump <code>dateModified</code> when snapshot rows change meaningfully.</li>
-  <li>Edit prose in <code>data/articles/fragments/</code>, never hand-edit built HTML.</li>
-  <li>New chart types → extend <code>scripts/steam-charts-lib.mjs</code> first, then explain them here.</li>
-</ol>
+<h2>Archive notes</h2>
+<p>Game capsule art stays on Steam CDN; titles link to store pages. Prices and ranks are authoritative on Valve’s site and vary by region/currency. Next week’s refresh: update <code>data/steam-charts-snapshot.json</code> and rebuild the article.</p>
 
-<h2 id="article-seo-keywords">Search &amp; further reading</h2>
-<p>Pills open public Google searches or Valve’s official Charts—no on-site tracking.</p>
+<h2 id="article-seo-keywords">Search &amp; official links</h2>
 <div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
-  <a class="pill" href="https://www.google.com/search?q=Steam+Charts+most+played" target="_blank" rel="noopener noreferrer">Steam Charts most played</a>
-  <a class="pill" href="https://www.google.com/search?q=Steam+top+sellers+weekly" target="_blank" rel="noopener noreferrer">Steam top sellers weekly</a>
-  <a class="pill" href="https://www.google.com/search?q=Steam+concurrent+players+chart" target="_blank" rel="noopener noreferrer">Steam concurrent players</a>
-  <a class="pill" href="https://www.google.com/search?q=Steam+best+selling+games+2026" target="_blank" rel="noopener noreferrer">Steam best selling games</a>
+  <a class="pill" href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Steam Charts</a>
+  <a class="pill" href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Steam Most Played</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+weekly+top+sellers" target="_blank" rel="noopener noreferrer">Steam weekly top sellers</a>
   <a class="pill" href="https://www.google.com/search?q=Counter-Strike+2+Steam+charts" target="_blank" rel="noopener noreferrer">CS2 Steam charts</a>
-  <a class="pill" href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve Most Played</a>
-  <a class="pill" href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Valve Charts hub</a>
-  <a class="pill" href="/games.html">aogl.cn games hub</a>
-  <a class="pill" href="/articles/index.html">Article index</a>
+  <a class="pill" href="https://www.google.com/search?q=Hearts+of+Iron+IV+Steam+sale" target="_blank" rel="noopener noreferrer">Hearts of Iron IV Steam sale</a>
+  <a class="pill" href="https://www.google.com/search?q=Black+Myth+Wukong+Steam+charts" target="_blank" rel="noopener noreferrer">Black Myth Wukong Steam charts</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+concurrent+players" target="_blank" rel="noopener noreferrer">Steam concurrent players</a>
+  <a class="pill" href="/games.html">Games hub</a>
 </div>

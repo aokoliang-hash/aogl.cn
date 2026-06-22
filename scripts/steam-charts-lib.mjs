@@ -210,50 +210,50 @@ function renderTable(title, rows, lang) {
 </table>`;
 }
 
-function renderSellersTable(title, rows, lang) {
-  const emptyMsg =
-    lang === "zh"
-      ? "暂无自动快照行 — 请以 Valve 官方 Charts 为准。"
-      : "No automated snapshot rows — use official Valve Charts.";
+function renderWeeklyTopSellersTable(rows, lang) {
   if (!rows?.length) {
-    return `<h3>${esc(title)}</h3><p class="article-note">${emptyMsg}</p>`;
+    const emptyMsg =
+      lang === "zh"
+        ? "暂无周榜数据 — 请打开 Valve 官方 Charts 页核对。"
+        : "No weekly rows — open official Valve Charts.";
+    return `<p class="article-note">${emptyMsg}</p>`;
   }
   const head =
     lang === "zh"
-      ? "<tr><th>#</th><th>游戏</th><th>商店页</th></tr>"
-      : "<tr><th>#</th><th>Title</th><th>Store</th></tr>";
-  const linkLabel = lang === "zh" ? "Steam 商店" : "Steam store";
+      ? "<tr><th>#</th><th>游戏</th><th>价格</th><th>排名变化</th><th>在榜周数</th></tr>"
+      : "<tr><th>#</th><th>Title</th><th>Price</th><th>Change</th><th>Weeks on chart</th></tr>";
   const body = rows
-    .map(
-      (r) =>
-        `<tr><td>${r.rank}</td><td>${esc(r.name)}</td><td><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${linkLabel}</a></td></tr>`,
-    )
+    .map((r) => {
+      const price = lang === "zh" ? r.priceZh || r.price : r.price;
+      const change = lang === "zh" ? r.changeZh || r.change : r.change;
+      const name = lang === "zh" ? r.nameZh || r.name : r.name;
+      const nameCell = r.url
+        ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(name)}</a>`
+        : esc(name);
+      return `<tr><td>${r.rank}</td><td>${nameCell}</td><td>${esc(price || "—")}</td><td>${esc(change || "—")}</td><td>${esc(String(r.weeksOnChart ?? "—"))}</td></tr>`;
+    })
     .join("");
-  return `<h3>${esc(title)}</h3>
-<table class="article-data-table">
+  return `<table class="article-data-table article-weekly-chart-table">
   <thead>${head}</thead>
   <tbody>${body}</tbody>
 </table>`;
 }
 
 export function renderSteamChartsSnapshotHtml(snapshot, lang = "zh") {
-  const status = snapshot.fetchStatus || "unknown";
-  const note = snapshot.fetchNote || "";
-  const at = snapshot.fetchedAt || "—";
+  const week =
+    lang === "zh"
+      ? snapshot.weekLabelZh || snapshot.weekLabel || snapshot.fetchedAt
+      : snapshot.weekLabel || snapshot.fetchedAt;
+  const region = snapshot.region ? ` · ${snapshot.region}` : "";
+  const count = snapshot.weeklyTopSellers?.length ?? 0;
   const intro =
     lang === "zh"
-      ? `<p class="article-note"><strong>快照日期 ${esc(at)}</strong>（状态：${esc(status)}）。${esc(note)} 实时并发数以 <a href="${esc(snapshot.sources?.mostPlayed)}" target="_blank" rel="noopener noreferrer">Valve 官方 Most Played</a> 为准；本站表格为个人阅读备忘，非商业榜单。</p>`
-      : `<p class="article-note"><strong>Snapshot ${esc(at)}</strong> (status: ${esc(status)}). ${esc(note)} Live concurrents are authoritative on <a href="${esc(snapshot.sources?.mostPlayed)}" target="_blank" rel="noopener noreferrer">Valve’s Most Played page</a>; this table is a personal reading aid, not a commercial ranking.</p>`;
-
-  const mpTitle = lang === "zh" ? "Most Played（同时在线 · 快照）" : "Most Played (concurrent · snapshot)";
-  const tsTitle = lang === "zh" ? "Top Sellers（畅销 · 快照）" : "Top Sellers (revenue · snapshot)";
-  const wkTitle = lang === "zh" ? "Weekly Top Sellers（周榜 · 快照）" : "Weekly top sellers (snapshot)";
+      ? `<p class="article-note">统计周期 <strong>${esc(week)}</strong>${esc(region)}。数据来源：<a href="${esc(snapshot.sources?.weeklyTopSellers || "https://store.steampowered.com/charts/")}" target="_blank" rel="noopener noreferrer">Steam 商店 · 每周热销商品</a>（Top 100 中的前 ${count} 名存档）。</p>`
+      : `<p class="article-note">Week <strong>${esc(week)}</strong>${esc(region)}. Source: <a href="${esc(snapshot.sources?.weeklyTopSellers || "https://store.steampowered.com/charts/")}" target="_blank" rel="noopener noreferrer">Steam store · Weekly top sellers</a> (top ${count} archived from the top-100 list).</p>`;
 
   return `${intro}
 <div class="article-steam-snapshot">
-${renderTable(mpTitle, snapshot.mostPlayed, lang)}
-${renderSellersTable(tsTitle, snapshot.topSellers, lang)}
-${renderSellersTable(wkTitle, snapshot.weeklyTopSellers, lang)}
+${renderWeeklyTopSellersTable(snapshot.weeklyTopSellers, lang)}
 </div>`;
 }
 
