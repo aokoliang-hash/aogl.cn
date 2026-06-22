@@ -1,0 +1,13 @@
+{
+  "fetchedAt": "2026-06-22",
+  "fetchStatus": "fallback",
+  "fetchNote": "Automated pull blocked (403). Run npm run fetch-steam-charts on a network that can reach store.steampowered.com, or set STEAM_WEB_API_KEY.",
+  "sources": {
+    "chartsHub": "https://store.steampowered.com/charts/",
+    "mostPlayed": "https://store.steampowered.com/charts/mostplayed",
+    "topSellers": "https://store.steampowered.com/charts/topsellers"
+  },
+  "mostPlayed": [],
+  "topSellers": [],
+  "weeklyTopSellers": []
+}

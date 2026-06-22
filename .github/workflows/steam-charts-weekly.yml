@@ -1,0 +1,36 @@
+name: Weekly Steam Charts snapshot
+
+on:
+  schedule:
+    - cron: "30 6 * * 2"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch Steam Charts snapshot
+        env:
+          STEAM_WEB_API_KEY: ${{ secrets.STEAM_WEB_API_KEY }}
+        run: npm run fetch-steam-charts
+
+      - name: Rebuild article HTML and locales
+        run: npm run build-articles && npm run build-seo-locales
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: weekly Steam Charts snapshot [automated]"
+          file_pattern: "data/steam-charts-snapshot.json articles/**/*.html _multilang/articles/**/*.html en/**/*.html zh/**/*.html ja/**/*.html ko/**/*.html fr/**/*.html ru/**/*.html ar/**/*.html sitemap.xml"

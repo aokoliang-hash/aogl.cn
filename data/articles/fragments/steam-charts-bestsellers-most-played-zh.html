@@ -1,0 +1,78 @@
+<p>这是 aogl.cn 游戏向原创系列的<strong>第 1 篇</strong>：我读 <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Steam Charts</a>（Valve 商店内嵌榜单）时的个人备忘，不是第三方数据站，也不是「必玩推荐」。页面入口在商店顶栏 <strong>Charts</strong>，常见子页包括 <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a>（按当前同时在线排序）与畅销相关视图。下文对照官方文案与我自己的 Sunday 阅读习惯；<strong>不镜像</strong>游戏 KV、不搬运商店长描述，只链向 Steam 商店页。</p>
+
+<figure class="article-embed">
+  <img src="../original/steam-charts/share_image.png" width="1200" height="675" loading="lazy" decoding="async" alt="Steam Charts 官方分享图 — store.steampowered.com/charts">
+  <figcaption>Valve 在 Charts 页使用的通用分享图（<code>original/steam-charts/share_image.png</code>）。具体游戏封面仍以各 app 页为准，本站不托管。</figcaption>
+</figure>
+
+<h2>三个榜单，三种问题</h2>
+<p>新手常把「火」混为一谈。Steam 至少把下面三类拆开——我在 <a href="/games.html">games.html</a> 扫 RSS 标题后，会用 Charts 回答不同问题：</p>
+<ul>
+  <li><strong>Top Sellers / 畅销</strong> — 「最近谁在<strong>掏钱</strong>？」预购、打折季、DLC 都会抬升。回答的是<strong>营收动量</strong>，不是同时在线。</li>
+  <li><strong>Most Played / 最热玩</strong> — 「现在谁开着 Steam 客户端在<strong>玩</strong>？」页面上通常是<strong>实时并发</strong>与峰值字段。免费网游、竞技类常长期霸榜，与新发售单机不是同一故事。</li>
+  <li><strong>Weekly top sellers / 周畅销</strong> — 「这一<strong>周</strong>谁在商店窗口里卖得好？」适合对照 seasonal sale、新品首发周，比「此刻在线」更贴近发行节奏。</li>
+</ul>
+<p>官方 hub：<a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">store.steampowered.com/charts/</a>。Most Played 直达：<a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">…/charts/mostplayed</a>。我<strong>不</strong>把 Charts 当 APK 发现站；它只服务已在 PC 生态里的读者。</p>
+
+<h2>Most Played：实时动态，但别误读成「质量分」</h2>
+<p>Most Played 的魅力是<strong>分钟级变化</strong>：大型更新、周末晚间、电竞赛事都会抬并发。Valve 展示的是平台侧统计，不是 Metacritic，也不是我主观喜好。读榜时我会先问：</p>
+<ol>
+  <li>这是<strong>常驻 F2P</strong>（CS2、Dota 2 一类）还是<strong>版本更新脉冲</strong>？</li>
+  <li>峰值出现在<strong>哪个时区</strong>的晚上？（我看的是 US 区 Charts，与国服习惯可能错位。）</li>
+  <li>并发高是否等于「值得买」？——通常<strong>不等于</strong>；只说明「此刻很多人在玩」。</li>
+</ol>
+<p>因此本站文章只保留<strong>每周快照</strong>（见下表），不在 HTML 里假装「实时刷新」。要毫秒级数字，请直接打开 Valve 页面。</p>
+
+<h2>Top Sellers：畅销 ≠ 最热玩</h2>
+<p>畅销榜反映<strong>商店交易</strong>：新品上架、捆绑包、Steam Deck 验证后的回流、冬季特卖都会改写顺序。你会经常看到「Most Played 里是 A，Top Sellers 里是 B」——这正常。例：长期在线的老 MMO 占并发，但本周 revenue 冠军可能是刚打折的单机。</p>
+<p>我读 Top Sellers 是为了对齐 <code>games.html</code> Hot mix 里的<strong>第一方公告</strong>：若 Xbox/PlayStation 博客在讲某作，而 Steam 畅销也出现同名，我会去 app 页看是否为新版本或新 DLC，而不是写「10/10 必买」。本站 <a href="games-hub-generative-art-workflow.html">游戏 Hub × 生成式角色美术</a> 一文也强调：RSS 够用时不必强行开新文章。</p>
+
+<h2>周榜：适合写进 changelog 的节奏尺</h2>
+<p>周畅销把噪声压成<strong>7 天窗口</strong>，对我这种维护静态站的人更友好：可以在 <code>npm run fetch-steam-charts</code> 后把快照写进 git，并在 changelog 留一行「周榜变动摘要」，而不追求实时。它与 Most Played 的「此刻在线」互补：一个看<strong>卖</strong>，一个看<strong>玩</strong>。</p>
+
+<h2>本站快照表（可每周自动更新）</h2>
+<p>下方表格由构建脚本从 <code>data/steam-charts-snapshot.json</code> 注入。本地或 GitHub Actions 运行 <code>npm run fetch-steam-charts</code> 尝试拉取 Valve 接口；若 403 则保留上次成功行或显示空表并提示你打开官方页。完整刷新：</p>
+<pre><code>npm run refresh-steam-charts</code></pre>
+<p>GitHub 工作流 <code>.github/workflows/steam-charts-weekly.yml</code> 默认<strong>每周二 06:30 UTC</strong> 执行（与 hub RSS 错开半小时）。可选仓库 Secret <code>STEAM_WEB_API_KEY</code> 提高成功率。</p>
+<!-- STEAM_CHARTS_SNAPSHOT_AUTO -->
+
+<h2>与 games.html Hot mix 怎么分工</h2>
+<ul>
+  <li><strong>Hot mix</strong> — 官方博客/RSS 标题条，英文为主，偏「新闻」。</li>
+  <li><strong>本篇 Charts 手记</strong> — 解释「榜单词汇」，附可核对快照。</li>
+  <li><strong>角色线文章</strong>（如 <a href="game-girl-elena-palette-ritual-notes.html">艾琳娜配色</a>）— 个人美术归档，与榜单无关。</li>
+</ul>
+<p>三者并列出现在 <a href="/games.html#games-originals">games 原创轮播</a> 与 Hot mix 之间，避免把 Hub 伪装成数据站。</p>
+
+<h2>边界与合规</h2>
+<ul>
+  <li>不复制 Steam 商店长文案、不托管游戏 key art；仅链向 <code>store.steampowered.com/app/</code>。</li>
+  <li>不是 Valve 附属站点；不售卖 CD Key，不索引破解。</li>
+  <li>快照表为<strong>阅读辅助</strong>，不构成投资或购买建议。</li>
+  <li>地区、年龄过滤与 Steam 账户状态会影响你看到的 Charts；本文以 US 区拉取为准。</li>
+</ul>
+
+<h2>能否每周自动更新？</h2>
+<p><strong>可以——指下文快照表。</strong>Valve 自己的 Most Played 是持续变动的；本站不做 websocket 实时爬取。做法是每周运行 <code>fetch-steam-charts</code>（GitHub Actions 或本地定时），把 JSON 写入 git，再由 <code>build-articles</code> 注入本页。官方 Charts 保持实时；aogl.cn 只保留<strong>带日期的对照表</strong>。若你需要「此刻并发」，请另开 <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> 对照阅读。</p>
+<p>若 store JSON 接口返回 403（部分网络常见），可在仓库 Secret 配置 <code>STEAM_WEB_API_KEY</code>，让工作流调用 <code>ISteamChartsService</code> 等 documented 接口。没有 key 时，正文与 SEO 药丸仍有效，仅自动表格可能为空，直到 GitHub US 区 runner 拉取成功。</p>
+
+<h2>维护约定</h2>
+<ol>
+  <li>每周跑 <code>fetch-steam-charts</code>；若成功则 <code>dateModified</code> 随构建更新。</li>
+  <li>改说明文字 → 编辑 <code>data/articles/fragments/</code> 本文件，不手改构建产物 HTML。</li>
+  <li>新增榜单类型时先改 <code>scripts/steam-charts-lib.mjs</code>，再写段落解释差异。</li>
+</ol>
+
+<h2 id="article-seo-keywords">检索与延伸阅读</h2>
+<p>以下链接仅帮助读者用公开搜索找到<strong>官方</strong> Charts 与背景概念；点击后在 Google 打开，不经过本站跟踪。</p>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=Steam+Charts+most+played" target="_blank" rel="noopener noreferrer">Steam Charts most played</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+top+sellers+weekly" target="_blank" rel="noopener noreferrer">Steam top sellers weekly</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+%E5%90%8C%E6%97%B6%E5%9C%A8%E7%BA%BF%E4%BA%BA%E6%95%B0" target="_blank" rel="noopener noreferrer">Steam 同时在线人数</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+%E7%83%AD%E9%97%A8%E6%B8%B8%E6%88%8F%E6%8E%92%E8%A1%8C" target="_blank" rel="noopener noreferrer">Steam 热门游戏排行</a>
+  <a class="pill" href="https://www.google.com/search?q=Counter-Strike+2+Steam+charts" target="_blank" rel="noopener noreferrer">CS2 Steam charts</a>
+  <a class="pill" href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve Most Played 官方页</a>
+  <a class="pill" href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Valve Charts Hub</a>
+  <a class="pill" href="/games.html">aogl.cn 游戏 Hub</a>
+  <a class="pill" href="/articles/index.html">本站文章索引</a>
+</div>

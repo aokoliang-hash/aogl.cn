@@ -8,6 +8,8 @@
     "build-logo": "node scripts/regenerate-logo-wordmark.cjs",
     "build-hubs": "node scripts/build-hub-pages.mjs",
     "fetch-hub-news": "node scripts/fetch-hub-news.mjs",
+    "fetch-steam-charts": "node scripts/fetch-steam-charts.mjs",
+    "refresh-steam-charts": "npm run fetch-steam-charts && npm run build-articles && npm run build-seo-locales",
     "refresh-hub-news": "node scripts/fetch-hub-news.mjs && npm run fetch-hub-hotmix-images && npm run build-hubs && npm run build-seo-locales",
     "build-articles": "node scripts/build-articles.mjs",
     "generate-article-covers": "py -3 scripts/generate-article-covers.py",

@@ -103,6 +103,14 @@
     "h1": { "ja": "世界のストア・出版社トップ10", "ko": "글로벌 스토어·퍼블리셔 상위 10", "fr": "Top 10 mondial magasins et éditeurs", "ru": "Топ-10 магазинов и издателей", "ar": "أفضل 10 عالميًا للمتاجر والناشرين" },
     "rankTitle": { "ja": "世界トップ10（プラットフォーム）", "ko": "글로벌 상위 10(플랫폼)", "fr": "Top 10 mondial (plateformes)", "ru": "Глобальный топ-10 (платформы)", "ar": "أفضل 10 عالميًا (المنصات)" },
     "newsTitle": { "ja": "最新情報", "ko": "최신 동향", "fr": "Dernières actualités", "ru": "Актуальные новости", "ar": "أحدث المستجدات" },
+    "originalsTitle": { "ja": "当サイトオリジナル（ゲーム）", "ko": "사이트 오리지널(게임)", "fr": "Notes originales (jeux)", "ru": "Оригинальные заметки (игры)", "ar": "محتوى أصلي (ألعاب)" },
+    "originalsLead": {
+      "ja": "ゲーム向け個人メモを順次追加します。下の Hot mix は fetch-hub-news の公式 RSS のままです。",
+      "ko": "게임 관련 개인 메모를 점차 추가합니다. 아래 Hot mix는 fetch-hub-news 공식 RSS입니다.",
+      "fr": "Notes perso jeux ajoutées progressivement. Le hot mix RSS officiel reste en dessous.",
+      "ru": "Игровые заметки будут пополняться. Hot mix ниже — официальный RSS через fetch-hub-news.",
+      "ar": "ملاحظات ألعاب شخصية تُضاف تدريجياً. Hot mix أدناه يبقى RSS رسمي عبر fetch-hub-news."
+    },
     "hotMixTitle": { "ja": "注目ゲーム・ニュース（RSS）", "ko": "인기 게임·뉴스(RSS)", "fr": "Jeux populaires & actus (RSS)", "ru": "Популярные игры и новости (RSS)", "ar": "ألعاب شائعة وأخبار (RSS)" },
     "hotMixLead": {
       "ja": "npm run fetch-hub-news で Steam・PlayStation・Xbox・Epic/Unreal と TechCrunch のゲーム系タグを取得して更新します。",

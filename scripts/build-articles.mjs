@@ -15,6 +15,7 @@ import { sitePath } from "./site-paths.mjs";
 import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
 import { navBlock } from "./site-nav.mjs";
 import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
+import { injectSteamChartsSnapshot } from "./steam-charts-lib.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -219,7 +220,8 @@ function loadArticles() {
           continue;
         }
         if (fs.existsSync(fp)) {
-          raw["body" + suffixForLang(lang)] = fs.readFileSync(fp, "utf8").trim();
+          const rawBody = fs.readFileSync(fp, "utf8").trim();
+          raw["body" + suffixForLang(lang)] = injectSteamChartsSnapshot(rawBody, lang);
         } else {
           console.warn("Missing htmlFragments file:", rel, "for", raw.slug);
         }

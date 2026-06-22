@@ -17,6 +17,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const MULTILANG_DIR = path.join(ROOT, "_multilang");
 const HUB_DIR = path.join(ROOT, "data", "hubs");
+const ARTICLES_DIR = path.join(ROOT, "data", "articles");
+const GAMES_HUB_ARTICLES_PATH = path.join(ROOT, "data", "games-hub-articles.json");
 const SITE = JSON.parse(fs.readFileSync(path.join(ROOT, "site.config.json"), "utf8"));
 const BASE = String(SITE.siteUrl || "https://aogl.cn").replace(/\/$/, "");
 const hubUi = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "i18n", "hub-ui.json"), "utf8"));
@@ -116,6 +118,122 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
+const GAMES_ORIGINALS_META = {
+  en: " · aogl.cn",
+  zh: " · 本站",
+  ja: " · 当サイト",
+  ko: " · 이 사이트",
+  fr: " · aogl.cn",
+  ru: " · aogl.cn",
+  ar: " · aogl.cn",
+};
+
+const CAROUSEL_CHEVRON_L =
+  '<svg class="hub-carousel-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>';
+const CAROUSEL_CHEVRON_R =
+  '<svg class="hub-carousel-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>';
+
+function articleLangSuffix(lang) {
+  if (lang === "en") return "En";
+  if (lang === "zh") return "Zh";
+  return lang.charAt(0).toUpperCase() + lang.slice(1);
+}
+
+function articleStrByLang(article, lang, base) {
+  const primary = base + articleLangSuffix(lang);
+  for (const k of [primary, base + "En", base + "Zh"]) {
+    const v = article[k];
+    if (v != null && String(v).trim() !== "") return String(v);
+  }
+  return "";
+}
+
+function teaserHeroSrc(article) {
+  const h = (article.heroImage || "").trim();
+  if (!h) return "og-default.png";
+  if (h.startsWith("http://") || h.startsWith("https://") || h.startsWith("/")) return h;
+  return h.replace(/^\.?\//, "");
+}
+
+function loadGamesHubArticles() {
+  if (!fs.existsSync(GAMES_HUB_ARTICLES_PATH)) return [];
+  let slugs;
+  try {
+    slugs = JSON.parse(fs.readFileSync(GAMES_HUB_ARTICLES_PATH, "utf8"));
+  } catch (e) {
+    console.warn("Invalid games-hub-articles.json:", e.message);
+    return [];
+  }
+  if (!Array.isArray(slugs)) return [];
+  const out = [];
+  for (const slug of slugs) {
+    const fp = path.join(ARTICLES_DIR, `${slug}.json`);
+    if (!fs.existsSync(fp)) {
+      console.warn("games-hub-articles: missing", slug);
+      continue;
+    }
+    try {
+      out.push(JSON.parse(fs.readFileSync(fp, "utf8")));
+    } catch (e) {
+      console.warn("games-hub-articles: invalid JSON for", slug, e.message);
+    }
+  }
+  return out;
+}
+
+function buildGamesOriginalsCards(articles) {
+  return articles
+    .map((a) => {
+      const img = esc(teaserHeroSrc(a));
+      const titleSpans = LOCALES.map(
+        (code) => `<span class="lang-${code}">${esc(articleStrByLang(a, code, "title"))}</span>`,
+      ).join("");
+      const excerptSpans = LOCALES.map(
+        (code) => `<span class="lang-${code}">${esc(articleStrByLang(a, code, "indexExcerpt"))}</span>`,
+      ).join("");
+      const dVis = esc(a.datePublished || "—");
+      const metaSpans = LOCALES.map(
+        (code) => `<span class="lang-${code}">${dVis}${esc(GAMES_ORIGINALS_META[code])}</span>`,
+      ).join("");
+      return `        <li class="hub-hotmix-card">
+          <a class="hub-hotmix-card-link" href="articles/${esc(a.slug)}.html" draggable="false">
+            <div class="hub-hotmix-card-media">
+              <img class="hub-hotmix-card-img" src="${img}" width="400" height="225" alt="" loading="lazy" decoding="async" draggable="false" />
+            </div>
+            <div class="hub-hotmix-card-body">
+              <div class="hub-hotmix-card-titles">${titleSpans}</div>
+              <div class="originals-card-excerpt">${excerptSpans}</div>
+              <div class="hub-hotmix-card-meta">${metaSpans}</div>
+            </div>
+          </a>
+        </li>`;
+    })
+    .join("\n");
+}
+
+function gamesOriginalsSection(spec) {
+  if (spec.slug !== "games") return "";
+  const articles = loadGamesHubArticles();
+  if (articles.length === 0) return "";
+  const cards = buildGamesOriginalsCards(articles);
+  return `    <section class="hub-screen site-originals" id="games-originals" aria-labelledby="games-originals-title">
+      <h2 id="games-originals-title" class="page-section-title">${inlineTitleSpans(spec, "originalsTitle")}</h2>
+${hubOriginalsLeadSpans(spec)}      <div class="hub-carousel-wrap site-originals-carousel-wrap">
+        <ul class="hub-hotmix-cards hub-hotmix-cards--carousel site-originals-hotmix" role="list" aria-label="Game editorial notes — swipe or scroll sideways for more">
+${cards}
+        </ul>
+          <button type="button" class="hub-carousel-nav hub-carousel-nav--prev" data-carousel-dir="prev">
+            ${CAROUSEL_CHEVRON_L}
+          </button>
+          <button type="button" class="hub-carousel-nav hub-carousel-nav--next" data-carousel-dir="next">
+            ${CAROUSEL_CHEVRON_R}
+          </button>
+        </div>
+    </section>
+
+`;
+}
+
 function T(spec, key, lang) {
   const en = spec[key + "En"] ?? "";
   const zh = spec[key + "Zh"] ?? "";
@@ -148,6 +266,18 @@ function hubLeadSpans(spec, base) {
   if (!en && !zh) return "";
   const inner = LOCALES.map((code) => {
     const text = code === "en" ? en : code === "zh" ? zh || en : en;
+    return `<span class="lang-${code}">${esc(text)}</span>`;
+  }).join("");
+  return `      <p class="hub-screen-lead">${inner}</p>\n`;
+}
+
+/** Lead for games originals strip (uses T() for ja/ko/fr/ru/ar when hub-ui keys exist). */
+function hubOriginalsLeadSpans(spec) {
+  const en = String(spec.originalsLeadEn ?? "").trim();
+  const zh = String(spec.originalsLeadZh ?? "").trim();
+  if (!en && !zh) return "";
+  const inner = LOCALES.map((code) => {
+    const text = code === "en" ? en : code === "zh" ? zh || en : T(spec, "originalsLead", code);
     return `<span class="lang-${code}">${esc(text)}</span>`;
   }).join("");
   return `      <p class="hub-screen-lead">${inner}</p>\n`;
@@ -630,7 +760,7 @@ ${top10Lis}
       </ol>
     </section>
 
-${hotMixSection}${newsSection}    <section class="hub-screen hub-screen-more" id="more" aria-labelledby="hub-more-title">
+${gamesOriginalsSection(spec)}${hotMixSection}${newsSection}    <section class="hub-screen hub-screen-more" id="more" aria-labelledby="hub-more-title">
       <h2 id="hub-more-title" class="page-section-title">${inlineTitleSpans(spec, "moreTitle")}</h2>
 ${hubLeadSpans(spec, "moreLead")}      <ul class="hub-more-grid">
 ${moreLis}

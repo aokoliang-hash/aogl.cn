@@ -264,7 +264,31 @@
   text-decoration: none;
   font-size: 0.92rem;
 }
-.guides-index-item a:hover {
-  border-color: rgba(125, 211, 252, 0.45);
-  color: var(--accent);
+.article-shell__body .article-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0 1.25rem;
+  font-size: 0.92rem;
+}
+.article-shell__body .article-data-table th,
+.article-shell__body .article-data-table td {
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+.article-shell__body .article-data-table th {
+  background: rgba(125, 211, 252, 0.08);
+  font-weight: 600;
+}
+.article-shell__body .article-note {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.article-shell__body .article-steam-snapshot {
+  margin: 1rem 0 1.5rem;
+}
+.article-shell__body .article-seo-pills {
+  margin: 1rem 0 2rem;
 }

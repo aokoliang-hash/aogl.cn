@@ -1,0 +1,908 @@
+<!DOCTYPE html><html lang="en" data-title-en="Reading Steam Charts: bestsellers, Most Played, and weekly tops — personal notes — aogl.cn" data-desc-en="How I read Valve’s Steam Charts hub—Top Sellers vs Most Played vs weekly lists—with honest scope, no mirrored store art, and a weekly-updatable snapshot table." data-title-zh="Steam Charts 怎么读：畅销榜、Most Played 与周榜的个人对照手记 — aogl.cn" data-desc-zh="对照 store.steampowered.com/charts 的 Top Sellers、Most Played 与周榜：个人如何读 Steam 官方文字与并发数，不镜像商店美术，附可每周更新的快照表。" data-title-ja="Steam Charts の読み方 — ベストセラーと同時接続 — aogl.cn" data-desc-ja="Steam Charts 公式ページの読み方と週次スナップショット。" data-title-ko="Steam Charts 읽기 — 베스트셀러 vs 동시 접속 — aogl.cn" data-desc-ko="Steam Charts 공식 페이지 읽기와 주간 스냅샷." data-title-fr="Lire Steam Charts — best-sellers vs joueurs simultanés — aogl.cn" data-desc-fr="Lecture des Charts Steam officiels et instantané hebdomadaire." data-title-ru="Как читать Steam Charts — продажи и онлайн — aogl.cn" data-desc-ru="Как читать официальные Steam Charts и еженедельный снимок." data-title-ar="قراءة Steam Charts — الأكثر مبيعًا مقابل اللاعبين النشطين — aogl.cn" data-desc-ar="كيفية قراءة Steam Charts الرسمية ولقطة أسبوعية."><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="How I read Valve’s Steam Charts hub—Top Sellers vs Most Played vs weekly lists—with honest scope, no mirrored store art, and a weekly-updatable snapshot table.">
+  <title>Reading Steam Charts: bestsellers, Most Played, and weekly tops — personal notes — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/steam-charts-bestsellers-most-played.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/steam-charts-bestsellers-most-played.html">
+  <meta property="og:title" content="Reading Steam Charts: bestsellers, Most Played, and weekly tops — personal notes — aogl.cn">
+  <meta property="og:description" content="How I read Valve’s Steam Charts hub—Top Sellers vs Most Played vs weekly lists—with honest scope, no mirrored store art, and a weekly-updatable snapshot table.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/steam-charts-bestsellers-most-played.webp">
+  <meta property="og:image:alt" content="Steam Charts — bestsellers vs most played reading notes (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/steam-charts-bestsellers-most-played.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Official Valve Charts · not a commercial ranking · weekly snapshot","alternativeHeadline":"Steam Charts 怎么读：畅销榜、Most Played 与周榜的个人对照手记","datePublished":"2026-06-22","dateModified":"2026-06-22","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/steam-charts-bestsellers-most-played.html"},"url":"https://aogl.cn/en/articles/steam-charts-bestsellers-most-played.html","inLanguage":"mul","description":"How I read Valve’s Steam Charts hub—Top Sellers vs Most Played vs weekly lists—with honest scope, no mirrored store art, and a weekly-updatable snapshot table.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ru brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ar brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li class="is-active"><a href="/articles/index.html">Originals</a></li>
+          <li><a href="/index.html#tools-directory">AI tools</a></li>
+          <li><a href="/briefs/index.html">Briefs</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>More</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">Top sites</a></li>
+              <li><a href="/brands.html">Brands</a></li>
+              <li><a href="/shopping.html">Shopping</a></li>
+              <li><a href="/life.html">Life</a></li>
+              <li><a href="/social.html">Social</a></li>
+              <li><a href="/tools.html">Utilities</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/articles/index.html">本站原创</a></li>
+          <li><a href="/index.html#tools-directory">AI 工具</a></li>
+          <li><a href="/briefs/index.html">快讯</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>更多</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">全球站点</a></li>
+              <li><a href="/brands.html">品牌</a></li>
+              <li><a href="/shopping.html">购物</a></li>
+              <li><a href="/life.html">生活</a></li>
+              <li><a href="/social.html">社交</a></li>
+              <li><a href="/tools.html">工具</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-ja">
+          <li class="is-active"><a href="/articles/index.html">オリジナル</a></li>
+          <li><a href="/index.html#tools-directory">AIツール</a></li>
+          <li><a href="/briefs/index.html">速報</a></li>
+          <li><a href="/games.html">ゲーム</a></li>
+          <li><a href="/tech.html">テック</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>その他</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">主要サイト</a></li>
+              <li><a href="/brands.html">ブランド</a></li>
+              <li><a href="/shopping.html">ショッピング</a></li>
+              <li><a href="/life.html">ライフ</a></li>
+              <li><a href="/social.html">ソーシャル</a></li>
+              <li><a href="/tools.html">実用ツール</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-ko">
+          <li class="is-active"><a href="/articles/index.html">오리지널</a></li>
+          <li><a href="/index.html#tools-directory">AI 도구</a></li>
+          <li><a href="/briefs/index.html">속보</a></li>
+          <li><a href="/games.html">게임</a></li>
+          <li><a href="/tech.html">테크</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>더보기</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">주요 사이트</a></li>
+              <li><a href="/brands.html">브랜드</a></li>
+              <li><a href="/shopping.html">쇼핑</a></li>
+              <li><a href="/life.html">라이프</a></li>
+              <li><a href="/social.html">소셜</a></li>
+              <li><a href="/tools.html">실용 도구</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-fr">
+          <li class="is-active"><a href="/articles/index.html">Originaux</a></li>
+          <li><a href="/index.html#tools-directory">Outils IA</a></li>
+          <li><a href="/briefs/index.html">Brèves</a></li>
+          <li><a href="/games.html">Jeux</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>Plus</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">Grands sites</a></li>
+              <li><a href="/brands.html">Marques</a></li>
+              <li><a href="/shopping.html">Shopping</a></li>
+              <li><a href="/life.html">Vie</a></li>
+              <li><a href="/social.html">Social</a></li>
+              <li><a href="/tools.html">Utilitaires</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-ru">
+          <li class="is-active"><a href="/articles/index.html">Авторское</a></li>
+          <li><a href="/index.html#tools-directory">ИИ‑инструменты</a></li>
+          <li><a href="/briefs/index.html">Сводки</a></li>
+          <li><a href="/games.html">Игры</a></li>
+          <li><a href="/tech.html">Техно</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>Ещё</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">Топ сайтов</a></li>
+              <li><a href="/brands.html">Бренды</a></li>
+              <li><a href="/shopping.html">Шопинг</a></li>
+              <li><a href="/life.html">Сервисы</a></li>
+              <li><a href="/social.html">Соцсети</a></li>
+              <li><a href="/tools.html">Утилиты</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <ul class="site-nav-list lang-ar">
+          <li class="is-active"><a href="/articles/index.html">محتوى أصلي</a></li>
+          <li><a href="/index.html#tools-directory">أدوات الذكاء</a></li>
+          <li><a href="/briefs/index.html">عناوين</a></li>
+          <li><a href="/games.html">الألعاب</a></li>
+          <li><a href="/tech.html">التقنية</a></li>
+          <li class="site-nav-more">
+            <details class="site-nav-details">
+              <summary>المزيد</summary>
+              <ul class="site-nav-sub" role="list">
+              <li><a href="/portal.html">أبرز المواقع</a></li>
+              <li><a href="/brands.html">العلامات</a></li>
+              <li><a href="/shopping.html">التسوق</a></li>
+              <li><a href="/life.html">الحياة الرقمية</a></li>
+              <li><a href="/social.html">التواصل</a></li>
+              <li><a href="/tools.html">أدوات مساعدة</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Reading Steam Charts: bestsellers, Most Played, and weekly tops — personal notes</h1>
+        <p class="article-shell__sub">Official Valve Charts · not a commercial ranking · weekly snapshot</p>
+        <p class="article-shell__meta"><time datetime="2026-06-22">2026-06-22</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This is <strong>game editorial #1</strong> on aogl.cn: personal notes on reading <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Steam Charts</a> inside Valve’s store—not a third-party stat site, not a “must play” list. The hub lives under the store nav item <strong>Charts</strong>, with <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> sorting by live concurrent players and separate views for revenue leaders. I compare official wording with my Sunday habit on <a href="/games.html">games.html</a>; I do <strong>not</strong> mirror key art or paste store descriptions—only link out to Steam app pages.</p>
+
+<figure class="article-embed">
+  <img src="../original/steam-charts/share_image.png" width="1200" height="675" loading="lazy" decoding="async" alt="Official Steam Charts share image — store.steampowered.com/charts">
+  <figcaption>Generic share image Valve uses on Charts pages (<code>original/steam-charts/share_image.png</code>). Per-game capsules remain on Steam CDN; this site does not host them.</figcaption>
+</figure>
+
+<h2>Three charts, three questions</h2>
+<p>New readers often collapse “popular” into one idea. Steam splits at least these lanes—I open Charts after skimming Hot mix RSS to answer different questions:</p>
+<ul>
+  <li><strong>Top Sellers</strong> — “Who is <strong>paying</strong> this week?” Pre-orders, seasonal sales, and DLC spikes show up here. This is <strong>revenue momentum</strong>, not concurrent headcount.</li>
+  <li><strong>Most Played</strong> — “Who is <strong>running</strong> the client right now?” Rows expose live concurrents and peaks. Free-to-play staples and esports titles dominate; that is a different story from a day-one single-player launch.</li>
+  <li><strong>Weekly top sellers</strong> — “What sold best in this <strong>seven-day</strong> window?” Useful for launch week vs. evergreen MMO concurrency—closer to publishing cadence than minute-by-minute online counts.</li>
+</ul>
+<p>Official hub: <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">store.steampowered.com/charts/</a>. Most Played deep link: <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">…/charts/mostplayed</a>. I do <strong>not</strong> treat Charts as an APK discovery feed; it is for readers already inside the PC ecosystem.</p>
+
+<h2>Most Played: live, but not a quality score</h2>
+<p>The appeal of Most Played is <strong>near-real-time motion</strong>: patch days, weekend evenings, and tournament slots move numbers quickly. Valve publishes platform-side stats—not Metacritic, not my taste. Before I over-read a row I ask:</p>
+<ol>
+  <li>Is this a <strong>permanent F2P tenant</strong> (Counter-Strike 2, Dota 2) or a <strong>patch pulse</strong> on a premium game?</li>
+  <li>Which <strong>time zone’s night</strong> drives the peak I am seeing? (I fetch US-facing charts; your locale may differ.)</li>
+  <li>Does high concurrency imply “buy it”?—Usually <strong>no</strong>; it only means “many people are in-session now.”</li>
+</ol>
+<p>So this article keeps a <strong>weekly snapshot table</strong> (below), not a fake live ticker. For minute-level truth, use Valve’s page directly.</p>
+
+<h2>Top Sellers: revenue is not concurrency</h2>
+<p>The bestseller list tracks <strong>store transactions</strong>: launches, bundles, Deck-verified bumps, and winter sale waves reshuffle order constantly. Seeing game A on Most Played while game B tops sellers is normal—evergreen online titles vs. a discounted new release is the classic split.</p>
+<p>I use Top Sellers to cross-check first-party headlines on <code>games.html</code>: when PlayStation or Xbox blogs mention a title and Steam revenue also spikes, I open the app page for a patch or DLC—not to write “10/10 must buy.” See <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a>: sometimes RSS alone is enough without a new article.</p>
+
+<h2>Weekly tops: a changelog-friendly ruler</h2>
+<p>Weekly seller charts compress noise into a <strong>seven-day frame</strong>—easier for a static git site than pretending to stream live data. After <code>npm run fetch-steam-charts</code> I can commit JSON and note “weekly movers” in changelog without websocket infra. Weekly answers <strong>what sold</strong>; Most Played answers <strong>what is running</strong>.</p>
+
+<h2>Snapshot table (weekly automation)</h2>
+<p>The block below is injected from <code>data/steam-charts-snapshot.json</code> at build time. Run <code>npm run fetch-steam-charts</code> locally or let GitHub Actions refresh it. On HTTP 403 the script keeps the last good rows or shows an empty table with links to Valve. Full rebuild:</p>
+<pre><code>npm run refresh-steam-charts</code></pre>
+<p>Workflow: <code>.github/workflows/steam-charts-weekly.yml</code> (Tuesdays 06:30 UTC). Optional repo secret <code>STEAM_WEB_API_KEY</code> improves API success.</p>
+<p class="article-note"><strong>Snapshot 2026-06-22</strong> (status: fallback). Automated pull blocked (403). Run npm run fetch-steam-charts on a network that can reach store.steampowered.com, or set STEAM_WEB_API_KEY. Live concurrents are authoritative on <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve’s Most Played page</a>; this table is a personal reading aid, not a commercial ranking.</p>
+<div class="article-steam-snapshot">
+<h3>Most Played (concurrent · snapshot)</h3><p class="article-note">No automated snapshot rows — open official Valve Charts links below, or run fetch-steam-charts.</p>
+<h3>Top Sellers (revenue · snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+<h3>Weekly top sellers (snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+</div>
+
+<h2>How this splits from games.html Hot mix</h2>
+<ul>
+  <li><strong>Hot mix</strong> — RSS headline rail, often English, news-shaped.</li>
+  <li><strong>This Charts note</strong> — vocabulary + auditable snapshot.</li>
+  <li><strong>Character archives</strong> (e.g. <a href="game-girl-elena-palette-ritual-notes.html">Elena palette</a>) — art notes, not rankings.</li>
+</ul>
+<p>All three can coexist on <a href="/games.html#games-originals">games.html</a> without turning the hub into a data broker.</p>
+
+<h2>Scope and compliance</h2>
+<ul>
+  <li>No long store copy, no mirrored key art—only outbound <code>/app/</code> links.</li>
+  <li>Not affiliated with Valve; no key reselling; no piracy indexes.</li>
+  <li>Snapshots are <strong>reading aids</strong>, not purchase advice.</li>
+  <li>Region, age gates, and account state change what you see; fetches default to US context.</li>
+</ul>
+
+<h2>Can this page auto-update every week?</h2>
+<p><strong>Yes—for the snapshot table.</strong> Valve’s own Most Played numbers move continuously; this repo does not websocket-scrape them. Instead, <code>fetch-steam-charts</code> tries once per week (GitHub Actions or your cron), writes JSON, and <code>build-articles</code> injects fresh rows into this URL. That is the honest split: official Charts stay live; aogl.cn keeps a dated audit trail. If you need Tuesday-morning concurrency, open <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> in another tab while reading this explainer.</p>
+<p>When store JSON endpoints return 403 (common on some networks), add a Steam Web API key as repo secret <code>STEAM_WEB_API_KEY</code> so the workflow can call <code>ISteamChartsService/GetMostPlayedGames</code> and weekly seller services documented on partner portals. Without a key, the prose and SEO pills still stand; only the auto-table may stay empty until a successful fetch from GitHub’s US runners.</p>
+
+<h2>Maintenance</h2>
+<ol>
+  <li>Weekly <code>fetch-steam-charts</code>; bump <code>dateModified</code> when snapshot rows change meaningfully.</li>
+  <li>Edit prose in <code>data/articles/fragments/</code>, never hand-edit built HTML.</li>
+  <li>New chart types → extend <code>scripts/steam-charts-lib.mjs</code> first, then explain them here.</li>
+</ol>
+
+<h2 id="article-seo-keywords">Search &amp; further reading</h2>
+<p>Pills open public Google searches or Valve’s official Charts—no on-site tracking.</p>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=Steam+Charts+most+played" target="_blank" rel="noopener noreferrer">Steam Charts most played</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+top+sellers+weekly" target="_blank" rel="noopener noreferrer">Steam top sellers weekly</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+concurrent+players+chart" target="_blank" rel="noopener noreferrer">Steam concurrent players</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+best+selling+games+2026" target="_blank" rel="noopener noreferrer">Steam best selling games</a>
+  <a class="pill" href="https://www.google.com/search?q=Counter-Strike+2+Steam+charts" target="_blank" rel="noopener noreferrer">CS2 Steam charts</a>
+  <a class="pill" href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve Most Played</a>
+  <a class="pill" href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Valve Charts hub</a>
+  <a class="pill" href="/games.html">aogl.cn games hub</a>
+  <a class="pill" href="/articles/index.html">Article index</a>
+</div></article>
+    </div>
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Steam Charts 怎么读：畅销榜、Most Played 与周榜的个人对照手记</h1>
+        <p class="article-shell__sub">Valve 官方 Charts · 非商业榜单 · 可每周快照</p>
+        <p class="article-shell__meta"><time datetime="2026-06-22">2026-06-22</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>这是 aogl.cn 游戏向原创系列的<strong>第 1 篇</strong>：我读 <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Steam Charts</a>（Valve 商店内嵌榜单）时的个人备忘，不是第三方数据站，也不是「必玩推荐」。页面入口在商店顶栏 <strong>Charts</strong>，常见子页包括 <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a>（按当前同时在线排序）与畅销相关视图。下文对照官方文案与我自己的 Sunday 阅读习惯；<strong>不镜像</strong>游戏 KV、不搬运商店长描述，只链向 Steam 商店页。</p>
+
+<figure class="article-embed">
+  <img src="../original/steam-charts/share_image.png" width="1200" height="675" loading="lazy" decoding="async" alt="Steam Charts 官方分享图 — store.steampowered.com/charts">
+  <figcaption>Valve 在 Charts 页使用的通用分享图（<code>original/steam-charts/share_image.png</code>）。具体游戏封面仍以各 app 页为准，本站不托管。</figcaption>
+</figure>
+
+<h2>三个榜单，三种问题</h2>
+<p>新手常把「火」混为一谈。Steam 至少把下面三类拆开——我在 <a href="/games.html">games.html</a> 扫 RSS 标题后，会用 Charts 回答不同问题：</p>
+<ul>
+  <li><strong>Top Sellers / 畅销</strong> — 「最近谁在<strong>掏钱</strong>？」预购、打折季、DLC 都会抬升。回答的是<strong>营收动量</strong>，不是同时在线。</li>
+  <li><strong>Most Played / 最热玩</strong> — 「现在谁开着 Steam 客户端在<strong>玩</strong>？」页面上通常是<strong>实时并发</strong>与峰值字段。免费网游、竞技类常长期霸榜，与新发售单机不是同一故事。</li>
+  <li><strong>Weekly top sellers / 周畅销</strong> — 「这一<strong>周</strong>谁在商店窗口里卖得好？」适合对照 seasonal sale、新品首发周，比「此刻在线」更贴近发行节奏。</li>
+</ul>
+<p>官方 hub：<a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">store.steampowered.com/charts/</a>。Most Played 直达：<a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">…/charts/mostplayed</a>。我<strong>不</strong>把 Charts 当 APK 发现站；它只服务已在 PC 生态里的读者。</p>
+
+<h2>Most Played：实时动态，但别误读成「质量分」</h2>
+<p>Most Played 的魅力是<strong>分钟级变化</strong>：大型更新、周末晚间、电竞赛事都会抬并发。Valve 展示的是平台侧统计，不是 Metacritic，也不是我主观喜好。读榜时我会先问：</p>
+<ol>
+  <li>这是<strong>常驻 F2P</strong>（CS2、Dota 2 一类）还是<strong>版本更新脉冲</strong>？</li>
+  <li>峰值出现在<strong>哪个时区</strong>的晚上？（我看的是 US 区 Charts，与国服习惯可能错位。）</li>
+  <li>并发高是否等于「值得买」？——通常<strong>不等于</strong>；只说明「此刻很多人在玩」。</li>
+</ol>
+<p>因此本站文章只保留<strong>每周快照</strong>（见下表），不在 HTML 里假装「实时刷新」。要毫秒级数字，请直接打开 Valve 页面。</p>
+
+<h2>Top Sellers：畅销 ≠ 最热玩</h2>
+<p>畅销榜反映<strong>商店交易</strong>：新品上架、捆绑包、Steam Deck 验证后的回流、冬季特卖都会改写顺序。你会经常看到「Most Played 里是 A，Top Sellers 里是 B」——这正常。例：长期在线的老 MMO 占并发，但本周 revenue 冠军可能是刚打折的单机。</p>
+<p>我读 Top Sellers 是为了对齐 <code>games.html</code> Hot mix 里的<strong>第一方公告</strong>：若 Xbox/PlayStation 博客在讲某作，而 Steam 畅销也出现同名，我会去 app 页看是否为新版本或新 DLC，而不是写「10/10 必买」。本站 <a href="games-hub-generative-art-workflow.html">游戏 Hub × 生成式角色美术</a> 一文也强调：RSS 够用时不必强行开新文章。</p>
+
+<h2>周榜：适合写进 changelog 的节奏尺</h2>
+<p>周畅销把噪声压成<strong>7 天窗口</strong>，对我这种维护静态站的人更友好：可以在 <code>npm run fetch-steam-charts</code> 后把快照写进 git，并在 changelog 留一行「周榜变动摘要」，而不追求实时。它与 Most Played 的「此刻在线」互补：一个看<strong>卖</strong>，一个看<strong>玩</strong>。</p>
+
+<h2>本站快照表（可每周自动更新）</h2>
+<p>下方表格由构建脚本从 <code>data/steam-charts-snapshot.json</code> 注入。本地或 GitHub Actions 运行 <code>npm run fetch-steam-charts</code> 尝试拉取 Valve 接口；若 403 则保留上次成功行或显示空表并提示你打开官方页。完整刷新：</p>
+<pre><code>npm run refresh-steam-charts</code></pre>
+<p>GitHub 工作流 <code>.github/workflows/steam-charts-weekly.yml</code> 默认<strong>每周二 06:30 UTC</strong> 执行（与 hub RSS 错开半小时）。可选仓库 Secret <code>STEAM_WEB_API_KEY</code> 提高成功率。</p>
+<p class="article-note"><strong>快照日期 2026-06-22</strong>（状态：fallback）。Automated pull blocked (403). Run npm run fetch-steam-charts on a network that can reach store.steampowered.com, or set STEAM_WEB_API_KEY. 实时并发数以 <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve 官方 Most Played</a> 为准；本站表格为个人阅读备忘，非商业榜单。</p>
+<div class="article-steam-snapshot">
+<h3>Most Played（同时在线 · 快照）</h3><p class="article-note">暂无自动快照行 — 请打开下方 Valve 官方 Charts 链接核对，或运行 fetch-steam-charts。</p>
+<h3>Top Sellers（畅销 · 快照）</h3><p class="article-note">暂无自动快照行 — 请以 Valve 官方 Charts 为准。</p>
+<h3>Weekly Top Sellers（周榜 · 快照）</h3><p class="article-note">暂无自动快照行 — 请以 Valve 官方 Charts 为准。</p>
+</div>
+
+<h2>与 games.html Hot mix 怎么分工</h2>
+<ul>
+  <li><strong>Hot mix</strong> — 官方博客/RSS 标题条，英文为主，偏「新闻」。</li>
+  <li><strong>本篇 Charts 手记</strong> — 解释「榜单词汇」，附可核对快照。</li>
+  <li><strong>角色线文章</strong>（如 <a href="game-girl-elena-palette-ritual-notes.html">艾琳娜配色</a>）— 个人美术归档，与榜单无关。</li>
+</ul>
+<p>三者并列出现在 <a href="/games.html#games-originals">games 原创轮播</a> 与 Hot mix 之间，避免把 Hub 伪装成数据站。</p>
+
+<h2>边界与合规</h2>
+<ul>
+  <li>不复制 Steam 商店长文案、不托管游戏 key art；仅链向 <code>store.steampowered.com/app/</code>。</li>
+  <li>不是 Valve 附属站点；不售卖 CD Key，不索引破解。</li>
+  <li>快照表为<strong>阅读辅助</strong>，不构成投资或购买建议。</li>
+  <li>地区、年龄过滤与 Steam 账户状态会影响你看到的 Charts；本文以 US 区拉取为准。</li>
+</ul>
+
+<h2>能否每周自动更新？</h2>
+<p><strong>可以——指下文快照表。</strong>Valve 自己的 Most Played 是持续变动的；本站不做 websocket 实时爬取。做法是每周运行 <code>fetch-steam-charts</code>（GitHub Actions 或本地定时），把 JSON 写入 git，再由 <code>build-articles</code> 注入本页。官方 Charts 保持实时；aogl.cn 只保留<strong>带日期的对照表</strong>。若你需要「此刻并发」，请另开 <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> 对照阅读。</p>
+<p>若 store JSON 接口返回 403（部分网络常见），可在仓库 Secret 配置 <code>STEAM_WEB_API_KEY</code>，让工作流调用 <code>ISteamChartsService</code> 等 documented 接口。没有 key 时，正文与 SEO 药丸仍有效，仅自动表格可能为空，直到 GitHub US 区 runner 拉取成功。</p>
+
+<h2>维护约定</h2>
+<ol>
+  <li>每周跑 <code>fetch-steam-charts</code>；若成功则 <code>dateModified</code> 随构建更新。</li>
+  <li>改说明文字 → 编辑 <code>data/articles/fragments/</code> 本文件，不手改构建产物 HTML。</li>
+  <li>新增榜单类型时先改 <code>scripts/steam-charts-lib.mjs</code>，再写段落解释差异。</li>
+</ol>
+
+<h2 id="article-seo-keywords">检索与延伸阅读</h2>
+<p>以下链接仅帮助读者用公开搜索找到<strong>官方</strong> Charts 与背景概念；点击后在 Google 打开，不经过本站跟踪。</p>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=Steam+Charts+most+played" target="_blank" rel="noopener noreferrer">Steam Charts most played</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+top+sellers+weekly" target="_blank" rel="noopener noreferrer">Steam top sellers weekly</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+%E5%90%8C%E6%97%B6%E5%9C%A8%E7%BA%BF%E4%BA%BA%E6%95%B0" target="_blank" rel="noopener noreferrer">Steam 同时在线人数</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+%E7%83%AD%E9%97%A8%E6%B8%B8%E6%88%8F%E6%8E%92%E8%A1%8C" target="_blank" rel="noopener noreferrer">Steam 热门游戏排行</a>
+  <a class="pill" href="https://www.google.com/search?q=Counter-Strike+2+Steam+charts" target="_blank" rel="noopener noreferrer">CS2 Steam charts</a>
+  <a class="pill" href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve Most Played 官方页</a>
+  <a class="pill" href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Valve Charts Hub</a>
+  <a class="pill" href="/games.html">aogl.cn 游戏 Hub</a>
+  <a class="pill" href="/articles/index.html">本站文章索引</a>
+</div></article>
+    </div>
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Steam Charts の読み方 — ベストセラーと同時接続</h1>
+        <p class="article-shell__sub">Valve 公式 Charts・非商用ランキング</p>
+        <p class="article-shell__meta"><time datetime="2026-06-22">2026-06-22</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p>This is <strong>game editorial #1</strong> on aogl.cn: personal notes on reading <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Steam Charts</a> inside Valve’s store—not a third-party stat site, not a “must play” list. The hub lives under the store nav item <strong>Charts</strong>, with <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> sorting by live concurrent players and separate views for revenue leaders. I compare official wording with my Sunday habit on <a href="/games.html">games.html</a>; I do <strong>not</strong> mirror key art or paste store descriptions—only link out to Steam app pages.</p>
+
+<figure class="article-embed">
+  <img src="../original/steam-charts/share_image.png" width="1200" height="675" loading="lazy" decoding="async" alt="Official Steam Charts share image — store.steampowered.com/charts">
+  <figcaption>Generic share image Valve uses on Charts pages (<code>original/steam-charts/share_image.png</code>). Per-game capsules remain on Steam CDN; this site does not host them.</figcaption>
+</figure>
+
+<h2>Three charts, three questions</h2>
+<p>New readers often collapse “popular” into one idea. Steam splits at least these lanes—I open Charts after skimming Hot mix RSS to answer different questions:</p>
+<ul>
+  <li><strong>Top Sellers</strong> — “Who is <strong>paying</strong> this week?” Pre-orders, seasonal sales, and DLC spikes show up here. This is <strong>revenue momentum</strong>, not concurrent headcount.</li>
+  <li><strong>Most Played</strong> — “Who is <strong>running</strong> the client right now?” Rows expose live concurrents and peaks. Free-to-play staples and esports titles dominate; that is a different story from a day-one single-player launch.</li>
+  <li><strong>Weekly top sellers</strong> — “What sold best in this <strong>seven-day</strong> window?” Useful for launch week vs. evergreen MMO concurrency—closer to publishing cadence than minute-by-minute online counts.</li>
+</ul>
+<p>Official hub: <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">store.steampowered.com/charts/</a>. Most Played deep link: <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">…/charts/mostplayed</a>. I do <strong>not</strong> treat Charts as an APK discovery feed; it is for readers already inside the PC ecosystem.</p>
+
+<h2>Most Played: live, but not a quality score</h2>
+<p>The appeal of Most Played is <strong>near-real-time motion</strong>: patch days, weekend evenings, and tournament slots move numbers quickly. Valve publishes platform-side stats—not Metacritic, not my taste. Before I over-read a row I ask:</p>
+<ol>
+  <li>Is this a <strong>permanent F2P tenant</strong> (Counter-Strike 2, Dota 2) or a <strong>patch pulse</strong> on a premium game?</li>
+  <li>Which <strong>time zone’s night</strong> drives the peak I am seeing? (I fetch US-facing charts; your locale may differ.)</li>
+  <li>Does high concurrency imply “buy it”?—Usually <strong>no</strong>; it only means “many people are in-session now.”</li>
+</ol>
+<p>So this article keeps a <strong>weekly snapshot table</strong> (below), not a fake live ticker. For minute-level truth, use Valve’s page directly.</p>
+
+<h2>Top Sellers: revenue is not concurrency</h2>
+<p>The bestseller list tracks <strong>store transactions</strong>: launches, bundles, Deck-verified bumps, and winter sale waves reshuffle order constantly. Seeing game A on Most Played while game B tops sellers is normal—evergreen online titles vs. a discounted new release is the classic split.</p>
+<p>I use Top Sellers to cross-check first-party headlines on <code>games.html</code>: when PlayStation or Xbox blogs mention a title and Steam revenue also spikes, I open the app page for a patch or DLC—not to write “10/10 must buy.” See <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a>: sometimes RSS alone is enough without a new article.</p>
+
+<h2>Weekly tops: a changelog-friendly ruler</h2>
+<p>Weekly seller charts compress noise into a <strong>seven-day frame</strong>—easier for a static git site than pretending to stream live data. After <code>npm run fetch-steam-charts</code> I can commit JSON and note “weekly movers” in changelog without websocket infra. Weekly answers <strong>what sold</strong>; Most Played answers <strong>what is running</strong>.</p>
+
+<h2>Snapshot table (weekly automation)</h2>
+<p>The block below is injected from <code>data/steam-charts-snapshot.json</code> at build time. Run <code>npm run fetch-steam-charts</code> locally or let GitHub Actions refresh it. On HTTP 403 the script keeps the last good rows or shows an empty table with links to Valve. Full rebuild:</p>
+<pre><code>npm run refresh-steam-charts</code></pre>
+<p>Workflow: <code>.github/workflows/steam-charts-weekly.yml</code> (Tuesdays 06:30 UTC). Optional repo secret <code>STEAM_WEB_API_KEY</code> improves API success.</p>
+<p class="article-note"><strong>Snapshot 2026-06-22</strong> (status: fallback). Automated pull blocked (403). Run npm run fetch-steam-charts on a network that can reach store.steampowered.com, or set STEAM_WEB_API_KEY. Live concurrents are authoritative on <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve’s Most Played page</a>; this table is a personal reading aid, not a commercial ranking.</p>
+<div class="article-steam-snapshot">
+<h3>Most Played (concurrent · snapshot)</h3><p class="article-note">No automated snapshot rows — open official Valve Charts links below, or run fetch-steam-charts.</p>
+<h3>Top Sellers (revenue · snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+<h3>Weekly top sellers (snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+</div>
+
+<h2>How this splits from games.html Hot mix</h2>
+<ul>
+  <li><strong>Hot mix</strong> — RSS headline rail, often English, news-shaped.</li>
+  <li><strong>This Charts note</strong> — vocabulary + auditable snapshot.</li>
+  <li><strong>Character archives</strong> (e.g. <a href="game-girl-elena-palette-ritual-notes.html">Elena palette</a>) — art notes, not rankings.</li>
+</ul>
+<p>All three can coexist on <a href="/games.html#games-originals">games.html</a> without turning the hub into a data broker.</p>
+
+<h2>Scope and compliance</h2>
+<ul>
+  <li>No long store copy, no mirrored key art—only outbound <code>/app/</code> links.</li>
+  <li>Not affiliated with Valve; no key reselling; no piracy indexes.</li>
+  <li>Snapshots are <strong>reading aids</strong>, not purchase advice.</li>
+  <li>Region, age gates, and account state change what you see; fetches default to US context.</li>
+</ul>
+
+<h2>Can this page auto-update every week?</h2>
+<p><strong>Yes—for the snapshot table.</strong> Valve’s own Most Played numbers move continuously; this repo does not websocket-scrape them. Instead, <code>fetch-steam-charts</code> tries once per week (GitHub Actions or your cron), writes JSON, and <code>build-articles</code> injects fresh rows into this URL. That is the honest split: official Charts stay live; aogl.cn keeps a dated audit trail. If you need Tuesday-morning concurrency, open <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> in another tab while reading this explainer.</p>
+<p>When store JSON endpoints return 403 (common on some networks), add a Steam Web API key as repo secret <code>STEAM_WEB_API_KEY</code> so the workflow can call <code>ISteamChartsService/GetMostPlayedGames</code> and weekly seller services documented on partner portals. Without a key, the prose and SEO pills still stand; only the auto-table may stay empty until a successful fetch from GitHub’s US runners.</p>
+
+<h2>Maintenance</h2>
+<ol>
+  <li>Weekly <code>fetch-steam-charts</code>; bump <code>dateModified</code> when snapshot rows change meaningfully.</li>
+  <li>Edit prose in <code>data/articles/fragments/</code>, never hand-edit built HTML.</li>
+  <li>New chart types → extend <code>scripts/steam-charts-lib.mjs</code> first, then explain them here.</li>
+</ol>
+
+<h2 id="article-seo-keywords">Search &amp; further reading</h2>
+<p>Pills open public Google searches or Valve’s official Charts—no on-site tracking.</p>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=Steam+Charts+most+played" target="_blank" rel="noopener noreferrer">Steam Charts most played</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+top+sellers+weekly" target="_blank" rel="noopener noreferrer">Steam top sellers weekly</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+concurrent+players+chart" target="_blank" rel="noopener noreferrer">Steam concurrent players</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+best+selling+games+2026" target="_blank" rel="noopener noreferrer">Steam best selling games</a>
+  <a class="pill" href="https://www.google.com/search?q=Counter-Strike+2+Steam+charts" target="_blank" rel="noopener noreferrer">CS2 Steam charts</a>
+  <a class="pill" href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve Most Played</a>
+  <a class="pill" href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Valve Charts hub</a>
+  <a class="pill" href="/games.html">aogl.cn games hub</a>
+  <a class="pill" href="/articles/index.html">Article index</a>
+</div></article>
+    </div>
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Steam Charts 읽기 — 베스트셀러 vs 동시 접속</h1>
+        <p class="article-shell__sub">Valve 공식 Charts·비상업 랭킹</p>
+        <p class="article-shell__meta"><time datetime="2026-06-22">2026-06-22</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p>This is <strong>game editorial #1</strong> on aogl.cn: personal notes on reading <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Steam Charts</a> inside Valve’s store—not a third-party stat site, not a “must play” list. The hub lives under the store nav item <strong>Charts</strong>, with <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> sorting by live concurrent players and separate views for revenue leaders. I compare official wording with my Sunday habit on <a href="/games.html">games.html</a>; I do <strong>not</strong> mirror key art or paste store descriptions—only link out to Steam app pages.</p>
+
+<figure class="article-embed">
+  <img src="../original/steam-charts/share_image.png" width="1200" height="675" loading="lazy" decoding="async" alt="Official Steam Charts share image — store.steampowered.com/charts">
+  <figcaption>Generic share image Valve uses on Charts pages (<code>original/steam-charts/share_image.png</code>). Per-game capsules remain on Steam CDN; this site does not host them.</figcaption>
+</figure>
+
+<h2>Three charts, three questions</h2>
+<p>New readers often collapse “popular” into one idea. Steam splits at least these lanes—I open Charts after skimming Hot mix RSS to answer different questions:</p>
+<ul>
+  <li><strong>Top Sellers</strong> — “Who is <strong>paying</strong> this week?” Pre-orders, seasonal sales, and DLC spikes show up here. This is <strong>revenue momentum</strong>, not concurrent headcount.</li>
+  <li><strong>Most Played</strong> — “Who is <strong>running</strong> the client right now?” Rows expose live concurrents and peaks. Free-to-play staples and esports titles dominate; that is a different story from a day-one single-player launch.</li>
+  <li><strong>Weekly top sellers</strong> — “What sold best in this <strong>seven-day</strong> window?” Useful for launch week vs. evergreen MMO concurrency—closer to publishing cadence than minute-by-minute online counts.</li>
+</ul>
+<p>Official hub: <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">store.steampowered.com/charts/</a>. Most Played deep link: <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">…/charts/mostplayed</a>. I do <strong>not</strong> treat Charts as an APK discovery feed; it is for readers already inside the PC ecosystem.</p>
+
+<h2>Most Played: live, but not a quality score</h2>
+<p>The appeal of Most Played is <strong>near-real-time motion</strong>: patch days, weekend evenings, and tournament slots move numbers quickly. Valve publishes platform-side stats—not Metacritic, not my taste. Before I over-read a row I ask:</p>
+<ol>
+  <li>Is this a <strong>permanent F2P tenant</strong> (Counter-Strike 2, Dota 2) or a <strong>patch pulse</strong> on a premium game?</li>
+  <li>Which <strong>time zone’s night</strong> drives the peak I am seeing? (I fetch US-facing charts; your locale may differ.)</li>
+  <li>Does high concurrency imply “buy it”?—Usually <strong>no</strong>; it only means “many people are in-session now.”</li>
+</ol>
+<p>So this article keeps a <strong>weekly snapshot table</strong> (below), not a fake live ticker. For minute-level truth, use Valve’s page directly.</p>
+
+<h2>Top Sellers: revenue is not concurrency</h2>
+<p>The bestseller list tracks <strong>store transactions</strong>: launches, bundles, Deck-verified bumps, and winter sale waves reshuffle order constantly. Seeing game A on Most Played while game B tops sellers is normal—evergreen online titles vs. a discounted new release is the classic split.</p>
+<p>I use Top Sellers to cross-check first-party headlines on <code>games.html</code>: when PlayStation or Xbox blogs mention a title and Steam revenue also spikes, I open the app page for a patch or DLC—not to write “10/10 must buy.” See <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a>: sometimes RSS alone is enough without a new article.</p>
+
+<h2>Weekly tops: a changelog-friendly ruler</h2>
+<p>Weekly seller charts compress noise into a <strong>seven-day frame</strong>—easier for a static git site than pretending to stream live data. After <code>npm run fetch-steam-charts</code> I can commit JSON and note “weekly movers” in changelog without websocket infra. Weekly answers <strong>what sold</strong>; Most Played answers <strong>what is running</strong>.</p>
+
+<h2>Snapshot table (weekly automation)</h2>
+<p>The block below is injected from <code>data/steam-charts-snapshot.json</code> at build time. Run <code>npm run fetch-steam-charts</code> locally or let GitHub Actions refresh it. On HTTP 403 the script keeps the last good rows or shows an empty table with links to Valve. Full rebuild:</p>
+<pre><code>npm run refresh-steam-charts</code></pre>
+<p>Workflow: <code>.github/workflows/steam-charts-weekly.yml</code> (Tuesdays 06:30 UTC). Optional repo secret <code>STEAM_WEB_API_KEY</code> improves API success.</p>
+<p class="article-note"><strong>Snapshot 2026-06-22</strong> (status: fallback). Automated pull blocked (403). Run npm run fetch-steam-charts on a network that can reach store.steampowered.com, or set STEAM_WEB_API_KEY. Live concurrents are authoritative on <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve’s Most Played page</a>; this table is a personal reading aid, not a commercial ranking.</p>
+<div class="article-steam-snapshot">
+<h3>Most Played (concurrent · snapshot)</h3><p class="article-note">No automated snapshot rows — open official Valve Charts links below, or run fetch-steam-charts.</p>
+<h3>Top Sellers (revenue · snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+<h3>Weekly top sellers (snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+</div>
+
+<h2>How this splits from games.html Hot mix</h2>
+<ul>
+  <li><strong>Hot mix</strong> — RSS headline rail, often English, news-shaped.</li>
+  <li><strong>This Charts note</strong> — vocabulary + auditable snapshot.</li>
+  <li><strong>Character archives</strong> (e.g. <a href="game-girl-elena-palette-ritual-notes.html">Elena palette</a>) — art notes, not rankings.</li>
+</ul>
+<p>All three can coexist on <a href="/games.html#games-originals">games.html</a> without turning the hub into a data broker.</p>
+
+<h2>Scope and compliance</h2>
+<ul>
+  <li>No long store copy, no mirrored key art—only outbound <code>/app/</code> links.</li>
+  <li>Not affiliated with Valve; no key reselling; no piracy indexes.</li>
+  <li>Snapshots are <strong>reading aids</strong>, not purchase advice.</li>
+  <li>Region, age gates, and account state change what you see; fetches default to US context.</li>
+</ul>
+
+<h2>Can this page auto-update every week?</h2>
+<p><strong>Yes—for the snapshot table.</strong> Valve’s own Most Played numbers move continuously; this repo does not websocket-scrape them. Instead, <code>fetch-steam-charts</code> tries once per week (GitHub Actions or your cron), writes JSON, and <code>build-articles</code> injects fresh rows into this URL. That is the honest split: official Charts stay live; aogl.cn keeps a dated audit trail. If you need Tuesday-morning concurrency, open <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> in another tab while reading this explainer.</p>
+<p>When store JSON endpoints return 403 (common on some networks), add a Steam Web API key as repo secret <code>STEAM_WEB_API_KEY</code> so the workflow can call <code>ISteamChartsService/GetMostPlayedGames</code> and weekly seller services documented on partner portals. Without a key, the prose and SEO pills still stand; only the auto-table may stay empty until a successful fetch from GitHub’s US runners.</p>
+
+<h2>Maintenance</h2>
+<ol>
+  <li>Weekly <code>fetch-steam-charts</code>; bump <code>dateModified</code> when snapshot rows change meaningfully.</li>
+  <li>Edit prose in <code>data/articles/fragments/</code>, never hand-edit built HTML.</li>
+  <li>New chart types → extend <code>scripts/steam-charts-lib.mjs</code> first, then explain them here.</li>
+</ol>
+
+<h2 id="article-seo-keywords">Search &amp; further reading</h2>
+<p>Pills open public Google searches or Valve’s official Charts—no on-site tracking.</p>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=Steam+Charts+most+played" target="_blank" rel="noopener noreferrer">Steam Charts most played</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+top+sellers+weekly" target="_blank" rel="noopener noreferrer">Steam top sellers weekly</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+concurrent+players+chart" target="_blank" rel="noopener noreferrer">Steam concurrent players</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+best+selling+games+2026" target="_blank" rel="noopener noreferrer">Steam best selling games</a>
+  <a class="pill" href="https://www.google.com/search?q=Counter-Strike+2+Steam+charts" target="_blank" rel="noopener noreferrer">CS2 Steam charts</a>
+  <a class="pill" href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve Most Played</a>
+  <a class="pill" href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Valve Charts hub</a>
+  <a class="pill" href="/games.html">aogl.cn games hub</a>
+  <a class="pill" href="/articles/index.html">Article index</a>
+</div></article>
+    </div>
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Lire Steam Charts — best-sellers vs joueurs simultanés</h1>
+        <p class="article-shell__sub">Charts officiels Valve · pas un classement commercial</p>
+        <p class="article-shell__meta"><time datetime="2026-06-22">2026-06-22</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p>This is <strong>game editorial #1</strong> on aogl.cn: personal notes on reading <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Steam Charts</a> inside Valve’s store—not a third-party stat site, not a “must play” list. The hub lives under the store nav item <strong>Charts</strong>, with <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> sorting by live concurrent players and separate views for revenue leaders. I compare official wording with my Sunday habit on <a href="/games.html">games.html</a>; I do <strong>not</strong> mirror key art or paste store descriptions—only link out to Steam app pages.</p>
+
+<figure class="article-embed">
+  <img src="../original/steam-charts/share_image.png" width="1200" height="675" loading="lazy" decoding="async" alt="Official Steam Charts share image — store.steampowered.com/charts">
+  <figcaption>Generic share image Valve uses on Charts pages (<code>original/steam-charts/share_image.png</code>). Per-game capsules remain on Steam CDN; this site does not host them.</figcaption>
+</figure>
+
+<h2>Three charts, three questions</h2>
+<p>New readers often collapse “popular” into one idea. Steam splits at least these lanes—I open Charts after skimming Hot mix RSS to answer different questions:</p>
+<ul>
+  <li><strong>Top Sellers</strong> — “Who is <strong>paying</strong> this week?” Pre-orders, seasonal sales, and DLC spikes show up here. This is <strong>revenue momentum</strong>, not concurrent headcount.</li>
+  <li><strong>Most Played</strong> — “Who is <strong>running</strong> the client right now?” Rows expose live concurrents and peaks. Free-to-play staples and esports titles dominate; that is a different story from a day-one single-player launch.</li>
+  <li><strong>Weekly top sellers</strong> — “What sold best in this <strong>seven-day</strong> window?” Useful for launch week vs. evergreen MMO concurrency—closer to publishing cadence than minute-by-minute online counts.</li>
+</ul>
+<p>Official hub: <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">store.steampowered.com/charts/</a>. Most Played deep link: <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">…/charts/mostplayed</a>. I do <strong>not</strong> treat Charts as an APK discovery feed; it is for readers already inside the PC ecosystem.</p>
+
+<h2>Most Played: live, but not a quality score</h2>
+<p>The appeal of Most Played is <strong>near-real-time motion</strong>: patch days, weekend evenings, and tournament slots move numbers quickly. Valve publishes platform-side stats—not Metacritic, not my taste. Before I over-read a row I ask:</p>
+<ol>
+  <li>Is this a <strong>permanent F2P tenant</strong> (Counter-Strike 2, Dota 2) or a <strong>patch pulse</strong> on a premium game?</li>
+  <li>Which <strong>time zone’s night</strong> drives the peak I am seeing? (I fetch US-facing charts; your locale may differ.)</li>
+  <li>Does high concurrency imply “buy it”?—Usually <strong>no</strong>; it only means “many people are in-session now.”</li>
+</ol>
+<p>So this article keeps a <strong>weekly snapshot table</strong> (below), not a fake live ticker. For minute-level truth, use Valve’s page directly.</p>
+
+<h2>Top Sellers: revenue is not concurrency</h2>
+<p>The bestseller list tracks <strong>store transactions</strong>: launches, bundles, Deck-verified bumps, and winter sale waves reshuffle order constantly. Seeing game A on Most Played while game B tops sellers is normal—evergreen online titles vs. a discounted new release is the classic split.</p>
+<p>I use Top Sellers to cross-check first-party headlines on <code>games.html</code>: when PlayStation or Xbox blogs mention a title and Steam revenue also spikes, I open the app page for a patch or DLC—not to write “10/10 must buy.” See <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a>: sometimes RSS alone is enough without a new article.</p>
+
+<h2>Weekly tops: a changelog-friendly ruler</h2>
+<p>Weekly seller charts compress noise into a <strong>seven-day frame</strong>—easier for a static git site than pretending to stream live data. After <code>npm run fetch-steam-charts</code> I can commit JSON and note “weekly movers” in changelog without websocket infra. Weekly answers <strong>what sold</strong>; Most Played answers <strong>what is running</strong>.</p>
+
+<h2>Snapshot table (weekly automation)</h2>
+<p>The block below is injected from <code>data/steam-charts-snapshot.json</code> at build time. Run <code>npm run fetch-steam-charts</code> locally or let GitHub Actions refresh it. On HTTP 403 the script keeps the last good rows or shows an empty table with links to Valve. Full rebuild:</p>
+<pre><code>npm run refresh-steam-charts</code></pre>
+<p>Workflow: <code>.github/workflows/steam-charts-weekly.yml</code> (Tuesdays 06:30 UTC). Optional repo secret <code>STEAM_WEB_API_KEY</code> improves API success.</p>
+<p class="article-note"><strong>Snapshot 2026-06-22</strong> (status: fallback). Automated pull blocked (403). Run npm run fetch-steam-charts on a network that can reach store.steampowered.com, or set STEAM_WEB_API_KEY. Live concurrents are authoritative on <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve’s Most Played page</a>; this table is a personal reading aid, not a commercial ranking.</p>
+<div class="article-steam-snapshot">
+<h3>Most Played (concurrent · snapshot)</h3><p class="article-note">No automated snapshot rows — open official Valve Charts links below, or run fetch-steam-charts.</p>
+<h3>Top Sellers (revenue · snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+<h3>Weekly top sellers (snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+</div>
+
+<h2>How this splits from games.html Hot mix</h2>
+<ul>
+  <li><strong>Hot mix</strong> — RSS headline rail, often English, news-shaped.</li>
+  <li><strong>This Charts note</strong> — vocabulary + auditable snapshot.</li>
+  <li><strong>Character archives</strong> (e.g. <a href="game-girl-elena-palette-ritual-notes.html">Elena palette</a>) — art notes, not rankings.</li>
+</ul>
+<p>All three can coexist on <a href="/games.html#games-originals">games.html</a> without turning the hub into a data broker.</p>
+
+<h2>Scope and compliance</h2>
+<ul>
+  <li>No long store copy, no mirrored key art—only outbound <code>/app/</code> links.</li>
+  <li>Not affiliated with Valve; no key reselling; no piracy indexes.</li>
+  <li>Snapshots are <strong>reading aids</strong>, not purchase advice.</li>
+  <li>Region, age gates, and account state change what you see; fetches default to US context.</li>
+</ul>
+
+<h2>Can this page auto-update every week?</h2>
+<p><strong>Yes—for the snapshot table.</strong> Valve’s own Most Played numbers move continuously; this repo does not websocket-scrape them. Instead, <code>fetch-steam-charts</code> tries once per week (GitHub Actions or your cron), writes JSON, and <code>build-articles</code> injects fresh rows into this URL. That is the honest split: official Charts stay live; aogl.cn keeps a dated audit trail. If you need Tuesday-morning concurrency, open <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> in another tab while reading this explainer.</p>
+<p>When store JSON endpoints return 403 (common on some networks), add a Steam Web API key as repo secret <code>STEAM_WEB_API_KEY</code> so the workflow can call <code>ISteamChartsService/GetMostPlayedGames</code> and weekly seller services documented on partner portals. Without a key, the prose and SEO pills still stand; only the auto-table may stay empty until a successful fetch from GitHub’s US runners.</p>
+
+<h2>Maintenance</h2>
+<ol>
+  <li>Weekly <code>fetch-steam-charts</code>; bump <code>dateModified</code> when snapshot rows change meaningfully.</li>
+  <li>Edit prose in <code>data/articles/fragments/</code>, never hand-edit built HTML.</li>
+  <li>New chart types → extend <code>scripts/steam-charts-lib.mjs</code> first, then explain them here.</li>
+</ol>
+
+<h2 id="article-seo-keywords">Search &amp; further reading</h2>
+<p>Pills open public Google searches or Valve’s official Charts—no on-site tracking.</p>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=Steam+Charts+most+played" target="_blank" rel="noopener noreferrer">Steam Charts most played</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+top+sellers+weekly" target="_blank" rel="noopener noreferrer">Steam top sellers weekly</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+concurrent+players+chart" target="_blank" rel="noopener noreferrer">Steam concurrent players</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+best+selling+games+2026" target="_blank" rel="noopener noreferrer">Steam best selling games</a>
+  <a class="pill" href="https://www.google.com/search?q=Counter-Strike+2+Steam+charts" target="_blank" rel="noopener noreferrer">CS2 Steam charts</a>
+  <a class="pill" href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve Most Played</a>
+  <a class="pill" href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Valve Charts hub</a>
+  <a class="pill" href="/games.html">aogl.cn games hub</a>
+  <a class="pill" href="/articles/index.html">Article index</a>
+</div></article>
+    </div>
+    <div class="lang-ru">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← На главную · оригиналы</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Как читать Steam Charts — продажи и онлайн</h1>
+        <p class="article-shell__sub">Официальные Charts Valve · не коммерческий рейтинг</p>
+        <p class="article-shell__meta"><time datetime="2026-06-22">2026-06-22</time> · Оригинал aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="ru"><p>This is <strong>game editorial #1</strong> on aogl.cn: personal notes on reading <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Steam Charts</a> inside Valve’s store—not a third-party stat site, not a “must play” list. The hub lives under the store nav item <strong>Charts</strong>, with <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> sorting by live concurrent players and separate views for revenue leaders. I compare official wording with my Sunday habit on <a href="/games.html">games.html</a>; I do <strong>not</strong> mirror key art or paste store descriptions—only link out to Steam app pages.</p>
+
+<figure class="article-embed">
+  <img src="../original/steam-charts/share_image.png" width="1200" height="675" loading="lazy" decoding="async" alt="Official Steam Charts share image — store.steampowered.com/charts">
+  <figcaption>Generic share image Valve uses on Charts pages (<code>original/steam-charts/share_image.png</code>). Per-game capsules remain on Steam CDN; this site does not host them.</figcaption>
+</figure>
+
+<h2>Three charts, three questions</h2>
+<p>New readers often collapse “popular” into one idea. Steam splits at least these lanes—I open Charts after skimming Hot mix RSS to answer different questions:</p>
+<ul>
+  <li><strong>Top Sellers</strong> — “Who is <strong>paying</strong> this week?” Pre-orders, seasonal sales, and DLC spikes show up here. This is <strong>revenue momentum</strong>, not concurrent headcount.</li>
+  <li><strong>Most Played</strong> — “Who is <strong>running</strong> the client right now?” Rows expose live concurrents and peaks. Free-to-play staples and esports titles dominate; that is a different story from a day-one single-player launch.</li>
+  <li><strong>Weekly top sellers</strong> — “What sold best in this <strong>seven-day</strong> window?” Useful for launch week vs. evergreen MMO concurrency—closer to publishing cadence than minute-by-minute online counts.</li>
+</ul>
+<p>Official hub: <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">store.steampowered.com/charts/</a>. Most Played deep link: <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">…/charts/mostplayed</a>. I do <strong>not</strong> treat Charts as an APK discovery feed; it is for readers already inside the PC ecosystem.</p>
+
+<h2>Most Played: live, but not a quality score</h2>
+<p>The appeal of Most Played is <strong>near-real-time motion</strong>: patch days, weekend evenings, and tournament slots move numbers quickly. Valve publishes platform-side stats—not Metacritic, not my taste. Before I over-read a row I ask:</p>
+<ol>
+  <li>Is this a <strong>permanent F2P tenant</strong> (Counter-Strike 2, Dota 2) or a <strong>patch pulse</strong> on a premium game?</li>
+  <li>Which <strong>time zone’s night</strong> drives the peak I am seeing? (I fetch US-facing charts; your locale may differ.)</li>
+  <li>Does high concurrency imply “buy it”?—Usually <strong>no</strong>; it only means “many people are in-session now.”</li>
+</ol>
+<p>So this article keeps a <strong>weekly snapshot table</strong> (below), not a fake live ticker. For minute-level truth, use Valve’s page directly.</p>
+
+<h2>Top Sellers: revenue is not concurrency</h2>
+<p>The bestseller list tracks <strong>store transactions</strong>: launches, bundles, Deck-verified bumps, and winter sale waves reshuffle order constantly. Seeing game A on Most Played while game B tops sellers is normal—evergreen online titles vs. a discounted new release is the classic split.</p>
+<p>I use Top Sellers to cross-check first-party headlines on <code>games.html</code>: when PlayStation or Xbox blogs mention a title and Steam revenue also spikes, I open the app page for a patch or DLC—not to write “10/10 must buy.” See <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a>: sometimes RSS alone is enough without a new article.</p>
+
+<h2>Weekly tops: a changelog-friendly ruler</h2>
+<p>Weekly seller charts compress noise into a <strong>seven-day frame</strong>—easier for a static git site than pretending to stream live data. After <code>npm run fetch-steam-charts</code> I can commit JSON and note “weekly movers” in changelog without websocket infra. Weekly answers <strong>what sold</strong>; Most Played answers <strong>what is running</strong>.</p>
+
+<h2>Snapshot table (weekly automation)</h2>
+<p>The block below is injected from <code>data/steam-charts-snapshot.json</code> at build time. Run <code>npm run fetch-steam-charts</code> locally or let GitHub Actions refresh it. On HTTP 403 the script keeps the last good rows or shows an empty table with links to Valve. Full rebuild:</p>
+<pre><code>npm run refresh-steam-charts</code></pre>
+<p>Workflow: <code>.github/workflows/steam-charts-weekly.yml</code> (Tuesdays 06:30 UTC). Optional repo secret <code>STEAM_WEB_API_KEY</code> improves API success.</p>
+<p class="article-note"><strong>Snapshot 2026-06-22</strong> (status: fallback). Automated pull blocked (403). Run npm run fetch-steam-charts on a network that can reach store.steampowered.com, or set STEAM_WEB_API_KEY. Live concurrents are authoritative on <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve’s Most Played page</a>; this table is a personal reading aid, not a commercial ranking.</p>
+<div class="article-steam-snapshot">
+<h3>Most Played (concurrent · snapshot)</h3><p class="article-note">No automated snapshot rows — open official Valve Charts links below, or run fetch-steam-charts.</p>
+<h3>Top Sellers (revenue · snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+<h3>Weekly top sellers (snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+</div>
+
+<h2>How this splits from games.html Hot mix</h2>
+<ul>
+  <li><strong>Hot mix</strong> — RSS headline rail, often English, news-shaped.</li>
+  <li><strong>This Charts note</strong> — vocabulary + auditable snapshot.</li>
+  <li><strong>Character archives</strong> (e.g. <a href="game-girl-elena-palette-ritual-notes.html">Elena palette</a>) — art notes, not rankings.</li>
+</ul>
+<p>All three can coexist on <a href="/games.html#games-originals">games.html</a> without turning the hub into a data broker.</p>
+
+<h2>Scope and compliance</h2>
+<ul>
+  <li>No long store copy, no mirrored key art—only outbound <code>/app/</code> links.</li>
+  <li>Not affiliated with Valve; no key reselling; no piracy indexes.</li>
+  <li>Snapshots are <strong>reading aids</strong>, not purchase advice.</li>
+  <li>Region, age gates, and account state change what you see; fetches default to US context.</li>
+</ul>
+
+<h2>Can this page auto-update every week?</h2>
+<p><strong>Yes—for the snapshot table.</strong> Valve’s own Most Played numbers move continuously; this repo does not websocket-scrape them. Instead, <code>fetch-steam-charts</code> tries once per week (GitHub Actions or your cron), writes JSON, and <code>build-articles</code> injects fresh rows into this URL. That is the honest split: official Charts stay live; aogl.cn keeps a dated audit trail. If you need Tuesday-morning concurrency, open <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> in another tab while reading this explainer.</p>
+<p>When store JSON endpoints return 403 (common on some networks), add a Steam Web API key as repo secret <code>STEAM_WEB_API_KEY</code> so the workflow can call <code>ISteamChartsService/GetMostPlayedGames</code> and weekly seller services documented on partner portals. Without a key, the prose and SEO pills still stand; only the auto-table may stay empty until a successful fetch from GitHub’s US runners.</p>
+
+<h2>Maintenance</h2>
+<ol>
+  <li>Weekly <code>fetch-steam-charts</code>; bump <code>dateModified</code> when snapshot rows change meaningfully.</li>
+  <li>Edit prose in <code>data/articles/fragments/</code>, never hand-edit built HTML.</li>
+  <li>New chart types → extend <code>scripts/steam-charts-lib.mjs</code> first, then explain them here.</li>
+</ol>
+
+<h2 id="article-seo-keywords">Search &amp; further reading</h2>
+<p>Pills open public Google searches or Valve’s official Charts—no on-site tracking.</p>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=Steam+Charts+most+played" target="_blank" rel="noopener noreferrer">Steam Charts most played</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+top+sellers+weekly" target="_blank" rel="noopener noreferrer">Steam top sellers weekly</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+concurrent+players+chart" target="_blank" rel="noopener noreferrer">Steam concurrent players</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+best+selling+games+2026" target="_blank" rel="noopener noreferrer">Steam best selling games</a>
+  <a class="pill" href="https://www.google.com/search?q=Counter-Strike+2+Steam+charts" target="_blank" rel="noopener noreferrer">CS2 Steam charts</a>
+  <a class="pill" href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve Most Played</a>
+  <a class="pill" href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Valve Charts hub</a>
+  <a class="pill" href="/games.html">aogl.cn games hub</a>
+  <a class="pill" href="/articles/index.html">Article index</a>
+</div></article>
+    </div>
+    <div class="lang-ar">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← الرئيسية · محتوى أصلي</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>قراءة Steam Charts — الأكثر مبيعًا مقابل اللاعبين النشطين</h1>
+        <p class="article-shell__sub">Charts الرسمية من Valve · ليست ترتيبًا تجاريًا</p>
+        <p class="article-shell__meta"><time datetime="2026-06-22">2026-06-22</time> · محتوى أصلي</p>
+      </div>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p>This is <strong>game editorial #1</strong> on aogl.cn: personal notes on reading <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Steam Charts</a> inside Valve’s store—not a third-party stat site, not a “must play” list. The hub lives under the store nav item <strong>Charts</strong>, with <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> sorting by live concurrent players and separate views for revenue leaders. I compare official wording with my Sunday habit on <a href="/games.html">games.html</a>; I do <strong>not</strong> mirror key art or paste store descriptions—only link out to Steam app pages.</p>
+
+<figure class="article-embed">
+  <img src="../original/steam-charts/share_image.png" width="1200" height="675" loading="lazy" decoding="async" alt="Official Steam Charts share image — store.steampowered.com/charts">
+  <figcaption>Generic share image Valve uses on Charts pages (<code>original/steam-charts/share_image.png</code>). Per-game capsules remain on Steam CDN; this site does not host them.</figcaption>
+</figure>
+
+<h2>Three charts, three questions</h2>
+<p>New readers often collapse “popular” into one idea. Steam splits at least these lanes—I open Charts after skimming Hot mix RSS to answer different questions:</p>
+<ul>
+  <li><strong>Top Sellers</strong> — “Who is <strong>paying</strong> this week?” Pre-orders, seasonal sales, and DLC spikes show up here. This is <strong>revenue momentum</strong>, not concurrent headcount.</li>
+  <li><strong>Most Played</strong> — “Who is <strong>running</strong> the client right now?” Rows expose live concurrents and peaks. Free-to-play staples and esports titles dominate; that is a different story from a day-one single-player launch.</li>
+  <li><strong>Weekly top sellers</strong> — “What sold best in this <strong>seven-day</strong> window?” Useful for launch week vs. evergreen MMO concurrency—closer to publishing cadence than minute-by-minute online counts.</li>
+</ul>
+<p>Official hub: <a href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">store.steampowered.com/charts/</a>. Most Played deep link: <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">…/charts/mostplayed</a>. I do <strong>not</strong> treat Charts as an APK discovery feed; it is for readers already inside the PC ecosystem.</p>
+
+<h2>Most Played: live, but not a quality score</h2>
+<p>The appeal of Most Played is <strong>near-real-time motion</strong>: patch days, weekend evenings, and tournament slots move numbers quickly. Valve publishes platform-side stats—not Metacritic, not my taste. Before I over-read a row I ask:</p>
+<ol>
+  <li>Is this a <strong>permanent F2P tenant</strong> (Counter-Strike 2, Dota 2) or a <strong>patch pulse</strong> on a premium game?</li>
+  <li>Which <strong>time zone’s night</strong> drives the peak I am seeing? (I fetch US-facing charts; your locale may differ.)</li>
+  <li>Does high concurrency imply “buy it”?—Usually <strong>no</strong>; it only means “many people are in-session now.”</li>
+</ol>
+<p>So this article keeps a <strong>weekly snapshot table</strong> (below), not a fake live ticker. For minute-level truth, use Valve’s page directly.</p>
+
+<h2>Top Sellers: revenue is not concurrency</h2>
+<p>The bestseller list tracks <strong>store transactions</strong>: launches, bundles, Deck-verified bumps, and winter sale waves reshuffle order constantly. Seeing game A on Most Played while game B tops sellers is normal—evergreen online titles vs. a discounted new release is the classic split.</p>
+<p>I use Top Sellers to cross-check first-party headlines on <code>games.html</code>: when PlayStation or Xbox blogs mention a title and Steam revenue also spikes, I open the app page for a patch or DLC—not to write “10/10 must buy.” See <a href="games-hub-generative-art-workflow.html">Games hub RSS × generative art workflow</a>: sometimes RSS alone is enough without a new article.</p>
+
+<h2>Weekly tops: a changelog-friendly ruler</h2>
+<p>Weekly seller charts compress noise into a <strong>seven-day frame</strong>—easier for a static git site than pretending to stream live data. After <code>npm run fetch-steam-charts</code> I can commit JSON and note “weekly movers” in changelog without websocket infra. Weekly answers <strong>what sold</strong>; Most Played answers <strong>what is running</strong>.</p>
+
+<h2>Snapshot table (weekly automation)</h2>
+<p>The block below is injected from <code>data/steam-charts-snapshot.json</code> at build time. Run <code>npm run fetch-steam-charts</code> locally or let GitHub Actions refresh it. On HTTP 403 the script keeps the last good rows or shows an empty table with links to Valve. Full rebuild:</p>
+<pre><code>npm run refresh-steam-charts</code></pre>
+<p>Workflow: <code>.github/workflows/steam-charts-weekly.yml</code> (Tuesdays 06:30 UTC). Optional repo secret <code>STEAM_WEB_API_KEY</code> improves API success.</p>
+<p class="article-note"><strong>Snapshot 2026-06-22</strong> (status: fallback). Automated pull blocked (403). Run npm run fetch-steam-charts on a network that can reach store.steampowered.com, or set STEAM_WEB_API_KEY. Live concurrents are authoritative on <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve’s Most Played page</a>; this table is a personal reading aid, not a commercial ranking.</p>
+<div class="article-steam-snapshot">
+<h3>Most Played (concurrent · snapshot)</h3><p class="article-note">No automated snapshot rows — open official Valve Charts links below, or run fetch-steam-charts.</p>
+<h3>Top Sellers (revenue · snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+<h3>Weekly top sellers (snapshot)</h3><p class="article-note">No automated snapshot rows — use official Valve Charts.</p>
+</div>
+
+<h2>How this splits from games.html Hot mix</h2>
+<ul>
+  <li><strong>Hot mix</strong> — RSS headline rail, often English, news-shaped.</li>
+  <li><strong>This Charts note</strong> — vocabulary + auditable snapshot.</li>
+  <li><strong>Character archives</strong> (e.g. <a href="game-girl-elena-palette-ritual-notes.html">Elena palette</a>) — art notes, not rankings.</li>
+</ul>
+<p>All three can coexist on <a href="/games.html#games-originals">games.html</a> without turning the hub into a data broker.</p>
+
+<h2>Scope and compliance</h2>
+<ul>
+  <li>No long store copy, no mirrored key art—only outbound <code>/app/</code> links.</li>
+  <li>Not affiliated with Valve; no key reselling; no piracy indexes.</li>
+  <li>Snapshots are <strong>reading aids</strong>, not purchase advice.</li>
+  <li>Region, age gates, and account state change what you see; fetches default to US context.</li>
+</ul>
+
+<h2>Can this page auto-update every week?</h2>
+<p><strong>Yes—for the snapshot table.</strong> Valve’s own Most Played numbers move continuously; this repo does not websocket-scrape them. Instead, <code>fetch-steam-charts</code> tries once per week (GitHub Actions or your cron), writes JSON, and <code>build-articles</code> injects fresh rows into this URL. That is the honest split: official Charts stay live; aogl.cn keeps a dated audit trail. If you need Tuesday-morning concurrency, open <a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Most Played</a> in another tab while reading this explainer.</p>
+<p>When store JSON endpoints return 403 (common on some networks), add a Steam Web API key as repo secret <code>STEAM_WEB_API_KEY</code> so the workflow can call <code>ISteamChartsService/GetMostPlayedGames</code> and weekly seller services documented on partner portals. Without a key, the prose and SEO pills still stand; only the auto-table may stay empty until a successful fetch from GitHub’s US runners.</p>
+
+<h2>Maintenance</h2>
+<ol>
+  <li>Weekly <code>fetch-steam-charts</code>; bump <code>dateModified</code> when snapshot rows change meaningfully.</li>
+  <li>Edit prose in <code>data/articles/fragments/</code>, never hand-edit built HTML.</li>
+  <li>New chart types → extend <code>scripts/steam-charts-lib.mjs</code> first, then explain them here.</li>
+</ol>
+
+<h2 id="article-seo-keywords">Search &amp; further reading</h2>
+<p>Pills open public Google searches or Valve’s official Charts—no on-site tracking.</p>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=Steam+Charts+most+played" target="_blank" rel="noopener noreferrer">Steam Charts most played</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+top+sellers+weekly" target="_blank" rel="noopener noreferrer">Steam top sellers weekly</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+concurrent+players+chart" target="_blank" rel="noopener noreferrer">Steam concurrent players</a>
+  <a class="pill" href="https://www.google.com/search?q=Steam+best+selling+games+2026" target="_blank" rel="noopener noreferrer">Steam best selling games</a>
+  <a class="pill" href="https://www.google.com/search?q=Counter-Strike+2+Steam+charts" target="_blank" rel="noopener noreferrer">CS2 Steam charts</a>
+  <a class="pill" href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer">Valve Most Played</a>
+  <a class="pill" href="https://store.steampowered.com/charts/" target="_blank" rel="noopener noreferrer">Valve Charts hub</a>
+  <a class="pill" href="/games.html">aogl.cn games hub</a>
+  <a class="pill" href="/articles/index.html">Article index</a>
+</div></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/about.html" class="footer-legal-link lang-en">About</a>
+        <a href="/contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="/privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="/contact.html" class="footer-legal-link lang-ko">문의</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="/about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="/contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="/privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="/about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="/contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="/about.html" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="/contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-en" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ko" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-fr" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ru" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ar" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer></script>
+</body></html>
