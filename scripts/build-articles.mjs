@@ -19,6 +19,7 @@ import { injectSteamChartsSnapshot } from "./steam-charts-lib.mjs";
 import { injectSensorTowerMobileSnapshot } from "./sensor-tower-mobile-lib.mjs";
 import { injectGoogleTrendsSnapshot } from "./google-trends-lib.mjs";
 import { injectYoutubeTrendingTrailersSnapshot } from "./youtube-trending-trailers-lib.mjs";
+import { injectAmazonBestsellersFashionSnapshot } from "./amazon-bestsellers-lib.mjs";
 import { injectStateOfAiSnapshot } from "./sensor-tower-state-of-ai-lib.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -229,6 +230,7 @@ function loadArticles() {
           body = injectSensorTowerMobileSnapshot(body, lang);
           body = injectGoogleTrendsSnapshot(body, lang);
           body = injectYoutubeTrendingTrailersSnapshot(body, lang);
+          body = injectAmazonBestsellersFashionSnapshot(body, lang);
           body = injectStateOfAiSnapshot(body, lang);
           raw["body" + suffixForLang(lang)] = body;
         } else {
