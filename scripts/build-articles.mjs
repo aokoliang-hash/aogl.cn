@@ -18,6 +18,8 @@ import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
 import { injectSteamChartsSnapshot } from "./steam-charts-lib.mjs";
 import { injectSensorTowerMobileSnapshot } from "./sensor-tower-mobile-lib.mjs";
 import { injectGoogleTrendsSnapshot } from "./google-trends-lib.mjs";
+import { injectYoutubeTrendingTrailersSnapshot } from "./youtube-trending-trailers-lib.mjs";
+import { injectStateOfAiSnapshot } from "./sensor-tower-state-of-ai-lib.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -226,6 +228,8 @@ function loadArticles() {
           let body = injectSteamChartsSnapshot(rawBody, lang);
           body = injectSensorTowerMobileSnapshot(body, lang);
           body = injectGoogleTrendsSnapshot(body, lang);
+          body = injectYoutubeTrendingTrailersSnapshot(body, lang);
+          body = injectStateOfAiSnapshot(body, lang);
           raw["body" + suffixForLang(lang)] = body;
         } else {
           console.warn("Missing htmlFragments file:", rel, "for", raw.slug);

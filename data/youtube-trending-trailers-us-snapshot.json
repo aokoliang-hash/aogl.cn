@@ -1,0 +1,125 @@
+{
+  "fetchedAt": "2026-06-22",
+  "fetchStatus": "manual",
+  "fetchNote": "Archived from YouTube Charts Trending Trailers US page (June 2026). Top 10 rows from public chart UI.",
+  "chartTitleEn": "Trending Trailers",
+  "chartTitleZh": "热门电影预告片",
+  "geo": "US",
+  "geoLabelEn": "United States",
+  "geoLabelZh": "美国",
+  "sourceChartUrl": "https://charts.youtube.com/charts/TrendingTrailers/us",
+  "heroVideoId": "62bIsvRcPv0",
+  "heroVideoUrl": "https://www.youtube.com/watch?v=62bIsvRcPv0",
+  "entries": [
+    {
+      "rank": 1,
+      "titleEn": "SPIDER-MAN: BRAND NEW DAY – New Trailer (4K)",
+      "titleZh": "SPIDER-MAN: BRAND NEW DAY – 新预告片（4K）",
+      "channelEn": "Sony Pictures Entertainment",
+      "channelZh": "Sony Pictures Entertainment",
+      "releaseDate": "2026-06-17",
+      "videoId": "62bIsvRcPv0",
+      "videoUrl": "https://www.youtube.com/watch?v=62bIsvRcPv0",
+      "isOfficialTrailer": true
+    },
+    {
+      "rank": 2,
+      "titleEn": "Shrek 5 | Official Teaser Trailer",
+      "titleZh": "Shrek 5 | 官方先导预告",
+      "channelEn": "Universal Pictures",
+      "channelZh": "Universal Pictures",
+      "releaseDate": "2026-06-16",
+      "videoId": "Swiz1XyfhcI",
+      "videoUrl": "https://www.youtube.com/watch?v=Swiz1XyfhcI",
+      "isOfficialTrailer": true
+    },
+    {
+      "rank": 3,
+      "titleEn": "SPIDER-MAN BRAND NEW DAY TRAILER BREAKDOWN! Easter Eggs & Details You Missed!",
+      "titleZh": "SPIDER-MAN BRAND NEW DAY 预告片解析：彩蛋与细节",
+      "channelEn": "New Rockstars",
+      "channelZh": "New Rockstars",
+      "releaseDate": "2026-06-17",
+      "videoId": "1NHS5OP73Sc",
+      "videoUrl": "https://www.youtube.com/watch?v=1NHS5OP73Sc",
+      "isOfficialTrailer": false
+    },
+    {
+      "rank": 4,
+      "titleEn": "Chainsaw Man – Assassins Arc Official Trailer 2",
+      "titleZh": "电锯人 刺客篇 官方预告片 2",
+      "channelEn": "MAPPA CHANNEL",
+      "channelZh": "MAPPA CHANNEL",
+      "releaseDate": "2026-06-19",
+      "videoId": "s8cP1Vt5US8",
+      "videoUrl": "https://www.youtube.com/watch?v=s8cP1Vt5US8",
+      "isOfficialTrailer": true
+    },
+    {
+      "rank": 5,
+      "titleEn": "Hexed | Teaser Trailer",
+      "titleZh": "Hexed | 先导预告",
+      "channelEn": "Walt Disney Animation Studios",
+      "channelZh": "Walt Disney Animation Studios",
+      "releaseDate": "2026-06-16",
+      "videoId": "mtC4sjABZNw",
+      "videoUrl": "https://www.youtube.com/watch?v=mtC4sjABZNw",
+      "isOfficialTrailer": true
+    },
+    {
+      "rank": 6,
+      "titleEn": "Spider-Man: Brand New Day Trailer 2 BREAKDOWN - X-Men Easter Eggs You Missed!",
+      "titleZh": "Spider-Man: Brand New Day 预告片 2 解析 — X 战警彩蛋",
+      "channelEn": "ScreenCrush",
+      "channelZh": "ScreenCrush",
+      "releaseDate": "2026-06-17",
+      "videoId": "yhvt7_o0ksY",
+      "videoUrl": "https://www.youtube.com/watch?v=yhvt7_o0ksY",
+      "isOfficialTrailer": false
+    },
+    {
+      "rank": 7,
+      "titleEn": "Outer Banks: Season 5 | Official Teaser | Netflix",
+      "titleZh": "Outer Banks 第五季 | 官方先导 | Netflix",
+      "channelEn": "Netflix",
+      "channelZh": "Netflix",
+      "releaseDate": "2026-06-18",
+      "videoId": "xg2tN3dI_Yg",
+      "videoUrl": "https://www.youtube.com/watch?v=xg2tN3dI_Yg",
+      "isOfficialTrailer": true
+    },
+    {
+      "rank": 8,
+      "titleEn": "Heart of the Beast | Official Trailer (2026 Movie) - Brad Pitt, J.K. Simmons, Anna Lambe",
+      "titleZh": "Heart of the Beast | 官方预告（2026）",
+      "channelEn": "Paramount Pictures",
+      "channelZh": "Paramount Pictures",
+      "releaseDate": "2026-06-11",
+      "videoId": "JFQcDFhNh4o",
+      "videoUrl": "https://www.youtube.com/watch?v=JFQcDFhNh4o",
+      "isOfficialTrailer": true
+    },
+    {
+      "rank": 9,
+      "titleEn": "Whalefall | Official Teaser | In Theaters October 16",
+      "titleZh": "Whalefall | 官方先导 | 10 月 16 日上映",
+      "channelEn": "20th Century Studios",
+      "channelZh": "20th Century Studios",
+      "releaseDate": "2026-06-09",
+      "videoId": "67ho3OxCmmM",
+      "videoUrl": "https://www.youtube.com/watch?v=67ho3OxCmmM",
+      "isOfficialTrailer": true
+    },
+    {
+      "rank": 10,
+      "titleEn": "Gatto | Teaser Trailer | In Theaters March 5, 2027",
+      "titleZh": "Gatto | 先导预告 | 2027 年 3 月 5 日上映",
+      "channelEn": "Pixar",
+      "channelZh": "Pixar",
+      "releaseDate": "2026-06-11",
+      "videoId": "NIKfR_uF_d0",
+      "videoUrl": "https://www.youtube.com/watch?v=NIKfR_uF_d0",
+      "isOfficialTrailer": true
+    }
+  ]
+}

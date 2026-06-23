@@ -1,0 +1,148 @@
+{
+  "fetchedAt": "2026-06-22",
+  "fetchStatus": "manual",
+  "fetchNote": "Archived from Sensor Tower blog State of AI 2026 (June 2026). Key stats from public blog copy; full charts in paid report.",
+  "reportTitle": "State of AI 2026: Competition, Commerce, and the New Digital Economy",
+  "periodLabel": "2026 · H1 outlook",
+  "sourceBlogUrl": "https://sensortower.com/blog/state-of-ai-2026",
+  "sourceReportUrl": "https://sensortower.com/report/state-of-ai-2026",
+  "chartImageUrl": "https://images.ctfassets.net/vfkpgemp7ek3/TmB6GWr4S2pYgtVFDIKty/1fc94c8ce9c7250a2f0b39d2c238c6b9/State_of_AI_Blog_R1.webp",
+  "threeThemes": [
+    {
+      "themeEn": "Rivals look to challenge ChatGPT",
+      "themeZh": "竞争者挑战 ChatGPT 主导地位"
+    },
+    {
+      "themeEn": "AI agents are changing how people shop",
+      "themeZh": "AI 代理改变购物路径"
+    },
+    {
+      "themeEn": "AI is becoming the new place for discovery — and ads",
+      "themeZh": "AI 成为新发现层与广告渠道"
+    }
+  ],
+  "assistantMetrics": [
+    {
+      "metricEn": "ChatGPT monthly active users",
+      "metricZh": "ChatGPT 月活",
+      "valueEn": "1B (May 2026)",
+      "valueZh": "10 亿（2026 年 5 月）",
+      "noteEn": "Fastest mobile app to 1B MAU — 3 years",
+      "noteZh": "最快破 10 亿 MAU 的移动应用（3 年）"
+    },
+    {
+      "metricEn": "Q1 2026 assistant time share (top 3)",
+      "metricZh": "2026 Q1 助手类用时占比（前三）",
+      "valueEn": "ChatGPT + Gemini + DeepSeek ≈ 90%",
+      "valueZh": "ChatGPT + Gemini + DeepSeek ≈ 90%",
+      "noteEn": "Highly concentrated market",
+      "noteZh": "市场高度集中"
+    },
+    {
+      "metricEn": "ChatGPT True Audience share",
+      "metricZh": "ChatGPT True Audience 份额",
+      "valueEn": "Below 50% (Mar 2026, first time)",
+      "valueZh": "2026 年 3 月首次低于 50%",
+      "noteEn": "Unique users across app + web",
+      "noteZh": "跨 App + Web 独立用户"
+    },
+    {
+      "metricEn": "Claude True Audience YoY (May 2026)",
+      "metricZh": "Claude True Audience 同比（2026 年 5 月）",
+      "valueEn": "+452%",
+      "valueZh": "+452%",
+      "noteEn": "US share 4.4% → ~14%",
+      "noteZh": "美国份额 4.4% → 约 14%"
+    },
+    {
+      "metricEn": "Monthly engagement per user",
+      "metricZh": "人均月使用时长",
+      "valueEn": "ChatGPT ~215 min; Gemini 14→100; Claude 40→120",
+      "valueZh": "ChatGPT ~215 分钟；Gemini 14→100；Claude 40→120",
+      "noteEn": "Minutes per user per month",
+      "noteZh": "分钟/用户/月"
+    }
+  ],
+  "commerceMetrics": [
+    {
+      "metricEn": "Computers & Consumer Electronics GenAI referral share",
+      "metricZh": "电脑与消费电子 GenAI 引荐占比",
+      "valueEn": "~4× vs Q4 2024 → Q1 2026",
+      "valueZh": "Q4 2024→Q1 2026 约 4 倍",
+      "noteEn": "Largest category shift",
+      "noteZh": "增幅最大品类"
+    },
+    {
+      "metricEn": "Home & Garden / Sports & Outdoors",
+      "metricZh": "家居园艺 / 运动户外",
+      "valueEn": ">0.35% of visits",
+      "valueZh": "访问量 >0.35%",
+      "noteEn": "GenAI referral share",
+      "noteZh": "GenAI 引荐占比"
+    },
+    {
+      "metricEn": "Walmart / Target GenAI referral",
+      "metricZh": "Walmart / Target GenAI 引荐",
+      "valueEn": ">1.5%",
+      "valueZh": ">1.5%",
+      "noteEn": "AI assistant integrations",
+      "noteZh": "已接入 AI 助手"
+    },
+    {
+      "metricEn": "Amazon Rufus conversion",
+      "metricZh": "Amazon Rufus 转化",
+      "valueEn": "~2× vs non-users",
+      "valueZh": "约为非用户 2 倍",
+      "noteEn": "On-platform agent",
+      "noteZh": "站内购物代理"
+    }
+  ],
+  "advertisingMetrics": [
+    {
+      "metricEn": "ChatGPT ad impressions (Mar → May 2026)",
+      "metricZh": "ChatGPT 广告展示（2026 年 3→5 月）",
+      "valueEn": ">7×",
+      "valueZh": ">7 倍",
+      "noteEn": "Ads testing from early 2026",
+      "noteZh": "2026 年初开始测试"
+    },
+    {
+      "metricEn": "US GenAI ad spend Q1 2026",
+      "metricZh": "美国 GenAI 广告支出 Q1 2026",
+      "valueEn": ">3× vs prior",
+      "valueZh": "较此前 >3 倍",
+      "noteEn": "OpenAI +800% YoY; Anthropic +1,184% YoY",
+      "noteZh": "OpenAI +800% 同比；Anthropic +1184% 同比"
+    },
+    {
+      "metricEn": "Global AI-related ad spend Q1 2026",
+      "metricZh": "全球 AI 相关广告支出 Q1 2026",
+      "valueEn": "$1.3B · 167B impressions",
+      "valueZh": "13 亿美元 · 1670 亿次展示",
+      "noteEn": "Health & Wellness +165% YoY lead",
+      "noteZh": "健康类 +165% 同比领先"
+    },
+    {
+      "metricEn": "Apps mentioning AI in description",
+      "metricZh": "描述中含 AI 的应用",
+      "valueEn": "200,000+",
+      "valueZh": "20 万+",
+      "noteEn": "AI as default feature",
+      "noteZh": "AI 成为默认卖点"
+    }
+  ],
+  "landscapeHighlights": [
+    {
+      "topicEn": "GenAI app time spent H1 2026 (projected)",
+      "topicZh": "GenAI 应用总用时 H1 2026（预测）",
+      "valueEn": "36B hours (vs 17.2B H1 2025)",
+      "valueZh": "360 亿小时（H1 2025 为 172 亿）"
+    },
+    {
+      "topicEn": "AI-tagged app downloads H1 2026 (track)",
+      "topicZh": "含 AI 标签应用下载 H1 2026（轨迹）",
+      "valueEn": "~10B",
+      "valueZh": "约 100 亿次"
+    }
+  ]
+}
