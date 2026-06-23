@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-06-16",
+  "updated": "2026-06-23",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,6 +116,12 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "New research shows how AMIE, our medical AI, could help manage health conditions.",
+          "titleZh": "New research shows how AMIE, our medical AI, could help manage health conditions.",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
+          "date": "2026-06-17"
+        },
+        {
           "titleEn": "We’re strengthening our presence in Alabama through new investments and community support.",
           "titleZh": "We’re strengthening our presence in Alabama through new investments and community support.",
           "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/alabama-investment-june-2026/",
@@ -126,12 +132,6 @@
           "titleZh": "Our new community investments in Virginia support local jobs and expand energy affordability.",
           "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
           "date": "2026-06-11"
-        },
-        {
-          "titleEn": "The latest AI news we announced in May 2026",
-          "titleZh": "The latest AI news we announced in May 2026",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
-          "date": "2026-06-05"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "New Features to Celebrate 500 Million Monthly Users on Threads",
-          "titleZh": "New Features to Celebrate 500 Million Monthly Users on Threads",
-          "url": "https://about.fb.com/news/2026/06/meta-launching-new-features-500-million-monthly-threads-users/",
-          "date": "2026-06-16"
+          "titleEn": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
+          "titleZh": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
+          "url": "https://about.fb.com/news/2026/06/instagram-for-tv-gets-bigger-with-new-ways-to-watch-together/",
+          "date": "2026-06-22"
         },
         {
-          "titleEn": "New AI Tools to Help You Make Things Happen on Facebook",
-          "titleZh": "New AI Tools to Help You Make Things Happen on Facebook",
-          "url": "https://about.fb.com/news/2026/06/new-ai-tools-to-help-you-make-things-happen-on-facebook/",
-          "date": "2026-06-15"
+          "titleEn": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
+          "titleZh": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
+          "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
+          "date": "2026-06-18"
         },
         {
-          "titleEn": "The Future Is for Everyone: Free AI Glasses for Every Blind Veteran in America",
-          "titleZh": "The Future Is for Everyone: Free AI Glasses for Every Blind Veteran in America",
-          "url": "https://about.fb.com/news/2026/06/free-ai-glasses-for-every-blind-veteran/",
-          "date": "2026-06-12"
+          "titleEn": "Threads Returns to Türkiye With New Features",
+          "titleZh": "Threads Returns to Türkiye With New Features",
+          "url": "https://about.fb.com/news/2026/06/threads-returns-to-turkiye-with-new-features/",
+          "date": "2026-06-17"
         }
       ],
       "hotSearchPills": [
@@ -387,6 +387,12 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
+          "titleZh": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
+          "url": "https://engineering.fb.com/2026/06/22/video-engineering/adopting-av1-for-real-time-communication-rtc-meta/",
+          "date": "2026-06-22"
+        },
+        {
           "titleEn": "Lights Out, Systems On: Validating Instant Power Loss Readiness",
           "titleZh": "Lights Out, Systems On: Validating Instant Power Loss Readiness",
           "url": "https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/",
@@ -397,12 +403,6 @@
           "titleZh": "SilverTorch: Index as Model — A New Retrieval Paradigm for Recommendation Systems",
           "url": "https://engineering.fb.com/2026/05/26/ml-applications/silvertorch-index-as-model-new-retrieval-paradigm-recommendation-systems/",
           "date": "2026-05-26"
-        },
-        {
-          "titleEn": "Reel Friends: Building Social Discovery that Scales to Billions",
-          "titleZh": "Reel Friends: Building Social Discovery that Scales to Billions",
-          "url": "https://engineering.fb.com/2026/05/13/ml-applications/reel-friends-building-social-discovery-that-scales-to-billions/",
-          "date": "2026-05-13"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Dagbani Wikimedians User Group Trains TACE Wiki Hub Members on Wikipedia Editing",
-          "titleZh": "Dagbani Wikimedians User Group Trains TACE Wiki Hub Members on Wikipedia Editing",
-          "url": "https://diff.wikimedia.org/2026/06/16/dagbani-wikimedians-user-group-trains-tace-wiki-hub-members-on-wikipedia-editing/",
-          "date": "2026-06-16"
+          "titleEn": "Guiding New Voices: Training Women in Wikidata during the April EditHer Africa Contest",
+          "titleZh": "Guiding New Voices: Training Women in Wikidata during the April EditHer Africa Contest",
+          "url": "https://diff.wikimedia.org/2026/06/23/guiding-new-voices-training-women-in-wikidata-during-the-april-edither-africa-contest/",
+          "date": "2026-06-23"
         },
         {
-          "titleEn": "From Mentee to Builder: My Six Months in the EduWiki Hub Mentorship Program",
-          "titleZh": "From Mentee to Builder: My Six Months in the EduWiki Hub Mentorship Program",
-          "url": "https://diff.wikimedia.org/2026/06/16/from-mentee-to-builder-my-six-months-in-the-eduwiki-hub-mentorship-program/",
-          "date": "2026-06-16"
+          "titleEn": "Collaboration with Students For Liberty: Together Liberate Liberty Ideas on Indonesian Wikipedia",
+          "titleZh": "Collaboration with Students For Liberty: Together Liberate Liberty Ideas on Indonesian Wikipedia",
+          "url": "https://diff.wikimedia.org/2026/06/23/collaboration-with-students-for-liberty-together-liberate-liberty-ideas-on-indonesian-wikipedia/",
+          "date": "2026-06-23"
         },
         {
-          "titleEn": "When 25 Years of Free Knowledge Reached Vidisha for the First Time",
-          "titleZh": "When 25 Years of Free Knowledge Reached Vidisha for the First Time",
-          "url": "https://diff.wikimedia.org/2026/06/15/when-25-years-of-free-knowledge-reached-vidisha-for-the-first-time/",
-          "date": "2026-06-15"
+          "titleEn": "From Engagement to Collaboration: The Future of Wiki-Jardín Valparaíso’s Heritage Work",
+          "titleZh": "From Engagement to Collaboration: The Future of Wiki-Jardín Valparaíso’s Heritage Work",
+          "url": "https://diff.wikimedia.org/2026/06/22/from-engagement-to-collaboration-the-future-of-wiki-jardin-valparaisos-heritage-work/",
+          "date": "2026-06-22"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Watch the trailer for ‘Ghost in the Shell,’ the new anime adaptation coming to Prime Video 7 July",
-          "titleZh": "Watch the trailer for ‘Ghost in the Shell,’ the new anime adaptation coming to Prime Video 7 July",
-          "url": "https://www.aboutamazon.com/news/entertainment/ghost-in-the-shell-anime-prime-video?utm_source=rss",
-          "date": "2026-06-16"
+          "titleEn": "Best Prime Day 2026 deals: 80+ top picks to shop now",
+          "titleZh": "Best Prime Day 2026 deals: 80+ top picks to shop now",
+          "url": "https://www.aboutamazon.com/news/retail/best-prime-day-deals-2026?utm_source=rss",
+          "date": "2026-06-23"
         },
         {
-          "titleEn": "Amazon strengthens its investment in Missouri to bring new community programs, new jobs, and hundreds of millions in tax revenue",
-          "titleZh": "Amazon strengthens its investment in Missouri to bring new community programs, new jobs, and hundreds of millions in tax revenue",
-          "url": "https://www.aboutamazon.com/news/company-news/amazon-data-center-missouri-new-jobs?utm_source=rss",
-          "date": "2026-06-15"
+          "titleEn": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
+          "titleZh": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
+          "url": "https://www.aboutamazon.com/news/community/amazon-seattle-bellevue-puget-sound-news?utm_source=rss",
+          "date": "2026-06-19"
         },
         {
-          "titleEn": "Amazon's water conservation and replenishment efforts around the world",
-          "titleZh": "Amazon's water conservation and replenishment efforts around the world",
-          "url": "https://www.aboutamazon.com/news/sustainability/amazon-water-conservation-replenishment-sustainability?utm_source=rss",
-          "date": "2026-06-15"
+          "titleEn": "5 ways Amazon is investing in Kentucky",
+          "titleZh": "5 ways Amazon is investing in Kentucky",
+          "url": "https://www.aboutamazon.com/news/community/amazon-investment-kentucky-jobs-small-business?utm_source=rss",
+          "date": "2026-06-19"
         }
       ],
       "hotSearchPills": [
@@ -934,22 +934,22 @@
       "labelZh": "WhatsApp",
       "items": [
         {
-          "titleEn": "Fighting Spyware: An Update From WhatsApp",
-          "titleZh": "Fighting Spyware: An Update From WhatsApp",
-          "url": "https://about.fb.com/news/2026/06/fighting-spyware-an-update-from-whatsapp/",
-          "date": "2026-06-08"
+          "titleEn": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
+          "titleZh": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
+          "url": "https://about.fb.com/news/2026/06/instagram-for-tv-gets-bigger-with-new-ways-to-watch-together/",
+          "date": "2026-06-22"
         },
         {
-          "titleEn": "Introducing Business AI on WhatsApp for Small Businesses in India",
-          "titleZh": "Introducing Business AI on WhatsApp for Small Businesses in India",
-          "url": "https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses-in-india/",
-          "date": "2026-05-15"
+          "titleEn": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
+          "titleZh": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
+          "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
+          "date": "2026-06-18"
         },
         {
-          "titleEn": "Introducing a Completely Private Way to Chat With AI",
-          "titleZh": "Introducing a Completely Private Way to Chat With AI",
-          "url": "https://about.fb.com/news/2026/05/incognito-chat-whatsapp-meta-ai/",
-          "date": "2026-05-13"
+          "titleEn": "Threads Returns to Türkiye With New Features",
+          "titleZh": "Threads Returns to Türkiye With New Features",
+          "url": "https://about.fb.com/news/2026/06/threads-returns-to-turkiye-with-new-features/",
+          "date": "2026-06-17"
         }
       ],
       "hotSearchPills": [

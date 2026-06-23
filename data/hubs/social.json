@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-06-16",
+  "updated": "2026-06-23",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -25,13 +25,85 @@
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
     {
+      "titleEn": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
+      "titleZh": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
+      "url": "https://engineering.fb.com/2026/06/22/video-engineering/adopting-av1-for-real-time-communication-rtc-meta/",
+      "date": "2026-06-22",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/06/Meta-AV1-for-RTC-encoder-decoder-selection.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/06/Meta-AV1-for-RTC-encoder-decoder-selection.png"
+    },
+    {
+      "titleEn": "Instagram looks to take on streaming services with longer-form, episodic and live formats for its TV app",
+      "titleZh": "Instagram looks to take on streaming services with longer-form, episodic and live formats for its TV app",
+      "url": "https://techcrunch.com/2026/06/22/instagram-looks-to-take-on-streaming-services-with-longer-form-episodic-and-live-formats-for-its-tv-app/",
+      "date": "2026-06-22",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
+      "titleZh": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
+      "url": "https://about.fb.com/news/2026/06/instagram-for-tv-gets-bigger-with-new-ways-to-watch-together/",
+      "date": "2026-06-22",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/Instagram-for-TV-Gets-Bigger_With-New-Ways-to-Watch-Together_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Instagram-for-TV-Gets-Bigger_With-New-Ways-to-Watch-Together_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Snap spins off AI video team into new company, Dotmo, due to costs",
+      "titleZh": "Snap spins off AI video team into new company, Dotmo, due to costs",
+      "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
+      "date": "2026-06-18",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
+      "titleZh": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
+      "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
+      "date": "2026-06-18",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/01_Expanding-Our-New-13-Content-Settings_Carousel-01_34f5ce.jpg?w=960&resize=960%2C836",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/01_Expanding-Our-New-13-Content-Settings_Carousel-01_34f5ce.jpg?w=960&resize=960%2C836"
+    },
+    {
+      "titleEn": "Social media’s next evolution: user-controlled algorithms",
+      "titleZh": "Social media’s next evolution: user-controlled algorithms",
+      "url": "https://techcrunch.com/2026/06/17/social-medias-next-evolution-user-controlled-algorithms/",
+      "date": "2026-06-17",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Threads Returns to Türkiye With New Features",
+      "titleZh": "Threads Returns to Türkiye With New Features",
+      "url": "https://about.fb.com/news/2026/06/threads-returns-to-turkiye-with-new-features/",
+      "date": "2026-06-17",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2023/07/Threads_logo_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2023/07/Threads_logo_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren’t cheap",
+      "titleZh": "Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren’t cheap",
+      "url": "https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/",
+      "date": "2026-06-16",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
       "titleEn": "New Features to Celebrate 500 Million Monthly Users on Threads",
       "titleZh": "New Features to Celebrate 500 Million Monthly Users on Threads",
       "url": "https://about.fb.com/news/2026/06/meta-launching-new-features-500-million-monthly-threads-users/",
       "date": "2026-06-16",
       "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Threads-Reaches-500M-Monthly-Active-Users_Heres-Whats-Next_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Threads-Reaches-500M-Monthly-Active-Users_Heres-Whats-Next_Thumbnail.jpg?fit=890%2C501"
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/Threads-Reaches-500M-Monthly-Active-Users_Heres-Whats-Next_Thumbnail-1.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Threads-Reaches-500M-Monthly-Active-Users_Heres-Whats-Next_Thumbnail-1.jpg?fit=890%2C501"
     },
     {
       "titleEn": "Meta’s new ‘AI Mode’ on Facebook pulls from public info across its platforms",
@@ -133,33 +205,6 @@
       "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partners-With-Reliance-on-AI-Data-Center-in-India_Thumbnail.jpg?fit=890%2C501"
     },
     {
-      "titleEn": "Better Personalization and Changes to Controls for Your Activity From Other Businesses",
-      "titleZh": "Better Personalization and Changes to Controls for Your Activity From Other Businesses",
-      "url": "https://about.fb.com/news/2026/06/better-personalization-and-changes-to-controls-for-your-activity-from-other-businesses/",
-      "date": "2026-06-09",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Better-Personalization-and-Changes-to-Controls-for-Your-Activity-From-Other-Businesses_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Better-Personalization-and-Changes-to-Controls-for-Your-Activity-From-Other-Businesses_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "America’s Workforce Academy: The Future Is for Everyone",
-      "titleZh": "America’s Workforce Academy: The Future Is for Everyone",
-      "url": "https://about.fb.com/news/2026/06/americas-workforce-academy-free-skilled-trade-training/",
-      "date": "2026-06-08",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Americas-Workforce-Academy_The-Future-is-for-Everyone_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Americas-Workforce-Academy_The-Future-is-for-Everyone_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Fighting Spyware: An Update From WhatsApp",
-      "titleZh": "Fighting Spyware: An Update From WhatsApp",
-      "url": "https://about.fb.com/news/2026/06/fighting-spyware-an-update-from-whatsapp/",
-      "date": "2026-06-08",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/WA-Spyware-Trial_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/WA-Spyware-Trial_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
       "titleEn": "Meta’s Oversight Board says account bans lack due process, transparency",
       "titleZh": "Meta’s Oversight Board says account bans lack due process, transparency",
       "url": "https://techcrunch.com/2026/06/04/metas-oversight-board-says-account-bans-lack-due-process-transparency/",
@@ -174,51 +219,6 @@
       "url": "https://techcrunch.com/2026/06/04/chinese-spies-are-using-linkedin-to-lure-westerners-into-sharing-sensitive-information/",
       "date": "2026-06-04",
       "source": "LinkedIn · TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Instagram is alerting users who were targeted by hackers during AI chatbot attacks",
-      "titleZh": "Instagram is alerting users who were targeted by hackers during AI chatbot attacks",
-      "url": "https://techcrunch.com/2026/06/03/instagram-is-alerting-users-who-were-targeted-by-hackers-during-ai-chatbot-attacks/",
-      "date": "2026-06-03",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "YouTube earns industry's first MRC accreditation for short-form video.",
-      "titleZh": "YouTube earns industry's first MRC accreditation for short-form video.",
-      "url": "https://blog.google/products/ads-commerce/youtube-mrc-accreditation-shorts/",
-      "date": "2026-06-03",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Youtube_Safety_social.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Youtube_Safety_social.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "TikTok launches TikTok Pro Events, an app for cultural moments like the FIFA World Cup",
-      "titleZh": "TikTok launches TikTok Pro Events, an app for cultural moments like the FIFA World Cup",
-      "url": "https://techcrunch.com/2026/06/03/tiktok-launches-tiktok-pro-events-an-app-for-cultural-moments-like-the-fifa-world-cup/",
-      "date": "2026-06-03",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta tests ‘Series’ for episodic Reels on Instagram and Facebook",
-      "titleZh": "Meta tests ‘Series’ for episodic Reels on Instagram and Facebook",
-      "url": "https://techcrunch.com/2026/06/02/meta-tests-series-for-episodic-reels-on-instagram-and-facebook/",
-      "date": "2026-06-02",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access",
-      "titleZh": "Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access",
-      "url": "https://techcrunch.com/2026/06/01/hackers-hijacked-instagram-accounts-by-tricking-meta-ai-support-chatbot-into-granting-access/",
-      "date": "2026-06-01",
-      "source": "TechCrunch",
       "image": "",
       "imageSource": ""
     }

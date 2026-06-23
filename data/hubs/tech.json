@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-06-18",
+  "updated": "2026-06-23",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "Fine-Tuning Biological Foundation Models with LoRA Using NVIDIA BioNeMo Recipes",
-          "titleZh": "Fine-Tuning Biological Foundation Models with LoRA Using NVIDIA BioNeMo Recipes",
-          "url": "https://developer.nvidia.com/blog/fine-tuning-biological-foundation-models-with-lora-using-nvidia-bionemo-recipes/",
-          "date": "2026-06-15"
+          "titleEn": "NVIDIA Powers Over 400 of the World’s 500 Fastest Supercomputers",
+          "titleZh": "NVIDIA Powers Over 400 of the World’s 500 Fastest Supercomputers",
+          "url": "https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/",
+          "date": "2026-06-23"
         },
         {
-          "titleEn": "Boosting MoE Training Throughput with Advanced Fusion Kernels",
-          "titleZh": "Boosting MoE Training Throughput with Advanced Fusion Kernels",
-          "url": "https://developer.nvidia.com/blog/boosting-moe-training-throughput-with-advanced-fusion-kernels/",
-          "date": "2026-06-15"
+          "titleEn": "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations",
+          "titleZh": "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations",
+          "url": "https://blogs.nvidia.com/blog/telecom-ai-agents-dtw-ignite-2026/",
+          "date": "2026-06-23"
         },
         {
-          "titleEn": "Pretrained to Imagine, Fine-Tuned to Act: The Rise of World-Action Models",
-          "titleZh": "Pretrained to Imagine, Fine-Tuned to Act: The Rise of World-Action Models",
-          "url": "https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/",
-          "date": "2026-06-15"
+          "titleEn": "How Telcos Build Autonomous Networks with Agentic AI",
+          "titleZh": "How Telcos Build Autonomous Networks with Agentic AI",
+          "url": "https://developer.nvidia.com/blog/how-telcos-build-autonomous-networks-with-agentic-ai/",
+          "date": "2026-06-23"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "[Infographic] The Origin of Art TV: The Frame’s Journey in Bringing Art Into Everyday Life",
-          "titleZh": "[Infographic] The Origin of Art TV: The Frame’s Journey in Bringing Art Into Everyday Life",
-          "url": "https://news.samsung.com/global/infographic-the-origin-of-art-tv-the-frames-journey-in-bringing-art-into-everyday-life",
-          "date": "2026-06-16"
+          "titleEn": "[Interview] A Decade of WindFree™ Innovation: Taking Another Step Forward Through Design Integrated Into Living Spaces",
+          "titleZh": "[Interview] A Decade of WindFree™ Innovation: Taking Another Step Forward Through Design Integrated Into Living Spaces",
+          "url": "https://news.samsung.com/global/interview-a-decade-of-windfree-innovation-taking-another-step-forward-through-design-integrated-into-living-spaces",
+          "date": "2026-06-23"
         },
         {
-          "titleEn": "Samsung Art Store Brings Art Basel to Homes Worldwide With New Curated Collection",
-          "titleZh": "Samsung Art Store Brings Art Basel to Homes Worldwide With New Curated Collection",
-          "url": "https://news.samsung.com/global/samsung-art-store-brings-art-basel-to-homes-worldwide-with-new-curated-collection",
-          "date": "2026-06-15"
+          "titleEn": "Samsung Unveils Industry’s Fastest UFS 5.0 Solution for Next-Gen On-Device AI Applications",
+          "titleZh": "Samsung Unveils Industry’s Fastest UFS 5.0 Solution for Next-Gen On-Device AI Applications",
+          "url": "https://news.samsung.com/global/samsung-unveils-industrys-fastest-ufs-5-0-solution-for-next-gen-on-device-ai-applications",
+          "date": "2026-06-23"
         },
         {
-          "titleEn": "Samsung Launches Global Landmark Outdoor Billboard Campaigns for Micro RGB",
-          "titleZh": "Samsung Launches Global Landmark Outdoor Billboard Campaigns for Micro RGB",
-          "url": "https://news.samsung.com/global/samsung-launches-global-landmark-outdoor-billboard-campaigns-for-micro-rgb",
-          "date": "2026-06-14"
+          "titleEn": "Art Basel in Basel 2026: Samsung Art TV Brings Personal Curation to the Center of the Art World",
+          "titleZh": "Art Basel in Basel 2026: Samsung Art TV Brings Personal Curation to the Center of the Art World",
+          "url": "https://news.samsung.com/global/art-basel-in-basel-2026-samsung-art-tv-brings-personal-curation-to-the-center-of-the-art-world",
+          "date": "2026-06-22"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "英特尔",
       "items": [
         {
-          "titleEn": "New Smart City Pilot Network to Bridge Digital Divide for 50 U.S. Cities",
-          "titleZh": "New Smart City Pilot Network to Bridge Digital Divide for 50 U.S. Cities",
-          "url": "https://newsroom.intel.com/5g-wireless/intel-5g-network-bridges-digital-divide",
-          "date": "2026-06-09"
+          "titleEn": "Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing",
+          "titleZh": "Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing",
+          "url": "https://newsroom.intel.com/corporate/intel-announces-leadership-appointment-at-intel-foundry-to-accelerate-development-and-manufacturing",
+          "date": "2026-06-18"
         },
         {
-          "titleEn": "Postcard from Computex 2026: New Intel® Core™ Series 3 laptops for Everyday Creation and All-day Productivity",
-          "titleZh": "Postcard from Computex 2026: New Intel® Core™ Series 3 laptops for Everyday Creation and All-day Productivity",
-          "url": "https://newsroom.intel.com/client-computing/postcard-from-computex-2026-new-intel-core-series-3-laptops-for-creation-productivity",
-          "date": "2026-06-05"
+          "titleEn": "CEO Letter: 2025-26 Intel Corporate Responsibility Report",
+          "titleZh": "CEO Letter: 2025-26 Intel Corporate Responsibility Report",
+          "url": "https://newsroom.intel.com/corporate/ceo-letter-2025-26-intel-corporate-responsibility-report",
+          "date": "2026-06-17"
         },
         {
-          "titleEn": "Intel Introduces Ethernet E835 Controllers and Network Adapters for Cloud, Edge and Enterprise Data Center Infrastructure",
-          "titleZh": "Intel Introduces Ethernet E835 Controllers and Network Adapters for Cloud, Edge and Enterprise Data Center Infrastructure",
-          "url": "https://newsroom.intel.com/data-center/intel-introduces-ethernet-e835-controllers-network-adapters",
-          "date": "2026-06-03"
+          "titleEn": "Intel Advances Responsible Business Practices and AI-Driven Growth in 2025–2026 Corporate Responsibility Report",
+          "titleZh": "Intel Advances Responsible Business Practices and AI-Driven Growth in 2025–2026 Corporate Responsibility Report",
+          "url": "https://newsroom.intel.com/corporate/intel-advances-growth-in-ai-era-2025-2026-csr-report",
+          "date": "2026-06-17"
         }
       ]
     },
