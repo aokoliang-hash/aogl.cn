@@ -1,0 +1,88 @@
+{
+  "fetchedAt": "2025-06-17",
+  "fetchStatus": "manual",
+  "fetchNote": "Archived from Emplifi blog '10 Most Popular US Facebook Pages 2026' (Jun 17, 2025). Chart data: Emplifi sample, US brand profiles, 01 Jun 2024 – 01 Jun 2025 (new followers chart through 10 Jun 2025). Only brands in Emplifi database.",
+  "reportTitleEn": "10 Most Popular US Facebook Pages 2026",
+  "reportTitleZh": "美国 Facebook 最热门品牌主页 2026",
+  "dataPeriodEn": "01 June 2024 – 01 June 2025",
+  "dataPeriodZh": "2024-06-01 至 2025-06-01",
+  "geo": "US",
+  "geoLabelEn": "United States",
+  "geoLabelZh": "美国",
+  "sourceBlogUrl": "https://emplifi.io/resources/blog/most-liked-u-s-facebook-pages/",
+  "heroImageUrl": "https://emplifi.io/wp-content/uploads/2024/06/EMP806-Blog-Top-10-US-Page-Update-Feature-Image-1-768x384.png",
+  "keyPoints": [
+    {
+      "pointEn": "Facebook 3+ billion MAU — largest social platform for brand awareness and community",
+      "pointZh": "Facebook 月活 30 亿+ — 品牌认知与社群最大平台"
+    },
+    {
+      "pointEn": "Netflix leads Like, Comment, and Share engagement categories in Emplifi US sample",
+      "pointZh": "Emplifi 美国样本中 Netflix 在 Like、Comment、Share 三类互动均居首"
+    },
+    {
+      "pointEn": "Growth formula: know your audience, post consistently, spark interaction-worthy content",
+      "pointZh": "增长公式：懂受众、稳定发帖、制造值得互动的内容"
+    }
+  ],
+  "likeReactions": [
+    { "rank": 1, "nameEn": "Netflix", "nameZh": "Netflix", "handle": "netflixus", "pageUrl": "https://www.facebook.com/netflixus", "metricDisplay": "20.23 M" },
+    { "rank": 2, "nameEn": "Peacock TV", "nameZh": "Peacock TV", "handle": "peacocktv", "pageUrl": "https://www.facebook.com/peacocktv", "metricDisplay": "15.8 M" },
+    { "rank": 3, "nameEn": "Prime Video", "nameZh": "Prime Video", "handle": "primevideo", "pageUrl": "https://www.facebook.com/primevideo", "metricDisplay": "8.83 M" },
+    { "rank": 4, "nameEn": "Stream on Max", "nameZh": "Stream on Max", "handle": "streamonmax", "pageUrl": "https://www.facebook.com/streamonmax", "metricDisplay": "7.58 M" },
+    { "rank": 5, "nameEn": "The Female Quotient", "nameZh": "The Female Quotient", "handle": "femalequotient", "pageUrl": "https://www.facebook.com/femalequotient", "metricDisplay": "5.21 M" },
+    { "rank": 6, "nameEn": "DAZN", "nameZh": "DAZN", "handle": "dazn", "pageUrl": "https://www.facebook.com/dazn", "metricDisplay": "5 M" },
+    { "rank": 7, "nameEn": "Budweiser USA", "nameZh": "Budweiser USA", "handle": "budweiserusa", "pageUrl": "https://www.facebook.com/BudweiserUSA", "metricDisplay": "3.78 M" },
+    { "rank": 8, "nameEn": "Hulu", "nameZh": "Hulu", "handle": "hulu", "pageUrl": "https://www.facebook.com/hulu", "metricDisplay": "3.64 M" },
+    { "rank": 9, "nameEn": "UFC Fight Pass", "nameZh": "UFC Fight Pass", "handle": "ufcfightpass", "pageUrl": "https://www.facebook.com/ufcfightpass", "metricDisplay": "3 M" },
+    { "rank": 10, "nameEn": "80s Tees", "nameZh": "80s Tees", "handle": "80stees", "pageUrl": "https://www.facebook.com/80stees", "metricDisplay": "2.71 M" }
+  ],
+  "comments": [
+    { "rank": 1, "nameEn": "Netflix", "nameZh": "Netflix", "handle": "netflixus", "pageUrl": "https://www.facebook.com/netflixus", "metricDisplay": "2.89 M" },
+    { "rank": 2, "nameEn": "Budweiser USA", "nameZh": "Budweiser USA", "handle": "budweiserusa", "pageUrl": "https://www.facebook.com/BudweiserUSA", "metricDisplay": "575,015" },
+    { "rank": 3, "nameEn": "Newsstoryi", "nameZh": "Newsstoryi", "handle": "newsstoryi", "pageUrl": "https://www.facebook.com/newsstoryi", "metricDisplay": "531,278" },
+    { "rank": 4, "nameEn": "Prime Video", "nameZh": "Prime Video", "handle": "primevideo", "pageUrl": "https://www.facebook.com/primevideo", "metricDisplay": "513,498" },
+    { "rank": 5, "nameEn": "DAZN", "nameZh": "DAZN", "handle": "dazn", "pageUrl": "https://www.facebook.com/dazn", "metricDisplay": "467,297" },
+    { "rank": 6, "nameEn": "Peacock TV", "nameZh": "Peacock TV", "handle": "peacocktv", "pageUrl": "https://www.facebook.com/peacocktv", "metricDisplay": "444,428" },
+    { "rank": 7, "nameEn": "Travel Pirates", "nameZh": "Travel Pirates", "handle": "travelpirates", "pageUrl": "https://www.facebook.com/travelpirates", "metricDisplay": "413,897" },
+    { "rank": 8, "nameEn": "Stream on Max", "nameZh": "Stream on Max", "handle": "streamonmax", "pageUrl": "https://www.facebook.com/streamonmax", "metricDisplay": "388,936" },
+    { "rank": 9, "nameEn": "All Patron Saints", "nameZh": "All Patron Saints", "handle": "allpatronsaints", "pageUrl": "https://www.facebook.com/allpatronsaints", "metricDisplay": "320,922" },
+    { "rank": 10, "nameEn": "Cute and Country", "nameZh": "Cute and Country", "handle": "cuteandcountry", "pageUrl": "https://www.facebook.com/cuteandcountry", "metricDisplay": "314,888" }
+  ],
+  "shares": [
+    { "rank": 1, "nameEn": "Netflix", "nameZh": "Netflix", "handle": "netflixus", "pageUrl": "https://www.facebook.com/netflixus", "metricDisplay": "3.41 M" },
+    { "rank": 2, "nameEn": "The Female Quotient", "nameZh": "The Female Quotient", "handle": "femalequotient", "pageUrl": "https://www.facebook.com/femalequotient", "metricDisplay": "941,431" },
+    { "rank": 3, "nameEn": "Peacock TV", "nameZh": "Peacock TV", "handle": "peacocktv", "pageUrl": "https://www.facebook.com/peacocktv", "metricDisplay": "769,255" },
+    { "rank": 4, "nameEn": "Prime Video", "nameZh": "Prime Video", "handle": "primevideo", "pageUrl": "https://www.facebook.com/primevideo", "metricDisplay": "680,159" },
+    { "rank": 5, "nameEn": "Budweiser USA", "nameZh": "Budweiser USA", "handle": "budweiserusa", "pageUrl": "https://www.facebook.com/BudweiserUSA", "metricDisplay": "571,864" },
+    { "rank": 6, "nameEn": "Stream on Max", "nameZh": "Stream on Max", "handle": "streamonmax", "pageUrl": "https://www.facebook.com/streamonmax", "metricDisplay": "561,225" },
+    { "rank": 7, "nameEn": "80s Tees", "nameZh": "80s Tees", "handle": "80stees", "pageUrl": "https://www.facebook.com/80stees", "metricDisplay": "481,745" },
+    { "rank": 8, "nameEn": "High Life Media Consulting", "nameZh": "High Life Media Consulting", "handle": "highlifemediaconsulting", "pageUrl": "https://www.facebook.com/highlifemediaconsulting", "metricDisplay": "398,309" },
+    { "rank": 9, "nameEn": "DAZN", "nameZh": "DAZN", "handle": "dazn", "pageUrl": "https://www.facebook.com/dazn", "metricDisplay": "369,673" },
+    { "rank": 10, "nameEn": "Travel Pirates", "nameZh": "Travel Pirates", "handle": "travelpirates", "pageUrl": "https://www.facebook.com/travelpirates", "metricDisplay": "364,326" }
+  ],
+  "newFollowers": [
+    { "rank": 1, "nameEn": "Smith & Wesson Inc.", "nameZh": "Smith & Wesson Inc.", "handle": "SmithandWessonInc", "pageUrl": "https://www.facebook.com/SmithandWessonInc", "followers2024": "1,637,462", "followers2025": "3,731,836", "metricDisplay": "+2,094,374" },
+    { "rank": 2, "nameEn": "Peacock TV", "nameZh": "Peacock TV", "handle": "PeacockTV", "pageUrl": "https://www.facebook.com/PeacockTV", "followers2024": "1,052,121", "followers2025": "2,371,777", "metricDisplay": "+1,319,656" },
+    { "rank": 3, "nameEn": "How Ridiculous", "nameZh": "How Ridiculous", "handle": "HowRidiculous", "pageUrl": "https://www.facebook.com/HowRidiculous", "followers2024": "5,739,477", "followers2025": "6,954,687", "metricDisplay": "+1,215,210" },
+    { "rank": 4, "nameEn": "PPG", "nameZh": "PPG", "handle": "ppgindustries", "pageUrl": "https://www.facebook.com/ppgindustries", "followers2024": "564,365", "followers2025": "1,641,122", "metricDisplay": "+1,076,757" },
+    { "rank": 5, "nameEn": "Topps", "nameZh": "Topps", "handle": "Topps", "pageUrl": "https://www.facebook.com/Topps", "followers2024": "237,238", "followers2025": "1,111,879", "metricDisplay": "+874,641" },
+    { "rank": 6, "nameEn": "Realtree", "nameZh": "Realtree", "handle": "Realtree", "pageUrl": "https://www.facebook.com/Realtree", "followers2024": "2,285,958", "followers2025": "2,900,136", "metricDisplay": "+614,178" },
+    { "rank": 7, "nameEn": "Hulu", "nameZh": "Hulu", "handle": "hulu", "pageUrl": "https://www.facebook.com/hulu", "followers2024": "3,911,220", "followers2025": "4,524,354", "metricDisplay": "+613,134" },
+    { "rank": 8, "nameEn": "Crumbl", "nameZh": "Crumbl", "handle": "crumblcookies", "pageUrl": "https://www.facebook.com/crumblcookies", "followers2024": "3,156,296", "followers2025": "3,758,051", "metricDisplay": "+601,755" },
+    { "rank": 9, "nameEn": "Raw Rolling Paper", "nameZh": "Raw Rolling Paper", "handle": "RawRollingPaper", "pageUrl": "https://www.facebook.com/RawRollingPaper", "followers2024": "792,190", "followers2025": "1,368,406", "metricDisplay": "+576,216" },
+    { "rank": 10, "nameEn": "Aries Spears", "nameZh": "Aries Spears", "handle": "ariesspears", "pageUrl": "https://www.facebook.com/ariesspears", "followers2024": "1,004,394", "followers2025": "1,577,268", "metricDisplay": "+572,874" }
+  ],
+  "fastestGrowthPct": [
+    { "rank": 1, "nameEn": "Yale Cleaners", "nameZh": "Yale Cleaners", "handle": "YaleCleaners", "pageUrl": "https://www.facebook.com/YaleCleaners", "followers2024": "17,643", "followers2025": "107,837", "metricDisplay": "+511%" },
+    { "rank": 2, "nameEn": "Toolup.com", "nameZh": "Toolup.com", "handle": "toolupcom", "pageUrl": "https://www.facebook.com/toolupcom", "followers2024": "8,253", "followers2025": "48,285", "metricDisplay": "+485%" },
+    { "rank": 3, "nameEn": "Titan Factory Direct", "nameZh": "Titan Factory Direct", "handle": "TitanFactoryDirect", "pageUrl": "https://www.facebook.com/TitanFactoryDirect", "followers2024": "67,076", "followers2025": "329,457", "metricDisplay": "+391%" },
+    { "rank": 4, "nameEn": "Topps", "nameZh": "Topps", "handle": "Topps", "pageUrl": "https://www.facebook.com/Topps", "followers2024": "237,238", "followers2025": "1,111,879", "metricDisplay": "+368%" },
+    { "rank": 5, "nameEn": "Galco", "nameZh": "Galco", "handle": "GalcoIndustrial", "pageUrl": "https://www.facebook.com/GalcoIndustrial", "followers2024": "6,639", "followers2025": "28,727", "metricDisplay": "+332%" },
+    { "rank": 6, "nameEn": "Fred Anderson Toyota", "nameZh": "Fred Anderson Toyota", "handle": "FredAndersonToyotaRaleigh", "pageUrl": "https://www.facebook.com/FredAndersonToyotaRaleigh", "followers2024": "14,442", "followers2025": "61,844", "metricDisplay": "+328%" },
+    { "rank": 7, "nameEn": "Cars Commerce", "nameZh": "Cars Commerce", "handle": "CarsCommerce", "pageUrl": "https://www.facebook.com/CarsCommerce", "followers2024": "5,052", "followers2025": "20,905", "metricDisplay": "+313%" },
+    { "rank": 8, "nameEn": "The Lifeguard Store", "nameZh": "The Lifeguard Store", "handle": "TheLifeguardStore", "pageUrl": "https://www.facebook.com/TheLifeguardStore", "followers2024": "5,740", "followers2025": "22,538", "metricDisplay": "+292%" },
+    { "rank": 9, "nameEn": "Apogee Components, Inc.", "nameZh": "Apogee Components, Inc.", "handle": "apogeerockets", "pageUrl": "https://www.facebook.com/apogeerockets", "followers2024": "5,296", "followers2025": "19,740", "metricDisplay": "+272%" },
+    { "rank": 10, "nameEn": "Acceptance Insurance", "nameZh": "Acceptance Insurance", "handle": "AcceptanceInsurance", "pageUrl": "https://www.facebook.com/AcceptanceInsurance", "followers2024": "9,044", "followers2025": "33,616", "metricDisplay": "+271%" }
+  ]
+}

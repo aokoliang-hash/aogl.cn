@@ -1,0 +1,32 @@
+<p>本文存档 <a href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener noreferrer">Google Trends 美国区官方 RSS</a>（Daily Search Trends），快照日期 <strong>2026-06-24</strong>。原始数据见 <code>data/google-trends-us-rss-snapshot.json</code>。与 <a href="/articles/google-trends-us-search-ranking-20260622.html">2026-06-22 CSV Trending 存档</a> 互补：RSS 条目更少，但每条附带<strong>相关新闻标题与链接</strong>，适合快速读「为什么这个词在涨」。</p>
+
+<p>RSS 与 <a href="https://trends.google.com/trending?geo=US" target="_blank" rel="noopener noreferrer">Trending 网页</a> 同源，字段包括趋势词、<code>ht:approx_traffic</code>（如 5000+、500+）、<code>pubDate</code> 以及 Google 聚合的 <code>ht:news_item</code>。流量档是<strong>相对区间</strong>，不是精确搜索次数。更新 RSS：浏览器打开订阅地址，或用 Feedly、Inoreader、NetNewsWire 等阅读器添加 <code>https://trends.google.com/trending/rss?geo=US</code>。</p>
+
+<h2>当下流行（RSS 全量）</h2>
+<!-- GOOGLE_TRENDS_RSS_SNAPSHOT_AUTO -->
+
+<h2>今日在读什么</h2>
+<p><strong>NBA 2026 选秀夜</strong>占多条：<strong>Tarris Reed Jr.</strong>（5000+，掘金 26 号签交易至马刺）、<strong>Henri Veesaar</strong>、<strong>Bryce James</strong>、<strong>Chris Cenac</strong> 等新秀与 ESPN 转播争议（<strong>Malika Andrews</strong> / Lisa Salters 相关讨论）。<strong>Russell Westbrook</strong> 则因场外商业/legacy 报道维持 500+ 档。</p>
+<p><strong>影视</strong>：<strong>Widow's Bay</strong>（5000+，Apple TV+ 马萨诸塞取景、第二季期待）——流媒体剧集社交传播典型脉冲。</p>
+<p><strong>2026 世界杯</strong>：<strong>Lumumba Vea</strong>（5000+，刚果（金）「雕像哥」超级球迷）、<strong>Arthur Masuaku</strong>（1000+，哥伦比亚 vs 刚果（金）赛前）延续足球周期热度，与 CSV 存档里赛程检索可对照。</p>
+<p><strong>娱乐</strong>：<strong>Keke Palmer</strong>（2000+，与 Hot Ones 主持人 Sean Evans 恋情澄清）属名人社交检索。</p>
+
+<h2>怎么用（SEO 与日常）</h2>
+<ul>
+  <li><strong>订阅 RSS</strong> — 比手动刷 Trending 页更省时间；本站在 JSON 里保留新闻链接便于二次引用。</li>
+  <li><strong>点 Explore 链接</strong> — 表格中趋势词链至 <code>trends.google.com/trends/explore?geo=US&amp;q=…</code>，可看地区曲线与相关查询。</li>
+  <li><strong>对照 CSV 存档</strong> — RSS 约 10 条/轮；Trending 导出可有数百条（见 6/22 文章）。大事件日用 CSV，日常脉冲用 RSS 即可。</li>
+  <li><strong>仅 US</strong> — 换 <code>geo=GB</code>、<code>geo=JP</code> 等需换 RSS URL。</li>
+  <li><strong>更新本站</strong> — 运行 <code>node tools/fetch-google-trends-rss.mjs</code> → 编辑 JSON 日期若需 → <code>npm run build-articles</code> · <code>npm run build-seo-locales</code>。</li>
+</ul>
+
+<h2 id="article-seo-keywords">检索与官方入口</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener noreferrer">Google Trends RSS（US）</a>
+  <a class="pill" href="https://trends.google.com/trending?geo=US" target="_blank" rel="noopener noreferrer">Google Trends Trending</a>
+  <a class="pill" href="https://www.google.com/search?q=NBA+draft+2026" target="_blank" rel="noopener noreferrer">NBA Draft 2026</a>
+  <a class="pill" href="https://www.google.com/search?q=Widow%27s+Bay+Apple+TV" target="_blank" rel="noopener noreferrer">Widow's Bay</a>
+  <a class="pill" href="/articles/google-trends-us-search-ranking-20260622.html">CSV Trending 存档（6/22）</a>
+  <a class="pill" href="/portal.html">全球站点 Hub</a>
+  <a class="pill" href="/articles/index.html">全部原创索引</a>
+</div>

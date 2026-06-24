@@ -1,0 +1,151 @@
+{
+  "fetchedAt": "2026-06-22",
+  "fetchStatus": "manual",
+  "fetchNote": "Archived from NVIDIA CN blog: Halos for Robotics announcement (June 22, 2026).",
+  "announcementTitleEn": "NVIDIA Halos for Robotics — full-stack safety for physical AI",
+  "announcementTitleZh": "NVIDIA Halos for Robotics — 面向物理 AI 的全栈安全系统",
+  "sourceBlogUrl": "https://blogs.nvidia.cn/blog/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai/",
+  "sourceBlogUrlEn": "https://blogs.nvidia.com/blog/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai/",
+  "productPageUrl": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/halos/",
+  "heroImageUrl": "https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/06/halos-agility-1280x720.png",
+  "stackLayers": [
+    {
+      "layerEn": "Compute & sensors",
+      "layerZh": "算力与传感器",
+      "componentsEn": "NVIDIA IGX Thor™, NVIDIA Holoscan Sensor Bridge",
+      "componentsZh": "NVIDIA IGX Thor™、NVIDIA Holoscan Sensor Bridge",
+      "roleEn": "Industrial AI compute, built-in safety, sensor connectivity for real-time robot + safety workloads",
+      "roleZh": "工业级 AI 算力、内置安全机制、传感器连接，支撑实时机器人与安全任务负载"
+    },
+    {
+      "layerEn": "Software — Halos OS",
+      "layerZh": "软件 — Halos OS",
+      "componentsEn": "Halos Core; Halos Outside-In Safety Blueprint apps",
+      "componentsZh": "Halos Core；基于 Outside-In Safety Blueprint 的安全应用",
+      "roleEn": "Safety-related runtime; external cameras + AI agents supplement robot perception and adapt behavior on the factory floor",
+      "roleZh": "安全相关运行功能；外部摄像头与 AI 智能体补充感知，按工业现场变化动态调整行为"
+    },
+    {
+      "layerEn": "Verification — Halos AI System Inspection Lab",
+      "layerZh": "检测 — Halos AI 系统检测实验室",
+      "componentsEn": "ANSI/ANAB-accredited physical AI functional safety & AI safety program",
+      "componentsZh": "ANSI/ANAB 认证的物理 AI 功能安全与 AI 安全项目",
+      "roleEn": "Prepare partners for third-party certification (TÜV Rheinland, UL, TÜV SÜD, exida, SGS, CertX, etc.)",
+      "roleZh": "协助合作伙伴准备第三方认证（德国莱茵 TÜV、UL、TÜV 南德、exida、SGS、CertX 等）"
+    }
+  ],
+  "keyFacts": [
+    {
+      "metricEn": "Automotive safety R&D basis",
+      "metricZh": "智能汽车安全研发基础",
+      "valueEn": "≈18,600 engineer-years of experience",
+      "valueZh": "约 18,600 名工程师年工作产出",
+      "noteEn": "Halos extended from proven automotive stack",
+      "noteZh": "Halos 从智能汽车领域成熟安全技术延伸"
+    },
+    {
+      "metricEn": "First adopter",
+      "metricZh": "首家采用伙伴",
+      "valueEn": "Agility Robotics (Digit humanoid)",
+      "valueZh": "Agility Robotics（Digit 人形机器人）",
+      "noteEn": "Integrates IGX Thor + Halos Core into personnel-detection safety",
+      "noteZh": "将 IGX Thor 与 Halos Core 集成至人员检测安全系统"
+    },
+    {
+      "metricEn": "Digit customer examples",
+      "metricZh": "Digit 客户示例",
+      "valueEn": "Amazon, GXO, Schaeffler, Toyota Motor Manufacturing Canada",
+      "valueZh": "亚马逊、GXO、舍弗勒、丰田汽车加拿大制造公司",
+      "noteEn": "Factory, warehouse, logistics deployments",
+      "noteZh": "工厂、仓库、物流场景"
+    },
+    {
+      "metricEn": "Inspection Lab ecosystem",
+      "metricZh": "检测实验室生态",
+      "valueEn": "40+ manufacturers, certifiers, safety vendors",
+      "valueZh": "40+ 制造商、认证机构与安全供应商",
+      "noteEn": "Design to real-world deployment",
+      "noteZh": "从设计到现实世界部署"
+    }
+  ],
+  "agilityStandards": [
+    {
+      "standardEn": "IEC 61508",
+      "standardZh": "IEC 61508",
+      "scopeEn": "Functional safety of electrical/electronic systems",
+      "scopeZh": "电气/电子/可编程电子安全相关系统功能安全"
+    },
+    {
+      "standardEn": "ISO 13849",
+      "standardZh": "ISO 13849",
+      "scopeEn": "Safety of machinery — control systems",
+      "scopeZh": "机械安全 — 控制系统"
+    },
+    {
+      "standardEn": "ISO/IEC TR 5469",
+      "standardZh": "ISO/IEC TR 5469",
+      "scopeEn": "AI functional safety guidance",
+      "scopeZh": "AI 功能安全指导"
+    }
+  ],
+  "ecosystemPartners": [
+    {
+      "categoryEn": "Software",
+      "categoryZh": "软件",
+      "partnersEn": "Acontis, FreeRTOS, QNX",
+      "partnersZh": "Acontis、FreeRTOS、QNX",
+      "roleEn": "Real-time runtimes, safe communication, embedded layers for functional safety development",
+      "roleZh": "实时运行环境、安全通信、嵌入式软件层"
+    },
+    {
+      "categoryEn": "Embedded systems",
+      "categoryZh": "嵌入式系统",
+      "partnersEn": "Advantech, NexCobot",
+      "partnersZh": "研华、NexCobot",
+      "roleEn": "Safety-designed NVIDIA IGX-based systems for robot deployment",
+      "roleZh": "基于 NVIDIA IGX 的安全设计系统，支持机器人部署"
+    },
+    {
+      "categoryEn": "Sensors & chips",
+      "categoryZh": "传感器与芯片",
+      "partnersEn": "Infineon, NXP, STMicroelectronics, Texas Instruments",
+      "partnersZh": "英飞凌、恩智浦、意法半导体、德州仪器",
+      "roleEn": "Sensors, safety MCUs, semiconductors",
+      "roleZh": "传感器、安全微控制器及半导体"
+    },
+    {
+      "categoryEn": "Industrial applications",
+      "categoryZh": "工业应用",
+      "partnersEn": "FORT Robotics, Inventec, KION Group, Lyte AI, Neurealm",
+      "partnersZh": "FORT Robotics、英业达、凯傲集团、Lyte AI、Neurealm",
+      "roleEn": "Functional-safety agents via Outside-In Safety Blueprint",
+      "roleZh": "借助 Outside-In Safety Blueprint 开发功能安全智能体"
+    },
+    {
+      "categoryEn": "Assessment",
+      "categoryZh": "评估机构",
+      "partnersEn": "TÜV SÜD (ISO 26262 on Thor SoC & Halos Core); TÜV Rheinland prep on IGX Thor, Halos OS, Holoscan Sensor Bridge",
+      "partnersZh": "TÜV 南德（Thor SoC 与 Halos Core ISO 26262）；德国莱茵 TÜV 对 IGX Thor、Halos OS、Holoscan Sensor Bridge 认证准备",
+      "roleEn": "Functional safety certification pipeline",
+      "roleZh": "功能安全认证流程"
+    }
+  ],
+  "availability": [
+    {
+      "itemEn": "NVIDIA Halos Core for IGX",
+      "itemZh": "面向 NVIDIA IGX 的 Halos Core",
+      "statusEn": "Early access for registered developers",
+      "statusZh": "已向注册开发者提供早期访问",
+      "configEn": "Linux; Linux + QNX OS for Safety 8.0",
+      "configZh": "Linux；Linux 搭配 QNX OS for Safety 8.0"
+    },
+    {
+      "itemEn": "Halos Outside-In Safety Blueprint",
+      "itemZh": "Halos Outside-In Safety Blueprint",
+      "statusEn": "Early access on GitHub (open source, Halos OS app layer)",
+      "statusZh": "GitHub 开放抢先访问（开源，Halos OS 应用层）",
+      "configEn": "Application-layer safety blueprint",
+      "configZh": "应用层安全蓝图"
+    }
+  ]
+}

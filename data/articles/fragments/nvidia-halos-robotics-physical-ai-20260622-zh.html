@@ -1,0 +1,39 @@
+<p>本文存档 <a href="https://blogs.nvidia.cn/blog/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai/" target="_blank" rel="noopener noreferrer">NVIDIA 英伟达博客</a> 2026 年 6 月 22 日发布的新闻：<strong>NVIDIA Halos for Robotics</strong>——业界首个面向<strong>机器人和物理 AI</strong>的全栈综合安全系统，将 AI 算力与安全能力统一在同一架构下。科技 Hub 本篇以<strong>文字 + 表格</strong>解读发布要点，不嵌入 NVIDIA 官方 iframe；原始结构化数据见 <code>data/nvidia-halos-robotics-snapshot.json</code>。题图为 Agility 人形机器人 <strong>Digit</strong> 配合 Halos 视觉光环（<a href="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/06/halos-agility-1280x720.png" target="_blank" rel="noopener noreferrer">NVIDIA 博客原图</a>）。</p>
+
+<p>NVIDIA 将已在<strong>智能汽车</strong>领域验证的 Halos 安全技术延伸至<strong>物理 AI</strong>：下一代自主机器人依赖基础模型、加速计算与分布式传感器，在动态环境中与人类协同作业——要实现规模化部署，必须依靠<strong>全栈式</strong>而非「事后补丁」的安全设计。Halos for Robotics 宣称是业界<strong>唯一的全栈开放式</strong>机器人安全系统，把算力、系统软件、传感器数据、安全应用与检测检验连接为统一架构。</p>
+
+<h2>发布要点（结构化存档）</h2>
+<!-- NVIDIA_HALOS_ROBOTICS_SNAPSHOT_AUTO -->
+
+<h2>新闻摘要：从智能汽车到工厂 floor</h2>
+<p>发布稿强调，基于相当于 <strong>18,600 多名工程师年工作产出</strong>的智能汽车安全研发经验，Halos for Robotics 为开发者提供构建、验证和部署物理 AI 的通用安全底座。NVIDIA 机器人与边缘 AI 副总裁 <strong>Deepu Talla</strong> 指出：物理 AI 正在重塑工厂、仓库与物流；机器人团队需要<strong>统一安全架构</strong>，才能更有信心地将自主系统引入工业运营，与人类员工并肩作业。</p>
+<p>与「只认证某个模型或某个传感器」的碎片化方案不同，Halos 的三层结构（见上表）覆盖：<strong>硬件算力 + 传感器桥接</strong>（IGX Thor、Holoscan Sensor Bridge）→ <strong>Halos OS 软件栈</strong>（Halos Core 运行功能 + Outside-In 安全应用）→ <strong>ANSI/ANAB 认可的 AI 系统检测实验室</strong>（对接 TÜV、UL 等第三方认证）。ANSI 总裁 Laurie E. Locascio 在新闻稿中称，随着 AI 机器人进入工业环境，行业需要<strong>标准化、国际公认</strong>的评估框架——ANAB 对 NVIDIA 实验室的认可，为企业的认证路径提供了严谨基础。</p>
+
+<h2>Agility Digit：首家深度集成伙伴</h2>
+<p>人形机器人与物理 AI 公司 <strong>Agility Robotics</strong> 成为首家将 Halos for Robotics 组件整合进<strong>专有安全系统</strong>的企业。其人形机器人 <strong>Digit</strong> 面向物流、制造与仓库工业作业，现正通过 NVIDIA 合作将 <strong>IGX Thor</strong> 与 <strong>Halos Core</strong> 集成至 Digit 的<strong>安全人员检测</strong>能力：Thor 提供带内置安全机制的工业级 AI 算力，Halos Core 支撑与安全相关的 OS 层功能。</p>
+<p>Digit 已在亚马逊、GXO、舍弗勒、丰田汽车加拿大制造公司等客户的工厂与物流场景中运行。Agility 还将加入 <strong>Halos AI 系统检测实验室</strong>，在第三方认证前确保 Digit 的安全相关软件、AI 组件与网络安全符合 <strong>IEC 61508</strong>、<strong>ISO 13849</strong> 与 <strong>ISO/IEC TR 5469</strong> 等标准。CEO <strong>Peggy Johnson</strong> 表示：要让人形机器人规模化产生价值，必须把安全性<strong>内置于机器人</strong>并在全系统验证——与 NVIDIA 合作实施 Halos，是引入工业工作流安全可控自动化的必要条件。</p>
+
+<h2>Outside-In 安全：超越机载感知</h2>
+<p>Halos OS 应用层中的 <strong>Outside-In Safety Blueprint</strong>（现已在 GitHub 开放抢先访问）代表一种「由外向内」的安全思路：利用<strong>外部摄像头与 AI 智能体</strong>补充机器人自身传感器盲区，并根据工业现场人员、设备与其他 AMR 的动态变化调整行为。工业应用伙伴 FORT Robotics、英业达、凯傲集团、Lyte AI、Neurealm 等正基于该蓝图开发<strong>功能安全智能体</strong>——对 SEO 与方案设计而言，「机载功能安全 + 场域外部感知」是 Halos 与纯软件栈安全框架的关键差异点。</p>
+
+<h2>生态系统与认证管线</h2>
+<p>Halos for Robotics 生态横跨软件 RTOS（Acontis、FreeRTOS、QNX）、嵌入式系统（研华、NexCobot）、传感器与芯片（英飞凌、NXP、ST、TI）及多家评估机构。新闻稿提到：在 TÜV 南德已对 <strong>Thor SoC</strong> 与 <strong>Halos Core</strong> 进行 ISO 26262 检测的基础上，德国莱茵 TÜV 正为 IGX Thor、Halos OS 与 Holoscan Sensor Bridge 做功能安全认证准备。检测实验室已汇集 <strong>40+</strong> 制造商、认证机构与安全供应商；TÜV 莱茵、TÜV 南德、UL Solutions、exida、SGS、CertX 等将其纳入认证流程——写产业分析时可对照「ISO 26262（汽车衍生）→ IEC 61508 / ISO 13849（工业机械）→ ISO/IEC TR 5469（AI 安全）」的交叉映射。</p>
+
+<h2>开发者与上市时间</h2>
+<p>面向 <strong>NVIDIA IGX</strong> 的 <strong>Halos Core</strong> 已向注册开发者提供<strong>早期访问</strong>，支持 Linux 以及 Linux 搭配 <strong>QNX OS for Safety 8.0</strong>。Outside-In Safety Blueprint 作为 Halos OS 应用层开源组件在 GitHub 抢先开放。新闻稿提醒：许多产品与功能仍处于不同阶段，上市时间可能变化——本站存档以 2026-06-22 公开博文为准。</p>
+
+<h2>与科技 Hub 其它内容的衔接</h2>
+<p>本站已有 <a href="/articles/sensor-tower-state-of-ai-2026.html">State of AI 2026</a>（消费端 GenAI 竞争与商业层）存档；本篇补全<strong>工业物理 AI 安全栈</strong>维度。若对照游戏 Hub 的 <a href="/articles/apple-store-ios-games-cn-20260601.html">App Store 游戏排行</a> 或 Steam 周榜，消费娱乐榜单与工厂 floor 人形机器人安全属于不同检索意图——本篇适合「NVIDIA Halos robotics」「Agility Digit safety」「physical AI functional safety」等长尾。</p>
+<p>科技 Hub 下方半导体 / 平台前十与 IR 书签已对搜索引擎 <code>noindex</code>；本篇正文与表格为可索引原创解读。更新流程：编辑 JSON → <code>npm run build-articles &amp;&amp; npm run build-hubs</code>。</p>
+
+<h2 id="article-seo-keywords">检索与官方入口</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://blogs.nvidia.cn/blog/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai/" target="_blank" rel="noopener noreferrer">NVIDIA 博客（中文）</a>
+  <a class="pill" href="https://blogs.nvidia.com/blog/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai/" target="_blank" rel="noopener noreferrer">NVIDIA blog (EN)</a>
+  <a class="pill" href="https://www.google.com/search?q=NVIDIA+Halos+for+Robotics" target="_blank" rel="noopener noreferrer">NVIDIA Halos for Robotics</a>
+  <a class="pill" href="https://www.google.com/search?q=Agility+Digit+IGX+Thor" target="_blank" rel="noopener noreferrer">Agility Digit IGX Thor</a>
+  <a class="pill" href="https://www.google.com/search?q=ISO+13849+humanoid+robot+safety" target="_blank" rel="noopener noreferrer">ISO 13849 人形机器人</a>
+  <a class="pill" href="https://www.google.com/search?q=physical+AI+functional+safety" target="_blank" rel="noopener noreferrer">physical AI functional safety</a>
+  <a class="pill" href="/tech.html">科技 Hub</a>
+  <a class="pill" href="/articles/index.html">全部原创索引</a>
+</div>

@@ -1,0 +1,30 @@
+<p>This page archives the official <a href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener noreferrer">Google Trends US RSS feed</a> (Daily Search Trends), snapshot <strong>2026-06-24</strong>. Raw data: <code>data/google-trends-us-rss-snapshot.json</code>. It complements our <a href="/articles/google-trends-us-search-ranking-20260622.html">Jun 22 CSV Trending archive</a>: fewer rows, but each item ships with <strong>related news headlines and URLs</strong> so you can see why a query spiked.</p>
+
+<p>The RSS feed matches the <a href="https://trends.google.com/trending?geo=US" target="_blank" rel="noopener noreferrer">Trending web UI</a>. Fields include the query, <code>ht:approx_traffic</code> bands (e.g. 5000+, 500+), <code>pubDate</code>, and Google-curated <code>ht:news_item</code> blocks. Traffic bands are <strong>relative ranges</strong>, not exact search counts. Subscribe in any reader (Feedly, Inoreader, NetNewsWire) with <code>https://trends.google.com/trending/rss?geo=US</code>.</p>
+
+<h2>Trending now (full RSS pull)</h2>
+<!-- GOOGLE_TRENDS_RSS_SNAPSHOT_AUTO -->
+
+<h2>What readers searched for</h2>
+<p><strong>NBA Draft 2026</strong> dominates: <strong>Tarris Reed Jr.</strong> (5000+, Nuggets #26 to Spurs), <strong>Henri Veesaar</strong>, <strong>Bryce James</strong>, <strong>Chris Cenac</strong>, plus ESPN broadcast chatter around <strong>Malika Andrews</strong> and prospect interviews. <strong>Russell Westbrook</strong> stays on-chart via off-court business coverage.</p>
+<p><strong>Streaming TV</strong>: <strong>Widow's Bay</strong> (5000+, Apple TV+ location shoot, season 2 hopes).</p>
+<p><strong>FIFA World Cup 2026</strong>: <strong>Lumumba Vea</strong> (5000+, DR Congo “statue man” superfan) and <strong>Arthur Masuaku</strong> (1000+, Colombia vs DR Congo) extend the soccer news cycle.</p>
+<p><strong>Entertainment</strong>: <strong>Keke Palmer</strong> (2000+, relationship status with Hot Ones host Sean Evans).</p>
+
+<h2>How to use this archive</h2>
+<ul>
+  <li><strong>RSS</strong> — faster than reloading Trending; we keep news URLs in JSON for citation.</li>
+  <li><strong>Explore links</strong> — each trend opens Google Explore for US interest curves.</li>
+  <li><strong>vs CSV export</strong> — RSS ~10 items per pull; CSV exports can list hundreds (see Jun 22 article).</li>
+  <li><strong>US only</strong> — change <code>geo=</code> in the RSS URL for other markets.</li>
+  <li><strong>Refresh</strong> — <code>node tools/fetch-google-trends-rss.mjs</code> then <code>npm run build-articles</code>.</li>
+</ul>
+
+<h2 id="article-seo-keywords">Related links</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener noreferrer">Google Trends RSS (US)</a>
+  <a class="pill" href="https://trends.google.com/trending?geo=US" target="_blank" rel="noopener noreferrer">Google Trends Trending</a>
+  <a class="pill" href="/articles/google-trends-us-search-ranking-20260622.html">CSV archive (Jun 22)</a>
+  <a class="pill" href="/portal.html">Portal hub</a>
+  <a class="pill" href="/articles/index.html">All articles</a>
+</div>

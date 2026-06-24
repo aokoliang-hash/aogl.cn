@@ -1,0 +1,266 @@
+{
+  "fetchedAt": "2026-06-24",
+  "fetchedAtTime": "RSS feed pull",
+  "geo": "US",
+  "geoLabelEn": "United States",
+  "geoLabelZh": "美国",
+  "windowLabelEn": "Daily Search Trends (RSS)",
+  "windowLabelZh": "Daily Search Trends（RSS 订阅）",
+  "totalItemsInFeed": 10,
+  "sources": {
+    "rss": "https://trends.google.com/trending/rss?geo=US",
+    "trending": "https://trends.google.com/trending?geo=US"
+  },
+  "entries": [
+    {
+      "trend": "tarris reed jr",
+      "traffic": "5000+",
+      "pubDate": "Tue, 23 Jun 2026 20:00:00 -0700",
+      "pictureSource": "CT Insider",
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=tarris%20reed%20jr",
+      "newsItems": [
+        {
+          "title": "NBA Draft 2026 live updates: UConn’s Tarris Reed Jr. to Spurs, Alex Karaban awaits pick",
+          "url": "https://www.ctinsider.com/sports/uconn-mens-basketball/article/nba-draft-2026-live-updates-round-1-uconn-22315337.php",
+          "source": "CT Insider"
+        },
+        {
+          "title": "Could Tarris Reed (finally) be the solution at backup center?",
+          "url": "https://www.libertyballers.com/76ers-draft-rumors-news/93802/2026-nba-draft-could-tarris-reed-finally-be-the-solution-at-backup-center",
+          "source": "Liberty Ballers"
+        },
+        {
+          "title": "Nuggets Trading No. 26 Pick Tarris Reed To Spurs",
+          "url": "https://www.hoopsrumors.com/2026/06/nuggets-trading-no-26-pick-tarris-reed-to-spurs.html",
+          "source": "Hoops Rumors"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "trend": "widows bay",
+      "traffic": "5000+",
+      "pubDate": "Tue, 23 Jun 2026 19:50:00 -0700",
+      "pictureSource": "The Hollywood Reporter",
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=widows%20bay",
+      "newsItems": [
+        {
+          "title": "Kingston Rumi Southwick on Filming ’Widow’s Bay’ in Massachusetts, Hopes for Season 2",
+          "url": "https://www.hollywoodreporter.com/tv/tv-features/kingston-rumi-southwick-widows-bay-season-1-interview-1236626346/",
+          "source": "The Hollywood Reporter"
+        },
+        {
+          "title": "5 TV Shows Like Widow's Bay You Need To Watch",
+          "url": "https://www.bgr.com/2197487/shows-like-widows-bay-apple-tv/",
+          "source": "BGR"
+        },
+        {
+          "title": "‘Widow’s Bay’ Star Reflects on How Important It Was to Shoot on Location",
+          "url": "https://gizmodo.com/widows-bay-star-reflects-on-how-important-it-was-to-shoot-on-location-2000775618",
+          "source": "Gizmodo"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "trend": "lumumba vea",
+      "traffic": "5000+",
+      "pubDate": "Tue, 23 Jun 2026 19:50:00 -0700",
+      "pictureSource": "FOX Sports",
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=lumumba%20vea",
+      "newsItems": [
+        {
+          "title": "Why Does 'Lumumba Vea,' DR Congo's 'Statue Man,' Stand The Whole Match?",
+          "url": "https://www.foxsports.com/stories/soccer/world-cup-dr-congo-statue-man-lumumba-vea",
+          "source": "FOX Sports"
+        },
+        {
+          "title": "A Nation’s Soccer Hero: The Superfan Who Says He Can Stop Goals",
+          "url": "https://www.wsj.com/sports/soccer/world-cup-congo-mboladinga-lumumba-8a719d1c",
+          "source": "WSJ"
+        },
+        {
+          "title": "The Story Behind the Best Dressed Member of the Democratic Republic of the Congo’s World Cup Delegation",
+          "url": "https://www.vogue.com/article/democratic-republic-of-congo-world-cup-patrice-lumumba-statue",
+          "source": "Vogue"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "trend": "chris cenac",
+      "traffic": "2000+",
+      "pubDate": "Tue, 23 Jun 2026 19:50:00 -0700",
+      "pictureSource": "ESPN",
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=chris%20cenac",
+      "newsItems": [
+        {
+          "title": "Cameron Carr",
+          "url": "https://www.espn.com/nba/player/_/id/5113969/cameron-carr",
+          "source": "ESPN"
+        },
+        {
+          "title": "How ABS is helping left-handed hitters dominate like never before",
+          "url": "https://www.espn.com/video/clip/_/id/49154132/how-abs-helping-left-handed-hitters-dominate-never-before",
+          "source": "ESPN"
+        },
+        {
+          "title": "Sergio de Larrea",
+          "url": "https://www.espn.com/nba/player/_/id/5279129/sergio-de-larrea",
+          "source": "ESPN"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "trend": "keke palmer",
+      "traffic": "2000+",
+      "pubDate": "Tue, 23 Jun 2026 19:50:00 -0700",
+      "pictureSource": "People.com",
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=keke%20palmer",
+      "newsItems": [
+        {
+          "title": "Keke Palmer Addresses Her Relationship Status with Sean Evans After Being Seen Out at Dinner: 'That's My Guy'",
+          "url": "https://people.com/keke-palmer-addresses-her-relationship-status-with-sean-evans-12004746",
+          "source": "People.com"
+        },
+        {
+          "title": "Oscar Winner’s AI-Generated Voice Used for ‘The Odyssey’",
+          "url": "https://www.thedailybeast.com/emmy-winner-keke-palmer-breaks-silence-on-romance-rumors-with-hot-ones-host-sean-evans/",
+          "source": "The Daily Beast"
+        },
+        {
+          "title": "Keke Palmer Breaks Silence on Sean Evans Dating Rumors",
+          "url": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/keke-palmer-sean-evans-dating-rumors-hot-ones",
+          "source": "Complex"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "trend": "henri veesaar",
+      "traffic": "1000+",
+      "pubDate": "Tue, 23 Jun 2026 19:50:00 -0700",
+      "pictureSource": "Yahoo Sports",
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=henri%20veesaar",
+      "newsItems": [
+        {
+          "title": "Is Henri Veesaar a candidate for the Sixers to move back and target?",
+          "url": "https://sports.yahoo.com/articles/henri-veesaar-candidate-sixers-move-162141235.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Henri Veesaar - 2026 NBA Draft Guide",
+          "url": "https://www.nytimes.com/athletic/interactive/nba-draft-guide-2026/player/henri-veesaar-north-carolina-big/",
+          "source": "The New York Times"
+        },
+        {
+          "title": "Where Henri Veesaar is projected to go in ESPN's final mock draft",
+          "url": "https://tarheelswire.usatoday.com/story/sports/college/tarheels/mens-basketball/2026/06/23/unc-basketball-espn-mocks-henri-veesaar-to-new-york-knicks/90653239007/",
+          "source": "Tar Heels Wire"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "trend": "bryce james",
+      "traffic": "1000+",
+      "pubDate": "Tue, 23 Jun 2026 19:50:00 -0700",
+      "pictureSource": "HotNewHipHop",
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=bryce%20james",
+      "newsItems": [
+        {
+          "title": "Bronny and Bryce James Just Got Matching Gold Chains Together",
+          "url": "https://www.hotnewhiphop.com/999646-bryce-and-bronny-james-chain-streetwear-news",
+          "source": "HotNewHipHop"
+        },
+        {
+          "title": "LeBron James gets different Father’s Day messages from sons Bronny, Bryce",
+          "url": "https://sports.yahoo.com/articles/lebron-james-gets-different-father-225231093.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "LeBron James and Bronny James father-son moments this season",
+          "url": "https://www.nba.com/watch/video/lebron-james-and-bronny-james-father-son-moments-this-season",
+          "source": "NBA.com"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "trend": "arthur masuaku",
+      "traffic": "1000+",
+      "pubDate": "Tue, 23 Jun 2026 19:50:00 -0700",
+      "pictureSource": "Haberler",
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=arthur%20masuaku",
+      "newsItems": [
+        {
+          "title": "Masuaku hangi takımda oynuyor, Demokratik Kongolu Masuaku Beşiktaş’ta oynadı mı?",
+          "url": "https://www.haberler.com/haber/masuaku-hangi-takimda-oynuyor-demokratik-kongolu-19982345-haberi/",
+          "source": "Haberler"
+        },
+        {
+          "title": "Colombia vs. DR Congo: How to Watch, TV Channel, Live Stream, Time",
+          "url": "https://www.foxsports.com/stories/soccer/how-to-watch-colombia-vs-dr-congo-tv-channel-live-stream-2026-fifa-world-cup-group-k",
+          "source": "FOX Sports"
+        },
+        {
+          "title": "Colombia vs DR Congo live updates: Second half latest as Colombia look to avoid World Cup first",
+          "url": "https://www.nytimes.com/athletic/live-blogs/colombia-vs-dr-congo-live-updates-world-cup-2026-score-result/EUQTBbkMjiti/",
+          "source": "The New York Times"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "trend": "russell westbrook",
+      "traffic": "500+",
+      "pubDate": "Tue, 23 Jun 2026 20:00:00 -0700",
+      "pictureSource": "International Business Times Australia",
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=russell%20westbrook",
+      "newsItems": [
+        {
+          "title": "Russell Westbrook Bets on \"Unsexy\" Businesses to Join Jordan and James in Billionaire's Club",
+          "url": "https://www.ibtimes.com.au/russell-westbrook-business-strategy-1871135",
+          "source": "International Business Times Australia"
+        },
+        {
+          "title": "Russell Westbrook pledged to join Michael Jordan and LeBron James in an exclusive club: \"It's not a sexy business by any means, but it's a very lucrative business\"",
+          "url": "https://www.basketballnetwork.net/off-the-court/russell-westbrook-pledged-to-join-michael-jordan-and-lebron-james-in-an-exclusive-club",
+          "source": "Basketball Network"
+        },
+        {
+          "title": "Inside Russell Westbrook's Inspiring Life Beyond Basketball",
+          "url": "https://www.naturaldiamonds.com/culture-and-style/russell-westbrook/",
+          "source": "Only Natural Diamonds"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "trend": "malika andrews",
+      "traffic": "500+",
+      "pubDate": "Tue, 23 Jun 2026 20:00:00 -0700",
+      "pictureSource": "The Mirror US",
+      "exploreUrl": "https://trends.google.com/trends/explore?geo=US&q=malika%20andrews",
+      "newsItems": [
+        {
+          "title": "Baffled ESPN viewers make the same complaint during NBA Draft broadcast",
+          "url": "https://www.themirror.com/sport/basketball/nba-draft-reaction-1902938",
+          "source": "The Mirror US"
+        },
+        {
+          "title": "Grading Giannis trade to Heat: Blockbuster deal's ripple effects on East contenders",
+          "url": "https://wiscnews.com/sports/professional/nba/article_938a19bb-94f4-5751-b7fa-a379ddf9ff0e.html",
+          "source": "Wiscnews.com"
+        },
+        {
+          "title": "'Really Struggling,' 'Pull It Together' -- NBA World Rips Lisa Salters' 'Painful' Prospect Interviews on ESPN's 2026 Draft Broadcast",
+          "url": "https://www.profootballnetwork.com/nba/nba-world-rips-lisa-salters-painful-prospect-interviews-on-espns-2026-draft-broadcast/",
+          "source": "PFSN"
+        }
+      ],
+      "rank": 10
+    }
+  ]
+}
