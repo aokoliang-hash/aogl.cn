@@ -1,0 +1,202 @@
+{
+  "fetchedAt": "2026-06-01",
+  "reportYear": 2026,
+  "reportTitleEn": "Brand Finance Global 500 2026",
+  "reportTitleZh": "Brand Finance Global 500 2026",
+  "geoLabelEn": "Global",
+  "geoLabelZh": "全球",
+  "totalBrandsInCsv": 500,
+  "brandsWithValueData": 10,
+  "aaaPlusCount": 37,
+  "sources": {
+    "pdfPreview": "https://static.brandirectory.com/reports/brand-finance-global-500-2026-preview.pdf",
+    "csv": "original/brandirectory-ranking-data-global-2026.csv",
+    "brandFinance": "https://brandfinance.com/"
+  },
+  "highlights": [
+    {
+      "key": "apple",
+      "headlineEn": "$608 billion: Apple's brand value, up 6% from 2025",
+      "headlineZh": "6080 亿美元：Apple 品牌价值，较 2025 年增长 6%"
+    },
+    {
+      "key": "nvidia",
+      "headlineEn": "NVIDIA's brand is now more valuable than Facebook and Walmart",
+      "headlineZh": "NVIDIA 品牌价值已超越 Facebook 与 Walmart"
+    },
+    {
+      "key": "revolut",
+      "headlineEn": "239%: Revolut enters the Global 500 for the first time",
+      "headlineZh": "239%：Revolut 首次进入 Global 500"
+    },
+    {
+      "key": "youtube",
+      "headlineEn": "AAA+: YouTube becomes the world's strongest brand",
+      "headlineZh": "AAA+：YouTube 成为全球最强品牌"
+    }
+  ],
+  "top10": [
+    {
+      "rank2026": 1,
+      "rank2025": 1,
+      "name": "Apple",
+      "country": "United States",
+      "value2026UsdM": 607641.7,
+      "value2025UsdM": 574510.08,
+      "valueChangePct": 6,
+      "rating2026": "AAA",
+      "rating2025": "AAA",
+      "rankDelta": 0
+    },
+    {
+      "rank2026": 2,
+      "rank2025": 2,
+      "name": "Microsoft",
+      "country": "United States",
+      "value2026UsdM": 565249.75,
+      "value2025UsdM": 461069.06,
+      "valueChangePct": 23,
+      "rating2026": "AAA+",
+      "rating2025": "AAA+",
+      "rankDelta": 0
+    },
+    {
+      "rank2026": 3,
+      "rank2025": 3,
+      "name": "Google",
+      "country": "United States",
+      "value2026UsdM": 433075.1,
+      "value2025UsdM": 412981.33,
+      "valueChangePct": 5,
+      "rating2026": "AAA+",
+      "rating2025": "AAA+",
+      "rankDelta": 0
+    },
+    {
+      "rank2026": 4,
+      "rank2025": 4,
+      "name": "Amazon",
+      "country": "United States",
+      "value2026UsdM": 369876.2,
+      "value2025UsdM": 356385.51,
+      "valueChangePct": 4,
+      "rating2026": "AAA",
+      "rating2025": "AAA",
+      "rankDelta": 0
+    },
+    {
+      "rank2026": 5,
+      "rank2025": 9,
+      "name": "NVIDIA",
+      "country": "United States",
+      "value2026UsdM": 184322.06,
+      "value2025UsdM": 87870.98,
+      "valueChangePct": 110,
+      "rating2026": "AAA+",
+      "rating2025": "AAA",
+      "rankDelta": 4
+    },
+    {
+      "rank2026": 6,
+      "rank2025": 7,
+      "name": "TikTok/Douyin",
+      "country": "China",
+      "value2026UsdM": 153543.5,
+      "value2025UsdM": 105789.93,
+      "valueChangePct": 45,
+      "rating2026": "AA+",
+      "rating2025": "AAA-",
+      "rankDelta": 1
+    },
+    {
+      "rank2026": 7,
+      "rank2025": 5,
+      "name": "Walmart",
+      "country": "United States",
+      "value2026UsdM": 140984.71,
+      "value2025UsdM": 137182.78,
+      "valueChangePct": 3,
+      "rating2026": "AAA+",
+      "rating2025": "AAA",
+      "rankDelta": -2
+    },
+    {
+      "rank2026": 8,
+      "rank2025": 6,
+      "name": "Samsung Group",
+      "country": "South Korea",
+      "value2026UsdM": 119218.09,
+      "value2025UsdM": 110593.29,
+      "valueChangePct": 8,
+      "rating2026": "AAA",
+      "rating2025": "AAA",
+      "rankDelta": -2
+    },
+    {
+      "rank2026": 9,
+      "rank2025": 8,
+      "name": "Facebook",
+      "country": "United States",
+      "value2026UsdM": 107060.61,
+      "value2025UsdM": 91456.96,
+      "valueChangePct": 17,
+      "rating2026": "AA+",
+      "rating2025": "AAA-",
+      "rankDelta": -1
+    },
+    {
+      "rank2026": 10,
+      "rank2025": 10,
+      "name": "State Grid Corporation of China",
+      "country": "China",
+      "value2026UsdM": 102441.22,
+      "value2025UsdM": 85625.94,
+      "valueChangePct": 20,
+      "rating2026": "AAA+",
+      "rating2025": "AAA+",
+      "rankDelta": 0
+    }
+  ],
+  "brandStrength": [
+    {
+      "strengthRank": 1,
+      "name": "YouTube",
+      "country": "United States",
+      "bsi": 95.3,
+      "rating2026": "AAA+",
+      "strengthRank2025": 8,
+      "valueRank2026": 49
+    },
+    {
+      "strengthRank": 2,
+      "name": "WeChat",
+      "country": "China",
+      "bsi": 95.1,
+      "rating2026": "AAA+",
+      "strengthRank2025": 1,
+      "valueRank2026": 33,
+      "valueChangePct": 46,
+      "value2026UsdM": 48100
+    },
+    {
+      "strengthRank": 3,
+      "name": "Microsoft",
+      "country": "United States",
+      "bsi": 94.7,
+      "rating2026": "AAA+",
+      "strengthRank2025": 2,
+      "valueRank2026": 2
+    },
+    {
+      "strengthRank": 5,
+      "name": "LEGO",
+      "country": "Denmark",
+      "bsi": 94.2,
+      "rating2026": "AAA+",
+      "strengthRank2025": 5,
+      "valueRank2026": 138,
+      "valueChangePct": 59,
+      "value2026UsdM": 17600
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<p>本文存档 <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI 官方博客</a> 与 <a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom 投资者新闻稿</a>（2026-06-24）：<strong>OpenAI and Broadcom unveil LLM-optimized inference chip</strong>——联合发布首款专为 LLM 推理设计的 <strong>Jalapeño Intelligence Processor</strong>。科技 Hub 本篇以文字解读发布要点；题图为 Sam Altman 与 Hock Tan 手持 Jalapeño 晶圆（OpenAI 官方素材）。</p>
+
+<p>这是 OpenAI「自建全栈基础设施」路线的硬件里程碑：不再仅依赖 NVIDIA/AMD 通用 GPU 租赁，而是与 Broadcom（NASDAQ: AVGO）及 Celestica 共同工业化<strong>推理加速器 + 机架 + 网络 + 量产</strong>。与 Hub 内 <a href="/articles/nvidia-halos-robotics-physical-ai-20260622.html">NVIDIA Halos 物理 AI 安全</a>、<a href="/articles/sensor-tower-state-of-ai-2026.html">State of AI 2026</a> 对照，本篇聚焦<strong>推理侧 ASIC 与数据中心 capex</strong>，而非消费端 App 竞争或工厂 floor 功能安全。</p>
+
+<h2>发布摘要</h2>
+<p><strong>OpenAI</strong> 与 <strong>Broadcom（NASDAQ: AVGO）</strong> 今日发布 <strong>Jalapeño</strong>——OpenAI 首款 <strong>Intelligence Processor</strong>：围绕 OpenAI 对 LLM 推理未来的愿景架构的加速器，也是两家公司共建的多代计算平台中的<strong>首款 AI 加速器</strong>，目标让先进 AI 更快、更可靠、对更多人更可及。</p>
+<p>Jalapeño 由 Broadcom 总裁兼 CEO <strong>Hock Tan</strong> 与总裁 <strong>Charlie Kawwas</strong> 交付给 OpenAI CEO <strong>Sam Altman</strong> 与总裁 <strong>Greg Brockman</strong>，标志 OpenAI 在「模型与产品背后的全栈」战略上迈出重要一步。</p>
+
+<h2>架构与合作伙伴</h2>
+<p>OpenAI 基于对 LLM 基础的深度理解<strong>从零设计</strong>该芯片，输入来自其模型路线图、内核（kernels）、Serving 系统与产品需求；<strong>Broadcom</strong> 与 <strong>Celestica</strong> 协助工业化：芯片实现、板卡、机架系统集成、高性能网络与可扩展量产系统。</p>
+<p>Jalapeño 被设计为具有<strong>灵活性</strong>，可在 OpenAI 对当前与未来 AI 模型推理需求的洞察下，适配<strong>全行业各类 LLM</strong>。工程样片已在实验室以<strong>量产目标频率与功耗</strong>运行 ML 工作负载，包括 <strong>GPT‑5.3‑Codex‑Spark</strong>。</p>
+<p>OpenAI 仍在测量最终性能，但早期测试显示 Jalapeño 的<strong>每瓦性能（performance per watt）</strong>将显著优于当前业界最优水平；详细技术报告将在未来数月公布。架构通过减少数据搬运、平衡算力/内存/网络资源，使<strong>实际利用率</strong>更接近理论峰值。Broadcom 的硅片实现与网络技术（含 <strong>Tomahawk</strong> 网络芯片）支撑平台大规模量产。</p>
+
+<h2>高管引述</h2>
+<blockquote>
+  <p>「世界正在走向算力驱动的经济，」OpenAI 总裁兼联合创始人 <strong>Greg Brockman</strong> 表示。「Jalapeño 是我们长期全栈基础设施战略的一部分，旨在让算力更充裕，从而使 AI 更快、更可靠、对个人与企业更实惠，并可用于解决更重要的问题。通过自行设计更多栈层，我们能以更高效率服务更多智能，并推动先进 AI 向更广泛的可及性迈进。」</p>
+</blockquote>
+<blockquote>
+  <p>「Jalapeño 是与 OpenAI 研究员紧密协作、基于详细洞察<strong>从零为 LLM 推理设计</strong>的，」OpenAI 硬件项目负责人 <strong>Richard Ho</strong> 说。「我们围绕对前沿 AI 模型最重要的内核、内存搬运、网络与 Serving 模式优化架构。基于早期测试，Jalapeño 将高效执行我们最重要的工作负载，接近硬件理论极限。」</p>
+</blockquote>
+<blockquote>
+  <p>「与 OpenAI 的合作代表对扩展未来十年 AI 所需<strong>物理基础设施</strong>的根本承诺，」Broadcom 总裁兼 CEO <strong>Hock Tan</strong> 表示。「这只是多代路线图的起点。通过与 OpenAI 直接联合开发业界领先的硅片，我们正在与 Microsoft 等伙伴一起，自 2026 年起启用<strong>千兆瓦（gigawatt）级</strong>数据中心部署。」</p>
+</blockquote>
+
+<h2>专为 LLM 推理设计的平台</h2>
+<p>Jalapeño 是面向现代 LLM 推理的<strong>空白页（blank-slate）设计</strong>，而非从早期 AI 工作负载改造而来的通用加速器。它借鉴 OpenAI 每日运行的 ChatGPT、Codex、API 与未来 Agent 产品系统，同时也面向<strong>全行业</strong>当前与未来 LLM。目标是结合当今领先 AI 加速器的<strong>算力与吞吐</strong>，以及更接近最快专用推理系统的<strong>延迟</strong>，使其适合大规模交互式 LLM 产品。</p>
+<p>这就是<strong>全栈优势</strong>：OpenAI 不仅开发前沿模型或在之上做产品，还设计其下的基础设施——芯片架构、内核、内存系统、网络、调度、部署系统与产品体验。因 OpenAI 横跨全栈，每一层可围绕同一目标优化：让模型对用户<strong>更快、更可靠、更便宜</strong>。</p>
+
+<h2>飞轮：基础设施 → 模型 → 产品 → 再投资</h2>
+<p>Jalapeño 强化 OpenAI 进展背后的飞轮：更好的基础设施 → 更高算力效率 → 更好的训练与 Serving → 更强的模型 → 更好的产品 → 更多使用与收入 → 再投资下一代基础设施。长期看，该循环有助于让智能<strong>更强、更可靠、更便宜</strong>。</p>
+
+<h2>九个月流片：OpenAI 模型加速设计</h2>
+<p>Jalapeño 从初始设计到制造 <strong>tape-out</strong> 仅<strong>九个月</strong>——OpenAI 称这是高性能先进半导体领域<strong>有史以来最快的 ASIC 开发周期</strong>。速度来自 OpenAI 工程团队与 Broadcom 的深度软硬件协同，以及<strong>使用 OpenAI 模型加速部分设计与优化流程</strong>。服务用户的同一套模型，正在帮助改进运行未来模型的基础设施——若 AI 能帮助工程师更快设计更好的芯片，可降低全行业算力成本并民主化先进 AI。</p>
+
+<h2>多代平台与 Celestica</h2>
+<p>Jalapeño 是多代计算平台的第一步，计划<strong>2026 年底前</strong>首次部署并在随后年份扩展，组合包括：OpenAI 设计的加速器 + Broadcom 硅片实现/网络/连接 + <strong>Celestica</strong> 的板卡、机架与系统专长。</p>
+
+<h2>推理即 AI 触达用户之处</h2>
+<p>这项工作的要点很简单：<strong>推理是 AI 触达人的地方</strong>。成本、速度、可靠性的每一次改进，都可能体现为：更快的 ChatGPT 回答、更少等待的 Codex 多步任务、更便宜的 API、或在高峰需求时更稳定的服务。民主化 AI 意味着让先进模型<strong>可及、可靠、足够便宜</strong>，供学生、开发者、小企业、研究人员、企业与任何学习/创造/解决难题的人日常使用。</p>
+
+<h2>与科技 Hub 其它内容的衔接</h2>
+<p>下方半导体/平台前十与 IR 书签已对搜索引擎 <code>noindex</code>；本篇为可索引原创解读。更新流程：编辑 JSON → <code>npm run build-articles</code> → <code>npm run build-hubs</code> → <code>npm run build-seo-locales</code>。</p>
+
+<h2 id="article-seo-keywords">检索与官方入口</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI 官方博客</a>
+  <a class="pill" href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom IR 新闻稿</a>
+  <a class="pill" href="https://www.google.com/search?q=OpenAI+Jalape%C3%B1o+inference+chip" target="_blank" rel="noopener noreferrer">OpenAI Jalapeño chip</a>
+  <a class="pill" href="https://www.google.com/search?q=Broadcom+Tomahawk+AI+datacenter" target="_blank" rel="noopener noreferrer">Broadcom Tomahawk datacenter</a>
+  <a class="pill" href="https://www.google.com/search?q=LLM+inference+ASIC+2026" target="_blank" rel="noopener noreferrer">LLM inference ASIC 2026</a>
+  <a class="pill" href="https://www.google.com/search?q=OpenAI+custom+silicon+Broadcom" target="_blank" rel="noopener noreferrer">OpenAI custom silicon Broadcom</a>
+  <a class="pill" href="/tech.html">科技 Hub</a>
+  <a class="pill" href="/articles/index.html">全部原创索引</a>
+</div>

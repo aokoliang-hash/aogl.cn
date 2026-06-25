@@ -26,6 +26,7 @@ import { injectAppleStoreIosGamesCnSnapshot } from "./apple-store-ios-games-lib.
 import { injectStateOfAiSnapshot } from "./sensor-tower-state-of-ai-lib.mjs";
 import { injectNvidiaHalosRoboticsSnapshot } from "./nvidia-halos-robotics-lib.mjs";
 import { injectEmplifiFacebookUsPagesSnapshot } from "./emplifi-facebook-lib.mjs";
+import { injectBrandFinanceGlobal500Snapshot } from "./brand-finance-global-500-lib.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -242,6 +243,7 @@ function loadArticles() {
           body = injectStateOfAiSnapshot(body, lang);
           body = injectNvidiaHalosRoboticsSnapshot(body, lang);
           body = injectEmplifiFacebookUsPagesSnapshot(body, lang);
+          body = injectBrandFinanceGlobal500Snapshot(body, lang);
           raw["body" + suffixForLang(lang)] = body;
         } else {
           console.warn("Missing htmlFragments file:", rel, "for", raw.slug);

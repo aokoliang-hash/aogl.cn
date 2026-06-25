@@ -1,0 +1,501 @@
+﻿"Rank - 2026","Rank - 2025","Name","Country","Brand Value (USD) - 2026","Brand Value (USD) - 2025","Brand Rating - 2026","Brand Rating - 2025"
+1,1,Apple,"United States",607641.7,574510.08,AAA,AAA
+2,2,Microsoft,"United States",565249.75,461069.06,AAA+,AAA+
+3,3,Google,"United States",433075.1,412981.33,AAA+,AAA+
+4,4,Amazon,"United States",369876.2,356385.51,AAA,AAA
+5,9,NVIDIA,"United States",184322.06,87870.98,AAA+,AAA
+6,7,TikTok/Douyin,China,153543.5,105789.93,AA+,AAA-
+7,5,Walmart,"United States",140984.71,137182.78,AAA+,AAA
+8,6,"Samsung Group","South Korea",119218.09,110593.29,AAA,AAA
+9,8,Facebook,"United States",107060.61,91456.96,AA+,AAA-
+10,10,"State Grid Corporation of China",China,102441.22,85625.94,AAA+,AAA+
+11,11,T,Germany,-,-,-,-
+12,13,ICBC,China,-,-,-,-
+13,12,Instagram,"United States",-,-,-,-
+14,14,"China Construction Bank",China,-,-,-,-
+15,17,"Home Depot","United States",-,-,-,-
+16,15,Verizon,"United States",-,-,-,-
+17,19,"Bank of China",China,-,-,-,-
+18,21,Oracle,"United States",-,-,-,-
+19,16,"Agricultural Bank of China",China,-,-,-,-
+20,18,Toyota,Japan,-,-,-,-
+21,25,"Allianz Group",Germany,-,-,-,-
+22,20,Moutai,China,-,-,-,-
+23,44,"American Express","United States",-,-,-,-
+24,22,UnitedHealthcare,"United States",-,-,-,-
+25,24,AT&T,"United States",-,-,-,-
+26,26,Costco,"United States",-,-,-,-
+27,34,Tencent,China,-,-,-,-
+28,30,Shell,"United Kingdom",-,-,-,-
+29,32,Disney,"United States",-,-,-,-
+30,47,Uber,"United States",-,-,-,-
+31,27,"China Mobile",China,-,-,-,-
+32,35,"Ping An",China,-,-,-,-
+33,54,WeChat,China,-,-,-,-
+34,31,"Bank of America","United States",-,-,-,-
+35,38,Aramco,"Saudi Arabia",-,-,-,-
+36,23,Mercedes-Benz,Germany,-,-,-,-
+37,28,Coca-Cola,"United States",-,-,-,-
+38,29,"Hyundai Group","South Korea",-,-,-,-
+39,33,Chase,"United States",-,-,-,-
+40,58,VISA,"United States",-,-,-,-
+41,37,BMW,Germany,-,-,-,-
+42,41,Deloitte,"United States",-,-,-,-
+43,42,McDonald's,"United States",-,-,-,-
+44,39,accenture,"United States",-,-,-,-
+45,48,"NTT Group",Japan,-,-,-,-
+46,49,"Wells Fargo","United States",-,-,-,-
+47,51,TSMC,China,-,-,-,-
+48,63,Lowe's,"United States",-,-,-,-
+49,67,YouTube,"United States",-,-,-,-
+50,62,SAP,Germany,-,-,-,-
+51,45,Starbucks,"United States",-,-,-,-
+52,43,"Mitsubishi Group",Japan,-,-,-,-
+53,57,"JP Morgan","United States",-,-,-,-
+54,61,Volkswagen,Germany,-,-,-,-
+55,52,Petrochina,China,-,-,-,-
+56,50,Citi,"United States",-,-,-,-
+57,40,Porsche,Germany,-,-,-,-
+58,59,Huawei,China,-,-,-,-
+59,46,Chanel,France,-,-,-,-
+60,74,HSBC,"United Kingdom",-,-,-,-
+61,60,"TATA Group",India,-,-,-,-
+62,75,Cisco,"United States",-,-,-,-
+63,88,Mastercard,"United States",-,-,-,-
+64,80,"Sumitomo Group",Japan,-,-,-,-
+65,78,"Mitsui Group",Japan,-,-,-,-
+66,64,"Sinopec Group",China,-,-,-,-
+67,102,CATL,China,-,-,-,-
+68,56,UPS,"United States",-,-,-,-
+69,81,EY,"United Kingdom",-,-,-,-
+70,55,"Louis Vuitton",France,-,-,-,-
+71,89,"Capital One","United States",-,-,-,-
+72,76,"SK Group","South Korea",-,-,-,-
+73,93,Santander,Spain,-,-,-,-
+74,69,"China Merchants Bank",China,-,-,-,-
+75,36,Tesla,"United States",-,-,-,-
+76,92,Netflix,"United States",-,-,-,-
+77,71,Target,"United States",-,-,-,-
+78,70,Honda,Japan,-,-,-,-
+79,84,PWC,"United States",-,-,-,-
+80,66,Nike,"United States",-,-,-,-
+81,73,Wuliangye,China,-,-,-,-
+82,129,Airbus,France,-,-,-,-
+83,83,ExxonMobil,"United States",-,-,-,-
+84,79,"IBM Group","United States",-,-,-,-
+85,68,CSCEC,China,-,-,-,-
+86,163,Progressive,"United States",-,-,-,-
+87,77,"Siemens Group",Germany,-,-,-,-
+88,85,FedEx,"United States",-,-,-,-
+89,72,CVS,"United States",-,-,-,-
+90,65,Xfinity,"United States",-,-,-,-
+91,97,Nestlé,Switzerland,-,-,-,-
+92,99,"General Electric","United States",-,-,-,-
+93,115,Boeing,"United States",-,-,-,-
+94,104,Enterprise,"United States",-,-,-,-
+95,94,"Dell Technologies","United States",-,-,-,-
+96,120,TD,Canada,-,-,-,-
+97,103,"Goldman Sachs","United States",-,-,-,-
+98,86,Ford,"United States",-,-,-,-
+99,98,Hermès,France,-,-,-,-
+100,105,ADNOC,"United Arab Emirates",-,-,-,-
+101,107,JD.com,China,-,-,-,-
+102,201,Broadcom,"United States",-,-,-,-
+103,112,Caterpillar,"United States",-,-,-,-
+104,109,"China Life",China,-,-,-,-
+105,123,HCA,"United States",-,-,-,-
+106,82,Spectrum,"United States",-,-,-,-
+107,119,LinkedIn,"United States",-,-,-,-
+108,101,Optum,"United States",-,-,-,-
+109,96,Salesforce,"United States",-,-,-,-
+110,106,TotalEnergies,France,-,-,-,-
+111,113,BP,"United Kingdom",-,-,-,-
+112,90,"LG Group","South Korea",-,-,-,-
+113,108,Rolex,Switzerland,-,-,-,-
+114,138,Allstate,"United States",-,-,-,-
+115,128,"Aldi Süd",Germany,-,-,-,-
+116,148,"Hilton Hotels & Resorts","United States",-,-,-,-
+117,212,AMD,"United States",-,-,-,-
+118,110,PayPal,"United States",-,-,-,-
+119,116,Zara,Spain,-,-,-,-
+120,111,Adidas,Germany,-,-,-,-
+121,118,Orange,France,-,-,-,-
+122,130,RBC,Canada,-,-,-,-
+123,149,GEICO,"United States",-,-,-,-
+124,124,Barclays,"United Kingdom",-,-,-,-
+125,134,KPMG,"United Kingdom",-,-,-,-
+126,117,Lidl,Germany,-,-,-,-
+127,151,Delta,"United States",-,-,-,-
+128,126,"China CITIC Bank",China,-,-,-,-
+129,122,DBS,Singapore,-,-,-,-
+130,154,"BNP Paribas",France,-,-,-,-
+131,125,"Generali Group",Italy,-,-,-,-
+132,100,AXA,France,-,-,-,-
+133,95,"Elevance Health","United States",-,-,-,-
+134,91,"Postal Savings Bank",China,-,-,-,-
+135,169,"Charles Schwab","United States",-,-,-,-
+136,127,Audi,Germany,-,-,-,-
+137,143,"Johnson & Johnson","United States",-,-,-,-
+138,210,LEGO,Denmark,-,-,-,-
+139,136,stc,"Saudi Arabia",-,-,-,-
+140,141,Bosch,Germany,-,-,-,-
+141,155,Metlife,"United States",-,-,-,-
+142,167,BYD,China,-,-,-,-
+143,147,Tesco,"United Kingdom",-,-,-,-
+144,191,Fidelity,"United States",-,-,-,-
+145,150,PICC,China,-,-,-,-
+146,87,Pepsi,"United States",-,-,-,-
+147,140,Equinor,Norway,-,-,-,-
+148,145,KFC,"United States",-,-,-,-
+149,171,EDF,France,-,-,-,-
+150,132,Infosys,India,-,-,-,-
+151,114,CRECG,China,-,-,-,-
+152,146,e&,"United Arab Emirates",-,-,-,-
+153,156,Hitachi,Japan,-,-,-,-
+154,139,Cartier,France,-,-,-,-
+155,131,Publix,"United States",-,-,-,-
+156,137,Purina,"United States",-,-,-,-
+157,192,Vodafone,"United Kingdom",-,-,-,-
+158,162,"Sam's Club","United States",-,-,-,-
+159,157,Chevron,"United States",-,-,-,-
+160,209,"Nongfu Spring",China,-,-,-,-
+161,219,MUFG,Japan,-,-,-,-
+162,188,Travelers,"United States",-,-,-,-
+163,247,BBVA,Spain,-,-,-,-
+164,186,Lay's,"United States",-,-,-,-
+165,173,"John Deere","United States",-,-,-,-
+166,135,Sony,Japan,-,-,-,-
+167,144,"Bank of Communications",China,-,-,-,-
+168,166,CPIC,China,-,-,-,-
+169,177,LIC,India,-,-,-,-
+170,172,IKEA,Sweden,-,-,-,-
+171,159,Walgreens,"United States",-,-,-,-
+172,206,Yili,China,-,-,-,-
+173,158,Ferrari,Italy,-,-,-,-
+174,179,AIA,China,-,-,-,-
+175,152,Universal,"United States",-,-,-,-
+176,183,UBS,Switzerland,-,-,-,-
+177,165,Adobe,"United States",-,-,-,-
+178,,OpenAI,"United States",-,-,-,-
+179,232,AutoZone,"United States",-,-,-,-
+180,211,"Lockheed Martin","United States",-,-,-,-
+181,175,"Corona Extra",Mexico,-,-,-,-
+182,161,Intel,"United States",-,-,-,-
+183,164,"HDFC Group",India,-,-,-,-
+184,180,Pinduoduo,China,-,-,-,-
+185,160,PETRONAS,Malaysia,-,-,-,-
+186,181,Heineken,Netherlands,-,-,-,-
+187,174,"S&P Global","United States",-,-,-,-
+188,184,"Circle K",Canada,-,-,-,-
+189,216,ING,Netherlands,-,-,-,-
+190,170,SoftBank,Japan,-,-,-,-
+191,168,Humana,"United States",-,-,-,-
+192,142,L'Oréal,France,-,-,-,-
+193,189,Vinci,France,-,-,-,-
+194,182,"China Telecom",China,-,-,-,-
+195,221,"Morgan Stanley","United States",-,-,-,-
+196,178,JR,Japan,-,-,-,-
+197,190,"United Airlines","United States",-,-,-,-
+198,153,7-Eleven,Japan,-,-,-,-
+199,266,VMWARE,"United States",-,-,-,-
+200,185,Brookfield,Canada,-,-,-,-
+201,229,Zurich,Switzerland,-,-,-,-
+202,236,"Japan Post Holdings",Japan,-,-,-,-
+203,302,Micron,"United States",-,-,-,-
+204,133,CRCC,China,-,-,-,-
+205,215,"Intesa Sanpaolo",Italy,-,-,-,-
+206,218,Philips,Netherlands,-,-,-,-
+207,193,"U.S. Bank","United States",-,-,-,-
+208,238,"Red Bull",Austria,-,-,-,-
+209,187,"Canada Life",Canada,-,-,-,-
+210,195,Taobao,China,-,-,-,-
+211,224,booking.com,"United States",-,-,-,-
+212,214,au,Japan,-,-,-,-
+213,220,Enel,Italy,-,-,-,-
+214,263,Chubb,"United States",-,-,-,-
+215,121,Dior,France,-,-,-,-
+216,256,"China Southern Power Grid",China,-,-,-,-
+217,176,Chevrolet,"United States",-,-,-,-
+218,194,Carrefour,France,-,-,-,-
+219,326,Xiaomi,China,-,-,-,-
+220,252,Engie,France,-,-,-,-
+221,265,NBC,"United States",-,-,-,-
+222,225,BMO,Canada,-,-,-,-
+223,207,DHL,Germany,-,-,-,-
+224,231,UNIQLO,Japan,-,-,-,-
+225,213,Sysco,"United States",-,-,-,-
+226,208,Decathlon,France,-,-,-,-
+227,264,CIBC,Canada,-,-,-,-
+228,271,Midea,China,-,-,-,-
+229,312,E.Leclerc,France,-,-,-,-
+230,205,Tmall,China,-,-,-,-
+231,237,"Reliance Group",India,-,-,-,-
+232,239,"Standard Chartered","United Kingdom",-,-,-,-
+233,275,Spotify,Sweden,-,-,-,-
+234,197,Rewe,Germany,-,-,-,-
+235,242,BASF,Germany,-,-,-,-
+236,202,ADP,"United States",-,-,-,-
+237,203,Volvo,Sweden,-,-,-,-
+238,280,Emirates,"United Arab Emirates",-,-,-,-
+239,295,McKesson,"United States",-,-,-,-
+240,235,Capgemini,France,-,-,-,-
+241,331,"Prudential (US)","United States",-,-,-,-
+242,200,Kia,"South Korea",-,-,-,-
+243,290,Aetna,"United States",-,-,-,-
+244,245,QNB,Qatar,-,-,-,-
+245,217,"Commonwealth Bank",Australia,-,-,-,-
+246,267,Michelin,France,-,-,-,-
+247,198,Meituan,China,-,-,-,-
+248,279,Merrill,"United States",-,-,-,-
+249,246,"Nissay/Nippon Life Insurance",Japan,-,-,-,-
+250,261,"Dollar General","United States",-,-,-,-
+251,243,Rabobank,Netherlands,-,-,-,-
+252,287,Lilly,"United States",-,-,-,-
+253,,Blackrock,"United States",-,-,-,-
+254,274,Itaú,Brazil,-,-,-,-
+255,268,Woolworths,Australia,-,-,-,-
+256,241,"SBI Group",India,-,-,-,-
+257,328,"O'Reilly Auto Parts","United States",-,-,-,-
+258,289,Edeka,Germany,-,-,-,-
+259,309,"Al-Rajhi Bank","Saudi Arabia",-,-,-,-
+260,272,ConocoPhillips,"United States",-,-,-,-
+261,292,NatWest,"United Kingdom",-,-,-,-
+262,254,Cognizant,"United States",-,-,-,-
+263,223,Honeywell,"United States",-,-,-,-
+264,384,"Northrop Grumman","United States",-,-,-,-
+265,253,Truist,"United States",-,-,-,-
+266,286,Subway,"United States",-,-,-,-
+267,351,Bell,Canada,-,-,-,-
+268,308,Servicenow,"United States",-,-,-,-
+269,222,Scotiabank,Canada,-,-,-,-
+270,301,Lloyds,"United Kingdom",-,-,-,-
+271,244,Sephora,France,-,-,-,-
+272,228,"Shanghai Pudong Development Bank",China,-,-,-,-
+273,250,CNBM,China,-,-,-,-
+274,259,"Industrial Bank",China,-,-,-,-
+275,269,Monster,"United States",-,-,-,-
+276,276,Sherwin-Williams,"United States",-,-,-,-
+277,270,Panasonic,Japan,-,-,-,-
+278,350,Erste,Austria,-,-,-,-
+279,313,Gatorade,"United States",-,-,-,-
+280,320,KBC,Belgium,-,-,-,-
+281,262,HCLTech,India,-,-,-,-
+282,319,Fox,"United States",-,-,-,-
+283,278,"Crédit Mutuel",France,-,-,-,-
+284,285,"Power China",China,-,-,-,-
+285,297,NetEase,China,-,-,-,-
+286,288,Coupang,"South Korea",-,-,-,-
+287,204,Gucci,Italy,-,-,-,-
+288,341,"Crédit Agricole",France,-,-,-,-
+289,284,Bridgestone,Japan,-,-,-,-
+290,329,CaixaBank,Spain,-,-,-,-
+291,383,"Shinhan Financial Group","South Korea",-,-,-,-
+292,249,PTT,Thailand,-,-,-,-
+293,411,Bloomberg,"United States",-,-,-,-
+294,258,Qualcomm,"United States",-,-,-,-
+295,311,"Tiffany & Co.","United States",-,-,-,-
+296,335,"Dai-Ichi Life",Japan,-,-,-,-
+297,230,Lexus,Japan,-,-,-,-
+298,372,HPE,"United States",-,-,-,-
+299,226,Nissan,Japan,-,-,-,-
+300,199,"American Airlines","United States",-,-,-,-
+301,260,Eni,Italy,-,-,-,-
+302,327,PlayStation,Japan,-,-,-,-
+303,248,CEEC,China,-,-,-,-
+304,363,"TJ Maxx","United States",-,-,-,-
+305,367,Aviva,"United Kingdom",-,-,-,-
+306,307,"Tokio Marine",Japan,-,-,-,-
+307,282,Marubeni,Japan,-,-,-,-
+308,251,Gillette,"United States",-,-,-,-
+309,359,Mercadona,Spain,-,-,-,-
+310,304,3M,"United States",-,-,-,-
+311,371,"The Hartford","United States",-,-,-,-
+312,361,Nintendo,Japan,-,-,-,-
+313,324,"KB Financial Group","South Korea",-,-,-,-
+314,401,"BAE Systems","United Kingdom",-,-,-,-
+315,316,"Larsen & Toubro Group",India,-,-,-,-
+316,396,Nokia,Finland,-,-,-,-
+317,310,"McKinsey & Co","United States",-,-,-,-
+318,283,Danone,France,-,-,-,-
+319,255,TELUS,Canada,-,-,-,-
+320,340,Fanduel,"United States",-,-,-,-
+321,436,Chick-fil-A,"United States",-,-,-,-
+322,306,Airtel,India,-,-,-,-
+323,318,Medtronic,"United States",-,-,-,-
+324,403,E.ON,Germany,-,-,-,-
+325,338,"Modelo Especial",Mexico,-,-,-,-
+326,381,Rogers,Canada,-,-,-,-
+327,281,Telstra,Australia,-,-,-,-
+328,419,"Marina Bay Sands",Singapore,-,-,-,-
+329,321,Fresenius,Germany,-,-,-,-
+330,300,Nivea,Germany,-,-,-,-
+331,296,Bouygues,France,-,-,-,-
+332,,"Viettel Group",Vietnam,-,-,-,-
+333,298,ASML,Netherlands,-,-,-,-
+334,277,Sky,"United Kingdom",-,-,-,-
+335,,"Cardinal Health","United States",-,-,-,-
+336,257,HP,"United States",-,-,-,-
+337,369,"Société Générale",France,-,-,-,-
+338,352,Haier,China,-,-,-,-
+339,196,Budweiser,"United States",-,-,-,-
+340,315,Conad,Italy,-,-,-,-
+341,330,"Mahindra Group",India,-,-,-,-
+342,240,H&M,Sweden,-,-,-,-
+343,325,Roche,Switzerland,-,-,-,-
+344,293,"Deutsche Bank",Germany,-,-,-,-
+345,342,Kaufland,Germany,-,-,-,-
+346,299,Kroger,"United States",-,-,-,-
+347,227,"Poste Italiane",Italy,-,-,-,-
+348,273,Movistar,Spain,-,-,-,-
+349,322,Discover,"United States",-,-,-,-
+350,233,Prudential,"United Kingdom",-,-,-,-
+351,234,Tyson,"United States",-,-,-,-
+352,291,"Applied Materials","United States",-,-,-,-
+353,337,PNC,"United States",-,-,-,-
+354,348,"Tim Hortons",Canada,-,-,-,-
+355,294,Hyatt,"United States",-,-,-,-
+356,366,"Jio Group",India,-,-,-,-
+357,442,"Munich Re",Germany,-,-,-,-
+358,303,LSEG,"United Kingdom",-,-,-,-
+359,365,Cigna,"United States",-,-,-,-
+360,438,Nordea,Finland,-,-,-,-
+361,354,"Domino's Pizza","United States",-,-,-,-
+362,,Sber,Russia,-,-,-,-
+363,375,"ICICI Group",India,-,-,-,-
+364,333,Vanguard,"United States",-,-,-,-
+365,392,"Mizuho Financial Group",Japan,-,-,-,-
+366,358,"Wipro Group",India,-,-,-,-
+367,434,Lenovo,China,-,-,-,-
+368,387,"Swiss Re",Switzerland,-,-,-,-
+369,323,BRI,Indonesia,-,-,-,-
+370,347,"Taco Bell","United States",-,-,-,-
+371,334,"Warner Bros","United States",-,-,-,-
+372,317,Canon,Japan,-,-,-,-
+373,360,"Daiwa House",Japan,-,-,-,-
+374,408,Kellogg's,"United States",-,-,-,-
+375,399,Swisscom,Switzerland,-,-,-,-
+376,378,Yahoo!,Japan,-,-,-,-
+377,458,CBS,"United States",-,-,-,-
+378,374,"OCBC Bank",Singapore,-,-,-,-
+379,339,"Activision Blizzard","United States",-,-,-,-
+380,368,"Schneider Electric",France,-,-,-,-
+381,468,BBC,"United Kingdom",-,-,-,-
+382,395,UOB,Singapore,-,-,-,-
+383,,"Whole Foods","United States",-,-,-,-
+384,400,Xbox,"United States",-,-,-,-
+385,,"Rolls-Royce (Aerospace & Defence)","United Kingdom",-,-,-,-
+386,380,"Southwest Airlines","United States",-,-,-,-
+387,423,"General Dynamics","United States",-,-,-,-
+388,305,Guerlain,France,-,-,-,-
+389,453,Doritos,"United States",-,-,-,-
+390,421,"CJ Group","South Korea",-,-,-,-
+391,441,Veolia,France,-,-,-,-
+392,336,Manulife,Canada,-,-,-,-
+393,,Revolut,"United Kingdom",-,-,-,-
+394,426,Tide,"United States",-,-,-,-
+395,455,"Dollar Tree","United States",-,-,-,-
+396,388,Bayer,Germany,-,-,-,-
+397,424,Abbott,"United States",-,-,-,-
+398,398,Synchrony,"United States",-,-,-,-
+399,346,Renault,France,-,-,-,-
+400,473,Safran,France,-,-,-,-
+401,407,"Union Pacific","United States",-,-,-,-
+402,397,QuickBooks,"United States",-,-,-,-
+403,377,"SF Express",China,-,-,-,-
+404,344,"China Minsheng Bank",China,-,-,-,-
+405,431,"Marathon Petroleum","United States",-,-,-,-
+406,417,USPS,"United States",-,-,-,-
+407,487,"Cathay Life Insurance",China,-,-,-,-
+408,,Free,France,-,-,-,-
+409,,"Marks & Spencer","United Kingdom",-,-,-,-
+410,,"ABN AMRO",Netherlands,-,-,-,-
+411,477,ABC,"United States",-,-,-,-
+412,,"Royal Caribbean International","United States",-,-,-,-
+413,422,"Xinghuacun Fen Wine",China,-,-,-,-
+414,461,SNB,"Saudi Arabia",-,-,-,-
+415,,MercadoLibre,Argentina,-,-,-,-
+416,364,Gree,China,-,-,-,-
+417,,"Emirates NBD","United Arab Emirates",-,-,-,-
+418,,"CTBC Financial",China,-,-,-,-
+419,373,CCCC,China,-,-,-,-
+420,,"British Airways","United Kingdom",-,-,-,-
+421,443,"Dr Pepper","United States",-,-,-,-
+422,462,MSCI,"United States",-,-,-,-
+423,356,Saint-Gobain,France,-,-,-,-
+424,,DNB,Norway,-,-,-,-
+425,454,Valero,"United States",-,-,-,-
+426,,Genting,Malaysia,-,-,-,-
+427,432,CNRL,Canada,-,-,-,-
+428,420,CNOOC,China,-,-,-,-
+429,349,Pampers,"United States",-,-,-,-
+430,406,SLB,"United States",-,-,-,-
+431,449,Evernorth,"United States",-,-,-,-
+432,343,Airbnb,"United States",-,-,-,-
+433,463,Lululemon,Canada,-,-,-,-
+434,,AstraZeneca,"United Kingdom",-,-,-,-
+435,353,"Poly Development",China,-,-,-,-
+436,,"Hannover Re",Germany,-,-,-,-
+437,430,Iberdrola,Spain,-,-,-,-
+438,,Maersk,Denmark,-,-,-,-
+439,425,O2,"United Kingdom",-,-,-,-
+440,452,Trip.com,China,-,-,-,-
+441,357,BNSF,"United States",-,-,-,-
+442,,Raytheon,"United States",-,-,-,-
+443,499,Sainsbury's,"United Kingdom",-,-,-,-
+444,439,"Sekisui House",Japan,-,-,-,-
+445,445,"China Post",China,-,-,-,-
+446,410,Cencora,"United States",-,-,-,-
+447,435,Asda,"United Kingdom",-,-,-,-
+448,446,"Indian Oil",India,-,-,-,-
+449,459,BCG,"United States",-,-,-,-
+450,451,"Merck & Co","United States",-,-,-,-
+451,488,MediaTek,China,-,-,-,-
+452,382,"BDO Global",Belgium,-,-,-,-
+453,427,Coles,Australia,-,-,-,-
+454,,"Thermo Fisher Scientific","United States",-,-,-,-
+455,385,Jeep,"United States",-,-,-,-
+456,479,"Phillips 66","United States",-,-,-,-
+457,457,Ray-Ban,Italy,-,-,-,-
+458,345,LENNAR,"United States",-,-,-,-
+459,,Nescafé,Switzerland,-,-,-,-
+460,,UniCredit,Italy,-,-,-,-
+461,390,"China Everbright Bank",China,-,-,-,-
+462,492,"Hang Seng Bank",China,-,-,-,-
+463,500,ESPN,"United States",-,-,-,-
+464,389,Prada,Italy,-,-,-,-
+465,362,"Texas Instruments","United States",-,-,-,-
+466,465,FIS,"United States",-,-,-,-
+467,414,Denso,Japan,-,-,-,-
+468,413,Dove,"United States",-,-,-,-
+469,,"Bodega Aurrera",Mexico,-,-,-,-
+470,474,AIG,"United States",-,-,-,-
+471,394,Glencore,Switzerland,-,-,-,-
+472,497,Lindt,Switzerland,-,-,-,-
+473,,FAB,"United Arab Emirates",-,-,-,-
+474,391,Subaru,Japan,-,-,-,-
+475,472,Maybank,Malaysia,-,-,-,-
+476,370,Suzuki,Japan,-,-,-,-
+477,490,Barilla,Italy,-,-,-,-
+478,495,CNNC,China,-,-,-,-
+479,486,BNY,"United States",-,-,-,-
+480,476,"Leroy Merlin",France,-,-,-,-
+481,,Marshalls,"United States",-,-,-,-
+482,379,"Luzhou Laojiao",China,-,-,-,-
+483,416,TIM,Italy,-,-,-,-
+484,,Huntington,"United States",-,-,-,-
+485,,MAPFRE,Spain,-,-,-,-
+486,493,Baidu,China,-,-,-,-
+487,482,Swedbank,Sweden,-,-,-,-
+488,386,Pfizer,"United States",-,-,-,-
+489,,ROBLOX,"United States",-,-,-,-
+490,,Snow,China,-,-,-,-
+491,,Anthropic,"United States",-,-,-,-
+492,440,"Bank Mandiri",Indonesia,-,-,-,-
+493,460,"Best Buy","United States",-,-,-,-
+494,,CRRC,China,-,-,-,-
+495,496,SABIC,"Saudi Arabia",-,-,-,-
+496,,Starlink,"United States",-,-,-,-
+497,,"Qatar Airways",Qatar,-,-,-,-
+498,,Cadbury,"United Kingdom",-,-,-,-
+499,480,DraftKings,"United States",-,-,-,-
+500,494,TUI,Germany,-,-,-,-

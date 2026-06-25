@@ -1,0 +1,479 @@
+<!DOCTYPE html><html lang="en" data-title-en="OpenAI × Broadcom unveil Jalapeño — first LLM-optimized Intelligence Processor — aogl.cn" data-desc-en="Archive of OpenAI and Broadcom’s Jalapeño Intelligence Processor — LLM inference ASIC, nine-month co-development, Tomahawk networking, and multi-gen datacenter roadmap through 2026." data-title-zh="OpenAI × Broadcom 发布 Jalapeño：首款 LLM 推理专用 Intelligence Processor — aogl.cn" data-desc-zh="存档 OpenAI 与 Broadcom 联合发布 Jalapeño 推理加速器：全栈 LLM inference 架构、9 个月流片、Tomahawk 网络与 2026 千兆瓦级数据中心路线图。" data-title-ja="OpenAI×Broadcom、Jalapeño 推論チップ発表（2026-06-24） — aogl.cn" data-desc-ja="OpenAI×Broadcom Jalapeño 推論チップ発表アーカイブ（2026-06-24）。" data-title-ko="OpenAI×Broadcom, Jalapeño LLM 추론 칩 공개（2026-06-24） — aogl.cn" data-desc-ko="OpenAI×Broadcom Jalapeño LLM 추론 칩 발표 아카이브（2026-06-24）。" data-title-fr="OpenAI × Broadcom dévoilent Jalapeño — processeur LLM inference（24 juin 2026） — aogl.cn" data-desc-fr="Archive annonce Jalapeño OpenAI×Broadcom（24 juin 2026）。" data-title-ru="OpenAI × Broadcom представили Jalapeño — чип для LLM inference（24 июня 2026） — aogl.cn" data-desc-ru="Архив анонса Jalapeño OpenAI×Broadcom（24 июня 2026）。" data-title-ar="OpenAI وBroadcom تكشفان Jalapeño — معالج inference للـ LLM（24 يونيو 2026） — aogl.cn" data-desc-ar="أرشيف إعلان Jalapeño OpenAI×Broadcom（24 يونيو 2026）。"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Archive of OpenAI and Broadcom’s Jalapeño Intelligence Processor — LLM inference ASIC, nine-month co-development, Tomahawk networking, and multi-gen datacenter roadmap through 2026.">
+  <title>OpenAI × Broadcom unveil Jalapeño — first LLM-optimized Intelligence Processor — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/openai-broadcom-jalapeno-inference-chip-20260624.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/openai-broadcom-jalapeno-inference-chip-20260624.html">
+  <meta property="og:title" content="OpenAI × Broadcom unveil Jalapeño — first LLM-optimized Intelligence Processor — aogl.cn">
+  <meta property="og:description" content="Archive of OpenAI and Broadcom’s Jalapeño Intelligence Processor — LLM inference ASIC, nine-month co-development, Tomahawk networking, and multi-gen datacenter roadmap through 2026.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/openai-broadcom-jalapeno-inference-chip-20260624.webp">
+  <meta property="og:image:alt" content="Sam Altman and Hock Tan holding Jalapeño Intelligence Processor wafer — OpenAI × Broadcom 2026">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/openai-broadcom-jalapeno-inference-chip-20260624.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Nine-month tape-out · GPT‑5.3‑Codex‑Spark lab runs · deploy by end 2026","alternativeHeadline":"OpenAI × Broadcom 发布 Jalapeño：首款 LLM 推理专用 Intelligence Processor","datePublished":"2026-06-24","dateModified":"2026-06-24","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/openai-broadcom-jalapeno-inference-chip-20260624.html"},"url":"https://aogl.cn/en/articles/openai-broadcom-jalapeno-inference-chip-20260624.html","inLanguage":"mul","description":"Archive of OpenAI and Broadcom’s Jalapeño Intelligence Processor — LLM inference ASIC, nine-month co-development, Tomahawk networking, and multi-gen datacenter roadmap through 2026.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ru brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ar brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li class="is-active"><a href="/articles/index.html">Originals</a></li>
+          <li><a href="/index.html#tools-directory">AI tools</a></li>
+          <li><a href="/briefs/index.html">Briefs</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/portal.html">Top sites</a></li>
+          <li><a href="/brands.html">Brands</a></li>
+          <li><a href="/shopping.html">Shopping</a></li>
+          <li><a href="/life.html">Life</a></li>
+          <li><a href="/social.html">Social</a></li>
+          <li><a href="/tools.html">Utilities</a></li>
+        </ul>
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/articles/index.html">本站原创</a></li>
+          <li><a href="/index.html#tools-directory">AI 工具</a></li>
+          <li><a href="/briefs/index.html">快讯</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li><a href="/portal.html">全球站点</a></li>
+          <li><a href="/brands.html">品牌</a></li>
+          <li><a href="/shopping.html">购物</a></li>
+          <li><a href="/life.html">生活</a></li>
+          <li><a href="/social.html">社交</a></li>
+          <li><a href="/tools.html">工具</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ja">
+          <li class="is-active"><a href="/articles/index.html">オリジナル</a></li>
+          <li><a href="/index.html#tools-directory">AIツール</a></li>
+          <li><a href="/briefs/index.html">速報</a></li>
+          <li><a href="/games.html">ゲーム</a></li>
+          <li><a href="/tech.html">テック</a></li>
+          <li><a href="/portal.html">主要サイト</a></li>
+          <li><a href="/brands.html">ブランド</a></li>
+          <li><a href="/shopping.html">ショッピング</a></li>
+          <li><a href="/life.html">ライフ</a></li>
+          <li><a href="/social.html">ソーシャル</a></li>
+          <li><a href="/tools.html">実用ツール</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ko">
+          <li class="is-active"><a href="/articles/index.html">오리지널</a></li>
+          <li><a href="/index.html#tools-directory">AI 도구</a></li>
+          <li><a href="/briefs/index.html">속보</a></li>
+          <li><a href="/games.html">게임</a></li>
+          <li><a href="/tech.html">테크</a></li>
+          <li><a href="/portal.html">주요 사이트</a></li>
+          <li><a href="/brands.html">브랜드</a></li>
+          <li><a href="/shopping.html">쇼핑</a></li>
+          <li><a href="/life.html">라이프</a></li>
+          <li><a href="/social.html">소셜</a></li>
+          <li><a href="/tools.html">실용 도구</a></li>
+        </ul>
+        <ul class="site-nav-list lang-fr">
+          <li class="is-active"><a href="/articles/index.html">Originaux</a></li>
+          <li><a href="/index.html#tools-directory">Outils IA</a></li>
+          <li><a href="/briefs/index.html">Brèves</a></li>
+          <li><a href="/games.html">Jeux</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/portal.html">Grands sites</a></li>
+          <li><a href="/brands.html">Marques</a></li>
+          <li><a href="/shopping.html">Shopping</a></li>
+          <li><a href="/life.html">Vie</a></li>
+          <li><a href="/social.html">Social</a></li>
+          <li><a href="/tools.html">Utilitaires</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ru">
+          <li class="is-active"><a href="/articles/index.html">Авторское</a></li>
+          <li><a href="/index.html#tools-directory">ИИ‑инструменты</a></li>
+          <li><a href="/briefs/index.html">Сводки</a></li>
+          <li><a href="/games.html">Игры</a></li>
+          <li><a href="/tech.html">Техно</a></li>
+          <li><a href="/portal.html">Топ сайтов</a></li>
+          <li><a href="/brands.html">Бренды</a></li>
+          <li><a href="/shopping.html">Шопинг</a></li>
+          <li><a href="/life.html">Сервисы</a></li>
+          <li><a href="/social.html">Соцсети</a></li>
+          <li><a href="/tools.html">Утилиты</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ar">
+          <li class="is-active"><a href="/articles/index.html">محتوى أصلي</a></li>
+          <li><a href="/index.html#tools-directory">أدوات الذكاء</a></li>
+          <li><a href="/briefs/index.html">عناوين</a></li>
+          <li><a href="/games.html">الألعاب</a></li>
+          <li><a href="/tech.html">التقنية</a></li>
+          <li><a href="/portal.html">أبرز المواقع</a></li>
+          <li><a href="/brands.html">العلامات</a></li>
+          <li><a href="/shopping.html">التسوق</a></li>
+          <li><a href="/life.html">الحياة الرقمية</a></li>
+          <li><a href="/social.html">التواصل</a></li>
+          <li><a href="/tools.html">أدوات مساعدة</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>OpenAI × Broadcom unveil Jalapeño — first LLM-optimized Intelligence Processor</h1>
+        <p class="article-shell__sub">Nine-month tape-out · GPT‑5.3‑Codex‑Spark lab runs · deploy by end 2026</p>
+        <p class="article-shell__meta"><time datetime="2026-06-24">2026-06-24</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This article archives <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI’s official blog post</a> and the <a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom investor release</a> (June 24, 2026): <strong>OpenAI and Broadcom unveil LLM-optimized inference chip</strong> — introducing <strong>Jalapeño</strong>, OpenAI’s first Intelligence Processor. The tech hub editorial below summarizes the announcement; the hero image shows Sam Altman and Hock Tan holding the Jalapeño wafer (OpenAI official asset).</p>
+
+<p>The milestone sits in OpenAI’s full-stack infrastructure strategy: co-developing inference silicon with Broadcom (NASDAQ: AVGO) and Celestica rather than relying solely on merchant GPUs. Read alongside our <a href="/articles/nvidia-halos-robotics-physical-ai-20260622.html">NVIDIA Halos physical AI safety</a> and <a href="/articles/sensor-tower-state-of-ai-2026.html">State of AI 2026</a> archives — this page focuses on <strong>inference ASICs and datacenter capex</strong>, not consumer app competition or factory-floor functional safety.</p>
+
+<h2>Announcement summary</h2>
+<p><strong>OpenAI</strong> and <strong>Broadcom (NASDAQ: AVGO)</strong> today unveiled <strong>Jalapeño</strong>, OpenAI’s first Intelligence Processor: an accelerator architected around OpenAI’s vision for the future of LLM inference, and the first AI accelerator in a multi-generation compute platform the companies are building together to make advanced AI faster, more reliable, and more accessible to more people.</p>
+<p>Jalapeño was delivered to OpenAI CEO Sam Altman and President Greg Brockman by Broadcom President and CEO Hock Tan and President Charlie Kawwas, marking an important step in OpenAI’s strategy to build the full stack behind its models and products.</p>
+
+<h2>Architecture and partners</h2>
+<p>OpenAI designed the chip from scratch around its deep understanding of LLM fundamentals, informed by its roadmap of models, kernels, serving systems, and product needs, with partners <strong>Broadcom</strong> and <strong>Celestica</strong> helping industrialize the platform through chip implementation, board, rack system integration, high-performance networking, and scalable production systems.</p>
+<p>Jalapeño is designed with flexibility to work with all LLMs guided by OpenAI’s insights into the inference needs of current and future AI models across the industry. Engineering samples of the Jalapeño chip are running ML workloads in the lab at production target frequency and power, including <strong>GPT‑5.3‑Codex‑Spark</strong>.</p>
+<p>While OpenAI is still measuring final performance, early testing shows that Jalapeño will deliver <strong>performance per watt substantially better than current state-of-the-art</strong>. A detailed technical report on performance will be presented in the coming months. The architecture reduces data movement and balances compute, memory, and networking resources to achieve realized utilization much closer to theoretical peak performance. Broadcom’s silicon implementation and networking technologies, including <strong>Tomahawk</strong> networking silicon, help bring the platform to large-scale production.</p>
+
+<h2>Executive quotes</h2>
+<blockquote>
+  <p>“The world is moving to a compute-powered economy,” said Greg Brockman, President and Co-Founder of OpenAI. “Jalapeño is part of our long-term full-stack infrastructure strategy to make compute more abundant, resulting in AI which is faster, more reliable, more affordable for people and businesses, and can be used to solve more important problems. By designing more of the stack ourselves, we can serve more intelligence with greater efficiency and keep pushing advanced AI toward broader access.”</p>
+</blockquote>
+<blockquote>
+  <p>“Jalapeño was designed from the ground up for LLM inference using detailed insights from our close collaboration with OpenAI researchers,” said Richard Ho, who leads OpenAI’s hardware program. “We optimized the architecture around the kernels, memory movement, networking, and serving patterns that matter most for frontier AI models. Based on early testing, Jalapeño will efficiently execute our most important workloads close to the hardware’s theoretical limits.”</p>
+</blockquote>
+<blockquote>
+  <p>“Our collaboration with OpenAI represents a fundamental commitment to scaling the physical infrastructure required for the next decade of AI,” said Hock Tan, President and CEO, Broadcom. “This is just the beginning of a multi-generation roadmap. By co-developing our industry-leading silicon directly with OpenAI, we are enabling the deployment of gigawatt scale data centers with Microsoft and other partners beginning in 2026.”</p>
+</blockquote>
+
+<h2>Designed to be the best inference platform for LLMs</h2>
+<p>Jalapeño is a <strong>blank-slate design</strong> for modern LLM inference, not a general-purpose accelerator adapted from earlier AI workloads. It is informed by the systems OpenAI runs every day across ChatGPT, Codex, the API, and future agentic products, while also being designed for current and future LLMs across the industry. The goal is to combine the power and throughput of today’s leading AI accelerators with latency closer to the fastest specialized inference systems, making Jalapeño well suited for interactive LLM products at scale.</p>
+<p>That is the <strong>full-stack advantage</strong>. OpenAI is not only developing frontier models or building products on top of them; it is designing the infrastructure underneath them: chip architecture, kernels, memory systems, networking, scheduling, deployment systems, and product experience. Because OpenAI operates across the stack, each layer can be optimized around the same goal: making its models faster, more reliable, and more affordable for users.</p>
+
+<h2>Infrastructure flywheel</h2>
+<p>Jalapeño strengthens the flywheel behind OpenAI’s progress. Better infrastructure drives compute efficiency. Greater compute efficiency enables better training and serving, ultimately powering more capable AI models. Better models become better products for people, developers, and businesses. Better products drive more usage, more customers, and more revenue, which lets OpenAI reinvest in the next generation of infrastructure. Over time, that cycle helps make intelligence more capable, more reliable, and less expensive for everyone.</p>
+
+<h2>Nine-month tape-out, accelerated by OpenAI models</h2>
+<p>Jalapeño was co-developed from initial design to manufacturing tape-out in just <strong>nine months</strong>, and the custom AI accelerator program represents what OpenAI believes to be the <strong>fastest ASIC development cycle ever achieved</strong> in high-performance advanced semiconductors. That speed reflects deep software-hardware co-development with OpenAI’s engineering teams, Broadcom’s silicon implementation expertise, and the use of OpenAI models to accelerate parts of the design and optimization process.</p>
+<p>The same models served to users are helping improve the infrastructure used to run future models. If AI can help engineers design better chips faster, it can lower the cost of compute across the industry and help democratize access to advanced AI.</p>
+
+<h2>Multi-generation platform with partners</h2>
+<p>Jalapeño is the first step in a multi-generation compute platform designed for initial deployment by the <strong>end of 2026</strong> and expanding in the years ahead, combining OpenAI-designed accelerators with Broadcom silicon implementation, networking, and connectivity technologies; and Celestica’s board, rack, and system expertise.</p>
+
+<h2>Making advanced AI more broadly available</h2>
+<p>The point of this work is simple: <strong>inference is where AI reaches people</strong>. Every improvement in cost, speed, and reliability can show up as a faster ChatGPT answer, a Codex task that can take more steps with less waiting, an API product that is cheaper to build, or more dependable access when demand is high.</p>
+<p>Democratizing AI means making advanced models available, dependable, and affordable enough for more people to use every day. Jalapeño helps OpenAI turn more of its infrastructure into useful intelligence for students, developers, small businesses, researchers, enterprises, and anyone trying to learn, create, or solve hard problems.</p>
+
+<h2>Industry context for readers</h2>
+<p>Merchant GPU vendors remain central to training and many inference fleets, but hyperscalers and model labs increasingly co-design silicon when serving economics dominate. Jalapeño’s stated focus on utilization (not just peak FLOPS) mirrors how frontier labs talk about “realized throughput” under memory and network bottlenecks. Until OpenAI publishes benchmarks, treat performance-per-watt claims as directional — the nine-month tape-out timeline and GPT‑5.3‑Codex‑Spark lab runs are the hard facts in the release.</p>
+
+<h2>Tech hub bookmark rails</h2>
+<p>Semiconductor top-ten and IR links below this hub stay <code>noindex</code> for search engines; this URL is indexable editorial. Update flow: edit JSON → <code>npm run build-articles</code> → <code>npm run build-hubs</code> → <code>npm run build-seo-locales</code>.</p>
+
+<h2 id="article-seo-keywords">Search &amp; official links</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI blog</a>
+  <a class="pill" href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom IR release</a>
+  <a class="pill" href="https://www.google.com/search?q=OpenAI+Jalape%C3%B1o+inference+chip" target="_blank" rel="noopener noreferrer">OpenAI Jalapeño chip</a>
+  <a class="pill" href="https://www.google.com/search?q=Broadcom+Tomahawk+AI+datacenter" target="_blank" rel="noopener noreferrer">Broadcom Tomahawk datacenter</a>
+  <a class="pill" href="https://www.google.com/search?q=LLM+inference+ASIC+2026" target="_blank" rel="noopener noreferrer">LLM inference ASIC 2026</a>
+  <a class="pill" href="/tech.html">Tech hub</a>
+  <a class="pill" href="/articles/index.html">All editorials</a>
+</div></article>
+    </div>
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>OpenAI × Broadcom 发布 Jalapeño：首款 LLM 推理专用 Intelligence Processor</h1>
+        <p class="article-shell__sub">9 个月流片 · GPT‑5.3‑Codex‑Spark 实验室验证 · 2026 年底部署</p>
+        <p class="article-shell__meta"><time datetime="2026-06-24">2026-06-24</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>本文存档 <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI 官方博客</a> 与 <a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom 投资者新闻稿</a>（2026-06-24）：<strong>OpenAI and Broadcom unveil LLM-optimized inference chip</strong>——联合发布首款专为 LLM 推理设计的 <strong>Jalapeño Intelligence Processor</strong>。科技 Hub 本篇以文字解读发布要点；题图为 Sam Altman 与 Hock Tan 手持 Jalapeño 晶圆（OpenAI 官方素材）。</p>
+
+<p>这是 OpenAI「自建全栈基础设施」路线的硬件里程碑：不再仅依赖 NVIDIA/AMD 通用 GPU 租赁，而是与 Broadcom（NASDAQ: AVGO）及 Celestica 共同工业化<strong>推理加速器 + 机架 + 网络 + 量产</strong>。与 Hub 内 <a href="/articles/nvidia-halos-robotics-physical-ai-20260622.html">NVIDIA Halos 物理 AI 安全</a>、<a href="/articles/sensor-tower-state-of-ai-2026.html">State of AI 2026</a> 对照，本篇聚焦<strong>推理侧 ASIC 与数据中心 capex</strong>，而非消费端 App 竞争或工厂 floor 功能安全。</p>
+
+<h2>发布摘要</h2>
+<p><strong>OpenAI</strong> 与 <strong>Broadcom（NASDAQ: AVGO）</strong> 今日发布 <strong>Jalapeño</strong>——OpenAI 首款 <strong>Intelligence Processor</strong>：围绕 OpenAI 对 LLM 推理未来的愿景架构的加速器，也是两家公司共建的多代计算平台中的<strong>首款 AI 加速器</strong>，目标让先进 AI 更快、更可靠、对更多人更可及。</p>
+<p>Jalapeño 由 Broadcom 总裁兼 CEO <strong>Hock Tan</strong> 与总裁 <strong>Charlie Kawwas</strong> 交付给 OpenAI CEO <strong>Sam Altman</strong> 与总裁 <strong>Greg Brockman</strong>，标志 OpenAI 在「模型与产品背后的全栈」战略上迈出重要一步。</p>
+
+<h2>架构与合作伙伴</h2>
+<p>OpenAI 基于对 LLM 基础的深度理解<strong>从零设计</strong>该芯片，输入来自其模型路线图、内核（kernels）、Serving 系统与产品需求；<strong>Broadcom</strong> 与 <strong>Celestica</strong> 协助工业化：芯片实现、板卡、机架系统集成、高性能网络与可扩展量产系统。</p>
+<p>Jalapeño 被设计为具有<strong>灵活性</strong>，可在 OpenAI 对当前与未来 AI 模型推理需求的洞察下，适配<strong>全行业各类 LLM</strong>。工程样片已在实验室以<strong>量产目标频率与功耗</strong>运行 ML 工作负载，包括 <strong>GPT‑5.3‑Codex‑Spark</strong>。</p>
+<p>OpenAI 仍在测量最终性能，但早期测试显示 Jalapeño 的<strong>每瓦性能（performance per watt）</strong>将显著优于当前业界最优水平；详细技术报告将在未来数月公布。架构通过减少数据搬运、平衡算力/内存/网络资源，使<strong>实际利用率</strong>更接近理论峰值。Broadcom 的硅片实现与网络技术（含 <strong>Tomahawk</strong> 网络芯片）支撑平台大规模量产。</p>
+
+<h2>高管引述</h2>
+<blockquote>
+  <p>「世界正在走向算力驱动的经济，」OpenAI 总裁兼联合创始人 <strong>Greg Brockman</strong> 表示。「Jalapeño 是我们长期全栈基础设施战略的一部分，旨在让算力更充裕，从而使 AI 更快、更可靠、对个人与企业更实惠，并可用于解决更重要的问题。通过自行设计更多栈层，我们能以更高效率服务更多智能，并推动先进 AI 向更广泛的可及性迈进。」</p>
+</blockquote>
+<blockquote>
+  <p>「Jalapeño 是与 OpenAI 研究员紧密协作、基于详细洞察<strong>从零为 LLM 推理设计</strong>的，」OpenAI 硬件项目负责人 <strong>Richard Ho</strong> 说。「我们围绕对前沿 AI 模型最重要的内核、内存搬运、网络与 Serving 模式优化架构。基于早期测试，Jalapeño 将高效执行我们最重要的工作负载，接近硬件理论极限。」</p>
+</blockquote>
+<blockquote>
+  <p>「与 OpenAI 的合作代表对扩展未来十年 AI 所需<strong>物理基础设施</strong>的根本承诺，」Broadcom 总裁兼 CEO <strong>Hock Tan</strong> 表示。「这只是多代路线图的起点。通过与 OpenAI 直接联合开发业界领先的硅片，我们正在与 Microsoft 等伙伴一起，自 2026 年起启用<strong>千兆瓦（gigawatt）级</strong>数据中心部署。」</p>
+</blockquote>
+
+<h2>专为 LLM 推理设计的平台</h2>
+<p>Jalapeño 是面向现代 LLM 推理的<strong>空白页（blank-slate）设计</strong>，而非从早期 AI 工作负载改造而来的通用加速器。它借鉴 OpenAI 每日运行的 ChatGPT、Codex、API 与未来 Agent 产品系统，同时也面向<strong>全行业</strong>当前与未来 LLM。目标是结合当今领先 AI 加速器的<strong>算力与吞吐</strong>，以及更接近最快专用推理系统的<strong>延迟</strong>，使其适合大规模交互式 LLM 产品。</p>
+<p>这就是<strong>全栈优势</strong>：OpenAI 不仅开发前沿模型或在之上做产品，还设计其下的基础设施——芯片架构、内核、内存系统、网络、调度、部署系统与产品体验。因 OpenAI 横跨全栈，每一层可围绕同一目标优化：让模型对用户<strong>更快、更可靠、更便宜</strong>。</p>
+
+<h2>飞轮：基础设施 → 模型 → 产品 → 再投资</h2>
+<p>Jalapeño 强化 OpenAI 进展背后的飞轮：更好的基础设施 → 更高算力效率 → 更好的训练与 Serving → 更强的模型 → 更好的产品 → 更多使用与收入 → 再投资下一代基础设施。长期看，该循环有助于让智能<strong>更强、更可靠、更便宜</strong>。</p>
+
+<h2>九个月流片：OpenAI 模型加速设计</h2>
+<p>Jalapeño 从初始设计到制造 <strong>tape-out</strong> 仅<strong>九个月</strong>——OpenAI 称这是高性能先进半导体领域<strong>有史以来最快的 ASIC 开发周期</strong>。速度来自 OpenAI 工程团队与 Broadcom 的深度软硬件协同，以及<strong>使用 OpenAI 模型加速部分设计与优化流程</strong>。服务用户的同一套模型，正在帮助改进运行未来模型的基础设施——若 AI 能帮助工程师更快设计更好的芯片，可降低全行业算力成本并民主化先进 AI。</p>
+
+<h2>多代平台与 Celestica</h2>
+<p>Jalapeño 是多代计算平台的第一步，计划<strong>2026 年底前</strong>首次部署并在随后年份扩展，组合包括：OpenAI 设计的加速器 + Broadcom 硅片实现/网络/连接 + <strong>Celestica</strong> 的板卡、机架与系统专长。</p>
+
+<h2>推理即 AI 触达用户之处</h2>
+<p>这项工作的要点很简单：<strong>推理是 AI 触达人的地方</strong>。成本、速度、可靠性的每一次改进，都可能体现为：更快的 ChatGPT 回答、更少等待的 Codex 多步任务、更便宜的 API、或在高峰需求时更稳定的服务。民主化 AI 意味着让先进模型<strong>可及、可靠、足够便宜</strong>，供学生、开发者、小企业、研究人员、企业与任何学习/创造/解决难题的人日常使用。</p>
+
+<h2>与科技 Hub 其它内容的衔接</h2>
+<p>下方半导体/平台前十与 IR 书签已对搜索引擎 <code>noindex</code>；本篇为可索引原创解读。更新流程：编辑 JSON → <code>npm run build-articles</code> → <code>npm run build-hubs</code> → <code>npm run build-seo-locales</code>。</p>
+
+<h2 id="article-seo-keywords">检索与官方入口</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI 官方博客</a>
+  <a class="pill" href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom IR 新闻稿</a>
+  <a class="pill" href="https://www.google.com/search?q=OpenAI+Jalape%C3%B1o+inference+chip" target="_blank" rel="noopener noreferrer">OpenAI Jalapeño chip</a>
+  <a class="pill" href="https://www.google.com/search?q=Broadcom+Tomahawk+AI+datacenter" target="_blank" rel="noopener noreferrer">Broadcom Tomahawk datacenter</a>
+  <a class="pill" href="https://www.google.com/search?q=LLM+inference+ASIC+2026" target="_blank" rel="noopener noreferrer">LLM inference ASIC 2026</a>
+  <a class="pill" href="https://www.google.com/search?q=OpenAI+custom+silicon+Broadcom" target="_blank" rel="noopener noreferrer">OpenAI custom silicon Broadcom</a>
+  <a class="pill" href="/tech.html">科技 Hub</a>
+  <a class="pill" href="/articles/index.html">全部原创索引</a>
+</div></article>
+    </div>
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>OpenAI×Broadcom、Jalapeño 推論チップ発表（2026-06-24）</h1>
+        <p class="article-shell__sub">9か月で tape-out · 2026年末デプロイ</p>
+        <p class="article-shell__meta"><time datetime="2026-06-24">2026-06-24</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI</a> と <a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom</a>（2026-06-24）が LLM 推論向け初の <strong>Jalapeño Intelligence Processor</strong> を発表。9 か月で tape-out、<strong>GPT‑5.3‑Codex‑Spark</strong> がラボで稼働、2026 年末デプロイ予定。</p>
+
+<h2>要点</h2>
+<ul>
+  <li><strong>空白設計</strong> — 汎用 GPU 改造ではなく LLM inference 専用 ASIC</li>
+  <li><strong>全栈</strong> — チップ・カーネル・メモリ・ネットワーク・Serving を OpenAI が一体最適化</li>
+  <li><strong>パートナー</strong> — Broadcom（シリコン・Tomahawk）、Celestica（ラック/基板）</li>
+  <li><strong>性能</strong> — 早期テストで SOTA 超の perf/W（詳細レポートは今後）</li>
+  <li><strong>規模</strong> — Microsoft 等と 2026 年からギガワット級 DC</li>
+</ul>
+<p>関連: <a href="/articles/nvidia-halos-robotics-physical-ai-20260622.html">NVIDIA Halos</a>、<a href="/articles/sensor-tower-state-of-ai-2026.html">State of AI 2026</a>。</p>
+
+<h2 id="article-seo-keywords">リンク</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI 公式</a>
+  <a class="pill" href="/tech.html">テック Hub</a>
+  <a class="pill" href="/articles/index.html">索引</a>
+</div></article>
+    </div>
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>OpenAI×Broadcom, Jalapeño LLM 추론 칩 공개（2026-06-24）</h1>
+        <p class="article-shell__sub">9개월 tape-out · 2026년 말 배포</p>
+        <p class="article-shell__meta"><time datetime="2026-06-24">2026-06-24</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI</a>와 <a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom</a>(2026-06-24)이 LLM 추론용 첫 <strong>Jalapeño Intelligence Processor</strong> 공개. 9개월 tape-out, <strong>GPT‑5.3‑Codex‑Spark</strong> 랩 검증, 2026년 말 배포.</p>
+
+<h2>핵심</h2>
+<ul>
+  <li>LLM inference 전용 blank-slate ASIC</li>
+  <li>OpenAI 전 스택(칩·커널·네트워크·Serving) 최적화</li>
+  <li>Broadcom(Tomahawk)·Celestica(랙/보드) 협력</li>
+  <li>초기 perf/W, SOTA 대비 상당히 우수(벤치는 추후)</li>
+  <li>Microsoft 등과 2026 gigawatt급 DC</li>
+</ul>
+<p>관련: <a href="/articles/nvidia-halos-robotics-physical-ai-20260622.html">NVIDIA Halos</a>, <a href="/articles/sensor-tower-state-of-ai-2026.html">State of AI 2026</a>.</p>
+
+<h2 id="article-seo-keywords">링크</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI</a>
+  <a class="pill" href="/tech.html">테크 Hub</a>
+  <a class="pill" href="/articles/index.html">전체 글</a>
+</div></article>
+    </div>
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>OpenAI × Broadcom dévoilent Jalapeño — processeur LLM inference（24 juin 2026）</h1>
+        <p class="article-shell__sub">Tape-out en 9 mois · déploiement fin 2026</p>
+        <p class="article-shell__meta"><time datetime="2026-06-24">2026-06-24</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI</a> et <a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom</a> (24 juin 2026) dévoilent <strong>Jalapeño</strong>, premier Intelligence Processor pour l’inférence LLM. Tape-out en 9 mois ; déploiement fin 2026 avec Microsoft.</p>
+
+<h2>Points clés</h2>
+<ul>
+  <li>ASIC inference LLM — design blank-slate, pas GPU généraliste</li>
+  <li>Co-développement OpenAI + Broadcom (Tomahawk) + Celestica</li>
+  <li>Échantillons labo avec GPT‑5.3‑Codex‑Spark</li>
+  <li>Perf/W annoncée nettement supérieure au SOTA (rapport à venir)</li>
+</ul>
+<p>Voir <a href="/articles/nvidia-halos-robotics-physical-ai-20260622.html">NVIDIA Halos</a>, <a href="/articles/sensor-tower-state-of-ai-2026.html">State of AI 2026</a>.</p>
+
+<h2 id="article-seo-keywords">Liens</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">Blog OpenAI</a>
+  <a class="pill" href="/tech.html">Hub tech</a>
+  <a class="pill" href="/articles/index.html">Index</a>
+</div></article>
+    </div>
+    <div class="lang-ru">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← На главную · оригиналы</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>OpenAI × Broadcom представили Jalapeño — чип для LLM inference（24 июня 2026）</h1>
+        <p class="article-shell__sub">Tape-out за 9 месяцев · развёртывание к концу 2026</p>
+        <p class="article-shell__meta"><time datetime="2026-06-24">2026-06-24</time> · Оригинал aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="ru"><p><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI</a> и <a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom</a> (24 июня 2026) представили <strong>Jalapeño</strong> — первый Intelligence Processor для LLM inference. Tape-out за 9 месяцев; развёртывание к концу 2026 с Microsoft.</p>
+
+<h2>Главное</h2>
+<ul>
+  <li>ASIC с нуля под LLM inference, не адаптированный GPU</li>
+  <li>Полный стек OpenAI: чип, ядра, память, сеть, serving</li>
+  <li>Broadcom (Tomahawk) + Celestica (стойки/платы)</li>
+  <li>Лабораторные образцы с GPT‑5.3‑Codex‑Spark</li>
+  <li>З заявлен perf/W выше SOTA; бенчмарки позже</li>
+</ul>
+<p>См. <a href="/articles/nvidia-halos-robotics-physical-ai-20260622.html">NVIDIA Halos</a>, <a href="/articles/sensor-tower-state-of-ai-2026.html">State of AI 2026</a>.</p>
+
+<h2 id="article-seo-keywords">Ссылки</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI</a>
+  <a class="pill" href="/tech.html">Tech hub</a>
+  <a class="pill" href="/articles/index.html">Все статьи</a>
+</div></article>
+    </div>
+    <div class="lang-ar">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← الرئيسية · محتوى أصلي</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>OpenAI وBroadcom تكشفان Jalapeño — معالج inference للـ LLM（24 يونيو 2026）</h1>
+        <p class="article-shell__sub">tape-out خلال 9 أشهر · نشر أواخر 2026</p>
+        <p class="article-shell__meta"><time datetime="2026-06-24">2026-06-24</time> · محتوى أصلي</p>
+      </div>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p>أعلنت <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI</a> و<a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor" target="_blank" rel="noopener noreferrer">Broadcom</a> (24 يونيو 2026) عن <strong>Jalapeño</strong> — أول Intelligence Processor لاستنتاج LLM. tape-out خلال 9 أشهر؛ نشر أواخر 2026 مع Microsoft.</p>
+
+<h2>أبرز النقاط</h2>
+<ul>
+  <li>ASIC مخصص لاستنتاج LLM — تصميم من الصفر</li>
+  <li>تكامل OpenAI للرقاقة والنواة والشبكة والخدمة</li>
+  <li>Broadcom (Tomahawk) وCelestica (الرفوف/اللوحات)</li>
+  <li>عينات مختبرية تشغّل GPT‑5.3‑Codex‑Spark</li>
+  <li>perf/W أفضل من SOTA في الاختبارات المبكرة (تقرير لاحقًا)</li>
+</ul>
+<p>انظر <a href="/articles/nvidia-halos-robotics-physical-ai-20260622.html">NVIDIA Halos</a>، <a href="/articles/sensor-tower-state-of-ai-2026.html">State of AI 2026</a>.</p>
+
+<h2 id="article-seo-keywords">روابط</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener noreferrer">OpenAI</a>
+  <a class="pill" href="/tech.html">Hub التقنية</a>
+  <a class="pill" href="/articles/index.html">كل المقالات</a>
+</div></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/about.html" class="footer-legal-link lang-en">About</a>
+        <a href="/contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="/privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="/contact.html" class="footer-legal-link lang-ko">문의</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="/about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="/contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="/privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="/about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="/contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="/about.html" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="/contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-en" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ko" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-fr" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ru" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ar" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer></script>
+</body></html>
