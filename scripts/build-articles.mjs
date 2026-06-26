@@ -27,6 +27,10 @@ import { injectStateOfAiSnapshot } from "./sensor-tower-state-of-ai-lib.mjs";
 import { injectNvidiaHalosRoboticsSnapshot } from "./nvidia-halos-robotics-lib.mjs";
 import { injectEmplifiFacebookUsPagesSnapshot } from "./emplifi-facebook-lib.mjs";
 import { injectBrandFinanceGlobal500Snapshot } from "./brand-finance-global-500-lib.mjs";
+import { injectAppleIphone17ProBuySnapshot } from "./apple-iphone-17-pro-buy-lib.mjs";
+import { injectWorldCup2026TurkeyUsmntSnapshot } from "./world-cup-2026-turkey-usmnt-lib.mjs";
+import { injectAmazonPrimeDay2026DealsSnapshot } from "./amazon-prime-day-2026-deals-lib.mjs";
+import { injectPlaystationStudiosBungieUpdateSnapshot } from "./playstation-studios-bungie-update-lib.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -244,6 +248,10 @@ function loadArticles() {
           body = injectNvidiaHalosRoboticsSnapshot(body, lang);
           body = injectEmplifiFacebookUsPagesSnapshot(body, lang);
           body = injectBrandFinanceGlobal500Snapshot(body, lang);
+          body = injectAppleIphone17ProBuySnapshot(body, lang);
+          body = injectWorldCup2026TurkeyUsmntSnapshot(body, lang);
+          body = injectAmazonPrimeDay2026DealsSnapshot(body, lang);
+          body = injectPlaystationStudiosBungieUpdateSnapshot(body, lang);
           raw["body" + suffixForLang(lang)] = body;
         } else {
           console.warn("Missing htmlFragments file:", rel, "for", raw.slug);

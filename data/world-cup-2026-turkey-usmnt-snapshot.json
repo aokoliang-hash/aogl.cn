@@ -1,0 +1,40 @@
+{
+  "fetchedAt": "2026-06-26",
+  "competitionEn": "2026 FIFA World Cup — Group D",
+  "competitionZh": "2026 FIFA 世界杯 · D 组",
+  "venueEn": "Inglewood, California (Los Angeles area)",
+  "venueZh": "加利福尼亚州英格尔伍德（洛杉矶都会区）",
+  "matchDateEn": "2026-06-25 (Thursday night)",
+  "matchDateZh": "2026-06-25（周四晚）",
+  "finalScore": { "home": "Türkiye", "away": "United States", "homeGoals": 3, "awayGoals": 2 },
+  "contextEn": "USA had already clinched Group D; Türkiye eliminated after two opening losses.",
+  "contextZh": "美国赛前已锁定 D 组头名；土耳其前两战失利已出局。",
+  "sources": {
+    "kctv": "https://www.kctv5.com/2026/06/26/us-closes-out-group-stage-play-with-3-2-loss-turkey/",
+    "foxHighlights": "https://www.foxsports.com/watch/fmc-i881hzuv5o4eq1vn"
+  },
+  "goals": [
+    { "minute": "3'", "team": "USA", "scorer": "Austin Trusty", "noteEn": "2nd-fastest USMNT World Cup goal", "noteZh": "美国队世界杯史上第二快进球" },
+    { "minute": "1st half", "team": "TUR", "scorer": "Arda Güler", "noteEn": "Türkiye level", "noteZh": "土耳其扳平" },
+    { "minute": "1st half", "team": "TUR", "scorer": "Orkun Kökçü", "noteEn": "Türkiye lead", "noteZh": "土耳其反超" },
+    { "minute": "49'", "team": "USA", "scorer": "Sebastian Berhalter", "noteEn": "Equalizer; US trailed 18 min total in group", "noteZh": "美国扳平；小组赛首次落后共 18 分钟" },
+    { "minute": "90+8'", "team": "TUR", "scorer": "Kaan Ayhan", "noteEn": "Stoppage-time winner", "noteZh": "补时绝杀" }
+  ],
+  "usmntGroup": {
+    "wins": 2,
+    "losses": 1,
+    "groupResultEn": "Group D winners — advance to Round of 32",
+    "groupResultZh": "D 组第一 — 晋级 32 强",
+    "groupGoalsEn": "7 goals in group stage (tied US pre-knockout WC record)",
+    "groupGoalsZh": "小组赛 7 球（平美国世界杯淘汰赛阶段前纪录）"
+  },
+  "nextMatch": {
+    "opponent": "Bosnia and Herzegovina",
+    "dateEn": "Wednesday, 2026-06-01",
+    "dateZh": "2026-06-01（周三）",
+    "venueEn": "Santa Clara, California · 7 p.m. CT kickoff",
+    "venueZh": "加利福尼亚州圣克拉拉 · 中部时间 19:00 开球"
+  },
+  "lineupNotesEn": "Mauricio Pochettino made nine changes from 2-0 win over Australia; Christian Pulisic subbed on 58' (first action since Paraguay opener, calf injury).",
+  "lineupNotesZh": "波切蒂诺相对胜澳大利亚一战轮换 9 人；普利西奇第 58 分钟替补登场（自揭幕战对巴拉圭后首次出场，小腿伤愈）。"
+}

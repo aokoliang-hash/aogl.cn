@@ -1,0 +1,82 @@
+{
+  "fetchedAt": "2026-06-01",
+  "productNameEn": "iPhone 17 Pro / iPhone 17 Pro Max",
+  "productNameZh": "iPhone 17 Pro / iPhone 17 Pro Max",
+  "sources": {
+    "buyPage": "https://www.apple.com/shop/buy-iphone/iphone-17-pro",
+    "tradeIn": "https://www.apple.com/shop/trade-in"
+  },
+  "headlineEn": "From $1099 or $45.79/mo. for 24 months",
+  "headlineZh": "起价 $1099，或 24 期 $45.79/月",
+  "tradeInCreditRangeEn": "$35–$695 in credit toward your next iPhone",
+  "tradeInCreditRangeZh": "折抵下一部 iPhone 可获 $35–$695 积分",
+  "colors": ["Cosmic Orange", "Deep Blue", "Silver"],
+  "storageUnlockPricing": [
+    { "model": "iPhone 17 Pro", "storage": "256GB", "priceUsd": 1099 },
+    { "model": "iPhone 17 Pro", "storage": "512GB", "priceUsd": 1299 },
+    { "model": "iPhone 17 Pro", "storage": "1TB", "priceUsd": 1499 },
+    { "model": "iPhone 17 Pro Max", "storage": "256GB", "priceUsd": 1199 },
+    { "model": "iPhone 17 Pro Max", "storage": "512GB", "priceUsd": 1399 },
+    { "model": "iPhone 17 Pro Max", "storage": "1TB", "priceUsd": 1599 },
+    { "model": "iPhone 17 Pro Max", "storage": "2TB", "priceUsd": 1999 }
+  ],
+  "carrierDeals": [
+    {
+      "carrier": "AT&T",
+      "headlineEn": "Save up to $1100 after trade-in",
+      "headlineZh": "以旧换新最高省 $1100"
+    },
+    {
+      "carrier": "Boost Mobile",
+      "headlineEn": "Up to $830 — no trade-in required to qualify",
+      "headlineZh": "最高 $830，无需以旧换新即可符合资格"
+    },
+    {
+      "carrier": "T-Mobile",
+      "headlineEn": "Save up to $1100 after trade-in",
+      "headlineZh": "以旧换新最高省 $1100"
+    },
+    {
+      "carrier": "Verizon",
+      "headlineEn": "Up to $830 for eligible trade-in in any condition",
+      "headlineZh": "符合条件以旧换新任意成色最高 $830"
+    }
+  ],
+  "tradeInSteps": [
+    {
+      "step": 1,
+      "titleEn": "See what your smartphone is worth",
+      "titleZh": "查看旧机估价",
+      "bodyEn": "Answer a few questions to get your estimated trade-in value.",
+      "bodyZh": "回答几个问题即可获得预估折抵金额。"
+    },
+    {
+      "step": 2,
+      "titleEn": "Choose your payment method",
+      "titleZh": "选择付款方式",
+      "bodyEn": "Trade-in credit applies to any payment option — instant with Apple financing, after inspection with Buy, or as carrier bill credits.",
+      "bodyZh": "折抵可用于任意付款方式——Apple 分期可即时抵扣；直接购买则在收到并验机后入账；运营商分期则为账单抵扣或即时积分。"
+    },
+    {
+      "step": 3,
+      "titleEn": "Get ready to trade in",
+      "titleZh": "准备交回旧机",
+      "bodyEn": "Keep your old device until the new one arrives; Apple sends a trade-in kit with backup and shipping instructions.",
+      "bodyZh": "在新机送达前保留旧机；Apple 寄出以旧换新套件并邮件说明备份与寄回步骤。"
+    },
+    {
+      "step": 4,
+      "titleEn": "Ship within 14 days",
+      "titleZh": "14 天内寄回",
+      "bodyEn": "After inspection, if condition matches your estimate the trade-in completes; otherwise Apple emails next steps.",
+      "bodyZh": "验机后若状况与估价一致则完成折抵；否则 Apple 邮件告知后续步骤。"
+    }
+  ],
+  "specHighlights": [
+    { "keyEn": "Display", "keyZh": "屏幕", "valueEn": "6.3″ or 6.9″ Super Retina XDR · ProMotion · Always-On · Dynamic Island", "valueZh": "6.3 或 6.9 英寸 Super Retina XDR · ProMotion · 全天候显示 · 灵动岛" },
+    { "keyEn": "Chip", "keyZh": "芯片", "valueEn": "A19 Pro · 6-core GPU with Neural Accelerators · HW ray tracing", "valueZh": "A19 Pro · 6 核 GPU（Neural Accelerators）· 硬件光追" },
+    { "keyEn": "Camera", "keyZh": "相机", "valueEn": "48MP Pro Fusion Main / Ultra Wide / Telephoto · 0.5x–8x optical zoom", "valueZh": "48MP Pro Fusion 主摄/超广/长焦 · 0.5x–8x 光学变焦" },
+    { "keyEn": "Battery", "keyZh": "续航", "valueEn": "Up to 39 hours video playback (larger Pro Max)", "valueZh": "视频播放最长约 39 小时（Pro Max 大机型）" },
+    { "keyEn": "Connectivity", "keyZh": "连接", "valueEn": "USB‑C · USB 3 up to 20× transfers · eSIM only (US/Puerto Rico)", "valueZh": "USB‑C · USB 3 最高 20 倍传输 · 仅 eSIM（美国/波多黎各）" }
+  ]
+}

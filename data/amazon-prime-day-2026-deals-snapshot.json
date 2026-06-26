@@ -1,0 +1,145 @@
+{
+  "fetchedAt": "2026-06-01",
+  "sourceUrl": "https://www.aboutamazon.com/news/retail/best-prime-day-deals-2026",
+  "sourceTitle": "185+ of the Best Prime Day 2026 Deals to Shop on Day 3",
+  "eventStart": "2026-06-23",
+  "eventEnd": "2026-06-26",
+  "eventStartNoteZh": "2026 Prime Day 于 6 月 23 日 00:01 PDT 开始",
+  "eventStartNoteEn": "Prime Day 2026 started Tuesday, June 23, at 12:01 a.m. PDT",
+  "eventEndNoteZh": "Prime Day 2026 于 6 月 26 日午夜结束；Prime 会员专享，覆盖 35+ 品类",
+  "eventEndNoteEn": "Prime Day 2026 ends at midnight on Friday, June 26 — four days of member-exclusive deals across 35+ categories",
+  "dayLabelZh": "Day 3（第三日精选）",
+  "dayLabelEn": "Day 3 hand-picked deals",
+  "categories": [
+    {
+      "id": "tech",
+      "labelZh": "科技数码",
+      "labelEn": "Tech",
+      "deals": [
+        { "product": "Google Pixel 10 Pro", "discount": "29% off", "url": "https://www.amazon.com/Google-Pixel-Pro-Smartphone-Fast-Charging/dp/B0FFTQGTCK" },
+        { "product": "Apple AirTag (2nd Gen)", "discount": "10% off", "url": "https://www.amazon.com/Apple-AirTag-2nd-Generation-Precision/dp/B0GJTXVN9Z" },
+        { "product": "Bose SoundLink Max", "discount": "30% off", "url": "https://www.amazon.com/Bose-SoundLink-Portable-Waterproof-Bluetooth/dp/B0CVLD42PD" },
+        { "product": "Samsung The Frame TV", "discount": "36% off", "url": "https://www.amazon.com/Samsung-55-Inch-Processor-Picture-Quality/dp/B0DXN3QKS8" },
+        { "product": "Google Nest Wifi Pro", "discount": "55% off", "url": "https://www.amazon.com/Google-Nest-WiFi-Pro-Lemongrass/dp/B0BCQTXR25" },
+        { "product": "Beats Solo 4", "discount": "50% off", "url": "https://www.amazon.com/Beats-Solo-Ear-Headphones-Compatible/dp/B0CZPHPJLN" },
+        { "product": "Sony WH-1000XM5", "discount": "29% off", "url": "https://www.amazon.com/dp/B0BXYCS74H" },
+        { "product": "Apple Watch Series 11", "discount": "28% off", "url": "https://www.amazon.com/Apple-Smartwatch-Silver-Aluminum-Always/dp/B0FQF9S6MH" }
+      ]
+    },
+    {
+      "id": "amazon-devices",
+      "labelZh": "Amazon 自有设备",
+      "labelEn": "Amazon devices",
+      "deals": [
+        { "product": "Echo Show 11", "discount": "32% off", "url": "https://www.amazon.com/Amazon-Echo-Show-11-Vibrant-Full-HD-11-display-Glacier-White-Amazon/dp/B0DC96PPZK" },
+        { "product": "Blink Outdoor 4", "discount": "65% off", "url": "https://www.amazon.com/Blink-Outdoor-newest-model-Wireless/dp/B0DHLSZXQD" },
+        { "product": "Kindle Scribe Colorsoft", "discount": "24% off", "url": "https://www.amazon.com/Amazon-Kindle-Scribe-Colorsoft-newest/dp/B0FC1WNVMX" },
+        { "product": "Ring Battery Doorbell", "discount": "50% off", "url": "https://www.amazon.com/Ring-Battery-Doorbell-newest-Built/dp/B0FHJ7TKZM" },
+        { "product": "Fire TV Stick 4K Select", "discount": "55% off", "url": "https://www.amazon.com/amazon-fire-tv-stick-4K-select/dp/B0C6W3D4RM" },
+        { "product": "Blink Mini 2", "discount": "68% off", "url": "https://www.amazon.com/Blink-Mini-2-Camera-White/dp/B0BWWZXWPL" }
+      ]
+    },
+    {
+      "id": "home",
+      "labelZh": "家居厨房",
+      "labelEn": "Home & kitchen",
+      "deals": [
+        { "product": "Dyson Ball Animal 2 Plus", "discount": "33% off", "url": "https://www.amazon.com/dp/B0GTBQQ9YK" },
+        { "product": "Ninja CREAMi", "discount": "20% off", "url": "https://www.amazon.com/dp/B0DSJW8SFG" },
+        { "product": "Dyson V8 Cordless Vacuum", "discount": "31% off", "url": "https://www.amazon.com/dp/B0GT2DG9SK" },
+        { "product": "Stanley H2.0 FlowState Tumbler", "discount": "50% off", "url": "https://www.amazon.com/Flowstate-3-Position-Compatible-Insulated-Stainless/dp/B0DR9MZ563" },
+        { "product": "Le Creuset Dutch Oven", "discount": "30% off", "url": "https://www.amazon.com/Creuset-Enameled-Signature-Dutch-White/dp/B0DQVLDW7P" },
+        { "product": "KitchenAid Artisan 5-qt Mixer", "discount": "24% off", "url": "https://www.amazon.com/KitchenAid-KSM150PSVB-Artisan-Mixers-Velvet/dp/B07QHQ8CD3" },
+        { "product": "iRobot Roomba 415X", "discount": "50% off", "url": "https://www.amazon.com/iRobot-AutoEmpty-Multifunction-Self-Cleaning-Avoidance/dp/B0GT6BYB85" }
+      ]
+    },
+    {
+      "id": "fashion",
+      "labelZh": "时尚",
+      "labelEn": "Fashion",
+      "deals": [
+        { "product": "Nike Court Legacy Next Nature", "discount": "25% off", "url": "https://www.amazon.com/Nike-Womens-Legacy-Sneaker-Yellow/dp/B0F2JLYRKC" },
+        { "product": "GAP Classic Tees (2-pack)", "discount": "43% off", "url": "https://www.amazon.com/dp/B0FMB4YZT5" },
+        { "product": "New Balance Fresh Foam Sneakers", "discount": "29% off", "url": "https://www.amazon.com/New-Balance-Running-Metallic-Phantom/dp/B0CMYGH7QW" },
+        { "product": "Ray-Ban Sunglasses", "discount": "25% off", "url": "https://www.amazon.com/dp/B0D9ZWPJTB" },
+        { "product": "Levi's A-line Shorts", "discount": "52% off", "url": "https://www.amazon.com/dp/B0DJV6BV46" }
+      ]
+    },
+    {
+      "id": "beauty",
+      "labelZh": "美妆个护",
+      "labelEn": "Beauty & grooming",
+      "deals": [
+        { "product": "Dyson Supersonic Nural", "discount": "27% off", "url": "https://www.amazon.com/dp/B0F96N2BP8" },
+        { "product": "LANEIGE Lip Sleeping Mask", "discount": "34% off", "url": "https://www.amazon.com/dp/B07XXPHQZK" },
+        { "product": "Dyson Airwrap i.d.", "discount": "30% off", "url": "https://www.amazon.com/Dyson-Multi-Styler-Chitosan-Post-Style-Exclusive/dp/B0GQD9Y72Z" },
+        { "product": "Shark FlexStyle", "discount": "38% off", "url": "https://www.amazon.com/dp/B0B9ZMZ65C" },
+        { "product": "Laura Geller Baked Foundation", "discount": "47% off", "url": "https://www.amazon.com/Laura-Geller-York-Baked-Balance-N-Brighten/dp/B000IEMGGE" }
+      ]
+    },
+    {
+      "id": "toys",
+      "labelZh": "玩具游戏",
+      "labelEn": "Toys & games",
+      "deals": [
+        { "product": "LEGO Star Wars Imperial Star Destroyer", "discount": "30% off", "url": "https://www.amazon.com/LEGO-Destroyer-Buildable-Anniversary-Minifigure/dp/B0CRWRY5RM" },
+        { "product": "MAGNA-TILES Classic 32-Piece", "discount": "30% off", "url": "https://www.amazon.com/Magna-Tiles-32-Piece-Award-Winning-Creativity-Educational/dp/B000CBSNKQ" },
+        { "product": "Little Tikes Story Dream Machine", "discount": "31% off", "url": "https://www.amazon.com/Little-Tikes-Story-Dream-Machine/dp/B0BN5G4G31" },
+        { "product": "Catan Board Game", "discount": "45% off", "url": "https://www.amazon.com/CATAN-Classic-Strategy-Players-Playtime/dp/B0DYK1ZH2D" },
+        { "product": "Nex Playground", "discount": "21% off", "url": "https://www.amazon.com/Nex-Playground-Active-System-Families-3-Month/dp/B0F5WHRG74" }
+      ]
+    },
+    {
+      "id": "outdoor",
+      "labelZh": "户外园艺",
+      "labelEn": "Lawn & outdoor",
+      "deals": [
+        { "product": "Bird Buddy Smart Feeder", "discount": "44% off", "url": "https://www.amazon.com/Bird-Buddy-Solar-Feeder-Camera/dp/B0DHY6B9GY" },
+        { "product": "Coleman RoadTrip 225 Grill", "discount": "42% off", "url": "https://www.amazon.com/Coleman-Matchless-Adjustable-Temperature-Tailgating/dp/B07BLHC2G2" },
+        { "product": "Blackstone 28\" Omnivore Griddle", "discount": "34% off", "url": "https://www.amazon.com/Blackstone-2450AZ-Omnivore-Griddle-Spatulas/dp/B0DGY312P1" },
+        { "product": "Greenworks 40V Lawn Mower", "discount": "37% off", "url": "https://www.amazon.com/Greenworks-Cordless-Ultra-Light-Battery-Compatibility/dp/B00BBQVL5U" },
+        { "product": "Govee Outdoor String Lights", "discount": "42% off", "url": "https://www.amazon.com/Govee-Outdoor-String-Control-Waterproof/dp/B0F21SVF9R" }
+      ]
+    },
+    {
+      "id": "baby",
+      "labelZh": "母婴",
+      "labelEn": "Baby",
+      "deals": [
+        { "product": "Nanit Smart Baby Monitor", "discount": "25% off", "url": "https://www.amazon.com/Nanit-Monitor-System-Display-Screen/dp/B0GN8YR51C" },
+        { "product": "Graco Extend2Fit Car Seat", "discount": "27% off", "url": "https://www.amazon.com/Graco-Extend2Fit-Convertible-Adjustable-Extension/dp/B0DHLQMWW7" },
+        { "product": "WaterWipes Sensitive+ (12-pack)", "discount": "30% off", "url": "https://www.amazon.com/WaterWipes-Sensitive-Wipes-Count-Packs/dp/B008KJEYLO" },
+        { "product": "Huggies Little Snugglers Size 1", "discount": "30% off", "url": "https://www.amazon.com/Huggies-Little-Snugglers-Diapers-Packaging/dp/B07MYW85VT" }
+      ]
+    },
+    {
+      "id": "grocery",
+      "labelZh": "食品杂货",
+      "labelEn": "Grocery",
+      "deals": [
+        { "product": "Diet Coke 12-pack", "discount": "25% off", "url": "https://www.amazon.com/Diet-Coke-12-Pack/dp/B000T9WLUY" },
+        { "product": "Poppi Prebiotic Soda 12-pack", "discount": "28% off", "url": "https://www.amazon.com/dp/B094LFK6DF" },
+        { "product": "Ensure Max Protein 12-pack", "discount": "40% off", "url": "https://www.amazon.com/Ensure-Max-Protein-Nutrition-Chocolate/dp/B0791Y2LMB" },
+        { "product": "Frito-Lay Variety Pack (40 ct)", "discount": "30% off", "url": "https://www.amazon.com/Frito-Lay-Party-Variety-Pack-Count/dp/B076H2J9TZ" }
+      ]
+    },
+    {
+      "id": "sports",
+      "labelZh": "运动健身",
+      "labelEn": "Sports & fitness",
+      "deals": [
+        { "product": "Amazon Basics Pickleball Set", "discount": "28% off", "url": "https://www.amazon.com/Amazon-Basics-Pickleball-Approved-Aesthetic/dp/B0F6CQ829R" },
+        { "product": "LifeStraw Personal Water Filter", "discount": "36% off", "url": "https://www.amazon.com/LifeStraw-Personal-Camping-Emergency-Preparedness/dp/B006QF3TW4" },
+        { "product": "Callaway Strata Golf Set", "discount": "21% off", "url": "https://www.amazon.com/Callaway-Strata-Complete-Piece-Package/dp/B07H2HQJR5" },
+        { "product": "Fitbit Charge 6", "discount": "47% off", "url": "https://www.amazon.com/Fitbit-Charge-Fitness-Tracker-Google/dp/B0CC62ZG1M" },
+        { "product": "Peloton Cross Training Bike", "discount": "24% off", "url": "https://www.amazon.com/Peloton-Exercise-Stationary-Space-Friendly-Equipment/dp/B0FLQNKJMN" }
+      ]
+    }
+  ],
+  "relatedLinks": [
+    { "titleZh": "Prime Day 2026 日期与规则", "titleEn": "When is Prime Day 2026", "url": "https://www.aboutamazon.com/news/retail/when-is-amazon-prime-day" },
+    { "titleZh": "Kindle Prime Day 优惠", "titleEn": "Kindle Prime Day deals", "url": "https://www.aboutamazon.com/news/retail/prime-day-kindle-deals-2026" },
+    { "titleZh": "Amazon Haul $3/$5/$10 精选", "titleEn": "Amazon Haul deals", "url": "https://www.aboutamazon.com/news/retail/amazon-haul-prime-day-deals-2026" },
+    { "titleZh": "9 个 AI 购物功能找好价", "titleEn": "Amazon AI shopping tools", "url": "https://www.aboutamazon.com/news/retail/amazon-ai-shopping-tools" }
+  ]
+}

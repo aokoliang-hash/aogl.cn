@@ -1,0 +1,53 @@
+{
+  "fetchedAt": "2026-06-26",
+  "sourceUrl": "https://sonyinteractive.com/en/news/blog/an-update-from-playstation-studios-2/",
+  "sourceTitle": "An Update from PlayStation Studios",
+  "publisher": "SIE Communications",
+  "author": "Hermen Hulst",
+  "authorTitleZh": "Studio Business Group 首席执行官，Sony Interactive Entertainment",
+  "authorTitleEn": "CEO, Studio Business Group, Sony Interactive Entertainment",
+  "memoDateZh": "2026-06-25（SIE 员工内部邮件，同日公开）",
+  "memoDateEn": "June 25, 2026 (internal SIE email, published same day)",
+  "headlineZh": "PlayStation Studios 就 Bungie 裁员与组织调整发布说明",
+  "headlineEn": "PlayStation Studios update on Bungie workforce reduction",
+  "impacts": [
+    {
+      "areaZh": "Bungie · Destiny 团队",
+      "areaEn": "Bungie · Destiny team",
+      "detailZh": "大幅裁员，受影响员工中包括 Destiny 团队的大部分成员",
+      "detailEn": "Workforce reduction affecting most of the Destiny team"
+    },
+    {
+      "areaZh": "Bungie · Marathon 团队",
+      "areaEn": "Bungie · Marathon team",
+      "detailZh": "部分 Marathon 团队成员受影响",
+      "detailEn": "Some Marathon team members affected"
+    },
+    {
+      "areaZh": "SIE 支持团队",
+      "areaEn": "SIE support teams",
+      "detailZh": "支持 Bungie 运营的 SIE 团队亦有裁员",
+      "detailEn": "Reductions across SIE teams that support Bungie operations"
+    }
+  ],
+  "rationaleZh": "过去数月与 Bungie 领导层审视工作室长期方向、开发优先级、资源需求及在 PlayStation 投资组合中的角色；在探索多种替代方案后，认为裁员是使资源与当前优先级和长期目标对齐的必要步骤。",
+  "rationaleEn": "After months of review with Bungie leadership on long-term direction, priorities, resources, and portfolio role—and after exploring alternatives—Sony concluded a reduction was necessary to align resources with current priorities and long-term goals.",
+  "destinyNoteZh": "Bungie 近期在 Destiny 2 更新中宣布，在最终 live-service 内容更新发布后开启新阶段；过去十年 Destiny 对玩家与行业影响深远。",
+  "destinyNoteEn": "As Bungie noted in its recent Destiny 2 update, the studio begins a new journey after the franchise’s final live-service content update; a decade of Destiny left a lasting mark.",
+  "marathonNoteZh": "Marathon 仍是投资组合重要部分；将继续支持团队在 Season 1/2 基础上推进，并孵化未来项目。",
+  "marathonNoteEn": "Marathon remains an important portfolio title; SIE will continue supporting the team building on Seasons 1–2 and incubation for future projects.",
+  "supportNoteZh": "优先为受影响员工提供过渡支持，并在可能情况下于 SIE 及全球工作室网络中寻找机会。",
+  "supportNoteEn": "Immediate priority is transition support for affected employees and, where possible, opportunities across SIE and its global studio network.",
+  "relatedLinks": [
+    {
+      "titleZh": "SIE 官方博客全文",
+      "titleEn": "Official SIE blog post",
+      "url": "https://sonyinteractive.com/en/news/blog/an-update-from-playstation-studios-2/"
+    },
+    {
+      "titleZh": "Bungie 官网",
+      "titleEn": "Bungie",
+      "url": "https://www.bungie.net/"
+    }
+  ]
+}
