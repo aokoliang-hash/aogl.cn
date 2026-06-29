@@ -1,0 +1,515 @@
+{
+  "fetchedAt": "2026-06-29",
+  "fetchStatus": "manual",
+  "fetchNote": "Archived from Amazon.com Best Sellers in Electronics (Top 50). Source chart UI June 2026.",
+  "chartTitleEn": "Best Sellers in Electronics",
+  "chartTitleZh": "电子产品 Best Sellers",
+  "geo": "US",
+  "geoLabelEn": "United States (Amazon.com)",
+  "geoLabelZh": "美国（Amazon.com）",
+  "sourceChartUrl": "https://www.amazon.com/gp/bestsellers/electronics/ref=zg_bs_electronics_sm",
+  "heroAsin": "B08JHCVHTY",
+  "heroProductUrl": "https://www.amazon.com/dp/B08JHCVHTY",
+  "entries": [
+    {
+      "rank": 1,
+      "asin": "B08JHCVHTY",
+      "titleEn": "blink plus plan with monthly auto-renewal",
+      "titleZh": "Blink Plus 计划（按月自动续订）",
+      "productUrl": "https://www.amazon.com/dp/B08JHCVHTY",
+      "rating": 4.4,
+      "reviewCount": 277246,
+      "priceDisplay": "TWD 381.85"
+    },
+    {
+      "rank": 2,
+      "asin": "B0B1N7LJD3",
+      "titleEn": "Blink Outdoor 4 – Wireless smart security camera, two-year battery life, two-way talk. Required Sync Module not included – Add-on camera",
+      "titleZh": "Blink Outdoor 4 无线安防摄像头（Add-on）",
+      "productUrl": "https://www.amazon.com/dp/B0B1N7LJD3",
+      "rating": 4.2,
+      "reviewCount": 29381,
+      "priceDisplay": "From TWD 2,228.97"
+    },
+    {
+      "rank": 3,
+      "asin": "B0GJTFXNRX",
+      "titleEn": "Apple AirTag (2nd Generation): Tracker for Keychain, Wallet, and More; Locator with Sound; Simple One-Tap Setup with iPhone or iPad; Key Finder with up to 1.5X Precision Finding Range",
+      "titleZh": "Apple AirTag（第二代）",
+      "productUrl": "https://www.amazon.com/dp/B0GJTFXNRX",
+      "rating": 4.6,
+      "reviewCount": 5627,
+      "priceDisplay": "From TWD 710.83"
+    },
+    {
+      "rank": 4,
+      "asin": "B0FQFB8FMG",
+      "titleEn": "Apple AirPods Pro 3 Wireless Earbuds, Active Noise Cancellation, Live Translation, Heart Rate Sensing, Hearing Aid Feature, Bluetooth Headphones, Spatial Audio, High-Fidelity Sound, USB-C Charging",
+      "titleZh": "Apple AirPods Pro 3",
+      "productUrl": "https://www.amazon.com/dp/B0FQFB8FMG",
+      "rating": 4.5,
+      "reviewCount": 10996,
+      "priceDisplay": "From TWD 5,563.67"
+    },
+    {
+      "rank": 5,
+      "asin": "B09B8V1LZ3",
+      "titleEn": "Amazon Echo Dot (newest model) - Vibrant sounding speaker, Designed for Alexa+, Great for bedrooms, dining rooms and offices, Charcoal",
+      "titleZh": "Amazon Echo Dot（最新款）",
+      "productUrl": "https://www.amazon.com/dp/B09B8V1LZ3",
+      "rating": 4.7,
+      "reviewCount": 194509,
+      "priceDisplay": "TWD 1,592.03"
+    },
+    {
+      "rank": 6,
+      "asin": "B0BFC7WQ6R",
+      "titleEn": "Amazon Echo Spot (newest model), Great for nightstands, offices and kitchens, Smart alarm clock, Designed for Alexa+, Black",
+      "titleZh": "Amazon Echo Spot（最新款）",
+      "productUrl": "https://www.amazon.com/dp/B0BFC7WQ6R",
+      "rating": 4.5,
+      "reviewCount": 43053,
+      "priceDisplay": "TWD 2,547.44"
+    },
+    {
+      "rank": 7,
+      "asin": "B0FQF9ZX7P",
+      "titleEn": "Apple Watch Series 11 [GPS 42mm] Smartwatch with Rose Gold Aluminum Case with Light Blush Sport Band - S/M. Sleep Score, Fitness Tracker, Health Monitoring, Always-On Display, Water Resistant",
+      "titleZh": "Apple Watch Series 11（GPS 42mm）",
+      "productUrl": "https://www.amazon.com/dp/B0FQF9ZX7P",
+      "rating": 4.7,
+      "reviewCount": 5538,
+      "priceDisplay": "From TWD 8,085.63"
+    },
+    {
+      "rank": 8,
+      "asin": "B0H6GX9QQ6",
+      "titleEn": "Ring Battery Doorbell (newest model), Speckled Gray with Indoor Cam, White",
+      "titleZh": "Ring Battery Doorbell（最新款）",
+      "productUrl": "https://www.amazon.com/dp/B0H6GX9QQ6",
+      "rating": 2.2,
+      "reviewCount": 4,
+      "priceDisplay": "TWD 4,776.41"
+    },
+    {
+      "rank": 9,
+      "asin": "B0DJGDC3BD",
+      "titleEn": "Amazon Fire TV Stick HD (newest model), free & live TV, Alexa Voice Remote, powered by the TV, effortless setup, find shows faster with Alexa+",
+      "titleZh": "Amazon Fire TV Stick HD（最新款）",
+      "productUrl": "https://www.amazon.com/dp/B0DJGDC3BD",
+      "rating": 4.1,
+      "reviewCount": 1161,
+      "priceDisplay": "TWD 1,114.33"
+    },
+    {
+      "rank": 10,
+      "asin": "B0C6W3D4RM",
+      "titleEn": "Amazon Fire TV Stick 4K Select (newest model), start streaming in 4K, AI-powered search, and free & live TV, find shows faster with Alexa+",
+      "titleZh": "Amazon Fire TV Stick 4K Select",
+      "productUrl": "https://www.amazon.com/dp/B0C6W3D4RM",
+      "rating": 4.2,
+      "reviewCount": 10965,
+      "priceDisplay": "TWD 1,273.56"
+    },
+    {
+      "rank": 11,
+      "asin": "B0DCH8VDXF",
+      "titleEn": "Apple EarPods Headphones with USB-C Plug, Wired Ear Buds with Built-in Remote to Control Music, Phone Calls, and Volume",
+      "titleZh": "Apple EarPods（USB-C）",
+      "productUrl": "https://www.amazon.com/dp/B0DCH8VDXF",
+      "rating": 4.6,
+      "reviewCount": 14775,
+      "priceDisplay": "From TWD 559.87"
+    },
+    {
+      "rank": 12,
+      "asin": "B0DGHMNQ5Z",
+      "titleEn": "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones, Personalized Spatial Audio, Sweat and Water Resistant, USB-C Charging Case, H2 Chip, Up to 30 Hours of Battery Life, Effortless Setup for iPhone",
+      "titleZh": "Apple AirPods 4",
+      "productUrl": "https://www.amazon.com/dp/B0DGHMNQ5Z",
+      "rating": 4.6,
+      "reviewCount": 31165,
+      "priceDisplay": "From TWD 4,398.39"
+    },
+    {
+      "rank": 13,
+      "asin": "B0CZPLV566",
+      "titleEn": "Beats Solo 4 - Wireless On-Ear Bluetooth Headphones, Up to 50-Hour Battery Life, Ultra-Lightweight Comfort, Powerful and Balanced Sound, Apple & Android Compatible - Matte Black",
+      "titleZh": "Beats Solo 4",
+      "productUrl": "https://www.amazon.com/dp/B0CZPLV566",
+      "rating": 4.6,
+      "reviewCount": 27072,
+      "priceDisplay": "From TWD 2,993.62"
+    },
+    {
+      "rank": 14,
+      "asin": "B0F7Z4QZTT",
+      "titleEn": "Amazon Fire TV Stick 4K Plus (newest model) with AI-powered Fire TV Search, Wi-Fi 6, stream hundreds of thousands of movies and shows, free & live TV, find shows faster with Alexa+",
+      "titleZh": "Amazon Fire TV Stick 4K Plus",
+      "productUrl": "https://www.amazon.com/dp/B0F7Z4QZTT",
+      "rating": 4.6,
+      "reviewCount": 110429,
+      "priceDisplay": "TWD 1,592.03"
+    },
+    {
+      "rank": 15,
+      "asin": "B0DZ77D5HL",
+      "titleEn": "Apple iPad 11-inch: A16 chip, 11-inch Model, Liquid Retina Display, 128GB, Wi-Fi 6, 12MP Front/12MP Back Camera, Touch ID, All-Day Battery Life — Silver",
+      "titleZh": "Apple iPad 11 英寸（A16）",
+      "productUrl": "https://www.amazon.com/dp/B0DZ77D5HL",
+      "rating": 4.7,
+      "reviewCount": 25405,
+      "priceDisplay": "TWD 14,858.22"
+    },
+    {
+      "rank": 16,
+      "asin": "B0F1DGM1TM",
+      "titleEn": "INSIGNIA 50\" Class F50 Series LED 4K UHD Smart Fire TV with Alexa Voice Remote (NS-50F502NA26)",
+      "titleZh": "INSIGNIA 50\" Fire TV 4K",
+      "productUrl": "https://www.amazon.com/dp/B0F1DGM1TM",
+      "rating": 4.4,
+      "reviewCount": 9884,
+      "priceDisplay": "TWD 5,732.14"
+    },
+    {
+      "rank": 17,
+      "asin": "B0D9WVWXR1",
+      "titleEn": "Oura Ring 4 Sizing Kit - Before You Buy the Unique Sizing, Not Standard US Sizes - Receive Credit for Purchase, Sizing Kit, Oura App",
+      "titleZh": "Oura Ring 4 尺码套装",
+      "productUrl": "https://www.amazon.com/dp/B0D9WVWXR1",
+      "rating": 4.5,
+      "reviewCount": 3698,
+      "priceDisplay": "From TWD 270.38"
+    },
+    {
+      "rank": 18,
+      "asin": "B0DC91H3JK",
+      "titleEn": "Amazon Echo Show 11 (newest model), Vibrant Full-HD 11\" display with more viewing area and spatial audio, Designed for Alexa+, Graphite",
+      "titleZh": "Amazon Echo Show 11",
+      "productUrl": "https://www.amazon.com/dp/B0DC91H3JK",
+      "rating": 4.4,
+      "reviewCount": 5445,
+      "priceDisplay": "TWD 7,006.02"
+    },
+    {
+      "rank": 19,
+      "asin": "B0BP9SNVH9",
+      "titleEn": "Amazon Fire TV Stick 4K Max (newest model), streaming device, with AI-powered Fire TV Search, supports Wi-Fi 6E, free & live TV without cable or satellite, find shows faster with Alexa+",
+      "titleZh": "Amazon Fire TV Stick 4K Max",
+      "productUrl": "https://www.amazon.com/dp/B0BP9SNVH9",
+      "rating": 4.6,
+      "reviewCount": 79002,
+      "priceDisplay": "TWD 1,910.50"
+    },
+    {
+      "rank": 20,
+      "asin": "B0CFPJYX7P",
+      "titleEn": "Amazon Kindle Paperwhite 16GB (newest model) – 20% faster, with new 7\" glare-free display and weeks of battery life – Black",
+      "titleZh": "Kindle Paperwhite 16GB（最新款）",
+      "productUrl": "https://www.amazon.com/dp/B0CFPJYX7P",
+      "rating": 4.7,
+      "reviewCount": 19368,
+      "priceDisplay": "From TWD 3,821.32"
+    },
+    {
+      "rank": 21,
+      "asin": "B0DGQZ8JZK",
+      "titleEn": "Blink Video Doorbell – Head-to-toe HD view, two-year battery life, and simple setup. Sync Module Core included – System (Black)",
+      "titleZh": "Blink Video Doorbell 套装",
+      "productUrl": "https://www.amazon.com/dp/B0DGQZ8JZK",
+      "rating": 4.2,
+      "reviewCount": 14065,
+      "priceDisplay": "From TWD 1,623.88"
+    },
+    {
+      "rank": 22,
+      "asin": "B09PDLBFKY",
+      "titleEn": "6 Ft Surge Protector Power Strip - 8 Widely Outlets with 4 USB Ports, 3 Side Outlet Extender with 6 Feet Extension Cord, Flat Plug, Wall Mount, Desk USB Charging Station, ETL,White",
+      "titleZh": "6 英尺插线板（8 孔 + 4 USB）",
+      "productUrl": "https://www.amazon.com/dp/B09PDLBFKY",
+      "rating": 4.6,
+      "reviewCount": 50620,
+      "priceDisplay": "From TWD 413.37"
+    },
+    {
+      "rank": 23,
+      "asin": "B0CCZ26B5V",
+      "titleEn": "Bose QuietComfort Headphones - Wireless Bluetooth Headphones, Active Over Ear Noise Cancelling and Mic, USB-C Charging, Deep Bass, Up to 24 Hours of Playtime, Black",
+      "titleZh": "Bose QuietComfort 头戴耳机",
+      "productUrl": "https://www.amazon.com/dp/B0CCZ26B5V",
+      "rating": 4.6,
+      "reviewCount": 20495,
+      "priceDisplay": "From TWD 5,700.61"
+    },
+    {
+      "rank": 24,
+      "asin": "B0CTNWBT1Z",
+      "titleEn": "JBL Go 4 - Ultra-Portable, Waterproof and Dustproof Bluetooth Speaker, Big JBL Pro Sound with Punchy bass, 7-Hour Built-in Battery, Made in Part with Recycled Materials (Black)",
+      "titleZh": "JBL Go 4 蓝牙音箱",
+      "productUrl": "https://www.amazon.com/dp/B0CTNWBT1Z",
+      "rating": 4.7,
+      "reviewCount": 17290,
+      "priceDisplay": "From TWD 1,590.76"
+    },
+    {
+      "rank": 25,
+      "asin": "B0CNVCQZG1",
+      "titleEn": "Amazon Kindle 16 GB (newest model) - Lightest and most compact Kindle, now with faster page turns, and higher contrast ratio, for an enhanced reading experience - Matcha",
+      "titleZh": "Kindle 16GB（最新款）",
+      "productUrl": "https://www.amazon.com/dp/B0CNVCQZG1",
+      "rating": 4.6,
+      "reviewCount": 16991,
+      "priceDisplay": "From TWD 2,239.80"
+    },
+    {
+      "rank": 26,
+      "asin": "B0D9C2V83V",
+      "titleEn": "Amazon Smart Plug, Works with Alexa, Simple Setup, Endless Possibilities (2-Pack)",
+      "titleZh": "Amazon Smart Plug（2 件装）",
+      "productUrl": "https://www.amazon.com/dp/B0D9C2V83V",
+      "rating": 4.7,
+      "reviewCount": 570989,
+      "priceDisplay": "TWD 1,273.24"
+    },
+    {
+      "rank": 27,
+      "asin": "B0DXXYS4BJ",
+      "titleEn": "Roku Streaming Stick HD — HD Streaming Device for TV with Roku Voice Remote, Free & Live TV",
+      "titleZh": "Roku Streaming Stick HD",
+      "productUrl": "https://www.amazon.com/dp/B0DXXYS4BJ",
+      "rating": 4.7,
+      "reviewCount": 20867,
+      "priceDisplay": "TWD 907.32"
+    },
+    {
+      "rank": 28,
+      "asin": "B0D2HKCMBP",
+      "titleEn": "SHOKZ New OpenRun Pro 2- Bone Conduction Headphones, Open-Ear Bluetooth Wireless Sport Earphones for Running, Workouts - Sweat Resistant, Secure Comfortable Fit -Deep Bass, Smart Mic, Reflective Strip",
+      "titleZh": "SHOKZ OpenRun Pro 2 骨传导耳机",
+      "productUrl": "https://www.amazon.com/dp/B0D2HKCMBP",
+      "rating": 4.5,
+      "reviewCount": 10651,
+      "priceDisplay": "From TWD 5,730.87"
+    },
+    {
+      "rank": 29,
+      "asin": "B01MTB55WH",
+      "titleEn": "Anker Soundcore 2 Portable Bluetooth Speaker with Stereo Sound, Bluetooth 5, Bassup, IPX7 Waterproof, 24-Hour Playtime, Wireless, Speaker for Home, Outdoors, Travel",
+      "titleZh": "Anker Soundcore 2 蓝牙音箱",
+      "productUrl": "https://www.amazon.com/dp/B01MTB55WH",
+      "rating": 4.5,
+      "reviewCount": 152616,
+      "priceDisplay": "From TWD 955.09"
+    },
+    {
+      "rank": 30,
+      "asin": "B0FVXMHHRP",
+      "titleEn": "Samsung Galaxy Tab A11+ 6GB RAM, 128GB Storage, Optimized Performance, Long Lasting Battery, Expandable Storage, Large Display, Dolby Atmos Speakers, AI Assist, Slim, Light, 2 Year Warranty, Gray",
+      "titleZh": "Samsung Galaxy Tab A11+",
+      "productUrl": "https://www.amazon.com/dp/B0FVXMHHRP",
+      "rating": 4.6,
+      "reviewCount": 1360,
+      "priceDisplay": "From TWD 5,413.67"
+    },
+    {
+      "rank": 31,
+      "asin": "B0BS1PRC4L",
+      "titleEn": "Sony WH-CH520 Wireless Headphones Bluetooth On-Ear Headset with Microphone and up to 50 Hours Battery Life with Quick Charging, Black",
+      "titleZh": "Sony WH-CH520 无线耳机",
+      "productUrl": "https://www.amazon.com/dp/B0BS1PRC4L",
+      "rating": 4.5,
+      "reviewCount": 33217,
+      "priceDisplay": "MSRP"
+    },
+    {
+      "rank": 32,
+      "asin": "B08R6S1M1K",
+      "titleEn": "Wall Charger, Surge Protector, QINLIANF 5 Outlet Extender with 4 USB Charging Ports, 3-Sided 1680J Power Strip Multi Plug Adapter Spaced for Home Travel Office",
+      "titleZh": "QINLIANF 墙插扩展器（5 孔 + 4 USB）",
+      "productUrl": "https://www.amazon.com/dp/B08R6S1M1K",
+      "rating": 4.7,
+      "reviewCount": 114878,
+      "priceDisplay": "TWD 318.15"
+    },
+    {
+      "rank": 33,
+      "asin": "B0CRTYZG5C",
+      "titleEn": "Soundcore P30i by Anker Noise Cancelling Earbuds, Strong and Smart Noise Cancelling, Powerful Bass, 45H Playtime, 2-in-1 Case and Phone Stand, IP54, Wireless Earbuds, Bluetooth 5.4 (Black)",
+      "titleZh": "Soundcore P30i 降噪耳塞",
+      "productUrl": "https://www.amazon.com/dp/B0CRTYZG5C",
+      "rating": 4.4,
+      "reviewCount": 36374,
+      "priceDisplay": "TWD 891.40"
+    },
+    {
+      "rank": 34,
+      "asin": "B0C8PR4W22",
+      "titleEn": "Beats Studio Pro Premium Wireless Over-Ear Headphones- Up to 40-Hour Battery Life, Active Noise Cancelling, Great for Travel & Commuting, USB-C Lossless Audio, Apple & Android Compatible -Black",
+      "titleZh": "Beats Studio Pro",
+      "productUrl": "https://www.amazon.com/dp/B0C8PR4W22",
+      "rating": 4.5,
+      "reviewCount": 28292,
+      "priceDisplay": "From TWD 4,345.52"
+    },
+    {
+      "rank": 35,
+      "asin": "B0CYN6TKMB",
+      "titleEn": "JLab Go Air Pop+ True Wireless Bluetooth Earbuds, in Ear Headphones with Microphone, 35H Playtime, USB-C Charging Case, Dual Connect, EQ3 Sound, Lilac",
+      "titleZh": "JLab Go Air Pop+ 真无线耳塞",
+      "productUrl": "https://www.amazon.com/dp/B0CYN6TKMB",
+      "rating": 4.4,
+      "reviewCount": 1143,
+      "priceDisplay": "TWD 673.56"
+    },
+    {
+      "rank": 36,
+      "asin": "B0DZ254SSR",
+      "titleEn": "10Ft Extension Cord with Multiple Outlets, Flat Plug Surge Protector Power Strip 10 Ft Long Cord, 8 Outlets & 4 USB Ports (2 USB C), Desk Charging Station for Home Office, College Dorm Room Essentials",
+      "titleZh": "10 英尺插线板（8 孔 + 4 USB）",
+      "productUrl": "https://www.amazon.com/dp/B0DZ254SSR",
+      "rating": 4.8,
+      "reviewCount": 5891,
+      "priceDisplay": "TWD 445.54"
+    },
+    {
+      "rank": 37,
+      "asin": "B0FQFNRH72",
+      "titleEn": "Apple Watch SE 3 [GPS 40mm] Smartwatch with Starlight Aluminum Case with Starlight Sport Band - S/M. Fitness and Sleep Trackers, Heart Rate Monitor, Always-On Display, Water Resistant",
+      "titleZh": "Apple Watch SE 3（GPS 40mm）",
+      "productUrl": "https://www.amazon.com/dp/B0FQFNRH72",
+      "rating": 4.7,
+      "reviewCount": 3424,
+      "priceDisplay": "From TWD 5,957.30"
+    },
+    {
+      "rank": 38,
+      "asin": "B0C3HCD34R",
+      "titleEn": "Soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Wireless Over-Ear Bluetooth, 40H Long ANC Playtime, Hi-Res Audio, Big Bass, Customize via an App, Transparency Mode (Black)",
+      "titleZh": "Soundcore Q20i 头戴降噪耳机",
+      "productUrl": "https://www.amazon.com/dp/B0C3HCD34R",
+      "rating": 4.6,
+      "reviewCount": 67230,
+      "priceDisplay": "From TWD 1,273.56"
+    },
+    {
+      "rank": 39,
+      "asin": "B0C2W1KLSS",
+      "titleEn": "Beats Studio Buds + | True Wireless Noise Cancelling Earbuds, Enhanced Apple & Android Compatibility, Built-in Microphone, Sweat Resistant Bluetooth Headphones, Spatial Audio - Black/Gold",
+      "titleZh": "Beats Studio Buds +",
+      "productUrl": "https://www.amazon.com/dp/B0C2W1KLSS",
+      "rating": 4,
+      "reviewCount": 6880,
+      "priceDisplay": "From TWD 2,492.35"
+    },
+    {
+      "rank": 40,
+      "asin": "B0BLBLRLJB",
+      "titleEn": "Amazon Fire 7 Kids tablet, ages 3-7. Top-selling 7\" kids tablet on Amazon. Includes ad-free and exclusive content, easy parental controls, 10-hr battery, 16 GB, Blue",
+      "titleZh": "Amazon Fire 7 Kids 儿童平板",
+      "productUrl": "https://www.amazon.com/dp/B0BLBLRLJB",
+      "rating": 4.4,
+      "reviewCount": 33967,
+      "priceDisplay": "TWD 3,502.85"
+    },
+    {
+      "rank": 41,
+      "asin": "B0D6SX8VLQ",
+      "titleEn": "Amazon Echo Dot Max (newest model), Alexa speaker with room-filling sound and nearly 3x bass, Great for living rooms and medium-sized spaces, Designed for Alexa+, Graphite",
+      "titleZh": "Amazon Echo Dot Max",
+      "productUrl": "https://www.amazon.com/dp/B0D6SX8VLQ",
+      "rating": 4.4,
+      "reviewCount": 3778,
+      "priceDisplay": "TWD 3,184.38"
+    },
+    {
+      "rank": 42,
+      "asin": "B0GR1JTFP8",
+      "titleEn": "Apple 2026 MacBook Air 13-inch Laptop with M5 chip: Built for AI, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 512GB SSD, 12MP Center Stage Camera, Touch ID, Wi-Fi 7; Midnight",
+      "titleZh": "Apple MacBook Air 13\" M5（2026）",
+      "productUrl": "https://www.amazon.com/dp/B0GR1JTFP8",
+      "rating": 4.8,
+      "reviewCount": 636,
+      "priceDisplay": "TWD 41,369.25"
+    },
+    {
+      "rank": 43,
+      "asin": "B0C1QWWZR4",
+      "titleEn": "JBL Tune Buds - True wireless Noise Cancelling earbuds, JBL Pure Bass Sound, Bluetooth 5.3, 4-Mic technology for Crisp, Clear Calls, Up to 48 hours of battery life, Water and dust resistant (Black)",
+      "titleZh": "JBL Tune Buds",
+      "productUrl": "https://www.amazon.com/dp/B0C1QWWZR4",
+      "rating": 4.2,
+      "reviewCount": 10208,
+      "priceDisplay": "From TWD 1,909.23"
+    },
+    {
+      "rank": 44,
+      "asin": "B09Z6Q2MLC",
+      "titleEn": "(Pack of 2) Replacement Remote Control Only for Roku TV, Compatible for TCL Roku/Hisense Roku/Onn Roku/Sharp Roku/Element Roku/Westinghouse Roku/Philips Roku Smart TVs (Not for Roku Stick and Box)",
+      "titleZh": "Roku TV 替换遥控器（2 件装）",
+      "productUrl": "https://www.amazon.com/dp/B09Z6Q2MLC",
+      "rating": 4.5,
+      "reviewCount": 66081,
+      "priceDisplay": "TWD 285.67"
+    },
+    {
+      "rank": 45,
+      "asin": "B0DZ218NW4",
+      "titleEn": "Ring Outdoor Cam Plus, Battery (newest model), Home or business security, Wide-Angle 2K Video with Ring Vision, Low-Light Sight for full-color night vision, Mount-Anywhere Versatility, 2-pack, White",
+      "titleZh": "Ring Outdoor Cam Plus（2 件装）",
+      "productUrl": "https://www.amazon.com/dp/B0DZ218NW4",
+      "rating": 4.5,
+      "reviewCount": 7287,
+      "priceDisplay": "TWD 3,184.06"
+    },
+    {
+      "rank": 46,
+      "asin": "B092CP8ZH4",
+      "titleEn": "JBL Tune 510BT - Bluetooth headphones with up to 40 hours battery, microphone for call, foldable and comfortable, Android and iOs compatible (Rose)",
+      "titleZh": "JBL Tune 510BT",
+      "productUrl": "https://www.amazon.com/dp/B092CP8ZH4",
+      "rating": 4.5,
+      "reviewCount": 92232,
+      "priceDisplay": "From TWD 953.82"
+    },
+    {
+      "rank": 47,
+      "asin": "B0D6J5B98H",
+      "titleEn": "ROVE R2-4K DUAL Dash Cam Front and Rear, STARVIS 2 Sensor, FREE 128GB Card Included, 5G WiFi - up to 20MB/s Fastest Download Speed with App, 4K 2160P/FHD Dash Camera for Cars, 3\" IPS, 24H Parking Mode",
+      "titleZh": "ROVE R2-4K DUAL 行车记录仪",
+      "productUrl": "https://www.amazon.com/dp/B0D6J5B98H",
+      "rating": 4.5,
+      "reviewCount": 12503,
+      "priceDisplay": "From TWD 3,184.38"
+    },
+    {
+      "rank": 48,
+      "asin": "B0BL5SZ3VV",
+      "titleEn": "Amazon Fire HD 10 Kids tablet (newest model) ages 3-7 | Bright 10.1\" HD screen with included ad-free and exclusive content, robust parental controls, 13-hr battery, 32 GB, Blue",
+      "titleZh": "Amazon Fire HD 10 Kids 儿童平板",
+      "productUrl": "https://www.amazon.com/dp/B0BL5SZ3VV",
+      "rating": 4.6,
+      "reviewCount": 7966,
+      "priceDisplay": "TWD 6,050.61"
+    },
+    {
+      "rank": 49,
+      "asin": "B0F2TQBG6T",
+      "titleEn": "Tile by Life360 Mate - Bluetooth Tracker, Keys Finder and Item Locator for Keys, Bags and More. Phone Finder. Both iOS and Android Compatible. 4-Pack (Colors)",
+      "titleZh": "Tile Mate 蓝牙追踪器（4 件装）",
+      "productUrl": "https://www.amazon.com/dp/B0F2TQBG6T",
+      "rating": 4.3,
+      "reviewCount": 14740,
+      "priceDisplay": "TWD 2,605.08"
+    },
+    {
+      "rank": 50,
+      "asin": "B0C8RR4WN3",
+      "titleEn": "Amazon Kindle Paperwhite Signature Edition 32GB (newest model) – 20% faster with auto-adjusting front light, wireless charging, and weeks of battery life – Metallic Black",
+      "titleZh": "Kindle Paperwhite Signature 32GB",
+      "productUrl": "https://www.amazon.com/dp/B0C8RR4WN3",
+      "rating": 4.7,
+      "reviewCount": 11569,
+      "priceDisplay": "From TWD 4,385.01"
+    }
+  ]
+}

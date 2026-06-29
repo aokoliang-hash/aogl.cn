@@ -1,0 +1,43 @@
+{
+  "fetchedAt": "2026-06-29",
+  "sourceUrl": "https://blog.youtube/news-and-events/youtube-fifa-world-cup-lineup/",
+  "sourceTitle": "YouTube FIFA Creator Cup announced alongside global creator roster for FIFA World Cup 2026™",
+  "sourcePublisher": "YouTube Blog",
+  "creatorCupDate": "2026-07-12",
+  "creatorCupVenueZh": "纽约市（全球仅在 YouTube 直播）",
+  "creatorCupVenueEn": "New York City (streaming globally on YouTube only)",
+  "creatorCupSummaryZh": "首届 YouTube FIFA Creator Cup：创作者、运动员与名人参与的表演赛，与 2026 世界杯 Preferred Platform 合作的一部分",
+  "creatorCupSummaryEn": "First-ever YouTube FIFA Creator Cup exhibition match featuring creators, athletes, and celebrities—part of YouTube’s Preferred Platform partnership for World Cup 2026",
+  "rosterSummaryZh": "24 位全球 YouTube 创作者将赴现场报道 2026 世界杯，合计 350+ million 订阅者；内容涵盖战术拆解、球场挑战、美食文化与幕后花絮",
+  "rosterSummaryEn": "24 global YouTube creators will cover World Cup 2026 on the ground for a combined 350+ million subscribers—tactical breakdowns, pitch challenges, food culture, and BTS moments",
+  "creators": [
+    { "name": "Anwar Jibawi", "country": "United States", "youtube": "https://www.youtube.com/@Anwar", "coverageEn": "Cinematic, laugh-out-loud skits", "coverageZh": "电影感喜剧短剧" },
+    { "name": "Ara y Fer", "country": "Mexico", "youtube": "https://www.youtube.com/@arayfer_ha", "coverageEn": "Twins experiencing a World Cup in their home country", "coverageZh": "双胞胎在祖国体验世界杯" },
+    { "name": "Ashley Alexander", "country": "United States", "youtube": "https://www.youtube.com/@urmomashley", "coverageEn": "Host-city aesthetic tour and travel diaries", "coverageZh": "主办城市美学巡礼与旅行日记" },
+    { "name": "Celine Dept", "country": "Belgium", "youtube": "https://www.youtube.com/@CelineDept", "coverageEn": "Four-year dream World Cup adventures", "coverageZh": "四年圆梦的世界杯冒险" },
+    { "name": "Courtreezy", "country": "United States", "youtube": "https://www.youtube.com/@courtreezy", "coverageEn": "Family World Cup memories, live stadium energy", "coverageZh": "家庭世界杯记忆与现场热情" },
+    { "name": "Deestroying", "country": "United States", "youtube": "https://www.youtube.com/@deestroying", "coverageEn": "Full-circle moment from soccer to creators", "coverageZh": "从足球到创作者的全-circle 时刻" },
+    { "name": "Haley Kalil", "country": "United States", "youtube": "https://www.youtube.com/@haleyybaylee", "coverageEn": "First-time World Cup witness", "coverageZh": "首次现场见证世界杯" },
+    { "name": "Horchata Soto", "country": "United States", "youtube": "https://www.youtube.com/@HorchataSoto", "coverageEn": "Fast-paced, relatable tournament energy", "coverageZh": "快节奏、接地气的赛事能量" },
+    { "name": "Howieazy", "country": "United States", "youtube": "https://www.youtube.com/@Howieazy", "coverageEn": "Up-close World Cup experiences", "coverageZh": "近距离世界杯体验" },
+    { "name": "Jeenie Weenie", "country": "Canada", "youtube": "https://www.youtube.com/@jeenie.weenie", "coverageEn": "From flight attendant to stadium stands", "coverageZh": "从空乘到看台视角" },
+    { "name": "Jenny Hoyos", "country": "United States", "youtube": "https://www.youtube.com/@JennyHoyos/shorts", "coverageEn": "VIP adventure, GRWM, jumbotron, pitch tour", "coverageZh": "VIP 冒险、GRWM、大屏与球场 tour" },
+    { "name": "Jesser", "country": "United States", "youtube": "https://www.youtube.com/@Jesser/", "coverageEn": "Epic challenge formats in biggest stadiums", "coverageZh": "大型球场挑战内容" },
+    { "name": "Kelly Wakasa", "country": "United States", "youtube": "https://www.youtube.com/@KellyWakasa", "coverageEn": "Spontaneous adventures, authentic storytelling", "coverageZh": "即兴冒险与真实叙事" },
+    { "name": "Kika Kim", "country": "Kazakhstan", "youtube": "https://www.youtube.com/@kikakimm", "coverageEn": "Matches, travel, emotions, little moments", "coverageZh": "比赛、旅行、情绪与细节" },
+    { "name": "KYLECTRIX", "country": "Indonesia", "youtube": "https://www.youtube.com/@kylectrix", "coverageEn": "From Indonesia to World Cup roar", "coverageZh": "从印尼到世界杯呐喊" },
+    { "name": "Kwakyoongy", "country": "South Korea", "youtube": "https://www.youtube.com/@kwakyoongy", "coverageEn": "Olympic medalist athlete-creator perspective", "coverageZh": "奥运选手视角的体育叙事" },
+    { "name": "Max the Meat Guy", "country": "United States", "youtube": "https://www.youtube.com/@MaxtheMeatGuy", "coverageEn": "Stadium experience and global food hunt", "coverageZh": "球场体验与各国美食" },
+    { "name": "Neagle", "country": "Brazil", "youtube": "https://www.youtube.com/@Neagle/", "coverageEn": "Brazil's road to a sixth title up close", "coverageZh": "巴西第六冠之路近距离跟拍" },
+    { "name": "Noor Stars", "country": "UAE", "youtube": "https://www.youtube.com/@noorstars", "coverageEn": "Behind-the-scenes unforgettable moments", "coverageZh": "幕后难忘瞬间" },
+    { "name": "The Sidemen", "country": "United Kingdom", "youtube": "https://www.youtube.com/@Sidemen", "coverageEn": "Football-core collaborative World Cup content", "coverageZh": "足球为核心的协作世界杯内容" },
+    { "name": "Sonrixs", "country": "Mexico", "youtube": "https://www.youtube.com/@Sonrixs", "coverageEn": "Mexico-trained athlete turned Shorts creator", "coverageZh": "曾代表墨西哥竞技，现拍 Shorts" },
+    { "name": "TokaiOnAirRYO", "country": "Japan", "youtube": "https://www.youtube.com/@TokaiOnAirRYO", "coverageEn": "TOKAI ONAIR energy and football passion", "coverageZh": "TOKAI ONAIR 式热情与足球热爱" },
+    { "name": "Viniblogger", "country": "Brazil", "youtube": "https://www.youtube.com/@viniblogger", "coverageEn": "Generations of family fandom, live unity", "coverageZh": "三代球迷传统与世界杯团结" },
+    { "name": "Zhong", "country": "United States", "youtube": "https://www.youtube.com/@zhong", "coverageEn": "Viral public challenges at stadium concourses", "coverageZh": "球场通道 viral 公共挑战" }
+  ],
+  "relatedLinks": [
+    { "titleZh": "YouTube 官方博客", "titleEn": "YouTube Blog announcement", "url": "https://blog.youtube/news-and-events/youtube-fifa-world-cup-lineup/" },
+    { "titleZh": "世界杯土耳其 vs 美国赛报（本站）", "titleEn": "Türkiye vs USA match (aogl.cn)", "url": "/articles/world-cup-2026-turkey-usmnt-20260626.html" }
+  ]
+}

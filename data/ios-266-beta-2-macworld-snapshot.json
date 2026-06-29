@@ -1,0 +1,62 @@
+{
+  "fetchedAt": "2026-06-29",
+  "sourceUrl": "https://www.macworld.com/article/3148708/the-first-ios-26-6-beta-is-here-but-good-luck-finding-anything-new.html",
+  "sourceTitle": "iOS 26.6 beta 2 is here, but you won't see much that is new",
+  "sourcePublisher": "Macworld",
+  "beta2DateZh": "2026-06-15（Macworld 更新：iOS 26.6 第二个 beta 发布）",
+  "beta2DateEn": "June 15, 2026 (Macworld update: second iOS 26.6 beta released)",
+  "releaseFocusZh": "iOS 26.6 / iPadOS 26 / watchOS 26 / macOS 26 等以 bug 修复与安全补丁为主，预计无重大新功能；可能为 WWDC 26 新硬件提供支持",
+  "releaseFocusEn": "iOS 26.6, iPadOS 26, watchOS 26, macOS 26, etc. focus on bugs and security fixes with no major new features; may add support for new WWDC 26 hardware",
+  "features": [
+    {
+      "nameZh": "被屏蔽来电上限提醒",
+      "nameEn": "Blocked-call limit notification",
+      "statusZh": "目前唯一传闻的「新功能」：接近屏蔽来电数量上限时通知用户",
+      "statusEn": "Only rumored new feature so far: warns when approaching the blocked-calls limit"
+    },
+    {
+      "nameZh": "抢机自动锁定（开发中）",
+      "nameEn": "Anti-snatch auto-lock (in development)",
+      "statusZh": "若 iPhone 被从手中夺走可自动锁定；可能进入 26.6，但 beta 2 尚未见到",
+      "statusEn": "Auto-lock if iPhone is yanked from your hands; may land in 26.6 but not seen in beta 2 yet"
+    }
+  ],
+  "publicBetaStepsZh": [
+    "在 Apple Beta 页面点击 Sign Up，用 Apple ID 注册",
+    "登录 Beta Software Program",
+    "点击 Enroll your iOS device",
+    "打开 设置 → 通用 → 软件更新",
+    "在 Beta Updates 中选择 iOS Public Beta（注册后可能需要稍等才会出现）"
+  ],
+  "publicBetaStepsEn": [
+    "Click Sign Up on the Apple Beta page and register with your Apple ID",
+    "Log in to the Beta Software Program",
+    "Click Enroll your iOS device",
+    "Open Settings → General → Software Update",
+    "Under Beta Updates, select iOS Public Beta (option may take a moment to appear)"
+  ],
+  "developerBetaStepsZh": [
+    "从 App Store 下载 Apple Developer App",
+    "打开 App → Account",
+    "使用常用 Apple ID 登录（免费开发者账号即可）",
+    "在 设置 → 通用 → 软件更新 → Beta Updates 中选择 Developer Beta"
+  ],
+  "developerBetaStepsEn": [
+    "Download the Apple Developer app from the App Store",
+    "Open the app and tap Account",
+    "Sign in with your Apple ID (free developer account works)",
+    "In Settings → General → Software Update → Beta Updates, select Developer Beta"
+  ],
+  "relatedLinks": [
+    {
+      "titleZh": "Apple Beta Software Program",
+      "titleEn": "Apple Beta Software Program",
+      "url": "https://beta.apple.com/"
+    },
+    {
+      "titleZh": "Macworld 原文",
+      "titleEn": "Macworld article",
+      "url": "https://www.macworld.com/article/3148708/the-first-ios-26-6-beta-is-here-but-good-luck-finding-anything-new.html"
+    }
+  ]
+}
