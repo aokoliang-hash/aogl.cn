@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-06-23",
+  "updated": "2026-06-30",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,114 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "It’s Time to Reserve Your WhatsApp Username",
+      "titleZh": "It’s Time to Reserve Your WhatsApp Username",
+      "url": "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/",
+      "date": "2026-06-29",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/Its-time-to-reserve-your-WhatsApp-username_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Its-time-to-reserve-your-WhatsApp-username_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Instagram is testing more ways to customize ‘Your Algorithm’",
+      "titleZh": "Instagram is testing more ways to customize ‘Your Algorithm’",
+      "url": "https://techcrunch.com/2026/06/27/instagram-is-testing-more-ways-for-users-to-customize-your-algorithm/",
+      "date": "2026-06-27",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Inside One of Meta’s Data Centers",
+      "titleZh": "Inside One of Meta’s Data Centers",
+      "url": "https://about.fb.com/news/2026/06/inside-meta-data-center/",
+      "date": "2026-06-26",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/Tom-Shaw-pointing-thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Tom-Shaw-pointing-thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "TikTok’s road to becoming a super app",
+      "titleZh": "TikTok’s road to becoming a super app",
+      "url": "https://techcrunch.com/2026/06/26/tiktoks-road-to-becoming-a-super-app/",
+      "date": "2026-06-26",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "YouTube Shorts are getting even shorter with an update that lets you double the playback speed",
+      "titleZh": "YouTube Shorts are getting even shorter with an update that lets you double the playback speed",
+      "url": "https://techcrunch.com/2026/06/25/youtube-shorts-are-getting-even-shorter-with-an-update-that-lets-you-double-the-playback-speed/",
+      "date": "2026-06-25",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Elevate your campaign performance with June’s Demand Gen Drop.",
+      "titleZh": "Elevate your campaign performance with June’s Demand Gen Drop.",
+      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-june-2026/",
+      "date": "2026-06-25",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drops_10.max-600x600.format-webp.webp",
+      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drops_10.max-600x600.format-webp.webp"
+    },
+    {
+      "titleEn": "New website names and shames companies that still don’t offer passkeys to users",
+      "titleZh": "New website names and shames companies that still don’t offer passkeys to users",
+      "url": "https://techcrunch.com/2026/06/24/new-website-names-and-shames-companies-that-still-dont-offer-passkeys-to-users/",
+      "date": "2026-06-24",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Facebook rolls out an AI companion app for creators",
+      "titleZh": "Facebook rolls out an AI companion app for creators",
+      "url": "https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/",
+      "date": "2026-06-24",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "How Meta Engineered Ultra-Narrow Batteries for AI Glasses",
+      "titleZh": "How Meta Engineered Ultra-Narrow Batteries for AI Glasses",
+      "url": "https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast/",
+      "date": "2026-06-23",
+      "source": "Meta Engineering",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
+      "titleZh": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
+      "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+      "date": "2026-06-23",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partnering-with-EssilorLucottica-to-Launch-Meta-Glasses_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partnering-with-EssilorLucottica-to-Launch-Meta-Glasses_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Launch of Meta’s Small Business Growth Academy Across Asia-Pacific to Boost AI Adoption and Digital Skills",
+      "titleZh": "Launch of Meta’s Small Business Growth Academy Across Asia-Pacific to Boost AI Adoption and Digital Skills",
+      "url": "https://about.fb.com/news/2026/06/launch-of-metas-small-business-growth-academy-across-asia-pacific/",
+      "date": "2026-06-23",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/03/AdobeStock_340663504.jpeg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/03/AdobeStock_340663504.jpeg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Cannes Lions 2026: Strengthen creative campaigns with new tools from YouTube",
+      "titleZh": "Cannes Lions 2026: Strengthen creative campaigns with new tools from YouTube",
+      "url": "https://blog.google/products/ads-commerce/youtube-insights-tools-cannes-lions-2026/",
+      "date": "2026-06-23",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_Illustration.max-600x600.format-webp.webp",
+      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_Illustration.max-600x600.format-webp.webp"
+    },
     {
       "titleEn": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
       "titleZh": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
@@ -111,114 +219,6 @@
       "url": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
       "date": "2026-06-15",
       "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "New AI Tools to Help You Make Things Happen on Facebook",
-      "titleZh": "New AI Tools to Help You Make Things Happen on Facebook",
-      "url": "https://about.fb.com/news/2026/06/new-ai-tools-to-help-you-make-things-happen-on-facebook/",
-      "date": "2026-06-15",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/New-AI-Tools-to-Help-You-Make-Things-on-Facebook_Thumbnail-1.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/New-AI-Tools-to-Help-You-Make-Things-on-Facebook_Thumbnail-1.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "UK unveils sweeping social media ban for users under 16",
-      "titleZh": "UK unveils sweeping social media ban for users under 16",
-      "url": "https://techcrunch.com/2026/06/15/uk-unveils-sweeping-social-media-ban-for-users-under-16/",
-      "date": "2026-06-15",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "The Future Is for Everyone: Free AI Glasses for Every Blind Veteran in America",
-      "titleZh": "The Future Is for Everyone: Free AI Glasses for Every Blind Veteran in America",
-      "url": "https://about.fb.com/news/2026/06/free-ai-glasses-for-every-blind-veteran/",
-      "date": "2026-06-12",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/AI-Glasses-for-Blind-Veterans-in-America_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/AI-Glasses-for-Blind-Veterans-in-America_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Meta’s Edits app is getting an AI assistant and a desktop version",
-      "titleZh": "Meta’s Edits app is getting an AI assistant and a desktop version",
-      "url": "https://techcrunch.com/2026/06/11/metas-edits-app-is-getting-an-ai-assistant-and-a-desktop-version/",
-      "date": "2026-06-11",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Going All in for Global Football Fans Across Meta Apps",
-      "titleZh": "Going All in for Global Football Fans Across Meta Apps",
-      "url": "https://about.fb.com/news/2026/06/going-all-in-for-global-football-fans-across-meta-apps/",
-      "date": "2026-06-11",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Going-All-in-for-Global-Football-Fans-Across-Meta-Apps_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Going-All-in-for-Global-Football-Fans-Across-Meta-Apps_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "We’re bringing Walmart Connect to Display & Video 360.",
-      "titleZh": "We’re bringing Walmart Connect to Display & Video 360.",
-      "url": "https://blog.google/products/marketingplatform/360/walmart-connect/",
-      "date": "2026-06-11",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/heroimagenoarrownoborder.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/heroimagenoarrownoborder.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "Why Social Media Bans Alone Can’t Solve the Age Verification Dilemma",
-      "titleZh": "Why Social Media Bans Alone Can’t Solve the Age Verification Dilemma",
-      "url": "https://about.fb.com/news/2026/06/how-to-verify-age-online/",
-      "date": "2026-06-11",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Why-Social-Media-Bans-Alone-Cant-Solve-the-Age-Verification-DilemmaThumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Why-Social-Media-Bans-Alone-Cant-Solve-the-Age-Verification-DilemmaThumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Infrastructure Explained: Compute Power",
-      "titleZh": "Infrastructure Explained: Compute Power",
-      "url": "https://about.fb.com/news/2026/06/what-is-compute-power-meta-ai-infrastructure/",
-      "date": "2026-06-10",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/InfraExplained_Compute_Header.png?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/InfraExplained_Compute_Header.png?fit=890%2C501"
-    },
-    {
-      "titleEn": "Snapchat limits users under 16 to sharing Spotlights with friends",
-      "titleZh": "Snapchat limits users under 16 to sharing Spotlights with friends",
-      "url": "https://techcrunch.com/2026/06/10/snapchat-limits-users-under-16-to-sharing-spotlights-with-friends/",
-      "date": "2026-06-10",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta Partners With Reliance on AI-Enabled Data Center in India",
-      "titleZh": "Meta Partners With Reliance on AI-Enabled Data Center in India",
-      "url": "https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/",
-      "date": "2026-06-10",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partners-With-Reliance-on-AI-Data-Center-in-India_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partners-With-Reliance-on-AI-Data-Center-in-India_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Meta’s Oversight Board says account bans lack due process, transparency",
-      "titleZh": "Meta’s Oversight Board says account bans lack due process, transparency",
-      "url": "https://techcrunch.com/2026/06/04/metas-oversight-board-says-account-bans-lack-due-process-transparency/",
-      "date": "2026-06-04",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Chinese spies are using LinkedIn to lure Westerners into sharing sensitive information",
-      "titleZh": "Chinese spies are using LinkedIn to lure Westerners into sharing sensitive information",
-      "url": "https://techcrunch.com/2026/06/04/chinese-spies-are-using-linkedin-to-lure-westerners-into-sharing-sensitive-information/",
-      "date": "2026-06-04",
-      "source": "LinkedIn · TechCrunch",
       "image": "",
       "imageSource": ""
     }

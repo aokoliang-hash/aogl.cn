@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-06-23",
+  "updated": "2026-06-30",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "New research shows how AMIE, our medical AI, could help manage health conditions.",
-          "titleZh": "New research shows how AMIE, our medical AI, could help manage health conditions.",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
-          "date": "2026-06-17"
+          "titleEn": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
+          "titleZh": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
+          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
+          "date": "2026-06-30"
         },
         {
-          "titleEn": "We’re strengthening our presence in Alabama through new investments and community support.",
-          "titleZh": "We’re strengthening our presence in Alabama through new investments and community support.",
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/alabama-investment-june-2026/",
-          "date": "2026-06-15"
+          "titleEn": "Ask an AI expert: What exactly is the full stack?",
+          "titleZh": "Ask an AI expert: What exactly is the full stack?",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/full-stack-ai-explainer/",
+          "date": "2026-06-29"
         },
         {
-          "titleEn": "Our new community investments in Virginia support local jobs and expand energy affordability.",
-          "titleZh": "Our new community investments in Virginia support local jobs and expand energy affordability.",
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
-          "date": "2026-06-11"
+          "titleEn": "Our latest Google Finance upgrades, including a new app",
+          "titleZh": "Our latest Google Finance upgrades, including a new app",
+          "url": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
+          "date": "2026-06-25"
         }
       ],
       "hotSearchPills": [
@@ -193,22 +193,22 @@
       "labelZh": "YouTube",
       "items": [
         {
+          "titleEn": "Elevate your campaign performance with June’s Demand Gen Drop.",
+          "titleZh": "Elevate your campaign performance with June’s Demand Gen Drop.",
+          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-june-2026/",
+          "date": "2026-06-25"
+        },
+        {
+          "titleEn": "Cannes Lions 2026: Strengthen creative campaigns with new tools from YouTube",
+          "titleZh": "Cannes Lions 2026: Strengthen creative campaigns with new tools from YouTube",
+          "url": "https://blog.google/products/ads-commerce/youtube-insights-tools-cannes-lions-2026/",
+          "date": "2026-06-23"
+        },
+        {
           "titleEn": "We’re bringing Walmart Connect to Display & Video 360.",
           "titleZh": "We’re bringing Walmart Connect to Display & Video 360.",
           "url": "https://blog.google/products/marketingplatform/360/walmart-connect/",
           "date": "2026-06-11"
-        },
-        {
-          "titleEn": "YouTube earns industry's first MRC accreditation for short-form video.",
-          "titleZh": "YouTube earns industry's first MRC accreditation for short-form video.",
-          "url": "https://blog.google/products/ads-commerce/youtube-mrc-accreditation-shorts/",
-          "date": "2026-06-03"
-        },
-        {
-          "titleEn": "Google Display Ads has a new home in Demand Gen.",
-          "titleZh": "Google Display Ads has a new home in Demand Gen.",
-          "url": "https://blog.google/products/ads-commerce/google-display-ads-demand-gen/",
-          "date": "2026-05-26"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
-          "titleZh": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
-          "url": "https://about.fb.com/news/2026/06/instagram-for-tv-gets-bigger-with-new-ways-to-watch-together/",
-          "date": "2026-06-22"
+          "titleEn": "It’s Time to Reserve Your WhatsApp Username",
+          "titleZh": "It’s Time to Reserve Your WhatsApp Username",
+          "url": "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/",
+          "date": "2026-06-29"
         },
         {
-          "titleEn": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
-          "titleZh": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
-          "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
-          "date": "2026-06-18"
+          "titleEn": "Inside One of Meta’s Data Centers",
+          "titleZh": "Inside One of Meta’s Data Centers",
+          "url": "https://about.fb.com/news/2026/06/inside-meta-data-center/",
+          "date": "2026-06-26"
         },
         {
-          "titleEn": "Threads Returns to Türkiye With New Features",
-          "titleZh": "Threads Returns to Türkiye With New Features",
-          "url": "https://about.fb.com/news/2026/06/threads-returns-to-turkiye-with-new-features/",
-          "date": "2026-06-17"
+          "titleEn": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
+          "titleZh": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
+          "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+          "date": "2026-06-23"
         }
       ],
       "hotSearchPills": [
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "Privacy-Aware Infrastructure in the AI-Native Era: An Asset Classification Case Study",
+          "titleZh": "Privacy-Aware Infrastructure in the AI-Native Era: An Asset Classification Case Study",
+          "url": "https://engineering.fb.com/2026/06/25/security/privacy-aware-infrastructure-in-the-ai-native-era-an-asset-classification-case-study/",
+          "date": "2026-06-25"
+        },
+        {
+          "titleEn": "How Meta Engineered Ultra-Narrow Batteries for AI Glasses",
+          "titleZh": "How Meta Engineered Ultra-Narrow Batteries for AI Glasses",
+          "url": "https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast/",
+          "date": "2026-06-23"
+        },
+        {
           "titleEn": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
           "titleZh": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
           "url": "https://engineering.fb.com/2026/06/22/video-engineering/adopting-av1-for-real-time-communication-rtc-meta/",
           "date": "2026-06-22"
-        },
-        {
-          "titleEn": "Lights Out, Systems On: Validating Instant Power Loss Readiness",
-          "titleZh": "Lights Out, Systems On: Validating Instant Power Loss Readiness",
-          "url": "https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/",
-          "date": "2026-06-03"
-        },
-        {
-          "titleEn": "SilverTorch: Index as Model — A New Retrieval Paradigm for Recommendation Systems",
-          "titleZh": "SilverTorch: Index as Model — A New Retrieval Paradigm for Recommendation Systems",
-          "url": "https://engineering.fb.com/2026/05/26/ml-applications/silvertorch-index-as-model-new-retrieval-paradigm-recommendation-systems/",
-          "date": "2026-05-26"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Guiding New Voices: Training Women in Wikidata during the April EditHer Africa Contest",
-          "titleZh": "Guiding New Voices: Training Women in Wikidata during the April EditHer Africa Contest",
-          "url": "https://diff.wikimedia.org/2026/06/23/guiding-new-voices-training-women-in-wikidata-during-the-april-edither-africa-contest/",
-          "date": "2026-06-23"
+          "titleEn": "Part 3: Swánga̱lyiatwuki-WikiWoordenboek Wiktionary Editing Project",
+          "titleZh": "Part 3: Swánga̱lyiatwuki-WikiWoordenboek Wiktionary Editing Project",
+          "url": "https://diff.wikimedia.org/2026/06/30/part-3-swanga%cc%b1lyiatwuki-wikiwoordenboek-wiktionary-editing-project/",
+          "date": "2026-06-30"
         },
         {
-          "titleEn": "Collaboration with Students For Liberty: Together Liberate Liberty Ideas on Indonesian Wikipedia",
-          "titleZh": "Collaboration with Students For Liberty: Together Liberate Liberty Ideas on Indonesian Wikipedia",
-          "url": "https://diff.wikimedia.org/2026/06/23/collaboration-with-students-for-liberty-together-liberate-liberty-ideas-on-indonesian-wikipedia/",
-          "date": "2026-06-23"
+          "titleEn": "Language between bias and understanding: The case of LGBTQ+ terminology in Albanian language",
+          "titleZh": "Language between bias and understanding: The case of LGBTQ+ terminology in Albanian language",
+          "url": "https://diff.wikimedia.org/2026/06/29/language-between-bias-and-understanding-the-case-of-lgbtq-terminology-in-albanian-language/",
+          "date": "2026-06-29"
         },
         {
-          "titleEn": "From Engagement to Collaboration: The Future of Wiki-Jardín Valparaíso’s Heritage Work",
-          "titleZh": "From Engagement to Collaboration: The Future of Wiki-Jardín Valparaíso’s Heritage Work",
-          "url": "https://diff.wikimedia.org/2026/06/22/from-engagement-to-collaboration-the-future-of-wiki-jardin-valparaisos-heritage-work/",
-          "date": "2026-06-22"
+          "titleEn": "Wikimedia Hackathon 2026: Building, collaborating, and shaping the future together",
+          "titleZh": "Wikimedia Hackathon 2026: Building, collaborating, and shaping the future together",
+          "url": "https://diff.wikimedia.org/2026/06/29/wikimedia-hackathon-2026-building-collaborating-and-shaping-the-future-together/",
+          "date": "2026-06-29"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Best Prime Day 2026 deals: 80+ top picks to shop now",
-          "titleZh": "Best Prime Day 2026 deals: 80+ top picks to shop now",
+          "titleEn": "How Amazon’s $100 million Right Now Climate Fund is protecting and restoring nature around the world",
+          "titleZh": "How Amazon’s $100 million Right Now Climate Fund is protecting and restoring nature around the world",
+          "url": "https://www.aboutamazon.com/news/sustainability/right-now-climate-fund?utm_source=rss",
+          "date": "2026-06-29"
+        },
+        {
+          "titleEn": "How Amazon is helping after back-to-back earthquakes in Venezuela",
+          "titleZh": "How Amazon is helping after back-to-back earthquakes in Venezuela",
+          "url": "https://www.aboutamazon.com/news/community/amazon-response-venezuela-earthquakes-2026?utm_source=rss",
+          "date": "2026-06-27"
+        },
+        {
+          "titleEn": "Shop 200+ of the best Prime Day 2026 deals still available before the sale ends tonight",
+          "titleZh": "Shop 200+ of the best Prime Day 2026 deals still available before the sale ends tonight",
           "url": "https://www.aboutamazon.com/news/retail/best-prime-day-deals-2026?utm_source=rss",
-          "date": "2026-06-23"
-        },
-        {
-          "titleEn": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
-          "titleZh": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
-          "url": "https://www.aboutamazon.com/news/community/amazon-seattle-bellevue-puget-sound-news?utm_source=rss",
-          "date": "2026-06-19"
-        },
-        {
-          "titleEn": "5 ways Amazon is investing in Kentucky",
-          "titleZh": "5 ways Amazon is investing in Kentucky",
-          "url": "https://www.aboutamazon.com/news/community/amazon-investment-kentucky-jobs-small-business?utm_source=rss",
-          "date": "2026-06-19"
+          "date": "2026-06-26"
         }
       ],
       "hotSearchPills": [
@@ -934,6 +934,12 @@
       "labelZh": "WhatsApp",
       "items": [
         {
+          "titleEn": "It’s Time to Reserve Your WhatsApp Username",
+          "titleZh": "It’s Time to Reserve Your WhatsApp Username",
+          "url": "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/",
+          "date": "2026-06-29"
+        },
+        {
           "titleEn": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
           "titleZh": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
           "url": "https://about.fb.com/news/2026/06/instagram-for-tv-gets-bigger-with-new-ways-to-watch-together/",
@@ -944,12 +950,6 @@
           "titleZh": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
           "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
           "date": "2026-06-18"
-        },
-        {
-          "titleEn": "Threads Returns to Türkiye With New Features",
-          "titleZh": "Threads Returns to Türkiye With New Features",
-          "url": "https://about.fb.com/news/2026/06/threads-returns-to-turkiye-with-new-features/",
-          "date": "2026-06-17"
         }
       ],
       "hotSearchPills": [

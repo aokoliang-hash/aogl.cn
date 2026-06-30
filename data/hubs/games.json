@@ -8,7 +8,7 @@
   "descZh": "按 Newzoo 与行业营收常见梯队排序的十个商店与发行商，每站三条官方公告或博文外链。",
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
-  "updated": "2026-06-23",
+  "updated": "2026-06-30",
   "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Last reviewed: <strong>2026-06-22</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want a ranked top-10 plus three official links per vendor — not a discovery feed for unknown APK sites. Major client updates still show up in the per-row news slots when you run <code>npm run fetch-hub-news</code>; mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p><p><strong>Editorial cross-link:</strong> first game-original on this hub: <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Reading Steam Charts</a>; character look-dev in <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">Elena · Sea-Wind</a>, <a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">palette & ritual UI</a>, and <a href=\"/articles/games-hub-generative-art-workflow.html\">Games hub × generative art workflow</a>.</p>",
   "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>最近核对：<strong>2026-06-22</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但需要对照营收梯队、并点到各厂三条官方链接的人；不把它当成 APK 发现站。大版本更新仍会出现在每行「最新动态」里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p><p><strong>原创交叉链：</strong>游戏 Hub 原创轮播首篇 <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Steam Charts 怎么读</a>；角色设定见 <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">艾琳娜 · 海风之诗</a>、<a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">配色与仪式 UI</a>，工作流 <a href=\"/articles/games-hub-generative-art-workflow.html\">游戏 Hub × 生成式角色美术</a>。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
@@ -147,22 +147,22 @@
       "labelZh": "PlayStation",
       "items": [
         {
-          "titleEn": "Official PlayStation Podcast Episode 544: Vesper Underground",
-          "titleZh": "Official PlayStation Podcast Episode 544: Vesper Underground",
-          "url": "https://blog.playstation.com/2026/06/19/official-playstation-podcast-episode-544-vesper-underground/",
-          "date": "2026-06-19"
+          "titleEn": "Assassin’s Creed Black Flag Resynced: PS5 Pro enhancements detailed",
+          "titleZh": "Assassin’s Creed Black Flag Resynced: PS5 Pro enhancements detailed",
+          "url": "https://blog.playstation.com/2026/06/29/assassins-creed-black-flag-resynced-ps5-pro-enhancements-detailed/",
+          "date": "2026-06-29"
         },
         {
-          "titleEn": "Share of the Week: Saros",
-          "titleZh": "Share of the Week: Saros",
-          "url": "https://blog.playstation.com/2026/06/19/share-of-the-week-saros/",
-          "date": "2026-06-19"
+          "titleEn": "Avatar Legends: The Fighting Game Spirit Wilds stage revealed",
+          "titleZh": "Avatar Legends: The Fighting Game Spirit Wilds stage revealed",
+          "url": "https://blog.playstation.com/2026/06/29/avatar-legends-the-fighting-game-spirit-wilds-stage-revealed/",
+          "date": "2026-06-29"
         },
         {
-          "titleEn": "Granblue Fantasy: Relink – Endless Ragnarok hands-on report, demo available today",
-          "titleZh": "Granblue Fantasy: Relink – Endless Ragnarok hands-on report, demo available today",
-          "url": "https://blog.playstation.com/2026/06/18/granblue-fantasy-relink-endless-ragnarok-hands-on-report-demo-available-today/",
-          "date": "2026-06-18"
+          "titleEn": "Blade, Loki, Deadpool announced for MARVEL Tōkon: Fighting Souls",
+          "titleZh": "Blade, Loki, Deadpool announced for MARVEL Tōkon: Fighting Souls",
+          "url": "https://blog.playstation.com/2026/06/28/blade-loki-deadpool-announced-for-marvel-tokon-fighting-souls/",
+          "date": "2026-06-29"
         }
       ]
     },
@@ -172,22 +172,22 @@
       "labelZh": "Xbox",
       "items": [
         {
-          "titleEn": "Xbox at 25: Gaming Giant Seeks to Level Up Play and Hollywood Adaptations",
-          "titleZh": "Xbox at 25: Gaming Giant Seeks to Level Up Play and Hollywood Adaptations",
-          "url": "https://ew.com/xbox-25th-anniversary-hollywood-adaptations-cover-story-exclusive-12003252#new_tab",
-          "date": "2026-06-22"
+          "titleEn": "MONOPOLY: Star Wars Heroes vs. Villains – Character Abilities Breakdown",
+          "titleZh": "MONOPOLY: Star Wars Heroes vs. Villains – Character Abilities Breakdown",
+          "url": "https://news.xbox.com/en-us/2026/06/29/monopoly-star-wars-heroes-vs-villains-character-ability-breakdown/",
+          "date": "2026-06-29"
         },
         {
-          "titleEn": "Call of Duty: Black Ops 7 and Call of Duty: Warzone Season 04 Mid-Season Content Drop: The Full Details",
-          "titleZh": "Call of Duty: Black Ops 7 and Call of Duty: Warzone Season 04 Mid-Season Content Drop: The Full Details",
-          "url": "https://www.callofduty.com/blog/2026/06/call-of-duty-black-ops-7-warzone-season-04-reloaded-announcement#new_tab",
-          "date": "2026-06-22"
+          "titleEn": "From North Star to South Town – Kenshiro Is Coming to FATAL FURY: City of the Wolves!",
+          "titleZh": "From North Star to South Town – Kenshiro Is Coming to FATAL FURY: City of the Wolves!",
+          "url": "https://news.xbox.com/en-us/2026/06/29/fatal-fury-fist-of-the-north-star-kenshiro/",
+          "date": "2026-06-29"
         },
         {
-          "titleEn": "The Elder Scrolls Online Prepares to Set Sail for Adventure with High Seas of Tamriel, Its Most Ambitious Experiment in Years",
-          "titleZh": "The Elder Scrolls Online Prepares to Set Sail for Adventure with High Seas of Tamriel, Its Most Ambitious Experiment in Years",
-          "url": "https://news.xbox.com/en-us/2026/06/22/the-elder-scrolls-online-prepares-set-sail-for-adventure-high-seas-of-tamriel/",
-          "date": "2026-06-22"
+          "titleEn": "Next Week on XBOX: New Games for June 29 to July 3",
+          "titleZh": "Next Week on XBOX: New Games for June 29 to July 3",
+          "url": "https://news.xbox.com/en-us/2026/06/26/next-week-on-xbox-new-games-for-june-29-to-july-3/",
+          "date": "2026-06-26"
         }
       ]
     },
@@ -222,22 +222,22 @@
       "labelZh": "Epic",
       "items": [
         {
-          "titleEn": "The road to Unreal Engine 6",
-          "titleZh": "The road to Unreal Engine 6",
-          "url": "https://www.unrealengine.com/news/the-road-to-ue-6",
-          "date": "2026-06-22"
+          "titleEn": "June’s Epic learning content: MetaHumans, Mesh Terrain, and more",
+          "titleZh": "June’s Epic learning content: MetaHumans, Mesh Terrain, and more",
+          "url": "https://www.unrealengine.com/learning/junes-epic-learning-content-metahumans-mesh-terrain-and-more",
+          "date": "2026-06-26"
+        },
+        {
+          "titleEn": "Shining Isle Productions goes all-in on Unreal Engine for The Wingfeather Saga",
+          "titleZh": "Shining Isle Productions goes all-in on Unreal Engine for The Wingfeather Saga",
+          "url": "https://www.unrealengine.com/spotlights/shining-isle-productions-goes-all-in-on-unreal-engine-for-the-wingfeather-saga",
+          "date": "2026-06-24"
         },
         {
           "titleEn": "Unreal Engine 5.8 is now available",
           "titleZh": "Unreal Engine 5.8 is now available",
           "url": "https://www.unrealengine.com/news/unreal-engine-5-8-is-now-available",
-          "date": "2026-06-19"
-        },
-        {
-          "titleEn": "State of Unreal 2026: Top news from the show",
-          "titleZh": "State of Unreal 2026: Top news from the show",
-          "url": "https://www.unrealengine.com/news/state-of-unreal-2026-top-news-from-the-show",
-          "date": "2026-06-17"
+          "date": "2026-06-23"
         }
       ]
     },
