@@ -1,0 +1,46 @@
+<p>本文存档 <a href="https://www.instagram.com/popular/" target="_blank" rel="noopener noreferrer">Instagram Popular</a>（<code>/popular/</code>）页面当下展示的热门话题、标签与 Reels 主题，快照日期 <strong>2026-06-01</strong>。结构化数据见 <code>data/instagram-popular-snapshot.json</code>。生活 Hub 首篇原创以<strong>文字 + 表格</strong>为主，不嵌入 Instagram 登录墙 iframe；完整 Reels 与互动数据请在 App 内查看。</p>
+
+<p>Instagram 的 Popular 页是 Meta 面向未登录/轻量浏览场景聚合的「此刻在 IG 上被大量讨论的内容」——混合<strong>话题标签</strong>（带公开帖子计数）与<strong>Reels 缩略图网格</strong>（以关键词描述呈现）。与 Google Trends 的「搜索量脉冲」不同，Popular 更偏<strong>视觉社交与体育/娱乐/生活方式</strong>的即时传播。下方生活 Hub 超级 App 前十书签已对搜索引擎 <code>noindex</code>；本篇为可索引原创解读与存档。</p>
+
+<h2>热门话题与 Reels（快照）</h2>
+<!-- INSTAGRAM_POPULAR_SNAPSHOT_AUTO -->
+
+<h2>话题在读什么</h2>
+
+<h3>2026 世界杯 · Mundial / Copamundial / Vamos</h3>
+<p><strong>Mundial</strong>（约 <strong>2,025 万</strong>帖）、<strong>Copamundial</strong>（96 万）、<strong>Vamos</strong>（2,384 万）、<strong>Ecuador</strong>（2,312 万）、<strong>Seleccionmexicana</strong> / <strong>Vivamexico</strong> / <strong>Estadio Azteca</strong> 等标签密集出现，与 2026 北美世界杯赛程窗口一致。拉美与西语社区用 IG 晒球衣、球场与派对场景；可与本站 <a href="/articles/world-cup-2026-turkey-usmnt-20260626.html">世界杯赛果存档</a>、Portal Hub 的 Google Trends RSS 对照。</p>
+
+<h3>温网 · Wimbledon</h3>
+<p><strong>Wimbledon</strong>（约 <strong>1,163 万</strong>帖）进入草地赛季讨论高峰——球员穿搭、比分卡片与 celebrity 看台同框是 IG 典型传播格式。</p>
+
+<h3>美国独立日 · 公民权议题</h3>
+<p><strong>Independenceday</strong>（1,575 万）、<strong>Indepence Day</strong>（213 万）、<strong>Birth Right Citizenship</strong>（3 万）、<strong>Citizenship</strong>（359 万）、<strong>Immigration</strong>（880 万）、<strong>Constitution</strong>（147 万）等标签并列，反映 7 月前后美国公共议题与节庆内容在 IG 上的交织——政治标签与 lifestyle 内容常共用同一浏览流。</p>
+
+<h3>篮球 · LeBron / Clippers</h3>
+<p><strong>Lebron James</strong>（3,268 万帖）与 <strong>Los Angeles Clippers</strong>（84 万）、<strong>Sophie Cunningham</strong>（3 万）等 NBA/WNBA 相关标签同在榜；Reels 侧则出现 <strong>lamelo ball trade</strong>、<strong>nba draft awkward moments 2024</strong>、<strong>bronny</strong> 等选秀与交易叙事短视频主题。</p>
+
+<h3>夏日生活 · 高温与出行</h3>
+<p><strong>Extreme Heat</strong>（24 万）、<strong>Summerheat</strong>（352 万）、<strong>Staycool</strong>（1,048 万）、<strong>Airconditioning</strong>（1,063 万）、<strong>Cruise Life</strong>（1,479 万）显示季节性 lifestyle 内容——与北半球入夏、暑期出行高峰同步。</p>
+
+<h2>Reels 网格在推什么</h2>
+<p>Popular 页 Reels 缩略图以<strong>英文关键词句</strong>描述内容，涵盖格斗（<strong>justin gaethje arman tsarukyan feud</strong>）、足球（<strong>lamine yamal goal</strong>、<strong>ronaldo goal</strong>）、电竞/游戏（<strong>fortnite</strong>、<strong>deltarune</strong>）、K-pop（<strong>stray kids</strong>）、影视（<strong>one piece</strong>、<strong>loveisland</strong>）等。它们是 IG 推荐算法的「可读标签」，不等同于单一创作者账号；点击后往往进入 Explore/Reels 混排流。</p>
+
+<h2>与小红书 / 抖音的粗对照</h2>
+<p>生活 Hub「更多」里的 <strong>Instagram</strong>、<strong>小红书</strong>、<strong>抖音</strong> 都强调短视频与话题标签，但 Popular 页更<strong>全球化、体育与娱乐权重高</strong>，且 Web 端对未登录用户仍展示聚合页（登录后个性化）。中文社区热点需看各自 App 热榜，不宜与 IG 标签一一对应。</p>
+
+<h2>如何更新本页</h2>
+<ul>
+  <li><strong>数据源</strong> — 编辑 <code>data/instagram-popular-snapshot.json</code> 中 <code>topics</code> / <code>reels</code> 数组；可用 <code>node tools/parse-instagram-full.mjs</code> 从页面 HTML 重新解析。</li>
+  <li><strong>构建</strong> — <code>npm run build-articles</code> → <code>npm run build-hubs</code> → <code>npm run build-seo-locales</code>。</li>
+  <li><strong>官方</strong> — 以 <a href="https://www.instagram.com/popular/" target="_blank" rel="noopener noreferrer">instagram.com/popular</a> 为准；地区与登录状态可能影响所见内容。</li>
+</ul>
+
+<h2 id="article-seo-keywords">检索与官方入口</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.instagram.com/popular/" target="_blank" rel="noopener noreferrer">Instagram Popular</a>
+  <a class="pill" href="https://www.instagram.com/explore/" target="_blank" rel="noopener noreferrer">Instagram Explore</a>
+  <a class="pill" href="https://www.instagram.com/explore/tags/mundial/" target="_blank" rel="noopener noreferrer">#Mundial</a>
+  <a class="pill" href="https://www.instagram.com/explore/tags/wimbledon/" target="_blank" rel="noopener noreferrer">#Wimbledon</a>
+  <a class="pill" href="/life.html">生活 Hub</a>
+  <a class="pill" href="/articles/index.html">全部原创索引</a>
+</div>

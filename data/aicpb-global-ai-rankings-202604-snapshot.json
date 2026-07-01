@@ -1,0 +1,166 @@
+{
+  "fetchedAt": "2026-06-30",
+  "reportTitleZh": "AI产品榜·全球总榜 — 2026年4月版",
+  "reportTitleEn": "AICPB Global AI Rankings — April 2026 edition",
+  "periodZh": "2026年4月",
+  "periodEn": "April 2026",
+  "lastUpdatedOfficial": "2026-05-09",
+  "summaryZh": "网站榜按 Website 访问量、应用榜按 App 月活跃用户（MAU）排名；AICPB 按月更新。",
+  "summaryEn": "Website chart ranks by monthly visits; App chart by MAU. Updated monthly by AICPB.",
+  "sources": {
+    "aicpb": "https://www.aicpb.com/zh/ai-rankings/products/global-ai-rankings",
+    "websitesFull": "https://www.aicpb.com/zh/ai-rankings/products/global-ai-rankings/websites",
+    "appsFull": "https://www.aicpb.com/zh/ai-rankings/products/global-ai-rankings/apps"
+  },
+  "websites": [
+    {
+      "rank": 1,
+      "name": "ChatGPT",
+      "metricDisplay": "5.69B",
+      "momPct": -3.84,
+      "productUrl": "https://www.aicpb.com/zh/product/ChatGPT/webid1D6F37591"
+    },
+    {
+      "rank": 2,
+      "name": "New Bing",
+      "metricDisplay": "3.58B",
+      "momPct": -4.13,
+      "productUrl": "https://www.aicpb.com/zh/product/New-Bing/webid1D6F37521"
+    },
+    {
+      "rank": 3,
+      "name": "Gemini",
+      "metricDisplay": "2.85B",
+      "momPct": 6.38,
+      "productUrl": "https://www.aicpb.com/zh/product/Gemini/webid1D6F37519"
+    },
+    {
+      "rank": 4,
+      "name": "Claude｜Anthropic",
+      "metricDisplay": "839.88M",
+      "momPct": 34.18,
+      "productUrl": "https://www.aicpb.com/zh/product/Claude｜Anthropic/webid1D6F37489"
+    },
+    {
+      "rank": 5,
+      "name": "DeepSeek",
+      "metricDisplay": "486.50M",
+      "momPct": 4.81,
+      "productUrl": "https://www.aicpb.com/zh/product/DeepSeek/webid1D6F374B1"
+    },
+    {
+      "rank": 6,
+      "name": "Github Copilot",
+      "metricDisplay": "380.69M",
+      "momPct": -0.52,
+      "productUrl": "https://www.aicpb.com/zh/product/Github-Copilot/webid1D6F374B9"
+    },
+    {
+      "rank": 7,
+      "name": "Grok",
+      "metricDisplay": "290.37M",
+      "momPct": -14.43,
+      "productUrl": "https://www.aicpb.com/zh/product/Grok/webid1D6F37429"
+    },
+    {
+      "rank": 8,
+      "name": "Shop",
+      "metricDisplay": "287.75M",
+      "momPct": 5.65,
+      "productUrl": "https://www.aicpb.com/zh/product/Shop/webid1D6F37421"
+    },
+    {
+      "rank": 9,
+      "name": "notebooklm",
+      "metricDisplay": "252.86M",
+      "momPct": 11.36,
+      "productUrl": "https://www.aicpb.com/zh/product/notebooklm/webid1D6F37461"
+    },
+    {
+      "rank": 10,
+      "name": "纳米AI搜索",
+      "nameEn": "Nano AI Search",
+      "metricDisplay": "222.78M",
+      "momPct": -16.49,
+      "productUrl": "https://www.aicpb.com/zh/product/纳米AI搜索/webid1D6F374A1"
+    }
+  ],
+  "apps": [
+    {
+      "rank": 1,
+      "name": "ChatGPT",
+      "metricDisplay": "957.80M",
+      "momPct": -0.36,
+      "productUrl": "https://www.aicpb.com/zh/product/ChatGPT/webid1D6F37591"
+    },
+    {
+      "rank": 2,
+      "name": "豆包",
+      "nameEn": "Doubao",
+      "metricDisplay": "336.04M",
+      "momPct": 1.51,
+      "productUrl": "https://www.aicpb.com/zh/product/豆包/webid1D6F374A9"
+    },
+    {
+      "rank": 3,
+      "name": "千问",
+      "nameEn": "Qwen",
+      "metricDisplay": "220.35M",
+      "momPct": -1.02,
+      "productUrl": "https://www.aicpb.com/zh/product/千问/webid1D6F374C1"
+    },
+    {
+      "rank": 4,
+      "name": "夸克",
+      "nameEn": "Quark",
+      "metricDisplay": "162.30M",
+      "momPct": -5.77,
+      "productUrl": "https://www.aicpb.com/zh/product/夸克/webid1D6F374D1"
+    },
+    {
+      "rank": 5,
+      "name": "Google Gemini",
+      "metricDisplay": "139.37M",
+      "momPct": 9.29,
+      "productUrl": "https://www.aicpb.com/zh/product/Google-Gemini/webid1D6F37519"
+    },
+    {
+      "rank": 6,
+      "name": "DeepSeek",
+      "metricDisplay": "138.98M",
+      "momPct": 1.79,
+      "productUrl": "https://www.aicpb.com/zh/product/DeepSeek/webid1D6F374B1"
+    },
+    {
+      "rank": 7,
+      "name": "腾讯元宝",
+      "nameEn": "Tencent Yuanbao",
+      "metricDisplay": "111.13M",
+      "momPct": 2.96,
+      "productUrl": "https://www.aicpb.com/zh/product/腾讯元宝/webid1D6F374E1"
+    },
+    {
+      "rank": 8,
+      "name": "百度网盘",
+      "nameEn": "Baidu Netdisk",
+      "metricDisplay": "103.80M",
+      "momPct": -5.24,
+      "productUrl": "https://www.aicpb.com/zh/product/百度网盘/webid1D6F374F1"
+    },
+    {
+      "rank": 9,
+      "name": "即梦AI",
+      "nameEn": "Jimeng AI",
+      "metricDisplay": "92.49M",
+      "momPct": 15.7,
+      "productUrl": "https://www.aicpb.com/zh/product/即梦AI/webid1D6F37501"
+    },
+    {
+      "rank": 10,
+      "name": "Grok",
+      "metricDisplay": "75.97M",
+      "momPct": -5.88,
+      "productUrl": "https://www.aicpb.com/zh/product/Grok/webid1D6F37429"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "fetchedAt": "2026-06-01",
+  "reportTitleZh": "看看 Instagram 上的热门内容",
+  "reportTitleEn": "Popular on Instagram",
+  "summaryZh": "Instagram /popular/ 页面展示的当下热门话题、标签与 Reels 主题快照；帖子数为页面公开计数，完整互动数据需登录 App 查看。",
+  "summaryEn": "Snapshot of trending topics, hashtags, and Reels themes from Instagram /popular/; post counts are public page figures — full engagement requires the app.",
+  "sources": {
+    "instagram": "https://www.instagram.com/popular/"
+  },
+  "topics": [
+    {
+      "name": "Birth Right Citizenship",
+      "postsDisplay": "3万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/birthrightcitizenship/"
+    },
+    {
+      "name": "Ecuador",
+      "postsDisplay": "2,312万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/ecuador/"
+    },
+    {
+      "name": "Lebron James",
+      "postsDisplay": "3,268万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/lebronjames/"
+    },
+    {
+      "name": "Vivamexico",
+      "postsDisplay": "1,478万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/vivamexico/"
+    },
+    {
+      "name": "Seleccionmexicana",
+      "postsDisplay": "201万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/seleccionmexicana/"
+    },
+    {
+      "name": "Morocco",
+      "postsDisplay": "1,443万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/morocco/"
+    },
+    {
+      "name": "Dont Oliver",
+      "postsDisplay": "18",
+      "exploreUrl": "https://www.instagram.com/explore/tags/dontoliver/"
+    },
+    {
+      "name": "Copamundial",
+      "postsDisplay": "96万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/copamundial/"
+    },
+    {
+      "name": "Cruise Life",
+      "postsDisplay": "1,479万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/cruiselife/"
+    },
+    {
+      "name": "Estadio Azteca",
+      "postsDisplay": "128万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/estadioazteca/"
+    },
+    {
+      "name": "Citizenship",
+      "postsDisplay": "359万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/citizenship/"
+    },
+    {
+      "name": "Wimbledon",
+      "postsDisplay": "1,163万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/wimbledon/"
+    },
+    {
+      "name": "Los Angeles Clippers",
+      "postsDisplay": "84万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/losangelesclippers/"
+    },
+    {
+      "name": "Sophie Cunningham",
+      "postsDisplay": "3万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/sophiecunningham/"
+    },
+    {
+      "name": "Extreme Heat",
+      "postsDisplay": "24万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/extremeheat/"
+    },
+    {
+      "name": "First Of The Month",
+      "postsDisplay": "92万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/firstofthemonth/"
+    },
+    {
+      "name": "Noerapenal",
+      "postsDisplay": "27万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/noerapenal/"
+    },
+    {
+      "name": "Constitution",
+      "postsDisplay": "147万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/constitution/"
+    },
+    {
+      "name": "Orlandobrown",
+      "postsDisplay": "4万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/orlandobrown/"
+    },
+    {
+      "name": "Monicadelacruz",
+      "postsDisplay": "801",
+      "exploreUrl": "https://www.instagram.com/explore/tags/monicadelacruz/"
+    },
+    {
+      "name": "Indepence Day",
+      "postsDisplay": "213万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/indepenceday/"
+    },
+    {
+      "name": "Ga Na",
+      "postsDisplay": "154万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/gana/"
+    },
+    {
+      "name": "Rosalia",
+      "postsDisplay": "468万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/rosalia/"
+    },
+    {
+      "name": "Mundial",
+      "postsDisplay": "2,025万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/mundial/"
+    },
+    {
+      "name": "Ivorycoast",
+      "postsDisplay": "323万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/ivorycoast/"
+    },
+    {
+      "name": "Tri",
+      "postsDisplay": "1,350万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/tri/"
+    },
+    {
+      "name": "Jupiter In Leo",
+      "postsDisplay": "5,192",
+      "exploreUrl": "https://www.instagram.com/explore/tags/jupiterinleo/"
+    },
+    {
+      "name": "Independenceday",
+      "postsDisplay": "1,575万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/independenceday/"
+    },
+    {
+      "name": "Staycool",
+      "postsDisplay": "1,048万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/staycool/"
+    },
+    {
+      "name": "Mike Johnson",
+      "postsDisplay": "12万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/mikejohnson/"
+    },
+    {
+      "name": "Maroc",
+      "postsDisplay": "1亿",
+      "exploreUrl": "https://www.instagram.com/explore/tags/maroc/"
+    },
+    {
+      "name": "Summerheat",
+      "postsDisplay": "352万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/summerheat/"
+    },
+    {
+      "name": "Airconditioning",
+      "postsDisplay": "1,063万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/airconditioning/"
+    },
+    {
+      "name": "Sincere",
+      "postsDisplay": "165万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/sincere/"
+    },
+    {
+      "name": "Immigration",
+      "postsDisplay": "880万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/immigration/"
+    },
+    {
+      "name": "Cern",
+      "postsDisplay": "120万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/cern/"
+    },
+    {
+      "name": "Sweden",
+      "postsDisplay": "3,235万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/sweden/"
+    },
+    {
+      "name": "Vamos",
+      "postsDisplay": "2,384万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/vamos/"
+    },
+    {
+      "name": "Sailor Moon",
+      "postsDisplay": "3,145万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/sailormoon/"
+    },
+    {
+      "name": "Salesforce",
+      "postsDisplay": "331万",
+      "exploreUrl": "https://www.instagram.com/explore/tags/salesforce/"
+    }
+  ],
+  "reels": [
+    {
+      "rank": 1,
+      "title": "akashim ali vs mohawk fighter",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=akashim%20ali%20vs%20mohawk%20fighter"
+    },
+    {
+      "rank": 2,
+      "title": "tinaball",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=tinaball"
+    },
+    {
+      "rank": 3,
+      "title": "lamelo ball trade",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=lamelo%20ball%20trade"
+    },
+    {
+      "rank": 4,
+      "title": "verzuz tv",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=verzuz%20tv"
+    },
+    {
+      "rank": 5,
+      "title": "lavarball",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=lavarball"
+    },
+    {
+      "rank": 6,
+      "title": "isaiah wright's journey to the nfl",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=isaiah%20wright's%20journey%20to%20the%20nfl"
+    },
+    {
+      "rank": 7,
+      "title": "ansar khamzaev wrestling highlights",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=ansar%20khamzaev%20wrestling%20highlights"
+    },
+    {
+      "rank": 8,
+      "title": "nba draft awkward moments 2024",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=nba%20draft%20awkward%20moments%202024"
+    },
+    {
+      "rank": 9,
+      "title": "brandon dwyer nba draft update",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=brandon%20dwyer%20nba%20draft%20update"
+    },
+    {
+      "rank": 10,
+      "title": "kyi's basketball career stats",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=kyi's%20basketball%20career%20stats"
+    },
+    {
+      "rank": 11,
+      "title": "yaxell lendeborg highlights",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=yaxell%20lendeborg%20highlights"
+    },
+    {
+      "rank": 12,
+      "title": "adrien broner vs himself",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=adrien%20broner%20vs%20himself"
+    },
+    {
+      "rank": 13,
+      "title": "justin gaethje arman tsarukyan feud",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=justin%20gaethje%20arman%20tsarukyan%20feud"
+    },
+    {
+      "rank": 14,
+      "title": "jayden quaintance spurs draft",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=jayden%20quaintance%20spurs%20draft"
+    },
+    {
+      "rank": 15,
+      "title": "connor ericsson skateboarding event",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=connor%20ericsson%20skateboarding%20event"
+    },
+    {
+      "rank": 16,
+      "title": "brian gray football highlights",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=brian%20gray%20football%20highlights"
+    },
+    {
+      "rank": 17,
+      "title": "guillermo ochoa farewell message",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=guillermo%20ochoa%20farewell%20message"
+    },
+    {
+      "rank": 18,
+      "title": "unc baseball player family story",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=unc%20baseball%20player%20family%20story"
+    },
+    {
+      "rank": 19,
+      "title": "lamine yamal goal",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=lamine%20yamal%20goal"
+    },
+    {
+      "rank": 20,
+      "title": "caitlin clark getting fouled",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=caitlin%20clark%20getting%20fouled"
+    },
+    {
+      "rank": 21,
+      "title": "cameron carr highlights lakers",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=cameron%20carr%20highlights%20lakers"
+    },
+    {
+      "rank": 22,
+      "title": "sydney sweeney slalom skiing skills",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=sydney%20sweeney%20slalom%20skiing%20skills"
+    },
+    {
+      "rank": 23,
+      "title": "dalton rushing shohei ohtani",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=dalton%20rushing%20shohei%20ohtani"
+    },
+    {
+      "rank": 24,
+      "title": "iran offsides goal",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=iran%20offsides%20goal"
+    },
+    {
+      "rank": 25,
+      "title": "ronaldo goal",
+      "searchUrl": "https://www.instagram.com/explore/search/keyword/?q=ronaldo%20goal"
+    }
+  ]
+}
