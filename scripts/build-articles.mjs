@@ -28,6 +28,7 @@ import { injectStateOfAiSnapshot } from "./sensor-tower-state-of-ai-lib.mjs";
 import { injectNvidiaHalosRoboticsSnapshot } from "./nvidia-halos-robotics-lib.mjs";
 import { injectEmplifiFacebookUsPagesSnapshot } from "./emplifi-facebook-lib.mjs";
 import { injectBrandFinanceGlobal500Snapshot } from "./brand-finance-global-500-lib.mjs";
+import { injectInterbrandBgb2026Snapshot } from "./interbrand-best-global-brands-2026-lib.mjs";
 import { injectFortuneChinaTech502026Snapshot } from "./fortune-china-tech-50-2026-lib.mjs";
 import { injectAicpbGlobalAiRankings202604Snapshot } from "./aicpb-global-ai-rankings-202604-lib.mjs";
 import { injectInstagramPopularSnapshot } from "./instagram-popular-lib.mjs";
@@ -35,6 +36,7 @@ import { injectAppleIphone17ProBuySnapshot } from "./apple-iphone-17-pro-buy-lib
 import { injectWorldCup2026TurkeyUsmntSnapshot } from "./world-cup-2026-turkey-usmnt-lib.mjs";
 import { injectAmazonPrimeDay2026DealsSnapshot } from "./amazon-prime-day-2026-deals-lib.mjs";
 import { injectPlaystationStudiosBungieUpdateSnapshot } from "./playstation-studios-bungie-update-lib.mjs";
+import { injectIgnNewGames2026Snapshot } from "./ign-new-games-2026-lib.mjs";
 import { injectIos266Beta2MacworldSnapshot } from "./ios-266-beta-2-macworld-lib.mjs";
 import { injectYoutubeFifaCreatorCup2026Snapshot } from "./youtube-fifa-creator-cup-2026-lib.mjs";
 
@@ -255,6 +257,7 @@ function loadArticles() {
           body = injectNvidiaHalosRoboticsSnapshot(body, lang);
           body = injectEmplifiFacebookUsPagesSnapshot(body, lang);
           body = injectBrandFinanceGlobal500Snapshot(body, lang);
+          body = injectInterbrandBgb2026Snapshot(body, lang);
           body = injectFortuneChinaTech502026Snapshot(body, lang);
           body = injectAicpbGlobalAiRankings202604Snapshot(body, lang);
           body = injectInstagramPopularSnapshot(body, lang);
@@ -264,6 +267,7 @@ function loadArticles() {
           body = injectPlaystationStudiosBungieUpdateSnapshot(body, lang);
           body = injectIos266Beta2MacworldSnapshot(body, lang);
           body = injectYoutubeFifaCreatorCup2026Snapshot(body, lang);
+          body = injectIgnNewGames2026Snapshot(body, lang);
           raw["body" + suffixForLang(lang)] = body;
         } else {
           console.warn("Missing htmlFragments file:", rel, "for", raw.slug);

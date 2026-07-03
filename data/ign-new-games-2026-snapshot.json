@@ -1,0 +1,982 @@
+{
+  "fetchedAt": "2026-07-03",
+  "playlistTitleZh": "New Games 2026",
+  "playlistTitleEn": "New Games 2026",
+  "author": "Derek",
+  "authorIgn": "doomtrain5",
+  "playlistUpdated": "2026-06-05",
+  "totalGames": 106,
+  "howLongToBeatHours": 151,
+  "heroMontageUrl": "https://assets-prd.ignimgs.com/montage/4e/2023/10/19/janet-demornay-is-a-slumlord-and-a-witch-button-1697705428219.jpg;/2024/01/15/kusan-button-1705362962845.jpg;/2020/08/05/low-fi-button-01-1596589294647.jpg;/2023/06/11/mariachil-1686518253396.jpg?crop=3%3A2&width=909&height=606&format=jpg&auto=webp&quality=80",
+  "summaryZh": "IGN 用户 Derek（doomtrain5）Playlist「New Games 2026」收录 106 款在研/待发售游戏，HowLongToBeat 合计约 151 小时；下表与封面网格为 2026-07-03 自 IGN 页面存档（封面链至 IGN CDN）。",
+  "summaryEn": "Derek’s IGN Playlist “New Games 2026” tracks 106 upcoming/in-development titles (~151 HowLongToBeat hours combined). Grid and table archived 2026-07-03 from the live playlist (covers hotlink IGN CDN).",
+  "sources": {
+    "playlist": "https://www.ign.com/playlist/doomtrain5/lists/new-games-2026"
+  },
+  "featuredSlugs": [
+    "grand-theft-auto-vi",
+    "the-witcher-iv",
+    "marvels-wolverine",
+    "the-duskbloods",
+    "fable",
+    "phantom-blade-zero",
+    "control-resonant",
+    "tomb-raider-legacy-of-atlantis"
+  ],
+  "games": [
+    {
+      "rank": 1,
+      "title": "Janet DeMornay is a Slumlord (and a Witch)",
+      "developer": "Fuzzy Ghost",
+      "ignPath": "/games/janet-demornay-is-a-slumlord-and-a-witch",
+      "ignUrl": "https://www.ign.com/games/janet-demornay-is-a-slumlord-and-a-witch",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/10/19/janet-demornay-is-a-slumlord-and-a-witch-button-1697705428219.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Janet DeMornay is a Slumlord (and a Witch)"
+    },
+    {
+      "rank": 2,
+      "title": "Kusan: City of Wolves",
+      "developer": "CIRCLEfromDOT",
+      "ignPath": "/games/kusan-city-of-wolves",
+      "ignUrl": "https://www.ign.com/games/kusan-city-of-wolves",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/01/15/kusan-button-1705362962845.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Kusan: City of Wolves"
+    },
+    {
+      "rank": 3,
+      "title": "Little Devil Inside",
+      "developer": "Neostream",
+      "ignPath": "/games/little-devil-inside",
+      "ignUrl": "https://www.ign.com/games/little-devil-inside",
+      "imageUrl": "https://assets2.ignimgs.com/2015/04/15/little-devil-inside-buttonjpg-0499d5.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Little Devil Inside"
+    },
+    {
+      "rank": 4,
+      "title": "Low-Fi",
+      "developer": "Iris VR",
+      "ignPath": "/games/low-fi",
+      "ignUrl": "https://www.ign.com/games/low-fi",
+      "imageUrl": "https://assets-prd.ignimgs.com/2020/08/05/low-fi-button-01-1596589294647.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Low-Fi"
+    },
+    {
+      "rank": 5,
+      "title": "Mariachi Legends",
+      "developer": "Halberd Studios",
+      "ignPath": "/games/mariachi-legends",
+      "ignUrl": "https://www.ign.com/games/mariachi-legends",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/06/11/mariachil-1686518253396.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Mariachi Legends"
+    },
+    {
+      "rank": 6,
+      "title": "Marvel's Wolverine",
+      "developer": "Insomniac",
+      "ignPath": "/games/marvels-wolverine",
+      "ignUrl": "https://www.ign.com/games/marvels-wolverine",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/09/29/wolverine-1759178400808.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Marvel's Wolverine"
+    },
+    {
+      "rank": 7,
+      "title": "Militsioner",
+      "developer": "Tallboys",
+      "ignPath": "/games/militsioner",
+      "ignUrl": "https://www.ign.com/games/militsioner",
+      "imageUrl": "https://assets-prd.ignimgs.com/2021/02/12/militsioner-button-2-1613160381224.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Militsioner"
+    },
+    {
+      "rank": 8,
+      "title": "Morbid Metal",
+      "developer": "Felix Schade",
+      "ignPath": "/games/morbid-metal",
+      "ignUrl": "https://www.ign.com/games/morbid-metal",
+      "imageUrl": "https://assets-prd.ignimgs.com/2021/03/16/morbid-metal-button-01-1615853493764.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Morbid Metal"
+    },
+    {
+      "rank": 9,
+      "title": "Penny Blood",
+      "developer": "Yukikaze",
+      "ignPath": "/games/penny-blood",
+      "ignUrl": "https://www.ign.com/games/penny-blood",
+      "imageUrl": "https://assets-prd.ignimgs.com/2022/08/27/pennyblood-button-000-1661575643077.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Penny Blood"
+    },
+    {
+      "rank": 10,
+      "title": "Peripeteia",
+      "developer": "Ninth Exodus",
+      "ignPath": "/games/peripeteia",
+      "ignUrl": "https://www.ign.com/games/peripeteia",
+      "imageUrl": "https://assets-prd.ignimgs.com/2022/09/20/perpetia-button-1663715459855.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Peripeteia"
+    },
+    {
+      "rank": 11,
+      "title": "Phantom Blade Zero",
+      "developer": "S-Game",
+      "ignPath": "/games/phantom-blade-zero",
+      "ignUrl": "https://www.ign.com/games/phantom-blade-zero",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/01/13/phantomblade0-1768342452670.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Phantom Blade Zero"
+    },
+    {
+      "rank": 12,
+      "title": "Phantom Hellcat",
+      "developer": "Ironbird",
+      "ignPath": "/games/phantom-hellcat",
+      "ignUrl": "https://www.ign.com/games/phantom-hellcat",
+      "imageUrl": "https://assets-prd.ignimgs.com/2022/08/23/phantom-hellcat-button-1661292831817.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Phantom Hellcat"
+    },
+    {
+      "rank": 13,
+      "title": "Ratatan",
+      "developer": "Ratata Arts",
+      "ignPath": "/games/ratatan",
+      "ignUrl": "https://www.ign.com/games/ratatan",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/03/17/ratatan-1742242828768.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Ratatan"
+    },
+    {
+      "rank": 14,
+      "title": "Reka",
+      "developer": "Emberstorm Entertainment",
+      "ignPath": "/games/reka",
+      "ignUrl": "https://www.ign.com/games/reka",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/01/15/reka-1673747044974.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Reka"
+    },
+    {
+      "rank": 15,
+      "title": "Rogue Eclipse",
+      "developer": "HUSKRAFTS",
+      "ignPath": "/games/rogue-eclipse",
+      "ignUrl": "https://www.ign.com/games/rogue-eclipse",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/06/07/rogueeclipse-1717799278698.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Rogue Eclipse"
+    },
+    {
+      "rank": 16,
+      "title": "Samurai Unicorn",
+      "developer": "Its Got Stealth",
+      "ignPath": "/games/samurai-unicorn",
+      "ignUrl": "https://www.ign.com/games/samurai-unicorn",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/10/19/samurai-unicorn-button-1697754489740.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Samurai Unicorn"
+    },
+    {
+      "rank": 17,
+      "title": "Screenbound",
+      "developer": "Crescent Moon Games",
+      "ignPath": "/games/screenbound",
+      "ignUrl": "https://www.ign.com/games/screenbound",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/04/02/screenbound-button-1712064251150.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Screenbound"
+    },
+    {
+      "rank": 18,
+      "title": "Spine",
+      "developer": "Nekki",
+      "ignPath": "/games/spine",
+      "ignUrl": "https://www.ign.com/games/spine",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/03/25/spine-1711401985462.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Spine"
+    },
+    {
+      "rank": 19,
+      "title": "Star Wars: Knights of the Old Republic Remake",
+      "developer": "Aspyr",
+      "ignPath": "/games/star-wars-knights-of-the-old-republic-remake",
+      "ignUrl": "https://www.ign.com/games/star-wars-knights-of-the-old-republic-remake",
+      "imageUrl": "https://assets-prd.ignimgs.com/2021/09/10/kotor-remake-button-01-1631233968423.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Star Wars: Knights of the Old Republic Remake"
+    },
+    {
+      "rank": 20,
+      "title": "The Witcher IV",
+      "developer": "CD Projekt Red",
+      "ignPath": "/games/the-witcher-iv",
+      "ignUrl": "https://www.ign.com/games/the-witcher-iv",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/12/13/witcher4-1734069144067.png?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "The Witcher IV"
+    },
+    {
+      "rank": 21,
+      "title": "The Wolf Among Us 2: A Telltale Series",
+      "developer": "Telltale Games",
+      "ignPath": "/games/the-wolf-among-us-2-a-telltale-series",
+      "ignUrl": "https://www.ign.com/games/the-wolf-among-us-2-a-telltale-series",
+      "imageUrl": "https://assets-prd.ignimgs.com/2022/02/11/47645-the-wolf-among-us-season-2-alt-1644596332866.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "The Wolf Among Us 2: A Telltale Series"
+    },
+    {
+      "rank": 22,
+      "title": "We Stay Behind",
+      "developer": "Backwoods Entertainment",
+      "ignPath": "/games/we-stay-behind",
+      "ignUrl": "https://www.ign.com/games/we-stay-behind",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/08/10/westay-1691700812157.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "We Stay Behind"
+    },
+    {
+      "rank": 23,
+      "title": "Witchfire",
+      "developer": "The Astronauts",
+      "ignPath": "/games/witchfire",
+      "ignUrl": "https://www.ign.com/games/witchfire",
+      "imageUrl": "https://assets-prd.ignimgs.com/2022/10/27/szymon-urban-witchfire-fin-kwadrat-1666906521550.png?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Witchfire"
+    },
+    {
+      "rank": 24,
+      "title": "Fable",
+      "developer": "Playground",
+      "ignPath": "/games/fable",
+      "ignUrl": "https://www.ign.com/games/fable",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/01/22/fable-1769112762237.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Fable"
+    },
+    {
+      "rank": 25,
+      "title": "Grand Theft Auto VI",
+      "developer": "Rockstar Games",
+      "ignPath": "/games/grand-theft-auto-vi",
+      "ignUrl": "https://www.ign.com/games/grand-theft-auto-vi",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/05/07/acc797c96579836fedbe314a37856a0761cdc687-1746654158015.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Grand Theft Auto VI"
+    },
+    {
+      "rank": 26,
+      "title": "Bloodstained: The Scarlet Engagement",
+      "developer": "ArtPlay",
+      "ignPath": "/games/bloodstained-the-scarlet-engagement",
+      "ignUrl": "https://www.ign.com/games/bloodstained-the-scarlet-engagement",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/04/bloodstained-1749074942364.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Bloodstained: The Scarlet Engagement"
+    },
+    {
+      "rank": 27,
+      "title": "Sea of Remnants",
+      "developer": "Joker Studio",
+      "ignPath": "/games/sea-of-remnants",
+      "ignUrl": "https://www.ign.com/games/sea-of-remnants",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/04/seaofremnants-1749076437914.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Sea of Remnants"
+    },
+    {
+      "rank": 28,
+      "title": "Aniimo",
+      "developer": "Pawprint Studio",
+      "ignPath": "/games/aniimo",
+      "ignUrl": "https://www.ign.com/games/aniimo",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/08/animo-1749407842643.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Aniimo"
+    },
+    {
+      "rank": 29,
+      "title": "At Fate's End",
+      "developer": "Thunder Lotus Games",
+      "ignPath": "/games/at-fates-end",
+      "ignUrl": "https://www.ign.com/games/at-fates-end",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/08/fatesend-1749407967008.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "At Fate's End"
+    },
+    {
+      "rank": 30,
+      "title": "Beast of Reincarnation",
+      "developer": "Game Freak",
+      "ignPath": "/games/beast-of-reincarnation",
+      "ignUrl": "https://www.ign.com/games/beast-of-reincarnation",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/08/bestofreincarnation-1749406527582.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Beast of Reincarnation"
+    },
+    {
+      "rank": 31,
+      "title": "Mudang: Two Hearts",
+      "developer": "EVR Studio",
+      "ignPath": "/games/mudang-two-hearts",
+      "ignUrl": "https://www.ign.com/games/mudang-two-hearts",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/08/mudang-1749407537141.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Mudang: Two Hearts"
+    },
+    {
+      "rank": 32,
+      "title": "Resonance: A Plague Tale Legacy",
+      "developer": "Asobo Studio",
+      "ignPath": "/games/resonance-a-plague-tale-legacy",
+      "ignUrl": "https://www.ign.com/games/resonance-a-plague-tale-legacy",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/08/resonance-1749406114329.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Resonance: A Plague Tale Legacy"
+    },
+    {
+      "rank": 33,
+      "title": "The Blood of Dawnwalker",
+      "developer": "Rebel Wolves",
+      "ignPath": "/games/the-blood-of-dawnwalker",
+      "ignUrl": "https://www.ign.com/games/the-blood-of-dawnwalker",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/05/12/bloodofdawnwalker-1778620257974.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "The Blood of Dawnwalker"
+    },
+    {
+      "rank": 34,
+      "title": "There Are No Ghosts at the Grand",
+      "developer": "Friday Sundae",
+      "ignPath": "/games/there-are-no-ghosts-at-the-grand",
+      "ignUrl": "https://www.ign.com/games/there-are-no-ghosts-at-the-grand",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/08/noghosts-1749407396847.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "There Are No Ghosts at the Grand"
+    },
+    {
+      "rank": 35,
+      "title": "Clockwork Revolution",
+      "developer": "InXile Entertainment",
+      "ignPath": "/games/clockwork-revolution",
+      "ignUrl": "https://www.ign.com/games/clockwork-revolution",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/06/07/clockwork-1780857045399.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Clockwork Revolution"
+    },
+    {
+      "rank": 36,
+      "title": "Persona 4 Revival",
+      "developer": "Atlus",
+      "ignPath": "/games/persona-4-revival",
+      "ignUrl": "https://www.ign.com/games/persona-4-revival",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/08/p4r-1749408031666.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Persona 4 Revival"
+    },
+    {
+      "rank": 37,
+      "title": "Acts of Blood",
+      "developer": "Eksil Team",
+      "ignPath": "/games/acts-of-blood",
+      "ignUrl": "https://www.ign.com/games/acts-of-blood",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/06/acts-of-blood-button-1749226016737.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Acts of Blood"
+    },
+    {
+      "rank": 38,
+      "title": "End of Abyss",
+      "developer": "Section 9",
+      "ignPath": "/games/end-of-abyss",
+      "ignUrl": "https://www.ign.com/games/end-of-abyss",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/06/endofabyss-1749245802391.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "End of Abyss"
+    },
+    {
+      "rank": 39,
+      "title": "Infinitesimals",
+      "developer": "Cubit Studios LTD",
+      "ignPath": "/games/infinitesimals",
+      "ignUrl": "https://www.ign.com/games/infinitesimals",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/06/infinit-1749249693631.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Infinitesimals"
+    },
+    {
+      "rank": 40,
+      "title": "Mortal Shell II",
+      "developer": "Cold Symmetry",
+      "ignPath": "/games/mortal-shell-ii",
+      "ignUrl": "https://www.ign.com/games/mortal-shell-ii",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/06/mortalshell2-1749244295018.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Mortal Shell II"
+    },
+    {
+      "rank": 41,
+      "title": "Onimusha: Way of the Sword",
+      "developer": "Capcom",
+      "ignPath": "/games/onimusha-way-of-the-sword",
+      "ignUrl": "https://www.ign.com/games/onimusha-way-of-the-sword",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/12/13/onimusha-ws-art-11-1734068293513.png?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Onimusha: Way of the Sword"
+    },
+    {
+      "rank": 42,
+      "title": "Atomic Heart 2",
+      "developer": "Mundfish",
+      "ignPath": "/games/atomic-heart-2",
+      "ignUrl": "https://www.ign.com/games/atomic-heart-2",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/06/atomicheart2-1749245766448.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Atomic Heart 2"
+    },
+    {
+      "rank": 43,
+      "title": "Blighted",
+      "developer": "DrinkBox Studios",
+      "ignPath": "/games/blighted",
+      "ignUrl": "https://www.ign.com/games/blighted",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/06/blighted-1749249254319.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Blighted"
+    },
+    {
+      "rank": 44,
+      "title": "Chrono Odyssey",
+      "developer": "Chrono Studio",
+      "ignPath": "/games/chrono-odyssey",
+      "ignUrl": "https://www.ign.com/games/chrono-odyssey",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/07/chrono-odyssey-cbt-key-visual-1x1-1749330999678.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Chrono Odyssey"
+    },
+    {
+      "rank": 45,
+      "title": "Felt That: Boxing",
+      "developer": "Sans Strings Studio",
+      "ignPath": "/games/felt-that-boxing",
+      "ignUrl": "https://www.ign.com/games/felt-that-boxing",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/06/feltthat-1749246087379.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Felt That: Boxing"
+    },
+    {
+      "rank": 46,
+      "title": "Ill",
+      "developer": "Clout Games",
+      "ignPath": "/games/ill",
+      "ignUrl": "https://www.ign.com/games/ill",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/06/ill-1749249380939.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Ill"
+    },
+    {
+      "rank": 47,
+      "title": "Into The Unwell",
+      "developer": "She Was Such A Good Horse",
+      "ignPath": "/games/into-the-unwell",
+      "ignUrl": "https://www.ign.com/games/into-the-unwell",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/06/intotheunwell-1749250511098.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Into The Unwell"
+    },
+    {
+      "rank": 48,
+      "title": "Stranger Than Heaven",
+      "developer": "RGG Studio",
+      "ignPath": "/games/stranger-than-heaven",
+      "ignUrl": "https://www.ign.com/games/stranger-than-heaven",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/06/strangerthanheaven-1749250684601.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Stranger Than Heaven"
+    },
+    {
+      "rank": 49,
+      "title": "Marvel Tokon Fighting Souls",
+      "developer": "ARC System Works",
+      "ignPath": "/games/marvel-tokon-fighting-souls",
+      "ignUrl": "https://www.ign.com/games/marvel-tokon-fighting-souls",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/06/04/tokon-1749076098123.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Marvel Tokon Fighting Souls"
+    },
+    {
+      "rank": 50,
+      "title": "Marvel 1943: Rise of Hydra",
+      "developer": "Skydance Media",
+      "ignPath": "/games/marvel-1943-rise-of-hydra",
+      "ignUrl": "https://www.ign.com/games/marvel-1943-rise-of-hydra",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/03/20/image-from-ios-1710953733020.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Marvel 1943: Rise of Hydra"
+    },
+    {
+      "rank": 51,
+      "title": "Nivalis",
+      "developer": "Ion Lands",
+      "ignPath": "/games/nivalis",
+      "ignUrl": "https://www.ign.com/games/nivalis",
+      "imageUrl": "https://assets-prd.ignimgs.com/2022/06/13/nivalis-button-1655146498062.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Nivalis"
+    },
+    {
+      "rank": 52,
+      "title": "The Sinking City 2",
+      "developer": "Frogwares",
+      "ignPath": "/games/the-sinking-city-2",
+      "ignUrl": "https://www.ign.com/games/the-sinking-city-2",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/03/28/the-sinking-city2-replacement-button-1711634301158.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "The Sinking City 2"
+    },
+    {
+      "rank": 53,
+      "title": "Hermit and Pig",
+      "developer": "Heavy Lunch Studio LLC",
+      "ignPath": "/games/hermit-and-pig",
+      "ignUrl": "https://www.ign.com/games/hermit-and-pig",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/06/10/hermit-and-pig-button-1686413755641.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Hermit and Pig"
+    },
+    {
+      "rank": 54,
+      "title": "The Adventures of Elliot: The Millennium Tales",
+      "developer": "Square Enix",
+      "ignPath": "/games/the-adventures-of-elliot-the-millennium-tales",
+      "ignUrl": "https://www.ign.com/games/the-adventures-of-elliot-the-millennium-tales",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/02/17/nintendoswitch2-the-adventures-of-elliot-the-millennium-tales-keyart-square-1771359956788.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "The Adventures of Elliot: The Millennium Tales"
+    },
+    {
+      "rank": 55,
+      "title": "Animal Use Protocol",
+      "developer": "The Brotherhood",
+      "ignPath": "/games/animal-use-protocol",
+      "ignUrl": "https://www.ign.com/games/animal-use-protocol",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/03/21/animal-use-protocol-button-1742574434084.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Animal Use Protocol"
+    },
+    {
+      "rank": 56,
+      "title": "ArcheAge Chronicles",
+      "developer": "XL Games",
+      "ignPath": "/games/archeage-chronicles",
+      "ignUrl": "https://www.ign.com/games/archeage-chronicles",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/09/25/archeage-1727224447111.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "ArcheAge Chronicles"
+    },
+    {
+      "rank": 57,
+      "title": "Big Walk",
+      "developer": "House House",
+      "ignPath": "/games/big-walk",
+      "ignUrl": "https://www.ign.com/games/big-walk",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/06/09/nintendoswitch2-big-walk-keyart-square-1781028068104.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Big Walk"
+    },
+    {
+      "rank": 58,
+      "title": "Decapolice",
+      "developer": "Level-5",
+      "ignPath": "/games/decapolice",
+      "ignUrl": "https://www.ign.com/games/decapolice",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/02/09/decapolice-1675902890589.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Decapolice"
+    },
+    {
+      "rank": 59,
+      "title": "Denshattack!",
+      "developer": "Undercoders",
+      "ignPath": "/games/denshattack",
+      "ignUrl": "https://www.ign.com/games/denshattack",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/08/19/denshattack-1755636755403.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Denshattack!"
+    },
+    {
+      "rank": 60,
+      "title": "The Duskbloods",
+      "developer": "FromSoftware",
+      "ignPath": "/games/the-duskbloods",
+      "ignUrl": "https://www.ign.com/games/the-duskbloods",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/06/09/nintendoswitch2-the-duskbloods-keyart-square-1781026605861.png?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "The Duskbloods"
+    },
+    {
+      "rank": 61,
+      "title": "Exodus",
+      "developer": "Archetype Studios",
+      "ignPath": "/games/exodus-archetype-entertainment",
+      "ignUrl": "https://www.ign.com/games/exodus-archetype-entertainment",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/12/12/exodus-1765577766030.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Exodus"
+    },
+    {
+      "rank": 62,
+      "title": "Hela",
+      "developer": "Windup",
+      "ignPath": "/games/hela",
+      "ignUrl": "https://www.ign.com/games/hela",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/08/20/hela-button-1724187241519.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Hela"
+    },
+    {
+      "rank": 63,
+      "title": "Inkblood",
+      "developer": "Hey Bird!",
+      "ignPath": "/games/inkblood",
+      "ignUrl": "https://www.ign.com/games/inkblood",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/12/05/inkblood-1764917269541.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Inkblood"
+    },
+    {
+      "rank": 64,
+      "title": "Lords of the Fallen 2",
+      "developer": "Hexworks",
+      "ignPath": "/games/lords-of-the-fallen-2",
+      "ignUrl": "https://www.ign.com/games/lords-of-the-fallen-2",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/08/19/lordsfallen2-1755639094191.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Lords of the Fallen 2"
+    },
+    {
+      "rank": 65,
+      "title": "Lost Hellden",
+      "developer": "Artisan Studios",
+      "ignPath": "/games/lost-hellden",
+      "ignUrl": "https://www.ign.com/games/lost-hellden",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/02/07/lost-hellden-button-1707325690802.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Lost Hellden"
+    },
+    {
+      "rank": 66,
+      "title": "LUCID",
+      "developer": "The Matte Black Studio",
+      "ignPath": "/games/lucid",
+      "ignUrl": "https://www.ign.com/games/lucid",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/10/11/lucid-button-1697040711236.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "LUCID"
+    },
+    {
+      "rank": 67,
+      "title": "Mightreya",
+      "developer": "Wazen",
+      "ignPath": "/games/mightreya",
+      "ignUrl": "https://www.ign.com/games/mightreya",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/09/10/mightreya-1726009740580.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Mightreya"
+    },
+    {
+      "rank": 68,
+      "title": "Neverway",
+      "developer": "Coldblood Inc.",
+      "ignPath": "/games/neverway",
+      "ignUrl": "https://www.ign.com/games/neverway",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/04/10/neverway-button-1744305259779.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Neverway"
+    },
+    {
+      "rank": 69,
+      "title": "Tenebris Somnia",
+      "developer": "Andrés Borghi",
+      "ignPath": "/games/tenebris-somnia",
+      "ignUrl": "https://www.ign.com/games/tenebris-somnia",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/10/21/tenebris-1729541099123.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Tenebris Somnia"
+    },
+    {
+      "rank": 70,
+      "title": "Kitsune: The Journey of Adashino",
+      "developer": "Rias",
+      "ignPath": "/games/kitsune-the-journey-of-adashino",
+      "ignUrl": "https://www.ign.com/games/kitsune-the-journey-of-adashino",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/01/02/kitsune-1672686576744.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Kitsune: The Journey of Adashino"
+    },
+    {
+      "rank": 71,
+      "title": "Moth Kubit",
+      "developer": "Helena Creative Studios",
+      "ignPath": "/games/moth-kubit",
+      "ignUrl": "https://www.ign.com/games/moth-kubit",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/04/09/moth-kubit-1712651097352.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Moth Kubit"
+    },
+    {
+      "rank": 72,
+      "title": "Normal Fishing",
+      "developer": "The Bworg",
+      "ignPath": "/games/normal-fishing",
+      "ignUrl": "https://www.ign.com/games/normal-fishing",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/10/18/normal-fishing-button-1697670992840.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Normal Fishing"
+    },
+    {
+      "rank": 73,
+      "title": "Sleight of Hand",
+      "developer": "RiffRaff Games",
+      "ignPath": "/games/sleight-of-hand",
+      "ignUrl": "https://www.ign.com/games/sleight-of-hand",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/03/06/sleight-of-hand-button-1709736852870.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Sleight of Hand"
+    },
+    {
+      "rank": 74,
+      "title": "The Mermaid's Mask",
+      "developer": "SFB Games",
+      "ignPath": "/games/the-mermaids-mask",
+      "ignUrl": "https://www.ign.com/games/the-mermaids-mask",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/12/17/mermaidsmask-1734394219365.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "The Mermaid's Mask"
+    },
+    {
+      "rank": 75,
+      "title": "The Eternal Life of Goldman",
+      "developer": "Weappy Studio",
+      "ignPath": "/games/the-eternal-life-of-goldman",
+      "ignUrl": "https://www.ign.com/games/the-eternal-life-of-goldman",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/08/05/the-eternal-life-of-goldman-button-1722861488919.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "The Eternal Life of Goldman"
+    },
+    {
+      "rank": 76,
+      "title": "Ballad of Antara",
+      "developer": "TipsWorks",
+      "ignPath": "/games/ballad-of-antara",
+      "ignUrl": "https://www.ign.com/games/ballad-of-antara",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/05/30/ballad-1717109937135.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Ballad of Antara"
+    },
+    {
+      "rank": 77,
+      "title": "Hello Again",
+      "developer": "Soup Island",
+      "ignPath": "/games/hello-again",
+      "ignUrl": "https://www.ign.com/games/hello-again",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/06/08/untitled-1-1717880833072.png?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Hello Again"
+    },
+    {
+      "rank": 78,
+      "title": "Lou's Lagoon",
+      "developer": "Rokaplay",
+      "ignPath": "/games/lous-lagoon",
+      "ignUrl": "https://www.ign.com/games/lous-lagoon",
+      "imageUrl": "https://assets-prd.ignimgs.com/2022/08/19/lous-lagoon-button-01a-1660867639881.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Lou's Lagoon"
+    },
+    {
+      "rank": 79,
+      "title": "Professor Layton and the New World of Steam",
+      "developer": "Level-5",
+      "ignPath": "/games/professor-layton-and-the-new-world-of-steam",
+      "ignUrl": "https://www.ign.com/games/professor-layton-and-the-new-world-of-steam",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/04/02/nintendoswitch2-professor-layton-and-the-new-world-of-steam-keyart-square-1743636651742.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Professor Layton and the New World of Steam"
+    },
+    {
+      "rank": 80,
+      "title": "Armed Fantasia: To the End of the Wilderness",
+      "developer": "Wild Bunch Productions",
+      "ignPath": "/games/armed-fantasia-to-the-end-of-the-wilderness",
+      "ignUrl": "https://www.ign.com/games/armed-fantasia-to-the-end-of-the-wilderness",
+      "imageUrl": "https://assets-prd.ignimgs.com/2022/08/27/armed-fantasia-button-001-1661575638098.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Armed Fantasia: To the End of the Wilderness"
+    },
+    {
+      "rank": 81,
+      "title": "Blade",
+      "developer": "Arkane",
+      "ignPath": "/games/blade-arkane",
+      "ignUrl": "https://www.ign.com/games/blade-arkane",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/12/08/blade-1702004152332.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Blade"
+    },
+    {
+      "rank": 82,
+      "title": "Blade Runner 2033: Labyrinth",
+      "developer": "Annapurna Interactive",
+      "ignPath": "/games/blade-runner-2033-labyrinth",
+      "ignUrl": "https://www.ign.com/games/blade-runner-2033-labyrinth",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/06/29/bladerunner2033-1688078034453.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Blade Runner 2033: Labyrinth"
+    },
+    {
+      "rank": 83,
+      "title": "Combustion",
+      "developer": "Slipgate Ironworks",
+      "ignPath": "/games/combustion",
+      "ignUrl": "https://www.ign.com/games/combustion",
+      "imageUrl": "https://assets-prd.ignimgs.com/2022/09/20/combustion-button-1663716058893.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Combustion"
+    },
+    {
+      "rank": 84,
+      "title": "Core Decay",
+      "developer": "Slipgate Ironworks",
+      "ignPath": "/games/core-decay",
+      "ignUrl": "https://www.ign.com/games/core-decay",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/07/10/coredecay-1689031085223.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Core Decay"
+    },
+    {
+      "rank": 85,
+      "title": "dev_hell",
+      "developer": "Unhinged Studios",
+      "ignPath": "/games/dev-hell",
+      "ignUrl": "https://www.ign.com/games/dev-hell",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/01/17/dev-hell-button-1705504994207.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "dev_hell"
+    },
+    {
+      "rank": 86,
+      "title": "Greenfield",
+      "developer": "Six Foot Giraffe",
+      "ignPath": "/games/greenfield",
+      "ignUrl": "https://www.ign.com/games/greenfield",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/11/15/greenfield-1700080689869.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Greenfield"
+    },
+    {
+      "rank": 87,
+      "title": "Judas",
+      "developer": "Ghost Story",
+      "ignPath": "/games/judas",
+      "ignUrl": "https://www.ign.com/games/judas",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/08/27/judas-2025-1756319376049.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Judas"
+    },
+    {
+      "rank": 88,
+      "title": "Nightmare House: Reimagined",
+      "developer": "We Create Stuff",
+      "ignPath": "/games/nightmare-house-reimagined",
+      "ignUrl": "https://www.ign.com/games/nightmare-house-reimagined",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/08/23/nightmare-house-reimagined-button-1724425825245.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Nightmare House: Reimagined"
+    },
+    {
+      "rank": 89,
+      "title": "OD - A Hideo Kojima Game",
+      "developer": "Kojima Productions",
+      "ignPath": "/games/od-a-hideo-kojima-game",
+      "ignUrl": "https://www.ign.com/games/od-a-hideo-kojima-game",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/12/08/od-1702001027369.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "OD - A Hideo Kojima Game"
+    },
+    {
+      "rank": 90,
+      "title": "Okami Sequel",
+      "developer": "CLOVERS Inc.",
+      "ignPath": "/games/okami-sequel",
+      "ignUrl": "https://www.ign.com/games/okami-sequel",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/12/13/okami-sequel-key-art-1734067237310.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Okami Sequel"
+    },
+    {
+      "rank": 91,
+      "title": "Control: Resonant",
+      "developer": "Remedy",
+      "ignPath": "/games/control-resonant",
+      "ignUrl": "https://www.ign.com/games/control-resonant",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/01/13/control-1768337281888.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Control: Resonant"
+    },
+    {
+      "rank": 92,
+      "title": "Decrepit",
+      "developer": "Jämmerdal Games",
+      "ignPath": "/games/decrepit",
+      "ignUrl": "https://www.ign.com/games/decrepit",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/12/14/decrepit-1765754651022.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Decrepit"
+    },
+    {
+      "rank": 93,
+      "title": "Ontos",
+      "developer": "Frictional Games",
+      "ignPath": "/games/ontos",
+      "ignUrl": "https://www.ign.com/games/ontos",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/01/13/ontos-1768340254894.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Ontos"
+    },
+    {
+      "rank": 94,
+      "title": "Orbitals",
+      "developer": "Shapefarm",
+      "ignPath": "/games/orbitals",
+      "ignUrl": "https://www.ign.com/games/orbitals",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/06/09/nintendoswitch2-orbitals-keyart-square-1-1781027554687.png?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Orbitals"
+    },
+    {
+      "rank": 95,
+      "title": "Tomb Raider: Legacy of Atlantis",
+      "developer": "Crystal Dynamics",
+      "ignPath": "/games/tomb-raider-legacy-of-atlantis",
+      "ignUrl": "https://www.ign.com/games/tomb-raider-legacy-of-atlantis",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/01/13/tombraider-1768337652064.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Tomb Raider: Legacy of Atlantis"
+    },
+    {
+      "rank": 96,
+      "title": "Inzoi",
+      "developer": "Krafton",
+      "ignPath": "/games/inzoi",
+      "ignUrl": "https://www.ign.com/games/inzoi",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/08/19/inzoi-1724077347474.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Inzoi"
+    },
+    {
+      "rank": 97,
+      "title": "Star Wars: Zero Company",
+      "developer": "Respawn",
+      "ignPath": "/games/star-wars-zero-company",
+      "ignUrl": "https://www.ign.com/games/star-wars-zero-company",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/04/15/starwarszerocompany-1744732173102.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Star Wars: Zero Company"
+    },
+    {
+      "rank": 98,
+      "title": "Valor Mortis",
+      "developer": "One More Level",
+      "ignPath": "/games/valor-mortis",
+      "ignUrl": "https://www.ign.com/games/valor-mortis",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/08/19/valormortis-1755637138038.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Valor Mortis"
+    },
+    {
+      "rank": 99,
+      "title": "Parasite Mutant",
+      "developer": "IceSitruuna",
+      "ignPath": "/games/parasite-mutant",
+      "ignUrl": "https://www.ign.com/games/parasite-mutant",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/10/01/parasite-mutant-button-1759329606840.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Parasite Mutant"
+    },
+    {
+      "rank": 100,
+      "title": "Liminal Point",
+      "developer": "HideWorks",
+      "ignPath": "/games/liminal-point",
+      "ignUrl": "https://www.ign.com/games/liminal-point",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/02/06/liminal-point-button-1738863856816.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Liminal Point"
+    },
+    {
+      "rank": 101,
+      "title": "Blight: Survival",
+      "developer": "Haenir Studio",
+      "ignPath": "/games/blight-survival",
+      "ignUrl": "https://www.ign.com/games/blight-survival",
+      "imageUrl": "https://assets-prd.ignimgs.com/2022/11/02/blight-survival-button-v2-1667347272021.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Blight: Survival"
+    },
+    {
+      "rank": 102,
+      "title": "Subversive Memories",
+      "developer": "Southward Studio",
+      "ignPath": "/games/subversive-memories",
+      "ignUrl": "https://www.ign.com/games/subversive-memories",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/12/10/subversive-memories-button-1733856189987.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Subversive Memories"
+    },
+    {
+      "rank": 103,
+      "title": "PVKK",
+      "developer": "Bippinbits",
+      "ignPath": "/games/pvkk-planetenverteidigungskanonenkommandant",
+      "ignUrl": "https://www.ign.com/games/pvkk-planetenverteidigungskanonenkommandant",
+      "imageUrl": "https://assets-prd.ignimgs.com/2024/06/21/planetenverteidigungskanonenkommandant-button-1718934834811.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "PVKK"
+    },
+    {
+      "rank": 104,
+      "title": "No Rest for the Wicked",
+      "developer": "Moon Studios",
+      "ignPath": "/games/no-rest-for-the-wicked",
+      "ignUrl": "https://www.ign.com/games/no-rest-for-the-wicked",
+      "imageUrl": "https://assets-prd.ignimgs.com/2023/12/08/restforwicked-1701999805438.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "No Rest for the Wicked"
+    },
+    {
+      "rank": 105,
+      "title": "Silent Hill: Townfall",
+      "developer": "No Code Studios",
+      "ignPath": "/games/silent-hill-townfall",
+      "ignUrl": "https://www.ign.com/games/silent-hill-townfall",
+      "imageUrl": "https://assets-prd.ignimgs.com/2026/06/02/420dcf45979ace1b7c97122a2dc0eb479428590ecab89c2b-1780438736679.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Silent Hill: Townfall"
+    },
+    {
+      "rank": 106,
+      "title": "Ace Combat 8: Wings of Theve",
+      "developer": "Bandai Namco",
+      "ignPath": "/games/ace-combat-8-wings-of-theve",
+      "ignUrl": "https://www.ign.com/games/ace-combat-8-wings-of-theve",
+      "imageUrl": "https://assets-prd.ignimgs.com/2025/12/14/ac8-1765754951526.jpg?crop=1%3A1%2Csmart&width=205&height=205&format=jpg&auto=webp&quality=80",
+      "imageAlt": "Ace Combat 8: Wings of Theve"
+    }
+  ]
+}

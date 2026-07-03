@@ -1,0 +1,123 @@
+{
+  "fetchedAt": "2026-07-03",
+  "bgbGlobalStatus": {
+    "reportYearLatest": 2025,
+    "reportYearUpcoming": 2026,
+    "globalReleased": false,
+    "globalExpectedNoteEn": "Interbrand typically publishes Best Global Brands (BGB) in October; as of July 2026 the global Top 100 for 2026 is not yet released — Interbrand is actively previewing BGB 2026 on LinkedIn.",
+    "globalExpectedNoteZh": "Interbrand 通常在 10 月发布 Best Global Brands（BGB）全球 Top 100；截至 2026 年 7 月，2026 年全球榜尚未发布，官方正在 LinkedIn 预热 BGB 2026。",
+    "totalValue2025UsdT": 3.6,
+    "totalValueChangePct2025": 4.4,
+    "newEntrants2025": 12
+  },
+  "sources": {
+    "bgb2025Report": "https://interbrand.com/best-global-brands/global-2025-report-download/",
+    "bgb2025Pr": "https://www.prnewswire.com/news-releases/brands-adapting-to-market-challenges-increases-the-total-value-of-interbrands-2025-best-global-brands-by-150-billion-302583746.html",
+    "bjb2026PressPdf": "https://www.interbrandjapan.com/wp-content/uploads/20260415_BJB2026_%E5%A0%B1%E9%81%93%E8%B3%87%E6%96%99_en.pdf",
+    "bjb2026Web": "https://www.interbrandjapan.com/best_japan_brands/",
+    "marketCapSource": "CompaniesMarketCap (16 June 2026) — market capitalization, not Interbrand brand value"
+  },
+  "highlights": [
+    {
+      "key": "total",
+      "headlineEn": "$3.6 trillion — total value of Interbrand Best Global Brands 2025 (+4.4% YoY)",
+      "headlineZh": "3.6 万亿美元 — Interbrand BGB 2025 百强品牌价值合计（同比 +4.4%）"
+    },
+    {
+      "key": "nvidia",
+      "headlineEn": "+116% — NVIDIA records largest-ever BGB brand value jump to #15 ($43.2B)",
+      "headlineZh": "+116% — NVIDIA 创 BGB 史上最大品牌增值跃至第 15（432 亿美元）"
+    },
+    {
+      "key": "instagram",
+      "headlineEn": "Instagram enters Top 10 for the first time (#8, +27%)",
+      "headlineZh": "Instagram 首次进入全球前十（第 8，+27%）"
+    },
+    {
+      "key": "japan",
+      "headlineEn": "Best Japan Brands 2026: Toyota #1 for 18th year; SoftBank +36%",
+      "headlineZh": "Best Japan Brands 2026：丰田连续 18 年第一；SoftBank 增速 +36%"
+    }
+  ],
+  "bgb2025Top25": [
+    { "rank2025": 1, "rank2024": 1, "name": "Apple", "country": "United States", "valueUsdM": 470900, "valueChangePct": -4 },
+    { "rank2025": 2, "rank2024": 2, "name": "Microsoft", "country": "United States", "valueUsdM": 388500, "valueChangePct": 10 },
+    { "rank2025": 3, "rank2024": 3, "name": "Amazon", "country": "United States", "valueUsdM": 319900, "valueChangePct": 7 },
+    { "rank2025": 4, "rank2024": 4, "name": "Google", "country": "United States", "valueUsdM": 317100, "valueChangePct": 9 },
+    { "rank2025": 5, "rank2024": 5, "name": "Samsung", "country": "South Korea", "valueUsdM": 90500, "valueChangePct": -10 },
+    { "rank2025": 6, "rank2024": 6, "name": "Toyota", "country": "Japan", "valueUsdM": 74200, "valueChangePct": 2 },
+    { "rank2025": 7, "rank2024": 7, "name": "Coca-Cola", "country": "United States", "valueUsdM": 60100, "valueChangePct": -2 },
+    { "rank2025": 8, "rank2024": 11, "name": "Instagram", "country": "United States", "valueUsdM": 57300, "valueChangePct": 27 },
+    { "rank2025": 9, "rank2024": 9, "name": "McDonald's", "country": "United States", "valueUsdM": 53000, "valueChangePct": 4 },
+    { "rank2025": 10, "rank2024": 8, "name": "Mercedes-Benz", "country": "Germany", "valueUsdM": 50100, "valueChangePct": -15 },
+    { "rank2025": 11, "rank2024": 10, "name": "Cisco", "country": "United States", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 12, "rank2024": 12, "name": "Louis Vuitton", "country": "France", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 13, "rank2024": 20, "name": "YouTube", "country": "United States", "valueUsdM": null, "valueChangePct": 61 },
+    { "rank2025": 14, "rank2024": 13, "name": "BMW", "country": "Germany", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 15, "rank2024": 36, "name": "NVIDIA", "country": "United States", "valueUsdM": 43200, "valueChangePct": 116 },
+    { "rank2025": 16, "rank2024": 15, "name": "Oracle", "country": "United States", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 17, "rank2024": 17, "name": "Disney", "country": "United States", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 18, "rank2024": 18, "name": "SAP", "country": "Germany", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 19, "rank2024": 22, "name": "Facebook", "country": "United States", "valueUsdM": null, "valueChangePct": 18 },
+    { "rank2025": 20, "rank2024": 20, "name": "Adobe", "country": "United States", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 21, "rank2024": 21, "name": "Hermès", "country": "France", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 22, "rank2024": 22, "name": "IBM", "country": "United States", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 23, "rank2024": 23, "name": "Nike", "country": "United States", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 24, "rank2024": 24, "name": "Chanel", "country": "France", "valueUsdM": null, "valueChangePct": null },
+    { "rank2025": 25, "rank2024": 18, "name": "Tesla", "country": "United States", "valueUsdM": null, "valueChangePct": -35 }
+  ],
+  "bgb2025NewEntrants": [
+    { "rank2025": 31, "name": "BlackRock" },
+    { "rank2025": 32, "name": "Booking.com" },
+    { "rank2025": 39, "name": "Qualcomm", "valueUsdM": 20100 },
+    { "rank2025": 44, "name": "GE Aerospace" },
+    { "rank2025": 47, "name": "UNIQLO" },
+    { "rank2025": 51, "name": "Dell", "valueUsdM": 16300 },
+    { "rank2025": 65, "name": "Schneider Electric" },
+    { "rank2025": 70, "name": "Monster" },
+    { "rank2025": 85, "name": "Nasdaq" },
+    { "rank2025": 90, "name": "BYD" },
+    { "rank2025": 99, "name": "Shopify", "valueUsdM": 6900 }
+  ],
+  "bjb2026Top20": [
+    { "rank2026": 1, "rank2025": 1, "name": "Toyota", "valueUsdM": 74226, "valueChangePct": 2 },
+    { "rank2026": 2, "rank2025": 2, "name": "Honda", "valueUsdM": 24762, "valueChangePct": -7 },
+    { "rank2026": 3, "rank2025": 3, "name": "Sony", "valueUsdM": 22291, "valueChangePct": 7 },
+    { "rank2026": 4, "rank2025": 4, "name": "UNIQLO", "valueUsdM": 17668, "valueChangePct": 20 },
+    { "rank2026": 5, "rank2025": 6, "name": "Nintendo", "valueUsdM": 15438, "valueChangePct": 35 },
+    { "rank2026": 6, "rank2025": 5, "name": "Nissan", "valueUsdM": 9375, "valueChangePct": -33 },
+    { "rank2026": 7, "rank2025": 10, "name": "SoftBank", "valueUsdM": 8161, "valueChangePct": 36 },
+    { "rank2026": 8, "rank2025": null, "name": "NTT", "valueUsdM": 7104, "valueChangePct": null, "note": "New entrant" },
+    { "rank2026": 9, "rank2025": 8, "name": "MUFG", "valueUsdM": 6561, "valueChangePct": 5 },
+    { "rank2026": 10, "rank2025": 11, "name": "Suntory", "valueUsdM": 6466, "valueChangePct": 9 },
+    { "rank2026": 11, "rank2025": 7, "name": "Panasonic", "valueUsdM": 6032, "valueChangePct": -6 },
+    { "rank2026": 12, "rank2025": 13, "name": "Recruit", "valueUsdM": 5496, "valueChangePct": -3 },
+    { "rank2026": 13, "rank2025": 15, "name": "au", "valueUsdM": 5452, "valueChangePct": 4 },
+    { "rank2026": 14, "rank2025": 12, "name": "Canon", "valueUsdM": 5169, "valueChangePct": -9 },
+    { "rank2026": 15, "rank2025": 14, "name": "Subaru", "valueUsdM": 4617, "valueChangePct": -14 },
+    { "rank2026": 16, "rank2025": 16, "name": "Asahi", "valueUsdM": 4248, "valueChangePct": 3 },
+    { "rank2026": 17, "rank2025": 17, "name": "Bridgestone", "valueUsdM": 3550, "valueChangePct": -9 },
+    { "rank2026": 18, "rank2025": 18, "name": "Daikin", "valueUsdM": 3289, "valueChangePct": -2 },
+    { "rank2026": 19, "rank2025": 19, "name": "SMBC", "valueUsdM": 3263, "valueChangePct": 15 },
+    { "rank2026": 20, "rank2025": 26, "name": "Hitachi", "valueUsdM": 3215, "valueChangePct": 27 }
+  ],
+  "bjb2026NewEntrants": ["NTT", "Mitsubishi Heavy Industries", "SEGA", "SQUARE ENIX"],
+  "marketCapTrillionClub2026": [
+    { "rank": 1, "name": "NVIDIA", "country": "USA", "marketCapUsdT": 5.1 },
+    { "rank": 2, "name": "Alphabet", "country": "USA", "marketCapUsdT": 4.5 },
+    { "rank": 3, "name": "Apple", "country": "USA", "marketCapUsdT": 4.4 },
+    { "rank": 4, "name": "Microsoft", "country": "USA", "marketCapUsdT": 2.9 },
+    { "rank": 5, "name": "SpaceX", "country": "USA", "marketCapUsdT": 2.8 },
+    { "rank": 6, "name": "Amazon", "country": "USA", "marketCapUsdT": 2.7 },
+    { "rank": 7, "name": "TSMC", "country": "Taiwan", "marketCapUsdT": 2.3 },
+    { "rank": 8, "name": "Broadcom", "country": "USA", "marketCapUsdT": 1.8 },
+    { "rank": 9, "name": "Saudi Aramco", "country": "Saudi Arabia", "marketCapUsdT": 1.7 },
+    { "rank": 10, "name": "Tesla", "country": "USA", "marketCapUsdT": 1.5 },
+    { "rank": 11, "name": "Meta", "country": "USA", "marketCapUsdT": 1.5 },
+    { "rank": 12, "name": "Samsung", "country": "South Korea", "marketCapUsdT": 1.5 },
+    { "rank": 13, "name": "Micron", "country": "USA", "marketCapUsdT": 1.2 },
+    { "rank": 14, "name": "SK hynix", "country": "South Korea", "marketCapUsdT": 1.1 },
+    { "rank": 15, "name": "Berkshire Hathaway", "country": "USA", "marketCapUsdT": 1.1 },
+    { "rank": 16, "name": "Lilly", "country": "USA", "marketCapUsdT": 1.0 }
+  ]
+}

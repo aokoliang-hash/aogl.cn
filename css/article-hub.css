@@ -292,3 +292,34 @@
 .article-shell__body .article-seo-pills {
   margin: 1rem 0 2rem;
 }
+.article-shell__body .article-ign-game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.25rem;
+}
+.article-shell__body .article-ign-game-card {
+  margin: 0;
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+.article-shell__body .article-ign-game-card a {
+  color: inherit;
+  text-decoration: none;
+}
+.article-shell__body .article-ign-game-card a:hover {
+  text-decoration: underline;
+}
+.article-shell__body .article-ign-game-card img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  display: block;
+  margin: 0 auto 0.35rem;
+}
+.article-shell__body .article-ign-new-games-snapshot {
+  margin: 1rem 0 1.5rem;
+}
