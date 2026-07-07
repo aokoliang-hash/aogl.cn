@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-06-30",
+  "updated": "2026-07-07",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "Claude Meets Blackwell Ultra: Anthropic’s Models Now Run on NVIDIA GB300 in Azure",
-          "titleZh": "Claude Meets Blackwell Ultra: Anthropic’s Models Now Run on NVIDIA GB300 in Azure",
-          "url": "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/",
-          "date": "2026-06-29"
+          "titleEn": "NVIDIA and Hugging Face Bring New Models and Frameworks to LeRobot for the Open Robotics Community",
+          "titleZh": "NVIDIA and Hugging Face Bring New Models and Frameworks to LeRobot for the Open Robotics Community",
+          "url": "https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics/",
+          "date": "2026-07-07"
         },
         {
-          "titleEn": "How to Govern Autonomous Agents in Enterprise AI Factories",
-          "titleZh": "How to Govern Autonomous Agents in Enterprise AI Factories",
-          "url": "https://developer.nvidia.com/blog/how-to-govern-autonomous-agents-in-enterprise-ai-factories/",
-          "date": "2026-06-29"
+          "titleEn": "Enhancing Goodput in Large-Scale LLM Training with Nonuniform Tensor Parallelism",
+          "titleZh": "Enhancing Goodput in Large-Scale LLM Training with Nonuniform Tensor Parallelism",
+          "url": "https://developer.nvidia.com/blog/enhancing-goodput-in-large-scale-llm-training-with-nonuniform-tensor-parallelism/",
+          "date": "2026-07-06"
         },
         {
-          "titleEn": "Firefly Aerospace Operates NVIDIA Jetson in Lunar Orbit for the First Time",
-          "titleZh": "Firefly Aerospace Operates NVIDIA Jetson in Lunar Orbit for the First Time",
-          "url": "https://blogs.nvidia.com/blog/firefly-aerospace-nvidia-jetson-lunar-orbit/",
-          "date": "2026-06-29"
+          "titleEn": "How Open Models Are Driving AI Research",
+          "titleZh": "How Open Models Are Driving AI Research",
+          "url": "https://blogs.nvidia.com/blog/open-models-icml-2026/",
+          "date": "2026-07-06"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "Samsung Introduces New Education Tools for Interactive Displays at ISTELive 26",
-          "titleZh": "Samsung Introduces New Education Tools for Interactive Displays at ISTELive 26",
-          "url": "https://news.samsung.com/global/samsung-introduces-new-education-tools-for-interactive-displays-at-istelive-26",
-          "date": "2026-06-29"
+          "titleEn": "Samsung Electronics Announces Earnings Guidance for Second Quarter 2026",
+          "titleZh": "Samsung Electronics Announces Earnings Guidance for Second Quarter 2026",
+          "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-second-quarter-2026",
+          "date": "2026-07-07"
         },
         {
-          "titleEn": "Samsung Electronics Releases 2026 Sustainability Report, Expanding Water Replenishment Efforts",
-          "titleZh": "Samsung Electronics Releases 2026 Sustainability Report, Expanding Water Replenishment Efforts",
-          "url": "https://news.samsung.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts",
-          "date": "2026-06-26"
+          "titleEn": "[Interview] Art Made for the Senses: Karim Noureldin x Samsung Art Store",
+          "titleZh": "[Interview] Art Made for the Senses: Karim Noureldin x Samsung Art Store",
+          "url": "https://news.samsung.com/global/interview-art-made-for-the-senses-karim-noureldin-x-samsung-art-store",
+          "date": "2026-07-03"
         },
         {
-          "titleEn": "[Interview] Patterns That Hold Memory: Athene Galiciadis x Samsung Art Store",
-          "titleZh": "[Interview] Patterns That Hold Memory: Athene Galiciadis x Samsung Art Store",
-          "url": "https://news.samsung.com/global/interview-patterns-that-hold-memory-athene-galiciadis-x-samsung-art-store",
-          "date": "2026-06-26"
+          "titleEn": "Samsung and KDDI Successfully Complete AI-Powered Network Optimization Trial on Commercial 5G Standalone Network in Japan",
+          "titleZh": "Samsung and KDDI Successfully Complete AI-Powered Network Optimization Trial on Commercial 5G Standalone Network in Japan",
+          "url": "https://news.samsung.com/global/samsung-and-kddi-successfully-complete-ai-powered-network-optimization-trial-on-commercial-5g-standalone-network-in-japan",
+          "date": "2026-06-30"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "英特尔",
       "items": [
         {
+          "titleEn": "Intel to Report Second-Quarter 2026 Financial Results",
+          "titleZh": "Intel to Report Second-Quarter 2026 Financial Results",
+          "url": "https://newsroom.intel.com/corporate/intel-to-report-second-quarter-2026-financial-results",
+          "date": "2026-06-30"
+        },
+        {
+          "titleEn": "Three ways Intel and MSI co-engineered the world’s first Arc G3 handheld",
+          "titleZh": "Three ways Intel and MSI co-engineered the world’s first Arc G3 handheld",
+          "url": "https://newsroom.intel.com/client-computing/three-ways-intel-msi-co-engineered-worlds-first-arc-g3-handheld",
+          "date": "2026-06-30"
+        },
+        {
           "titleEn": "America 250: At a Pivotal Moment for the Nation, Intel is Advancing U.S. Innovation, AI, and Manufacturing",
           "titleZh": "America 250: At a Pivotal Moment for the Nation, Intel is Advancing U.S. Innovation, AI, and Manufacturing",
           "url": "https://newsroom.intel.com/corporate/america-250-intel-is-advancing-us-innovation",
           "date": "2026-06-29"
-        },
-        {
-          "titleEn": "Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing",
-          "titleZh": "Intel Announces Leadership Appointment at Intel Foundry to Accelerate Development and Manufacturing",
-          "url": "https://newsroom.intel.com/corporate/intel-announces-leadership-appointment-at-intel-foundry-to-accelerate-development-and-manufacturing",
-          "date": "2026-06-18"
-        },
-        {
-          "titleEn": "CEO Letter: 2025-26 Intel Corporate Responsibility Report",
-          "titleZh": "CEO Letter: 2025-26 Intel Corporate Responsibility Report",
-          "url": "https://newsroom.intel.com/corporate/ceo-letter-2025-26-intel-corporate-responsibility-report",
-          "date": "2026-06-17"
         }
       ]
     },
@@ -316,6 +316,12 @@
       "labelZh": "ARM",
       "items": [
         {
+          "titleEn": "Top Arm-based innovations advancing AI, cloud, edge and mobile computing in June 2026",
+          "titleZh": "Top Arm-based innovations advancing AI, cloud, edge and mobile computing in June 2026",
+          "url": "https://newsroom.arm.com/blog/top-arm-based-innovations-in-june-2026",
+          "date": "2026-07-01"
+        },
+        {
           "titleEn": "From host node to heterogeneous rack: Rethinking the AI CPU",
           "titleZh": "From host node to heterogeneous rack: Rethinking the AI CPU",
           "url": "https://newsroom.arm.com/blog/agentic-ai-rack-scale-infrastructure",
@@ -326,12 +332,6 @@
           "titleZh": "Supermicro and Arm advance compute for the agentic AI era",
           "url": "https://newsroom.arm.com/blog/arm-agi-cpu-supermicro-agentic-ai",
           "date": "2026-06-10"
-        },
-        {
-          "titleEn": "What Arm-based innovations happened in May 2026?",
-          "titleZh": "What Arm-based innovations happened in May 2026?",
-          "url": "https://newsroom.arm.com/blog/arm-based-innovations-may-2026",
-          "date": "2026-06-05"
         }
       ]
     },

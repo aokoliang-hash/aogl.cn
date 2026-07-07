@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-06-30",
+  "updated": "2026-07-07",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "The latest AI news we announced in June 2026",
+          "titleZh": "The latest AI news we announced in June 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
+          "date": "2026-07-01"
+        },
+        {
+          "titleEn": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
+          "titleZh": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
+          "url": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit/",
+          "date": "2026-07-01"
+        },
+        {
           "titleEn": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
           "titleZh": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
           "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
           "date": "2026-06-30"
-        },
-        {
-          "titleEn": "Ask an AI expert: What exactly is the full stack?",
-          "titleZh": "Ask an AI expert: What exactly is the full stack?",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/full-stack-ai-explainer/",
-          "date": "2026-06-29"
-        },
-        {
-          "titleEn": "Our latest Google Finance upgrades, including a new app",
-          "titleZh": "Our latest Google Finance upgrades, including a new app",
-          "url": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
-          "date": "2026-06-25"
         }
       ],
       "hotSearchPills": [
@@ -302,10 +302,10 @@
           "date": "2026-06-26"
         },
         {
-          "titleEn": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
-          "titleZh": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
-          "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
-          "date": "2026-06-23"
+          "titleEn": "Teens, Parents, and Educators Navigate Online Safety Through Real Conversations in Singapore",
+          "titleZh": "Teens, Parents, and Educators Navigate Online Safety Through Real Conversations in Singapore",
+          "url": "https://about.fb.com/news/2026/06/teens-parents-and-educators-navigate-online-safety-in-singapore/",
+          "date": "2026-06-25"
         }
       ],
       "hotSearchPills": [
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "Meta’s AI Storage Blueprint at Scale",
+          "titleZh": "Meta’s AI Storage Blueprint at Scale",
+          "url": "https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/",
+          "date": "2026-07-01"
+        },
+        {
+          "titleEn": "10 Years of Meta’s Commitment to Python",
+          "titleZh": "10 Years of Meta’s Commitment to Python",
+          "url": "https://engineering.fb.com/2026/06/30/open-source/10-years-of-metas-commitment-to-python/",
+          "date": "2026-06-30"
+        },
+        {
           "titleEn": "Privacy-Aware Infrastructure in the AI-Native Era: An Asset Classification Case Study",
           "titleZh": "Privacy-Aware Infrastructure in the AI-Native Era: An Asset Classification Case Study",
           "url": "https://engineering.fb.com/2026/06/25/security/privacy-aware-infrastructure-in-the-ai-native-era-an-asset-classification-case-study/",
           "date": "2026-06-25"
-        },
-        {
-          "titleEn": "How Meta Engineered Ultra-Narrow Batteries for AI Glasses",
-          "titleZh": "How Meta Engineered Ultra-Narrow Batteries for AI Glasses",
-          "url": "https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast/",
-          "date": "2026-06-23"
-        },
-        {
-          "titleEn": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
-          "titleZh": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
-          "url": "https://engineering.fb.com/2026/06/22/video-engineering/adopting-av1-for-real-time-communication-rtc-meta/",
-          "date": "2026-06-22"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Part 3: Swánga̱lyiatwuki-WikiWoordenboek Wiktionary Editing Project",
-          "titleZh": "Part 3: Swánga̱lyiatwuki-WikiWoordenboek Wiktionary Editing Project",
-          "url": "https://diff.wikimedia.org/2026/06/30/part-3-swanga%cc%b1lyiatwuki-wikiwoordenboek-wiktionary-editing-project/",
-          "date": "2026-06-30"
+          "titleEn": "Pictures Frozen Behind a Copyright Gap: Start of Wikimedia Bangladesh’s Collaboration with The Copyright Office",
+          "titleZh": "Pictures Frozen Behind a Copyright Gap: Start of Wikimedia Bangladesh’s Collaboration with The Copyright Office",
+          "url": "https://diff.wikimedia.org/2026/07/07/pictures-frozen-behind-a-copyright-gap-start-of-wikimedia-bangladeshs-collaboration-with-the-copyright-office/",
+          "date": "2026-07-07"
         },
         {
-          "titleEn": "Language between bias and understanding: The case of LGBTQ+ terminology in Albanian language",
-          "titleZh": "Language between bias and understanding: The case of LGBTQ+ terminology in Albanian language",
-          "url": "https://diff.wikimedia.org/2026/06/29/language-between-bias-and-understanding-the-case-of-lgbtq-terminology-in-albanian-language/",
-          "date": "2026-06-29"
+          "titleEn": "Moving the Needle: Why Experimenting on Wikimedia Platform Is Important",
+          "titleZh": "Moving the Needle: Why Experimenting on Wikimedia Platform Is Important",
+          "url": "https://diff.wikimedia.org/2026/07/07/moving-the-needle-why-experimenting-on-wikimedia-platform-is-important/",
+          "date": "2026-07-07"
         },
         {
-          "titleEn": "Wikimedia Hackathon 2026: Building, collaborating, and shaping the future together",
-          "titleZh": "Wikimedia Hackathon 2026: Building, collaborating, and shaping the future together",
-          "url": "https://diff.wikimedia.org/2026/06/29/wikimedia-hackathon-2026-building-collaborating-and-shaping-the-future-together/",
-          "date": "2026-06-29"
+          "titleEn": "Reflections on 15 years at Wikimedia Foundation and a new chapter",
+          "titleZh": "Reflections on 15 years at Wikimedia Foundation and a new chapter",
+          "url": "https://diff.wikimedia.org/2026/07/06/reflections-on-15-years-at-wikimedia-foundation-and-a-new-chapter/",
+          "date": "2026-07-06"
         }
       ],
       "hotSearchPills": [
@@ -663,6 +663,12 @@
       "labelZh": "Reddit",
       "items": [
         {
+          "titleEn": "Reddit is using LLMs to solve a problem LLMs largely created",
+          "titleZh": "Reddit is using LLMs to solve a problem LLMs largely created",
+          "url": "https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created/",
+          "date": "2026-07-06"
+        },
+        {
           "titleEn": "Meta quietly launches a new Reddit-like app called Forum",
           "titleZh": "Meta quietly launches a new Reddit-like app called Forum",
           "url": "https://techcrunch.com/2026/05/22/meta-quietly-launches-a-new-reddit-like-app-called-forum/",
@@ -673,12 +679,6 @@
           "titleZh": "Google updates AI search to include quotes from Reddit and other sources",
           "url": "https://techcrunch.com/2026/05/06/google-updates-ai-search-to-include-expert-advice-from-reddit-and-other-web-forums/",
           "date": "2026-05-06"
-        },
-        {
-          "titleEn": "People are finally using Reddit’s search",
-          "titleZh": "People are finally using Reddit’s search",
-          "url": "https://techcrunch.com/2026/05/01/people-are-finally-using-reddits-search/",
-          "date": "2026-05-01"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "How Amazon’s $100 million Right Now Climate Fund is protecting and restoring nature around the world",
-          "titleZh": "How Amazon’s $100 million Right Now Climate Fund is protecting and restoring nature around the world",
-          "url": "https://www.aboutamazon.com/news/sustainability/right-now-climate-fund?utm_source=rss",
-          "date": "2026-06-29"
+          "titleEn": "6 ways Amazon is investing in Louisiana",
+          "titleZh": "6 ways Amazon is investing in Louisiana",
+          "url": "https://www.aboutamazon.com/news/community/amazon-investment-louisiana-jobs-infrastructure-small-business?utm_source=rss",
+          "date": "2026-07-02"
+        },
+        {
+          "titleEn": "5 ways Amazon is investing in Florida",
+          "titleZh": "5 ways Amazon is investing in Florida",
+          "url": "https://www.aboutamazon.com/news/community/amazon-investment-florida-jobs-infrastructure-small-business?utm_source=rss",
+          "date": "2026-07-02"
         },
         {
           "titleEn": "How Amazon is helping after back-to-back earthquakes in Venezuela",
           "titleZh": "How Amazon is helping after back-to-back earthquakes in Venezuela",
           "url": "https://www.aboutamazon.com/news/community/amazon-response-venezuela-earthquakes-2026?utm_source=rss",
-          "date": "2026-06-27"
-        },
-        {
-          "titleEn": "Shop 200+ of the best Prime Day 2026 deals still available before the sale ends tonight",
-          "titleZh": "Shop 200+ of the best Prime Day 2026 deals still available before the sale ends tonight",
-          "url": "https://www.aboutamazon.com/news/retail/best-prime-day-deals-2026?utm_source=rss",
-          "date": "2026-06-26"
+          "date": "2026-07-02"
         }
       ],
       "hotSearchPills": [
