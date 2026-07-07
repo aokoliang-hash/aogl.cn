@@ -29,6 +29,8 @@ import { injectNvidiaHalosRoboticsSnapshot } from "./nvidia-halos-robotics-lib.m
 import { injectEmplifiFacebookUsPagesSnapshot } from "./emplifi-facebook-lib.mjs";
 import { injectBrandFinanceGlobal500Snapshot } from "./brand-finance-global-500-lib.mjs";
 import { injectInterbrandBgb2026Snapshot } from "./interbrand-best-global-brands-2026-lib.mjs";
+import { injectWorldEvSalesMay2026Snapshot } from "./world-ev-sales-may-2026-lib.mjs";
+import { injectTopOnlineMarketplacesGmv2026Snapshot } from "./top-online-marketplaces-gmv-2026-lib.mjs";
 import { injectFortuneChinaTech502026Snapshot } from "./fortune-china-tech-50-2026-lib.mjs";
 import { injectAicpbGlobalAiRankings202604Snapshot } from "./aicpb-global-ai-rankings-202604-lib.mjs";
 import { injectInstagramPopularSnapshot } from "./instagram-popular-lib.mjs";
@@ -258,6 +260,8 @@ function loadArticles() {
           body = injectEmplifiFacebookUsPagesSnapshot(body, lang);
           body = injectBrandFinanceGlobal500Snapshot(body, lang);
           body = injectInterbrandBgb2026Snapshot(body, lang);
+          body = injectWorldEvSalesMay2026Snapshot(body, lang);
+          body = injectTopOnlineMarketplacesGmv2026Snapshot(body, lang);
           body = injectFortuneChinaTech502026Snapshot(body, lang);
           body = injectAicpbGlobalAiRankings202604Snapshot(body, lang);
           body = injectInstagramPopularSnapshot(body, lang);

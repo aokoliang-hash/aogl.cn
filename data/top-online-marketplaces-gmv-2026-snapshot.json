@@ -1,0 +1,101 @@
+{
+  "fetchedAt": "2026-07-07",
+  "reportYear": 2026,
+  "reportTitleEn": "The Titans of eCommerce: Top Online Marketplaces by GMV in 2026",
+  "reportTitleZh": "电商巨头：2026年全球在线市场 GMV 排行",
+  "top100GmvUsdT": 3.8,
+  "top100GrowthPct": 10,
+  "sources": {
+    "article": "https://www.salehoo.com/learn/top-online-marketplaces-worldwide",
+    "imageAmazon": "https://cdn.salehoo.com/files/image/learn/top-online-marketplaces-worldwide-01.png"
+  },
+  "highlights": [
+    {
+      "key": "top100",
+      "headlineEn": "$3.8 trillion — projected GMV for the top 100 online marketplaces (+10% YoY)",
+      "headlineZh": "全球 Top 100 在线市场 GMV 预计 3.8 万亿美元（+10%）"
+    },
+    {
+      "key": "taobao",
+      "headlineEn": "Taobao #1 at $723.8B GMV; Tmall #2 at $682.7B",
+      "headlineZh": "淘宝第一 7238 亿美元；天猫第二 6827 亿美元"
+    },
+    {
+      "key": "amazon",
+      "headlineEn": "Amazon #3 at $435.7B — largest outside China by GMV",
+      "headlineZh": "亚马逊第三 4357 亿美元 — 中国以外最大平台"
+    },
+    {
+      "key": "china-three",
+      "headlineEn": "Three of the top five marketplaces are China-based",
+      "headlineZh": "前五中有三家来自中国"
+    }
+  ],
+  "top5": [
+    {
+      "rank": 1,
+      "name": "Taobao",
+      "gmvUsdB": 723.8,
+      "region": "China",
+      "owner": "Alibaba Group",
+      "model": "C2C + B2C"
+    },
+    {
+      "rank": 2,
+      "name": "Tmall",
+      "gmvUsdB": 682.7,
+      "region": "China",
+      "owner": "Alibaba Group",
+      "model": "B2C"
+    },
+    {
+      "rank": 3,
+      "name": "Amazon",
+      "gmvUsdB": 435.7,
+      "region": "United States",
+      "owner": "Amazon",
+      "model": "B2C marketplace + 1P"
+    },
+    {
+      "rank": 4,
+      "name": "JD.com",
+      "gmvUsdB": 249.9,
+      "region": "China",
+      "owner": "JD.com",
+      "model": "B2C + logistics"
+    },
+    {
+      "rank": 5,
+      "name": "Shopee",
+      "gmvUsdB": 77.2,
+      "region": "Southeast Asia",
+      "owner": "Sea Limited",
+      "model": "Mobile-first marketplace"
+    }
+  ],
+  "keyTakeaways": [
+    {
+      "key": "china",
+      "titleEn": "China's dominance",
+      "titleZh": "中国主导",
+      "bodyEn": "Three of the top five — Taobao, Tmall, JD.com — are China-based.",
+      "bodyZh": "前五中淘宝、天猫、京东均来自中国，凸显中国在全球电商中的枢纽地位。"
+    },
+    {
+      "key": "amazon",
+      "titleEn": "Amazon's influence",
+      "titleZh": "亚马逊影响力",
+      "bodyEn": "Amazon remains the leading marketplace outside Asia, setting benchmarks for logistics and Prime loyalty.",
+      "bodyZh": "亚马逊仍是亚洲以外最具影响力的平台，Prime 与物流创新塑造全球电商体验。"
+    },
+    {
+      "key": "sea",
+      "titleEn": "Southeast Asia potential",
+      "titleZh": "东南亚潜力",
+      "bodyEn": "Shopee reflects rapid growth in Indonesia, Vietnam, the Philippines and neighboring markets.",
+      "bodyZh": "Shopee 代表印尼、越南、菲律宾等新兴市场的快速增长与本地化机会。"
+    }
+  ],
+  "top3CombinedSharePct": 48.1,
+  "top3CombinedGmvUsdB": 1842.2
+}

@@ -1,0 +1,117 @@
+{
+  "fetchedAt": "2026-07-07",
+  "reportMonth": "2026-05",
+  "reportTitleEn": "Top Selling Electric Vehicles in the World — May 2026",
+  "reportTitleZh": "全球电动车销量榜 — 2026年5月",
+  "authorEn": "José Pontes / CleanTechnica",
+  "sources": {
+    "article": "https://cleantechnica.com/2026/07/01/top-selling-electric-vehicles-in-the-world-may-2026/",
+    "heroImage": "https://cleantechnica.com/wp-content/uploads/2026/07/2026-05-World-EV-Sales-Report-May-800x445.png",
+    "chartTop20May": "https://cleantechnica.com/wp-content/uploads/2026/07/2026-05-World-Top-20-Model-May-scaled.png",
+    "tableMay": "https://cleantechnica.com/wp-content/uploads/2026/07/World-EV-Sales-Table-May-2026.png"
+  },
+  "marketStats": {
+    "pluginRegistrationsMay": 1700000,
+    "pluginYoYpct": 4,
+    "bevYoYpct": 15,
+    "phevYoYpct": -15,
+    "bevShareOfPluginsMayPct": 71,
+    "bevShareOfPluginsYtdPct": 70,
+    "phevShareOfPluginsYtdPct": 30,
+    "pluginYoYtdPct": 2,
+    "bevYoYtdPct": 9,
+    "phevYoYtdPct": -11,
+    "bevMarketShareMayPct": 19,
+    "pevMarketShareMayPct": 26,
+    "bevMarketShareYtdPct": 16,
+    "phevMarketShareYtdPct": 6,
+    "pevMarketShareYtdPct": 22,
+    "exChinaUsaEvYoYpct": 39,
+    "exChinaUsaBevYoYpct": 47,
+    "bevRegistrationsYtd": 5200000
+  },
+  "highlights": [
+    {
+      "key": "bev-phev",
+      "headlineEn": "BEVs +15% YoY in May; PHEVs -15% — five consecutive months in the red",
+      "headlineZh": "5月纯电 +15%、插混 -15% — 插混连续五个月同比下滑"
+    },
+    {
+      "key": "model-y",
+      "headlineEn": "Tesla Model Y leads with 93,571 units (+16% YoY)",
+      "headlineZh": "特斯拉 Model Y 以 93,571 辆（+16%）蝉联车型第一"
+    },
+    {
+      "key": "leapmotor",
+      "headlineEn": "Leapmotor #4 globally in May; YTD #4 surpassing BMW and Volkswagen",
+      "headlineZh": "零跑 5 月全球品牌第 4；年初至今超越宝马与大众"
+    },
+    {
+      "key": "oem-share",
+      "headlineEn": "BYD 19% plugin OEM share; Tesla 8.1% ahead of VW Group 7.6%",
+      "headlineZh": "比亚迪插混+纯电 OEM 份额 19%；特斯拉 8.1% 领先大众集团 7.6%"
+    }
+  ],
+  "top20ModelsMay": [
+    { "rank": 1, "name": "Tesla Model Y", "registrations": 93571, "yoyPct": 16 },
+    { "rank": 2, "name": "Geely Xingyuan / EX2", "registrations": 46483, "yoyPct": 20 },
+    { "rank": 3, "name": "Tesla Model 3", "registrations": 44237, "yoyPct": 28 },
+    { "rank": 4, "name": "BYD Song / Seal U", "registrations": 43063, "yoyPct": -18 },
+    { "rank": 5, "name": "BYD Yuan Up / Atto 2", "registrations": 33298, "yoyPct": null },
+    { "rank": 6, "name": "BYD Seagull / Dolphin Mini", "registrations": 29465, "yoyPct": null },
+    { "rank": 7, "name": "Xiaomi SU7", "registrations": 24023, "yoyPct": null },
+    { "rank": 8, "name": "Leapmotor A10", "registrations": 22306, "yoyPct": null, "note": "3rd month on market" },
+    { "rank": 10, "name": "AITO M6", "registrations": 18000, "yoyPct": null, "note": "3rd month on market" },
+    { "rank": 12, "name": "MG 4", "registrations": 20054, "yoyPct": null, "note": "Record month" },
+    { "rank": 13, "name": "Wuling Mini EV", "registrations": 18330, "yoyPct": null },
+    { "rank": 16, "name": "BYD Sealion 05", "registrations": 17000, "yoyPct": null },
+    { "rank": 17, "name": "Changan Qiyuan Q05", "registrations": 16474, "yoyPct": null },
+    { "rank": 18, "name": "Xpeng Mona M03", "registrations": 14000, "yoyPct": null },
+    { "rank": 19, "name": "Wuling Bingo", "registrations": 13800, "yoyPct": null }
+  ],
+  "topBrandsMay": [
+    { "rank": 1, "name": "BYD", "registrations": null, "yoyPct": null },
+    { "rank": 2, "name": "Tesla", "registrations": null, "yoyPct": 20 },
+    { "rank": 3, "name": "Geely", "registrations": null, "yoyPct": null },
+    { "rank": 4, "name": "Leapmotor", "registrations": 81000, "yoyPct": null },
+    { "rank": 5, "name": "SAIC", "registrations": null, "yoyPct": null },
+    { "rank": 10, "name": "Zeekr", "registrations": 34377, "yoyPct": null },
+    { "rank": 17, "name": "Hyundai", "registrations": 31000, "yoyPct": null },
+    { "rank": 20, "name": "Changan Qiyuan", "registrations": 29264, "yoyPct": null }
+  ],
+  "topBrandsYtd": [
+    { "rank": 1, "name": "BYD", "note": "Podium unchanged" },
+    { "rank": 2, "name": "Tesla", "note": "Podium unchanged" },
+    { "rank": 3, "name": "Geely", "note": "Podium unchanged" },
+    { "rank": 4, "name": "Leapmotor", "note": "Surpassed BMW, Volkswagen" },
+    { "rank": 6, "name": "Wuling", "note": "Up thanks to Bingo + Mini EV" },
+    { "rank": 11, "name": "Xiaomi", "note": "Surpassed Mercedes" },
+    { "rank": 16, "name": "Hyundai", "note": "IONIQ 5 strong in USA" },
+    { "rank": 18, "name": "AITO", "note": "M6 wave" }
+  ],
+  "oemPluginShare": [
+    { "rank": 1, "name": "BYD", "sharePct": 19.0 },
+    { "rank": 2, "name": "Geely", "sharePct": 10.1 },
+    { "rank": 3, "name": "Tesla", "sharePct": 8.1 },
+    { "rank": 4, "name": "Volkswagen Group", "sharePct": 7.6 },
+    { "rank": 5, "name": "SAIC", "sharePct": 6.6 },
+    { "rank": 6, "name": "Hyundai–Kia", "sharePct": 4.2 },
+    { "rank": 7, "name": "Chery", "sharePct": 4.1 },
+    { "rank": 8, "name": "Changan", "sharePct": 3.9 },
+    { "rank": 9, "name": "Leapmotor", "sharePct": 3.6 },
+    { "rank": 11, "name": "Toyota", "sharePct": 2.8 }
+  ],
+  "oemBevShareYtd": [
+    { "rank": 1, "name": "BYD", "sharePct": 13.1 },
+    { "rank": 2, "name": "Tesla", "sharePct": 11.5 },
+    { "rank": 3, "name": "Geely", "sharePct": 8.9 },
+    { "rank": 4, "name": "Volkswagen Group", "sharePct": 6.9 },
+    { "rank": 5, "name": "SAIC", "sharePct": 6.4 },
+    { "rank": 6, "name": "Hyundai–Kia", "sharePct": 4.8 }
+  ],
+  "legacyModelsOutsideTop20": [
+    { "name": "Toyota bZ4X", "registrations": 11119, "note": "Best-selling legacy OEM model" },
+    { "name": "BMW iX1 / X1 PHEV", "registrations": 10746 },
+    { "name": "Hyundai IONIQ 5", "registrations": 10478, "note": "~5,000 in USA in May" }
+  ]
+}
