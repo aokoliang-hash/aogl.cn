@@ -1,0 +1,80 @@
+<p>这是 aogl.cn 上的一篇<strong>个人原创动效归档</strong>，素材全部来自 <code>original/ai-animation/</code>（2026-07-08 抓取）。主题是一条<strong>临床导向的全屏场景动画</strong>：左侧以「场景展示」叙事，右侧用半透明 3D 人体承载<strong>体征监测</strong>信息，并在腹部区域叠加圆形准星，强调「测温 / 定位」这一临床动作。本文不是医疗器械说明书，而是记录我如何把 AI 辅助的视觉生成、浏览器全屏演示与屏幕录屏合成一条可检索、可复现的<strong>医疗可视化动效</strong>样片路径。</p>
+
+<h2>文件夹里有什么</h2>
+<ul>
+  <li><code>ScreenShot_2026-07-08_162242_942.png</code> — 全屏 UI 定帧，用作本文题图与 Open Graph 封面源图。</li>
+  <li><code>Google Chrome 2026-07-08 16-19-20.mp4</code> — Chrome 窗口录屏，记录场景切换与动效节奏（约 27 MB，H.264）。</li>
+</ul>
+<p>两件文件构成最小可交付：<strong>静帧说明信息架构</strong> + <strong>视频说明时间轴</strong>。对 SEO 而言，页面同时提供文字拆解、配图 alt、视频 poster 与可下载源文件路径，比单独丢一个 MP4 更容易被搜索引擎理解主题。</p>
+
+<h2>场景叙事：「临床需要什么，就做什么」</h2>
+<p>定帧顶部左侧标注 <strong>场景展示</strong>，主标题为：<em>以临床需求为导向，临床需要什么，我们就想办法做什么。</em> 这句话把整条片子从「炫技 3D」拉回到<strong>需求驱动的医疗器械叙事</strong>：观众先理解产品哲学，再进入具体监测能力。对医院采购、临床工程师或医学可视化从业者，这类开场比直接堆参数更容易建立信任。</p>
+<p>在动效结构上，我把「场景」理解为可横向切换的<strong>能力模块</strong>，而不是单一镜头。录屏里（见下方视频）可以看到模块高亮与画面主体联动——左侧列表承担目录，右侧人体承担「发生在哪里」的空间锚点。这样即使静音播放，用户仍能通过构图读懂：<strong>左侧 = 功能清单，右侧 = 解剖语境</strong>。</p>
+
+<h2>左侧体征功能列表（信息架构）</h2>
+<p>截图左下角列出四条能力，其中<strong>体温测量</strong>以竖线高亮为当前场景：</p>
+<ul>
+  <li><strong>核心体温监测——血液温度</strong> — 强调与核心体温相关的监测路径，而非仅皮肤表面读数。</li>
+  <li><strong>血压监测</strong> — 循环与血流动力学维度的临床场景。</li>
+  <li><strong>血液抽样</strong> — 侵入性采样工作流，与无创监测形成产品线对照。</li>
+  <li><strong>体温测量</strong>（当前）— 本定帧对应的默认场景，驱动右侧准星落点。</li>
+</ul>
+<p>列表采用低对比灰字 + 当前项加亮，符合深色医疗 UI 常见的<strong>左侧导航 / 场景树</strong>模式。写作本文时，我刻意用完整中文词条重复这些能力名称，方便长尾检索，例如「核心体温监测 动画演示」「临床场景 血压监测 UI」等。</p>
+
+<h2>右侧视觉：半透明人体与测温准星</h2>
+<p>画面主体是<strong>半透明、带体积感的 3D 人体躯干</strong>（胸腹段），边缘有柔和蓝色 rim light，背景为深蓝渐变。人体并非写实解剖剖面，而是<strong>医学演示常用的「全息 / 玻璃质感」</strong>读法：既能暗示器官空间，又避免未获审批的解剖细节引发合规争议。</p>
+<p>腹部中央叠加<strong>白色圆形准星</strong>（四角断点式标记），在动效语义上表示「仪器对准点」或「算法 ROI」。静帧里准星落在上腹区域，与「体温测量」列表项一致。若要做国际化版本，准星与列表可同步切换至前臂（血压袖带位点）或静脉通路（采血），而人体模型保持同一 rig，降低 3D 资产成本。</p>
+
+<figure class="article-figure">
+  <img src="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" width="1280" height="720" loading="lazy" decoding="async" alt="AI 临床场景动画定帧 — 场景展示标题、体征列表与半透明 3D 人体测温准星">
+  <figcaption><code>ScreenShot_2026-07-08_162242_942.png</code> — 全屏临床场景 UI 定帧（题图同源）。</figcaption>
+</figure>
+
+<h2>色彩与排版：深色医疗科技风</h2>
+<p>背景接近 <code>#0a1628</code> 量级的海军蓝，前景文字为白与冷灰，点缀色为青蓝体积光。标题「场景展示」使用小字号红色标签，形成<strong>医疗警示色 + 科技蓝</strong>的双锚点。右下角可见回到顶部圆形按钮，说明该演示很可能运行在<strong>长页或 Web 全屏播放器</strong>中，而非传统 16:9 视频平台。</p>
+<p>从制作角度，深色 UI 有利于突出发光人体与准星；但导出 MP4 时要注意压缩 banding，录屏码率建议 ≥ 8 Mbps，否则渐变背景会出现色带。本站保留原始录屏，不做过度压缩，便于日后重新调色或抽帧做封面。</p>
+
+<h2>浏览器录屏：时间轴与节奏</h2>
+<p>下方嵌入 Chrome 录屏。文件名为系统默认的 <code>Google Chrome 2026-07-08 16-19-20.mp4</code>，记录了场景切换、列表高亮与人体光照的连续变化。若浏览器无法 inline 播放，可直接访问 <code>original/ai-animation/</code> 下载。</p>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" aria-label="临床场景 AI 动画浏览器录屏">
+    <source src="../original/ai-animation/Google%20Chrome%202026-07-08%2016-19-20.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>Google Chrome 2026-07-08 16-19-20.mp4</code> — 全屏场景动画录屏（poster 为上方定帧）。</figcaption>
+</figure>
+
+<p>审片时我关注三点：<strong>① 列表切换与准星移动是否同步</strong>，避免观众迷失当前能力；<strong>② 人体旋转或呼吸幅度是否干扰读数 UI</strong>，医疗场景宜克制；<strong>③ 字体层级是否在 1080p 缩略图仍可读</strong>，关系到 B 站、LinkedIn 或展会屏幕的二次传播。录屏不做配音，方便后续按市场补中英旁白。</p>
+
+<h2>AI 动画工作流（个人实践，非厂商文档）</h2>
+<p>这条样片属于我常说的 <strong>AI animation look-dev</strong>：用生成式工具快速出<strong>光照、材质与构图</strong>方向，再在浏览器或 AE/Blender 中做时间轴与 UI 合成。具体工具链因项目而异，本站不绑定某一厂商；重要的是文件夹里保留<strong>可核对的源截图与录屏</strong>，而不是只贴最终成片。</p>
+<ol>
+  <li><strong>文案锚点</strong> — 先写临床能力列表与一句价值主张（见主标题），再生成画面，避免画面先行导致信息架构漂移。</li>
+  <li><strong>人体资产</strong> — 半透明躯干可用 3D DCC 或 AI 出图 + 后期抠像；保持正交或轻微透视，利于 UI 叠加。</li>
+  <li><strong>交互原型</strong> — 在 Web 全屏或 Figma 原型中验证左侧列表与右侧焦点的联动，再录屏。</li>
+  <li><strong>归档</strong> — PNG 定帧 + MP4 录屏 + 本文 800 字以上说明，写入 <code>data/articles/</code> 并上首页轮播。</li>
+</ol>
+<p>与 <a href="/articles/character-turnaround-walk.html">角色四视图行走</a>、<a href="/articles/sports-lens-cave-frame-terrace-valley.html">sports-lens 场景合成</a> 等同属 aogl.cn「个人 Demo + 诚实制作手记」系列，但本篇更贴近<strong>医疗科技 / 临床可视化</strong>关键词簇。</p>
+
+<h2>无障碍与 SEO 要点</h2>
+<ul>
+  <li>配图 <code>alt</code> 写明「临床场景、体征列表、3D 人体、测温准星」等实体，而非「图片 1」。</li>
+  <li>视频提供 <code>poster</code> 与文字分镜说明，弥补无字幕版本的检索劣势。</li>
+  <li>正文重复规范能力名称（核心体温、血压、血液抽样、体温测量），覆盖中英文混排检索。</li>
+  <li>页面首屏 HTML 即含完整叙述，不依赖 JS 注入正文（符合本站静态构建习惯）。</li>
+</ul>
+
+<h2>合规与边界</h2>
+<p>本文档化的界面为<strong>个人视觉研究</strong>，不构成医疗建议、产品注册信息或临床结论。若商业项目使用类似画面，须单独完成医疗器械软件合规、隐私与真实数据演示授权。外链医疗器械品牌、医院名称时请在项目层取得授权，本站仅归档本人文件夹内容。</p>
+
+<h2 id="article-seo-keywords">检索与相关原创</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=AI+clinical+animation+medical+visualization" target="_blank" rel="noopener noreferrer">AI clinical animation</a>
+  <a class="pill" href="https://www.google.com/search?q=medical+UI+scene+carousel+vital+signs" target="_blank" rel="noopener noreferrer">medical UI scene carousel</a>
+  <a class="pill" href="https://www.google.com/search?q=core+body+temperature+monitoring+visualization" target="_blank" rel="noopener noreferrer">core temperature monitoring viz</a>
+  <a class="pill" href="/articles/games-hub-generative-art-workflow.html">生成式角色工作流</a>
+  <a class="pill" href="/articles/index.html">全部原创索引</a>
+  <a class="pill" href="/index.html#originals">首页本站原创</a>
+</div>
+
+<p class="article-note">素材路径：<code>original/ai-animation/</code> · 发布日期 <strong>2026-07-08</strong> · 第 <strong>45</strong> 篇本站编辑条目（首页轮播新→旧）。</p>

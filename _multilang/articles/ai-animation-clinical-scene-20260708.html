@@ -1,0 +1,488 @@
+<!DOCTYPE html><html lang="en" data-title-en="AI clinical scene animation — scene carousel × vital-signs visualization — aogl.cn" data-desc-en="Original aogl.cn archive under original/ai-animation/: full-screen clinical scene animation UI, left-rail vital-sign modules, holographic torso with targeting reticle, plus a Chrome screen-capture MP4 and hero still — honest production notes for AI medical visualization motion design." data-title-zh="AI 临床场景动画手记：场景展示 × 体征监测可视化 — aogl.cn" data-desc-zh="本站原创归档 original/ai-animation/：临床导向的全屏场景动画 UI、左侧体征功能列表、半透明 3D 人体与测温准星，附 Chrome 浏览器录屏 MP4 与定帧截图，记录 AI 医疗可视化动效的个人制作路径。" data-title-ja="AI 臨床シーンアニメ — シーン展示とバイタル可視化 — aogl.cn" data-desc-ja="original/ai-animation/ の臨床シーン UI アニメーションアーカイブ。" data-title-ko="AI 임상 장면 애니메이션 — 장면 전시·바이탈 시각화 — aogl.cn" data-desc-ko="original/ai-animation/ 임상 장면 UI 애니메이션 아카이브." data-title-fr="Animation IA scène clinique — carrousel et signes vitaux — aogl.cn" data-desc-fr="Archive original/ai-animation/ — UI scène clinique animée." data-title-ru="AI-анимация клинической сцены — карусель и витальные показатели — aogl.cn" data-desc-ru="Архив original/ai-animation/ — анимированный UI клинической сцены." data-title-ar="رسوم متحركة بالذكاء الاصطناعي لمشهد سريري — aogl.cn" data-desc-ar="أرشيف original/ai-animation/ — واجهة مشهد سريري متحركة."><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Original aogl.cn archive under original/ai-animation/: full-screen clinical scene animation UI, left-rail vital-sign modules, holographic torso with targeting reticle, plus a Chrome screen-capture MP4 and hero still — honest production notes for AI medical visualization motion design.">
+  <title>AI clinical scene animation — scene carousel × vital-signs visualization — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/ai-animation-clinical-scene-20260708.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/ai-animation-clinical-scene-20260708.html">
+  <meta property="og:title" content="AI clinical scene animation — scene carousel × vital-signs visualization — aogl.cn">
+  <meta property="og:description" content="Original aogl.cn archive under original/ai-animation/: full-screen clinical scene animation UI, left-rail vital-sign modules, holographic torso with targeting reticle, plus a Chrome screen-capture MP4 and hero still — honest production notes for AI medical visualization motion design.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/ai-animation-clinical-scene-20260708.webp">
+  <meta property="og:image:alt" content="AI clinical scene animation — holographic torso and vital-signs UI (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/ai-animation-clinical-scene-20260708.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"scene display · core temp / BP / sampling · holographic torso · Chrome capture","alternativeHeadline":"AI 临床场景动画手记：场景展示 × 体征监测可视化","datePublished":"2026-07-08","dateModified":"2026-07-08","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/ai-animation-clinical-scene-20260708.html"},"url":"https://aogl.cn/en/articles/ai-animation-clinical-scene-20260708.html","inLanguage":"mul","description":"Original aogl.cn archive under original/ai-animation/: full-screen clinical scene animation UI, left-rail vital-sign modules, holographic torso with targeting reticle, plus a Chrome screen-capture MP4 and hero still — honest production notes for AI medical visualization motion design.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ru brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ar brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li class="is-active"><a href="/articles/index.html">Originals</a></li>
+          <li><a href="/index.html#tools-directory">AI tools</a></li>
+          <li><a href="/briefs/index.html">Briefs</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/portal.html">Top sites</a></li>
+          <li><a href="/brands.html">Brands</a></li>
+          <li><a href="/shopping.html">Shopping</a></li>
+          <li><a href="/life.html">Life</a></li>
+          <li><a href="/social.html">Social</a></li>
+          <li><a href="/tools.html">Utilities</a></li>
+        </ul>
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/articles/index.html">本站原创</a></li>
+          <li><a href="/index.html#tools-directory">AI 工具</a></li>
+          <li><a href="/briefs/index.html">快讯</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li><a href="/portal.html">全球站点</a></li>
+          <li><a href="/brands.html">品牌</a></li>
+          <li><a href="/shopping.html">购物</a></li>
+          <li><a href="/life.html">生活</a></li>
+          <li><a href="/social.html">社交</a></li>
+          <li><a href="/tools.html">工具</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ja">
+          <li class="is-active"><a href="/articles/index.html">オリジナル</a></li>
+          <li><a href="/index.html#tools-directory">AIツール</a></li>
+          <li><a href="/briefs/index.html">速報</a></li>
+          <li><a href="/games.html">ゲーム</a></li>
+          <li><a href="/tech.html">テック</a></li>
+          <li><a href="/portal.html">主要サイト</a></li>
+          <li><a href="/brands.html">ブランド</a></li>
+          <li><a href="/shopping.html">ショッピング</a></li>
+          <li><a href="/life.html">ライフ</a></li>
+          <li><a href="/social.html">ソーシャル</a></li>
+          <li><a href="/tools.html">実用ツール</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ko">
+          <li class="is-active"><a href="/articles/index.html">오리지널</a></li>
+          <li><a href="/index.html#tools-directory">AI 도구</a></li>
+          <li><a href="/briefs/index.html">속보</a></li>
+          <li><a href="/games.html">게임</a></li>
+          <li><a href="/tech.html">테크</a></li>
+          <li><a href="/portal.html">주요 사이트</a></li>
+          <li><a href="/brands.html">브랜드</a></li>
+          <li><a href="/shopping.html">쇼핑</a></li>
+          <li><a href="/life.html">라이프</a></li>
+          <li><a href="/social.html">소셜</a></li>
+          <li><a href="/tools.html">실용 도구</a></li>
+        </ul>
+        <ul class="site-nav-list lang-fr">
+          <li class="is-active"><a href="/articles/index.html">Originaux</a></li>
+          <li><a href="/index.html#tools-directory">Outils IA</a></li>
+          <li><a href="/briefs/index.html">Brèves</a></li>
+          <li><a href="/games.html">Jeux</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/portal.html">Grands sites</a></li>
+          <li><a href="/brands.html">Marques</a></li>
+          <li><a href="/shopping.html">Shopping</a></li>
+          <li><a href="/life.html">Vie</a></li>
+          <li><a href="/social.html">Social</a></li>
+          <li><a href="/tools.html">Utilitaires</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ru">
+          <li class="is-active"><a href="/articles/index.html">Авторское</a></li>
+          <li><a href="/index.html#tools-directory">ИИ‑инструменты</a></li>
+          <li><a href="/briefs/index.html">Сводки</a></li>
+          <li><a href="/games.html">Игры</a></li>
+          <li><a href="/tech.html">Техно</a></li>
+          <li><a href="/portal.html">Топ сайтов</a></li>
+          <li><a href="/brands.html">Бренды</a></li>
+          <li><a href="/shopping.html">Шопинг</a></li>
+          <li><a href="/life.html">Сервисы</a></li>
+          <li><a href="/social.html">Соцсети</a></li>
+          <li><a href="/tools.html">Утилиты</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ar">
+          <li class="is-active"><a href="/articles/index.html">محتوى أصلي</a></li>
+          <li><a href="/index.html#tools-directory">أدوات الذكاء</a></li>
+          <li><a href="/briefs/index.html">عناوين</a></li>
+          <li><a href="/games.html">الألعاب</a></li>
+          <li><a href="/tech.html">التقنية</a></li>
+          <li><a href="/portal.html">أبرز المواقع</a></li>
+          <li><a href="/brands.html">العلامات</a></li>
+          <li><a href="/shopping.html">التسوق</a></li>
+          <li><a href="/life.html">الحياة الرقمية</a></li>
+          <li><a href="/social.html">التواصل</a></li>
+          <li><a href="/tools.html">أدوات مساعدة</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>AI clinical scene animation — scene carousel × vital-signs visualization</h1>
+        <p class="article-shell__sub">scene display · core temp / BP / sampling · holographic torso · Chrome capture</p>
+        <p class="article-shell__meta"><time datetime="2026-07-08">2026-07-08</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This page is an <strong>original motion-design archive</strong> on aogl.cn. Every asset lives under <code>original/ai-animation/</code> (captured 2026-07-08). The subject is a <strong>full-screen clinical scene animation</strong>: copy on the left sells a “scene display” story, the right side carries a semi-transparent 3D torso for <strong>vital-signs visualization</strong>, and a circular reticle over the abdomen marks the active “temperature measurement” beat. This is not a regulated medical device label—only an honest production note on how I assemble <strong>AI-assisted medical visualization motion</strong> into something crawlable and reproducible.</p>
+
+<h2>What is in the folder</h2>
+<ul>
+  <li><code>ScreenShot_2026-07-08_162242_942.png</code> — full-UI still used as the hero frame and WebP cover source.</li>
+  <li><code>Google Chrome 2026-07-08 16-19-20.mp4</code> — Chrome window capture of scene transitions (~27&nbsp;MB, H.264).</li>
+</ul>
+<p>Two files are the minimum deliverable: a <strong>still that explains information architecture</strong> and a <strong>clip that explains timing</strong>. For SEO, pairing long-form copy, descriptive <code>alt</code> text, a video <code>poster</code>, and stable file paths beats uploading a naked MP4 with no context.</p>
+
+<h2>Scene narrative: “guided by clinical needs”</h2>
+<p>The still labels the block <strong>场景展示</strong> (scene display) and headlines: <em>Guided by clinical needs—whatever clinicians need, we find a way to build it.</em> That line reframes the piece away from generic sci‑fi chrome and toward <strong>medtech storytelling</strong>. Buyers and clinical engineers get philosophy before feature depth.</p>
+<p>I treat each left-rail item as a <strong>switchable capability module</strong>, not a one-off shot. In the recording below, list emphasis and the torso read stay linked—left rail = catalog, right body = spatial anchor. Even muted, the layout communicates where action happens anatomically.</p>
+
+<h2>Left-rail vital modules (information architecture)</h2>
+<p>The lower-left stack lists four capabilities; <strong>temperature measurement</strong> is highlighted as the active scene:</p>
+<ul>
+  <li><strong>Core body temperature monitoring — blood temperature</strong> — core vs skin-surface reads.</li>
+  <li><strong>Blood pressure monitoring</strong> — hemodynamics lane.</li>
+  <li><strong>Blood sampling</strong> — invasive workflow contrasted with passive monitoring.</li>
+  <li><strong>Temperature measurement</strong> (current) — drives reticle placement in this frame.</li>
+</ul>
+<p>Muted gray labels plus a bright active row mirror common <strong>dark medical UI</strong> patterns. Repeating the full phrases in prose helps long-tail queries like “core temperature monitoring animation demo” or “clinical scene blood pressure UI motion”.</p>
+
+<h2>Right visual: holographic torso and targeting reticle</h2>
+<p>The hero is a <strong>semi-transparent 3D chest/abdomen</strong> with cool blue rim light on a navy gradient. It is not a literal dissection plate—it uses the <strong>holographic glass</strong> idiom common in hospital expo loops: suggest anatomy without publishing unapproved clinical imagery.</p>
+<p>A <strong>white circular reticle</strong> (corner tick marks) sits on the upper abdomen, semantically an aim point or algorithm ROI. It aligns with the active temperature row. For localization you can move the reticle to a cuff site or venous access while reusing the same rig—cheaper than rebuilding geometry per scene.</p>
+
+<figure class="article-figure">
+  <img src="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" width="1280" height="720" loading="lazy" decoding="async" alt="AI clinical scene animation still — scene display headline, vital-signs list, holographic 3D torso with temperature reticle">
+  <figcaption><code>ScreenShot_2026-07-08_162242_942.png</code> — full-screen clinical scene UI still (hero source).</figcaption>
+</figure>
+
+<h2>Color and typography: dark medtech</h2>
+<p>Background sits near navy <code>#0a1628</code>; type is white and cool gray; accents are cyan volumetric light. The small red “scene display” tag adds a <strong>clinical alert + tech blue</strong> dual cue. A circular back-to-top control bottom-right implies a <strong>long-page or full-screen web player</strong>, not a classic 16:9 social crop.</p>
+<p>Dark UI helps the glowing body and reticle pop, but MP4 exports need enough bitrate (≥8&nbsp;Mbps recommended) or gradients band badly. I keep the raw capture uncompressed here for regrading and future poster frames.</p>
+
+<h2>Browser capture: timeline and pacing</h2>
+<p>The embed is the Chrome recording. Default OS filename <code>Google Chrome 2026-07-08 16-19-20.mp4</code> documents list transitions, highlights, and lighting drift. Download from <code>original/ai-animation/</code> if inline playback fails.</p>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" aria-label="Clinical scene AI animation browser screen capture">
+    <source src="../original/ai-animation/Google%20Chrome%202026-07-08%2016-19-20.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>Google Chrome 2026-07-08 16-19-20.mp4</code> — full-screen scene animation capture (poster = still above).</figcaption>
+</figure>
+
+<p>Review checklist: <strong>(1)</strong> list changes stay frame-synced with reticle moves; <strong>(2)</strong> torso idle motion never fights numeric UI; <strong>(3)</strong> hierarchy survives 1080p thumbnails for LinkedIn or booth loops. No voiceover yet—room for EN/ZH narration tracks later.</p>
+
+<h2>AI animation workflow (personal practice)</h2>
+<p>This clip is <strong>AI animation look-dev</strong> in my vocabulary: generative passes lock lighting/material/mood, then timeline work happens in-browser or in AE/Blender for UI comp. Tool brands change; what matters is keeping <strong>verifiable screenshots and captures</strong> beside the final render.</p>
+<ol>
+  <li><strong>Copy anchor</strong> — write capability list + value line before pixels, so IA does not drift.</li>
+  <li><strong>Body asset</strong> — translucent torso from DCC or AI stills + comp; mild perspective for UI overlay.</li>
+  <li><strong>Prototype</strong> — validate left-rail ↔ right-focus linkage in web fullscreen or Figma, then record.</li>
+  <li><strong>Archive</strong> — PNG still + MP4 + 800+ words here → <code>data/articles/</code> → home carousel.</li>
+</ol>
+<p>Sits alongside <a href="/articles/character-turnaround-walk.html">character turnaround walk</a> and <a href="/articles/sports-lens-cave-frame-terrace-valley.html">sports-lens composite</a> in the “personal demo + honest notes” series, but targets <strong>medtech / clinical visualization</strong> keyword clusters.</p>
+
+<h2>Accessibility and SEO</h2>
+<ul>
+  <li>Image <code>alt</code> names clinical scene, module list, 3D torso, reticle—not “image 1”.</li>
+  <li>Video <code>poster</code> plus prose storyboard offsets missing subtitles for crawlers.</li>
+  <li>Repeat canonical capability strings in body copy for bilingual queries.</li>
+  <li>First-screen HTML carries the full article—no JS-injected body (static build habit).</li>
+</ul>
+
+<h2>Compliance boundary</h2>
+<p>Documented UI is <strong>personal visual research</strong>, not medical advice, regulatory labeling, or clinical evidence. Commercial reuse needs separate SaMD compliance, privacy review, and authorized data. This site only archives my folder—no endorsement of third-party devices.</p>
+
+<h2 id="article-seo-keywords">Search and related originals</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=AI+clinical+animation+medical+visualization" target="_blank" rel="noopener noreferrer">AI clinical animation</a>
+  <a class="pill" href="https://www.google.com/search?q=medical+UI+scene+carousel+vital+signs" target="_blank" rel="noopener noreferrer">medical UI scene carousel</a>
+  <a class="pill" href="https://www.google.com/search?q=holographic+body+medical+demo+video" target="_blank" rel="noopener noreferrer">holographic body medical demo</a>
+  <a class="pill" href="/articles/games-hub-generative-art-workflow.html">Generative art workflow</a>
+  <a class="pill" href="/articles/index.html">All editorials</a>
+  <a class="pill" href="/index.html#originals">Home originals</a>
+</div>
+
+<p class="article-note">Assets: <code>original/ai-animation/</code> · published <strong>2026-07-08</strong> · editorial entry <strong>#45</strong> on the home carousel (newest first).</p></article>
+    </div>
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>AI 临床场景动画手记：场景展示 × 体征监测可视化</h1>
+        <p class="article-shell__sub">场景展示 · 核心体温/血压/采血 · 全息人体 · Chrome 录屏</p>
+        <p class="article-shell__meta"><time datetime="2026-07-08">2026-07-08</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>这是 aogl.cn 上的一篇<strong>个人原创动效归档</strong>，素材全部来自 <code>original/ai-animation/</code>（2026-07-08 抓取）。主题是一条<strong>临床导向的全屏场景动画</strong>：左侧以「场景展示」叙事，右侧用半透明 3D 人体承载<strong>体征监测</strong>信息，并在腹部区域叠加圆形准星，强调「测温 / 定位」这一临床动作。本文不是医疗器械说明书，而是记录我如何把 AI 辅助的视觉生成、浏览器全屏演示与屏幕录屏合成一条可检索、可复现的<strong>医疗可视化动效</strong>样片路径。</p>
+
+<h2>文件夹里有什么</h2>
+<ul>
+  <li><code>ScreenShot_2026-07-08_162242_942.png</code> — 全屏 UI 定帧，用作本文题图与 Open Graph 封面源图。</li>
+  <li><code>Google Chrome 2026-07-08 16-19-20.mp4</code> — Chrome 窗口录屏，记录场景切换与动效节奏（约 27 MB，H.264）。</li>
+</ul>
+<p>两件文件构成最小可交付：<strong>静帧说明信息架构</strong> + <strong>视频说明时间轴</strong>。对 SEO 而言，页面同时提供文字拆解、配图 alt、视频 poster 与可下载源文件路径，比单独丢一个 MP4 更容易被搜索引擎理解主题。</p>
+
+<h2>场景叙事：「临床需要什么，就做什么」</h2>
+<p>定帧顶部左侧标注 <strong>场景展示</strong>，主标题为：<em>以临床需求为导向，临床需要什么，我们就想办法做什么。</em> 这句话把整条片子从「炫技 3D」拉回到<strong>需求驱动的医疗器械叙事</strong>：观众先理解产品哲学，再进入具体监测能力。对医院采购、临床工程师或医学可视化从业者，这类开场比直接堆参数更容易建立信任。</p>
+<p>在动效结构上，我把「场景」理解为可横向切换的<strong>能力模块</strong>，而不是单一镜头。录屏里（见下方视频）可以看到模块高亮与画面主体联动——左侧列表承担目录，右侧人体承担「发生在哪里」的空间锚点。这样即使静音播放，用户仍能通过构图读懂：<strong>左侧 = 功能清单，右侧 = 解剖语境</strong>。</p>
+
+<h2>左侧体征功能列表（信息架构）</h2>
+<p>截图左下角列出四条能力，其中<strong>体温测量</strong>以竖线高亮为当前场景：</p>
+<ul>
+  <li><strong>核心体温监测——血液温度</strong> — 强调与核心体温相关的监测路径，而非仅皮肤表面读数。</li>
+  <li><strong>血压监测</strong> — 循环与血流动力学维度的临床场景。</li>
+  <li><strong>血液抽样</strong> — 侵入性采样工作流，与无创监测形成产品线对照。</li>
+  <li><strong>体温测量</strong>（当前）— 本定帧对应的默认场景，驱动右侧准星落点。</li>
+</ul>
+<p>列表采用低对比灰字 + 当前项加亮，符合深色医疗 UI 常见的<strong>左侧导航 / 场景树</strong>模式。写作本文时，我刻意用完整中文词条重复这些能力名称，方便长尾检索，例如「核心体温监测 动画演示」「临床场景 血压监测 UI」等。</p>
+
+<h2>右侧视觉：半透明人体与测温准星</h2>
+<p>画面主体是<strong>半透明、带体积感的 3D 人体躯干</strong>（胸腹段），边缘有柔和蓝色 rim light，背景为深蓝渐变。人体并非写实解剖剖面，而是<strong>医学演示常用的「全息 / 玻璃质感」</strong>读法：既能暗示器官空间，又避免未获审批的解剖细节引发合规争议。</p>
+<p>腹部中央叠加<strong>白色圆形准星</strong>（四角断点式标记），在动效语义上表示「仪器对准点」或「算法 ROI」。静帧里准星落在上腹区域，与「体温测量」列表项一致。若要做国际化版本，准星与列表可同步切换至前臂（血压袖带位点）或静脉通路（采血），而人体模型保持同一 rig，降低 3D 资产成本。</p>
+
+<figure class="article-figure">
+  <img src="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" width="1280" height="720" loading="lazy" decoding="async" alt="AI 临床场景动画定帧 — 场景展示标题、体征列表与半透明 3D 人体测温准星">
+  <figcaption><code>ScreenShot_2026-07-08_162242_942.png</code> — 全屏临床场景 UI 定帧（题图同源）。</figcaption>
+</figure>
+
+<h2>色彩与排版：深色医疗科技风</h2>
+<p>背景接近 <code>#0a1628</code> 量级的海军蓝，前景文字为白与冷灰，点缀色为青蓝体积光。标题「场景展示」使用小字号红色标签，形成<strong>医疗警示色 + 科技蓝</strong>的双锚点。右下角可见回到顶部圆形按钮，说明该演示很可能运行在<strong>长页或 Web 全屏播放器</strong>中，而非传统 16:9 视频平台。</p>
+<p>从制作角度，深色 UI 有利于突出发光人体与准星；但导出 MP4 时要注意压缩 banding，录屏码率建议 ≥ 8 Mbps，否则渐变背景会出现色带。本站保留原始录屏，不做过度压缩，便于日后重新调色或抽帧做封面。</p>
+
+<h2>浏览器录屏：时间轴与节奏</h2>
+<p>下方嵌入 Chrome 录屏。文件名为系统默认的 <code>Google Chrome 2026-07-08 16-19-20.mp4</code>，记录了场景切换、列表高亮与人体光照的连续变化。若浏览器无法 inline 播放，可直接访问 <code>original/ai-animation/</code> 下载。</p>
+
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" aria-label="临床场景 AI 动画浏览器录屏">
+    <source src="../original/ai-animation/Google%20Chrome%202026-07-08%2016-19-20.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>Google Chrome 2026-07-08 16-19-20.mp4</code> — 全屏场景动画录屏（poster 为上方定帧）。</figcaption>
+</figure>
+
+<p>审片时我关注三点：<strong>① 列表切换与准星移动是否同步</strong>，避免观众迷失当前能力；<strong>② 人体旋转或呼吸幅度是否干扰读数 UI</strong>，医疗场景宜克制；<strong>③ 字体层级是否在 1080p 缩略图仍可读</strong>，关系到 B 站、LinkedIn 或展会屏幕的二次传播。录屏不做配音，方便后续按市场补中英旁白。</p>
+
+<h2>AI 动画工作流（个人实践，非厂商文档）</h2>
+<p>这条样片属于我常说的 <strong>AI animation look-dev</strong>：用生成式工具快速出<strong>光照、材质与构图</strong>方向，再在浏览器或 AE/Blender 中做时间轴与 UI 合成。具体工具链因项目而异，本站不绑定某一厂商；重要的是文件夹里保留<strong>可核对的源截图与录屏</strong>，而不是只贴最终成片。</p>
+<ol>
+  <li><strong>文案锚点</strong> — 先写临床能力列表与一句价值主张（见主标题），再生成画面，避免画面先行导致信息架构漂移。</li>
+  <li><strong>人体资产</strong> — 半透明躯干可用 3D DCC 或 AI 出图 + 后期抠像；保持正交或轻微透视，利于 UI 叠加。</li>
+  <li><strong>交互原型</strong> — 在 Web 全屏或 Figma 原型中验证左侧列表与右侧焦点的联动，再录屏。</li>
+  <li><strong>归档</strong> — PNG 定帧 + MP4 录屏 + 本文 800 字以上说明，写入 <code>data/articles/</code> 并上首页轮播。</li>
+</ol>
+<p>与 <a href="/articles/character-turnaround-walk.html">角色四视图行走</a>、<a href="/articles/sports-lens-cave-frame-terrace-valley.html">sports-lens 场景合成</a> 等同属 aogl.cn「个人 Demo + 诚实制作手记」系列，但本篇更贴近<strong>医疗科技 / 临床可视化</strong>关键词簇。</p>
+
+<h2>无障碍与 SEO 要点</h2>
+<ul>
+  <li>配图 <code>alt</code> 写明「临床场景、体征列表、3D 人体、测温准星」等实体，而非「图片 1」。</li>
+  <li>视频提供 <code>poster</code> 与文字分镜说明，弥补无字幕版本的检索劣势。</li>
+  <li>正文重复规范能力名称（核心体温、血压、血液抽样、体温测量），覆盖中英文混排检索。</li>
+  <li>页面首屏 HTML 即含完整叙述，不依赖 JS 注入正文（符合本站静态构建习惯）。</li>
+</ul>
+
+<h2>合规与边界</h2>
+<p>本文档化的界面为<strong>个人视觉研究</strong>，不构成医疗建议、产品注册信息或临床结论。若商业项目使用类似画面，须单独完成医疗器械软件合规、隐私与真实数据演示授权。外链医疗器械品牌、医院名称时请在项目层取得授权，本站仅归档本人文件夹内容。</p>
+
+<h2 id="article-seo-keywords">检索与相关原创</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=AI+clinical+animation+medical+visualization" target="_blank" rel="noopener noreferrer">AI clinical animation</a>
+  <a class="pill" href="https://www.google.com/search?q=medical+UI+scene+carousel+vital+signs" target="_blank" rel="noopener noreferrer">medical UI scene carousel</a>
+  <a class="pill" href="https://www.google.com/search?q=core+body+temperature+monitoring+visualization" target="_blank" rel="noopener noreferrer">core temperature monitoring viz</a>
+  <a class="pill" href="/articles/games-hub-generative-art-workflow.html">生成式角色工作流</a>
+  <a class="pill" href="/articles/index.html">全部原创索引</a>
+  <a class="pill" href="/index.html#originals">首页本站原创</a>
+</div>
+
+<p class="article-note">素材路径：<code>original/ai-animation/</code> · 发布日期 <strong>2026-07-08</strong> · 第 <strong>45</strong> 篇本站编辑条目（首页轮播新→旧）。</p></article>
+    </div>
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>AI 臨床シーンアニメ — シーン展示とバイタル可視化</h1>
+        <p class="article-shell__sub">シーン展示・体温/血圧・ホログラム人体</p>
+        <p class="article-shell__meta"><time datetime="2026-07-08">2026-07-08</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p><code>original/ai-animation/</code> の臨床シーン UI アニメーションアーカイブ（2026-07-08）。左にシーン展示とバイタル一覧、右に半透明 3D 人体と測温レティクル。定帧 PNG と Chrome 録画 MP4 を掲載。</p>
+<figure class="article-figure">
+  <img src="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" width="1280" height="720" loading="lazy" decoding="async" alt="臨床シーン AI アニメーション定帧">
+</figure>
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png">
+    <source src="../original/ai-animation/Google%20Chrome%202026-07-08%2016-19-20.mp4" type="video/mp4">
+  </video>
+</figure>
+<p><a href="/index.html#originals">ホーム · オリジナル</a> · <a href="/articles/index.html">記事一覧</a></p></article>
+    </div>
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>AI 임상 장면 애니메이션 — 장면 전시·바이탈 시각화</h1>
+        <p class="article-shell__sub">장면 전시·체온/혈압·홀로그램 인체</p>
+        <p class="article-shell__meta"><time datetime="2026-07-08">2026-07-08</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p><code>original/ai-animation/</code> 임상 장면 UI 애니메이션 아카이브(2026-07-08). 좌측 장면·바이탈 목록, 우측 반투명 3D 인체·측온 조준선. PNG 정지화면 + Chrome 녹화 MP4.</p>
+<figure class="article-figure">
+  <img src="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" width="1280" height="720" loading="lazy" decoding="async" alt="임상 장면 AI 애니메이션 정지 화면">
+</figure>
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png">
+    <source src="../original/ai-animation/Google%20Chrome%202026-07-08%2016-19-20.mp4" type="video/mp4">
+  </video>
+</figure>
+<p><a href="/index.html#originals">홈 · 오리지널</a> · <a href="/articles/index.html">글 목록</a></p></article>
+    </div>
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Animation IA scène clinique — carrousel et signes vitaux</h1>
+        <p class="article-shell__sub">affichage scène · température / PA · torse holographique</p>
+        <p class="article-shell__meta"><time datetime="2026-07-08">2026-07-08</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p>Archive <code>original/ai-animation/</code> — animation UI scène clinique (2026-07-08) : liste de signes vitaux, torse 3D holographique, réticule de température. PNG + capture Chrome MP4.</p>
+<figure class="article-figure">
+  <img src="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" width="1280" height="720" loading="lazy" decoding="async" alt="Animation scène clinique IA — image fixe">
+</figure>
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png">
+    <source src="../original/ai-animation/Google%20Chrome%202026-07-08%2016-19-20.mp4" type="video/mp4">
+  </video>
+</figure>
+<p><a href="/index.html#originals">Accueil · originaux</a> · <a href="/articles/index.html">Articles</a></p></article>
+    </div>
+    <div class="lang-ru">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← На главную · оригиналы</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>AI-анимация клинической сцены — карусель и витальные показатели</h1>
+        <p class="article-shell__sub">сцена · температура / АД · голографическое тело</p>
+        <p class="article-shell__meta"><time datetime="2026-07-08">2026-07-08</time> · Оригинал aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="ru"><p>Архив <code>original/ai-animation/</code> — UI-анимация клинической сцены (2026-07-08): список витальных функций, голографическое тело, прицел температуры. PNG + запись Chrome MP4.</p>
+<figure class="article-figure">
+  <img src="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" width="1280" height="720" loading="lazy" decoding="async" alt="Клиническая сцена AI — стоп-кадр">
+</figure>
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png">
+    <source src="../original/ai-animation/Google%20Chrome%202026-07-08%2016-19-20.mp4" type="video/mp4">
+  </video>
+</figure>
+<p><a href="/index.html#originals">Главная · оригиналы</a> · <a href="/articles/index.html">Статьи</a></p></article>
+    </div>
+    <div class="lang-ar">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← الرئيسية · محتوى أصلي</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>رسوم متحركة بالذكاء الاصطناعي لمشهد سريري</h1>
+        <p class="article-shell__sub">عرض المشهد · حرارة / ضغط · جذع هولوغرافي</p>
+        <p class="article-shell__meta"><time datetime="2026-07-08">2026-07-08</time> · محتوى أصلي</p>
+      </div>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p>أرشيف <code>original/ai-animation/</code> — واجهة مشهد سريري متحركة (2026-07-08): قائمة علامات حيوية، جذع ثلاثي الأبعاد شفاف، شبكة استهداف للحرارة. PNG + تسجيل Chrome MP4.</p>
+<figure class="article-figure">
+  <img src="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" width="1280" height="720" loading="lazy" decoding="async" alt="مشهد سريري بالذكاء الاصطناعي — لقطة ثابتة">
+</figure>
+<figure class="article-embed">
+  <video controls playsinline preload="metadata" poster="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png">
+    <source src="../original/ai-animation/Google%20Chrome%202026-07-08%2016-19-20.mp4" type="video/mp4">
+  </video>
+</figure>
+<p><a href="/index.html#originals">الرئيسية · أصلي</a> · <a href="/articles/index.html">المقالات</a></p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/about.html" class="footer-legal-link lang-en">About</a>
+        <a href="/contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="/privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="/contact.html" class="footer-legal-link lang-ko">문의</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="/about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="/contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="/privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="/about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="/contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="/about.html" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="/contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-en" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ko" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-fr" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ru" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ar" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer></script>
+</body></html>

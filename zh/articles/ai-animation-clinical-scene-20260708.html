@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="zh-Hant" data-title-zh="AI 臨床場景動畫手記：場景展示 × 體徵監測可視化 — aogl.cn" data-desc-zh="本站原創歸檔 original/ai-animation/：臨床導向的全屏場景動畫 UI、左側體徵功能列表、半透明 3D 人體與測溫準星，附 Chrome 瀏覽器錄屏 MP4 與定幀截圖，記錄 AI 醫療可視化動效的個人製作路徑。" data-aogl-lang="zht" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="本站原創歸檔 original/ai-animation/：臨床導向的全屏場景動畫 UI、左側體徵功能列表、半透明 3D 人體與測溫準星，附 Chrome 瀏覽器錄屏 MP4 與定幀截圖，記錄 AI 醫療可視化動效的個人製作路徑。">
+  <title>AI 臨床場景動畫手記：場景展示 × 體徵監測可視化 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/zh/articles/ai-animation-clinical-scene-20260708.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/ai-animation-clinical-scene-20260708.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/ai-animation-clinical-scene-20260708.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/ai-animation-clinical-scene-20260708.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/ai-animation-clinical-scene-20260708.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/ai-animation-clinical-scene-20260708.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/ai-animation-clinical-scene-20260708.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/ai-animation-clinical-scene-20260708.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/ai-animation-clinical-scene-20260708.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/ai-animation-clinical-scene-20260708.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/zh/articles/ai-animation-clinical-scene-20260708.html">
+  <meta property="og:title" content="AI 臨床場景動畫手記：場景展示 × 體徵監測可視化 — aogl.cn">
+  <meta property="og:description" content="本站原創歸檔 original/ai-animation/：臨床導向的全屏場景動畫 UI、左側體徵功能列表、半透明 3D 人體與測溫準星，附 Chrome 瀏覽器錄屏 MP4 與定幀截圖，記錄 AI 醫療可視化動效的個人製作路徑。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/ai-animation-clinical-scene-20260708.webp">
+  <meta property="og:image:alt" content="AI clinical scene animation — holographic torso and vital-signs UI (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/ai-animation-clinical-scene-20260708.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"scene display · core temp / BP / sampling · holographic torso · Chrome capture","alternativeHeadline":"AI 临床场景动画手记：场景展示 × 体征监测可视化","datePublished":"2026-07-08","dateModified":"2026-07-08","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/ai-animation-clinical-scene-20260708.html"},"url":"https://aogl.cn/zh/articles/ai-animation-clinical-scene-20260708.html","inLanguage":"zh-Hant","description":"Original aogl.cn archive under original/ai-animation/: full-screen clinical scene animation UI, left-rail vital-sign modules, holographic torso with targeting reticle, plus a Chrome screen-capture MP4 and hero still — honest production notes for AI medical visualization motion design.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-zht">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具與大模型動態（個人書籤）" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/zh/articles/index.html">本站原創</a></li>
+          <li><a href="/zh/index.html#tools-directory">AI 工具</a></li>
+          <li><a href="/zh/briefs/index.html">快訊</a></li>
+          <li><a href="/zh/games.html">遊戲</a></li>
+          <li><a href="/zh/tech.html">科技</a></li>
+          <li><a href="/zh/portal.html">全球站點</a></li>
+          <li><a href="/zh/brands.html">品牌</a></li>
+          <li><a href="/zh/shopping.html">購物</a></li>
+          <li><a href="/zh/life.html">生活</a></li>
+          <li><a href="/zh/social.html">社交</a></li>
+          <li><a href="/zh/tools.html">工具</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/zh/index.html#originals">← 返回首頁 · 本站原創</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>AI 臨床場景動畫手記：場景展示 × 體徵監測可視化</h1>
+        <p class="article-shell__sub">場景展示 · 核心體溫/血壓/採血 · 全息人體 · Chrome 錄屏</p>
+        <p class="article-shell__meta"><time datetime="2026-07-08">2026-07-08</time> · 本站原創</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>這是 aogl.cn 上的一篇<strong>個人原創動效歸檔</strong>，素材全部來自 <code>original/ai-animation/</code>（2026-07-08 抓取）。主題是一條<strong>臨床導向的全屏場景動畫</strong>：左側以「場景展示」敘事，右側用半透明 3D 人體承載<strong>體徵監測</strong>信息，並在腹部區域疊加圓形準星，強調「測溫 / 定位」這一臨床動作。本文不是醫療器械說明書，而是記錄我如何把 AI 輔助的視覺生成、瀏覽器全屏演示與屏幕錄屏合成一條可檢索、可復現的<strong>醫療可視化動效</strong>樣片路徑。</p>
+<h2>文件夾裡有什麼</h2>
+<ul>
+  <li><code>ScreenShot_2026-07-08_162242_942.png</code> — 全屏 UI 定幀，用作本文題圖與 Open Graph 封面源圖。</li>
+  <li><code>Google Chrome 2026-07-08 16-19-20.mp4</code> — Chrome 窗口錄屏，記錄場景切換與動效節奏（約 27 MB，H.264）。</li>
+</ul>
+<p>兩件文件構成最小可交付：<strong>靜幀說明信息架構</strong> + <strong>視頻說明時間軸</strong>。對 SEO 而言，頁面同時提供文字拆解、配圖 alt、視頻 poster 與可下載源文件路徑，比單獨丟一個 MP4 更容易被搜索引擎理解主題。</p>
+<h2>場景敘事：「臨床需要什麼，就做什麼」</h2>
+<p>定幀頂部左側標註 <strong>場景展示</strong>，主標題為：<em>以臨床需求為導向，臨床需要什麼，我們就想辦法做什麼。</em> 這句話把整條片子從「炫技 3D」拉回到<strong>需求驅動的醫療器械敘事</strong>：觀眾先理解產品哲學，再進入具體監測能力。對醫院採購、臨床工程師或醫學可視化從業者，這類開場比直接堆參數更容易建立信任。</p>
+<p>在動效結構上，我把「場景」理解為可橫向切換的<strong>能力模塊</strong>，而不是單一鏡頭。錄屏裡（見下方視頻）可以看到模塊高亮與畫面主體聯動——左側列表承擔目錄，右側人體承擔「發生在哪裡」的空間錨點。這樣即使靜音播放，用戶仍能通過構圖讀懂：<strong>左側 = 功能清單，右側 = 解剖語境</strong>。</p>
+<h2>左側體徵功能列表（信息架構）</h2>
+<p>截圖左下角列出四條能力，其中<strong>體溫測量</strong>以豎線高亮為當前場景：</p>
+<ul>
+  <li><strong>核心體溫監測——血液溫度</strong> — 強調與核心體溫相關的監測路徑，而非僅皮膚表面讀數。</li>
+  <li><strong>血壓監測</strong> — 循環與血流動力學維度的臨床場景。</li>
+  <li><strong>血液抽樣</strong> — 侵入性採樣工作流，與無創監測形成產品線對照。</li>
+  <li><strong>體溫測量</strong>（當前）— 本定幀對應的默認場景，驅動右側準星落點。</li>
+</ul>
+<p>列表採用低對比灰字 + 當前項加亮，符合深色醫療 UI 常見的<strong>左側導航 / 場景樹</strong>模式。寫作本文時，我刻意用完整中文詞條重複這些能力名稱，方便長尾檢索，例如「核心體溫監測 動畫演示」「臨床場景 血壓監測 UI」等。</p>
+<h2>右側視覺：半透明人體與測溫準星</h2>
+<p>畫面主體是<strong>半透明、帶體積感的 3D 人體軀幹</strong>（胸腹段），邊緣有柔和藍色 rim light，背景為深藍漸變。人體並非寫實解剖剖面，而是<strong>醫學演示常用的「全息 / 玻璃質感」</strong>讀法：既能暗示器官空間，又避免未獲審批的解剖細節引發合規爭議。</p>
+<p>腹部中央疊加<strong>白色圓形準星</strong>（四角斷點式標記），在動效語義上表示「儀器對準點」或「算法 ROI」。靜幀裡準星落在上腹區域，與「體溫測量」列表項一致。若要做國際化版本，準星與列表可同步切換至前臂（血壓袖帶位點）或靜脈通路（採血），而人體模型保持同一 rig，降低 3D 資產成本。</p>
+<figure class="article-figure">
+  <img src="/original/ai-animation/ScreenShot_2026-07-08_162242_942.png" width="1280" height="720" loading="lazy" decoding="async" alt="AI 臨床場景動畫定幀 — 場景展示標題、體徵列表與半透明 3D 人體測溫準星">
+  <figcaption><code>ScreenShot_2026-07-08_162242_942.png</code> — 全屏臨床場景 UI 定幀（題圖同源）。</figcaption>
+</figure>
+<h2>色彩與排版：深色醫療科技風</h2>
+<p>背景接近 <code>#0a1628</code> 量級的海軍藍，前景文字為白與冷灰，點綴色為青藍體積光。標題「場景展示」使用小字號紅色標籤，形成<strong>醫療警示色 + 科技藍</strong>的雙錨點。右下角可見回到頂部圓形按鈕，說明該演示很可能運行在<strong>長頁或 Web 全屏播放器</strong>中，而非傳統 16:9 視頻平臺。</p>
+<p>從製作角度，深色 UI 有利於突出發光人體與準星；但導出 MP4 時要注意壓縮 banding，錄屏碼率建議 ≥ 8 Mbps，否則漸變背景會出現色帶。本站保留原始錄屏，不做過度壓縮，便於日後重新調色或抽幀做封面。</p>
+<h2>瀏覽器錄屏：時間軸與節奏</h2>
+<p>下方嵌入 Chrome 錄屏。文件名為系統默認的 <code>Google Chrome 2026-07-08 16-19-20.mp4</code>，記錄了場景切換、列表高亮與人體光照的連續變化。若瀏覽器無法 inline 播放，可直接訪問 <code>original/ai-animation/</code> 下載。</p>
+<figure class="article-embed">
+  <video controls="" playsinline="" preload="metadata" poster="../original/ai-animation/ScreenShot_2026-07-08_162242_942.png" aria-label="臨床場景 AI 動畫瀏覽器錄屏">
+    <source src="/original/ai-animation/Google%20Chrome%202026-07-08%2016-19-20.mp4" type="video/mp4">
+  </video>
+  <figcaption><code>Google Chrome 2026-07-08 16-19-20.mp4</code> — 全屏場景動畫錄屏（poster 為上方定幀）。</figcaption>
+</figure>
+<p>審片時我關注三點：<strong>① 列表切換與準星移動是否同步</strong>，避免觀眾迷失當前能力；<strong>② 人體旋轉或呼吸幅度是否干擾讀數 UI</strong>，醫療場景宜剋制；<strong>③ 字體層級是否在 1080p 縮略圖仍可讀</strong>，關係到 B 站、LinkedIn 或展會屏幕的二次傳播。錄屏不做配音，方便後續按市場補中英旁白。</p>
+<h2>AI 動畫工作流（個人實踐，非廠商文檔）</h2>
+<p>這條樣片屬於我常說的 <strong>AI animation look-dev</strong>：用生成式工具快速出<strong>光照、材質與構圖</strong>方向，再在瀏覽器或 AE/Blender 中做時間軸與 UI 合成。具體工具鏈因項目而異，本站不綁定某一廠商；重要的是文件夾裡保留<strong>可核對的源截圖與錄屏</strong>，而不是隻貼最終成片。</p>
+<ol>
+  <li><strong>文案錨點</strong> — 先寫臨床能力列表與一句價值主張（見主標題），再生成畫面，避免畫面先行導致信息架構漂移。</li>
+  <li><strong>人體資產</strong> — 半透明軀幹可用 3D DCC 或 AI 出圖 + 後期摳像；保持正交或輕微透視，利於 UI 疊加。</li>
+  <li><strong>交互原型</strong> — 在 Web 全屏或 Figma 原型中驗證左側列表與右側焦點的聯動，再錄屏。</li>
+  <li><strong>歸檔</strong> — PNG 定幀 + MP4 錄屏 + 本文 800 字以上說明，寫入 <code>data/articles/</code> 並上首頁輪播。</li>
+</ol>
+<p>與 <a href="/zh/articles/character-turnaround-walk.html">角色四視圖行走</a>、<a href="/zh/articles/sports-lens-cave-frame-terrace-valley.html">sports-lens 場景合成</a> 等同屬 aogl.cn「個人 Demo + 誠實製作手記」系列，但本篇更貼近<strong>醫療科技 / 臨床可視化</strong>關鍵詞簇。</p>
+<h2>無障礙與 SEO 要點</h2>
+<ul>
+  <li>配圖 <code>alt</code> 寫明「臨床場景、體徵列表、3D 人體、測溫準星」等實體，而非「圖片 1」。</li>
+  <li>視頻提供 <code>poster</code> 與文字分鏡說明，彌補無字幕版本的檢索劣勢。</li>
+  <li>正文重複規範能力名稱（核心體溫、血壓、血液抽樣、體溫測量），覆蓋中英文混排檢索。</li>
+  <li>頁面首屏 HTML 即含完整敘述，不依賴 JS 注入正文（符合本站靜態構建習慣）。</li>
+</ul>
+<h2>合規與邊界</h2>
+<p>本文檔化的界面為<strong>個人視覺研究</strong>，不構成醫療建議、產品註冊信息或臨床結論。若商業項目使用類似畫面，須單獨完成醫療器械軟件合規、隱私與真實數據演示授權。外鏈醫療器械品牌、醫院名稱時請在項目層取得授權，本站僅歸檔本人文件夾內容。</p>
+<h2 id="article-seo-keywords">檢索與相關原創</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://www.google.com/search?q=AI+clinical+animation+medical+visualization" target="_blank" rel="noopener noreferrer">AI clinical animation</a>
+  <a class="pill" href="https://www.google.com/search?q=medical+UI+scene+carousel+vital+signs" target="_blank" rel="noopener noreferrer">medical UI scene carousel</a>
+  <a class="pill" href="https://www.google.com/search?q=core+body+temperature+monitoring+visualization" target="_blank" rel="noopener noreferrer">core temperature monitoring viz</a>
+  <a class="pill" href="/zh/articles/games-hub-generative-art-workflow.html">生成式角色工作流</a>
+  <a class="pill" href="/zh/articles/index.html">全部原創索引</a>
+  <a class="pill" href="/zh/index.html#originals">首頁本站原創</a>
+</div>
+<p class="article-note">素材路徑：<code>original/ai-animation/</code> · 發佈日期 <strong>2026-07-08</strong> · 第 <strong>45</strong> 篇本站編輯條目（首頁輪播新→舊）。</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/zh/about.html" class="footer-legal-link lang-zh">關於</a>
+        <a href="/zh/contact.html" class="footer-legal-link lang-zh">聯繫我們</a>
+        <a href="/zh/changelog.html" class="footer-legal-link lang-zh">更新記錄</a>
+        <a href="/zh/privacy.html" class="footer-legal-link lang-zh">隱私政策</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情鏈接 aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer=""></script>
+</body></html>
