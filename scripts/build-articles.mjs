@@ -16,6 +16,7 @@ import { GTAG_SCRIPT } from "./site-head-scripts.mjs";
 import { navBlock } from "./site-nav.mjs";
 import { footerFriendLinkHtml } from "./footer-friend-link.mjs";
 import { injectSteamChartsSnapshot } from "./steam-charts-lib.mjs";
+import { injectSteamChartsWeeklyUs20260707Snapshot } from "./steam-charts-weekly-us-20260707-lib.mjs";
 import { injectSensorTowerMobileSnapshot } from "./sensor-tower-mobile-lib.mjs";
 import { injectGoogleTrendsSnapshot } from "./google-trends-lib.mjs";
 import { injectGoogleTrendsRssSnapshot } from "./google-trends-rss-lib.mjs";
@@ -33,6 +34,7 @@ import { injectWorldEvSalesMay2026Snapshot } from "./world-ev-sales-may-2026-lib
 import { injectTopOnlineMarketplacesGmv2026Snapshot } from "./top-online-marketplaces-gmv-2026-lib.mjs";
 import { injectFortuneChinaTech502026Snapshot } from "./fortune-china-tech-50-2026-lib.mjs";
 import { injectAicpbGlobalAiRankings202604Snapshot } from "./aicpb-global-ai-rankings-202604-lib.mjs";
+import { injectAicpbGlobalAiWebsiteRankings202606Snapshot } from "./aicpb-global-ai-website-rankings-202606-lib.mjs";
 import { injectInstagramPopularSnapshot } from "./instagram-popular-lib.mjs";
 import { injectAppleIphone17ProBuySnapshot } from "./apple-iphone-17-pro-buy-lib.mjs";
 import { injectWorldCup2026TurkeyUsmntSnapshot } from "./world-cup-2026-turkey-usmnt-lib.mjs";
@@ -247,6 +249,7 @@ function loadArticles() {
         if (fs.existsSync(fp)) {
           const rawBody = fs.readFileSync(fp, "utf8").trim();
           let body = injectSteamChartsSnapshot(rawBody, lang);
+          body = injectSteamChartsWeeklyUs20260707Snapshot(body, lang);
           body = injectSensorTowerMobileSnapshot(body, lang);
           body = injectGoogleTrendsSnapshot(body, lang);
           body = injectGoogleTrendsRssSnapshot(body, lang);
@@ -264,6 +267,7 @@ function loadArticles() {
           body = injectTopOnlineMarketplacesGmv2026Snapshot(body, lang);
           body = injectFortuneChinaTech502026Snapshot(body, lang);
           body = injectAicpbGlobalAiRankings202604Snapshot(body, lang);
+          body = injectAicpbGlobalAiWebsiteRankings202606Snapshot(body, lang);
           body = injectInstagramPopularSnapshot(body, lang);
           body = injectAppleIphone17ProBuySnapshot(body, lang);
           body = injectWorldCup2026TurkeyUsmntSnapshot(body, lang);

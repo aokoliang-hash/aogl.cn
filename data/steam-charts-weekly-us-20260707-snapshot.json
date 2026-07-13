@@ -1,0 +1,280 @@
+{
+  "fetchedAt": "2026-07-07",
+  "fetchStatus": "manual",
+  "fetchNote": "Archived from store.steampowered.com weekly top sellers — US storefront, week ending 2026-07-07. Top 20 of 100.",
+  "weekLabel": "2026-06-30 — 2026-07-07",
+  "weekLabelZh": "2026年6月30日（周二）– 2026年7月7日（周二）",
+  "region": "US",
+  "regionLabel": "United States",
+  "regionLabelZh": "美国",
+  "sources": {
+    "chartsHub": "https://store.steampowered.com/charts/",
+    "weeklyTopSellers": "https://store.steampowered.com/charts/topsellers/US/2026-6-30"
+  },
+  "highlights": [
+    {
+      "key": "cs2",
+      "headlineEn": "Counter-Strike 2 #1 for 726 weeks on chart",
+      "headlineZh": "Counter-Strike 2 蝉联第一，在榜 726 周"
+    },
+    {
+      "key": "ac-black-flag",
+      "headlineEn": "Assassin's Creed Black Flag Remaster surges ▲71 (new release)",
+      "headlineZh": "刺客信条：黑旗 记忆重置 新品 ▲71 冲进 Top 10"
+    },
+    {
+      "key": "ark-sale",
+      "headlineEn": "ARK: Survival Ascended ▲55 at 75% off ($11.24)",
+      "headlineZh": "方舟：生存飞升 75% 折扣 ▲55 至第 9"
+    },
+    {
+      "key": "free-dominance",
+      "headlineEn": "8 of top 20 are Free to Play (US)",
+      "headlineZh": "Top 20 中 8 款免费开玩（美区）"
+    }
+  ],
+  "weeklyTopSellers": [
+    {
+      "rank": 1,
+      "appid": 730,
+      "name": "Counter-Strike 2",
+      "nameZh": "Counter-Strike 2",
+      "price": "Free to Play",
+      "priceZh": "免费开玩",
+      "change": "▲ 1",
+      "changeZh": "▲ 1",
+      "weeksOnChart": 726,
+      "url": "https://store.steampowered.com/app/730/CounterStrike_2"
+    },
+    {
+      "rank": 2,
+      "appid": 2767030,
+      "name": "Marvel Rivals",
+      "nameZh": "漫威争锋",
+      "price": "Free to Play",
+      "priceZh": "免费开玩",
+      "change": "▲ 3",
+      "changeZh": "▲ 3",
+      "weeksOnChart": 83,
+      "url": "https://store.steampowered.com/app/2767030/"
+    },
+    {
+      "rank": 3,
+      "appid": 4704690,
+      "name": "MECCHA CHAMELEON",
+      "nameZh": "MECCHA CHAMELEON",
+      "price": "$5.99",
+      "priceZh": "$5.99",
+      "change": "▼ 2",
+      "changeZh": "▼ 2",
+      "weeksOnChart": 4,
+      "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON"
+    },
+    {
+      "rank": 4,
+      "appid": 381210,
+      "name": "Dead by Daylight",
+      "nameZh": "黎明杀机",
+      "price": "$19.99",
+      "priceZh": "$19.99",
+      "change": "—",
+      "changeZh": "—",
+      "weeksOnChart": 478,
+      "url": "https://store.steampowered.com/app/381210/"
+    },
+    {
+      "rank": 5,
+      "appid": 1675200,
+      "name": "Steam Deck",
+      "nameZh": "Steam Deck",
+      "price": "$789.00",
+      "priceZh": "$789.00",
+      "change": "▲ 1",
+      "changeZh": "▲ 1",
+      "weeksOnChart": 6,
+      "url": "https://store.steampowered.com/app/1675200/Steam_Deck"
+    },
+    {
+      "rank": 6,
+      "appid": 1091500,
+      "name": "Cyberpunk 2077",
+      "nameZh": "赛博朋克 2077",
+      "price": "$59.99",
+      "priceZh": "$59.99",
+      "change": "▲ 1",
+      "changeZh": "▲ 1",
+      "weeksOnChart": 4,
+      "url": "https://store.steampowered.com/app/1091500/"
+    },
+    {
+      "rank": 7,
+      "appid": 1172470,
+      "name": "Apex Legends™",
+      "nameZh": "Apex Legends™",
+      "price": "Free to Play",
+      "priceZh": "免费开玩",
+      "change": "▲ 8",
+      "changeZh": "▲ 8",
+      "weeksOnChart": 296,
+      "url": "https://store.steampowered.com/app/1172470/Apex_Legends"
+    },
+    {
+      "rank": 8,
+      "appid": 3751950,
+      "name": "Assassin's Creed Black Flag Remaster",
+      "nameZh": "刺客信条：黑旗 记忆重置",
+      "price": "$59.99",
+      "priceZh": "$59.99（新品）",
+      "change": "▲ 71",
+      "changeZh": "▲ 71（新品）",
+      "weeksOnChart": 3,
+      "isNew": true,
+      "url": "https://store.steampowered.com/app/3751950/"
+    },
+    {
+      "rank": 9,
+      "appid": 2399830,
+      "name": "ARK: Survival Ascended",
+      "nameZh": "方舟: 生存飞升",
+      "price": "$11.24 (-75%)",
+      "priceZh": "$11.24（原价 $44.99，-75%）",
+      "change": "▲ 55",
+      "changeZh": "▲ 55",
+      "weeksOnChart": 2,
+      "url": "https://store.steampowered.com/app/2399830/"
+    },
+    {
+      "rank": 10,
+      "appid": 4032350,
+      "name": "EA SPORTS™ College Football 27",
+      "nameZh": "EA SPORTS™ College Football 27",
+      "price": "$69.99",
+      "priceZh": "$69.99（新品）",
+      "change": "Re-entry",
+      "changeZh": "再度上榜",
+      "weeksOnChart": 1,
+      "isNew": true,
+      "url": "https://store.steampowered.com/app/4032350/EA_SPORTS_College_Football_27"
+    },
+    {
+      "rank": 11,
+      "appid": 230410,
+      "name": "Warframe",
+      "nameZh": "Warframe 星际战甲",
+      "price": "Free to Play",
+      "priceZh": "免费开玩",
+      "change": "▼ 1",
+      "changeZh": "▼ 1",
+      "weeksOnChart": 693,
+      "url": "https://store.steampowered.com/app/230410/Warframe"
+    },
+    {
+      "rank": 12,
+      "appid": 1085660,
+      "name": "Destiny 2",
+      "nameZh": "命运2",
+      "price": "Free to Play",
+      "priceZh": "免费开玩",
+      "change": "▼ 3",
+      "changeZh": "▼ 3",
+      "weeksOnChart": 15,
+      "url": "https://store.steampowered.com/app/1085660/"
+    },
+    {
+      "rank": 13,
+      "appid": 2357570,
+      "name": "Overwatch® 2",
+      "nameZh": "《守望先锋®》",
+      "price": "Free to Play",
+      "priceZh": "免费开玩",
+      "change": "▲ 7",
+      "changeZh": "▲ 7",
+      "weeksOnChart": 26,
+      "url": "https://store.steampowered.com/app/2357570/"
+    },
+    {
+      "rank": 14,
+      "appid": 1431300,
+      "name": "SAND: Raiders of Sophie",
+      "nameZh": "SAND: Raiders of Sophie",
+      "price": "$24.99",
+      "priceZh": "$24.99",
+      "change": "▼ 6",
+      "changeZh": "▼ 6",
+      "weeksOnChart": 3,
+      "url": "https://store.steampowered.com/app/1431300/SAND_Raiders_of_Sophie"
+    },
+    {
+      "rank": 15,
+      "appid": 1361210,
+      "name": "Warhammer 40,000: Darktide",
+      "nameZh": "战锤40K：暗潮",
+      "price": "$9.99 (-75%)",
+      "priceZh": "$9.99（原价 $39.99，-75%）",
+      "change": "▼ 12",
+      "changeZh": "▼ 12",
+      "weeksOnChart": 3,
+      "url": "https://store.steampowered.com/app/1361210/40K"
+    },
+    {
+      "rank": 16,
+      "appid": 1086940,
+      "name": "Baldur's Gate 3",
+      "nameZh": "博德之门3",
+      "price": "$59.99",
+      "priceZh": "$59.99",
+      "change": "▼ 5",
+      "changeZh": "▼ 5",
+      "weeksOnChart": 186,
+      "url": "https://store.steampowered.com/app/1086940/"
+    },
+    {
+      "rank": 17,
+      "appid": 252490,
+      "name": "Rust",
+      "nameZh": "Rust",
+      "price": "$39.99",
+      "priceZh": "$39.99",
+      "change": "▲ 28",
+      "changeZh": "▲ 28",
+      "weeksOnChart": 576,
+      "url": "https://store.steampowered.com/app/252490/Rust"
+    },
+    {
+      "rank": 18,
+      "appid": 3513350,
+      "name": "Wuthering Waves",
+      "nameZh": "Wuthering Waves",
+      "price": "Free to Play",
+      "priceZh": "免费开玩",
+      "change": "▲ 6",
+      "changeZh": "▲ 6",
+      "weeksOnChart": 14,
+      "url": "https://store.steampowered.com/app/3513350/Wuthering_Waves"
+    },
+    {
+      "rank": 19,
+      "appid": 1285190,
+      "name": "Borderlands® 4",
+      "nameZh": "无主之地®4",
+      "price": "$34.99 (-50%)",
+      "priceZh": "$34.99（原价 $69.99，-50%）",
+      "change": "—",
+      "changeZh": "—",
+      "weeksOnChart": 2,
+      "url": "https://store.steampowered.com/app/1285190/"
+    },
+    {
+      "rank": 20,
+      "appid": 1144200,
+      "name": "Ready or Not",
+      "nameZh": "Ready or Not",
+      "price": "$49.99",
+      "priceZh": "$49.99",
+      "change": "▲ 3",
+      "changeZh": "▲ 3",
+      "weeksOnChart": 2,
+      "url": "https://store.steampowered.com/app/1144200/Ready_or_Not"
+    }
+  ]
+}

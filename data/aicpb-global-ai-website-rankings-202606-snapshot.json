@@ -1,0 +1,879 @@
+{
+  "fetchedAt": "2026-07-08",
+  "issueNumber": 37,
+  "reportTitleZh": "AI产品榜·全球总榜(Webstie) — 第 37 期（2026年6月版）",
+  "reportTitleEn": "AICPB Global AI Website Rankings — Issue 37 (June 2026)",
+  "periodZh": "2026年6月",
+  "periodEn": "June 2026",
+  "lastUpdatedOfficial": "2026-07-08",
+  "summaryZh": "Website 榜按 Website 月访问量排名；AICPB 按月更新，第 37 期完整 Top 100 存档。",
+  "summaryEn": "Website chart ranks by monthly visits; AICPB Issue 37 full Top 100 archive.",
+  "sources": {
+    "aicpb": "https://www.aicpb.com/zh/ai-rankings/products/global-ai-rankings",
+    "websitesFull": "https://www.aicpb.com/zh/ai-rankings/products/global-ai-rankings/websites"
+  },
+  "highlights": {
+    "top3Visits": [
+      "5.56B",
+      "3.68B",
+      "2.95B"
+    ],
+    "biggestGainers": [
+      {
+        "name": "Z.ai｜智谱",
+        "nameEn": "Z.ai | Zhipu",
+        "momPct": 24.56
+      },
+      {
+        "name": "Dreamina",
+        "nameEn": "Dreamina",
+        "momPct": 23.51
+      },
+      {
+        "name": "Pollo",
+        "nameEn": "Pollo AI",
+        "momPct": 18.96
+      },
+      {
+        "name": "JanitorAI",
+        "nameEn": "JanitorAI",
+        "momPct": 14.94
+      },
+      {
+        "name": "AI 搜索｜百度",
+        "nameEn": "Baidu AI Search",
+        "momPct": 13.76
+      }
+    ],
+    "biggestLosers": [
+      {
+        "name": "Notion AI",
+        "nameEn": "Notion AI",
+        "momPct": -84.43
+      },
+      {
+        "name": "GPTZero",
+        "nameEn": "GPTZero",
+        "momPct": -28.56
+      },
+      {
+        "name": "Q-Chat",
+        "nameEn": "Q-Chat (Quizlet)",
+        "momPct": -28.44
+      },
+      {
+        "name": "Turnitin",
+        "nameEn": "Turnitin",
+        "momPct": -26.24
+      },
+      {
+        "name": "GenSpark",
+        "nameEn": "GenSpark",
+        "momPct": -25.07
+      }
+    ],
+    "chinaInTop50": 12
+  },
+  "websites": [
+    {
+      "rank": 1,
+      "name": "ChatGPT",
+      "nameEn": "ChatGPT",
+      "metricDisplay": "5.56B",
+      "momPct": -3.29,
+      "productUrl": "https://www.aicpb.com/zh/product/ChatGPT/webid1D6F37591"
+    },
+    {
+      "rank": 2,
+      "name": "New Bing",
+      "nameEn": "New Bing",
+      "metricDisplay": "3.68B",
+      "momPct": 0.73,
+      "productUrl": "https://www.aicpb.com/zh/product/New-Bing/webid1D6F37521"
+    },
+    {
+      "rank": 3,
+      "name": "Gemini",
+      "nameEn": "Gemini",
+      "metricDisplay": "2.95B",
+      "momPct": -1.51,
+      "productUrl": "https://www.aicpb.com/zh/product/Gemini/webid1D6F37519"
+    },
+    {
+      "rank": 4,
+      "name": "Claude｜Anthropic",
+      "nameEn": "Claude | Anthropic",
+      "metricDisplay": "965.59M",
+      "momPct": -0.61,
+      "productUrl": "https://www.aicpb.com/zh/product/Claude｜Anthropic/webid1D6F37489"
+    },
+    {
+      "rank": 5,
+      "name": "DeepSeek",
+      "nameEn": "DeepSeek",
+      "metricDisplay": "483.80M",
+      "momPct": -10.59,
+      "productUrl": "https://www.aicpb.com/zh/product/DeepSeek/webid1D6F374B1"
+    },
+    {
+      "rank": 6,
+      "name": "Github Copilot",
+      "nameEn": "GitHub Copilot",
+      "metricDisplay": "371.18M",
+      "momPct": -3.28,
+      "productUrl": "https://www.aicpb.com/zh/product/Github-Copilot/webid1D6F374B9"
+    },
+    {
+      "rank": 7,
+      "name": "Shop",
+      "nameEn": "Shop",
+      "metricDisplay": "314.90M",
+      "momPct": 0.32,
+      "productUrl": "https://www.aicpb.com/zh/product/Shop/webid1D6F37421"
+    },
+    {
+      "rank": 8,
+      "name": "notebooklm",
+      "nameEn": "NotebookLM",
+      "metricDisplay": "223.04M",
+      "momPct": -13.74,
+      "productUrl": "https://www.aicpb.com/zh/product/notebooklm/webid1D6F37461"
+    },
+    {
+      "rank": 9,
+      "name": "Grok",
+      "nameEn": "Grok",
+      "metricDisplay": "220.78M",
+      "momPct": -13.28,
+      "productUrl": "https://www.aicpb.com/zh/product/Grok/webid1D6F37429"
+    },
+    {
+      "rank": 10,
+      "name": "Character AI",
+      "nameEn": "Character AI",
+      "metricDisplay": "193.61M",
+      "momPct": 3.62,
+      "productUrl": "https://www.aicpb.com/zh/product/Character-AI/webid1D6F374C9"
+    },
+    {
+      "rank": 11,
+      "name": "纳米AI搜索",
+      "nameEn": "Nami AI Search",
+      "metricDisplay": "180.29M",
+      "momPct": -8.84,
+      "productUrl": "https://www.aicpb.com/zh/product/纳米AI搜索/webid1D6F374A1"
+    },
+    {
+      "rank": 12,
+      "name": "豆包｜抖音",
+      "nameEn": "Doubao | Douyin",
+      "metricDisplay": "152.87M",
+      "momPct": -6.58,
+      "productUrl": "https://www.aicpb.com/zh/product/豆包｜抖音/webid1D6F37449"
+    },
+    {
+      "rank": 13,
+      "name": "纳米AI",
+      "nameEn": "Nami AI",
+      "metricDisplay": "151.92M",
+      "momPct": -2.62,
+      "productUrl": "https://www.aicpb.com/zh/product/纳米AI/webid1D6F374D9"
+    },
+    {
+      "rank": 14,
+      "name": "JanitorAI",
+      "nameEn": "JanitorAI",
+      "metricDisplay": "139.28M",
+      "momPct": 14.94,
+      "productUrl": "https://www.aicpb.com/zh/product/JanitorAI/webid1D6F37409"
+    },
+    {
+      "rank": 15,
+      "name": "Google AI Studio",
+      "nameEn": "Google AI Studio",
+      "metricDisplay": "123.77M",
+      "momPct": -4.92,
+      "productUrl": "https://www.aicpb.com/zh/product/Google-AI-Studio/webid1D6F37439"
+    },
+    {
+      "rank": 16,
+      "name": "copilot｜微软",
+      "nameEn": "Microsoft Copilot",
+      "metricDisplay": "121.12M",
+      "momPct": -9.38,
+      "productUrl": "https://www.aicpb.com/zh/product/copilot｜微软/webid1D6F37479"
+    },
+    {
+      "rank": 17,
+      "name": "Perplexity AI",
+      "nameEn": "Perplexity AI",
+      "metricDisplay": "120.79M",
+      "momPct": -16.15,
+      "productUrl": "https://www.aicpb.com/zh/product/Perplexity-AI/webid1D6F374F9"
+    },
+    {
+      "rank": 18,
+      "name": "Salesforce AI",
+      "nameEn": "Salesforce AI",
+      "metricDisplay": "114.35M",
+      "momPct": 10.03,
+      "productUrl": "https://www.aicpb.com/zh/product/Salesforce-AI/webid1D6F37459"
+    },
+    {
+      "rank": 19,
+      "name": "Deepl",
+      "nameEn": "DeepL",
+      "metricDisplay": "113.67M",
+      "momPct": -5.37,
+      "productUrl": "https://www.aicpb.com/zh/product/Deepl/webid1D6F37469"
+    },
+    {
+      "rank": 20,
+      "name": "Jambot",
+      "nameEn": "Jambot (Figma)",
+      "metricDisplay": "88.06M",
+      "momPct": -1.4,
+      "productUrl": "https://www.aicpb.com/zh/product/Jambot/webid1D6F37419"
+    },
+    {
+      "rank": 21,
+      "name": "SpicyChat AI",
+      "nameEn": "SpicyChat AI",
+      "metricDisplay": "79.31M",
+      "momPct": -4.48,
+      "productUrl": "https://www.aicpb.com/zh/product/SpicyChat-AI/webid1D6F37789"
+    },
+    {
+      "rank": 22,
+      "name": "Suno.com",
+      "nameEn": "Suno",
+      "metricDisplay": "76.55M",
+      "momPct": -13.85,
+      "productUrl": "https://www.aicpb.com/zh/product/Suno.com/webid1D6F37781"
+    },
+    {
+      "rank": 23,
+      "name": "zendesk",
+      "nameEn": "Zendesk",
+      "metricDisplay": "67.02M",
+      "momPct": 0.03,
+      "productUrl": "https://www.aicpb.com/zh/product/zendesk/webid1D6F377F9"
+    },
+    {
+      "rank": 24,
+      "name": "polybuzz",
+      "nameEn": "Polybuzz",
+      "metricDisplay": "66.36M",
+      "momPct": 13.2,
+      "productUrl": "https://www.aicpb.com/zh/product/polybuzz/webid1D6F37749"
+    },
+    {
+      "rank": 25,
+      "name": "Remove.bg",
+      "nameEn": "Remove.bg",
+      "metricDisplay": "59.68M",
+      "momPct": -6.9,
+      "productUrl": "https://www.aicpb.com/zh/product/Remove.bg/webid1D6F377B1"
+    },
+    {
+      "rank": 26,
+      "name": "duolingo",
+      "nameEn": "Duolingo",
+      "metricDisplay": "54.56M",
+      "momPct": 1.75,
+      "productUrl": "https://www.aicpb.com/zh/product/duolingo/webid1D6F377A9"
+    },
+    {
+      "rank": 27,
+      "name": "Candy.ai",
+      "nameEn": "Candy.ai",
+      "metricDisplay": "54.47M",
+      "momPct": 4.76,
+      "productUrl": "https://www.aicpb.com/zh/product/Candy.ai/webid1D6F37111"
+    },
+    {
+      "rank": 28,
+      "name": "Q-Chat",
+      "nameEn": "Q-Chat (Quizlet)",
+      "metricDisplay": "51.16M",
+      "momPct": -28.44,
+      "productUrl": "https://www.aicpb.com/zh/product/Q-Chat/webid1D6F37451"
+    },
+    {
+      "rank": 29,
+      "name": "Hostinger",
+      "nameEn": "Hostinger",
+      "metricDisplay": "50.26M",
+      "momPct": -5.51,
+      "productUrl": "https://www.aicpb.com/zh/product/Hostinger/webid1D6F377C9"
+    },
+    {
+      "rank": 30,
+      "name": "Grammarly",
+      "nameEn": "Grammarly",
+      "metricDisplay": "46.51M",
+      "momPct": -15.06,
+      "productUrl": "https://www.aicpb.com/zh/product/Grammarly/webid1D6F377D1"
+    },
+    {
+      "rank": 31,
+      "name": "AI 搜索｜百度",
+      "nameEn": "Baidu AI Search",
+      "metricDisplay": "44.85M",
+      "momPct": 13.76,
+      "productUrl": "https://www.aicpb.com/zh/product/AI-搜索｜百度/webid1D6F377D9"
+    },
+    {
+      "rank": 32,
+      "name": "千问 qianwen.com｜阿里",
+      "nameEn": "Qianwen | Alibaba",
+      "metricDisplay": "44.53M",
+      "momPct": 0.56,
+      "productUrl": "https://www.aicpb.com/zh/product/千问-qianwen.com｜阿里/webid1D6F375E9"
+    },
+    {
+      "rank": 33,
+      "name": "hubspot",
+      "nameEn": "HubSpot",
+      "metricDisplay": "44.46M",
+      "momPct": 9.31,
+      "productUrl": "https://www.aicpb.com/zh/product/hubspot/webid1D6F377E9"
+    },
+    {
+      "rank": 34,
+      "name": "Kimi｜月之暗面",
+      "nameEn": "Kimi | Moonshot",
+      "metricDisplay": "40.16M",
+      "momPct": -12.83,
+      "productUrl": "https://www.aicpb.com/zh/product/Kimi｜月之暗面/webid1D6F37691"
+    },
+    {
+      "rank": 35,
+      "name": "Qwen.ai｜阿里",
+      "nameEn": "Qwen.ai | Alibaba",
+      "metricDisplay": "35.43M",
+      "momPct": -2.85,
+      "productUrl": "https://www.aicpb.com/zh/product/Qwen.ai｜阿里/webid1D6F37779"
+    },
+    {
+      "rank": 36,
+      "name": "Quillbot",
+      "nameEn": "QuillBot",
+      "metricDisplay": "35.13M",
+      "momPct": -23.12,
+      "productUrl": "https://www.aicpb.com/zh/product/Quillbot/webid1D6F377E1"
+    },
+    {
+      "rank": 37,
+      "name": "Lovable.dev",
+      "nameEn": "Lovable.dev",
+      "metricDisplay": "34.83M",
+      "momPct": -1.27,
+      "productUrl": "https://www.aicpb.com/zh/product/Lovable.dev/webid1D6F39F89"
+    },
+    {
+      "rank": 38,
+      "name": "Eleven Labs",
+      "nameEn": "ElevenLabs",
+      "metricDisplay": "34.41M",
+      "momPct": -4.26,
+      "productUrl": "https://www.aicpb.com/zh/product/Eleven-Labs/webid1D6F376F1"
+    },
+    {
+      "rank": 39,
+      "name": "Supabase",
+      "nameEn": "Supabase",
+      "metricDisplay": "29.73M",
+      "momPct": -2.5,
+      "productUrl": "https://www.aicpb.com/zh/product/Supabase/webid1D6F371E9"
+    },
+    {
+      "rank": 40,
+      "name": "Vercel",
+      "nameEn": "Vercel",
+      "metricDisplay": "29.68M",
+      "momPct": -2.93,
+      "productUrl": "https://www.aicpb.com/zh/product/Vercel/webid1D6F37139"
+    },
+    {
+      "rank": 41,
+      "name": "Khanmigo",
+      "nameEn": "Khanmigo",
+      "metricDisplay": "29.44M",
+      "momPct": -0.62,
+      "productUrl": "https://www.aicpb.com/zh/product/Khanmigo/webid1D6F37699"
+    },
+    {
+      "rank": 42,
+      "name": "Miro",
+      "nameEn": "Miro",
+      "metricDisplay": "28.28M",
+      "momPct": -10.27,
+      "productUrl": "https://www.aicpb.com/zh/product/Miro/webid1D6F37709"
+    },
+    {
+      "rank": 43,
+      "name": "turboscribe",
+      "nameEn": "TurboScribe",
+      "metricDisplay": "28.06M",
+      "momPct": -6.22,
+      "productUrl": "https://www.aicpb.com/zh/product/turboscribe/webid1D6F37689"
+    },
+    {
+      "rank": 44,
+      "name": "Higgsfield",
+      "nameEn": "Higgsfield",
+      "metricDisplay": "27.97M",
+      "momPct": 10.6,
+      "productUrl": "https://www.aicpb.com/zh/product/Higgsfield/webid1D6F37119"
+    },
+    {
+      "rank": 45,
+      "name": "Huggingface",
+      "nameEn": "Hugging Face",
+      "metricDisplay": "27.69M",
+      "momPct": -0.91,
+      "productUrl": "https://www.aicpb.com/zh/product/Huggingface/webid1D6F37621"
+    },
+    {
+      "rank": 46,
+      "name": "Airtable",
+      "nameEn": "Airtable",
+      "metricDisplay": "27.69M",
+      "momPct": 0.16,
+      "productUrl": "https://www.aicpb.com/zh/product/Airtable/webid1D6F376A9"
+    },
+    {
+      "rank": 47,
+      "name": "Beacons AI 2.0",
+      "nameEn": "Beacons AI 2.0",
+      "metricDisplay": "27.53M",
+      "momPct": 0.75,
+      "productUrl": "https://www.aicpb.com/zh/product/Beacons-AI-2.0/webid1D6F376D9"
+    },
+    {
+      "rank": 48,
+      "name": "meta.ai",
+      "nameEn": "Meta AI",
+      "metricDisplay": "26.00M",
+      "momPct": -7.95,
+      "productUrl": "https://www.aicpb.com/zh/product/meta.ai/webid1D6F37631"
+    },
+    {
+      "rank": 49,
+      "name": "Gamma",
+      "nameEn": "Gamma",
+      "metricDisplay": "24.73M",
+      "momPct": -20.58,
+      "productUrl": "https://www.aicpb.com/zh/product/Gamma/webid1D6F37751"
+    },
+    {
+      "rank": 50,
+      "name": "Notion AI",
+      "nameEn": "Notion AI",
+      "metricDisplay": "24.47M",
+      "momPct": -84.43,
+      "productUrl": "https://www.aicpb.com/zh/product/Notion-AI/webid1D6F374C1"
+    },
+    {
+      "rank": 51,
+      "name": "Manus",
+      "nameEn": "Manus",
+      "metricDisplay": "23.90M",
+      "momPct": -17.19,
+      "productUrl": "https://www.aicpb.com/zh/product/Manus/webid1D6F371D9"
+    },
+    {
+      "rank": 52,
+      "name": "百度文库",
+      "nameEn": "Baidu Wenku",
+      "metricDisplay": "23.77M",
+      "momPct": 4.83,
+      "productUrl": "https://www.aicpb.com/zh/product/百度文库/webid1D6F37759"
+    },
+    {
+      "rank": 53,
+      "name": "cursor",
+      "nameEn": "Cursor",
+      "metricDisplay": "23.18M",
+      "momPct": 7.22,
+      "productUrl": "https://www.aicpb.com/zh/product/cursor/webid1D6F37649"
+    },
+    {
+      "rank": 54,
+      "name": "prolific.com",
+      "nameEn": "Prolific",
+      "metricDisplay": "22.74M",
+      "momPct": -0.34,
+      "productUrl": "https://www.aicpb.com/zh/product/prolific.com/webid1D6F371F1"
+    },
+    {
+      "rank": 55,
+      "name": "ZeroGPT",
+      "nameEn": "ZeroGPT",
+      "metricDisplay": "22.41M",
+      "momPct": -18.78,
+      "productUrl": "https://www.aicpb.com/zh/product/ZeroGPT/webid1D6F376A1"
+    },
+    {
+      "rank": 56,
+      "name": "Adobe Firefly",
+      "nameEn": "Adobe Firefly",
+      "metricDisplay": "20.04M",
+      "momPct": -9.74,
+      "productUrl": "https://www.aicpb.com/zh/product/Adobe-Firefly/webid1D6F371D1"
+    },
+    {
+      "rank": 57,
+      "name": "Photoroom",
+      "nameEn": "Photoroom",
+      "metricDisplay": "19.56M",
+      "momPct": -1.64,
+      "productUrl": "https://www.aicpb.com/zh/product/Photoroom/webid1D6F37659"
+    },
+    {
+      "rank": 58,
+      "name": "Joi",
+      "nameEn": "Joi AI",
+      "metricDisplay": "19.12M",
+      "momPct": 6.57,
+      "productUrl": "https://www.aicpb.com/zh/product/Joi/webid1D6F37331"
+    },
+    {
+      "rank": 59,
+      "name": "Picsart",
+      "nameEn": "Picsart",
+      "metricDisplay": "17.94M",
+      "momPct": 2.5,
+      "productUrl": "https://www.aicpb.com/zh/product/Picsart/webid1D6F371C1"
+    },
+    {
+      "rank": 60,
+      "name": "SeaArt",
+      "nameEn": "SeaArt",
+      "metricDisplay": "17.77M",
+      "momPct": -7.19,
+      "productUrl": "https://www.aicpb.com/zh/product/SeaArt/webid1D6F37761"
+    },
+    {
+      "rank": 61,
+      "name": "openrouter",
+      "nameEn": "OpenRouter",
+      "metricDisplay": "17.55M",
+      "momPct": 2.81,
+      "productUrl": "https://www.aicpb.com/zh/product/openrouter/webid1D6F373B9"
+    },
+    {
+      "rank": 62,
+      "name": "Loom",
+      "nameEn": "Loom",
+      "metricDisplay": "17.26M",
+      "momPct": -2.51,
+      "productUrl": "https://www.aicpb.com/zh/product/Loom/webid1D6F371B9"
+    },
+    {
+      "rank": 63,
+      "name": "BASE44 2.0",
+      "nameEn": "BASE44 2.0",
+      "metricDisplay": "17.16M",
+      "momPct": -8.58,
+      "productUrl": "https://www.aicpb.com/zh/product/BASE44-2.0/webid1D6F373F9"
+    },
+    {
+      "rank": 64,
+      "name": "Adot｜韩语",
+      "nameEn": "Adot (Korea)",
+      "metricDisplay": "16.28M",
+      "momPct": -19.39,
+      "productUrl": "https://www.aicpb.com/zh/product/Adot｜韩语/webid1D6F37721"
+    },
+    {
+      "rank": 65,
+      "name": "Feedly",
+      "nameEn": "Feedly",
+      "metricDisplay": "13.66M",
+      "momPct": -2.73,
+      "productUrl": "https://www.aicpb.com/zh/product/Feedly/webid1D6F37191"
+    },
+    {
+      "rank": 66,
+      "name": "Venice",
+      "nameEn": "Venice",
+      "metricDisplay": "13.60M",
+      "momPct": 8.8,
+      "productUrl": "https://www.aicpb.com/zh/product/Venice/webid1D6F37391"
+    },
+    {
+      "rank": 67,
+      "name": "Replit",
+      "nameEn": "Replit",
+      "metricDisplay": "13.28M",
+      "momPct": -5.31,
+      "productUrl": "https://www.aicpb.com/zh/product/Replit/webid1D6F37089"
+    },
+    {
+      "rank": 68,
+      "name": "Turnitin",
+      "nameEn": "Turnitin",
+      "metricDisplay": "12.86M",
+      "momPct": -26.24,
+      "productUrl": "https://www.aicpb.com/zh/product/Turnitin/webid1D6F37601"
+    },
+    {
+      "rank": 69,
+      "name": "Dreamina",
+      "nameEn": "Dreamina",
+      "metricDisplay": "12.81M",
+      "momPct": 23.51,
+      "productUrl": "https://www.aicpb.com/zh/product/Dreamina/webid1D6F37341"
+    },
+    {
+      "rank": 70,
+      "name": "Kling ai",
+      "nameEn": "Kling AI",
+      "metricDisplay": "12.65M",
+      "momPct": 1.19,
+      "productUrl": "https://www.aicpb.com/zh/product/Kling-ai/webid1D6F399B1"
+    },
+    {
+      "rank": 71,
+      "name": "kaggle",
+      "nameEn": "Kaggle",
+      "metricDisplay": "12.40M",
+      "momPct": -3.23,
+      "productUrl": "https://www.aicpb.com/zh/product/kaggle/webid1D6F37109"
+    },
+    {
+      "rank": 72,
+      "name": "GPTZero",
+      "nameEn": "GPTZero",
+      "metricDisplay": "12.23M",
+      "momPct": -28.56,
+      "productUrl": "https://www.aicpb.com/zh/product/GPTZero/webid1D6F371A1"
+    },
+    {
+      "rank": 73,
+      "name": "GenSpark",
+      "nameEn": "GenSpark",
+      "metricDisplay": "12.15M",
+      "momPct": -25.07,
+      "productUrl": "https://www.aicpb.com/zh/product/GenSpark/webid1D6F370C9"
+    },
+    {
+      "rank": 74,
+      "name": "腾讯元宝",
+      "nameEn": "Tencent Yuanbao",
+      "metricDisplay": "12.10M",
+      "momPct": -19.38,
+      "productUrl": "https://www.aicpb.com/zh/product/腾讯元宝/webid1D6F37619"
+    },
+    {
+      "rank": 75,
+      "name": "Ollama",
+      "nameEn": "Ollama",
+      "metricDisplay": "12.07M",
+      "momPct": 4.77,
+      "productUrl": "https://www.aicpb.com/zh/product/Ollama/webid1D6F37241"
+    },
+    {
+      "rank": 76,
+      "name": "Turo",
+      "nameEn": "Turo",
+      "metricDisplay": "12.04M",
+      "momPct": 2.15,
+      "productUrl": "https://www.aicpb.com/zh/product/Turo/webid1D6F373B1"
+    },
+    {
+      "rank": 77,
+      "name": "Pixelcut.ai",
+      "nameEn": "Pixelcut.ai",
+      "metricDisplay": "11.86M",
+      "momPct": -3.28,
+      "productUrl": "https://www.aicpb.com/zh/product/Pixelcut.ai/webid1D6F37679"
+    },
+    {
+      "rank": 78,
+      "name": "AI Time Machine",
+      "nameEn": "AI Time Machine",
+      "metricDisplay": "11.58M",
+      "momPct": -6.6,
+      "productUrl": "https://www.aicpb.com/zh/product/AI-Time-Machine/webid1D6F37159"
+    },
+    {
+      "rank": 79,
+      "name": "opencode",
+      "nameEn": "OpenCode",
+      "metricDisplay": "11.26M",
+      "momPct": 11.1,
+      "productUrl": "https://www.aicpb.com/zh/product/opencode/webid1D6F36359"
+    },
+    {
+      "rank": 80,
+      "name": "PLAN by Ixigo",
+      "nameEn": "PLAN by Ixigo",
+      "metricDisplay": "11.20M",
+      "momPct": -2.08,
+      "productUrl": "https://www.aicpb.com/zh/product/PLAN-by-Ixigo/webid1D6F37101"
+    },
+    {
+      "rank": 81,
+      "name": "即梦 AI｜剪映",
+      "nameEn": "Jimeng AI | CapCut",
+      "metricDisplay": "10.83M",
+      "momPct": -21.63,
+      "productUrl": "https://www.aicpb.com/zh/product/即梦-AI｜剪映/webid1D6F37081"
+    },
+    {
+      "rank": 82,
+      "name": "Adobe Podcast",
+      "nameEn": "Adobe Podcast",
+      "metricDisplay": "10.82M",
+      "momPct": 1.27,
+      "productUrl": "https://www.aicpb.com/zh/product/Adobe-Podcast/webid1D6F37001"
+    },
+    {
+      "rank": 83,
+      "name": "Wanderboat",
+      "nameEn": "Wanderboat",
+      "metricDisplay": "10.78M",
+      "momPct": -10.58,
+      "productUrl": "https://www.aicpb.com/zh/product/Wanderboat/webid1D6F37311"
+    },
+    {
+      "rank": 84,
+      "name": "Midjourney",
+      "nameEn": "Midjourney",
+      "metricDisplay": "10.30M",
+      "momPct": -6.2,
+      "productUrl": "https://www.aicpb.com/zh/product/Midjourney/webid1D6F37199"
+    },
+    {
+      "rank": 85,
+      "name": "Leonardo.Ai",
+      "nameEn": "Leonardo.Ai",
+      "metricDisplay": "10.26M",
+      "momPct": -8.94,
+      "productUrl": "https://www.aicpb.com/zh/product/Leonardo.Ai/webid1D6F370A1"
+    },
+    {
+      "rank": 86,
+      "name": "Z.ai｜智谱",
+      "nameEn": "Z.ai | Zhipu",
+      "metricDisplay": "10.24M",
+      "momPct": 24.56,
+      "productUrl": "https://www.aicpb.com/zh/product/Z.ai/webid1D6F37C91"
+    },
+    {
+      "rank": 87,
+      "name": "PixAI.Art",
+      "nameEn": "PixAI.Art",
+      "metricDisplay": "10.16M",
+      "momPct": 0.13,
+      "productUrl": "https://www.aicpb.com/zh/product/PixAI.Art/webid1D6F37099"
+    },
+    {
+      "rank": 88,
+      "name": "Mercor",
+      "nameEn": "Mercor",
+      "metricDisplay": "10.03M",
+      "momPct": 7.45,
+      "productUrl": "https://www.aicpb.com/zh/product/Mercor/webid1D6F373C9"
+    },
+    {
+      "rank": 89,
+      "name": "Pixlr",
+      "nameEn": "Pixlr",
+      "metricDisplay": "9.88M",
+      "momPct": -5.63,
+      "productUrl": "https://www.aicpb.com/zh/product/Pixlr/webid1D6F371C9"
+    },
+    {
+      "rank": 90,
+      "name": "Mailchimp",
+      "nameEn": "Mailchimp",
+      "metricDisplay": "9.84M",
+      "momPct": -8.32,
+      "productUrl": "https://www.aicpb.com/zh/product/Mailchimp/webid1D6F37161"
+    },
+    {
+      "rank": 91,
+      "name": "Cutout Pro",
+      "nameEn": "Cutout Pro",
+      "metricDisplay": "9.80M",
+      "momPct": -3.24,
+      "productUrl": "https://www.aicpb.com/zh/product/Cutout-Pro/webid1D6F37129"
+    },
+    {
+      "rank": 92,
+      "name": "HeyGen",
+      "nameEn": "HeyGen",
+      "metricDisplay": "9.79M",
+      "momPct": -8.86,
+      "productUrl": "https://www.aicpb.com/zh/product/HeyGen/webid1D6F37019"
+    },
+    {
+      "rank": 93,
+      "name": "Meshy",
+      "nameEn": "Meshy",
+      "metricDisplay": "9.76M",
+      "momPct": 5.97,
+      "productUrl": "https://www.aicpb.com/zh/product/Meshy/webid1D6F37C21"
+    },
+    {
+      "rank": 94,
+      "name": "Vocal Remover",
+      "nameEn": "Vocal Remover",
+      "metricDisplay": "9.43M",
+      "momPct": -8.06,
+      "productUrl": "https://www.aicpb.com/zh/product/Vocal-Remover/webid1D6F37029"
+    },
+    {
+      "rank": 95,
+      "name": "Openart",
+      "nameEn": "OpenArt",
+      "metricDisplay": "9.43M",
+      "momPct": -15.0,
+      "productUrl": "https://www.aicpb.com/zh/product/Openart/webid1D6F37031"
+    },
+    {
+      "rank": 96,
+      "name": "Pollo",
+      "nameEn": "Pollo AI",
+      "metricDisplay": "9.33M",
+      "momPct": 18.96,
+      "productUrl": "https://www.aicpb.com/zh/product/Pollo/webid1D6F37309"
+    },
+    {
+      "rank": 97,
+      "name": "chub.ai",
+      "nameEn": "chub.ai",
+      "metricDisplay": "9.01M",
+      "momPct": 9.74,
+      "productUrl": "https://www.aicpb.com/zh/product/chub.ai/webid1D6F37389"
+    },
+    {
+      "rank": 98,
+      "name": "DeepAI",
+      "nameEn": "DeepAI",
+      "metricDisplay": "8.93M",
+      "momPct": -5.75,
+      "productUrl": "https://www.aicpb.com/zh/product/DeepAI/webid1D6F371E1"
+    },
+    {
+      "rank": 99,
+      "name": "Veed.io",
+      "nameEn": "VEED.io",
+      "metricDisplay": "8.76M",
+      "momPct": -11.91,
+      "productUrl": "https://www.aicpb.com/zh/product/Veed.io/webid1D6F37169"
+    },
+    {
+      "rank": 100,
+      "name": "Unity",
+      "nameEn": "Unity",
+      "metricDisplay": "8.44M",
+      "momPct": -6.12,
+      "productUrl": "https://www.aicpb.com/zh/product/Unity/webid1D6F370D1"
+    }
+  ]
+}
