@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-07-07",
+  "updated": "2026-07-14",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,6 +116,12 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+          "titleZh": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+          "date": "2026-07-07"
+        },
+        {
           "titleEn": "The latest AI news we announced in June 2026",
           "titleZh": "The latest AI news we announced in June 2026",
           "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
@@ -126,12 +132,6 @@
           "titleZh": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
           "url": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit/",
           "date": "2026-07-01"
-        },
-        {
-          "titleEn": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
-          "titleZh": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
-          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
-          "date": "2026-06-30"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "It’s Time to Reserve Your WhatsApp Username",
-          "titleZh": "It’s Time to Reserve Your WhatsApp Username",
-          "url": "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/",
-          "date": "2026-06-29"
+          "titleEn": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
+          "titleZh": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
+          "url": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
+          "date": "2026-07-13"
         },
         {
-          "titleEn": "Inside One of Meta’s Data Centers",
-          "titleZh": "Inside One of Meta’s Data Centers",
-          "url": "https://about.fb.com/news/2026/06/inside-meta-data-center/",
-          "date": "2026-06-26"
+          "titleEn": "Breaking Ground on Meta’s First Data Center in Canada",
+          "titleZh": "Breaking Ground on Meta’s First Data Center in Canada",
+          "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+          "date": "2026-07-08"
         },
         {
-          "titleEn": "Teens, Parents, and Educators Navigate Online Safety Through Real Conversations in Singapore",
-          "titleZh": "Teens, Parents, and Educators Navigate Online Safety Through Real Conversations in Singapore",
-          "url": "https://about.fb.com/news/2026/06/teens-parents-and-educators-navigate-online-safety-in-singapore/",
-          "date": "2026-06-25"
+          "titleEn": "Meta’s AI Glasses: Your Questions Answered",
+          "titleZh": "Meta’s AI Glasses: Your Questions Answered",
+          "url": "https://about.fb.com/news/2026/07/metas-ai-glasses-your-questions-answered/",
+          "date": "2026-07-07"
         }
       ],
       "hotSearchPills": [
@@ -387,6 +387,12 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
+          "titleZh": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
+          "url": "https://engineering.fb.com/2026/07/13/ml-applications/modernizing-the-meta-ads-service-with-an-open-source-kernel-scheduler/",
+          "date": "2026-07-13"
+        },
+        {
           "titleEn": "Meta’s AI Storage Blueprint at Scale",
           "titleZh": "Meta’s AI Storage Blueprint at Scale",
           "url": "https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/",
@@ -397,12 +403,6 @@
           "titleZh": "10 Years of Meta’s Commitment to Python",
           "url": "https://engineering.fb.com/2026/06/30/open-source/10-years-of-metas-commitment-to-python/",
           "date": "2026-06-30"
-        },
-        {
-          "titleEn": "Privacy-Aware Infrastructure in the AI-Native Era: An Asset Classification Case Study",
-          "titleZh": "Privacy-Aware Infrastructure in the AI-Native Era: An Asset Classification Case Study",
-          "url": "https://engineering.fb.com/2026/06/25/security/privacy-aware-infrastructure-in-the-ai-native-era-an-asset-classification-case-study/",
-          "date": "2026-06-25"
         }
       ],
       "hotSearchPills": [
@@ -479,22 +479,22 @@
       "labelZh": "X",
       "items": [
         {
+          "titleEn": "Bluesky’s interim CEO, Toni Schneider, drops the ‘interim’",
+          "titleZh": "Bluesky’s interim CEO, Toni Schneider, drops the ‘interim’",
+          "url": "https://techcrunch.com/2026/07/10/blueskys-interim-ceo-toni-schneider-drops-the-interim/",
+          "date": "2026-07-10"
+        },
+        {
+          "titleEn": "Despite ‘misgivings,’ judge approves Elon Musk’s $1.5M SEC settlement",
+          "titleZh": "Despite ‘misgivings,’ judge approves Elon Musk’s $1.5M SEC settlement",
+          "url": "https://techcrunch.com/2026/07/08/despite-misgivings-judge-approves-elon-musks-1-5-million-sec-settlement/",
+          "date": "2026-07-08"
+        },
+        {
           "titleEn": "X makes it more expensive to post links through its API",
           "titleZh": "X makes it more expensive to post links through its API",
           "url": "https://techcrunch.com/2026/04/22/x-makes-it-more-expensive-to-post-links-through-its-api/",
           "date": "2026-04-22"
-        },
-        {
-          "titleEn": "EFF is the latest organization to leave X",
-          "titleZh": "EFF is the latest organization to leave X",
-          "url": "https://techcrunch.com/2026/04/09/eff-is-the-latest-organization-to-leave-x/",
-          "date": "2026-04-09"
-        },
-        {
-          "titleEn": "X brings back Voice Notes to X Chat",
-          "titleZh": "X brings back Voice Notes to X Chat",
-          "url": "https://techcrunch.com/2026/04/09/x-brings-back-voice-notes-to-x-chat/",
-          "date": "2026-04-09"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Pictures Frozen Behind a Copyright Gap: Start of Wikimedia Bangladesh’s Collaboration with The Copyright Office",
-          "titleZh": "Pictures Frozen Behind a Copyright Gap: Start of Wikimedia Bangladesh’s Collaboration with The Copyright Office",
-          "url": "https://diff.wikimedia.org/2026/07/07/pictures-frozen-behind-a-copyright-gap-start-of-wikimedia-bangladeshs-collaboration-with-the-copyright-office/",
-          "date": "2026-07-07"
+          "titleEn": "Tech News 2026 – Issue 29",
+          "titleZh": "Tech News 2026 – Issue 29",
+          "url": "https://diff.wikimedia.org/2026/07/13/tech-news-2026-issue-29/",
+          "date": "2026-07-13"
         },
         {
-          "titleEn": "Moving the Needle: Why Experimenting on Wikimedia Platform Is Important",
-          "titleZh": "Moving the Needle: Why Experimenting on Wikimedia Platform Is Important",
-          "url": "https://diff.wikimedia.org/2026/07/07/moving-the-needle-why-experimenting-on-wikimedia-platform-is-important/",
-          "date": "2026-07-07"
+          "titleEn": "Networking Doesn’t Happen by Accident: How to Design Events for Connection",
+          "titleZh": "Networking Doesn’t Happen by Accident: How to Design Events for Connection",
+          "url": "https://diff.wikimedia.org/2026/07/13/networking-doesnt-happen-by-accident-how-to-design-events-for-connection/",
+          "date": "2026-07-13"
         },
         {
-          "titleEn": "Reflections on 15 years at Wikimedia Foundation and a new chapter",
-          "titleZh": "Reflections on 15 years at Wikimedia Foundation and a new chapter",
-          "url": "https://diff.wikimedia.org/2026/07/06/reflections-on-15-years-at-wikimedia-foundation-and-a-new-chapter/",
-          "date": "2026-07-06"
+          "titleEn": "Malaysia Wikimedians held Wikimedia sharing session in Seoul!",
+          "titleZh": "Malaysia Wikimedians held Wikimedia sharing session in Seoul!",
+          "url": "https://diff.wikimedia.org/2026/07/13/malaysia-wikimedians-held-wikimedia-sharing-session-in-seoul/",
+          "date": "2026-07-13"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "6 ways Amazon is investing in Louisiana",
-          "titleZh": "6 ways Amazon is investing in Louisiana",
-          "url": "https://www.aboutamazon.com/news/community/amazon-investment-louisiana-jobs-infrastructure-small-business?utm_source=rss",
-          "date": "2026-07-02"
+          "titleEn": "A first look at Mike Flanagan's ‘Carrie,’ a Stephen King adaptation coming to Prime Video this fall",
+          "titleZh": "A first look at Mike Flanagan's ‘Carrie,’ a Stephen King adaptation coming to Prime Video this fall",
+          "url": "https://www.aboutamazon.com/news/entertainment/carrie-stephen-king-mike-flanagan-prime-video?utm_source=rss",
+          "date": "2026-07-13"
         },
         {
-          "titleEn": "5 ways Amazon is investing in Florida",
-          "titleZh": "5 ways Amazon is investing in Florida",
-          "url": "https://www.aboutamazon.com/news/community/amazon-investment-florida-jobs-infrastructure-small-business?utm_source=rss",
-          "date": "2026-07-02"
+          "titleEn": "3 easy ways Amazon customers can help bring safe water to millions with Get Blue",
+          "titleZh": "3 easy ways Amazon customers can help bring safe water to millions with Get Blue",
+          "url": "https://www.aboutamazon.com/news/sustainability/get-blue-easy-ways-donate-alexa-amazon-music?utm_source=rss",
+          "date": "2026-07-13"
         },
         {
-          "titleEn": "How Amazon is helping after back-to-back earthquakes in Venezuela",
-          "titleZh": "How Amazon is helping after back-to-back earthquakes in Venezuela",
-          "url": "https://www.aboutamazon.com/news/community/amazon-response-venezuela-earthquakes-2026?utm_source=rss",
-          "date": "2026-07-02"
+          "titleEn": "Amazon data center communities: Here’s what’s happening near data centers across the US",
+          "titleZh": "Amazon data center communities: Here’s what’s happening near data centers across the US",
+          "url": "https://www.aboutamazon.com/news/aws/amazon-data-centers-locations-news?utm_source=rss",
+          "date": "2026-07-09"
         }
       ],
       "hotSearchPills": [

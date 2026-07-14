@@ -8,7 +8,7 @@
   "descZh": "参考 Interbrand「全球最佳品牌」价值榜常见前十，每牌三条官网新闻稿或博文外链。",
   "h1En": "Interbrand top 10 (global brand value)",
   "h1Zh": "全球品牌价值前十（Interbrand 口径）",
-  "updated": "2026-07-07",
+  "updated": "2026-07-14",
   "editorialHtmlEn": "<p>Ten names usually clustered at the top of Interbrand’s “Best Global Brands” value ranking; order tweaks when they republish the annual table.</p><p>Valuation moves with equity markets and product cycles. This page is a <strong>bookmark rail</strong> — not investment research and not a recommendation to buy, hold, or sell any security.</p><p>Last reviewed: <strong>2026-05-19</strong>. I do not rank brands by ad spend or sponsorship; links point to corporate homepages or newsrooms only.</p><p>Press PDFs and campaign microsites are not mirrored here — only the three outbound story links per row that I actually read.</p>",
   "editorialHtmlZh": "<p>十个名字大致对应 Interbrand《全球最佳品牌》年度价值榜里常见的前排；他们发新榜后再微调顺序。</p><p>品牌价值随市场与业务周期波动。本页只是<strong>外链书签条</strong>，不构成投资建议，亦不代表买入、持有或卖出任何证券。</p><p>最近核对：<strong>2026-05-19</strong>。不按广告或赞助排序；链接仅指向企业官网或新闻稿入口。</p><p>新闻稿 PDF 与 campaign 微站不在本站转载，每行三条外链是我自己会点进去看的稿件入口。</p>",
   "rankTitleEn": "Global top 10 (brand value)",
@@ -116,22 +116,22 @@
       "labelZh": "苹果",
       "items": [
         {
-          "titleEn": "Apple Creator Studio gets smarter, faster, and more connected",
-          "titleZh": "Apple Creator Studio gets smarter, faster, and more connected",
-          "url": "https://www.apple.com/newsroom/2026/06/apple-creator-studio-gets-smarter-faster-and-more-connected/",
-          "date": "2026-06-30"
+          "titleEn": "Apple and Major League Baseball announce August “Friday Night Baseball” schedule",
+          "titleZh": "Apple and Major League Baseball announce August “Friday Night Baseball” schedule",
+          "url": "https://www.apple.com/newsroom/2026/07/apple-and-major-league-baseball-announce-august-friday-night-baseball-schedule/",
+          "date": "2026-07-09"
         },
         {
-          "titleEn": "Apple announces changes to iOS in Brazil",
-          "titleZh": "Apple announces changes to iOS in Brazil",
-          "url": "https://www.apple.com/newsroom/2026/06/apple-announces-changes-to-ios-in-brazil/",
-          "date": "2026-06-18"
+          "titleEn": "Apple scores record 89 Emmy Award nominations",
+          "titleZh": "Apple scores record 89 Emmy Award nominations",
+          "url": "https://www.apple.com/newsroom/2026/07/apple-scores-record-89-emmy-award-nominations/",
+          "date": "2026-07-09"
         },
         {
-          "titleEn": "Apple unveils innovative features and intelligence experiences across services",
-          "titleZh": "Apple unveils innovative features and intelligence experiences across services",
-          "url": "https://www.apple.com/newsroom/2026/06/apple-unveils-innovative-features-and-intelligence-experiences-across-services/",
-          "date": "2026-06-09"
+          "titleEn": "Apple to increase spend with Broadcom to produce billions more U.S. chips",
+          "titleZh": "Apple to increase spend with Broadcom to produce billions more U.S. chips",
+          "url": "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/",
+          "date": "2026-07-08"
         }
       ]
     },
@@ -166,22 +166,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "6 ways Amazon is investing in Louisiana",
-          "titleZh": "6 ways Amazon is investing in Louisiana",
-          "url": "https://www.aboutamazon.com/news/community/amazon-investment-louisiana-jobs-infrastructure-small-business?utm_source=rss",
-          "date": "2026-07-02"
+          "titleEn": "A first look at Mike Flanagan's ‘Carrie,’ a Stephen King adaptation coming to Prime Video this fall",
+          "titleZh": "A first look at Mike Flanagan's ‘Carrie,’ a Stephen King adaptation coming to Prime Video this fall",
+          "url": "https://www.aboutamazon.com/news/entertainment/carrie-stephen-king-mike-flanagan-prime-video?utm_source=rss",
+          "date": "2026-07-13"
         },
         {
-          "titleEn": "5 ways Amazon is investing in Florida",
-          "titleZh": "5 ways Amazon is investing in Florida",
-          "url": "https://www.aboutamazon.com/news/community/amazon-investment-florida-jobs-infrastructure-small-business?utm_source=rss",
-          "date": "2026-07-02"
+          "titleEn": "3 easy ways Amazon customers can help bring safe water to millions with Get Blue",
+          "titleZh": "3 easy ways Amazon customers can help bring safe water to millions with Get Blue",
+          "url": "https://www.aboutamazon.com/news/sustainability/get-blue-easy-ways-donate-alexa-amazon-music?utm_source=rss",
+          "date": "2026-07-13"
         },
         {
-          "titleEn": "How Amazon is helping after back-to-back earthquakes in Venezuela",
-          "titleZh": "How Amazon is helping after back-to-back earthquakes in Venezuela",
-          "url": "https://www.aboutamazon.com/news/community/amazon-response-venezuela-earthquakes-2026?utm_source=rss",
-          "date": "2026-07-02"
+          "titleEn": "Amazon data center communities: Here’s what’s happening near data centers across the US",
+          "titleZh": "Amazon data center communities: Here’s what’s happening near data centers across the US",
+          "url": "https://www.aboutamazon.com/news/aws/amazon-data-centers-locations-news?utm_source=rss",
+          "date": "2026-07-09"
         }
       ]
     },
@@ -190,6 +190,12 @@
       "labelEn": "Google",
       "labelZh": "谷歌",
       "items": [
+        {
+          "titleEn": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+          "titleZh": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+          "date": "2026-07-07"
+        },
         {
           "titleEn": "The latest AI news we announced in June 2026",
           "titleZh": "The latest AI news we announced in June 2026",
@@ -201,12 +207,6 @@
           "titleZh": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
           "url": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit/",
           "date": "2026-07-01"
-        },
-        {
-          "titleEn": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
-          "titleZh": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
-          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
-          "date": "2026-06-30"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星",
       "items": [
         {
-          "titleEn": "Samsung Electronics Announces Earnings Guidance for Second Quarter 2026",
-          "titleZh": "Samsung Electronics Announces Earnings Guidance for Second Quarter 2026",
-          "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-second-quarter-2026",
-          "date": "2026-07-07"
+          "titleEn": "Samsung Launches New Bespoke AI Washer and Dryer Lineup With AI-Enhanced Fabric Care and Seamless Connectivity",
+          "titleZh": "Samsung Launches New Bespoke AI Washer and Dryer Lineup With AI-Enhanced Fabric Care and Seamless Connectivity",
+          "url": "https://news.samsung.com/global/samsung-launches-new-bespoke-ai-washer-and-dryer-lineup-with-ai-enhanced-fabric-care-and-seamless-connectivity",
+          "date": "2026-07-14"
         },
         {
-          "titleEn": "[Interview] Art Made for the Senses: Karim Noureldin x Samsung Art Store",
-          "titleZh": "[Interview] Art Made for the Senses: Karim Noureldin x Samsung Art Store",
-          "url": "https://news.samsung.com/global/interview-art-made-for-the-senses-karim-noureldin-x-samsung-art-store",
-          "date": "2026-07-03"
+          "titleEn": "Samsung Wins Two Red Dot Award: Design Concept ‘Best of the Best’ Awards",
+          "titleZh": "Samsung Wins Two Red Dot Award: Design Concept ‘Best of the Best’ Awards",
+          "url": "https://news.samsung.com/global/samsung-wins-two-red-dot-award-design-concept-best-of-the-best-awards",
+          "date": "2026-07-14"
         },
         {
-          "titleEn": "Samsung and KDDI Successfully Complete AI-Powered Network Optimization Trial on Commercial 5G Standalone Network in Japan",
-          "titleZh": "Samsung and KDDI Successfully Complete AI-Powered Network Optimization Trial on Commercial 5G Standalone Network in Japan",
-          "url": "https://news.samsung.com/global/samsung-and-kddi-successfully-complete-ai-powered-network-optimization-trial-on-commercial-5g-standalone-network-in-japan",
-          "date": "2026-06-30"
+          "titleEn": "Coming Soon: A New AI-Powered Health Companion on Your Wrist",
+          "titleZh": "Coming Soon: A New AI-Powered Health Companion on Your Wrist",
+          "url": "https://news.samsung.com/global/coming-soon-a-new-ai-powered-health-companion-on-your-wrist",
+          "date": "2026-07-14"
         }
       ]
     },
@@ -341,22 +341,22 @@
       "labelZh": "迪士尼",
       "items": [
         {
-          "titleEn": "Disneyland Resort Welcomes One Billionth Guest",
-          "titleZh": "Disneyland Resort Welcomes One Billionth Guest",
-          "url": "https://thewaltdisneycompany.com/news/disneyland-billionth-guest/",
-          "date": "2026-07-03"
+          "titleEn": "Disney Announces Incredible Lineup of All-Day Programming for D23: The Ultimate Disney Fan Event",
+          "titleZh": "Disney Announces Incredible Lineup of All-Day Programming for D23: The Ultimate Disney Fan Event",
+          "url": "https://thewaltdisneycompany.com/news/d23-programming-2026/",
+          "date": "2026-07-13"
         },
         {
-          "titleEn": "Disney and Formula 1 Unveil Custom Helmet Initiative Supporting Make-A-Wish",
-          "titleZh": "Disney and Formula 1 Unveil Custom Helmet Initiative Supporting Make-A-Wish",
-          "url": "https://thewaltdisneycompany.com/news/formula-1-custom-helmet-make-wish/",
-          "date": "2026-07-02"
+          "titleEn": "Remembering Disney Legend Don Iwerks",
+          "titleZh": "Remembering Disney Legend Don Iwerks",
+          "url": "https://thewaltdisneycompany.com/news/remembering-disney-legend-don-iwerks/",
+          "date": "2026-07-11"
         },
         {
-          "titleEn": "From Parks to Primetime: ‘Disney Celebrates America’ Takes Over Fourth of July Weekend Nationwide",
-          "titleZh": "From Parks to Primetime: ‘Disney Celebrates America’ Takes Over Fourth of July Weekend Nationwide",
-          "url": "https://thewaltdisneycompany.com/news/disney-celebrates-america-july-fourth-weekend/",
-          "date": "2026-07-02"
+          "titleEn": "Disney’s Live-Action ‘Moana’: How Dwayne Johnson, Catherine Lagaʻaia, and Director Thomas Kail Reimagined a Beloved Story",
+          "titleZh": "Disney’s Live-Action ‘Moana’: How Dwayne Johnson, Catherine Lagaʻaia, and Director Thomas Kail Reimagined a Beloved Story",
+          "url": "https://thewaltdisneycompany.com/news/moana-dwayne-johnson-catherine-lagaaia/",
+          "date": "2026-07-09"
         }
       ]
     }

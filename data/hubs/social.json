@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-07-07",
+  "updated": "2026-07-14",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,87 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
+      "titleZh": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
+      "url": "https://engineering.fb.com/2026/07/13/ml-applications/modernizing-the-meta-ads-service-with-an-open-source-kernel-scheduler/",
+      "date": "2026-07-13",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/07/image1.webp",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/07/image1.webp"
+    },
+    {
+      "titleEn": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
+      "titleZh": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
+      "url": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
+      "date": "2026-07-13",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/07/Teachers-and-Local-Businesses-Win-as-Meta-Expands-Louisiana-Data-Center-_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Teachers-and-Local-Businesses-Win-as-Meta-Expands-Louisiana-Data-Center-_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta removes controversial AI feature on Instagram after backlash",
+      "titleZh": "Meta removes controversial AI feature on Instagram after backlash",
+      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
+      "date": "2026-07-10",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "EU threatens Meta with fines over addictive features on Facebook and Instagram",
+      "titleZh": "EU threatens Meta with fines over addictive features on Facebook and Instagram",
+      "url": "https://techcrunch.com/2026/07/10/eu-threatens-meta-with-fines-over-addictive-features-on-facebook-and-instagram/",
+      "date": "2026-07-10",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Instagram users: Here’s how to stop Meta’s AI from using your photos",
+      "titleZh": "Instagram users: Here’s how to stop Meta’s AI from using your photos",
+      "url": "https://techcrunch.com/2026/07/09/how-to-stop-metas-ai-image-generator-from-using-your-instagram-photos/",
+      "date": "2026-07-09",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Breaking Ground on Meta’s First Data Center in Canada",
+      "titleZh": "Breaking Ground on Meta’s First Data Center in Canada",
+      "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+      "date": "2026-07-08",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/07/SCDC_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/SCDC_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta’s AI Glasses: Your Questions Answered",
+      "titleZh": "Meta’s AI Glasses: Your Questions Answered",
+      "url": "https://about.fb.com/news/2026/07/metas-ai-glasses-your-questions-answered/",
+      "date": "2026-07-07",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/07/Metas-AI-Glasses_Your-Questions-Answered_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Metas-AI-Glasses_Your-Questions-Answered_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Introducing Muse Image: Image Generation Built for Your World",
+      "titleZh": "Introducing Muse Image: Image Generation Built for Your World",
+      "url": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
+      "date": "2026-07-07",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/07/Muse-Image_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Muse-Image_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Our Work to Fight Child Exploitation on Our Apps",
+      "titleZh": "Our Work to Fight Child Exploitation on Our Apps",
+      "url": "https://about.fb.com/news/2026/07/our-work-to-fight-child-exploitation-on-our-apps/",
+      "date": "2026-07-07",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/07/Screenshot-2026-07-07-at-8.11.24-PM.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Screenshot-2026-07-07-at-8.11.24-PM.png?fit=890%2C501"
+    },
     {
       "titleEn": "Meta’s AI Storage Blueprint at Scale",
       "titleZh": "Meta’s AI Storage Blueprint at Scale",
@@ -140,87 +221,6 @@
       "source": "Facebook / Meta",
       "image": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partnering-with-EssilorLucottica-to-Launch-Meta-Glasses_Thumbnail.gif?fit=890%2C501",
       "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partnering-with-EssilorLucottica-to-Launch-Meta-Glasses_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Launch of Meta’s Small Business Growth Academy Across Asia-Pacific to Boost AI Adoption and Digital Skills",
-      "titleZh": "Launch of Meta’s Small Business Growth Academy Across Asia-Pacific to Boost AI Adoption and Digital Skills",
-      "url": "https://about.fb.com/news/2026/06/launch-of-metas-small-business-growth-academy-across-asia-pacific/",
-      "date": "2026-06-23",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/03/AdobeStock_340663504.jpeg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/03/AdobeStock_340663504.jpeg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Cannes Lions 2026: Strengthen creative campaigns with new tools from YouTube",
-      "titleZh": "Cannes Lions 2026: Strengthen creative campaigns with new tools from YouTube",
-      "url": "https://blog.google/products/ads-commerce/youtube-insights-tools-cannes-lions-2026/",
-      "date": "2026-06-23",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_Illustration.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_Illustration.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
-      "titleZh": "Adopting AV1 for Real-Time Communication (RTC) at Scale",
-      "url": "https://engineering.fb.com/2026/06/22/video-engineering/adopting-av1-for-real-time-communication-rtc-meta/",
-      "date": "2026-06-22",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/06/Meta-AV1-for-RTC-encoder-decoder-selection.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/06/Meta-AV1-for-RTC-encoder-decoder-selection.png"
-    },
-    {
-      "titleEn": "Instagram looks to take on streaming services with longer-form, episodic and live formats for its TV app",
-      "titleZh": "Instagram looks to take on streaming services with longer-form, episodic and live formats for its TV app",
-      "url": "https://techcrunch.com/2026/06/22/instagram-looks-to-take-on-streaming-services-with-longer-form-episodic-and-live-formats-for-its-tv-app/",
-      "date": "2026-06-22",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
-      "titleZh": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
-      "url": "https://about.fb.com/news/2026/06/instagram-for-tv-gets-bigger-with-new-ways-to-watch-together/",
-      "date": "2026-06-22",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Instagram-for-TV-Gets-Bigger_With-New-Ways-to-Watch-Together_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Instagram-for-TV-Gets-Bigger_With-New-Ways-to-Watch-Together_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Snap spins off AI video team into new company, Dotmo, due to costs",
-      "titleZh": "Snap spins off AI video team into new company, Dotmo, due to costs",
-      "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
-      "date": "2026-06-18",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
-      "titleZh": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
-      "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
-      "date": "2026-06-18",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/01_Expanding-Our-New-13-Content-Settings_Carousel-01_34f5ce-1.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/01_Expanding-Our-New-13-Content-Settings_Carousel-01_34f5ce-1.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Social media’s next evolution: user-controlled algorithms",
-      "titleZh": "Social media’s next evolution: user-controlled algorithms",
-      "url": "https://techcrunch.com/2026/06/17/social-medias-next-evolution-user-controlled-algorithms/",
-      "date": "2026-06-17",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Threads Returns to Türkiye With New Features",
-      "titleZh": "Threads Returns to Türkiye With New Features",
-      "url": "https://about.fb.com/news/2026/06/threads-returns-to-turkiye-with-new-features/",
-      "date": "2026-06-17",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2023/07/Threads_logo_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2023/07/Threads_logo_Thumbnail.gif?fit=890%2C501"
     }
   ],
   "moreTitleEn": "More social networks",

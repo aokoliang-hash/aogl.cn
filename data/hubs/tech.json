@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-07-07",
+  "updated": "2026-07-14",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "NVIDIA and Hugging Face Bring New Models and Frameworks to LeRobot for the Open Robotics Community",
-          "titleZh": "NVIDIA and Hugging Face Bring New Models and Frameworks to LeRobot for the Open Robotics Community",
-          "url": "https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics/",
-          "date": "2026-07-07"
+          "titleEn": "NVIDIA Ising Decoding Cuts Color Code Logical Error Rates by Over 300X",
+          "titleZh": "NVIDIA Ising Decoding Cuts Color Code Logical Error Rates by Over 300X",
+          "url": "https://developer.nvidia.com/blog/nvidia-ising-decoding-cuts-color-code-logical-error-rates-by-over-300x/",
+          "date": "2026-07-13"
         },
         {
-          "titleEn": "Enhancing Goodput in Large-Scale LLM Training with Nonuniform Tensor Parallelism",
-          "titleZh": "Enhancing Goodput in Large-Scale LLM Training with Nonuniform Tensor Parallelism",
-          "url": "https://developer.nvidia.com/blog/enhancing-goodput-in-large-scale-llm-training-with-nonuniform-tensor-parallelism/",
-          "date": "2026-07-06"
+          "titleEn": "Extreme Event Likelihoods with Guided Generative Models",
+          "titleZh": "Extreme Event Likelihoods with Guided Generative Models",
+          "url": "https://developer.nvidia.com/blog/extreme-event-likelihoods-with-guided-generative-models/",
+          "date": "2026-07-13"
         },
         {
-          "titleEn": "How Open Models Are Driving AI Research",
-          "titleZh": "How Open Models Are Driving AI Research",
-          "url": "https://blogs.nvidia.com/blog/open-models-icml-2026/",
-          "date": "2026-07-06"
+          "titleEn": "How to Evaluate General-Purpose Robot Policies for Real-World Deployment",
+          "titleZh": "How to Evaluate General-Purpose Robot Policies for Real-World Deployment",
+          "url": "https://developer.nvidia.com/blog/how-to-evaluate-general-purpose-robot-policies-for-real-world-deployment/",
+          "date": "2026-07-12"
         }
       ]
     },
@@ -191,6 +191,12 @@
       "labelZh": "AMD",
       "items": [
         {
+          "titleEn": "AMD to Report Fiscal Second Quarter 2026 Financial Results",
+          "titleZh": "AMD to Report Fiscal Second Quarter 2026 Financial Results",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1289/amd-to-report-fiscal-second-quarter-2026-financial-results",
+          "date": "2026-07-08"
+        },
+        {
           "titleEn": "AMD Commits up to £2 Billion to Accelerate AI Innovation and Research in the United Kingdom",
           "titleZh": "AMD Commits up to £2 Billion to Accelerate AI Innovation and Research in the United Kingdom",
           "url": "https://ir.amd.com/news-events/press-releases/detail/1288/amd-commits-up-to-2-billion-to-accelerate-ai-innovation-and-research-in-the-united-kingdom",
@@ -201,12 +207,6 @@
           "titleZh": "AMD Announces Production Ramp of Next-Generation AMD EPYC Processor “Venice” on TSMC 2nm Process Technology",
           "url": "https://ir.amd.com/news-events/press-releases/detail/1287/amd-announces-production-ramp-of-next-generation-amd-epyc-processor-venice-on-tsmc-2nm-process-technology",
           "date": "2026-05-21"
-        },
-        {
-          "titleEn": "AMD Announces More Than $10 Billion in Taiwan Ecosystem Investments to Accelerate AI Infrastructure",
-          "titleZh": "AMD Announces More Than $10 Billion in Taiwan Ecosystem Investments to Accelerate AI Infrastructure",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure",
-          "date": "2026-05-21"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "Samsung Electronics Announces Earnings Guidance for Second Quarter 2026",
-          "titleZh": "Samsung Electronics Announces Earnings Guidance for Second Quarter 2026",
-          "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-second-quarter-2026",
-          "date": "2026-07-07"
+          "titleEn": "Samsung Launches New Bespoke AI Washer and Dryer Lineup With AI-Enhanced Fabric Care and Seamless Connectivity",
+          "titleZh": "Samsung Launches New Bespoke AI Washer and Dryer Lineup With AI-Enhanced Fabric Care and Seamless Connectivity",
+          "url": "https://news.samsung.com/global/samsung-launches-new-bespoke-ai-washer-and-dryer-lineup-with-ai-enhanced-fabric-care-and-seamless-connectivity",
+          "date": "2026-07-14"
         },
         {
-          "titleEn": "[Interview] Art Made for the Senses: Karim Noureldin x Samsung Art Store",
-          "titleZh": "[Interview] Art Made for the Senses: Karim Noureldin x Samsung Art Store",
-          "url": "https://news.samsung.com/global/interview-art-made-for-the-senses-karim-noureldin-x-samsung-art-store",
-          "date": "2026-07-03"
+          "titleEn": "Samsung Wins Two Red Dot Award: Design Concept ‘Best of the Best’ Awards",
+          "titleZh": "Samsung Wins Two Red Dot Award: Design Concept ‘Best of the Best’ Awards",
+          "url": "https://news.samsung.com/global/samsung-wins-two-red-dot-award-design-concept-best-of-the-best-awards",
+          "date": "2026-07-14"
         },
         {
-          "titleEn": "Samsung and KDDI Successfully Complete AI-Powered Network Optimization Trial on Commercial 5G Standalone Network in Japan",
-          "titleZh": "Samsung and KDDI Successfully Complete AI-Powered Network Optimization Trial on Commercial 5G Standalone Network in Japan",
-          "url": "https://news.samsung.com/global/samsung-and-kddi-successfully-complete-ai-powered-network-optimization-trial-on-commercial-5g-standalone-network-in-japan",
-          "date": "2026-06-30"
+          "titleEn": "Coming Soon: A New AI-Powered Health Companion on Your Wrist",
+          "titleZh": "Coming Soon: A New AI-Powered Health Companion on Your Wrist",
+          "url": "https://news.samsung.com/global/coming-soon-a-new-ai-powered-health-companion-on-your-wrist",
+          "date": "2026-07-14"
         }
       ]
     },
@@ -266,6 +266,12 @@
       "labelZh": "英特尔",
       "items": [
         {
+          "titleEn": "Intel Invests €5 Billion to Expand Manufacturing in Europe",
+          "titleZh": "Intel Invests €5 Billion to Expand Manufacturing in Europe",
+          "url": "https://newsroom.intel.com/intel-foundry/intel-invests-5-billion-euro-to-expand-manufacturing-in-europe",
+          "date": "2026-07-13"
+        },
+        {
           "titleEn": "Intel to Report Second-Quarter 2026 Financial Results",
           "titleZh": "Intel to Report Second-Quarter 2026 Financial Results",
           "url": "https://newsroom.intel.com/corporate/intel-to-report-second-quarter-2026-financial-results",
@@ -276,12 +282,6 @@
           "titleZh": "Three ways Intel and MSI co-engineered the world’s first Arc G3 handheld",
           "url": "https://newsroom.intel.com/client-computing/three-ways-intel-msi-co-engineered-worlds-first-arc-g3-handheld",
           "date": "2026-06-30"
-        },
-        {
-          "titleEn": "America 250: At a Pivotal Moment for the Nation, Intel is Advancing U.S. Innovation, AI, and Manufacturing",
-          "titleZh": "America 250: At a Pivotal Moment for the Nation, Intel is Advancing U.S. Innovation, AI, and Manufacturing",
-          "url": "https://newsroom.intel.com/corporate/america-250-intel-is-advancing-us-innovation",
-          "date": "2026-06-29"
         }
       ]
     },
@@ -316,6 +316,12 @@
       "labelZh": "ARM",
       "items": [
         {
+          "titleEn": "Announcing the winners of the WILDLABS Awards 2026",
+          "titleZh": "Announcing the winners of the WILDLABS Awards 2026",
+          "url": "https://newsroom.arm.com/blog/announcing-the-winners-of-the-wildlabs-awards-2026",
+          "date": "2026-07-07"
+        },
+        {
           "titleEn": "Top Arm-based innovations advancing AI, cloud, edge and mobile computing in June 2026",
           "titleZh": "Top Arm-based innovations advancing AI, cloud, edge and mobile computing in June 2026",
           "url": "https://newsroom.arm.com/blog/top-arm-based-innovations-in-june-2026",
@@ -326,12 +332,6 @@
           "titleZh": "From host node to heterogeneous rack: Rethinking the AI CPU",
           "url": "https://newsroom.arm.com/blog/agentic-ai-rack-scale-infrastructure",
           "date": "2026-06-25"
-        },
-        {
-          "titleEn": "Supermicro and Arm advance compute for the agentic AI era",
-          "titleZh": "Supermicro and Arm advance compute for the agentic AI era",
-          "url": "https://newsroom.arm.com/blog/arm-agi-cpu-supermicro-agentic-ai",
-          "date": "2026-06-10"
         }
       ]
     },
