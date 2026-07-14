@@ -43,6 +43,11 @@ import { injectPlaystationStudiosBungieUpdateSnapshot } from "./playstation-stud
 import { injectIgnNewGames2026Snapshot } from "./ign-new-games-2026-lib.mjs";
 import { injectIos266Beta2MacworldSnapshot } from "./ios-266-beta-2-macworld-lib.mjs";
 import { injectYoutubeFifaCreatorCup2026Snapshot } from "./youtube-fifa-creator-cup-2026-lib.mjs";
+import {
+  INDEXABLE_ROBOTS,
+  NOINDEX_ROBOTS,
+  isArchiveArticleSlug,
+} from "./seo-index-policy.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -128,33 +133,33 @@ const INDEX_START = "      <!-- INDEX_ORIGINALS_AUTO_START -->";
 const INDEX_END = "      <!-- INDEX_ORIGINALS_AUTO_END -->";
 
 const PRIMARY_CONTENT_LEAD = {
-  en: '<strong>Primary content</strong> on this site is {n} editorial demos with honest production notes—not the AI link lists below. <a href="articles/index.html">Full article index</a> (newest first).',
-  zh: "本站<strong>主内容</strong>是{n}篇原创 Demo 手记，而非下方 AI 外链汇总。<a href=\"articles/index.html\">全部文章索引</a>（新→旧）。",
-  ja: "当サイトの<strong>主コンテンツ</strong>は{n}本の編集デモと制作メモです（下のAIリンク集ではありません）。<a href=\"articles/index.html\">記事一覧</a>（新しい順）。",
-  ko: "이 사이트의 <strong>주 콘텐츠</strong>는 {n}편의 편집 데모와 제작 메모이며, 아래 AI 링크 목록이 아닙니다. <a href=\"articles/index.html\">전체 글 목록</a>（최신순）.",
-  fr: "Le <strong>contenu principal</strong> du site, ce sont {n} démos éditoriales avec notes de production — pas les listes de liens IA ci-dessous. <a href=\"articles/index.html\">Index des articles</a> (plus récent d’abord).",
-  ru: "<strong>Основной контент</strong> сайта — {n} авторских демо с заметками о производстве, а не списки ссылок на ИИ ниже. <a href=\"articles/index.html\">Все статьи</a> (сначала новые).",
-  ar: "<strong>المحتوى الأساسي</strong> في الموقع هو {n} عرضًا تحريريًا مع ملاحظات إنتاج — وليس قوائم روابط الذكاء الاصطناعي أدناه. <a href=\"articles/index.html\">فهرس المقالات</a> (الأحدث أولاً).",
+  en: '<strong>Primary content</strong> on this site is {n} editorial demos with honest production notes—not the AI link lists below. Ranking tables live on Hub bookmarks only. <a href="articles/index.html">Full article index</a> (demos first).',
+  zh: "本站<strong>主内容</strong>是{n}篇原创 Demo 手记，而非下方 AI 外链汇总。榜单存档仅作 Hub 书签。<a href=\"articles/index.html\">全部文章索引</a>（原创优先）。",
+  ja: "当サイトの<strong>主コンテンツ</strong>は{n}本の編集デモと制作メモです（下のAIリンク集ではありません）。ランキング表は Hub 補助のみ。<a href=\"articles/index.html\">記事一覧</a>（デモ優先）。",
+  ko: "이 사이트의 <strong>주 콘텐츠</strong>는 {n}편의 편집 데모와 제작 메모이며, 아래 AI 링크 목록이 아닙니다. 랭킹표는 Hub 보조만. <a href=\"articles/index.html\">전체 글 목록</a>（데모 우선）.",
+  fr: "Le <strong>contenu principal</strong> du site, ce sont {n} démos éditoriales avec notes de production — pas les listes de liens IA ci-dessous. Les tableaux de classement restent des signets Hub. <a href=\"articles/index.html\">Index des articles</a> (démos d’abord).",
+  ru: "<strong>Основной контент</strong> сайта — {n} авторских демо с заметками о производстве, а не списки ссылок на ИИ ниже. Таблицы рейтингов — только закладки Hub. <a href=\"articles/index.html\">Все статьи</a> (сначала демо).",
+  ar: "<strong>المحتوى الأساسي</strong> في الموقع هو {n} عرضًا تحريريًا مع ملاحظات إنتاج — وليس قوائم روابط الذكاء الاصطناعي أدناه. جداول الترتيب إشارات Hub فقط. <a href=\"articles/index.html\">فهرس المقالات</a> (العروض أولاً).",
 };
 
 const PRIMARY_CONTENT_LEAD2 = {
-  en: 'Games, tech, briefs, and tool-guide pages are <strong>secondary bookmarks</strong> (marked <code>noindex</code> for search). Reviewers and visitors should start at <a href="about.html">About</a> or <a href="articles/index.html">articles</a>.',
-  zh: "游戏/科技 Hub、快讯与工具简介页仅为<strong>辅助书签</strong>（已对搜索引擎 <code>noindex</code>）。请从 <a href=\"about.html\">关于本站</a> 或 <a href=\"articles/index.html\">文章索引</a> 进入。",
-  ja: "ゲーム・テック Hub、briefs、ツールガイドは<strong>補助ブックマーク</strong>（検索向け <code>noindex</code>）。<a href=\"about.html\">About</a> または <a href=\"articles/index.html\">記事一覧</a> からどうぞ。",
-  ko: "게임·테크 Hub, briefs, 도구 가이드는 <strong>보조 북마크</strong>(<code>noindex</code>). <a href=\"about.html\">소개</a> 또는 <a href=\"articles/index.html\">글 목록</a>부터 보세요.",
-  fr: "Hubs jeux/tech, briefs et guides outils = <strong>signets secondaires</strong> (<code>noindex</code>). Commencez par <a href=\"about.html\">À propos</a> ou <a href=\"articles/index.html\">articles</a>.",
-  ru: "Игровые/tech hub, briefs и tool-guides — <strong>вспомогательные закладки</strong> (<code>noindex</code>). Начните с <a href=\"about.html\">О сайте</a> или <a href=\"articles/index.html\">статей</a>.",
-  ar: "صفحات الألعاب/التقنية والملخصات والأدلة = <strong>إشارات ثانوية</strong> (<code>noindex</code>). ابدأ من <a href=\"about.html\">حول</a> أو <a href=\"articles/index.html\">المقالات</a>.",
+  en: 'Hub pages, briefs, tool guides, and chart/ranking archives are <strong>secondary bookmarks</strong> (<code>noindex</code> for search). Reviewers should start at <a href="about.html">About</a> or <a href="articles/index.html">demo articles</a>.',
+  zh: "Hub、快讯、工具简介与<strong>榜单存档</strong>仅为辅助书签（搜索 <code>noindex</code>）。审核与访客请从 <a href=\"about.html\">关于本站</a> 或 <a href=\"articles/index.html\">Demo 文章</a> 进入。",
+  ja: "Hub・briefs・ツールガイド・ランキング保管は<strong>補助ブックマーク</strong>（<code>noindex</code>）。審査は <a href=\"about.html\">About</a> / <a href=\"articles/index.html\">デモ記事</a> から。",
+  ko: "Hub·briefs·도구 가이드·랭킹 아카이브는 <strong>보조 북마크</strong>(<code>noindex</code>). 심사는 <a href=\"about.html\">소개</a> / <a href=\"articles/index.html\">데모 글</a>부터.",
+  fr: "Hubs, briefs, guides et archives de classements = <strong>signets secondaires</strong> (<code>noindex</code>). Pour la revue : <a href=\"about.html\">À propos</a> ou <a href=\"articles/index.html\">démos</a>.",
+  ru: "Hub, briefs, tool-guides и архивы рейтингов — <strong>вспомогательные закладки</strong> (<code>noindex</code>). Для проверки: <a href=\"about.html\">О сайте</a> или <a href=\"articles/index.html\">демо</a>.",
+  ar: "Hub والملخصات والأدلة وأرشيف الترتيب = <strong>إشارات ثانوية</strong> (<code>noindex</code>). للمراجعة: <a href=\"about.html\">حول</a> أو <a href=\"articles/index.html\">العروض</a>.",
 };
 
 const ARTICLES_INDEX_LEAD = {
-  en: "{n} personal demos on aogl.cn—WebGL, video, panoramas, and illustration pipelines—with production notes in first-screen HTML. Sorted newest first.",
-  zh: "aogl.cn 上{n}篇个人 Demo：WebGL、视频、全景与插画流程，首屏 HTML 含制作手记。按日期新→旧排列。",
-  ja: "aogl.cn の個人デモ{n}本（WebGL・動画・パノラマ・イラスト）と制作メモ。新しい順。<a href=\"/guides/index.html\">ツールガイド一覧</a>。",
-  ko: "aogl.cn의 개인 데모 {n}편(WebGL·영상·파노라마·일러스트)과 제작 메모. 최신순. <a href=\"/guides/index.html\">도구 가이드</a>.",
-  fr: "{n} démos personnelles sur aogl.cn — WebGL, vidéo, panoramas, illustration — avec notes de production en HTML. Plus récent d’abord. <a href=\"/guides/index.html\">Index des guides</a>.",
-  ru: "{n} личных демо на aogl.cn — WebGL, видео, панорамы, иллюстрация — с заметками в HTML. Сначала новые. <a href=\"/guides/index.html\">Гайды</a>.",
-  ar: "{n} عرضًا شخصيًا على aogl.cn — WebGL وفيديو وبانوراما ورسوم — مع ملاحظات إنتاج في HTML. الأحدث أولاً. <a href=\"/guides/index.html\">فهرس الأدلة</a>.",
+  en: "{n} personal demos on aogl.cn—WebGL, video, panoramas, and illustration pipelines—with production notes in first-screen HTML. Chart/ranking archives are hub bookmarks only (noindex).",
+  zh: "aogl.cn 上{n}篇个人 Demo：WebGL、视频、全景与插画流程，首屏 HTML 含制作手记。榜单存档仅作 Hub 书签（noindex），不列入本索引主列表。",
+  ja: "aogl.cn の個人デモ{n}本（WebGL・動画・パノラマ・イラスト）と制作メモ。ランキング保管は Hub 補助のみ（noindex）。",
+  ko: "aogl.cn의 개인 데모 {n}편(WebGL·영상·파노라마·일러스트)과 제작 메모. 랭킹 아카이브는 Hub 보조만(noindex).",
+  fr: "{n} démos personnelles sur aogl.cn — WebGL, vidéo, panoramas, illustration — avec notes de production. Les archives de classement restent des signets Hub (noindex).",
+  ru: "{n} личных демо на aogl.cn — WebGL, видео, панорамы, иллюстрация — с заметками в HTML. Архивы рейтингов — только закладки Hub (noindex).",
+  ar: "{n} عرضًا شخصيًا على aogl.cn — WebGL وفيديو وبانوراما ورسوم — مع ملاحظات إنتاج. أرشيف الترتيب إشارات Hub فقط (noindex).",
 };
 
 function fillArticleCount(str, count) {
@@ -182,13 +187,13 @@ const ARTICLES_INDEX_BACK = {
 };
 
 const ARTICLES_INDEX_LIST_TITLE = {
-  en: "All articles",
-  zh: "全部文章",
-  ja: "すべての記事",
-  ko: "전체 글",
-  fr: "Tous les articles",
-  ru: "Все статьи",
-  ar: "كل المقالات",
+  en: "Primary demos & notes",
+  zh: "主内容 · Demo 与手记",
+  ja: "主コンテンツ · デモとメモ",
+  ko: "주 콘텐츠 · 데모와 메모",
+  fr: "Démos et notes principales",
+  ru: "Основные демо и заметки",
+  ar: "العروض والملاحظات الأساسية",
 };
 
 function suffixForLang(lang) {
@@ -294,14 +299,30 @@ function isDefaultHero(article) {
   return !h || h === "og-default.png";
 }
 
-/** Newest first; same day → custom hero before generic; then slug for stable order. */
+/** Newest primary demos first; archive/ranking bookmarks sorted after them. */
 function compareArticlesForIndex(a, b) {
+  const aArch = isArchiveArticleSlug(a.slug) ? 1 : 0;
+  const bArch = isArchiveArticleSlug(b.slug) ? 1 : 0;
+  if (aArch !== bArch) return aArch - bArch;
   const byDate = String(b.datePublished || "").localeCompare(String(a.datePublished || ""));
   if (byDate !== 0) return byDate;
   const aGeneric = isDefaultHero(a) ? 1 : 0;
   const bGeneric = isDefaultHero(b) ? 1 : 0;
   if (aGeneric !== bGeneric) return aGeneric - bGeneric;
   return String(a.slug).localeCompare(String(b.slug));
+}
+
+function isPrimaryArticle(article) {
+  return !isArchiveArticleSlug(article?.slug);
+}
+
+function articleRobotsContent(article) {
+  return isArchiveArticleSlug(article?.slug) ? NOINDEX_ROBOTS : INDEXABLE_ROBOTS;
+}
+
+function articleAdsenseScriptTag(article, prefix = "/") {
+  if (isArchiveArticleSlug(article?.slug)) return "";
+  return `  <script src="${prefix}js/adsense.js"></script>\n`;
 }
 
 function buildJsonLd(article, titleEn, descEn) {
@@ -472,7 +493,7 @@ function buildArticlePageHub(article) {
   <meta name="description" content="${escAttr(descEn)}">
   <title>${escAttr(titleEn)} — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/en/articles/${slug}.html">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="${articleRobotsContent(article)}">
   <meta name="author" content="aogl.cn">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://aogl.cn/en/articles/${slug}.html">
@@ -488,8 +509,7 @@ function buildArticlePageHub(article) {
   <link rel="stylesheet" href="${P}css/hub.css">
   <link rel="stylesheet" href="${P}css/article-hub.css">
   ${GTAG_SCRIPT}
-  <script src="${P}js/adsense.js"></script>
-  ${buildJsonLdHub(article, titleEn, subtitleEn, descEn, titleZh)}
+${articleAdsenseScriptTag(article, P)}  ${buildJsonLdHub(article, titleEn, subtitleEn, descEn, titleZh)}
 </head>`;
 
   const articleBlocks = LANGS.map((lang) => {
@@ -559,7 +579,7 @@ function buildArticlePageEditorial(article) {
   <meta name="description" content="${escAttr(descEn)}">
   <title>${escAttr(titleEn)} — aogl.cn</title>
   <link rel="canonical" href="https://aogl.cn/en/articles/${slug}.html">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="${articleRobotsContent(article)}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://aogl.cn/en/articles/${slug}.html">
   <meta property="og:title" content="${escAttr(titleEn)} — aogl.cn">
@@ -693,7 +713,8 @@ ${items}
 }
 
 function buildIndexBlock(articles) {
-  const slice = articles;
+  const primary = articles.filter(isPrimaryArticle);
+  const slice = primary;
   if (slice.length === 0) {
     return `${INDEX_START}
       <section id="originals" class="site-originals" aria-labelledby="originals-title">
@@ -721,7 +742,7 @@ ${INDEX_END}`;
   }).join("\n");
 
   const primaryLeads = LANGS.map(
-    (l) => `        <p class="reading-intro site-primary-lead lang-${l}">${fillArticleCount(PRIMARY_CONTENT_LEAD[l], articles.length)}</p>`,
+    (l) => `        <p class="reading-intro site-primary-lead lang-${l}">${fillArticleCount(PRIMARY_CONTENT_LEAD[l], primary.length)}</p>`,
   ).join("\n");
   const primaryLeads2 = LANGS.map(
     (l) => `        <p class="reading-intro site-primary-lead site-primary-lead--secondary lang-${l}">${PRIMARY_CONTENT_LEAD2[l]}</p>`,
@@ -789,7 +810,8 @@ function buildArticlesIndexListItems(articles) {
 
 function buildArticlesIndexPage(articles) {
   const P = "/";
-  const count = articles.length;
+  const primary = articles.filter(isPrimaryArticle);
+  const count = primary.length;
   const dataAttrs = LANGS.map((lang) => {
     const title = ARTICLES_INDEX_H1[lang] || ARTICLES_INDEX_H1.en;
     const desc = fillArticleCount(ARTICLES_INDEX_LEAD[lang] || ARTICLES_INDEX_LEAD.en, count).replace(
@@ -830,7 +852,7 @@ ${JSON.stringify({
   })}
 </script>`;
 
-  const listItems = buildArticlesIndexListItems(articles);
+  const listItems = buildArticlesIndexListItems(primary);
 
   return `<!DOCTYPE html><html lang="en" ${dataAttrs}><head>
   <meta charset="utf-8">
@@ -883,7 +905,7 @@ ${h1Block}
 ${leadBlock}
     </article>
     <section class="articles-index-section" aria-labelledby="articles-index-list-title">
-      <h2 id="articles-index-list-title" class="visually-hidden">Article list</h2>
+      <h2 id="articles-index-list-title" class="visually-hidden">Primary article list</h2>
 ${listTitle}
       <ol class="articles-index-list">
 ${listItems}
@@ -912,11 +934,13 @@ function main() {
   index = index.replace(re, buildIndexBlock(articles));
   index = reorderIndexPutOriginalsFirst(index);
   fs.writeFileSync(INDEX_PATH, index, "utf8");
-  console.log("Updated INDEX_ORIGINALS in _multilang/index.html (" + articles.length + " article(s))");
+  console.log("Updated INDEX_ORIGINALS in _multilang/index.html (" + articles.filter(isPrimaryArticle).length + " primary / " + articles.length + " total)");
 
   const indexPage = buildArticlesIndexPage(articles);
   fs.writeFileSync(path.join(OUT_DIR, "index.html"), indexPage, "utf8");
-  console.log("Wrote _multilang/articles/index.html (" + articles.length + " entries)");
+  console.log(
+    "Wrote _multilang/articles/index.html (" + articles.filter(isPrimaryArticle).length + " primary listed)",
+  );
 }
 
 main();

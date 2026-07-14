@@ -28,13 +28,17 @@
     (typeof window !== "undefined" && window.AOGL_DISABLE_ADSENSE === true) ||
     (typeof localStorage !== "undefined" && localStorage.getItem("aogl-disable-ads") === "1");
 
-  /** AdSense review: load publisher script only on article / about / changelog URLs. */
+  /** AdSense review: load publisher script only on indexable article / about / changelog URLs. */
   function isContentPrimaryPage() {
     if (typeof location === "undefined") return false;
     var p = String(location.pathname || "").toLowerCase();
-    if (/\/articles\//.test(p)) return true;
     if (/\/about\.html$/.test(p) || /\/changelog\.html$/.test(p)) return true;
-    return false;
+    if (!/\/articles\//.test(p)) return false;
+    /* Ranking/chart archives ship with meta robots=noindex — do not request ads there. */
+    var robots = document.querySelector('meta[name="robots"]');
+    var robotsContent = robots && robots.getAttribute("content");
+    if (robotsContent && /noindex/i.test(robotsContent)) return false;
+    return true;
   }
 
   function loadPublisherScript() {
