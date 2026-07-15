@@ -1,0 +1,116 @@
+<p>这是 aogl.cn 上的一篇<strong>个人原创开发手记</strong>，素材全部来自 <code>original/wordpet-app/</code>（2026-07-15 归档）。<strong>WordPet 是本人开发的 App</strong>（页脚署名 © 2026 kolang），入口：<a href="https://wordpet.aogl.cn/" target="_blank" rel="noopener noreferrer">https://wordpet.aogl.cn/</a>——把<strong>教材同步背单词</strong>与<strong>宠物养成</strong>绑在同一套习惯回路里的移动端 App（Web）。口号写得很直白：<strong>每日背单词，喂养你的石猿</strong>。本文不是转载软文，而是作者按自己产品的真实截图拆解：注册领养、词书选择、认识/不认识闪卡、宠物对话语音、SSR 蛋期出战与宠物库稀有度，方便检索「教材同步英语单词 App」「背单词养宠物」等长尾词。</p>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/og-share.png" width="1200" height="675" loading="lazy" decoding="async" alt="WordPet 品牌图 — 石猿吉祥物与 A-Z 紫金词书，紫底 WordPet 字标">
+  <figcaption><code>og-share.png</code> — 品牌 / Open Graph 源图：石猿 + A–Z 词书。</figcaption>
+</figure>
+
+<h2>文件夹里有什么</h2>
+<ul>
+  <li><code>og-share.png</code> — 品牌视觉：石质纹理石猿、紫金 A–Z 硬皮书、黄星点缀，用作题图。</li>
+  <li><code>login.png</code> — 落地页：注册 → 领养 → 打卡 → 经验 → 进化五步回路。</li>
+  <li><code>textbook.png</code> — 「词书学习」：人教 PEP / 外研 / 沪教教材对齐与主词书。</li>
+  <li><code>learn vocabulary.png</code> — 「今日单词」闪卡：例词 pilot 与认识 / 不认识。</li>
+  <li><code>pet.png</code> / <code>Pet Dialogue.png</code> — 哪吒灵火蛋期出战与宠物对话（按住说话）。</li>
+  <li><code>Pet Collection.png</code> — 宠物库：白蛇、麒麟、石猿、单词猫等稀有度网格。</li>
+</ul>
+<p>截图均在移动浏览器中打开 App 地址 <a href="https://wordpet.aogl.cn/" target="_blank" rel="noopener noreferrer">https://wordpet.aogl.cn/</a> 拍摄，页脚可见 <strong>© 2026 kolang</strong>。对 SEO 而言，同时提供<strong>产品语义文字</strong> + <strong>带 alt 的界面截图</strong>，比只贴下载链接更容易让搜索引擎理解主题。</p>
+
+<h2>产品定位：习惯回路，而不是再堆一套单词表</h2>
+<p>市面上不缺「认识 / 不认识」闪卡。WordPet 的差异在于把学习结果喂进<strong>可见的养成反馈</strong>：背词 → 获得经验 → 宠物进化 / 换装出战。登录页把路径压成五步：</p>
+<ol>
+  <li><strong>注册登录</strong> — 建立可续期的账号，而不是一次性访客状态。</li>
+  <li><strong>领养宠物</strong> — 情感锚点（石猿、哪吒等）先于长列表词书。</li>
+  <li><strong>每日打卡</strong> — 用日期节律把词汇量变成习惯，而不是一次背完三百词的突击。</li>
+  <li><strong>获得经验</strong> — 把「认识」反馈量化成 XP，对接宠物等级与战力。</li>
+  <li><strong>进化成长</strong> — 灵火蛋期、金阶、星级等视觉层级，让进步可感知。</li>
+</ol>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/login.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 登录页 — 每日背单词喂养石猿口号与五步成长路径">
+  <figcaption><code>login.png</code> — 落地注册页与五步成长路径。</figcaption>
+</figure>
+
+<p>从用户心理上说，这是<strong>外在诱饵（萌宠）</strong>服务<strong>内在目标（教材词汇）</strong>：家长关心同步词书，孩子关心出战与对话。产品若只做其一，要么变成枯燥词表，要么变成与学习脱钩的扭蛋。WordPet 把两者绑在同一底栏：首页 / 学习 / 宠物 / 我的。</p>
+
+<h2>词书学习：教材对齐比「通用词库」更重要</h2>
+<p>「词书学习」页顶部钉住主词书示例：<strong>沪教版 · 五年级上册</strong>。分类标签含<strong>教材同步</strong>（默认）、通用年级、其它；教材版本横向滚动可见人教 PEP（2026 秋）、外研版 NEW、沪教版 NEW；学段可在小学 / 初中间切换。列表卡片展示单元数、进度条（如 13%、4%）与「设为主词书（用于每日打卡）」按钮。</p>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/textbook.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 词书学习 — 人教PEP与沪教版教材对齐进度条">
+  <figcaption><code>textbook.png</code> — 教材同步词书与主词书切换。</figcaption>
+</figure>
+
+<p>对小学英语而言，「进度」若不以课本单元为轴，打卡就会和课堂考试错位。我刻意在正文重复<strong>人教 PEP、沪教版、外研版、五年级上册、三年级上册</strong>等实体名，方便家长用教材名称检索。把某一册设为主词书后，「今日单词」来源条会显示同一词源（见下），保证打卡队列与主词书一致。</p>
+
+<h2>今日单词：最小阻力闪卡</h2>
+<p>「今日单词」界面示例中，进度为 <strong>1 / 10</strong>，词源为沪教版五年级上册。中心卡片展示例词 <strong>pilot</strong>、<code>/ˈpaɪlət/</code>、释义「n. 飞行员」与例句 <em>The pilot flies the plane.</em>，旁有发音按钮。底部双按钮为<strong>不认识 ✕</strong> / <strong>认识 ✓</strong>——经典间隔复习入口，刻意做得极大，适配拇指区。</p>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/learn%20vocabulary.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 今日单词闪卡 — pilot 音标释义与认识不认识按钮">
+  <figcaption><code>learn vocabulary.png</code> — 今日单词闪卡与教材词源条。</figcaption>
+</figure>
+
+<p>设计取舍上，我偏好<strong>当天量小、反馈清晰</strong>（10 词量级），而不是一次 100 词的劝退队列。经验值应绑定「认识」与纠错后再认识，而不是单纯翻页；否则宠物 XP 会与真实记忆脱节。反馈入口「意见反馈」放在闪卡页底部，方便学生报错音标或例句。</p>
+
+<h2>我的宠物：哪吒灵火蛋与出战</h2>
+<p>「我的宠物」顶部轮播可见哪吒、石猿、墨韵龙等。示例中<strong>哪吒</strong>为出战 SSR：灵火蛋期、Lv.4、金-1、战力 95、经验 660/1000，文案「灵火裂蛋，炽热气息涌动」。卵壳裂纹与火焰粒子把「还在养成」写成画面，而不是一张已定型立绘——这对「进化可期待」至关重要。</p>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/pet.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 我的宠物 — 哪吒SSR灵火蛋期等级战力与经验条">
+  <figcaption><code>pet.png</code> — 哪吒出战详情与顶部宠物轮播。</figcaption>
+</figure>
+
+<p>宠物命名混合<strong>神话 IP 感</strong>（哪吒、石猿、墨韵龙）与<strong>学习语义</strong>（见宠物库中的单词猫、知识犬），让收藏既好玩又可记。战力与等级是给孩子看的「分数板」；真实学习仍应回看词书进度条，避免只追求扭蛋。</p>
+
+<h2>宠物对话：口语练习的轻入口</h2>
+<p>「宠物对话」把出战宠放在中间，哪吒卵上方气泡出现中英混合提示（例：Apple is a sweet name! 并提到敖丙与明日背单词）。底部为<strong>按住说话，松开发送</strong>的麦克风主按钮，旁有键盘与扬声器等辅助。这是把<strong>语音输入</strong>嵌进养成场景，而不是另开一个冷冰冰的口语考场页。</p>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/Pet%20Dialogue.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 宠物对话 — 哪吒灵火蛋气泡与按住说话麦克风">
+  <figcaption><code>Pet Dialogue.png</code> — 宠物对话与语音按住说话。</figcaption>
+</figure>
+
+<p>实现上需注意：弱网、麦克风权限拒绝、儿童隐私与内容审核。产品文案宜保持短、鼓励、可英中混排；长作文题不适合塞进气泡。对 SEO，本文强调「宠物对话」「按住说话」等界面词，覆盖语音学英语相关检索。</p>
+
+<h2>宠物库：稀有度与「去召唤 / 设为出战」</h2>
+<p>「宠物库」网格展示白蛇、麒麟、白泽、玉兔、朏朏、石猿、单词猫、知识犬、老虎等，稀有度标签含 SSR / SR / S / A。未拥有显示「去召唤」，已拥有显示「设为出战」。石猿标为 SSR「已拥有」，与品牌吉祥物呼应。</p>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/Pet%20Collection.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 宠物库网格 — SSR石猿与单词猫知识犬等稀有度">
+  <figcaption><code>Pet Collection.png</code> — 宠物库稀有度与拥有状态。</figcaption>
+</figure>
+
+<p>收集系统的健康边界：召唤消耗不应压过每日背词；否则产品会滑向付费扭蛋叙事。WordPet 的主路径仍应是<strong>主词书打卡 → XP → 进化</strong>，召唤是支线皮肤。写作本稿时，我把「单词猫 / 知识犬」当作可检索的趣味关键词，提醒搜索引擎这是<strong>学习向养成</strong>，不是泛二次元抽卡站。</p>
+
+<h2>信息架构小结（四栏底导航）</h2>
+<ul>
+  <li><strong>首页</strong> — 今日任务与入口聚合。</li>
+  <li><strong>学习</strong> — 词书 + 今日单词（教材对齐的主战场）。</li>
+  <li><strong>宠物</strong> — 出战、对话、图鉴（情感与留存）。</li>
+  <li><strong>我的</strong> — 账号与设置。</li>
+</ul>
+<p>该结构对小学生拇指操作友好，也方便家长一眼找到「换词书」。与本站其它 Demo（角色转身、WebGL 地球）不同，本篇更贴近 <strong>EdTech / 小学英语 / 习惯养成</strong> 关键词簇，适合作为 AdSense 审核时的「真实产品原创说明」样本之一。</p>
+
+<h2>无障碍与 SEO 要点</h2>
+<ul>
+  <li>每张截图 <code>alt</code> 写明界面功能与可见实体（词书名、宠物名、按钮文案），避免「截图 1」。</li>
+  <li>正文重复规范名：WordPet、App 链接 <code>https://wordpet.aogl.cn/</code>、沪教版、人教 PEP、今日单词、宠物对话、石猿、哪吒。</li>
+  <li>外链官网用 <code>rel="noopener noreferrer"</code>；页面正文在首屏 HTML 内完整输出，不依赖 JS 注入。</li>
+  <li>文件名含空格的素材在链接中使用百分号编码（如 <code>learn%20vocabulary.png</code>）。</li>
+</ul>
+
+<h2>边界说明</h2>
+<p>本文档化界面为<strong>本人开发的 WordPet App</strong> 的产品演示与 UI 归档（© 2026 kolang），进度数字与宠物战力随账号变化；教材版本名称以界面当时展示为准。不构成对任何出版社的官方合作声明。儿童用户请在监护下使用麦克风与账号功能。</p>
+
+<h2 id="article-seo-keywords">检索与相关入口</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://wordpet.aogl.cn/" target="_blank" rel="noopener noreferrer">打开 WordPet App</a>
+  <a class="pill" href="https://www.google.com/search?q=WordPet+%E8%83%8C%E5%8D%95%E8%AF%8D+%E5%AE%A0%E7%89%A9" target="_blank" rel="noopener noreferrer">WordPet 背单词 宠物</a>
+  <a class="pill" href="https://www.google.com/search?q=%E6%B2%AA%E6%95%99%E7%89%88+%E8%8B%B1%E8%AF%AD+%E5%8D%95%E8%AF%8D+App" target="_blank" rel="noopener noreferrer">沪教版英语单词 App</a>
+  <a class="pill" href="https://www.google.com/search?q=textbook+synced+vocabulary+app+gamification" target="_blank" rel="noopener noreferrer">textbook vocabulary gamification</a>
+  <a class="pill" href="/articles/index.html">全部原创索引</a>
+  <a class="pill" href="/index.html#originals">首页本站原创</a>
+</div>
+
+<p class="article-note">素材路径：<code>original/wordpet-app/</code> · 本人开发的 App：<a href="https://wordpet.aogl.cn/" target="_blank" rel="noopener noreferrer">https://wordpet.aogl.cn/</a> · 发布日期 <strong>2026-07-15</strong>。</p>
