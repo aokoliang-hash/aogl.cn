@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-07-14",
+  "updated": "2026-07-21",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
-          "titleZh": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
-          "date": "2026-07-07"
+          "titleEn": "Connect more of your apps to Search",
+          "titleZh": "Connect more of your apps to Search",
+          "url": "https://blog.google/products-and-platforms/products/search/connected-apps/",
+          "date": "2026-07-16"
         },
         {
-          "titleEn": "The latest AI news we announced in June 2026",
-          "titleZh": "The latest AI news we announced in June 2026",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
-          "date": "2026-07-01"
+          "titleEn": "Create, edit and star in videos with two Google Vids updates",
+          "titleZh": "Create, edit and star in videos with two Google Vids updates",
+          "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
+          "date": "2026-07-16"
         },
         {
-          "titleEn": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
-          "titleZh": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
-          "url": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit/",
-          "date": "2026-07-01"
+          "titleEn": "Celebrating 25 years of visual search innovation",
+          "titleZh": "Celebrating 25 years of visual search innovation",
+          "url": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary/",
+          "date": "2026-07-14"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
+          "titleEn": "The 2026 Summer of Football: A Record-Breaking Moment Across Meta",
+          "titleZh": "The 2026 Summer of Football: A Record-Breaking Moment Across Meta",
+          "url": "https://about.fb.com/news/2026/07/the-2026-summer-of-football-a-record-breaking-moment-across-meta/",
+          "date": "2026-07-17"
+        },
+        {
+          "titleEn": "Alerting Parents if Teens Show Signs of Distress in Conversations With Meta AI",
+          "titleZh": "Alerting Parents if Teens Show Signs of Distress in Conversations With Meta AI",
+          "url": "https://about.fb.com/news/2026/07/keeping-parents-informed-teens-distress-conversations-meta-ai/",
+          "date": "2026-07-16"
+        },
+        {
           "titleEn": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
           "titleZh": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
           "url": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
           "date": "2026-07-13"
-        },
-        {
-          "titleEn": "Breaking Ground on Meta’s First Data Center in Canada",
-          "titleZh": "Breaking Ground on Meta’s First Data Center in Canada",
-          "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
-          "date": "2026-07-08"
-        },
-        {
-          "titleEn": "Meta’s AI Glasses: Your Questions Answered",
-          "titleZh": "Meta’s AI Glasses: Your Questions Answered",
-          "url": "https://about.fb.com/news/2026/07/metas-ai-glasses-your-questions-answered/",
-          "date": "2026-07-07"
         }
       ],
       "hotSearchPills": [
@@ -387,6 +387,12 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "Exploring Hierarchical Interest Representation For Meta Ads Deep Funnel Optimization",
+          "titleZh": "Exploring Hierarchical Interest Representation For Meta Ads Deep Funnel Optimization",
+          "url": "https://engineering.fb.com/2026/07/15/ai-research/exploring-hierarchical-interest-representation-for-meta-ads-deep-funnel-optimization/",
+          "date": "2026-07-15"
+        },
+        {
           "titleEn": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
           "titleZh": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
           "url": "https://engineering.fb.com/2026/07/13/ml-applications/modernizing-the-meta-ads-service-with-an-open-source-kernel-scheduler/",
@@ -397,12 +403,6 @@
           "titleZh": "Meta’s AI Storage Blueprint at Scale",
           "url": "https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/",
           "date": "2026-07-01"
-        },
-        {
-          "titleEn": "10 Years of Meta’s Commitment to Python",
-          "titleZh": "10 Years of Meta’s Commitment to Python",
-          "url": "https://engineering.fb.com/2026/06/30/open-source/10-years-of-metas-commitment-to-python/",
-          "date": "2026-06-30"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Tech News 2026 – Issue 29",
-          "titleZh": "Tech News 2026 – Issue 29",
-          "url": "https://diff.wikimedia.org/2026/07/13/tech-news-2026-issue-29/",
-          "date": "2026-07-13"
+          "titleEn": "Ethical Tech Tips for Events",
+          "titleZh": "Ethical Tech Tips for Events",
+          "url": "https://diff.wikimedia.org/2026/07/21/ethical-tech-tips-for-events/",
+          "date": "2026-07-21"
         },
         {
-          "titleEn": "Networking Doesn’t Happen by Accident: How to Design Events for Connection",
-          "titleZh": "Networking Doesn’t Happen by Accident: How to Design Events for Connection",
-          "url": "https://diff.wikimedia.org/2026/07/13/networking-doesnt-happen-by-accident-how-to-design-events-for-connection/",
-          "date": "2026-07-13"
+          "titleEn": "How the Wiki Afrodemics Mentorship Programme Strengthened My Wikimedia Journey",
+          "titleZh": "How the Wiki Afrodemics Mentorship Programme Strengthened My Wikimedia Journey",
+          "url": "https://diff.wikimedia.org/2026/07/21/how-the-wiki-afrodemics-mentorship-programme-strengthened-my-wikimedia-journey/",
+          "date": "2026-07-21"
         },
         {
-          "titleEn": "Malaysia Wikimedians held Wikimedia sharing session in Seoul!",
-          "titleZh": "Malaysia Wikimedians held Wikimedia sharing session in Seoul!",
-          "url": "https://diff.wikimedia.org/2026/07/13/malaysia-wikimedians-held-wikimedia-sharing-session-in-seoul/",
-          "date": "2026-07-13"
+          "titleEn": "Tech News 2026 – Issue 30",
+          "titleZh": "Tech News 2026 – Issue 30",
+          "url": "https://diff.wikimedia.org/2026/07/21/tech-news-2026-issue-30/",
+          "date": "2026-07-21"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "A first look at Mike Flanagan's ‘Carrie,’ a Stephen King adaptation coming to Prime Video this fall",
-          "titleZh": "A first look at Mike Flanagan's ‘Carrie,’ a Stephen King adaptation coming to Prime Video this fall",
-          "url": "https://www.aboutamazon.com/news/entertainment/carrie-stephen-king-mike-flanagan-prime-video?utm_source=rss",
-          "date": "2026-07-13"
+          "titleEn": "Amazon will share its Q2 2026 earnings on July 30",
+          "titleZh": "Amazon will share its Q2 2026 earnings on July 30",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report?utm_source=rss",
+          "date": "2026-07-16"
         },
         {
-          "titleEn": "3 easy ways Amazon customers can help bring safe water to millions with Get Blue",
-          "titleZh": "3 easy ways Amazon customers can help bring safe water to millions with Get Blue",
-          "url": "https://www.aboutamazon.com/news/sustainability/get-blue-easy-ways-donate-alexa-amazon-music?utm_source=rss",
-          "date": "2026-07-13"
+          "titleEn": "10 things to know about AWS’s new compute leader Dave Treadwell",
+          "titleZh": "10 things to know about AWS’s new compute leader Dave Treadwell",
+          "url": "https://www.aboutamazon.com/news/aws/aws-compute-leader-dave-treadwell-things-to-know?utm_source=rss",
+          "date": "2026-07-16"
         },
         {
-          "titleEn": "Amazon data center communities: Here’s what’s happening near data centers across the US",
-          "titleZh": "Amazon data center communities: Here’s what’s happening near data centers across the US",
-          "url": "https://www.aboutamazon.com/news/aws/amazon-data-centers-locations-news?utm_source=rss",
-          "date": "2026-07-09"
+          "titleEn": "Dave Treadwell to lead AWS Compute and ML Services as Dave Brown departs",
+          "titleZh": "Dave Treadwell to lead AWS Compute and ML Services as Dave Brown departs",
+          "url": "https://www.aboutamazon.com/news/company-news/aws-dave-treadwell-replaces-dave-brown-compute-ml-services?utm_source=rss",
+          "date": "2026-07-15"
         }
       ],
       "hotSearchPills": [

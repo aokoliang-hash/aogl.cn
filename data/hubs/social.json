@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-07-14",
+  "updated": "2026-07-21",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,51 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "YouTube clarifies policies around AI slop and upsetting videos",
+      "titleZh": "YouTube clarifies policies around AI slop and upsetting videos",
+      "url": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/",
+      "date": "2026-07-20",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Federal employees can download TikTok on their work phones again",
+      "titleZh": "Federal employees can download TikTok on their work phones again",
+      "url": "https://techcrunch.com/2026/07/18/federal-employees-can-download-tiktok-on-their-work-phones-again/",
+      "date": "2026-07-18",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "The 2026 Summer of Football: A Record-Breaking Moment Across Meta",
+      "titleZh": "The 2026 Summer of Football: A Record-Breaking Moment Across Meta",
+      "url": "https://about.fb.com/news/2026/07/the-2026-summer-of-football-a-record-breaking-moment-across-meta/",
+      "date": "2026-07-17",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/07/The-2026-Summer-of-Football_A-Record-Breaking-Moment-Across-Meta_Thumbnail-1.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/The-2026-Summer-of-Football_A-Record-Breaking-Moment-Across-Meta_Thumbnail-1.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Alerting Parents if Teens Show Signs of Distress in Conversations With Meta AI",
+      "titleZh": "Alerting Parents if Teens Show Signs of Distress in Conversations With Meta AI",
+      "url": "https://about.fb.com/news/2026/07/keeping-parents-informed-teens-distress-conversations-meta-ai/",
+      "date": "2026-07-16",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/07/Keeping-parents-informed-if-teens-show-signs-of-distress-in-conversations-with-Meta-AI_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Keeping-parents-informed-if-teens-show-signs-of-distress-in-conversations-with-Meta-AI_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Exploring Hierarchical Interest Representation For Meta Ads Deep Funnel Optimization",
+      "titleZh": "Exploring Hierarchical Interest Representation For Meta Ads Deep Funnel Optimization",
+      "url": "https://engineering.fb.com/2026/07/15/ai-research/exploring-hierarchical-interest-representation-for-meta-ads-deep-funnel-optimization/",
+      "date": "2026-07-15",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/07/image1.jpg",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/07/image1.jpg"
+    },
     {
       "titleEn": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
       "titleZh": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
@@ -176,51 +221,6 @@
       "source": "YouTube",
       "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drops_10.max-600x600.format-webp.webp",
       "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drops_10.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "Teens, Parents, and Educators Navigate Online Safety Through Real Conversations in Singapore",
-      "titleZh": "Teens, Parents, and Educators Navigate Online Safety Through Real Conversations in Singapore",
-      "url": "https://about.fb.com/news/2026/06/teens-parents-and-educators-navigate-online-safety-in-singapore/",
-      "date": "2026-06-25",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Metas-Digital-Dialogue-Event-in-Singapore.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Metas-Digital-Dialogue-Event-in-Singapore.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "New website names and shames companies that still don’t offer passkeys to users",
-      "titleZh": "New website names and shames companies that still don’t offer passkeys to users",
-      "url": "https://techcrunch.com/2026/06/24/new-website-names-and-shames-companies-that-still-dont-offer-passkeys-to-users/",
-      "date": "2026-06-24",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Facebook rolls out an AI companion app for creators",
-      "titleZh": "Facebook rolls out an AI companion app for creators",
-      "url": "https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/",
-      "date": "2026-06-24",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "How Meta Engineered Ultra-Narrow Batteries for AI Glasses",
-      "titleZh": "How Meta Engineered Ultra-Narrow Batteries for AI Glasses",
-      "url": "https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast/",
-      "date": "2026-06-23",
-      "source": "Meta Engineering",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
-      "titleZh": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
-      "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
-      "date": "2026-06-23",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partnering-with-EssilorLucottica-to-Launch-Meta-Glasses_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partnering-with-EssilorLucottica-to-Launch-Meta-Glasses_Thumbnail.gif?fit=890%2C501"
     }
   ],
   "moreTitleEn": "More social networks",
