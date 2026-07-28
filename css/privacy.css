@@ -84,6 +84,11 @@ body:not(.locale-ar) .lang-ar {
 .article-body p:first-child {
   margin-top: 0;
 }
+.article-body img,
+.article-body video {
+  max-width: 100%;
+  height: auto;
+}
 .contact-lead {
   font-size: 0.95rem;
   color: #444;

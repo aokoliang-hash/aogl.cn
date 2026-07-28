@@ -114,6 +114,15 @@
 }
 .article-shell__body {
   color: var(--text);
+  overflow-x: clip;
+  max-width: 100%;
+}
+/* Intrinsic HTML width/height must not blow past the column (article-figure used widely). */
+.article-shell__body img,
+.article-shell__body video,
+.article-shell__body iframe {
+  max-width: 100%;
+  height: auto;
 }
 .article-shell__body h2 {
   margin: 2rem 0 0.75rem;
@@ -136,19 +145,25 @@
   margin: 0.65rem 0;
   max-width: 48rem;
 }
-.article-shell__body ul {
+.article-shell__body ul,
+.article-shell__body ol {
   margin: 0.5rem 0 0.75rem;
   padding-left: 1.25rem;
   color: var(--muted);
+  max-width: 100%;
 }
-.article-shell__body ul li {
+.article-shell__body ul li,
+.article-shell__body ol li {
   margin: 0.35rem 0;
 }
-.article-shell__body ul strong {
+.article-shell__body ul strong,
+.article-shell__body ol strong {
   color: var(--text);
 }
-.article-embed {
+.article-embed,
+.article-figure {
   margin: 1.25rem 0 1.5rem;
+  max-width: 100%;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -162,21 +177,26 @@
   border: none;
   vertical-align: middle;
 }
-.article-embed video {
+.article-embed video,
+.article-figure > video {
   display: block;
   width: 100%;
+  max-width: 100%;
   max-height: min(70vh, 560px);
   height: auto;
   vertical-align: middle;
   background: #0a0f14;
 }
-.article-embed > img {
+.article-embed > img,
+.article-figure > img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
-.article-embed figcaption {
+.article-embed figcaption,
+.article-figure figcaption {
   padding: 0.5rem 0.85rem 0.65rem;
   font-size: 0.82rem;
   color: var(--muted);
@@ -213,7 +233,8 @@
 }
 
 /* Arabic article body: list marker spacing when dir=rtl */
-.article-shell__body[dir="rtl"] ul {
+.article-shell__body[dir="rtl"] ul,
+.article-shell__body[dir="rtl"] ol {
   padding-left: 0;
   padding-right: 1.25rem;
 }
