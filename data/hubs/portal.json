@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-07-21",
+  "updated": "2026-07-28",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,6 +116,12 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "3 Google updates from Galaxy Unpacked 2026",
+          "titleZh": "3 Google updates from Galaxy Unpacked 2026",
+          "url": "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026/",
+          "date": "2026-07-22"
+        },
+        {
           "titleEn": "Connect more of your apps to Search",
           "titleZh": "Connect more of your apps to Search",
           "url": "https://blog.google/products-and-platforms/products/search/connected-apps/",
@@ -126,12 +132,6 @@
           "titleZh": "Create, edit and star in videos with two Google Vids updates",
           "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
           "date": "2026-07-16"
-        },
-        {
-          "titleEn": "Celebrating 25 years of visual search innovation",
-          "titleZh": "Celebrating 25 years of visual search innovation",
-          "url": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary/",
-          "date": "2026-07-14"
         }
       ],
       "hotSearchPills": [
@@ -193,6 +193,12 @@
       "labelZh": "YouTube",
       "items": [
         {
+          "titleEn": "13 Google tips for a fun, productive summer off from college",
+          "titleZh": "13 Google tips for a fun, productive summer off from college",
+          "url": "https://blog.google/products-and-platforms/products/education/summer-productivity-tips-google-ai-tools/",
+          "date": "2026-07-21"
+        },
+        {
           "titleEn": "Elevate your campaign performance with June’s Demand Gen Drop.",
           "titleZh": "Elevate your campaign performance with June’s Demand Gen Drop.",
           "url": "https://blog.google/products/ads-commerce/demand-gen-drop-june-2026/",
@@ -203,12 +209,6 @@
           "titleZh": "Cannes Lions 2026: Strengthen creative campaigns with new tools from YouTube",
           "url": "https://blog.google/products/ads-commerce/youtube-insights-tools-cannes-lions-2026/",
           "date": "2026-06-23"
-        },
-        {
-          "titleEn": "We’re bringing Walmart Connect to Display & Video 360.",
-          "titleZh": "We’re bringing Walmart Connect to Display & Video 360.",
-          "url": "https://blog.google/products/marketingplatform/360/walmart-connect/",
-          "date": "2026-06-11"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "The 2026 Summer of Football: A Record-Breaking Moment Across Meta",
-          "titleZh": "The 2026 Summer of Football: A Record-Breaking Moment Across Meta",
-          "url": "https://about.fb.com/news/2026/07/the-2026-summer-of-football-a-record-breaking-moment-across-meta/",
-          "date": "2026-07-17"
+          "titleEn": "Announcing the AI Glasses Impact Grant Recipients: Helping People Work, Learn, and Live More Independently",
+          "titleZh": "Announcing the AI Glasses Impact Grant Recipients: Helping People Work, Learn, and Live More Independently",
+          "url": "https://about.fb.com/news/2026/07/ai-glasses-helping-people-work-learn-live-independently/",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "Alerting Parents if Teens Show Signs of Distress in Conversations With Meta AI",
-          "titleZh": "Alerting Parents if Teens Show Signs of Distress in Conversations With Meta AI",
-          "url": "https://about.fb.com/news/2026/07/keeping-parents-informed-teens-distress-conversations-meta-ai/",
-          "date": "2026-07-16"
+          "titleEn": "Meta AI Doesn’t Just Think, It Acts",
+          "titleZh": "Meta AI Doesn’t Just Think, It Acts",
+          "url": "https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/",
+          "date": "2026-07-24"
         },
         {
-          "titleEn": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
-          "titleZh": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
-          "url": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
-          "date": "2026-07-13"
+          "titleEn": "Introducing Facebook Verified",
+          "titleZh": "Introducing Facebook Verified",
+          "url": "https://about.fb.com/news/2026/07/introducing-facebook-verified/",
+          "date": "2026-07-24"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Ethical Tech Tips for Events",
-          "titleZh": "Ethical Tech Tips for Events",
-          "url": "https://diff.wikimedia.org/2026/07/21/ethical-tech-tips-for-events/",
-          "date": "2026-07-21"
+          "titleEn": "Tech News 2026 – Issue 31",
+          "titleZh": "Tech News 2026 – Issue 31",
+          "url": "https://diff.wikimedia.org/2026/07/27/tech-news-2026-issue-31/",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "How the Wiki Afrodemics Mentorship Programme Strengthened My Wikimedia Journey",
-          "titleZh": "How the Wiki Afrodemics Mentorship Programme Strengthened My Wikimedia Journey",
-          "url": "https://diff.wikimedia.org/2026/07/21/how-the-wiki-afrodemics-mentorship-programme-strengthened-my-wikimedia-journey/",
-          "date": "2026-07-21"
+          "titleEn": "Beyond the Numbers: How the Wiki Afrodemics Mentorship Project Built Confident African Wikimedians",
+          "titleZh": "Beyond the Numbers: How the Wiki Afrodemics Mentorship Project Built Confident African Wikimedians",
+          "url": "https://diff.wikimedia.org/2026/07/27/beyond-the-numbers-how-the-wiki-afrodemics-mentorship-project-built-confident-african-wikimedians/",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "Tech News 2026 – Issue 30",
-          "titleZh": "Tech News 2026 – Issue 30",
-          "url": "https://diff.wikimedia.org/2026/07/21/tech-news-2026-issue-30/",
-          "date": "2026-07-21"
+          "titleEn": "Wikimedia Foundation Statement on US unionization request",
+          "titleZh": "Wikimedia Foundation Statement on US unionization request",
+          "url": "https://wikimediafoundation.org/news/2026/07/27/statement-cwa-recognition-request/",
+          "date": "2026-07-27"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon will share its Q2 2026 earnings on July 30",
-          "titleZh": "Amazon will share its Q2 2026 earnings on July 30",
-          "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report?utm_source=rss",
-          "date": "2026-07-16"
+          "titleEn": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
+          "titleZh": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
+          "url": "https://www.aboutamazon.com/news/community/amazon-seattle-bellevue-puget-sound-news?utm_source=rss",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "10 things to know about AWS’s new compute leader Dave Treadwell",
-          "titleZh": "10 things to know about AWS’s new compute leader Dave Treadwell",
-          "url": "https://www.aboutamazon.com/news/aws/aws-compute-leader-dave-treadwell-things-to-know?utm_source=rss",
-          "date": "2026-07-16"
+          "titleEn": "How Amazon Leo plans to connect mobile devices from space",
+          "titleZh": "How Amazon Leo plans to connect mobile devices from space",
+          "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-direct-to-device-satellite-service-explained?utm_source=rss",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "Dave Treadwell to lead AWS Compute and ML Services as Dave Brown departs",
-          "titleZh": "Dave Treadwell to lead AWS Compute and ML Services as Dave Brown departs",
-          "url": "https://www.aboutamazon.com/news/company-news/aws-dave-treadwell-replaces-dave-brown-compute-ml-services?utm_source=rss",
-          "date": "2026-07-15"
+          "titleEn": "Watch the teaser trailer for 'Blade Runner 2099,' a new sci-fi series coming to Prime Video November 25",
+          "titleZh": "Watch the teaser trailer for 'Blade Runner 2099,' a new sci-fi series coming to Prime Video November 25",
+          "url": "https://www.aboutamazon.com/news/entertainment/blade-runner-2099-prime-video?utm_source=rss",
+          "date": "2026-07-24"
         }
       ],
       "hotSearchPills": [
@@ -934,6 +934,12 @@
       "labelZh": "WhatsApp",
       "items": [
         {
+          "titleEn": "New WhatsApp Features Keep Up With the Way You Actually Live",
+          "titleZh": "New WhatsApp Features Keep Up With the Way You Actually Live",
+          "url": "https://about.fb.com/news/2026/07/new-whatsapp-features-keep-up-with-the-way-you-actually-live/",
+          "date": "2026-07-22"
+        },
+        {
           "titleEn": "It’s Time to Reserve Your WhatsApp Username",
           "titleZh": "It’s Time to Reserve Your WhatsApp Username",
           "url": "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/",
@@ -944,12 +950,6 @@
           "titleZh": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
           "url": "https://about.fb.com/news/2026/06/instagram-for-tv-gets-bigger-with-new-ways-to-watch-together/",
           "date": "2026-06-22"
-        },
-        {
-          "titleEn": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
-          "titleZh": "Strengthening Teen Accounts with New Safety Updates on Instagram and Facebook",
-          "url": "https://about.fb.com/news/2026/06/strengthening-teen-accounts-with-new-safety-updates-on-instagram-and-facebook/",
-          "date": "2026-06-18"
         }
       ],
       "hotSearchPills": [

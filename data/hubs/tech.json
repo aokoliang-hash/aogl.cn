@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-07-21",
+  "updated": "2026-07-28",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "NVIDIA NVLink: The Scale-Up Network for AI Factories",
-          "titleZh": "NVIDIA NVLink: The Scale-Up Network for AI Factories",
-          "url": "https://developer.nvidia.com/blog/nvidia-nvlink-the-scale-up-network-for-ai-factories/",
-          "date": "2026-07-20"
+          "titleEn": "NVIDIA Ising Enables Fully Automated Quantum Computer Calibration with Enhanced In-Context Learning",
+          "titleZh": "NVIDIA Ising Enables Fully Automated Quantum Computer Calibration with Enhanced In-Context Learning",
+          "url": "https://developer.nvidia.com/blog/nvidia-ising-enables-fully-automated-quantum-computer-calibration-with-enhanced-in-context-learning/",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "At SIGGRAPH, NVIDIA Advances Graphics and Simulation With Agentic and Physical AI",
-          "titleZh": "At SIGGRAPH, NVIDIA Advances Graphics and Simulation With Agentic and Physical AI",
-          "url": "https://blogs.nvidia.com/blog/siggraph-news-2026/",
-          "date": "2026-07-20"
+          "titleEn": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security",
+          "titleZh": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security",
+          "url": "https://blogs.nvidia.com/blog/open-secure-ai-alliance/",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "Integrate NVIDIA Omniverse RTX Sensor Simulation Into Existing Apps",
-          "titleZh": "Integrate NVIDIA Omniverse RTX Sensor Simulation Into Existing Apps",
-          "url": "https://developer.nvidia.com/blog/integrate-nvidia-omniverse-rtx-sensor-simulation-into-existing-apps/",
-          "date": "2026-07-20"
+          "titleEn": "Six Agent Harness Capabilities for Higher Model Performance",
+          "titleZh": "Six Agent Harness Capabilities for Higher Model Performance",
+          "url": "https://developer.nvidia.com/blog/six-agent-harness-capabilities-for-higher-model-performance/",
+          "date": "2026-07-27"
         }
       ]
     },
@@ -191,22 +191,22 @@
       "labelZh": "AMD",
       "items": [
         {
-          "titleEn": "Microsoft to Deploy Next-Gen AMD Instinct and AMD EPYC Processors as the Companies Expand Their Long-Term Strategic Partnership",
-          "titleZh": "Microsoft to Deploy Next-Gen AMD Instinct and AMD EPYC Processors as the Companies Expand Their Long-Term Strategic Partnership",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1291/microsoft-to-deploy-next-gen-amd-instinct-and-amd-epyc-processors-as-the-companies-expand-their-long-term-strategic-partnership",
-          "date": "2026-07-20"
+          "titleEn": "AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era",
+          "titleZh": "AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era",
+          "date": "2026-07-23"
         },
         {
-          "titleEn": "AMD Appoints Alan Smith as Newest Corporate Fellow",
-          "titleZh": "AMD Appoints Alan Smith as Newest Corporate Fellow",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1290/amd-appoints-alan-smith-as-newest-corporate-fellow",
-          "date": "2026-07-16"
+          "titleEn": "AMD and Cerebras Announce Industry-Leading Ultra-Low-Latency and High Throughput AI Inference Solution",
+          "titleZh": "AMD and Cerebras Announce Industry-Leading Ultra-Low-Latency and High Throughput AI Inference Solution",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution",
+          "date": "2026-07-23"
         },
         {
-          "titleEn": "AMD to Report Fiscal Second Quarter 2026 Financial Results",
-          "titleZh": "AMD to Report Fiscal Second Quarter 2026 Financial Results",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1289/amd-to-report-fiscal-second-quarter-2026-financial-results",
-          "date": "2026-07-08"
+          "titleEn": "AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs",
+          "titleZh": "AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus",
+          "date": "2026-07-22"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "Introducing Samsung Galaxy Card",
-          "titleZh": "Introducing Samsung Galaxy Card",
-          "url": "https://news.samsung.com/global/introducing-samsung-galaxy-card",
-          "date": "2026-07-21"
+          "titleEn": "[Infographic] What’s Your Artistic Style? Discover Your Perfect Art Collection on Samsung Art Store",
+          "titleZh": "[Infographic] What’s Your Artistic Style? Discover Your Perfect Art Collection on Samsung Art Store",
+          "url": "https://news.samsung.com/global/infographic-whats-your-artistic-style-discover-your-perfect-art-collection-on-samsung-art-store",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "Connecting Everyday Life: How Samsung Account Brings It All Together",
-          "titleZh": "Connecting Everyday Life: How Samsung Account Brings It All Together",
-          "url": "https://news.samsung.com/global/connecting-everyday-life-how-samsung-account-brings-it-all-together",
-          "date": "2026-07-20"
+          "titleEn": "Samsung Electronics and Broadcom Expand Strategic Collaboration Across Memory and Foundry Technologies",
+          "titleZh": "Samsung Electronics and Broadcom Expand Strategic Collaboration Across Memory and Foundry Technologies",
+          "url": "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
+          "date": "2026-07-25"
         },
         {
-          "titleEn": "Samsung Announces Addition of Louvre Collection to Samsung Art Store",
-          "titleZh": "Samsung Announces Addition of Louvre Collection to Samsung Art Store",
-          "url": "https://news.samsung.com/global/samsung-announces-addition-of-louvre-collection-to-samsung-art-store",
-          "date": "2026-07-20"
+          "titleEn": "[Infographic] [Galaxy Unpacked July 2026] Highlights From Galaxy Unpacked",
+          "titleZh": "[Infographic] [Galaxy Unpacked July 2026] Highlights From Galaxy Unpacked",
+          "url": "https://news.samsung.com/global/infographic-galaxy-unpacked-july-2026-highlights-from-galaxy-unpacked",
+          "date": "2026-07-23"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "英特尔",
       "items": [
         {
-          "titleEn": "Intel-Powered Medical Exoskeleton Helps Patients Get Back on Their Feet",
-          "titleZh": "Intel-Powered Medical Exoskeleton Helps Patients Get Back on Their Feet",
-          "url": "https://newsroom.intel.com/client-computing/intel-powered-medical-exoskeleton-helps-patients-get-back-on-their-feet",
-          "date": "2026-07-17"
+          "titleEn": "Intel and Lens Technology Collaborate to Enable Advanced Semiconductor Packaging for the AI Era",
+          "titleZh": "Intel and Lens Technology Collaborate to Enable Advanced Semiconductor Packaging for the AI Era",
+          "url": "https://newsroom.intel.com/new-technologies/intel-and-lens-technology-collaborate-to-enable-advanced-semiconductor-packaging-for-the-ai-era",
+          "date": "2026-07-24"
         },
         {
-          "titleEn": "Intel and Google Cloud Announce Collaboration to Accelerate Intel’s AI-Enabled Enterprise Transformation",
-          "titleZh": "Intel and Google Cloud Announce Collaboration to Accelerate Intel’s AI-Enabled Enterprise Transformation",
-          "url": "https://newsroom.intel.com/artificial-intelligence/intel-google-cloud-announce-collaboration-to-accelerate-intel-ai-enabled-enterprise-transformation",
-          "date": "2026-07-16"
+          "titleEn": "Intel Reports Second-Quarter 2026 Financial Results",
+          "titleZh": "Intel Reports Second-Quarter 2026 Financial Results",
+          "url": "https://newsroom.intel.com/corporate/intel-reports-second-quarter-2026-financial-results",
+          "date": "2026-07-23"
         },
         {
-          "titleEn": "Intel Invests €5 Billion to Expand Manufacturing in Europe",
-          "titleZh": "Intel Invests €5 Billion to Expand Manufacturing in Europe",
-          "url": "https://newsroom.intel.com/intel-foundry/intel-invests-5-billion-euro-to-expand-manufacturing-in-europe",
-          "date": "2026-07-13"
+          "titleEn": "Intel and Fortinet Collaborate to Advance Cybersecurity Innovation and Strengthen Global Supply Chain Resilience",
+          "titleZh": "Intel and Fortinet Collaborate to Advance Cybersecurity Innovation and Strengthen Global Supply Chain Resilience",
+          "url": "https://newsroom.intel.com/manufacturing/intel-and-fortinet-collaborate-to-advance-cybersecurity-innovation-and-strengthen-global-supply-chain-resilience",
+          "date": "2026-07-21"
         }
       ]
     },
@@ -316,22 +316,22 @@
       "labelZh": "ARM",
       "items": [
         {
-          "titleEn": "Building the engine behind Arm’s silicon shift",
-          "titleZh": "Building the engine behind Arm’s silicon shift",
-          "url": "https://newsroom.arm.com/blog/inside-arms-transition-from-ip-to-silicon",
-          "date": "2026-07-16"
+          "titleEn": "From tokens to tasks: Why agentic AI changes the infrastructure conversation",
+          "titleZh": "From tokens to tasks: Why agentic AI changes the infrastructure conversation",
+          "url": "https://newsroom.arm.com/blog/how-agentic-ai-is-changing-the-infrastructure",
+          "date": "2026-07-23"
         },
         {
-          "titleEn": "Arm powers the world’s most advanced and energy-efficient supercomputers",
-          "titleZh": "Arm powers the world’s most advanced and energy-efficient supercomputers",
-          "url": "https://newsroom.arm.com/blog/arm-powers-energy-efficient-hpc-supercomputers",
-          "date": "2026-07-15"
+          "titleEn": "Celebrating 10 years of conservation and technology collaboration between WILDLABS and Arm",
+          "titleZh": "Celebrating 10 years of conservation and technology collaboration between WILDLABS and Arm",
+          "url": "https://newsroom.arm.com/blog/10-years-wildlabs-arm",
+          "date": "2026-07-23"
         },
         {
-          "titleEn": "AGIBOT shows how physical AI is moving to real-world deployments – and Arm is helping it scale",
-          "titleZh": "AGIBOT shows how physical AI is moving to real-world deployments – and Arm is helping it scale",
-          "url": "https://newsroom.arm.com/blog/agibot-physical-ai-robotics-arm",
-          "date": "2026-07-14"
+          "titleEn": "How the Arm AGI CPU supports the most demanding agentic AI workloads at scale",
+          "titleZh": "How the Arm AGI CPU supports the most demanding agentic AI workloads at scale",
+          "url": "https://newsroom.arm.com/blog/how-arm-agi-cpu-powers-ai-at-scale",
+          "date": "2026-07-22"
         }
       ]
     },

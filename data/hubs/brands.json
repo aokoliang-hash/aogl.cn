@@ -8,7 +8,7 @@
   "descZh": "参考 Interbrand「全球最佳品牌」价值榜常见前十，每牌三条官网新闻稿或博文外链。",
   "h1En": "Interbrand top 10 (global brand value)",
   "h1Zh": "全球品牌价值前十（Interbrand 口径）",
-  "updated": "2026-07-21",
+  "updated": "2026-07-28",
   "editorialHtmlEn": "<p>Ten names usually clustered at the top of Interbrand’s “Best Global Brands” value ranking; order tweaks when they republish the annual table.</p><p>Valuation moves with equity markets and product cycles. This page is a <strong>bookmark rail</strong> — not investment research and not a recommendation to buy, hold, or sell any security.</p><p>Last reviewed: <strong>2026-05-19</strong>. I do not rank brands by ad spend or sponsorship; links point to corporate homepages or newsrooms only.</p><p>Press PDFs and campaign microsites are not mirrored here — only the three outbound story links per row that I actually read.</p>",
   "editorialHtmlZh": "<p>十个名字大致对应 Interbrand《全球最佳品牌》年度价值榜里常见的前排；他们发新榜后再微调顺序。</p><p>品牌价值随市场与业务周期波动。本页只是<strong>外链书签条</strong>，不构成投资建议，亦不代表买入、持有或卖出任何证券。</p><p>最近核对：<strong>2026-05-19</strong>。不按广告或赞助排序；链接仅指向企业官网或新闻稿入口。</p><p>新闻稿 PDF 与 campaign 微站不在本站转载，每行三条外链是我自己会点进去看的稿件入口。</p>",
   "rankTitleEn": "Global top 10 (brand value)",
@@ -116,6 +116,12 @@
       "labelZh": "苹果",
       "items": [
         {
+          "titleEn": "Apple Maps to power navigation experience for Ford UEV Platform",
+          "titleZh": "Apple Maps to power navigation experience for Ford UEV Platform",
+          "url": "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
+          "date": "2026-07-23"
+        },
+        {
           "titleEn": "Major League Soccer returns to Apple TV tomorrow",
           "titleZh": "Major League Soccer returns to Apple TV tomorrow",
           "url": "https://www.apple.com/newsroom/2026/07/major-league-soccer-returns-to-apple-tv-tomorrow/",
@@ -126,12 +132,6 @@
           "titleZh": "Madden NFL 27 Arcade Edition brings gridiron action to Apple Arcade on August 6",
           "url": "https://www.apple.com/newsroom/2026/07/madden-nfl-27-arcade-edition-brings-gridiron-action-to-apple-arcade-on-august-6/",
           "date": "2026-07-14"
-        },
-        {
-          "titleEn": "Apple and Major League Baseball announce August “Friday Night Baseball” schedule",
-          "titleZh": "Apple and Major League Baseball announce August “Friday Night Baseball” schedule",
-          "url": "https://www.apple.com/newsroom/2026/07/apple-and-major-league-baseball-announce-august-friday-night-baseball-schedule/",
-          "date": "2026-07-09"
         }
       ]
     },
@@ -141,22 +141,22 @@
       "labelZh": "微软",
       "items": [
         {
+          "titleEn": "Rethinking security for the age of AI",
+          "titleZh": "Rethinking security for the age of AI",
+          "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+          "date": "2026-07-27"
+        },
+        {
+          "titleEn": "Powering America’s Genesis Mission: Microsoft’s commitment to scientific discovery",
+          "titleZh": "Powering America’s Genesis Mission: Microsoft’s commitment to scientific discovery",
+          "url": "https://blogs.microsoft.com/blog/2026/07/22/powering-americas-genesis-mission-microsofts-commitment-to-scientific-discovery/",
+          "date": "2026-07-22"
+        },
+        {
           "titleEn": "Microsoft expands Azure AI and HPC infrastructure with AMD",
           "titleZh": "Microsoft expands Azure AI and HPC infrastructure with AMD",
           "url": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
           "date": "2026-07-20"
-        },
-        {
-          "titleEn": "The latest in our company transformation",
-          "titleZh": "The latest in our company transformation",
-          "url": "https://blogs.microsoft.com/blog/2026/07/06/the-latest-in-our-company-transformation/",
-          "date": "2026-07-06"
-        },
-        {
-          "titleEn": "Microsoft Frontier Company: AI engineering that amplifies and protects your intelligence",
-          "titleZh": "Microsoft Frontier Company: AI engineering that amplifies and protects your intelligence",
-          "url": "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/",
-          "date": "2026-07-02"
         }
       ]
     },
@@ -166,22 +166,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon will share its Q2 2026 earnings on July 30",
-          "titleZh": "Amazon will share its Q2 2026 earnings on July 30",
-          "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report?utm_source=rss",
-          "date": "2026-07-16"
+          "titleEn": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
+          "titleZh": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
+          "url": "https://www.aboutamazon.com/news/community/amazon-seattle-bellevue-puget-sound-news?utm_source=rss",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "10 things to know about AWS’s new compute leader Dave Treadwell",
-          "titleZh": "10 things to know about AWS’s new compute leader Dave Treadwell",
-          "url": "https://www.aboutamazon.com/news/aws/aws-compute-leader-dave-treadwell-things-to-know?utm_source=rss",
-          "date": "2026-07-16"
+          "titleEn": "How Amazon Leo plans to connect mobile devices from space",
+          "titleZh": "How Amazon Leo plans to connect mobile devices from space",
+          "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-direct-to-device-satellite-service-explained?utm_source=rss",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "Dave Treadwell to lead AWS Compute and ML Services as Dave Brown departs",
-          "titleZh": "Dave Treadwell to lead AWS Compute and ML Services as Dave Brown departs",
-          "url": "https://www.aboutamazon.com/news/company-news/aws-dave-treadwell-replaces-dave-brown-compute-ml-services?utm_source=rss",
-          "date": "2026-07-15"
+          "titleEn": "Watch the teaser trailer for 'Blade Runner 2099,' a new sci-fi series coming to Prime Video November 25",
+          "titleZh": "Watch the teaser trailer for 'Blade Runner 2099,' a new sci-fi series coming to Prime Video November 25",
+          "url": "https://www.aboutamazon.com/news/entertainment/blade-runner-2099-prime-video?utm_source=rss",
+          "date": "2026-07-24"
         }
       ]
     },
@@ -190,6 +190,12 @@
       "labelEn": "Google",
       "labelZh": "谷歌",
       "items": [
+        {
+          "titleEn": "3 Google updates from Galaxy Unpacked 2026",
+          "titleZh": "3 Google updates from Galaxy Unpacked 2026",
+          "url": "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026/",
+          "date": "2026-07-22"
+        },
         {
           "titleEn": "Connect more of your apps to Search",
           "titleZh": "Connect more of your apps to Search",
@@ -201,12 +207,6 @@
           "titleZh": "Create, edit and star in videos with two Google Vids updates",
           "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
           "date": "2026-07-16"
-        },
-        {
-          "titleEn": "Celebrating 25 years of visual search innovation",
-          "titleZh": "Celebrating 25 years of visual search innovation",
-          "url": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary/",
-          "date": "2026-07-14"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星",
       "items": [
         {
-          "titleEn": "Introducing Samsung Galaxy Card",
-          "titleZh": "Introducing Samsung Galaxy Card",
-          "url": "https://news.samsung.com/global/introducing-samsung-galaxy-card",
-          "date": "2026-07-21"
+          "titleEn": "[Infographic] What’s Your Artistic Style? Discover Your Perfect Art Collection on Samsung Art Store",
+          "titleZh": "[Infographic] What’s Your Artistic Style? Discover Your Perfect Art Collection on Samsung Art Store",
+          "url": "https://news.samsung.com/global/infographic-whats-your-artistic-style-discover-your-perfect-art-collection-on-samsung-art-store",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "Connecting Everyday Life: How Samsung Account Brings It All Together",
-          "titleZh": "Connecting Everyday Life: How Samsung Account Brings It All Together",
-          "url": "https://news.samsung.com/global/connecting-everyday-life-how-samsung-account-brings-it-all-together",
-          "date": "2026-07-20"
+          "titleEn": "Samsung Electronics and Broadcom Expand Strategic Collaboration Across Memory and Foundry Technologies",
+          "titleZh": "Samsung Electronics and Broadcom Expand Strategic Collaboration Across Memory and Foundry Technologies",
+          "url": "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
+          "date": "2026-07-25"
         },
         {
-          "titleEn": "Samsung Announces Addition of Louvre Collection to Samsung Art Store",
-          "titleZh": "Samsung Announces Addition of Louvre Collection to Samsung Art Store",
-          "url": "https://news.samsung.com/global/samsung-announces-addition-of-louvre-collection-to-samsung-art-store",
-          "date": "2026-07-20"
+          "titleEn": "[Infographic] [Galaxy Unpacked July 2026] Highlights From Galaxy Unpacked",
+          "titleZh": "[Infographic] [Galaxy Unpacked July 2026] Highlights From Galaxy Unpacked",
+          "url": "https://news.samsung.com/global/infographic-galaxy-unpacked-july-2026-highlights-from-galaxy-unpacked",
+          "date": "2026-07-23"
         }
       ]
     },
@@ -341,22 +341,22 @@
       "labelZh": "迪士尼",
       "items": [
         {
-          "titleEn": "Inside the Disney | Champion NFL Collection: Where Sports Fandom Meets Storytelling",
-          "titleZh": "Inside the Disney | Champion NFL Collection: Where Sports Fandom Meets Storytelling",
-          "url": "https://thewaltdisneycompany.com/news/champion-nfl-collection-fanatics-fest/",
-          "date": "2026-07-16"
+          "titleEn": "Marvel Studios Stuns San Diego Comic-Con with ‘Avengers: Doomsday,’ ‘Ghost Rider,’ and ‘Black Panther 3’ Reveals",
+          "titleZh": "Marvel Studios Stuns San Diego Comic-Con with ‘Avengers: Doomsday,’ ‘Ghost Rider,’ and ‘Black Panther 3’ Reveals",
+          "url": "https://thewaltdisneycompany.com/news/marvel-studios-comic-con-2026/",
+          "date": "2026-07-26"
         },
         {
-          "titleEn": "‘Descendants: Wicked Wonderland’ Cast Teases New Characters, Music, and More",
-          "titleZh": "‘Descendants: Wicked Wonderland’ Cast Teases New Characters, Music, and More",
-          "url": "https://thewaltdisneycompany.com/news/descendants-wicked-wonderland/",
-          "date": "2026-07-16"
+          "titleEn": "Disney Ad Creative Studio Begins Closed Beta with Select Advertisers",
+          "titleZh": "Disney Ad Creative Studio Begins Closed Beta with Select Advertisers",
+          "url": "https://thewaltdisneycompany.com/news/ad-creative-studio-beta/",
+          "date": "2026-07-23"
         },
         {
-          "titleEn": "NFL Fantasy is Moving to ESPN Fantasy: Your Questions Answered",
-          "titleZh": "NFL Fantasy is Moving to ESPN Fantasy: Your Questions Answered",
-          "url": "https://thewaltdisneycompany.com/news/nfl-espn-fantasy-answers/",
-          "date": "2026-07-16"
+          "titleEn": "Disney Celebrates the Power of Fandom with the Return of D23 FANtastic Prizes: The Ultimate Disney Sweepstakes",
+          "titleZh": "Disney Celebrates the Power of Fandom with the Return of D23 FANtastic Prizes: The Ultimate Disney Sweepstakes",
+          "url": "https://thewaltdisneycompany.com/news/d23-fantastic-prizes-sweepstakes-2026/",
+          "date": "2026-07-23"
         }
       ]
     }

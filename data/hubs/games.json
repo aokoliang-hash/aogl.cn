@@ -8,7 +8,7 @@
   "descZh": "按 Newzoo 与行业营收常见梯队排序的十个商店与发行商，每站三条官方公告或博文外链。",
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
-  "updated": "2026-07-21",
+  "updated": "2026-07-28",
   "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Last reviewed: <strong>2026-06-22</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want a ranked top-10 plus three official links per vendor — not a discovery feed for unknown APK sites. Major client updates still show up in the per-row news slots when you run <code>npm run fetch-hub-news</code>; mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p><p><strong>Editorial cross-link:</strong> first game-original on this hub: <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Reading Steam Charts</a>; character look-dev in <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">Elena · Sea-Wind</a>, <a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">palette & ritual UI</a>, and <a href=\"/articles/games-hub-generative-art-workflow.html\">Games hub × generative art workflow</a>.</p>",
   "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>最近核对：<strong>2026-06-22</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但需要对照营收梯队、并点到各厂三条官方链接的人；不把它当成 APK 发现站。大版本更新仍会出现在每行「最新动态」里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p><p><strong>原创交叉链：</strong>游戏 Hub 原创轮播首篇 <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Steam Charts 怎么读</a>；角色设定见 <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">艾琳娜 · 海风之诗</a>、<a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">配色与仪式 UI</a>，工作流 <a href=\"/articles/games-hub-generative-art-workflow.html\">游戏 Hub × 生成式角色美术</a>。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
@@ -147,22 +147,22 @@
       "labelZh": "PlayStation",
       "items": [
         {
-          "titleEn": "Beginner’s Guide to MARVEL Tōkon: Fighting Souls",
-          "titleZh": "Beginner’s Guide to MARVEL Tōkon: Fighting Souls",
-          "url": "https://blog.playstation.com/2026/07/20/beginners-guide-to-marvel-tokon-fighting-souls/",
-          "date": "2026-07-20"
+          "titleEn": "Share of the Week: Assassin’s Creed Black Flag Resynced",
+          "titleZh": "Share of the Week: Assassin’s Creed Black Flag Resynced",
+          "url": "https://blog.playstation.com/2026/07/24/share-of-the-week-assassins-creed-black-flag-resynced/",
+          "date": "2026-07-24"
         },
         {
-          "titleEn": "Share of the Week: Sun",
-          "titleZh": "Share of the Week: Sun",
-          "url": "https://blog.playstation.com/2026/07/17/share-of-the-week-sun/",
-          "date": "2026-07-17"
+          "titleEn": "Phoenix Cyclops revealed as MARVEL Tōkon: Fighting Souls First Year 1 DLC character",
+          "titleZh": "Phoenix Cyclops revealed as MARVEL Tōkon: Fighting Souls First Year 1 DLC character",
+          "url": "https://blog.playstation.com/2026/07/23/phoenix-cyclops-revealed-as-marvel-tokon-fighting-souls-first-year-1-dlc-character/",
+          "date": "2026-07-23"
         },
         {
-          "titleEn": "Castlevania: Belmont’s Curse hands-on report",
-          "titleZh": "Castlevania: Belmont’s Curse hands-on report",
-          "url": "https://blog.playstation.com/2026/07/17/castlevania-belmonts-curse-hands-on-report/",
-          "date": "2026-07-17"
+          "titleEn": "Marvel’s Wolverine: Story Trailer, new art, composer details, and more",
+          "titleZh": "Marvel’s Wolverine: Story Trailer, new art, composer details, and more",
+          "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/",
+          "date": "2026-07-23"
         }
       ]
     },
@@ -172,22 +172,22 @@
       "labelZh": "Xbox",
       "items": [
         {
-          "titleEn": "Modern Warfare 4: Open Beta Dates, Call of Duty: NEXT, Fanatics Fest Recap, and Serialized Weapon Camo Pre-Order Bonus",
-          "titleZh": "Modern Warfare 4: Open Beta Dates, Call of Duty: NEXT, Fanatics Fest Recap, and Serialized Weapon Camo Pre-Order Bonus",
-          "url": "https://www.callofduty.com/blog/2026/07/call-of-duty-modern-warfare-4-open-beta-next-fanatics-fest-recap-serialized-camo-preorder-bonus#new_tab",
-          "date": "2026-07-20"
+          "titleEn": "Six Useful Tips to Survive and Thrive Above the Toxic Clouds in Forever Skies",
+          "titleZh": "Six Useful Tips to Survive and Thrive Above the Toxic Clouds in Forever Skies",
+          "url": "https://news.xbox.com/en-us/2026/07/27/six-useful-tips-to-survive-and-thrive-above-the-toxic-clouds-in-forever-skies/",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "The Planet Crafter Launches on XBOX July 21: Co-op Survival With No Enemies, Timers, or Pressure",
-          "titleZh": "The Planet Crafter Launches on XBOX July 21: Co-op Survival With No Enemies, Timers, or Pressure",
-          "url": "https://news.xbox.com/en-us/2026/07/20/the-planet-crafter-survival-without-pressure/",
-          "date": "2026-07-20"
+          "titleEn": "How Halo Studios Evolved a Classic – Halo: Campaign Evolved | Official XBOX Podcast",
+          "titleZh": "How Halo Studios Evolved a Classic – Halo: Campaign Evolved | Official XBOX Podcast",
+          "url": "https://news.xbox.com/en-us/2026/07/27/how-halo-studios-evolved-a-classic-halo-campaign-evolved-official-xbox-podcast/",
+          "date": "2026-07-27"
         },
         {
-          "titleEn": "How Blueberry Shows Players the Purpose of Traumatic Memories",
-          "titleZh": "How Blueberry Shows Players the Purpose of Traumatic Memories",
-          "url": "https://news.xbox.com/en-us/2026/07/17/how-blueberry-shows-players-the-purpose-of-traumatic-memories-2/",
-          "date": "2026-07-17"
+          "titleEn": "Play More Ubisoft Games on PC: New Content Now Available for XBOX on PC, Plus Free PC Redemption",
+          "titleZh": "Play More Ubisoft Games on PC: New Content Now Available for XBOX on PC, Plus Free PC Redemption",
+          "url": "https://news.xbox.com/en-us/2026/07/27/ubisoft-xbox-pc/",
+          "date": "2026-07-27"
         }
       ]
     },
@@ -222,22 +222,22 @@
       "labelZh": "Epic",
       "items": [
         {
+          "titleEn": "South East Asia Dev Days | Unreal Engine",
+          "titleZh": "South East Asia Dev Days | Unreal Engine",
+          "url": "https://www.unrealengine.com/events/south-east-asia-dev-days",
+          "date": "2026-07-23"
+        },
+        {
+          "titleEn": "The Fab Summer Mega Sale is now on!",
+          "titleZh": "The Fab Summer Mega Sale is now on!",
+          "url": "https://www.unrealengine.com/news/the-fab-summer-mega-sale-is-now-on",
+          "date": "2026-07-21"
+        },
+        {
           "titleEn": "June’s Epic learning content: MetaHumans, Mesh Terrain, and more",
           "titleZh": "June’s Epic learning content: MetaHumans, Mesh Terrain, and more",
           "url": "https://www.unrealengine.com/learning/junes-epic-learning-content-metahumans-mesh-terrain-and-more",
           "date": "2026-06-26"
-        },
-        {
-          "titleEn": "Shining Isle Productions goes all-in on Unreal Engine for The Wingfeather Saga",
-          "titleZh": "Shining Isle Productions goes all-in on Unreal Engine for The Wingfeather Saga",
-          "url": "https://www.unrealengine.com/spotlights/shining-isle-productions-goes-all-in-on-unreal-engine-for-the-wingfeather-saga",
-          "date": "2026-06-24"
-        },
-        {
-          "titleEn": "Unreal Engine 5.8 is now available",
-          "titleZh": "Unreal Engine 5.8 is now available",
-          "url": "https://www.unrealengine.com/news/unreal-engine-5-8-is-now-available",
-          "date": "2026-06-23"
         }
       ]
     },
