@@ -1,0 +1,112 @@
+<p>This is a <strong>personal usage note</strong> on aogl.cn, archived under <code>original/img2threejs/</code> (2026-08-03). The subject is the open-source project <a href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">img2threejs</a> (Apache-2.0; this page tracks notes against <strong>v1.4.3</strong>): rebuild <strong>one reference image</strong> into a <strong>code-only procedural Three.js model</strong>—not photogrammetry, not mesh ripping, not an art-pack download. The deliverable is a diffable TypeScript <code>THREE.Group</code> factory with pivots, sockets, and colliders so the result is animation-ready instead of an inert lump. Below: <strong>what it is, how it differs from generic image-to-3D, how to install and invoke it, how to tighten gates, and when to stop</strong>—plus a showcase still—so search can land on phrases like “image to Three.js,” “procedural Three.js from photo,” and “Claude Code 3D skill.”</p>
+
+<figure class="article-figure">
+  <img src="../original/img2threejs/logo.svg" width="224" height="208" loading="lazy" decoding="async" alt="img2threejs project logo">
+  <figcaption><code>logo.svg</code> — project mark archived from upstream assets.</figcaption>
+</figure>
+
+<h2>What problem it attacks</h2>
+<p>Browser props and hard-surface props usually take one of two paths: drop a GLB into the scene, or ask a large model to emit a one-shot Three.js blob. The first is awkward to review in git; the second burns tokens and often yields unmaintainable geometry. img2threejs narrows the promise:</p>
+<ul>
+  <li><strong>Reconstruction-by-code</strong> — sculpt with primitives, procedural shaders, and generated geometry.</li>
+  <li><strong>Quality-gated</strong> — build pass by pass; every advance needs a render-versus-reference review.</li>
+  <li><strong>Token-efficient</strong> — Python scripts own validation, gating, and comparison packaging; model tokens go to visual judgment and code.</li>
+  <li><strong>Animation-ready</strong> — a runtime hierarchy, not a dead mesh dump.</li>
+</ul>
+<p>The official live gallery is <a href="https://img2threejs.github.io/img2threejs-showcase/" target="_blank" rel="noopener noreferrer">img2threejs-showcase</a>: every demo is generated code running in the browser—orbit, inspect the reference, read the source. My archive file <code>bmx-endurance.png</code> captures the “BMX Endurance Bike” page: orange frame, five-spoke MAG wheels, sidewall lettering, a parts list (frame / welds / handlebar…), plus Explode parts and View generated source controls.</p>
+
+<figure class="article-figure">
+  <img src="../original/img2threejs/bmx-endurance.png" width="1200" height="675" loading="lazy" decoding="async" alt="img2threejs showcase BMX Endurance Bike — procedural Three.js reconstruction and parts sidebar">
+  <figcaption><code>bmx-endurance.png</code> — showcase screenshot: reconstruction viewport plus metadata rail.</figcaption>
+</figure>
+
+<h2>How it differs from “one-click 3D”</h2>
+<p>Many image-to-3D searches expect depth nets or Gaussian splats. img2threejs <strong>deliberately refuses that path</strong>. It authors an <code>ObjectSculptSpec</code> (components, materials, lights, pivots), then sculpts in a fixed order:</p>
+<p><code>blockout → structural → form → material → surface → lighting → interaction → optimization</code></p>
+<p>A pass unlocks only after a real render, a comparison sheet, an agent-vision score at threshold, and every identity-defining feature clearing its own bar. Scripts decide “may we generate?”; the model decides “does it look right?” That makes outputs reviewable and rollback-friendly (<code>refine-spec</code> / <code>refine-code</code>) instead of a black-box mesh.</p>
+<p>Upstream architecture docs also stress token design: do not spend context re-validating JSON by hand or regenerating the entire factory each cycle. Emit only the unlocked pass; fail shallow specs with <code>--strict-quality</code> before the first Three.js line exists.</p>
+
+<h2>How to install (Claude Code and similar agents)</h2>
+<p>The skill is agent-agnostic. Docs often show Claude Code; Codex and OpenCode work too—wherever the text says “agent vision,” use the host’s image reader, a browser MCP, or a screenshot you provide.</p>
+<ol>
+  <li>Clone into your skills directory (adjust the path for your tool):</li>
+</ol>
+<pre><code>git clone https://github.com/img2threejs/img2threejs.git ~/.claude/skills/img2threejs
+</code></pre>
+<ol start="2">
+  <li>Confirm <strong>Python 3.10+</strong>. Forge scripts are documented as pure standard library—no pip install churn.</li>
+  <li>Prepare a clear object reference (front or three-quarter, full subject, lighting that does not crush silhouette).</li>
+</ol>
+<p>Local note <code>original/img2threejs/rd.txt</code> mirrors the same clone command and sample prompts for offline reading.</p>
+
+<h2>How to use: shortest invoke</h2>
+<p>In Claude Code, attach or point at an image, then run:</p>
+<pre><code>/img2threejs Rebuild this object as a Three.js model, keep the proportions, angles, and colours.
+</code></pre>
+<p>That one-liner is enough for a first pass: the skill classifies the subject (<code>object</code> / <code>character</code> / <code>hybrid</code>), builds a detail inventory, and advances gated passes. Your job is to watch each side-by-side sheet and refuse “globally high score but wrong identity feature”—SKILL.md is explicit that a pass fails if a defining detail is wrong even when the aggregate looks fine.</p>
+
+<h2>How to use: tighten the prompt (map words to gates)</h2>
+<p>The short form leaves judgment to the skill. When you already know what “correct” means, write it in—these lines map onto real gates and artifacts, not decorative adjectives:</p>
+<pre><code>/img2threejs Rebuild the subject in this image as a procedural Three.js model.
+
+Fidelity   Hold proportions and silhouette to the reference. Enumerate identity-defining
+           details first — bevels, seams, fasteners, engraved/painted linework, gloss vs matte,
+           wear — and drop details you cannot place on a real component.
+Materials  Derive finish class and gradient stops from reference pixels, not memory.
+Runtime    Expose pivots/sockets for moving parts, plus userData.tick for idle loops.
+Gates      Run --strict-quality; do not advance until side-by-side review passes.
+           Report per-region confidence for hidden faces.
+</code></pre>
+<p>Subject-specific add-ons that actually change behavior:</p>
+<ul>
+  <li><strong>A specific person or character</strong> — maximize likeness: fit landmarks, de-light, camera-match, project; name inferred regions.</li>
+  <li><strong>An animal or creature</strong> — declare non-humanoid; use the matching body plan and body-unit proportions.</li>
+  <li><strong>Saturated anodized / candy coats</strong> — name candy-coat; do not let the environment steal hue.</li>
+  <li><strong>Cost ceiling</strong> — stay low effort; skip the presentation composer; keep only evaluation renders.</li>
+</ul>
+
+<h2>How to use: forge scripts without the agent loop</h2>
+<p>From the skill root you can drive stages by hand (useful for learning the pipeline or wiring CI):</p>
+<pre><code>python3 forge/stage1_intake/probe_image.py &lt;image&gt;
+python3 forge/stage2_spec/new_pre_spec_assessment.py "Name" --image &lt;image&gt; --out assessment.json
+python3 forge/stage2_spec/new_sculpt_spec.py "Name" --image &lt;image&gt; --assessment assessment.json --out spec.json
+python3 forge/stage2_spec/validate_sculpt_spec.py spec.json --strict-quality
+python3 forge/stage3_build/generate_threejs_factory.py spec.json --out src/createObjectModel.ts
+</code></pre>
+<p>Full script tables live in upstream <code>docs/ARCHITECTURE.md</code>. Day-to-day, start with <code>python3 forge/next.py &lt;spec&gt;</code>: it reports the unlocked pass, the exact next command, and unmet acceptance criteria—the “ask next first” habit SKILL.md insists on so you do not regenerate blindly.</p>
+
+<h2>Gates I watch while reviewing</h2>
+<ul>
+  <li><strong>Suitability</strong> — is the image a viable 3D target at all.</li>
+  <li><strong>Pre-spec + strict-quality</strong> — block codegen when the spec is too shallow for the complexity tier.</li>
+  <li><strong>Detail inventory</strong> — gloss, bevels, fasteners, linework, stains must map to real components/materials, not prose-only claims.</li>
+  <li><strong>Screenshot feedback</strong> — <code>continue</code> needs a comparison sheet plus passing vision scores; identity failures trump a flattering global number.</li>
+  <li><strong>Action-ready</strong> — runtime hierarchy via something like <code>userData.sculptRuntime</code> must exist for movable parts.</li>
+</ul>
+<p>CS2 knife / Glock routes add family component contracts and projection-first finishes: patterned skins should prefer a de-lit reference projection over inventing a procedural Doppler. Otherwise the comparison sheet fails instantly. See upstream <code>docs/cs2/review-gates.md</code> and <code>grimoire/build/cs2_finishes.md</code>.</p>
+<p>Transparency matters for debugging. After each pass, name what changed with evidence, and name what still mismatches. Opaque “done” claims force full restarts; precise “improved but still flat in Z” notes enable refinement—another reason this skill fits editorial SEO better than hype copy.</p>
+
+<h2>Honest limits (also an SEO honesty signal)</h2>
+<p>A single image cannot reveal hidden sides or guarantee exact geometry. The skill should label approximate / stylized / low-poly output and infer unseen faces by mirroring rather than faking confidence. It is stronger on hard-surface objects; characters are stylized reconstructions, not photoreal likeness. “This cannot reach the requested fidelity from this image” is a valid, expected result—and a reason I filed these notes on aogl.cn: the process is debuggable, not a marketing slogan.</p>
+
+<h2>What this site archives</h2>
+<ul>
+  <li><code>original/img2threejs/bmx-endurance.png</code> — BMX showcase UI still (hero source).</li>
+  <li><code>original/img2threejs/logo.svg</code> — project logo.</li>
+  <li><code>original/img2threejs/rd.txt</code> — repo URL, gallery URL, and quick-start excerpts.</li>
+</ul>
+<p>Treat GitHub as the source of truth for code. This page exists so crawlers and humans get <strong>indexable bilingual how-to prose plus local screenshot evidence</strong>, sitting beside WebGL originals such as the <a href="interactive-3d-earth.html">interactive Earth</a> demo when people search for procedural Three.js or agent-driven model rebuilds.</p>
+<p>If you only need inspiration before installing the skill, open the live gallery first: orbit a few demos, click View generated source, then decide whether reconstruction-by-code matches your pipeline. If you install, keep the first subject simple (a hard-surface prop with readable silhouette) before jumping to patterned CS2 skins or likeness-max characters—those routes unlock more gates and more review vocabulary.</p>
+
+<h2 id="article-seo-keywords">Related searches</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">GitHub img2threejs</a>
+  <a class="pill" href="https://img2threejs.github.io/img2threejs-showcase/" target="_blank" rel="noopener noreferrer">Live Showcase</a>
+  <a class="pill" href="https://www.google.com/search?q=img2threejs+procedural+Three.js" target="_blank" rel="noopener noreferrer">img2threejs Three.js</a>
+  <a class="pill" href="https://www.google.com/search?q=image+to+procedural+Three.js+Claude+Code+skill" target="_blank" rel="noopener noreferrer">image to Three.js skill</a>
+  <a class="pill" href="interactive-3d-earth.html">Interactive 3D Earth</a>
+  <a class="pill" href="/articles/index.html">All originals</a>
+  <a class="pill" href="/index.html#originals">Home originals</a>
+</div>
+
+<p class="article-note">Archive: <code>original/img2threejs/</code> · upstream: <a href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">github.com/img2threejs/img2threejs</a> · published <strong>2026-08-03</strong>. Personal site usage notes—not a replacement for upstream docs.</p>

@@ -1,0 +1,109 @@
+<p>这是 aogl.cn 上的一篇<strong>个人原创使用手记</strong>，本地归档在 <code>original/img2threejs/</code>（2026-08-03）。主题是开源项目 <a href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">img2threejs</a>（Apache-2.0，本稿对照 v1.4.3）：把<strong>一张参考图</strong>重建成<strong>纯代码写出的程序化 Three.js 模型</strong>——不是 photogrammetry、不是扒 mesh、也不是下载素材包。产出是可 diff 的 TypeScript <code>THREE.Group</code> 工厂，带 pivots / sockets / colliders，方便动画与交互。本文写清<strong>它是什么、和常见 image-to-3D 差在哪、怎么安装与调用、如何加严门禁、何时该停</strong>，并附 showcase 截图，方便检索「image to Three.js」「procedural Three.js from photo」「Claude Code skill 3D」等长尾词。</p>
+
+<figure class="article-figure">
+  <img src="../original/img2threejs/logo.svg" width="224" height="208" loading="lazy" decoding="async" alt="img2threejs logo">
+  <figcaption><code>logo.svg</code> — 项目标识（归档自上游 assets）。</figcaption>
+</figure>
+
+<h2>它解决什么问题</h2>
+<p>浏览器里做道具、硬表面物体、甚至部分角色时，常见两条路：一是把 mesh / GLB 扔进场景；二是让大模型「一句话生成一段 Three.js」。前者难版本管理、难审查；后者容易一次出一坨不可维护的几何，还烧大量 token。img2threejs 的承诺更窄、更硬：</p>
+<ul>
+  <li><strong>Reconstruction-by-code</strong> — 用 primitives、程序化 shader 与生成几何「雕」出物体。</li>
+  <li><strong>Quality-gated</strong> — 分 pass 构建，每步要有渲染 vs 参考的对照，未过门禁不前进。</li>
+  <li><strong>Token-efficient</strong> — 校验、门禁、对比图打包交给 Python 脚本；模型 token 主要花在视觉判断与写代码。</li>
+  <li><strong>Animation-ready</strong> — 不是死网格，而是带运行时层级的工厂函数。</li>
+</ul>
+<p>官方 Live Gallery 在 <a href="https://img2threejs.github.io/img2threejs-showcase/" target="_blank" rel="noopener noreferrer">img2threejs-showcase</a>：每个 demo 都是生成代码在浏览器里跑，可绕转、看参考、读源码。我归档的 <code>bmx-endurance.png</code> 就是其中「BMX Endurance Bike」页的界面截图——橙车架、五辐轮、侧墙字样与零件列表（frame / welds / handlebar…），并有 Explode parts、View generated source 等按钮。</p>
+
+<figure class="article-figure">
+  <img src="../original/img2threejs/bmx-endurance.png" width="1200" height="675" loading="lazy" decoding="async" alt="img2threejs showcase BMX Endurance Bike — 程序化 Three.js 重建与零件列表">
+  <figcaption><code>bmx-endurance.png</code> — Showcase 实机截图：参考重建结果 + 侧栏元数据。</figcaption>
+</figure>
+
+<h2>和「一键出 3D」有什么不同</h2>
+<p>SEO 上很多人搜 image-to-3D，期待的是深度估计或高斯溅射。img2threejs <strong>刻意不做那条路</strong>。它先写 <code>ObjectSculptSpec</code>（部件、材质、灯光、pivots），再按固定顺序雕：</p>
+<p><code>blockout → structural → form → material → surface → lighting → interaction → optimization</code></p>
+<p>每个 pass 解锁前，要有真实渲染、对照表、agent vision 分数，以及身份关键细节各自过线。脚本负责「能不能生成」；模型负责「像不像」。这让输出可审查、可回退到 refine-spec / refine-code，而不是黑盒 mesh。</p>
+
+<h2>怎么安装（Claude Code / 同类 agent）</h2>
+<p>Skill 设计为 agent-agnostic，文档常以 Claude Code 为例，也可在 Codex、OpenCode 等环境下使用——「agent vision」用宿主提供的读图、浏览器 MCP 或你提供的截图即可。</p>
+<ol>
+  <li>把仓库克隆到 skills 目录（路径按你的工具约定调整）：</li>
+</ol>
+<pre><code>git clone https://github.com/img2threejs/img2threejs.git ~/.claude/skills/img2threejs
+</code></pre>
+<ol start="2">
+  <li>确认本机有 <strong>Python 3.10+</strong>。forge 脚本声称纯标准库，无需 pip 安装依赖。</li>
+  <li>准备一张清晰的物体参考图（正面或 3/4 角、主体完整、光照不要糊成一团）。</li>
+</ol>
+<p>本地笔记 <code>original/img2threejs/rd.txt</code> 也摘录了同一克隆命令与示例 prompt，方便离线对照。</p>
+
+<h2>怎么用：最短调用</h2>
+<p>在 Claude Code 里附上或指向图片后运行：</p>
+<pre><code>/img2threejs Rebuild this object as a Three.js model, keep the proportions, angles, and colours.
+</code></pre>
+<p>中文意图等价写法可以是：「用 img2threejs 把这张图重建成程序化 Three.js 模型，保持比例、角度与颜色。」Skill 会自行做主体分类（object / character / hybrid）、细节清单（detail inventory），并按门禁推进各 pass。你需要做的是：看每一步的对照图，确认身份特征是否真的对齐，而不是只看全局分数。</p>
+
+<h2>怎么用：加严提示（把判断写进门禁）</h2>
+<p>一句话会把判断交给 skill。若你已经知道「什么叫对」，把要求写进 prompt——这些句子会映射到真实的 gate / artifact，而不只是形容词：</p>
+<pre><code>/img2threejs Rebuild the subject in this image as a procedural Three.js model.
+
+Fidelity   Hold proportions and silhouette to the reference. Enumerate identity-defining
+           details first — bevels, seams, fasteners, engraved/painted linework, gloss vs matte,
+           wear — and drop details you cannot place on a real component.
+Materials  Derive finish class and gradient stops from reference pixels, not memory.
+Runtime    Expose pivots/sockets for moving parts, plus userData.tick for idle loops.
+Gates      Run --strict-quality; do not advance until side-by-side review passes.
+           Report per-region confidence for hidden faces.
+</code></pre>
+<p>按主体追加一句往往很有用：</p>
+<ul>
+  <li><strong>特定人物 / 角色</strong> — 要求 maximize likeness：参数模板对齐 landmark、de-light、相机匹配、再投影；并写明哪些区域是推断。</li>
+  <li><strong>动物 / 生物</strong> — 声明非人形，走 quadruped（或对应）体型与 body-unit 比例。</li>
+  <li><strong>阳极氧化 / candy 涂层</strong> — 点名 candy-coat，别让环境光偷色。</li>
+  <li><strong>省 token</strong> — 要求 low effort，跳过 presentation composer，只要评估渲染。</li>
+</ul>
+
+<h2>怎么用：不用 agent、只跑 forge 脚本</h2>
+<p>在 skill 根目录可逐步手工跑（适合理解流水线或 CI）：</p>
+<pre><code>python3 forge/stage1_intake/probe_image.py &lt;image&gt;
+python3 forge/stage2_spec/new_pre_spec_assessment.py "Name" --image &lt;image&gt; --out assessment.json
+python3 forge/stage2_spec/new_sculpt_spec.py "Name" --image &lt;image&gt; --assessment assessment.json --out spec.json
+python3 forge/stage2_spec/validate_sculpt_spec.py spec.json --strict-quality
+python3 forge/stage3_build/generate_threejs_factory.py spec.json --out src/createObjectModel.ts
+</code></pre>
+<p>完整脚本表与 token 设计见上游 <code>docs/ARCHITECTURE.md</code>。日常建议先跑 <code>python3 forge/next.py &lt;spec&gt;</code>：它会告诉你当前解锁的 pass、下一条命令与未满足的验收条件——这是 SKILL.md 强调的「先问 next」习惯。</p>
+
+<h2>流水线里我会盯的关卡</h2>
+<ul>
+  <li><strong>Suitability</strong> — 这张图适不适合当 3D 目标。</li>
+  <li><strong>Pre-spec + strict-quality</strong> — 规格太浅就禁止 codegen，避免白烧渲染。</li>
+  <li><strong>Detail inventory</strong> — 螺丝、倒角、线稿、磨损等必须落到真实 component / material，不能只写散文。</li>
+  <li><strong>Screenshot feedback</strong> — continue 需要对照表 + 过线分数；身份特征错了，全局分再高也算失败。</li>
+  <li><strong>Action-ready</strong> — <code>userData.sculptRuntime</code> 一类运行时层级要在。</li>
+</ul>
+<p>CS2 刀皮 / Glock 等路线还有家族级部件合同与投影优先的 finish 策略：图案皮肤优先用去光照后的参考投影，而不是瞎编程序化 Doppler——否则对照图一眼假。细节在上游 <code>docs/cs2/review-gates.md</code> 与 <code>grimoire/build/cs2_finishes.md</code>。</p>
+
+<h2>诚实边界（写进文章也是 SEO 诚实信号）</h2>
+<p>单张图看不见背面，不能保证精确几何。Skill 应明确标注 approximate / stylized / low-poly，并用镜像等策略推断不可见面，而不是假装自信。硬表面物体通常更强；角色是风格化重建，不是照片级 likeness。输出「这张图达不到你要的保真度」是合法、预期的结果——这也是我愿意把它收进本站书签手记的原因：流程可调试，而不是营销口号。</p>
+
+<h2>在本站的归档方式</h2>
+<ul>
+  <li><code>original/img2threejs/bmx-endurance.png</code> — Showcase BMX 页截图（封面源）。</li>
+  <li><code>original/img2threejs/logo.svg</code> — 项目 logo。</li>
+  <li><code>original/img2threejs/rd.txt</code> — 仓库链接、gallery 链接与 quick-start 摘录。</li>
+</ul>
+<p>上游完整源码请以 GitHub 为准；本站手记负责<strong>可索引的中英文用法说明 + 本地截图证据</strong>，并与 <a href="interactive-3d-earth.html">交互地球</a> 等 WebGL 原创并列，方便「Three.js 程序化 / AI agent 出模型」类检索落到真实页面。</p>
+
+<h2 id="article-seo-keywords">相关检索</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">GitHub img2threejs</a>
+  <a class="pill" href="https://img2threejs.github.io/img2threejs-showcase/" target="_blank" rel="noopener noreferrer">Live Showcase</a>
+  <a class="pill" href="https://www.google.com/search?q=img2threejs+procedural+Three.js" target="_blank" rel="noopener noreferrer">img2threejs Three.js</a>
+  <a class="pill" href="https://www.google.com/search?q=image+to+procedural+Three.js+Claude+Code+skill" target="_blank" rel="noopener noreferrer">image to Three.js skill</a>
+  <a class="pill" href="interactive-3d-earth.html">交互 3D 地球</a>
+  <a class="pill" href="/articles/index.html">本站原创索引</a>
+  <a class="pill" href="/index.html#originals">首页本站原创</a>
+</div>
+
+<p class="article-note">归档：<code>original/img2threejs/</code> · 上游：<a href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">github.com/img2threejs/img2threejs</a> · 发布 <strong>2026-08-03</strong>。本文为个人站点用法手记，不构成对上游的官方文档替代。</p>

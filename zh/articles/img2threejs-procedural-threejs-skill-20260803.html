@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="zh-Hant" data-title-zh="img2threejs 手記：參考圖到程序化 Three.js 模型的介紹與用法 — aogl.cn" data-desc-zh="本站原創使用手記：歸檔 original/img2threejs/，介紹開源 skill img2threejs 如何把參考圖重建為代碼生成的程序化 Three.js 模型，含安裝、/img2threejs 調用、嚴格質量門禁、Python forge 流水線與 BMX showcase 截圖；非 photogrammetry，鏈官方倉庫與演示廊。" data-aogl-lang="zht" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="本站原創使用手記：歸檔 original/img2threejs/，介紹開源 skill img2threejs 如何把參考圖重建為代碼生成的程序化 Three.js 模型，含安裝、/img2threejs 調用、嚴格質量門禁、Python forge 流水線與 BMX showcase 截圖；非 photogrammetry，鏈官方倉庫與演示廊。">
+  <title>img2threejs 手記：參考圖到程序化 Three.js 模型的介紹與用法 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/zh/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/zh/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <meta property="og:title" content="img2threejs 手記：參考圖到程序化 Three.js 模型的介紹與用法 — aogl.cn">
+  <meta property="og:description" content="本站原創使用手記：歸檔 original/img2threejs/，介紹開源 skill img2threejs 如何把參考圖重建為代碼生成的程序化 Three.js 模型，含安裝、/img2threejs 調用、嚴格質量門禁、Python forge 流水線與 BMX showcase 截圖；非 photogrammetry，鏈官方倉庫與演示廊。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/img2threejs-procedural-threejs-skill-20260803.webp">
+  <meta property="og:image:alt" content="img2threejs showcase — BMX Endurance Bike procedural Three.js reconstruction (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/img2threejs-procedural-threejs-skill-20260803.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Claude Code skill · forge script gates · live showcase demos","alternativeHeadline":"img2threejs 手记：参考图到程序化 Three.js 模型的介绍与用法","datePublished":"2026-08-03","dateModified":"2026-08-03","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/img2threejs-procedural-threejs-skill-20260803.html"},"url":"https://aogl.cn/zh/articles/img2threejs-procedural-threejs-skill-20260803.html","inLanguage":"zh-Hant","description":"Original aogl.cn usage notes under original/img2threejs/: how the open-source img2threejs skill rebuilds a reference image as a code-only procedural Three.js model—install, /img2threejs invoke, quality gates, Python forge pipeline, and a BMX showcase still. Not photogrammetry; links the official repo and live gallery.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-zht">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具與大模型動態（個人書籤）" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/zh/articles/index.html">本站原創</a></li>
+          <li><a href="/zh/index.html#tools-directory">AI 工具</a></li>
+          <li><a href="/zh/briefs/index.html">快訊</a></li>
+          <li><a href="/zh/games.html">遊戲</a></li>
+          <li><a href="/zh/tech.html">科技</a></li>
+          <li><a href="/zh/portal.html">全球站點</a></li>
+          <li><a href="/zh/brands.html">品牌</a></li>
+          <li><a href="/zh/shopping.html">購物</a></li>
+          <li><a href="/zh/life.html">生活</a></li>
+          <li><a href="/zh/social.html">社交</a></li>
+          <li><a href="/zh/tools.html">工具</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/zh/index.html#originals">← 返回首頁 · 本站原創</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>img2threejs 手記：參考圖到程序化 Three.js 模型的介紹與用法</h1>
+        <p class="article-shell__sub">Claude Code skill · forge 腳本門禁 · showcase 實機演示</p>
+        <p class="article-shell__meta"><time datetime="2026-08-03">2026-08-03</time> · 本站原創</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>這是 aogl.cn 上的一篇<strong>個人原創使用手記</strong>，本地歸檔在 <code>original/img2threejs/</code>（2026-08-03）。主題是開源項目 <a href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">img2threejs</a>（Apache-2.0，本稿對照 v1.4.3）：把<strong>一張參考圖</strong>重建成<strong>純代碼寫出的程序化 Three.js 模型</strong>——不是 photogrammetry、不是扒 mesh、也不是下載素材包。產出是可 diff 的 TypeScript <code>THREE.Group</code> 工廠，帶 pivots / sockets / colliders，方便動畫與交互。本文寫清<strong>它是什麼、和常見 image-to-3D 差在哪、怎麼安裝與調用、如何加嚴門禁、何時該停</strong>，並附 showcase 截圖，方便檢索「image to Three.js」「procedural Three.js from photo」「Claude Code skill 3D」等長尾詞。</p>
+<figure class="article-figure">
+  <img src="/original/img2threejs/logo.svg" width="224" height="208" loading="lazy" decoding="async" alt="img2threejs logo">
+  <figcaption><code>logo.svg</code> — 項目標識（歸檔自上游 assets）。</figcaption>
+</figure>
+<h2>它解決什麼問題</h2>
+<p>瀏覽器裡做道具、硬表面物體、甚至部分角色時，常見兩條路：一是把 mesh / GLB 扔進場景；二是讓大模型「一句話生成一段 Three.js」。前者難版本管理、難審查；後者容易一次出一坨不可維護的幾何，還燒大量 token。img2threejs 的承諾更窄、更硬：</p>
+<ul>
+  <li><strong>Reconstruction-by-code</strong> — 用 primitives、程序化 shader 與生成幾何「雕」出物體。</li>
+  <li><strong>Quality-gated</strong> — 分 pass 構建，每步要有渲染 vs 參考的對照，未過門禁不前進。</li>
+  <li><strong>Token-efficient</strong> — 校驗、門禁、對比圖打包交給 Python 腳本；模型 token 主要花在視覺判斷與寫代碼。</li>
+  <li><strong>Animation-ready</strong> — 不是死網格，而是帶運行時層級的工廠函數。</li>
+</ul>
+<p>官方 Live Gallery 在 <a href="https://img2threejs.github.io/img2threejs-showcase/" target="_blank" rel="noopener noreferrer">img2threejs-showcase</a>：每個 demo 都是生成代碼在瀏覽器裡跑，可繞轉、看參考、讀源碼。我歸檔的 <code>bmx-endurance.png</code> 就是其中「BMX Endurance Bike」頁的界面截圖——橙車架、五輻輪、側牆字樣與零件列表（frame / welds / handlebar…），並有 Explode parts、View generated source 等按鈕。</p>
+<figure class="article-figure">
+  <img src="/original/img2threejs/bmx-endurance.png" width="1200" height="675" loading="lazy" decoding="async" alt="img2threejs showcase BMX Endurance Bike — 程序化 Three.js 重建與零件列表">
+  <figcaption><code>bmx-endurance.png</code> — Showcase 實機截圖：參考重建結果 + 側欄元數據。</figcaption>
+</figure>
+<h2>和「一鍵出 3D」有什麼不同</h2>
+<p>SEO 上很多人搜 image-to-3D，期待的是深度估計或高斯濺射。img2threejs <strong>刻意不做那條路</strong>。它先寫 <code>ObjectSculptSpec</code>（部件、材質、燈光、pivots），再按固定順序雕：</p>
+<p><code>blockout → structural → form → material → surface → lighting → interaction → optimization</code></p>
+<p>每個 pass 解鎖前，要有真實渲染、對照表、agent vision 分數，以及身份關鍵細節各自過線。腳本負責「能不能生成」；模型負責「像不像」。這讓輸出可審查、可回退到 refine-spec / refine-code，而不是黑盒 mesh。</p>
+<h2>怎麼安裝（Claude Code / 同類 agent）</h2>
+<p>Skill 設計為 agent-agnostic，文檔常以 Claude Code 為例，也可在 Codex、OpenCode 等環境下使用——「agent vision」用宿主提供的讀圖、瀏覽器 MCP 或你提供的截圖即可。</p>
+<ol>
+  <li>把倉庫克隆到 skills 目錄（路徑按你的工具約定調整）：</li>
+</ol>
+<pre><code>git clone https://github.com/img2threejs/img2threejs.git ~/.claude/skills/img2threejs
+</code></pre>
+<ol start="2">
+  <li>確認本機有 <strong>Python 3.10+</strong>。forge 腳本聲稱純標準庫，無需 pip 安裝依賴。</li>
+  <li>準備一張清晰的物體參考圖（正面或 3/4 角、主體完整、光照不要糊成一團）。</li>
+</ol>
+<p>本地筆記 <code>original/img2threejs/rd.txt</code> 也摘錄了同一克隆命令與示例 prompt，方便離線對照。</p>
+<h2>怎麼用：最短調用</h2>
+<p>在 Claude Code 裡附上或指向圖片後運行：</p>
+<pre><code>/img2threejs Rebuild this object as a Three.js model, keep the proportions, angles, and colours.
+</code></pre>
+<p>中文意圖等價寫法可以是：「用 img2threejs 把這張圖重建成程序化 Three.js 模型，保持比例、角度與顏色。」Skill 會自行做主體分類（object / character / hybrid）、細節清單（detail inventory），並按門禁推進各 pass。你需要做的是：看每一步的對照圖，確認身份特徵是否真的對齊，而不是隻看全局分數。</p>
+<h2>怎麼用：加嚴提示（把判斷寫進門禁）</h2>
+<p>一句話會把判斷交給 skill。若你已經知道「什麼叫對」，把要求寫進 prompt——這些句子會映射到真實的 gate / artifact，而不只是形容詞：</p>
+<pre><code>/img2threejs Rebuild the subject in this image as a procedural Three.js model.
+Fidelity   Hold proportions and silhouette to the reference. Enumerate identity-defining
+           details first — bevels, seams, fasteners, engraved/painted linework, gloss vs matte,
+           wear — and drop details you cannot place on a real component.
+Materials  Derive finish class and gradient stops from reference pixels, not memory.
+Runtime    Expose pivots/sockets for moving parts, plus userData.tick for idle loops.
+Gates      Run --strict-quality; do not advance until side-by-side review passes.
+           Report per-region confidence for hidden faces.
+</code></pre>
+<p>按主體追加一句往往很有用：</p>
+<ul>
+  <li><strong>特定人物 / 角色</strong> — 要求 maximize likeness：參數模板對齊 landmark、de-light、相機匹配、再投影；並寫明哪些區域是推斷。</li>
+  <li><strong>動物 / 生物</strong> — 聲明非人形，走 quadruped（或對應）體型與 body-unit 比例。</li>
+  <li><strong>陽極氧化 / candy 塗層</strong> — 點名 candy-coat，別讓環境光偷色。</li>
+  <li><strong>省 token</strong> — 要求 low effort，跳過 presentation composer，只要評估渲染。</li>
+</ul>
+<h2>怎麼用：不用 agent、只跑 forge 腳本</h2>
+<p>在 skill 根目錄可逐步手工跑（適合理解流水線或 CI）：</p>
+<pre><code>python3 forge/stage1_intake/probe_image.py &lt;image&gt;
+python3 forge/stage2_spec/new_pre_spec_assessment.py "Name" --image &lt;image&gt; --out assessment.json
+python3 forge/stage2_spec/new_sculpt_spec.py "Name" --image &lt;image&gt; --assessment assessment.json --out spec.json
+python3 forge/stage2_spec/validate_sculpt_spec.py spec.json --strict-quality
+python3 forge/stage3_build/generate_threejs_factory.py spec.json --out src/createObjectModel.ts
+</code></pre>
+<p>完整腳本表與 token 設計見上游 <code>docs/ARCHITECTURE.md</code>。日常建議先跑 <code>python3 forge/next.py &lt;spec&gt;</code>：它會告訴你當前解鎖的 pass、下一條命令與未滿足的驗收條件——這是 SKILL.md 強調的「先問 next」習慣。</p>
+<h2>流水線裡我會盯的關卡</h2>
+<ul>
+  <li><strong>Suitability</strong> — 這張圖適不適合當 3D 目標。</li>
+  <li><strong>Pre-spec + strict-quality</strong> — 規格太淺就禁止 codegen，避免白燒渲染。</li>
+  <li><strong>Detail inventory</strong> — 螺絲、倒角、線稿、磨損等必須落到真實 component / material，不能只寫散文。</li>
+  <li><strong>Screenshot feedback</strong> — continue 需要對照表 + 過線分數；身份特徵錯了，全局分再高也算失敗。</li>
+  <li><strong>Action-ready</strong> — <code>userData.sculptRuntime</code> 一類運行時層級要在。</li>
+</ul>
+<p>CS2 刀皮 / Glock 等路線還有家族級部件合同與投影優先的 finish 策略：圖案皮膚優先用去光照後的參考投影，而不是瞎編程序化 Doppler——否則對照圖一眼假。細節在上游 <code>docs/cs2/review-gates.md</code> 與 <code>grimoire/build/cs2_finishes.md</code>。</p>
+<h2>誠實邊界（寫進文章也是 SEO 誠實信號）</h2>
+<p>單張圖看不見背面，不能保證精確幾何。Skill 應明確標註 approximate / stylized / low-poly，並用鏡像等策略推斷不可見面，而不是假裝自信。硬表面物體通常更強；角色是風格化重建，不是照片級 likeness。輸出「這張圖達不到你要的保真度」是合法、預期的結果——這也是我願意把它收進本站書籤手記的原因：流程可調試，而不是營銷口號。</p>
+<h2>在本站的歸檔方式</h2>
+<ul>
+  <li><code>original/img2threejs/bmx-endurance.png</code> — Showcase BMX 頁截圖（封面源）。</li>
+  <li><code>original/img2threejs/logo.svg</code> — 項目 logo。</li>
+  <li><code>original/img2threejs/rd.txt</code> — 倉庫鏈接、gallery 鏈接與 quick-start 摘錄。</li>
+</ul>
+<p>上游完整源碼請以 GitHub 為準；本站手記負責<strong>可索引的中英文用法說明 + 本地截圖證據</strong>，並與 <a href="interactive-3d-earth.html">交互地球</a> 等 WebGL 原創並列，方便「Three.js 程序化 / AI agent 出模型」類檢索落到真實頁面。</p>
+<h2 id="article-seo-keywords">相關檢索</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">GitHub img2threejs</a>
+  <a class="pill" href="https://img2threejs.github.io/img2threejs-showcase/" target="_blank" rel="noopener noreferrer">Live Showcase</a>
+  <a class="pill" href="https://www.google.com/search?q=img2threejs+procedural+Three.js" target="_blank" rel="noopener noreferrer">img2threejs Three.js</a>
+  <a class="pill" href="https://www.google.com/search?q=image+to+procedural+Three.js+Claude+Code+skill" target="_blank" rel="noopener noreferrer">image to Three.js skill</a>
+  <a class="pill" href="interactive-3d-earth.html">交互 3D 地球</a>
+  <a class="pill" href="/zh/articles/index.html">本站原創索引</a>
+  <a class="pill" href="/zh/index.html#originals">首頁本站原創</a>
+</div>
+<p class="article-note">歸檔：<code>original/img2threejs/</code> · 上游：<a href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">github.com/img2threejs/img2threejs</a> · 發佈 <strong>2026-08-03</strong>。本文為個人站點用法手記，不構成對上游的官方文檔替代。</p></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/zh/about.html" class="footer-legal-link lang-zh">關於</a>
+        <a href="/zh/contact.html" class="footer-legal-link lang-zh">聯繫我們</a>
+        <a href="/zh/changelog.html" class="footer-legal-link lang-zh">更新記錄</a>
+        <a href="/zh/privacy.html" class="footer-legal-link lang-zh">隱私政策</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情鏈接 aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer=""></script>
+</body></html>

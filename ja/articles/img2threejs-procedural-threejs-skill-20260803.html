@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="ja" data-title-ja="img2threejs — 参考画像から手続き的 Three.js への導入と使い方 — aogl.cn" data-desc-ja="original/img2threejs/ の img2threejs 使い方メモ：参考画像→手続き的 Three.js。" data-aogl-lang="ja" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="original/img2threejs/ の img2threejs 使い方メモ：参考画像→手続き的 Three.js。">
+  <title>img2threejs — 参考画像から手続き的 Three.js への導入と使い方 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/ja/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/ja/articles/img2threejs-procedural-threejs-skill-20260803.html">
+  <meta property="og:title" content="img2threejs — 参考画像から手続き的 Three.js への導入と使い方 — aogl.cn">
+  <meta property="og:description" content="original/img2threejs/ の img2threejs 使い方メモ：参考画像→手続き的 Three.js。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/img2threejs-procedural-threejs-skill-20260803.webp">
+  <meta property="og:image:alt" content="img2threejs showcase — BMX Endurance Bike procedural Three.js reconstruction (aogl.cn)">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/img2threejs-procedural-threejs-skill-20260803.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Claude Code skill · forge script gates · live showcase demos","alternativeHeadline":"img2threejs 手记：参考图到程序化 Three.js 模型的介绍与用法","datePublished":"2026-08-03","dateModified":"2026-08-03","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/ja/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/ja/articles/img2threejs-procedural-threejs-skill-20260803.html"},"url":"https://aogl.cn/ja/articles/img2threejs-procedural-threejs-skill-20260803.html","inLanguage":"ja","description":"Original aogl.cn usage notes under original/img2threejs/: how the open-source img2threejs skill rebuilds a reference image as a code-only procedural Three.js model—install, /img2threejs invoke, quality gates, Python forge pipeline, and a BMX showcase still. Not photogrammetry; links the official repo and live gallery.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-ja">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-ja">
+          <li class="is-active"><a href="/ja/articles/index.html">オリジナル</a></li>
+          <li><a href="/ja/index.html#tools-directory">AIツール</a></li>
+          <li><a href="/ja/briefs/index.html">速報</a></li>
+          <li><a href="/ja/games.html">ゲーム</a></li>
+          <li><a href="/ja/tech.html">テック</a></li>
+          <li><a href="/ja/portal.html">主要サイト</a></li>
+          <li><a href="/ja/brands.html">ブランド</a></li>
+          <li><a href="/ja/shopping.html">ショッピング</a></li>
+          <li><a href="/ja/life.html">ライフ</a></li>
+          <li><a href="/ja/social.html">ソーシャル</a></li>
+          <li><a href="/ja/tools.html">実用ツール</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="/ja/index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>img2threejs — 参考画像から手続き的 Three.js への導入と使い方</h1>
+        <p class="article-shell__sub">Claude Code skill・forge ゲート・showcase</p>
+        <p class="article-shell__meta"><time datetime="2026-08-03">2026-08-03</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p><strong>個人メモ</strong>：<a href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">img2threejs</a> — 参考画像を手続き的 Three.js に再構築。インストール・<code>/img2threejs</code>・forge ゲート。詳細は中英。Showcase: <a href="https://img2threejs.github.io/img2threejs-showcase/" target="_blank" rel="noopener noreferrer">gallery</a>。</p>
+<figure class="article-figure">
+  <img src="/original/img2threejs/bmx-endurance.png" width="800" height="450" loading="lazy" decoding="async" alt="img2threejs BMX showcase">
+</figure>
+<h2 id="article-seo-keywords">関連</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://github.com/img2threejs/img2threejs" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <a class="pill" href="/ja/articles/index.html">記事一覧</a>
+</div></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/ja/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/ja/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/ja/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/ja/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer=""></script>
+</body></html>
