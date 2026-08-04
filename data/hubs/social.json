@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-07-28",
+  "updated": "2026-08-04",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,87 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Snap CEO sidesteps Specs preorder questions on Q2 earnings call",
+      "titleZh": "Snap CEO sidesteps Specs preorder questions on Q2 earnings call",
+      "url": "https://techcrunch.com/2026/08/03/snap-ceo-sidesteps-specs-pre-order-questions-on-q2-earnings-call/",
+      "date": "2026-08-03",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model",
+      "titleZh": "GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model",
+      "url": "https://engineering.fb.com/2026/08/03/ml-applications/training-gem-at-llm-scale-meta-ads-recommendation-foundation-model/",
+      "date": "2026-08-03",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/07/image13.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/07/image13.png"
+    },
+    {
+      "titleEn": "Snapchat no longer rewards fully AI-generated Spotlight content",
+      "titleZh": "Snapchat no longer rewards fully AI-generated Spotlight content",
+      "url": "https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/",
+      "date": "2026-07-31",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "LinkedIn adds a button to report AI-generated ‘slop’",
+      "titleZh": "LinkedIn adds a button to report AI-generated ‘slop’",
+      "url": "https://techcrunch.com/2026/07/30/linkedin-adds-a-button-to-report-ai-generated-slop/",
+      "date": "2026-07-30",
+      "source": "LinkedIn · TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "How the Head of YouTube Health handles screen time with his kids",
+      "titleZh": "How the Head of YouTube Health handles screen time with his kids",
+      "url": "https://blog.google/innovation-and-ai/technology/families/kids-summer-screen-time-tips/",
+      "date": "2026-07-29",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screentime_Hero.max-600x600.format-webp.webp",
+      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screentime_Hero.max-600x600.format-webp.webp"
+    },
+    {
+      "titleEn": "Prepare for the holiday season with July’s Demand Gen Drop.",
+      "titleZh": "Prepare for the holiday season with July’s Demand Gen Drop.",
+      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-july-2026/",
+      "date": "2026-07-29",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drops_July.max-600x600.format-webp.webp",
+      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drops_July.max-600x600.format-webp.webp"
+    },
+    {
+      "titleEn": "Introducing WhatsApp Web Calling, Plus More New Features",
+      "titleZh": "Introducing WhatsApp Web Calling, Plus More New Features",
+      "url": "https://about.fb.com/news/2026/07/whatsapp-web-calling-new-features/",
+      "date": "2026-07-28",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/07/Introducing-Web-Calling-on-WhatsApp_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Introducing-Web-Calling-on-WhatsApp_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta is Signing the EU AI Act Code of Practice on Transparency of AI-Generated Content",
+      "titleZh": "Meta is Signing the EU AI Act Code of Practice on Transparency of AI-Generated Content",
+      "url": "https://about.fb.com/news/2026/07/meta-is-signing-the-eu-ai-act-code-of-practice-on-transparency-of-ai-generated-content/",
+      "date": "2026-07-28",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/07/image-4.png?fit=960%2C658",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/image-4.png?fit=960%2C658"
+    },
+    {
+      "titleEn": "Meta Announces New Strategic Venture With BlackRock to Develop Data Center in El Paso",
+      "titleZh": "Meta Announces New Strategic Venture With BlackRock to Develop Data Center in El Paso",
+      "url": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+      "date": "2026-07-28",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/07/Partnership_Thumbnail-2.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Partnership_Thumbnail-2.jpg?fit=890%2C501"
+    },
     {
       "titleEn": "As rivals chase acquisitions, Peacock bets on bundles through a new deal with YouTube",
       "titleZh": "As rivals chase acquisitions, Peacock bets on bundles through a new deal with YouTube",
@@ -137,87 +218,6 @@
       "titleZh": "YouTube clarifies policies around AI slop and upsetting videos",
       "url": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/",
       "date": "2026-07-20",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Federal employees can download TikTok on their work phones again",
-      "titleZh": "Federal employees can download TikTok on their work phones again",
-      "url": "https://techcrunch.com/2026/07/18/federal-employees-can-download-tiktok-on-their-work-phones-again/",
-      "date": "2026-07-18",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "The 2026 Summer of Football: A Record-Breaking Moment Across Meta",
-      "titleZh": "The 2026 Summer of Football: A Record-Breaking Moment Across Meta",
-      "url": "https://about.fb.com/news/2026/07/the-2026-summer-of-football-a-record-breaking-moment-across-meta/",
-      "date": "2026-07-17",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/The-2026-Summer-of-Football_A-Record-Breaking-Moment-Across-Meta_Thumbnail-1.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/The-2026-Summer-of-Football_A-Record-Breaking-Moment-Across-Meta_Thumbnail-1.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Alerting Parents if Teens Show Signs of Distress in Conversations With Meta AI",
-      "titleZh": "Alerting Parents if Teens Show Signs of Distress in Conversations With Meta AI",
-      "url": "https://about.fb.com/news/2026/07/keeping-parents-informed-teens-distress-conversations-meta-ai/",
-      "date": "2026-07-16",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/Keeping-parents-informed-if-teens-show-signs-of-distress-in-conversations-with-Meta-AI_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Keeping-parents-informed-if-teens-show-signs-of-distress-in-conversations-with-Meta-AI_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Exploring Hierarchical Interest Representation For Meta Ads Deep Funnel Optimization",
-      "titleZh": "Exploring Hierarchical Interest Representation For Meta Ads Deep Funnel Optimization",
-      "url": "https://engineering.fb.com/2026/07/15/ai-research/exploring-hierarchical-interest-representation-for-meta-ads-deep-funnel-optimization/",
-      "date": "2026-07-15",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/07/image1.jpg",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/07/image1.jpg"
-    },
-    {
-      "titleEn": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
-      "titleZh": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
-      "url": "https://engineering.fb.com/2026/07/13/ml-applications/modernizing-the-meta-ads-service-with-an-open-source-kernel-scheduler/",
-      "date": "2026-07-13",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/07/image1.webp",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/07/image1.webp"
-    },
-    {
-      "titleEn": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
-      "titleZh": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
-      "url": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
-      "date": "2026-07-13",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/Teachers-and-Local-Businesses-Win-as-Meta-Expands-Louisiana-Data-Center-_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Teachers-and-Local-Businesses-Win-as-Meta-Expands-Louisiana-Data-Center-_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Meta removes controversial AI feature on Instagram after backlash",
-      "titleZh": "Meta removes controversial AI feature on Instagram after backlash",
-      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
-      "date": "2026-07-10",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "EU threatens Meta with fines over addictive features on Facebook and Instagram",
-      "titleZh": "EU threatens Meta with fines over addictive features on Facebook and Instagram",
-      "url": "https://techcrunch.com/2026/07/10/eu-threatens-meta-with-fines-over-addictive-features-on-facebook-and-instagram/",
-      "date": "2026-07-10",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Instagram users: Here’s how to stop Meta’s AI from using your photos",
-      "titleZh": "Instagram users: Here’s how to stop Meta’s AI from using your photos",
-      "url": "https://techcrunch.com/2026/07/09/how-to-stop-metas-ai-image-generator-from-using-your-instagram-photos/",
-      "date": "2026-07-09",
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""

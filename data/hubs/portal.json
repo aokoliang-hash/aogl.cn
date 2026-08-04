@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-07-28",
+  "updated": "2026-08-04",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "3 Google updates from Galaxy Unpacked 2026",
-          "titleZh": "3 Google updates from Galaxy Unpacked 2026",
-          "url": "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026/",
-          "date": "2026-07-22"
+          "titleEn": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+          "titleZh": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+          "date": "2026-07-28"
         },
         {
-          "titleEn": "Connect more of your apps to Search",
-          "titleZh": "Connect more of your apps to Search",
-          "url": "https://blog.google/products-and-platforms/products/search/connected-apps/",
-          "date": "2026-07-16"
+          "titleEn": "5 ways AI Mode in Search helps you enjoy the real world",
+          "titleZh": "5 ways AI Mode in Search helps you enjoy the real world",
+          "url": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips/",
+          "date": "2026-07-28"
         },
         {
-          "titleEn": "Create, edit and star in videos with two Google Vids updates",
-          "titleZh": "Create, edit and star in videos with two Google Vids updates",
-          "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
-          "date": "2026-07-16"
+          "titleEn": "5 ways to host the ultimate dinner party with Google Search",
+          "titleZh": "5 ways to host the ultimate dinner party with Google Search",
+          "url": "https://blog.google/products-and-platforms/products/search/dinner-party-hosting-tips/",
+          "date": "2026-07-28"
         }
       ],
       "hotSearchPills": [
@@ -193,22 +193,22 @@
       "labelZh": "YouTube",
       "items": [
         {
+          "titleEn": "How the Head of YouTube Health handles screen time with his kids",
+          "titleZh": "How the Head of YouTube Health handles screen time with his kids",
+          "url": "https://blog.google/innovation-and-ai/technology/families/kids-summer-screen-time-tips/",
+          "date": "2026-07-29"
+        },
+        {
+          "titleEn": "Prepare for the holiday season with July’s Demand Gen Drop.",
+          "titleZh": "Prepare for the holiday season with July’s Demand Gen Drop.",
+          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-july-2026/",
+          "date": "2026-07-29"
+        },
+        {
           "titleEn": "13 Google tips for a fun, productive summer off from college",
           "titleZh": "13 Google tips for a fun, productive summer off from college",
           "url": "https://blog.google/products-and-platforms/products/education/summer-productivity-tips-google-ai-tools/",
           "date": "2026-07-21"
-        },
-        {
-          "titleEn": "Elevate your campaign performance with June’s Demand Gen Drop.",
-          "titleZh": "Elevate your campaign performance with June’s Demand Gen Drop.",
-          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-june-2026/",
-          "date": "2026-06-25"
-        },
-        {
-          "titleEn": "Cannes Lions 2026: Strengthen creative campaigns with new tools from YouTube",
-          "titleZh": "Cannes Lions 2026: Strengthen creative campaigns with new tools from YouTube",
-          "url": "https://blog.google/products/ads-commerce/youtube-insights-tools-cannes-lions-2026/",
-          "date": "2026-06-23"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "Announcing the AI Glasses Impact Grant Recipients: Helping People Work, Learn, and Live More Independently",
-          "titleZh": "Announcing the AI Glasses Impact Grant Recipients: Helping People Work, Learn, and Live More Independently",
-          "url": "https://about.fb.com/news/2026/07/ai-glasses-helping-people-work-learn-live-independently/",
-          "date": "2026-07-27"
+          "titleEn": "Introducing WhatsApp Web Calling, Plus More New Features",
+          "titleZh": "Introducing WhatsApp Web Calling, Plus More New Features",
+          "url": "https://about.fb.com/news/2026/07/whatsapp-web-calling-new-features/",
+          "date": "2026-07-28"
         },
         {
-          "titleEn": "Meta AI Doesn’t Just Think, It Acts",
-          "titleZh": "Meta AI Doesn’t Just Think, It Acts",
-          "url": "https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/",
-          "date": "2026-07-24"
+          "titleEn": "Meta is Signing the EU AI Act Code of Practice on Transparency of AI-Generated Content",
+          "titleZh": "Meta is Signing the EU AI Act Code of Practice on Transparency of AI-Generated Content",
+          "url": "https://about.fb.com/news/2026/07/meta-is-signing-the-eu-ai-act-code-of-practice-on-transparency-of-ai-generated-content/",
+          "date": "2026-07-28"
         },
         {
-          "titleEn": "Introducing Facebook Verified",
-          "titleZh": "Introducing Facebook Verified",
-          "url": "https://about.fb.com/news/2026/07/introducing-facebook-verified/",
-          "date": "2026-07-24"
+          "titleEn": "Meta Announces New Strategic Venture With BlackRock to Develop Data Center in El Paso",
+          "titleZh": "Meta Announces New Strategic Venture With BlackRock to Develop Data Center in El Paso",
+          "url": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+          "date": "2026-07-28"
         }
       ],
       "hotSearchPills": [
@@ -387,6 +387,12 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model",
+          "titleZh": "GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model",
+          "url": "https://engineering.fb.com/2026/08/03/ml-applications/training-gem-at-llm-scale-meta-ads-recommendation-foundation-model/",
+          "date": "2026-08-03"
+        },
+        {
           "titleEn": "Exploring Hierarchical Interest Representation For Meta Ads Deep Funnel Optimization",
           "titleZh": "Exploring Hierarchical Interest Representation For Meta Ads Deep Funnel Optimization",
           "url": "https://engineering.fb.com/2026/07/15/ai-research/exploring-hierarchical-interest-representation-for-meta-ads-deep-funnel-optimization/",
@@ -397,12 +403,6 @@
           "titleZh": "Modernizing the Meta Ads Service With an Open-Source Kernel Scheduler",
           "url": "https://engineering.fb.com/2026/07/13/ml-applications/modernizing-the-meta-ads-service-with-an-open-source-kernel-scheduler/",
           "date": "2026-07-13"
-        },
-        {
-          "titleEn": "Meta’s AI Storage Blueprint at Scale",
-          "titleZh": "Meta’s AI Storage Blueprint at Scale",
-          "url": "https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/",
-          "date": "2026-07-01"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Tech News 2026 – Issue 31",
-          "titleZh": "Tech News 2026 – Issue 31",
-          "url": "https://diff.wikimedia.org/2026/07/27/tech-news-2026-issue-31/",
-          "date": "2026-07-27"
+          "titleEn": "Tech News 2026 – Issue 32",
+          "titleZh": "Tech News 2026 – Issue 32",
+          "url": "https://diff.wikimedia.org/2026/08/03/tech-news-2026-issue-32/",
+          "date": "2026-08-03"
         },
         {
-          "titleEn": "Beyond the Numbers: How the Wiki Afrodemics Mentorship Project Built Confident African Wikimedians",
-          "titleZh": "Beyond the Numbers: How the Wiki Afrodemics Mentorship Project Built Confident African Wikimedians",
-          "url": "https://diff.wikimedia.org/2026/07/27/beyond-the-numbers-how-the-wiki-afrodemics-mentorship-project-built-confident-african-wikimedians/",
-          "date": "2026-07-27"
+          "titleEn": "When Leadership Became Personal: Reflections my journey at the Africa Wiki Women Leadership and Mentorship Fellowship Program",
+          "titleZh": "When Leadership Became Personal: Reflections my journey at the Africa Wiki Women Leadership and Mentorship Fellowship Program",
+          "url": "https://diff.wikimedia.org/2026/08/03/when-leadership-became-personal-reflections-my-journey-at-the-africa-wiki-women-leadership-and-mentorship-fellowship-program/",
+          "date": "2026-08-03"
         },
         {
-          "titleEn": "Wikimedia Foundation Statement on US unionization request",
-          "titleZh": "Wikimedia Foundation Statement on US unionization request",
-          "url": "https://wikimediafoundation.org/news/2026/07/27/statement-cwa-recognition-request/",
-          "date": "2026-07-27"
+          "titleEn": "From Readers to Contributors: A Wikipedia Workshop at Begum Rokeya University",
+          "titleZh": "From Readers to Contributors: A Wikipedia Workshop at Begum Rokeya University",
+          "url": "https://diff.wikimedia.org/2026/08/03/from-readers-to-contributors-a-wikipedia-workshop-at-begum-rokeya-university/",
+          "date": "2026-08-03"
         }
       ],
       "hotSearchPills": [
@@ -663,22 +663,22 @@
       "labelZh": "Reddit",
       "items": [
         {
+          "titleEn": "Reddit is testing a new way to watch — and listen to — its viral posts",
+          "titleZh": "Reddit is testing a new way to watch — and listen to — its viral posts",
+          "url": "https://techcrunch.com/2026/07/31/reddit-is-testing-a-new-way-to-watch-and-listen-to-its-viral-posts/",
+          "date": "2026-07-31"
+        },
+        {
+          "titleEn": "Reddit reports a solid quarter but shows signs of AI’s impact",
+          "titleZh": "Reddit reports a solid quarter but shows signs of AI’s impact",
+          "url": "https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact/",
+          "date": "2026-07-30"
+        },
+        {
           "titleEn": "Reddit is using LLMs to solve a problem LLMs largely created",
           "titleZh": "Reddit is using LLMs to solve a problem LLMs largely created",
           "url": "https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created/",
           "date": "2026-07-06"
-        },
-        {
-          "titleEn": "Meta quietly launches a new Reddit-like app called Forum",
-          "titleZh": "Meta quietly launches a new Reddit-like app called Forum",
-          "url": "https://techcrunch.com/2026/05/22/meta-quietly-launches-a-new-reddit-like-app-called-forum/",
-          "date": "2026-05-22"
-        },
-        {
-          "titleEn": "Google updates AI search to include quotes from Reddit and other sources",
-          "titleZh": "Google updates AI search to include quotes from Reddit and other sources",
-          "url": "https://techcrunch.com/2026/05/06/google-updates-ai-search-to-include-expert-advice-from-reddit-and-other-web-forums/",
-          "date": "2026-05-06"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
-          "titleZh": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
-          "url": "https://www.aboutamazon.com/news/community/amazon-seattle-bellevue-puget-sound-news?utm_source=rss",
-          "date": "2026-07-27"
+          "titleEn": "How Amazon is supporting communities impacted by wildfires in Spokane, Washington",
+          "titleZh": "How Amazon is supporting communities impacted by wildfires in Spokane, Washington",
+          "url": "https://www.aboutamazon.com/news/community/spokane-washington-fires-amazon-disaster-relief?utm_source=rss",
+          "date": "2026-08-03"
         },
         {
-          "titleEn": "How Amazon Leo plans to connect mobile devices from space",
-          "titleZh": "How Amazon Leo plans to connect mobile devices from space",
-          "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-direct-to-device-satellite-service-explained?utm_source=rss",
-          "date": "2026-07-27"
+          "titleEn": "Amazon's water conservation and replenishment efforts around the world",
+          "titleZh": "Amazon's water conservation and replenishment efforts around the world",
+          "url": "https://www.aboutamazon.com/news/sustainability/amazon-water-conservation-replenishment-sustainability?utm_source=rss",
+          "date": "2026-08-03"
         },
         {
-          "titleEn": "Watch the teaser trailer for 'Blade Runner 2099,' a new sci-fi series coming to Prime Video November 25",
-          "titleZh": "Watch the teaser trailer for 'Blade Runner 2099,' a new sci-fi series coming to Prime Video November 25",
-          "url": "https://www.aboutamazon.com/news/entertainment/blade-runner-2099-prime-video?utm_source=rss",
-          "date": "2026-07-24"
+          "titleEn": "How Amazon became one of the world’s top chip companies in a decade",
+          "titleZh": "How Amazon became one of the world’s top chip companies in a decade",
+          "url": "https://www.aboutamazon.com/news/aws/amazon-ai-chips-business-history?utm_source=rss",
+          "date": "2026-07-31"
         }
       ],
       "hotSearchPills": [
@@ -934,6 +934,12 @@
       "labelZh": "WhatsApp",
       "items": [
         {
+          "titleEn": "Introducing WhatsApp Web Calling, Plus More New Features",
+          "titleZh": "Introducing WhatsApp Web Calling, Plus More New Features",
+          "url": "https://about.fb.com/news/2026/07/whatsapp-web-calling-new-features/",
+          "date": "2026-07-28"
+        },
+        {
           "titleEn": "New WhatsApp Features Keep Up With the Way You Actually Live",
           "titleZh": "New WhatsApp Features Keep Up With the Way You Actually Live",
           "url": "https://about.fb.com/news/2026/07/new-whatsapp-features-keep-up-with-the-way-you-actually-live/",
@@ -944,12 +950,6 @@
           "titleZh": "It’s Time to Reserve Your WhatsApp Username",
           "url": "https://about.fb.com/news/2026/06/its-time-to-reserve-your-whatsapp-username/",
           "date": "2026-06-29"
-        },
-        {
-          "titleEn": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
-          "titleZh": "Instagram for TV Gets Bigger, With New Ways to Watch Together",
-          "url": "https://about.fb.com/news/2026/06/instagram-for-tv-gets-bigger-with-new-ways-to-watch-together/",
-          "date": "2026-06-22"
         }
       ],
       "hotSearchPills": [

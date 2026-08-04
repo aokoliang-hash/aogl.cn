@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-07-28",
+  "updated": "2026-08-04",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "NVIDIA Ising Enables Fully Automated Quantum Computer Calibration with Enhanced In-Context Learning",
-          "titleZh": "NVIDIA Ising Enables Fully Automated Quantum Computer Calibration with Enhanced In-Context Learning",
-          "url": "https://developer.nvidia.com/blog/nvidia-ising-enables-fully-automated-quantum-computer-calibration-with-enhanced-in-context-learning/",
-          "date": "2026-07-27"
+          "titleEn": "How to Run Isolated Tenant Kubernetes Clusters on Shared GPU Infrastructure",
+          "titleZh": "How to Run Isolated Tenant Kubernetes Clusters on Shared GPU Infrastructure",
+          "url": "https://developer.nvidia.com/blog/how-to-run-isolated-tenant-kubernetes-clusters-on-shared-gpu-infrastructure/",
+          "date": "2026-08-03"
         },
         {
-          "titleEn": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security",
-          "titleZh": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security",
-          "url": "https://blogs.nvidia.com/blog/open-secure-ai-alliance/",
-          "date": "2026-07-27"
+          "titleEn": "NVIDIA Vera Storage Benchmarks: Faster Encryption, Compression, Integrity Checking, and Recovery for AI-Native Storage",
+          "titleZh": "NVIDIA Vera Storage Benchmarks: Faster Encryption, Compression, Integrity Checking, and Recovery for AI-Native Storage",
+          "url": "https://developer.nvidia.com/blog/nvidia-vera-storage-benchmarks-faster-encryption-compression-integrity-checking-and-recovery-for-ai-native-storage/",
+          "date": "2026-08-03"
         },
         {
-          "titleEn": "Six Agent Harness Capabilities for Higher Model Performance",
-          "titleZh": "Six Agent Harness Capabilities for Higher Model Performance",
-          "url": "https://developer.nvidia.com/blog/six-agent-harness-capabilities-for-higher-model-performance/",
-          "date": "2026-07-27"
+          "titleEn": "Co-Designing AI Model Attention for Fast, Interactive Long-Context Inference",
+          "titleZh": "Co-Designing AI Model Attention for Fast, Interactive Long-Context Inference",
+          "url": "https://developer.nvidia.com/blog/co-designing-ai-model-attention-for-fast-interactive-long-context-inference/",
+          "date": "2026-07-31"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "[Infographic] What’s Your Artistic Style? Discover Your Perfect Art Collection on Samsung Art Store",
-          "titleZh": "[Infographic] What’s Your Artistic Style? Discover Your Perfect Art Collection on Samsung Art Store",
-          "url": "https://news.samsung.com/global/infographic-whats-your-artistic-style-discover-your-perfect-art-collection-on-samsung-art-store",
-          "date": "2026-07-27"
+          "titleEn": "Samsung Launches World’s First HDR10+ ADVANCED Streaming Experience on Prime Video",
+          "titleZh": "Samsung Launches World’s First HDR10+ ADVANCED Streaming Experience on Prime Video",
+          "url": "https://news.samsung.com/global/samsung-launches-worlds-first-hdr10-advanced-streaming-experience-on-prime-video",
+          "date": "2026-08-04"
         },
         {
-          "titleEn": "Samsung Electronics and Broadcom Expand Strategic Collaboration Across Memory and Foundry Technologies",
-          "titleZh": "Samsung Electronics and Broadcom Expand Strategic Collaboration Across Memory and Foundry Technologies",
-          "url": "https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies",
-          "date": "2026-07-25"
+          "titleEn": "[Interview] [Galaxy Unpacked July 2026] Inside the Design Behind the Latest Galaxy Z Series and Galaxy Watch",
+          "titleZh": "[Interview] [Galaxy Unpacked July 2026] Inside the Design Behind the Latest Galaxy Z Series and Galaxy Watch",
+          "url": "https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-inside-the-design-behind-the-latest-galaxy-z-series-and-galaxy-watch",
+          "date": "2026-08-03"
         },
         {
-          "titleEn": "[Infographic] [Galaxy Unpacked July 2026] Highlights From Galaxy Unpacked",
-          "titleZh": "[Infographic] [Galaxy Unpacked July 2026] Highlights From Galaxy Unpacked",
-          "url": "https://news.samsung.com/global/infographic-galaxy-unpacked-july-2026-highlights-from-galaxy-unpacked",
-          "date": "2026-07-23"
+          "titleEn": "[Video] Unfolding New Experiences With the Galaxy Z Series",
+          "titleZh": "[Video] Unfolding New Experiences With the Galaxy Z Series",
+          "url": "https://news.samsung.com/global/video-unfolding-new-experiences-with-the-galaxy-z-series",
+          "date": "2026-07-31"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "英特尔",
       "items": [
         {
+          "titleEn": "Intel’s U.S. Advanced Packaging Enables Next-Generation AI Semiconductors",
+          "titleZh": "Intel’s U.S. Advanced Packaging Enables Next-Generation AI Semiconductors",
+          "url": "https://newsroom.intel.com/intel-foundry/intels-us-advanced-packaging-enables-next-generation-ai-semiconductors",
+          "date": "2026-07-29"
+        },
+        {
+          "titleEn": "Intel Completes RAMP-C Program, Accelerating Momentum for Secure Enclave",
+          "titleZh": "Intel Completes RAMP-C Program, Accelerating Momentum for Secure Enclave",
+          "url": "https://newsroom.intel.com/intel-foundry/intel-completes-ramp-c-program-accelerating-momentum-for-secure-enclave",
+          "date": "2026-07-28"
+        },
+        {
           "titleEn": "Intel and Lens Technology Collaborate to Enable Advanced Semiconductor Packaging for the AI Era",
           "titleZh": "Intel and Lens Technology Collaborate to Enable Advanced Semiconductor Packaging for the AI Era",
           "url": "https://newsroom.intel.com/new-technologies/intel-and-lens-technology-collaborate-to-enable-advanced-semiconductor-packaging-for-the-ai-era",
           "date": "2026-07-24"
-        },
-        {
-          "titleEn": "Intel Reports Second-Quarter 2026 Financial Results",
-          "titleZh": "Intel Reports Second-Quarter 2026 Financial Results",
-          "url": "https://newsroom.intel.com/corporate/intel-reports-second-quarter-2026-financial-results",
-          "date": "2026-07-23"
-        },
-        {
-          "titleEn": "Intel and Fortinet Collaborate to Advance Cybersecurity Innovation and Strengthen Global Supply Chain Resilience",
-          "titleZh": "Intel and Fortinet Collaborate to Advance Cybersecurity Innovation and Strengthen Global Supply Chain Resilience",
-          "url": "https://newsroom.intel.com/manufacturing/intel-and-fortinet-collaborate-to-advance-cybersecurity-innovation-and-strengthen-global-supply-chain-resilience",
-          "date": "2026-07-21"
         }
       ]
     },
@@ -316,22 +316,22 @@
       "labelZh": "ARM",
       "items": [
         {
+          "titleEn": "Arm Performix brings AI-guided performance analysis to agentic development",
+          "titleZh": "Arm Performix brings AI-guided performance analysis to agentic development",
+          "url": "https://newsroom.arm.com/blog/arm-performix-dynamic-insights-agentic-development",
+          "date": "2026-08-03"
+        },
+        {
+          "titleEn": "How Atlassian improved Jira and Confluence performance on Arm Neoverse-based AWS Graviton",
+          "titleZh": "How Atlassian improved Jira and Confluence performance on Arm Neoverse-based AWS Graviton",
+          "url": "https://newsroom.arm.com/blog/how-atlassian-improved-jira-and-confluence-performance-on-arm-neoverse-based-aws-graviton",
+          "date": "2026-07-31"
+        },
+        {
           "titleEn": "From tokens to tasks: Why agentic AI changes the infrastructure conversation",
           "titleZh": "From tokens to tasks: Why agentic AI changes the infrastructure conversation",
           "url": "https://newsroom.arm.com/blog/how-agentic-ai-is-changing-the-infrastructure",
           "date": "2026-07-23"
-        },
-        {
-          "titleEn": "Celebrating 10 years of conservation and technology collaboration between WILDLABS and Arm",
-          "titleZh": "Celebrating 10 years of conservation and technology collaboration between WILDLABS and Arm",
-          "url": "https://newsroom.arm.com/blog/10-years-wildlabs-arm",
-          "date": "2026-07-23"
-        },
-        {
-          "titleEn": "How the Arm AGI CPU supports the most demanding agentic AI workloads at scale",
-          "titleZh": "How the Arm AGI CPU supports the most demanding agentic AI workloads at scale",
-          "url": "https://newsroom.arm.com/blog/how-arm-agi-cpu-powers-ai-at-scale",
-          "date": "2026-07-22"
         }
       ]
     },
