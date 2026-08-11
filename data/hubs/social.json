@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-08-04",
+  "updated": "2026-08-11",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,87 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Social media platforms still facing thousands of user addiction lawsuits after failed appeals",
+      "titleZh": "Social media platforms still facing thousands of user addiction lawsuits after failed appeals",
+      "url": "https://techcrunch.com/2026/08/10/social-media-platforms-still-facing-thousands-of-user-addiction-lawsuits-after-failed-appeals/",
+      "date": "2026-08-10",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "YouTube now requires creators to have twice as many watch hours to start earning money",
+      "titleZh": "YouTube now requires creators to have twice as many watch hours to start earning money",
+      "url": "https://techcrunch.com/2026/08/10/youtube-now-requires-creators-to-have-twice-as-many-watch-hours-to-start-earning-money/",
+      "date": "2026-08-10",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Meta Upholds Texas Governor Greg Abbott’s Data Center Standards",
+      "titleZh": "Meta Upholds Texas Governor Greg Abbott’s Data Center Standards",
+      "url": "https://about.fb.com/news/2026/08/meta-upholds-texas-governor-greg-abbotts-data-center-standards/",
+      "date": "2026-08-10",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "The Future is for Everyone",
+      "titleZh": "The Future is for Everyone",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "date": "2026-08-10",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "TikTok lays off 250 employees, shutters its Nashville office",
+      "titleZh": "TikTok lays off 250 employees, shutters its Nashville office",
+      "url": "https://techcrunch.com/2026/08/06/tiktok-lays-off-250-employees-shutters-its-nashville-office/",
+      "date": "2026-08-06",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Why Meta Builds Its Own AI Data Centers",
+      "titleZh": "Why Meta Builds Its Own AI Data Centers",
+      "url": "https://about.fb.com/news/2026/08/why-meta-builds-its-own-data-centers/",
+      "date": "2026-08-06",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/Tom-Shaw_-Interview-with-Rachel_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/Tom-Shaw_-Interview-with-Rachel_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "From User Sequences to Scaling Laws: A Multi-Stage Architecture for Meta’s Ads Ranking",
+      "titleZh": "From User Sequences to Scaling Laws: A Multi-Stage Architecture for Meta’s Ads Ranking",
+      "url": "https://engineering.fb.com/2026/08/05/ml-applications/from-user-sequences-to-scaling-laws-a-multi-stage-architecture-for-metas-ads-ranking/",
+      "date": "2026-08-05",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/05/Multi-stage-Model-Overview.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/05/Multi-stage-Model-Overview.png"
+    },
+    {
+      "titleEn": "Disney+ looks to TikTok creators to bring fan content to its short-form video feed",
+      "titleZh": "Disney+ looks to TikTok creators to bring fan content to its short-form video feed",
+      "url": "https://techcrunch.com/2026/08/05/disney-looks-to-tiktok-creators-to-bring-fan-content-to-its-short-form-video-feed/",
+      "date": "2026-08-05",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "We’re Upgrading Your WhatsApp Group Chats",
+      "titleZh": "We’re Upgrading Your WhatsApp Group Chats",
+      "url": "https://about.fb.com/news/2026/08/were-upgrading-your-whatsapp-group-chats/",
+      "date": "2026-08-04",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/WhatsApp-Group-Chat-Bundle-Blog_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/WhatsApp-Group-Chat-Bundle-Blog_Thumbnail.jpg?fit=890%2C501"
+    },
     {
       "titleEn": "Snap CEO sidesteps Specs preorder questions on Q2 earnings call",
       "titleZh": "Snap CEO sidesteps Specs preorder questions on Q2 earnings call",
@@ -140,87 +221,6 @@
       "source": "Facebook / Meta",
       "image": "https://about.fb.com/wp-content/uploads/2026/07/Meta-AI-Doesnt-Just-Think_It-Acts_Thumbnail.gif?fit=890%2C501",
       "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Meta-AI-Doesnt-Just-Think_It-Acts_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Facebook launches a dedicated Marketplace app for sellers, adds a free verification system",
-      "titleZh": "Facebook launches a dedicated Marketplace app for sellers, adds a free verification system",
-      "url": "https://techcrunch.com/2026/07/24/facebook-launches-a-dedicated-marketplace-app-for-sellers-adds-a-free-verification-system/",
-      "date": "2026-07-24",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Introducing Facebook Verified",
-      "titleZh": "Introducing Facebook Verified",
-      "url": "https://about.fb.com/news/2026/07/introducing-facebook-verified/",
-      "date": "2026-07-24",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/Introducing-Facebook-Verified_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Introducing-Facebook-Verified_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Introducing Seller, an App for Facebook Marketplace Sellers",
-      "titleZh": "Introducing Seller, an App for Facebook Marketplace Sellers",
-      "url": "https://about.fb.com/news/2026/07/introducing-seller-app-facebook-marketplace/",
-      "date": "2026-07-24",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/Introducing-Seller-an-App-for-Facebook-Marketplace-Sellers_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Introducing-Seller-an-App-for-Facebook-Marketplace-Sellers_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Connecting Real People on Facebook",
-      "titleZh": "Connecting Real People on Facebook",
-      "url": "https://about.fb.com/news/2026/07/connecting-real-people-on-facebook/",
-      "date": "2026-07-24",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/Connecting-Real-People-on-Facebook_Thumbnail-1.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Connecting-Real-People-on-Facebook_Thumbnail-1.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "New WhatsApp Features Keep Up With the Way You Actually Live",
-      "titleZh": "New WhatsApp Features Keep Up With the Way You Actually Live",
-      "url": "https://about.fb.com/news/2026/07/new-whatsapp-features-keep-up-with-the-way-you-actually-live/",
-      "date": "2026-07-22",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/WhatsApp-Feature-Roundup_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/WhatsApp-Feature-Roundup_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "13 Google tips for a fun, productive summer off from college",
-      "titleZh": "13 Google tips for a fun, productive summer off from college",
-      "url": "https://blog.google/products-and-platforms/products/education/summer-productivity-tips-google-ai-tools/",
-      "date": "2026-07-21",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/12_Google_Productivity_Tips_her.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/12_Google_Productivity_Tips_her.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "Instagram now lets you swap out the music in your old posts",
-      "titleZh": "Instagram now lets you swap out the music in your old posts",
-      "url": "https://techcrunch.com/2026/07/21/instagram-now-lets-you-swap-out-the-music-in-your-old-posts/",
-      "date": "2026-07-21",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "New Parental Supervision Tools Coming To Threads",
-      "titleZh": "New Parental Supervision Tools Coming To Threads",
-      "url": "https://about.fb.com/news/2026/07/new-parental-supervision-tools-coming-threads/",
-      "date": "2026-07-21",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/New-Parental-Supervision-Tools-Now-Available-on-Threads_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/New-Parental-Supervision-Tools-Now-Available-on-Threads_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "YouTube clarifies policies around AI slop and upsetting videos",
-      "titleZh": "YouTube clarifies policies around AI slop and upsetting videos",
-      "url": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/",
-      "date": "2026-07-20",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
     }
   ],
   "moreTitleEn": "More social networks",

@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-08-04",
+  "updated": "2026-08-11",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "How to Run Isolated Tenant Kubernetes Clusters on Shared GPU Infrastructure",
-          "titleZh": "How to Run Isolated Tenant Kubernetes Clusters on Shared GPU Infrastructure",
-          "url": "https://developer.nvidia.com/blog/how-to-run-isolated-tenant-kubernetes-clusters-on-shared-gpu-infrastructure/",
-          "date": "2026-08-03"
+          "titleEn": "Run Local Agentic AI Workflows with Meta’s Muse Glimmer on NVIDIA",
+          "titleZh": "Run Local Agentic AI Workflows with Meta’s Muse Glimmer on NVIDIA",
+          "url": "https://developer.nvidia.com/blog/run-local-agentic-ai-workflows-with-metas-muse-glimmer-on-nvidia/",
+          "date": "2026-08-10"
         },
         {
-          "titleEn": "NVIDIA Vera Storage Benchmarks: Faster Encryption, Compression, Integrity Checking, and Recovery for AI-Native Storage",
-          "titleZh": "NVIDIA Vera Storage Benchmarks: Faster Encryption, Compression, Integrity Checking, and Recovery for AI-Native Storage",
-          "url": "https://developer.nvidia.com/blog/nvidia-vera-storage-benchmarks-faster-encryption-compression-integrity-checking-and-recovery-for-ai-native-storage/",
-          "date": "2026-08-03"
+          "titleEn": "Firebird Launches CIS Region’s Largest AI Factory in Armenia",
+          "titleZh": "Firebird Launches CIS Region’s Largest AI Factory in Armenia",
+          "url": "https://blogs.nvidia.com/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx/",
+          "date": "2026-08-08"
         },
         {
-          "titleEn": "Co-Designing AI Model Attention for Fast, Interactive Long-Context Inference",
-          "titleZh": "Co-Designing AI Model Attention for Fast, Interactive Long-Context Inference",
-          "url": "https://developer.nvidia.com/blog/co-designing-ai-model-attention-for-fast-interactive-long-context-inference/",
-          "date": "2026-07-31"
+          "titleEn": "GeForce NOW Shakes Up August With 26 New Games",
+          "titleZh": "GeForce NOW Shakes Up August With 26 New Games",
+          "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-august-2026-games-list/",
+          "date": "2026-08-06"
         }
       ]
     },
@@ -191,22 +191,22 @@
       "labelZh": "AMD",
       "items": [
         {
+          "titleEn": "AMD Acquires Taalas to Advance Compute Solutions for Rapidly Growing AI Inference Market",
+          "titleZh": "AMD Acquires Taalas to Advance Compute Solutions for Rapidly Growing AI Inference Market",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market",
+          "date": "2026-08-06"
+        },
+        {
+          "titleEn": "AMD Reports Second Quarter 2026 Financial Results",
+          "titleZh": "AMD Reports Second Quarter 2026 Financial Results",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+          "date": "2026-08-04"
+        },
+        {
           "titleEn": "AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era",
           "titleZh": "AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era",
           "url": "https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era",
           "date": "2026-07-23"
-        },
-        {
-          "titleEn": "AMD and Cerebras Announce Industry-Leading Ultra-Low-Latency and High Throughput AI Inference Solution",
-          "titleZh": "AMD and Cerebras Announce Industry-Leading Ultra-Low-Latency and High Throughput AI Inference Solution",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution",
-          "date": "2026-07-23"
-        },
-        {
-          "titleEn": "AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs",
-          "titleZh": "AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus",
-          "date": "2026-07-22"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "Samsung Launches World’s First HDR10+ ADVANCED Streaming Experience on Prime Video",
-          "titleZh": "Samsung Launches World’s First HDR10+ ADVANCED Streaming Experience on Prime Video",
-          "url": "https://news.samsung.com/global/samsung-launches-worlds-first-hdr10-advanced-streaming-experience-on-prime-video",
-          "date": "2026-08-04"
+          "titleEn": "Samsung To Showcase Latest Gaming Innovations at Gamescom 2026",
+          "titleZh": "Samsung To Showcase Latest Gaming Innovations at Gamescom 2026",
+          "url": "https://news.samsung.com/global/samsung-to-showcase-latest-gaming-innovations-at-gamescom-2026",
+          "date": "2026-08-11"
         },
         {
-          "titleEn": "[Interview] [Galaxy Unpacked July 2026] Inside the Design Behind the Latest Galaxy Z Series and Galaxy Watch",
-          "titleZh": "[Interview] [Galaxy Unpacked July 2026] Inside the Design Behind the Latest Galaxy Z Series and Galaxy Watch",
-          "url": "https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-inside-the-design-behind-the-latest-galaxy-z-series-and-galaxy-watch",
-          "date": "2026-08-03"
+          "titleEn": "Samsung’s 2026 TV and Audio Lineup Earns Praise for Picture, Sound and Gaming",
+          "titleZh": "Samsung’s 2026 TV and Audio Lineup Earns Praise for Picture, Sound and Gaming",
+          "url": "https://news.samsung.com/global/samsungs-2026-tv-and-audio-lineup-earns-praise-for-picture-sound-and-gaming",
+          "date": "2026-08-11"
         },
         {
-          "titleEn": "[Video] Unfolding New Experiences With the Galaxy Z Series",
-          "titleZh": "[Video] Unfolding New Experiences With the Galaxy Z Series",
-          "url": "https://news.samsung.com/global/video-unfolding-new-experiences-with-the-galaxy-z-series",
-          "date": "2026-07-31"
+          "titleEn": "[Interview] From Stage to Screen: Samsung TV Plus and Eclipsa Audio Usher in a New Era of Home Entertainment",
+          "titleZh": "[Interview] From Stage to Screen: Samsung TV Plus and Eclipsa Audio Usher in a New Era of Home Entertainment",
+          "url": "https://news.samsung.com/global/interview-from-stage-to-screen-samsung-tv-plus-and-eclipsa-audio-usher-in-a-new-era-of-home-entertainment",
+          "date": "2026-08-07"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "英特尔",
       "items": [
         {
-          "titleEn": "Intel’s U.S. Advanced Packaging Enables Next-Generation AI Semiconductors",
-          "titleZh": "Intel’s U.S. Advanced Packaging Enables Next-Generation AI Semiconductors",
-          "url": "https://newsroom.intel.com/intel-foundry/intels-us-advanced-packaging-enables-next-generation-ai-semiconductors",
-          "date": "2026-07-29"
+          "titleEn": "Intel Announces Upsize and Pricing of $20 Billion Common Stock Offering",
+          "titleZh": "Intel Announces Upsize and Pricing of $20 Billion Common Stock Offering",
+          "url": "https://newsroom.intel.com/corporate/intel-announces-upsize-and-pricing-of-20-billion-common-stock-offering",
+          "date": "2026-08-11"
         },
         {
-          "titleEn": "Intel Completes RAMP-C Program, Accelerating Momentum for Secure Enclave",
-          "titleZh": "Intel Completes RAMP-C Program, Accelerating Momentum for Secure Enclave",
-          "url": "https://newsroom.intel.com/intel-foundry/intel-completes-ramp-c-program-accelerating-momentum-for-secure-enclave",
-          "date": "2026-07-28"
+          "titleEn": "Intel Gamer Days 2026 Kicking Off with AAA Gaming Bundle & Partnerships",
+          "titleZh": "Intel Gamer Days 2026 Kicking Off with AAA Gaming Bundle & Partnerships",
+          "url": "https://newsroom.intel.com/client-computing/intel-gamer-days-2026-kicking-off-with-aaa-gaming-bundle-partnerships",
+          "date": "2026-08-10"
         },
         {
-          "titleEn": "Intel and Lens Technology Collaborate to Enable Advanced Semiconductor Packaging for the AI Era",
-          "titleZh": "Intel and Lens Technology Collaborate to Enable Advanced Semiconductor Packaging for the AI Era",
-          "url": "https://newsroom.intel.com/new-technologies/intel-and-lens-technology-collaborate-to-enable-advanced-semiconductor-packaging-for-the-ai-era",
-          "date": "2026-07-24"
+          "titleEn": "Intel Announces Proposed $15 Billion Common Stock Offering",
+          "titleZh": "Intel Announces Proposed $15 Billion Common Stock Offering",
+          "url": "https://newsroom.intel.com/corporate/intel-announces-proposed-15-billion-common-stock-offering",
+          "date": "2026-08-10"
         }
       ]
     },
@@ -316,22 +316,22 @@
       "labelZh": "ARM",
       "items": [
         {
-          "titleEn": "Arm Performix brings AI-guided performance analysis to agentic development",
-          "titleZh": "Arm Performix brings AI-guided performance analysis to agentic development",
-          "url": "https://newsroom.arm.com/blog/arm-performix-dynamic-insights-agentic-development",
-          "date": "2026-08-03"
+          "titleEn": "CPUs are having a moment: Inside Arm’s hyperscale surge",
+          "titleZh": "CPUs are having a moment: Inside Arm’s hyperscale surge",
+          "url": "https://newsroom.arm.com/blog/inside-arms-hyperscale-surge",
+          "date": "2026-08-05"
         },
         {
-          "titleEn": "How Atlassian improved Jira and Confluence performance on Arm Neoverse-based AWS Graviton",
-          "titleZh": "How Atlassian improved Jira and Confluence performance on Arm Neoverse-based AWS Graviton",
-          "url": "https://newsroom.arm.com/blog/how-atlassian-improved-jira-and-confluence-performance-on-arm-neoverse-based-aws-graviton",
-          "date": "2026-07-31"
+          "titleEn": "Top Arm-based innovations advancing AI infrastructure, on-device intelligence and physical AI in July 2026",
+          "titleZh": "Top Arm-based innovations advancing AI infrastructure, on-device intelligence and physical AI in July 2026",
+          "url": "https://newsroom.arm.com/blog/top-arm-based-innovations-in-july-2026",
+          "date": "2026-08-05"
         },
         {
-          "titleEn": "From tokens to tasks: Why agentic AI changes the infrastructure conversation",
-          "titleZh": "From tokens to tasks: Why agentic AI changes the infrastructure conversation",
-          "url": "https://newsroom.arm.com/blog/how-agentic-ai-is-changing-the-infrastructure",
-          "date": "2026-07-23"
+          "titleEn": "Arm Neural Technology gaining momentum across the mobile gaming ecosystem",
+          "titleZh": "Arm Neural Technology gaining momentum across the mobile gaming ecosystem",
+          "url": "https://newsroom.arm.com/blog/arm-neural-technology-mobile-gaming-ecosystem",
+          "date": "2026-08-04"
         }
       ]
     },

@@ -8,7 +8,7 @@
   "descZh": "按 Newzoo 与行业营收常见梯队排序的十个商店与发行商，每站三条官方公告或博文外链。",
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
-  "updated": "2026-08-04",
+  "updated": "2026-08-11",
   "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Last reviewed: <strong>2026-06-22</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want a ranked top-10 plus three official links per vendor — not a discovery feed for unknown APK sites. Major client updates still show up in the per-row news slots when you run <code>npm run fetch-hub-news</code>; mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p><p><strong>Editorial cross-link:</strong> first game-original on this hub: <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Reading Steam Charts</a>; character look-dev in <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">Elena · Sea-Wind</a>, <a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">palette & ritual UI</a>, and <a href=\"/articles/games-hub-generative-art-workflow.html\">Games hub × generative art workflow</a>.</p>",
   "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>最近核对：<strong>2026-06-22</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但需要对照营收梯队、并点到各厂三条官方链接的人；不把它当成 APK 发现站。大版本更新仍会出现在每行「最新动态」里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p><p><strong>原创交叉链：</strong>游戏 Hub 原创轮播首篇 <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Steam Charts 怎么读</a>；角色设定见 <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">艾琳娜 · 海风之诗</a>、<a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">配色与仪式 UI</a>，工作流 <a href=\"/articles/games-hub-generative-art-workflow.html\">游戏 Hub × 生成式角色美术</a>。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
@@ -147,22 +147,22 @@
       "labelZh": "PlayStation",
       "items": [
         {
-          "titleEn": "Players’ Choice: Vote for July 2026’s best new game",
-          "titleZh": "Players’ Choice: Vote for July 2026’s best new game",
-          "url": "https://blog.playstation.com/2026/08/03/players-choice-vote-for-july-2026s-best-new-game/",
-          "date": "2026-08-03"
+          "titleEn": "No Man’s Sky developer Hello Games celebrates 10-year anniversary",
+          "titleZh": "No Man’s Sky developer Hello Games celebrates 10-year anniversary",
+          "url": "https://blog.playstation.com/2026/08/10/no-mans-sky-developer-hello-games-celebrates-10-year-anniversary/",
+          "date": "2026-08-10"
         },
         {
-          "titleEn": "Beast of Reincarnation hands-on: parry-rich combat and the cutest mutant pup",
-          "titleZh": "Beast of Reincarnation hands-on: parry-rich combat and the cutest mutant pup",
-          "url": "https://blog.playstation.com/2026/08/03/beast-of-reincarnation-hands-on-parry-rich-combat-and-the-cutest-mutant-pup/",
-          "date": "2026-08-03"
+          "titleEn": "PlayStation Store: July 2026’s top downloads",
+          "titleZh": "PlayStation Store: July 2026’s top downloads",
+          "url": "https://blog.playstation.com/2026/08/10/playstation-store-july-2026s-top-downloads/",
+          "date": "2026-08-10"
         },
         {
-          "titleEn": "Silent Hill: Townfall Developers discuss the Scottish setting, retro technology, first-person combat",
-          "titleZh": "Silent Hill: Townfall Developers discuss the Scottish setting, retro technology, first-person combat",
-          "url": "https://blog.playstation.com/2026/07/30/silent-hill-townfall-developers-discuss-the-scottish-setting-retro-technology-first-person-combat/",
-          "date": "2026-07-30"
+          "titleEn": "Share of the Week: Assassin’s Creed Black Flag Resynced – Jackdaw",
+          "titleZh": "Share of the Week: Assassin’s Creed Black Flag Resynced – Jackdaw",
+          "url": "https://blog.playstation.com/2026/08/07/share-of-the-week-assassins-creed-black-flag-resynced-jackdaw/",
+          "date": "2026-08-07"
         }
       ]
     },
@@ -172,22 +172,22 @@
       "labelZh": "Xbox",
       "items": [
         {
-          "titleEn": "Beast of Reincarnation: Early-Game Tips to Help You Manage the Miasma",
-          "titleZh": "Beast of Reincarnation: Early-Game Tips to Help You Manage the Miasma",
-          "url": "https://news.xbox.com/en-us/2026/08/03/beast-of-reincarnation-starter-tips-guide/",
-          "date": "2026-08-04"
+          "titleEn": "No Man’s Sky Celebrates Its 10th Anniversary",
+          "titleZh": "No Man’s Sky Celebrates Its 10th Anniversary",
+          "url": "https://news.xbox.com/en-us/2026/08/10/no-mans-sky-10th-anniversary/",
+          "date": "2026-08-10"
         },
         {
-          "titleEn": "Celebrating 25 Years of Play: New Community Designs, XBOX Updates, FanFest Tour Dates, and More",
-          "titleZh": "Celebrating 25 Years of Play: New Community Designs, XBOX Updates, FanFest Tour Dates, and More",
-          "url": "https://news.xbox.com/en-us/2026/08/03/xbox-anniversary-x25-fanfest-gear-community-designs/",
-          "date": "2026-08-03"
+          "titleEn": "Wild Blue Skies: How We Brought the Feel of a 90s Arcade Cockpit to XBOX",
+          "titleZh": "Wild Blue Skies: How We Brought the Feel of a 90s Arcade Cockpit to XBOX",
+          "url": "https://news.xbox.com/en-us/2026/08/07/wild-blue-skies-how-we-brought-the-feel-of-a-90s-arcade/",
+          "date": "2026-08-07"
         },
         {
-          "titleEn": "Keep Your Cemetery Running (and the Zombies Out) in Zombie Graveyard Simulator",
-          "titleZh": "Keep Your Cemetery Running (and the Zombies Out) in Zombie Graveyard Simulator",
-          "url": "https://news.xbox.com/en-us/2026/08/03/keep-your-cemetery-running-and-the-zombies-out/",
-          "date": "2026-08-03"
+          "titleEn": "THQ Nordic Showcase 2026: New Worlds, New Stories, New Games, and New Discounts",
+          "titleZh": "THQ Nordic Showcase 2026: New Worlds, New Stories, New Games, and New Discounts",
+          "url": "https://news.xbox.com/en-us/2026/08/07/thq-nordic-showcase-2026/",
+          "date": "2026-08-07"
         }
       ]
     },
