@@ -152,6 +152,16 @@ const PRIMARY_CONTENT_LEAD2 = {
   ar: "Hub والملخصات والأدلة وأرشيف الترتيب = <strong>إشارات ثانوية</strong> (<code>noindex</code>). للمراجعة: <a href=\"about.html\">حول</a> أو <a href=\"articles/index.html\">العروض</a>.",
 };
 
+const ORIGINALS_CTA = {
+  en: '<a class="site-cta" href="articles/index.html">Browse all demos</a><a class="site-cta site-cta--ghost" href="about.html">About this site</a>',
+  zh: '<a class="site-cta" href="articles/index.html">浏览全部原创</a><a class="site-cta site-cta--ghost" href="about.html">关于本站</a>',
+  ja: '<a class="site-cta" href="articles/index.html">デモ一覧</a><a class="site-cta site-cta--ghost" href="about.html">サイトについて</a>',
+  ko: '<a class="site-cta" href="articles/index.html">전체 데모</a><a class="site-cta site-cta--ghost" href="about.html">사이트 소개</a>',
+  fr: '<a class="site-cta" href="articles/index.html">Toutes les démos</a><a class="site-cta site-cta--ghost" href="about.html">À propos</a>',
+  ru: '<a class="site-cta" href="articles/index.html">Все демо</a><a class="site-cta site-cta--ghost" href="about.html">О сайте</a>',
+  ar: '<a class="site-cta" href="articles/index.html">كل العروض</a><a class="site-cta site-cta--ghost" href="about.html">حول الموقع</a>',
+};
+
 const ARTICLES_INDEX_LEAD = {
   en: "{n} personal demos on aogl.cn—WebGL, video, panoramas, and illustration pipelines—with production notes in first-screen HTML. Chart/ranking archives are hub bookmarks only (noindex).",
   zh: "aogl.cn 上{n}篇个人 Demo：WebGL、视频、全景与插画流程，首屏 HTML 含制作手记。榜单存档仅作 Hub 书签（noindex），不列入本索引主列表。",
@@ -749,6 +759,7 @@ ${INDEX_END}`;
   ).join("\n");
 
   const carousel = originalsCarouselUl(slice);
+  const ctaBlock = LANGS.map((l) => `        <p class="site-originals-cta lang-${l}">${ORIGINALS_CTA[l]}</p>`).join("\n");
 
   return `${INDEX_START}
       <section id="originals" class="site-originals" aria-labelledby="originals-title">
@@ -756,6 +767,7 @@ ${primaryLeads}
 ${primaryLeads2}
 ${titleBlock}
 ${carousel}
+${ctaBlock}
       </section>
 ${INDEX_END}`;
 }

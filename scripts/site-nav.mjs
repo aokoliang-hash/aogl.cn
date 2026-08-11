@@ -1,13 +1,14 @@
 /**
  * Shared primary site navigation (see docs/流量增长与栏目整改实施方案.md).
- * Primary: Originals · AI tools · Briefs · Games · Tech · Portal · Brands · Shopping · Life · Social · Utilities
+ * Primary: Originals · About · AI tools · Briefs · Games · Tech · Portal · Brands · Shopping · Life · Social · Utilities
+ * Home highlights Originals (not the tools grid) for AdSense first-impression.
  */
 export const NAV_LOCALES = ["en", "zh", "ja", "ko", "fr", "ru", "ar"];
 
 const PRIMARY = [
   {
     href: "articles/index.html",
-    match: { context: "articles" },
+    match: { context: "articles", contextAlt: "home" },
     en: "Originals",
     zh: "本站原创",
     ja: "オリジナル",
@@ -17,9 +18,20 @@ const PRIMARY = [
     ar: "محتوى أصلي",
   },
   {
+    href: "about.html",
+    match: { file: "about.html" },
+    en: "About",
+    zh: "关于",
+    ja: "About",
+    ko: "소개",
+    fr: "À propos",
+    ru: "О сайте",
+    ar: "حول",
+  },
+  {
     href: "index.html#tools-directory",
     hrefKey: "tools",
-    match: { context: "tools", file: "index.html" },
+    match: { context: "tools" },
     en: "AI tools",
     zh: "AI 工具",
     ja: "AIツール",
@@ -143,6 +155,7 @@ function label(item, lang) {
 function isNavActive(item, { activeFile, activeContext }) {
   const m = item.match || {};
   if (m.context && m.context === activeContext) return true;
+  if (m.contextAlt && m.contextAlt === activeContext) return true;
   if (m.file && m.file === activeFile) return true;
   return false;
 }

@@ -621,6 +621,94 @@ footer.site-footer {
 .site-originals .hub-hotmix-cards {
   margin-top: 0;
 }
+.site-originals-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 0.85rem;
+  margin: 1rem 0 0;
+  align-items: center;
+}
+.site-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.05rem;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: #0b1220;
+  background: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 55%, #0ea5e9 100%);
+  border: 1px solid rgba(125, 211, 252, 0.55);
+  text-decoration: none;
+  box-shadow: 0 0 0 1px rgba(14, 165, 233, 0.12);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+.site-cta:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  color: #0b1220;
+}
+.site-cta--ghost {
+  color: #e2e8f0;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+.site-cta--ghost:hover {
+  color: #f8fafc;
+  border-color: rgba(125, 211, 252, 0.45);
+  filter: none;
+}
+.site-bookmarks-secondary {
+  margin: 2.25rem 0 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  opacity: 0.92;
+}
+.site-bookmarks-secondary > .page-section-title {
+  color: #94a3b8;
+  font-size: clamp(1.02rem, 1.7vw, 1.15rem);
+}
+.site-bookmarks-pillars .cards {
+  opacity: 0.9;
+}
+.site-bookmarks-pillars .card {
+  background: rgba(15, 23, 42, 0.35);
+}
+.tools-directory--secondary {
+  margin-top: 1.5rem;
+}
+.tools-directory-details {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.28);
+  padding: 0.35rem 0.85rem 0.85rem;
+}
+.tools-directory-summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.75rem 0.15rem;
+  font-weight: 650;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+.tools-directory-summary::-webkit-details-marker {
+  display: none;
+}
+.tools-directory-summary::before {
+  content: "▸ ";
+  color: #7dd3fc;
+}
+.tools-directory-details[open] > .tools-directory-summary::before {
+  content: "▾ ";
+}
+.tools-intro--secondary {
+  margin-bottom: 0.85rem;
+}
+.tools-intro--secondary a {
+  color: #7dd3fc;
+}
 .site-originals .originals-card-excerpt {
   font-size: 0.74rem;
   line-height: 1.38;

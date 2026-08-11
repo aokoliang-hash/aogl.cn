@@ -36,17 +36,12 @@ function tenTags(data, lang) {
   return out.slice(0, 10);
 }
 
-function render(data) {
-  return LOCALES.map((lang) => {
-    const tags = tenTags(data, lang);
-    const pills = tags
-      .map((t) => {
-        const q = encodeURIComponent(t);
-        return `<a class="pill" href="https://www.google.com/search?q=${q}" target="_blank" rel="noopener noreferrer">${escapeHtml(t)}</a>`;
-      })
-      .join("");
-    return `        <div class="pill-row lang-${lang}" role="navigation" aria-label="Trending searches">${pills}</div>`;
-  }).join("\n");
+/**
+ * AdSense first-impression: do not inject Google-search keyword pills on the home page.
+ * data/index-pills.json is kept for optional restore later.
+ */
+function render(_data) {
+  return `        <!-- index keyword pills omitted (AdSense: avoid thin SEO pill clusters on home) -->`;
 }
 
 function replaceMarker(html, inner) {
@@ -56,8 +51,8 @@ function replaceMarker(html, inner) {
   return html.slice(0, i0 + START.length) + "\n" + inner + "\n" + html.slice(i1);
 }
 
-const data = JSON.parse(fs.readFileSync(DATA, "utf8"));
+const data = fs.existsSync(DATA) ? JSON.parse(fs.readFileSync(DATA, "utf8")) : {};
 let html = fs.readFileSync(INDEX, "utf8");
 html = replaceMarker(html, render(data));
 fs.writeFileSync(INDEX, html, "utf8");
-console.log("Injected index keyword pills (7 locales × 10 links)");
+console.log("Index keyword pills cleared (AdSense home IA)");

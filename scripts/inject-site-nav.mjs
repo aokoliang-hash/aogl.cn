@@ -14,7 +14,7 @@ const END = "<!-- SITE_NAV_AUTO_END -->";
 let index = fs.readFileSync(INDEX_PATH, "utf8");
 const navInner = navHtml({
   activeFile: "index.html",
-  activeContext: "tools",
+  activeContext: "home",
   toolsHref: "#tools-directory",
 });
 const block = `${START}\n${navInner}\n${END}`;
