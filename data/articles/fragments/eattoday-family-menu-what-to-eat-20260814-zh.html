@@ -1,0 +1,112 @@
+<p>这是 aogl.cn 上的一篇<strong>个人原创开发手记</strong>，素材全部来自 <code>original/eattoday/</code>（2026-08-14 归档）。<strong>EatToday（今天吃什么）是本人开发的 App</strong>（页脚署名 © kolang），入口：<a href="http://eattoday.aogl.cn/" target="_blank" rel="noopener noreferrer">http://eattoday.aogl.cn/</a>——把家里每晚「今天吃什么 / 谁做饭」的决策成本，压成一条可分享的<strong>家庭今日菜单</strong>。一人或多人点菜，做饭的人打开当日清单，按食材、步骤和可选视频外链下锅。本文不是转载软文，而是作者按真实截图拆解：点菜页、三餐槽位、菜谱详情、空状态引导、家庭房间邀请码，方便检索「家庭今天吃什么 App」「共享家常菜菜单」「免注册家庭点菜」等长尾词。</p>
+
+<figure class="article-figure">
+  <img src="../original/eattoday/1.png" width="1200" height="675" loading="lazy" decoding="async" alt="EatToday 品牌图 — 番茄炒蛋标题与暖橙渐变底">
+  <figcaption><code>1.png</code> — 品牌主视觉：番茄炒蛋 · EatToday · 今天吃什么。</figcaption>
+</figure>
+
+<h2>文件夹里有什么</h2>
+<ul>
+  <li><code>1.png</code> — 暖橙渐变品牌帧，主标「番茄炒蛋」与产品行 EatToday · 今天吃什么。</li>
+  <li><code>icon-512.png</code> — App 图标：圆角餐盘符号 + 橙色径向渐变 + 小写 eattoday。</li>
+  <li><code>ScreenShot_2026-08-14_113649_346.png</code> — 「点菜」：早餐选中、搜索、分类芯片、菜卡「加入早餐」。</li>
+  <li><code>ScreenShot_2026-08-14_113658_051.png</code> — 「今天吃」：敖家 · 2026-08-14 空早餐引导与「分享给家人」。</li>
+  <li><code>ScreenShot_2026-08-14_113706_119.png</code> — 「菜谱详情」：土豆烧排骨约 60 分钟、视频教程卡、「加入早餐」。</li>
+  <li><code>4.jpg</code> / <code>17.jpg</code> / <code>31.jpg</code> / <code>32.jpg</code> / <code>48.jpg</code> — 菜品静物归档图。</li>
+  <li><code>README.txt</code> — 产品说明：目标、角色、用户故事。</li>
+</ul>
+<p>截图均在移动浏览器打开 <a href="http://eattoday.aogl.cn/" target="_blank" rel="noopener noreferrer">http://eattoday.aogl.cn/</a> 拍摄。对 SEO 而言，同时提供<strong>产品语义文字</strong> + <strong>带 alt 的界面截图</strong>，比只贴外链更容易被理解。</p>
+
+<figure class="article-figure">
+  <img src="../original/eattoday/icon-512.png" width="512" height="512" loading="lazy" decoding="async" alt="EatToday App 图标 — 白色餐盘符号与 eattoday 字标">
+  <figcaption><code>icon-512.png</code> — 产品图标。</figcaption>
+</figure>
+
+<h2>产品定位：压缩家庭决策成本</h2>
+<p>多数「菜谱站」优化浏览；EatToday 优化另一种失败模式：<strong>家里其实会做菜，但今晚没人愿意拍板</strong>。README 写得很直接——用三步砍掉「吃什么 / 谁做」的扯皮：</p>
+<ol>
+  <li><strong>点菜</strong> — 按分类或搜索家常菜，加入早/午/晚。</li>
+  <li><strong>今日菜单</strong> — 生成带日期的清单，做饭的人一眼能照单执行。</li>
+  <li><strong>分享</strong> — 把房间链接或邀请码发给灶台前的人。</li>
+</ol>
+<p>它更接近<strong>轻量家庭协作工具</strong>，而不是 SEO 菜谱农场。只有美图没有「今日清单」，每晚还得重谈；只有群聊没有三餐槽位，消息一刷就丢。EatToday 用顶部双页签钉住两端：<strong>点菜</strong>与<strong>今天吃</strong>。</p>
+
+<h2>角色：点菜的人 / 做饭的人 / 管理员</h2>
+<ul>
+  <li><strong>点菜的人</strong> — 要快浏览、加入今日、能分享。</li>
+  <li><strong>做饭的人</strong> — 要今日清单、食材步骤/视频、做中/已做状态。</li>
+  <li><strong>管理员</strong> — 维护分类、菜式、食材、步骤与视频外链。</li>
+</ul>
+<p>这些角色来自 <code>README.txt</code>，不是编出来的人设。产品刻意支持<strong>昵称参与、弱注册</strong>：创建或加入家庭房间即可点菜。用家庭真实场景换掉企业式登录墙——爷爷奶奶和小孩最容易死在「先填邮箱」那一步。</p>
+
+<h2>点菜页：搜索、分类、三餐槽位</h2>
+<p>「点菜」页在页签下有三枚餐次胶囊：<strong>早餐 / 午餐 / 晚餐</strong>。当前餐次会改写每张菜卡按钮文案（如「加入早餐」）。搜索框占位：「搜菜名，比如番茄炒蛋」——番茄炒蛋既是品牌菜名，也是搜索示例，语气一致。分类芯片含全部、家常炒菜、汤羹、蒸煮炖、主食面点、凉菜小吃、下饭硬菜。列表可「加载更多（已显 24/80）」，避免首屏一次塞八十张卡。</p>
+
+<figure class="article-figure">
+  <img src="../original/eattoday/ScreenShot_2026-08-14_113649_346.png" width="390" height="844" loading="lazy" decoding="async" alt="EatToday 点菜页 — 早餐选中、搜索分类、土豆烧排骨与鱼香茄子菜卡">
+  <figcaption><code>ScreenShot_…_113649_346.png</code> — 点菜页，早餐槽位激活。</figcaption>
+</figure>
+
+<p>归档可见菜名包括土豆烧排骨、鱼香茄子、蒜蓉烤排骨、红烧鸡翅根、啤酒鸭、虎皮青椒、凉拌海带丝、皮蛋豆腐等。正文重复这些实体是有意为之：具体家常菜长尾词可以落到「既有产品说明又有菜单工具」的页面，而不是薄关键词表。</p>
+
+<h2>菜谱详情：时长、视频，再加入某餐</h2>
+<p>打开「土豆烧排骨」可见标题「菜谱详情」、主图、时长芯片「大约 60 分钟」、视频教程卡，以及与当前餐次一致的橙色主按钮「加入早餐」。做饭路径很清楚：先看懂怎么做，再提交到今日看板。视频是<strong>可选教学辅助</strong>，产品核心仍是共享菜单契约，而不是播放量。</p>
+
+<figure class="article-figure">
+  <img src="../original/eattoday/ScreenShot_2026-08-14_113706_119.png" width="390" height="844" loading="lazy" decoding="async" alt="EatToday 菜谱详情 — 土豆烧排骨约60分钟、视频教程、加入早餐">
+  <figcaption><code>ScreenShot_…_113706_119.png</code> — 土豆烧排骨详情。</figcaption>
+</figure>
+
+<figure class="article-figure">
+  <img src="../original/eattoday/4.jpg" width="800" height="600" loading="lazy" decoding="async" alt="EatToday 归档菜品静物 — 黑碗中的鸡丁彩椒摆盘">
+  <figcaption><code>4.jpg</code> — <code>original/eattoday/</code> 菜品静物。</figcaption>
+</figure>
+
+<h2>今天吃：用空状态教回路</h2>
+<p>示例「今天吃」页显示 <strong>敖家 · 2026-08-14</strong>，右侧红色「分享给家人」。早/午/晚计数为 0。空卡片不是空白——它在教：「选几道家常菜，做饭的人一眼就知道做什么」，并提供「去点早餐的菜」。好的空状态等于嵌在 UI 里的产品文档。对 AdSense 与人工审核也有用：截图证明这是设计过的协作流程，不是洗稿菜谱堆。</p>
+
+<figure class="article-figure">
+  <img src="../original/eattoday/ScreenShot_2026-08-14_113658_051.png" width="390" height="844" loading="lazy" decoding="async" alt="EatToday 今天吃 — 敖家当日菜单空早餐与分享给家人">
+  <figcaption><code>ScreenShot_…_113658_051.png</code> — 今日菜单空状态与分享入口。</figcaption>
+</figure>
+
+<p>有菜之后，做饭的人应按用户故事看到分餐清单，并把状态改为做中 / 已做。状态闭环解决协调问题：点菜的人少问「好了没」，做饭的人少猜「哪条微信才是最终菜单」。</p>
+
+<h2>家庭房间：创建、邀请、加入</h2>
+<p>没有房间时进入房间页：「还没有家庭房间」，可<strong>创建房间</strong>或<strong>输入邀请码加入</strong>。加入可填昵称（占位「吃货」）与邀请码或粘贴分享链接。这是 EatToday 相对个人备忘 App 的多人边界。同站产品 WordPet（<code>wordpet.aogl.cn</code>）解决单人学习习惯；EatToday 解决<strong>围绕一口灶的多人协调习惯</strong>。</p>
+<p>把交互产品放在兄弟域名 <code>eattoday.aogl.cn</code>，与 aogl.cn 静态编辑站分界：长文 SEO 在 aogl.cn 首屏 HTML；点菜状态与房间 cookie 留在独立宿主。线上演示请优先使用当前可用的 <strong>http://</strong> 入口，文案不虚构 HTTPS 可用性。</p>
+
+<h2>不愿稀释的用户故事</h2>
+<ol>
+  <li>作为家人，我可用昵称创建或加入房间并开始点菜，不必长注册。</li>
+  <li>作为点菜的人，我可按分类/搜索找菜，看食材步骤，加入今日某餐。</li>
+  <li>作为点菜的人，我可复制房间链接或邀请码给做饭的人。</li>
+  <li>作为做饭的人，我可在做饭模式看今日列表并标记做中/已做。</li>
+  <li>作为管理员，我可上下架菜谱、编辑教程与视频链接。</li>
+</ol>
+<p>趁 UI 还热马上写手记，才能诚实：照抄界面文案（点菜、今天吃、加入午餐、分享给家人），不承诺未截到的路线图，也不把产品写成营养/医疗建议。它是<strong>决策与协调工具</strong>。</p>
+
+<h2>与 aogl.cn 并排发布的工作流备忘</h2>
+<p>截图用时间戳文件名归档，方便审核核对来源。封面仍走 <code>npm run generate-article-covers</code>，生成 1200×675 WebP，不用库存图。中文服务「今天吃什么」地域意图；英文服务 family meal planner / shared menu 等国际检索。短语种（日韩法俄阿）保持短文——中英厚文才是送审重量。</p>
+<p>相对本站已 <code>noindex</code> 的榜单存档，EatToday 应进<strong>可索引主内容</strong>：本人产品、本人截图、第一人称制作说明，与 WordPet 同属「作者软件 + UI 证据」这一档。</p>
+
+<h2>无障碍与 SEO 清单</h2>
+<ul>
+  <li>alt 写可见 UI 实体（餐次、菜名、按钮），禁止「图片1」。</li>
+  <li>正文重复 EatToday、今天吃什么、App 地址 <code>http://eattoday.aogl.cn/</code>、点菜、今天吃、家庭房间、邀请码、土豆烧排骨、番茄炒蛋。</li>
+  <li>外链加 <code>rel="noopener noreferrer"</code>；完整叙事放在首屏 HTML。</li>
+  <li>引用空状态文案，让爬虫在零点菜演示时也能理解回路。</li>
+</ul>
+
+<h2>边界</h2>
+<p>本稿记录的是<strong>本人开发的 EatToday</strong>（© kolang）——个人 Demo 与 UI 归档。菜数、房间名、视频播放量随部署与拍摄时刻变化。不宣称餐饮合作，也不提供医疗营养建议。未成年人使用分享链接时，建议有监护人陪同。</p>
+
+<h2 id="article-seo-keywords">相关检索</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://eattoday.aogl.cn/" target="_blank" rel="noopener noreferrer">打开 EatToday App</a>
+  <a class="pill" href="https://www.google.com/search?q=%E4%BB%8A%E5%A4%A9%E5%90%83%E4%BB%80%E4%B9%88+%E5%AE%B6%E5%BA%AD%E8%8F%9C%E5%8D%95+App" target="_blank" rel="noopener noreferrer">今天吃什么 家庭菜单</a>
+  <a class="pill" href="https://www.google.com/search?q=EatToday+family+meal+planner" target="_blank" rel="noopener noreferrer">EatToday meal planner</a>
+  <a class="pill" href="https://www.google.com/search?q=%E5%85%B1%E4%BA%AB%E5%AE%B6%E5%B8%B8%E8%8F%9C%E7%82%B9%E8%8F%9C" target="_blank" rel="noopener noreferrer">共享家常菜点菜</a>
+  <a class="pill" href="/articles/index.html">全部原创</a>
+  <a class="pill" href="/index.html#originals">首页原创</a>
+</div>
