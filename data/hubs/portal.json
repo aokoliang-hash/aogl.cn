@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-08-11",
+  "updated": "2026-08-18",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "Evolve your marketing with new AI tools",
-          "titleZh": "Evolve your marketing with new AI tools",
-          "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates/",
-          "date": "2026-08-10"
+          "titleEn": "Get closer to the game with Gemini and Pixel",
+          "titleZh": "Get closer to the game with Gemini and Pixel",
+          "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "The latest AI news we announced in July 2026",
-          "titleZh": "The latest AI news we announced in July 2026",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
-          "date": "2026-08-04"
+          "titleEn": "Bring your spreadsheet data to life with Sheets canvas",
+          "titleZh": "Bring your spreadsheet data to life with Sheets canvas",
+          "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
+          "date": "2026-08-13"
         },
         {
-          "titleEn": "Inside our 353,000-person vibe coding course",
-          "titleZh": "Inside our 353,000-person vibe coding course",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026/",
-          "date": "2026-08-03"
+          "titleEn": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+          "titleZh": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+          "date": "2026-08-11"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "Meta Upholds Texas Governor Greg Abbott’s Data Center Standards",
-          "titleZh": "Meta Upholds Texas Governor Greg Abbott’s Data Center Standards",
-          "url": "https://about.fb.com/news/2026/08/meta-upholds-texas-governor-greg-abbotts-data-center-standards/",
-          "date": "2026-08-10"
+          "titleEn": "The Future Is for Everyone: Free AI Glasses for Every Blind and Visually Impaired Adult Vision Ireland Supports",
+          "titleZh": "The Future Is for Everyone: Free AI Glasses for Every Blind and Visually Impaired Adult Vision Ireland Supports",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone-free-ai-glasses-for-every-blind-and-visually-impaired-adult-vision-ireland-supports/",
+          "date": "2026-08-13"
         },
         {
-          "titleEn": "The Future is for Everyone",
-          "titleZh": "The Future is for Everyone",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-          "date": "2026-08-10"
+          "titleEn": "Meta’s Compliance with Australia’s Social Media Ban",
+          "titleZh": "Meta’s Compliance with Australia’s Social Media Ban",
+          "url": "https://about.fb.com/news/2026/08/metas-compliance-with-australias-social-media-ban/",
+          "date": "2026-08-13"
         },
         {
-          "titleEn": "Why Meta Builds Its Own AI Data Centers",
-          "titleZh": "Why Meta Builds Its Own AI Data Centers",
-          "url": "https://about.fb.com/news/2026/08/why-meta-builds-its-own-data-centers/",
-          "date": "2026-08-06"
+          "titleEn": "NABTU and Meta Announce New Partnership to Invest In Skilled Trades for the AI Era",
+          "titleZh": "NABTU and Meta Announce New Partnership to Invest In Skilled Trades for the AI Era",
+          "url": "https://about.fb.com/news/2026/08/nabtu-and-meta-partnership-to-invest-in-skilled-trades-for-ai-era/",
+          "date": "2026-08-12"
         }
       ],
       "hotSearchPills": [
@@ -387,6 +387,12 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees",
+          "titleZh": "How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees",
+          "url": "https://engineering.fb.com/2026/08/12/security/how-were-building-scam-alert-whatsapp/",
+          "date": "2026-08-12"
+        },
+        {
           "titleEn": "From User Sequences to Scaling Laws: A Multi-Stage Architecture for Meta’s Ads Ranking",
           "titleZh": "From User Sequences to Scaling Laws: A Multi-Stage Architecture for Meta’s Ads Ranking",
           "url": "https://engineering.fb.com/2026/08/05/ml-applications/from-user-sequences-to-scaling-laws-a-multi-stage-architecture-for-metas-ads-ranking/",
@@ -397,12 +403,6 @@
           "titleZh": "GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model",
           "url": "https://engineering.fb.com/2026/08/03/ml-applications/training-gem-at-llm-scale-meta-ads-recommendation-foundation-model/",
           "date": "2026-08-03"
-        },
-        {
-          "titleEn": "Exploring Hierarchical Interest Representation For Meta Ads Deep Funnel Optimization",
-          "titleZh": "Exploring Hierarchical Interest Representation For Meta Ads Deep Funnel Optimization",
-          "url": "https://engineering.fb.com/2026/07/15/ai-research/exploring-hierarchical-interest-representation-for-meta-ads-deep-funnel-optimization/",
-          "date": "2026-07-15"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Tech News 2026 – Issue 33",
-          "titleZh": "Tech News 2026 – Issue 33",
-          "url": "https://diff.wikimedia.org/2026/08/10/tech-news-2026-issue-33/",
-          "date": "2026-08-10"
+          "titleEn": "ESEAP Conference 2026: Reflection from My First Time Attending and Growing within the Wikimedia Movement",
+          "titleZh": "ESEAP Conference 2026: Reflection from My First Time Attending and Growing within the Wikimedia Movement",
+          "url": "https://diff.wikimedia.org/2026/08/18/eseap-conference-2026-reflection-from-my-first-time-attending-and-growing-within-the-wikimedia-movement/",
+          "date": "2026-08-18"
         },
         {
-          "titleEn": "My GLAM Journey in Rajshahi Public Library, Bangladesh",
-          "titleZh": "My GLAM Journey in Rajshahi Public Library, Bangladesh",
-          "url": "https://diff.wikimedia.org/2026/08/07/my-glam-journey-in-rajshahi-public-library-bangladesh/",
-          "date": "2026-08-07"
+          "titleEn": "Tech News 2026 – Issue 34",
+          "titleZh": "Tech News 2026 – Issue 34",
+          "url": "https://diff.wikimedia.org/2026/08/17/tech-news-2026-issue-34/",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "Wikisignals.org: Helping Editors Evaluate Reference Reliability",
-          "titleZh": "Wikisignals.org: Helping Editors Evaluate Reference Reliability",
-          "url": "https://diff.wikimedia.org/2026/08/07/wikisignals-org-helping-editors-evaluate-reference-reliability/",
-          "date": "2026-08-07"
+          "titleEn": "Historic delegation from Wikimedia Chile participates in Wikimania Paris in preparation for Santiago 2027",
+          "titleZh": "Historic delegation from Wikimedia Chile participates in Wikimania Paris in preparation for Santiago 2027",
+          "url": "https://diff.wikimedia.org/2026/08/17/historic-delegation-from-wikimedia-chile-participates-in-wikimania-paris-in-preparation-for-santiago-2027/",
+          "date": "2026-08-17"
         }
       ],
       "hotSearchPills": [
@@ -663,6 +663,12 @@
       "labelZh": "Reddit",
       "items": [
         {
+          "titleEn": "Reddit begins testing a new audio and video experience, similar to popular TikTok videos",
+          "titleZh": "Reddit begins testing a new audio and video experience, similar to popular TikTok videos",
+          "url": "https://techcrunch.com/2026/08/17/reddit-begins-testing-a-new-audio-and-video-experience-similar-to-popular-tiktok-videos/",
+          "date": "2026-08-17"
+        },
+        {
           "titleEn": "Reddit aims to make ‘karma’ less important for first-time posters with shift to AI moderation tools",
           "titleZh": "Reddit aims to make ‘karma’ less important for first-time posters with shift to AI moderation tools",
           "url": "https://techcrunch.com/2026/08/05/reddit-aims-to-make-karma-less-important-for-first-time-posters-with-shift-to-ai-moderation-tools/",
@@ -673,12 +679,6 @@
           "titleZh": "Reddit is testing a new way to watch — and listen to — its viral posts",
           "url": "https://techcrunch.com/2026/07/31/reddit-is-testing-a-new-way-to-watch-and-listen-to-its-viral-posts/",
           "date": "2026-07-31"
-        },
-        {
-          "titleEn": "Reddit reports a solid quarter but shows signs of AI’s impact",
-          "titleZh": "Reddit reports a solid quarter but shows signs of AI’s impact",
-          "url": "https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact/",
-          "date": "2026-07-30"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Inside Amazon's first-ever drone delivery site in the UK",
-          "titleZh": "Inside Amazon's first-ever drone delivery site in the UK",
-          "url": "https://www.aboutamazon.com/news/transportation/amazon-drone-prime-air-uk?utm_source=rss",
-          "date": "2026-08-07"
+          "titleEn": "5 ways Amazon is investing in Nevada",
+          "titleZh": "5 ways Amazon is investing in Nevada",
+          "url": "https://www.aboutamazon.com/news/community/amazon-investment-nevada-jobs-infrastructure-small-business?utm_source=rss",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "How Amazon is supporting communities impacted by wildfires in Spokane, Washington",
-          "titleZh": "How Amazon is supporting communities impacted by wildfires in Spokane, Washington",
-          "url": "https://www.aboutamazon.com/news/community/spokane-washington-fires-amazon-disaster-relief?utm_source=rss",
-          "date": "2026-08-06"
+          "titleEn": "5 ways Amazon is investing in Colorado",
+          "titleZh": "5 ways Amazon is investing in Colorado",
+          "url": "https://www.aboutamazon.com/news/community/amazon-investment-colorado-jobs-infrastructure-small-business?utm_source=rss",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "Everything to know about ‘Madden,’ a new movie coming to Prime Video November 18",
-          "titleZh": "Everything to know about ‘Madden,’ a new movie coming to Prime Video November 18",
-          "url": "https://www.aboutamazon.com/news/entertainment/madden-movie-nicolas-cage-prime-video?utm_source=rss",
-          "date": "2026-08-06"
+          "titleEn": "A first look at 'The Terminal List' Season 2 starring Chris Pratt, coming to Prime Video October 21",
+          "titleZh": "A first look at 'The Terminal List' Season 2 starring Chris Pratt, coming to Prime Video October 21",
+          "url": "https://www.aboutamazon.com/news/entertainment/terminal-list-prime-video-chris-pratt?utm_source=rss",
+          "date": "2026-08-17"
         }
       ],
       "hotSearchPills": [

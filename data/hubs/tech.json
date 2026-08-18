@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-08-11",
+  "updated": "2026-08-18",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "Run Local Agentic AI Workflows with Meta’s Muse Glimmer on NVIDIA",
-          "titleZh": "Run Local Agentic AI Workflows with Meta’s Muse Glimmer on NVIDIA",
-          "url": "https://developer.nvidia.com/blog/run-local-agentic-ai-workflows-with-metas-muse-glimmer-on-nvidia/",
-          "date": "2026-08-10"
+          "titleEn": "Developing Nemotron 3.5 Lightning NVFP4 with QAD Using NVIDIA Model Optimizer",
+          "titleZh": "Developing Nemotron 3.5 Lightning NVFP4 with QAD Using NVIDIA Model Optimizer",
+          "url": "https://developer.nvidia.com/blog/developing-nemotron-3-5-lightning-nvfp4-with-qad-using-nvidia-model-optimizer/",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "Firebird Launches CIS Region’s Largest AI Factory in Armenia",
-          "titleZh": "Firebird Launches CIS Region’s Largest AI Factory in Armenia",
-          "url": "https://blogs.nvidia.com/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx/",
-          "date": "2026-08-08"
+          "titleEn": "Securing the Infrastructure of Intelligence",
+          "titleZh": "Securing the Infrastructure of Intelligence",
+          "url": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence/",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "GeForce NOW Shakes Up August With 26 New Games",
-          "titleZh": "GeForce NOW Shakes Up August With 26 New Games",
-          "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-august-2026-games-list/",
-          "date": "2026-08-06"
+          "titleEn": "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop Local AI Talent",
+          "titleZh": "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop Local AI Talent",
+          "url": "https://blogs.nvidia.com/blog/ugm-indosat-nvidia-ai-technology-center/",
+          "date": "2026-08-14"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "Samsung To Showcase Latest Gaming Innovations at Gamescom 2026",
-          "titleZh": "Samsung To Showcase Latest Gaming Innovations at Gamescom 2026",
-          "url": "https://news.samsung.com/global/samsung-to-showcase-latest-gaming-innovations-at-gamescom-2026",
-          "date": "2026-08-11"
+          "titleEn": "[Infographic] Not All Ice Is Created Equal: Discover the Difference With Samsung’s Ice-Making Technology",
+          "titleZh": "[Infographic] Not All Ice Is Created Equal: Discover the Difference With Samsung’s Ice-Making Technology",
+          "url": "https://news.samsung.com/global/infographic-not-all-ice-is-created-equal-discover-the-difference-with-samsungs-ice-making-technology",
+          "date": "2026-08-18"
         },
         {
-          "titleEn": "Samsung’s 2026 TV and Audio Lineup Earns Praise for Picture, Sound and Gaming",
-          "titleZh": "Samsung’s 2026 TV and Audio Lineup Earns Praise for Picture, Sound and Gaming",
-          "url": "https://news.samsung.com/global/samsungs-2026-tv-and-audio-lineup-earns-praise-for-picture-sound-and-gaming",
-          "date": "2026-08-11"
+          "titleEn": "‘Warranty and care’ Menu Simplifies Device Care for New Foldables",
+          "titleZh": "‘Warranty and care’ Menu Simplifies Device Care for New Foldables",
+          "url": "https://news.samsung.com/global/warranty-and-care-menu-simplifies-device-care-for-new-foldables",
+          "date": "2026-08-18"
         },
         {
-          "titleEn": "[Interview] From Stage to Screen: Samsung TV Plus and Eclipsa Audio Usher in a New Era of Home Entertainment",
-          "titleZh": "[Interview] From Stage to Screen: Samsung TV Plus and Eclipsa Audio Usher in a New Era of Home Entertainment",
-          "url": "https://news.samsung.com/global/interview-from-stage-to-screen-samsung-tv-plus-and-eclipsa-audio-usher-in-a-new-era-of-home-entertainment",
-          "date": "2026-08-07"
+          "titleEn": "Samsung Partners With Kunsthistorisches Museum in Vienna To Bring Austrian Masterpieces to Samsung Art Store",
+          "titleZh": "Samsung Partners With Kunsthistorisches Museum in Vienna To Bring Austrian Masterpieces to Samsung Art Store",
+          "url": "https://news.samsung.com/global/samsung-partners-with-kunsthistorisches-museum-in-vienna-to-bring-austrian-masterpieces-to-samsung-art-store",
+          "date": "2026-08-18"
         }
       ]
     },

@@ -8,7 +8,7 @@
   "descZh": "参考 Interbrand「全球最佳品牌」价值榜常见前十，每牌三条官网新闻稿或博文外链。",
   "h1En": "Interbrand top 10 (global brand value)",
   "h1Zh": "全球品牌价值前十（Interbrand 口径）",
-  "updated": "2026-08-11",
+  "updated": "2026-08-18",
   "editorialHtmlEn": "<p>Ten names usually clustered at the top of Interbrand’s “Best Global Brands” value ranking; order tweaks when they republish the annual table.</p><p>Valuation moves with equity markets and product cycles. This page is a <strong>bookmark rail</strong> — not investment research and not a recommendation to buy, hold, or sell any security.</p><p>Last reviewed: <strong>2026-05-19</strong>. I do not rank brands by ad spend or sponsorship; links point to corporate homepages or newsrooms only.</p><p>Press PDFs and campaign microsites are not mirrored here — only the three outbound story links per row that I actually read.</p>",
   "editorialHtmlZh": "<p>十个名字大致对应 Interbrand《全球最佳品牌》年度价值榜里常见的前排；他们发新榜后再微调顺序。</p><p>品牌价值随市场与业务周期波动。本页只是<strong>外链书签条</strong>，不构成投资建议，亦不代表买入、持有或卖出任何证券。</p><p>最近核对：<strong>2026-05-19</strong>。不按广告或赞助排序；链接仅指向企业官网或新闻稿入口。</p><p>新闻稿 PDF 与 campaign 微站不在本站转载，每行三条外链是我自己会点进去看的稿件入口。</p>",
   "rankTitleEn": "Global top 10 (brand value)",
@@ -116,22 +116,22 @@
       "labelZh": "苹果",
       "items": [
         {
+          "titleEn": "Apple opens Advanced Manufacturing Center in Houston",
+          "titleZh": "Apple opens Advanced Manufacturing Center in Houston",
+          "url": "https://www.apple.com/newsroom/2026/08/apple-opens-advanced-manufacturing-center-in-houston/",
+          "date": "2026-08-13"
+        },
+        {
+          "titleEn": "Apple Arcade levels up with Block Blast!+ and Art of Fauna: Cozy Puzzles+",
+          "titleZh": "Apple Arcade levels up with Block Blast!+ and Art of Fauna: Cozy Puzzles+",
+          "url": "https://www.apple.com/newsroom/2026/08/apple-arcade-levels-up-with-block-blast-plus-and-art-of-fauna-cozy-puzzles-plus/",
+          "date": "2026-08-11"
+        },
+        {
           "titleEn": "Apple, MLB announce September “Friday Night Baseball” schedule",
           "titleZh": "Apple, MLB announce September “Friday Night Baseball” schedule",
           "url": "https://www.apple.com/newsroom/2026/08/apple-mlb-announce-september-friday-night-baseball-schedule/",
           "date": "2026-08-10"
-        },
-        {
-          "titleEn": "Leagues Cup kicks off tomorrow, August 4, on Apple TV",
-          "titleZh": "Leagues Cup kicks off tomorrow, August 4, on Apple TV",
-          "url": "https://www.apple.com/newsroom/2026/08/leagues-cup-kicks-off-tomorrow-august-4-on-apple-tv/",
-          "date": "2026-08-03"
-        },
-        {
-          "titleEn": "Apple reports third quarter results",
-          "titleZh": "Apple reports third quarter results",
-          "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
-          "date": "2026-07-30"
         }
       ]
     },
@@ -166,22 +166,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Inside Amazon's first-ever drone delivery site in the UK",
-          "titleZh": "Inside Amazon's first-ever drone delivery site in the UK",
-          "url": "https://www.aboutamazon.com/news/transportation/amazon-drone-prime-air-uk?utm_source=rss",
-          "date": "2026-08-07"
+          "titleEn": "5 ways Amazon is investing in Nevada",
+          "titleZh": "5 ways Amazon is investing in Nevada",
+          "url": "https://www.aboutamazon.com/news/community/amazon-investment-nevada-jobs-infrastructure-small-business?utm_source=rss",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "How Amazon is supporting communities impacted by wildfires in Spokane, Washington",
-          "titleZh": "How Amazon is supporting communities impacted by wildfires in Spokane, Washington",
-          "url": "https://www.aboutamazon.com/news/community/spokane-washington-fires-amazon-disaster-relief?utm_source=rss",
-          "date": "2026-08-06"
+          "titleEn": "5 ways Amazon is investing in Colorado",
+          "titleZh": "5 ways Amazon is investing in Colorado",
+          "url": "https://www.aboutamazon.com/news/community/amazon-investment-colorado-jobs-infrastructure-small-business?utm_source=rss",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "Everything to know about ‘Madden,’ a new movie coming to Prime Video November 18",
-          "titleZh": "Everything to know about ‘Madden,’ a new movie coming to Prime Video November 18",
-          "url": "https://www.aboutamazon.com/news/entertainment/madden-movie-nicolas-cage-prime-video?utm_source=rss",
-          "date": "2026-08-06"
+          "titleEn": "A first look at 'The Terminal List' Season 2 starring Chris Pratt, coming to Prime Video October 21",
+          "titleZh": "A first look at 'The Terminal List' Season 2 starring Chris Pratt, coming to Prime Video October 21",
+          "url": "https://www.aboutamazon.com/news/entertainment/terminal-list-prime-video-chris-pratt?utm_source=rss",
+          "date": "2026-08-17"
         }
       ]
     },
@@ -191,22 +191,22 @@
       "labelZh": "谷歌",
       "items": [
         {
-          "titleEn": "Evolve your marketing with new AI tools",
-          "titleZh": "Evolve your marketing with new AI tools",
-          "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates/",
-          "date": "2026-08-10"
+          "titleEn": "Get closer to the game with Gemini and Pixel",
+          "titleZh": "Get closer to the game with Gemini and Pixel",
+          "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "The latest AI news we announced in July 2026",
-          "titleZh": "The latest AI news we announced in July 2026",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
-          "date": "2026-08-04"
+          "titleEn": "Bring your spreadsheet data to life with Sheets canvas",
+          "titleZh": "Bring your spreadsheet data to life with Sheets canvas",
+          "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
+          "date": "2026-08-13"
         },
         {
-          "titleEn": "Inside our 353,000-person vibe coding course",
-          "titleZh": "Inside our 353,000-person vibe coding course",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026/",
-          "date": "2026-08-03"
+          "titleEn": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+          "titleZh": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+          "date": "2026-08-11"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星",
       "items": [
         {
-          "titleEn": "Samsung To Showcase Latest Gaming Innovations at Gamescom 2026",
-          "titleZh": "Samsung To Showcase Latest Gaming Innovations at Gamescom 2026",
-          "url": "https://news.samsung.com/global/samsung-to-showcase-latest-gaming-innovations-at-gamescom-2026",
-          "date": "2026-08-11"
+          "titleEn": "[Infographic] Not All Ice Is Created Equal: Discover the Difference With Samsung’s Ice-Making Technology",
+          "titleZh": "[Infographic] Not All Ice Is Created Equal: Discover the Difference With Samsung’s Ice-Making Technology",
+          "url": "https://news.samsung.com/global/infographic-not-all-ice-is-created-equal-discover-the-difference-with-samsungs-ice-making-technology",
+          "date": "2026-08-18"
         },
         {
-          "titleEn": "Samsung’s 2026 TV and Audio Lineup Earns Praise for Picture, Sound and Gaming",
-          "titleZh": "Samsung’s 2026 TV and Audio Lineup Earns Praise for Picture, Sound and Gaming",
-          "url": "https://news.samsung.com/global/samsungs-2026-tv-and-audio-lineup-earns-praise-for-picture-sound-and-gaming",
-          "date": "2026-08-11"
+          "titleEn": "‘Warranty and care’ Menu Simplifies Device Care for New Foldables",
+          "titleZh": "‘Warranty and care’ Menu Simplifies Device Care for New Foldables",
+          "url": "https://news.samsung.com/global/warranty-and-care-menu-simplifies-device-care-for-new-foldables",
+          "date": "2026-08-18"
         },
         {
-          "titleEn": "[Interview] From Stage to Screen: Samsung TV Plus and Eclipsa Audio Usher in a New Era of Home Entertainment",
-          "titleZh": "[Interview] From Stage to Screen: Samsung TV Plus and Eclipsa Audio Usher in a New Era of Home Entertainment",
-          "url": "https://news.samsung.com/global/interview-from-stage-to-screen-samsung-tv-plus-and-eclipsa-audio-usher-in-a-new-era-of-home-entertainment",
-          "date": "2026-08-07"
+          "titleEn": "Samsung Partners With Kunsthistorisches Museum in Vienna To Bring Austrian Masterpieces to Samsung Art Store",
+          "titleZh": "Samsung Partners With Kunsthistorisches Museum in Vienna To Bring Austrian Masterpieces to Samsung Art Store",
+          "url": "https://news.samsung.com/global/samsung-partners-with-kunsthistorisches-museum-in-vienna-to-bring-austrian-masterpieces-to-samsung-art-store",
+          "date": "2026-08-18"
         }
       ]
     },
@@ -341,22 +341,22 @@
       "labelZh": "迪士尼",
       "items": [
         {
-          "titleEn": "Carrying Walt’s Vision Forward: Leslie Iwerks on Her New Film ‘Disney Worldbuilders’",
-          "titleZh": "Carrying Walt’s Vision Forward: Leslie Iwerks on Her New Film ‘Disney Worldbuilders’",
-          "url": "https://thewaltdisneycompany.com/news/disney-worldbuilders-leslie-iwerks-interview/",
-          "date": "2026-08-10"
+          "titleEn": "Disney Celebrates the Timeless Magic of Disney Princesses During World Princess Week",
+          "titleZh": "Disney Celebrates the Timeless Magic of Disney Princesses During World Princess Week",
+          "url": "https://thewaltdisneycompany.com/press-releases/world-princess-week-timeless-magic/",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "‘Camp Rock 3’ Stars Malachi Barton and Liamani Segura Talk Music, Legacy, and Disney’s Next Generation",
-          "titleZh": "‘Camp Rock 3’ Stars Malachi Barton and Liamani Segura Talk Music, Legacy, and Disney’s Next Generation",
-          "url": "https://thewaltdisneycompany.com/news/camp-rock-3-cast-interview/",
-          "date": "2026-08-10"
+          "titleEn": "Key Takeaways from Disney’s Streaming Showcase at D23: The Ultimate Disney Fan Event",
+          "titleZh": "Key Takeaways from Disney’s Streaming Showcase at D23: The Ultimate Disney Fan Event",
+          "url": "https://thewaltdisneycompany.com/news/disney-streaming-showcase-d23/",
+          "date": "2026-08-17"
         },
         {
-          "titleEn": "Disney Legends in Conversation: Jerry Bruckheimer",
-          "titleZh": "Disney Legends in Conversation: Jerry Bruckheimer",
-          "url": "https://thewaltdisneycompany.com/news/disney-legend-jerry-bruckheimer/",
-          "date": "2026-08-10"
+          "titleEn": "Disney Celebrates the Timeless Magic of Disney Princesses During World Princess Week",
+          "titleZh": "Disney Celebrates the Timeless Magic of Disney Princesses During World Princess Week",
+          "url": "https://thewaltdisneycompany.com/news/world-princess-week-2026/",
+          "date": "2026-08-17"
         }
       ]
     }

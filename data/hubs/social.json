@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-08-11",
+  "updated": "2026-08-18",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,69 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "YouTube will now count a view as soon as a video starts playing",
+      "titleZh": "YouTube will now count a view as soon as a video starts playing",
+      "url": "https://techcrunch.com/2026/08/17/youtube-will-now-count-a-view-as-soon-as-a-video-starts-playing/",
+      "date": "2026-08-17",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Instagram introduces a redesigned wordmark",
+      "titleZh": "Instagram introduces a redesigned wordmark",
+      "url": "https://techcrunch.com/2026/08/13/instagram-introduces-a-redesigned-wordmark/",
+      "date": "2026-08-13",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "The Future Is for Everyone: Free AI Glasses for Every Blind and Visually Impaired Adult Vision Ireland Supports",
+      "titleZh": "The Future Is for Everyone: Free AI Glasses for Every Blind and Visually Impaired Adult Vision Ireland Supports",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone-free-ai-glasses-for-every-blind-and-visually-impaired-adult-vision-ireland-supports/",
+      "date": "2026-08-13",
+      "source": "Facebook / Meta",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Meta’s Compliance with Australia’s Social Media Ban",
+      "titleZh": "Meta’s Compliance with Australia’s Social Media Ban",
+      "url": "https://about.fb.com/news/2026/08/metas-compliance-with-australias-social-media-ban/",
+      "date": "2026-08-13",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2024/01/DM-Teen-Default_Parent-Controls-Bundle_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2024/01/DM-Teen-Default_Parent-Controls-Bundle_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Facebook officially rolls out its stand-alone Creator Studio app with AI tools for creators",
+      "titleZh": "Facebook officially rolls out its stand-alone Creator Studio app with AI tools for creators",
+      "url": "https://techcrunch.com/2026/08/12/facebook-officially-rolls-out-its-standalone-creator-studio-app-with-ai-tools-for-creators/",
+      "date": "2026-08-12",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "NABTU and Meta Announce New Partnership to Invest In Skilled Trades for the AI Era",
+      "titleZh": "NABTU and Meta Announce New Partnership to Invest In Skilled Trades for the AI Era",
+      "url": "https://about.fb.com/news/2026/08/nabtu-and-meta-partnership-to-invest-in-skilled-trades-for-ai-era/",
+      "date": "2026-08-12",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/NABTU-META_1440x1080.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/NABTU-META_1440x1080.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees",
+      "titleZh": "How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees",
+      "url": "https://engineering.fb.com/2026/08/12/security/how-were-building-scam-alert-whatsapp/",
+      "date": "2026-08-12",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/07/WhatsApp-Scam-Alert-Ledger-Verification-Model-Download-Flow_1.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/07/WhatsApp-Scam-Alert-Ledger-Verification-Model-Download-Flow_1.png"
+    },
     {
       "titleEn": "Social media platforms still facing thousands of user addiction lawsuits after failed appeals",
       "titleZh": "Social media platforms still facing thousands of user addiction lawsuits after failed appeals",
@@ -158,69 +221,6 @@
       "source": "YouTube",
       "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drops_July.max-600x600.format-webp.webp",
       "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drops_July.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "Introducing WhatsApp Web Calling, Plus More New Features",
-      "titleZh": "Introducing WhatsApp Web Calling, Plus More New Features",
-      "url": "https://about.fb.com/news/2026/07/whatsapp-web-calling-new-features/",
-      "date": "2026-07-28",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/Introducing-Web-Calling-on-WhatsApp_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Introducing-Web-Calling-on-WhatsApp_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Meta is Signing the EU AI Act Code of Practice on Transparency of AI-Generated Content",
-      "titleZh": "Meta is Signing the EU AI Act Code of Practice on Transparency of AI-Generated Content",
-      "url": "https://about.fb.com/news/2026/07/meta-is-signing-the-eu-ai-act-code-of-practice-on-transparency-of-ai-generated-content/",
-      "date": "2026-07-28",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/image-4.png?fit=960%2C658",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/image-4.png?fit=960%2C658"
-    },
-    {
-      "titleEn": "Meta Announces New Strategic Venture With BlackRock to Develop Data Center in El Paso",
-      "titleZh": "Meta Announces New Strategic Venture With BlackRock to Develop Data Center in El Paso",
-      "url": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
-      "date": "2026-07-28",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/Partnership_Thumbnail-2.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Partnership_Thumbnail-2.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "As rivals chase acquisitions, Peacock bets on bundles through a new deal with YouTube",
-      "titleZh": "As rivals chase acquisitions, Peacock bets on bundles through a new deal with YouTube",
-      "url": "https://techcrunch.com/2026/07/27/as-rivals-chase-acquisitions-peacock-bets-on-bundles-through-a-new-deal-with-youtube/",
-      "date": "2026-07-27",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Announcing the AI Glasses Impact Grant Recipients: Helping People Work, Learn, and Live More Independently",
-      "titleZh": "Announcing the AI Glasses Impact Grant Recipients: Helping People Work, Learn, and Live More Independently",
-      "url": "https://about.fb.com/news/2026/07/ai-glasses-helping-people-work-learn-live-independently/",
-      "date": "2026-07-27",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/How-Organizations-Are-Using-our-AI-Glasses-For-Good_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/How-Organizations-Are-Using-our-AI-Glasses-For-Good_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Snapchat now lets you share what you’re listening to in real time",
-      "titleZh": "Snapchat now lets you share what you’re listening to in real time",
-      "url": "https://techcrunch.com/2026/07/27/snapchat-now-lets-you-share-what-youre-listening-to-in-real-time/",
-      "date": "2026-07-27",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta AI Doesn’t Just Think, It Acts",
-      "titleZh": "Meta AI Doesn’t Just Think, It Acts",
-      "url": "https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/",
-      "date": "2026-07-24",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/Meta-AI-Doesnt-Just-Think_It-Acts_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/Meta-AI-Doesnt-Just-Think_It-Acts_Thumbnail.gif?fit=890%2C501"
     }
   ],
   "moreTitleEn": "More social networks",
