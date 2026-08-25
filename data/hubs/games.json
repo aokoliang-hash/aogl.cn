@@ -8,7 +8,7 @@
   "descZh": "按 Newzoo 与行业营收常见梯队排序的十个商店与发行商，每站三条官方公告或博文外链。",
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
-  "updated": "2026-08-18",
+  "updated": "2026-08-25",
   "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Last reviewed: <strong>2026-06-22</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want a ranked top-10 plus three official links per vendor — not a discovery feed for unknown APK sites. Major client updates still show up in the per-row news slots when you run <code>npm run fetch-hub-news</code>; mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p><p><strong>Editorial cross-link:</strong> first game-original on this hub: <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Reading Steam Charts</a>; character look-dev in <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">Elena · Sea-Wind</a>, <a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">palette & ritual UI</a>, and <a href=\"/articles/games-hub-generative-art-workflow.html\">Games hub × generative art workflow</a>.</p>",
   "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>最近核对：<strong>2026-06-22</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但需要对照营收梯队、并点到各厂三条官方链接的人；不把它当成 APK 发现站。大版本更新仍会出现在每行「最新动态」里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p><p><strong>原创交叉链：</strong>游戏 Hub 原创轮播首篇 <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Steam Charts 怎么读</a>；角色设定见 <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">艾琳娜 · 海风之诗</a>、<a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">配色与仪式 UI</a>，工作流 <a href=\"/articles/games-hub-generative-art-workflow.html\">游戏 Hub × 生成式角色美术</a>。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
@@ -147,22 +147,22 @@
       "labelZh": "PlayStation",
       "items": [
         {
-          "titleEn": "(For Southeast Asia) PlayStation Store: July 2026’s top downloads",
-          "titleZh": "(For Southeast Asia) PlayStation Store: July 2026’s top downloads",
-          "url": "https://blog.playstation.com/2026/08/17/20260818-top/",
-          "date": "2026-08-18"
+          "titleEn": "VR shooter Into the Radius 2 hits PS VR2 September 24",
+          "titleZh": "VR shooter Into the Radius 2 hits PS VR2 September 24",
+          "url": "https://blog.playstation.com/2026/08/24/vr-shooter-into-the-radius-2-hits-ps-vr2-september-24/",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "Phantom Blade Zero State of Play dives deep into combat and the Wulin world",
-          "titleZh": "Phantom Blade Zero State of Play dives deep into combat and the Wulin world",
-          "url": "https://blog.playstation.com/2026/08/17/phantom-blade-zero-state-of-play-dives-deep-into-combat-and-the-wulin-world/",
-          "date": "2026-08-18"
+          "titleEn": "Call of Duty: Modern Warfare 4 – New Multiplayer and Early Access Beta details",
+          "titleZh": "Call of Duty: Modern Warfare 4 – New Multiplayer and Early Access Beta details",
+          "url": "https://blog.playstation.com/2026/08/21/call-of-duty-modern-warfare-4-new-multiplayer-and-early-access-beta-details/",
+          "date": "2026-08-21"
         },
         {
-          "titleEn": "New It Happens on PS5 campaign highlights the biggest moments of play",
-          "titleZh": "New It Happens on PS5 campaign highlights the biggest moments of play",
-          "url": "https://blog.playstation.com/2026/08/17/new-it-happens-on-ps5-campaign-highlights-the-biggest-moments-of-play/",
-          "date": "2026-08-17"
+          "titleEn": "Share of the Week: Katana",
+          "titleZh": "Share of the Week: Katana",
+          "url": "https://blog.playstation.com/2026/08/21/share-of-the-week-katana/",
+          "date": "2026-08-21"
         }
       ]
     },
@@ -172,22 +172,22 @@
       "labelZh": "Xbox",
       "items": [
         {
-          "titleEn": "TCG Card Shop Simulator’s Biggest 1.0 Feature: How to Dominate Tetramon Duel Master",
-          "titleZh": "TCG Card Shop Simulator’s Biggest 1.0 Feature: How to Dominate Tetramon Duel Master",
-          "url": "https://news.xbox.com/en-us/2026/08/17/tcg-card-shop-simulator-tetramon-duel-masters-guide/",
-          "date": "2026-08-17"
+          "titleEn": "Resonance: A Plague Tale Legacy – A New Chapter with Action and… a Minotaur? | Official XBOX Podcast",
+          "titleZh": "Resonance: A Plague Tale Legacy – A New Chapter with Action and… a Minotaur? | Official XBOX Podcast",
+          "url": "https://news.xbox.com/en-us/2026/08/24/resonance-a-plague-tale-legacy-a-new-chapter-with-action-and-a-minotaur-official-xbox-podcast/",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "Whisper of the House Unpacks Cozy Xbox Preorders Today",
-          "titleZh": "Whisper of the House Unpacks Cozy Xbox Preorders Today",
-          "url": "https://news.xbox.com/en-us/2026/08/14/whisper-of-the-house-unpacks-cozy-xbox-preorders-today/",
-          "date": "2026-08-14"
+          "titleEn": "Celebrating 25 Years of Play: Introducing XBOX Gear, New Community Designs, FanFest Tour Dates, and More",
+          "titleZh": "Celebrating 25 Years of Play: Introducing XBOX Gear, New Community Designs, FanFest Tour Dates, and More",
+          "url": "https://news.xbox.com/en-us/2026/08/24/xbox-anniversary-x25-fanfest-gear-community-designs/",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "Next Week on XBOX: New Games for August 17 to 21",
-          "titleZh": "Next Week on XBOX: New Games for August 17 to 21",
-          "url": "https://news.xbox.com/en-us/2026/08/14/next-week-on-xbox-new-games-for-august-17-to-21/",
-          "date": "2026-08-14"
+          "titleEn": "Call of Duty: Modern Warfare 4 – Inside the Maps and Movement of Multiplayer",
+          "titleZh": "Call of Duty: Modern Warfare 4 – Inside the Maps and Movement of Multiplayer",
+          "url": "https://news.xbox.com/en-us/2026/08/21/call-of-duty-modern-warfare-4-inside-the-maps-and-movement-of-multiplayer/",
+          "date": "2026-08-21"
         }
       ]
     },

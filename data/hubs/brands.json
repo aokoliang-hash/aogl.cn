@@ -8,7 +8,7 @@
   "descZh": "参考 Interbrand「全球最佳品牌」价值榜常见前十，每牌三条官网新闻稿或博文外链。",
   "h1En": "Interbrand top 10 (global brand value)",
   "h1Zh": "全球品牌价值前十（Interbrand 口径）",
-  "updated": "2026-08-18",
+  "updated": "2026-08-25",
   "editorialHtmlEn": "<p>Ten names usually clustered at the top of Interbrand’s “Best Global Brands” value ranking; order tweaks when they republish the annual table.</p><p>Valuation moves with equity markets and product cycles. This page is a <strong>bookmark rail</strong> — not investment research and not a recommendation to buy, hold, or sell any security.</p><p>Last reviewed: <strong>2026-05-19</strong>. I do not rank brands by ad spend or sponsorship; links point to corporate homepages or newsrooms only.</p><p>Press PDFs and campaign microsites are not mirrored here — only the three outbound story links per row that I actually read.</p>",
   "editorialHtmlZh": "<p>十个名字大致对应 Interbrand《全球最佳品牌》年度价值榜里常见的前排；他们发新榜后再微调顺序。</p><p>品牌价值随市场与业务周期波动。本页只是<strong>外链书签条</strong>，不构成投资建议，亦不代表买入、持有或卖出任何证券。</p><p>最近核对：<strong>2026-05-19</strong>。不按广告或赞助排序；链接仅指向企业官网或新闻稿入口。</p><p>新闻稿 PDF 与 campaign 微站不在本站转载，每行三条外链是我自己会点进去看的稿件入口。</p>",
   "rankTitleEn": "Global top 10 (brand value)",
@@ -116,6 +116,12 @@
       "labelZh": "苹果",
       "items": [
         {
+          "titleEn": "Apple announces changes for apps in the European Union",
+          "titleZh": "Apple announces changes for apps in the European Union",
+          "url": "https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/",
+          "date": "2026-08-18"
+        },
+        {
           "titleEn": "Apple opens Advanced Manufacturing Center in Houston",
           "titleZh": "Apple opens Advanced Manufacturing Center in Houston",
           "url": "https://www.apple.com/newsroom/2026/08/apple-opens-advanced-manufacturing-center-in-houston/",
@@ -126,12 +132,6 @@
           "titleZh": "Apple Arcade levels up with Block Blast!+ and Art of Fauna: Cozy Puzzles+",
           "url": "https://www.apple.com/newsroom/2026/08/apple-arcade-levels-up-with-block-blast-plus-and-art-of-fauna-cozy-puzzles-plus/",
           "date": "2026-08-11"
-        },
-        {
-          "titleEn": "Apple, MLB announce September “Friday Night Baseball” schedule",
-          "titleZh": "Apple, MLB announce September “Friday Night Baseball” schedule",
-          "url": "https://www.apple.com/newsroom/2026/08/apple-mlb-announce-september-friday-night-baseball-schedule/",
-          "date": "2026-08-10"
         }
       ]
     },
@@ -166,22 +166,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "5 ways Amazon is investing in Nevada",
-          "titleZh": "5 ways Amazon is investing in Nevada",
-          "url": "https://www.aboutamazon.com/news/community/amazon-investment-nevada-jobs-infrastructure-small-business?utm_source=rss",
-          "date": "2026-08-17"
+          "titleEn": "Amazon hourly employees became satellite technicians—then watched their work launch into space",
+          "titleZh": "Amazon hourly employees became satellite technicians—then watched their work launch into space",
+          "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-career-choice-satellite-technicians-space-launch?utm_source=rss",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "5 ways Amazon is investing in Colorado",
-          "titleZh": "5 ways Amazon is investing in Colorado",
-          "url": "https://www.aboutamazon.com/news/community/amazon-investment-colorado-jobs-infrastructure-small-business?utm_source=rss",
-          "date": "2026-08-17"
+          "titleEn": "Prime Video to invest $2 billion in Latin America between 2027 and 2030",
+          "titleZh": "Prime Video to invest $2 billion in Latin America between 2027 and 2030",
+          "url": "https://www.aboutamazon.com/news/entertainment/prime-video-latin-america-investment?utm_source=rss",
+          "date": "2026-08-20"
         },
         {
-          "titleEn": "A first look at 'The Terminal List' Season 2 starring Chris Pratt, coming to Prime Video October 21",
-          "titleZh": "A first look at 'The Terminal List' Season 2 starring Chris Pratt, coming to Prime Video October 21",
-          "url": "https://www.aboutamazon.com/news/entertainment/terminal-list-prime-video-chris-pratt?utm_source=rss",
-          "date": "2026-08-17"
+          "titleEn": "'Sterling Point' Season 2: Everything to know and how to watch Season 1 on Prime Video",
+          "titleZh": "'Sterling Point' Season 2: Everything to know and how to watch Season 1 on Prime Video",
+          "url": "https://www.aboutamazon.com/news/entertainment/sterling-point-series-prime-video?utm_source=rss",
+          "date": "2026-08-20"
         }
       ]
     },
@@ -190,6 +190,12 @@
       "labelEn": "Google",
       "labelZh": "谷歌",
       "items": [
+        {
+          "titleEn": "5 new ways to level up your learning with Search",
+          "titleZh": "5 new ways to level up your learning with Search",
+          "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
+          "date": "2026-08-19"
+        },
         {
           "titleEn": "Get closer to the game with Gemini and Pixel",
           "titleZh": "Get closer to the game with Gemini and Pixel",
@@ -201,12 +207,6 @@
           "titleZh": "Bring your spreadsheet data to life with Sheets canvas",
           "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
           "date": "2026-08-13"
-        },
-        {
-          "titleEn": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-          "titleZh": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
-          "date": "2026-08-11"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星",
       "items": [
         {
-          "titleEn": "[Infographic] Not All Ice Is Created Equal: Discover the Difference With Samsung’s Ice-Making Technology",
-          "titleZh": "[Infographic] Not All Ice Is Created Equal: Discover the Difference With Samsung’s Ice-Making Technology",
-          "url": "https://news.samsung.com/global/infographic-not-all-ice-is-created-equal-discover-the-difference-with-samsungs-ice-making-technology",
-          "date": "2026-08-18"
+          "titleEn": "[Invitation] Design Miami Seoul 2026: Opening of Samsung’s ‘Design Is an Act of Love’ Exhibition",
+          "titleZh": "[Invitation] Design Miami Seoul 2026: Opening of Samsung’s ‘Design Is an Act of Love’ Exhibition",
+          "url": "https://news.samsung.com/global/invitation-design-miami-seoul-2026-opening-of-samsungs-design-is-an-act-of-love-exhibition",
+          "date": "2026-08-25"
         },
         {
-          "titleEn": "‘Warranty and care’ Menu Simplifies Device Care for New Foldables",
-          "titleZh": "‘Warranty and care’ Menu Simplifies Device Care for New Foldables",
-          "url": "https://news.samsung.com/global/warranty-and-care-menu-simplifies-device-care-for-new-foldables",
-          "date": "2026-08-18"
+          "titleEn": "Samsung To Showcase Wide-Ranging Gaming Solutions With Immersive Exhibition at Gamescom 2026",
+          "titleZh": "Samsung To Showcase Wide-Ranging Gaming Solutions With Immersive Exhibition at Gamescom 2026",
+          "url": "https://news.samsung.com/global/samsung-to-showcase-wide-ranging-gaming-solutions-with-immersive-exhibition-at-gamescom-2026",
+          "date": "2026-08-25"
         },
         {
-          "titleEn": "Samsung Partners With Kunsthistorisches Museum in Vienna To Bring Austrian Masterpieces to Samsung Art Store",
-          "titleZh": "Samsung Partners With Kunsthistorisches Museum in Vienna To Bring Austrian Masterpieces to Samsung Art Store",
-          "url": "https://news.samsung.com/global/samsung-partners-with-kunsthistorisches-museum-in-vienna-to-bring-austrian-masterpieces-to-samsung-art-store",
-          "date": "2026-08-18"
+          "titleEn": "An Easier Way To Switch to the New Galaxy Z Fold8",
+          "titleZh": "An Easier Way To Switch to the New Galaxy Z Fold8",
+          "url": "https://news.samsung.com/global/an-easier-way-to-switch-to-the-new-galaxy-z-fold8",
+          "date": "2026-08-25"
         }
       ]
     },
@@ -341,6 +341,12 @@
       "labelZh": "迪士尼",
       "items": [
         {
+          "titleEn": "Inside ‘Disney Worldbuilders’: Where Storytelling Becomes a World You Can Experience",
+          "titleZh": "Inside ‘Disney Worldbuilders’: Where Storytelling Becomes a World You Can Experience",
+          "url": "https://thewaltdisneycompany.com/news/inside-disney-worldbuilders-where-storytelling-becomes-a-world-you-can-experience/",
+          "date": "2026-08-20"
+        },
+        {
           "titleEn": "Disney Celebrates the Timeless Magic of Disney Princesses During World Princess Week",
           "titleZh": "Disney Celebrates the Timeless Magic of Disney Princesses During World Princess Week",
           "url": "https://thewaltdisneycompany.com/press-releases/world-princess-week-timeless-magic/",
@@ -350,12 +356,6 @@
           "titleEn": "Key Takeaways from Disney’s Streaming Showcase at D23: The Ultimate Disney Fan Event",
           "titleZh": "Key Takeaways from Disney’s Streaming Showcase at D23: The Ultimate Disney Fan Event",
           "url": "https://thewaltdisneycompany.com/news/disney-streaming-showcase-d23/",
-          "date": "2026-08-17"
-        },
-        {
-          "titleEn": "Disney Celebrates the Timeless Magic of Disney Princesses During World Princess Week",
-          "titleZh": "Disney Celebrates the Timeless Magic of Disney Princesses During World Princess Week",
-          "url": "https://thewaltdisneycompany.com/news/world-princess-week-2026/",
           "date": "2026-08-17"
         }
       ]

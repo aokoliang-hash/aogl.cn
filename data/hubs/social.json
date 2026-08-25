@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-08-18",
+  "updated": "2026-08-25",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,69 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Introducing the Edits Film Festival to Spotlight India’s Emerging Creator Talent",
+      "titleZh": "Introducing the Edits Film Festival to Spotlight India’s Emerging Creator Talent",
+      "url": "https://about.fb.com/news/2026/08/introducing-the-edits-film-festival-to-spotlight-indias-emerging-creator-talent/",
+      "date": "2026-08-25",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/1-2.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/1-2.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines",
+      "titleZh": "MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines",
+      "url": "https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/",
+      "date": "2026-08-24",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/08/Meta-MTIA-300-Figure-1.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/08/Meta-MTIA-300-Figure-1.png"
+    },
+    {
+      "titleEn": "TikTok reaches $400M settlement over children’s privacy lawsuit",
+      "titleZh": "TikTok reaches $400M settlement over children’s privacy lawsuit",
+      "url": "https://techcrunch.com/2026/08/21/tiktok-reaches-400m-settlement-over-childrens-privacy-lawsuit/",
+      "date": "2026-08-21",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Senators demand answers from TikTok over experiment that disabled safeguards",
+      "titleZh": "Senators demand answers from TikTok over experiment that disabled safeguards",
+      "url": "https://techcrunch.com/2026/08/20/senators-demand-answers-from-tiktok-over-experiment-that-disabled-safeguards/",
+      "date": "2026-08-20",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Launching ‘Meta Startup School’ to Accelerate Growth For Early-Stage Startups",
+      "titleZh": "Launching ‘Meta Startup School’ to Accelerate Growth For Early-Stage Startups",
+      "url": "https://about.fb.com/news/2026/08/launching-meta-startup-school-to-accelerate-growth-for-early-stage-startups/",
+      "date": "2026-08-19",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/Screenshot-2026-08-19-at-3.33.04-PM.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/Screenshot-2026-08-19-at-3.33.04-PM.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "TikTok explores peer-to-peer payments via DMs, report says",
+      "titleZh": "TikTok explores peer-to-peer payments via DMs, report says",
+      "url": "https://techcrunch.com/2026/08/18/tiktok-explores-peer-to-peer-payments-via-dms-report-says/",
+      "date": "2026-08-18",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "America’s Workforce Academy: No Cost. No Prior Experience Necessary. A Career on the Other Side.",
+      "titleZh": "America’s Workforce Academy: No Cost. No Prior Experience Necessary. A Career on the Other Side.",
+      "url": "https://about.fb.com/news/2026/08/americas-workforce-academy-meta-skilled-trade-training-program/",
+      "date": "2026-08-18",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/Americas-Workforce-Academy_No-Cost.-No-Prior-Experience-Necessary.-A-Career-on-the-Other-Side_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/Americas-Workforce-Academy_No-Cost.-No-Prior-Experience-Necessary.-A-Career-on-the-Other-Side_Thumbnail.jpg?fit=890%2C501"
+    },
     {
       "titleEn": "YouTube will now count a view as soon as a video starts playing",
       "titleZh": "YouTube will now count a view as soon as a video starts playing",
@@ -158,69 +221,6 @@
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""
-    },
-    {
-      "titleEn": "We’re Upgrading Your WhatsApp Group Chats",
-      "titleZh": "We’re Upgrading Your WhatsApp Group Chats",
-      "url": "https://about.fb.com/news/2026/08/were-upgrading-your-whatsapp-group-chats/",
-      "date": "2026-08-04",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/08/WhatsApp-Group-Chat-Bundle-Blog_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/WhatsApp-Group-Chat-Bundle-Blog_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Snap CEO sidesteps Specs preorder questions on Q2 earnings call",
-      "titleZh": "Snap CEO sidesteps Specs preorder questions on Q2 earnings call",
-      "url": "https://techcrunch.com/2026/08/03/snap-ceo-sidesteps-specs-pre-order-questions-on-q2-earnings-call/",
-      "date": "2026-08-03",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model",
-      "titleZh": "GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model",
-      "url": "https://engineering.fb.com/2026/08/03/ml-applications/training-gem-at-llm-scale-meta-ads-recommendation-foundation-model/",
-      "date": "2026-08-03",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/07/image13.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/07/image13.png"
-    },
-    {
-      "titleEn": "Snapchat no longer rewards fully AI-generated Spotlight content",
-      "titleZh": "Snapchat no longer rewards fully AI-generated Spotlight content",
-      "url": "https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/",
-      "date": "2026-07-31",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "LinkedIn adds a button to report AI-generated ‘slop’",
-      "titleZh": "LinkedIn adds a button to report AI-generated ‘slop’",
-      "url": "https://techcrunch.com/2026/07/30/linkedin-adds-a-button-to-report-ai-generated-slop/",
-      "date": "2026-07-30",
-      "source": "LinkedIn · TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "How the Head of YouTube Health handles screen time with his kids",
-      "titleZh": "How the Head of YouTube Health handles screen time with his kids",
-      "url": "https://blog.google/innovation-and-ai/technology/families/kids-summer-screen-time-tips/",
-      "date": "2026-07-29",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screentime_Hero.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screentime_Hero.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "Prepare for the holiday season with July’s Demand Gen Drop.",
-      "titleZh": "Prepare for the holiday season with July’s Demand Gen Drop.",
-      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-july-2026/",
-      "date": "2026-07-29",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drops_July.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drops_July.max-600x600.format-webp.webp"
     }
   ],
   "moreTitleEn": "More social networks",

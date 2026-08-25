@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-08-18",
+  "updated": "2026-08-25",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,6 +116,12 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "5 new ways to level up your learning with Search",
+          "titleZh": "5 new ways to level up your learning with Search",
+          "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
+          "date": "2026-08-19"
+        },
+        {
           "titleEn": "Get closer to the game with Gemini and Pixel",
           "titleZh": "Get closer to the game with Gemini and Pixel",
           "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
@@ -126,12 +132,6 @@
           "titleZh": "Bring your spreadsheet data to life with Sheets canvas",
           "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
           "date": "2026-08-13"
-        },
-        {
-          "titleEn": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-          "titleZh": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
-          "date": "2026-08-11"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "The Future Is for Everyone: Free AI Glasses for Every Blind and Visually Impaired Adult Vision Ireland Supports",
-          "titleZh": "The Future Is for Everyone: Free AI Glasses for Every Blind and Visually Impaired Adult Vision Ireland Supports",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone-free-ai-glasses-for-every-blind-and-visually-impaired-adult-vision-ireland-supports/",
-          "date": "2026-08-13"
+          "titleEn": "Introducing the Edits Film Festival to Spotlight India’s Emerging Creator Talent",
+          "titleZh": "Introducing the Edits Film Festival to Spotlight India’s Emerging Creator Talent",
+          "url": "https://about.fb.com/news/2026/08/introducing-the-edits-film-festival-to-spotlight-indias-emerging-creator-talent/",
+          "date": "2026-08-25"
         },
         {
-          "titleEn": "Meta’s Compliance with Australia’s Social Media Ban",
-          "titleZh": "Meta’s Compliance with Australia’s Social Media Ban",
-          "url": "https://about.fb.com/news/2026/08/metas-compliance-with-australias-social-media-ban/",
-          "date": "2026-08-13"
+          "titleEn": "Launching ‘Meta Startup School’ to Accelerate Growth For Early-Stage Startups",
+          "titleZh": "Launching ‘Meta Startup School’ to Accelerate Growth For Early-Stage Startups",
+          "url": "https://about.fb.com/news/2026/08/launching-meta-startup-school-to-accelerate-growth-for-early-stage-startups/",
+          "date": "2026-08-19"
         },
         {
-          "titleEn": "NABTU and Meta Announce New Partnership to Invest In Skilled Trades for the AI Era",
-          "titleZh": "NABTU and Meta Announce New Partnership to Invest In Skilled Trades for the AI Era",
-          "url": "https://about.fb.com/news/2026/08/nabtu-and-meta-partnership-to-invest-in-skilled-trades-for-ai-era/",
-          "date": "2026-08-12"
+          "titleEn": "America’s Workforce Academy: No Cost. No Prior Experience Necessary. A Career on the Other Side.",
+          "titleZh": "America’s Workforce Academy: No Cost. No Prior Experience Necessary. A Career on the Other Side.",
+          "url": "https://about.fb.com/news/2026/08/americas-workforce-academy-meta-skilled-trade-training-program/",
+          "date": "2026-08-18"
         }
       ],
       "hotSearchPills": [
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet",
+          "titleZh": "MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet",
+          "url": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet/",
+          "date": "2026-08-24"
+        },
+        {
+          "titleEn": "MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines",
+          "titleZh": "MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines",
+          "url": "https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/",
+          "date": "2026-08-24"
+        },
+        {
           "titleEn": "How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees",
           "titleZh": "How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees",
           "url": "https://engineering.fb.com/2026/08/12/security/how-were-building-scam-alert-whatsapp/",
           "date": "2026-08-12"
-        },
-        {
-          "titleEn": "From User Sequences to Scaling Laws: A Multi-Stage Architecture for Meta’s Ads Ranking",
-          "titleZh": "From User Sequences to Scaling Laws: A Multi-Stage Architecture for Meta’s Ads Ranking",
-          "url": "https://engineering.fb.com/2026/08/05/ml-applications/from-user-sequences-to-scaling-laws-a-multi-stage-architecture-for-metas-ads-ranking/",
-          "date": "2026-08-05"
-        },
-        {
-          "titleEn": "GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model",
-          "titleZh": "GEM Training: How Meta Doubled the Efficiency of Its LLM-Scale Ads Foundation Model",
-          "url": "https://engineering.fb.com/2026/08/03/ml-applications/training-gem-at-llm-scale-meta-ads-recommendation-foundation-model/",
-          "date": "2026-08-03"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "ESEAP Conference 2026: Reflection from My First Time Attending and Growing within the Wikimedia Movement",
-          "titleZh": "ESEAP Conference 2026: Reflection from My First Time Attending and Growing within the Wikimedia Movement",
-          "url": "https://diff.wikimedia.org/2026/08/18/eseap-conference-2026-reflection-from-my-first-time-attending-and-growing-within-the-wikimedia-movement/",
-          "date": "2026-08-18"
+          "titleEn": "Tech News 2026 – Issue 35",
+          "titleZh": "Tech News 2026 – Issue 35",
+          "url": "https://diff.wikimedia.org/2026/08/24/tech-news-2026-issue-35/",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "Tech News 2026 – Issue 34",
-          "titleZh": "Tech News 2026 – Issue 34",
-          "url": "https://diff.wikimedia.org/2026/08/17/tech-news-2026-issue-34/",
-          "date": "2026-08-17"
+          "titleEn": "Editing to Raise Visibility: Salvadoran Women Strengthen Wikipedia",
+          "titleZh": "Editing to Raise Visibility: Salvadoran Women Strengthen Wikipedia",
+          "url": "https://diff.wikimedia.org/2026/08/24/editing-to-raise-visibility-salvadoran-women-strengthen-wikipedia/",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "Historic delegation from Wikimedia Chile participates in Wikimania Paris in preparation for Santiago 2027",
-          "titleZh": "Historic delegation from Wikimedia Chile participates in Wikimania Paris in preparation for Santiago 2027",
-          "url": "https://diff.wikimedia.org/2026/08/17/historic-delegation-from-wikimedia-chile-participates-in-wikimania-paris-in-preparation-for-santiago-2027/",
-          "date": "2026-08-17"
+          "titleEn": "Yellow Shirts and Bold Questions: Reflections from the WikiWomen+ Summit",
+          "titleZh": "Yellow Shirts and Bold Questions: Reflections from the WikiWomen+ Summit",
+          "url": "https://diff.wikimedia.org/2026/08/24/yellow-shirts-and-bold-questions-reflections-from-the-wikiwomen-summit/",
+          "date": "2026-08-24"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "5 ways Amazon is investing in Nevada",
-          "titleZh": "5 ways Amazon is investing in Nevada",
-          "url": "https://www.aboutamazon.com/news/community/amazon-investment-nevada-jobs-infrastructure-small-business?utm_source=rss",
-          "date": "2026-08-17"
+          "titleEn": "Amazon hourly employees became satellite technicians—then watched their work launch into space",
+          "titleZh": "Amazon hourly employees became satellite technicians—then watched their work launch into space",
+          "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-career-choice-satellite-technicians-space-launch?utm_source=rss",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "5 ways Amazon is investing in Colorado",
-          "titleZh": "5 ways Amazon is investing in Colorado",
-          "url": "https://www.aboutamazon.com/news/community/amazon-investment-colorado-jobs-infrastructure-small-business?utm_source=rss",
-          "date": "2026-08-17"
+          "titleEn": "Prime Video to invest $2 billion in Latin America between 2027 and 2030",
+          "titleZh": "Prime Video to invest $2 billion in Latin America between 2027 and 2030",
+          "url": "https://www.aboutamazon.com/news/entertainment/prime-video-latin-america-investment?utm_source=rss",
+          "date": "2026-08-20"
         },
         {
-          "titleEn": "A first look at 'The Terminal List' Season 2 starring Chris Pratt, coming to Prime Video October 21",
-          "titleZh": "A first look at 'The Terminal List' Season 2 starring Chris Pratt, coming to Prime Video October 21",
-          "url": "https://www.aboutamazon.com/news/entertainment/terminal-list-prime-video-chris-pratt?utm_source=rss",
-          "date": "2026-08-17"
+          "titleEn": "'Sterling Point' Season 2: Everything to know and how to watch Season 1 on Prime Video",
+          "titleZh": "'Sterling Point' Season 2: Everything to know and how to watch Season 1 on Prime Video",
+          "url": "https://www.aboutamazon.com/news/entertainment/sterling-point-series-prime-video?utm_source=rss",
+          "date": "2026-08-20"
         }
       ],
       "hotSearchPills": [

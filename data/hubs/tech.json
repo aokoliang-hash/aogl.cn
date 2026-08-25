@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-08-18",
+  "updated": "2026-08-25",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "Developing Nemotron 3.5 Lightning NVFP4 with QAD Using NVIDIA Model Optimizer",
-          "titleZh": "Developing Nemotron 3.5 Lightning NVFP4 with QAD Using NVIDIA Model Optimizer",
-          "url": "https://developer.nvidia.com/blog/developing-nemotron-3-5-lightning-nvfp4-with-qad-using-nvidia-model-optimizer/",
-          "date": "2026-08-17"
+          "titleEn": "Giga-Scale AI and the Ethernet Evolution: How Spectrum-X Ethernet Rewrites the Rules",
+          "titleZh": "Giga-Scale AI and the Ethernet Evolution: How Spectrum-X Ethernet Rewrites the Rules",
+          "url": "https://developer.nvidia.com/blog/giga-scale-ai-ethernet-evolution-spectrum-x-ethernet-rewrites-rules/",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "Securing the Infrastructure of Intelligence",
-          "titleZh": "Securing the Infrastructure of Intelligence",
-          "url": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence/",
-          "date": "2026-08-17"
+          "titleEn": "How XPUs Meet a World-Class AI Factory",
+          "titleZh": "How XPUs Meet a World-Class AI Factory",
+          "url": "https://blogs.nvidia.com/blog/nvlink-fusion-xpu-ai-factory/",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop Local AI Talent",
-          "titleZh": "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop Local AI Talent",
-          "url": "https://blogs.nvidia.com/blog/ugm-indosat-nvidia-ai-technology-center/",
-          "date": "2026-08-14"
+          "titleEn": "With Groq 3 LPX in Full Production, NVIDIA Extends Vera Rubin Inference for Agents",
+          "titleZh": "With Groq 3 LPX in Full Production, NVIDIA Extends Vera Rubin Inference for Agents",
+          "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/",
+          "date": "2026-08-24"
         }
       ]
     },
@@ -191,6 +191,12 @@
       "labelZh": "AMD",
       "items": [
         {
+          "titleEn": "AMD Appoints Tim Ryan to Board of Directors",
+          "titleZh": "AMD Appoints Tim Ryan to Board of Directors",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1297/amd-appoints-tim-ryan-to-board-of-directors",
+          "date": "2026-08-19"
+        },
+        {
           "titleEn": "AMD Acquires Taalas to Advance Compute Solutions for Rapidly Growing AI Inference Market",
           "titleZh": "AMD Acquires Taalas to Advance Compute Solutions for Rapidly Growing AI Inference Market",
           "url": "https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market",
@@ -201,12 +207,6 @@
           "titleZh": "AMD Reports Second Quarter 2026 Financial Results",
           "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
           "date": "2026-08-04"
-        },
-        {
-          "titleEn": "AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era",
-          "titleZh": "AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era",
-          "date": "2026-07-23"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "[Infographic] Not All Ice Is Created Equal: Discover the Difference With Samsung’s Ice-Making Technology",
-          "titleZh": "[Infographic] Not All Ice Is Created Equal: Discover the Difference With Samsung’s Ice-Making Technology",
-          "url": "https://news.samsung.com/global/infographic-not-all-ice-is-created-equal-discover-the-difference-with-samsungs-ice-making-technology",
-          "date": "2026-08-18"
+          "titleEn": "[Invitation] Design Miami Seoul 2026: Opening of Samsung’s ‘Design Is an Act of Love’ Exhibition",
+          "titleZh": "[Invitation] Design Miami Seoul 2026: Opening of Samsung’s ‘Design Is an Act of Love’ Exhibition",
+          "url": "https://news.samsung.com/global/invitation-design-miami-seoul-2026-opening-of-samsungs-design-is-an-act-of-love-exhibition",
+          "date": "2026-08-25"
         },
         {
-          "titleEn": "‘Warranty and care’ Menu Simplifies Device Care for New Foldables",
-          "titleZh": "‘Warranty and care’ Menu Simplifies Device Care for New Foldables",
-          "url": "https://news.samsung.com/global/warranty-and-care-menu-simplifies-device-care-for-new-foldables",
-          "date": "2026-08-18"
+          "titleEn": "Samsung To Showcase Wide-Ranging Gaming Solutions With Immersive Exhibition at Gamescom 2026",
+          "titleZh": "Samsung To Showcase Wide-Ranging Gaming Solutions With Immersive Exhibition at Gamescom 2026",
+          "url": "https://news.samsung.com/global/samsung-to-showcase-wide-ranging-gaming-solutions-with-immersive-exhibition-at-gamescom-2026",
+          "date": "2026-08-25"
         },
         {
-          "titleEn": "Samsung Partners With Kunsthistorisches Museum in Vienna To Bring Austrian Masterpieces to Samsung Art Store",
-          "titleZh": "Samsung Partners With Kunsthistorisches Museum in Vienna To Bring Austrian Masterpieces to Samsung Art Store",
-          "url": "https://news.samsung.com/global/samsung-partners-with-kunsthistorisches-museum-in-vienna-to-bring-austrian-masterpieces-to-samsung-art-store",
-          "date": "2026-08-18"
+          "titleEn": "An Easier Way To Switch to the New Galaxy Z Fold8",
+          "titleZh": "An Easier Way To Switch to the New Galaxy Z Fold8",
+          "url": "https://news.samsung.com/global/an-easier-way-to-switch-to-the-new-galaxy-z-fold8",
+          "date": "2026-08-25"
         }
       ]
     },
@@ -266,22 +266,22 @@
       "labelZh": "英特尔",
       "items": [
         {
-          "titleEn": "Intel Announces Upsize and Pricing of $20 Billion Common Stock Offering",
-          "titleZh": "Intel Announces Upsize and Pricing of $20 Billion Common Stock Offering",
-          "url": "https://newsroom.intel.com/corporate/intel-announces-upsize-and-pricing-of-20-billion-common-stock-offering",
-          "date": "2026-08-11"
+          "titleEn": "Intel Outlines Architectures for Agentic AI at Hot Chips 2026",
+          "titleZh": "Intel Outlines Architectures for Agentic AI at Hot Chips 2026",
+          "url": "https://newsroom.intel.com/client-computing/intel-outlines-architectures-for-agentic-ai-at-hot-chips-2026",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "Intel Gamer Days 2026 Kicking Off with AAA Gaming Bundle & Partnerships",
-          "titleZh": "Intel Gamer Days 2026 Kicking Off with AAA Gaming Bundle & Partnerships",
-          "url": "https://newsroom.intel.com/client-computing/intel-gamer-days-2026-kicking-off-with-aaa-gaming-bundle-partnerships",
-          "date": "2026-08-10"
+          "titleEn": "Six in 10 Leaders Bet Big on Robots. Only Four in 10 Are Ready.",
+          "titleZh": "Six in 10 Leaders Bet Big on Robots. Only Four in 10 Are Ready.",
+          "url": "https://newsroom.intel.com/artificial-intelligence/6-in-10-leaders-bet-big-on-robots-only-4-in-10-are-ready",
+          "date": "2026-08-20"
         },
         {
-          "titleEn": "Intel Announces Proposed $15 Billion Common Stock Offering",
-          "titleZh": "Intel Announces Proposed $15 Billion Common Stock Offering",
-          "url": "https://newsroom.intel.com/corporate/intel-announces-proposed-15-billion-common-stock-offering",
-          "date": "2026-08-10"
+          "titleEn": "Intel Corporation to Participate in Upcoming Investor Conference",
+          "titleZh": "Intel Corporation to Participate in Upcoming Investor Conference",
+          "url": "https://newsroom.intel.com/corporate/intel-corporation-to-participate-in-upcoming-investor-conference-august-2026",
+          "date": "2026-08-18"
         }
       ]
     },
@@ -316,22 +316,22 @@
       "labelZh": "ARM",
       "items": [
         {
-          "titleEn": "CPUs are having a moment: Inside Arm’s hyperscale surge",
-          "titleZh": "CPUs are having a moment: Inside Arm’s hyperscale surge",
-          "url": "https://newsroom.arm.com/blog/inside-arms-hyperscale-surge",
-          "date": "2026-08-05"
+          "titleEn": "Arm and UNICEF launch AI in Play to expand access to AI innovation",
+          "titleZh": "Arm and UNICEF launch AI in Play to expand access to AI innovation",
+          "url": "https://newsroom.arm.com/blog/arm-and-unicef-launch-ai-in-play",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "Top Arm-based innovations advancing AI infrastructure, on-device intelligence and physical AI in July 2026",
-          "titleZh": "Top Arm-based innovations advancing AI infrastructure, on-device intelligence and physical AI in July 2026",
-          "url": "https://newsroom.arm.com/blog/top-arm-based-innovations-in-july-2026",
-          "date": "2026-08-05"
+          "titleEn": "IBM and Arm: Expanding the Arm ecosystem for the next era of enterprise computing",
+          "titleZh": "IBM and Arm: Expanding the Arm ecosystem for the next era of enterprise computing",
+          "url": "https://newsroom.arm.com/blog/ibm-and-arm-expanding-ecosystem-for-next-era-of-enterprise-computing",
+          "date": "2026-08-24"
         },
         {
-          "titleEn": "Arm Neural Technology gaining momentum across the mobile gaming ecosystem",
-          "titleZh": "Arm Neural Technology gaining momentum across the mobile gaming ecosystem",
-          "url": "https://newsroom.arm.com/blog/arm-neural-technology-mobile-gaming-ecosystem",
-          "date": "2026-08-04"
+          "titleEn": "Why agentic AI is a systems challenge",
+          "titleZh": "Why agentic AI is a systems challenge",
+          "url": "https://newsroom.arm.com/blog/agentic-ai-systems-challenge",
+          "date": "2026-08-20"
         }
       ]
     },
