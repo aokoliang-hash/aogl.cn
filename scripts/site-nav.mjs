@@ -1,7 +1,7 @@
 /**
- * Shared primary site navigation (see docs/流量增长与栏目整改实施方案.md).
- * Primary: Originals · About · AI tools · Briefs · Games · Tech · Portal · Brands · Shopping · Life · Social · Utilities
- * Home highlights Originals (not the tools grid) for AdSense first-impression.
+ * Shared primary site navigation.
+ * AdSense slim (2026-08): keep content hubs only — Originals · About · Games · Tech · Life.
+ * Bookmark rails (briefs, portal, tools grid, shopping…) stay reachable by URL but off primary nav.
  */
 export const NAV_LOCALES = ["en", "zh", "ja", "ko", "fr", "ru", "ar"];
 
@@ -29,29 +29,6 @@ const PRIMARY = [
     ar: "حول",
   },
   {
-    href: "index.html#tools-directory",
-    hrefKey: "tools",
-    match: { context: "tools" },
-    en: "AI tools",
-    zh: "AI 工具",
-    ja: "AIツール",
-    ko: "AI 도구",
-    fr: "Outils IA",
-    ru: "ИИ‑инструменты",
-    ar: "أدوات الذكاء",
-  },
-  {
-    href: "briefs/index.html",
-    match: { context: "briefs" },
-    en: "Briefs",
-    zh: "快讯",
-    ja: "速報",
-    ko: "속보",
-    fr: "Brèves",
-    ru: "Сводки",
-    ar: "عناوين",
-  },
-  {
     href: "games.html",
     match: { file: "games.html" },
     en: "Games",
@@ -74,39 +51,6 @@ const PRIMARY = [
     ar: "التقنية",
   },
   {
-    href: "portal.html",
-    match: { file: "portal.html" },
-    en: "Top sites",
-    zh: "全球站点",
-    ja: "主要サイト",
-    ko: "주요 사이트",
-    fr: "Grands sites",
-    ru: "Топ сайтов",
-    ar: "أبرز المواقع",
-  },
-  {
-    href: "brands.html",
-    match: { file: "brands.html" },
-    en: "Brands",
-    zh: "品牌",
-    ja: "ブランド",
-    ko: "브랜드",
-    fr: "Marques",
-    ru: "Бренды",
-    ar: "العلامات",
-  },
-  {
-    href: "shopping.html",
-    match: { file: "shopping.html" },
-    en: "Shopping",
-    zh: "购物",
-    ja: "ショッピング",
-    ko: "쇼핑",
-    fr: "Shopping",
-    ru: "Шопинг",
-    ar: "التسوق",
-  },
-  {
     href: "life.html",
     match: { file: "life.html" },
     en: "Life",
@@ -116,28 +60,6 @@ const PRIMARY = [
     fr: "Vie",
     ru: "Сервисы",
     ar: "الحياة الرقمية",
-  },
-  {
-    href: "social.html",
-    match: { file: "social.html" },
-    en: "Social",
-    zh: "社交",
-    ja: "ソーシャル",
-    ko: "소셜",
-    fr: "Social",
-    ru: "Соцсети",
-    ar: "التواصل",
-  },
-  {
-    href: "tools.html",
-    match: { file: "tools.html" },
-    en: "Utilities",
-    zh: "工具",
-    ja: "実用ツール",
-    ko: "실용 도구",
-    fr: "Utilitaires",
-    ru: "Утилиты",
-    ar: "أدوات مساعدة",
   },
 ];
 
@@ -167,13 +89,12 @@ export function navHtml(opts = {}) {
   const activeFile = opts.activeFile ?? null;
   const activeContext = opts.activeContext ?? null;
   const prefix = opts.prefix ?? "";
-  const toolsHref = opts.toolsHref ?? "index.html#tools-directory";
 
   return NAV_LOCALES.map((lang) => {
     const lis = PRIMARY.map((item) => {
       const active = isNavActive(item, { activeFile, activeContext });
       const cls = active ? ' class="is-active"' : "";
-      const href = item.hrefKey === "tools" ? toolsHref : item.href;
+      const href = item.href;
       return `          <li${cls}><a href="${esc(prefix + href)}">${esc(label(item, lang))}</a></li>`;
     }).join("\n");
 

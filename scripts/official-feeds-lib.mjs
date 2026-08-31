@@ -227,19 +227,26 @@ ${uls}
 }
 
 export function renderReadingTeaser(readingCount, categoryCount) {
+  void readingCount;
+  void categoryCount;
   const intros = LOCALES.map((lang) => {
     const text =
       lang === "en"
-        ? `${categoryCount} categorized headlines and ${readingCount} additional official links are on a separate page so the home screen stays focused on our 12 editorial notes.`
+        ? "Official headline walls and category briefs stay off the homepage so reviewers land on editorial demos first."
         : lang === "zh"
-          ? `首页仅保留本站原创手记与工具目录；另有 ${categoryCount} 组分类短讯与 ${readingCount} 条官方文章索引，已移至「官方动态」专页（外链集中列出，便于核对）。`
-          : `${readingCount} official links moved to the official feeds page.`;
-    return `        <p class="reading-intro lang-${lang}">${escapeHtml(text)} <a href="official-news.html">${escapeHtml(lang === "zh" ? "前往官方动态页 →" : "Official feeds page →")}</a></p>`;
+          ? "首页不再展示官方动态墙与分类短讯，避免外链密度；请从原创 Demo 开始浏览。"
+          : "Official headline walls stay off the homepage; start with editorial demos.";
+    return `        <p class="reading-intro lang-${lang}">${escapeHtml(text)} <a href="articles/index.html">${escapeHtml(lang === "zh" ? "前往文章索引 →" : "Article index →")}</a></p>`;
   }).join("\n");
 
   return `      <section id="reading" class="reading-teaser">
-        <h2 class="page-section-title lang-en">Official AI headlines</h2>
-        <h2 class="page-section-title lang-zh">官方动态（外链专页）</h2>
+        <h2 class="page-section-title lang-en">Reading focus</h2>
+        <h2 class="page-section-title lang-zh">阅读重点</h2>
+        <h2 class="page-section-title lang-ja">Reading focus</h2>
+        <h2 class="page-section-title lang-ko">Reading focus</h2>
+        <h2 class="page-section-title lang-fr">Reading focus</h2>
+        <h2 class="page-section-title lang-ru">Reading focus</h2>
+        <h2 class="page-section-title lang-ar">Reading focus</h2>
 ${intros}
       </section>`;
 }

@@ -8,7 +8,8 @@
   },
   "readingMaxTotal": 30,
   "homepageCategoryItemLimit": 0,
-  "homepageShowReadingList": true,
+  "homepageShowCategoryFeeds": false,
+  "homepageShowReadingList": false,
   "sources": {
     "openai": { "listUrl": "https://openai.com/news/", "max": 5 },
     "anthropic": { "listUrl": "https://www.anthropic.com/news", "max": 5 },

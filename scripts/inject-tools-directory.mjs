@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
- * Injects AI tools directory from data/tools-directory.json + data/i18n/site-tools-i18n.json
+ * Injects AI tools directory as DISPLAY-ONLY name tiles (no outbound / tool-guide links).
+ * AdSense: avoid homepage looking like a link directory.
  */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { faviconSrcForHtml } from "./favicon-local.mjs";
-import { slugFromUrl, toolGuidePath } from "./tool-guide-utils.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -38,18 +38,16 @@ function toolName(t, lang) {
 
 function renderTool(t) {
   const icon = faviconSrcForHtml(t.domain);
-  const slug = t.slug || slugFromUrl(t.url);
-  const href = toolGuidePath(slug);
   const names = LOCALES.map(
     (lang) => `                <span class="tool-tile-name lang-${lang}">${escapeHtml(toolName(t, lang))}</span>`
   ).join("\n");
   return `            <li>
-              <a class="tool-tile" href="${escapeHtml(href)}">
+              <div class="tool-tile tool-tile--display" role="listitem">
                 <span class="tool-tile-icon-wrap">
                   <img class="tool-tile-icon" src="${icon}" width="36" height="36" alt="" loading="lazy" decoding="async" />
                 </span>
 ${names}
-              </a>
+              </div>
             </li>`;
 }
 
@@ -59,50 +57,45 @@ function catTitle(cat, lang) {
   return pack.categories?.[cat.id]?.title?.[lang] || cat.title_en;
 }
 
-function pageHeading(data, lang) {
-  if (lang === "en") return data.heading_en;
-  if (lang === "zh") return data.heading_zh;
-  return pack.heading?.[lang] || data.heading_en;
-}
-
-function pageIntro(data, lang) {
-  if (lang === "en") return data.intro_en;
-  if (lang === "zh") return data.intro_zh;
-  return pack.intro?.[lang] || data.intro_en;
-}
-
-const TOOLS_SUMMARY = {
-  en: "Open AI tools directory (secondary bookmarks)",
-  zh: "展开 AI 工具目录（辅助书签）",
-  ja: "AIツール一覧を開く（補助ブックマーク）",
-  ko: "AI 도구 디렉터리 펼치기（보조 북마크）",
-  fr: "Ouvrir le répertoire d’outils IA (signets secondaires)",
-  ru: "Открыть каталог ИИ-инструментов (вторичные закладки)",
-  ar: "فتح دليل أدوات الذكاء الاصطناعي (إشارات ثانوية)",
+const HEADING = {
+  en: "AI tools (names only)",
+  zh: "AI 工具名录（仅展示）",
+  ja: "AIツール名（表示のみ）",
+  ko: "AI 도구 이름（표시만）",
+  fr: "Outils IA (noms seulement)",
+  ru: "ИИ-инструменты (только названия)",
+  ar: "أدوات الذكاء (أسماء فقط)",
 };
 
-const TOOLS_SECONDARY_NOTE = {
-  en: "Secondary bookmarks only — not the site’s primary content. Prefer <a href=\"articles/index.html\">editorial demos</a> or <a href=\"about.html\">About</a> first.",
-  zh: "仅为辅助书签，不是本站主内容。请优先看 <a href=\"articles/index.html\">原创 Demo</a> 或 <a href=\"about.html\">关于本站</a>。",
-  ja: "補助ブックマークです。まずは <a href=\"articles/index.html\">編集デモ</a> または <a href=\"about.html\">About</a> を。",
-  ko: "보조 북마크입니다. 먼저 <a href=\"articles/index.html\">편집 데모</a> 또는 <a href=\"about.html\">소개</a>를 보세요.",
-  fr: "Signets secondaires seulement. Préférez les <a href=\"articles/index.html\">démos</a> ou <a href=\"about.html\">À propos</a>.",
-  ru: "Только вспомогательные закладки. Сначала <a href=\"articles/index.html\">демо</a> или <a href=\"about.html\">О сайте</a>.",
-  ar: "إشارات ثانوية فقط. ابدأ بـ <a href=\"articles/index.html\">العروض</a> أو <a href=\"about.html\">حول</a>.",
+const NOTE = {
+  en: "Display-only reference list — <strong>no outbound links</strong>. Primary content is <a href=\"articles/index.html\">editorial demos</a>.",
+  zh: "仅展示工具名称，<strong>不含外链</strong>。主内容请看 <a href=\"articles/index.html\">原创 Demo</a>。",
+  ja: "名称のみ表示。<strong>外部リンクなし</strong>。主内容は <a href=\"articles/index.html\">編集デモ</a>。",
+  ko: "이름만 표시.<strong>외부 링크 없음</strong>. 주 콘텐츠는 <a href=\"articles/index.html\">편집 데모</a>.",
+  fr: "Liste indicative — <strong>sans liens sortants</strong>. Contenu principal : <a href=\"articles/index.html\">démos</a>.",
+  ru: "Только названия — <strong>без внешних ссылок</strong>. Основное: <a href=\"articles/index.html\">демо</a>.",
+  ar: "عرض الأسماء فقط — <strong>بدون روابط خارجية</strong>. المحتوى الأساسي: <a href=\"articles/index.html\">العروض</a>.",
+};
+
+const SUMMARY = {
+  en: "Show tool name list (no links)",
+  zh: "展开工具名录（无链接）",
+  ja: "ツール名を表示（リンクなし）",
+  ko: "도구 이름 펼치기（링크 없음）",
+  fr: "Afficher les noms (sans liens)",
+  ru: "Показать названия (без ссылок)",
+  ar: "عرض الأسماء (بدون روابط)",
 };
 
 function render(data) {
   const headingLines = LOCALES.map(
-    (lang) => `        <h2 class="page-section-title lang-${lang}">${escapeHtml(pageHeading(data, lang))}</h2>`
+    (lang) => `        <h2 class="page-section-title lang-${lang}">${escapeHtml(HEADING[lang])}</h2>`
   ).join("\n");
   const noteLines = LOCALES.map(
-    (lang) => `        <p class="tools-intro tools-intro--secondary lang-${lang}">${TOOLS_SECONDARY_NOTE[lang]}</p>`
-  ).join("\n");
-  const introLines = LOCALES.map(
-    (lang) => `        <p class="tools-intro lang-${lang}">${escapeHtml(pageIntro(data, lang))}</p>`
+    (lang) => `        <p class="tools-intro tools-intro--secondary lang-${lang}">${NOTE[lang]}</p>`
   ).join("\n");
   const summaryLines = LOCALES.map(
-    (lang) => `          <span class="lang-${lang}">${escapeHtml(TOOLS_SUMMARY[lang])}</span>`
+    (lang) => `          <span class="lang-${lang}">${escapeHtml(SUMMARY[lang])}</span>`
   ).join("\n");
 
   const cats = data.categories
@@ -127,7 +120,6 @@ ${noteLines}
           <summary class="tools-directory-summary">
 ${summaryLines}
           </summary>
-${introLines}
 ${cats}
         </details>
       </section>`;
@@ -144,4 +136,4 @@ const data = JSON.parse(fs.readFileSync(DATA, "utf8"));
 let html = fs.readFileSync(INDEX, "utf8");
 html = replaceMarker(html, render(data));
 fs.writeFileSync(INDEX, html, "utf8");
-console.log("Injected tools directory (7 locales)");
+console.log("Injected tools directory as display-only (no links)");

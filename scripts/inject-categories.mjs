@@ -26,16 +26,22 @@ function replaceMarker(html, inner) {
 }
 
 const config = loadSiteConfig();
-const limitRaw = config.homepageCategoryItemLimit;
-const limit = limitRaw === undefined || limitRaw === null ? 0 : Number(limitRaw) || 0;
-const data = loadCategoryData();
-const inner = renderCategoryFeeds(data, { itemLimit: limit, moreHref: "briefs/index.html" });
+let inner;
+if (config.homepageShowCategoryFeeds === false) {
+  inner = `      <!-- Category brief walls omitted on home (AdSense: avoid outbound/bookmark density). -->`;
+  console.log("Skipped homepage category feeds (homepageShowCategoryFeeds=false)");
+} else {
+  const limitRaw = config.homepageCategoryItemLimit;
+  const limit = limitRaw === undefined || limitRaw === null ? 0 : Number(limitRaw) || 0;
+  const data = loadCategoryData();
+  inner = renderCategoryFeeds(data, { itemLimit: limit, moreHref: "briefs/index.html" });
+  console.log(
+    limit > 0
+      ? `Injected category feeds (homepage preview: ${limit} per section)`
+      : "Injected category feeds (full lists, local brief links)"
+  );
+}
 
 let html = fs.readFileSync(INDEX, "utf8");
 html = replaceMarker(html, inner);
 fs.writeFileSync(INDEX, html, "utf8");
-console.log(
-  limit > 0
-    ? `Injected category feeds (homepage preview: ${limit} per section)`
-    : "Injected category feeds (full lists, local brief links)"
-);
