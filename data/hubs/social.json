@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-08-25",
+  "updated": "2026-09-01",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,96 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Instagram puts new limits on undisclosed AI profiles",
+      "titleZh": "Instagram puts new limits on undisclosed AI profiles",
+      "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+      "date": "2026-08-31",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Wzmacniamy w Polsce ochronę przed oszustwami",
+      "titleZh": "Wzmacniamy w Polsce ochronę przed oszustwami",
+      "url": "https://about.fb.com/news/2026/08/wzmacniamy-w-polsce-ochrone-przed-oszustwami/",
+      "date": "2026-08-28",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2025/05/Investment-and-Instant-Payment-Scams_Header.jpg?fit=960%2C540",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2025/05/Investment-and-Instant-Payment-Scams_Header.jpg?fit=960%2C540"
+    },
+    {
+      "titleEn": "Closed-Loop Cooling Explained: The Plumbing Behind Meta’s AI",
+      "titleZh": "Closed-Loop Cooling Explained: The Plumbing Behind Meta’s AI",
+      "url": "https://about.fb.com/news/2026/08/closed-loop-cooling-explained-the-plumbing-behind-metas-ai/",
+      "date": "2026-08-27",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/TOM_LIQUID-COOLING_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/TOM_LIQUID-COOLING_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "YouTube now lets creators tag Amazon products and earn commissions from purchases",
+      "titleZh": "YouTube now lets creators tag Amazon products and earn commissions from purchases",
+      "url": "https://techcrunch.com/2026/08/27/youtube-now-lets-creators-tag-amazon-products-and-earn-commissions-from-purchases/",
+      "date": "2026-08-27",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Reach your audience in new ways with August’s Demand Gen Drop.",
+      "titleZh": "Reach your audience in new ways with August’s Demand Gen Drop.",
+      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-august-2026/",
+      "date": "2026-08-27",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/August_Demand_Gen_Drop.max-600x600.format-webp.webp",
+      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/August_Demand_Gen_Drop.max-600x600.format-webp.webp"
+    },
+    {
+      "titleEn": "Meta agrees to sweeping changes to restrict kids’ access to its apps as part of settlement with states",
+      "titleZh": "Meta agrees to sweeping changes to restrict kids’ access to its apps as part of settlement with states",
+      "url": "https://techcrunch.com/2026/08/26/meta-agrees-to-sweeping-changes-to-restrict-kids-access-to-its-apps-as-part-of-settlement-with-states/",
+      "date": "2026-08-26",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "An Open Letter to TikTok and YouTube to Join Us in Supporting Teens",
+      "titleZh": "An Open Letter to TikTok and YouTube to Join Us in Supporting Teens",
+      "url": "https://about.fb.com/news/2026/08/open-letter-to-tiktok-and-youtube-to-join-us-in-supporting-teens/",
+      "date": "2026-08-26",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Our Agreement With Bipartisan Attorneys General: Calling on TikTok and YouTube to Join Us in Supporting Teens",
+      "titleZh": "Our Agreement With Bipartisan Attorneys General: Calling on TikTok and YouTube to Join Us in Supporting Teens",
+      "url": "https://about.fb.com/news/2026/08/agreement-with-state-attorneys-general-supporting-teens/",
+      "date": "2026-08-26",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Instagram’s ‘First Draft’ feature aims to make editing Reels less tedious",
+      "titleZh": "Instagram’s ‘First Draft’ feature aims to make editing Reels less tedious",
+      "url": "https://techcrunch.com/2026/08/25/instagrams-first-draft-feature-aims-to-make-editing-reels-less-tedious/",
+      "date": "2026-08-25",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "New Account Security Features for WhatsApp",
+      "titleZh": "New Account Security Features for WhatsApp",
+      "url": "https://about.fb.com/news/2026/08/new-account-security-features-for-whatsapp/",
+      "date": "2026-08-25",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/08/New-Account-Security-Features-for-WhatsApp_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/New-Account-Security-Features-for-WhatsApp_Thumbnail.jpg?fit=890%2C501"
+    },
     {
       "titleEn": "Introducing the Edits Film Festival to Spotlight India’s Emerging Creator Talent",
       "titleZh": "Introducing the Edits Film Festival to Spotlight India’s Emerging Creator Talent",
@@ -128,96 +218,6 @@
       "titleZh": "Facebook officially rolls out its stand-alone Creator Studio app with AI tools for creators",
       "url": "https://techcrunch.com/2026/08/12/facebook-officially-rolls-out-its-standalone-creator-studio-app-with-ai-tools-for-creators/",
       "date": "2026-08-12",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "NABTU and Meta Announce New Partnership to Invest In Skilled Trades for the AI Era",
-      "titleZh": "NABTU and Meta Announce New Partnership to Invest In Skilled Trades for the AI Era",
-      "url": "https://about.fb.com/news/2026/08/nabtu-and-meta-partnership-to-invest-in-skilled-trades-for-ai-era/",
-      "date": "2026-08-12",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/08/NABTU-META_1440x1080.png?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/NABTU-META_1440x1080.png?fit=890%2C501"
-    },
-    {
-      "titleEn": "How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees",
-      "titleZh": "How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees",
-      "url": "https://engineering.fb.com/2026/08/12/security/how-were-building-scam-alert-whatsapp/",
-      "date": "2026-08-12",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/07/WhatsApp-Scam-Alert-Ledger-Verification-Model-Download-Flow_1.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/07/WhatsApp-Scam-Alert-Ledger-Verification-Model-Download-Flow_1.png"
-    },
-    {
-      "titleEn": "Social media platforms still facing thousands of user addiction lawsuits after failed appeals",
-      "titleZh": "Social media platforms still facing thousands of user addiction lawsuits after failed appeals",
-      "url": "https://techcrunch.com/2026/08/10/social-media-platforms-still-facing-thousands-of-user-addiction-lawsuits-after-failed-appeals/",
-      "date": "2026-08-10",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "YouTube now requires creators to have twice as many watch hours to start earning money",
-      "titleZh": "YouTube now requires creators to have twice as many watch hours to start earning money",
-      "url": "https://techcrunch.com/2026/08/10/youtube-now-requires-creators-to-have-twice-as-many-watch-hours-to-start-earning-money/",
-      "date": "2026-08-10",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta Upholds Texas Governor Greg Abbott’s Data Center Standards",
-      "titleZh": "Meta Upholds Texas Governor Greg Abbott’s Data Center Standards",
-      "url": "https://about.fb.com/news/2026/08/meta-upholds-texas-governor-greg-abbotts-data-center-standards/",
-      "date": "2026-08-10",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "The Future is for Everyone",
-      "titleZh": "The Future is for Everyone",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "date": "2026-08-10",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/Meta_Thumbnail-3.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "TikTok lays off 250 employees, shutters its Nashville office",
-      "titleZh": "TikTok lays off 250 employees, shutters its Nashville office",
-      "url": "https://techcrunch.com/2026/08/06/tiktok-lays-off-250-employees-shutters-its-nashville-office/",
-      "date": "2026-08-06",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Why Meta Builds Its Own AI Data Centers",
-      "titleZh": "Why Meta Builds Its Own AI Data Centers",
-      "url": "https://about.fb.com/news/2026/08/why-meta-builds-its-own-data-centers/",
-      "date": "2026-08-06",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/08/Tom-Shaw_-Interview-with-Rachel_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/08/Tom-Shaw_-Interview-with-Rachel_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "From User Sequences to Scaling Laws: A Multi-Stage Architecture for Meta’s Ads Ranking",
-      "titleZh": "From User Sequences to Scaling Laws: A Multi-Stage Architecture for Meta’s Ads Ranking",
-      "url": "https://engineering.fb.com/2026/08/05/ml-applications/from-user-sequences-to-scaling-laws-a-multi-stage-architecture-for-metas-ads-ranking/",
-      "date": "2026-08-05",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/05/Multi-stage-Model-Overview.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/05/Multi-stage-Model-Overview.png"
-    },
-    {
-      "titleEn": "Disney+ looks to TikTok creators to bring fan content to its short-form video feed",
-      "titleZh": "Disney+ looks to TikTok creators to bring fan content to its short-form video feed",
-      "url": "https://techcrunch.com/2026/08/05/disney-looks-to-tiktok-creators-to-bring-fan-content-to-its-short-form-video-feed/",
-      "date": "2026-08-05",
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""

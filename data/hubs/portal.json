@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-08-25",
+  "updated": "2026-09-01",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "3 new ways to plan and book travel in Search",
+          "titleZh": "3 new ways to plan and book travel in Search",
+          "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
+          "date": "2026-08-27"
+        },
+        {
+          "titleEn": "5 ways to upgrade your home decor with Google Search",
+          "titleZh": "5 ways to upgrade your home decor with Google Search",
+          "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
+          "date": "2026-08-25"
+        },
+        {
           "titleEn": "5 new ways to level up your learning with Search",
           "titleZh": "5 new ways to level up your learning with Search",
           "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
           "date": "2026-08-19"
-        },
-        {
-          "titleEn": "Get closer to the game with Gemini and Pixel",
-          "titleZh": "Get closer to the game with Gemini and Pixel",
-          "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
-          "date": "2026-08-17"
-        },
-        {
-          "titleEn": "Bring your spreadsheet data to life with Sheets canvas",
-          "titleZh": "Bring your spreadsheet data to life with Sheets canvas",
-          "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
-          "date": "2026-08-13"
         }
       ],
       "hotSearchPills": [
@@ -193,6 +193,12 @@
       "labelZh": "YouTube",
       "items": [
         {
+          "titleEn": "Reach your audience in new ways with August’s Demand Gen Drop.",
+          "titleZh": "Reach your audience in new ways with August’s Demand Gen Drop.",
+          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-august-2026/",
+          "date": "2026-08-27"
+        },
+        {
           "titleEn": "How the Head of YouTube Health handles screen time with his kids",
           "titleZh": "How the Head of YouTube Health handles screen time with his kids",
           "url": "https://blog.google/innovation-and-ai/technology/families/kids-summer-screen-time-tips/",
@@ -203,12 +209,6 @@
           "titleZh": "Prepare for the holiday season with July’s Demand Gen Drop.",
           "url": "https://blog.google/products/ads-commerce/demand-gen-drop-july-2026/",
           "date": "2026-07-29"
-        },
-        {
-          "titleEn": "13 Google tips for a fun, productive summer off from college",
-          "titleZh": "13 Google tips for a fun, productive summer off from college",
-          "url": "https://blog.google/products-and-platforms/products/education/summer-productivity-tips-google-ai-tools/",
-          "date": "2026-07-21"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "Introducing the Edits Film Festival to Spotlight India’s Emerging Creator Talent",
-          "titleZh": "Introducing the Edits Film Festival to Spotlight India’s Emerging Creator Talent",
-          "url": "https://about.fb.com/news/2026/08/introducing-the-edits-film-festival-to-spotlight-indias-emerging-creator-talent/",
-          "date": "2026-08-25"
+          "titleEn": "Wzmacniamy w Polsce ochronę przed oszustwami",
+          "titleZh": "Wzmacniamy w Polsce ochronę przed oszustwami",
+          "url": "https://about.fb.com/news/2026/08/wzmacniamy-w-polsce-ochrone-przed-oszustwami/",
+          "date": "2026-08-28"
         },
         {
-          "titleEn": "Launching ‘Meta Startup School’ to Accelerate Growth For Early-Stage Startups",
-          "titleZh": "Launching ‘Meta Startup School’ to Accelerate Growth For Early-Stage Startups",
-          "url": "https://about.fb.com/news/2026/08/launching-meta-startup-school-to-accelerate-growth-for-early-stage-startups/",
-          "date": "2026-08-19"
+          "titleEn": "Closed-Loop Cooling Explained: The Plumbing Behind Meta’s AI",
+          "titleZh": "Closed-Loop Cooling Explained: The Plumbing Behind Meta’s AI",
+          "url": "https://about.fb.com/news/2026/08/closed-loop-cooling-explained-the-plumbing-behind-metas-ai/",
+          "date": "2026-08-27"
         },
         {
-          "titleEn": "America’s Workforce Academy: No Cost. No Prior Experience Necessary. A Career on the Other Side.",
-          "titleZh": "America’s Workforce Academy: No Cost. No Prior Experience Necessary. A Career on the Other Side.",
-          "url": "https://about.fb.com/news/2026/08/americas-workforce-academy-meta-skilled-trade-training-program/",
-          "date": "2026-08-18"
+          "titleEn": "An Open Letter to TikTok and YouTube to Join Us in Supporting Teens",
+          "titleZh": "An Open Letter to TikTok and YouTube to Join Us in Supporting Teens",
+          "url": "https://about.fb.com/news/2026/08/open-letter-to-tiktok-and-youtube-to-join-us-in-supporting-teens/",
+          "date": "2026-08-26"
         }
       ],
       "hotSearchPills": [
@@ -479,6 +479,12 @@
       "labelZh": "X",
       "items": [
         {
+          "titleEn": "Hold up, there’s a new Twitter in town",
+          "titleZh": "Hold up, there’s a new Twitter in town",
+          "url": "https://techcrunch.com/2026/08/27/hold-up-theres-a-new-twitter-in-the-town/",
+          "date": "2026-08-27"
+        },
+        {
           "titleEn": "Bluesky’s interim CEO, Toni Schneider, drops the ‘interim’",
           "titleZh": "Bluesky’s interim CEO, Toni Schneider, drops the ‘interim’",
           "url": "https://techcrunch.com/2026/07/10/blueskys-interim-ceo-toni-schneider-drops-the-interim/",
@@ -489,12 +495,6 @@
           "titleZh": "Despite ‘misgivings,’ judge approves Elon Musk’s $1.5M SEC settlement",
           "url": "https://techcrunch.com/2026/07/08/despite-misgivings-judge-approves-elon-musks-1-5-million-sec-settlement/",
           "date": "2026-07-08"
-        },
-        {
-          "titleEn": "X makes it more expensive to post links through its API",
-          "titleZh": "X makes it more expensive to post links through its API",
-          "url": "https://techcrunch.com/2026/04/22/x-makes-it-more-expensive-to-post-links-through-its-api/",
-          "date": "2026-04-22"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Tech News 2026 – Issue 35",
-          "titleZh": "Tech News 2026 – Issue 35",
-          "url": "https://diff.wikimedia.org/2026/08/24/tech-news-2026-issue-35/",
-          "date": "2026-08-24"
+          "titleEn": "Wikidata #2 workshop held in Tokyo, Japan",
+          "titleZh": "Wikidata #2 workshop held in Tokyo, Japan",
+          "url": "https://diff.wikimedia.org/2026/09/01/wikidata-2-workshop-held-in-tokyo-japan/",
+          "date": "2026-09-01"
         },
         {
-          "titleEn": "Editing to Raise Visibility: Salvadoran Women Strengthen Wikipedia",
-          "titleZh": "Editing to Raise Visibility: Salvadoran Women Strengthen Wikipedia",
-          "url": "https://diff.wikimedia.org/2026/08/24/editing-to-raise-visibility-salvadoran-women-strengthen-wikipedia/",
-          "date": "2026-08-24"
+          "titleEn": "The Yurakaré people and the Wikimedia movement",
+          "titleZh": "The Yurakaré people and the Wikimedia movement",
+          "url": "https://diff.wikimedia.org/2026/09/01/the-yurakare-people-and-the-wikimedia-movement/",
+          "date": "2026-09-01"
         },
         {
-          "titleEn": "Yellow Shirts and Bold Questions: Reflections from the WikiWomen+ Summit",
-          "titleZh": "Yellow Shirts and Bold Questions: Reflections from the WikiWomen+ Summit",
-          "url": "https://diff.wikimedia.org/2026/08/24/yellow-shirts-and-bold-questions-reflections-from-the-wikiwomen-summit/",
-          "date": "2026-08-24"
+          "titleEn": "Tech News 2026 – Issue 36",
+          "titleZh": "Tech News 2026 – Issue 36",
+          "url": "https://diff.wikimedia.org/2026/08/31/tech-news-2026-issue-36/",
+          "date": "2026-08-31"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon hourly employees became satellite technicians—then watched their work launch into space",
-          "titleZh": "Amazon hourly employees became satellite technicians—then watched their work launch into space",
-          "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-career-choice-satellite-technicians-space-launch?utm_source=rss",
-          "date": "2026-08-24"
+          "titleEn": "Amazon’s response to the FTC’s lawsuit regarding Sponsored Ads",
+          "titleZh": "Amazon’s response to the FTC’s lawsuit regarding Sponsored Ads",
+          "url": "https://www.aboutamazon.com/company-news/amazon-ftc-sponsored-ads-lawsuit-response?utm_source=rss",
+          "date": "2026-08-31"
         },
         {
-          "titleEn": "Prime Video to invest $2 billion in Latin America between 2027 and 2030",
-          "titleZh": "Prime Video to invest $2 billion in Latin America between 2027 and 2030",
-          "url": "https://www.aboutamazon.com/news/entertainment/prime-video-latin-america-investment?utm_source=rss",
-          "date": "2026-08-20"
+          "titleEn": "AWS to launch first cloud infrastructure region in the Kingdom of Saudi Arabia by December 2026",
+          "titleZh": "AWS to launch first cloud infrastructure region in the Kingdom of Saudi Arabia by December 2026",
+          "url": "https://www.aboutamazon.com/news/aws/aws-cloud-region-saudi-arabia?utm_source=rss",
+          "date": "2026-08-31"
         },
         {
-          "titleEn": "'Sterling Point' Season 2: Everything to know and how to watch Season 1 on Prime Video",
-          "titleZh": "'Sterling Point' Season 2: Everything to know and how to watch Season 1 on Prime Video",
-          "url": "https://www.aboutamazon.com/news/entertainment/sterling-point-series-prime-video?utm_source=rss",
-          "date": "2026-08-20"
+          "titleEn": "How Amazon is helping communities impacted by the Nepal flash floods",
+          "titleZh": "How Amazon is helping communities impacted by the Nepal flash floods",
+          "url": "https://www.aboutamazon.com/news/community/nepal-floods-amazon-disaster-relief?utm_source=rss",
+          "date": "2026-08-28"
         }
       ],
       "hotSearchPills": [
@@ -934,6 +934,12 @@
       "labelZh": "WhatsApp",
       "items": [
         {
+          "titleEn": "New Account Security Features for WhatsApp",
+          "titleZh": "New Account Security Features for WhatsApp",
+          "url": "https://about.fb.com/news/2026/08/new-account-security-features-for-whatsapp/",
+          "date": "2026-08-25"
+        },
+        {
           "titleEn": "We’re Upgrading Your WhatsApp Group Chats",
           "titleZh": "We’re Upgrading Your WhatsApp Group Chats",
           "url": "https://about.fb.com/news/2026/08/were-upgrading-your-whatsapp-group-chats/",
@@ -944,12 +950,6 @@
           "titleZh": "Introducing WhatsApp Web Calling, Plus More New Features",
           "url": "https://about.fb.com/news/2026/07/whatsapp-web-calling-new-features/",
           "date": "2026-07-28"
-        },
-        {
-          "titleEn": "New WhatsApp Features Keep Up With the Way You Actually Live",
-          "titleZh": "New WhatsApp Features Keep Up With the Way You Actually Live",
-          "url": "https://about.fb.com/news/2026/07/new-whatsapp-features-keep-up-with-the-way-you-actually-live/",
-          "date": "2026-07-22"
         }
       ],
       "hotSearchPills": [

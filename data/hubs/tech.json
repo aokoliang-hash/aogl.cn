@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-08-25",
+  "updated": "2026-09-01",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "Giga-Scale AI and the Ethernet Evolution: How Spectrum-X Ethernet Rewrites the Rules",
-          "titleZh": "Giga-Scale AI and the Ethernet Evolution: How Spectrum-X Ethernet Rewrites the Rules",
-          "url": "https://developer.nvidia.com/blog/giga-scale-ai-ethernet-evolution-spectrum-x-ethernet-rewrites-rules/",
-          "date": "2026-08-24"
+          "titleEn": "Run NVIDIA BioNeMo NIM Microservices for Protein Structure Prediction in Claude Science",
+          "titleZh": "Run NVIDIA BioNeMo NIM Microservices for Protein Structure Prediction in Claude Science",
+          "url": "https://developer.nvidia.com/blog/run-nvidia-bionemo-nim-microservices-for-protein-structure-prediction-in-claude-science/",
+          "date": "2026-08-31"
         },
         {
-          "titleEn": "How XPUs Meet a World-Class AI Factory",
-          "titleZh": "How XPUs Meet a World-Class AI Factory",
-          "url": "https://blogs.nvidia.com/blog/nvlink-fusion-xpu-ai-factory/",
-          "date": "2026-08-24"
+          "titleEn": "Scale AV Perception Across Vehicle Platforms with NVIDIA Omniverse NuRec",
+          "titleZh": "Scale AV Perception Across Vehicle Platforms with NVIDIA Omniverse NuRec",
+          "url": "https://developer.nvidia.com/blog/scale-av-perception-across-vehicle-platforms-with-nvidia-omniverse-nurec/",
+          "date": "2026-08-31"
         },
         {
-          "titleEn": "With Groq 3 LPX in Full Production, NVIDIA Extends Vera Rubin Inference for Agents",
-          "titleZh": "With Groq 3 LPX in Full Production, NVIDIA Extends Vera Rubin Inference for Agents",
-          "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/",
-          "date": "2026-08-24"
+          "titleEn": "Deploy an Open Model from Checkpoint to Inference in Two Commands with NVIDIA TensorRT Model Connect",
+          "titleZh": "Deploy an Open Model from Checkpoint to Inference in Two Commands with NVIDIA TensorRT Model Connect",
+          "url": "https://developer.nvidia.com/blog/deploy-an-open-model-from-checkpoint-to-inference-in-two-commands-with-nvidia-tensorrt-model-connect/",
+          "date": "2026-08-28"
         }
       ]
     },
@@ -191,6 +191,12 @@
       "labelZh": "AMD",
       "items": [
         {
+          "titleEn": "AMD, Cisco and HUMAIN Expand Saudi Arabia’s AI Infrastructure as AMD Instinct Systems Go Live",
+          "titleZh": "AMD, Cisco and HUMAIN Expand Saudi Arabia’s AI Infrastructure as AMD Instinct Systems Go Live",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1298/amd-cisco-and-humain-expand-saudi-arabias-ai-infrastructure-as-amd-instinct-systems-go-live",
+          "date": "2026-08-31"
+        },
+        {
           "titleEn": "AMD Appoints Tim Ryan to Board of Directors",
           "titleZh": "AMD Appoints Tim Ryan to Board of Directors",
           "url": "https://ir.amd.com/news-events/press-releases/detail/1297/amd-appoints-tim-ryan-to-board-of-directors",
@@ -201,12 +207,6 @@
           "titleZh": "AMD Acquires Taalas to Advance Compute Solutions for Rapidly Growing AI Inference Market",
           "url": "https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market",
           "date": "2026-08-06"
-        },
-        {
-          "titleEn": "AMD Reports Second Quarter 2026 Financial Results",
-          "titleZh": "AMD Reports Second Quarter 2026 Financial Results",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
-          "date": "2026-08-04"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "[Invitation] Design Miami Seoul 2026: Opening of Samsung’s ‘Design Is an Act of Love’ Exhibition",
-          "titleZh": "[Invitation] Design Miami Seoul 2026: Opening of Samsung’s ‘Design Is an Act of Love’ Exhibition",
-          "url": "https://news.samsung.com/global/invitation-design-miami-seoul-2026-opening-of-samsungs-design-is-an-act-of-love-exhibition",
-          "date": "2026-08-25"
+          "titleEn": "Samsung Presents ‘Design Is an Act of Love’ at Design Miami Seoul 2026",
+          "titleZh": "Samsung Presents ‘Design Is an Act of Love’ at Design Miami Seoul 2026",
+          "url": "https://news.samsung.com/global/samsung-presents-design-is-an-act-of-love-at-design-miami-seoul-2026",
+          "date": "2026-09-01"
         },
         {
-          "titleEn": "Samsung To Showcase Wide-Ranging Gaming Solutions With Immersive Exhibition at Gamescom 2026",
-          "titleZh": "Samsung To Showcase Wide-Ranging Gaming Solutions With Immersive Exhibition at Gamescom 2026",
-          "url": "https://news.samsung.com/global/samsung-to-showcase-wide-ranging-gaming-solutions-with-immersive-exhibition-at-gamescom-2026",
-          "date": "2026-08-25"
+          "titleEn": "[Interview] The People Behind the Galaxy Z Fold8 Series’ Camera Innovations ①: How My FanCam Keeps Favorite People in Focus",
+          "titleZh": "[Interview] The People Behind the Galaxy Z Fold8 Series’ Camera Innovations ①: How My FanCam Keeps Favorite People in Focus",
+          "url": "https://news.samsung.com/global/interview-the-people-behind-the-galaxy-z-fold8-series-camera-innovations-%e2%91%a0-how-my-fancam-keeps-favorite-people-in-focus",
+          "date": "2026-09-01"
         },
         {
-          "titleEn": "An Easier Way To Switch to the New Galaxy Z Fold8",
-          "titleZh": "An Easier Way To Switch to the New Galaxy Z Fold8",
-          "url": "https://news.samsung.com/global/an-easier-way-to-switch-to-the-new-galaxy-z-fold8",
-          "date": "2026-08-25"
+          "titleEn": "Samsung Expands the Galaxy Book6 Lineup, Making Galaxy Book More Accessible",
+          "titleZh": "Samsung Expands the Galaxy Book6 Lineup, Making Galaxy Book More Accessible",
+          "url": "https://news.samsung.com/global/samsung-expands-the-galaxy-book6-lineup-making-galaxy-book-more-accessible",
+          "date": "2026-09-01"
         }
       ]
     },
@@ -316,6 +316,12 @@
       "labelZh": "ARM",
       "items": [
         {
+          "titleEn": "Building the systems behind the next generation of intelligent robots",
+          "titleZh": "Building the systems behind the next generation of intelligent robots",
+          "url": "https://newsroom.arm.com/blog/robotics-systems-physical-ai",
+          "date": "2026-08-26"
+        },
+        {
           "titleEn": "Arm and UNICEF launch AI in Play to expand access to AI innovation",
           "titleZh": "Arm and UNICEF launch AI in Play to expand access to AI innovation",
           "url": "https://newsroom.arm.com/blog/arm-and-unicef-launch-ai-in-play",
@@ -326,12 +332,6 @@
           "titleZh": "IBM and Arm: Expanding the Arm ecosystem for the next era of enterprise computing",
           "url": "https://newsroom.arm.com/blog/ibm-and-arm-expanding-ecosystem-for-next-era-of-enterprise-computing",
           "date": "2026-08-24"
-        },
-        {
-          "titleEn": "Why agentic AI is a systems challenge",
-          "titleZh": "Why agentic AI is a systems challenge",
-          "url": "https://newsroom.arm.com/blog/agentic-ai-systems-challenge",
-          "date": "2026-08-20"
         }
       ]
     },
