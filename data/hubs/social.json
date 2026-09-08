@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-09-01",
+  "updated": "2026-09-08",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,42 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "ZGateway: Learnings from Putting a Proxy in Front of ZippyDB",
+      "titleZh": "ZGateway: Learnings from Putting a Proxy in Front of ZippyDB",
+      "url": "https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta/",
+      "date": "2026-09-03",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/09/ZGateway-Figure-1.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/09/ZGateway-Figure-1.png"
+    },
+    {
+      "titleEn": "TikTok comments are getting more interactive with voice comments, polls, and more",
+      "titleZh": "TikTok comments are getting more interactive with voice comments, polls, and more",
+      "url": "https://techcrunch.com/2026/09/03/tiktok-comments-are-getting-more-interactive-with-voice-comments-polls-and-more/",
+      "date": "2026-09-03",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
+      "titleZh": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
+      "url": "https://about.fb.com/news/2026/09/launching-bill-payments-in-india-helping-people-to-pay-everyday-household-bills-directly-on-whatsapp/",
+      "date": "2026-09-03",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/Image.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Image.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "Inside Meta’s Infrastructure Lab",
+      "titleZh": "Inside Meta’s Infrastructure Lab",
+      "url": "https://about.fb.com/news/2026/09/inside-metas-infrastructure-lab/",
+      "date": "2026-09-01",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/Inside-Metas-Infrastructure-Lab_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Inside-Metas-Infrastructure-Lab_Thumbnail.jpg?fit=890%2C501"
+    },
     {
       "titleEn": "Instagram puts new limits on undisclosed AI profiles",
       "titleZh": "Instagram puts new limits on undisclosed AI profiles",
@@ -182,42 +218,6 @@
       "titleZh": "YouTube will now count a view as soon as a video starts playing",
       "url": "https://techcrunch.com/2026/08/17/youtube-will-now-count-a-view-as-soon-as-a-video-starts-playing/",
       "date": "2026-08-17",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Instagram introduces a redesigned wordmark",
-      "titleZh": "Instagram introduces a redesigned wordmark",
-      "url": "https://techcrunch.com/2026/08/13/instagram-introduces-a-redesigned-wordmark/",
-      "date": "2026-08-13",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "The Future Is for Everyone: Free AI Glasses for Every Blind and Visually Impaired Adult Vision Ireland Supports",
-      "titleZh": "The Future Is for Everyone: Free AI Glasses for Every Blind and Visually Impaired Adult Vision Ireland Supports",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone-free-ai-glasses-for-every-blind-and-visually-impaired-adult-vision-ireland-supports/",
-      "date": "2026-08-13",
-      "source": "Facebook / Meta",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta’s Compliance with Australia’s Social Media Ban",
-      "titleZh": "Meta’s Compliance with Australia’s Social Media Ban",
-      "url": "https://about.fb.com/news/2026/08/metas-compliance-with-australias-social-media-ban/",
-      "date": "2026-08-13",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2024/01/DM-Teen-Default_Parent-Controls-Bundle_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2024/01/DM-Teen-Default_Parent-Controls-Bundle_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Facebook officially rolls out its stand-alone Creator Studio app with AI tools for creators",
-      "titleZh": "Facebook officially rolls out its stand-alone Creator Studio app with AI tools for creators",
-      "url": "https://techcrunch.com/2026/08/12/facebook-officially-rolls-out-its-standalone-creator-studio-app-with-ai-tools-for-creators/",
-      "date": "2026-08-12",
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""

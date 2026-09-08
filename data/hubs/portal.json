@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-09-01",
+  "updated": "2026-09-08",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "3 new ways to plan and book travel in Search",
-          "titleZh": "3 new ways to plan and book travel in Search",
-          "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
-          "date": "2026-08-27"
+          "titleEn": "Proactive cyber defense for governments and enterprises",
+          "titleZh": "Proactive cyber defense for governments and enterprises",
+          "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+          "date": "2026-09-02"
         },
         {
-          "titleEn": "5 ways to upgrade your home decor with Google Search",
-          "titleZh": "5 ways to upgrade your home decor with Google Search",
-          "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
-          "date": "2026-08-25"
+          "titleEn": "The latest AI news we announced in August 2026",
+          "titleZh": "The latest AI news we announced in August 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
+          "date": "2026-09-01"
         },
         {
-          "titleEn": "5 new ways to level up your learning with Search",
-          "titleZh": "5 new ways to level up your learning with Search",
-          "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
-          "date": "2026-08-19"
+          "titleEn": "Try Google Pics: Easy image creation and editing in Google Workspace",
+          "titleZh": "Try Google Pics: Easy image creation and editing in Google Workspace",
+          "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
+          "date": "2026-09-01"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
+          "titleEn": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
+          "titleZh": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
+          "url": "https://about.fb.com/news/2026/09/launching-bill-payments-in-india-helping-people-to-pay-everyday-household-bills-directly-on-whatsapp/",
+          "date": "2026-09-03"
+        },
+        {
+          "titleEn": "Inside Meta’s Infrastructure Lab",
+          "titleZh": "Inside Meta’s Infrastructure Lab",
+          "url": "https://about.fb.com/news/2026/09/inside-metas-infrastructure-lab/",
+          "date": "2026-09-01"
+        },
+        {
           "titleEn": "Wzmacniamy w Polsce ochronę przed oszustwami",
           "titleZh": "Wzmacniamy w Polsce ochronę przed oszustwami",
           "url": "https://about.fb.com/news/2026/08/wzmacniamy-w-polsce-ochrone-przed-oszustwami/",
           "date": "2026-08-28"
-        },
-        {
-          "titleEn": "Closed-Loop Cooling Explained: The Plumbing Behind Meta’s AI",
-          "titleZh": "Closed-Loop Cooling Explained: The Plumbing Behind Meta’s AI",
-          "url": "https://about.fb.com/news/2026/08/closed-loop-cooling-explained-the-plumbing-behind-metas-ai/",
-          "date": "2026-08-27"
-        },
-        {
-          "titleEn": "An Open Letter to TikTok and YouTube to Join Us in Supporting Teens",
-          "titleZh": "An Open Letter to TikTok and YouTube to Join Us in Supporting Teens",
-          "url": "https://about.fb.com/news/2026/08/open-letter-to-tiktok-and-youtube-to-join-us-in-supporting-teens/",
-          "date": "2026-08-26"
         }
       ],
       "hotSearchPills": [
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "ZGateway: Learnings from Putting a Proxy in Front of ZippyDB",
+          "titleZh": "ZGateway: Learnings from Putting a Proxy in Front of ZippyDB",
+          "url": "https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta/",
+          "date": "2026-09-03"
+        },
+        {
+          "titleEn": "An Organizational Second Brain: Building an AI That Learns From Experts",
+          "titleZh": "An Organizational Second Brain: Building an AI That Learns From Experts",
+          "url": "https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/",
+          "date": "2026-09-02"
+        },
+        {
           "titleEn": "MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet",
           "titleZh": "MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet",
           "url": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet/",
           "date": "2026-08-24"
-        },
-        {
-          "titleEn": "MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines",
-          "titleZh": "MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines",
-          "url": "https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/",
-          "date": "2026-08-24"
-        },
-        {
-          "titleEn": "How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees",
-          "titleZh": "How We’re Building Scam Alert on WhatsApp With End-to-End Encryption and Verifiability Guarantees",
-          "url": "https://engineering.fb.com/2026/08/12/security/how-were-building-scam-alert-whatsapp/",
-          "date": "2026-08-12"
         }
       ],
       "hotSearchPills": [
@@ -479,6 +479,12 @@
       "labelZh": "X",
       "items": [
         {
+          "titleEn": "Judge blocks X rival from using Twitter name, but allows ‘Tweet’ for now",
+          "titleZh": "Judge blocks X rival from using Twitter name, but allows ‘Tweet’ for now",
+          "url": "https://techcrunch.com/2026/09/04/judge-blocks-x-rival-from-using-twitter-name-but-allows-tweet-for-now/",
+          "date": "2026-09-04"
+        },
+        {
           "titleEn": "Hold up, there’s a new Twitter in town",
           "titleZh": "Hold up, there’s a new Twitter in town",
           "url": "https://techcrunch.com/2026/08/27/hold-up-theres-a-new-twitter-in-the-town/",
@@ -489,12 +495,6 @@
           "titleZh": "Bluesky’s interim CEO, Toni Schneider, drops the ‘interim’",
           "url": "https://techcrunch.com/2026/07/10/blueskys-interim-ceo-toni-schneider-drops-the-interim/",
           "date": "2026-07-10"
-        },
-        {
-          "titleEn": "Despite ‘misgivings,’ judge approves Elon Musk’s $1.5M SEC settlement",
-          "titleZh": "Despite ‘misgivings,’ judge approves Elon Musk’s $1.5M SEC settlement",
-          "url": "https://techcrunch.com/2026/07/08/despite-misgivings-judge-approves-elon-musks-1-5-million-sec-settlement/",
-          "date": "2026-07-08"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Wikidata #2 workshop held in Tokyo, Japan",
-          "titleZh": "Wikidata #2 workshop held in Tokyo, Japan",
-          "url": "https://diff.wikimedia.org/2026/09/01/wikidata-2-workshop-held-in-tokyo-japan/",
-          "date": "2026-09-01"
+          "titleEn": "Tech News 2026 – Issue 37",
+          "titleZh": "Tech News 2026 – Issue 37",
+          "url": "https://diff.wikimedia.org/2026/09/07/tech-news-2026-issue-37/",
+          "date": "2026-09-07"
         },
         {
-          "titleEn": "The Yurakaré people and the Wikimedia movement",
-          "titleZh": "The Yurakaré people and the Wikimedia movement",
-          "url": "https://diff.wikimedia.org/2026/09/01/the-yurakare-people-and-the-wikimedia-movement/",
-          "date": "2026-09-01"
+          "titleEn": "Meet Us in Accra: Language Diversity Conference 2026",
+          "titleZh": "Meet Us in Accra: Language Diversity Conference 2026",
+          "url": "https://diff.wikimedia.org/2026/09/06/meet-us-in-accra-language-diversity-conference-2026/",
+          "date": "2026-09-06"
         },
         {
-          "titleEn": "Tech News 2026 – Issue 36",
-          "titleZh": "Tech News 2026 – Issue 36",
-          "url": "https://diff.wikimedia.org/2026/08/31/tech-news-2026-issue-36/",
-          "date": "2026-08-31"
+          "titleEn": "A different way to find common ground",
+          "titleZh": "A different way to find common ground",
+          "url": "https://diff.wikimedia.org/2026/09/06/a-different-way-to-find-common-ground/",
+          "date": "2026-09-06"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon’s response to the FTC’s lawsuit regarding Sponsored Ads",
-          "titleZh": "Amazon’s response to the FTC’s lawsuit regarding Sponsored Ads",
-          "url": "https://www.aboutamazon.com/company-news/amazon-ftc-sponsored-ads-lawsuit-response?utm_source=rss",
-          "date": "2026-08-31"
+          "titleEn": "A first look at ‘Our Fault: London,’ the ‘Your Fault: London’ and 'My Fault: London' sequel coming to Prime Video in 2027",
+          "titleZh": "A first look at ‘Our Fault: London,’ the ‘Your Fault: London’ and 'My Fault: London' sequel coming to Prime Video in 2027",
+          "url": "https://www.aboutamazon.com/news/entertainment/our-fault-london-prime-video?utm_source=rss",
+          "date": "2026-09-08"
         },
         {
-          "titleEn": "AWS to launch first cloud infrastructure region in the Kingdom of Saudi Arabia by December 2026",
-          "titleZh": "AWS to launch first cloud infrastructure region in the Kingdom of Saudi Arabia by December 2026",
-          "url": "https://www.aboutamazon.com/news/aws/aws-cloud-region-saudi-arabia?utm_source=rss",
-          "date": "2026-08-31"
+          "titleEn": "Amazon 21 Air updates",
+          "titleZh": "Amazon 21 Air updates",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-21-air-miami-updates?utm_source=rss",
+          "date": "2026-09-06"
         },
         {
-          "titleEn": "How Amazon is helping communities impacted by the Nepal flash floods",
-          "titleZh": "How Amazon is helping communities impacted by the Nepal flash floods",
-          "url": "https://www.aboutamazon.com/news/community/nepal-floods-amazon-disaster-relief?utm_source=rss",
-          "date": "2026-08-28"
+          "titleEn": "Amazon expands Career Choice employee benefit with new programs in high-demand industries",
+          "titleZh": "Amazon expands Career Choice employee benefit with new programs in high-demand industries",
+          "url": "https://www.aboutamazon.com/news/workplace/amazon-career-choice-training-programs-tuition-careers?utm_source=rss",
+          "date": "2026-09-04"
         }
       ],
       "hotSearchPills": [
@@ -934,6 +934,12 @@
       "labelZh": "WhatsApp",
       "items": [
         {
+          "titleEn": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
+          "titleZh": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
+          "url": "https://about.fb.com/news/2026/09/launching-bill-payments-in-india-helping-people-to-pay-everyday-household-bills-directly-on-whatsapp/",
+          "date": "2026-09-03"
+        },
+        {
           "titleEn": "New Account Security Features for WhatsApp",
           "titleZh": "New Account Security Features for WhatsApp",
           "url": "https://about.fb.com/news/2026/08/new-account-security-features-for-whatsapp/",
@@ -944,12 +950,6 @@
           "titleZh": "We’re Upgrading Your WhatsApp Group Chats",
           "url": "https://about.fb.com/news/2026/08/were-upgrading-your-whatsapp-group-chats/",
           "date": "2026-08-04"
-        },
-        {
-          "titleEn": "Introducing WhatsApp Web Calling, Plus More New Features",
-          "titleZh": "Introducing WhatsApp Web Calling, Plus More New Features",
-          "url": "https://about.fb.com/news/2026/07/whatsapp-web-calling-new-features/",
-          "date": "2026-07-28"
         }
       ],
       "hotSearchPills": [

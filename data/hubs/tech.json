@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-09-01",
+  "updated": "2026-09-08",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "Run NVIDIA BioNeMo NIM Microservices for Protein Structure Prediction in Claude Science",
-          "titleZh": "Run NVIDIA BioNeMo NIM Microservices for Protein Structure Prediction in Claude Science",
-          "url": "https://developer.nvidia.com/blog/run-nvidia-bionemo-nim-microservices-for-protein-structure-prediction-in-claude-science/",
-          "date": "2026-08-31"
+          "titleEn": "Building a Memory-Driven Agent with NVIDIA NemoClaw",
+          "titleZh": "Building a Memory-Driven Agent with NVIDIA NemoClaw",
+          "url": "https://developer.nvidia.com/blog/building-a-memory-driven-agent-with-nvidia-nemoclaw/",
+          "date": "2026-09-04"
         },
         {
-          "titleEn": "Scale AV Perception Across Vehicle Platforms with NVIDIA Omniverse NuRec",
-          "titleZh": "Scale AV Perception Across Vehicle Platforms with NVIDIA Omniverse NuRec",
-          "url": "https://developer.nvidia.com/blog/scale-av-perception-across-vehicle-platforms-with-nvidia-omniverse-nurec/",
-          "date": "2026-08-31"
+          "titleEn": "Frontier Reasoning Reaches the Edge: How to Deploy and Optimize Models on NVIDIA Jetson",
+          "titleZh": "Frontier Reasoning Reaches the Edge: How to Deploy and Optimize Models on NVIDIA Jetson",
+          "url": "https://developer.nvidia.com/blog/frontier-reasoning-reaches-the-edge-how-to-deploy-and-optimize-models-on-nvidia-jetson/",
+          "date": "2026-09-04"
         },
         {
-          "titleEn": "Deploy an Open Model from Checkpoint to Inference in Two Commands with NVIDIA TensorRT Model Connect",
-          "titleZh": "Deploy an Open Model from Checkpoint to Inference in Two Commands with NVIDIA TensorRT Model Connect",
-          "url": "https://developer.nvidia.com/blog/deploy-an-open-model-from-checkpoint-to-inference-in-two-commands-with-nvidia-tensorrt-model-connect/",
-          "date": "2026-08-28"
+          "titleEn": "How to Carry User Identity Across Federated Kubernetes and AI Platforms",
+          "titleZh": "How to Carry User Identity Across Federated Kubernetes and AI Platforms",
+          "url": "https://developer.nvidia.com/blog/how-to-carry-user-identity-across-federated-kubernetes-and-ai-platforms/",
+          "date": "2026-09-03"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "Samsung Presents ‘Design Is an Act of Love’ at Design Miami Seoul 2026",
-          "titleZh": "Samsung Presents ‘Design Is an Act of Love’ at Design Miami Seoul 2026",
-          "url": "https://news.samsung.com/global/samsung-presents-design-is-an-act-of-love-at-design-miami-seoul-2026",
-          "date": "2026-09-01"
+          "titleEn": "Samsung Electronics and ASML Expand Strategic Collaboration for Next-Generation Semiconductor Manufacturing",
+          "titleZh": "Samsung Electronics and ASML Expand Strategic Collaboration for Next-Generation Semiconductor Manufacturing",
+          "url": "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
+          "date": "2026-09-08"
         },
         {
-          "titleEn": "[Interview] The People Behind the Galaxy Z Fold8 Series’ Camera Innovations ①: How My FanCam Keeps Favorite People in Focus",
-          "titleZh": "[Interview] The People Behind the Galaxy Z Fold8 Series’ Camera Innovations ①: How My FanCam Keeps Favorite People in Focus",
-          "url": "https://news.samsung.com/global/interview-the-people-behind-the-galaxy-z-fold8-series-camera-innovations-%e2%91%a0-how-my-fancam-keeps-favorite-people-in-focus",
-          "date": "2026-09-01"
+          "titleEn": "Immaculate Engineering Meets Artistic Imagination: Highlights From Design Miami Seoul 2026",
+          "titleZh": "Immaculate Engineering Meets Artistic Imagination: Highlights From Design Miami Seoul 2026",
+          "url": "https://news.samsung.com/global/immaculate-engineering-meets-artistic-imagination-highlights-from-design-miami-seoul-2026",
+          "date": "2026-09-07"
         },
         {
-          "titleEn": "Samsung Expands the Galaxy Book6 Lineup, Making Galaxy Book More Accessible",
-          "titleZh": "Samsung Expands the Galaxy Book6 Lineup, Making Galaxy Book More Accessible",
-          "url": "https://news.samsung.com/global/samsung-expands-the-galaxy-book6-lineup-making-galaxy-book-more-accessible",
-          "date": "2026-09-01"
+          "titleEn": "Samsung Medison Expands Women’s Health Diagnostic Portfolio With Launch of Premium Ultrasound ‘HERA Z10’",
+          "titleZh": "Samsung Medison Expands Women’s Health Diagnostic Portfolio With Launch of Premium Ultrasound ‘HERA Z10’",
+          "url": "https://news.samsung.com/global/samsung-medison-expands-womens-health-diagnostic-portfolio-with-launch-of-premium-ultrasound-hera-z10",
+          "date": "2026-09-07"
         }
       ]
     },
@@ -316,22 +316,22 @@
       "labelZh": "ARM",
       "items": [
         {
-          "titleEn": "Building the systems behind the next generation of intelligent robots",
-          "titleZh": "Building the systems behind the next generation of intelligent robots",
-          "url": "https://newsroom.arm.com/blog/robotics-systems-physical-ai",
-          "date": "2026-08-26"
+          "titleEn": "Inside Arm CSS for Mobile 2: The AI-native compute platform for mobile",
+          "titleZh": "Inside Arm CSS for Mobile 2: The AI-native compute platform for mobile",
+          "url": "https://newsroom.arm.com/blog/arm-css-for-mobile-2-and-c2-cpu-cluster",
+          "date": "2026-09-08"
         },
         {
-          "titleEn": "Arm and UNICEF launch AI in Play to expand access to AI innovation",
-          "titleZh": "Arm and UNICEF launch AI in Play to expand access to AI innovation",
-          "url": "https://newsroom.arm.com/blog/arm-and-unicef-launch-ai-in-play",
-          "date": "2026-08-24"
+          "titleEn": "Inside the Arm Mali G2-Ultra NX GPU: Delivering desktop-class mobile gameplay with AI-native graphics",
+          "titleZh": "Inside the Arm Mali G2-Ultra NX GPU: Delivering desktop-class mobile gameplay with AI-native graphics",
+          "url": "https://newsroom.arm.com/blog/arm-mali-g2-ultra-nx-ai-native-mobile-graphics",
+          "date": "2026-09-08"
         },
         {
-          "titleEn": "IBM and Arm: Expanding the Arm ecosystem for the next era of enterprise computing",
-          "titleZh": "IBM and Arm: Expanding the Arm ecosystem for the next era of enterprise computing",
-          "url": "https://newsroom.arm.com/blog/ibm-and-arm-expanding-ecosystem-for-next-era-of-enterprise-computing",
-          "date": "2026-08-24"
+          "titleEn": "Hot Chips 2026: The CPU’s next chapter is being built on Arm",
+          "titleZh": "Hot Chips 2026: The CPU’s next chapter is being built on Arm",
+          "url": "https://newsroom.arm.com/blog/hot-chips-2026-arm-cpu-agentic-ai",
+          "date": "2026-09-02"
         }
       ]
     },
