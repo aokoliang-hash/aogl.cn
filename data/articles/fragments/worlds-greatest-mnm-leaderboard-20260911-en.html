@@ -1,0 +1,105 @@
+<p>This is a <strong>first-party build log</strong> on aogl.cn. Screenshots live under <code>original/worlds-greatest/</code> (archived 2026-09-11). <strong>Worlds Greatest（世界之最）is an app I developed myself</strong> (footer credit © kolang). <strong>App link:</strong> <a href="https://mnm.aogl.cn/" target="_blank" rel="noopener noreferrer">https://mnm.aogl.cn/</a>—a public pay-to-display leaderboard where rank equals the bid, topics and countries are first-class filters, and a 3D universe scene (galaxy → solar system → Earth) is the visual stage. This page is not affiliate marketing. It documents my own UI captures—board list, topic chips, country rails, bid modal, profile card, and globe/galaxy CTAs—so search engines and humans can index phrases like “pay to rank leaderboard,” “topic country ranking board,” “3D earth bid to list,” and “mnm.aogl.cn worlds greatest.”</p>
+
+<figure class="article-figure">
+  <img src="../original/worlds-greatest/ScreenShot_2026-09-11_102316_120.png" width="1280" height="720" loading="lazy" decoding="async" alt="Worlds Greatest desktop — #Richest board, country flags, #1 card with 1020 stars, interactive Earth on the right">
+  <figcaption><code>ScreenShot_…_102316_120.png</code> — desktop layout: board + Earth scene.</figcaption>
+</figure>
+
+<h2>What’s in the folder</h2>
+<ul>
+  <li><code>rd.txt</code> — product URL pointer: <code>https://mnm.aogl.cn/</code>.</li>
+  <li><code>ScreenShot_2026-09-11_102316_120.png</code> — desktop: All-time richest board, country chips, #1 highlight, Earth with pins.</li>
+  <li><code>ScreenShot_2026-09-11_102326_975.png</code> — desktop: board beside a solar-system stage (sun + planets).</li>
+  <li><code>ScreenShot_2026-09-11_102413_965.png</code> — desktop: galaxy/universe canvas with board on the left.</li>
+  <li><code>ScreenShot_2026-09-11_102448_476.png</code> — profile modal: rank badge, display name, bio/URL, visit / share / overtake.</li>
+  <li><code>ScreenShot_2026-09-11_102501_238.png</code> — mobile: galaxy hero with 「看榜」/「我要上榜」 and drag-to-look hint.</li>
+  <li><code>ScreenShot_2026-09-11_102531_516.png</code> — mobile: Earth close-up with the same dual CTAs and return-to-solar-system copy.</li>
+</ul>
+<p>Captures were taken in a browser at <a href="https://mnm.aogl.cn/" target="_blank" rel="noopener noreferrer">https://mnm.aogl.cn/</a>. Pairing <strong>structured prose</strong> with <strong>descriptive alt text</strong> beats a bare outbound link: crawlers see entities (topics, countries, bid steps, board totals) in first-paint HTML—not only in WebGL pixels.</p>
+
+<h2>Positioning: rank is the bid, nothing else</h2>
+<p>Most social “leaderboards” pretend merit comes from likes, votes, or opaque algorithms. Worlds Greatest states the contract in the Rules sheet: <strong>a public pay-to-rank leaderboard; higher bids rank higher; equal bids: earlier payment wins</strong>. Minimum bid starts at ★1; taking #1 requires at least ★1 above the current top. Already listed names can log in and pay only the <strong>difference</strong> to climb. That is closer to a <strong>transparent display-placement market</strong> than to a content farm of scraped “richest people” articles.</p>
+<p>The product copy is deliberate about legal framing: payments buy <strong>display placement only</strong>; this is not a lottery or gambling service; payments are final; listings that violate content rules can be removed. Those sentences matter for SEO and for AdSense reviewers: the essay should describe a <strong>self-serve ranking UI I built</strong>, not invent jackpot language. Gold amounts in the activity feed are that payment, not a cumulative mystery score.</p>
+
+<figure class="article-figure">
+  <img src="../original/worlds-greatest/ScreenShot_2026-09-11_102413_965.png" width="1280" height="720" loading="lazy" decoding="async" alt="Worlds Greatest — left board and right spiral galaxy universe canvas">
+  <figcaption><code>ScreenShot_…_102413_965.png</code> — universe canvas behind the board.</figcaption>
+</figure>
+
+<h2>Topics and countries as first-class axes</h2>
+<p>The top of the board shows topic chips such as <strong>#Richest</strong>, <strong>#Startups</strong>, Chinese challenge topics like <strong>#比最牛的网站公司</strong> and <strong>#比世界最帅</strong>, plus <strong>+ New topic</strong> and a “More topics” drawer. Anyone can bid to create a topic when the list is empty—so the taxonomy is user-grown, not a frozen CMS tree. Under topics, a horizontal country rail filters the board: All, China, United States, Japan, South Korea, United Arab Emirates, Sweden, Singapore, Switzerland, Vietnam, Canada, Australia, India, Hong Kong SAR China, and more. The left list is view-only for browsing; your listing country comes from the location sheet (detect + manual country/city edit).</p>
+<p>Separating <strong>topic</strong> from <strong>country</strong> keeps SEO entities clean. A startup founder in Singapore and a vanity “richest” joke account in Shenzhen do not compete in one undifferentiated scroll. “Today” versus “All-time” further splits attention: Today counts payments in the last 24 hours; All-time keeps the long board. Header stats in captures show on-board counts and total bids—useful social proof without claiming third-party wealth verification.</p>
+
+<h2>Bid to rank: the modal chain</h2>
+<p>Primary CTA copy alternates between <strong>Get listed</strong> / <strong>我要上榜</strong> and per-row <strong>Overtake</strong> / <strong>Pass</strong>. The flow I shipped is intentionally staged:</p>
+<ol>
+  <li><strong>What to rank</strong> — display name; optional description or URL.</li>
+  <li><strong>Confirm this bid</strong> — estimated rank, payment due now, topic, name, country, board total; must agree to Terms.</li>
+  <li><strong>Choose payment</strong> — board stars, currency, method (Stripe/partners in production; Mock pay in dev when methods are disabled).</li>
+  <li><strong>Secure checkout</strong> — popup window with “I’ve paid” return path.</li>
+</ol>
+<p>First-time listing does not require login; climbing an existing name does. That tradeoff matches street reality: impulse listing should be one payment deep, while defending a name needs an account so people cannot silently steal someone else’s display string. Share sheets cover WeChat, Weibo, QQ, X, Facebook, WhatsApp, Telegram, LinkedIn, download image, and copy link—distribution is part of the product, not an afterthought blog plugin.</p>
+
+<figure class="article-figure">
+  <img src="../original/worlds-greatest/ScreenShot_2026-09-11_102448_476.png" width="390" height="844" loading="lazy" decoding="async" alt="Worlds Greatest profile modal — #1 badge, display name, bio URL, visit homepage share and overtake buttons">
+  <figcaption><code>ScreenShot_…_102448_476.png</code> — profile card with visit / share / overtake.</figcaption>
+</figure>
+
+<h2>Profile cards and latest activity</h2>
+<p>Tapping a row opens a profile sheet: rank wreath, avatar initial, display name, country flag, star total, optional bio/URL, listed date, and actions <strong>Visit homepage</strong>, <strong>Share</strong>, <strong>Seize their spot</strong> (overtake). Bios are free text—some are jokes (“看我的$$$$$$$$”), some are product plugs, some are blank “Listed YYYY-MM-DD” defaults. The activity ticker explains itself: who passed whom, who paid ★N into which rank. Keeping activity as a feed of <strong>payments and passes</strong> reinforces the transparent market metaphor and gives the homepage motion without inventing fake “engagement” metrics.</p>
+
+<h2>3D stage: galaxy → solar system → Earth</h2>
+<p>The right half (or full mobile canvas) is not decoration only. Captures show three nested stages:</p>
+<ul>
+  <li><strong>Galaxy / universe</strong> — spiral arms, drag to look around; hint text “拖拽环视 · 点击太阳系进入.”</li>
+  <li><strong>Solar system</strong> — sun and planets with zoom/reset controls.</li>
+  <li><strong>Earth</strong> — rotatable globe with pins; CTAs 「看榜」and 「我要上榜」; hint “拖拽旋转 · 点「看榜 / 我要上榜」 · 返回太阳系.”</li>
+</ul>
+<p>Mobile screenshots make the dual CTA pattern obvious: dark <strong>看榜</strong> opens the board; gold <strong>我要上榜</strong> starts listing. The 3D layer exists so the product feels like a place, not a spreadsheet. For SEO, I still describe board mechanics in HTML—WebGL alone is a weak sole signal for crawlers and for AdSense humans who disable heavy scripts.</p>
+
+<figure class="article-figure">
+  <img src="../original/worlds-greatest/ScreenShot_2026-09-11_102501_238.png" width="390" height="844" loading="lazy" decoding="async" alt="Worlds Greatest mobile — spiral galaxy with View board and Get listed buttons">
+  <figcaption><code>ScreenShot_…_102501_238.png</code> — mobile galaxy entry with dual CTAs.</figcaption>
+</figure>
+
+<figure class="article-figure">
+  <img src="../original/worlds-greatest/ScreenShot_2026-09-11_102531_516.png" width="390" height="844" loading="lazy" decoding="async" alt="Worlds Greatest mobile — 3D Earth labeled 地球 with View board and Get listed buttons">
+  <figcaption><code>ScreenShot_…_102531_516.png</code> — mobile Earth stage.</figcaption>
+</figure>
+
+<figure class="article-figure">
+  <img src="../original/worlds-greatest/ScreenShot_2026-09-11_102326_975.png" width="1280" height="720" loading="lazy" decoding="async" alt="Worlds Greatest desktop — leaderboard beside solar system 3D scene">
+  <figcaption><code>ScreenShot_…_102326_975.png</code> — solar-system stage next to the board.</figcaption>
+</figure>
+
+<h2>Why a sibling origin next to aogl.cn</h2>
+<p>Running the interactive app on <code>mnm.aogl.cn</code> while essays stay on <code>aogl.cn</code> keeps cookies, payment redirects, and WebGL bundles off the editorial static site. WordPet (<code>wordpet.aogl.cn</code>) and EatToday (<code>eattoday.aogl.cn</code>) follow the same pattern: <strong>product on a sibling host, production notes on the multilang archive</strong>. Archiving timestamped screenshots into <code>original/worlds-greatest/</code> preserves capture provenance for reviewers. Hero generation still goes through <code>npm run generate-article-covers</code> so Open Graph gets a WebP without stock photography.</p>
+<p>Compared with ranking-table archives on this site (Steam charts, Amazon bestsellers—kept <code>noindex</code>), Worlds Greatest belongs in the <strong>indexable primary</strong> bucket: original product, original screenshots, first-person production notes. It is the same content class as WordPet and EatToday—author-built software documented with UI evidence—even though the product itself is a leaderboard UI.</p>
+
+<h2>Workflow notes I refuse to water down</h2>
+<ol>
+  <li>Quote UI labels exactly: 世界之最, 我要上榜, 看榜, All-time, Today, Pass, Overtake, Bid to rank.</li>
+  <li>Do not claim third-party wealth verification; stars are bids, not audited net worth.</li>
+  <li>Do not describe the product as gambling; keep “display placement” language from Terms/Privacy/Rules.</li>
+  <li>Location detection is editable—users must be able to correct country/city before listing.</li>
+  <li>Dev Mock pay is for staging only; production methods must be enabled by the operator.</li>
+</ol>
+<p>Writing while the UI is fresh forces honesty: board counts and #1 names change by the hour; this essay freezes the 2026-09-11 capture set. Chinese body copy serves regional “世界之最 / 上榜” intent; English body copy serves “pay to rank / topic leaderboard / 3D earth board” queries. Short locales (ja/ko/fr/ru/ar) stay brief on purpose—the thick bilingual pair carries AdSense review weight.</p>
+
+<h2>Accessibility and SEO checklist</h2>
+<ul>
+  <li>Alt text names visible UI entities (topic chips, country flags, CTAs, galaxy/Earth)—never “image 1.”</li>
+  <li>Body text repeats Worlds Greatest, 世界之最, <code>https://mnm.aogl.cn/</code>, bid to rank, All-time, Today, topic, country board, 我要上榜, 看榜.</li>
+  <li>Outbound product links use <code>rel="noopener noreferrer"</code>; full narrative ships in first-paint HTML.</li>
+  <li>Rules concepts (minimum bid, difference payment, non-refundable display placement) are explained in prose so crawlers understand the product without opening modals.</li>
+</ul>
+
+<h2>Boundaries</h2>
+<p>These screens document <strong>Worlds Greatest, an app I built</strong> (© kolang)—a personal product and UI archive. Board membership, star totals, and topic names change per deployment and capture time. Nothing here claims verified real-world wealth rankings, investment advice, or lottery prizes. Kids should only use payment flows with a guardian.</p>
+
+<h2 id="article-seo-keywords">Related searches</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://mnm.aogl.cn/" target="_blank" rel="noopener noreferrer">Open Worlds Greatest</a>
+  <a class="pill" href="/articles/index.html">All originals</a>
+  <a class="pill" href="/index.html#originals">Home originals</a>
+</div>
