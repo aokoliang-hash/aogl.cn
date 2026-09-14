@@ -1,0 +1,383 @@
+<!DOCTYPE html><html lang="en" data-title-en="How aogl.cn is built — _multilang → locales × AdSense indexable pages — aogl.cn" data-desc-en="First-person build notes: how aogl.cn splits _multilang into locales, build-articles / inject-site-nav / ARTICLE_ARCHIVE_NOINDEX, and AdSense only on indexable pages via js/adsense.js plus a slim homepage outbound." data-title-zh="aogl.cn 建站手记：_multilang 拆语种 × AdSense 可索引页策略 — aogl.cn" data-desc-zh="第一人称建站手记：aogl.cn 如何从 _multilang 源拆到各语种、build-articles / inject-site-nav / seo-index-policy 的 ARTICLE_ARCHIVE_NOINDEX、以及仅在可索引页加载 AdSense（js/adsense.js）与首页瘦外链。" data-title-ja="aogl.cn 構築メモ — _multilang 言語分割と AdSense — aogl.cn" data-desc-ja="aogl.cn の _multilang→ロケール分割、noindex 方針、AdSense 限定ロードの手記。" data-title-ko="aogl.cn 구축 수기 — _multilang 로케일 분리와 AdSense — aogl.cn" data-desc-ko="aogl.cn의 _multilang→로케일 분리, noindex 정책, AdSense 제한 로드 수기." data-title-fr="Construction d’aogl.cn — _multilang, locales et AdSense — aogl.cn" data-desc-fr="Notes de construction aogl.cn : _multilang, noindex, AdSense ciblé." data-title-ru="Как устроен aogl.cn — _multilang, локали и AdSense — aogl.cn" data-desc-ru="Заметки о сборке aogl.cn: _multilang, noindex, точечный AdSense." data-title-ar="بناء aogl.cn — _multilang واللغات وAdSense — aogl.cn" data-desc-ar="ملاحظات بناء aogl.cn: _multilang وnoindex وAdSense المحدود."><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="First-person build notes: how aogl.cn splits _multilang into locales, build-articles / inject-site-nav / ARTICLE_ARCHIVE_NOINDEX, and AdSense only on indexable pages via js/adsense.js plus a slim homepage outbound.">
+  <title>How aogl.cn is built — _multilang → locales × AdSense indexable pages — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/site-build-multilang-adsense-notes-20260914.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/site-build-multilang-adsense-notes-20260914.html">
+  <meta property="og:title" content="How aogl.cn is built — _multilang → locales × AdSense indexable pages — aogl.cn">
+  <meta property="og:description" content="First-person build notes: how aogl.cn splits _multilang into locales, build-articles / inject-site-nav / ARTICLE_ARCHIVE_NOINDEX, and AdSense only on indexable pages via js/adsense.js plus a slim homepage outbound.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/site-build-multilang-adsense-notes-20260914.webp">
+  <meta property="og:image:alt" content="aogl.cn Open Graph default art — site brand surface used for multilang build notes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/site-build-multilang-adsense-notes-20260914.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Maintained by me · build-articles · seo-index-policy · adsense.js","alternativeHeadline":"aogl.cn 建站手记：_multilang 拆语种 × AdSense 可索引页策略","datePublished":"2026-09-14","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/site-build-multilang-adsense-notes-20260914.html"},"url":"https://aogl.cn/en/articles/site-build-multilang-adsense-notes-20260914.html","inLanguage":"mul","description":"First-person build notes: how aogl.cn splits _multilang into locales, build-articles / inject-site-nav / ARTICLE_ARCHIVE_NOINDEX, and AdSense only on indexable pages via js/adsense.js plus a slim homepage outbound.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ru brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ar brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li class="is-active"><a href="/articles/index.html">Originals</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/life.html">Life</a></li>
+        </ul>
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/articles/index.html">本站原创</a></li>
+          <li><a href="/about.html">关于</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li><a href="/life.html">生活</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ja">
+          <li class="is-active"><a href="/articles/index.html">オリジナル</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/games.html">ゲーム</a></li>
+          <li><a href="/tech.html">テック</a></li>
+          <li><a href="/life.html">ライフ</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ko">
+          <li class="is-active"><a href="/articles/index.html">오리지널</a></li>
+          <li><a href="/about.html">소개</a></li>
+          <li><a href="/games.html">게임</a></li>
+          <li><a href="/tech.html">테크</a></li>
+          <li><a href="/life.html">라이프</a></li>
+        </ul>
+        <ul class="site-nav-list lang-fr">
+          <li class="is-active"><a href="/articles/index.html">Originaux</a></li>
+          <li><a href="/about.html">À propos</a></li>
+          <li><a href="/games.html">Jeux</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/life.html">Vie</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ru">
+          <li class="is-active"><a href="/articles/index.html">Авторское</a></li>
+          <li><a href="/about.html">О сайте</a></li>
+          <li><a href="/games.html">Игры</a></li>
+          <li><a href="/tech.html">Техно</a></li>
+          <li><a href="/life.html">Сервисы</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ar">
+          <li class="is-active"><a href="/articles/index.html">محتوى أصلي</a></li>
+          <li><a href="/about.html">حول</a></li>
+          <li><a href="/games.html">الألعاب</a></li>
+          <li><a href="/tech.html">التقنية</a></li>
+          <li><a href="/life.html">الحياة الرقمية</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>How aogl.cn is built — _multilang → locales × AdSense indexable pages</h1>
+        <p class="article-shell__sub">Maintained by me · build-articles · seo-index-policy · adsense.js</p>
+        <p class="article-shell__meta"><time datetime="2026-09-14">2026-09-14</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This is a <strong>first-person build log</strong> for aogl.cn itself—not a third-party tutorial and not a scraped “how to monetize” outline. I maintain a static multilanguage editorial site that also hosts original demos and sibling apps (EatToday, WordPet, Worlds Greatest). The practical question AdSense reviewers and fellow builders keep asking is simple: <strong>how does the pipeline turn source HTML into locale sites, which pages stay indexable, and where do ads actually load?</strong> This note answers with the real scripts under <code>scripts/</code> and <code>js/adsense.js</code>, dated 2026-09-14.</p>
+
+<figure class="article-figure">
+  <img src="../og-default.png" width="1200" height="675" loading="lazy" decoding="async" alt="aogl.cn default Open Graph brand image used as this article hero source">
+  <figcaption><code>og-default.png</code> — site-level Open Graph default; cover WebP is generated into <code>upload/articles/</code>.</figcaption>
+</figure>
+
+<h2>Mental model: one multilang source, many locale outputs</h2>
+<p>Almost every public page starts life under <code>_multilang/</code>. That folder holds bilingual (or multilingual) source documents with <code>lang-*</code> class spans for English, Simplified Chinese, Japanese, Korean, French, Russian, and Arabic. I do not hand-maintain seven full copies of every paragraph for hubs and static pages. Instead, <code>scripts/build-seo-locale-pages.mjs</code> reads <code>_multilang/*.html</code>, then writes:</p>
+<ul>
+  <li><strong>Site root</strong> — Simplified Chinese as the primary Chinese surface (canonical on itself).</li>
+  <li><strong><code>/zh/</code></strong> — Traditional Chinese via OpenCC conversion from the Simplified <code>lang-zh</code> blocks.</li>
+  <li><strong><code>/en/</code>, <code>/ja/</code>, <code>/ko/</code>, <code>/fr/</code>, <code>/ru/</code>, <code>/ar/</code></strong> — monolingual locale trees.</li>
+</ul>
+<p>That split is the spine of the site. If you edit only a locale file under <code>/en/</code> and forget <code>_multilang/</code>, the next full locale rebuild will overwrite you. The durable edit surface for shared chrome is always the multilang source (plus article fragment files described below).</p>
+
+<h2>Articles: JSON hubs + htmlFragments</h2>
+<p><code>scripts/build-articles.mjs</code> reads every file in <code>data/articles/*.json</code>. Each JSON is a small hub: slug, layout, dates, hero paths, seven-language titles/descriptions, and an <code>htmlFragments</code> map pointing at files under <code>data/articles/fragments/</code>. The builder writes <code>_multilang/articles/&lt;slug&gt;.html</code>, refreshes the homepage <code>INDEX_ORIGINALS</code> markers, and rebuilds <code>_multilang/articles/index.html</code>. Thick English and Chinese fragments carry AdSense review weight; short ja/ko/fr/ru/ar stubs keep hreflang surfaces honest without pretending every locale is a full essay.</p>
+<p>Hero covers are not invented stock photography. <code>npm run generate-article-covers</code> runs <code>scripts/generate-article-covers.py</code>, which crops <code>heroImageSource</code> into a 1200×675 WebP at <code>upload/articles/&lt;slug&gt;.webp</code>. For this page the source is the committed site asset <code>og-default.png</code> (cover generated separately because the Python helper skips the literal string <code>og-default.png</code> as a safety default).</p>
+
+<h2>Navigation injection and homepage composition</h2>
+<p>Primary nav is not copy-pasted across fifty templates. <code>scripts/inject-site-nav.mjs</code> injects shared markup from <code>scripts/site-nav.mjs</code> into <code>_multilang/index.html</code> between <code>SITE_NAV_AUTO_START</code> / <code>SITE_NAV_AUTO_END</code> markers. Related injectors (<code>inject-categories.mjs</code>, <code>inject-index-pills.mjs</code>, <code>inject-tools-directory.mjs</code>, <code>update-reading.mjs</code>) keep the homepage rails mechanical. The full orchestration lives in <code>package.json</code> as <code>build-site</code>: articles → briefs → tool guides → hubs → nav → reading → contact → SEO locales. I run pieces when I need them; I avoid blind full rebuilds mid-edit so fragment drafts are not half-overwritten.</p>
+
+<h2>seo-index-policy: ARTICLE_ARCHIVE_NOINDEX</h2>
+<p><code>scripts/seo-index-policy.mjs</code> is the policy brain for robots, sitemap membership, and “is this thin archive?” decisions. Ranking tables, chart dumps, and buy-guide listicles sit in <code>ARTICLE_ARCHIVE_NOINDEX_SLUGS</code>. Those URLs stay useful as human bookmarks and hub cards, but they ship with <code>noindex,follow</code> and are kept out of the primary AdSense surface. Original demos, production notes, and first-party app essays—EatToday, WordPet, Worlds Greatest, this build log—stay indexable.</p>
+<p>Related constants matter too: <code>NOINDEX_PATH_PREFIXES</code> covers aggregator rails like <code>hub-links/</code>, <code>briefs/</code>, and <code>tool-guides/</code>; <code>NOINDEX_STATIC_PAGES</code> covers hub verticals such as <code>tech.html</code> and <code>life.html</code>; <code>SITEMAP_STATIC_PAGES</code> whitelists only a small set of static pages plus indexable articles. When people ask why the homepage is quiet and the hubs feel sparse for ads, the answer is intentional policy—not a broken publisher tag.</p>
+
+<h2>AdSense only on indexable primary pages</h2>
+<p><code>js/adsense.js</code> always ships on many templates, but it does <strong>not</strong> always request <code>adsbygoogle.js</code>. The loader checks <code>isContentPrimaryPage()</code>: about/changelog qualify; article URLs qualify only when the page meta robots content does not include <code>noindex</code>. Localhost, <code>?noads=1</code>, <code>localStorage aogl-disable-ads</code>, and <code>window.AOGL_DISABLE_ADSENSE</code> also skip the network call. That pairing—server/build policy sets robots, client loader respects robots—is what keeps auto ads off thin archives while still allowing them on thick originals.</p>
+
+<h2>Homepage slim outbound</h2>
+<p>Earlier AdSense remediation removed dense bookmark walls and Google-search SEO pills. <code>scripts/adsense-slim-outbound.mjs</code> documents the one-shot helpers: slim the homepage <code>#pillars</code> section to a short lead that points at editorial demos and About, and strip <code>google.com/search</code> pills from article fragments. Current article footers should only pill to real app URLs and <code>/articles/index.html</code> (plus maybe home originals). That is not “less SEO”—it is clearer primary content with fewer outbound distractions for reviewers.</p>
+
+<h2>Day-to-day edit loop I actually use</h2>
+<ol>
+  <li>Author or revise <code>data/articles/&lt;slug&gt;.json</code> and thick <code>*-en.html</code> / <code>*-zh.html</code> fragments.</li>
+  <li>Prepend the slug into <code>data/tech-hub-articles.json</code> or <code>data/life-hub-articles.json</code> when the piece belongs on a hub rail.</li>
+  <li>Generate covers if <code>heroImageSource</code> changed.</li>
+  <li>Run <code>npm run build-articles</code> (and later locale split) when ready to publish HTML—not while drafting prose.</li>
+  <li>Verify robots on archive vs primary pages before expecting ads.</li>
+</ol>
+<p>Sibling apps stay on their own origins (<code>eattoday.aogl.cn</code>, <code>wordpet.aogl.cn</code>, <code>mnm.aogl.cn</code>). The editorial site documents them with first-screen HTML and original screenshot archives; the interactive products keep their own cookies and deploy cadence. That boundary is as important as any AdSense toggle.</p>
+
+<h2>What this page is not claiming</h2>
+<p>This is not a guarantee of AdSense approval, CPC, or traffic. Policy files change when Google’s review signals change. Script names above are accurate as of 2026-09-14 in this repository; if you fork the site, re-read the files rather than trusting a blog paraphrase. The durable lesson is architectural: <strong>separate multilang authoring from locale emission, separate bookmark archives from indexable essays, and load ads only where the HTML is worth indexing.</strong></p>
+
+<h2 id="article-seo-keywords">Related</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/articles/index.html">All originals</a>
+  <a class="pill" href="/index.html#originals">Home originals</a>
+</div></article>
+    </div>
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>aogl.cn 建站手记：_multilang 拆语种 × AdSense 可索引页策略</h1>
+        <p class="article-shell__sub">本人维护 · scripts/build-articles · seo-index-policy · js/adsense.js</p>
+        <p class="article-shell__meta"><time datetime="2026-09-14">2026-09-14</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>这是 aogl.cn 的<strong>第一人称建站手记</strong>，不是转载教程，也不是「如何过审」空话清单。本站是一套静态多语言编辑站，同时归档原创 Demo，并链到本人开发的兄弟 App（EatToday、WordPet、世界之最）。审稿人和同行最常问的问题其实很具体：<strong>源码如何变成各语种页面、哪些 URL 可索引、广告脚本到底在哪些页发起请求？</strong>下文按仓库里真实存在的 <code>scripts/</code> 与 <code>js/adsense.js</code> 回答，日期 2026-09-14。</p>
+
+<figure class="article-figure">
+  <img src="../og-default.png" width="1200" height="675" loading="lazy" decoding="async" alt="aogl.cn 默认 Open Graph 品牌图，用作本文题图源">
+  <figcaption><code>og-default.png</code> — 站点级默认 OG 图；封面 WebP 写入 <code>upload/articles/</code>。</figcaption>
+</figure>
+
+<h2>心智模型：一份 _multilang，多份语种输出</h2>
+<p>几乎所有公开页都先活在 <code>_multilang/</code>。源文件用 <code>lang-*</code> 类同时承载英、简中、日、韩、法、俄、阿等片段。我不会为每个 Hub 手工维护七份完整正文。真正做拆分的是 <code>scripts/build-seo-locale-pages.mjs</code>：读入 <code>_multilang/*.html</code>，再写出：</p>
+<ul>
+  <li><strong>站点根目录</strong> — 简体中文主表面（canonical 指向自身）。</li>
+  <li><strong><code>/zh/</code></strong> — 由简体 <code>lang-zh</code> 经 OpenCC 转成繁体。</li>
+  <li><strong><code>/en/</code>、<code>/ja/</code>、<code>/ko/</code>、<code>/fr/</code>、<code>/ru/</code>、<code>/ar/</code></strong> — 各语种单语文档树。</li>
+</ul>
+<p>这就是整站骨架。如果你只改 <code>/en/</code> 下的生成文件、忘了改 <code>_multilang/</code>，下次语种重建会覆盖你的改动。共享页头页脚的耐久编辑面永远是 multilang 源；文章正文的耐久编辑面则是下面说的 fragment 文件。</p>
+
+<h2>文章：JSON 枢纽 + htmlFragments</h2>
+<p><code>scripts/build-articles.mjs</code> 读取 <code>data/articles/*.json</code>。每个 JSON 是一个小枢纽：slug、layout、日期、题图路径、七语标题/摘要，以及指向 <code>data/articles/fragments/</code> 的 <code>htmlFragments</code> 映射。构建器写出 <code>_multilang/articles/&lt;slug&gt;.html</code>，刷新首页 <code>INDEX_ORIGINALS</code> 标记，并重建 <code>_multilang/articles/index.html</code>。厚英文与厚中文承担 AdSense 审阅权重；短 ja/ko/fr/ru/ar 存根保证 hreflang 表面诚实，而不假装每个语种都是长文。</p>
+<p>题图不用库存图。<code>npm run generate-article-covers</code> 调用 <code>scripts/generate-article-covers.py</code>，把 <code>heroImageSource</code> 裁成 1200×675 WebP，落到 <code>upload/articles/&lt;slug&gt;.webp</code>。本页源图是已提交的站点资源 <code>og-default.png</code>（因 Python 助手会跳过字面量 <code>og-default.png</code>，封面单独生成）。</p>
+
+<h2>导航注入与首页拼装</h2>
+<p>主导航不会在五十个模板里复制粘贴。<code>scripts/inject-site-nav.mjs</code> 从 <code>scripts/site-nav.mjs</code> 取共享标记，注入 <code>_multilang/index.html</code> 的 <code>SITE_NAV_AUTO_START</code> / <code>SITE_NAV_AUTO_END</code> 之间。同类注入还有 <code>inject-categories.mjs</code>、<code>inject-index-pills.mjs</code>、<code>inject-tools-directory.mjs</code>、<code>update-reading.mjs</code>，把首页栏位变成可重复的机械步骤。<code>package.json</code> 里的 <code>build-site</code> 负责总编排：文章 → briefs → tool guides → hubs → nav → reading → contact → SEO 语种。我习惯按需跑子任务；中途改稿时避免盲目全量重建，以免半成品片段被覆盖。</p>
+
+<h2>seo-index-policy：ARTICLE_ARCHIVE_NOINDEX</h2>
+<p><code>scripts/seo-index-policy.mjs</code> 是 robots、sitemap 成员资格、「这是不是薄存档？」的策略中枢。榜单表、图表转载、导购清单体文章进入 <code>ARTICLE_ARCHIVE_NOINDEX_SLUGS</code>。这些 URL 仍可给人当书签、当 Hub 卡片，但带 <code>noindex,follow</code>，并移出 AdSense 主表面。原创 Demo、制作手记、第一方 App 长文——EatToday、WordPet、世界之最、本篇建站笔记——保持可索引。</p>
+<p>相关常量同样重要：<code>NOINDEX_PATH_PREFIXES</code> 覆盖 <code>hub-links/</code>、<code>briefs/</code>、<code>tool-guides/</code> 这类聚合轨；<code>NOINDEX_STATIC_PAGES</code> 覆盖 <code>tech.html</code>、<code>life.html</code> 等垂直 Hub；<code>SITEMAP_STATIC_PAGES</code> 只白名单少量静态页加上可索引文章。有人问「首页怎么这么安静、Hub 为什么不怎么出广告」，答案是刻意策略，不是发布商标签坏了。</p>
+
+<h2>AdSense 只在可索引主内容页加载</h2>
+<p><code>js/adsense.js</code> 会出现在很多模板上，但<strong>并不总是</strong>请求 <code>adsbygoogle.js</code>。加载器检查 <code>isContentPrimaryPage()</code>：about / changelog 合格；文章 URL 仅当页面 <code>meta robots</code> 不含 <code>noindex</code> 时合格。本机、<code>?noads=1</code>、<code>localStorage aogl-disable-ads</code>、<code>window.AOGL_DISABLE_ADSENSE</code> 也会跳过网络请求。构建侧写 robots、客户端读 robots——这对组合让自动广告离开薄存档，同时允许厚原创页请求广告。</p>
+
+<h2>首页瘦外链</h2>
+<p>更早一轮 AdSense 整改去掉了密集书签墙和 Google 搜索 SEO 药丸。<code>scripts/adsense-slim-outbound.mjs</code> 记录了一次性助手：把首页 <code>#pillars</code> 收成简短导语，指向原创 Demo 与 About；并从文章片段里剥离 <code>google.com/search</code> 药丸。现在文末药丸应只链到真实 App URL 与 <code>/articles/index.html</code>（必要时首页 originals）。这不是「少做 SEO」，而是主内容更清楚、外链干扰更少，方便审阅。</p>
+
+<h2>我实际在用的日常改稿闭环</h2>
+<ol>
+  <li>撰写或修订 <code>data/articles/&lt;slug&gt;.json</code> 与厚 <code>*-en.html</code> / <code>*-zh.html</code> 片段。</li>
+  <li>若属于 Hub 轨道，把 slug 前置进 <code>data/tech-hub-articles.json</code> 或 <code>data/life-hub-articles.json</code>。</li>
+  <li><code>heroImageSource</code> 有变时再生成封面。</li>
+  <li>准备发布 HTML 时再跑 <code>npm run build-articles</code>（以及后续语种拆分）——写散文阶段不要边写边全量构建。</li>
+  <li>在期待广告出现之前，先核对存档页与主内容页的 robots。</li>
+</ol>
+<p>兄弟 App 继续待在各自源站（<code>eattoday.aogl.cn</code>、<code>wordpet.aogl.cn</code>、<code>mnm.aogl.cn</code>）。编辑站用首屏 HTML 与 <code>original/</code> 截图归档去说明它们；交互产品保留自己的 cookie 与发布节奏。这条边界和任何 AdSense 开关一样重要。</p>
+
+<h2>和「榜单存档」文章如何共存</h2>
+<p>本站仍保留大量图表与榜单页，因为它们对人类书签有用，也对 Hub 卡片有用。策略不是删光，而是分级：存档进 <code>ARTICLE_ARCHIVE_NOINDEX_SLUGS</code>，原创手记与 Demo 留在可索引池。写新文时我先问三个问题——有没有本人截图或本人产品？正文是否厚到能独立阅读？外链是不是在讲清产品而不是堆搜索药丸？三个都过，才进 tech/life Hub 前置位；否则宁可当内部草稿，也不拿去碰 AdSense 主表面。</p>
+<p>构建顺序也值得单独记一笔：先改 <code>data/articles</code> 与 Hub JSON，再考虑 <code>build-articles</code>，最后才是 <code>build-seo-locale-pages</code>。中间夹杂 <code>inject-site-nav</code>、<code>update-reading</code> 之类注入任务时，务必确认标记块还在，避免手工 HTML 把自动区裁掉。本地预览用 WAMP 打开根路径或语种路径均可，但判断「广告会不会加载」必须以 robots 与 <code>js/adsense.js</code> 的组合为准，不能只看页面底部有没有引用脚本文件。</p>
+<p>封面与 OG 图是另一条容易踩坑的线。<code>generate-article-covers.py</code> 要求 <code>heroImageSource</code> 指向可打开的原图，并拒绝把 <code>upload/</code> 当源；对字面量 <code>og-default.png</code> 还会跳过。因此本页封面是手动从站点默认 OG 图裁出 WebP，JSON 里仍诚实写明源路径。以后若要让脚本接管，应把源图放到 <code>original/</code> 下再改字段，而不是假装 upload 里的 WebP 可以回写。</p>
+
+<h2>本文不保证什么</h2>
+<p>这不是 AdSense 过审承诺，也不是 CPC 或流量承诺。策略文件会随审阅信号调整。上文脚本名以本仓库 2026-09-14 现状为准；若你 fork 站点，请直接重读源文件，不要迷信博客转述。可复用的架构教训是：<strong>把 multilang 写作与语种输出分开，把书签存档与可索引长文分开，只在值得被索引的 HTML 上加载广告。</strong>把这条纪律写进日常改稿清单，比再加十条外链更接近长期可维护的编辑站。</p>
+
+<h2 id="article-seo-keywords">相关</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/articles/index.html">全部原创</a>
+  <a class="pill" href="/index.html#originals">首页原创</a>
+</div></article>
+    </div>
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>aogl.cn 構築メモ — _multilang 言語分割と AdSense</h1>
+        <p class="article-shell__sub">自作運用 · build-articles · seo-index-policy</p>
+        <p class="article-shell__meta"><time datetime="2026-09-14">2026-09-14</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p><strong>構築メモ</strong>：aogl.cn は <code>_multilang/</code> を源に <code>scripts/build-seo-locale-pages.mjs</code> で各言語へ分割。<code>build-articles.mjs</code>・<code>inject-site-nav.mjs</code>・<code>seo-index-policy.mjs</code> の <code>ARTICLE_ARCHIVE_NOINDEX</code>、<code>js/adsense.js</code> は indexable ページのみ広告ロード。ホーム外链は <code>adsense-slim-outbound.mjs</code> で抑制。</p>
+<figure class="article-figure">
+  <img src="../og-default.png" width="800" height="450" loading="lazy" decoding="async" alt="aogl.cn OG デフォルト画像">
+</figure>
+<h2 id="article-seo-keywords">関連</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/articles/index.html">記事一覧</a>
+</div></article>
+    </div>
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>aogl.cn 구축 수기 — _multilang 로케일 분리와 AdSense</h1>
+        <p class="article-shell__sub">직접 운영 · build-articles · seo-index-policy</p>
+        <p class="article-shell__meta"><time datetime="2026-09-14">2026-09-14</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p><strong>구축 수기</strong>: aogl.cn은 <code>_multilang/</code> 소스를 <code>scripts/build-seo-locale-pages.mjs</code>로 로케일 분리합니다. <code>build-articles.mjs</code>, <code>inject-site-nav.mjs</code>, <code>seo-index-policy.mjs</code>의 <code>ARTICLE_ARCHIVE_NOINDEX</code>, 그리고 <code>js/adsense.js</code>는 색인 가능 페이지만 AdSense를 로드합니다. 홈 아웃바운드는 <code>adsense-slim-outbound.mjs</code>로 줄입니다.</p>
+<figure class="article-figure">
+  <img src="../og-default.png" width="800" height="450" loading="lazy" decoding="async" alt="aogl.cn OG 기본 이미지">
+</figure>
+<h2 id="article-seo-keywords">관련</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/articles/index.html">글 목록</a>
+</div></article>
+    </div>
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Construction d’aogl.cn — _multilang, locales et AdSense</h1>
+        <p class="article-shell__sub">Maintien perso · build-articles · seo-index-policy</p>
+        <p class="article-shell__meta"><time datetime="2026-09-14">2026-09-14</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p><strong>Notes de construction</strong> : aogl.cn part de <code>_multilang/</code>, découpé par <code>scripts/build-seo-locale-pages.mjs</code>. <code>build-articles.mjs</code>, <code>inject-site-nav.mjs</code>, <code>ARTICLE_ARCHIVE_NOINDEX</code> dans <code>seo-index-policy.mjs</code> ; <code>js/adsense.js</code> charge AdSense seulement sur les pages indexables. Accueil allégé via <code>adsense-slim-outbound.mjs</code>.</p>
+<figure class="article-figure">
+  <img src="../og-default.png" width="800" height="450" loading="lazy" decoding="async" alt="Image OG par défaut aogl.cn">
+</figure>
+<h2 id="article-seo-keywords">Liens</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/articles/index.html">Articles</a>
+</div></article>
+    </div>
+    <div class="lang-ru">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← На главную · оригиналы</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Как устроен aogl.cn — _multilang, локали и AdSense</h1>
+        <p class="article-shell__sub">Моё сопровождение · build-articles · seo-index-policy</p>
+        <p class="article-shell__meta"><time datetime="2026-09-14">2026-09-14</time> · Оригинал aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="ru"><p><strong>Заметки о сборке</strong>: aogl.cn берёт <code>_multilang/</code> и режет локали через <code>scripts/build-seo-locale-pages.mjs</code>. <code>build-articles.mjs</code>, <code>inject-site-nav.mjs</code>, <code>ARTICLE_ARCHIVE_NOINDEX</code> в <code>seo-index-policy.mjs</code>; <code>js/adsense.js</code> грузит AdSense только на indexable-страницах. Главная урезана через <code>adsense-slim-outbound.mjs</code>.</p>
+<figure class="article-figure">
+  <img src="../og-default.png" width="800" height="450" loading="lazy" decoding="async" alt="OG-изображение по умолчанию aogl.cn">
+</figure>
+<h2 id="article-seo-keywords">Ссылки</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/articles/index.html">Статьи</a>
+</div></article>
+    </div>
+    <div class="lang-ar">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← الرئيسية · محتوى أصلي</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>بناء aogl.cn — _multilang واللغات وAdSense</h1>
+        <p class="article-shell__sub">صيانة شخصية · build-articles · seo-index-policy</p>
+        <p class="article-shell__meta"><time datetime="2026-09-14">2026-09-14</time> · محتوى أصلي</p>
+      </div>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p><strong>ملاحظات البناء</strong>: يبدأ aogl.cn من <code>_multilang/</code> ويُقسَّم إلى لغات عبر <code>scripts/build-seo-locale-pages.mjs</code>. <code>build-articles.mjs</code> و<code>inject-site-nav.mjs</code> و<code>ARTICLE_ARCHIVE_NOINDEX</code> في <code>seo-index-policy.mjs</code>؛ و<code>js/adsense.js</code> يحمّل AdSense فقط على الصفحات القابلة للفهرسة. الصفحة الرئيسية مخفّفة عبر <code>adsense-slim-outbound.mjs</code>.</p>
+<figure class="article-figure">
+  <img src="../og-default.png" width="800" height="450" loading="lazy" decoding="async" alt="صورة OG الافتراضية لـ aogl.cn">
+</figure>
+<h2 id="article-seo-keywords">روابط</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/articles/index.html">المقالات</a>
+</div></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/about.html" class="footer-legal-link lang-en">About</a>
+        <a href="/contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="/privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="/contact.html" class="footer-legal-link lang-ko">문의</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="/about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="/contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="/privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="/about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="/contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="/about.html" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="/contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-en" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ko" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-fr" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ru" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ar" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer></script>
+</body></html>

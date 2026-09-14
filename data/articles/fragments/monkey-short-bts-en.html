@@ -69,3 +69,9 @@
 
 <h2>What I would not publish here</h2>
 <p>I keep draft audio, alternate aspect ratios, and client-style logo slates off the public folder. aogl.cn articles are maintainer-written archives, not a Behance clone with every WIP layer exposed. If a file does not help someone understand the shipped short, it stays local.</p>
+
+<h2>Hosting and playback notes</h2>
+<p>Static hosting means no adaptive bitrate ladder: one H.264 MP4, poster from keyframe 5, <code>preload="metadata"</code> so mobile browsers do not fetch the whole clip on first paint. When I re-export <code>monkey-v.mp4</code> I keep the same filename and bump the article <code>dateModified</code> instead of inventing <code>monkey-v2.mp4</code>—deep links and figcaptions stay valid. Offline draft stills such as <code>femn.png</code> remain in <code>original/monkey/</code> for my eyes only and are never linked from this fragment.</p>
+
+<h2>How this page stays useful after the gag ages</h2>
+<p>The joke may date; the production contract should not. Future-me (or a reviewer) can still open the numbered spine, the look-dev pile, and the master MP4 and reconstruct why the cut looks the way it does. That reconstructability is the editorial product—more than any single viral frame.</p>

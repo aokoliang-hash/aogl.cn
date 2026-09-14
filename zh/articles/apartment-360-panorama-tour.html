@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Living-room · dining · kitchen · master-bedroom · v360.mp4","alternativeHeadline":"公寓 360° 全景：四房间等距柱状图与漫游录屏","datePublished":"2026-05-21","dateModified":"2026-05-21","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/apartment-360-panorama-tour.html"},"url":"https://aogl.cn/zh/articles/apartment-360-panorama-tour.html","inLanguage":"zh-Hant","description":"Original aogl.cn notes on original/360-degree-panorama: four 2:1 equirectangular apartment rooms, v360.mp4 walkthrough, and still frames—not a real-estate listing.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Living-room · dining · kitchen · master-bedroom · v360.mp4","alternativeHeadline":"公寓 360° 全景：四房间等距柱状图与漫游录屏","datePublished":"2026-05-21","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/apartment-360-panorama-tour.html"},"url":"https://aogl.cn/zh/articles/apartment-360-panorama-tour.html","inLanguage":"zh-Hant","description":"Original aogl.cn notes on original/360-degree-panorama: four 2:1 equirectangular apartment rooms, v360.mp4 walkthrough, and still frames—not a real-estate listing.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zht">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -99,7 +99,7 @@
   <img src="/original/360-degree-panorama/master-bedroom.png" width="800" height="400" loading="lazy" decoding="async" alt="360° 全景 — 主臥 master-bedroom">
 </div>
 <h2>示意文案的邊界</h2>
-<p>畫面裡的軟裝、景觀描述（吊燈、天際線、島臺陳列等）是<strong>配合 AI/渲染畫面寫的示意</strong>，不是真實樓盤資料。若你 fork 去做真實房源，應換上測繪全景並替換所有營銷文案。</p>
+<p>畫面裡的軟裝、景觀描述（吊燈、天際線、島臺陳列等）是<strong>配合渲染畫面寫的示意</strong>，不是真實樓盤資料。若你 fork 去做真實房源，應換上測繪全景並替換所有營銷文案。</p>
 <h2>和本站其他 Demo 的關係</h2>
 <p><a href="travel-through-parallax-phone.html">穿越視差手機</a> 是分層 2D 視差；<a href="interactive-3d-earth.html">3D 地球</a> 是外觀測球體加光照。本篇是<strong>室內 equirectangular 靜幀 + 錄屏歸檔</strong>，更接近虛擬樣板間素材包。三條線並列放在首頁輪播，避免混成「一個地球裡有一套公寓」這種誤解。</p>
 <h2>若你要複用這批素材</h2>
@@ -108,7 +108,17 @@
   <li>四張圖用穩定文件名（如 <code>Living-room.png</code>），方便 CMS 或自建 viewer 引用。</li>
   <li>文章頁用錄屏 + 靜幀圖庫 + 上文說明，利於搜索理解「360 全景 / virtual tour / equirectangular interior」。</li>
 </ol>
-<p>我不在這裡列「十大全景插件」對比表：插件換得快，把<strong>你自己的場景圖 + 命名約定</strong>寫清楚，比堆外鏈更有維護價值。</p></article>
+<p>我不在這裡列「十大全景插件」對比表：插件換得快，把<strong>你自己的場景圖 + 命名約定</strong>寫清楚，比堆外鏈更有維護價值。</p>
+<h2>v360.mp4 裡四房間怎麼串</h2>
+<p>錄屏是一條連續路徑：客廳先打開公園側落地窗，硬切進入餐廳門檻（吊燈入畫），再進島臺廚房（銅鍋作色彩點），最後到天際線曝光的主臥。我沒用疊化轉場——硬切能讓人立刻對照：每一段靜幀都對應一張獨立的 equirectangular 文件。慢速拖動進度條時，我會看門框、島臺邊緣是否保持豎直；若出現桶形變形，說明源全景投影參數錯了，必須重新導出再上線。</p>
+<h2>我寫在罐頭上的導出設定</h2>
+<p>每張靜幀工作分辨率大約 <strong>8192×4096</strong>，再縮小到本文圖庫用的網頁友好尺寸。文件名保持小寫加連字符（<code>dining-room.png</code>），方便 Linux 主機與 GitHub Pages 大小寫安全。室內球面不需要 Alpha——只要 RGB。MP4 用 H.264，海報幀取自客廳靜幀，避免首屏黑場；不錄旁白，因為這是視覺素材包，不是解說導覽。</p>
+<h2>未來的交互殼（尚未上線）</h2>
+<p>可拖拽 WebGL 查看器會把同一套四張貼圖鋪在內翻球上，用 <code>MeshBasicMaterial</code> 保留烘焙光。本站還沒上這個 HTML：手機 GPU 內存與手勢體驗值得另寫一篇誠實手記，而不是靜默換 iframe。真要上線時，本頁會<strong>多一個嵌入</strong>並補一小節「相對純 v360 多了什麼」，而不是替換視頻，好讓舊鏈接繼續可用。</p>
+<h2>SEO 與誠實邊界</h2>
+<p>搜 <em>apartment 360 tour</em> 或 <em>equirectangular interior</em> 的人，應落到一篇清楚寫明「這是<strong>示意渲染</strong>、不是真實門牌」的頁面。這條邊界保護信任，也和 <a href="in-car-view-train-window-scenery.html">高鐵車窗合成</a>、<a href="sky-plane-window-cloud-composite.html">機艙舷窗雲層</a> 手記一致：合成畫面，首段寫清範圍。</p>
+<h2>命名與倉庫衛生</h2>
+<p>客廳文件寫成 <code>Living-room.png</code>（大寫 L）是歷史遺留；其餘三張已是小寫開頭。我沒有批量重命名，因為文章、海報與本地腳本已引用舊路徑——改名成本高於「記住這一處例外」。新素材一律小寫連字符。倉庫裡不放半成品拼接工程文件；只提交可被瀏覽器直接打開的 PNG / MP4，避免訪客誤下到不可用的中間態。</p></article>
     </div>
   </main>
   <footer class="site-footer">

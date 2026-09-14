@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="fr" data-title-fr="Construction d’aogl.cn — _multilang, locales et AdSense — aogl.cn" data-desc-fr="Notes de construction aogl.cn : _multilang, noindex, AdSense ciblé." data-aogl-lang="fr" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Notes de construction aogl.cn : _multilang, noindex, AdSense ciblé.">
+  <title>Construction d’aogl.cn — _multilang, locales et AdSense — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/fr/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/site-build-multilang-adsense-notes-20260914.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/fr/articles/site-build-multilang-adsense-notes-20260914.html">
+  <meta property="og:title" content="Construction d’aogl.cn — _multilang, locales et AdSense — aogl.cn">
+  <meta property="og:description" content="Notes de construction aogl.cn : _multilang, noindex, AdSense ciblé.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/site-build-multilang-adsense-notes-20260914.webp">
+  <meta property="og:image:alt" content="aogl.cn Open Graph default art — site brand surface used for multilang build notes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/site-build-multilang-adsense-notes-20260914.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Maintained by me · build-articles · seo-index-policy · adsense.js","alternativeHeadline":"aogl.cn 建站手记：_multilang 拆语种 × AdSense 可索引页策略","datePublished":"2026-09-14","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/fr/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/fr/articles/site-build-multilang-adsense-notes-20260914.html"},"url":"https://aogl.cn/fr/articles/site-build-multilang-adsense-notes-20260914.html","inLanguage":"fr","description":"First-person build notes: how aogl.cn splits _multilang into locales, build-articles / inject-site-nav / ARTICLE_ARCHIVE_NOINDEX, and AdSense only on indexable pages via js/adsense.js plus a slim homepage outbound.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-fr">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-fr">
+          <li class="is-active"><a href="/fr/articles/index.html">Originaux</a></li>
+          <li><a href="/fr/about.html">À propos</a></li>
+          <li><a href="/fr/games.html">Jeux</a></li>
+          <li><a href="/fr/tech.html">Tech</a></li>
+          <li><a href="/fr/life.html">Vie</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="/fr/index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Construction d’aogl.cn — _multilang, locales et AdSense</h1>
+        <p class="article-shell__sub">Maintien perso · build-articles · seo-index-policy</p>
+        <p class="article-shell__meta"><time datetime="2026-09-14">2026-09-14</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p><strong>Notes de construction</strong> : aogl.cn part de <code>_multilang/</code>, découpé par <code>scripts/build-seo-locale-pages.mjs</code>. <code>build-articles.mjs</code>, <code>inject-site-nav.mjs</code>, <code>ARTICLE_ARCHIVE_NOINDEX</code> dans <code>seo-index-policy.mjs</code> ; <code>js/adsense.js</code> charge AdSense seulement sur les pages indexables. Accueil allégé via <code>adsense-slim-outbound.mjs</code>.</p>
+<figure class="article-figure">
+  <img src="/og-default.png" width="800" height="450" loading="lazy" decoding="async" alt="Image OG par défaut aogl.cn">
+</figure>
+<h2 id="article-seo-keywords">Liens</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/fr/articles/index.html">Articles</a>
+</div></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/fr/about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="/fr/contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="/fr/changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="/fr/privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-fr" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer=""></script>
+</body></html>

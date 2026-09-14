@@ -32,6 +32,9 @@ export const ARTICLE_ARCHIVE_NOINDEX_SLUGS = new Set([
   "amazon-bestsellers-electronics-us-20260601",
   "amazon-bestsellers-fashion-us-20260601",
   "amazon-prime-day-2026-deals-20260601",
+  // AdSense 2026-09: demote thin buy-guide / listicle from primary index
+  "apple-iphone-17-pro-buy-guide-20260601",
+  "pc-standalone-games-recommendations-2026",
   "apple-store-ios-games-cn-20260601",
   "brand-finance-global-500-2026",
   "facebook-us-pages-emplifi-20250617",

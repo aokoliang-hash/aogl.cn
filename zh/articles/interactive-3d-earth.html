@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/zh/articles/interactive-3d-earth.html","inLanguage":"zh-Hant","description":"Original aogl.cn WebGL demo and three.js earth texture tutorial notes: real-time 3D globe with blue-marble maps, bump/specular, animated clouds, and atmospheric rim shader; drag to orbit and scroll to zoom for geography outreach.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Three.js · clouds & atmosphere · orbit controls","alternativeHeadline":"交互式 3D 地球浏览器","datePublished":"2026-05-13","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/interactive-3d-earth.html"},"url":"https://aogl.cn/zh/articles/interactive-3d-earth.html","inLanguage":"zh-Hant","description":"Original aogl.cn WebGL demo and three.js earth texture tutorial notes: real-time 3D globe with blue-marble maps, bump/specular, animated clouds, and atmospheric rim shader; drag to orbit and scroll to zoom for geography outreach.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zht">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -84,7 +84,39 @@
 </ul>
 <h3>實現要點（給開發者）</h3>
 <p>渲染管線採用 <code>WebGLRenderer</code>，主方向光模擬太陽、輔以環境光；相機交互為 <code>OrbitControls</code>。大氣層為略大於地表的透明球體，片元著色器按視角與法線夾角混合邊緣高亮與淡藍色調，呈現經典「暗淡藍點」觀感，而無需複雜後處理。</p>
-<p>若站點做多語言，可為每種語言配置獨立標題與摘要（本站做法），共享同一份交互資源，兼顧<strong>長尾關鍵詞覆蓋</strong>與維護成本。</p></article>
+<p>若站點做多語言，可為每種語言配置獨立標題與摘要（本站做法），共享同一份交互資源，兼顧<strong>長尾關鍵詞覆蓋</strong>與維護成本。</p>
+<h2>為什麼把這個 Demo 放在 aogl.cn</h2>
+<p>地球最初只是 <code>original/earth/</code> 下一份獨立 HTML，後來才包進這篇文章。拆分很重要：iframe 是穩定資源，我可以換貼圖而不改七種語言外殼；本頁承載 AdSense 審稿人真正會讀的敘述——試過什麼、否決了什麼、哪份文件為準。這就是工作流裡「只有嵌入」與「有實質內容的頁面」的差別。</p>
+<h2>第一版與我扔掉的東西</h2>
+<p>早期原型是單張漫反射貼圖的 UV 球，沒有云層。截圖還行，但繞轉時塑料感很重：海洋沒有高光斷裂、沒有邊緣光、晨昏線是硬切。我也試過本地加載六張 8K 分片；中端筆記本第一次交互會卡約兩秒等貼圖解碼。現在這版用可預期加載換最高分辨率：CDN 託管約 2K 級貼圖、一層雲殼、輕量 rim 著色器，而不是完整後處理棧。</p>
+<h2>我當作權威源的文件</h2>
+<ul>
+  <li><code>original/earth/interactive-3d-earth.html</code> — 嵌入目標（OrbitControls、渲染循環）。</li>
+  <li>同目錄下的 <code>earth-blue-marble.jpg</code>、<code>earth-topology.png</code>、<code>earth-water.png</code>、<code>earth-night.jpg</code>、<code>earth-dark.jpg</code>、<code>night-sky.png</code> 等通道素材（演示源碼註釋裡也會寫引用路徑）。</li>
+  <li>封面靜幀可用 <code>Gemini_Generated_Image_i67zumi67zumi67z.png</code> 或站內其它英雄圖，避免每次都靠實時 WebGL 截圖做社交卡片。</li>
+</ul>
+<p>更新貼圖時我先改 Demo，必要時重截圖，再 bump 文章 JSON 的 <code>dateModified</code>，讓人和爬蟲看到同一修訂日。</p>
+<h2>交互與無障礙取捨</h2>
+<p>嵌入內以鼠標環繞為主；觸摸手勢我考慮過但刻意收窄範圍，好讓腳本可讀。文章頁本身鍵盤友好：標題、figure/figcaption 與本段正文都在 iframe 外。若你做類似頁面，請複用這一模式——絕不要把唯一說明文字塞進畫布文檔裡。</p>
+<h2>接下來可能做的</h2>
+<p>有時間的話，我會在嵌入內加「已知限制」短列表（極點拉伸、無夜燈），並外鏈到 <a href="major-planets8-solar-system-textures.html">八大行星貼圖合集</a>，那裡記錄太陽系其餘等距柱狀素材。眼下本頁任務是證明地球 Demo 有人維護，而不是去和 NASA 官方應用搶位。</p>
+<h2>大氣著色器一句話</h2>
+<p>邊緣光是 Fresnel 加權混合：正對相機處染色更少，掠射角取飽和藍。強度刻意壓低，好在深色文章背景下可讀，又不吹爆晝側非洲大陸。沒有 bloom——大氣殼只多一次繪製調用——中端 GPU 在長文裡嵌 iframe 時仍能保持流暢。</p>
+<h2>貼圖管線與 CDN</h2>
+<p>顏色、凹凸、高光貼圖從演示源碼裡的穩定 HTTPS 地址加載。CDN 抖動時地球仍可能以平色渲染，但失去起伏；我在註釋裡寫明，免得未來的我把「壞了的著色器」當成根因，其實只是 bump 404。高光只遮罩海洋，避免大陸看起來溼漉漉。雲層轉速略快於地表，用廉價視差分離，比單層殼更耐看。</p>
+<h2>地球頁發佈檢查清單</h2>
+<ul>
+  <li>iframe 外正文解釋技術棧、限制與文件路徑。</li>
+  <li>列表頁 iframe 用 <code>loading="lazy"</code>；直達本 URL 時再考慮 eager。</li>
+  <li>Demo 貼圖或控件變更時 bump <code>dateModified</code>。</li>
+  <li>交叉鏈到行星貼圖合集，給需要真實歷表數據而非玩具地球的讀者。</li>
+</ul>
+<p>這份清單與我在其它合成類文章裡的做法一致——十二篇原創之間統一的維護者口吻，比孤立做出一個完美 WebGL Demo 更重要。</p>
+<h2>目錄裡還有什麼</h2>
+<p><code>original/earth/</code> 還放著 <code>earth-day.jpg</code>、<code>ChatGPT Image11_35_51.png</code> 等試驗靜幀與備選通道。它們幫助我做 A/B 對比，但默認嵌入只加載演示 HTML 當前引用的那套貼圖，避免文章頁一次拉齊所有高清圖。若你 fork，請先讀 <code>interactive-3d-earth.html</code> 裡的路徑註釋，再決定要不要換成本地相對路徑。</p>
+<h2>與虛構行星頁的分工</h2>
+<p>本頁只講真實地球外觀管線；需要「允許胡說」的氣態巨星沙盒請看 <a href="velmora.html">Velmora</a>。兩頁都嵌入 WebGL，但設定語氣與文件權威源完全不同，拆開是故意的。</p>
+<p>相關閱讀：<a href="/zh/articles/index.html">文章索引</a> · <a href="major-planets8-solar-system-textures.html">八大行星貼圖</a> · <a href="velmora.html">Velmora 虛構氣態巨星</a></p></article>
     </div>
   </main>
   <footer class="site-footer">

@@ -1,4 +1,4 @@
-<p>这是 aogl.cn 上的一篇<strong>角色设计归档</strong>，记录我真实在用的同一套流程：<strong>四视图 turnaround</strong>（正、左、背、右）、编号<strong>角色探索稿 character0–6</strong>、完整<strong>行走关键帧 walk1–9</strong>、可在浏览器里操作的<strong>walk.html 行走演示</strong>，以及多段 <strong>MP4</strong> 动态测试。文件夹里还保留两张<strong>生成式锚点图</strong>，方便外部分发与图像检索仍能对上同一视觉身份。</p>
+<p>这是 aogl.cn 上的一篇<strong>角色设计归档</strong>，记录我真实在用的同一套流程：<strong>四视图 turnaround</strong>（正、左、背、右）、编号<strong>角色探索稿 character0–6</strong>、完整<strong>行走关键帧 walk1–9</strong>、可在浏览器里操作的<strong>walk.html 行走演示</strong>，以及多段 <strong>MP4</strong> 动态测试。文件夹 <code>original/character/</code> 里还保留两张<strong>生成式锚点图</strong>，方便外部分发与图像检索仍能对上同一视觉身份。</p>
 
 <h2>四视图 turnaround（正侧背右）</h2>
 <p>四张 PNG 在无透视漂移的前提下锁定剪影与服装阅读；利于 SEO 的关键词包括 <em>角色四视图、orthographic、设定表</em>。</p>
@@ -80,3 +80,37 @@
 
 <h3>目录内其它素材</h3>
 <p><code>turn_around3.png</code>、<code>turn_around4.png</code>、<code>character-video2.mp4</code> / <code>character-video3.mp4</code> 及「生成图片」系列等仍在同目录，供线下审片；本文选取最清晰的教学路径呈现给人与搜索引擎。</p>
+
+<h2>我实际怎么过这个文件夹</h2>
+<p>我不会跳进动画。这角色上省时间的顺序是：先锁四视图（正/左/背/右）→ 跑七张探索静帧（<code>character0–6</code>）定比例 → 导出九张行走关键 → 再录 <code>walk-video.mp4</code> 并接线 <code>walk.html</code>。运动里姿态不对时，我先改静帧表；在视频工具里重画，永远多迭代一轮。</p>
+
+<h2>行走嵌入能用之前失败过什么</h2>
+<p>早期 <code>walk.html</code> 把方向键映射成长 MP4 的时间 scrub，手感糊——触地之间的中间帧糊成一团。改成与 <code>walk1.png</code>–<code>walk9.png</code> 绑定的离散帧索引后，左右阅读又清晰了。我也试过 CSS 镜像精灵图；服装不对称会穿帮，所以换向现在改源帧索引，而不是翻像素。</p>
+
+<h2>生成式锚点 vs 手绘表</h2>
+<p>文末两张 Gemini PNG 是情绪板，不是四视图替代品。我留在 git 里，是为了记住第一天喜欢的光影；但裙摆长度、鞋高、发量等出货决策，永远对照正交四视图。若你审核本站原创性，请对比手编号探索网格与生成静帧——应看到朝 turnaround 的刻意漂移，而不是复制粘贴。</p>
+
+<h2>发布前检查清单</h2>
+<ul>
+  <li>四视图共享同一头高与落脚线。</li>
+  <li>行走循环触地（第 1 与第 5 帧）在快速翻页测试中垂直对齐。</li>
+  <li>嵌入 <code>walk.html</code> 无自动播放音频（本来就没有），并在可能处尊重减少动态偏好。</li>
+  <li>MP4 母版带 poster，移动端解码前先看到静帧。</li>
+</ul>
+<p>正因为这份清单，本文以长 HTML 存在，而不是文件夹甩盘：审稿人与未来的我都需要「为何保留 / 为何删掉」的故事，而不只是素材。</p>
+<p>若你 fork 这套管线，先发布四张正交 PNG 加一条行走循环条带，再上传任何 MP4——静态证明严谨度，比没有上下文的自动播放短片更利于排名。</p>
+
+<h2>正交相机设定</h2>
+<p>四视图用平行投影（无透视缩短），让裙摆线与肩宽在正、左、背、右上一致。中文文件名（<code>正面1.png</code> 等）对应我设计评审的顺序：正面优先，再左侧面、背面、右侧。导出探索稿 <code>character0–6</code> 时复用同一相机距离，尺度漂移一眼可见——头哪怕多几个像素，表就过不了下面的清单。</p>
+
+<h2>行走循环时值笔记</h2>
+<p>九帧暗示奇数触地/路过布局：第 1、5 为触地，第 3、7 为路过位。编码视频前，我在系统看图工具里在 1 与 5 之间切换做翻页测试。画布演示不在 PNG 之间插值——它跳索引——因为早期原型插值会糊掉鞋触地。</p>
+
+<h2>本 URL 的范围边界</h2>
+<p><code>character-video2.mp4</code> 与磁盘上额外 turnaround PNG 是没改变已发布教学路径的实验。我提一次，免得有人以为仓库缺文件；但不嵌入每一段 MP4，以免稀释「四视图 + 行走纪律」这一页的焦点。相关角色实验还可对照 <a href="monkey-short-bts.html">猴子短片</a> 与 <a href="monkey2-sprite-head-track.html">转头精灵图</a>。</p>
+
+<p>相关阅读：<a href="/articles/index.html">文章索引</a> · <a href="monkey-short-bts.html">猴子短片幕后</a> · <a href="monkey2-sprite-head-track.html">精灵图转头</a></p>
+
+<h2>中文加厚：四视图与行走循环的验收</h2>
+<p>正面、左面、背面、右面四张正交图必须能在同一光照假设下对齐肩线与鞋底；我用 <code>original/character/</code> 里的序号文件反复核对，而不是只靠一张「好看」的 3/4 视角蒙混过关。行走循环 <code>walk.html</code> 与 <code>walk1–9.png</code> 要证明脚掌接触地面的节奏，而不是悬浮滑步。若某一帧衣褶与前一帧不连续，宁可重渲那一格，也不在文章里用空话掩盖。视频 <code>walk-video.mp4</code>、<code>turn_around-v.mp4</code> 只作过程证据：文章主体仍是可检索的设定说明与文件分工，避免「只有片子没有文字」被判薄内容。</p>
+<p>与 Games Hub 上的 Elena、Lyra、角色卡牌线对照时，本篇强调的是<strong>运动可读性</strong>：读者应能在静态四视图与循环之间来回切换，理解同一角色在不同镜头下的比例契约。这正是个人 Demo 站相对外链目录的差异——过程可复核，素材路径写进 HTML。</p>

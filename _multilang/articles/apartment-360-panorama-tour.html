@@ -23,7 +23,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Living-room · dining · kitchen · master-bedroom · v360.mp4","alternativeHeadline":"公寓 360° 全景：四房间等距柱状图与漫游录屏","datePublished":"2026-05-21","dateModified":"2026-05-21","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html"},"url":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html","inLanguage":"mul","description":"Original aogl.cn notes on original/360-degree-panorama: four 2:1 equirectangular apartment rooms, v360.mp4 walkthrough, and still frames—not a real-estate listing.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Living-room · dining · kitchen · master-bedroom · v360.mp4","alternativeHeadline":"公寓 360° 全景：四房间等距柱状图与漫游录屏","datePublished":"2026-05-21","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html"},"url":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html","inLanguage":"mul","description":"Original aogl.cn notes on original/360-degree-panorama: four 2:1 equirectangular apartment rooms, v360.mp4 walkthrough, and still frames—not a real-estate listing.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-en">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -180,7 +180,10 @@
 <p>A draggable WebGL viewer would reuse the same four maps on an inverted sphere with <code>MeshBasicMaterial</code> to preserve baked lighting. I have not shipped that HTML on aogl.cn because mobile GPU memory and gesture UX need another honest article—not a silent iframe swap. When I do ship it, this page will gain a second embed and a short “what changed from v360-only” section rather than replacing the video, so older links keep working.</p>
 
 <h2>SEO and honesty boundaries</h2>
-<p>Queries like <em>apartment 360 tour</em> or <em>equirectangular interior</em> should land on a page that states clearly these are <strong>staging renders</strong>, not a listing at a real address. That boundary protects trust and matches how I describe the <a href="in-car-view-train-window-scenery.html">train window composite</a> and <a href="sky-plane-window-cloud-composite.html">plane window composite</a> articles: synthetic plates with explicit scope in the lead paragraph.</p></article>
+<p>Queries like <em>apartment 360 tour</em> or <em>equirectangular interior</em> should land on a page that states clearly these are <strong>staging renders</strong>, not a listing at a real address. That boundary protects trust and matches how I describe the <a href="in-car-view-train-window-scenery.html">train window composite</a> and <a href="sky-plane-window-cloud-composite.html">plane window composite</a> articles: synthetic plates with explicit scope in the lead paragraph.</p>
+
+<h2>Naming hygiene in the repo</h2>
+<p>The living-room file still uses a capital L (<code>Living-room.png</code>) as a historical exception; the other three stills are lowercase. I do not mass-rename because the article poster, local scripts, and older bookmarks already point at that path—renaming cost exceeds “remember one exception.” New assets always use lowercase hyphens. The repo only commits browser-openable PNG/MP4; unfinished stitch projects stay out of git so visitors never download a half-finished intermediate.</p></article>
     </div>
     <div class="lang-zh">
       <div class="article-shell__top">
@@ -228,7 +231,7 @@
 </div>
 
 <h2>示意文案的边界</h2>
-<p>画面里的软装、景观描述（吊灯、天际线、岛台陈列等）是<strong>配合 AI/渲染画面写的示意</strong>，不是真实楼盘资料。若你 fork 去做真实房源，应换上测绘全景并替换所有营销文案。</p>
+<p>画面里的软装、景观描述（吊灯、天际线、岛台陈列等）是<strong>配合渲染画面写的示意</strong>，不是真实楼盘资料。若你 fork 去做真实房源，应换上测绘全景并替换所有营销文案。</p>
 
 <h2>和本站其他 Demo 的关系</h2>
 <p><a href="travel-through-parallax-phone.html">穿越视差手机</a> 是分层 2D 视差；<a href="interactive-3d-earth.html">3D 地球</a> 是外观测球体加光照。本篇是<strong>室内 equirectangular 静帧 + 录屏归档</strong>，更接近虚拟样板间素材包。三条线并列放在首页轮播，避免混成「一个地球里有一套公寓」这种误解。</p>
@@ -239,7 +242,22 @@
   <li>四张图用稳定文件名（如 <code>Living-room.png</code>），方便 CMS 或自建 viewer 引用。</li>
   <li>文章页用录屏 + 静帧图库 + 上文说明，利于搜索理解「360 全景 / virtual tour / equirectangular interior」。</li>
 </ol>
-<p>我不在这里列「十大全景插件」对比表：插件换得快，把<strong>你自己的场景图 + 命名约定</strong>写清楚，比堆外链更有维护价值。</p></article>
+<p>我不在这里列「十大全景插件」对比表：插件换得快，把<strong>你自己的场景图 + 命名约定</strong>写清楚，比堆外链更有维护价值。</p>
+
+<h2>v360.mp4 里四房间怎么串</h2>
+<p>录屏是一条连续路径：客厅先打开公园侧落地窗，硬切进入餐厅门槛（吊灯入画），再进岛台厨房（铜锅作色彩点），最后到天际线曝光的主卧。我没用叠化转场——硬切能让人立刻对照：每一段静帧都对应一张独立的 equirectangular 文件。慢速拖动进度条时，我会看门框、岛台边缘是否保持竖直；若出现桶形变形，说明源全景投影参数错了，必须重新导出再上线。</p>
+
+<h2>我写在罐头上的导出设定</h2>
+<p>每张静帧工作分辨率大约 <strong>8192×4096</strong>，再缩小到本文图库用的网页友好尺寸。文件名保持小写加连字符（<code>dining-room.png</code>），方便 Linux 主机与 GitHub Pages 大小写安全。室内球面不需要 Alpha——只要 RGB。MP4 用 H.264，海报帧取自客厅静帧，避免首屏黑场；不录旁白，因为这是视觉素材包，不是解说导览。</p>
+
+<h2>未来的交互壳（尚未上线）</h2>
+<p>可拖拽 WebGL 查看器会把同一套四张贴图铺在内翻球上，用 <code>MeshBasicMaterial</code> 保留烘焙光。本站还没上这个 HTML：手机 GPU 内存与手势体验值得另写一篇诚实手记，而不是静默换 iframe。真要上线时，本页会<strong>多一个嵌入</strong>并补一小节「相对纯 v360 多了什么」，而不是替换视频，好让旧链接继续可用。</p>
+
+<h2>SEO 与诚实边界</h2>
+<p>搜 <em>apartment 360 tour</em> 或 <em>equirectangular interior</em> 的人，应落到一篇清楚写明「这是<strong>示意渲染</strong>、不是真实门牌」的页面。这条边界保护信任，也和 <a href="in-car-view-train-window-scenery.html">高铁车窗合成</a>、<a href="sky-plane-window-cloud-composite.html">机舱舷窗云层</a> 手记一致：合成画面，首段写清范围。</p>
+
+<h2>命名与仓库卫生</h2>
+<p>客厅文件写成 <code>Living-room.png</code>（大写 L）是历史遗留；其余三张已是小写开头。我没有批量重命名，因为文章、海报与本地脚本已引用旧路径——改名成本高于「记住这一处例外」。新素材一律小写连字符。仓库里不放半成品拼接工程文件；只提交可被浏览器直接打开的 PNG / MP4，避免访客误下到不可用的中间态。</p></article>
     </div>
     <div class="lang-ja">
       <div class="article-shell__top">

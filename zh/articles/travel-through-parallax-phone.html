@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"CSS 3D · stacked PNGs · smoothed mouse parallax","alternativeHeadline":"穿越视差：手机场景分层与鼠标视差","datePublished":"2026-05-19","dateModified":"2026-05-19","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/travel-through-parallax-phone.html"},"url":"https://aogl.cn/zh/articles/travel-through-parallax-phone.html","inLanguage":"zh-Hant","description":"Original aogl.cn front-end study: three PNG layers (phone backplate, glass cover, foreground character) move at different depths on mouse move—CSS transforms + rAF smoothing, no WebGL. Includes live embed and asset notes.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"CSS 3D · stacked PNGs · smoothed mouse parallax","alternativeHeadline":"穿越视差：手机场景分层与鼠标视差","datePublished":"2026-05-19","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/travel-through-parallax-phone.html"},"url":"https://aogl.cn/zh/articles/travel-through-parallax-phone.html","inLanguage":"zh-Hant","description":"Original aogl.cn front-end study: three PNG layers (phone backplate, glass cover, foreground character) move at different depths on mouse move—CSS transforms + rAF smoothing, no WebGL. Includes live embed and asset notes.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zht">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -105,8 +105,21 @@
 </div>
 <h2>為什麼寫成獨立文章</h2>
 <p>社交平臺難以保留製作過程；用帶標題、alt 與嵌入的<strong>穩定 URL</strong>，便於搜索與引用「CSS 視差」「分層 PNG UI」「鼠標緩動」等主題。若你複用此模式，請在 iframe 外保留足夠正文（如下），並對嵌入使用 <code>loading="lazy"</code>，同時記錄 depth 數值，避免下次改版靠猜。</p>
+<h2>美術導出流程（PSD → PNG）</h2>
+<p>我從同目錄分層 PSD（<code>phone.psd</code>）起步：機身、玻璃高光、角色分屬不同組。幾條讓我少踩坑的導出規則：(1) 按嵌入顯示寬度的 2× 導出，縮小後鋸齒更少；(2) 角色腳底錨在畫布底邊，避免視差時「整個人漂浮」；(3) 玻璃層留足透明邊距，讓 <code>mix-blend-mode: screen</code> 有餘量，光暈不被裁切。造型迭代時我會給 PSD 打日期副本，而不是覆蓋——<code>ren1.png</code> 與 Gemini 氛圍圖都是可回退的分叉，不會打斷線上演示路徑。</p>
+<h2>體積與性能</h2>
+<p>三張 PNG 加一個 HTML，故意比 WebGL 包小得多。嵌入用圖壓縮後大約幾百 KB；腳本壓縮後不足兩 KB。列表頁對 iframe 懶加載，首頁輪播不會提前付解碼成本。演示框內只有指針在區域內時跑一條 <code>requestAnimationFrame</code>；<code>mouseleave</code> 時把偏移緩回零，避免圖層在畫外繼續空轉。</p>
+<h2>我實際測過的瀏覽器</h2>
+<p>Windows 上 Chrome / Edge：視差與自定義光標符合預期。Firefox：同上，並確認玻璃層的 <code>mix-blend-mode: screen</code> 在暖色底板上仍可讀。Safari（iOS）：文章滾動正常；視差以鼠標為主，我不承諾手機觸控拖拽深度——讀者仍能看到靜態合成，對本歸檔頁足夠。若以後產品化，會加 <code>matchMedia('(pointer: fine)')</code> 閘門，粗指針設備顯示一行說明。</p>
+<h2>和「劫持滾動」視差的差別</h2>
+<p>許多營銷站把視差綁在滾動位置上。這裡深度綁在<strong>有界框內的指針位置</strong>，正文仍可讀，也不和瀏覽器滾動物理打架。這個選擇也讓演示能嵌進 iframe 而不劫持父頁滾動——aogl.cn 需要這一點：文章處在正常文檔流裡，譯文 URL 折上還疊著廣告與語言切換。</p>
 <h3>原型侷限</h3>
-<p>尚未做 <code>prefers-reduced-motion</code> 降級；生產環境建議在「減少動態」時凍結圖層。極窄視口也未專門適配，上線時可能在窄屏改為靜態海報。本文記錄的是當前實現，而非成品級營銷微站。</p></article>
+<p>尚未做 <code>prefers-reduced-motion</code> 降級；生產環境建議在「減少動態」時凍結圖層。極窄視口也未專門適配，上線時可能在窄屏改為靜態海報。本文記錄的是當前實現，而非成品級營銷微站。</p>
+<h2>深度調參備忘</h2>
+<p>0.15 / 0.38 / 0.70 不是神聖比例：後景再大就會和機身「搶戲」，前景再大角色會滑出手機框。我改深度時只動 HTML 屬性，不開圖軟件——這正是分層導出的意義。若你換角色圖，先鎖腳底錨點，再微調第三層 depth；不要同時改圖與係數，否則分不清是美術問題還是腳本問題。</p>
+<h2>中文加厚：分層視差與手機框</h2>
+<p><code>parallax_phone_scene.html</code> 把背景、玻璃、穿透角色分成不同深度係數，滾動或指針移動時才有「鑽出屏幕」的錯覺。玻璃層用混合模式提亮邊緣，但必須剋制，否則角色膚色會被洗白。素材分別落在 <code>Mobile-phone-background.png</code>、<code>Glass-cover.png</code>、<code>Penetrating-characters.png</code> 等文件，文章用文件名把管線釘死，方便日後差分。</p>
+<p>相對全景公寓篇，本篇更短鏡頭、更強 UI 隱喻：手機既是畫框也是敘事裝置。中英都寫清失敗嘗試（過強視差導致眩暈、自動播放耗電），才符合「生產手記」而不是效果炫耀頁。</p></article>
     </div>
   </main>
   <footer class="site-footer">

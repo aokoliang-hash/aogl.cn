@@ -12,24 +12,54 @@
 </figure>
 
 <h2>五个表情圆：CSS 滤镜占位</h2>
-<p>每个情绪圈复用脸部裁剪 + <code>filter</code>，是刻意的技术债：先让版式可发布，再补五张手绘表情。对外交付前必须换成真实裁剪——本站保留滤镜是为了固定 UX 槽位（温柔 / 微笑 / 沉思 / 坚定 / 喜悦），避免日后插图到位时布局跳动。</p>
+<p>每个情绪圈复用脸部裁剪 + <code>filter:saturate/brightness/hue-rotate</code>，是刻意的技术债：先让版式可发布，再补五张手绘表情。对外交付前必须换成真实裁剪——本站保留滤镜是为了固定 UX 槽位（温柔 / 微笑 / 沉思 / 坚定 / 喜悦），避免日后插图到位时布局跳动。</p>
 
 <h2>仪式 UI 文案</h2>
-<p>页脚「Official Character Design · Confidential」营造 AAA 管线感，在本站仅表示<strong>版式语气</strong>：无 NDA、无发行商、无 SKU。若开源 HTML，会在页脚上加一句免责；目前海岛幻想与假保密栏的反差也是 Demo 的一部分。</p>
+<p>页脚「Official Character Design · Confidential」营造 AAA 管线感，在本站仅表示<strong>版式语气</strong>：无 NDA、无发行商、无 SKU。试玩者说有页脚栏设定表更「像真的」——即便没有保密协议。若开源 HTML，会在页脚上加一句免责；目前海岛幻想与假保密栏的反差也是 Demo 的一部分。</p>
 
 <h2>维护约定（v1.0）</h2>
 <ol>
   <li>更换 <code>ChatGPT-Image2.png</code> → 必须重查三视图的 <code>object-position</code>。</li>
   <li>改 hex 色板 → 更新文章 <code>dateModified</code> 与 changelog 一条。</li>
-  <li>加第六个表情 → 先改 HTML 网格，再画图。</li>
+  <li>加第六个表情 → 先改 HTML 网格，再画图——绝不反过来。</li>
   <li>不在此页嵌 WebGL / Live2D；动画另开文章并写清范围。</li>
 </ol>
 
 <h2>配套工具书签</h2>
-<p>出图探索：<a href="/tool-guides/gemini-post.html">Gemini</a>、<a href="/tool-guides/midjourney-post.html">Midjourney</a> 备忘。改表代码：<a href="/tool-guides/cursor-post.html">Cursor</a>。模型政策：<a href="/briefs/index.html">快讯</a>。</p>
+<p>出图探索：<a href="/tool-guides/gemini-post.html">Gemini</a>、<a href="/tool-guides/midjourney-post.html">Midjourney</a> 备忘。改表代码：<a href="/tool-guides/cursor-post.html">Cursor</a>。模型政策提醒：<a href="/briefs/index.html">快讯</a>。这些链接不是背书，是我的目录条目。</p>
 
 <h2>与游戏 Hub 的关系</h2>
-<p>我在 <a href="/games.html">games.html</a> 扫第一方标题，再回到 <code>original/game-girl/</code> 做个人美术实验——流程见 <a href="games-hub-generative-art-workflow.html">游戏 Hub × 生成式角色美术工作流</a>。商店 RSS 不会自动改设定表。</p>
+<p>我在 <a href="/games.html">games.html</a> 扫第一方标题，再回到 <code>original/game-girl/</code> 做个人美术实验——流程见 <a href="games-hub-generative-art-workflow.html">游戏 Hub × 生成式角色美术工作流</a>。商店 RSS 不会自动改设定表；仍需人合并决策。</p>
 
 <h3>边界</h3>
-<p>无骨骼、无引擎包、无抽卡数值。第三篇只会在新实物（例如手绘五表情）上线时出现，而不是为堆关键词。</p>
+<p>无骨骼、无引擎包、无抽卡数值、无配音选角。第三篇只会在新实物（例如手绘五表情）上线时出现，而不是为堆关键词。</p>
+
+<h2>服装 SVG 格：为何用内联矢量占位</h2>
+<p>设定表里的服装拆解用简单内联 SVG 剪影——不是最终服装平面图。它们存在的意义是：以后换 PNG 裁剪时，版面宽度仍稳定。每格标签写「主服 / 腰带 / 头饰 / 法杖」中文，因为维护时的第一读者是我自己；英文文章向访客解释意图。我拒绝把栅格服装片嵌进 SVG 层；栅格只属于三视图条。</p>
+
+<h2>强调色硬淘汰规则</h2>
+<ul>
+  <li><strong>杖金（#D4AF37）</strong> — 生成结果若偏橙铜，弃；法杖必须读成金属，不是木头。</li>
+  <li><strong>冠绿（#2E8B57）</strong> — 只用于藤冠；绝不渗进头发高光。</li>
+  <li><strong>宝石蓝（#4169E1）</strong> — 留给潮沙杖上的宝珠；不复用到瞳孔或唇彩。</li>
+</ul>
+<p>5 月 19 日有一张探索图把宝石蓝涂到瞳孔上，我本地留作反例，但未放进首发文的公开图库。</p>
+
+<h2>表情滤镜数值（占位时代）</h2>
+<p>当前 CSS 在共享脸部裁剪上用轻度滤镜：温柔（亮度 +5%）、微笑（饱和 +10%）、沉思（亮度 −8%）、坚定（色相旋转 5deg）、喜悦（饱和 +12%）。这些数字不是美学目标——只是在手绘圆盘到位前防止布局跳动。写在这里，是为了换成真实 PNG 时能 diff。</p>
+
+<h2>我实际跟踪的版本史</h2>
+<ol>
+  <li><strong>2026-05-18</strong> — 首张三视图 + 设定表 HTML 脚手架。</li>
+  <li><strong>2026-05-20</strong> — 色板行锁定；探索图库定稿。</li>
+  <li><strong>2026-06-03</strong> — 首发文上线（<a href="game-girl-elena-sea-wind-reference.html">海风之诗</a>）。</li>
+  <li><strong>2026-06-18</strong> — 配色与仪式 UI 手记拆到本 URL。</li>
+</ol>
+<p>任何 hex 或滤镜改动都会 bump 最后一行并写 changelog 一条——禁止静默改。</p>
+
+<h2>换图时的三视图检查清单</h2>
+<p>换 <code>ChatGPT-Image2.png</code> 后，我会按顺序核：正面脸部中心是否仍落在 <code>object-position</code> 目标；侧面耳线是否被裁切；背面发冠是否露出藤蔓。任何一处偏了，先改 CSS 裁剪，再考虑重出图。设定表是维护面，不是「再生成一次就好」的借口。</p>
+
+<h2>中文加厚：调色拒绝规则与设定表</h2>
+<p><code>elena_character_sheet.html</code> 把调色、表情滤镜与服装格子放在同一页，是为了避免「散图文件夹」无法被审核员读懂。金色点缀、冷绿阴影、群青辅色一旦同时抢戏，角色就会像贴纸而不是可落地的设定。我在手记里写拒绝规则，不是为了玄学，而是给未来的自己一份可执行的检查表：换一版图之前，先看色相是否破坏轮廓可读性。</p>
+<p>与海风参考篇分工明确：本篇管<strong>仪式感与色板契约</strong>，海风篇管场景光与道具。两篇都挂在 Games Hub，但各自有独立过程段落与截图证据，避免一篇空壳互相引流却没有正文。</p>

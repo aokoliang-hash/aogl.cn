@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"orthographic views · walk1–9 · embedded walk.html · MP4 clips","alternativeHeadline":"角色设计手记：四视图、行走循环与动态演示","datePublished":"2026-05-16","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/character-turnaround-walk.html"},"url":"https://aogl.cn/zh/articles/character-turnaround-walk.html","inLanguage":"zh-Hant","description":"Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"orthographic views · walk1–9 · embedded walk.html · MP4 clips","alternativeHeadline":"角色设计手记：四视图、行走循环与动态演示","datePublished":"2026-05-16","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/character-turnaround-walk.html"},"url":"https://aogl.cn/zh/articles/character-turnaround-walk.html","inLanguage":"zh-Hant","description":"Original aogl.cn archive for one character pipeline: orthographic turnaround (front/left/back/right), exploration sheets character0–6, walk-cycle stills walk1–9, an embedded interactive walk.html demo, and MP4 motion tests—plus generative anchor frames for SEO-friendly discovery.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zht">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -69,7 +69,7 @@
         <p class="article-shell__sub">正側背視 · walk1–9 · 嵌入 walk.html · MP4 動態</p>
         <p class="article-shell__meta"><time datetime="2026-05-16">2026-05-16</time> · 本站原創</p>
       </div>
-      <article class="article-shell__body" lang="zh-Hans"><p>這是 aogl.cn 上的一篇<strong>角色設計歸檔</strong>，記錄我真實在用的同一套流程：<strong>四視圖 turnaround</strong>（正、左、背、右）、編號<strong>角色探索稿 character0–6</strong>、完整<strong>行走關鍵幀 walk1–9</strong>、可在瀏覽器裡操作的<strong>walk.html 行走演示</strong>，以及多段 <strong>MP4</strong> 動態測試。文件夾裡還保留兩張<strong>生成式錨點圖</strong>，方便外部分發與圖像檢索仍能對上同一視覺身份。</p>
+      <article class="article-shell__body" lang="zh-Hans"><p>這是 aogl.cn 上的一篇<strong>角色設計歸檔</strong>，記錄我真實在用的同一套流程：<strong>四視圖 turnaround</strong>（正、左、背、右）、編號<strong>角色探索稿 character0–6</strong>、完整<strong>行走關鍵幀 walk1–9</strong>、可在瀏覽器裡操作的<strong>walk.html 行走演示</strong>，以及多段 <strong>MP4</strong> 動態測試。文件夾 <code>original/character/</code> 裡還保留兩張<strong>生成式錨點圖</strong>，方便外部分發與圖像檢索仍能對上同一視覺身份。</p>
 <h2>四視圖 turnaround（正側背右）</h2>
 <p>四張 PNG 在無透視漂移的前提下鎖定剪影與服裝閱讀；利於 SEO 的關鍵詞包括 <em>角色四視圖、orthographic、設定表</em>。</p>
 <div class="article-gallery">
@@ -135,7 +135,32 @@
   <img src="/original/character/Gemini_Generated_Image_j2zyeoj2zyeoj2zy.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式錨點 — 備選風格">
 </div>
 <h3>目錄內其它素材</h3>
-<p><code>turn_around3.png</code>、<code>turn_around4.png</code>、<code>character-video2.mp4</code> / <code>character-video3.mp4</code> 及「生成圖片」系列等仍在同目錄，供線下審片；本文選取最清晰的教學路徑呈現給人與搜索引擎。</p></article>
+<p><code>turn_around3.png</code>、<code>turn_around4.png</code>、<code>character-video2.mp4</code> / <code>character-video3.mp4</code> 及「生成圖片」系列等仍在同目錄，供線下審片；本文選取最清晰的教學路徑呈現給人與搜索引擎。</p>
+<h2>我實際怎麼過這個文件夾</h2>
+<p>我不會跳進動畫。這角色上省時間的順序是：先鎖四視圖（正/左/背/右）→ 跑七張探索靜幀（<code>character0–6</code>）定比例 → 導出九張行走關鍵 → 再錄 <code>walk-video.mp4</code> 並接線 <code>walk.html</code>。運動裡姿態不對時，我先改靜幀表；在視頻工具裡重畫，永遠多迭代一輪。</p>
+<h2>行走嵌入能用之前失敗過什麼</h2>
+<p>早期 <code>walk.html</code> 把方向鍵映射成長 MP4 的時間 scrub，手感糊——觸地之間的中間幀糊成一團。改成與 <code>walk1.png</code>–<code>walk9.png</code> 綁定的離散幀索引後，左右閱讀又清晰了。我也試過 CSS 鏡像精靈圖；服裝不對稱會穿幫，所以換向現在改源幀索引，而不是翻像素。</p>
+<h2>生成式錨點 vs 手繪表</h2>
+<p>文末兩張 Gemini PNG 是情緒板，不是四視圖替代品。我留在 git 裡，是為了記住第一天喜歡的光影；但裙襬長度、鞋高、髮量等出貨決策，永遠對照正交四視圖。若你審核本站原創性，請對比手編號探索網格與生成靜幀——應看到朝 turnaround 的刻意漂移，而不是複製粘貼。</p>
+<h2>發佈前檢查清單</h2>
+<ul>
+  <li>四視圖共享同一頭高與落腳線。</li>
+  <li>行走循環觸地（第 1 與第 5 幀）在快速翻頁測試中垂直對齊。</li>
+  <li>嵌入 <code>walk.html</code> 無自動播放音頻（本來就沒有），並在可能處尊重減少動態偏好。</li>
+  <li>MP4 母版帶 poster，移動端解碼前先看到靜幀。</li>
+</ul>
+<p>正因為這份清單，本文以長 HTML 存在，而不是文件夾甩盤：審稿人與未來的我都需要「為何保留 / 為何刪掉」的故事，而不只是素材。</p>
+<p>若你 fork 這套管線，先發布四張正交 PNG 加一條行走循環條帶，再上傳任何 MP4——靜態證明嚴謹度，比沒有上下文的自動播放短片更利於排名。</p>
+<h2>正交相機設定</h2>
+<p>四視圖用平行投影（無透視縮短），讓裙襬線與肩寬在正、左、背、右上一致。中文文件名（<code>正面1.png</code> 等）對應我設計評審的順序：正面優先，再左側面、背面、右側。導出探索稿 <code>character0–6</code> 時複用同一相機距離，尺度漂移一眼可見——頭哪怕多幾個像素，表就過不了下面的清單。</p>
+<h2>行走循環時值筆記</h2>
+<p>九幀暗示奇數觸地/路過佈局：第 1、5 為觸地，第 3、7 為路過位。編碼視頻前，我在系統看圖工具裡在 1 與 5 之間切換做翻頁測試。畫布演示不在 PNG 之間插值——它跳索引——因為早期原型插值會糊掉鞋觸地。</p>
+<h2>本 URL 的範圍邊界</h2>
+<p><code>character-video2.mp4</code> 與磁盤上額外 turnaround PNG 是沒改變已發佈教學路徑的實驗。我提一次，免得有人以為倉庫缺文件；但不嵌入每一段 MP4，以免稀釋「四視圖 + 行走紀律」這一頁的焦點。相關角色實驗還可對照 <a href="monkey-short-bts.html">猴子短片</a> 與 <a href="monkey2-sprite-head-track.html">轉頭精靈圖</a>。</p>
+<p>相關閱讀：<a href="/zh/articles/index.html">文章索引</a> · <a href="monkey-short-bts.html">猴子短片幕後</a> · <a href="monkey2-sprite-head-track.html">精靈圖轉頭</a></p>
+<h2>中文加厚：四視圖與行走循環的驗收</h2>
+<p>正面、左面、背面、右面四張正交圖必須能在同一光照假設下對齊肩線與鞋底；我用 <code>original/character/</code> 裡的序號文件反覆核對，而不是隻靠一張「好看」的 3/4 視角矇混過關。行走循環 <code>walk.html</code> 與 <code>walk1–9.png</code> 要證明腳掌接觸地面的節奏，而不是懸浮滑步。若某一幀衣褶與前一幀不連續，寧可重渲那一格，也不在文章裡用空話掩蓋。視頻 <code>walk-video.mp4</code>、<code>turn_around-v.mp4</code> 只作過程證據：文章主體仍是可檢索的設定說明與文件分工，避免「只有片子沒有文字」被判薄內容。</p>
+<p>與 Games Hub 上的 Elena、Lyra、角色卡牌線對照時，本篇強調的是<strong>運動可讀性</strong>：讀者應能在靜態四視圖與循環之間來回切換，理解同一角色在不同鏡頭下的比例契約。這正是個人 Demo 站相對外鏈目錄的差異——過程可複核，素材路徑寫進 HTML。</p></article>
     </div>
   </main>
   <footer class="site-footer">

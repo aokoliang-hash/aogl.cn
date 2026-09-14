@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Living-room · dining · kitchen · master-bedroom · v360.mp4","alternativeHeadline":"公寓 360° 全景：四房间等距柱状图与漫游录屏","datePublished":"2026-05-21","dateModified":"2026-05-21","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html"},"url":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html","inLanguage":"en","description":"Original aogl.cn notes on original/360-degree-panorama: four 2:1 equirectangular apartment rooms, v360.mp4 walkthrough, and still frames—not a real-estate listing.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Living-room · dining · kitchen · master-bedroom · v360.mp4","alternativeHeadline":"公寓 360° 全景：四房间等距柱状图与漫游录屏","datePublished":"2026-05-21","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/en/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html"},"url":"https://aogl.cn/en/articles/apartment-360-panorama-tour.html","inLanguage":"en","description":"Original aogl.cn notes on original/360-degree-panorama: four 2:1 equirectangular apartment rooms, v360.mp4 walkthrough, and still frames—not a real-estate listing.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-en">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -116,7 +116,9 @@
 <h2>Future interactive shell (not shipped)</h2>
 <p>A draggable WebGL viewer would reuse the same four maps on an inverted sphere with <code>MeshBasicMaterial</code> to preserve baked lighting. I have not shipped that HTML on aogl.cn because mobile GPU memory and gesture UX need another honest article—not a silent iframe swap. When I do ship it, this page will gain a second embed and a short “what changed from v360-only” section rather than replacing the video, so older links keep working.</p>
 <h2>SEO and honesty boundaries</h2>
-<p>Queries like <em>apartment 360 tour</em> or <em>equirectangular interior</em> should land on a page that states clearly these are <strong>staging renders</strong>, not a listing at a real address. That boundary protects trust and matches how I describe the <a href="in-car-view-train-window-scenery.html">train window composite</a> and <a href="sky-plane-window-cloud-composite.html">plane window composite</a> articles: synthetic plates with explicit scope in the lead paragraph.</p></article>
+<p>Queries like <em>apartment 360 tour</em> or <em>equirectangular interior</em> should land on a page that states clearly these are <strong>staging renders</strong>, not a listing at a real address. That boundary protects trust and matches how I describe the <a href="in-car-view-train-window-scenery.html">train window composite</a> and <a href="sky-plane-window-cloud-composite.html">plane window composite</a> articles: synthetic plates with explicit scope in the lead paragraph.</p>
+<h2>Naming hygiene in the repo</h2>
+<p>The living-room file still uses a capital L (<code>Living-room.png</code>) as a historical exception; the other three stills are lowercase. I do not mass-rename because the article poster, local scripts, and older bookmarks already point at that path—renaming cost exceeds “remember one exception.” New assets always use lowercase hyphens. The repo only commits browser-openable PNG/MP4; unfinished stitch projects stay out of git so visitors never download a half-finished intermediate.</p></article>
     </div>
   </main>
   <footer class="site-footer">

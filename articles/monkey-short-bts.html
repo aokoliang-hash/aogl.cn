@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"16:9 board · frames 1–9 · generative passes · MP4 master","alternativeHeadline":"猴子短片手记：分镜、关键帧与我的剪辑成片","datePublished":"2026-05-14","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/articles/monkey-short-bts.html"},"url":"https://aogl.cn/articles/monkey-short-bts.html","inLanguage":"zh-CN","description":"Personal editorial on aogl.cn: an experimental monkey-themed short—from a 16:9 storyboard sheet and nine numbered stills through generative look-dev to a final MP4—assets and notes in one place for search and sharing.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"16:9 board · frames 1–9 · generative passes · MP4 master","alternativeHeadline":"猴子短片手记：分镜、关键帧与我的剪辑成片","datePublished":"2026-05-14","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/articles/monkey-short-bts.html"},"url":"https://aogl.cn/articles/monkey-short-bts.html","inLanguage":"zh-CN","description":"Personal editorial on aogl.cn: an experimental monkey-themed short—from a 16:9 storyboard sheet and nine numbered stills through generative look-dev to a final MP4—assets and notes in one place for search and sharing.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zh">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -104,7 +104,29 @@
   <figcaption>成片：<code>original/monkey/monkey-v.mp4</code>，由上方关键帧脊椎剪辑而成。</figcaption>
 </figure>
 <h3>为什么写这篇页</h3>
-<p>社交平台不利于溯源；用<strong>语义化标题</strong>、<strong>描述性替代文本</strong>和<strong>类似口播稿的叙述</strong>组成文章，更容易被引用，也更容易命中「猴子分镜 mp4」「个人 AI 短片流程」一类检索。若你复用此结构，建议保持文件名稳定并在结构化数据里写真实日期。</p></article>
+<p>社交平台不利于溯源；用<strong>语义化标题</strong>、<strong>描述性替代文本</strong>和<strong>类似口播稿的叙述</strong>组成文章，更容易被引用，也更容易命中「猴子分镜 mp4」「个人 AI 短片流程」一类检索。若你复用此结构，建议保持文件名稳定并在结构化数据里写真实日期。</p>
+<h2>节拍地图（白话）</h2>
+<p>第 1–3 帧建立尺度与视线：主体偏小、留白偏大，猴子注意到画外动静。第 4–6 帧是反应与加速——姿态压低、手部前伸。第 7–9 帧兑现笑点并重置构图，方便循环尾卡。剪 <code>monkey-v.mp4</code> 时我优先尊重这些节拍，哪怕中间某张生成静帧更好看；不动剧情的「好看帧」只进 look-dev 堆，不进编号脊椎。</p>
+<h2>时间线里我剪掉了什么</h2>
+<p>我删了两个备选结尾（额外大远景只留在本地磁盘），因为它们重复了第 5 帧构图、没有新信息。也去掉了草稿音轨——本发布纯视觉，避免访客突然被声音吓到。剪辑克制后，MP4 短到足以放在静态 GitHub Pages 上，不必另建流媒体栈。</p>
+<h2>生成式稿 vs 编号关键帧</h2>
+<p>三张 Gemini 静帧（<code>Gemini_Generated_Image_*</code>）探索配色与剪影，无一原样进成片。九张编号 PNG 才是契约：不在集合内的帧，就不算故事正典。以后重访项目时，要么替换某张编号静帧并重导出 MP4，要么不动时间线——禁止静默偷换。</p>
+<h2>想写进文档的制作约束</h2>
+<ul>
+  <li>早期锁定 16:9，让分镜总表与视频共用一块画布。</li>
+  <li>video 元素的 poster 指向关键帧 5——中段能量感，又不剧透收束 gag。</li>
+  <li>公开资产都在 <code>original/monkey/</code>，文件名稳定，便于深链。</li>
+</ul>
+<p>这份纪律也是后续单独开 <a href="monkey2-sprite-head-track.html">转头精灵图</a> 文章的原因：不同实验、不同成功标准，各自一篇写满过程。</p>
+<h2>时间线剪辑实践</h2>
+<p>我在非线性剪辑里把九张 PNG 钉在副轨当参考静帧——从不把它们当唯一源——这样时值漂移一眼可见。停顿长度：1–3 帧较长（建立），4–6 较短（运动），7–9 中等（兑现）。总时长压在约三十秒内，方便静态托管且无需 CDN 转码。若某拍需要多半秒，我延长前一关键帧的 hold，而不是加第十张「彩蛋」静帧打乱编号脊椎。</p>
+<h2>命名与版本卫生</h2>
+<p>关键帧用简单整数（<code>1.png</code> … <code>9.png</code>）。生成式 look-dev 保留厂商前缀（<code>Gemini_Generated_Image_*</code>），方便用 grep 与手绘稿分开。成片永远叫 <code>monkey-v.mp4</code>，不在文件名里塞版本号——git 历史才是版本日志。目录里另有 <code>femn.png</code> 等线下草稿，不进入公开叙述主线。</p>
+<h2>我不会在此公开的东西</h2>
+<p>草稿音频、其它画幅比、客户式 logo 角标都留在本地。aogl.cn 文章是维护者写的归档，不是把每层 WIP 都摊开的 Behance 克隆。帮不了人理解成片的文件，就不进公开文件夹。</p>
+<h2>托管与播放备注</h2>
+<p>静态托管意味着没有自适应码率：一份 H.264 MP4、poster 用关键帧 5、<code>preload="metadata"</code>，避免移动端首屏就拉整段视频。重导 <code>monkey-v.mp4</code> 时我保持同名并 bump <code>dateModified</code>，不发明 <code>monkey-v2.mp4</code>，这样深链与图注永远有效。</p>
+<p>相关阅读：<a href="/articles/index.html">文章索引</a> · <a href="monkey2-sprite-head-track.html">猴子精灵图转头</a> · <a href="character-turnaround-walk.html">角色四视图与行走</a></p></article>
     </div>
   </main>
   <footer class="site-footer">

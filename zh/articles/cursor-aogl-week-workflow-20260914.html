@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="zh-Hant" data-title-zh="用 Cursor 維護 aogl.cn 的一週：提交節奏 × 片段編輯 × AdSense 整改 — aogl.cn" data-desc-zh="誠實記錄一週用 Cursor / AI coding agents 維護 aogl.cn：提交節奏、文章 htmlFragments 編輯、AdSense 整改閉環，以及刻意不自動化的部分。" data-aogl-lang="zht" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="誠實記錄一週用 Cursor / AI coding agents 維護 aogl.cn：提交節奏、文章 htmlFragments 編輯、AdSense 整改閉環，以及刻意不自動化的部分。">
+  <title>用 Cursor 維護 aogl.cn 的一週：提交節奏 × 片段編輯 × AdSense 整改 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/zh/articles/cursor-aogl-week-workflow-20260914.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/cursor-aogl-week-workflow-20260914.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/cursor-aogl-week-workflow-20260914.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/cursor-aogl-week-workflow-20260914.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/cursor-aogl-week-workflow-20260914.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/cursor-aogl-week-workflow-20260914.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/cursor-aogl-week-workflow-20260914.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/cursor-aogl-week-workflow-20260914.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/cursor-aogl-week-workflow-20260914.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/cursor-aogl-week-workflow-20260914.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/zh/articles/cursor-aogl-week-workflow-20260914.html">
+  <meta property="og:title" content="用 Cursor 維護 aogl.cn 的一週：提交節奏 × 片段編輯 × AdSense 整改 — aogl.cn">
+  <meta property="og:description" content="誠實記錄一週用 Cursor / AI coding agents 維護 aogl.cn：提交節奏、文章 htmlFragments 編輯、AdSense 整改閉環，以及刻意不自動化的部分。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/cursor-aogl-week-workflow-20260914.webp">
+  <meta property="og:image:alt" content="img2threejs BMX Endurance showcase — AI-assisted build work on aogl.cn">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/cursor-aogl-week-workflow-20260914.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"My practice · AI agents · hand-edit fragments · automation limits","alternativeHeadline":"用 Cursor 维护 aogl.cn 的一周：提交节奏 × 片段编辑 × AdSense 整改","datePublished":"2026-09-14","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/cursor-aogl-week-workflow-20260914.html"},"url":"https://aogl.cn/zh/articles/cursor-aogl-week-workflow-20260914.html","inLanguage":"zh-Hant","description":"Honest notes from one week maintaining aogl.cn with Cursor / AI coding agents: commit cadence, htmlFragments editing, AdSense remediation loops, and what I refuse to automate.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-zht">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具與大模型動態（個人書籤）" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/zh/articles/index.html">本站原創</a></li>
+          <li><a href="/zh/about.html">關於</a></li>
+          <li><a href="/zh/games.html">遊戲</a></li>
+          <li><a href="/zh/tech.html">科技</a></li>
+          <li><a href="/zh/life.html">生活</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/zh/index.html#originals">← 返回首頁 · 本站原創</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>用 Cursor 維護 aogl.cn 的一週：提交節奏 × 片段編輯 × AdSense 整改</h1>
+        <p class="article-shell__sub">本人實踐 · AI agent · 片段手改 · 不自動化的邊界</p>
+        <p class="article-shell__meta"><time datetime="2026-09-14">2026-09-14</time> · 本站原創</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>這是用 Cursor 與其它 AI coding agents 維護 aogl.cn 的<strong>一週第一人稱手記</strong>。不是廠商軟文，不是「十倍工程師」幻想，也不宣稱代理能替代判斷。題圖複用本站已有歸檔 <code>original/img2threejs/bmx-endurance.png</code>——那條流水線本身就是我在本域上線過的 AI 輔助作品。日期 2026-09-14。</p>
+<figure class="article-figure">
+  <img src="/original/img2threejs/bmx-endurance.png" width="1200" height="675" loading="lazy" decoding="async" alt="img2threejs BMX Endurance 程序化 Three.js 展示，用作 Cursor 一週題圖">
+  <figcaption><code>bmx-endurance.png</code> — 現有 aogl.cn 歸檔資源；與本週「AI 輔助維護」主題相鄰。</figcaption>
+</figure>
+<h2>這一週實際長什麼樣</h2>
+<p>多數會話不是從零寫 App，而是外科手術：改文章 JSON 樞紐、加厚英/中片段、把 slug 前置進 <code>data/tech-hub-articles.json</code> 或 <code>data/life-hub-articles.json</code>、清掉殘留的 Google 搜索藥丸、確認頁面不在 <code>ARTICLE_ARCHIVE_NOINDEX_SLUGS</code> 裡，然後才考慮構建。Cursor 在任務合同清晰時很強——「只改這些片段，不要跑 <code>build-site</code>，做完打印字數。」當我含糊說「讓 AdSense 開心一點」卻不點名策略文件時，它會飄。</p>
+<p>提交節奏故意無聊：需要時才做小主題提交，不順手重排五十張無關 Hub 卡，不演強制推送。代理起草；是否進入歷史仍由我定。週中我拒絕過幾次「好心」的語種樹批量重生，因為半成品散文會被 <code>build-seo-locale-pages.mjs</code> 覆蓋。</p>
+<h2>片段編輯才是真正的手藝面</h2>
+<p>在 aogl.cn，耐久正文在 <code>data/articles/fragments/*-en.html</code> 與 <code>*-zh.html</code>，不在生成出來的 <code>/en/articles/</code> 鏡像。改錯層的代理會造成信心劇場：預覽好看，下次語種拆分就沒了。本週經驗法則：</p>
+<ol>
+  <li>先改 JSON 元數據與片段。</li>
+  <li>ja/ko/fr/ru/ar 短存根故意保持短。</li>
+  <li>藥丸只鏈 App URL 與 <code>/articles/index.html</code>——絕不發明 Google 搜索芯片。</li>
+  <li>只有目標是發佈 HTML 時才跑封面生成或 <code>build-articles</code>。</li>
+  <li>聲稱「主內容」前先重讀 <code>scripts/seo-index-policy.mjs</code>。</li>
+</ol>
+<p>厚雙語正文才是 AdSense 審閱權重。要求代理「七語全量長譯」浪費代幣，還會產出假裝成長文的稀泥存根。更好的做法：一篇誠實 EN ≥900 詞、一篇誠實 ZH ≥1400 漢字、五張短語種卡片。</p>
+<h2>AdSense 整改閉環（誠實版）</h2>
+<p>整改是閉環，不是按鈕。本週閉環大致是：</p>
+<ul>
+  <li><strong>識別薄表面</strong>——已在 <code>ARTICLE_ARCHIVE_NOINDEX</code> 的榜單存檔；不要當主 Demo 推。</li>
+  <li><strong>上厚原創</strong>——EatToday / WordPet / 世界之最那種第一人稱頁，帶真實 <code>original/</code> 截圖。</li>
+  <li><strong>廣告繼續門禁</strong>——<code>js/adsense.js</code> 只在可索引文章 / about / changelog 請求發佈商腳本。</li>
+  <li><strong>首頁繼續安靜</strong>——沿用 <code>adsense-slim-outbound.mjs</code> 的瘦外鏈思路；書籤牆不冒充內容。</li>
+  <li><strong>改完再核對</strong>——新 slug 不得誤入 noindex 集合；robots meta 與加載器行為必須一致。</li>
+</ul>
+<p>代理擅長在倉庫裡搜 <code>ARTICLE_ARCHIVE_NOINDEX</code>、<code>isContentPrimaryPage</code>、藥丸標記。它們不擅長判斷一段話到底是第一人稱證據還是關鍵詞湯。每晚這項判斷仍歸我。</p>
+<h2>我拒絕自動化的邊界</h2>
+<ul>
+  <li><strong>起草階段盲目全量 <code>build-site</code></strong>——寫手太多，覆蓋風暴一次就夠。</li>
+  <li><strong>不讀補丁就自動提交代理 diff</strong>——尤其 ads.txt、策略集合、Hub 成員資格。</li>
+  <li><strong>發明截圖歸檔</strong>——<code>original/</code> 沒有界面，文章就不假裝有。</li>
+  <li><strong>把短存根批量灌成假長文</strong>——短語種是功能，不是缺陷。</li>
+  <li><strong>讓代理靠堆外鏈「修 AdSense」</strong>——整改方向是更少低價值外鏈、更厚原創。</li>
+</ul>
+<h2>Cursor 真正賺到工錢的地方</h2>
+<p>重複機械活：七語標題字段對齊、確認 Hub JSON 前置沒有把已降權的 apple-iphone / pc-standalone 類清單重新加回來、寫 <code>heroImageSource</code> 前核驗圖片路徑存在、草稿後統計詞數/漢字。它也幫我引用真實腳本文件名，而不是憑記憶轉述——當公開長文聲稱流水線真實時，這一點很重要。</p>
+<p>需要成人監督的是語氣。第一人稱產品手記若接受第一版「光滑段落」，很容易滑成冊子腔。我反覆要求寫硬邊界（「這不是營養建議」「戰力≠英語成績」「不承諾 AdSense 過審」），因為審閱者聞炒作比聞語法錯誤更快。</p>
+<h2>七天後的結論</h2>
+<p>對有嚴格寫作合同的靜態多語言站，AI coding agents 是利器。它們放大片段吞吐與策略搜索。它們不擁有內容分級決策——可索引原創 vs noindex 存檔——也不該擁有發佈按鈕。若你維護類似 aogl 的棧：給代理文件級任務並寫明非目標，然後讓人審廣告策略、Hub 成員資格，以及截圖是否仍匹配正文。</p>
+<p>落到可粘貼進 Cursor 提示詞的週末清單，其實很短：核驗題圖路徑存在；確認 Hub 前置；拒絕 Google 藥丸；英/中保持厚度；其它語種保持存根；非發佈階段不跑全站構建；結束時打印詞數與漢字數。這張清單比再寫一篇「人機協作宣言」有用。這一週算成功，是因為倉庫多了誠實的主內容編輯稿，而不是因為聊天記錄看起來聰明。</p>
+<p>我也刻意觀察了代理容易越界的幾類改動：把 life Hub 裡的存檔榜單重新抬成「好 Demo」；在技術手記裡插入未經驗證的截圖路徑；為了湊字數把短語種擴成機翻長文；以及在未讀 <code>js/adsense.js</code> 的情況下斷言「首頁也應該出廣告」。這些越界一旦進 git，清理成本高於當時省下的十分鐘。所以我的習慣是：代理可以起草，策略與 Hub 成員資格必須人點頭，發佈構建必須人觸發。</p>
+<p>若把這一週濃縮成一句話：用 Cursor 加速 aogl.cn 的片段工程與策略檢索，但把「什麼算可索引原創」堅決留在人類側。題圖選用 img2threejs 歸檔，是為了提醒自己——本站本來就有 AI 輔助作品線；維護編輯站時，更要把同樣的誠實標準用在文字與廣告策略上，而不是隻在炫技 Demo 裡認真。</p>
+<h2 id="article-seo-keywords">相關</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/zh/articles/index.html">全部原創</a>
+  <a class="pill" href="/zh/articles/img2threejs-procedural-threejs-skill-20260803.html">img2threejs 手記</a>
+  <a class="pill" href="/zh/index.html#originals">首頁原創</a>
+</div></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/zh/about.html" class="footer-legal-link lang-zh">關於</a>
+        <a href="/zh/contact.html" class="footer-legal-link lang-zh">聯繫我們</a>
+        <a href="/zh/changelog.html" class="footer-legal-link lang-zh">更新記錄</a>
+        <a href="/zh/privacy.html" class="footer-legal-link lang-zh">隱私政策</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情鏈接 aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer=""></script>
+</body></html>

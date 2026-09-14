@@ -1,0 +1,83 @@
+<p>这是 aogl.cn 上 WordPet 归档的<strong>续篇开发手记</strong>。截图仍在 <code>original/wordpet-app/</code>。<strong>WordPet 是本人开发的 App</strong>（© kolang），入口：<a href="https://wordpet.aogl.cn/" target="_blank" rel="noopener noreferrer">https://wordpet.aogl.cn/</a>。前一篇拆过登录路径、词书、闪卡、对话与宠物库。本文回答新鲜感退去后家长和学生真正会问的三个问题：<strong>每日打卡节律怎么定、宠物如何进化、沪教教材单元如何与打卡队列保持同步？</strong></p>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/og-share.png" width="1200" height="675" loading="lazy" decoding="async" alt="WordPet 品牌图 — 石猿与 A–Z 词书">
+  <figcaption><code>og-share.png</code> — 续篇沿用品牌 / Open Graph 源图。</figcaption>
+</figure>
+
+<h2>为什么需要续篇</h2>
+<p>背单词养宠物很好演示，却很难长期诚实。上线 <a href="https://wordpet.aogl.cn/" target="_blank" rel="noopener noreferrer">wordpet.aogl.cn</a> 之后，我看到的失败模式很少是「蛋壳不够好看」，而是节律失败：孩子一次刷五十张、连停三天，觉得宠物卡住；家长钉错词书，课堂单元词迟迟不出现；孩子追宠物库召唤，主词书进度条几乎不动。续篇把我当作产品法律的规则写清楚——不是营销口号。</p>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/login.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 登录页 — 注册到进化的五步路径">
+  <figcaption><code>login.png</code> — 五步习惯脊柱仍然成立。</figcaption>
+</figure>
+
+<h2>学习节律：小日课优于英雄式突击</h2>
+<p>「今日单词」故意保持小负荷——归档截图大约十词，进度如 <strong>1 / 10</strong>，底部认识 / 不认识按钮按拇指尺寸设计。产品赌注是节律：明天再来，源芯片与主词书对齐，XP 跟真实「认识」结果走，而不是跟翻页次数走。若为了显得「认真」把日队列拉爆，完成率会塌，宠物经验会变成愧疚仪表盘。</p>
+<p>跟家庭沟通时我推荐的操作节律：</p>
+<ol>
+  <li><strong>先钉一本主词书</strong>——沪教或人教，与课堂一致。</li>
+  <li><strong>完成今日队列</strong>，哪怕很短；打卡中途不要换第二本。</li>
+  <li><strong>大方点「不认识」</strong>——纠错仍应进入学习状态；隐瞒不会等于间隔重复。</li>
+  <li><strong>先 Study 再 Pets</strong>——上学日晚上先干活再情感反馈。</li>
+  <li><strong>日期翻过就停</strong>——明天的队列是功能，不是提前刷完的惩罚。</li>
+</ol>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/learn%20vocabulary.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 今日单词闪卡 pilot 与认识/不认识">
+  <figcaption><code>learn vocabulary.png</code> — 日课闪卡与教材来源条。</figcaption>
+</figure>
+
+<h2>沪教同步细节：信任在这里赢或输</h2>
+<p>「词书学习」屏决定家长信不信你。归档里置顶示例是<strong>沪教版 · 五年级上</strong>，芯片含人教 PEP（2026 秋）、外研 NEW、沪教 NEW，以及小学/初中切换。卡片展示单元数与进度条。关键产品契约是：<strong>设为每日打卡主词书之后，「今日单词」来源条必须显示同一出处。</strong>两者若漂移，家长会正确判定 App 在装饰。</p>
+<p>上线后的同步教训：</p>
+<ul>
+  <li>界面版本名要跟学校封面印刷一致——芯片行不要发明营销别名。</li>
+  <li>单元进度应在学生对该单元词点「认识」时前进，而不是只打开词书卡片。</li>
+  <li>允许周中切换主词书，但打卡队列应从新书重建，而不是悄悄混入旧残留。</li>
+  <li>通用年级与「其他」词库放在别的页签，让「教材同步」继续做沪教小学英语的默认叙事。</li>
+</ul>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/textbook.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 词书学习 — 人教与沪教教材同步及进度">
+  <figcaption><code>textbook.png</code> — 教材对齐列表与主词书切换。</figcaption>
+</figure>
+
+<h2>宠物进化规则：XP 被允许意味什么</h2>
+<p>「我的宠物」展示出战体，例如哪吒灵火蛋：阶段、等级、金阶、战力、经验条、口味文案。裂纹蛋比成品立绘更能卖进化期待——但规则必须无聊地公平：</p>
+<ul>
+  <li><strong>学习 XP 是脊柱</strong>——认识结果与诚实纠错喂养成；召唤外观不得压过单元完成。</li>
+  <li><strong>出战 vs 宠物库</strong>——已拥有可设出战；未拥有指向召唤。品牌 SSR 石猿不该暗示充值可替代打卡。</li>
+  <li><strong>战力是给孩子看的记分板</strong>——真掌握仍在词汇进度条。文案绝不能写稀有度等于英语成绩。</li>
+  <li><strong>对话是练习不是神谕</strong>——按住说话的气泡保持短句、双语友好；弱网与拒麦是常态，不是边角。</li>
+</ul>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/pet.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 我的宠物 — 哪吒 SSR 灵火蛋与经验条">
+  <figcaption><code>pet.png</code> — 进化阶段与出战详情。</figcaption>
+</figure>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/Pet%20Dialogue.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 宠物对话 — 按住说话与哪吒蛋">
+  <figcaption><code>Pet Dialogue.png</code> — 养成场景里的轻量口语练习。</figcaption>
+</figure>
+
+<figure class="article-figure">
+  <img src="../original/wordpet-app/Pet%20Collection.png" width="390" height="844" loading="lazy" decoding="async" alt="WordPet 宠物库网格 — SSR 石猿与学习向宠物">
+  <figcaption><code>Pet Collection.png</code> — 稀有度网格；召唤保持支线。</figcaption>
+</figure>
+
+<h2>把 wordpet.aogl.cn 放在 aogl.cn 旁边上线后的教训</h2>
+<p>产品待在兄弟源站，认证 cookie 不会污染静态编辑站。在 aogl.cn 上我用英文界面文件名归档截图（含空格），标记里做百分号编码；题图仍进 <code>upload/articles/</code> 封面流程。面向 AdSense 的长文需要第一人称证据：照抄版本字符串、展示认识/不认识、承认召唤不得覆盖打卡。短语种保持存根；厚英/中承担审阅权重——与 EatToday、世界之最同一模式。</p>
+<p>若明天重做功能，我仍拒绝三件事：未经家长确认就用校名猜测自动钉书；仅凭浏览量自动进化宠物；以及深链 Google 搜索的 SEO 药丸而不是直播 App。习惯产品死在为仪表盘优化、不为明天的十个词优化的那一刻。</p>
+<p>再补一层上线后的运营细节：底栏虽是首页 / 学习 / 宠物 / 我的四个对等入口，但上学日晚上仍应先学习再宠物。首页负责聚合任务，我的负责账号设置，宠物负责庆祝，只有学习页拥有教材契约。接到咨询时，我先讲这套优先级，再谈稀有度网格。这样续篇才能钉在「节律与进化规则」，而不是滑回功能巡礼。</p>
+<p>关于沪教单元与打卡队列的对齐，我还坚持两条工程纪律：词表变更必须可追溯到版本与册次，不能只在后台静默替换字符串；进度条的分母应以当前主词书可见单元为准，避免切换版本后出现「突然 100%」或「突然归零」却没有解释文案。家长对异常进度极度敏感，透明比漂亮动画更重要。宠物对话里的例句也应优先复用今日队列里的词，让口语练习回扣打卡，而不是另开一套无关闲聊语料。</p>
+<p>把 WordPet 写进 aogl.cn 的 life Hub，是为了让审阅者与家长都能在静态站看到证据链：品牌图、登录五步、词书芯片、闪卡按钮、蛋期出战、宠物库。续篇补充的是规则与教训——日课要小、主书要钉死、进化要跟认识走、召唤不能压过单元。打开 <a href="https://wordpet.aogl.cn/" target="_blank" rel="noopener noreferrer">https://wordpet.aogl.cn/</a> 对照 <code>original/wordpet-app/</code>，比再读一页口号有用。</p>
+
+<h2 id="article-seo-keywords">相关</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="https://wordpet.aogl.cn/" target="_blank" rel="noopener noreferrer">打开 WordPet</a>
+  <a class="pill" href="/articles/index.html">全部原创</a>
+  <a class="pill" href="/articles/wordpet-app-vocabulary-pet-20260715.html">WordPet 前篇</a>
+</div>

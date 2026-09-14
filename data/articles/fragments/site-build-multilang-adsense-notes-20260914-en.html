@@ -1,0 +1,51 @@
+<p>This is a <strong>first-person build log</strong> for aogl.cn itself—not a third-party tutorial and not a scraped “how to monetize” outline. I maintain a static multilanguage editorial site that also hosts original demos and sibling apps (EatToday, WordPet, Worlds Greatest). The practical question AdSense reviewers and fellow builders keep asking is simple: <strong>how does the pipeline turn source HTML into locale sites, which pages stay indexable, and where do ads actually load?</strong> This note answers with the real scripts under <code>scripts/</code> and <code>js/adsense.js</code>, dated 2026-09-14.</p>
+
+<figure class="article-figure">
+  <img src="../og-default.png" width="1200" height="675" loading="lazy" decoding="async" alt="aogl.cn default Open Graph brand image used as this article hero source">
+  <figcaption><code>og-default.png</code> — site-level Open Graph default; cover WebP is generated into <code>upload/articles/</code>.</figcaption>
+</figure>
+
+<h2>Mental model: one multilang source, many locale outputs</h2>
+<p>Almost every public page starts life under <code>_multilang/</code>. That folder holds bilingual (or multilingual) source documents with <code>lang-*</code> class spans for English, Simplified Chinese, Japanese, Korean, French, Russian, and Arabic. I do not hand-maintain seven full copies of every paragraph for hubs and static pages. Instead, <code>scripts/build-seo-locale-pages.mjs</code> reads <code>_multilang/*.html</code>, then writes:</p>
+<ul>
+  <li><strong>Site root</strong> — Simplified Chinese as the primary Chinese surface (canonical on itself).</li>
+  <li><strong><code>/zh/</code></strong> — Traditional Chinese via OpenCC conversion from the Simplified <code>lang-zh</code> blocks.</li>
+  <li><strong><code>/en/</code>, <code>/ja/</code>, <code>/ko/</code>, <code>/fr/</code>, <code>/ru/</code>, <code>/ar/</code></strong> — monolingual locale trees.</li>
+</ul>
+<p>That split is the spine of the site. If you edit only a locale file under <code>/en/</code> and forget <code>_multilang/</code>, the next full locale rebuild will overwrite you. The durable edit surface for shared chrome is always the multilang source (plus article fragment files described below).</p>
+
+<h2>Articles: JSON hubs + htmlFragments</h2>
+<p><code>scripts/build-articles.mjs</code> reads every file in <code>data/articles/*.json</code>. Each JSON is a small hub: slug, layout, dates, hero paths, seven-language titles/descriptions, and an <code>htmlFragments</code> map pointing at files under <code>data/articles/fragments/</code>. The builder writes <code>_multilang/articles/&lt;slug&gt;.html</code>, refreshes the homepage <code>INDEX_ORIGINALS</code> markers, and rebuilds <code>_multilang/articles/index.html</code>. Thick English and Chinese fragments carry AdSense review weight; short ja/ko/fr/ru/ar stubs keep hreflang surfaces honest without pretending every locale is a full essay.</p>
+<p>Hero covers are not invented stock photography. <code>npm run generate-article-covers</code> runs <code>scripts/generate-article-covers.py</code>, which crops <code>heroImageSource</code> into a 1200×675 WebP at <code>upload/articles/&lt;slug&gt;.webp</code>. For this page the source is the committed site asset <code>og-default.png</code> (cover generated separately because the Python helper skips the literal string <code>og-default.png</code> as a safety default).</p>
+
+<h2>Navigation injection and homepage composition</h2>
+<p>Primary nav is not copy-pasted across fifty templates. <code>scripts/inject-site-nav.mjs</code> injects shared markup from <code>scripts/site-nav.mjs</code> into <code>_multilang/index.html</code> between <code>SITE_NAV_AUTO_START</code> / <code>SITE_NAV_AUTO_END</code> markers. Related injectors (<code>inject-categories.mjs</code>, <code>inject-index-pills.mjs</code>, <code>inject-tools-directory.mjs</code>, <code>update-reading.mjs</code>) keep the homepage rails mechanical. The full orchestration lives in <code>package.json</code> as <code>build-site</code>: articles → briefs → tool guides → hubs → nav → reading → contact → SEO locales. I run pieces when I need them; I avoid blind full rebuilds mid-edit so fragment drafts are not half-overwritten.</p>
+
+<h2>seo-index-policy: ARTICLE_ARCHIVE_NOINDEX</h2>
+<p><code>scripts/seo-index-policy.mjs</code> is the policy brain for robots, sitemap membership, and “is this thin archive?” decisions. Ranking tables, chart dumps, and buy-guide listicles sit in <code>ARTICLE_ARCHIVE_NOINDEX_SLUGS</code>. Those URLs stay useful as human bookmarks and hub cards, but they ship with <code>noindex,follow</code> and are kept out of the primary AdSense surface. Original demos, production notes, and first-party app essays—EatToday, WordPet, Worlds Greatest, this build log—stay indexable.</p>
+<p>Related constants matter too: <code>NOINDEX_PATH_PREFIXES</code> covers aggregator rails like <code>hub-links/</code>, <code>briefs/</code>, and <code>tool-guides/</code>; <code>NOINDEX_STATIC_PAGES</code> covers hub verticals such as <code>tech.html</code> and <code>life.html</code>; <code>SITEMAP_STATIC_PAGES</code> whitelists only a small set of static pages plus indexable articles. When people ask why the homepage is quiet and the hubs feel sparse for ads, the answer is intentional policy—not a broken publisher tag.</p>
+
+<h2>AdSense only on indexable primary pages</h2>
+<p><code>js/adsense.js</code> always ships on many templates, but it does <strong>not</strong> always request <code>adsbygoogle.js</code>. The loader checks <code>isContentPrimaryPage()</code>: about/changelog qualify; article URLs qualify only when the page meta robots content does not include <code>noindex</code>. Localhost, <code>?noads=1</code>, <code>localStorage aogl-disable-ads</code>, and <code>window.AOGL_DISABLE_ADSENSE</code> also skip the network call. That pairing—server/build policy sets robots, client loader respects robots—is what keeps auto ads off thin archives while still allowing them on thick originals.</p>
+
+<h2>Homepage slim outbound</h2>
+<p>Earlier AdSense remediation removed dense bookmark walls and Google-search SEO pills. <code>scripts/adsense-slim-outbound.mjs</code> documents the one-shot helpers: slim the homepage <code>#pillars</code> section to a short lead that points at editorial demos and About, and strip <code>google.com/search</code> pills from article fragments. Current article footers should only pill to real app URLs and <code>/articles/index.html</code> (plus maybe home originals). That is not “less SEO”—it is clearer primary content with fewer outbound distractions for reviewers.</p>
+
+<h2>Day-to-day edit loop I actually use</h2>
+<ol>
+  <li>Author or revise <code>data/articles/&lt;slug&gt;.json</code> and thick <code>*-en.html</code> / <code>*-zh.html</code> fragments.</li>
+  <li>Prepend the slug into <code>data/tech-hub-articles.json</code> or <code>data/life-hub-articles.json</code> when the piece belongs on a hub rail.</li>
+  <li>Generate covers if <code>heroImageSource</code> changed.</li>
+  <li>Run <code>npm run build-articles</code> (and later locale split) when ready to publish HTML—not while drafting prose.</li>
+  <li>Verify robots on archive vs primary pages before expecting ads.</li>
+</ol>
+<p>Sibling apps stay on their own origins (<code>eattoday.aogl.cn</code>, <code>wordpet.aogl.cn</code>, <code>mnm.aogl.cn</code>). The editorial site documents them with first-screen HTML and original screenshot archives; the interactive products keep their own cookies and deploy cadence. That boundary is as important as any AdSense toggle.</p>
+
+<h2>What this page is not claiming</h2>
+<p>This is not a guarantee of AdSense approval, CPC, or traffic. Policy files change when Google’s review signals change. Script names above are accurate as of 2026-09-14 in this repository; if you fork the site, re-read the files rather than trusting a blog paraphrase. The durable lesson is architectural: <strong>separate multilang authoring from locale emission, separate bookmark archives from indexable essays, and load ads only where the HTML is worth indexing.</strong></p>
+
+<h2 id="article-seo-keywords">Related</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/articles/index.html">All originals</a>
+  <a class="pill" href="/index.html#originals">Home originals</a>
+</div>

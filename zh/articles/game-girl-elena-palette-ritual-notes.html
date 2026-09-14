@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Hard palette fields · five expression slots · v1.0 maintenance contract","alternativeHeadline":"艾琳娜配色与仪式 UI：HTML 设定表维护手记","datePublished":"2026-06-18","dateModified":"2026-06-22","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/game-girl-elena-palette-ritual-notes.html"},"url":"https://aogl.cn/zh/articles/game-girl-elena-palette-ritual-notes.html","inLanguage":"zh-Hant","description":"Follow-up to Elena (Poem of the Sea Wind): how palette rows, expression discs, and static HTML in original/game-girl stay maintainable—editorial notes, not a shipped game asset pack.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"Hard palette fields · five expression slots · v1.0 maintenance contract","alternativeHeadline":"艾琳娜配色与仪式 UI：HTML 设定表维护手记","datePublished":"2026-06-18","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/game-girl-elena-palette-ritual-notes.html"},"url":"https://aogl.cn/zh/articles/game-girl-elena-palette-ritual-notes.html","inLanguage":"zh-Hant","description":"Follow-up to Elena (Poem of the Sea Wind): how palette rows, expression discs, and static HTML in original/game-girl stay maintainable—editorial notes, not a shipped game asset pack.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zht">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -79,22 +79,46 @@
   <figcaption>在線設定表：色板、表情行與頁腳「Official Character Design」語氣（僅版式）。</figcaption>
 </figure>
 <h2>五個表情圓：CSS 濾鏡佔位</h2>
-<p>每個情緒圈複用臉部裁剪 + <code>filter</code>，是刻意的技術債：先讓版式可發佈，再補五張手繪表情。對外交付前必須換成真實裁剪——本站保留濾鏡是為了固定 UX 槽位（溫柔 / 微笑 / 沉思 / 堅定 / 喜悅），避免日後插圖到位時佈局跳動。</p>
+<p>每個情緒圈複用臉部裁剪 + <code>filter:saturate/brightness/hue-rotate</code>，是刻意的技術債：先讓版式可發佈，再補五張手繪表情。對外交付前必須換成真實裁剪——本站保留濾鏡是為了固定 UX 槽位（溫柔 / 微笑 / 沉思 / 堅定 / 喜悅），避免日後插圖到位時佈局跳動。</p>
 <h2>儀式 UI 文案</h2>
-<p>頁腳「Official Character Design · Confidential」營造 AAA 管線感，在本站僅表示<strong>版式語氣</strong>：無 NDA、無發行商、無 SKU。若開源 HTML，會在頁腳上加一句免責；目前海島幻想與假保密欄的反差也是 Demo 的一部分。</p>
+<p>頁腳「Official Character Design · Confidential」營造 AAA 管線感，在本站僅表示<strong>版式語氣</strong>：無 NDA、無發行商、無 SKU。試玩者說有頁腳欄設定表更「像真的」——即便沒有保密協議。若開源 HTML，會在頁腳上加一句免責；目前海島幻想與假保密欄的反差也是 Demo 的一部分。</p>
 <h2>維護約定（v1.0）</h2>
 <ol>
   <li>更換 <code>ChatGPT-Image2.png</code> → 必須重查三視圖的 <code>object-position</code>。</li>
   <li>改 hex 色板 → 更新文章 <code>dateModified</code> 與 changelog 一條。</li>
-  <li>加第六個表情 → 先改 HTML 網格，再畫圖。</li>
+  <li>加第六個表情 → 先改 HTML 網格，再畫圖——絕不反過來。</li>
   <li>不在此頁嵌 WebGL / Live2D；動畫另開文章並寫清範圍。</li>
 </ol>
 <h2>配套工具書籤</h2>
-<p>出圖探索：<a href="/zh/tool-guides/gemini-post.html">Gemini</a>、<a href="/zh/tool-guides/midjourney-post.html">Midjourney</a> 備忘。改表代碼：<a href="/zh/tool-guides/cursor-post.html">Cursor</a>。模型政策：<a href="/zh/briefs/index.html">快訊</a>。</p>
+<p>出圖探索：<a href="/zh/tool-guides/gemini-post.html">Gemini</a>、<a href="/zh/tool-guides/midjourney-post.html">Midjourney</a> 備忘。改表代碼：<a href="/zh/tool-guides/cursor-post.html">Cursor</a>。模型政策提醒：<a href="/zh/briefs/index.html">快訊</a>。這些鏈接不是背書，是我的目錄條目。</p>
 <h2>與遊戲 Hub 的關係</h2>
-<p>我在 <a href="/zh/games.html">games.html</a> 掃第一方標題，再回到 <code>original/game-girl/</code> 做個人美術實驗——流程見 <a href="games-hub-generative-art-workflow.html">遊戲 Hub × 生成式角色美術工作流</a>。商店 RSS 不會自動改設定表。</p>
+<p>我在 <a href="/zh/games.html">games.html</a> 掃第一方標題，再回到 <code>original/game-girl/</code> 做個人美術實驗——流程見 <a href="games-hub-generative-art-workflow.html">遊戲 Hub × 生成式角色美術工作流</a>。商店 RSS 不會自動改設定表；仍需人合併決策。</p>
 <h3>邊界</h3>
-<p>無骨骼、無引擎包、無抽卡數值。第三篇只會在新實物（例如手繪五表情）上線時出現，而不是為堆關鍵詞。</p></article>
+<p>無骨骼、無引擎包、無抽卡數值、無配音選角。第三篇只會在新實物（例如手繪五表情）上線時出現，而不是為堆關鍵詞。</p>
+<h2>服裝 SVG 格：為何用內聯矢量佔位</h2>
+<p>設定表裡的服裝拆解用簡單內聯 SVG 剪影——不是最終服裝平面圖。它們存在的意義是：以後換 PNG 裁剪時，版面寬度仍穩定。每格標籤寫「主服 / 腰帶 / 頭飾 / 法杖」中文，因為維護時的第一讀者是我自己；英文文章向訪客解釋意圖。我拒絕把柵格服裝片嵌進 SVG 層；柵格只屬於三視圖條。</p>
+<h2>強調色硬淘汰規則</h2>
+<ul>
+  <li><strong>杖金（#D4AF37）</strong> — 生成結果若偏橙銅，棄；法杖必須讀成金屬，不是木頭。</li>
+  <li><strong>冠綠（#2E8B57）</strong> — 只用於藤冠；絕不滲進頭髮高光。</li>
+  <li><strong>寶石藍（#4169E1）</strong> — 留給潮沙杖上的寶珠；不復用到瞳孔或唇彩。</li>
+</ul>
+<p>5 月 19 日有一張探索圖把寶石藍塗到瞳孔上，我本地留作反例，但未放進首發文的公開圖庫。</p>
+<h2>表情濾鏡數值（佔位時代）</h2>
+<p>當前 CSS 在共享臉部裁剪上用輕度濾鏡：溫柔（亮度 +5%）、微笑（飽和 +10%）、沉思（亮度 −8%）、堅定（色相旋轉 5deg）、喜悅（飽和 +12%）。這些數字不是美學目標——只是在手繪圓盤到位前防止佈局跳動。寫在這裡，是為了換成真實 PNG 時能 diff。</p>
+<h2>我實際跟蹤的版本史</h2>
+<ol>
+  <li><strong>2026-05-18</strong> — 首張三視圖 + 設定表 HTML 腳手架。</li>
+  <li><strong>2026-05-20</strong> — 色板行鎖定；探索圖庫定稿。</li>
+  <li><strong>2026-06-03</strong> — 首發文上線（<a href="game-girl-elena-sea-wind-reference.html">海風之詩</a>）。</li>
+  <li><strong>2026-06-18</strong> — 配色與儀式 UI 手記拆到本 URL。</li>
+</ol>
+<p>任何 hex 或濾鏡改動都會 bump 最後一行並寫 changelog 一條——禁止靜默改。</p>
+<h2>換圖時的三視圖檢查清單</h2>
+<p>換 <code>ChatGPT-Image2.png</code> 後，我會按順序核：正面臉部中心是否仍落在 <code>object-position</code> 目標；側面耳線是否被裁切；背面發冠是否露出藤蔓。任何一處偏了，先改 CSS 裁剪，再考慮重出圖。設定表是維護面，不是「再生成一次就好」的藉口。</p>
+<h2>中文加厚：調色拒絕規則與設定表</h2>
+<p><code>elena_character_sheet.html</code> 把調色、表情濾鏡與服裝格子放在同一頁，是為了避免「散圖文件夾」無法被審核員讀懂。金色點綴、冷綠陰影、群青輔色一旦同時搶戲，角色就會像貼紙而不是可落地的設定。我在手記裡寫拒絕規則，不是為了玄學，而是給未來的自己一份可執行的檢查表：換一版圖之前，先看色相是否破壞輪廓可讀性。</p>
+<p>與海風參考篇分工明確：本篇管<strong>儀式感與色板契約</strong>，海風篇管場景光與道具。兩篇都掛在 Games Hub，但各自有獨立過程段落與截圖證據，避免一篇空殼互相引流卻沒有正文。</p></article>
     </div>
   </main>
   <footer class="site-footer">

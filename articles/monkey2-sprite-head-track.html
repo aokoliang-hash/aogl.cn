@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"sprite_hd_120 · angle calibration · embedded HTML · source MP4","alternativeHeadline":"猴子精灵图转头：120 帧雪碧图与桃子光标互动","datePublished":"2026-05-18","dateModified":"2026-06-01","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/articles/monkey2-sprite-head-track.html"},"url":"https://aogl.cn/articles/monkey2-sprite-head-track.html","inLanguage":"zh-CN","description":"Original aogl.cn notes: extract a 120-frame monkey head-turn sprite (10×12 grid) from keyed video, calibrate angle-to-frame (not naive linear mapping), and drive frames with the mouse—plus HD sprite sheets, calibration board, front frame, peach cursor, embeddable HTML demo, stills, and MP4 sources.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"sprite_hd_120 · angle calibration · embedded HTML · source MP4","alternativeHeadline":"猴子精灵图转头：120 帧雪碧图与桃子光标互动","datePublished":"2026-05-18","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/articles/monkey2-sprite-head-track.html"},"url":"https://aogl.cn/articles/monkey2-sprite-head-track.html","inLanguage":"zh-CN","description":"Original aogl.cn notes: extract a 120-frame monkey head-turn sprite (10×12 grid) from keyed video, calibrate angle-to-frame (not naive linear mapping), and drive frames with the mouse—plus HD sprite sheets, calibration board, front frame, peach cursor, embeddable HTML demo, stills, and MP4 sources.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zh">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -71,7 +71,7 @@
       </div>
       <article class="article-shell__body" lang="zh-Hans"><p>这是 aogl.cn 的一篇<strong>猴子精灵图转头</strong>个人原创手记：把短<strong>转头视频</strong>抽成<strong>雪碧图（sprite sheet）</strong>，用 contact sheet 做<strong>角度到帧号校准</strong>（禁止简单用 <code>angle/360*总帧数</code> 线性映射），再在浏览器里用<strong>鼠标位置</strong>驱动 <code>background-position</code> 切换帧，并配上<strong>桃子自定义光标</strong>。利于检索的词包括：<em>精灵图转头、CSS 雪碧图、鼠标跟随角色、绿幕抠图 WebP</em>。</p>
 <h2>流程概览</h2>
-<p>抽帧，制作<strong>校准总表</strong>确认真实朝向，建立角度键位表，打包 <strong>10x12 共 120 帧</strong> 到 <code>sprite_hd_120.webp</code>，在本地浏览器验证上、右、下、左、斜向与正中。</p>
+<p>抽帧，制作<strong>校准总表</strong>确认真实朝向，建立角度键位表，打包 <strong>10×12 共 120 帧</strong> 到 <code>sprite_hd_120.webp</code>，在本地浏览器验证上、右、下、左、斜向与正中。</p>
 <figure class="article-embed">
   <img src="/original/monkey2/calibration_sheet.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="猴子转头精灵图角度与帧号校准 contact sheet">
   <figcaption><code>calibration_sheet.jpg</code>：角度与帧号对照用总表。</figcaption>
@@ -83,19 +83,19 @@
   <figcaption><code>frame_front.webp</code>：正面姿态参考。</figcaption>
 </figure>
 <h2>在线演示：120 帧高清 + 桃子光标</h2>
-<p>移动鼠标：角色在 <code>sprite_hd_120.webp</code> 上切换 <strong>120 个背景位置</strong>（10 列 x 12 行）；桃子图跟随指针，<code>pointer-events: none</code> 避免挡住点击。</p>
+<p>移动鼠标：角色在 <code>sprite_hd_120.webp</code> 上切换 <strong>120 个背景位置</strong>（10 列 × 12 行）；桃子图跟随指针，<code>pointer-events: none</code> 避免挡住点击。</p>
 <figure class="article-embed">
   <iframe src="/original/monkey2/gemini-code-1778834915677.html" title="猴子转头 120 帧精灵图与桃子光标演示" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <figcaption>嵌入：<code>original/monkey2/gemini-code-1778834915677.html</code>（<code>sprite_hd_120.webp</code>、<code>cursor.png</code>）。</figcaption>
 </figure>
 <h2>雪碧图资源</h2>
-<p>三份 WebP 记录迭代：标准密度、高清版、最终 <strong>120 帧</strong> 生产用网格。</p>
+<p>三份 WebP 记录迭代：标准密度、高清版、最终 <strong>120 帧</strong> 生产用网格，均在 <code>original/monkey2/</code>。</p>
 <div class="article-gallery">
   <img src="/original/monkey2/sprite.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图标准分辨率 WebP">
   <img src="/original/monkey2/sprite_hd.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图高清 WebP">
   <img src="/original/monkey2/sprite_hd_120.webp" width="400" height="400" loading="lazy" decoding="async" alt="猴子转头精灵图 120 帧 10x12 网格 WebP">
 </div>
-<h2>源片静帧 turn_head_1-10</h2>
+<h2>源片静帧 turn_head_1–10</h2>
 <p>十张编号 PNG 在打包全网格前抽样旋转弧线，便于质检与图库 alt 覆盖。</p>
 <div class="article-gallery">
   <img src="/original/monkey2/turn_head_1.png" width="320" height="320" loading="lazy" decoding="async" alt="转头静帧 1">
@@ -130,7 +130,31 @@
   <img src="/original/monkey2/Gemini_Generated_Image_lwofgblwofgblwof.png" width="512" height="512" loading="lazy" decoding="async" alt="生成式猴子角色锚点备选风格">
 </div>
 <h3>离线脚本</h3>
-<p><code>gemini-code-*.py</code> 与 <code>txt.txt</code> 记录抽帧与抠像规则。本文固定公开 HTML、图片与视频路径，便于 SEO 与长期引用。</p></article>
+<p>Python 助手 <code>gemini-code-1778834954429.py</code>、<code>gemini-code-1778835935559.py</code>、<code>gemini-code-1778835961926.py</code> 与 <code>txt.txt</code> 记录抽帧与抠像规则（保留主体、避免吃掉白/灰）。本文固定公开 HTML、图片与视频路径，便于 SEO 与长期引用。</p>
+<h2>校准表 vs 线性角度公式</h2>
+<p>浪费我一下午的错误，是假设视频帧均匀就等于罗盘度数均匀。转头在侧面附近会压缩、在四分之三角度附近会拉伸。我打印 <code>calibration_sheet.jpg</code>，每隔约 30° 标真实朝向，再在演示 JS 里建查找表。之后斜向才不再「跳」到错误帧。若复用这条管线，请把校准表当强制项，而不是可有可无的 contact print。</p>
+<h2>抠像与 WebP 打包笔记</h2>
+<p>第一版残留灰色棚拍背景像素，吃进 WebP alpha，缩放时出现光晕。第二版对绿幕抠图并保守抑制溢色（写在 <code>txt.txt</code>）。打包顺序是行优先 10×12；高清网格偏重（数 MB），所以文章懒加载 iframe，并另放 <code>sprite.webp</code> 给慢网速对比。目录里还有 <code>sprite_hd_120 bak.webp</code> 备份，不进生产 HTML。</p>
+<h2>桃子光标交互</h2>
+<p>桃子 PNG 故意有点傻——证明指针跟踪是活的，又不挡住角色。<code>pointer-events: none</code> 在光标层上不可妥协；没有它，移动端点按到不了滚动容器。我测过八个罗盘点加正中；任何仍指向帧 0 的角度，意味着查找表还要在校准表里加一行。</p>
+<h2>与猴子短片文章的关系</h2>
+<p>这套精灵图是同一角色家族从 <a href="monkey-short-bts.html">猴子短片幕后</a> 分出来的技术支线，交付物不同：这里关心角向保真与体积，那里关心故事节拍。拆成两个 URL，避免一页变成互不相关的 MP4 杂烩——即便素材很大，AdSense 也容易判成「薄内容」。</p>
+<h2>演示里的帧索引算法</h2>
+<p>在 10×12 网格上，帧号 <code>i</code> 对应列 <code>i % 10</code>、行 <code>floor(i / 10)</code>。背景位置为 <code>-col * frameWidth</code>、<code>-row * frameHeight</code>。查找表把罗盘桶（N、NE、E…）映射到索引，而不是映射到度数，因此侧面帧比正脸占更多条目。把表写进 <code>txt.txt</code>，免得每次重导 WebP 都重推角度。</p>
+<h2>内存与网络预算</h2>
+<p><code>sprite_hd_120.webp</code> 最重；我懒加载 iframe，图库里保留较轻的 <code>sprite.webp</code> 做对比截图。慢网上演示仍可先用正面参考画出帧 0，等网格解码。避免在同一 iframe 里加载三份 WebP 母版——生产 HTML 只装 120 帧网格。</p>
+<h2>发布前 QA 脚本</h2>
+<ol>
+  <li>指针移到八个罗盘点 + 正中，在开发者工具记下帧索引。</li>
+  <li>移出热区，确认自定义光标隐藏、图层回到中性。</li>
+  <li>每次重导精灵图后，禁用缓存至少完整刷新一次。</li>
+</ol>
+<p>过完这套脚本，才算本篇「完成」——不是唇形同步或游戏级绑定。替换 WebP 母版时，我会在提交说明里写一行最终帧索引快照，方便回滚。</p>
+<h2>备份与不上架的文件</h2>
+<p><code>sprite_hd_120 bak.webp</code> 是糟糕打包后的本地安全副本，不链进演示 HTML。光标只有 <code>cursor.png</code>。中间抠像遮罩与绿幕原片不进文章图库——那会塞满 alt、也容易被看成「薄图库」。公开契约就是：校准表 → 正面帧 → 120 帧 WebP → 桃子光标演示。</p>
+<h2>何时才会重开这条管线</h2>
+<p>只有斜向映射在重导后出错，或 WebP 体积逼我再做一版给手机的轻量网格时，我才重开文件夹。只改服装外观却没有新角度表，不够成为重新发布的理由——宁愿本页稳定、在此写明限制，也不为没读者收益的素材 churn。</p>
+<p>相关阅读：<a href="/articles/index.html">文章索引</a> · <a href="monkey-short-bts.html">猴子短片幕后</a> · <a href="character-turnaround-walk.html">角色四视图与行走</a></p></article>
     </div>
   </main>
   <footer class="site-footer">

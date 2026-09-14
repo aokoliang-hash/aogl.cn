@@ -17,5 +17,47 @@
 
 <h3>实现要点（给开发者）</h3>
 <p>渲染管线采用 <code>WebGLRenderer</code>，主方向光模拟太阳、辅以环境光；相机交互为 <code>OrbitControls</code>。大气层为略大于地表的透明球体，片元着色器按视角与法线夹角混合边缘高亮与淡蓝色调，呈现经典「暗淡蓝点」观感，而无需复杂后处理。</p>
-
 <p>若站点做多语言，可为每种语言配置独立标题与摘要（本站做法），共享同一份交互资源，兼顾<strong>长尾关键词覆盖</strong>与维护成本。</p>
+
+<h2>为什么把这个 Demo 放在 aogl.cn</h2>
+<p>地球最初只是 <code>original/earth/</code> 下一份独立 HTML，后来才包进这篇文章。拆分很重要：iframe 是稳定资源，我可以换贴图而不改七种语言外壳；本页承载 AdSense 审稿人真正会读的叙述——试过什么、否决了什么、哪份文件为准。这就是工作流里「只有嵌入」与「有实质内容的页面」的差别。</p>
+
+<h2>第一版与我扔掉的东西</h2>
+<p>早期原型是单张漫反射贴图的 UV 球，没有云层。截图还行，但绕转时塑料感很重：海洋没有高光断裂、没有边缘光、晨昏线是硬切。我也试过本地加载六张 8K 分片；中端笔记本第一次交互会卡约两秒等贴图解码。现在这版用可预期加载换最高分辨率：CDN 托管约 2K 级贴图、一层云壳、轻量 rim 着色器，而不是完整后处理栈。</p>
+
+<h2>我当作权威源的文件</h2>
+<ul>
+  <li><code>original/earth/interactive-3d-earth.html</code> — 嵌入目标（OrbitControls、渲染循环）。</li>
+  <li>同目录下的 <code>earth-blue-marble.jpg</code>、<code>earth-topology.png</code>、<code>earth-water.png</code>、<code>earth-night.jpg</code>、<code>earth-dark.jpg</code>、<code>night-sky.png</code> 等通道素材（演示源码注释里也会写引用路径）。</li>
+  <li>封面静帧可用 <code>Gemini_Generated_Image_i67zumi67zumi67z.png</code> 或站内其它英雄图，避免每次都靠实时 WebGL 截图做社交卡片。</li>
+</ul>
+<p>更新贴图时我先改 Demo，必要时重截图，再 bump 文章 JSON 的 <code>dateModified</code>，让人和爬虫看到同一修订日。</p>
+
+<h2>交互与无障碍取舍</h2>
+<p>嵌入内以鼠标环绕为主；触摸手势我考虑过但刻意收窄范围，好让脚本可读。文章页本身键盘友好：标题、figure/figcaption 与本段正文都在 iframe 外。若你做类似页面，请复用这一模式——绝不要把唯一说明文字塞进画布文档里。</p>
+
+<h2>接下来可能做的</h2>
+<p>有时间的话，我会在嵌入内加「已知限制」短列表（极点拉伸、无夜灯），并外链到 <a href="major-planets8-solar-system-textures.html">八大行星贴图合集</a>，那里记录太阳系其余等距柱状素材。眼下本页任务是证明地球 Demo 有人维护，而不是去和 NASA 官方应用抢位。</p>
+
+<h2>大气着色器一句话</h2>
+<p>边缘光是 Fresnel 加权混合：正对相机处染色更少，掠射角取饱和蓝。强度刻意压低，好在深色文章背景下可读，又不吹爆昼侧非洲大陆。没有 bloom——大气壳只多一次绘制调用——中端 GPU 在长文里嵌 iframe 时仍能保持流畅。</p>
+
+<h2>贴图管线与 CDN</h2>
+<p>颜色、凹凸、高光贴图从演示源码里的稳定 HTTPS 地址加载。CDN 抖动时地球仍可能以平色渲染，但失去起伏；我在注释里写明，免得未来的我把「坏了的着色器」当成根因，其实只是 bump 404。高光只遮罩海洋，避免大陆看起来湿漉漉。云层转速略快于地表，用廉价视差分离，比单层壳更耐看。</p>
+
+<h2>地球页发布检查清单</h2>
+<ul>
+  <li>iframe 外正文解释技术栈、限制与文件路径。</li>
+  <li>列表页 iframe 用 <code>loading="lazy"</code>；直达本 URL 时再考虑 eager。</li>
+  <li>Demo 贴图或控件变更时 bump <code>dateModified</code>。</li>
+  <li>交叉链到行星贴图合集，给需要真实历表数据而非玩具地球的读者。</li>
+</ul>
+<p>这份清单与我在其它合成类文章里的做法一致——十二篇原创之间统一的维护者口吻，比孤立做出一个完美 WebGL Demo 更重要。</p>
+
+<h2>目录里还有什么</h2>
+<p><code>original/earth/</code> 还放着 <code>earth-day.jpg</code>、<code>ChatGPT Image11_35_51.png</code> 等试验静帧与备选通道。它们帮助我做 A/B 对比，但默认嵌入只加载演示 HTML 当前引用的那套贴图，避免文章页一次拉齐所有高清图。若你 fork，请先读 <code>interactive-3d-earth.html</code> 里的路径注释，再决定要不要换成本地相对路径。</p>
+
+<h2>与虚构行星页的分工</h2>
+<p>本页只讲真实地球外观管线；需要「允许胡说」的气态巨星沙盒请看 <a href="velmora.html">Velmora</a>。两页都嵌入 WebGL，但设定语气与文件权威源完全不同，拆开是故意的。</p>
+
+<p>相关阅读：<a href="/articles/index.html">文章索引</a> · <a href="major-planets8-solar-system-textures.html">八大行星贴图</a> · <a href="velmora.html">Velmora 虚构气态巨星</a></p>

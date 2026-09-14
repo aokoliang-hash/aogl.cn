@@ -32,7 +32,7 @@
     <script src="/js/gtag.js"></script>
   <script src="/js/adsense.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"games.html hot mix · no official art scraping · archive in articles/","alternativeHeadline":"游戏 Hub 快讯 × 生成式角色美术：个人工作流备忘","datePublished":"2026-06-18","dateModified":"2026-06-22","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/games-hub-generative-art-workflow.html"},"url":"https://aogl.cn/zh/articles/games-hub-generative-art-workflow.html","inLanguage":"zh-Hant","description":"How I read first-party headlines on games.html, run small generative look-dev passes, and publish honest notes under articles/—without scraping store art or writing reviews.","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Article","headline":"games.html hot mix · no official art scraping · archive in articles/","alternativeHeadline":"游戏 Hub 快讯 × 生成式角色美术：个人工作流备忘","datePublished":"2026-06-18","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/games-hub-generative-art-workflow.html"},"url":"https://aogl.cn/zh/articles/games-hub-generative-art-workflow.html","inLanguage":"zh-Hant","description":"How I read first-party headlines on games.html, run small generative look-dev passes, and publish honest notes under articles/—without scraping store art or writing reviews.","isAccessibleForFree":true}
 </script>
 </head><body class="locale-zht">
   <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
@@ -72,11 +72,11 @@
       <article class="article-shell__body" lang="zh-Hans"><p>本文把 aogl.cn 上兩個常分開看的部分連起來：<a href="/zh/games.html">遊戲 Hub</a>（Steam / 御三家 / 發行商第一方 RSS）與<a href="/zh/articles/index.html">原創文章</a>裡歸檔的生成式<strong>角色 look-dev</strong>。是個人週日流程——不是評測站、不是美術抓取教程，也與任何商店無隸屬關係。</p>
 <h2>週日循環（白話）</h2>
 <ol>
-  <li>跑完 <code>fetch-hub-news</code> 後打開 <code>games.html</code> 看 Hot mix。</li>
+  <li>跑完 <code>npm run fetch-hub-news</code> 後打開 <code>games.html</code> 看 Hot mix。</li>
   <li>挑美術向標題（重製、角色預告、風格指南）；純服務器維護類通常止步於 Hub。</li>
   <li>在 <a href="/zh/tool-guides/midjourney-post.html">Midjourney</a> 或 <a href="/zh/tool-guides/gemini-post.html">Gemini</a> 問窄問題：只要「配色 + 剪影」，不「復刻這張官方 KV」。</li>
-  <li>探索圖存 <code>original/項目名/</code> 並帶日期；偏離身份錨點的直接棄。</li>
-  <li>文件夾成熟後寫一篇誠實手記（HTML 設定表、contact sheet 或視頻）。</li>
+  <li>探索圖存 <code>original/&lt;項目名&gt;/</code> 並帶日期；偏離身份錨點的直接棄。</li>
+  <li>文件夾成熟後寫一篇誠實手記（HTML 設定表、contact sheet 或視頻）——案例如下。</li>
 </ol>
 <h2>明確不做的事</h2>
 <ul>
@@ -86,27 +86,45 @@
   <li><strong>不堆提示詞教程</strong> — 文章講取捨，不是 SaaS 說明書。</li>
 </ul>
 <h2>本站已有案例</h2>
+<p>下列文件夾從「標題啟發的 look-dev」長成了獨立 URL：</p>
 <ul>
-  <li><a href="game-girl-elena-sea-wind-reference.html">艾琳娜 · 海風之詩</a> — 海島祭司 HTML 設定表。</li>
-  <li><a href="game-girl-elena-palette-ritual-notes.html">艾琳娜配色與儀式 UI</a> — 設定表維護手記。</li>
-  <li><a href="role-girl-card-visual-study.html">角色卡牌視覺練習</a> — 白裙 contact sheet。</li>
-  <li><a href="character-turnaround-walk.html">角色設計手記</a> — 四視圖與行走循環。</li>
+  <li><a href="game-girl-elena-sea-wind-reference.html">艾琳娜 · 海風之詩</a> — 海島祭司 HTML 設定表與探索圖。</li>
+  <li><a href="game-girl-elena-palette-ritual-notes.html">艾琳娜配色與儀式 UI</a> — 同一設定表的維護手記。</li>
+  <li><a href="role-girl-card-visual-study.html">角色卡牌視覺練習</a> — 白裙 contact sheet 線。</li>
+  <li><a href="character-turnaround-walk.html">角色設計手記</a> — 四視圖與行走循環紀律。</li>
 </ul>
 <p>均非某商業遊戲的官方同人聲明，而是「跟著行業視覺做練習」的歸檔。</p>
 <h2>何時停在 RSS 就夠了</h2>
 <p>若標題只是停服維護，不必開生成工具、也不必新文章。遊戲頁作為<strong>閱讀軌</strong>已有價值；只有產出可檢查的 PNG / HTML / MP4 並寫好範圍段時，才新增 articles URL。</p>
 <h2>工具書籤</h2>
-<p>視頻：<a href="/zh/tool-guides/runwayml-post.html">Runway</a>；寫表：<a href="/zh/tool-guides/cursor-post.html">Cursor</a>；長文：<a href="/zh/tool-guides/claude-post.html">Claude</a>；查陌生引擎名：<a href="/zh/tool-guides/perplexity-post.html">Perplexity</a>；全集：<a href="/zh/guides/index.html">攻略索引</a>。</p>
+<p>視頻 look-dev：<a href="/zh/tool-guides/runwayml-post.html">Runway</a> 備忘。寫設定表：<a href="/zh/tool-guides/cursor-post.html">Cursor</a>。長文潤色：<a href="/zh/tool-guides/claude-post.html">Claude</a>。新聞稿提到陌生引擎時查證：<a href="/zh/tool-guides/perplexity-post.html">Perplexity</a>。全集：<a href="/zh/guides/index.html">攻略索引</a>。</p>
 <h2>發文章前自檢</h2>
 <ol>
   <li>首段寫明虛構 / 演練範圍，非真實房源或商品。</li>
   <li>英文正文約 800 詞或同等深度，含圖 / 嵌入。</li>
   <li><code>original/</code> 文件名穩定且在 figcaption 中可查。</li>
   <li>內鏈到相關 Demo（窗景合成、WebGL、其它角色線）。</li>
-  <li>改資產則更新 <code>dateModified</code> 與 changelog。</li>
+  <li>改資產則更新 <code>dateModified</code> 與給人看的 changelog。</li>
 </ol>
 <h3>為何放在 articles 而非 games.html</h3>
-<p>Hub 頁保持短導語 + 外鏈；長流程會稀釋定位並帶來「薄頁」風險。可教敘事放文章，games 頁繼續當週日標題條。</p></article>
+<p>Hub 頁保持短導語 + 外鏈；長流程會稀釋定位並帶來「薄頁」風險。可教敘事放文章，games 頁繼續當週日標題條。</p>
+<h2>Hot mix 裡我真正掃什麼</h2>
+<p>不是每條 RSS 都值得開生成會話。我把這些當<strong>綠燈</strong>：角色重設博客、畫集預告、「製作花絮」訪談、風格化預告片，或帶 UI 線稿的補丁說明。<strong>紅燈</strong>一律跳過：停服維護、純反作弊公告、電競對陣結果、沒有畫面的折扣百分比。紀律無聊，但能防止 <code>original/</code> 堆滿永遠不會寫成文章的文件夾。</p>
+<p>標題含糊——比如只有「visual update」沒有截圖——我會點一次外鏈。若發行商頁純文字，就停。我不從 slug 猜美術方向。</p>
+<h2><code>original/</code> 下的文件夾命名</h2>
+<p>每條成熟線自有目錄：<code>original/game-girl/</code>、<code>original/role-girl/</code>、<code>original/character/</code>。目錄內文件名按時間：探索圖用 <code>ChatGPT Image YYYY…png</code>，一張權威三視圖（<code>ChatGPT-Image2.png</code> 或 <code>card.png</code>），可選 HTML 設定表。絕不把同一文件夾複用給另一張臉——那是磁盤與搜索摘要裡卡牌線撞車的根源。</p>
+<p>文章尚未存在時，文件夾至少要有：(1) 一張尺子圖或設定表；(2) 三張能看出決策的帶日期探索圖；(3) 本地 README 裡一段範圍說明（文章上線前不公開）。</p>
+<h2>上線前砍掉的文件夾</h2>
+<p>2026 年有兩次實驗從未變成 URL：一套賽博跑者剪影，三幀後漂進受版權保護的標誌形狀；一次「奇幻祭司」通路，並排對照後斗篷剪裁太像某商業遊戲。早刪比寫一篇承認模仿更便宜。那些 PNG 從未進 git。</p>
+<h2>和 <code>tech.html</code> 的對照</h2>
+<p>科技 Hub 喂芯片與模型標題。我讀它是為了政策語境——出口規則、API 定價——但很少從那裡派生角色文件夾。當科技 RSS 與遊戲 RSS 重疊（主機 SoC 新聞）時，我心裡歸到科技；只有它改變了我用的工具（例如本地推理加速影響批量導出）才在文章裡交叉鏈接。</p>
+<h2>週日時間預算</h2>
+<p>大約九十分鐘：二十分鐘掃 RSS，四十分鐘一輪窄提示詞生成，二十分鐘歸檔改名，十分鐘決定「寫不寫文章」。若這一輪沒有可留檔品質，我仍提交 Hub JSON 更新，但跳過生成——不為內疚硬湊內容。</p>
+<h2>我刻意寫在明處的法律衛生</h2>
+<p>商店 KV 留在官方 CDN。我不拿抓來的 KV 訓練，不為發佈去水印，也不把練習文件夾標成官方同人。文章重複這條邊界，好讓 AdSense 審閱看到意圖：這是維護者歸檔，不是盜版站或扒圖站。</p>
+<h2>中文加厚：週日工作流與案例鏈</h2>
+<p>Games Hub 不是外鏈牆的另一張皮，而是把 Elena 設定表、角色卡牌、四視圖行走等<strong>已完成案例</strong>串成可重複的一週節奏：選題 → 出圖 → 進 <code>original/</code> → 寫中英手記 → 掛 Hub。工具名可以變，文件夾命名與「先歸檔再寫文」的順序不能變，否則站點會重新滑向書籤目錄。</p>
+<p>Hot-mix 紅綠燈只作內部提示：綠表示可進主索引的厚 Demo，紅表示仍像導購或榜單的素材。寫這篇的目的，是讓審核員看到<strong>作者如何自我約束內容類型</strong>，而不是看到又一個「AI 工具大全」。</p></article>
     </div>
   </main>
   <footer class="site-footer">

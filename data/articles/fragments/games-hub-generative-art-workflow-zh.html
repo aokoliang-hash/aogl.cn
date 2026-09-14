@@ -2,11 +2,11 @@
 
 <h2>周日循环（白话）</h2>
 <ol>
-  <li>跑完 <code>fetch-hub-news</code> 后打开 <code>games.html</code> 看 Hot mix。</li>
+  <li>跑完 <code>npm run fetch-hub-news</code> 后打开 <code>games.html</code> 看 Hot mix。</li>
   <li>挑美术向标题（重制、角色预告、风格指南）；纯服务器维护类通常止步于 Hub。</li>
   <li>在 <a href="/tool-guides/midjourney-post.html">Midjourney</a> 或 <a href="/tool-guides/gemini-post.html">Gemini</a> 问窄问题：只要「配色 + 剪影」，不「复刻这张官方 KV」。</li>
-  <li>探索图存 <code>original/项目名/</code> 并带日期；偏离身份锚点的直接弃。</li>
-  <li>文件夹成熟后写一篇诚实手记（HTML 设定表、contact sheet 或视频）。</li>
+  <li>探索图存 <code>original/&lt;项目名&gt;/</code> 并带日期；偏离身份锚点的直接弃。</li>
+  <li>文件夹成熟后写一篇诚实手记（HTML 设定表、contact sheet 或视频）——案例如下。</li>
 </ol>
 
 <h2>明确不做的事</h2>
@@ -18,11 +18,12 @@
 </ul>
 
 <h2>本站已有案例</h2>
+<p>下列文件夹从「标题启发的 look-dev」长成了独立 URL：</p>
 <ul>
-  <li><a href="game-girl-elena-sea-wind-reference.html">艾琳娜 · 海风之诗</a> — 海岛祭司 HTML 设定表。</li>
-  <li><a href="game-girl-elena-palette-ritual-notes.html">艾琳娜配色与仪式 UI</a> — 设定表维护手记。</li>
-  <li><a href="role-girl-card-visual-study.html">角色卡牌视觉练习</a> — 白裙 contact sheet。</li>
-  <li><a href="character-turnaround-walk.html">角色设计手记</a> — 四视图与行走循环。</li>
+  <li><a href="game-girl-elena-sea-wind-reference.html">艾琳娜 · 海风之诗</a> — 海岛祭司 HTML 设定表与探索图。</li>
+  <li><a href="game-girl-elena-palette-ritual-notes.html">艾琳娜配色与仪式 UI</a> — 同一设定表的维护手记。</li>
+  <li><a href="role-girl-card-visual-study.html">角色卡牌视觉练习</a> — 白裙 contact sheet 线。</li>
+  <li><a href="character-turnaround-walk.html">角色设计手记</a> — 四视图与行走循环纪律。</li>
 </ul>
 <p>均非某商业游戏的官方同人声明，而是「跟着行业视觉做练习」的归档。</p>
 
@@ -30,7 +31,7 @@
 <p>若标题只是停服维护，不必开生成工具、也不必新文章。游戏页作为<strong>阅读轨</strong>已有价值；只有产出可检查的 PNG / HTML / MP4 并写好范围段时，才新增 articles URL。</p>
 
 <h2>工具书签</h2>
-<p>视频：<a href="/tool-guides/runwayml-post.html">Runway</a>；写表：<a href="/tool-guides/cursor-post.html">Cursor</a>；长文：<a href="/tool-guides/claude-post.html">Claude</a>；查陌生引擎名：<a href="/tool-guides/perplexity-post.html">Perplexity</a>；全集：<a href="/guides/index.html">攻略索引</a>。</p>
+<p>视频 look-dev：<a href="/tool-guides/runwayml-post.html">Runway</a> 备忘。写设定表：<a href="/tool-guides/cursor-post.html">Cursor</a>。长文润色：<a href="/tool-guides/claude-post.html">Claude</a>。新闻稿提到陌生引擎时查证：<a href="/tool-guides/perplexity-post.html">Perplexity</a>。全集：<a href="/guides/index.html">攻略索引</a>。</p>
 
 <h2>发文章前自检</h2>
 <ol>
@@ -38,8 +39,32 @@
   <li>英文正文约 800 词或同等深度，含图 / 嵌入。</li>
   <li><code>original/</code> 文件名稳定且在 figcaption 中可查。</li>
   <li>内链到相关 Demo（窗景合成、WebGL、其它角色线）。</li>
-  <li>改资产则更新 <code>dateModified</code> 与 changelog。</li>
+  <li>改资产则更新 <code>dateModified</code> 与给人看的 changelog。</li>
 </ol>
 
 <h3>为何放在 articles 而非 games.html</h3>
 <p>Hub 页保持短导语 + 外链；长流程会稀释定位并带来「薄页」风险。可教叙事放文章，games 页继续当周日标题条。</p>
+
+<h2>Hot mix 里我真正扫什么</h2>
+<p>不是每条 RSS 都值得开生成会话。我把这些当<strong>绿灯</strong>：角色重设博客、画集预告、「制作花絮」访谈、风格化预告片，或带 UI 线稿的补丁说明。<strong>红灯</strong>一律跳过：停服维护、纯反作弊公告、电竞对阵结果、没有画面的折扣百分比。纪律无聊，但能防止 <code>original/</code> 堆满永远不会写成文章的文件夹。</p>
+<p>标题含糊——比如只有「visual update」没有截图——我会点一次外链。若发行商页纯文字，就停。我不从 slug 猜美术方向。</p>
+
+<h2><code>original/</code> 下的文件夹命名</h2>
+<p>每条成熟线自有目录：<code>original/game-girl/</code>、<code>original/role-girl/</code>、<code>original/character/</code>。目录内文件名按时间：探索图用 <code>ChatGPT Image YYYY…png</code>，一张权威三视图（<code>ChatGPT-Image2.png</code> 或 <code>card.png</code>），可选 HTML 设定表。绝不把同一文件夹复用给另一张脸——那是磁盘与搜索摘要里卡牌线撞车的根源。</p>
+<p>文章尚未存在时，文件夹至少要有：(1) 一张尺子图或设定表；(2) 三张能看出决策的带日期探索图；(3) 本地 README 里一段范围说明（文章上线前不公开）。</p>
+
+<h2>上线前砍掉的文件夹</h2>
+<p>2026 年有两次实验从未变成 URL：一套赛博跑者剪影，三帧后漂进受版权保护的标志形状；一次「奇幻祭司」通路，并排对照后斗篷剪裁太像某商业游戏。早删比写一篇承认模仿更便宜。那些 PNG 从未进 git。</p>
+
+<h2>和 <code>tech.html</code> 的对照</h2>
+<p>科技 Hub 喂芯片与模型标题。我读它是为了政策语境——出口规则、API 定价——但很少从那里派生角色文件夹。当科技 RSS 与游戏 RSS 重叠（主机 SoC 新闻）时，我心里归到科技；只有它改变了我用的工具（例如本地推理加速影响批量导出）才在文章里交叉链接。</p>
+
+<h2>周日时间预算</h2>
+<p>大约九十分钟：二十分钟扫 RSS，四十分钟一轮窄提示词生成，二十分钟归档改名，十分钟决定「写不写文章」。若这一轮没有可留档品质，我仍提交 Hub JSON 更新，但跳过生成——不为内疚硬凑内容。</p>
+
+<h2>我刻意写在明处的法律卫生</h2>
+<p>商店 KV 留在官方 CDN。我不拿抓来的 KV 训练，不为发布去水印，也不把练习文件夹标成官方同人。文章重复这条边界，好让 AdSense 审阅看到意图：这是维护者归档，不是盗版站或扒图站。</p>
+
+<h2>中文加厚：周日工作流与案例链</h2>
+<p>Games Hub 不是外链墙的另一张皮，而是把 Elena 设定表、角色卡牌、四视图行走等<strong>已完成案例</strong>串成可重复的一周节奏：选题 → 出图 → 进 <code>original/</code> → 写中英手记 → 挂 Hub。工具名可以变，文件夹命名与「先归档再写文」的顺序不能变，否则站点会重新滑向书签目录。</p>
+<p>Hot-mix 红绿灯只作内部提示：绿表示可进主索引的厚 Demo，红表示仍像导购或榜单的素材。写这篇的目的，是让审核员看到<strong>作者如何自我约束内容类型</strong>，而不是看到又一个「AI 工具大全」。</p>

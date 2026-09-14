@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="zh-Hant" data-title-zh="aogl.cn 建站手記：_multilang 拆語種 × AdSense 可索引頁策略 — aogl.cn" data-desc-zh="第一人稱建站手記：aogl.cn 如何從 _multilang 源拆到各語種、build-articles / inject-site-nav / seo-index-policy 的 ARTICLE_ARCHIVE_NOINDEX、以及僅在可索引頁加載 AdSense（js/adsense.js）與首頁瘦外鏈。" data-aogl-lang="zht" data-aogl-seo-locale="1"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="第一人稱建站手記：aogl.cn 如何從 _multilang 源拆到各語種、build-articles / inject-site-nav / seo-index-policy 的 ARTICLE_ARCHIVE_NOINDEX、以及僅在可索引頁加載 AdSense（js/adsense.js）與首頁瘦外鏈。">
+  <title>aogl.cn 建站手記：_multilang 拆語種 × AdSense 可索引頁策略 — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/zh/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="en" href="https://aogl.cn/en/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://aogl.cn/zh/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://aogl.cn/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="ja" href="https://aogl.cn/ja/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="ko" href="https://aogl.cn/ko/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="fr" href="https://aogl.cn/fr/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="ru" href="https://aogl.cn/ru/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="ar" href="https://aogl.cn/ar/articles/site-build-multilang-adsense-notes-20260914.html">
+  <link rel="alternate" hreflang="x-default" href="https://aogl.cn/en/articles/site-build-multilang-adsense-notes-20260914.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/zh/articles/site-build-multilang-adsense-notes-20260914.html">
+  <meta property="og:title" content="aogl.cn 建站手記：_multilang 拆語種 × AdSense 可索引頁策略 — aogl.cn">
+  <meta property="og:description" content="第一人稱建站手記：aogl.cn 如何從 _multilang 源拆到各語種、build-articles / inject-site-nav / seo-index-policy 的 ARTICLE_ARCHIVE_NOINDEX、以及僅在可索引頁加載 AdSense（js/adsense.js）與首頁瘦外鏈。">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/site-build-multilang-adsense-notes-20260914.webp">
+  <meta property="og:image:alt" content="aogl.cn Open Graph default art — site brand surface used for multilang build notes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/site-build-multilang-adsense-notes-20260914.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Maintained by me · build-articles · seo-index-policy · adsense.js","alternativeHeadline":"aogl.cn 建站手记：_multilang 拆语种 × AdSense 可索引页策略","datePublished":"2026-09-14","dateModified":"2026-09-14","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/zh/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/zh/articles/site-build-multilang-adsense-notes-20260914.html"},"url":"https://aogl.cn/zh/articles/site-build-multilang-adsense-notes-20260914.html","inLanguage":"zh-Hant","description":"First-person build notes: how aogl.cn splits _multilang into locales, build-articles / inject-site-nav / ARTICLE_ARCHIVE_NOINDEX, and AdSense only on indexable pages via js/adsense.js plus a slim homepage outbound.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-zht">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具與大模型動態（個人書籤）" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/zh/articles/index.html">本站原創</a></li>
+          <li><a href="/zh/about.html">關於</a></li>
+          <li><a href="/zh/games.html">遊戲</a></li>
+          <li><a href="/zh/tech.html">科技</a></li>
+          <li><a href="/zh/life.html">生活</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/zh/index.html#originals">← 返回首頁 · 本站原創</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>aogl.cn 建站手記：_multilang 拆語種 × AdSense 可索引頁策略</h1>
+        <p class="article-shell__sub">本人維護 · scripts/build-articles · seo-index-policy · js/adsense.js</p>
+        <p class="article-shell__meta"><time datetime="2026-09-14">2026-09-14</time> · 本站原創</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>這是 aogl.cn 的<strong>第一人稱建站手記</strong>，不是轉載教程，也不是「如何過審」空話清單。本站是一套靜態多語言編輯站，同時歸檔原創 Demo，並鏈到本人開發的兄弟 App（EatToday、WordPet、世界之最）。審稿人和同行最常問的問題其實很具體：<strong>源碼如何變成各語種頁面、哪些 URL 可索引、廣告腳本到底在哪些頁發起請求？</strong>下文按倉庫裡真實存在的 <code>scripts/</code> 與 <code>js/adsense.js</code> 回答，日期 2026-09-14。</p>
+<figure class="article-figure">
+  <img src="/og-default.png" width="1200" height="675" loading="lazy" decoding="async" alt="aogl.cn 默認 Open Graph 品牌圖，用作本文題圖源">
+  <figcaption><code>og-default.png</code> — 站點級默認 OG 圖；封面 WebP 寫入 <code>upload/articles/</code>。</figcaption>
+</figure>
+<h2>心智模型：一份 _multilang，多份語種輸出</h2>
+<p>幾乎所有公開頁都先活在 <code>_multilang/</code>。源文件用 <code>lang-*</code> 類同時承載英、簡中、日、韓、法、俄、阿等片段。我不會為每個 Hub 手工維護七份完整正文。真正做拆分的是 <code>scripts/build-seo-locale-pages.mjs</code>：讀入 <code>_multilang/*.html</code>，再寫出：</p>
+<ul>
+  <li><strong>站點根目錄</strong> — 簡體中文主表面（canonical 指向自身）。</li>
+  <li><strong><code>/zh/</code></strong> — 由簡體 <code>lang-zh</code> 經 OpenCC 轉成繁體。</li>
+  <li><strong><code>/en/</code>、<code>/ja/</code>、<code>/ko/</code>、<code>/fr/</code>、<code>/ru/</code>、<code>/ar/</code></strong> — 各語種單語文檔樹。</li>
+</ul>
+<p>這就是整站骨架。如果你只改 <code>/en/</code> 下的生成文件、忘了改 <code>_multilang/</code>，下次語種重建會覆蓋你的改動。共享頁頭頁腳的耐久編輯面永遠是 multilang 源；文章正文的耐久編輯面則是下面說的 fragment 文件。</p>
+<h2>文章：JSON 樞紐 + htmlFragments</h2>
+<p><code>scripts/build-articles.mjs</code> 讀取 <code>data/articles/*.json</code>。每個 JSON 是一個小樞紐：slug、layout、日期、題圖路徑、七語標題/摘要，以及指向 <code>data/articles/fragments/</code> 的 <code>htmlFragments</code> 映射。構建器寫出 <code>_multilang/articles/&lt;slug&gt;.html</code>，刷新首頁 <code>INDEX_ORIGINALS</code> 標記，並重建 <code>_multilang/articles/index.html</code>。厚英文與厚中文承擔 AdSense 審閱權重；短 ja/ko/fr/ru/ar 存根保證 hreflang 表面誠實，而不假裝每個語種都是長文。</p>
+<p>題圖不用庫存圖。<code>npm run generate-article-covers</code> 調用 <code>scripts/generate-article-covers.py</code>，把 <code>heroImageSource</code> 裁成 1200×675 WebP，落到 <code>upload/articles/&lt;slug&gt;.webp</code>。本頁源圖是已提交的站點資源 <code>og-default.png</code>（因 Python 助手會跳過字面量 <code>og-default.png</code>，封面單獨生成）。</p>
+<h2>導航注入與首頁拼裝</h2>
+<p>主導航不會在五十個模板裡複製粘貼。<code>scripts/inject-site-nav.mjs</code> 從 <code>scripts/site-nav.mjs</code> 取共享標記，注入 <code>_multilang/index.html</code> 的 <code>SITE_NAV_AUTO_START</code> / <code>SITE_NAV_AUTO_END</code> 之間。同類注入還有 <code>inject-categories.mjs</code>、<code>inject-index-pills.mjs</code>、<code>inject-tools-directory.mjs</code>、<code>update-reading.mjs</code>，把首頁欄位變成可重複的機械步驟。<code>package.json</code> 裡的 <code>build-site</code> 負責總編排：文章 → briefs → tool guides → hubs → nav → reading → contact → SEO 語種。我習慣按需跑子任務；中途改稿時避免盲目全量重建，以免半成品片段被覆蓋。</p>
+<h2>seo-index-policy：ARTICLE_ARCHIVE_NOINDEX</h2>
+<p><code>scripts/seo-index-policy.mjs</code> 是 robots、sitemap 成員資格、「這是不是薄存檔？」的策略中樞。榜單表、圖表轉載、導購清單體文章進入 <code>ARTICLE_ARCHIVE_NOINDEX_SLUGS</code>。這些 URL 仍可給人當書籤、當 Hub 卡片，但帶 <code>noindex,follow</code>，並移出 AdSense 主表面。原創 Demo、製作手記、第一方 App 長文——EatToday、WordPet、世界之最、本篇建站筆記——保持可索引。</p>
+<p>相關常量同樣重要：<code>NOINDEX_PATH_PREFIXES</code> 覆蓋 <code>hub-links/</code>、<code>briefs/</code>、<code>tool-guides/</code> 這類聚合軌；<code>NOINDEX_STATIC_PAGES</code> 覆蓋 <code>tech.html</code>、<code>life.html</code> 等垂直 Hub；<code>SITEMAP_STATIC_PAGES</code> 只白名單少量靜態頁加上可索引文章。有人問「首頁怎麼這麼安靜、Hub 為什麼不怎麼出廣告」，答案是刻意策略，不是發佈商標籤壞了。</p>
+<h2>AdSense 只在可索引主內容頁加載</h2>
+<p><code>js/adsense.js</code> 會出現在很多模板上，但<strong>並不總是</strong>請求 <code>adsbygoogle.js</code>。加載器檢查 <code>isContentPrimaryPage()</code>：about / changelog 合格；文章 URL 僅當頁面 <code>meta robots</code> 不含 <code>noindex</code> 時合格。本機、<code>?noads=1</code>、<code>localStorage aogl-disable-ads</code>、<code>window.AOGL_DISABLE_ADSENSE</code> 也會跳過網絡請求。構建側寫 robots、客戶端讀 robots——這對組合讓自動廣告離開薄存檔，同時允許厚原創頁請求廣告。</p>
+<h2>首頁瘦外鏈</h2>
+<p>更早一輪 AdSense 整改去掉了密集書籤牆和 Google 搜索 SEO 藥丸。<code>scripts/adsense-slim-outbound.mjs</code> 記錄了一次性助手：把首頁 <code>#pillars</code> 收成簡短導語，指向原創 Demo 與 About；並從文章片段裡剝離 <code>google.com/search</code> 藥丸。現在文末藥丸應只鏈到真實 App URL 與 <code>/articles/index.html</code>（必要時首頁 originals）。這不是「少做 SEO」，而是主內容更清楚、外鏈干擾更少，方便審閱。</p>
+<h2>我實際在用的日常改稿閉環</h2>
+<ol>
+  <li>撰寫或修訂 <code>data/articles/&lt;slug&gt;.json</code> 與厚 <code>*-en.html</code> / <code>*-zh.html</code> 片段。</li>
+  <li>若屬於 Hub 軌道，把 slug 前置進 <code>data/tech-hub-articles.json</code> 或 <code>data/life-hub-articles.json</code>。</li>
+  <li><code>heroImageSource</code> 有變時再生成封面。</li>
+  <li>準備發佈 HTML 時再跑 <code>npm run build-articles</code>（以及後續語種拆分）——寫散文階段不要邊寫邊全量構建。</li>
+  <li>在期待廣告出現之前，先核對存檔頁與主內容頁的 robots。</li>
+</ol>
+<p>兄弟 App 繼續待在各自源站（<code>eattoday.aogl.cn</code>、<code>wordpet.aogl.cn</code>、<code>mnm.aogl.cn</code>）。編輯站用首屏 HTML 與 <code>original/</code> 截圖歸檔去說明它們；交互產品保留自己的 cookie 與發佈節奏。這條邊界和任何 AdSense 開關一樣重要。</p>
+<h2>和「榜單存檔」文章如何共存</h2>
+<p>本站仍保留大量圖表與榜單頁，因為它們對人類書籤有用，也對 Hub 卡片有用。策略不是刪光，而是分級：存檔進 <code>ARTICLE_ARCHIVE_NOINDEX_SLUGS</code>，原創手記與 Demo 留在可索引池。寫新文時我先問三個問題——有沒有本人截圖或本人產品？正文是否厚到能獨立閱讀？外鏈是不是在講清產品而不是堆搜索藥丸？三個都過，才進 tech/life Hub 前置位；否則寧可當內部草稿，也不拿去碰 AdSense 主表面。</p>
+<p>構建順序也值得單獨記一筆：先改 <code>data/articles</code> 與 Hub JSON，再考慮 <code>build-articles</code>，最後才是 <code>build-seo-locale-pages</code>。中間夾雜 <code>inject-site-nav</code>、<code>update-reading</code> 之類注入任務時，務必確認標記塊還在，避免手工 HTML 把自動區裁掉。本地預覽用 WAMP 打開根路徑或語種路徑均可，但判斷「廣告會不會加載」必須以 robots 與 <code>js/adsense.js</code> 的組合為準，不能只看頁面底部有沒有引用腳本文件。</p>
+<p>封面與 OG 圖是另一條容易踩坑的線。<code>generate-article-covers.py</code> 要求 <code>heroImageSource</code> 指向可打開的原圖，並拒絕把 <code>upload/</code> 當源；對字面量 <code>og-default.png</code> 還會跳過。因此本頁封面是手動從站點默認 OG 圖裁出 WebP，JSON 裡仍誠實寫明源路徑。以後若要讓腳本接管，應把源圖放到 <code>original/</code> 下再改字段，而不是假裝 upload 裡的 WebP 可以回寫。</p>
+<h2>本文不保證什麼</h2>
+<p>這不是 AdSense 過審承諾，也不是 CPC 或流量承諾。策略文件會隨審閱信號調整。上文腳本名以本倉庫 2026-09-14 現狀為準；若你 fork 站點，請直接重讀源文件，不要迷信博客轉述。可複用的架構教訓是：<strong>把 multilang 寫作與語種輸出分開，把書籤存檔與可索引長文分開，只在值得被索引的 HTML 上加載廣告。</strong>把這條紀律寫進日常改稿清單，比再加十條外鏈更接近長期可維護的編輯站。</p>
+<h2 id="article-seo-keywords">相關</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="/zh/articles/index.html">全部原創</a>
+  <a class="pill" href="/zh/index.html#originals">首頁原創</a>
+</div></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/zh/about.html" class="footer-legal-link lang-zh">關於</a>
+        <a href="/zh/contact.html" class="footer-legal-link lang-zh">聯繫我們</a>
+        <a href="/zh/changelog.html" class="footer-legal-link lang-zh">更新記錄</a>
+        <a href="/zh/privacy.html" class="footer-legal-link lang-zh">隱私政策</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情鏈接 aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer=""></script>
+</body></html>
