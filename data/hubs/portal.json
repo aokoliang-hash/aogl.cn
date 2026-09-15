@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-09-08",
+  "updated": "2026-09-15",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "Proactive cyber defense for governments and enterprises",
-          "titleZh": "Proactive cyber defense for governments and enterprises",
-          "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
-          "date": "2026-09-02"
+          "titleEn": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "titleZh": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
+          "date": "2026-09-14"
         },
         {
-          "titleEn": "The latest AI news we announced in August 2026",
-          "titleZh": "The latest AI news we announced in August 2026",
-          "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
-          "date": "2026-09-01"
+          "titleEn": "DevFest is back",
+          "titleZh": "DevFest is back",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+          "date": "2026-09-14"
         },
         {
-          "titleEn": "Try Google Pics: Easy image creation and editing in Google Workspace",
-          "titleZh": "Try Google Pics: Easy image creation and editing in Google Workspace",
-          "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
-          "date": "2026-09-01"
+          "titleEn": "3 ways to prep for your next big race with Search",
+          "titleZh": "3 ways to prep for your next big race with Search",
+          "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+          "date": "2026-09-10"
         }
       ],
       "hotSearchPills": [
@@ -290,6 +290,12 @@
       "labelZh": "Facebook",
       "items": [
         {
+          "titleEn": "Introducing Muse: The World’s First Personal AI Agent Built for Everyone",
+          "titleZh": "Introducing Muse: The World’s First Personal AI Agent Built for Everyone",
+          "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+          "date": "2026-09-08"
+        },
+        {
           "titleEn": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
           "titleZh": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
           "url": "https://about.fb.com/news/2026/09/launching-bill-payments-in-india-helping-people-to-pay-everyday-household-bills-directly-on-whatsapp/",
@@ -300,12 +306,6 @@
           "titleZh": "Inside Meta’s Infrastructure Lab",
           "url": "https://about.fb.com/news/2026/09/inside-metas-infrastructure-lab/",
           "date": "2026-09-01"
-        },
-        {
-          "titleEn": "Wzmacniamy w Polsce ochronę przed oszustwami",
-          "titleZh": "Wzmacniamy w Polsce ochronę przed oszustwami",
-          "url": "https://about.fb.com/news/2026/08/wzmacniamy-w-polsce-ochrone-przed-oszustwami/",
-          "date": "2026-08-28"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Tech News 2026 – Issue 37",
-          "titleZh": "Tech News 2026 – Issue 37",
-          "url": "https://diff.wikimedia.org/2026/09/07/tech-news-2026-issue-37/",
-          "date": "2026-09-07"
+          "titleEn": "Growing from Wiki Club to Becoming a Community Towards the Future",
+          "titleZh": "Growing from Wiki Club to Becoming a Community Towards the Future",
+          "url": "https://diff.wikimedia.org/2026/09/15/growing-from-wiki-club-to-becoming-a-community-towards-the-future/",
+          "date": "2026-09-15"
         },
         {
-          "titleEn": "Meet Us in Accra: Language Diversity Conference 2026",
-          "titleZh": "Meet Us in Accra: Language Diversity Conference 2026",
-          "url": "https://diff.wikimedia.org/2026/09/06/meet-us-in-accra-language-diversity-conference-2026/",
-          "date": "2026-09-06"
+          "titleEn": "Women, the Sundanese Language, and Wikimedia Projects",
+          "titleZh": "Women, the Sundanese Language, and Wikimedia Projects",
+          "url": "https://diff.wikimedia.org/2026/09/15/women-the-sundanese-language-and-wikimedia-projects/",
+          "date": "2026-09-15"
         },
         {
-          "titleEn": "A different way to find common ground",
-          "titleZh": "A different way to find common ground",
-          "url": "https://diff.wikimedia.org/2026/09/06/a-different-way-to-find-common-ground/",
-          "date": "2026-09-06"
+          "titleEn": "Tech News 2026 – Issue 38",
+          "titleZh": "Tech News 2026 – Issue 38",
+          "url": "https://diff.wikimedia.org/2026/09/14/tech-news-2026-issue-38/",
+          "date": "2026-09-14"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "A first look at ‘Our Fault: London,’ the ‘Your Fault: London’ and 'My Fault: London' sequel coming to Prime Video in 2027",
-          "titleZh": "A first look at ‘Our Fault: London,’ the ‘Your Fault: London’ and 'My Fault: London' sequel coming to Prime Video in 2027",
-          "url": "https://www.aboutamazon.com/news/entertainment/our-fault-london-prime-video?utm_source=rss",
-          "date": "2026-09-08"
+          "titleEn": "Amazon's water conservation and replenishment efforts around the world",
+          "titleZh": "Amazon's water conservation and replenishment efforts around the world",
+          "url": "https://www.aboutamazon.com/news/sustainability/amazon-water-conservation-replenishment-sustainability?utm_source=rss",
+          "date": "2026-09-15"
         },
         {
-          "titleEn": "Amazon 21 Air updates",
-          "titleZh": "Amazon 21 Air updates",
-          "url": "https://www.aboutamazon.com/news/company-news/amazon-21-air-miami-updates?utm_source=rss",
-          "date": "2026-09-06"
+          "titleEn": "Prime Big Deal Days regresa del 6 al 7 de octubre: Esto es lo que puedes esperar",
+          "titleZh": "Prime Big Deal Days regresa del 6 al 7 de octubre: Esto es lo que puedes esperar",
+          "url": "https://www.aboutamazon.com/news/retail/amazon-prime-big-deals-day-2026-cuando-octubre-6-7?utm_source=rss",
+          "date": "2026-09-15"
         },
         {
-          "titleEn": "Amazon expands Career Choice employee benefit with new programs in high-demand industries",
-          "titleZh": "Amazon expands Career Choice employee benefit with new programs in high-demand industries",
-          "url": "https://www.aboutamazon.com/news/workplace/amazon-career-choice-training-programs-tuition-careers?utm_source=rss",
-          "date": "2026-09-04"
+          "titleEn": "Prime Big Deal Days 2026: Early deals you can shop right now",
+          "titleZh": "Prime Big Deal Days 2026: Early deals you can shop right now",
+          "url": "https://www.aboutamazon.com/news/retail/prime-big-deal-days-2026-best-deals-amazon?utm_source=rss",
+          "date": "2026-09-15"
         }
       ],
       "hotSearchPills": [

@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-09-08",
+  "updated": "2026-09-15",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "Building a Memory-Driven Agent with NVIDIA NemoClaw",
-          "titleZh": "Building a Memory-Driven Agent with NVIDIA NemoClaw",
-          "url": "https://developer.nvidia.com/blog/building-a-memory-driven-agent-with-nvidia-nemoclaw/",
-          "date": "2026-09-04"
+          "titleEn": "Heart of the Matter: How a Major Children’s Hospital Uses Open Source NVIDIA AI for Cardiac Care",
+          "titleZh": "Heart of the Matter: How a Major Children’s Hospital Uses Open Source NVIDIA AI for Cardiac Care",
+          "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/",
+          "date": "2026-09-15"
         },
         {
-          "titleEn": "Frontier Reasoning Reaches the Edge: How to Deploy and Optimize Models on NVIDIA Jetson",
-          "titleZh": "Frontier Reasoning Reaches the Edge: How to Deploy and Optimize Models on NVIDIA Jetson",
-          "url": "https://developer.nvidia.com/blog/frontier-reasoning-reaches-the-edge-how-to-deploy-and-optimize-models-on-nvidia-jetson/",
-          "date": "2026-09-04"
+          "titleEn": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
+          "titleZh": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
+          "url": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/",
+          "date": "2026-09-14"
         },
         {
-          "titleEn": "How to Carry User Identity Across Federated Kubernetes and AI Platforms",
-          "titleZh": "How to Carry User Identity Across Federated Kubernetes and AI Platforms",
-          "url": "https://developer.nvidia.com/blog/how-to-carry-user-identity-across-federated-kubernetes-and-ai-platforms/",
-          "date": "2026-09-03"
+          "titleEn": "Perplexity Portable Computer Is Now Available on Windows, Powered by NVIDIA RTX",
+          "titleZh": "Perplexity Portable Computer Is Now Available on Windows, Powered by NVIDIA RTX",
+          "url": "https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs/",
+          "date": "2026-09-14"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "Samsung Electronics and ASML Expand Strategic Collaboration for Next-Generation Semiconductor Manufacturing",
-          "titleZh": "Samsung Electronics and ASML Expand Strategic Collaboration for Next-Generation Semiconductor Manufacturing",
-          "url": "https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing",
-          "date": "2026-09-08"
+          "titleEn": "Samsung and Verizon Complete Successful ISAC Trial Over Virtualized Network at Global Sports Event",
+          "titleZh": "Samsung and Verizon Complete Successful ISAC Trial Over Virtualized Network at Global Sports Event",
+          "url": "https://news.samsung.com/global/samsung-and-verizon-complete-successful-isac-trial-over-virtualized-network-at-global-sports-event",
+          "date": "2026-09-14"
         },
         {
-          "titleEn": "Immaculate Engineering Meets Artistic Imagination: Highlights From Design Miami Seoul 2026",
-          "titleZh": "Immaculate Engineering Meets Artistic Imagination: Highlights From Design Miami Seoul 2026",
-          "url": "https://news.samsung.com/global/immaculate-engineering-meets-artistic-imagination-highlights-from-design-miami-seoul-2026",
-          "date": "2026-09-07"
+          "titleEn": "Samsung and Mistral AI Announce Strategic Partnership for Intelligence-Driven Semiconductor Infrastructure",
+          "titleZh": "Samsung and Mistral AI Announce Strategic Partnership for Intelligence-Driven Semiconductor Infrastructure",
+          "url": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
+          "date": "2026-09-09"
         },
         {
-          "titleEn": "Samsung Medison Expands Women’s Health Diagnostic Portfolio With Launch of Premium Ultrasound ‘HERA Z10’",
-          "titleZh": "Samsung Medison Expands Women’s Health Diagnostic Portfolio With Launch of Premium Ultrasound ‘HERA Z10’",
-          "url": "https://news.samsung.com/global/samsung-medison-expands-womens-health-diagnostic-portfolio-with-launch-of-premium-ultrasound-hera-z10",
-          "date": "2026-09-07"
+          "titleEn": "From 253 Grams to 201 Grams: The Engineering Behind the World’s Lightest Fold",
+          "titleZh": "From 253 Grams to 201 Grams: The Engineering Behind the World’s Lightest Fold",
+          "url": "https://news.samsung.com/global/from-253-grams-to-201-grams-the-engineering-behind-the-worlds-lightest-fold",
+          "date": "2026-09-09"
         }
       ]
     },
@@ -316,6 +316,12 @@
       "labelZh": "ARM",
       "items": [
         {
+          "titleEn": "Five developer takeaways from Arm Create for building and deploying AI",
+          "titleZh": "Five developer takeaways from Arm Create for building and deploying AI",
+          "url": "https://newsroom.arm.com/blog/takeaways-from-arm-create-china-2026",
+          "date": "2026-09-11"
+        },
+        {
           "titleEn": "Inside Arm CSS for Mobile 2: The AI-native compute platform for mobile",
           "titleZh": "Inside Arm CSS for Mobile 2: The AI-native compute platform for mobile",
           "url": "https://newsroom.arm.com/blog/arm-css-for-mobile-2-and-c2-cpu-cluster",
@@ -326,12 +332,6 @@
           "titleZh": "Inside the Arm Mali G2-Ultra NX GPU: Delivering desktop-class mobile gameplay with AI-native graphics",
           "url": "https://newsroom.arm.com/blog/arm-mali-g2-ultra-nx-ai-native-mobile-graphics",
           "date": "2026-09-08"
-        },
-        {
-          "titleEn": "Hot Chips 2026: The CPU’s next chapter is being built on Arm",
-          "titleZh": "Hot Chips 2026: The CPU’s next chapter is being built on Arm",
-          "url": "https://newsroom.arm.com/blog/hot-chips-2026-arm-cpu-agentic-ai",
-          "date": "2026-09-02"
         }
       ]
     },
