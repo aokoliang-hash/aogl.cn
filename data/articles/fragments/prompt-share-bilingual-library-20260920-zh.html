@@ -1,0 +1,98 @@
+<p>这是 aogl.cn 上的<strong>本人一手产品手记</strong>。截图归档在 <code>original/prompt-share/</code>（2026-09-20）。<strong>Prompt Share 是我自己开发的应用</strong>（页脚 © 2026 Prompt Share · 提示词分享）。<strong>入口：</strong><a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>——面向文本、图像、视频、音频工作流的<strong>中英双语多任务提示词库</strong>。卡片打开类似 Midjourney 的右侧抽屉，可一键复制中英文提示词；合集打包入门样例；任何人可无注册提交，经管理员审核后公开。本文不是联盟软文，而是对照本人 UI 截图写清：首页筛选、抽屉详情、提交表单、合集索引，方便检索「双语提示词库」「文生视频提示词分享」「可灵 / Midjourney 中英提示词」「prompt.aogl.cn」等意图。</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/home.png" width="1280" height="900" loading="lazy" decoding="async" alt="Prompt Share 首页 — 品牌标题、搜索框、媒体与任务芯片、合集与提示词卡片网格">
+  <figcaption><code>home.png</code> — 首页：搜索 + 输出类型 + 任务类型 + 卡片。</figcaption>
+</figure>
+
+<h2>文件夹里有什么</h2>
+<ul>
+  <li><code>rd.txt</code> — 产品地址：<code>http://prompt.aogl.cn/</code>。</li>
+  <li><code>home.png</code> — 英雄区「Prompt Share」、搜索、全部/文本/图像/视频/音频、任务芯片、精选起步、六张提示词卡。</li>
+  <li><code>drawer-city-night-aerial.png</code> — 「城市夜景航拍运镜」抽屉：中英提示词与参数胶囊。</li>
+  <li><code>submit.png</code> — <code>/submit</code> 提交表：任务类型、双语标题、标签、中英提示词、提交审核。</li>
+  <li><code>collections.png</code> — <code>/collections</code> 合集索引：「精选起步 · 双语样例合集」。</li>
+  <li><code>homepage-raw.html</code> — 首页 HTML 快照（编码可能因抓取环境不同）。</li>
+</ul>
+<p>截图均在浏览器打开 <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a> 时拍摄。产品当前以 <strong>http://</strong> 入口为准。结构化正文 + 描述性 alt，比只丢一个外链更利于收录。</p>
+
+<h2>定位：跨模态的一座库</h2>
+<p>多数「提示词站」要么是纯英文 Midjourney 瀑布流，要么是中文聊天片段贴进博客。Prompt Share 的契约不同：<strong>按输出模态与生成任务建目录</strong>，中英提示词正文是一等公民字段。首页标语写得很直白——多任务提示词库 · 中英双语 · 文图视频一站收藏。导航很短：提示词、合集、提交、管理。产品是「库 + 投稿队列」，不是社交动态墙。</p>
+<p>放在子域 <code>prompt.aogl.cn</code>，与 WordPet、EatToday、世界之最同一套路：交互产品在子域；制作手记与 SEO 长文留在 aogl.cn 首屏 HTML。</p>
+
+<h2>筛选：按人们真正生成的方式切</h2>
+<p>搜索框下方两行芯片：</p>
+<ul>
+  <li><strong>输出类型</strong> — 全部、文本、图像、视频、音频（<code>?output_type=</code>）。</li>
+  <li><strong>任务类型</strong> — 文→文 (t2t)、文→图 (t2i)、图→图 (i2i)、多图→图 (r2i)、文→视频 (t2v)、图→视频 (i2v)，以及「更多」里的多参→视频、视频→视频、文→音频、语音→文、图→文、混合；另有「精选」。</li>
+</ul>
+<p>搜索占位「搜索标题、摘要或提示词…」把标题、摘要与提示词正文一并检索。合集是独立打包（首页「精选起步」→ <code>/collection/getting-started</code>；总览 <code>/collections</code>）。首页样例标题包括：城市夜景航拍运镜、电影感人像光影、品牌文案助手、静物转微距运镜、多参考服装平铺、产品图风格统一——覆盖运镜、人像光影、文案与电商出图。</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/drawer-city-night-aerial.png" width="1280" height="900" loading="lazy" decoding="async" alt="Prompt Share 抽屉 — 城市夜景航拍文生视频提示词，中英复制按钮与可灵标签">
+  <figcaption><code>drawer-city-night-aerial.png</code> — 城市夜景航拍运镜（文→视频）。</figcaption>
+</figure>
+
+<h2>详情抽屉：中英复制，参数不丢</h2>
+<p>点卡片打开右侧抽屉（类似 Midjourney，不必整页跳转）。夜景航拍样例可见任务「文→视频」、模型「可灵」、一行摘要，然后：</p>
+<ul>
+  <li><strong>中文提示词</strong> + 复制 — 例如：城市夜景航拍，霓虹倒影，缓慢向前推进，电影级稳定运镜，细雨湿路面。</li>
+  <li><strong>English prompt</strong> + Copy — Aerial night cityscape, neon reflections, slow forward push-in…</li>
+  <li>若有负面提示则单独一块。</li>
+  <li>胶囊/标签：fps 24、camera slow push-in、resolution 1080p、duration_sec 5、可灵、电影感等。</li>
+</ul>
+<p>「完整页」用于需要可分享 URL 时打开独立页。核心循环是：浏览 → 看双语正文 → 复制 → 贴进可灵 / Midjourney / GPT 类工具。参数做成结构化胶囊，避免「24fps / 5 秒 / 缓推」淹没在长段落里。</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/collections.png" width="1280" height="800" loading="lazy" decoding="async" alt="Prompt Share 合集页 — 合集标题与精选起步双语样例合集卡片">
+  <figcaption><code>collections.png</code> — 合集索引。</figcaption>
+</figure>
+
+<h2>合集：专题打包，而不是无限滚动</h2>
+<p><code>/collections</code> 标题为「合集」，副标题「专题打包的提示词精选」。首个包「精选起步」标注「双语样例合集」。合集服务入门：新访客不该面对只有筛选、没有指引的空墙。对审核员而言，人工打包路径也比空洞网格更像「作者在策展」。</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/submit.png" width="1280" height="1100" loading="lazy" decoding="async" alt="Prompt Share 提交页 — 任务类型、双语标题、GPT Midjourney 可灵标签、中英提示词字段">
+  <figcaption><code>submit.png</code> — <code>/submit</code> 无注册投稿表单。</figcaption>
+</figure>
+
+<h2>无注册提交，审核后公开</h2>
+<p><code>/submit</code> 写明：无需注册。提交后进入审核，通过后才会公开显示。表单收集：</p>
+<ol>
+  <li>任务类型（t2t…mixed）、必填标题、可选英文标题、摘要、模型/工具（示例 GPT-4o、Midjourney、可灵）。</li>
+  <li>分类（写作 / 图像 / 视频 / 工具）、默认展示语言、仅管理员可见的联系方式。</li>
+  <li>标签最多 8 个：GPT、Midjourney、人像、可灵、电商、电影感等。</li>
+  <li>中文提示词 + English prompt（至少一侧）、可选系统提示与负面提示、Markdown 说明、参数 JSON、授权说明、封面与效果素材。</li>
+  <li>提交审核 — 有频率限制；前台仅展示已通过条目。</li>
+</ol>
+<p>取舍很明确：投稿零注册摩擦，首页不被垃圾刷屏。表单含「公司网址」蜜罐字段；管理入口在 <code>/admin/login</code>。</p>
+
+<h2>为何子域 + 本站归档</h2>
+<p>时间戳截图放进 <code>original/prompt-share/</code> 便于追溯。封面走 <code>npm run generate-article-covers</code> 生成 Open Graph WebP。中文服务「提示词库 / 文生视频 / 可灵提示词」；英文服务 bilingual prompt library / text-to-video / Kling Midjourney share。短语言包故意短——过审重量在中英厚文。</p>
+<p>相对本站榜单存档（<code>noindex</code>），Prompt Share 属于<strong>可索引主文</strong>：原创产品、原创截图、第一人称过程，与 WordPet、EatToday 同类。</p>
+
+<h2>写作时不愿稀释的约束</h2>
+<ol>
+  <li>UI 文案照抄：Prompt Share、合集、提交审核、文→视频、精选起步。</li>
+  <li>不声称提示词为厂商官方；它们是面向可灵、Midjourney 等工具的社区/编辑配方。</li>
+  <li>外链优先写 http://prompt.aogl.cn/，直至 HTTPS 稳定。</li>
+  <li>卡片数量会随审核变化；本文冻结 2026-09-20 截图集。</li>
+  <li>「无需注册」≠「立刻公开」；必须过审。</li>
+</ol>
+
+<h2>无障碍与 SEO 清单</h2>
+<ul>
+  <li>alt 写清筛选、抽屉标题与表单分区，禁止「图片 1」。</li>
+  <li>正文重复：Prompt Share、<code>http://prompt.aogl.cn/</code>、双语、t2i/t2v、合集、提交审核、可灵、Midjourney。</li>
+  <li>产品外链 <code>rel="noopener noreferrer"</code>；完整叙事在首屏 HTML。</li>
+</ul>
+
+<h2>边界</h2>
+<p>这些截图记录的是<strong>本人开发的 Prompt Share</strong>——个人产品与 UI 归档。提示词正文、标签与合集成员会随时间变化。本文不声称与 OpenAI、Midjourney 或可灵存在官方合作。生成内容如何使用，由使用者自行负责。</p>
+
+<h2 id="article-seo-keywords">相关检索</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">打开 Prompt Share</a>
+  <a class="pill" href="http://prompt.aogl.cn/submit" target="_blank" rel="noopener noreferrer">提交提示词</a>
+  <a class="pill" href="/articles/index.html">全部原创</a>
+</div>

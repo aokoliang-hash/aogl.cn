@@ -1,0 +1,98 @@
+<p>This is a <strong>first-party build log</strong> on aogl.cn. Screenshots live under <code>original/prompt-share/</code> (archived 2026-09-20). <strong>Prompt Share is an app I developed myself</strong> (footer © 2026 Prompt Share · 提示词分享). <strong>App link:</strong> <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>—a bilingual multi-task prompt library for text, image, video, and audio workflows. Cards open a Midjourney-style detail drawer with Chinese and English prompts you can copy; collections package starters; anyone can submit without registering, pending admin review. This page is not affiliate marketing. It walks through my own UI captures—home filters, drawer detail, submit form, collections index—so search engines and humans can index phrases like “bilingual AI prompt library,” “text to video prompt share,” “Chinese English Midjourney Kling prompts,” and “prompt.aogl.cn.”</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/home.png" width="1280" height="900" loading="lazy" decoding="async" alt="Prompt Share homepage — hero brand, search, media and task chips, collections and prompt grid">
+  <figcaption><code>home.png</code> — homepage: search + output-type chips + task chips + prompt cards.</figcaption>
+</figure>
+
+<h2>What’s in the folder</h2>
+<ul>
+  <li><code>rd.txt</code> — product URL: <code>http://prompt.aogl.cn/</code>.</li>
+  <li><code>home.png</code> — hero “Prompt Share”, search field, 全部/文本/图像/视频/音频, task chips, 精选起步, six prompt cards.</li>
+  <li><code>drawer-city-night-aerial.png</code> — detail drawer for 「城市夜景航拍运镜」with ZH/EN copy blocks and parameter pills.</li>
+  <li><code>submit.png</code> — <code>/submit</code> form: task type, bilingual titles, tags, ZH/EN prompt fields, 提交审核.</li>
+  <li><code>collections.png</code> — <code>/collections</code> index with 「精选起步 · 双语样例合集」.</li>
+  <li><code>homepage-raw.html</code> — HTML snapshot for provenance (encoding may vary by scrape).</li>
+</ul>
+<p>Captures were taken in a browser at <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>. Prefer the <strong>http://</strong> entry the product currently serves. Pairing structured prose with descriptive alt text beats a bare outbound link.</p>
+
+<h2>Positioning: one library across modalities</h2>
+<p>Most “prompt dump” sites are either English-only Midjourney galleries or Chinese chat snippets glued into blogs. Prompt Share starts from a different contract: <strong>one catalog keyed by output modality and generation task</strong>, with bilingual prompt bodies as first-class fields. The homepage tagline states it plainly—多任务提示词库 · 中英双语 · 文图视频一站收藏. Navigation is short: 提示词, 合集, 提交, 管理 (admin login). That keeps the product a library + submission queue, not a social feed.</p>
+<p>Running on a sibling origin (<code>prompt.aogl.cn</code>) next to the editorial site mirrors WordPet, EatToday, and Worlds Greatest: interactive product on its host; production notes and SEO on aogl.cn with first-paint HTML.</p>
+
+<h2>Filters that match how people actually generate</h2>
+<p>Two chip rows sit under search:</p>
+<ul>
+  <li><strong>Output type</strong> — 全部, 文本, 图像, 视频, 音频 (<code>?output_type=</code>).</li>
+  <li><strong>Task type</strong> — 文→文 (t2t), 文→图 (t2i), 图→图 (i2i), 多图→图 (r2i), 文→视频 (t2v), 图→视频 (i2v), plus overflow tasks: 多参→视频, 视频→视频, 文→音频, 语音→文, 图→文, 混合. A 精选 chip surfaces featured items.</li>
+</ul>
+<p>Search placeholder copy—“搜索标题、摘要或提示词…”—indexes titles, summaries, and prompt bodies together. Collections are separate packs (homepage pill 「精选起步」 → <code>/collection/getting-started</code>; full index at <code>/collections</code>). Seed sample titles on the home grid include 城市夜景航拍运镜, 电影感人像光影, 品牌文案助手, 静物转微距运镜, 多参考服装平铺, and 产品图风格统一—covering video camera moves, portrait lighting, copywriting, and ecommerce image workflows.</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/drawer-city-night-aerial.png" width="1280" height="900" loading="lazy" decoding="async" alt="Prompt Share drawer — city night aerial t2v prompt with Chinese and English copy buttons and Kling tags">
+  <figcaption><code>drawer-city-night-aerial.png</code> — drawer for 城市夜景航拍运镜 (text→video).</figcaption>
+</figure>
+
+<h2>Detail drawer: copy ZH, copy EN, keep parameters</h2>
+<p>Clicking a card opens a right-hand drawer (Midjourney-style, not a full page jump). For the night aerial sample, the drawer shows task 「文→视频」, model note 「可灵」, a one-line summary, then:</p>
+<ul>
+  <li><strong>中文提示词</strong> with 复制 — e.g. 城市夜景航拍，霓虹倒影，缓慢向前推进，电影级稳定运镜，细雨湿路面。</li>
+  <li><strong>English prompt</strong> with Copy — Aerial night cityscape, neon reflections, slow forward push-in, cinematic stabilized camera, wet streets after rain.</li>
+  <li>Optional negative prompt block when present.</li>
+  <li>Pills/tags such as fps 24, camera slow push-in, resolution 1080p, duration_sec 5, 可灵, 电影感.</li>
+</ul>
+<p>A 「完整页」 link opens the full prompt page when you need a shareable URL. The drawer is the product’s core loop: browse → inspect bilingual text → copy → paste into Kling / Midjourney / GPT-class tools. Parameters live as structured pills so “24 fps / 5s / slow push-in” does not get lost in a paragraph.</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/collections.png" width="1280" height="800" loading="lazy" decoding="async" alt="Prompt Share collections index — 合集 heading and 精选起步 bilingual starter pack card">
+  <figcaption><code>collections.png</code> — collections index.</figcaption>
+</figure>
+
+<h2>Collections: curated packs, not endless scroll</h2>
+<p><code>/collections</code> is titled 合集 with subtitle 专题打包的提示词精选. The first pack, 「精选起步」, is labeled 双语样例合集—explicitly a bilingual starter set. Packs matter for onboarding: new visitors should not face a raw filter wall with zero guidance. Editorial packs also give AdSense reviewers a human-curated path instead of an empty grid.</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/submit.png" width="1280" height="1100" loading="lazy" decoding="async" alt="Prompt Share submit form — task type, bilingual titles, tags GPT Midjourney Kling, ZH and EN prompt fields">
+  <figcaption><code>submit.png</code> — <code>/submit</code> no-login contribution form.</figcaption>
+</figure>
+
+<h2>Submit without signup, publish after review</h2>
+<p><code>/submit</code> states: 无需注册。提交后进入审核，通过后才会公开显示. The form captures:</p>
+<ol>
+  <li>Task type (t2t…mixed), required title, optional English title, summary, model/tool (placeholder examples GPT-4o、Midjourney、可灵).</li>
+  <li>Category (写作 / 图像 / 视频 / 工具), default display language, optional contact for admins only.</li>
+  <li>Tags (max 8): GPT, Midjourney, 人像, 可灵, 电商, 电影感, etc.</li>
+  <li>中文提示词 + English prompt (at least one required), optional system prompts, optional negatives, Markdown notes, optional parameters JSON, license note, cover and result media uploads.</li>
+  <li>提交审核 — rate-limited; public only after admin approval.</li>
+</ol>
+<p>That tradeoff is intentional: zero signup friction for contributors, but no spam flood on the homepage. A honeypot-style 公司网址 field exists for bots. Admin sits behind <code>/admin/login</code>.</p>
+
+<h2>Why sibling host + editorial archive</h2>
+<p>Archiving timestamped screenshots into <code>original/prompt-share/</code> preserves capture provenance. Hero generation goes through <code>npm run generate-article-covers</code> for Open Graph WebP. Chinese body copy serves “提示词库 / 文生视频 / 可灵提示词” intent; English serves “bilingual prompt library / text-to-video prompts / Kling Midjourney share.” Short locales stay brief—the thick bilingual pair carries AdSense weight.</p>
+<p>Compared with ranking-table archives (<code>noindex</code>), Prompt Share belongs in the <strong>indexable primary</strong> bucket: original product, original screenshots, first-person notes—same class as WordPet and EatToday.</p>
+
+<h2>Workflow notes I refuse to water down</h2>
+<ol>
+  <li>Quote UI labels exactly: Prompt Share, 合集, 提交审核, 文→视频, 精选起步.</li>
+  <li>Do not claim prompts are vendor-official; they are community/editorial recipes for tools like Kling and Midjourney.</li>
+  <li>Prefer http://prompt.aogl.cn/ in live links until HTTPS is confirmed stable.</li>
+  <li>Seed card counts change after each review cycle—this essay freezes the 2026-09-20 capture set.</li>
+  <li>Submit is moderated; “no login” does not mean “instantly public.”</li>
+</ol>
+
+<h2>Accessibility and SEO checklist</h2>
+<ul>
+  <li>Alt text names filters, drawer titles, and form sections—never “image 1.”</li>
+  <li>Body repeats Prompt Share, <code>http://prompt.aogl.cn/</code>, bilingual, t2i/t2v, 合集, 提交审核, 可灵, Midjourney.</li>
+  <li>Outbound product links use <code>rel="noopener noreferrer"</code>; narrative ships in first-paint HTML.</li>
+</ul>
+
+<h2>Boundaries</h2>
+<p>These screens document <strong>Prompt Share, an app I built</strong>—a personal product and UI archive. Prompt texts, tags, and pack membership change over time. Nothing here claims affiliation with OpenAI, Midjourney, or Kling. Users remain responsible for how they use generated media.</p>
+
+<h2 id="article-seo-keywords">Related searches</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">Open Prompt Share</a>
+  <a class="pill" href="http://prompt.aogl.cn/submit" target="_blank" rel="noopener noreferrer">Submit a prompt</a>
+  <a class="pill" href="/articles/index.html">All originals</a>
+</div>

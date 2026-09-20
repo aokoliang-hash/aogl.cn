@@ -1,0 +1,477 @@
+<!DOCTYPE html><html lang="en" data-title-en="Prompt Share — bilingual multi-task prompt library notes — aogl.cn" data-desc-en="Prompt Share is an app I built (http://prompt.aogl.cn/): bilingual multi-task prompt library with text/image/video/audio and task filters, collections, and no-login submit-for-review. Archive original/prompt-share/." data-title-zh="Prompt Share：中英双语多任务提示词库手记 — aogl.cn" data-desc-zh="本人开发的 Prompt Share（http://prompt.aogl.cn/）：中英双语多任务提示词库，按文本/图像/视频/音频与文→图、文→视频等任务筛选，合集打包与无注册提交审核。归档 original/prompt-share/。" data-title-ja="Prompt Share — 中英バイリンガル多タスクプロンプト庫 — aogl.cn" data-desc-ja="自作 Prompt Share http://prompt.aogl.cn/ — original/prompt-share/。" data-title-ko="Prompt Share — 중영 이중언어 멀티태스크 프롬프트 라이브러리 — aogl.cn" data-desc-ko="직접 개발 Prompt Share http://prompt.aogl.cn/ — original/prompt-share/." data-title-fr="Prompt Share — bibliothèque bilingue multi-tâches — aogl.cn" data-desc-fr="Prompt Share, app perso — http://prompt.aogl.cn/ — archive original/prompt-share/." data-title-ru="Prompt Share — двуязычная библиотека промптов — aogl.cn" data-desc-ru="Prompt Share — моё приложение: http://prompt.aogl.cn/ — архив original/prompt-share/." data-title-ar="Prompt Share — مكتبة أوامر ثنائية اللغة متعددة المهام — aogl.cn" data-desc-ar="Prompt Share تطبيق من تطويري — http://prompt.aogl.cn/ — أرشيف original/prompt-share/."><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="Prompt Share is an app I built (http://prompt.aogl.cn/): bilingual multi-task prompt library with text/image/video/audio and task filters, collections, and no-login submit-for-review. Archive original/prompt-share/.">
+  <title>Prompt Share — bilingual multi-task prompt library notes — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/prompt-share-bilingual-library-20260920.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/prompt-share-bilingual-library-20260920.html">
+  <meta property="og:title" content="Prompt Share — bilingual multi-task prompt library notes — aogl.cn">
+  <meta property="og:description" content="Prompt Share is an app I built (http://prompt.aogl.cn/): bilingual multi-task prompt library with text/image/video/audio and task filters, collections, and no-login submit-for-review. Archive original/prompt-share/.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/prompt-share-bilingual-library-20260920.webp">
+  <meta property="og:image:alt" content="Prompt Share homepage — bilingual multi-task prompt library hero and filters">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/prompt-share-bilingual-library-20260920.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Built by me · App: http://prompt.aogl.cn/ · text/image/video · collections · submit","alternativeHeadline":"Prompt Share：中英双语多任务提示词库手记","datePublished":"2026-09-20","dateModified":"2026-09-20","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/prompt-share-bilingual-library-20260920.html"},"url":"https://aogl.cn/en/articles/prompt-share-bilingual-library-20260920.html","inLanguage":"mul","description":"Prompt Share is an app I built (http://prompt.aogl.cn/): bilingual multi-task prompt library with text/image/video/audio and task filters, collections, and no-login submit-for-review. Archive original/prompt-share/.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ru brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ar brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li class="is-active"><a href="/articles/index.html">Originals</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/life.html">Life</a></li>
+        </ul>
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/articles/index.html">本站原创</a></li>
+          <li><a href="/about.html">关于</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li><a href="/life.html">生活</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ja">
+          <li class="is-active"><a href="/articles/index.html">オリジナル</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/games.html">ゲーム</a></li>
+          <li><a href="/tech.html">テック</a></li>
+          <li><a href="/life.html">ライフ</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ko">
+          <li class="is-active"><a href="/articles/index.html">오리지널</a></li>
+          <li><a href="/about.html">소개</a></li>
+          <li><a href="/games.html">게임</a></li>
+          <li><a href="/tech.html">테크</a></li>
+          <li><a href="/life.html">라이프</a></li>
+        </ul>
+        <ul class="site-nav-list lang-fr">
+          <li class="is-active"><a href="/articles/index.html">Originaux</a></li>
+          <li><a href="/about.html">À propos</a></li>
+          <li><a href="/games.html">Jeux</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/life.html">Vie</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ru">
+          <li class="is-active"><a href="/articles/index.html">Авторское</a></li>
+          <li><a href="/about.html">О сайте</a></li>
+          <li><a href="/games.html">Игры</a></li>
+          <li><a href="/tech.html">Техно</a></li>
+          <li><a href="/life.html">Сервисы</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ar">
+          <li class="is-active"><a href="/articles/index.html">محتوى أصلي</a></li>
+          <li><a href="/about.html">حول</a></li>
+          <li><a href="/games.html">الألعاب</a></li>
+          <li><a href="/tech.html">التقنية</a></li>
+          <li><a href="/life.html">الحياة الرقمية</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Prompt Share — bilingual multi-task prompt library notes</h1>
+        <p class="article-shell__sub">Built by me · App: http://prompt.aogl.cn/ · text/image/video · collections · submit</p>
+        <p class="article-shell__meta"><time datetime="2026-09-20">2026-09-20</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This is a <strong>first-party build log</strong> on aogl.cn. Screenshots live under <code>original/prompt-share/</code> (archived 2026-09-20). <strong>Prompt Share is an app I developed myself</strong> (footer © 2026 Prompt Share · 提示词分享). <strong>App link:</strong> <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>—a bilingual multi-task prompt library for text, image, video, and audio workflows. Cards open a Midjourney-style detail drawer with Chinese and English prompts you can copy; collections package starters; anyone can submit without registering, pending admin review. This page is not affiliate marketing. It walks through my own UI captures—home filters, drawer detail, submit form, collections index—so search engines and humans can index phrases like “bilingual AI prompt library,” “text to video prompt share,” “Chinese English Midjourney Kling prompts,” and “prompt.aogl.cn.”</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/home.png" width="1280" height="900" loading="lazy" decoding="async" alt="Prompt Share homepage — hero brand, search, media and task chips, collections and prompt grid">
+  <figcaption><code>home.png</code> — homepage: search + output-type chips + task chips + prompt cards.</figcaption>
+</figure>
+
+<h2>What’s in the folder</h2>
+<ul>
+  <li><code>rd.txt</code> — product URL: <code>http://prompt.aogl.cn/</code>.</li>
+  <li><code>home.png</code> — hero “Prompt Share”, search field, 全部/文本/图像/视频/音频, task chips, 精选起步, six prompt cards.</li>
+  <li><code>drawer-city-night-aerial.png</code> — detail drawer for 「城市夜景航拍运镜」with ZH/EN copy blocks and parameter pills.</li>
+  <li><code>submit.png</code> — <code>/submit</code> form: task type, bilingual titles, tags, ZH/EN prompt fields, 提交审核.</li>
+  <li><code>collections.png</code> — <code>/collections</code> index with 「精选起步 · 双语样例合集」.</li>
+  <li><code>homepage-raw.html</code> — HTML snapshot for provenance (encoding may vary by scrape).</li>
+</ul>
+<p>Captures were taken in a browser at <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>. Prefer the <strong>http://</strong> entry the product currently serves. Pairing structured prose with descriptive alt text beats a bare outbound link.</p>
+
+<h2>Positioning: one library across modalities</h2>
+<p>Most “prompt dump” sites are either English-only Midjourney galleries or Chinese chat snippets glued into blogs. Prompt Share starts from a different contract: <strong>one catalog keyed by output modality and generation task</strong>, with bilingual prompt bodies as first-class fields. The homepage tagline states it plainly—多任务提示词库 · 中英双语 · 文图视频一站收藏. Navigation is short: 提示词, 合集, 提交, 管理 (admin login). That keeps the product a library + submission queue, not a social feed.</p>
+<p>Running on a sibling origin (<code>prompt.aogl.cn</code>) next to the editorial site mirrors WordPet, EatToday, and Worlds Greatest: interactive product on its host; production notes and SEO on aogl.cn with first-paint HTML.</p>
+
+<h2>Filters that match how people actually generate</h2>
+<p>Two chip rows sit under search:</p>
+<ul>
+  <li><strong>Output type</strong> — 全部, 文本, 图像, 视频, 音频 (<code>?output_type=</code>).</li>
+  <li><strong>Task type</strong> — 文→文 (t2t), 文→图 (t2i), 图→图 (i2i), 多图→图 (r2i), 文→视频 (t2v), 图→视频 (i2v), plus overflow tasks: 多参→视频, 视频→视频, 文→音频, 语音→文, 图→文, 混合. A 精选 chip surfaces featured items.</li>
+</ul>
+<p>Search placeholder copy—“搜索标题、摘要或提示词…”—indexes titles, summaries, and prompt bodies together. Collections are separate packs (homepage pill 「精选起步」 → <code>/collection/getting-started</code>; full index at <code>/collections</code>). Seed sample titles on the home grid include 城市夜景航拍运镜, 电影感人像光影, 品牌文案助手, 静物转微距运镜, 多参考服装平铺, and 产品图风格统一—covering video camera moves, portrait lighting, copywriting, and ecommerce image workflows.</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/drawer-city-night-aerial.png" width="1280" height="900" loading="lazy" decoding="async" alt="Prompt Share drawer — city night aerial t2v prompt with Chinese and English copy buttons and Kling tags">
+  <figcaption><code>drawer-city-night-aerial.png</code> — drawer for 城市夜景航拍运镜 (text→video).</figcaption>
+</figure>
+
+<h2>Detail drawer: copy ZH, copy EN, keep parameters</h2>
+<p>Clicking a card opens a right-hand drawer (Midjourney-style, not a full page jump). For the night aerial sample, the drawer shows task 「文→视频」, model note 「可灵」, a one-line summary, then:</p>
+<ul>
+  <li><strong>中文提示词</strong> with 复制 — e.g. 城市夜景航拍，霓虹倒影，缓慢向前推进，电影级稳定运镜，细雨湿路面。</li>
+  <li><strong>English prompt</strong> with Copy — Aerial night cityscape, neon reflections, slow forward push-in, cinematic stabilized camera, wet streets after rain.</li>
+  <li>Optional negative prompt block when present.</li>
+  <li>Pills/tags such as fps 24, camera slow push-in, resolution 1080p, duration_sec 5, 可灵, 电影感.</li>
+</ul>
+<p>A 「完整页」 link opens the full prompt page when you need a shareable URL. The drawer is the product’s core loop: browse → inspect bilingual text → copy → paste into Kling / Midjourney / GPT-class tools. Parameters live as structured pills so “24 fps / 5s / slow push-in” does not get lost in a paragraph.</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/collections.png" width="1280" height="800" loading="lazy" decoding="async" alt="Prompt Share collections index — 合集 heading and 精选起步 bilingual starter pack card">
+  <figcaption><code>collections.png</code> — collections index.</figcaption>
+</figure>
+
+<h2>Collections: curated packs, not endless scroll</h2>
+<p><code>/collections</code> is titled 合集 with subtitle 专题打包的提示词精选. The first pack, 「精选起步」, is labeled 双语样例合集—explicitly a bilingual starter set. Packs matter for onboarding: new visitors should not face a raw filter wall with zero guidance. Editorial packs also give AdSense reviewers a human-curated path instead of an empty grid.</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/submit.png" width="1280" height="1100" loading="lazy" decoding="async" alt="Prompt Share submit form — task type, bilingual titles, tags GPT Midjourney Kling, ZH and EN prompt fields">
+  <figcaption><code>submit.png</code> — <code>/submit</code> no-login contribution form.</figcaption>
+</figure>
+
+<h2>Submit without signup, publish after review</h2>
+<p><code>/submit</code> states: 无需注册。提交后进入审核，通过后才会公开显示. The form captures:</p>
+<ol>
+  <li>Task type (t2t…mixed), required title, optional English title, summary, model/tool (placeholder examples GPT-4o、Midjourney、可灵).</li>
+  <li>Category (写作 / 图像 / 视频 / 工具), default display language, optional contact for admins only.</li>
+  <li>Tags (max 8): GPT, Midjourney, 人像, 可灵, 电商, 电影感, etc.</li>
+  <li>中文提示词 + English prompt (at least one required), optional system prompts, optional negatives, Markdown notes, optional parameters JSON, license note, cover and result media uploads.</li>
+  <li>提交审核 — rate-limited; public only after admin approval.</li>
+</ol>
+<p>That tradeoff is intentional: zero signup friction for contributors, but no spam flood on the homepage. A honeypot-style 公司网址 field exists for bots. Admin sits behind <code>/admin/login</code>.</p>
+
+<h2>Why sibling host + editorial archive</h2>
+<p>Archiving timestamped screenshots into <code>original/prompt-share/</code> preserves capture provenance. Hero generation goes through <code>npm run generate-article-covers</code> for Open Graph WebP. Chinese body copy serves “提示词库 / 文生视频 / 可灵提示词” intent; English serves “bilingual prompt library / text-to-video prompts / Kling Midjourney share.” Short locales stay brief—the thick bilingual pair carries AdSense weight.</p>
+<p>Compared with ranking-table archives (<code>noindex</code>), Prompt Share belongs in the <strong>indexable primary</strong> bucket: original product, original screenshots, first-person notes—same class as WordPet and EatToday.</p>
+
+<h2>Workflow notes I refuse to water down</h2>
+<ol>
+  <li>Quote UI labels exactly: Prompt Share, 合集, 提交审核, 文→视频, 精选起步.</li>
+  <li>Do not claim prompts are vendor-official; they are community/editorial recipes for tools like Kling and Midjourney.</li>
+  <li>Prefer http://prompt.aogl.cn/ in live links until HTTPS is confirmed stable.</li>
+  <li>Seed card counts change after each review cycle—this essay freezes the 2026-09-20 capture set.</li>
+  <li>Submit is moderated; “no login” does not mean “instantly public.”</li>
+</ol>
+
+<h2>Accessibility and SEO checklist</h2>
+<ul>
+  <li>Alt text names filters, drawer titles, and form sections—never “image 1.”</li>
+  <li>Body repeats Prompt Share, <code>http://prompt.aogl.cn/</code>, bilingual, t2i/t2v, 合集, 提交审核, 可灵, Midjourney.</li>
+  <li>Outbound product links use <code>rel="noopener noreferrer"</code>; narrative ships in first-paint HTML.</li>
+</ul>
+
+<h2>Boundaries</h2>
+<p>These screens document <strong>Prompt Share, an app I built</strong>—a personal product and UI archive. Prompt texts, tags, and pack membership change over time. Nothing here claims affiliation with OpenAI, Midjourney, or Kling. Users remain responsible for how they use generated media.</p>
+
+<h2 id="article-seo-keywords">Related searches</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">Open Prompt Share</a>
+  <a class="pill" href="http://prompt.aogl.cn/submit" target="_blank" rel="noopener noreferrer">Submit a prompt</a>
+  <a class="pill" href="/articles/index.html">All originals</a>
+</div></article>
+    </div>
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Prompt Share：中英双语多任务提示词库手记</h1>
+        <p class="article-shell__sub">本人开发 · App：http://prompt.aogl.cn/ · 文图视频 · 合集 · 提交审核</p>
+        <p class="article-shell__meta"><time datetime="2026-09-20">2026-09-20</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>这是 aogl.cn 上的<strong>本人一手产品手记</strong>。截图归档在 <code>original/prompt-share/</code>（2026-09-20）。<strong>Prompt Share 是我自己开发的应用</strong>（页脚 © 2026 Prompt Share · 提示词分享）。<strong>入口：</strong><a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>——面向文本、图像、视频、音频工作流的<strong>中英双语多任务提示词库</strong>。卡片打开类似 Midjourney 的右侧抽屉，可一键复制中英文提示词；合集打包入门样例；任何人可无注册提交，经管理员审核后公开。本文不是联盟软文，而是对照本人 UI 截图写清：首页筛选、抽屉详情、提交表单、合集索引，方便检索「双语提示词库」「文生视频提示词分享」「可灵 / Midjourney 中英提示词」「prompt.aogl.cn」等意图。</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/home.png" width="1280" height="900" loading="lazy" decoding="async" alt="Prompt Share 首页 — 品牌标题、搜索框、媒体与任务芯片、合集与提示词卡片网格">
+  <figcaption><code>home.png</code> — 首页：搜索 + 输出类型 + 任务类型 + 卡片。</figcaption>
+</figure>
+
+<h2>文件夹里有什么</h2>
+<ul>
+  <li><code>rd.txt</code> — 产品地址：<code>http://prompt.aogl.cn/</code>。</li>
+  <li><code>home.png</code> — 英雄区「Prompt Share」、搜索、全部/文本/图像/视频/音频、任务芯片、精选起步、六张提示词卡。</li>
+  <li><code>drawer-city-night-aerial.png</code> — 「城市夜景航拍运镜」抽屉：中英提示词与参数胶囊。</li>
+  <li><code>submit.png</code> — <code>/submit</code> 提交表：任务类型、双语标题、标签、中英提示词、提交审核。</li>
+  <li><code>collections.png</code> — <code>/collections</code> 合集索引：「精选起步 · 双语样例合集」。</li>
+  <li><code>homepage-raw.html</code> — 首页 HTML 快照（编码可能因抓取环境不同）。</li>
+</ul>
+<p>截图均在浏览器打开 <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a> 时拍摄。产品当前以 <strong>http://</strong> 入口为准。结构化正文 + 描述性 alt，比只丢一个外链更利于收录。</p>
+
+<h2>定位：跨模态的一座库</h2>
+<p>多数「提示词站」要么是纯英文 Midjourney 瀑布流，要么是中文聊天片段贴进博客。Prompt Share 的契约不同：<strong>按输出模态与生成任务建目录</strong>，中英提示词正文是一等公民字段。首页标语写得很直白——多任务提示词库 · 中英双语 · 文图视频一站收藏。导航很短：提示词、合集、提交、管理。产品是「库 + 投稿队列」，不是社交动态墙。</p>
+<p>放在子域 <code>prompt.aogl.cn</code>，与 WordPet、EatToday、世界之最同一套路：交互产品在子域；制作手记与 SEO 长文留在 aogl.cn 首屏 HTML。</p>
+
+<h2>筛选：按人们真正生成的方式切</h2>
+<p>搜索框下方两行芯片：</p>
+<ul>
+  <li><strong>输出类型</strong> — 全部、文本、图像、视频、音频（<code>?output_type=</code>）。</li>
+  <li><strong>任务类型</strong> — 文→文 (t2t)、文→图 (t2i)、图→图 (i2i)、多图→图 (r2i)、文→视频 (t2v)、图→视频 (i2v)，以及「更多」里的多参→视频、视频→视频、文→音频、语音→文、图→文、混合；另有「精选」。</li>
+</ul>
+<p>搜索占位「搜索标题、摘要或提示词…」把标题、摘要与提示词正文一并检索。合集是独立打包（首页「精选起步」→ <code>/collection/getting-started</code>；总览 <code>/collections</code>）。首页样例标题包括：城市夜景航拍运镜、电影感人像光影、品牌文案助手、静物转微距运镜、多参考服装平铺、产品图风格统一——覆盖运镜、人像光影、文案与电商出图。</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/drawer-city-night-aerial.png" width="1280" height="900" loading="lazy" decoding="async" alt="Prompt Share 抽屉 — 城市夜景航拍文生视频提示词，中英复制按钮与可灵标签">
+  <figcaption><code>drawer-city-night-aerial.png</code> — 城市夜景航拍运镜（文→视频）。</figcaption>
+</figure>
+
+<h2>详情抽屉：中英复制，参数不丢</h2>
+<p>点卡片打开右侧抽屉（类似 Midjourney，不必整页跳转）。夜景航拍样例可见任务「文→视频」、模型「可灵」、一行摘要，然后：</p>
+<ul>
+  <li><strong>中文提示词</strong> + 复制 — 例如：城市夜景航拍，霓虹倒影，缓慢向前推进，电影级稳定运镜，细雨湿路面。</li>
+  <li><strong>English prompt</strong> + Copy — Aerial night cityscape, neon reflections, slow forward push-in…</li>
+  <li>若有负面提示则单独一块。</li>
+  <li>胶囊/标签：fps 24、camera slow push-in、resolution 1080p、duration_sec 5、可灵、电影感等。</li>
+</ul>
+<p>「完整页」用于需要可分享 URL 时打开独立页。核心循环是：浏览 → 看双语正文 → 复制 → 贴进可灵 / Midjourney / GPT 类工具。参数做成结构化胶囊，避免「24fps / 5 秒 / 缓推」淹没在长段落里。</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/collections.png" width="1280" height="800" loading="lazy" decoding="async" alt="Prompt Share 合集页 — 合集标题与精选起步双语样例合集卡片">
+  <figcaption><code>collections.png</code> — 合集索引。</figcaption>
+</figure>
+
+<h2>合集：专题打包，而不是无限滚动</h2>
+<p><code>/collections</code> 标题为「合集」，副标题「专题打包的提示词精选」。首个包「精选起步」标注「双语样例合集」。合集服务入门：新访客不该面对只有筛选、没有指引的空墙。对审核员而言，人工打包路径也比空洞网格更像「作者在策展」。</p>
+
+<figure class="article-figure">
+  <img src="../original/prompt-share/submit.png" width="1280" height="1100" loading="lazy" decoding="async" alt="Prompt Share 提交页 — 任务类型、双语标题、GPT Midjourney 可灵标签、中英提示词字段">
+  <figcaption><code>submit.png</code> — <code>/submit</code> 无注册投稿表单。</figcaption>
+</figure>
+
+<h2>无注册提交，审核后公开</h2>
+<p><code>/submit</code> 写明：无需注册。提交后进入审核，通过后才会公开显示。表单收集：</p>
+<ol>
+  <li>任务类型（t2t…mixed）、必填标题、可选英文标题、摘要、模型/工具（示例 GPT-4o、Midjourney、可灵）。</li>
+  <li>分类（写作 / 图像 / 视频 / 工具）、默认展示语言、仅管理员可见的联系方式。</li>
+  <li>标签最多 8 个：GPT、Midjourney、人像、可灵、电商、电影感等。</li>
+  <li>中文提示词 + English prompt（至少一侧）、可选系统提示与负面提示、Markdown 说明、参数 JSON、授权说明、封面与效果素材。</li>
+  <li>提交审核 — 有频率限制；前台仅展示已通过条目。</li>
+</ol>
+<p>取舍很明确：投稿零注册摩擦，首页不被垃圾刷屏。表单含「公司网址」蜜罐字段；管理入口在 <code>/admin/login</code>。</p>
+
+<h2>为何子域 + 本站归档</h2>
+<p>时间戳截图放进 <code>original/prompt-share/</code> 便于追溯。封面走 <code>npm run generate-article-covers</code> 生成 Open Graph WebP。中文服务「提示词库 / 文生视频 / 可灵提示词」；英文服务 bilingual prompt library / text-to-video / Kling Midjourney share。短语言包故意短——过审重量在中英厚文。</p>
+<p>相对本站榜单存档（<code>noindex</code>），Prompt Share 属于<strong>可索引主文</strong>：原创产品、原创截图、第一人称过程，与 WordPet、EatToday 同类。</p>
+
+<h2>写作时不愿稀释的约束</h2>
+<ol>
+  <li>UI 文案照抄：Prompt Share、合集、提交审核、文→视频、精选起步。</li>
+  <li>不声称提示词为厂商官方；它们是面向可灵、Midjourney 等工具的社区/编辑配方。</li>
+  <li>外链优先写 http://prompt.aogl.cn/，直至 HTTPS 稳定。</li>
+  <li>卡片数量会随审核变化；本文冻结 2026-09-20 截图集。</li>
+  <li>「无需注册」≠「立刻公开」；必须过审。</li>
+</ol>
+
+<h2>无障碍与 SEO 清单</h2>
+<ul>
+  <li>alt 写清筛选、抽屉标题与表单分区，禁止「图片 1」。</li>
+  <li>正文重复：Prompt Share、<code>http://prompt.aogl.cn/</code>、双语、t2i/t2v、合集、提交审核、可灵、Midjourney。</li>
+  <li>产品外链 <code>rel="noopener noreferrer"</code>；完整叙事在首屏 HTML。</li>
+</ul>
+
+<h2>边界</h2>
+<p>这些截图记录的是<strong>本人开发的 Prompt Share</strong>——个人产品与 UI 归档。提示词正文、标签与合集成员会随时间变化。本文不声称与 OpenAI、Midjourney 或可灵存在官方合作。生成内容如何使用，由使用者自行负责。</p>
+
+<h2 id="article-seo-keywords">相关检索</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">打开 Prompt Share</a>
+  <a class="pill" href="http://prompt.aogl.cn/submit" target="_blank" rel="noopener noreferrer">提交提示词</a>
+  <a class="pill" href="/articles/index.html">全部原创</a>
+</div></article>
+    </div>
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Prompt Share — 中英バイリンガル多タスクプロンプト庫</h1>
+        <p class="article-shell__sub">自作アプリ · http://prompt.aogl.cn/</p>
+        <p class="article-shell__meta"><time datetime="2026-09-20">2026-09-20</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p><strong>自作アプリ</strong> <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">Prompt Share</a>。入口：<a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>。中英バイリンガルの多タスク提示詞庫。素材は <code>original/prompt-share/</code>。</p>
+<figure class="article-figure">
+  <img src="../original/prompt-share/home.png" width="800" height="560" loading="lazy" decoding="async" alt="Prompt Share ホーム">
+</figure>
+<h2 id="article-seo-keywords">関連</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">prompt.aogl.cn</a>
+  <a class="pill" href="/articles/index.html">記事一覧</a>
+</div></article>
+    </div>
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Prompt Share — 중영 이중언어 멀티태스크 프롬프트 라이브러리</h1>
+        <p class="article-shell__sub">직접 개발 · http://prompt.aogl.cn/</p>
+        <p class="article-shell__meta"><time datetime="2026-09-20">2026-09-20</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p><strong>직접 개발</strong> <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">Prompt Share</a>. 링크: <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>. 중영 이중언어 멀티태스크 프롬프트 라이브러리. 자료: <code>original/prompt-share/</code>.</p>
+<figure class="article-figure">
+  <img src="../original/prompt-share/home.png" width="800" height="560" loading="lazy" decoding="async" alt="Prompt Share 홈">
+</figure>
+<h2 id="article-seo-keywords">관련</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">prompt.aogl.cn</a>
+  <a class="pill" href="/articles/index.html">글 목록</a>
+</div></article>
+    </div>
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Prompt Share — bibliothèque bilingue multi-tâches</h1>
+        <p class="article-shell__sub">App perso · http://prompt.aogl.cn/</p>
+        <p class="article-shell__meta"><time datetime="2026-09-20">2026-09-20</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p><strong>App perso</strong> <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">Prompt Share</a>. Lien : <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>. Bibliothèque bilingue multi-tâches. Archives : <code>original/prompt-share/</code>.</p>
+<figure class="article-figure">
+  <img src="../original/prompt-share/home.png" width="800" height="560" loading="lazy" decoding="async" alt="Prompt Share accueil">
+</figure>
+<h2 id="article-seo-keywords">Liens</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">prompt.aogl.cn</a>
+  <a class="pill" href="/articles/index.html">Tous les originaux</a>
+</div></article>
+    </div>
+    <div class="lang-ru">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← На главную · оригиналы</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Prompt Share — двуязычная библиотека промптов</h1>
+        <p class="article-shell__sub">Моё приложение · http://prompt.aogl.cn/</p>
+        <p class="article-shell__meta"><time datetime="2026-09-20">2026-09-20</time> · Оригинал aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="ru"><p><strong>Моё приложение</strong> <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">Prompt Share</a>. Ссылка: <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>. Двуязычная библиотека промптов. Архив: <code>original/prompt-share/</code>.</p>
+<figure class="article-figure">
+  <img src="../original/prompt-share/home.png" width="800" height="560" loading="lazy" decoding="async" alt="Prompt Share главная">
+</figure>
+<h2 id="article-seo-keywords">Ссылки</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">prompt.aogl.cn</a>
+  <a class="pill" href="/articles/index.html">Все материалы</a>
+</div></article>
+    </div>
+    <div class="lang-ar">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← الرئيسية · محتوى أصلي</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>Prompt Share — مكتبة أوامر ثنائية اللغة متعددة المهام</h1>
+        <p class="article-shell__sub">تطبيق من تطويري · http://prompt.aogl.cn/</p>
+        <p class="article-shell__meta"><time datetime="2026-09-20">2026-09-20</time> · محتوى أصلي</p>
+      </div>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p><strong>تطبيق من تطويري</strong> <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">Prompt Share</a>. الرابط: <a href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">http://prompt.aogl.cn/</a>. مكتبة أوامر ثنائية اللغة متعددة المهام. الأرشيف: <code>original/prompt-share/</code>.</p>
+<figure class="article-figure">
+  <img src="../original/prompt-share/home.png" width="800" height="560" loading="lazy" decoding="async" alt="Prompt Share الصفحة الرئيسية">
+</figure>
+<h2 id="article-seo-keywords">روابط</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://prompt.aogl.cn/" target="_blank" rel="noopener noreferrer">prompt.aogl.cn</a>
+  <a class="pill" href="/articles/index.html">كل المواد</a>
+</div></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/about.html" class="footer-legal-link lang-en">About</a>
+        <a href="/contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="/privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="/contact.html" class="footer-legal-link lang-ko">문의</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="/about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="/contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="/privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="/about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="/contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="/about.html" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="/contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-en" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ko" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-fr" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ru" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ar" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer></script>
+</body></html>
