@@ -8,7 +8,7 @@
   "descZh": "按 Newzoo 与行业营收常见梯队排序的十个商店与发行商，每站三条官方公告或博文外链。",
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
-  "updated": "2026-09-15",
+  "updated": "2026-09-22",
   "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Last reviewed: <strong>2026-06-22</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want a ranked top-10 plus three official links per vendor — not a discovery feed for unknown APK sites. Major client updates still show up in the per-row news slots when you run <code>npm run fetch-hub-news</code>; mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p><p><strong>Editorial cross-link:</strong> first game-original on this hub: <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Reading Steam Charts</a>; character look-dev in <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">Elena · Sea-Wind</a>, <a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">palette & ritual UI</a>, and <a href=\"/articles/games-hub-generative-art-workflow.html\">Games hub × generative art workflow</a>.</p>",
   "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>最近核对：<strong>2026-06-22</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但需要对照营收梯队、并点到各厂三条官方链接的人；不把它当成 APK 发现站。大版本更新仍会出现在每行「最新动态」里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p><p><strong>原创交叉链：</strong>游戏 Hub 原创轮播首篇 <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Steam Charts 怎么读</a>；角色设定见 <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">艾琳娜 · 海风之诗</a>、<a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">配色与仪式 UI</a>，工作流 <a href=\"/articles/games-hub-generative-art-workflow.html\">游戏 Hub × 生成式角色美术</a>。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
@@ -147,22 +147,22 @@
       "labelZh": "PlayStation",
       "items": [
         {
-          "titleEn": "Marvel’s Wolverine developers discuss capturing the essence of Logan – out September 15",
-          "titleZh": "Marvel’s Wolverine developers discuss capturing the essence of Logan – out September 15",
-          "url": "https://blog.playstation.com/2026/09/14/marvels-wolverine-developers-discuss-capturing-the-essence-of-logan-out-september-15/",
-          "date": "2026-09-14"
+          "titleEn": "(For Southeast Asia) Lisa x PlayStation arrives this October: First look at the DualSense wireless controller",
+          "titleZh": "(For Southeast Asia) Lisa x PlayStation arrives this October: First look at the DualSense wireless controller",
+          "url": "https://blog.playstation.com/2026/09/21/20260922-lisa/",
+          "date": "2026-09-22"
         },
         {
-          "titleEn": "Ace Combat 8: Wings of Theve – Annihilation Battle mode confirmed, story trailer revealed",
-          "titleZh": "Ace Combat 8: Wings of Theve – Annihilation Battle mode confirmed, story trailer revealed",
-          "url": "https://blog.playstation.com/2026/09/14/ace-combat-8-wings-of-theve-annihilation-battle-mode-confirmed-story-trailer-revealed/",
-          "date": "2026-09-14"
+          "titleEn": "Lisa x PlayStation arrives this October: First look at the DualSense wireless controller – Lisa Limited Edition and all-new merchandise",
+          "titleZh": "Lisa x PlayStation arrives this October: First look at the DualSense wireless controller – Lisa Limited Edition and all-new merchandise",
+          "url": "https://blog.playstation.com/2026/09/21/lisa-x-playstation-arrives-this-october-first-look-at-the-dualsense-wireless-controller-lisa-limited-edition-and-all-new-merchandise/",
+          "date": "2026-09-21"
         },
         {
-          "titleEn": "Official PlayStation Podcast Episode 547: Orb-solutely Fabulous",
-          "titleZh": "Official PlayStation Podcast Episode 547: Orb-solutely Fabulous",
-          "url": "https://blog.playstation.com/2026/09/11/official-playstation-podcast-episode-547-orb-solutely-fabulous/",
-          "date": "2026-09-11"
+          "titleEn": "Silent Hill: Townfall — 9 ways first-person changes the iconic horror formula",
+          "titleZh": "Silent Hill: Townfall — 9 ways first-person changes the iconic horror formula",
+          "url": "https://blog.playstation.com/2026/09/21/silent-hill-townfall-9-ways-first-person-changes-the-iconic-horror-formula/",
+          "date": "2026-09-21"
         }
       ]
     },
@@ -172,22 +172,22 @@
       "labelZh": "Xbox",
       "items": [
         {
-          "titleEn": "LEGO Batman: Legacy of the Dark Knight – Building Mayhem with The Joker & Harley Quinn",
-          "titleZh": "LEGO Batman: Legacy of the Dark Knight – Building Mayhem with The Joker & Harley Quinn",
-          "url": "https://news.xbox.com/en-us/2026/09/14/lego-batman-mayhem-collection-dlc/",
-          "date": "2026-09-14"
+          "titleEn": "Gears of War: E-Day – Prepare for Emergence Day with Us in Los Angeles",
+          "titleZh": "Gears of War: E-Day – Prepare for Emergence Day with Us in Los Angeles",
+          "url": "https://news.xbox.com/en-us/2026/09/21/gears-of-war-e-day-emergence-la-event/",
+          "date": "2026-09-21"
         },
         {
-          "titleEn": "BlizzCon 2026 Opening Ceremony: Starcraft Returns, Diablo V Announced, Warcraft news and more",
-          "titleZh": "BlizzCon 2026 Opening Ceremony: Starcraft Returns, Diablo V Announced, Warcraft news and more",
-          "url": "https://news.xbox.com/en-us/2026/09/12/blizzcon-2026-opening-ceremony/",
-          "date": "2026-09-12"
+          "titleEn": "Welcome to The World’s Game: EA Sports FC 27 Early Access Trial with EA Play Available Today",
+          "titleZh": "Welcome to The World’s Game: EA Sports FC 27 Early Access Trial with EA Play Available Today",
+          "url": "https://news.xbox.com/en-us/2026/09/18/ea-sports-fc-27-early-access-trial-with-ea-play-available-today/",
+          "date": "2026-09-18"
         },
         {
-          "titleEn": "Next Week on XBOX: New Games for September 14 to 18",
-          "titleZh": "Next Week on XBOX: New Games for September 14 to 18",
-          "url": "https://news.xbox.com/en-us/2026/09/11/next-week-on-xbox-new-games-for-september-14-to-18/",
-          "date": "2026-09-11"
+          "titleEn": "How Remedies Shape Progression in Hela: Of Mice & Magic",
+          "titleZh": "How Remedies Shape Progression in Hela: Of Mice & Magic",
+          "url": "https://news.xbox.com/en-us/2026/09/18/how-remedies-shape-progression-in-hela-of-mice-magic/",
+          "date": "2026-09-18"
         }
       ]
     },
@@ -222,6 +222,12 @@
       "labelZh": "Epic",
       "items": [
         {
+          "titleEn": "TT Games brings Gotham City to life in LEGO Batman: Legacy of the Dark Knight",
+          "titleZh": "TT Games brings Gotham City to life in LEGO Batman: Legacy of the Dark Knight",
+          "url": "https://www.unrealengine.com/developer-interviews/tt-games-brings-gotham-city-to-life-in-lego-batman-legacy-of-the-dark-knight",
+          "date": "2026-09-21"
+        },
+        {
           "titleEn": "Stepping inside a retro anime-inspired game: a look into the rendering of Orbitals",
           "titleZh": "Stepping inside a retro anime-inspired game: a look into the rendering of Orbitals",
           "url": "https://www.unrealengine.com/tech-blog/stepping-inside-a-retro-anime-inspired-game-a-look-into-the-rendering-of-orbitals",
@@ -232,12 +238,6 @@
           "titleZh": "EMEA Dev Days | Unreal Engine",
           "url": "https://www.unrealengine.com/events/emea-dev-days",
           "date": "2026-09-03"
-        },
-        {
-          "titleEn": "Here’s why Rebel Wolves chose UE5 to power its ambitious, large scale, open world RPG The Blood of Dawnwalker",
-          "titleZh": "Here’s why Rebel Wolves chose UE5 to power its ambitious, large scale, open world RPG The Blood of Dawnwalker",
-          "url": "https://www.unrealengine.com/developer-interviews/heres-why-rebel-wolves-chose-ue5-to-power-its-ambitious-large-scale-open-world-rpg-the-blood-of-dawnwalker",
-          "date": "2026-09-02"
         }
       ]
     },

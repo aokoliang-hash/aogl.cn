@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-09-15",
+  "updated": "2026-09-22",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
-          "titleZh": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
-          "date": "2026-09-14"
+          "titleEn": "New experts join Google’s AI & Economy team",
+          "titleZh": "New experts join Google’s AI & Economy team",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+          "date": "2026-09-18"
         },
         {
-          "titleEn": "DevFest is back",
-          "titleZh": "DevFest is back",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
-          "date": "2026-09-14"
+          "titleEn": "Co-creating the future of fashion with Google",
+          "titleZh": "Co-creating the future of fashion with Google",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
+          "date": "2026-09-18"
         },
         {
-          "titleEn": "3 ways to prep for your next big race with Search",
-          "titleZh": "3 ways to prep for your next big race with Search",
-          "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
-          "date": "2026-09-10"
+          "titleEn": "Making global data easier to explore",
+          "titleZh": "Making global data easier to explore",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+          "date": "2026-09-17"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "Introducing Muse: The World’s First Personal AI Agent Built for Everyone",
-          "titleZh": "Introducing Muse: The World’s First Personal AI Agent Built for Everyone",
-          "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
-          "date": "2026-09-08"
+          "titleEn": "Announcing Petal, a First-of-its-Kind Transoceanic Subsea Cable",
+          "titleZh": "Announcing Petal, a First-of-its-Kind Transoceanic Subsea Cable",
+          "url": "https://about.fb.com/news/2026/09/announcing-petal-meta-petabit-transoceanic-cable/",
+          "date": "2026-09-21"
         },
         {
-          "titleEn": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
-          "titleZh": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
-          "url": "https://about.fb.com/news/2026/09/launching-bill-payments-in-india-helping-people-to-pay-everyday-household-bills-directly-on-whatsapp/",
-          "date": "2026-09-03"
+          "titleEn": "Prostujemy: fakty o walce z oszukańczymi reklamami w Polsce",
+          "titleZh": "Prostujemy: fakty o walce z oszukańczymi reklamami w Polsce",
+          "url": "https://about.fb.com/news/2026/09/prostujemy-fakty-o-walce-z-oszukanczymi-reklamami-w-polsce/",
+          "date": "2026-09-18"
         },
         {
-          "titleEn": "Inside Meta’s Infrastructure Lab",
-          "titleZh": "Inside Meta’s Infrastructure Lab",
-          "url": "https://about.fb.com/news/2026/09/inside-metas-infrastructure-lab/",
-          "date": "2026-09-01"
+          "titleEn": "Canadian Start-up smartARM Uses AI to Create Intuitive Bionic Prosthetics",
+          "titleZh": "Canadian Start-up smartARM Uses AI to Create Intuitive Bionic Prosthetics",
+          "url": "https://about.fb.com/news/2026/09/canadian-start-up-smartarm-uses-ai-to-create-intuitive-bionic-prosthetics/",
+          "date": "2026-09-16"
         }
       ],
       "hotSearchPills": [
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
+          "titleZh": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
+          "url": "https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/",
+          "date": "2026-09-21"
+        },
+        {
+          "titleEn": "Inside Petal: Building the World’s First Petabit-Class Transoceanic Subsea Cable",
+          "titleZh": "Inside Petal: Building the World’s First Petabit-Class Transoceanic Subsea Cable",
+          "url": "https://engineering.fb.com/2026/09/21/connectivity/petal-petabit-transoceanic-subsea-cable/",
+          "date": "2026-09-21"
+        },
+        {
           "titleEn": "ZGateway: Learnings from Putting a Proxy in Front of ZippyDB",
           "titleZh": "ZGateway: Learnings from Putting a Proxy in Front of ZippyDB",
           "url": "https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta/",
           "date": "2026-09-03"
-        },
-        {
-          "titleEn": "An Organizational Second Brain: Building an AI That Learns From Experts",
-          "titleZh": "An Organizational Second Brain: Building an AI That Learns From Experts",
-          "url": "https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/",
-          "date": "2026-09-02"
-        },
-        {
-          "titleEn": "MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet",
-          "titleZh": "MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet",
-          "url": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet/",
-          "date": "2026-08-24"
         }
       ],
       "hotSearchPills": [
@@ -479,22 +479,22 @@
       "labelZh": "X",
       "items": [
         {
+          "titleEn": "X will now let US users trade via Cashtags",
+          "titleZh": "X will now let US users trade via Cashtags",
+          "url": "https://techcrunch.com/2026/09/16/x-will-now-let-u-s-users-trade-via-cashtags/",
+          "date": "2026-09-16"
+        },
+        {
+          "titleEn": "Nitter and XCancel are dead (again) after X’s latest legal actions",
+          "titleZh": "Nitter and XCancel are dead (again) after X’s latest legal actions",
+          "url": "https://techcrunch.com/2026/09/15/nitter-and-xcancel-are-dead-again-after-xs-latest-legal-actions/",
+          "date": "2026-09-15"
+        },
+        {
           "titleEn": "Judge blocks X rival from using Twitter name, but allows ‘Tweet’ for now",
           "titleZh": "Judge blocks X rival from using Twitter name, but allows ‘Tweet’ for now",
           "url": "https://techcrunch.com/2026/09/04/judge-blocks-x-rival-from-using-twitter-name-but-allows-tweet-for-now/",
           "date": "2026-09-04"
-        },
-        {
-          "titleEn": "Hold up, there’s a new Twitter in town",
-          "titleZh": "Hold up, there’s a new Twitter in town",
-          "url": "https://techcrunch.com/2026/08/27/hold-up-theres-a-new-twitter-in-the-town/",
-          "date": "2026-08-27"
-        },
-        {
-          "titleEn": "Bluesky’s interim CEO, Toni Schneider, drops the ‘interim’",
-          "titleZh": "Bluesky’s interim CEO, Toni Schneider, drops the ‘interim’",
-          "url": "https://techcrunch.com/2026/07/10/blueskys-interim-ceo-toni-schneider-drops-the-interim/",
-          "date": "2026-07-10"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Growing from Wiki Club to Becoming a Community Towards the Future",
-          "titleZh": "Growing from Wiki Club to Becoming a Community Towards the Future",
-          "url": "https://diff.wikimedia.org/2026/09/15/growing-from-wiki-club-to-becoming-a-community-towards-the-future/",
-          "date": "2026-09-15"
+          "titleEn": "Wiki Rookies: Daejeon in-person meetup",
+          "titleZh": "Wiki Rookies: Daejeon in-person meetup",
+          "url": "https://diff.wikimedia.org/2026/09/21/wiki-rookies-daejeon-in-person-meetup/",
+          "date": "2026-09-21"
         },
         {
-          "titleEn": "Women, the Sundanese Language, and Wikimedia Projects",
-          "titleZh": "Women, the Sundanese Language, and Wikimedia Projects",
-          "url": "https://diff.wikimedia.org/2026/09/15/women-the-sundanese-language-and-wikimedia-projects/",
-          "date": "2026-09-15"
+          "titleEn": "Tech News 2026 – Issue 39",
+          "titleZh": "Tech News 2026 – Issue 39",
+          "url": "https://diff.wikimedia.org/2026/09/21/tech-news-2026-issue-39/",
+          "date": "2026-09-21"
         },
         {
-          "titleEn": "Tech News 2026 – Issue 38",
-          "titleZh": "Tech News 2026 – Issue 38",
-          "url": "https://diff.wikimedia.org/2026/09/14/tech-news-2026-issue-38/",
-          "date": "2026-09-14"
+          "titleEn": "Bringing Arabic Words to Wikikamus: A Workshop with KUIZM Students",
+          "titleZh": "Bringing Arabic Words to Wikikamus: A Workshop with KUIZM Students",
+          "url": "https://diff.wikimedia.org/2026/09/21/bringing-arabic-words-to-wikikamus-a-workshop-with-kuizm-students/",
+          "date": "2026-09-21"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon's water conservation and replenishment efforts around the world",
-          "titleZh": "Amazon's water conservation and replenishment efforts around the world",
-          "url": "https://www.aboutamazon.com/news/sustainability/amazon-water-conservation-replenishment-sustainability?utm_source=rss",
-          "date": "2026-09-15"
+          "titleEn": "Amazon Leo is bringing high-quality satellite internet to Uzbekistan",
+          "titleZh": "Amazon Leo is bringing high-quality satellite internet to Uzbekistan",
+          "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-uzbekistan?utm_source=rss",
+          "date": "2026-09-22"
         },
         {
-          "titleEn": "Prime Big Deal Days regresa del 6 al 7 de octubre: Esto es lo que puedes esperar",
-          "titleZh": "Prime Big Deal Days regresa del 6 al 7 de octubre: Esto es lo que puedes esperar",
-          "url": "https://www.aboutamazon.com/news/retail/amazon-prime-big-deals-day-2026-cuando-octubre-6-7?utm_source=rss",
-          "date": "2026-09-15"
+          "titleEn": "Amazon’s carbon-free energy projects contribute $11 billion to US GDP, support nearly 22,000 jobs in local communities",
+          "titleZh": "Amazon’s carbon-free energy projects contribute $11 billion to US GDP, support nearly 22,000 jobs in local communities",
+          "url": "https://www.aboutamazon.com/news/sustainability/amazon-carbon-free-energy-economic-impact-study-2026?utm_source=rss",
+          "date": "2026-09-21"
         },
         {
-          "titleEn": "Prime Big Deal Days 2026: Early deals you can shop right now",
-          "titleZh": "Prime Big Deal Days 2026: Early deals you can shop right now",
-          "url": "https://www.aboutamazon.com/news/retail/prime-big-deal-days-2026-best-deals-amazon?utm_source=rss",
-          "date": "2026-09-15"
+          "titleEn": "How Amazon and Prime make everyday life more affordable for American families",
+          "titleZh": "How Amazon and Prime make everyday life more affordable for American families",
+          "url": "https://www.aboutamazon.com/news/retail/amazon-prime-affordable-everyday-savings?utm_source=rss",
+          "date": "2026-09-21"
         }
       ],
       "hotSearchPills": [
