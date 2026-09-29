@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-09-22",
+  "updated": "2026-09-29",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -25,199 +25,199 @@
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
     {
-      "titleEn": "Announcing Petal, a First-of-its-Kind Transoceanic Subsea Cable",
-      "titleZh": "Announcing Petal, a First-of-its-Kind Transoceanic Subsea Cable",
-      "url": "https://about.fb.com/news/2026/09/announcing-petal-meta-petabit-transoceanic-cable/",
-      "date": "2026-09-21",
+      "titleEn": "The Future Is for Everyone: Muse for Small Business",
+      "titleZh": "The Future Is for Everyone: Muse for Small Business",
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+      "date": "2026-09-29",
       "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Announcing-Petal-a-First-of-its-Kind-Transoceanic-Subsea-Cable_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Announcing-Petal-a-First-of-its-Kind-Transoceanic-Subsea-Cable_Thumbnail.jpg?fit=890%2C501"
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/The-Future-Is-for-Everyone_Muse-for-Small-Business_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/The-Future-Is-for-Everyone_Muse-for-Small-Business_Thumbnail.gif?fit=890%2C501"
     },
     {
-      "titleEn": "Prostujemy: fakty o walce z oszukańczymi reklamami w Polsce",
-      "titleZh": "Prostujemy: fakty o walce z oszukańczymi reklamami w Polsce",
-      "url": "https://about.fb.com/news/2026/09/prostujemy-fakty-o-walce-z-oszukanczymi-reklamami-w-polsce/",
-      "date": "2026-09-18",
+      "titleEn": "Meta Partners With Government Agencies, Law Enforcement, and Safety Organizations to Launch Regional Anti-Scam Education Campaign",
+      "titleZh": "Meta Partners With Government Agencies, Law Enforcement, and Safety Organizations to Launch Regional Anti-Scam Education Campaign",
+      "url": "https://about.fb.com/news/2026/09/meta-one-step-ahead-campaign/",
+      "date": "2026-09-29",
       "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/03/Fighting-Scammers-and-Protecting-People-with-New-Technology-and-Partnerships_Header.jpg?fit=960%2C540",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/03/Fighting-Scammers-and-Protecting-People-with-New-Technology-and-Partnerships_Header.jpg?fit=960%2C540"
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/Meta_One-Step-Ahead-NEWSROOM-POST_Thumbnail_720x720_v2a.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Meta_One-Step-Ahead-NEWSROOM-POST_Thumbnail_720x720_v2a.png?fit=890%2C501"
     },
     {
-      "titleEn": "Canadian Start-up smartARM Uses AI to Create Intuitive Bionic Prosthetics",
-      "titleZh": "Canadian Start-up smartARM Uses AI to Create Intuitive Bionic Prosthetics",
-      "url": "https://about.fb.com/news/2026/09/canadian-start-up-smartarm-uses-ai-to-create-intuitive-bionic-prosthetics/",
-      "date": "2026-09-16",
+      "titleEn": "Launching Meta Enterprise Platform",
+      "titleZh": "Launching Meta Enterprise Platform",
+      "url": "https://about.fb.com/news/2026/09/launching-meta-enterprise-platform/",
+      "date": "2026-09-28",
       "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/20260807_RT_Meta_SmartArm_ShaquemGriffin_1233.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/20260807_RT_Meta_SmartArm_ShaquemGriffin_1233.jpg?fit=890%2C501"
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/Meta_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Meta_Thumbnail.jpg?fit=890%2C501"
     },
     {
-      "titleEn": "Threads Expands Podcast Toolkit for Creators and Listeners",
-      "titleZh": "Threads Expands Podcast Toolkit for Creators and Listeners",
-      "url": "https://about.fb.com/news/2026/09/threads-expands-podcast-toolkit-for-creators-and-listeners/",
-      "date": "2026-09-16",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Threads-Podcasts-Thumbnail.png?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Threads-Podcasts-Thumbnail.png?fit=890%2C501"
-    },
-    {
-      "titleEn": "Threads Introduces Parental Supervision for Teens in APAC",
-      "titleZh": "Threads Introduces Parental Supervision for Teens in APAC",
-      "url": "https://about.fb.com/news/2026/09/threads-introduces-parental-supervision-for-teens-in-apac/",
-      "date": "2026-09-16",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/07/New-Parental-Supervision-Tools-Now-Available-on-Threads_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/07/New-Parental-Supervision-Tools-Now-Available-on-Threads_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Présentation de Meta One : Un service d’abonnement offrant davantage de fonctionnalités et d’IA pour créer, se connecter et se démarquer",
-      "titleZh": "Présentation de Meta One : Un service d’abonnement offrant davantage de fonctionnalités et d’IA pour créer, se connecter et se démarquer",
-      "url": "https://about.fb.com/news/2026/09/presentation-de-meta-one-un-service-dabonnement-offrant-davantage-de-fonctionnalites-et-dia-pour-creer-se-connecter-et-se-demarquer/",
-      "date": "2026-09-15",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Meta-One-Bundle-plans-for-individuals.png?fit=960%2C540",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Meta-One-Bundle-plans-for-individuals.png?fit=960%2C540"
-    },
-    {
-      "titleEn": "Introducing Meta One: A Subscription Service With More Features and AI to Create, Connect, and Stand Out",
-      "titleZh": "Introducing Meta One: A Subscription Service With More Features and AI to Create, Connect, and Stand Out",
-      "url": "https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/",
-      "date": "2026-09-15",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Meta-One_A-Subscription-Service-With-More-Features-and-AI-to-Create-Connect-and-Stand-Out_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Meta-One_A-Subscription-Service-With-More-Features-and-AI-to-Create-Connect-and-Stand-Out_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Former TikTok execs built an app that uses AI to teach you how to pose for a photo",
-      "titleZh": "Former TikTok execs built an app that uses AI to teach you how to pose for a photo",
-      "url": "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
-      "date": "2026-09-15",
+      "titleEn": "TikTok agrees to pay at least $100M in Alabama settlement",
+      "titleZh": "TikTok agrees to pay at least $100M in Alabama settlement",
+      "url": "https://techcrunch.com/2026/09/26/tiktok-agrees-to-pay-at-least-100m-in-alabama-settlement/",
+      "date": "2026-09-26",
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""
     },
     {
-      "titleEn": "Instagram’s latest feature lets you add tagged posts to your profile grid",
-      "titleZh": "Instagram’s latest feature lets you add tagged posts to your profile grid",
-      "url": "https://techcrunch.com/2026/09/10/instagrams-latest-feature-lets-you-add-tagged-posts-to-your-profile-grid/",
-      "date": "2026-09-10",
+      "titleEn": "Meta and YouTube say they will run ads for ‘Musk’ documentary after all",
+      "titleZh": "Meta and YouTube say they will run ads for ‘Musk’ documentary after all",
+      "url": "https://techcrunch.com/2026/09/26/meta-says-it-will-run-ads-for-musk-documentary-after-all/",
+      "date": "2026-09-26",
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""
     },
     {
-      "titleEn": "Snapchat takes aim at Partiful with new event-planning features",
-      "titleZh": "Snapchat takes aim at Partiful with new event-planning features",
-      "url": "https://techcrunch.com/2026/09/10/snapchat-takes-aim-at-partiful-with-new-event-planning-features/",
-      "date": "2026-09-10",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Introducing Muse: The World’s First Personal AI Agent Built for Everyone",
-      "titleZh": "Introducing Muse: The World’s First Personal AI Agent Built for Everyone",
-      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
-      "date": "2026-09-08",
+      "titleEn": "The Biggest News From Connect 2026",
+      "titleZh": "The Biggest News From Connect 2026",
+      "url": "https://about.fb.com/news/2026/09/the-biggest-news-from-connect-2026/",
+      "date": "2026-09-24",
       "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Muse_-Personal-AI-Agent_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Muse_-Personal-AI-Agent_Thumbnail.jpg?fit=890%2C501"
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/The-Biggest-News-From-Connect-2026_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/The-Biggest-News-From-Connect-2026_Thumbnail.jpg?fit=890%2C501"
     },
     {
-      "titleEn": "ZGateway: Learnings from Putting a Proxy in Front of ZippyDB",
-      "titleZh": "ZGateway: Learnings from Putting a Proxy in Front of ZippyDB",
-      "url": "https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta/",
-      "date": "2026-09-03",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/09/ZGateway-Figure-1.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/09/ZGateway-Figure-1.png"
-    },
-    {
-      "titleEn": "TikTok comments are getting more interactive with voice comments, polls, and more",
-      "titleZh": "TikTok comments are getting more interactive with voice comments, polls, and more",
-      "url": "https://techcrunch.com/2026/09/03/tiktok-comments-are-getting-more-interactive-with-voice-comments-polls-and-more/",
-      "date": "2026-09-03",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
-      "titleZh": "Launching Bill Payments in India, Enabling People to Pay Everyday Household Bills Directly on WhatsApp",
-      "url": "https://about.fb.com/news/2026/09/launching-bill-payments-in-india-helping-people-to-pay-everyday-household-bills-directly-on-whatsapp/",
-      "date": "2026-09-03",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Image.png?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Image.png?fit=890%2C501"
-    },
-    {
-      "titleEn": "Inside Meta’s Infrastructure Lab",
-      "titleZh": "Inside Meta’s Infrastructure Lab",
-      "url": "https://about.fb.com/news/2026/09/inside-metas-infrastructure-lab/",
-      "date": "2026-09-01",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Inside-Metas-Infrastructure-Lab_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Inside-Metas-Infrastructure-Lab_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Instagram puts new limits on undisclosed AI profiles",
-      "titleZh": "Instagram puts new limits on undisclosed AI profiles",
-      "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
-      "date": "2026-08-31",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "YouTube now lets creators tag Amazon products and earn commissions from purchases",
-      "titleZh": "YouTube now lets creators tag Amazon products and earn commissions from purchases",
-      "url": "https://techcrunch.com/2026/08/27/youtube-now-lets-creators-tag-amazon-products-and-earn-commissions-from-purchases/",
-      "date": "2026-08-27",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Reach your audience in new ways with August’s Demand Gen Drop.",
-      "titleZh": "Reach your audience in new ways with August’s Demand Gen Drop.",
-      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-august-2026/",
-      "date": "2026-08-27",
+      "titleEn": "Turn discovery into action with September’s Demand Gen Drop.",
+      "titleZh": "Turn discovery into action with September’s Demand Gen Drop.",
+      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-september-2026/",
+      "date": "2026-09-24",
       "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/August_Demand_Gen_Drop.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/August_Demand_Gen_Drop.max-600x600.format-webp.webp"
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_September.max-600x600.format-webp.webp",
+      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_September.max-600x600.format-webp.webp"
     },
     {
-      "titleEn": "Meta agrees to sweeping changes to restrict kids’ access to its apps as part of settlement with states",
-      "titleZh": "Meta agrees to sweeping changes to restrict kids’ access to its apps as part of settlement with states",
-      "url": "https://techcrunch.com/2026/08/26/meta-agrees-to-sweeping-changes-to-restrict-kids-access-to-its-apps-as-part-of-settlement-with-states/",
-      "date": "2026-08-26",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Instagram’s ‘First Draft’ feature aims to make editing Reels less tedious",
-      "titleZh": "Instagram’s ‘First Draft’ feature aims to make editing Reels less tedious",
-      "url": "https://techcrunch.com/2026/08/25/instagrams-first-draft-feature-aims-to-make-editing-reels-less-tedious/",
-      "date": "2026-08-25",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines",
-      "titleZh": "MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines",
-      "url": "https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/",
-      "date": "2026-08-24",
+      "titleEn": "Bringing Private Processing to Meta AI Glasses",
+      "titleZh": "Bringing Private Processing to Meta AI Glasses",
+      "url": "https://engineering.fb.com/2026/09/23/security/private-processing-meta-ai-glasses/",
+      "date": "2026-09-24",
       "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/08/Meta-MTIA-300-Figure-1.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/08/Meta-MTIA-300-Figure-1.png"
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/09/Private-Processing-for-AI-Glasses.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/09/Private-Processing-for-AI-Glasses.png"
     },
     {
-      "titleEn": "TikTok reaches $400M settlement over children’s privacy lawsuit",
-      "titleZh": "TikTok reaches $400M settlement over children’s privacy lawsuit",
-      "url": "https://techcrunch.com/2026/08/21/tiktok-reaches-400m-settlement-over-childrens-privacy-lawsuit/",
-      "date": "2026-08-21",
+      "titleEn": "YouTube is making comments more fun — and fandom more lucrative for creators",
+      "titleZh": "YouTube is making comments more fun — and fandom more lucrative for creators",
+      "url": "https://techcrunch.com/2026/09/23/youtube-is-making-comments-more-fun-and-fandom-more-lucrative-for-creators/",
+      "date": "2026-09-23",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "YouTube’s conversational video editing tool lets creators make edits in natural language",
+      "titleZh": "YouTube’s conversational video editing tool lets creators make edits in natural language",
+      "url": "https://techcrunch.com/2026/09/23/youtubes-conversational-video-editing-tool-lets-creators-make-edits-in-natural-language/",
+      "date": "2026-09-23",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Here’s what was announced at Made On YouTube 2026.",
+      "titleZh": "Here’s what was announced at Made On YouTube 2026.",
+      "url": "https://blog.google/products-and-platforms/products/youtube/made-on-youtube-updates-2026/",
+      "date": "2026-09-23",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Event_-_Made_On_Logo_Creator_Gr.max-600x600.format-webp.webp",
+      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Event_-_Made_On_Logo_Creator_Gr.max-600x600.format-webp.webp"
+    },
+    {
+      "titleEn": "YouTube doubles down on video shopping with AI-powered ‘Ask YouTube’ feature",
+      "titleZh": "YouTube doubles down on video shopping with AI-powered ‘Ask YouTube’ feature",
+      "url": "https://techcrunch.com/2026/09/23/youtube-doubles-down-on-video-shopping-with-ai-powered-ask-youtube-feature/",
+      "date": "2026-09-23",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "YouTube adds new creator tools like video A/B testing, dynamic thumbnails, and live dubbing",
+      "titleZh": "YouTube adds new creator tools like video A/B testing, dynamic thumbnails, and live dubbing",
+      "url": "https://techcrunch.com/2026/09/23/youtube-adds-new-creator-tools-like-video-a-b-testing-dynamic-thumbnails-and-live-dubbing/",
+      "date": "2026-09-23",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "YouTube will let you build your own algorithm with AI",
+      "titleZh": "YouTube will let you build your own algorithm with AI",
+      "url": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/",
+      "date": "2026-09-23",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "YouTube releases new AI features for creators within its Studio app",
+      "titleZh": "YouTube releases new AI features for creators within its Studio app",
+      "url": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/",
+      "date": "2026-09-23",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "YouTube’s new ‘Shorts series’ feature brings episodic viewing to Shorts",
+      "titleZh": "YouTube’s new ‘Shorts series’ feature brings episodic viewing to Shorts",
+      "url": "https://techcrunch.com/2026/09/23/youtubes-new-short-series-feature-brings-episodic-viewing-to-shorts/",
+      "date": "2026-09-23",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "LinkedIn adds new tools to fight fake profiles and bogus work histories",
+      "titleZh": "LinkedIn adds new tools to fight fake profiles and bogus work histories",
+      "url": "https://techcrunch.com/2026/09/23/linkedin-adds-new-tools-to-fight-fake-profiles-and-bogus-work-histories/",
+      "date": "2026-09-23",
+      "source": "LinkedIn · TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "New Features for Meta Ray-Ban Display",
+      "titleZh": "New Features for Meta Ray-Ban Display",
+      "url": "https://about.fb.com/news/2026/09/new-features-for-meta-ray-ban-display-navigation-hologram/",
+      "date": "2026-09-23",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/New-Features-for-Meta-Ray-Ban-Display_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/New-Features-for-Meta-Ray-Ban-Display_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams",
+      "titleZh": "Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams",
+      "url": "https://about.fb.com/news/2026/09/introducing-meta-vr-glasses-3d-movies-immersive-live-sports-100-grams/",
+      "date": "2026-09-23",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Meta-VR-Glasses_-A-Cinema-Courtside-Seat-and-Workspace-in-Just-100-GramsIntroducing-Meta-VR-Glasses_-A-Cinema-Courtside-Seat-and-Workspace-in-Just-100-Grams_thumb.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Meta-VR-Glasses_-A-Cinema-Courtside-Seat-and-Workspace-in-Just-100-GramsIntroducing-Meta-VR-Glasses_-A-Cinema-Courtside-Seat-and-Workspace-in-Just-100-Grams_thumb.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Introducing Ray-Ban Meta Audio and More AI Glasses Styles",
+      "titleZh": "Introducing Ray-Ban Meta Audio and More AI Glasses Styles",
+      "url": "https://about.fb.com/news/2026/09/introducing-ray-ban-meta-audio-glasses-new-styles-plus-muse/",
+      "date": "2026-09-23",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Ray-Ban-Meta-Audio-and-More-AI-Glasses-Styles_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Ray-Ban-Meta-Audio-and-More-AI-Glasses-Styles_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta Takes Action on 3.7 Million Accounts, Pages and Content In Partnership With Singapore Police Force",
+      "titleZh": "Meta Takes Action on 3.7 Million Accounts, Pages and Content In Partnership With Singapore Police Force",
+      "url": "https://about.fb.com/news/2026/09/meta-spf-scam-efforts/",
+      "date": "2026-09-23",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/03/Global-Law-Enforcement-Agencies-With-Support-From-Meta-Disrupt-Major-Criminal-Scam-Networks-Based-in-Thailand_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/03/Global-Law-Enforcement-Agencies-With-Support-From-Meta-Disrupt-Major-Criminal-Scam-Networks-Based-in-Thailand_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "TikTok’s US arm joins Lantern, a cross-platform child safety initiative",
+      "titleZh": "TikTok’s US arm joins Lantern, a cross-platform child safety initiative",
+      "url": "https://techcrunch.com/2026/09/22/tiktoks-us-arm-joins-lantern-a-cross-platform-child-safety-initiative/",
+      "date": "2026-09-22",
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""
