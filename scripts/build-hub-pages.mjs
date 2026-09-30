@@ -223,13 +223,13 @@ const HUB_ORIGINALS_COPY = {
 };
 
 const HUB_ORIGINALS_PLACEHOLDER = {
-  en: "First editorial note coming soon — carousel fills as new posts ship (planned daily).",
-  zh: "首篇原创手记筹备中 — 发布后按新→旧显示在上方轮播（计划每日一篇）。",
+  en: "First editorial note coming soon — the grid fills as new posts ship (planned daily).",
+  zh: "首篇原创手记筹备中 — 发布后按新→旧显示在上方网格（计划每日一篇）。",
   ja: "最初のオリジナル記事を準備中 — 公開後に新→旧で表示（ほぼ毎日追加予定）。",
   ko: "첫 오리지널 메모 준비 중 — 게시 후 최신순으로 표시(매일 추가 예정).",
-  fr: "Première note bientôt — le carrousel se remplit au fil des publications (quotidien prévu).",
-  ru: "Первая заметка скоро — карусель пополняется по мере публикаций (план — ежедневно).",
-  ar: "أول مقال قريبًا — يُحدَّث الشريط بترتيب الأحدث (منشور يومي مخطط).",
+  fr: "Première note bientôt — la grille se remplit au fil des publications (quotidien prévu).",
+  ru: "Первая заметка скоро — сетка пополняется по мере публикаций (план — ежедневно).",
+  ar: "أول مقال قريبًا — تُملأ الشبكة بترتيب الأحدث (منشور يومي مخطط).",
 };
 
 function articleLangSuffix(lang) {
