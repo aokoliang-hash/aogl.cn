@@ -67,15 +67,15 @@ const SECTION_TITLE = {
   ar: "ملاحظات تحريرية",
 };
 
-/** Carousel aria-label (matches hub Hot mix pattern). */
+/** Grid aria-label for homepage / hub originals. */
 const ORIGINALS_ARIA = {
-  en: "Editorial notes — swipe or scroll sideways for more",
-  zh: "本站原创 — 横向滑动查看更多",
-  ja: "編集メモ — 横にスワイプして続きを表示",
-  ko: "편집 메모 — 옆으로 밀어 더 보기",
-  fr: "Notes éditoriales — faites défiler horizontalement pour en voir plus",
-  ru: "Редакционные заметки — прокрутите вбок, чтобы увидеть ещё",
-  ar: "ملاحظات تحريرية — مرّر أفقياً لعرض المزيد",
+  en: "Editorial notes — responsive card grid",
+  zh: "本站原创 — 多列卡片网格",
+  ja: "編集メモ — カードグリッド",
+  ko: "편집 메모 — 카드 그리드",
+  fr: "Notes éditoriales — grille de cartes",
+  ru: "Редакционные заметки — сетка карточек",
+  ar: "ملاحظات تحريرية — شبكة بطاقات",
 };
 
 const META_DOT = {
@@ -702,24 +702,11 @@ function buildOriginalsCards(slice) {
     .join("\n");
 }
 
-const CAROUSEL_CHEVRON_L =
-  '<svg class="hub-carousel-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>';
-const CAROUSEL_CHEVRON_R =
-  '<svg class="hub-carousel-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>';
-
-function originalsCarouselUl(slice) {
+function originalsGridUl(slice) {
   const items = buildOriginalsCards(slice);
-  return `        <div class="hub-carousel-wrap site-originals-carousel-wrap">
-        <ul class="hub-hotmix-cards hub-hotmix-cards--carousel site-originals-hotmix" role="list" aria-label="${escAttr(ORIGINALS_ARIA.en)}">
+  return `        <ul class="hub-hotmix-cards site-originals-hotmix site-originals-grid" role="list" aria-label="${escAttr(ORIGINALS_ARIA.en)}">
 ${items}
-        </ul>
-          <button type="button" class="hub-carousel-nav hub-carousel-nav--prev" data-carousel-dir="prev">
-            ${CAROUSEL_CHEVRON_L}
-          </button>
-          <button type="button" class="hub-carousel-nav hub-carousel-nav--next" data-carousel-dir="next">
-            ${CAROUSEL_CHEVRON_R}
-          </button>
-        </div>`;
+        </ul>`;
 }
 
 function buildIndexBlock(articles) {
@@ -758,7 +745,7 @@ ${INDEX_END}`;
     (l) => `        <p class="reading-intro site-primary-lead site-primary-lead--secondary lang-${l}">${PRIMARY_CONTENT_LEAD2[l]}</p>`,
   ).join("\n");
 
-  const carousel = originalsCarouselUl(slice);
+  const grid = originalsGridUl(slice);
   const ctaBlock = LANGS.map((l) => `        <p class="site-originals-cta lang-${l}">${ORIGINALS_CTA[l]}</p>`).join("\n");
 
   return `${INDEX_START}
@@ -766,7 +753,7 @@ ${INDEX_END}`;
 ${primaryLeads}
 ${primaryLeads2}
 ${titleBlock}
-${carousel}
+${grid}
 ${ctaBlock}
       </section>
 ${INDEX_END}`;

@@ -232,11 +232,6 @@ const HUB_ORIGINALS_PLACEHOLDER = {
   ar: "أول مقال قريبًا — يُحدَّث الشريط بترتيب الأحدث (منشور يومي مخطط).",
 };
 
-const CAROUSEL_CHEVRON_L =
-  '<svg class="hub-carousel-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>';
-const CAROUSEL_CHEVRON_R =
-  '<svg class="hub-carousel-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>';
-
 function articleLangSuffix(lang) {
   if (lang === "en") return "En";
   if (lang === "zh") return "Zh";
@@ -375,22 +370,14 @@ function hubOriginalsIntroSpans(spec, key, className) {
 function hubOriginalsSection(spec) {
   const articles = loadHubArticles(spec.slug);
   const cards = articles.length ? buildHubOriginalsCards(articles) : "";
-  const carouselBody = cards
-    ? `        <ul class="hub-hotmix-cards hub-hotmix-cards--carousel site-originals-hotmix" role="list" aria-label="${esc(spec.slug)} hub editorial notes — swipe or scroll sideways for more">
+  const gridBody = cards
+    ? `        <ul class="hub-hotmix-cards site-originals-hotmix site-originals-grid" role="list" aria-label="${esc(spec.slug)} hub editorial notes">
 ${cards}
-        </ul>
-          <button type="button" class="hub-carousel-nav hub-carousel-nav--prev" data-carousel-dir="prev">
-            ${CAROUSEL_CHEVRON_L}
-          </button>
-          <button type="button" class="hub-carousel-nav hub-carousel-nav--next" data-carousel-dir="next">
-            ${CAROUSEL_CHEVRON_R}
-          </button>`
+        </ul>`
     : hubOriginalsPlaceholderHtml();
   return `    <section class="site-originals" id="${esc(spec.slug)}-originals" aria-labelledby="${esc(spec.slug)}-originals-title">
 ${hubOriginalsIntroSpans(spec, "originalsPrimaryLead", "reading-intro site-primary-lead")}      <h2 id="${esc(spec.slug)}-originals-title" class="page-section-title">${inlineOriginalsTitleSpans(spec)}</h2>
-${hubOriginalsIntroSpans(spec, "originalsSecondaryLead", "reading-intro site-primary-lead site-primary-lead--secondary")}      <div class="hub-carousel-wrap site-originals-carousel-wrap">
-${carouselBody}
-        </div>
+${hubOriginalsIntroSpans(spec, "originalsSecondaryLead", "reading-intro site-primary-lead site-primary-lead--secondary")}${gridBody}
     </section>
 
 `;

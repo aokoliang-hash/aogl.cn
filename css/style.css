@@ -615,11 +615,44 @@ footer.site-footer {
   margin-bottom: 2rem;
   scroll-margin-top: 1rem;
 }
-.site-originals .hub-carousel-wrap {
+/* Originals: responsive grid — 1 col phone · 3 cols under 1920 · 4 cols at 1920+ */
+.site-originals .site-originals-grid,
+.site-originals .hub-hotmix-cards.site-originals-hotmix {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
   margin-top: 0.35rem;
+  overflow: visible;
+  flex-wrap: unset;
+  flex-direction: unset;
+  cursor: default;
+  scroll-snap-type: none;
+  padding-bottom: 0;
 }
-.site-originals .hub-hotmix-cards {
-  margin-top: 0;
+.site-originals .site-originals-grid .hub-hotmix-card,
+.site-originals .hub-hotmix-cards.site-originals-hotmix .hub-hotmix-card {
+  flex: unset;
+  min-width: 0;
+  width: auto;
+  scroll-snap-align: unset;
+}
+@media (min-width: 641px) {
+  /* 1280 以下（及 641–1919）为 3 列 */
+  .site-originals .site-originals-grid,
+  .site-originals .hub-hotmix-cards.site-originals-hotmix {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 1920px) {
+  .site-originals .site-originals-grid,
+  .site-originals .hub-hotmix-cards.site-originals-hotmix {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* Hide leftover carousel chrome if any stale HTML remains */
+.site-originals .hub-carousel-nav {
+  display: none !important;
 }
 .site-originals-cta {
   display: flex;
