@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-09-29",
+  "updated": "2026-10-06",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,6 +116,12 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "The latest AI news we announced in September 2026",
+          "titleZh": "The latest AI news we announced in September 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+          "date": "2026-10-02"
+        },
+        {
           "titleEn": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
           "titleZh": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
           "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
@@ -126,12 +132,6 @@
           "titleZh": "Google Beam expands with new regions, partners, and customers",
           "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
           "date": "2026-09-23"
-        },
-        {
-          "titleEn": "New experts join Google’s AI & Economy team",
-          "titleZh": "New experts join Google’s AI & Economy team",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
-          "date": "2026-09-18"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "The Future Is for Everyone: Muse for Small Business",
-          "titleZh": "The Future Is for Everyone: Muse for Small Business",
-          "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
-          "date": "2026-09-29"
+          "titleEn": "Announcing Ranveer Singh as Brand Ambassador for Ray-Ban and Ray-Ban Meta in India along with Exciting New Updates to our AI Glasses",
+          "titleZh": "Announcing Ranveer Singh as Brand Ambassador for Ray-Ban and Ray-Ban Meta in India along with Exciting New Updates to our AI Glasses",
+          "url": "https://about.fb.com/news/2026/10/announcing-ranveer-singh-as-brand-ambassador-for-ray-ban-and-ray-ban-meta-in-india-along-with-exciting-new-updates-to-our-ai-glasses/",
+          "date": "2026-10-01"
         },
         {
-          "titleEn": "Meta Partners With Government Agencies, Law Enforcement, and Safety Organizations to Launch Regional Anti-Scam Education Campaign",
-          "titleZh": "Meta Partners With Government Agencies, Law Enforcement, and Safety Organizations to Launch Regional Anti-Scam Education Campaign",
-          "url": "https://about.fb.com/news/2026/09/meta-one-step-ahead-campaign/",
-          "date": "2026-09-29"
+          "titleEn": "Meta Names Dhruv Vohra to Lead Southeast Asia Business",
+          "titleZh": "Meta Names Dhruv Vohra to Lead Southeast Asia Business",
+          "url": "https://about.fb.com/news/2026/09/meta-names-dhruv-vohra-to-lead-southeast-asia-business/",
+          "date": "2026-09-30"
         },
         {
-          "titleEn": "Launching Meta Enterprise Platform",
-          "titleZh": "Launching Meta Enterprise Platform",
-          "url": "https://about.fb.com/news/2026/09/launching-meta-enterprise-platform/",
-          "date": "2026-09-28"
+          "titleEn": "Find Your Community With Forum, a Dedicated App for Facebook Groups",
+          "titleZh": "Find Your Community With Forum, a Dedicated App for Facebook Groups",
+          "url": "https://about.fb.com/news/2026/09/find-community-forum-dedicated-app-facebook-groups/",
+          "date": "2026-09-29"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Four roles every language Wiki needs: A conversation with WMZA’s Herschal Jackson",
-          "titleZh": "Four roles every language Wiki needs: A conversation with WMZA’s Herschal Jackson",
-          "url": "https://diff.wikimedia.org/2026/09/29/four-roles-every-language-wiki-needs-a-conversation-with-wmzas-herschal-jackson/",
-          "date": "2026-09-29"
+          "titleEn": "Climate Change and Free Knowledge: Workshops for Editing Urgent Issues",
+          "titleZh": "Climate Change and Free Knowledge: Workshops for Editing Urgent Issues",
+          "url": "https://diff.wikimedia.org/2026/10/06/climate-change-and-free-knowledge-workshops-for-editing-urgent-issues/",
+          "date": "2026-10-06"
         },
         {
-          "titleEn": "Recap of WikiConference India 2026 from Kochi",
-          "titleZh": "Recap of WikiConference India 2026 from Kochi",
-          "url": "https://diff.wikimedia.org/2026/09/29/recap-of-wikiconference-india-2026-from-kochi/",
-          "date": "2026-09-29"
+          "titleEn": "Wiki Loves Arbërësh: an expedition to document the Albanian diaspora heritage in Sicily",
+          "titleZh": "Wiki Loves Arbërësh: an expedition to document the Albanian diaspora heritage in Sicily",
+          "url": "https://diff.wikimedia.org/2026/10/06/wiki-loves-arberesh-an-expedition-to-document-the-albanian-diaspora-heritage-in-sicily/",
+          "date": "2026-10-06"
         },
         {
-          "titleEn": "Mapping Ghana, One Geotagged Photo at a Time: Wiki Loves Places 2026 in Ghana",
-          "titleZh": "Mapping Ghana, One Geotagged Photo at a Time: Wiki Loves Places 2026 in Ghana",
-          "url": "https://diff.wikimedia.org/2026/09/28/mapping-ghana-one-geotagged-photo-at-a-time-wiki-loves-places-2026-in-ghana/",
-          "date": "2026-09-28"
+          "titleEn": "WikiRempah Overcomes Challenges in Tidore for Training and Documentation of Historic Sites",
+          "titleZh": "WikiRempah Overcomes Challenges in Tidore for Training and Documentation of Historic Sites",
+          "url": "https://diff.wikimedia.org/2026/10/06/wikirempah-overcomes-challenges-in-tidore-for-training-and-documentation-of-historic-sites/",
+          "date": "2026-10-06"
         }
       ],
       "hotSearchPills": [
@@ -663,6 +663,12 @@
       "labelZh": "Reddit",
       "items": [
         {
+          "titleEn": "Reddit is killing RSS feeds and ending public API access because of AI bots",
+          "titleZh": "Reddit is killing RSS feeds and ending public API access because of AI bots",
+          "url": "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/",
+          "date": "2026-09-30"
+        },
+        {
           "titleEn": "Reddit begins testing a new audio and video experience, similar to popular TikTok videos",
           "titleZh": "Reddit begins testing a new audio and video experience, similar to popular TikTok videos",
           "url": "https://techcrunch.com/2026/08/17/reddit-begins-testing-a-new-audio-and-video-experience-similar-to-popular-tiktok-videos/",
@@ -673,12 +679,6 @@
           "titleZh": "Reddit aims to make ‘karma’ less important for first-time posters with shift to AI moderation tools",
           "url": "https://techcrunch.com/2026/08/05/reddit-aims-to-make-karma-less-important-for-first-time-posters-with-shift-to-ai-moderation-tools/",
           "date": "2026-08-05"
-        },
-        {
-          "titleEn": "Reddit is testing a new way to watch — and listen to — its viral posts",
-          "titleZh": "Reddit is testing a new way to watch — and listen to — its viral posts",
-          "url": "https://techcrunch.com/2026/07/31/reddit-is-testing-a-new-way-to-watch-and-listen-to-its-viral-posts/",
-          "date": "2026-07-31"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Michael Bublé and Drew Scott strive for hockey glory in Prime Video docuseries 'Hometown Giants,' coming October 16",
-          "titleZh": "Michael Bublé and Drew Scott strive for hockey glory in Prime Video docuseries 'Hometown Giants,' coming October 16",
-          "url": "https://www.aboutamazon.com/news/entertainment/hometown-giants-hockey-michael-buble-drew-scott-prime-video?utm_source=rss",
-          "date": "2026-09-28"
+          "titleEn": "Prime Video and the Television Academy announce 6-year deal to exclusively stream the Emmy Awards globally",
+          "titleZh": "Prime Video and the Television Academy announce 6-year deal to exclusively stream the Emmy Awards globally",
+          "url": "https://www.aboutamazon.com/news/entertainment/prime-video-emmy-awards-deal?utm_source=rss",
+          "date": "2026-10-06"
         },
         {
-          "titleEn": "How to stream Shakira's Madrid concert, exclusively with Amazon Music",
-          "titleZh": "How to stream Shakira's Madrid concert, exclusively with Amazon Music",
-          "url": "https://www.aboutamazon.com/news/entertainment/shakira-livestream-amazon-music-prime-video?utm_source=rss",
-          "date": "2026-09-28"
+          "titleEn": "Prime Big Deal Days 2026 is here: Check out 95+ of the best deals to shop now",
+          "titleZh": "Prime Big Deal Days 2026 is here: Check out 95+ of the best deals to shop now",
+          "url": "https://www.aboutamazon.com/news/retail/best-prime-big-deal-days-2026-top-deals?utm_source=rss",
+          "date": "2026-10-06"
         },
         {
-          "titleEn": "Amazon data center communities: Here’s what’s happening near data centers across the US",
-          "titleZh": "Amazon data center communities: Here’s what’s happening near data centers across the US",
-          "url": "https://www.aboutamazon.com/news/aws/amazon-data-centers-locations-news?utm_source=rss",
-          "date": "2026-09-25"
+          "titleEn": "5 ways Amazon is investing in Connecticut",
+          "titleZh": "5 ways Amazon is investing in Connecticut",
+          "url": "https://www.aboutamazon.com/news/community/amazon-investment-connecticut-jobs-infrastructure-small-business?utm_source=rss",
+          "date": "2026-10-05"
         }
       ],
       "hotSearchPills": [
@@ -934,22 +934,22 @@
       "labelZh": "WhatsApp",
       "items": [
         {
-          "titleEn": "The Future Is for Everyone: Muse for Small Business",
-          "titleZh": "The Future Is for Everyone: Muse for Small Business",
-          "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
-          "date": "2026-09-29"
+          "titleEn": "Announcing Ranveer Singh as Brand Ambassador for Ray-Ban and Ray-Ban Meta in India along with Exciting New Updates to our AI Glasses",
+          "titleZh": "Announcing Ranveer Singh as Brand Ambassador for Ray-Ban and Ray-Ban Meta in India along with Exciting New Updates to our AI Glasses",
+          "url": "https://about.fb.com/news/2026/10/announcing-ranveer-singh-as-brand-ambassador-for-ray-ban-and-ray-ban-meta-in-india-along-with-exciting-new-updates-to-our-ai-glasses/",
+          "date": "2026-10-01"
         },
         {
-          "titleEn": "Meta Partners With Government Agencies, Law Enforcement, and Safety Organizations to Launch Regional Anti-Scam Education Campaign",
-          "titleZh": "Meta Partners With Government Agencies, Law Enforcement, and Safety Organizations to Launch Regional Anti-Scam Education Campaign",
-          "url": "https://about.fb.com/news/2026/09/meta-one-step-ahead-campaign/",
-          "date": "2026-09-29"
+          "titleEn": "Meta Names Dhruv Vohra to Lead Southeast Asia Business",
+          "titleZh": "Meta Names Dhruv Vohra to Lead Southeast Asia Business",
+          "url": "https://about.fb.com/news/2026/09/meta-names-dhruv-vohra-to-lead-southeast-asia-business/",
+          "date": "2026-09-30"
         },
         {
-          "titleEn": "Launching Meta Enterprise Platform",
-          "titleZh": "Launching Meta Enterprise Platform",
-          "url": "https://about.fb.com/news/2026/09/launching-meta-enterprise-platform/",
-          "date": "2026-09-28"
+          "titleEn": "Find Your Community With Forum, a Dedicated App for Facebook Groups",
+          "titleZh": "Find Your Community With Forum, a Dedicated App for Facebook Groups",
+          "url": "https://about.fb.com/news/2026/09/find-community-forum-dedicated-app-facebook-groups/",
+          "date": "2026-09-29"
         }
       ],
       "hotSearchPills": [

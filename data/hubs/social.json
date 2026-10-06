@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-09-29",
+  "updated": "2026-10-06",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,69 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Facebook tests going Reels-first in India",
+      "titleZh": "Facebook tests going Reels-first in India",
+      "url": "https://techcrunch.com/2026/10/06/facebook-tests-going-reels-first-in-india/",
+      "date": "2026-10-06",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "TikTok rolls out an AI shopping assistant and one-click checkout",
+      "titleZh": "TikTok rolls out an AI shopping assistant and one-click checkout",
+      "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/",
+      "date": "2026-10-05",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Announcing Ranveer Singh as Brand Ambassador for Ray-Ban and Ray-Ban Meta in India along with Exciting New Updates to our AI Glasses",
+      "titleZh": "Announcing Ranveer Singh as Brand Ambassador for Ray-Ban and Ray-Ban Meta in India along with Exciting New Updates to our AI Glasses",
+      "url": "https://about.fb.com/news/2026/10/announcing-ranveer-singh-as-brand-ambassador-for-ray-ban-and-ray-ban-meta-in-india-along-with-exciting-new-updates-to-our-ai-glasses/",
+      "date": "2026-10-01",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/RS_Announce_Comms_RBM_Wayfarer_1920x1080px.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/RS_Announce_Comms_RBM_Wayfarer_1920x1080px.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta Names Dhruv Vohra to Lead Southeast Asia Business",
+      "titleZh": "Meta Names Dhruv Vohra to Lead Southeast Asia Business",
+      "url": "https://about.fb.com/news/2026/09/meta-names-dhruv-vohra-to-lead-southeast-asia-business/",
+      "date": "2026-09-30",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Dhruv-Vohra_2026-1.jpeg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Dhruv-Vohra_2026-1.jpeg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Instagram rolls out an AI video assistant for creators",
+      "titleZh": "Instagram rolls out an AI video assistant for creators",
+      "url": "https://techcrunch.com/2026/09/30/instagram-rolls-out-an-ai-video-assistant-for-creators/",
+      "date": "2026-09-30",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Find Your Community With Forum, a Dedicated App for Facebook Groups",
+      "titleZh": "Find Your Community With Forum, a Dedicated App for Facebook Groups",
+      "url": "https://about.fb.com/news/2026/09/find-community-forum-dedicated-app-facebook-groups/",
+      "date": "2026-09-29",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/Forum_-A-Dedicated-App-for-Facebook-Groups_Thumb.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Forum_-A-Dedicated-App-for-Facebook-Groups_Thumb.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Expanding Instagram’s School Partnership Program to Help Teens Stay Informed",
+      "titleZh": "Expanding Instagram’s School Partnership Program to Help Teens Stay Informed",
+      "url": "https://about.fb.com/news/2026/09/expanding-instagram-school-partnership-program-help-teens-stay-informed/",
+      "date": "2026-09-29",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/Expanding-Instagrams-School-Partnership-Program-to-Help-Teens-Stay-Informed_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Expanding-Instagrams-School-Partnership-Program-to-Help-Teens-Stay-Informed_Thumbnail.jpg?fit=890%2C501"
+    },
     {
       "titleEn": "The Future Is for Everyone: Muse for Small Business",
       "titleZh": "The Future Is for Everyone: Muse for Small Business",
@@ -155,69 +218,6 @@
       "titleZh": "YouTube releases new AI features for creators within its Studio app",
       "url": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/",
       "date": "2026-09-23",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "YouTube’s new ‘Shorts series’ feature brings episodic viewing to Shorts",
-      "titleZh": "YouTube’s new ‘Shorts series’ feature brings episodic viewing to Shorts",
-      "url": "https://techcrunch.com/2026/09/23/youtubes-new-short-series-feature-brings-episodic-viewing-to-shorts/",
-      "date": "2026-09-23",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "LinkedIn adds new tools to fight fake profiles and bogus work histories",
-      "titleZh": "LinkedIn adds new tools to fight fake profiles and bogus work histories",
-      "url": "https://techcrunch.com/2026/09/23/linkedin-adds-new-tools-to-fight-fake-profiles-and-bogus-work-histories/",
-      "date": "2026-09-23",
-      "source": "LinkedIn · TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "New Features for Meta Ray-Ban Display",
-      "titleZh": "New Features for Meta Ray-Ban Display",
-      "url": "https://about.fb.com/news/2026/09/new-features-for-meta-ray-ban-display-navigation-hologram/",
-      "date": "2026-09-23",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/New-Features-for-Meta-Ray-Ban-Display_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/New-Features-for-Meta-Ray-Ban-Display_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams",
-      "titleZh": "Introducing Meta VR Glasses: A Cinema, Courtside Seat, and Workspace in Just 100 Grams",
-      "url": "https://about.fb.com/news/2026/09/introducing-meta-vr-glasses-3d-movies-immersive-live-sports-100-grams/",
-      "date": "2026-09-23",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Meta-VR-Glasses_-A-Cinema-Courtside-Seat-and-Workspace-in-Just-100-GramsIntroducing-Meta-VR-Glasses_-A-Cinema-Courtside-Seat-and-Workspace-in-Just-100-Grams_thumb.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Meta-VR-Glasses_-A-Cinema-Courtside-Seat-and-Workspace-in-Just-100-GramsIntroducing-Meta-VR-Glasses_-A-Cinema-Courtside-Seat-and-Workspace-in-Just-100-Grams_thumb.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Introducing Ray-Ban Meta Audio and More AI Glasses Styles",
-      "titleZh": "Introducing Ray-Ban Meta Audio and More AI Glasses Styles",
-      "url": "https://about.fb.com/news/2026/09/introducing-ray-ban-meta-audio-glasses-new-styles-plus-muse/",
-      "date": "2026-09-23",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Ray-Ban-Meta-Audio-and-More-AI-Glasses-Styles_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Introducing-Ray-Ban-Meta-Audio-and-More-AI-Glasses-Styles_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Meta Takes Action on 3.7 Million Accounts, Pages and Content In Partnership With Singapore Police Force",
-      "titleZh": "Meta Takes Action on 3.7 Million Accounts, Pages and Content In Partnership With Singapore Police Force",
-      "url": "https://about.fb.com/news/2026/09/meta-spf-scam-efforts/",
-      "date": "2026-09-23",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/03/Global-Law-Enforcement-Agencies-With-Support-From-Meta-Disrupt-Major-Criminal-Scam-Networks-Based-in-Thailand_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/03/Global-Law-Enforcement-Agencies-With-Support-From-Meta-Disrupt-Major-Criminal-Scam-Networks-Based-in-Thailand_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "TikTok’s US arm joins Lantern, a cross-platform child safety initiative",
-      "titleZh": "TikTok’s US arm joins Lantern, a cross-platform child safety initiative",
-      "url": "https://techcrunch.com/2026/09/22/tiktoks-us-arm-joins-lantern-a-cross-platform-child-safety-initiative/",
-      "date": "2026-09-22",
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""
