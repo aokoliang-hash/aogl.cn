@@ -8,7 +8,7 @@
   "descZh": "参考 Interbrand「全球最佳品牌」价值榜常见前十，每牌三条官网新闻稿或博文外链。",
   "h1En": "Interbrand top 10 (global brand value)",
   "h1Zh": "全球品牌价值前十（Interbrand 口径）",
-  "updated": "2026-10-06",
+  "updated": "2026-10-13",
   "editorialHtmlEn": "<p>Ten names usually clustered at the top of Interbrand’s “Best Global Brands” value ranking; order tweaks when they republish the annual table.</p><p>Valuation moves with equity markets and product cycles. This page is a <strong>bookmark rail</strong> — not investment research and not a recommendation to buy, hold, or sell any security.</p><p>Last reviewed: <strong>2026-05-19</strong>. I do not rank brands by ad spend or sponsorship; links point to corporate homepages or newsrooms only.</p><p>Press PDFs and campaign microsites are not mirrored here — only the three outbound story links per row that I actually read.</p>",
   "editorialHtmlZh": "<p>十个名字大致对应 Interbrand《全球最佳品牌》年度价值榜里常见的前排；他们发新榜后再微调顺序。</p><p>品牌价值随市场与业务周期波动。本页只是<strong>外链书签条</strong>，不构成投资建议，亦不代表买入、持有或卖出任何证券。</p><p>最近核对：<strong>2026-05-19</strong>。不按广告或赞助排序；链接仅指向企业官网或新闻稿入口。</p><p>新闻稿 PDF 与 campaign 微站不在本站转载，每行三条外链是我自己会点进去看的稿件入口。</p>",
   "rankTitleEn": "Global top 10 (brand value)",
@@ -116,22 +116,22 @@
       "labelZh": "苹果",
       "items": [
         {
-          "titleEn": "Final Cut Camera now supports variable aperture on iPhone 18 Pro",
-          "titleZh": "Final Cut Camera now supports variable aperture on iPhone 18 Pro",
-          "url": "https://www.apple.com/newsroom/2026/09/final-cut-camera-now-supports-variable-aperture-on-iphone-18-pro/",
-          "date": "2026-09-29"
+          "titleEn": "Meet Apple HomeView, a new way to enjoy entertainment and manage the home",
+          "titleZh": "Meet Apple HomeView, a new way to enjoy entertainment and manage the home",
+          "url": "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+          "date": "2026-10-13"
         },
         {
-          "titleEn": "New updates coming to Apple Creator Studio",
-          "titleZh": "New updates coming to Apple Creator Studio",
-          "url": "https://www.apple.com/newsroom/2026/09/new-updates-coming-to-apple-creator-studio/",
-          "date": "2026-09-29"
+          "titleEn": "Apple unveils the new Apple TV 4K, supercharged by Siri AI",
+          "titleZh": "Apple unveils the new Apple TV 4K, supercharged by Siri AI",
+          "url": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k/",
+          "date": "2026-10-13"
         },
         {
-          "titleEn": "Apple releases new guide to help families build healthy digital habits",
-          "titleZh": "Apple releases new guide to help families build healthy digital habits",
-          "url": "https://www.apple.com/newsroom/2026/09/apple-releases-new-guide-to-help-families-build-healthy-digital-habits/",
-          "date": "2026-09-29"
+          "titleEn": "Apple announces the next generation of HomePod mini",
+          "titleZh": "Apple announces the next generation of HomePod mini",
+          "url": "https://www.apple.com/newsroom/2026/10/apple-announces-the-next-generation-of-homepod-mini/",
+          "date": "2026-10-13"
         }
       ]
     },
@@ -140,6 +140,12 @@
       "labelEn": "Microsoft",
       "labelZh": "微软",
       "items": [
+        {
+          "titleEn": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
+          "titleZh": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "date": "2026-10-12"
+        },
         {
           "titleEn": "Microsoft 365 and LinkedIn leadership update",
           "titleZh": "Microsoft 365 and LinkedIn leadership update",
@@ -151,12 +157,6 @@
           "titleZh": "New Microsoft data innovations unlock what only your business knows",
           "url": "https://blogs.microsoft.com/blog/2026/09/28/new-microsoft-data-innovations-unlock-what-only-your-business-knows/",
           "date": "2026-09-29"
-        },
-        {
-          "titleEn": "Introducing the new Copilot with Home, Code and Autopilot",
-          "titleZh": "Introducing the new Copilot with Home, Code and Autopilot",
-          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
-          "date": "2026-09-25"
         }
       ]
     },
@@ -166,22 +166,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Prime Video and the Television Academy announce 6-year deal to exclusively stream the Emmy Awards globally",
-          "titleZh": "Prime Video and the Television Academy announce 6-year deal to exclusively stream the Emmy Awards globally",
-          "url": "https://www.aboutamazon.com/news/entertainment/prime-video-emmy-awards-deal?utm_source=rss",
-          "date": "2026-10-06"
+          "titleEn": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
+          "titleZh": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
+          "url": "https://www.aboutamazon.com/news/community/amazon-seattle-bellevue-puget-sound-news?utm_source=rss",
+          "date": "2026-10-12"
         },
         {
-          "titleEn": "Prime Big Deal Days 2026 is here: Check out 95+ of the best deals to shop now",
-          "titleZh": "Prime Big Deal Days 2026 is here: Check out 95+ of the best deals to shop now",
-          "url": "https://www.aboutamazon.com/news/retail/best-prime-big-deal-days-2026-top-deals?utm_source=rss",
-          "date": "2026-10-06"
+          "titleEn": "Watch the teaser trailer for ‘Bloodaxe,’ the epic Viking drama coming to Prime Video January 20, 2027",
+          "titleZh": "Watch the teaser trailer for ‘Bloodaxe,’ the epic Viking drama coming to Prime Video January 20, 2027",
+          "url": "https://www.aboutamazon.com/news/entertainment/bloodaxe-vikings-prime-video?utm_source=rss",
+          "date": "2026-10-09"
         },
         {
-          "titleEn": "5 ways Amazon is investing in Connecticut",
-          "titleZh": "5 ways Amazon is investing in Connecticut",
-          "url": "https://www.aboutamazon.com/news/community/amazon-investment-connecticut-jobs-infrastructure-small-business?utm_source=rss",
-          "date": "2026-10-05"
+          "titleEn": "'Love Me Love Me 3,' the next sequel in the hit romantic drama series, coming to Prime Video",
+          "titleZh": "'Love Me Love Me 3,' the next sequel in the hit romantic drama series, coming to Prime Video",
+          "url": "https://www.aboutamazon.com/news/entertainment/love-me-love-me-3-prime-video?utm_source=rss",
+          "date": "2026-10-09"
         }
       ]
     },
@@ -190,6 +190,12 @@
       "labelEn": "Google",
       "labelZh": "谷歌",
       "items": [
+        {
+          "titleEn": "Introducing Playground: Create and play custom games",
+          "titleZh": "Introducing Playground: Create and play custom games",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+          "date": "2026-10-07"
+        },
         {
           "titleEn": "The latest AI news we announced in September 2026",
           "titleZh": "The latest AI news we announced in September 2026",
@@ -201,12 +207,6 @@
           "titleZh": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
           "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
           "date": "2026-09-28"
-        },
-        {
-          "titleEn": "Google Beam expands with new regions, partners, and customers",
-          "titleZh": "Google Beam expands with new regions, partners, and customers",
-          "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
-          "date": "2026-09-23"
         }
       ]
     },
@@ -215,6 +215,12 @@
       "labelEn": "Samsung",
       "labelZh": "三星",
       "items": [
+        {
+          "titleEn": "Samsung Electronics Announces Earnings Guidance for Third Quarter 2026",
+          "titleZh": "Samsung Electronics Announces Earnings Guidance for Third Quarter 2026",
+          "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026",
+          "date": "2026-10-08"
+        },
         {
           "titleEn": "Samsung Art Store Expands Its Collection With 30 Exclusive Works From the British Museum",
           "titleZh": "Samsung Art Store Expands Its Collection With 30 Exclusive Works From the British Museum",
@@ -226,12 +232,6 @@
           "titleZh": "Samsung Introduces ‘SmartThings Now’ in New Platform Update That Brings More Intuitive User Experiences",
           "url": "https://news.samsung.com/global/samsung-introduces-smartthings-now-in-new-platform-update-that-brings-more-intuitive-user-experiences",
           "date": "2026-10-06"
-        },
-        {
-          "titleEn": "Lee Kun-Hee Collection Expands to Europe With Opening of ‘Korea’ Exhibition at the British Museum",
-          "titleZh": "Lee Kun-Hee Collection Expands to Europe With Opening of ‘Korea’ Exhibition at the British Museum",
-          "url": "https://news.samsung.com/global/lee-kun-hee-collection-expands-to-europe-with-opening-of-korea-exhibition-at-the-british-museum",
-          "date": "2026-10-01"
         }
       ]
     },
@@ -341,22 +341,22 @@
       "labelZh": "迪士尼",
       "items": [
         {
-          "titleEn": "Verts for ABC News: A New Way to Discover News",
-          "titleZh": "Verts for ABC News: A New Way to Discover News",
-          "url": "https://thewaltdisneycompany.com/news/verts-abc-news/",
-          "date": "2026-10-05"
+          "titleEn": "Inside ‘Disney’s Hexed,’ a Mother-Daughter Adventure in a World of Witches",
+          "titleZh": "Inside ‘Disney’s Hexed,’ a Mother-Daughter Adventure in a World of Witches",
+          "url": "https://thewaltdisneycompany.com/news/disneys-hexed-billie-alice/",
+          "date": "2026-10-13"
         },
         {
-          "titleEn": "‘Avengers: Endgame’ Surpasses ‘Avatar’ to Reclaim All-Time Box Office Record",
-          "titleZh": "‘Avengers: Endgame’ Surpasses ‘Avatar’ to Reclaim All-Time Box Office Record",
-          "url": "https://thewaltdisneycompany.com/news/avengers-endgame-box-office-record/",
-          "date": "2026-10-04"
+          "titleEn": "‘Artemis Fowl’ Series Greenlit for Disney Channel and Disney+",
+          "titleZh": "‘Artemis Fowl’ Series Greenlit for Disney Channel and Disney+",
+          "url": "https://thewaltdisneycompany.com/news/artemis-fowl-disney-channel-disney-plus/",
+          "date": "2026-10-12"
         },
         {
-          "titleEn": "The Making of ‘Walt Disney Archives: Uncrated’ at D23: The Ultimate Disney Fan Event",
-          "titleZh": "The Making of ‘Walt Disney Archives: Uncrated’ at D23: The Ultimate Disney Fan Event",
-          "url": "https://thewaltdisneycompany.com/news/walt-disney-archives-uncrated/",
-          "date": "2026-10-01"
+          "titleEn": "ESPN and Disney Jr. Celebrate Two Years of Impact During Youth Sports Week",
+          "titleZh": "ESPN and Disney Jr. Celebrate Two Years of Impact During Youth Sports Week",
+          "url": "https://thewaltdisneycompany.com/news/espn-disney-jr-youth-sports-week/",
+          "date": "2026-10-09"
         }
       ]
     }

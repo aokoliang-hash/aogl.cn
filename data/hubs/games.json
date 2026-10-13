@@ -8,7 +8,7 @@
   "descZh": "按 Newzoo 与行业营收常见梯队排序的十个商店与发行商，每站三条官方公告或博文外链。",
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
-  "updated": "2026-10-06",
+  "updated": "2026-10-13",
   "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Last reviewed: <strong>2026-06-22</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want a ranked top-10 plus three official links per vendor — not a discovery feed for unknown APK sites. Major client updates still show up in the per-row news slots when you run <code>npm run fetch-hub-news</code>; mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p><p><strong>Editorial cross-link:</strong> first game-original on this hub: <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Reading Steam Charts</a>; character look-dev in <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">Elena · Sea-Wind</a>, <a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">palette & ritual UI</a>, and <a href=\"/articles/games-hub-generative-art-workflow.html\">Games hub × generative art workflow</a>.</p>",
   "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>最近核对：<strong>2026-06-22</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但需要对照营收梯队、并点到各厂三条官方链接的人；不把它当成 APK 发现站。大版本更新仍会出现在每行「最新动态」里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p><p><strong>原创交叉链：</strong>游戏 Hub 原创轮播首篇 <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Steam Charts 怎么读</a>；角色设定见 <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">艾琳娜 · 海风之诗</a>、<a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">配色与仪式 UI</a>，工作流 <a href=\"/articles/games-hub-generative-art-workflow.html\">游戏 Hub × 生成式角色美术</a>。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
@@ -124,6 +124,12 @@
         {
           "titleEn": "Team Fortress 2 Update Released",
           "titleZh": "Team Fortress 2 Update Released",
+          "url": "https://store.steampowered.com/news/285796/",
+          "date": "2026-10-12"
+        },
+        {
+          "titleEn": "Team Fortress 2 Update Released",
+          "titleZh": "Team Fortress 2 Update Released",
           "url": "https://store.steampowered.com/news/285564/",
           "date": "2026-10-05"
         },
@@ -132,12 +138,6 @@
           "titleZh": "Team Fortress 2 Update Released",
           "url": "https://store.steampowered.com/news/285419/",
           "date": "2026-10-02"
-        },
-        {
-          "titleEn": "Team Fortress 2 Update Released",
-          "titleZh": "Team Fortress 2 Update Released",
-          "url": "https://store.steampowered.com/news/285134/",
-          "date": "2026-10-01"
         }
       ]
     },
@@ -147,22 +147,22 @@
       "labelZh": "PlayStation",
       "items": [
         {
-          "titleEn": "Everything you need to know about DMZ mode in Call of Duty: Modern Warfare 4",
-          "titleZh": "Everything you need to know about DMZ mode in Call of Duty: Modern Warfare 4",
-          "url": "https://blog.playstation.com/2026/10/05/everything-you-need-to-know-about-dmz-mode-in-call-of-duty-modern-warfare-4/",
-          "date": "2026-10-05"
+          "titleEn": "Helldivers 2: Scope of Authority Premium Warbond launches Oct 20",
+          "titleZh": "Helldivers 2: Scope of Authority Premium Warbond launches Oct 20",
+          "url": "https://blog.playstation.com/2026/10/13/helldivers-2-scope-of-authority-premium-warbond-launches-oct-20/",
+          "date": "2026-10-13"
         },
         {
-          "titleEn": "Players’ Choice: Vote for September’s best new game",
-          "titleZh": "Players’ Choice: Vote for September’s best new game",
-          "url": "https://blog.playstation.com/2026/10/05/players-choice-vote-for-septembers-best-new-game-4/",
-          "date": "2026-10-05"
+          "titleEn": "Escape Academy 2: Back 2 School comes to PS5 on November 5",
+          "titleZh": "Escape Academy 2: Back 2 School comes to PS5 on November 5",
+          "url": "https://blog.playstation.com/2026/10/13/escape-academy-2-back-2-school-comes-to-ps5-on-november-5/",
+          "date": "2026-10-13"
         },
         {
-          "titleEn": "Official PlayStation Podcast Episode 549: Friendly Ghosts",
-          "titleZh": "Official PlayStation Podcast Episode 549: Friendly Ghosts",
-          "url": "https://blog.playstation.com/2026/10/02/official-playstation-podcast-episode-549-friendly-ghosts/",
-          "date": "2026-10-02"
+          "titleEn": "Official PlayStation Podcast Episode 550: Now This is Podcasting",
+          "titleZh": "Official PlayStation Podcast Episode 550: Now This is Podcasting",
+          "url": "https://blog.playstation.com/2026/10/09/official-playstation-podcast-episode-550-now-this-is-podcasting/",
+          "date": "2026-10-09"
         }
       ]
     },
@@ -172,22 +172,22 @@
       "labelZh": "Xbox",
       "items": [
         {
-          "titleEn": "How The Walking Dead: Streets of Survival Builds a Tactical Brawler",
-          "titleZh": "How The Walking Dead: Streets of Survival Builds a Tactical Brawler",
-          "url": "https://news.xbox.com/en-us/2026/10/05/how-the-walking-dead-streets-of-survival-builds-a-tactical-brawler/",
-          "date": "2026-10-05"
+          "titleEn": "Your Raw Fury Backlog on XBOX Is About to Get a Lot Bigger",
+          "titleZh": "Your Raw Fury Backlog on XBOX Is About to Get a Lot Bigger",
+          "url": "https://news.xbox.com/en-us/2026/10/13/raw-fury-publisher-xbox-update/",
+          "date": "2026-10-13"
         },
         {
-          "titleEn": "DMZ Deep Dive, Part 1: Tour of Duty – Hajin Environments and Threats, Full Intel Guide",
-          "titleZh": "DMZ Deep Dive, Part 1: Tour of Duty – Hajin Environments and Threats, Full Intel Guide",
-          "url": "https://news.xbox.com/en-us/2026/10/05/dmz-deep-dive-part-1-tour-of-duty-hajin-environments-and-threats-full-intel-guide/",
-          "date": "2026-10-05"
+          "titleEn": "Get the Shattered Relay Weapon Blueprint in Call of Duty: Mobile as a Call of Duty: Modern Warfare 4 Pre-order Bonus",
+          "titleZh": "Get the Shattered Relay Weapon Blueprint in Call of Duty: Mobile as a Call of Duty: Modern Warfare 4 Pre-order Bonus",
+          "url": "https://news.xbox.com/en-us/2026/10/12/get-the-shattered-relay-weapon-blueprint-in-call-of-duty-mobile-as-a-call-of-duty-modern-warfare-4-pre-order-bonus/",
+          "date": "2026-10-12"
         },
         {
-          "titleEn": "Hello from Seattle: XBOX FanFest Comes Home November 12",
-          "titleZh": "Hello from Seattle: XBOX FanFest Comes Home November 12",
-          "url": "https://news.xbox.com/en-us/2026/10/05/xbox-fanfest-seattle-25th-anniversary/",
-          "date": "2026-10-05"
+          "titleEn": "Colorbound Explores Aymara Culture Through Color, Music, and a Heartfelt Story",
+          "titleZh": "Colorbound Explores Aymara Culture Through Color, Music, and a Heartfelt Story",
+          "url": "https://news.xbox.com/en-us/2026/10/12/colorbound-explores-aymara-culture/",
+          "date": "2026-10-12"
         }
       ]
     },
@@ -222,6 +222,12 @@
       "labelZh": "Epic",
       "items": [
         {
+          "titleEn": "Fuse Games uses UE5 to make a fast and authentic Star Wars ™ racing game",
+          "titleZh": "Fuse Games uses UE5 to make a fast and authentic Star Wars ™ racing game",
+          "url": "https://www.unrealengine.com/developer-interviews/fuse-games-uses-ue5-to-make-a-fast-and-authentic-star-wars-racing-game",
+          "date": "2026-10-13"
+        },
+        {
           "titleEn": "Gears of War: E-Day sees a return to dark, survival-horror roots with UE5",
           "titleZh": "Gears of War: E-Day sees a return to dark, survival-horror roots with UE5",
           "url": "https://www.unrealengine.com/developer-interviews/gears-of-war-e-day-sees-a-return-to-dark-survival-horror-roots-with-ue5",
@@ -232,12 +238,6 @@
           "titleZh": "September’s Epic learning content: MetaHumans, physics, animation, and more",
           "url": "https://www.unrealengine.com/learning/septembers-epic-learning-content-metahumans-physics-animation-and-more",
           "date": "2026-09-30"
-        },
-        {
-          "titleEn": "TT Games brings Gotham City to life in LEGO Batman: Legacy of the Dark Knight",
-          "titleZh": "TT Games brings Gotham City to life in LEGO Batman: Legacy of the Dark Knight",
-          "url": "https://www.unrealengine.com/developer-interviews/tt-games-brings-gotham-city-to-life-in-lego-batman-legacy-of-the-dark-knight",
-          "date": "2026-09-21"
         }
       ]
     },

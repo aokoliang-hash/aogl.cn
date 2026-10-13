@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-10-06",
+  "updated": "2026-10-13",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,78 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
+      "titleZh": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
+      "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
+      "date": "2026-10-12",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Researchers-Introducing-Muse-Wonder_thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Researchers-Introducing-Muse-Wonder_thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
+      "titleZh": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
+      "url": "https://engineering.fb.com/2026/10/12/video-engineering/shipping-media-over-quic-at-meta-scale-for-instagram-live-ingest/",
+      "date": "2026-10-12",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/MoQ-Instagram-Live-Meta-e1791568958445.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/MoQ-Instagram-Live-Meta-e1791568958445.png"
+    },
+    {
+      "titleEn": "Debunking the Biggest Data Center Myths",
+      "titleZh": "Debunking the Biggest Data Center Myths",
+      "url": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+      "date": "2026-10-08",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Debunking-the-Biggest-Data-Center-Myths_Thumbnail-1.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Debunking-the-Biggest-Data-Center-Myths_Thumbnail-1.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "New York alleges TikTok gave teens, children a placebo safety feature instead of a real one",
+      "titleZh": "New York alleges TikTok gave teens, children a placebo safety feature instead of a real one",
+      "url": "https://techcrunch.com/2026/10/08/new-york-alleges-tiktok-gave-teens-children-a-placebo-safety-feature-instead-of-a-real-one/",
+      "date": "2026-10-08",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Meta Donates 1,000 AI Glasses to Singapore’s Disability Community",
+      "titleZh": "Meta Donates 1,000 AI Glasses to Singapore’s Disability Community",
+      "url": "https://about.fb.com/news/2026/10/meta-donates-1000-ai-glasses-to-singapores-disability-community/",
+      "date": "2026-10-08",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Meta-Singapore-Wearables-Event.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Meta-Singapore-Wearables-Event.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Why Data Centers Are Such a Big Part of Meta’s AI Approach",
+      "titleZh": "Why Data Centers Are Such a Big Part of Meta’s AI Approach",
+      "url": "https://about.fb.com/news/2026/10/meta-data-centers-ai-approach/",
+      "date": "2026-10-07",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Tom_Interview_Santosh-on-how-AI-is-shifting-Infra-Strategy_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Tom_Interview_Santosh-on-how-AI-is-shifting-Infra-Strategy_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Measures We’ve Put in Place to Fight Child Exploitation",
+      "titleZh": "Measures We’ve Put in Place to Fight Child Exploitation",
+      "url": "https://about.fb.com/news/2026/10/measures-weve-put-in-place-to-fight-child-exploitation/",
+      "date": "2026-10-07",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Meta-logo.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Meta-logo.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "NTS: Authenticated Time at Meta",
+      "titleZh": "NTS: Authenticated Time at Meta",
+      "url": "https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/",
+      "date": "2026-10-06",
+      "source": "Meta Engineering",
+      "image": "",
+      "imageSource": ""
+    },
     {
       "titleEn": "Facebook tests going Reels-first in India",
       "titleZh": "Facebook tests going Reels-first in India",
@@ -97,24 +169,6 @@
       "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/The-Future-Is-for-Everyone_Muse-for-Small-Business_Thumbnail.gif?fit=890%2C501"
     },
     {
-      "titleEn": "Meta Partners With Government Agencies, Law Enforcement, and Safety Organizations to Launch Regional Anti-Scam Education Campaign",
-      "titleZh": "Meta Partners With Government Agencies, Law Enforcement, and Safety Organizations to Launch Regional Anti-Scam Education Campaign",
-      "url": "https://about.fb.com/news/2026/09/meta-one-step-ahead-campaign/",
-      "date": "2026-09-29",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Meta_One-Step-Ahead-NEWSROOM-POST_Thumbnail_720x720_v2a.png?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Meta_One-Step-Ahead-NEWSROOM-POST_Thumbnail_720x720_v2a.png?fit=890%2C501"
-    },
-    {
-      "titleEn": "Launching Meta Enterprise Platform",
-      "titleZh": "Launching Meta Enterprise Platform",
-      "url": "https://about.fb.com/news/2026/09/launching-meta-enterprise-platform/",
-      "date": "2026-09-28",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Meta_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Meta_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
       "titleEn": "TikTok agrees to pay at least $100M in Alabama settlement",
       "titleZh": "TikTok agrees to pay at least $100M in Alabama settlement",
       "url": "https://techcrunch.com/2026/09/26/tiktok-agrees-to-pay-at-least-100m-in-alabama-settlement/",
@@ -131,15 +185,6 @@
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""
-    },
-    {
-      "titleEn": "The Biggest News From Connect 2026",
-      "titleZh": "The Biggest News From Connect 2026",
-      "url": "https://about.fb.com/news/2026/09/the-biggest-news-from-connect-2026/",
-      "date": "2026-09-24",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/The-Biggest-News-From-Connect-2026_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/The-Biggest-News-From-Connect-2026_Thumbnail.jpg?fit=890%2C501"
     },
     {
       "titleEn": "Turn discovery into action with September’s Demand Gen Drop.",
@@ -172,51 +217,6 @@
       "titleEn": "YouTube’s conversational video editing tool lets creators make edits in natural language",
       "titleZh": "YouTube’s conversational video editing tool lets creators make edits in natural language",
       "url": "https://techcrunch.com/2026/09/23/youtubes-conversational-video-editing-tool-lets-creators-make-edits-in-natural-language/",
-      "date": "2026-09-23",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Here’s what was announced at Made On YouTube 2026.",
-      "titleZh": "Here’s what was announced at Made On YouTube 2026.",
-      "url": "https://blog.google/products-and-platforms/products/youtube/made-on-youtube-updates-2026/",
-      "date": "2026-09-23",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Event_-_Made_On_Logo_Creator_Gr.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Event_-_Made_On_Logo_Creator_Gr.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "YouTube doubles down on video shopping with AI-powered ‘Ask YouTube’ feature",
-      "titleZh": "YouTube doubles down on video shopping with AI-powered ‘Ask YouTube’ feature",
-      "url": "https://techcrunch.com/2026/09/23/youtube-doubles-down-on-video-shopping-with-ai-powered-ask-youtube-feature/",
-      "date": "2026-09-23",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "YouTube adds new creator tools like video A/B testing, dynamic thumbnails, and live dubbing",
-      "titleZh": "YouTube adds new creator tools like video A/B testing, dynamic thumbnails, and live dubbing",
-      "url": "https://techcrunch.com/2026/09/23/youtube-adds-new-creator-tools-like-video-a-b-testing-dynamic-thumbnails-and-live-dubbing/",
-      "date": "2026-09-23",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "YouTube will let you build your own algorithm with AI",
-      "titleZh": "YouTube will let you build your own algorithm with AI",
-      "url": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/",
-      "date": "2026-09-23",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "YouTube releases new AI features for creators within its Studio app",
-      "titleZh": "YouTube releases new AI features for creators within its Studio app",
-      "url": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/",
       "date": "2026-09-23",
       "source": "TechCrunch",
       "image": "",
