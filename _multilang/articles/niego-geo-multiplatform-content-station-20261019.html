@@ -1,0 +1,535 @@
+<!DOCTYPE html><html lang="en" data-title-en="NIEGO-GEO content station — AI writing × multi-platform publish × GEO — aogl.cn" data-desc-en="NIEGO-GEO is a media ops station I built (http://geo.niegoweb.com/): AI drafting, per-platform variants, site rich-text articles, analytics, and GEO/SEO tooling. Original archive under original/geo-niego/ with workbench, channel grid, differential generation, and cover notes." data-title-zh="NIEGO-GEO 媒体运营工具站：AI 创作 × 多平台发布 × GEO 优化手记 — aogl.cn" data-desc-zh="本人自研的 NIEGO-GEO 媒体运营工具站（http://geo.niegoweb.com/）：AI 创作、多平台差异发布、网站文章富文本、数据报表与 GEO/SEO 优化。本站原创归档 original/geo-niego/，含工作台、平台渠道、按平台差异生成与封面生成手记。" data-title-ja="NIEGO-GEO — AI作成・多平台配信・GEO — aogl.cn" data-desc-ja="自作の NIEGO-GEO http://geo.niegoweb.com/ — original/geo-niego/ アーカイブ。" data-title-ko="NIEGO-GEO — AI 창작·다플랫폼 발행·GEO — aogl.cn" data-desc-ko="직접 개발한 NIEGO-GEO http://geo.niegoweb.com/ — original/geo-niego/ 아카이브." data-title-fr="NIEGO-GEO — création IA, multi-plateformes, GEO — aogl.cn" data-desc-fr="NIEGO-GEO, outil que j’ai développé — http://geo.niegoweb.com/ — archive original/geo-niego/." data-title-ru="NIEGO-GEO — ИИ-контент, мультиплатформа, GEO — aogl.cn" data-desc-ru="NIEGO-GEO — инструмент, который я сделал: http://geo.niegoweb.com/ — архив original/geo-niego/." data-title-ar="NIEGO-GEO — كتابة بالذكاء الاصطناعي ونشر متعدد المنصات وGEO — aogl.cn" data-desc-ar="NIEGO-GEO أداة طوّرتها بنفسي — http://geo.niegoweb.com/ — أرشيف original/geo-niego/."><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <meta name="description" content="NIEGO-GEO is a media ops station I built (http://geo.niegoweb.com/): AI drafting, per-platform variants, site rich-text articles, analytics, and GEO/SEO tooling. Original archive under original/geo-niego/ with workbench, channel grid, differential generation, and cover notes.">
+  <title>NIEGO-GEO content station — AI writing × multi-platform publish × GEO — aogl.cn</title>
+  <link rel="canonical" href="https://aogl.cn/en/articles/niego-geo-multiplatform-content-station-20261019.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="aogl.cn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aogl.cn/en/articles/niego-geo-multiplatform-content-station-20261019.html">
+  <meta property="og:title" content="NIEGO-GEO content station — AI writing × multi-platform publish × GEO — aogl.cn">
+  <meta property="og:description" content="NIEGO-GEO is a media ops station I built (http://geo.niegoweb.com/): AI drafting, per-platform variants, site rich-text articles, analytics, and GEO/SEO tooling. Original archive under original/geo-niego/ with workbench, channel grid, differential generation, and cover notes.">
+  <meta property="og:site_name" content="aogl.cn">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://aogl.cn/upload/articles/niego-geo-multiplatform-content-station-20261019.webp">
+  <meta property="og:image:alt" content="NIEGO-GEO multi-platform content station — AI creation and GEO publishing dashboard">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aogl.cn/upload/articles/niego-geo-multiplatform-content-station-20261019.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hub.css">
+  <link rel="stylesheet" href="/css/article-hub.css">
+    <script src="/js/gtag.js"></script>
+  <script src="/js/adsense.js"></script>
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Built by me · http://geo.niegoweb.com/ · enterprise multi-platform CMS","alternativeHeadline":"NIEGO-GEO 媒体运营工具站：AI 创作 × 多平台发布 × GEO 优化手记","datePublished":"2026-10-19","dateModified":"2026-10-19","author":{"@type":"Organization","name":"aogl.cn"},"publisher":{"@type":"Organization","name":"aogl.cn","url":"https://aogl.cn/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aogl.cn/en/articles/niego-geo-multiplatform-content-station-20261019.html"},"url":"https://aogl.cn/en/articles/niego-geo-multiplatform-content-station-20261019.html","inLanguage":"mul","description":"NIEGO-GEO is a media ops station I built (http://geo.niegoweb.com/): AI drafting, per-platform variants, site rich-text articles, analytics, and GEO/SEO tooling. Original archive under original/geo-niego/ with workbench, channel grid, differential generation, and cover notes.","isAccessibleForFree":true}
+</script>
+</head><body class="locale-en">
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+  <script src="/js/bg-canvas.js"></script>
+  <script src="/js/i18n.js"></script>
+  <header>
+    <div class="head-row">
+      <div class="brand">
+      <h1 class="lang-en brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — personal bookmarks for generative AI tools and LLM releases" decoding="async"></a>
+        </h1>
+      <h1 class="lang-zh brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成式 AI 工具与大模型动态（个人书签）" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ja brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 生成AIツールの個人用ブックマーク" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ko brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — 생성형 AI 도구 개인 북마크" decoding="async"></a>
+        </h1>
+      <h1 class="lang-fr brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — signets personnels pour outils d’IA générative" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ru brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — личные закладки по инструментам генеративного ИИ" decoding="async"></a>
+        </h1>
+      <h1 class="lang-ar brand-logo-heading">
+          <a href="https://aogl.cn/" class="brand-logo-link"><img src="/logo.svg" width="336" height="56" class="brand-logo-img" alt="aogl.cn — روابط شخصية لأدوات الذكاء الاصطناعي التوليدي" decoding="async"></a>
+        </h1>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav-list lang-en">
+          <li class="is-active"><a href="/articles/index.html">Originals</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/life.html">Life</a></li>
+        </ul>
+        <ul class="site-nav-list lang-zh">
+          <li class="is-active"><a href="/articles/index.html">本站原创</a></li>
+          <li><a href="/about.html">关于</a></li>
+          <li><a href="/games.html">游戏</a></li>
+          <li><a href="/tech.html">科技</a></li>
+          <li><a href="/life.html">生活</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ja">
+          <li class="is-active"><a href="/articles/index.html">オリジナル</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/games.html">ゲーム</a></li>
+          <li><a href="/tech.html">テック</a></li>
+          <li><a href="/life.html">ライフ</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ko">
+          <li class="is-active"><a href="/articles/index.html">오리지널</a></li>
+          <li><a href="/about.html">소개</a></li>
+          <li><a href="/games.html">게임</a></li>
+          <li><a href="/tech.html">테크</a></li>
+          <li><a href="/life.html">라이프</a></li>
+        </ul>
+        <ul class="site-nav-list lang-fr">
+          <li class="is-active"><a href="/articles/index.html">Originaux</a></li>
+          <li><a href="/about.html">À propos</a></li>
+          <li><a href="/games.html">Jeux</a></li>
+          <li><a href="/tech.html">Tech</a></li>
+          <li><a href="/life.html">Vie</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ru">
+          <li class="is-active"><a href="/articles/index.html">Авторское</a></li>
+          <li><a href="/about.html">О сайте</a></li>
+          <li><a href="/games.html">Игры</a></li>
+          <li><a href="/tech.html">Техно</a></li>
+          <li><a href="/life.html">Сервисы</a></li>
+        </ul>
+        <ul class="site-nav-list lang-ar">
+          <li class="is-active"><a href="/articles/index.html">محتوى أصلي</a></li>
+          <li><a href="/about.html">حول</a></li>
+          <li><a href="/games.html">الألعاب</a></li>
+          <li><a href="/tech.html">التقنية</a></li>
+          <li><a href="/life.html">الحياة الرقمية</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <select class="aogl-lang-select" id="aogl-lang-header" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+  <main class="article-shell hub-main wrap" id="main">
+    <div class="lang-en">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Back to home · Editorial originals</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>NIEGO-GEO content station — AI writing × multi-platform publish × GEO</h1>
+        <p class="article-shell__sub">Built by me · http://geo.niegoweb.com/ · enterprise multi-platform CMS</p>
+        <p class="article-shell__meta"><time datetime="2026-10-19">2026-10-19</time> · aogl.cn original</p>
+      </div>
+      <article class="article-shell__body" lang="en"><p>This is a <strong>first-party build log</strong> on aogl.cn. All screenshots live under <code>original/geo-niego/</code> (archived 2026-10-19). <strong>NIEGO-GEO is a media-ops / GEO tool station I developed myself</strong>; the login brand line also reads NIEGO-AI. <strong>Product link:</strong> <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a>—one workbench for <strong>enterprise multi-platform content management</strong>, <strong>AI drafting</strong>, and <strong>scheduled publishing</strong>. The login page states the pitch plainly: unified multi-platform content · AI creation · timed publish. This page is not third-party marketing copy. It walks through my own UI captures—AI assistant empty state, main-content rich text, per-platform differential generation, site-article editor, channel grid, and analytics—so search engines and humans can index phrases like “multi-platform content middle platform,” “GEO optimization tool,” “Xiaohongshu Douyin variant copy,” and “geo.niegoweb.com.”</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/niego-geo-hero-cover.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="NIEGO-GEO cover art — media ops, AI creation, multi-platform publishing visual">
+  <figcaption><code>niego-geo-hero-cover.jpg</code> — auto-generated hero / Open Graph source for this article.</figcaption>
+</figure>
+
+<h2>What’s in the folder</h2>
+<ul>
+  <li><code>niego-geo-hero-cover.jpg</code> — generated cover with the NIEGO-GEO wordmark and multi-platform mood; used as hero.</li>
+  <li><code>2-空态场景引导.png</code> — AI assistant empty state: quick-task tiles and deepseek-chat model picker.</li>
+  <li><code>ce-1-top.png</code> — content editor: title, tags, rich text, right-hand AI panel.</li>
+  <li><code>ce2-3b-aivar.png</code> — create flow · generate by platform differences (Xiaohongshu / Douyin / Instagram).</li>
+  <li><code>2-网站文章-富文本正文编辑器.png</code> — website article tab: cover slots, topics, structured body.</li>
+  <li><code>v32-1-platforms.png</code> / <code>pf-1-grid.png</code> — admin platform channels: ~20 domestic and global cards.</li>
+  <li><code>v18-3-reports.png</code> — data reports: reads / likes / comments / shares plus per-item detail.</li>
+</ul>
+<p>Captures were taken in a desktop browser at <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a>. Demo copy has listed admin / 123456 (superuser) and editor / 123456 (editor). For SEO, pairing <strong>structured prose</strong> with <strong>descriptive image alt text</strong> beats a bare login URL: crawlers see entities (menu labels, platform names, GEO) in first-paint HTML—not only in pixels.</p>
+
+<h2>Positioning: own the content asset, don’t rewrite every app from scratch</h2>
+<p>Browser plugins that paste the same caption into five apps already exist. NIEGO-GEO’s bet is a <strong>durable enterprise workbench</strong> that keeps creation, materials, accounts, publish jobs, and performance feedback in one place. The sidebar roughly maps to:</p>
+<ol>
+  <li><strong>Workbench / AI assistant</strong> — turn natural-language briefs into library-ready content.</li>
+  <li><strong>Content library · material library</strong> — reusable masters and image assets, not siloed drafts.</li>
+  <li><strong>Publishing center · platform accounts</strong> — credentials plus scheduled distribution.</li>
+  <li><strong>Website articles · SEO / GEO optimization</strong> — owned long-form plus generative-engine visibility.</li>
+  <li><strong>Data reports · auto-publish rules · billing</strong> — closed-loop metrics and quota governance.</li>
+  <li><strong>Admin backend</strong> — tenants, members, audit logs, sensitive words, AI models, system params.</li>
+</ol>
+<p>Psychologically, external platform traffic should serve an internal asset: a versioned master document. Blast-only tools lose rollback; CMS-only tools still force editors to hand-tune tone and character caps per network.</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/2-%E7%A9%BA%E6%80%81%E5%9C%BA%E6%99%AF%E5%BC%95%E5%AF%BC.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO AI assistant empty state — Xiaohongshu copy, official-account longform, titles, rewrite, image gen, competitive analysis tiles">
+  <figcaption><code>2-空态场景引导.png</code> — AI assistant empty state and six quick tasks.</figcaption>
+</figure>
+
+<h2>AI assistant: empty state answers “what can I do today?”</h2>
+<p>The assistant asks what AI should help with today—copy, images, titles, competitive analysis—with results saved into the content library. Six quick tiles cover high-frequency ops:</p>
+<ul>
+  <li><strong>Xiaohongshu copy</strong> — spoken tone, auto hashtags.</li>
+  <li><strong>Official-account long article</strong> — full structure, publish-ready.</li>
+  <li><strong>Title generation</strong> — suspense, numbers, pain points.</li>
+  <li><strong>Rewrite / polish</strong> — keep facts, raise shareability.</li>
+  <li><strong>Generate illustrations</strong> — text-to-image into the material library.</li>
+  <li><strong>Competitive analysis</strong> — playbooks and differentiation gaps.</li>
+</ul>
+<p>The composer supports attachments and image gen; the model picker example is <strong>deepseek-chat</strong>. Session lists show pinned briefs like “autumn thermos Xiaohongshu copy,” which means conversations are treated as <strong>searchable creative assets</strong>, not disposable bubbles. Quota panels expose monthly publish and AI generation limits for free vs pro plans—honest SaaS cost boundaries belong in the article so readers do not assume infinite generation.</p>
+
+<h2>Main content editor: one master, shared by default</h2>
+<p>The edit view pins the master in the center: title, topic tags, cover, rich-text body. Sample copy notes that the body is shared across platforms by default. The right-hand AI panel toggles <strong>unified content</strong> vs <strong>generate by platform differences</strong>, with shortcuts for longform, Xiaohongshu tone, title optimization, and rewrite. A bottom “platform differences” strip opens WeChat Official Account, Weibo, and peers for overrides—or forces everything to follow the master.</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/ce-1-top.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO content editor — title, tags, rich text, and right-hand unified AI generation panel">
+  <figcaption><code>ce-1-top.png</code> — master editor and unified AI generation.</figcaption>
+</figure>
+
+<p>Version history / rollback next to the master title matters for teams: AI drafts can overwrite careful human edits. When the cover slot is empty, editors pull from the material library or image-gen path; this aogl.cn article fills Open Graph with an auto-generated cover on the publishing side.</p>
+
+<h2>Per-platform generation: one brief, many tones and caps</h2>
+<p>In “generate by platform differences” mode, the brief box accepts natural language (for example three selling points for a September launch). Target platforms are multi-select tiles with length hints. A sample selection is <strong>Xiaohongshu, Douyin, and Instagram</strong>. Helper text states that per-platform generation calls the model once per platform and consumes points—cost disclosure instead of “one-click free forever.” Individual tabs can still follow or diverge from the master.</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/ce2-3b-aivar.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO generate by platform differences — brief field and Xiaohongshu Douyin Instagram selection">
+  <figcaption><code>ce2-3b-aivar.png</code> — differential generation with three platforms selected.</figcaption>
+</figure>
+
+<p>Semantically this is not template fill-in: Xiaohongshu wants spoken hashtags, Douyin wants short hooks, Instagram wants international tone. Pushing differences into model calls—not post-hoc editing—turns “multi-platform” into throughput. For GEO (Generative Engine Optimization), differentiated entities, citable structure, and owned long-form appear together; the sidebar places SEO and GEO optimization as sibling menus, signaling that visibility is no longer only classic blue-link ranking.</p>
+
+<h2>Website articles: owned long-form with cover slots</h2>
+<p>The “Website · temporary test site” tab shows main cover / video cover slots, title, topics, and structured rich text. Sample copy discusses choosing a content middle platform and the logic of a product launch, including the line that tools are leverage while methodology is the moat—aligned with NIEGO-GEO’s own stance. Unpublished state stays visible so editors do not confuse a draft with a live sync.</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/2-%E7%BD%91%E7%AB%99%E6%96%87%E7%AB%A0-%E5%AF%8C%E6%96%87%E6%9C%AC%E6%AD%A3%E6%96%87%E7%BC%96%E8%BE%91%E5%99%A8.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO website article rich-text editor — main cover, topics, and body structure">
+  <figcaption><code>2-网站文章-富文本正文编辑器.png</code> — website article editor and cover slots.</figcaption>
+</figure>
+
+<h2>Platform channels: about twenty domestic and global exits</h2>
+<p>Admin “platform channels” cover major China networks (WeChat Official Account, Weibo, Xiaohongshu, Douyin, Bilibili, Kuaishou, Zhihu, Channels, Toutiao, Baijiahao, Sohu, Ctrip, Meipian, and more) plus Facebook, Instagram, X, YouTube, TikTok, and LinkedIn. Cards show config status, global toggles, and parameter counts. Batch checks, token inspection, and “accounts expiring in 7 days” exist because the real multi-platform pain is often <strong>expired credentials</strong>, not prettier captions.</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/v32-1-platforms.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO admin platform channel grid — Xiaohongshu Douyin YouTube and about twenty channel cards">
+  <figcaption><code>v32-1-platforms.png</code> — platform channel configuration cards.</figcaption>
+</figure>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/pf-1-grid.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO platform channel config — sandbox and WeChat Weibo parameter toggles">
+  <figcaption><code>pf-1-grid.png</code> — channel parameter and switch detail.</figcaption>
+</figure>
+
+<h2>Data reports: publish is not the finish line</h2>
+<p>Reports summarize latest snapshots across published items: reads, likes, comments, shares. Detail rows include content, platform, account, publish time, engagement, and sync count, filterable by platform. Syncing stores snapshots so trends exist; a single live number is not a trend. Sample rows use a sandbox platform / demo account so the pipeline can be verified before spending real reach.</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/v18-3-reports.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO data reports — reads likes comments shares summary and content performance table">
+  <figcaption><code>v18-3-reports.png</code> — report summary and detail table.</figcaption>
+</figure>
+
+<h2>Architecture in one pass</h2>
+<ul>
+  <li><strong>Creation</strong> — AI assistant + master rich text + per-platform generation.</li>
+  <li><strong>Assets</strong> — content library, materials, version rollback.</li>
+  <li><strong>Distribution</strong> — publishing center, accounts, auto rules, ~20 channels.</li>
+  <li><strong>Growth</strong> — website articles, SEO / GEO, analytics.</li>
+  <li><strong>Governance</strong> — quotas plus admin (tenants / members / audit / sensitive words / models).</li>
+</ul>
+<p>The split fits editor vs superuser roles. Unlike other first-party demos on this site (WordPet, EatToday, Prompt Share), this note sits in the <strong>content middle platform / multi-platform ops / GEO</strong> keyword cluster and works as a real SaaS product explanation sample.</p>
+
+<h2>Accessibility and SEO notes</h2>
+<ul>
+  <li>Every screenshot <code>alt</code> names UI function and visible entities (menus, platforms, buttons)—never “screenshot 1.”</li>
+  <li>Repeat canonical names: NIEGO-GEO, NIEGO-AI, <code>http://geo.niegoweb.com/</code>, Xiaohongshu, Douyin, WeChat Official Account, GEO optimization, generate-by-platform-differences.</li>
+  <li>Outbound product links use <code>rel="noopener noreferrer"</code>; body HTML is complete on first paint without JS injection.</li>
+  <li>Chinese filenames in <code>src</code> use percent-encoding for stable static hosting.</li>
+</ul>
+
+<h2>Boundaries</h2>
+<p>This documents <strong>my own NIEGO-GEO tool station</strong> UI archive. Quotas, channel status, and demo accounts change with the environment; third-party APIs, moderation, and account policies follow each platform’s rules at the time. This is not an official partnership claim and does not promise traffic or GEO rankings. If the demo resets passwords or closes the sandbox, trust the live login page.</p>
+
+<h2 id="article-seo-keywords">Related</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">Open NIEGO-GEO</a>
+  <a class="pill" href="/articles/index.html">All originals</a>
+  <a class="pill" href="/index.html#originals">Home originals</a>
+  <a class="pill" href="/articles/prompt-share-bilingual-library-20260920.html">Prompt Share notes</a>
+</div>
+
+<p class="article-note">Assets: <code>original/geo-niego/</code> · product: <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a> · published <strong>2026-10-19</strong>.</p></article>
+    </div>
+    <div class="lang-zh">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 返回首页 · 本站原创</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>NIEGO-GEO 媒体运营工具站：AI 创作 × 多平台发布 × GEO 优化手记</h1>
+        <p class="article-shell__sub">本人自研 · 入口：http://geo.niegoweb.com/ · 企业多平台内容统一管理</p>
+        <p class="article-shell__meta"><time datetime="2026-10-19">2026-10-19</time> · 本站原创</p>
+      </div>
+      <article class="article-shell__body" lang="zh-Hans"><p>这是 aogl.cn 上的一篇<strong>个人自研产品手记</strong>，素材全部来自 <code>original/geo-niego/</code>（2026-10-19 归档）。<strong>NIEGO-GEO 是本人开发的媒体运营 / GEO 工具站</strong>，登录品牌页写作 NIEGO-AI。入口：<a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a>——把<strong>企业多平台内容统一管理</strong>、<strong>AI 创作</strong>与<strong>定时发布</strong>放进同一工作台。口号在登录页写得很直白：企业多平台内容统一管理 · AI 创作 · 定时发布。本文不是转载软文，而是对照真实界面截图拆解：AI 助手空态引导、主内容富文本编辑、按平台差异生成、网站文章编辑器、平台渠道网格与数据报表，方便检索「多平台内容中台」「GEO 优化工具」「小红书抖音一键差异文案」「geo.niegoweb.com」等长尾词。</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/niego-geo-hero-cover.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="NIEGO-GEO 封面 — 媒体运营、AI 创作与多平台发布视觉">
+  <figcaption><code>niego-geo-hero-cover.jpg</code> — 为本篇自动生成的题图 / Open Graph 源图。</figcaption>
+</figure>
+
+<h2>文件夹里有什么</h2>
+<ul>
+  <li><code>niego-geo-hero-cover.jpg</code> — 自动生成封面：NIEGO-GEO 字标与多平台发布氛围，用作题图。</li>
+  <li><code>2-空态场景引导.png</code> — AI 助手首页空态：快捷任务磁贴与 deepseek-chat 模型选择。</li>
+  <li><code>ce-1-top.png</code> — 编辑内容工作台：主标题、话题标签、富文本与右侧 AI 生成面板。</li>
+  <li><code>ce2-3b-aivar.png</code> — 新建内容 · 按平台差异生成：小红书 / 抖音 / Instagram 等目标平台。</li>
+  <li><code>2-网站文章-富文本正文编辑器.png</code> — 网站文章 tab：主封面图、话题与富文本结构。</li>
+  <li><code>v32-1-platforms.png</code> / <code>pf-1-grid.png</code> — 管理后台平台渠道：约 20 个国内外渠道卡片。</li>
+  <li><code>v18-3-reports.png</code> — 数据报表：阅读 / 点赞 / 评论 / 转发汇总与内容效果明细。</li>
+</ul>
+<p>截图在桌面浏览器打开 <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a> 拍摄。演示账号文案曾写明：admin / 123456（超管）· editor / 123456（编辑）。对 SEO 而言，同时提供<strong>产品语义文字</strong> + <strong>带 alt 的界面截图</strong>，比只贴一个登录链接更容易让搜索引擎理解「这是什么工具、解决什么问题」。</p>
+
+<h2>产品定位：内容资产进自有中台，而不是每个平台各写一遍</h2>
+<p>市面上不缺「一条内容复制粘贴到多个 App」的浏览器插件。NIEGO-GEO 的差异在于把创作、素材、账号、发布与效果回流做成<strong>可续期的企业工作台</strong>。侧栏信息架构大致是：</p>
+<ol>
+  <li><strong>工作台 / AI 助手</strong> — 从自然语言需求落到可入库内容。</li>
+  <li><strong>内容库 · 素材库</strong> — 主内容与图片资产可复用，而不是散落在各平台草稿箱。</li>
+  <li><strong>发布中心 · 平台账号</strong> — 绑定渠道凭据，统一调度发布时间。</li>
+  <li><strong>网站文章 · SEO / GEO 优化</strong> — 自有阵地长文与生成式检索可见性并重。</li>
+  <li><strong>数据报表 · 自动发布规则 · 套餐充值</strong> — 效果闭环与配额治理。</li>
+  <li><strong>管理后台</strong> — 租户、成员、审计、敏感词、AI 模型与系统参数。</li>
+</ol>
+<p>从运营心理上说，这是把「外在诱饵（各平台流量）」服务「内在资产（可版本回滚的主内容）」。若只做群发而不保留主内容版本，改稿与追责都会碎；若只做 CMS 而不能按平台差异生成，编辑仍要手工改语气与字数上限。</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/2-%E7%A9%BA%E6%80%81%E5%9C%BA%E6%99%AF%E5%BC%95%E5%AF%BC.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO AI 助手空态 — 写小红书文案、公众号长文、生标题、改写润色、生成配图、竞品分析快捷磁贴">
+  <figcaption><code>2-空态场景引导.png</code> — AI 助手空态与六类快捷任务。</figcaption>
+</figure>
+
+<h2>AI 助手：空态先给「今天能做什么」</h2>
+<p>AI 助手页顶部问句是「AI 今天，你想让 AI 帮你做什么？」，说明可写文案、生图、改标题、做竞品分析，结果可直接入库。空态六块快捷磁贴覆盖高频运营动作：</p>
+<ul>
+  <li><strong>写小红书文案</strong> — 口语化、自动话题标签。</li>
+  <li><strong>公众号长文</strong> — 完整结构、可直接发。</li>
+  <li><strong>生成标题</strong> — 悬念、数字、痛点等套路。</li>
+  <li><strong>改写润色</strong> — 保留信息、提高传播力。</li>
+  <li><strong>生成配图</strong> — 文生图并送入素材库。</li>
+  <li><strong>竞品分析</strong> — 输出打法与差异化机会。</li>
+</ul>
+<p>底部输入区支持附件与生图，模型选择示例为 <strong>deepseek-chat</strong>。会话列表可见置顶「秋季保温杯小红书文案」、今日「私域运营方法论」等——说明产品把 AI 对话当<strong>可检索的创作会话资产</strong>，而不是一次性聊天泡泡。配额面板会出现「本月发布」「AI 对话 / AI 生成」进度条，免费版与专业版额度不同；这是 SaaS 成本边界，写进正文避免读者误以为无限生成。</p>
+
+<h2>主内容编辑：一份底稿，默认跨平台共用</h2>
+<p>「编辑内容」页把主内容钉在中间：标题、话题标签、封面图、富文本正文。示例标题曾写「平台差异测试主标题」，正文说明「这是主内容正文，各平台默认共用」。右侧 AI 面板可在<strong>统一内容</strong>与<strong>按平台差异生成</strong>之间切换，并提供图文长文、小红书文案、标题优化、改写润色等快捷动作。底部「平台差异」区提示可对微信公众号、微博等渠道展开定制，也可一键「全部跟随主内容」。</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/ce-1-top.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO 编辑内容 — 主标题话题标签富文本与右侧 AI 统一内容生成面板">
+  <figcaption><code>ce-1-top.png</code> — 主内容编辑与 AI 统一生成。</figcaption>
+</figure>
+
+<p>版本历史 / 回滚按钮出现在主内容标题旁——这对企业协作很关键：AI 生成容易覆盖人工精修，没有版本就不敢大胆试提示词。封面「未设置」时，可后续从素材库选择或走配图生成链路；本站本稿的题图则在 aogl.cn 侧用自动生成封面补齐 Open Graph。</p>
+
+<h2>按平台差异生成：一次提示词，多套语气与字数</h2>
+<p>新建内容在「按平台差异生成」模式下，创作要求框接受自然语言 brief（例如九月新品发布会三点卖点），目标平台以磁贴多选。示例中选中<strong>小红书、抖音、Instagram</strong>，每个磁贴标注标题/文案字数上限。说明文案写明：按平台生成会按平台次数调用模型并扣点——诚实披露成本，而不是假装「一键零成本」。底部仍可对微信公众号、微博等 tab 单独开关「跟随主内容」。</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/ce2-3b-aivar.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO 按平台差异生成 — 创作要求与小红书抖音 Instagram 目标平台选择">
+  <figcaption><code>ce2-3b-aivar.png</code> — 按平台差异生成与已选 3 个平台。</figcaption>
+</figure>
+
+<p>产品语义上，这不是简单模板替换：小红书要口语与话题，抖音要短钩子，Instagram 要国际语感。把差异放进模型调用而不是编辑事后改，才能让「多平台」从口号变成吞吐。对 GEO（Generative Engine Optimization）叙事，差异化实体名、可引用结构与自有站长文会一起出现——工具站侧栏同时挂了 SEO 优化与 GEO 优化入口，说明检索可见性不再只等于传统蓝链排名。</p>
+
+<h2>网站文章：自有阵地的富文本与封面槽位</h2>
+<p>「网站 · 临时测试站」tab 展示主封面图 / 视频封面槽位、标题、话题与富文本结构。示例文稿讨论「内容中台怎么选」与「新品发布底层逻辑」，引用句「工具只是杠杆，方法论才是护城河」——这与 NIEGO-GEO 自己的产品主张一致：工具加速分发，方法论决定能否沉淀资产。配图区可挂正文插图；未发布状态清晰可见，避免误以为已同步全网。</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/2-%E7%BD%91%E7%AB%99%E6%96%87%E7%AB%A0-%E5%AF%8C%E6%96%87%E6%9C%AC%E6%AD%A3%E6%96%87%E7%BC%96%E8%BE%91%E5%99%A8.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO 网站文章富文本编辑器 — 主封面图话题与正文结构">
+  <figcaption><code>2-网站文章-富文本正文编辑器.png</code> — 网站文章编辑与封面槽位。</figcaption>
+</figure>
+
+<h2>平台渠道：约二十个国内外出口</h2>
+<p>管理后台「平台渠道」网格覆盖国内主流（微信公众号、微博、小红书、抖音、B 站、快手、知乎、视频号、头条、百家号、搜狐、携程、美篇等）与国际渠道（Facebook、Instagram、X、YouTube、TikTok、LinkedIn）。卡片显示配置状态（配置已通 / 凭据未配置 / 待配置）、全局开关与参数配置项数。另有「批量检测」「立即巡检 Token」「7 天内到期账号」等运维提示——多平台产品的真实痛点往往是<strong>凭据过期</strong>，而不是文案不够美。</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/v32-1-platforms.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO 管理后台平台渠道网格 — 小红书抖音 YouTube 等约二十个平台配置状态">
+  <figcaption><code>v32-1-platforms.png</code> — 平台渠道配置卡片网格。</figcaption>
+</figure>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/pf-1-grid.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO 平台渠道配置 — 模拟平台与微信公众号微博等参数开关">
+  <figcaption><code>pf-1-grid.png</code> — 平台渠道参数与开关细节。</figcaption>
+</figure>
+
+<h2>数据报表：发布之后还要能回看增长</h2>
+<p>「数据报表」页汇总全部已发布内容最新快照：阅读量、点赞、评论、转发。内容效果明细表含内容、平台、账号、发布时间、互动指标与同步次数；可按平台筛选。同步平台数据按钮强调：每次同步保存快照，才能谈趋势，而不是只看当下一个数字。示例行出现「模拟平台 / 演示主账号」，说明联调阶段可用沙箱验证流水线，不必先烧真实流量。</p>
+
+<figure class="article-figure">
+  <img src="../original/geo-niego/v18-3-reports.png" width="1400" height="900" loading="lazy" decoding="async" alt="NIEGO-GEO 数据报表 — 阅读点赞评论转发汇总与内容效果明细表">
+  <figcaption><code>v18-3-reports.png</code> — 数据报表汇总与明细。</figcaption>
+</figure>
+
+<h2>信息架构小结</h2>
+<ul>
+  <li><strong>创作层</strong> — AI 助手 + 主内容富文本 + 按平台差异生成。</li>
+  <li><strong>资产层</strong> — 内容库、素材库、版本回滚。</li>
+  <li><strong>分发层</strong> — 发布中心、平台账号、自动发布规则、约 20 渠道。</li>
+  <li><strong>增长层</strong> — 网站文章、SEO / GEO 优化、数据报表。</li>
+  <li><strong>治理层</strong> — 套餐配额、管理后台（租户 / 成员 / 审计 / 敏感词 / 模型）。</li>
+</ul>
+<p>该结构面向企业编辑与超管分工：editor 侧重创作与发布，admin 侧重渠道凭据与系统参数。与本站其它自研 Demo（WordPet、EatToday、Prompt Share）不同，本篇更贴近 <strong>内容中台 / 多平台运营 / GEO</strong> 关键词簇，适合作为「真实 SaaS 原创说明」样本。</p>
+
+<h2>无障碍与 SEO 要点</h2>
+<ul>
+  <li>每张截图 <code>alt</code> 写明界面功能与可见实体（菜单名、平台名、按钮文案），避免「截图 1」。</li>
+  <li>正文重复规范名：NIEGO-GEO、NIEGO-AI、入口 <code>http://geo.niegoweb.com/</code>、小红书、抖音、微信公众号、GEO 优化、按平台差异生成。</li>
+  <li>外链官网用 <code>rel="noopener noreferrer"</code>；正文在首屏 HTML 内完整输出，不依赖 JS 注入。</li>
+  <li>中文文件名素材在链接中使用百分号编码，保证静态托管路径稳定。</li>
+</ul>
+
+<h2>边界说明</h2>
+<p>本文档化界面为<strong>本人自研的 NIEGO-GEO 工具站</strong>产品演示与 UI 归档。配额数字、平台配置状态与演示账号随环境变化；第三方平台 API、审核与账号政策以各平台当时规则为准。本文不构成对任何平台官方合作的声明，也不承诺具体阅读量或 GEO 排名结果。演示环境若重置密码或关闭沙箱，请以线上登录页提示为准。</p>
+
+<h2 id="article-seo-keywords">检索与相关入口</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">打开 NIEGO-GEO</a>
+  <a class="pill" href="/articles/index.html">全部原创索引</a>
+  <a class="pill" href="/index.html#originals">首页本站原创</a>
+  <a class="pill" href="/articles/prompt-share-bilingual-library-20260920.html">Prompt Share 手记</a>
+</div>
+
+<p class="article-note">素材路径：<code>original/geo-niego/</code> · 本人自研工具站：<a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a> · 发布日期 <strong>2026-10-19</strong>。</p></article>
+    </div>
+    <div class="lang-ja">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← ホームへ · オリジナル</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>NIEGO-GEO — AI作成・多平台配信・GEO</h1>
+        <p class="article-shell__sub">自作 · http://geo.niegoweb.com/</p>
+        <p class="article-shell__meta"><time datetime="2026-10-19">2026-10-19</time> · 当サイトオリジナル</p>
+      </div>
+      <article class="article-shell__body" lang="ja"><p><strong>自作ツール</strong> <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">NIEGO-GEO</a>。入口：<a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a>。企業向け多平台コンテンツ管理・AI 創作・GEO/SEO。素材は <code>original/geo-niego/</code>。</p>
+<figure class="article-figure">
+  <img src="../original/geo-niego/niego-geo-hero-cover.jpg" width="800" height="450" loading="lazy" decoding="async" alt="NIEGO-GEO カバー">
+</figure>
+<h2 id="article-seo-keywords">関連</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">NIEGO-GEO</a>
+  <a class="pill" href="/articles/index.html">記事一覧</a>
+</div></article>
+    </div>
+    <div class="lang-ko">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← 홈으로 · 오리지널</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>NIEGO-GEO — AI 창작·다플랫폼 발행·GEO</h1>
+        <p class="article-shell__sub">직접 개발 · http://geo.niegoweb.com/</p>
+        <p class="article-shell__meta"><time datetime="2026-10-19">2026-10-19</time> · 사이트 오리지널</p>
+      </div>
+      <article class="article-shell__body" lang="ko"><p><strong>직접 개발</strong> <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">NIEGO-GEO</a>. 링크: <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a>. 기업 다플랫폼 콘텐츠·AI 창작·GEO/SEO 도구. 자료는 <code>original/geo-niego/</code>.</p>
+<figure class="article-figure">
+  <img src="../original/geo-niego/niego-geo-hero-cover.jpg" width="800" height="450" loading="lazy" decoding="async" alt="NIEGO-GEO 커버">
+</figure>
+<h2 id="article-seo-keywords">관련</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">NIEGO-GEO</a>
+  <a class="pill" href="/articles/index.html">글 목록</a>
+</div></article>
+    </div>
+    <div class="lang-fr">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← Accueil · contenus originaux</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>NIEGO-GEO — création IA, multi-plateformes, GEO</h1>
+        <p class="article-shell__sub">Développé par moi · http://geo.niegoweb.com/</p>
+        <p class="article-shell__meta"><time datetime="2026-10-19">2026-10-19</time> · Original aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="fr"><p><strong>Développé par moi</strong> — <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">NIEGO-GEO</a>. Lien : <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a>. Gestion multi-plateformes, création IA, GEO/SEO. Archives : <code>original/geo-niego/</code>.</p>
+<figure class="article-figure">
+  <img src="../original/geo-niego/niego-geo-hero-cover.jpg" width="800" height="450" loading="lazy" decoding="async" alt="Couverture NIEGO-GEO">
+</figure>
+<h2 id="article-seo-keywords">Liens</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">NIEGO-GEO</a>
+  <a class="pill" href="/articles/index.html">Articles</a>
+</div></article>
+    </div>
+    <div class="lang-ru">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← На главную · оригиналы</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>NIEGO-GEO — ИИ-контент, мультиплатформа, GEO</h1>
+        <p class="article-shell__sub">Моя разработка · http://geo.niegoweb.com/</p>
+        <p class="article-shell__meta"><time datetime="2026-10-19">2026-10-19</time> · Оригинал aogl.cn</p>
+      </div>
+      <article class="article-shell__body" lang="ru"><p><strong>Моя разработка</strong> — <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">NIEGO-GEO</a>. Ссылка: <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a>. Мультиплатформенный контент, ИИ-создание, GEO/SEO. Архив: <code>original/geo-niego/</code>.</p>
+<figure class="article-figure">
+  <img src="../original/geo-niego/niego-geo-hero-cover.jpg" width="800" height="450" loading="lazy" decoding="async" alt="Обложка NIEGO-GEO">
+</figure>
+<h2 id="article-seo-keywords">Связанное</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">NIEGO-GEO</a>
+  <a class="pill" href="/articles/index.html">Статьи</a>
+</div></article>
+    </div>
+    <div class="lang-ar">
+      <div class="article-shell__top">
+        <a href="/index.html#originals">← الرئيسية · محتوى أصلي</a>
+      </div>
+      <div class="article-shell__header">
+        <h1>NIEGO-GEO — كتابة بالذكاء الاصطناعي ونشر متعدد المنصات وGEO</h1>
+        <p class="article-shell__sub">من تطويري · http://geo.niegoweb.com/</p>
+        <p class="article-shell__meta"><time datetime="2026-10-19">2026-10-19</time> · محتوى أصلي</p>
+      </div>
+      <article class="article-shell__body" lang="ar" dir="rtl"><p><strong>من تطويري</strong> — <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">NIEGO-GEO</a>. الرابط: <a href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">http://geo.niegoweb.com/</a>. إدارة محتوى متعددة المنصات وإنشاء بالذكاء الاصطناعي وGEO/SEO. الأرشيف: <code>original/geo-niego/</code>.</p>
+<figure class="article-figure">
+  <img src="../original/geo-niego/niego-geo-hero-cover.jpg" width="800" height="450" loading="lazy" decoding="async" alt="غلاف NIEGO-GEO">
+</figure>
+<h2 id="article-seo-keywords">ذات صلة</h2>
+<div class="pill-row hub-pill-row article-seo-pills" aria-label="Related searches">
+  <a class="pill" href="http://geo.niegoweb.com/" target="_blank" rel="noopener noreferrer">NIEGO-GEO</a>
+  <a class="pill" href="/articles/index.html">المقالات</a>
+</div></article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <div class="footer-top">
+        <div class="footer-lang">
+          <select class="aogl-lang-select" id="aogl-lang-footer" aria-label="Language"></select>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">
+        <img src="/footer-wordmark-outline.svg" width="448" height="92" class="footer-watermark-svg" alt="" decoding="async" loading="lazy">
+      </div>
+      <div class="footer-legal">
+        <a href="/about.html" class="footer-legal-link lang-en">About</a>
+        <a href="/contact.html" class="footer-legal-link lang-en">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-en">Changelog</a>
+        <a href="/privacy.html" class="footer-legal-link lang-en">Privacy</a>
+        <a href="/about.html" class="footer-legal-link lang-zh">关于</a>
+        <a href="/contact.html" class="footer-legal-link lang-zh">联系我们</a>
+        <a href="/changelog.html" class="footer-legal-link lang-zh">更新记录</a>
+        <a href="/privacy.html" class="footer-legal-link lang-zh">隐私政策</a>
+        <a href="/about.html" class="footer-legal-link lang-ja">概要</a>
+        <a href="/contact.html" class="footer-legal-link lang-ja">お問い合わせ</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ja">更新履歴</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ja">プライバシー</a>
+        <a href="/about.html" class="footer-legal-link lang-ko">소개</a>
+        <a href="/contact.html" class="footer-legal-link lang-ko">문의</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ko">변경 기록</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ko">개인정보</a>
+        <a href="/about.html" class="footer-legal-link lang-fr">À propos</a>
+        <a href="/contact.html" class="footer-legal-link lang-fr">Contact</a>
+        <a href="/changelog.html" class="footer-legal-link lang-fr">Mises à jour</a>
+        <a href="/privacy.html" class="footer-legal-link lang-fr">Confidentialité</a>
+        <a href="/about.html" class="footer-legal-link lang-ru">О сайте</a>
+        <a href="/contact.html" class="footer-legal-link lang-ru">Контакты</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ru">Обновления</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ru">Конфиденциальность</a>
+        <a href="/about.html" class="footer-legal-link lang-ar">حول الموقع</a>
+        <a href="/contact.html" class="footer-legal-link lang-ar">اتصل بنا</a>
+        <a href="/changelog.html" class="footer-legal-link lang-ar">التحديثات</a>
+        <a href="/privacy.html" class="footer-legal-link lang-ar">الخصوصية</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-en" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-zh" target="_blank" rel="noopener noreferrer">友情链接 aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ja" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ko" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-fr" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ru" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <a href="https://aoglang.com/zh/" class="footer-legal-link footer-friend-link lang-ar" target="_blank" rel="noopener noreferrer">aoglang</a>
+        <span class="footer-copy">© <span id="y"></span> aogl.cn</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/hub-common.js" defer></script>
+</body></html>
