@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-10-13",
+  "updated": "2026-10-20",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,150 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
+      "titleZh": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
+      "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/",
+      "date": "2026-10-19",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/GenRecs-Tokenization-image1.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/GenRecs-Tokenization-image1.png"
+    },
+    {
+      "titleEn": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
+      "titleZh": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
+      "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
+      "date": "2026-10-19",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Prometheus-BAG-3.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Prometheus-BAG-3.png"
+    },
+    {
+      "titleEn": "TikTok says it’s restored ‘Musk’ documentary advertising account",
+      "titleZh": "TikTok says it’s restored ‘Musk’ documentary advertising account",
+      "url": "https://techcrunch.com/2026/10/17/tiktok-permanently-bans-musk-documentary-advertising-account/",
+      "date": "2026-10-17",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "How Meta Built Forum With AI-Native Engineering",
+      "titleZh": "How Meta Built Forum With AI-Native Engineering",
+      "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+      "date": "2026-10-15",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Forum-UI.jpg",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Forum-UI.jpg"
+    },
+    {
+      "titleEn": "Sapienz Receives ISSTA 2026 Impact Paper Award",
+      "titleZh": "Sapienz Receives ISSTA 2026 Impact Paper Award",
+      "url": "https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta/",
+      "date": "2026-10-15",
+      "source": "Meta Engineering",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
+      "titleZh": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
+      "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
+      "date": "2026-10-15",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2025/05/Economic-and-Workforce-Impacts-of-OS-AI-Linux-Foundation-paper_Thumbnail-1-1.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2025/05/Economic-and-Workforce-Impacts-of-OS-AI-Linux-Foundation-paper_Thumbnail-1-1.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
+      "titleZh": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
+      "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
+      "date": "2026-10-14",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
+      "titleZh": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
+      "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+      "date": "2026-10-14",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Sensing-Art-_-1.jpg?fit=960%2C640",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Sensing-Art-_-1.jpg?fit=960%2C640"
+    },
+    {
+      "titleEn": "Now You Can Invite Anyone to a WhatsApp Call",
+      "titleZh": "Now You Can Invite Anyone to a WhatsApp Call",
+      "url": "https://about.fb.com/news/2026/10/introducing-whatsapp-guest-calling/",
+      "date": "2026-10-14",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Now-You-Can-Invite-Anyone-to-a-WhatsApp-Call_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Now-You-Can-Invite-Anyone-to-a-WhatsApp-Call_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Farah Khan at Edits Film Festival: “Content breakthroughs come from spontaneity, relatability and realness”",
+      "titleZh": "Farah Khan at Edits Film Festival: “Content breakthroughs come from spontaneity, relatability and realness”",
+      "url": "https://about.fb.com/news/2026/10/farah-khan-at-edits-film-festival-content-breakthroughs-come-from-spontaneity-relatability-and-realness/",
+      "date": "2026-10-14",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Farah-Khan-in-conversation-with-Ankit-Rihal-at-the-Edits-Film-Festival.jpeg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Farah-Khan-in-conversation-with-Ankit-Rihal-at-the-Edits-Film-Festival.jpeg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Facebook is giving users more control over their algorithm",
+      "titleZh": "Facebook is giving users more control over their algorithm",
+      "url": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/",
+      "date": "2026-10-13",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Meta’s Generative Ads Model (GEM): Scaling the Central Model and Compute Engine for Frontier Ads AI",
+      "titleZh": "Meta’s Generative Ads Model (GEM): Scaling the Central Model and Compute Engine for Frontier Ads AI",
+      "url": "https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/",
+      "date": "2026-10-13",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/GEM-Scaling-Frontier-Ads-Image-1.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/GEM-Scaling-Frontier-Ads-Image-1.png"
+    },
+    {
+      "titleEn": "Your Algorithm, Your Words: New Ways to Shape What You See on Facebook",
+      "titleZh": "Your Algorithm, Your Words: New Ways to Shape What You See on Facebook",
+      "url": "https://about.fb.com/news/2026/10/introducing-your-algorithm-facebook/",
+      "date": "2026-10-13",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Your-Algorithm_Your-Words_New-Ways-to-Shape-What-You-See-on-Facebook_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Your-Algorithm_Your-Words_New-Ways-to-Shape-What-You-See-on-Facebook_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Build your data strength with October’s Demand Gen drop.",
+      "titleZh": "Build your data strength with October’s Demand Gen drop.",
+      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/",
+      "date": "2026-10-13",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_October_2026.max-600x600.format-webp.webp",
+      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_October_2026.max-600x600.format-webp.webp"
+    },
+    {
+      "titleEn": "Announcing the Official Selection for the Edits Film Festival",
+      "titleZh": "Announcing the Official Selection for the Edits Film Festival",
+      "url": "https://about.fb.com/news/2026/10/announcing-the-official-selection-for-the-edits-film-festival/",
+      "date": "2026-10-13",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/EFF_Official-Selection_v1.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/EFF_Official-Selection_v1.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Leading Tech Companies Join Global Law Enforcement in Major Crackdown on West African Scam Networks",
+      "titleZh": "Leading Tech Companies Join Global Law Enforcement in Major Crackdown on West African Scam Networks",
+      "url": "https://about.fb.com/news/2026/10/meta-tech-companies-law-enforcement-crackdown-global-scam-networks/",
+      "date": "2026-10-13",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Leading-Tech-Companies-Join-Global-Law-Enforcement-in-Major-Crackdown-on-West-African-Scam-Networks_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Leading-Tech-Companies-Join-Global-Law-Enforcement-in-Major-Crackdown-on-West-African-Scam-Networks_Thumbnail.jpg?fit=890%2C501"
+    },
     {
       "titleEn": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
       "titleZh": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
@@ -70,154 +214,10 @@
       "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Meta-Singapore-Wearables-Event.jpg?fit=890%2C501"
     },
     {
-      "titleEn": "Why Data Centers Are Such a Big Part of Meta’s AI Approach",
-      "titleZh": "Why Data Centers Are Such a Big Part of Meta’s AI Approach",
-      "url": "https://about.fb.com/news/2026/10/meta-data-centers-ai-approach/",
-      "date": "2026-10-07",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Tom_Interview_Santosh-on-how-AI-is-shifting-Infra-Strategy_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Tom_Interview_Santosh-on-how-AI-is-shifting-Infra-Strategy_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Measures We’ve Put in Place to Fight Child Exploitation",
-      "titleZh": "Measures We’ve Put in Place to Fight Child Exploitation",
-      "url": "https://about.fb.com/news/2026/10/measures-weve-put-in-place-to-fight-child-exploitation/",
-      "date": "2026-10-07",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Meta-logo.png?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Meta-logo.png?fit=890%2C501"
-    },
-    {
-      "titleEn": "NTS: Authenticated Time at Meta",
-      "titleZh": "NTS: Authenticated Time at Meta",
-      "url": "https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/",
-      "date": "2026-10-06",
-      "source": "Meta Engineering",
-      "image": "",
-      "imageSource": ""
-    },
-    {
       "titleEn": "Facebook tests going Reels-first in India",
       "titleZh": "Facebook tests going Reels-first in India",
       "url": "https://techcrunch.com/2026/10/06/facebook-tests-going-reels-first-in-india/",
       "date": "2026-10-06",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "TikTok rolls out an AI shopping assistant and one-click checkout",
-      "titleZh": "TikTok rolls out an AI shopping assistant and one-click checkout",
-      "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/",
-      "date": "2026-10-05",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Announcing Ranveer Singh as Brand Ambassador for Ray-Ban and Ray-Ban Meta in India along with Exciting New Updates to our AI Glasses",
-      "titleZh": "Announcing Ranveer Singh as Brand Ambassador for Ray-Ban and Ray-Ban Meta in India along with Exciting New Updates to our AI Glasses",
-      "url": "https://about.fb.com/news/2026/10/announcing-ranveer-singh-as-brand-ambassador-for-ray-ban-and-ray-ban-meta-in-india-along-with-exciting-new-updates-to-our-ai-glasses/",
-      "date": "2026-10-01",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/RS_Announce_Comms_RBM_Wayfarer_1920x1080px.png?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/RS_Announce_Comms_RBM_Wayfarer_1920x1080px.png?fit=890%2C501"
-    },
-    {
-      "titleEn": "Meta Names Dhruv Vohra to Lead Southeast Asia Business",
-      "titleZh": "Meta Names Dhruv Vohra to Lead Southeast Asia Business",
-      "url": "https://about.fb.com/news/2026/09/meta-names-dhruv-vohra-to-lead-southeast-asia-business/",
-      "date": "2026-09-30",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Dhruv-Vohra_2026-1.jpeg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Dhruv-Vohra_2026-1.jpeg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Instagram rolls out an AI video assistant for creators",
-      "titleZh": "Instagram rolls out an AI video assistant for creators",
-      "url": "https://techcrunch.com/2026/09/30/instagram-rolls-out-an-ai-video-assistant-for-creators/",
-      "date": "2026-09-30",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Find Your Community With Forum, a Dedicated App for Facebook Groups",
-      "titleZh": "Find Your Community With Forum, a Dedicated App for Facebook Groups",
-      "url": "https://about.fb.com/news/2026/09/find-community-forum-dedicated-app-facebook-groups/",
-      "date": "2026-09-29",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Forum_-A-Dedicated-App-for-Facebook-Groups_Thumb.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Forum_-A-Dedicated-App-for-Facebook-Groups_Thumb.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Expanding Instagram’s School Partnership Program to Help Teens Stay Informed",
-      "titleZh": "Expanding Instagram’s School Partnership Program to Help Teens Stay Informed",
-      "url": "https://about.fb.com/news/2026/09/expanding-instagram-school-partnership-program-help-teens-stay-informed/",
-      "date": "2026-09-29",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/Expanding-Instagrams-School-Partnership-Program-to-Help-Teens-Stay-Informed_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Expanding-Instagrams-School-Partnership-Program-to-Help-Teens-Stay-Informed_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "The Future Is for Everyone: Muse for Small Business",
-      "titleZh": "The Future Is for Everyone: Muse for Small Business",
-      "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
-      "date": "2026-09-29",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/09/The-Future-Is-for-Everyone_Muse-for-Small-Business_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/The-Future-Is-for-Everyone_Muse-for-Small-Business_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "TikTok agrees to pay at least $100M in Alabama settlement",
-      "titleZh": "TikTok agrees to pay at least $100M in Alabama settlement",
-      "url": "https://techcrunch.com/2026/09/26/tiktok-agrees-to-pay-at-least-100m-in-alabama-settlement/",
-      "date": "2026-09-26",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta and YouTube say they will run ads for ‘Musk’ documentary after all",
-      "titleZh": "Meta and YouTube say they will run ads for ‘Musk’ documentary after all",
-      "url": "https://techcrunch.com/2026/09/26/meta-says-it-will-run-ads-for-musk-documentary-after-all/",
-      "date": "2026-09-26",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Turn discovery into action with September’s Demand Gen Drop.",
-      "titleZh": "Turn discovery into action with September’s Demand Gen Drop.",
-      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-september-2026/",
-      "date": "2026-09-24",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_September.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_September.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "Bringing Private Processing to Meta AI Glasses",
-      "titleZh": "Bringing Private Processing to Meta AI Glasses",
-      "url": "https://engineering.fb.com/2026/09/23/security/private-processing-meta-ai-glasses/",
-      "date": "2026-09-24",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/09/Private-Processing-for-AI-Glasses.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/09/Private-Processing-for-AI-Glasses.png"
-    },
-    {
-      "titleEn": "YouTube is making comments more fun — and fandom more lucrative for creators",
-      "titleZh": "YouTube is making comments more fun — and fandom more lucrative for creators",
-      "url": "https://techcrunch.com/2026/09/23/youtube-is-making-comments-more-fun-and-fandom-more-lucrative-for-creators/",
-      "date": "2026-09-23",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "YouTube’s conversational video editing tool lets creators make edits in natural language",
-      "titleZh": "YouTube’s conversational video editing tool lets creators make edits in natural language",
-      "url": "https://techcrunch.com/2026/09/23/youtubes-conversational-video-editing-tool-lets-creators-make-edits-in-natural-language/",
-      "date": "2026-09-23",
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""

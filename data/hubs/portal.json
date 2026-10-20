@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-10-13",
+  "updated": "2026-10-20",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,6 +116,12 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "Gemini 4 Argon: Built to solve your hardest problems",
+          "titleZh": "Gemini 4 Argon: Built to solve your hardest problems",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "date": "2026-10-13"
+        },
+        {
           "titleEn": "Introducing Playground: Create and play custom games",
           "titleZh": "Introducing Playground: Create and play custom games",
           "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
@@ -126,12 +132,6 @@
           "titleZh": "The latest AI news we announced in September 2026",
           "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
           "date": "2026-10-02"
-        },
-        {
-          "titleEn": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-          "titleZh": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
-          "date": "2026-09-28"
         }
       ],
       "hotSearchPills": [
@@ -193,6 +193,12 @@
       "labelZh": "YouTube",
       "items": [
         {
+          "titleEn": "Build your data strength with October’s Demand Gen drop.",
+          "titleZh": "Build your data strength with October’s Demand Gen drop.",
+          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/",
+          "date": "2026-10-13"
+        },
+        {
           "titleEn": "Turn discovery into action with September’s Demand Gen Drop.",
           "titleZh": "Turn discovery into action with September’s Demand Gen Drop.",
           "url": "https://blog.google/products/ads-commerce/demand-gen-drop-september-2026/",
@@ -203,12 +209,6 @@
           "titleZh": "Here’s what was announced at Made On YouTube 2026.",
           "url": "https://blog.google/products-and-platforms/products/youtube/made-on-youtube-updates-2026/",
           "date": "2026-09-23"
-        },
-        {
-          "titleEn": "Reach your audience in new ways with August’s Demand Gen Drop.",
-          "titleZh": "Reach your audience in new ways with August’s Demand Gen Drop.",
-          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-august-2026/",
-          "date": "2026-08-27"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
-          "titleZh": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
-          "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
-          "date": "2026-10-12"
+          "titleEn": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
+          "titleZh": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
+          "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
+          "date": "2026-10-15"
         },
         {
-          "titleEn": "Debunking the Biggest Data Center Myths",
-          "titleZh": "Debunking the Biggest Data Center Myths",
-          "url": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
-          "date": "2026-10-08"
+          "titleEn": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
+          "titleZh": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
+          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+          "date": "2026-10-14"
         },
         {
-          "titleEn": "Meta Donates 1,000 AI Glasses to Singapore’s Disability Community",
-          "titleZh": "Meta Donates 1,000 AI Glasses to Singapore’s Disability Community",
-          "url": "https://about.fb.com/news/2026/10/meta-donates-1000-ai-glasses-to-singapores-disability-community/",
-          "date": "2026-10-08"
+          "titleEn": "Now You Can Invite Anyone to a WhatsApp Call",
+          "titleZh": "Now You Can Invite Anyone to a WhatsApp Call",
+          "url": "https://about.fb.com/news/2026/10/introducing-whatsapp-guest-calling/",
+          "date": "2026-10-14"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Strengthening Language Communities in the Open Movement: Reflections from the Inaugural Language Diversity Conference",
-          "titleZh": "Strengthening Language Communities in the Open Movement: Reflections from the Inaugural Language Diversity Conference",
-          "url": "https://diff.wikimedia.org/2026/10/13/strengthening-language-communities-in-the-open-movement-reflections-from-the-inaugural-language-diversity-conference/",
-          "date": "2026-10-13"
+          "titleEn": "The Train the Trainers Nigeria, North-West 2025; Kano State",
+          "titleZh": "The Train the Trainers Nigeria, North-West 2025; Kano State",
+          "url": "https://diff.wikimedia.org/2026/10/20/the-train-the-trainers-nigeria-north-west-2025-kano-state/",
+          "date": "2026-10-20"
         },
         {
-          "titleEn": "Tech News 2026 – Issue 42",
-          "titleZh": "Tech News 2026 – Issue 42",
-          "url": "https://diff.wikimedia.org/2026/10/12/tech-news-2026-issue-42/",
-          "date": "2026-10-12"
+          "titleEn": "Tech News 2026 – Issue 43",
+          "titleZh": "Tech News 2026 – Issue 43",
+          "url": "https://diff.wikimedia.org/2026/10/19/tech-news-2026-issue-43/",
+          "date": "2026-10-19"
         },
         {
-          "titleEn": "An AI bot for polishing Malayalam Wikipedia articles",
-          "titleZh": "An AI bot for polishing Malayalam Wikipedia articles",
-          "url": "https://diff.wikimedia.org/2026/10/12/an-ai-bot-for-polishing-malayalam-wikipedia-articles/",
-          "date": "2026-10-12"
+          "titleEn": "Building Bridges between Bangladesh-China through Wikimedia",
+          "titleZh": "Building Bridges between Bangladesh-China through Wikimedia",
+          "url": "https://diff.wikimedia.org/2026/10/18/building-bridges-between-bangladesh-china-through-wikimedia/",
+          "date": "2026-10-18"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
-          "titleZh": "Amazon in the community: Here’s what’s happening in Seattle, Bellevue, and the Puget Sound",
-          "url": "https://www.aboutamazon.com/news/community/amazon-seattle-bellevue-puget-sound-news?utm_source=rss",
-          "date": "2026-10-12"
+          "titleEn": "Amazon announces plan to invest €16 billion in Germany in 2027",
+          "titleZh": "Amazon announces plan to invest €16 billion in Germany in 2027",
+          "url": "https://www.aboutamazon.com/company-news/amazon-germany-investment?utm_source=rss",
+          "date": "2026-10-20"
         },
         {
-          "titleEn": "Watch the teaser trailer for ‘Bloodaxe,’ the epic Viking drama coming to Prime Video January 20, 2027",
-          "titleZh": "Watch the teaser trailer for ‘Bloodaxe,’ the epic Viking drama coming to Prime Video January 20, 2027",
-          "url": "https://www.aboutamazon.com/news/entertainment/bloodaxe-vikings-prime-video?utm_source=rss",
-          "date": "2026-10-09"
+          "titleEn": "Watch the trailer for ‘Drive – The Pretenders,’ coming to Prime Video October 28",
+          "titleZh": "Watch the trailer for ‘Drive – The Pretenders,’ coming to Prime Video October 28",
+          "url": "https://www.aboutamazon.com/news/entertainment/drive-the-pretenders-prime-video?utm_source=rss",
+          "date": "2026-10-19"
         },
         {
-          "titleEn": "'Love Me Love Me 3,' the next sequel in the hit romantic drama series, coming to Prime Video",
-          "titleZh": "'Love Me Love Me 3,' the next sequel in the hit romantic drama series, coming to Prime Video",
-          "url": "https://www.aboutamazon.com/news/entertainment/love-me-love-me-3-prime-video?utm_source=rss",
-          "date": "2026-10-09"
+          "titleEn": "Amazon opens its AWS Trainium AI chips to every PyTorch developer, no rewrite needed",
+          "titleZh": "Amazon opens its AWS Trainium AI chips to every PyTorch developer, no rewrite needed",
+          "url": "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai?utm_source=rss",
+          "date": "2026-10-19"
         }
       ],
       "hotSearchPills": [
@@ -934,6 +934,12 @@
       "labelZh": "WhatsApp",
       "items": [
         {
+          "titleEn": "Now You Can Invite Anyone to a WhatsApp Call",
+          "titleZh": "Now You Can Invite Anyone to a WhatsApp Call",
+          "url": "https://about.fb.com/news/2026/10/introducing-whatsapp-guest-calling/",
+          "date": "2026-10-14"
+        },
+        {
           "titleEn": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
           "titleZh": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
           "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
@@ -943,12 +949,6 @@
           "titleEn": "Debunking the Biggest Data Center Myths",
           "titleZh": "Debunking the Biggest Data Center Myths",
           "url": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
-          "date": "2026-10-08"
-        },
-        {
-          "titleEn": "Meta Donates 1,000 AI Glasses to Singapore’s Disability Community",
-          "titleZh": "Meta Donates 1,000 AI Glasses to Singapore’s Disability Community",
-          "url": "https://about.fb.com/news/2026/10/meta-donates-1000-ai-glasses-to-singapores-disability-community/",
           "date": "2026-10-08"
         }
       ],

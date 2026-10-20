@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-10-13",
+  "updated": "2026-10-20",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
-          "titleZh": "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
-          "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
-          "date": "2026-10-13"
+          "titleEn": "Spain-Based Startups Advance Regional Innovation With Barcelona Supercomputing Center",
+          "titleZh": "Spain-Based Startups Advance Regional Innovation With Barcelona Supercomputing Center",
+          "url": "https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center/",
+          "date": "2026-10-20"
         },
         {
-          "titleEn": "From Earth to Orbit, France’s Ecosystem Delivers Agentic Computing at Scale With NVIDIA",
-          "titleZh": "From Earth to Orbit, France’s Ecosystem Delivers Agentic Computing at Scale With NVIDIA",
-          "url": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/",
-          "date": "2026-10-13"
+          "titleEn": "Germany Wants to Lead the World in Industrial AI: How NVIDIA Will Help",
+          "titleZh": "Germany Wants to Lead the World in Industrial AI: How NVIDIA Will Help",
+          "url": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
+          "date": "2026-10-19"
         },
         {
-          "titleEn": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
-          "titleZh": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
-          "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/",
-          "date": "2026-10-12"
+          "titleEn": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
+          "titleZh": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
+          "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
+          "date": "2026-10-19"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
-          "titleEn": "Samsung Electronics Announces Earnings Guidance for Third Quarter 2026",
-          "titleZh": "Samsung Electronics Announces Earnings Guidance for Third Quarter 2026",
-          "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026",
-          "date": "2026-10-08"
+          "titleEn": "Tailored for Every Home: Samsung “The Brief” Goes Global With AI-Powered Home Appliances",
+          "titleZh": "Tailored for Every Home: Samsung “The Brief” Goes Global With AI-Powered Home Appliances",
+          "url": "https://news.samsung.com/global/tailored-for-every-home-samsung-the-brief-goes-global-with-ai-powered-home-appliances",
+          "date": "2026-10-20"
         },
         {
-          "titleEn": "Samsung Art Store Expands Its Collection With 30 Exclusive Works From the British Museum",
-          "titleZh": "Samsung Art Store Expands Its Collection With 30 Exclusive Works From the British Museum",
-          "url": "https://news.samsung.com/global/samsung-art-store-expands-its-collection-with-30-exclusive-works-from-the-british-museum",
-          "date": "2026-10-06"
+          "titleEn": "Samsung Art Store Unveils Curated Collection From Art Basel Paris 2026",
+          "titleZh": "Samsung Art Store Unveils Curated Collection From Art Basel Paris 2026",
+          "url": "https://news.samsung.com/global/samsung-art-store-unveils-curated-collection-from-art-basel-paris-2026",
+          "date": "2026-10-20"
         },
         {
-          "titleEn": "Samsung Introduces ‘SmartThings Now’ in New Platform Update That Brings More Intuitive User Experiences",
-          "titleZh": "Samsung Introduces ‘SmartThings Now’ in New Platform Update That Brings More Intuitive User Experiences",
-          "url": "https://news.samsung.com/global/samsung-introduces-smartthings-now-in-new-platform-update-that-brings-more-intuitive-user-experiences",
-          "date": "2026-10-06"
+          "titleEn": "Samsung Electronics Expands SSD Brand Campaign Across Global Landmarks",
+          "titleZh": "Samsung Electronics Expands SSD Brand Campaign Across Global Landmarks",
+          "url": "https://news.samsung.com/global/samsung-electronics-expands-ssd-brand-campaign-across-global-landmarks",
+          "date": "2026-10-19"
         }
       ]
     },
@@ -316,22 +316,22 @@
       "labelZh": "ARM",
       "items": [
         {
+          "titleEn": "Arm at the OCP Global Summit 2026: How Arm AGI CPU is scaling agentic AI infrastructure from CPU to rack",
+          "titleZh": "Arm at the OCP Global Summit 2026: How Arm AGI CPU is scaling agentic AI infrastructure from CPU to rack",
+          "url": "https://newsroom.arm.com/blog/key-takeaways-from-ocp-global-summit-2026",
+          "date": "2026-10-15"
+        },
+        {
+          "titleEn": "Scaling trust in confidential AI requires a common language",
+          "titleZh": "Scaling trust in confidential AI requires a common language",
+          "url": "https://newsroom.arm.com/blog/confidential-ai-attestation-standards",
+          "date": "2026-10-13"
+        },
+        {
           "titleEn": "How Arm is helping developers build local AI systems for the intelligent edge",
           "titleZh": "How Arm is helping developers build local AI systems for the intelligent edge",
           "url": "https://newsroom.arm.com/blog/building-local-ai-for-the-intelligent-edge",
           "date": "2026-10-13"
-        },
-        {
-          "titleEn": "Sovereign AI: Building national capability while preserving choice",
-          "titleZh": "Sovereign AI: Building national capability while preserving choice",
-          "url": "https://newsroom.arm.com/blog/sovereign-ai-building-national-capability",
-          "date": "2026-10-12"
-        },
-        {
-          "titleEn": "Ten years of Arm and micro:bit: Building the next generation of technology innovators",
-          "titleZh": "Ten years of Arm and micro:bit: Building the next generation of technology innovators",
-          "url": "https://newsroom.arm.com/blog/ten-years-of-arm-and-microbit",
-          "date": "2026-10-12"
         }
       ]
     },
