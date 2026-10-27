@@ -8,7 +8,7 @@
   "descZh": "按 Newzoo 与行业营收常见梯队排序的十个商店与发行商，每站三条官方公告或博文外链。",
   "h1En": "Global storefront & publisher top 10",
   "h1Zh": "全球游戏平台前十（营收 / 装机口径）",
-  "updated": "2026-10-20",
+  "updated": "2026-10-27",
   "editorialHtmlEn": "<p>Steam and the three console families lead PC / living-room spend; Tencent-level mobile giants sit in “more” because their web hubs differ.</p><p>Last reviewed: <strong>2026-06-22</strong>. Piracy indexes, keygens, and unofficial ROM hosts are never listed.</p><p><strong>Who this page is for:</strong> readers who already follow a few storefront blogs but want a ranked top-10 plus three official links per vendor — not a discovery feed for unknown APK sites. Major client updates still show up in the per-row news slots when you run <code>npm run fetch-hub-news</code>; mobile-only MMO portals stay in “more” so the top ten stays comparable to Western revenue tables.</p><p><strong>Editorial cross-link:</strong> first game-original on this hub: <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Reading Steam Charts</a>; character look-dev in <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">Elena · Sea-Wind</a>, <a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">palette & ritual UI</a>, and <a href=\"/articles/games-hub-generative-art-workflow.html\">Games hub × generative art workflow</a>.</p>",
   "editorialHtmlZh": "<p>PC 与客厅支出仍是 Steam 加御三家打头；腾讯系手游体量也很大，但主站形态不同，放在「更多」里。</p><p>最近核对：<strong>2026-06-22</strong>。盗版索引、破解与非官方 ROM 站点一律不收录。</p><p><strong>适合谁看：</strong>已经会逛几家商店官网，但需要对照营收梯队、并点到各厂三条官方链接的人；不把它当成 APK 发现站。大版本更新仍会出现在每行「最新动态」里；纯手游 MMO 门户放在「更多」，好让前十行仍能和常见欧美营收表对照。</p><p><strong>原创交叉链：</strong>游戏 Hub 原创轮播首篇 <a href=\"/articles/steam-charts-bestsellers-most-played.html\">Steam Charts 怎么读</a>；角色设定见 <a href=\"/articles/game-girl-elena-sea-wind-reference.html\">艾琳娜 · 海风之诗</a>、<a href=\"/articles/game-girl-elena-palette-ritual-notes.html\">配色与仪式 UI</a>，工作流 <a href=\"/articles/games-hub-generative-art-workflow.html\">游戏 Hub × 生成式角色美术</a>。</p>",
   "rankTitleEn": "Global top 10 (platforms)",
@@ -147,22 +147,22 @@
       "labelZh": "PlayStation",
       "items": [
         {
-          "titleEn": "The Saros: Zenith update out today, brings more ways to play for newcomers and veterans alike",
-          "titleZh": "The Saros: Zenith update out today, brings more ways to play for newcomers and veterans alike",
-          "url": "https://blog.playstation.com/2026/10/19/the-saros-zenith-update-out-today-brings-more-ways-to-play-for-newcomers-and-veterans-alike/",
-          "date": "2026-10-19"
+          "titleEn": "(For Southeast Asia) Crunchyroll Arrives for PS5 and PS4 users in Indonesia, Malaysia and Thailand",
+          "titleZh": "(For Southeast Asia) Crunchyroll Arrives for PS5 and PS4 users in Indonesia, Malaysia and Thailand",
+          "url": "https://blog.playstation.com/2026/10/26/20261027-roll/",
+          "date": "2026-10-27"
         },
         {
-          "titleEn": "Official PlayStation Podcast Episode 551: Quadruple Duty",
-          "titleZh": "Official PlayStation Podcast Episode 551: Quadruple Duty",
-          "url": "https://blog.playstation.com/2026/10/16/official-playstation-podcast-episode-551-quadruple-duty/",
-          "date": "2026-10-16"
+          "titleEn": "New Marvel Cosmic Invasion: The Siege of Castle Doom gameplay details",
+          "titleZh": "New Marvel Cosmic Invasion: The Siege of Castle Doom gameplay details",
+          "url": "https://blog.playstation.com/2026/10/26/new-marvel-cosmic-invasion-the-siege-of-castle-doom-gameplay-details/",
+          "date": "2026-10-26"
         },
         {
-          "titleEn": "Share of the Week: Marvel’s Wolverine – Suits",
-          "titleZh": "Share of the Week: Marvel’s Wolverine – Suits",
-          "url": "https://blog.playstation.com/2026/10/16/share-of-the-week-marvels-wolverine-suits/",
-          "date": "2026-10-16"
+          "titleEn": "Celebrate Helldivers 2 Liberty Day 2026 with in-game gifts today",
+          "titleZh": "Celebrate Helldivers 2 Liberty Day 2026 with in-game gifts today",
+          "url": "https://blog.playstation.com/2026/10/26/celebrate-helldivers-2-liberty-day-2026-with-in-game-gifts-today/",
+          "date": "2026-10-26"
         }
       ]
     },
@@ -172,22 +172,22 @@
       "labelZh": "Xbox",
       "items": [
         {
-          "titleEn": "The Call of Duty Endowment (C.O.D.E.) Presents the Forged in Valor Series, A Look into the Making of the Valor Pack",
-          "titleZh": "The Call of Duty Endowment (C.O.D.E.) Presents the Forged in Valor Series, A Look into the Making of the Valor Pack",
-          "url": "https://news.xbox.com/en-us/2026/10/19/the-call-of-duty-endowment-c-o-d-e-presents-the-forged-in-valor-series-a-look-into-the-making-of-the-valor-pack/",
-          "date": "2026-10-19"
+          "titleEn": "Microsoft Flight Simulator Releases Local Legend 26: The Antonov An-28 Today!",
+          "titleZh": "Microsoft Flight Simulator Releases Local Legend 26: The Antonov An-28 Today!",
+          "url": "https://news.xbox.com/en-us/2026/10/26/microsoft-flight-simulator-releases-local-legend-26-the-antonov-an-28-today/",
+          "date": "2026-10-26"
         },
         {
-          "titleEn": "Ready for Launch: All Modern Warfare 4 Operators, Weapons, Equipment, and Multiplayer Create-a-Class Features",
-          "titleZh": "Ready for Launch: All Modern Warfare 4 Operators, Weapons, Equipment, and Multiplayer Create-a-Class Features",
-          "url": "https://news.xbox.com/en-us/2026/10/19/ready-for-launch-all-modern-warfare-4-operators-weapons-equipment-and-multiplayer-create-a-class-features/",
-          "date": "2026-10-19"
+          "titleEn": "Microsoft Flight Simulator Releases World Update 23: Poland and the Baltics",
+          "titleZh": "Microsoft Flight Simulator Releases World Update 23: Poland and the Baltics",
+          "url": "https://news.xbox.com/en-us/2026/10/26/microsoft-flight-simulator-releases-world-update-23-poland-and-the-baltics/",
+          "date": "2026-10-26"
         },
         {
-          "titleEn": "Modern Warfare 4: Campaign Early Access Now Live",
-          "titleZh": "Modern Warfare 4: Campaign Early Access Now Live",
-          "url": "https://news.xbox.com/en-us/2026/10/16/modern-warfare-4-campaign-early-access-now-live/",
-          "date": "2026-10-16"
+          "titleEn": "The Walking Trade: How I Built a Shop Simulator Without Ever Playing One",
+          "titleZh": "The Walking Trade: How I Built a Shop Simulator Without Ever Playing One",
+          "url": "https://news.xbox.com/en-us/2026/10/26/the-walking-trade-how-i-built-a-shop-simulator/",
+          "date": "2026-10-26"
         }
       ]
     },
@@ -222,22 +222,22 @@
       "labelZh": "Epic",
       "items": [
         {
+          "titleEn": "Meccha Chameleon : How two devs built the indie smash hit of the summer",
+          "titleZh": "Meccha Chameleon : How two devs built the indie smash hit of the summer",
+          "url": "https://www.unrealengine.com/developer-interviews/meccha-chameleon-how-two-devs-built-the-indie-smash-hit-of-the-summer",
+          "date": "2026-10-26"
+        },
+        {
+          "titleEn": "Vibe your way to $50k: the 2026 Epic AI MegaJam is coming",
+          "titleZh": "Vibe your way to $50k: the 2026 Epic AI MegaJam is coming",
+          "url": "https://www.unrealengine.com/news/2026-epic-ai-megajam",
+          "date": "2026-10-22"
+        },
+        {
           "titleEn": "Check out the top Fortnite islands from the UEFN Student Bootcamp",
           "titleZh": "Check out the top Fortnite islands from the UEFN Student Bootcamp",
           "url": "https://www.unrealengine.com/learning/check-out-the-top-fortnite-islands-from-the-uefn-student-bootcamp",
           "date": "2026-10-16"
-        },
-        {
-          "titleEn": "SILENT HILL: Townfall delivers haunting psychological horror at its very best with UE5",
-          "titleZh": "SILENT HILL: Townfall delivers haunting psychological horror at its very best with UE5",
-          "url": "https://www.unrealengine.com/developer-interviews/silent-hill-townfall-delivers-haunting-psychological-horror-at-its-very-best-with-ue5",
-          "date": "2026-10-15"
-        },
-        {
-          "titleEn": "UEFN Professional Bootcamp: Prepare for Unreal Engine 6",
-          "titleZh": "UEFN Professional Bootcamp: Prepare for Unreal Engine 6",
-          "url": "https://www.unrealengine.com/news/uefn-professional-bootcamp-prepare-for-unreal-engine-6",
-          "date": "2026-10-14"
         }
       ]
     },

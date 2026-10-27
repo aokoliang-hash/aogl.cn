@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-10-20",
+  "updated": "2026-10-27",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "Our newest AI Quest: Mapping the human brain",
+          "titleZh": "Our newest AI Quest: Mapping the human brain",
+          "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+          "date": "2026-10-26"
+        },
+        {
+          "titleEn": "Southeast Asia’s digital economy to hit $368 billion",
+          "titleZh": "Southeast Asia’s digital economy to hit $368 billion",
+          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+          "date": "2026-10-21"
+        },
+        {
           "titleEn": "Gemini 4 Argon: Built to solve your hardest problems",
           "titleZh": "Gemini 4 Argon: Built to solve your hardest problems",
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
           "date": "2026-10-13"
-        },
-        {
-          "titleEn": "Introducing Playground: Create and play custom games",
-          "titleZh": "Introducing Playground: Create and play custom games",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
-          "date": "2026-10-07"
-        },
-        {
-          "titleEn": "The latest AI news we announced in September 2026",
-          "titleZh": "The latest AI news we announced in September 2026",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-          "date": "2026-10-02"
         }
       ],
       "hotSearchPills": [
@@ -290,6 +290,12 @@
       "labelZh": "Facebook",
       "items": [
         {
+          "titleEn": "New Tools for the Admins Who Build Communities on Forum",
+          "titleZh": "New Tools for the Admins Who Build Communities on Forum",
+          "url": "https://about.fb.com/news/2026/10/new-tools-for-the-admins-who-build-communities-on-forum/",
+          "date": "2026-10-23"
+        },
+        {
           "titleEn": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
           "titleZh": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
           "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
@@ -299,12 +305,6 @@
           "titleEn": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
           "titleZh": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
           "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
-          "date": "2026-10-14"
-        },
-        {
-          "titleEn": "Now You Can Invite Anyone to a WhatsApp Call",
-          "titleZh": "Now You Can Invite Anyone to a WhatsApp Call",
-          "url": "https://about.fb.com/news/2026/10/introducing-whatsapp-guest-calling/",
           "date": "2026-10-14"
         }
       ],
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
-          "titleEn": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
-          "titleZh": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
-          "url": "https://engineering.fb.com/2026/10/12/video-engineering/shipping-media-over-quic-at-meta-scale-for-instagram-live-ingest/",
-          "date": "2026-10-12"
+          "titleEn": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
+          "titleZh": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
+          "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
+          "date": "2026-10-26"
         },
         {
-          "titleEn": "Bringing Private Processing to Meta AI Glasses",
-          "titleZh": "Bringing Private Processing to Meta AI Glasses",
-          "url": "https://engineering.fb.com/2026/09/23/security/private-processing-meta-ai-glasses/",
-          "date": "2026-09-24"
+          "titleEn": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
+          "titleZh": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
+          "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/",
+          "date": "2026-10-19"
         },
         {
-          "titleEn": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
-          "titleZh": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
-          "url": "https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/",
-          "date": "2026-09-21"
+          "titleEn": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
+          "titleZh": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
+          "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+          "date": "2026-10-19"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "The Train the Trainers Nigeria, North-West 2025; Kano State",
-          "titleZh": "The Train the Trainers Nigeria, North-West 2025; Kano State",
-          "url": "https://diff.wikimedia.org/2026/10/20/the-train-the-trainers-nigeria-north-west-2025-kano-state/",
-          "date": "2026-10-20"
+          "titleEn": "My First Wikicamp: Seeing Erbil Through the Eyes of Knowledge",
+          "titleZh": "My First Wikicamp: Seeing Erbil Through the Eyes of Knowledge",
+          "url": "https://diff.wikimedia.org/2026/10/27/my-first-wikicamp-seeing-erbil-through-the-eyes-of-knowledge/",
+          "date": "2026-10-27"
         },
         {
-          "titleEn": "Tech News 2026 – Issue 43",
-          "titleZh": "Tech News 2026 – Issue 43",
-          "url": "https://diff.wikimedia.org/2026/10/19/tech-news-2026-issue-43/",
-          "date": "2026-10-19"
+          "titleEn": "From Learning to Contributing: How a Two-Day Internship Supported Tamil Wikipedia",
+          "titleZh": "From Learning to Contributing: How a Two-Day Internship Supported Tamil Wikipedia",
+          "url": "https://diff.wikimedia.org/2026/10/27/from-learning-to-contributing-how-a-two-day-internship-supported-tamil-wikipedia/",
+          "date": "2026-10-27"
         },
         {
-          "titleEn": "Building Bridges between Bangladesh-China through Wikimedia",
-          "titleZh": "Building Bridges between Bangladesh-China through Wikimedia",
-          "url": "https://diff.wikimedia.org/2026/10/18/building-bridges-between-bangladesh-china-through-wikimedia/",
-          "date": "2026-10-18"
+          "titleEn": "The Interactive Media Seminar for Electoral Integrity: Strengthening Wikimedia Editors Capacity to Counter Disinformation in Nigeria",
+          "titleZh": "The Interactive Media Seminar for Electoral Integrity: Strengthening Wikimedia Editors Capacity to Counter Disinformation in Nigeria",
+          "url": "https://diff.wikimedia.org/2026/10/27/the-interactive-media-seminar-for-electoral-integrity-strengthening-wikimedia-editors-capacity-to-counter-disinformation-in-nigeria/",
+          "date": "2026-10-27"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon announces plan to invest €16 billion in Germany in 2027",
-          "titleZh": "Amazon announces plan to invest €16 billion in Germany in 2027",
-          "url": "https://www.aboutamazon.com/company-news/amazon-germany-investment?utm_source=rss",
-          "date": "2026-10-20"
+          "titleEn": "Amazon’s Holiday Beauty Event ends November 1: Shop top deals before it’s over",
+          "titleZh": "Amazon’s Holiday Beauty Event ends November 1: Shop top deals before it’s over",
+          "url": "https://www.aboutamazon.com/news/retail/amazon-holiday-beauty-event-2026?utm_source=rss",
+          "date": "2026-10-26"
         },
         {
-          "titleEn": "Watch the trailer for ‘Drive – The Pretenders,’ coming to Prime Video October 28",
-          "titleZh": "Watch the trailer for ‘Drive – The Pretenders,’ coming to Prime Video October 28",
-          "url": "https://www.aboutamazon.com/news/entertainment/drive-the-pretenders-prime-video?utm_source=rss",
-          "date": "2026-10-19"
+          "titleEn": "Amazon's pro bono program surpasses 90,000 hours of free legal service across six continents",
+          "titleZh": "Amazon's pro bono program surpasses 90,000 hours of free legal service across six continents",
+          "url": "https://www.aboutamazon.com/news/policy-news-views/amazon-pro-bono-report-2026?utm_source=rss",
+          "date": "2026-10-26"
         },
         {
-          "titleEn": "Amazon opens its AWS Trainium AI chips to every PyTorch developer, no rewrite needed",
-          "titleZh": "Amazon opens its AWS Trainium AI chips to every PyTorch developer, no rewrite needed",
-          "url": "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai?utm_source=rss",
-          "date": "2026-10-19"
+          "titleEn": "Some of Amazon's Q3 2026 announcements, from new devices to AI breakthroughs",
+          "titleZh": "Some of Amazon's Q3 2026 announcements, from new devices to AI breakthroughs",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-q3-2026-earnings-preview?utm_source=rss",
+          "date": "2026-10-26"
         }
       ],
       "hotSearchPills": [

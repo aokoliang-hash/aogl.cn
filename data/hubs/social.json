@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-10-20",
+  "updated": "2026-10-27",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,60 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Watch out, YouTube — Instagram goes from short-form to 90-minute videos",
+      "titleZh": "Watch out, YouTube — Instagram goes from short-form to 90-minute videos",
+      "url": "https://techcrunch.com/2026/10/26/watch-out-youtube-instagram-goes-from-short-form-to-90-minute-videos/",
+      "date": "2026-10-26",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
+      "titleZh": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
+      "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
+      "date": "2026-10-26",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/OCP-2026-Omar-Meta.jpg",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/OCP-2026-Omar-Meta.jpg"
+    },
+    {
+      "titleEn": "New Tools for the Admins Who Build Communities on Forum",
+      "titleZh": "New Tools for the Admins Who Build Communities on Forum",
+      "url": "https://about.fb.com/news/2026/10/new-tools-for-the-admins-who-build-communities-on-forum/",
+      "date": "2026-10-23",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/New-Tools-for-the-Admins-Who-Build-Communities-on-Forum-_thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/New-Tools-for-the-Admins-Who-Build-Communities-on-Forum-_thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta wants to pay for its broad AI buildout with a newly created class of stock",
+      "titleZh": "Meta wants to pay for its broad AI buildout with a newly created class of stock",
+      "url": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/",
+      "date": "2026-10-21",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Meta ordered to pay $25B in case related to Cambridge Analytica scandal",
+      "titleZh": "Meta ordered to pay $25B in case related to Cambridge Analytica scandal",
+      "url": "https://techcrunch.com/2026/10/21/meta-ordered-to-pay-25-billion-in-case-related-to-cambridge-analytica-scandal/",
+      "date": "2026-10-21",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "TikTok staff raised child safety concerns, but executives reportedly failed to act",
+      "titleZh": "TikTok staff raised child safety concerns, but executives reportedly failed to act",
+      "url": "https://techcrunch.com/2026/10/20/tiktok-staff-raised-child-safety-concerns-but-executives-reportedly-failed-to-act/",
+      "date": "2026-10-20",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
     {
       "titleEn": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
       "titleZh": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
@@ -167,60 +221,6 @@
       "source": "Facebook / Meta",
       "image": "https://about.fb.com/wp-content/uploads/2026/10/Leading-Tech-Companies-Join-Global-Law-Enforcement-in-Major-Crackdown-on-West-African-Scam-Networks_Thumbnail.jpg?fit=890%2C501",
       "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Leading-Tech-Companies-Join-Global-Law-Enforcement-in-Major-Crackdown-on-West-African-Scam-Networks_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
-      "titleZh": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
-      "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
-      "date": "2026-10-12",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Researchers-Introducing-Muse-Wonder_thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Researchers-Introducing-Muse-Wonder_thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
-      "titleZh": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
-      "url": "https://engineering.fb.com/2026/10/12/video-engineering/shipping-media-over-quic-at-meta-scale-for-instagram-live-ingest/",
-      "date": "2026-10-12",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/MoQ-Instagram-Live-Meta-e1791568958445.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/MoQ-Instagram-Live-Meta-e1791568958445.png"
-    },
-    {
-      "titleEn": "Debunking the Biggest Data Center Myths",
-      "titleZh": "Debunking the Biggest Data Center Myths",
-      "url": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
-      "date": "2026-10-08",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Debunking-the-Biggest-Data-Center-Myths_Thumbnail-1.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Debunking-the-Biggest-Data-Center-Myths_Thumbnail-1.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "New York alleges TikTok gave teens, children a placebo safety feature instead of a real one",
-      "titleZh": "New York alleges TikTok gave teens, children a placebo safety feature instead of a real one",
-      "url": "https://techcrunch.com/2026/10/08/new-york-alleges-tiktok-gave-teens-children-a-placebo-safety-feature-instead-of-a-real-one/",
-      "date": "2026-10-08",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta Donates 1,000 AI Glasses to Singapore’s Disability Community",
-      "titleZh": "Meta Donates 1,000 AI Glasses to Singapore’s Disability Community",
-      "url": "https://about.fb.com/news/2026/10/meta-donates-1000-ai-glasses-to-singapores-disability-community/",
-      "date": "2026-10-08",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Meta-Singapore-Wearables-Event.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Meta-Singapore-Wearables-Event.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Facebook tests going Reels-first in India",
-      "titleZh": "Facebook tests going Reels-first in India",
-      "url": "https://techcrunch.com/2026/10/06/facebook-tests-going-reels-first-in-india/",
-      "date": "2026-10-06",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
     }
   ],
   "moreTitleEn": "More social networks",
