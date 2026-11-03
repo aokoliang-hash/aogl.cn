@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-10-27",
+  "updated": "2026-11-03",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,69 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "From restaurant guides to payments, here’s how TikTok is building a super app",
+      "titleZh": "From restaurant guides to payments, here’s how TikTok is building a super app",
+      "url": "https://techcrunch.com/2026/10/31/tiktoks-road-to-becoming-a-super-app/",
+      "date": "2026-10-31",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "L’avenir appartient à tous: Meta et INCA s’associent pour soutenir les personnes aveugles, sourdes et aveugles ou ayant une basse vision au Canada",
+      "titleZh": "L’avenir appartient à tous: Meta et INCA s’associent pour soutenir les personnes aveugles, sourdes et aveugles ou ayant une basse vision au Canada",
+      "url": "https://about.fb.com/news/2026/10/lavenir-appartient-a-tous-meta-et-inca-sassocient-pour-soutenir-les-personnes-aveugles-sourdes-et-aveugles-ou-ayant-une-basse-vision-au-canada/",
+      "date": "2026-10-29",
+      "source": "Facebook / Meta",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
+      "titleZh": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
+      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
+      "date": "2026-10-29",
+      "source": "Facebook / Meta",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs",
+      "titleZh": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs",
+      "url": "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/",
+      "date": "2026-10-28",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Meta-Partners-With-Five-US-Universities-to-Accelerate-Medical-and-Scientific-Breakthroughs_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Meta-Partners-With-Five-US-Universities-to-Accelerate-Medical-and-Scientific-Breakthroughs_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
+      "titleZh": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
+      "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
+      "date": "2026-10-28",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Andromeda-co-design-image-1.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Andromeda-co-design-image-1.png"
+    },
+    {
+      "titleEn": "TikTok expands into restaurant guides with ‘Must Eat’ feature",
+      "titleZh": "TikTok expands into restaurant guides with ‘Must Eat’ feature",
+      "url": "https://techcrunch.com/2026/10/28/tiktok-expands-into-restaurant-guides-with-must-eat-feature/",
+      "date": "2026-10-28",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone",
+      "titleZh": "Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone",
+      "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+      "date": "2026-10-28",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/10/Muse-16x9-SG.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Muse-16x9-SG.png?fit=890%2C501"
+    },
     {
       "titleEn": "Watch out, YouTube — Instagram goes from short-form to 90-minute videos",
       "titleZh": "Watch out, YouTube — Instagram goes from short-form to 90-minute videos",
@@ -115,15 +178,6 @@
       "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Forum-UI.jpg"
     },
     {
-      "titleEn": "Sapienz Receives ISSTA 2026 Impact Paper Award",
-      "titleZh": "Sapienz Receives ISSTA 2026 Impact Paper Award",
-      "url": "https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta/",
-      "date": "2026-10-15",
-      "source": "Meta Engineering",
-      "image": "",
-      "imageSource": ""
-    },
-    {
       "titleEn": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
       "titleZh": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
       "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
@@ -167,60 +221,6 @@
       "source": "Facebook / Meta",
       "image": "https://about.fb.com/wp-content/uploads/2026/10/Farah-Khan-in-conversation-with-Ankit-Rihal-at-the-Edits-Film-Festival.jpeg?fit=890%2C501",
       "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Farah-Khan-in-conversation-with-Ankit-Rihal-at-the-Edits-Film-Festival.jpeg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Facebook is giving users more control over their algorithm",
-      "titleZh": "Facebook is giving users more control over their algorithm",
-      "url": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/",
-      "date": "2026-10-13",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta’s Generative Ads Model (GEM): Scaling the Central Model and Compute Engine for Frontier Ads AI",
-      "titleZh": "Meta’s Generative Ads Model (GEM): Scaling the Central Model and Compute Engine for Frontier Ads AI",
-      "url": "https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/",
-      "date": "2026-10-13",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/GEM-Scaling-Frontier-Ads-Image-1.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/GEM-Scaling-Frontier-Ads-Image-1.png"
-    },
-    {
-      "titleEn": "Your Algorithm, Your Words: New Ways to Shape What You See on Facebook",
-      "titleZh": "Your Algorithm, Your Words: New Ways to Shape What You See on Facebook",
-      "url": "https://about.fb.com/news/2026/10/introducing-your-algorithm-facebook/",
-      "date": "2026-10-13",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Your-Algorithm_Your-Words_New-Ways-to-Shape-What-You-See-on-Facebook_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Your-Algorithm_Your-Words_New-Ways-to-Shape-What-You-See-on-Facebook_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Build your data strength with October’s Demand Gen drop.",
-      "titleZh": "Build your data strength with October’s Demand Gen drop.",
-      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/",
-      "date": "2026-10-13",
-      "source": "YouTube",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_October_2026.max-600x600.format-webp.webp",
-      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_October_2026.max-600x600.format-webp.webp"
-    },
-    {
-      "titleEn": "Announcing the Official Selection for the Edits Film Festival",
-      "titleZh": "Announcing the Official Selection for the Edits Film Festival",
-      "url": "https://about.fb.com/news/2026/10/announcing-the-official-selection-for-the-edits-film-festival/",
-      "date": "2026-10-13",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/EFF_Official-Selection_v1.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/EFF_Official-Selection_v1.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Leading Tech Companies Join Global Law Enforcement in Major Crackdown on West African Scam Networks",
-      "titleZh": "Leading Tech Companies Join Global Law Enforcement in Major Crackdown on West African Scam Networks",
-      "url": "https://about.fb.com/news/2026/10/meta-tech-companies-law-enforcement-crackdown-global-scam-networks/",
-      "date": "2026-10-13",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Leading-Tech-Companies-Join-Global-Law-Enforcement-in-Major-Crackdown-on-West-African-Scam-Networks_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Leading-Tech-Companies-Join-Global-Law-Enforcement-in-Major-Crackdown-on-West-African-Scam-Networks_Thumbnail.jpg?fit=890%2C501"
     }
   ],
   "moreTitleEn": "More social networks",

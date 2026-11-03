@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-10-27",
+  "updated": "2026-11-03",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,6 +116,12 @@
       "labelZh": "Google",
       "items": [
         {
+          "titleEn": "The latest AI news we announced in October 2026",
+          "titleZh": "The latest AI news we announced in October 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+          "date": "2026-11-02"
+        },
+        {
           "titleEn": "Our newest AI Quest: Mapping the human brain",
           "titleZh": "Our newest AI Quest: Mapping the human brain",
           "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
@@ -126,12 +132,6 @@
           "titleZh": "Southeast Asia’s digital economy to hit $368 billion",
           "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
           "date": "2026-10-21"
-        },
-        {
-          "titleEn": "Gemini 4 Argon: Built to solve your hardest problems",
-          "titleZh": "Gemini 4 Argon: Built to solve your hardest problems",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-          "date": "2026-10-13"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "New Tools for the Admins Who Build Communities on Forum",
-          "titleZh": "New Tools for the Admins Who Build Communities on Forum",
-          "url": "https://about.fb.com/news/2026/10/new-tools-for-the-admins-who-build-communities-on-forum/",
-          "date": "2026-10-23"
+          "titleEn": "L’avenir appartient à tous: Meta et INCA s’associent pour soutenir les personnes aveugles, sourdes et aveugles ou ayant une basse vision au Canada",
+          "titleZh": "L’avenir appartient à tous: Meta et INCA s’associent pour soutenir les personnes aveugles, sourdes et aveugles ou ayant une basse vision au Canada",
+          "url": "https://about.fb.com/news/2026/10/lavenir-appartient-a-tous-meta-et-inca-sassocient-pour-soutenir-les-personnes-aveugles-sourdes-et-aveugles-ou-ayant-une-basse-vision-au-canada/",
+          "date": "2026-10-29"
         },
         {
-          "titleEn": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
-          "titleZh": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
-          "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
-          "date": "2026-10-15"
+          "titleEn": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
+          "titleZh": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
+          "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
+          "date": "2026-10-29"
         },
         {
-          "titleEn": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
-          "titleZh": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
-          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
-          "date": "2026-10-14"
+          "titleEn": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs",
+          "titleZh": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs",
+          "url": "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/",
+          "date": "2026-10-28"
         }
       ],
       "hotSearchPills": [
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
-          "titleEn": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
-          "titleZh": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
-          "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
-          "date": "2026-10-26"
+          "titleEn": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
+          "titleZh": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
+          "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/",
+          "date": "2026-10-29"
         },
         {
-          "titleEn": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
-          "titleZh": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
-          "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/",
-          "date": "2026-10-19"
+          "titleEn": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
+          "titleZh": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
+          "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
+          "date": "2026-10-28"
         },
         {
-          "titleEn": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
-          "titleZh": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
-          "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
-          "date": "2026-10-19"
+          "titleEn": "PrivacyLib: Privacy Controls at the Data Access Boundary",
+          "titleZh": "PrivacyLib: Privacy Controls at the Data Access Boundary",
+          "url": "https://engineering.fb.com/2026/10/27/security/privacylib/",
+          "date": "2026-10-27"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "My First Wikicamp: Seeing Erbil Through the Eyes of Knowledge",
-          "titleZh": "My First Wikicamp: Seeing Erbil Through the Eyes of Knowledge",
-          "url": "https://diff.wikimedia.org/2026/10/27/my-first-wikicamp-seeing-erbil-through-the-eyes-of-knowledge/",
-          "date": "2026-10-27"
+          "titleEn": "The Virtual Room: How Volunteers Brought Wikimania Paris to the World",
+          "titleZh": "The Virtual Room: How Volunteers Brought Wikimania Paris to the World",
+          "url": "https://diff.wikimedia.org/2026/11/03/the-virtual-room-how-volunteers-brought-wikimania-paris-to-the-world/",
+          "date": "2026-11-03"
         },
         {
-          "titleEn": "From Learning to Contributing: How a Two-Day Internship Supported Tamil Wikipedia",
-          "titleZh": "From Learning to Contributing: How a Two-Day Internship Supported Tamil Wikipedia",
-          "url": "https://diff.wikimedia.org/2026/10/27/from-learning-to-contributing-how-a-two-day-internship-supported-tamil-wikipedia/",
-          "date": "2026-10-27"
+          "titleEn": "How we measure contributions and recognise the most active contributors to Ukrainian Wikimedia sister projects",
+          "titleZh": "How we measure contributions and recognise the most active contributors to Ukrainian Wikimedia sister projects",
+          "url": "https://diff.wikimedia.org/2026/11/03/how-we-measure-contributions-and-recognise-the-most-active-contributors-to-ukrainian-wikimedia-sister-projects/",
+          "date": "2026-11-03"
         },
         {
-          "titleEn": "The Interactive Media Seminar for Electoral Integrity: Strengthening Wikimedia Editors Capacity to Counter Disinformation in Nigeria",
-          "titleZh": "The Interactive Media Seminar for Electoral Integrity: Strengthening Wikimedia Editors Capacity to Counter Disinformation in Nigeria",
-          "url": "https://diff.wikimedia.org/2026/10/27/the-interactive-media-seminar-for-electoral-integrity-strengthening-wikimedia-editors-capacity-to-counter-disinformation-in-nigeria/",
-          "date": "2026-10-27"
+          "titleEn": "Celebrating Community, Progress and Achievements at the Wikimedia Uganda Annual General Meeting 2026",
+          "titleZh": "Celebrating Community, Progress and Achievements at the Wikimedia Uganda Annual General Meeting 2026",
+          "url": "https://diff.wikimedia.org/2026/11/03/celebrating-community-progress-and-achievements-at-the-wikimedia-uganda-annual-general-meeting-2026/",
+          "date": "2026-11-03"
         }
       ],
       "hotSearchPills": [
@@ -663,22 +663,22 @@
       "labelZh": "Reddit",
       "items": [
         {
+          "titleEn": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
+          "titleZh": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
+          "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+          "date": "2026-10-29"
+        },
+        {
+          "titleEn": "Reddit is the latest platform to embrace the ‘For You’ feed",
+          "titleZh": "Reddit is the latest platform to embrace the ‘For You’ feed",
+          "url": "https://techcrunch.com/2026/10/28/reddit-is-the-latest-platform-to-embrace-the-for-you-feed/",
+          "date": "2026-10-28"
+        },
+        {
           "titleEn": "Reddit is killing RSS feeds and ending public API access because of AI bots",
           "titleZh": "Reddit is killing RSS feeds and ending public API access because of AI bots",
           "url": "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/",
           "date": "2026-09-30"
-        },
-        {
-          "titleEn": "Reddit begins testing a new audio and video experience, similar to popular TikTok videos",
-          "titleZh": "Reddit begins testing a new audio and video experience, similar to popular TikTok videos",
-          "url": "https://techcrunch.com/2026/08/17/reddit-begins-testing-a-new-audio-and-video-experience-similar-to-popular-tiktok-videos/",
-          "date": "2026-08-17"
-        },
-        {
-          "titleEn": "Reddit aims to make ‘karma’ less important for first-time posters with shift to AI moderation tools",
-          "titleZh": "Reddit aims to make ‘karma’ less important for first-time posters with shift to AI moderation tools",
-          "url": "https://techcrunch.com/2026/08/05/reddit-aims-to-make-karma-less-important-for-first-time-posters-with-shift-to-ai-moderation-tools/",
-          "date": "2026-08-05"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon’s Holiday Beauty Event ends November 1: Shop top deals before it’s over",
-          "titleZh": "Amazon’s Holiday Beauty Event ends November 1: Shop top deals before it’s over",
-          "url": "https://www.aboutamazon.com/news/retail/amazon-holiday-beauty-event-2026?utm_source=rss",
-          "date": "2026-10-26"
+          "titleEn": "Amazon CEO Andy Jassy: ‘I had to change how I worked, or I was going to be a lousy dad’",
+          "titleZh": "Amazon CEO Andy Jassy: ‘I had to change how I worked, or I was going to be a lousy dad’",
+          "url": "https://www.aboutamazon.com/news/workplace/amazon-ceo-andy-jassy-work-life-balance?utm_source=rss",
+          "date": "2026-11-02"
         },
         {
-          "titleEn": "Amazon's pro bono program surpasses 90,000 hours of free legal service across six continents",
-          "titleZh": "Amazon's pro bono program surpasses 90,000 hours of free legal service across six continents",
-          "url": "https://www.aboutamazon.com/news/policy-news-views/amazon-pro-bono-report-2026?utm_source=rss",
-          "date": "2026-10-26"
+          "titleEn": "Is Amazon Grocery worth it? Yes—here’s what to know.",
+          "titleZh": "Is Amazon Grocery worth it? Yes—here’s what to know.",
+          "url": "https://www.aboutamazon.com/news/retail/is-amazon-grocery-worth-it?utm_source=rss",
+          "date": "2026-11-02"
         },
         {
-          "titleEn": "Some of Amazon's Q3 2026 announcements, from new devices to AI breakthroughs",
-          "titleZh": "Some of Amazon's Q3 2026 announcements, from new devices to AI breakthroughs",
-          "url": "https://www.aboutamazon.com/news/company-news/amazon-q3-2026-earnings-preview?utm_source=rss",
-          "date": "2026-10-26"
+          "titleEn": "Amazon data center communities: Here’s what’s happening near data centers across the US in 2026",
+          "titleZh": "Amazon data center communities: Here’s what’s happening near data centers across the US in 2026",
+          "url": "https://www.aboutamazon.com/news/aws/amazon-data-centers-locations-news?utm_source=rss",
+          "date": "2026-10-30"
         }
       ],
       "hotSearchPills": [
