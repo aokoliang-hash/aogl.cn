@@ -8,7 +8,7 @@
   "descZh": "按全球市值与产业链话语权常见排序的十家芯片与平台公司，每家三条官方新闻稿或博文外链。",
   "h1En": "Global chip & platform leaders (mark cap order)",
   "h1Zh": "全球芯片与平台巨头（市值口径）",
-  "updated": "2026-11-03",
+  "updated": "2026-11-10",
   "editorialHtmlEn": "<p>Ordering mirrors how NVIDIA, TSMC, Broadcom, etc. sit in public market-cap tables — not a buy list.</p><p>Unlike the portal page (mass-market web traffic), this row tracks semis and hyperscalers you see in capex / GPU supply headlines — still <strong>not</strong> investment advice; check filings and your own risk tolerance.</p><p>Last reviewed: <strong>2026-06-18</strong>. Links favor investor-relations and official newsrooms over rumor blogs.</p><p><strong>2026 Q2 edit:</strong> GPU supply and datacenter capex headlines still dominate my Sunday read. When a headline mentions HBM or EUV lead times, I cross-check IR pages here before writing hub copy—not YouTube “stock guru” channels.</p><p>When a GPU shortage story breaks, I open IR pages from here — not YouTube “stock guru” channels.</p>",
   "editorialHtmlZh": "<p>顺序大致按公开市场上的市值梯队来排（英伟达、台积电、博通等），不是荐股清单。</p><p>与 portal 页的「大众网站流量」不同，这里偏半导体与平台型公司在算力/资本开支叙事里的位置；同样<strong>不构成</strong>投资建议，交易前请阅读各公司披露文件并自行评估风险。</p><p>最近核对：<strong>2026-06-18</strong>。链接优先投资者关系页与官方新闻稿，而非传闻聚合站。</p><p><strong>2026 年二季度编辑注：</strong>算力与资本开支标题仍是我周日补课的主线；涉及 HBM、EUV 交期时，我会从这里进 IR 核对再改 Hub 文案，而不是点开短视频荐股号。</p><p>GPU 紧缺新闻出来时，我会从这里进 IR/新闻稿，而不是点开短视频荐股号。</p>",
   "rankTitleEn": "Global top 10 (market cap)",
@@ -116,22 +116,22 @@
       "labelZh": "英伟达",
       "items": [
         {
-          "titleEn": "Cities Worldwide Build and Scale AI Services With NVIDIA Physical and Agentic AI",
-          "titleZh": "Cities Worldwide Build and Scale AI Services With NVIDIA Physical and Agentic AI",
-          "url": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
-          "date": "2026-11-03"
+          "titleEn": "Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5",
+          "titleZh": "Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5",
+          "url": "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/",
+          "date": "2026-11-09"
         },
         {
-          "titleEn": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
-          "titleZh": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
-          "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
-          "date": "2026-11-02"
+          "titleEn": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+          "titleZh": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+          "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+          "date": "2026-11-09"
         },
         {
-          "titleEn": "Keep Distributed Training Running with Automated Workload Recovery",
-          "titleZh": "Keep Distributed Training Running with Automated Workload Recovery",
-          "url": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
-          "date": "2026-11-02"
+          "titleEn": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+          "titleZh": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+          "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+          "date": "2026-11-09"
         }
       ]
     },
@@ -191,22 +191,22 @@
       "labelZh": "AMD",
       "items": [
         {
+          "titleEn": "AMD EPYC Expands Its Leadership at the Foundation of AI",
+          "titleZh": "AMD EPYC Expands Its Leadership at the Foundation of AI",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1304/amd-epyc-expands-its-leadership-at-the-foundation-of-ai",
+          "date": "2026-11-09"
+        },
+        {
+          "titleEn": "AMD Reports Third Quarter 2026 Financial Results",
+          "titleZh": "AMD Reports Third Quarter 2026 Financial Results",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+          "date": "2026-11-03"
+        },
+        {
           "titleEn": "AMD and Meta Advance Strategic Partnership to Power Meta’s Superintelligence Infrastructure",
           "titleZh": "AMD and Meta Advance Strategic Partnership to Power Meta’s Superintelligence Infrastructure",
           "url": "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
           "date": "2026-10-27"
-        },
-        {
-          "titleEn": "Introducing AMD Helion, Agentic AI Compute at Rack Scale",
-          "titleZh": "Introducing AMD Helion, Agentic AI Compute at Rack Scale",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale",
-          "date": "2026-10-12"
-        },
-        {
-          "titleEn": "AMD to Report Fiscal Third Quarter 2026 Financial Results",
-          "titleZh": "AMD to Report Fiscal Third Quarter 2026 Financial Results",
-          "url": "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results",
-          "date": "2026-10-06"
         }
       ]
     },
@@ -216,22 +216,22 @@
       "labelZh": "三星电子",
       "items": [
         {
+          "titleEn": "Beyond the Medal: Samsung Helps Young Athletes Explore What Comes Next at Dakar 2026",
+          "titleZh": "Beyond the Medal: Samsung Helps Young Athletes Explore What Comes Next at Dakar 2026",
+          "url": "https://news.samsung.com/global/beyond-the-medal-samsung-helps-young-athletes-explore-what-comes-next-at-dakar-2026",
+          "date": "2026-11-05"
+        },
+        {
+          "titleEn": "Upgraded Sleep Apnea Feature Now Available on Galaxy Ring Following Regulatory Approvals From US FDA and Korea MFDS",
+          "titleZh": "Upgraded Sleep Apnea Feature Now Available on Galaxy Ring Following Regulatory Approvals From US FDA and Korea MFDS",
+          "url": "https://news.samsung.com/global/upgraded-sleep-apnea-feature-now-available-on-galaxy-ring-following-regulatory-approvals-from-us-fda-and-korea-mfds",
+          "date": "2026-11-03"
+        },
+        {
           "titleEn": "[Video] Inside the Tech: Samsung Micro RGB TV",
           "titleZh": "[Video] Inside the Tech: Samsung Micro RGB TV",
           "url": "https://news.samsung.com/global/video-inside-the-tech-samsung-micro-rgb-tv",
           "date": "2026-11-03"
-        },
-        {
-          "titleEn": "Samsung Champions Young Olympians at Dakar 2026, First-Ever Olympic Event on African Continent",
-          "titleZh": "Samsung Champions Young Olympians at Dakar 2026, First-Ever Olympic Event on African Continent",
-          "url": "https://news.samsung.com/global/samsung-champions-young-olympians-at-dakar-2026-first-ever-olympic-event-on-african-continent",
-          "date": "2026-11-02"
-        },
-        {
-          "titleEn": "Samsung Electronics Announces Third Quarter 2026 Results",
-          "titleZh": "Samsung Electronics Announces Third Quarter 2026 Results",
-          "url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
-          "date": "2026-10-29"
         }
       ]
     },
@@ -316,6 +316,12 @@
       "labelZh": "ARM",
       "items": [
         {
+          "titleEn": "From photon to actuation: How physical AI is redefining embedded compute",
+          "titleZh": "From photon to actuation: How physical AI is redefining embedded compute",
+          "url": "https://newsroom.arm.com/blog/arm-stmicroelectronics-embedded-compute-physical-ai",
+          "date": "2026-11-05"
+        },
+        {
           "titleEn": "How Arm is redefining the PC ecosystem",
           "titleZh": "How Arm is redefining the PC ecosystem",
           "url": "https://newsroom.arm.com/blog/arm-based-pcs-future-personal-computing",
@@ -326,12 +332,6 @@
           "titleZh": "Top Arm-based innovations advancing on-device AI, cloud infrastructure, and physical AI in October 2026",
           "url": "https://newsroom.arm.com/blog/top-arm-based-innovations-in-october-2026",
           "date": "2026-11-02"
-        },
-        {
-          "titleEn": "Why wearables are the next frontier of AI-first personal computing",
-          "titleZh": "Why wearables are the next frontier of AI-first personal computing",
-          "url": "https://newsroom.arm.com/blog/ai-wearables-smart-glasses-arm",
-          "date": "2026-10-30"
         }
       ]
     },

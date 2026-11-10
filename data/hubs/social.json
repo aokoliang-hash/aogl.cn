@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-11-03",
+  "updated": "2026-11-10",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,114 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "YouTube streaming data returns to Billboard charts, ending major disagreement",
+      "titleZh": "YouTube streaming data returns to Billboard charts, ending major disagreement",
+      "url": "https://techcrunch.com/2026/11/09/youtube-streaming-data-returns-to-billboard-charts-ending-major-disagreement/",
+      "date": "2026-11-09",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Meta expands Instagram’s AI age-guessing tech globally",
+      "titleZh": "Meta expands Instagram’s AI age-guessing tech globally",
+      "url": "https://techcrunch.com/2026/11/09/meta-expands-instagrams-ai-age-guessing-tech-globally/",
+      "date": "2026-11-09",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Expanding Teen Account Protections to Teens Around the World",
+      "titleZh": "Expanding Teen Account Protections to Teens Around the World",
+      "url": "https://about.fb.com/news/2026/11/expanding-teen-account-protections-to-teens-around-the-world/",
+      "date": "2026-11-09",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/Expanding-Teen-Account-Protections-to-Teens-Around-the-World_thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Expanding-Teen-Account-Protections-to-Teens-Around-the-World_thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "If Snap’s Specs are still ridiculously expensive, they’re also a lot more comfortable than they used to be",
+      "titleZh": "If Snap’s Specs are still ridiculously expensive, they’re also a lot more comfortable than they used to be",
+      "url": "https://techcrunch.com/2026/11/08/if-snaps-specs-are-still-ridiculously-expensive-theyre-also-a-lot-more-comfortable-than-they-used-to-be/",
+      "date": "2026-11-08",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Design the Muse App, Just for You",
+      "titleZh": "Design the Muse App, Just for You",
+      "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+      "date": "2026-11-06",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/Design-the-Muse-App_Just-for-You_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Design-the-Muse-App_Just-for-You_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta, Google, and TikTok sue California AG over teen social media law",
+      "titleZh": "Meta, Google, and TikTok sue California AG over teen social media law",
+      "url": "https://techcrunch.com/2026/11/05/meta-google-and-tiktok-sue-california-ag-over-teen-social-media-law/",
+      "date": "2026-11-06",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Give Your Muse a Voice",
+      "titleZh": "Give Your Muse a Voice",
+      "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
+      "date": "2026-11-05",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/Were-rolling-out-voice-and-expressive-avatars-in-the-Muse-app_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Were-rolling-out-voice-and-expressive-avatars-in-the-Muse-app_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "TikTok quietly launches a stand-alone TikTok Shop app",
+      "titleZh": "TikTok quietly launches a stand-alone TikTok Shop app",
+      "url": "https://techcrunch.com/2026/11/05/tiktok-quietly-launches-a-standalone-tiktok-shop-app/",
+      "date": "2026-11-05",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "WhatsApp Events Brings People Together Beyond the Group Chat",
+      "titleZh": "WhatsApp Events Brings People Together Beyond the Group Chat",
+      "url": "https://about.fb.com/news/2026/11/whatsapp-events-brings-people-together-beyond-the-group-chat/",
+      "date": "2026-11-05",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/WhatsApp-is-your-events-planning-lifesaver_Thumbnail-1.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/WhatsApp-is-your-events-planning-lifesaver_Thumbnail-1.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Instagram brings Edits to desktop to take on CapCut",
+      "titleZh": "Instagram brings Edits to desktop to take on CapCut",
+      "url": "https://techcrunch.com/2026/11/05/instagram-brings-edits-to-desktop-to-take-on-capcut/",
+      "date": "2026-11-05",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Snapchat surpasses 30M paid subscribers",
+      "titleZh": "Snapchat surpasses 30M paid subscribers",
+      "url": "https://techcrunch.com/2026/11/04/snapchat-surpasses-30m-paid-subscribers/",
+      "date": "2026-11-04",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
+      "titleZh": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
+      "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/",
+      "date": "2026-11-03",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-F3-Lightning-Figure-1.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-F3-Lightning-Figure-1.png"
+    },
     {
       "titleEn": "From restaurant guides to payments, here’s how TikTok is building a super app",
       "titleZh": "From restaurant guides to payments, here’s how TikTok is building a super app",
@@ -113,114 +221,6 @@
       "source": "Facebook / Meta",
       "image": "https://about.fb.com/wp-content/uploads/2026/10/New-Tools-for-the-Admins-Who-Build-Communities-on-Forum-_thumbnail.jpg?fit=890%2C501",
       "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/New-Tools-for-the-Admins-Who-Build-Communities-on-Forum-_thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Meta wants to pay for its broad AI buildout with a newly created class of stock",
-      "titleZh": "Meta wants to pay for its broad AI buildout with a newly created class of stock",
-      "url": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/",
-      "date": "2026-10-21",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta ordered to pay $25B in case related to Cambridge Analytica scandal",
-      "titleZh": "Meta ordered to pay $25B in case related to Cambridge Analytica scandal",
-      "url": "https://techcrunch.com/2026/10/21/meta-ordered-to-pay-25-billion-in-case-related-to-cambridge-analytica-scandal/",
-      "date": "2026-10-21",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "TikTok staff raised child safety concerns, but executives reportedly failed to act",
-      "titleZh": "TikTok staff raised child safety concerns, but executives reportedly failed to act",
-      "url": "https://techcrunch.com/2026/10/20/tiktok-staff-raised-child-safety-concerns-but-executives-reportedly-failed-to-act/",
-      "date": "2026-10-20",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
-      "titleZh": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
-      "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/",
-      "date": "2026-10-19",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/GenRecs-Tokenization-image1.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/GenRecs-Tokenization-image1.png"
-    },
-    {
-      "titleEn": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
-      "titleZh": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
-      "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
-      "date": "2026-10-19",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Prometheus-BAG-3.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Prometheus-BAG-3.png"
-    },
-    {
-      "titleEn": "TikTok says it’s restored ‘Musk’ documentary advertising account",
-      "titleZh": "TikTok says it’s restored ‘Musk’ documentary advertising account",
-      "url": "https://techcrunch.com/2026/10/17/tiktok-permanently-bans-musk-documentary-advertising-account/",
-      "date": "2026-10-17",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "How Meta Built Forum With AI-Native Engineering",
-      "titleZh": "How Meta Built Forum With AI-Native Engineering",
-      "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
-      "date": "2026-10-15",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Forum-UI.jpg",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Forum-UI.jpg"
-    },
-    {
-      "titleEn": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
-      "titleZh": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
-      "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
-      "date": "2026-10-15",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2025/05/Economic-and-Workforce-Impacts-of-OS-AI-Linux-Foundation-paper_Thumbnail-1-1.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2025/05/Economic-and-Workforce-Impacts-of-OS-AI-Linux-Foundation-paper_Thumbnail-1-1.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-      "titleZh": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-      "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
-      "date": "2026-10-14",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
-      "titleZh": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
-      "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
-      "date": "2026-10-14",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Sensing-Art-_-1.jpg?fit=960%2C640",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Sensing-Art-_-1.jpg?fit=960%2C640"
-    },
-    {
-      "titleEn": "Now You Can Invite Anyone to a WhatsApp Call",
-      "titleZh": "Now You Can Invite Anyone to a WhatsApp Call",
-      "url": "https://about.fb.com/news/2026/10/introducing-whatsapp-guest-calling/",
-      "date": "2026-10-14",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Now-You-Can-Invite-Anyone-to-a-WhatsApp-Call_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Now-You-Can-Invite-Anyone-to-a-WhatsApp-Call_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Farah Khan at Edits Film Festival: “Content breakthroughs come from spontaneity, relatability and realness”",
-      "titleZh": "Farah Khan at Edits Film Festival: “Content breakthroughs come from spontaneity, relatability and realness”",
-      "url": "https://about.fb.com/news/2026/10/farah-khan-at-edits-film-festival-content-breakthroughs-come-from-spontaneity-relatability-and-realness/",
-      "date": "2026-10-14",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Farah-Khan-in-conversation-with-Ankit-Rihal-at-the-Edits-Film-Festival.jpeg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Farah-Khan-in-conversation-with-Ankit-Rihal-at-the-Edits-Film-Festival.jpeg?fit=890%2C501"
     }
   ],
   "moreTitleEn": "More social networks",

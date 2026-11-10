@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-11-03",
+  "updated": "2026-11-10",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "The latest AI news we announced in October 2026",
-          "titleZh": "The latest AI news we announced in October 2026",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-          "date": "2026-11-02"
+          "titleEn": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+          "titleZh": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+          "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+          "date": "2026-11-10"
         },
         {
-          "titleEn": "Our newest AI Quest: Mapping the human brain",
-          "titleZh": "Our newest AI Quest: Mapping the human brain",
-          "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
-          "date": "2026-10-26"
+          "titleEn": "Google Cloud launches Gemini for healthcare.",
+          "titleZh": "Google Cloud launches Gemini for healthcare.",
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+          "date": "2026-11-10"
         },
         {
-          "titleEn": "Southeast Asia’s digital economy to hit $368 billion",
-          "titleZh": "Southeast Asia’s digital economy to hit $368 billion",
-          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
-          "date": "2026-10-21"
+          "titleEn": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+          "titleZh": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+          "date": "2026-11-05"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "L’avenir appartient à tous: Meta et INCA s’associent pour soutenir les personnes aveugles, sourdes et aveugles ou ayant une basse vision au Canada",
-          "titleZh": "L’avenir appartient à tous: Meta et INCA s’associent pour soutenir les personnes aveugles, sourdes et aveugles ou ayant une basse vision au Canada",
-          "url": "https://about.fb.com/news/2026/10/lavenir-appartient-a-tous-meta-et-inca-sassocient-pour-soutenir-les-personnes-aveugles-sourdes-et-aveugles-ou-ayant-une-basse-vision-au-canada/",
-          "date": "2026-10-29"
+          "titleEn": "Expanding Teen Account Protections to Teens Around the World",
+          "titleZh": "Expanding Teen Account Protections to Teens Around the World",
+          "url": "https://about.fb.com/news/2026/11/expanding-teen-account-protections-to-teens-around-the-world/",
+          "date": "2026-11-09"
         },
         {
-          "titleEn": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
-          "titleZh": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
-          "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
-          "date": "2026-10-29"
+          "titleEn": "Design the Muse App, Just for You",
+          "titleZh": "Design the Muse App, Just for You",
+          "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+          "date": "2026-11-06"
         },
         {
-          "titleEn": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs",
-          "titleZh": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs",
-          "url": "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/",
-          "date": "2026-10-28"
+          "titleEn": "Give Your Muse a Voice",
+          "titleZh": "Give Your Muse a Voice",
+          "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
+          "date": "2026-11-05"
         }
       ],
       "hotSearchPills": [
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
+          "titleZh": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
+          "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
+          "date": "2026-11-09"
+        },
+        {
+          "titleEn": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
+          "titleZh": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
+          "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/",
+          "date": "2026-11-03"
+        },
+        {
           "titleEn": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
           "titleZh": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
           "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/",
           "date": "2026-10-29"
-        },
-        {
-          "titleEn": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
-          "titleZh": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
-          "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
-          "date": "2026-10-28"
-        },
-        {
-          "titleEn": "PrivacyLib: Privacy Controls at the Data Access Boundary",
-          "titleZh": "PrivacyLib: Privacy Controls at the Data Access Boundary",
-          "url": "https://engineering.fb.com/2026/10/27/security/privacylib/",
-          "date": "2026-10-27"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "The Virtual Room: How Volunteers Brought Wikimania Paris to the World",
-          "titleZh": "The Virtual Room: How Volunteers Brought Wikimania Paris to the World",
-          "url": "https://diff.wikimedia.org/2026/11/03/the-virtual-room-how-volunteers-brought-wikimania-paris-to-the-world/",
-          "date": "2026-11-03"
+          "titleEn": "Books for Bassam, on the occasion of the 12th anniversary of Wikimedia Côte d’Ivoire’s affiliation",
+          "titleZh": "Books for Bassam, on the occasion of the 12th anniversary of Wikimedia Côte d’Ivoire’s affiliation",
+          "url": "https://diff.wikimedia.org/2026/11/10/books-for-bassam-on-the-occasion-of-the-12th-anniversary-of-wikimedia-cote-divoires-affiliation/",
+          "date": "2026-11-10"
         },
         {
-          "titleEn": "How we measure contributions and recognise the most active contributors to Ukrainian Wikimedia sister projects",
-          "titleZh": "How we measure contributions and recognise the most active contributors to Ukrainian Wikimedia sister projects",
-          "url": "https://diff.wikimedia.org/2026/11/03/how-we-measure-contributions-and-recognise-the-most-active-contributors-to-ukrainian-wikimedia-sister-projects/",
-          "date": "2026-11-03"
+          "titleEn": "Bringing Climate Education to All: Empowering Students with Disabilities Through Open Knowledge",
+          "titleZh": "Bringing Climate Education to All: Empowering Students with Disabilities Through Open Knowledge",
+          "url": "https://diff.wikimedia.org/2026/11/10/bringing-climate-education-to-all-empowering-students-with-disabilities-through-open-knowledge/",
+          "date": "2026-11-10"
         },
         {
-          "titleEn": "Celebrating Community, Progress and Achievements at the Wikimedia Uganda Annual General Meeting 2026",
-          "titleZh": "Celebrating Community, Progress and Achievements at the Wikimedia Uganda Annual General Meeting 2026",
-          "url": "https://diff.wikimedia.org/2026/11/03/celebrating-community-progress-and-achievements-at-the-wikimedia-uganda-annual-general-meeting-2026/",
-          "date": "2026-11-03"
+          "titleEn": "Afroyanga Bootcamp 3.0: Exploring Creativity, Culture, and Connection",
+          "titleZh": "Afroyanga Bootcamp 3.0: Exploring Creativity, Culture, and Connection",
+          "url": "https://diff.wikimedia.org/2026/11/09/afroyanga-bootcamp-3-0-exploring-creativity-culture-and-connection/",
+          "date": "2026-11-09"
         }
       ],
       "hotSearchPills": [
@@ -663,6 +663,12 @@
       "labelZh": "Reddit",
       "items": [
         {
+          "titleEn": "Reddit tests ads in search results as traffic declines and growth concerns mount",
+          "titleZh": "Reddit tests ads in search results as traffic declines and growth concerns mount",
+          "url": "https://techcrunch.com/2026/11/03/reddit-tests-ads-in-search-results-as-traffic-declines-and-growth-concerns-mount/",
+          "date": "2026-11-03"
+        },
+        {
           "titleEn": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
           "titleZh": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
           "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
@@ -673,12 +679,6 @@
           "titleZh": "Reddit is the latest platform to embrace the ‘For You’ feed",
           "url": "https://techcrunch.com/2026/10/28/reddit-is-the-latest-platform-to-embrace-the-for-you-feed/",
           "date": "2026-10-28"
-        },
-        {
-          "titleEn": "Reddit is killing RSS feeds and ending public API access because of AI bots",
-          "titleZh": "Reddit is killing RSS feeds and ending public API access because of AI bots",
-          "url": "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/",
-          "date": "2026-09-30"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Amazon CEO Andy Jassy: ‘I had to change how I worked, or I was going to be a lousy dad’",
-          "titleZh": "Amazon CEO Andy Jassy: ‘I had to change how I worked, or I was going to be a lousy dad’",
-          "url": "https://www.aboutamazon.com/news/workplace/amazon-ceo-andy-jassy-work-life-balance?utm_source=rss",
-          "date": "2026-11-02"
+          "titleEn": "Ring announces Ring Robotics, ushering in a new era of security",
+          "titleZh": "Ring announces Ring Robotics, ushering in a new era of security",
+          "url": "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot?utm_source=rss",
+          "date": "2026-11-10"
         },
         {
-          "titleEn": "Is Amazon Grocery worth it? Yes—here’s what to know.",
-          "titleZh": "Is Amazon Grocery worth it? Yes—here’s what to know.",
-          "url": "https://www.aboutamazon.com/news/retail/is-amazon-grocery-worth-it?utm_source=rss",
-          "date": "2026-11-02"
+          "titleEn": "Black Friday and Cyber Monday 2026: a first look at Amazon’s best deals",
+          "titleZh": "Black Friday and Cyber Monday 2026: a first look at Amazon’s best deals",
+          "url": "https://www.aboutamazon.com/news/retail/amazon-black-friday-cyber-monday-deals-2026?utm_source=rss",
+          "date": "2026-11-10"
         },
         {
-          "titleEn": "Amazon data center communities: Here’s what’s happening near data centers across the US in 2026",
-          "titleZh": "Amazon data center communities: Here’s what’s happening near data centers across the US in 2026",
-          "url": "https://www.aboutamazon.com/news/aws/amazon-data-centers-locations-news?utm_source=rss",
-          "date": "2026-10-30"
+          "titleEn": "Amazon in the community: Service, community, and commitment at HQ2",
+          "titleZh": "Amazon in the community: Service, community, and commitment at HQ2",
+          "url": "https://www.aboutamazon.com/news/community/amazon-arlington-virginia-news?utm_source=rss",
+          "date": "2026-11-09"
         }
       ],
       "hotSearchPills": [
@@ -934,6 +934,12 @@
       "labelZh": "WhatsApp",
       "items": [
         {
+          "titleEn": "WhatsApp Events Brings People Together Beyond the Group Chat",
+          "titleZh": "WhatsApp Events Brings People Together Beyond the Group Chat",
+          "url": "https://about.fb.com/news/2026/11/whatsapp-events-brings-people-together-beyond-the-group-chat/",
+          "date": "2026-11-05"
+        },
+        {
           "titleEn": "Now You Can Invite Anyone to a WhatsApp Call",
           "titleZh": "Now You Can Invite Anyone to a WhatsApp Call",
           "url": "https://about.fb.com/news/2026/10/introducing-whatsapp-guest-calling/",
@@ -944,12 +950,6 @@
           "titleZh": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
           "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
           "date": "2026-10-12"
-        },
-        {
-          "titleEn": "Debunking the Biggest Data Center Myths",
-          "titleZh": "Debunking the Biggest Data Center Myths",
-          "url": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
-          "date": "2026-10-08"
         }
       ],
       "hotSearchPills": [
