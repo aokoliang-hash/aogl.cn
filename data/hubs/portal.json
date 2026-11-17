@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-11-10",
+  "updated": "2026-11-17",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
-          "titleZh": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
-          "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
-          "date": "2026-11-10"
+          "titleEn": "New Ask Maps features to help with holiday travel and prep",
+          "titleZh": "New Ask Maps features to help with holiday travel and prep",
+          "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+          "date": "2026-11-16"
         },
         {
-          "titleEn": "Google Cloud launches Gemini for healthcare.",
-          "titleZh": "Google Cloud launches Gemini for healthcare.",
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
-          "date": "2026-11-10"
+          "titleEn": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+          "titleZh": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+          "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+          "date": "2026-11-12"
         },
         {
-          "titleEn": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-          "titleZh": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-          "date": "2026-11-05"
+          "titleEn": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+          "titleZh": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+          "date": "2026-11-11"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "Expanding Teen Account Protections to Teens Around the World",
-          "titleZh": "Expanding Teen Account Protections to Teens Around the World",
-          "url": "https://about.fb.com/news/2026/11/expanding-teen-account-protections-to-teens-around-the-world/",
-          "date": "2026-11-09"
+          "titleEn": "An Update on the Content We Recommend on Instagram in India",
+          "titleZh": "An Update on the Content We Recommend on Instagram in India",
+          "url": "https://about.fb.com/news/2026/11/an-update-on-the-content-we-recommend-on-instagram-in-india/",
+          "date": "2026-11-17"
         },
         {
-          "titleEn": "Design the Muse App, Just for You",
-          "titleZh": "Design the Muse App, Just for You",
-          "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
-          "date": "2026-11-06"
+          "titleEn": "Introducing Direct: An App Just for Messaging",
+          "titleZh": "Introducing Direct: An App Just for Messaging",
+          "url": "https://about.fb.com/news/2026/11/introducing-direct-an-app-just-for-messaging/",
+          "date": "2026-11-17"
         },
         {
-          "titleEn": "Give Your Muse a Voice",
-          "titleZh": "Give Your Muse a Voice",
-          "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
-          "date": "2026-11-05"
+          "titleEn": "94% of Singapore Small Business Owners Surveyed Say More AI Guidance Is Needed",
+          "titleZh": "94% of Singapore Small Business Owners Surveyed Say More AI Guidance Is Needed",
+          "url": "https://about.fb.com/news/2026/11/94-of-singapore-small-business-owners-surveyed-say-more-ai-guidance-is-needed/",
+          "date": "2026-11-16"
         }
       ],
       "hotSearchPills": [
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
-          "titleEn": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
-          "titleZh": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
-          "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
-          "date": "2026-11-09"
+          "titleEn": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
+          "titleZh": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
+          "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
+          "date": "2026-11-13"
         },
         {
-          "titleEn": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
-          "titleZh": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
-          "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/",
-          "date": "2026-11-03"
+          "titleEn": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
+          "titleZh": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
+          "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/",
+          "date": "2026-11-11"
         },
         {
-          "titleEn": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
-          "titleZh": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
-          "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/",
-          "date": "2026-10-29"
+          "titleEn": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
+          "titleZh": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
+          "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/",
+          "date": "2026-11-10"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Books for Bassam, on the occasion of the 12th anniversary of Wikimedia Côte d’Ivoire’s affiliation",
-          "titleZh": "Books for Bassam, on the occasion of the 12th anniversary of Wikimedia Côte d’Ivoire’s affiliation",
-          "url": "https://diff.wikimedia.org/2026/11/10/books-for-bassam-on-the-occasion-of-the-12th-anniversary-of-wikimedia-cote-divoires-affiliation/",
-          "date": "2026-11-10"
+          "titleEn": "Wikimedia at the World Shakespeare Congress in Verona",
+          "titleZh": "Wikimedia at the World Shakespeare Congress in Verona",
+          "url": "https://diff.wikimedia.org/2026/11/17/wikimedia-at-the-world-shakespeare-congress-in-verona/",
+          "date": "2026-11-17"
         },
         {
-          "titleEn": "Bringing Climate Education to All: Empowering Students with Disabilities Through Open Knowledge",
-          "titleZh": "Bringing Climate Education to All: Empowering Students with Disabilities Through Open Knowledge",
-          "url": "https://diff.wikimedia.org/2026/11/10/bringing-climate-education-to-all-empowering-students-with-disabilities-through-open-knowledge/",
-          "date": "2026-11-10"
+          "titleEn": "Kochi, from the inside: what it really takes to run WikiConference India 2026",
+          "titleZh": "Kochi, from the inside: what it really takes to run WikiConference India 2026",
+          "url": "https://diff.wikimedia.org/2026/11/17/kochi-from-the-inside-what-it-really-takes-to-run-wikiconference-india-2026/",
+          "date": "2026-11-17"
         },
         {
-          "titleEn": "Afroyanga Bootcamp 3.0: Exploring Creativity, Culture, and Connection",
-          "titleZh": "Afroyanga Bootcamp 3.0: Exploring Creativity, Culture, and Connection",
-          "url": "https://diff.wikimedia.org/2026/11/09/afroyanga-bootcamp-3-0-exploring-creativity-culture-and-connection/",
-          "date": "2026-11-09"
+          "titleEn": "Celebrating 14 Years of Wikidata: Global WikiEducation Initiative Brings Tanzania’s Open Knowledge Community Together",
+          "titleZh": "Celebrating 14 Years of Wikidata: Global WikiEducation Initiative Brings Tanzania’s Open Knowledge Community Together",
+          "url": "https://diff.wikimedia.org/2026/11/17/celebrating-14-years-of-wikidata-global-wikieducation-initiative-brings-tanzanias-open-knowledge-community-together/",
+          "date": "2026-11-17"
         }
       ],
       "hotSearchPills": [
@@ -663,6 +663,12 @@
       "labelZh": "Reddit",
       "items": [
         {
+          "titleEn": "Reddit is turning user conversations into AI-powered product reviews",
+          "titleZh": "Reddit is turning user conversations into AI-powered product reviews",
+          "url": "https://techcrunch.com/2026/11/10/reddit-is-turning-user-conversations-into-ai-powered-product-reviews/",
+          "date": "2026-11-10"
+        },
+        {
           "titleEn": "Reddit tests ads in search results as traffic declines and growth concerns mount",
           "titleZh": "Reddit tests ads in search results as traffic declines and growth concerns mount",
           "url": "https://techcrunch.com/2026/11/03/reddit-tests-ads-in-search-results-as-traffic-declines-and-growth-concerns-mount/",
@@ -673,12 +679,6 @@
           "titleZh": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
           "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
           "date": "2026-10-29"
-        },
-        {
-          "titleEn": "Reddit is the latest platform to embrace the ‘For You’ feed",
-          "titleZh": "Reddit is the latest platform to embrace the ‘For You’ feed",
-          "url": "https://techcrunch.com/2026/10/28/reddit-is-the-latest-platform-to-embrace-the-for-you-feed/",
-          "date": "2026-10-28"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "Ring announces Ring Robotics, ushering in a new era of security",
-          "titleZh": "Ring announces Ring Robotics, ushering in a new era of security",
-          "url": "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot?utm_source=rss",
-          "date": "2026-11-10"
+          "titleEn": "5 ways Amazon is supporting US communities in 2026, from free meals to affordable homes",
+          "titleZh": "5 ways Amazon is supporting US communities in 2026, from free meals to affordable homes",
+          "url": "https://www.aboutamazon.com/news/community/amazon-community-impact-2026?utm_source=rss",
+          "date": "2026-11-17"
         },
         {
-          "titleEn": "Black Friday and Cyber Monday 2026: a first look at Amazon’s best deals",
-          "titleZh": "Black Friday and Cyber Monday 2026: a first look at Amazon’s best deals",
-          "url": "https://www.aboutamazon.com/news/retail/amazon-black-friday-cyber-monday-deals-2026?utm_source=rss",
-          "date": "2026-11-10"
+          "titleEn": "Amazon to invest $7 billion in renewable energy in India by 2030",
+          "titleZh": "Amazon to invest $7 billion in renewable energy in India by 2030",
+          "url": "https://www.aboutamazon.com/news/sustainability/amazon-investment-india-renewable-energy?utm_source=rss",
+          "date": "2026-11-17"
         },
         {
-          "titleEn": "Amazon in the community: Service, community, and commitment at HQ2",
-          "titleZh": "Amazon in the community: Service, community, and commitment at HQ2",
-          "url": "https://www.aboutamazon.com/news/community/amazon-arlington-virginia-news?utm_source=rss",
-          "date": "2026-11-09"
+          "titleEn": "Amazon sets goal to cut electricity carbon intensity 65% by 2030",
+          "titleZh": "Amazon sets goal to cut electricity carbon intensity 65% by 2030",
+          "url": "https://www.aboutamazon.com/news/sustainability/amazon-carbon-intensity-goal-electricity-emissions?utm_source=rss",
+          "date": "2026-11-17"
         }
       ],
       "hotSearchPills": [

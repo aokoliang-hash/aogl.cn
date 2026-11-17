@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-11-10",
+  "updated": "2026-11-17",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -24,6 +24,78 @@
   "hotMixLeadEn": "Auto-merged from public RSS when you run npm run fetch-hub-news (about.fb.com, Google’s YouTube blog, Meta engineering posts matching Instagram/Reels/Threads, TechCrunch social tags, LinkedIn headlines via TechCrunch). Titles are usually English.",
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
+    {
+      "titleEn": "Meta launches Direct, a standalone messaging app for Instagram",
+      "titleZh": "Meta launches Direct, a standalone messaging app for Instagram",
+      "url": "https://techcrunch.com/2026/11/17/meta-launches-direct-a-standalone-messaging-app-for-instagram/",
+      "date": "2026-11-17",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Instagram’s new tool for creators targets unauthorized reposts and AI-modified videos",
+      "titleZh": "Instagram’s new tool for creators targets unauthorized reposts and AI-modified videos",
+      "url": "https://techcrunch.com/2026/11/17/instagrams-new-tool-for-creators-targets-unauthorized-reposts-and-ai-modified-videos/",
+      "date": "2026-11-17",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "An Update on the Content We Recommend on Instagram in India",
+      "titleZh": "An Update on the Content We Recommend on Instagram in India",
+      "url": "https://about.fb.com/news/2026/11/an-update-on-the-content-we-recommend-on-instagram-in-india/",
+      "date": "2026-11-17",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/Meta-logo.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Meta-logo.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "Introducing Direct: An App Just for Messaging",
+      "titleZh": "Introducing Direct: An App Just for Messaging",
+      "url": "https://about.fb.com/news/2026/11/introducing-direct-an-app-just-for-messaging/",
+      "date": "2026-11-17",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/Introducing-Direct_An-App-Just-for-Messaging_Thumbnail.gif?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Introducing-Direct_An-App-Just-for-Messaging_Thumbnail.gif?fit=890%2C501"
+    },
+    {
+      "titleEn": "Instagram now lets creators add Amazon affiliate links in reels and feed posts",
+      "titleZh": "Instagram now lets creators add Amazon affiliate links in reels and feed posts",
+      "url": "https://techcrunch.com/2026/11/16/instagram-now-lets-creators-add-amazon-affiliate-links-in-reels-and-feed-posts/",
+      "date": "2026-11-16",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "94% of Singapore Small Business Owners Surveyed Say More AI Guidance Is Needed",
+      "titleZh": "94% of Singapore Small Business Owners Surveyed Say More AI Guidance Is Needed",
+      "url": "https://about.fb.com/news/2026/11/94-of-singapore-small-business-owners-surveyed-say-more-ai-guidance-is-needed/",
+      "date": "2026-11-16",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/WOL_1057.jpg?w=960&resize=960%2C640",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/WOL_1057.jpg?w=960&resize=960%2C640"
+    },
+    {
+      "titleEn": "Meta’s New Agreements Bring Clean Manufacturing to Data Center Supply Chains",
+      "titleZh": "Meta’s New Agreements Bring Clean Manufacturing to Data Center Supply Chains",
+      "url": "https://about.fb.com/news/2026/11/meta-new-agreements-clean-manufacturing-data-center-supply-chains/",
+      "date": "2026-11-12",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/How-Meta-is-Helping-Bring-Clean-Industry-to-Commercial-Scale_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/How-Meta-is-Helping-Bring-Clean-Industry-to-Commercial-Scale_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
+      "titleZh": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
+      "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/",
+      "date": "2026-11-10",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/11/Your-algorithm-Figure-1.gif",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/11/Your-algorithm-Figure-1.gif"
+    },
     {
       "titleEn": "YouTube streaming data returns to Billboard charts, ending major disagreement",
       "titleZh": "YouTube streaming data returns to Billboard charts, ending major disagreement",
@@ -149,78 +221,6 @@
       "source": "Facebook / Meta",
       "image": "",
       "imageSource": ""
-    },
-    {
-      "titleEn": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
-      "titleZh": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
-      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
-      "date": "2026-10-29",
-      "source": "Facebook / Meta",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs",
-      "titleZh": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs",
-      "url": "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/",
-      "date": "2026-10-28",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Meta-Partners-With-Five-US-Universities-to-Accelerate-Medical-and-Scientific-Breakthroughs_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Meta-Partners-With-Five-US-Universities-to-Accelerate-Medical-and-Scientific-Breakthroughs_Thumbnail.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
-      "titleZh": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
-      "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
-      "date": "2026-10-28",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Andromeda-co-design-image-1.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Andromeda-co-design-image-1.png"
-    },
-    {
-      "titleEn": "TikTok expands into restaurant guides with ‘Must Eat’ feature",
-      "titleZh": "TikTok expands into restaurant guides with ‘Must Eat’ feature",
-      "url": "https://techcrunch.com/2026/10/28/tiktok-expands-into-restaurant-guides-with-must-eat-feature/",
-      "date": "2026-10-28",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone",
-      "titleZh": "Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone",
-      "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
-      "date": "2026-10-28",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/Muse-16x9-SG.png?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/Muse-16x9-SG.png?fit=890%2C501"
-    },
-    {
-      "titleEn": "Watch out, YouTube — Instagram goes from short-form to 90-minute videos",
-      "titleZh": "Watch out, YouTube — Instagram goes from short-form to 90-minute videos",
-      "url": "https://techcrunch.com/2026/10/26/watch-out-youtube-instagram-goes-from-short-form-to-90-minute-videos/",
-      "date": "2026-10-26",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
-      "titleZh": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
-      "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
-      "date": "2026-10-26",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/OCP-2026-Omar-Meta.jpg",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/OCP-2026-Omar-Meta.jpg"
-    },
-    {
-      "titleEn": "New Tools for the Admins Who Build Communities on Forum",
-      "titleZh": "New Tools for the Admins Who Build Communities on Forum",
-      "url": "https://about.fb.com/news/2026/10/new-tools-for-the-admins-who-build-communities-on-forum/",
-      "date": "2026-10-23",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/10/New-Tools-for-the-Admins-Who-Build-Communities-on-Forum-_thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/10/New-Tools-for-the-Admins-Who-Build-Communities-on-Forum-_thumbnail.jpg?fit=890%2C501"
     }
   ],
   "moreTitleEn": "More social networks",
