@@ -1,6 +1,13 @@
 {
-  "updated": "2026-06-18",
+  "updated": "2026-11-23",
   "items": [
+    {
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "title_en": "Introducing GPT-6.2 Astra and Sol",
+      "title_zh": "Introducing GPT-6.2 Astra and Sol",
+      "meta_en": "OpenAI · Nov 2026",
+      "meta_zh": "OpenAI · 2026年11月"
+    },
     {
       "url": "https://openai.com/index/introducing-gpt-5-2",
       "title_en": "Introducing GPT-5.2",
@@ -232,14 +239,6 @@
       "meta_en": "Google DeepMind · Dec 2025",
       "meta_zh": "Google DeepMind · 2025年12月",
       "slug": "deepmind-blog-deepening-our-partnership-with-the-uk-ai-security-institute"
-    },
-    {
-      "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks",
-      "title_en": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
-      "title_zh": "Gemini 3.1 Pro：面向复杂任务的更强模型",
-      "meta_en": "Google DeepMind · Feb 2026",
-      "meta_zh": "Google DeepMind · 2026年2月",
-      "slug": "deepmind-blog-gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks"
     }
   ]
 }
