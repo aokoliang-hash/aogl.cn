@@ -8,7 +8,7 @@
   "descZh": "常年出现在全球网站流量榜单前列的十个入口，每站三条官网或产品博文外链。",
   "h1En": "Where the world’s traffic piles up",
   "h1Zh": "全球流量前十站点",
-  "updated": "2026-11-17",
+  "updated": "2026-11-24",
   "editorialHtmlEn": "<p>Order follows the usual Similarweb / Cloudflare Radar style “most visited” lists — not my private click log.</p><p>These tables lag reality (methodology and geography change); I realign when major annual reports ship, not minute-by-minute. The “more” block lists regional portals that rarely sit in a single global top-10 slice.</p><p>Last reviewed: <strong>2026-05-19</strong>. I drop a domain if it disappears from major public traffic tables for two reporting cycles or if the landing URL changes without a clear successor. No paid placement in the top ten.</p><p>I use this page to open a familiar homepage when a headline mentions “the portal wars” — not as an analytics dashboard. If you need live rankings, go to the vendors’ own reports.</p>",
   "editorialHtmlZh": "<p>顺序按 Similarweb、Cloudflare Radar 一类公开「全球访问量」榜单常见名次整理，不是我个人的点击统计。</p><p>公开榜单本身有滞后与口径差异（地区、桌面/移动权重等）；本站只在较大版本或明显梯队变化时顺手改顺序，不做实时排名承诺。下面「更多」收的是常出现在地区榜、但不易与单一全球前十直接对齐的门户入口。</p><p>最近核对：<strong>2026-05-19</strong>。若某域名连续两轮在主要公开流量表中缺席，或官网入口变更且无明确继任页，会从列表移除。前十不接受付费收录。</p><p>我自己用来在新闻提到「门户之争」时快速点开熟悉首页，不是流量分析后台；要看实时排名请去各机构自己的报告。</p>",
   "rankTitleEn": "Global top 10 (traffic)",
@@ -116,22 +116,22 @@
       "labelZh": "Google",
       "items": [
         {
-          "titleEn": "New Ask Maps features to help with holiday travel and prep",
-          "titleZh": "New Ask Maps features to help with holiday travel and prep",
-          "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
-          "date": "2026-11-16"
+          "titleEn": "How Gemini is changing the game for Golden State's organization and fans.",
+          "titleZh": "How Gemini is changing the game for Golden State's organization and fans.",
+          "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+          "date": "2026-11-24"
         },
         {
-          "titleEn": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
-          "titleZh": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
-          "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
-          "date": "2026-11-12"
+          "titleEn": "A more tailored Google Search that’s uniquely yours",
+          "titleZh": "A more tailored Google Search that’s uniquely yours",
+          "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+          "date": "2026-11-23"
         },
         {
-          "titleEn": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-          "titleZh": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-          "date": "2026-11-11"
+          "titleEn": "Introducing Tool Retrieval in the Gemini API",
+          "titleZh": "Introducing Tool Retrieval in the Gemini API",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "date": "2026-11-19"
         }
       ],
       "hotSearchPills": [
@@ -193,6 +193,12 @@
       "labelZh": "YouTube",
       "items": [
         {
+          "titleEn": "Win the holiday shopping season with November’s Demand Gen Drop.",
+          "titleZh": "Win the holiday shopping season with November’s Demand Gen Drop.",
+          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-november-2026/",
+          "date": "2026-11-18"
+        },
+        {
           "titleEn": "Build your data strength with October’s Demand Gen drop.",
           "titleZh": "Build your data strength with October’s Demand Gen drop.",
           "url": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/",
@@ -203,12 +209,6 @@
           "titleZh": "Turn discovery into action with September’s Demand Gen Drop.",
           "url": "https://blog.google/products/ads-commerce/demand-gen-drop-september-2026/",
           "date": "2026-09-24"
-        },
-        {
-          "titleEn": "Here’s what was announced at Made On YouTube 2026.",
-          "titleZh": "Here’s what was announced at Made On YouTube 2026.",
-          "url": "https://blog.google/products-and-platforms/products/youtube/made-on-youtube-updates-2026/",
-          "date": "2026-09-23"
         }
       ],
       "hotSearchPills": [
@@ -290,22 +290,22 @@
       "labelZh": "Facebook",
       "items": [
         {
-          "titleEn": "An Update on the Content We Recommend on Instagram in India",
-          "titleZh": "An Update on the Content We Recommend on Instagram in India",
-          "url": "https://about.fb.com/news/2026/11/an-update-on-the-content-we-recommend-on-instagram-in-india/",
-          "date": "2026-11-17"
+          "titleEn": "Introducing Muse in the UK: A Personal AI Agent You Control",
+          "titleZh": "Introducing Muse in the UK: A Personal AI Agent You Control",
+          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/",
+          "date": "2026-11-24"
         },
         {
-          "titleEn": "Introducing Direct: An App Just for Messaging",
-          "titleZh": "Introducing Direct: An App Just for Messaging",
-          "url": "https://about.fb.com/news/2026/11/introducing-direct-an-app-just-for-messaging/",
-          "date": "2026-11-17"
+          "titleEn": "Muse Now Available in the UK: Muse Does the Work, You Stay in Control",
+          "titleZh": "Muse Now Available in the UK: Muse Does the Work, You Stay in Control",
+          "url": "https://about.fb.com/news/2026/11/muse-now-available-in-the-uk-muse-does-the-work-you-stay-in-control/",
+          "date": "2026-11-24"
         },
         {
-          "titleEn": "94% of Singapore Small Business Owners Surveyed Say More AI Guidance Is Needed",
-          "titleZh": "94% of Singapore Small Business Owners Surveyed Say More AI Guidance Is Needed",
-          "url": "https://about.fb.com/news/2026/11/94-of-singapore-small-business-owners-surveyed-say-more-ai-guidance-is-needed/",
-          "date": "2026-11-16"
+          "titleEn": "Researchers Are Using Meta’s Open-Weight AI Models to Transform Medicine",
+          "titleZh": "Researchers Are Using Meta’s Open-Weight AI Models to Transform Medicine",
+          "url": "https://about.fb.com/news/2026/11/researchers-using-meta-open-weight-ai-models-medical-breakthroughs/",
+          "date": "2026-11-23"
         }
       ],
       "hotSearchPills": [
@@ -387,22 +387,22 @@
       "labelZh": "Instagram",
       "items": [
         {
+          "titleEn": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
+          "titleZh": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
+          "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models/",
+          "date": "2026-11-18"
+        },
+        {
+          "titleEn": "Design Once, Deploy at Scale: Building a Template-Driven ML Ecosystem",
+          "titleZh": "Design Once, Deploy at Scale: Building a Template-Driven ML Ecosystem",
+          "url": "https://engineering.fb.com/2026/11/18/ml-applications/design-once-deploy-at-scale-template-driven-ml-ecosystem/",
+          "date": "2026-11-18"
+        },
+        {
           "titleEn": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
           "titleZh": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
           "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
           "date": "2026-11-13"
-        },
-        {
-          "titleEn": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
-          "titleZh": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
-          "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/",
-          "date": "2026-11-11"
-        },
-        {
-          "titleEn": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
-          "titleZh": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
-          "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/",
-          "date": "2026-11-10"
         }
       ],
       "hotSearchPills": [
@@ -566,22 +566,22 @@
       "labelZh": "维基百科",
       "items": [
         {
-          "titleEn": "Wikimedia at the World Shakespeare Congress in Verona",
-          "titleZh": "Wikimedia at the World Shakespeare Congress in Verona",
-          "url": "https://diff.wikimedia.org/2026/11/17/wikimedia-at-the-world-shakespeare-congress-in-verona/",
-          "date": "2026-11-17"
+          "titleEn": "Wikidata Reference Validator Tool: Improving Verifiability Across Wikidata",
+          "titleZh": "Wikidata Reference Validator Tool: Improving Verifiability Across Wikidata",
+          "url": "https://diff.wikimedia.org/2026/11/24/wikidata-reference-validator-tool-improving-verifiability-across-wikidata/",
+          "date": "2026-11-24"
         },
         {
-          "titleEn": "Kochi, from the inside: what it really takes to run WikiConference India 2026",
-          "titleZh": "Kochi, from the inside: what it really takes to run WikiConference India 2026",
-          "url": "https://diff.wikimedia.org/2026/11/17/kochi-from-the-inside-what-it-really-takes-to-run-wikiconference-india-2026/",
-          "date": "2026-11-17"
+          "titleEn": "Picking up the mic: A speaker’s experience from Wiki Indaba 2026",
+          "titleZh": "Picking up the mic: A speaker’s experience from Wiki Indaba 2026",
+          "url": "https://diff.wikimedia.org/2026/11/24/picking-up-the-mic-a-speakers-experience-from-wiki-indaba-2026/",
+          "date": "2026-11-24"
         },
         {
-          "titleEn": "Celebrating 14 Years of Wikidata: Global WikiEducation Initiative Brings Tanzania’s Open Knowledge Community Together",
-          "titleZh": "Celebrating 14 Years of Wikidata: Global WikiEducation Initiative Brings Tanzania’s Open Knowledge Community Together",
-          "url": "https://diff.wikimedia.org/2026/11/17/celebrating-14-years-of-wikidata-global-wikieducation-initiative-brings-tanzanias-open-knowledge-community-together/",
-          "date": "2026-11-17"
+          "titleEn": "Scoring a Goal for Free Knowledge: How WikiSport’s Football Project Transformed Uzbek Football Coverage on Wikipedia",
+          "titleZh": "Scoring a Goal for Free Knowledge: How WikiSport’s Football Project Transformed Uzbek Football Coverage on Wikipedia",
+          "url": "https://diff.wikimedia.org/2026/11/24/scoring-a-goal-for-free-knowledge-how-wikisports-football-project-transformed-uzbek-football-coverage-on-wikipedia/",
+          "date": "2026-11-24"
         }
       ],
       "hotSearchPills": [
@@ -750,22 +750,22 @@
       "labelZh": "亚马逊",
       "items": [
         {
-          "titleEn": "5 ways Amazon is supporting US communities in 2026, from free meals to affordable homes",
-          "titleZh": "5 ways Amazon is supporting US communities in 2026, from free meals to affordable homes",
-          "url": "https://www.aboutamazon.com/news/community/amazon-community-impact-2026?utm_source=rss",
-          "date": "2026-11-17"
+          "titleEn": "Amazon CTO Werner Vogels’ 5 tech predictions for 2027 and beyond",
+          "titleZh": "Amazon CTO Werner Vogels’ 5 tech predictions for 2027 and beyond",
+          "url": "https://www.aboutamazon.com/news/aws/werner-vogels-tech-predictions-2027?utm_source=rss",
+          "date": "2026-11-24"
         },
         {
-          "titleEn": "Amazon to invest $7 billion in renewable energy in India by 2030",
-          "titleZh": "Amazon to invest $7 billion in renewable energy in India by 2030",
-          "url": "https://www.aboutamazon.com/news/sustainability/amazon-investment-india-renewable-energy?utm_source=rss",
-          "date": "2026-11-17"
+          "titleEn": "How to watch the UEFA Champions League on Prime Video outside the US",
+          "titleZh": "How to watch the UEFA Champions League on Prime Video outside the US",
+          "url": "https://www.aboutamazon.com/news/entertainment/champions-league-prime-video-how-to-watch-schedule?utm_source=rss",
+          "date": "2026-11-24"
         },
         {
-          "titleEn": "Amazon sets goal to cut electricity carbon intensity 65% by 2030",
-          "titleZh": "Amazon sets goal to cut electricity carbon intensity 65% by 2030",
-          "url": "https://www.aboutamazon.com/news/sustainability/amazon-carbon-intensity-goal-electricity-emissions?utm_source=rss",
-          "date": "2026-11-17"
+          "titleEn": "Amazon data center communities: Here’s what’s happening near data centers across the US in 2026",
+          "titleZh": "Amazon data center communities: Here’s what’s happening near data centers across the US in 2026",
+          "url": "https://www.aboutamazon.com/news/aws/amazon-data-centers-locations-news?utm_source=rss",
+          "date": "2026-11-23"
         }
       ],
       "hotSearchPills": [
@@ -934,22 +934,22 @@
       "labelZh": "WhatsApp",
       "items": [
         {
-          "titleEn": "WhatsApp Events Brings People Together Beyond the Group Chat",
-          "titleZh": "WhatsApp Events Brings People Together Beyond the Group Chat",
-          "url": "https://about.fb.com/news/2026/11/whatsapp-events-brings-people-together-beyond-the-group-chat/",
-          "date": "2026-11-05"
+          "titleEn": "Introducing Muse in the UK: A Personal AI Agent You Control",
+          "titleZh": "Introducing Muse in the UK: A Personal AI Agent You Control",
+          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/",
+          "date": "2026-11-24"
         },
         {
-          "titleEn": "Now You Can Invite Anyone to a WhatsApp Call",
-          "titleZh": "Now You Can Invite Anyone to a WhatsApp Call",
-          "url": "https://about.fb.com/news/2026/10/introducing-whatsapp-guest-calling/",
-          "date": "2026-10-14"
+          "titleEn": "Muse Now Available in the UK: Muse Does the Work, You Stay in Control",
+          "titleZh": "Muse Now Available in the UK: Muse Does the Work, You Stay in Control",
+          "url": "https://about.fb.com/news/2026/11/muse-now-available-in-the-uk-muse-does-the-work-you-stay-in-control/",
+          "date": "2026-11-24"
         },
         {
-          "titleEn": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
-          "titleZh": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
-          "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
-          "date": "2026-10-12"
+          "titleEn": "Researchers Are Using Meta’s Open-Weight AI Models to Transform Medicine",
+          "titleZh": "Researchers Are Using Meta’s Open-Weight AI Models to Transform Medicine",
+          "url": "https://about.fb.com/news/2026/11/researchers-using-meta-open-weight-ai-models-medical-breakthroughs/",
+          "date": "2026-11-23"
         }
       ],
       "hotSearchPills": [

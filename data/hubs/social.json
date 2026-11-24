@@ -8,7 +8,7 @@
   "descZh": "常见于全球月活榜单前列的十个社交平台；中段为各站官方的热门内容、排行或创作者相关入口（非第三方新闻聚合）。",
   "h1En": "Global social platforms (MAU leaders)",
   "h1Zh": "全球社交平台前十（月活口径）",
-  "updated": "2026-11-17",
+  "updated": "2026-11-24",
   "editorialHtmlEn": "<p>Ordering follows Data.ai / We Are Social style global social-app rankings — not endorsement of any product policy.</p><p>MAU figures trail press cycles by months; national-only messengers and tiny niche networks are skipped so this row stays readable. Hot mix below is RSS-fed — titles often stay English at the source.</p><p>Last reviewed: <strong>2026-05-19</strong>. Adult-only or unmoderated communities are excluded from the top row by default.</p><p>Hot mix shows official blog headlines, not a scrape of user timelines.</p>",
   "editorialHtmlZh": "<p>顺序参考 Data.ai、We Are Social 等「全球社交应用月活」常见前十；不代表对任一产品政策的背书。</p><p>月活统计往往滞后数月；纯国内闭环或体量过小的网络一般不塞进前十行，以免列表噪声过大。下方 Hot mix 为 RSS 自动合并，标题常保留来源站英文。</p><p>最近核对：<strong>2026-05-19</strong>。成人向或缺乏公开治理信息的社区默认不进入前十行。</p><p>Hot mix 只收各站官方博客标题，不抓用户时间线。</p>",
   "rankTitleEn": "Global top 10 (social)",
@@ -25,8 +25,125 @@
   "hotMixLeadZh": "运行 npm run fetch-hub-news 时从公开 RSS 合并写入：Meta / Facebook 新闻室、Google 博客 YouTube 线、工程博客（筛 Instagram / Reels / Threads）、TechCrunch 社交标签、领英相关报道等。标题多为英文原文。",
   "hotMixItems": [
     {
-      "titleEn": "Meta launches Direct, a standalone messaging app for Instagram",
-      "titleZh": "Meta launches Direct, a standalone messaging app for Instagram",
+      "titleEn": "Meta brings its Muse AI assistant directly into Instagram DMs",
+      "titleZh": "Meta brings its Muse AI assistant directly into Instagram DMs",
+      "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+      "date": "2026-11-24",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Introducing Muse in the UK: A Personal AI Agent You Control",
+      "titleZh": "Introducing Muse in the UK: A Personal AI Agent You Control",
+      "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/",
+      "date": "2026-11-24",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/England_v2a_4x3.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/England_v2a_4x3.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "Muse Now Available in the UK: Muse Does the Work, You Stay in Control",
+      "titleZh": "Muse Now Available in the UK: Muse Does the Work, You Stay in Control",
+      "url": "https://about.fb.com/news/2026/11/muse-now-available-in-the-uk-muse-does-the-work-you-stay-in-control/",
+      "date": "2026-11-24",
+      "source": "Facebook / Meta",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Researchers Are Using Meta’s Open-Weight AI Models to Transform Medicine",
+      "titleZh": "Researchers Are Using Meta’s Open-Weight AI Models to Transform Medicine",
+      "url": "https://about.fb.com/news/2026/11/researchers-using-meta-open-weight-ai-models-medical-breakthroughs/",
+      "date": "2026-11-23",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2027/11/Researchers-Are-Using-Metas-Open-Weight-AI-Models-to-Transform-Medicine_Thumbnail-1.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2027/11/Researchers-Are-Using-Metas-Open-Weight-AI-Models-to-Transform-Medicine_Thumbnail-1.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Advancing Science Together: Highlights From the Open Source AI for Science Summit",
+      "titleZh": "Advancing Science Together: Highlights From the Open Source AI for Science Summit",
+      "url": "https://about.fb.com/news/2026/11/advancing-science-together-highlights-from-the-open-source-ai-for-science-summit/",
+      "date": "2026-11-20",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/Highlights-From-the-Open-Source-AI-For-Science-Summit_Thumbnail.jpg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Highlights-From-the-Open-Source-AI-For-Science-Summit_Thumbnail.jpg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta premieres India’s First Government-Led Microdrama Series on Scams Awareness",
+      "titleZh": "Meta premieres India’s First Government-Led Microdrama Series on Scams Awareness",
+      "url": "https://about.fb.com/news/2026/11/meta-premieres-indias-first-government-led-microdrama-series-on-scams-awareness/",
+      "date": "2026-11-19",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/ScamSeBacho-Nov-2026.jpeg?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/ScamSeBacho-Nov-2026.jpeg?fit=890%2C501"
+    },
+    {
+      "titleEn": "Forum, a Dedicated App for Facebook Groups, Is Now Available in Indonesia",
+      "titleZh": "Forum, a Dedicated App for Facebook Groups, Is Now Available in Indonesia",
+      "url": "https://about.fb.com/news/2026/11/forum-a-dedicated-app-for-facebook-groups-is-now-available-in-indonesia/",
+      "date": "2026-11-19",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/Forum-ID-holding-image.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Forum-ID-holding-image.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor",
+      "titleZh": "Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor",
+      "url": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/",
+      "date": "2026-11-18",
+      "source": "TechCrunch",
+      "image": "",
+      "imageSource": ""
+    },
+    {
+      "titleEn": "Our Approach to Updating Our Commercial Terms of Service",
+      "titleZh": "Our Approach to Updating Our Commercial Terms of Service",
+      "url": "https://about.fb.com/news/2026/11/our-approach-to-updating-our-commercial-terms-of-service/",
+      "date": "2026-11-18",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/09/Meta_Thumbnail.jpg?fit=960%2C720",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/09/Meta_Thumbnail.jpg?fit=960%2C720"
+    },
+    {
+      "titleEn": "Win the holiday shopping season with November’s Demand Gen Drop.",
+      "titleZh": "Win the holiday shopping season with November’s Demand Gen Drop.",
+      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-november-2026/",
+      "date": "2026-11-18",
+      "source": "YouTube",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_November_2026.max-600x600.format-webp.webp",
+      "imageSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_November_2026.max-600x600.format-webp.webp"
+    },
+    {
+      "titleEn": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
+      "titleZh": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
+      "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models/",
+      "date": "2026-11-18",
+      "source": "Meta Engineering",
+      "image": "https://engineering.fb.com/wp-content/uploads/2026/11/Meta-Scaling-Techniques-image-2-3.png",
+      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/11/Meta-Scaling-Techniques-image-2-3.png"
+    },
+    {
+      "titleEn": "Meta Welcomes Loblaw as First Canadian Retail Partner to Muse",
+      "titleZh": "Meta Welcomes Loblaw as First Canadian Retail Partner to Muse",
+      "url": "https://about.fb.com/news/2026/11/meta-welcomes-loblaw-as-first-canadian-retail-partner-to-muse/",
+      "date": "2026-11-18",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/ad846cce-d851-423a-a491-374201cd55ba.png?fit=960%2C540",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/ad846cce-d851-423a-a491-374201cd55ba.png?fit=960%2C540"
+    },
+    {
+      "titleEn": "Muse Is Now Available in Australia: The World’s First Personal AI Agent Built for Everyone",
+      "titleZh": "Muse Is Now Available in Australia: The World’s First Personal AI Agent Built for Everyone",
+      "url": "https://about.fb.com/news/2026/11/muse-is-now-available-in-australia/",
+      "date": "2026-11-17",
+      "source": "Facebook / Meta",
+      "image": "https://about.fb.com/wp-content/uploads/2026/11/AU_Jolly_Surfer_Horizontal.png?fit=890%2C501",
+      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/AU_Jolly_Surfer_Horizontal.png?fit=890%2C501"
+    },
+    {
+      "titleEn": "Meta launches Direct, a stand-alone messaging app for Instagram",
+      "titleZh": "Meta launches Direct, a stand-alone messaging app for Instagram",
       "url": "https://techcrunch.com/2026/11/17/meta-launches-direct-a-standalone-messaging-app-for-instagram/",
       "date": "2026-11-17",
       "source": "TechCrunch",
@@ -52,15 +169,6 @@
       "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Meta-logo.png?fit=890%2C501"
     },
     {
-      "titleEn": "Introducing Direct: An App Just for Messaging",
-      "titleZh": "Introducing Direct: An App Just for Messaging",
-      "url": "https://about.fb.com/news/2026/11/introducing-direct-an-app-just-for-messaging/",
-      "date": "2026-11-17",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/11/Introducing-Direct_An-App-Just-for-Messaging_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Introducing-Direct_An-App-Just-for-Messaging_Thumbnail.gif?fit=890%2C501"
-    },
-    {
       "titleEn": "Instagram now lets creators add Amazon affiliate links in reels and feed posts",
       "titleZh": "Instagram now lets creators add Amazon affiliate links in reels and feed posts",
       "url": "https://techcrunch.com/2026/11/16/instagram-now-lets-creators-add-amazon-affiliate-links-in-reels-and-feed-posts/",
@@ -68,24 +176,6 @@
       "source": "TechCrunch",
       "image": "",
       "imageSource": ""
-    },
-    {
-      "titleEn": "94% of Singapore Small Business Owners Surveyed Say More AI Guidance Is Needed",
-      "titleZh": "94% of Singapore Small Business Owners Surveyed Say More AI Guidance Is Needed",
-      "url": "https://about.fb.com/news/2026/11/94-of-singapore-small-business-owners-surveyed-say-more-ai-guidance-is-needed/",
-      "date": "2026-11-16",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/11/WOL_1057.jpg?w=960&resize=960%2C640",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/WOL_1057.jpg?w=960&resize=960%2C640"
-    },
-    {
-      "titleEn": "Meta’s New Agreements Bring Clean Manufacturing to Data Center Supply Chains",
-      "titleZh": "Meta’s New Agreements Bring Clean Manufacturing to Data Center Supply Chains",
-      "url": "https://about.fb.com/news/2026/11/meta-new-agreements-clean-manufacturing-data-center-supply-chains/",
-      "date": "2026-11-12",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/11/How-Meta-is-Helping-Bring-Clean-Industry-to-Commercial-Scale_Thumbnail.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/How-Meta-is-Helping-Bring-Clean-Industry-to-Commercial-Scale_Thumbnail.jpg?fit=890%2C501"
     },
     {
       "titleEn": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
@@ -115,15 +205,6 @@
       "imageSource": ""
     },
     {
-      "titleEn": "Expanding Teen Account Protections to Teens Around the World",
-      "titleZh": "Expanding Teen Account Protections to Teens Around the World",
-      "url": "https://about.fb.com/news/2026/11/expanding-teen-account-protections-to-teens-around-the-world/",
-      "date": "2026-11-09",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/11/Expanding-Teen-Account-Protections-to-Teens-Around-the-World_thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Expanding-Teen-Account-Protections-to-Teens-Around-the-World_thumbnail.gif?fit=890%2C501"
-    },
-    {
       "titleEn": "If Snap’s Specs are still ridiculously expensive, they’re also a lot more comfortable than they used to be",
       "titleZh": "If Snap’s Specs are still ridiculously expensive, they’re also a lot more comfortable than they used to be",
       "url": "https://techcrunch.com/2026/11/08/if-snaps-specs-are-still-ridiculously-expensive-theyre-also-a-lot-more-comfortable-than-they-used-to-be/",
@@ -133,92 +214,11 @@
       "imageSource": ""
     },
     {
-      "titleEn": "Design the Muse App, Just for You",
-      "titleZh": "Design the Muse App, Just for You",
-      "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
-      "date": "2026-11-06",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/11/Design-the-Muse-App_Just-for-You_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Design-the-Muse-App_Just-for-You_Thumbnail.gif?fit=890%2C501"
-    },
-    {
       "titleEn": "Meta, Google, and TikTok sue California AG over teen social media law",
       "titleZh": "Meta, Google, and TikTok sue California AG over teen social media law",
       "url": "https://techcrunch.com/2026/11/05/meta-google-and-tiktok-sue-california-ag-over-teen-social-media-law/",
       "date": "2026-11-06",
       "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Give Your Muse a Voice",
-      "titleZh": "Give Your Muse a Voice",
-      "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
-      "date": "2026-11-05",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/11/Were-rolling-out-voice-and-expressive-avatars-in-the-Muse-app_Thumbnail.gif?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/Were-rolling-out-voice-and-expressive-avatars-in-the-Muse-app_Thumbnail.gif?fit=890%2C501"
-    },
-    {
-      "titleEn": "TikTok quietly launches a stand-alone TikTok Shop app",
-      "titleZh": "TikTok quietly launches a stand-alone TikTok Shop app",
-      "url": "https://techcrunch.com/2026/11/05/tiktok-quietly-launches-a-standalone-tiktok-shop-app/",
-      "date": "2026-11-05",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "WhatsApp Events Brings People Together Beyond the Group Chat",
-      "titleZh": "WhatsApp Events Brings People Together Beyond the Group Chat",
-      "url": "https://about.fb.com/news/2026/11/whatsapp-events-brings-people-together-beyond-the-group-chat/",
-      "date": "2026-11-05",
-      "source": "Facebook / Meta",
-      "image": "https://about.fb.com/wp-content/uploads/2026/11/WhatsApp-is-your-events-planning-lifesaver_Thumbnail-1.jpg?fit=890%2C501",
-      "imageSource": "https://about.fb.com/wp-content/uploads/2026/11/WhatsApp-is-your-events-planning-lifesaver_Thumbnail-1.jpg?fit=890%2C501"
-    },
-    {
-      "titleEn": "Instagram brings Edits to desktop to take on CapCut",
-      "titleZh": "Instagram brings Edits to desktop to take on CapCut",
-      "url": "https://techcrunch.com/2026/11/05/instagram-brings-edits-to-desktop-to-take-on-capcut/",
-      "date": "2026-11-05",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "Snapchat surpasses 30M paid subscribers",
-      "titleZh": "Snapchat surpasses 30M paid subscribers",
-      "url": "https://techcrunch.com/2026/11/04/snapchat-surpasses-30m-paid-subscribers/",
-      "date": "2026-11-04",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
-      "titleZh": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
-      "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/",
-      "date": "2026-11-03",
-      "source": "Meta Engineering",
-      "image": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-F3-Lightning-Figure-1.png",
-      "imageSource": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-F3-Lightning-Figure-1.png"
-    },
-    {
-      "titleEn": "From restaurant guides to payments, here’s how TikTok is building a super app",
-      "titleZh": "From restaurant guides to payments, here’s how TikTok is building a super app",
-      "url": "https://techcrunch.com/2026/10/31/tiktoks-road-to-becoming-a-super-app/",
-      "date": "2026-10-31",
-      "source": "TechCrunch",
-      "image": "",
-      "imageSource": ""
-    },
-    {
-      "titleEn": "L’avenir appartient à tous: Meta et INCA s’associent pour soutenir les personnes aveugles, sourdes et aveugles ou ayant une basse vision au Canada",
-      "titleZh": "L’avenir appartient à tous: Meta et INCA s’associent pour soutenir les personnes aveugles, sourdes et aveugles ou ayant une basse vision au Canada",
-      "url": "https://about.fb.com/news/2026/10/lavenir-appartient-a-tous-meta-et-inca-sassocient-pour-soutenir-les-personnes-aveugles-sourdes-et-aveugles-ou-ayant-une-basse-vision-au-canada/",
-      "date": "2026-10-29",
-      "source": "Facebook / Meta",
       "image": "",
       "imageSource": ""
     }
